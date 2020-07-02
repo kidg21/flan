@@ -10,13 +10,13 @@ const SegmentButton = styled(Button)`
 `;
 
 const ControlWrapper = styled.section`
-  display: grid;
-  grid-gap: ${(props) => {
-    return props.gap || "";
-  }};
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
+  ${SegmentButton}{
+    border-radius: 0 0 0 0;
+  };
   ${SegmentButton}:first-child {
     border-radius: 2rem 0 0 2rem;
   };

@@ -48,7 +48,7 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 bOWYHS"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        className="Typography__TitleText-sc-19auepv-2 hSytIY"
         fontSize="1.15em"
         fontWeight={600}
         letterSpacing="0px"
@@ -61,29 +61,45 @@ exports[` 1`] = `
     >
       <a
         className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-        id="Navigation_Main-Menu"
         onClick={[Function]}
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-          color={null}
-          data-icon="ellipsis-v"
-          data-prefix="far"
-          focusable="false"
-          fontSize="inherit"
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+          disabled={false}
+          htmlFor={null}
           id={null}
-          role="img"
-          style={Object {}}
-          viewBox="0 0 128 512"
-          xmlns="http://www.w3.org/2000/svg"
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
         >
-          <path
-            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+            id={null}
+            rows={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="ellipsis-v"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 128 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </section>
+        </button>
       </a>
     </div>
   </div>

@@ -16,7 +16,7 @@ Array [
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -24,11 +24,11 @@ Array [
           Accordion Title
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is a description
         </p>
@@ -64,11 +64,11 @@ Array [
     open={false}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       This is the body of the accordion. Put whatever you want in here
     </p>
@@ -92,7 +92,7 @@ Array [
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -100,11 +100,11 @@ Array [
           Accordion Title
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is a description
         </p>
@@ -140,11 +140,11 @@ Array [
     open={false}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       This is the body of the accordion. Put whatever you want in here
     </p>

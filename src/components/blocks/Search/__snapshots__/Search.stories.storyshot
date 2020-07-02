@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <form
-    className="Search__SearchContainer-sey9om-0 kabWsY"
+    className="Search__SearchContainer-sey9om-0 hvjWEc"
   >
     <input
       className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -18,7 +18,7 @@ exports[` 1`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+      className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -65,7 +65,7 @@ exports[` 2`] = `
   rows={null}
 >
   <form
-    className="Search__SearchContainer-sey9om-0 kabWsY"
+    className="Search__SearchContainer-sey9om-0 hvjWEc"
   >
     <input
       className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -76,7 +76,7 @@ exports[` 2`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+      className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -119,7 +119,7 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
+      className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
       height=""
       id="Search_Results-results-container"
     >
@@ -147,20 +147,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   White House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -188,20 +188,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Orange House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   1224 Malibu Drive, CA 92660
                 </p>
@@ -229,20 +229,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Red House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -270,20 +270,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Green House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -311,20 +311,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Black House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -352,20 +352,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Blue House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -393,20 +393,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Address
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -434,20 +434,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   APN
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -475,20 +475,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Owner
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -516,20 +516,20 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Address
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -547,7 +547,7 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <a
-            className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+            className="Typography__LinkText-sc-19auepv-1 fZvALr"
             fontSize="0.876em"
             fontWeight={600}
             href={null}
@@ -571,7 +571,7 @@ exports[` 3`] = `
   rows={null}
 >
   <form
-    className="Search__SearchContainer-sey9om-0 kabWsY"
+    className="Search__SearchContainer-sey9om-0 hvjWEc"
   >
     <input
       className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -582,7 +582,7 @@ exports[` 3`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+      className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -625,7 +625,7 @@ exports[` 3`] = `
     width={null}
   >
     <div
-      className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
+      className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
       height=""
       id="Search_Error-results-container"
     >
@@ -638,11 +638,11 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             We recommend the following based on your key word search
           </p>
@@ -672,20 +672,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   White House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -713,20 +713,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Orange House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   1224 Malibu Drive, CA 92660
                 </p>
@@ -754,20 +754,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Red House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -795,20 +795,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Green House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -836,20 +836,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Black House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -877,20 +877,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Blue House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -918,20 +918,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Address
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -959,20 +959,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   APN
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -1000,20 +1000,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Owner
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -1041,20 +1041,20 @@ exports[` 3`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
                   Address
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
                   fontSize="0.75em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   123 Malibu Drive, CA 92660
                 </p>
@@ -1072,7 +1072,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <a
-            className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+            className="Typography__LinkText-sc-19auepv-1 fZvALr"
             fontSize="0.876em"
             fontWeight={600}
             href={null}
@@ -1101,7 +1101,7 @@ exports[` 4`] = `
     rows={null}
   >
     <form
-      className="Search__SearchContainer-sey9om-0 kabWsY"
+      className="Search__SearchContainer-sey9om-0 hvjWEc"
     >
       <input
         className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -1112,7 +1112,7 @@ exports[` 4`] = `
         type="search"
       />
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+        className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -1155,7 +1155,7 @@ exports[` 4`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
+        className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
         height=""
         id="Search_Offline-results-container"
       >
@@ -1198,11 +1198,11 @@ exports[` 4`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               You are offline
             </p>
@@ -1217,7 +1217,7 @@ exports[` 4`] = `
     rows={null}
   >
     <form
-      className="Search__SearchContainer-sey9om-0 kabWsY"
+      className="Search__SearchContainer-sey9om-0 hvjWEc"
     >
       <input
         className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -1228,7 +1228,7 @@ exports[` 4`] = `
         type="search"
       />
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+        className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -1271,7 +1271,7 @@ exports[` 4`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
+        className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
         height=""
         id="Search_BadConnection-results-container"
       >
@@ -1314,11 +1314,11 @@ exports[` 4`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Check your internet connection
             </p>

@@ -37,7 +37,7 @@ const LinkText = styled.a`
   font-size: ${(props) => { return props.fontSize; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   font-family: ${(props) => { return props.theme.typography.primary; }};
-  text-decoration: underline;
+  // text-decoration: underline;
   margin: -.25em;
   padding: .25em;
   letter-spacing: ${(props) => { return props.letterSpacing; }};
@@ -58,7 +58,7 @@ const TitleText = styled.h6`
   font-weight: ${(props) => { return props.fontWeight; }};
   color: inherit;
   line-height: normal;
-  font-family: ${(props) => { return props.theme.typography.primary; }};
+  font-family: ${(props) => { return props.theme.typography.secondary; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 
@@ -81,7 +81,7 @@ function Text({
     },
     sm: {
       fontSize: "0.75em",
-      letterSpacing: "0.2px",
+      letterSpacing: "0.4px",
     },
     lg: {
       fontSize: "1em",
@@ -89,7 +89,7 @@ function Text({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.2px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -211,8 +211,8 @@ function Label({
 }) {
   const sizeHash = {
     xs: {
-      fontSize: "0.65em",
-      letterSpacing: "0.6px",
+      fontSize: "0.68em",
+      letterSpacing: "1px",
     },
     sm: {
       fontSize: "0.82em",
@@ -224,7 +224,7 @@ function Label({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0.2px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.4px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {

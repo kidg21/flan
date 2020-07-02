@@ -24,17 +24,17 @@ exports[` 1`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="date_date"
@@ -51,11 +51,11 @@ exports[` 1`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -72,17 +72,17 @@ exports[` 1`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Time Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="time_time"
@@ -99,11 +99,11 @@ exports[` 1`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -125,17 +125,17 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="datetime_date"
@@ -152,11 +152,11 @@ exports[` 1`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -167,17 +167,17 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="datetime_time"
@@ -194,11 +194,11 @@ exports[` 1`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -233,17 +233,17 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="dateDefault_date"
@@ -260,11 +260,11 @@ exports[` 2`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -281,17 +281,17 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Date Input Label (required)
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="dateRequired_date"
@@ -308,11 +308,11 @@ exports[` 2`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -329,17 +329,17 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 GIuwE"
+          className="TextInput__Input-sc-1fep8p8-2 itToUE"
           cols=""
           disabled={true}
           id="dateDisabled_date"
@@ -356,11 +356,11 @@ exports[` 2`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -377,11 +377,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Date Input Label
         </label>
@@ -404,11 +404,11 @@ exports[` 2`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -425,17 +425,17 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="dateError_date"
@@ -452,11 +452,11 @@ exports[` 2`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -464,11 +464,11 @@ exports[` 2`] = `
           className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             This is a warning
           </p>
@@ -503,17 +503,17 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Time Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="timeDefault_time"
@@ -530,11 +530,11 @@ exports[` 3`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -551,17 +551,17 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Time Input Label (required)
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="timeRequired_time"
@@ -578,11 +578,11 @@ exports[` 3`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -599,17 +599,17 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Time Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 GIuwE"
+          className="TextInput__Input-sc-1fep8p8-2 itToUE"
           cols=""
           disabled={true}
           id="timeDisabled_time"
@@ -626,11 +626,11 @@ exports[` 3`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -647,11 +647,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Time Input Label
         </label>
@@ -674,11 +674,11 @@ exports[` 3`] = `
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -686,11 +686,11 @@ exports[` 3`] = `
           className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Don't sweat it...we can fix this!
           </p>
@@ -730,17 +730,17 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="datetimeDefault_date"
@@ -757,11 +757,11 @@ exports[` 4`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -772,17 +772,17 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="datetimeDefault_time"
@@ -799,11 +799,11 @@ exports[` 4`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -826,17 +826,17 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label (required)
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="dateTimeRequired_date"
@@ -853,11 +853,11 @@ exports[` 4`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -868,17 +868,17 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label (required)
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="dateTimeRequired_time"
@@ -895,11 +895,11 @@ exports[` 4`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -922,17 +922,17 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 GIuwE"
+            className="TextInput__Input-sc-1fep8p8-2 itToUE"
             cols=""
             disabled={true}
             id="datetimeDisabled_date"
@@ -949,11 +949,11 @@ exports[` 4`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -964,17 +964,17 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 GIuwE"
+            className="TextInput__Input-sc-1fep8p8-2 itToUE"
             cols=""
             disabled={true}
             id="datetimeDisabled_time"
@@ -991,11 +991,11 @@ exports[` 4`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -1018,11 +1018,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label
           </label>
@@ -1045,11 +1045,11 @@ exports[` 4`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -1057,11 +1057,11 @@ exports[` 4`] = `
             className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
               fontSize="0.75em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Don't sweat it...we can fix this!
             </p>
@@ -1073,11 +1073,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Date-Time Input Label
           </label>
@@ -1100,11 +1100,11 @@ exports[` 4`] = `
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -1112,11 +1112,11 @@ exports[` 4`] = `
             className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
               fontSize="0.75em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Don't sweat it...we can fix this!
             </p>

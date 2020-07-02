@@ -35,7 +35,7 @@ exports[` 1`] = `
       rows={null}
     >
       <h4
-        className="Typography__TitleText-sc-19auepv-2 czurBm"
+        className="Typography__TitleText-sc-19auepv-2 diCApD"
         fontSize="1.25em"
         fontWeight={600}
         letterSpacing="0px"
@@ -57,17 +57,17 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Email
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="login-email"
@@ -90,17 +90,17 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Password
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="login-password"
@@ -122,7 +122,7 @@ exports[` 1`] = `
         className="Form__Section-v2wrel-2 dIXoJq"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+          className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -137,11 +137,11 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Login
             </label>
@@ -156,7 +156,7 @@ exports[` 1`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <a
-              className="Typography__LinkText-sc-19auepv-1 hAHAXU"
+              className="Typography__LinkText-sc-19auepv-1 idGoVl"
               fontSize="0.876em"
               fontWeight={400}
               href={null}
@@ -177,7 +177,7 @@ exports[` 1`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 eKnWUJ"
+              className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -192,11 +192,11 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                  fontSize="0.879em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   New User? Go to Register
                 </label>
@@ -245,7 +245,7 @@ exports[` 2`] = `
       rows={null}
     >
       <h4
-        className="Typography__TitleText-sc-19auepv-2 czurBm"
+        className="Typography__TitleText-sc-19auepv-2 diCApD"
         fontSize="1.25em"
         fontWeight={600}
         letterSpacing="0px"
@@ -267,17 +267,17 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Email
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="registration-email"
@@ -300,17 +300,17 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Password
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="registration-password"
@@ -333,17 +333,17 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Confirm Password
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="registration-confirm-password"
@@ -365,7 +365,7 @@ exports[` 2`] = `
         className="Form__Section-v2wrel-2 dIXoJq"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+          className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -380,11 +380,11 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Register
             </label>
@@ -431,7 +431,7 @@ exports[` 3`] = `
       rows={null}
     >
       <h4
-        className="Typography__TitleText-sc-19auepv-2 czurBm"
+        className="Typography__TitleText-sc-19auepv-2 diCApD"
         fontSize="1.25em"
         fontWeight={600}
         letterSpacing="0px"
@@ -453,17 +453,17 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Email
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="reset-email"
@@ -485,7 +485,7 @@ exports[` 3`] = `
         className="Form__Section-v2wrel-2 dIXoJq"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+          className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -500,11 +500,11 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Send
             </label>
@@ -519,7 +519,7 @@ exports[` 3`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 eKnWUJ"
+              className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -534,11 +534,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                  fontSize="0.879em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   New User? Go to Register
                 </label>
@@ -587,7 +587,7 @@ exports[` 4`] = `
       rows={null}
     >
       <h4
-        className="Typography__TitleText-sc-19auepv-2 czurBm"
+        className="Typography__TitleText-sc-19auepv-2 diCApD"
         fontSize="1.25em"
         fontWeight={600}
         letterSpacing="0px"
@@ -604,16 +604,16 @@ exports[` 4`] = `
         className="Form__Section-v2wrel-2 dIXoJq"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           If you don't see an email in the next few minutes please select the link to send again.
         </p>
         <a
-          className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+          className="Typography__LinkText-sc-19auepv-1 fZvALr"
           fontSize="0.876em"
           fontWeight={600}
           href={null}
@@ -664,7 +664,7 @@ exports[` 5`] = `
       rows={null}
     >
       <h4
-        className="Typography__TitleText-sc-19auepv-2 czurBm"
+        className="Typography__TitleText-sc-19auepv-2 diCApD"
         fontSize="1.25em"
         fontWeight={600}
         letterSpacing="0px"
@@ -686,17 +686,17 @@ exports[` 5`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Confirm Email
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="new-email"
@@ -719,17 +719,17 @@ exports[` 5`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Password
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="new-password"
@@ -752,17 +752,17 @@ exports[` 5`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Confirm Password
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
             cols=""
             disabled={false}
             id="new-confirm"
@@ -784,7 +784,7 @@ exports[` 5`] = `
         className="Form__Section-v2wrel-2 dIXoJq"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+          className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -799,11 +799,11 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Confirm
             </label>
@@ -850,7 +850,7 @@ exports[` 6`] = `
       rows={null}
     >
       <h4
-        className="Typography__TitleText-sc-19auepv-2 czurBm"
+        className="Typography__TitleText-sc-19auepv-2 diCApD"
         fontSize="1.25em"
         fontWeight={600}
         letterSpacing="0px"
@@ -867,11 +867,11 @@ exports[` 6`] = `
         className="Form__Section-v2wrel-2 dIXoJq"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           You have successfully changed your password. Return to Login to re-enter your new credentials.
         </p>
@@ -880,7 +880,7 @@ exports[` 6`] = `
         className="Form__Section-v2wrel-2 dIXoJq"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+          className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -895,11 +895,11 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Go to Login
             </label>

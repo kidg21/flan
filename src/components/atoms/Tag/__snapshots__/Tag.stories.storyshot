@@ -7,16 +7,16 @@ exports[` 1`] = `
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
+    className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
     id={null}
     label="Tag"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
+      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+      fontSize="0.68em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0.6px"
+      letterSpacing="1px"
     >
       Tag
     </label>
@@ -36,7 +36,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gJQbpU"
+        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kWRDZo"
         color="success80"
         data-icon="check"
         data-prefix="far"
@@ -59,16 +59,16 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
+        className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
         id={null}
         label="Brief Label"
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-          fontSize="0.65em"
+          className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+          fontSize="0.68em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.6px"
+          letterSpacing="1px"
         >
           Brief Label
         </label>
@@ -108,16 +108,16 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
+        className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-          fontSize="0.65em"
+          className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+          fontSize="0.68em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.6px"
+          letterSpacing="1px"
         >
           Tag with a long label because you cannot be concise with your words.
         </label>
@@ -134,16 +134,16 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
+    className="Tag__TagContainer-sc-128kb3h-0 gXgddG"
     id={null}
     label="Info"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
+      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+      fontSize="0.68em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0.6px"
+      letterSpacing="1px"
     >
       Info
     </label>
@@ -154,26 +154,26 @@ exports[` 3`] = `
     label="Warning"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
+      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+      fontSize="0.68em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0.6px"
+      letterSpacing="1px"
     >
       Warning
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 biHJiu"
+    className="Tag__TagContainer-sc-128kb3h-0 hyhlTG"
     id={null}
     label="Success"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
+      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+      fontSize="0.68em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0.6px"
+      letterSpacing="1px"
     >
       Success
     </label>
@@ -184,142 +184,13 @@ exports[` 3`] = `
     label="Alert"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
+      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+      fontSize="0.68em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0.6px"
+      letterSpacing="1px"
     >
       Alert
-    </label>
-  </div>
-</section>
-`;
-
-exports[` 4`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
-  id={null}
-  rows={null}
->
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 gCzMjR"
-    id={null}
-    label="Tag"
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
-      fontWeight={600}
-      htmlFor={null}
-      letterSpacing="0.6px"
-    >
-      Tag
-    </label>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jxtQEC"
-    id={null}
-    label="Tag"
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
-      fontWeight={600}
-      htmlFor={null}
-      letterSpacing="0.6px"
-    >
-      Tag
-    </label>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jYSnYC"
-    id={null}
-    label="Tag"
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
-      fontWeight={600}
-      htmlFor={null}
-      letterSpacing="0.6px"
-    >
-      Tag
-    </label>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 gkfrie"
-    id={null}
-    label="Tag"
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
-      fontWeight={600}
-      htmlFor={null}
-      letterSpacing="0.6px"
-    >
-      Tag
-    </label>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 dRJwUL"
-    id={null}
-    label="Tag"
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
-      fontWeight={600}
-      htmlFor={null}
-      letterSpacing="0.6px"
-    >
-      Tag
-    </label>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 zphav"
-    id={null}
-    label="Tag"
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
-      fontWeight={600}
-      htmlFor={null}
-      letterSpacing="0.6px"
-    >
-      Tag
-    </label>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 caAZHs"
-    id={null}
-    label="Tag"
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
-      fontWeight={600}
-      htmlFor={null}
-      letterSpacing="0.6px"
-    >
-      Tag
-    </label>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 gecAGt"
-    id={null}
-    label="Tag"
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-      fontSize="0.65em"
-      fontWeight={600}
-      htmlFor={null}
-      letterSpacing="0.6px"
-    >
-      Tag
     </label>
   </div>
 </section>

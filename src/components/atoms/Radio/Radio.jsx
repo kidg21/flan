@@ -52,16 +52,20 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${(props) => {
-    return (
-      props.theme.palette[props.fillColorChecked] || props.theme.palette.selected
-    );
-  }};
-    border-color: ${(props) => {
-    return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.selected
-    );
-  }};
+    border: 0.32em solid ${(props) => {
+      return (
+        props.theme.palette.selected
+      );
+    }};
+  &:before {
+    margin: 0 -0.1em 0em 0;
+
+    width: 0.89em;
+    height: 0.89em;
+    border-radius: 100%;
+    display: inline-block;
+    content: "";
+  }
   }
   &:focus {
     border-color: ${(props) => {

@@ -9,9 +9,9 @@ exports[` 1`] = `
     className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
   >
     <h6
-      className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+      className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
       fontSize="1em"
-      fontWeight={600}
+      fontWeight={400}
       letterSpacing="0px"
     >
       My List
@@ -37,9 +37,9 @@ exports[` 1`] = `
           onClick={[Function]}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
             fontSize="1em"
-            fontWeight={600}
+            fontWeight={400}
             id={null}
             letterSpacing="0px"
           >
@@ -69,9 +69,9 @@ exports[` 1`] = `
           onClick={[Function]}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
             fontSize="1em"
-            fontWeight={600}
+            fontWeight={400}
             id={null}
             letterSpacing="0px"
           >
@@ -101,9 +101,9 @@ exports[` 1`] = `
           onClick={[Function]}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
             fontSize="1em"
-            fontWeight={600}
+            fontWeight={400}
             id={null}
             letterSpacing="0px"
           >
@@ -141,20 +141,20 @@ exports[` 2`] = `
           onClick={[Function]}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
             fontSize="1em"
-            fontWeight={600}
+            fontWeight={400}
             id={null}
             letterSpacing="0px"
           >
             List Item (standard)
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 CcLky"
+            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
             fontSize="0.75em"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             This is the description
           </p>
@@ -182,20 +182,20 @@ exports[` 2`] = `
           onClick={[Function]}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
             fontSize="1em"
-            fontWeight={600}
+            fontWeight={400}
             id={null}
             letterSpacing="0px"
           >
             List Item (selected)
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 CcLky"
+            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
             fontSize="0.75em"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             This is the description
           </p>
@@ -223,20 +223,20 @@ exports[` 2`] = `
           onClick={[Function]}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
             fontSize="1em"
-            fontWeight={600}
+            fontWeight={400}
             id={null}
             letterSpacing="0px"
           >
             List Item (disabled)
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 CcLky"
+            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
             fontSize="0.75em"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             This is the description
           </p>
@@ -261,9 +261,9 @@ exports[` 3`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         Standard
@@ -289,20 +289,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -330,20 +330,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -371,20 +371,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -401,9 +401,9 @@ exports[` 3`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         With a Divider
@@ -429,20 +429,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -470,20 +470,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -511,20 +511,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -541,9 +541,9 @@ exports[` 3`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         Interactive
@@ -569,20 +569,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -610,20 +610,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -651,20 +651,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -681,9 +681,9 @@ exports[` 3`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         Interactive
@@ -709,20 +709,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -750,20 +750,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -791,20 +791,20 @@ exports[` 3`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -830,9 +830,9 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         Pre-Label
@@ -854,12 +854,12 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 bjxCRP"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
               fontSize="1em"
               fontWeight={400}
               letterSpacing="0px"
@@ -876,20 +876,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -913,12 +913,12 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 bjxCRP"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
               fontSize="1em"
               fontWeight={400}
               letterSpacing="0px"
@@ -935,20 +935,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -972,12 +972,12 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 bjxCRP"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
               fontSize="1em"
               fontWeight={400}
               letterSpacing="0px"
@@ -994,20 +994,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1031,12 +1031,12 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 bjxCRP"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
               fontSize="1em"
               fontWeight={400}
               letterSpacing="0px"
@@ -1053,20 +1053,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1083,9 +1083,9 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         Post Label
@@ -1111,20 +1111,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1134,16 +1134,16 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
+            className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
             id={null}
             label="Label"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-              fontSize="0.65em"
+              className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+              fontSize="0.68em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.6px"
+              letterSpacing="1px"
             >
               Label
             </label>
@@ -1171,20 +1171,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1194,16 +1194,16 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
+            className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
             id={null}
             label="6"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-              fontSize="0.65em"
+              className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+              fontSize="0.68em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.6px"
+              letterSpacing="1px"
             >
               6
             </label>
@@ -1231,20 +1231,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1254,16 +1254,16 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
+            className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
             id={null}
             label="NEW!"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-              fontSize="0.65em"
+              className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+              fontSize="0.68em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.6px"
+              letterSpacing="1px"
             >
               NEW!
             </label>
@@ -1291,20 +1291,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1314,16 +1314,16 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
+            className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
             id={null}
             label="9"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
-              fontSize="0.65em"
+              className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
+              fontSize="0.68em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.6px"
+              letterSpacing="1px"
             >
               9
             </label>
@@ -1340,9 +1340,9 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         Post Icon
@@ -1368,20 +1368,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1433,20 +1433,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1498,20 +1498,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1575,20 +1575,20 @@ exports[` 4`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1650,9 +1650,9 @@ exports[` 5`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         Checkbox
@@ -1678,20 +1678,20 @@ exports[` 5`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1706,7 +1706,7 @@ exports[` 5`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gsKhTt"
               id={null}
               onBlur={null}
               onChange={null}
@@ -1737,20 +1737,20 @@ exports[` 5`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1765,7 +1765,7 @@ exports[` 5`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gsKhTt"
               id={null}
               onBlur={null}
               onChange={null}
@@ -1796,20 +1796,20 @@ exports[` 5`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1824,7 +1824,7 @@ exports[` 5`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gsKhTt"
               id={null}
               onBlur={null}
               onChange={null}
@@ -1855,20 +1855,20 @@ exports[` 5`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1883,7 +1883,7 @@ exports[` 5`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gsKhTt"
               id={null}
               onBlur={null}
               onChange={null}
@@ -1903,9 +1903,9 @@ exports[` 5`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+        className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
         fontSize="1em"
-        fontWeight={600}
+        fontWeight={400}
         letterSpacing="0px"
       >
         Toggle
@@ -1931,20 +1931,20 @@ exports[` 5`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -1996,20 +1996,20 @@ exports[` 5`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -2061,20 +2061,20 @@ exports[` 5`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
@@ -2126,20 +2126,20 @@ exports[` 5`] = `
             onClick={[Function]}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
               List Item
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 BMTkE"
               fontSize="0.75em"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               This is the description
             </p>
