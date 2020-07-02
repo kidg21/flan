@@ -1,20 +1,14 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { DMPTheme } from "Variables";
-import { ThemeProvider } from "styled-components";
-import { expect } from "chai";
-import { mount } from "enzyme";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
 // Knob Values
 const knobGroups = ["Button"];
 const buttonLabel = "Button Label";
 const buttonVariants = [
-  "standard",
-  "secondary",
+  "action",
   "info",
   "success",
   "warning",

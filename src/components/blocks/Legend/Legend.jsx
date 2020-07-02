@@ -91,7 +91,7 @@ function Legend({
         {data instanceof Array > 0 ? data.map((row, index) => {
           let rowValue = row.value;
           if (row.onClick) {
-            rowValue = (<Link onClick={row.onClick} text={row.value} />);
+            rowValue = (<Link onClick={row.onClick}>{rowValue}</Link>);
           }
           const rowKey = row.id
           || (typeof row.label === "string" && row.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
@@ -106,7 +106,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                <Text text={row.label} />
+                <Text>{row.label}</Text>
               </Cell>
               <Cell
                 cellBorder={cellBorder}
@@ -115,7 +115,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                <Text text={rowValue} />
+                <Text>{rowValue}</Text>
               </Cell>
             </Row>
           );

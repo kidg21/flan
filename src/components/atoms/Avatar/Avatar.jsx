@@ -127,7 +127,7 @@ function Avatar({
 
 Avatar.propTypes = {
   alt: PropTypes.string,
-  brand: PropTypes.oneOf("research", "jobs", "bi", "broker", "brand1", "brand2", "brand3", "brand4"),
+  brand: PropTypes.oneOf(["research", "jobs", "bi", "broker", "brand1", "brand2", "brand3", "brand4"]),
   /** Option 1:
    * <br>
    * Enter the name of the icon as the prop value. (ex. icon="circle"

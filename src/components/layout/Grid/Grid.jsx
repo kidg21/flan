@@ -103,7 +103,7 @@ Grid.propTypes = {
    *
    * Options: 1-12 or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
    */
-  columns: PropTypes.string,
+  columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** Sets the 'gutter' between grid items */
   gap: PropTypes.oneOfType([
     PropTypes.string,

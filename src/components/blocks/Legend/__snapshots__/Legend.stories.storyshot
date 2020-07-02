@@ -5,7 +5,7 @@ exports[` 1`] = `
   className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
   href={null}
   id="Legend_Standard_Card"
-  media={null}
+  media=""
   onClick={null}
 >
   <div
@@ -159,7 +159,7 @@ exports[` 2`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Legend_Icon_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -381,7 +381,7 @@ exports[` 2`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Legend_Tag_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div

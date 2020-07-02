@@ -187,7 +187,7 @@ exports[` 1`] = `
               id="Menu 1_body"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 jodquI"
                 id={null}
                 rows={null}
               >
@@ -195,7 +195,7 @@ exports[` 1`] = `
                   className="Card__CardWrapper-sc-1g3s676-3 klTivC"
                   href={null}
                   id="1"
-                  media={null}
+                  media=""
                   onClick={[Function]}
                 >
                   <section
@@ -273,7 +273,7 @@ exports[` 1`] = `
                   className="Card__CardWrapper-sc-1g3s676-3 klTivC"
                   href={null}
                   id="2"
-                  media={null}
+                  media=""
                   onClick={[Function]}
                 >
                   <section
@@ -362,7 +362,7 @@ exports[` 1`] = `
                 className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
                 href={null}
                 id="Menu_2_Header"
-                media={null}
+                media=""
                 onClick={null}
               >
                 <section
@@ -1067,7 +1067,7 @@ exports[` 1`] = `
                 className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
                 href={null}
                 id="Menu_2_Footer"
-                media={null}
+                media=""
                 onClick={null}
               >
                 <section

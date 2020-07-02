@@ -205,11 +205,6 @@ function Button({
       shadeColor = "info100";
       break;
     case "action":
-      buttonColor = "action80";
-      fontColor = buttonColor;
-      tintColor = "action20";
-      shadeColor = "action100";
-      break;
     default:
       buttonColor = "action80";
       fontColor = buttonColor;
@@ -349,7 +344,7 @@ Button.defaultProps = {
   label: null,
   onClick: null,
   type: "button",
-  variant: null,
+  variant: "action",
 };
 
 // export default Button;

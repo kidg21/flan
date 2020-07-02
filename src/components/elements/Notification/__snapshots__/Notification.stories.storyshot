@@ -2,10 +2,128 @@
 
 exports[` 1`] = `
 <div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    aria-describedby={null}
+    aria-labelledby={null}
+    className="Notification__NotificationContainer-sc-1wz6254-1 jOMjPT"
+    id={null}
+    onAnimationEnd={null}
+    onAnimationStart={null}
+    onClick={null}
+  >
+    <div
+      className="Card__CardWrapper-sc-1g3s676-3 eKxcvy Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
+      href={null}
+      id="storyshots_109"
+      media=""
+      onClick={null}
+    >
+      <div
+        className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+        href={null}
+        id="storyshots_110"
+        media=""
+        onClick={null}
+      >
+        <div
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 fIRUJx"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+              id={null}
+              rows={null}
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                This is a Standard notification.
+              </h6>
+            </section>
+          </div>
+          <div
+            className="Bar__Slot-icfo76-1 cxljst"
+          >
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu Banner__Close-sc-6825al-1 cgOoTm"
+                color="link"
+                data-icon="times"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 320 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+        fontSize="0.876em"
+        fontWeight={600}
+        htmlFor={null}
+        letterSpacing="0.2px"
+      >
+        Show Notification
+      </label>
+    </section>
+  </button>
+</div>
+`;
+
+exports[` 2`] = `
+<div
   className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
   href={null}
-  id="storyshots_109"
-  media={null}
+  id="storyshots_111"
+  media=""
   onClick={null}
 >
   <div
@@ -89,17 +207,17 @@ exports[` 1`] = `
 </div>
 `;
 
-exports[` 2`] = `
+exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jodquI"
   id={null}
   rows={null}
 >
   <div
     className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_110"
-    media={null}
+    id="storyshots_112"
+    media=""
     onClick={null}
   >
     <div
@@ -184,8 +302,8 @@ exports[` 2`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_111"
-    media={null}
+    id="storyshots_113"
+    media=""
     onClick={null}
   >
     <div
@@ -270,8 +388,8 @@ exports[` 2`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_112"
-    media={null}
+    id="storyshots_114"
+    media=""
     onClick={null}
   >
     <div
@@ -356,8 +474,8 @@ exports[` 2`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_113"
-    media={null}
+    id="storyshots_115"
+    media=""
     onClick={null}
   >
     <div
@@ -442,17 +560,17 @@ exports[` 2`] = `
 </section>
 `;
 
-exports[` 3`] = `
+exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jodquI"
   id={null}
   rows={null}
 >
   <div
     className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_114"
-    media={null}
+    id="storyshots_116"
+    media=""
     onClick={null}
   >
     <div
@@ -557,8 +675,8 @@ exports[` 3`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_115"
-    media={null}
+    id="storyshots_117"
+    media=""
     onClick={null}
   >
     <div

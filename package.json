@@ -40,7 +40,8 @@
       "node_modules/(?!react-syntax-highlighter|@storybook)"
     ],
     "moduleNameMapper": {
-      "\\.(s?css|sass|pcss|styl.*|less|sss|gif|jpe?g|png|svg|mp4|webm|ogv)$": "<rootDir>/mock.js",
+      "\\.(s?css|sass|pcss|styl.*|less|sss|svg|mp4|webm|ogv)$": "<rootDir>/mock.js",
+      "\\.(gif|jpe?g|png)$": "<rootDir>/mockFilePath.js",
       "layout\\/Map$": "<rootDir>/.storybook/Mapbox.jsx"
     }
   },

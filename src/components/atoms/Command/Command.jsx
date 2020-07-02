@@ -7,8 +7,6 @@ import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 
-
-
 const CommandContainer = styled.a`
   display: ${(props) => {
     return props.icon ? "grid" : "";
@@ -155,22 +153,22 @@ function Command({
       break;
   }
   return (
-       <CommandContainer
-         alignCommand={alignCommand}
-         alignIcon={alignIcon}
-         commandColor={commandColor}
-         commandSize={commandSize}
-         icon={cmd.icon}
-         id={id}
-         isDisabled={isDisabled}
-         justifyIcon={justifyIcon}
-         label={label}
-         onClick={onClick}
-         title={cmd.label}
-       >
-         {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
-         <CommandName text={cmd.label} />
-       </CommandContainer>
+    <CommandContainer
+      alignCommand={alignCommand}
+      alignIcon={alignIcon}
+      commandColor={commandColor}
+      commandSize={commandSize}
+      icon={cmd.icon}
+      id={id}
+      isDisabled={isDisabled}
+      justifyIcon={justifyIcon}
+      label={label}
+      onClick={onClick}
+      title={cmd.label}
+    >
+      {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
+      <CommandName text={cmd.label} />
+    </CommandContainer>
   );
 }
 
