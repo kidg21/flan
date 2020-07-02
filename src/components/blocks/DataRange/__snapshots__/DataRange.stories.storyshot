@@ -7,11 +7,11 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-    fontSize="0.876em"
+    className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+    fontSize="0.879em"
     fontWeight={600}
     htmlFor={null}
-    letterSpacing="0.2px"
+    letterSpacing="0.4px"
   >
     Data Range (default)
   </label>
@@ -29,17 +29,17 @@ exports[` 1`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Min
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="default_left"
@@ -61,11 +61,11 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 hsVbDT"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-        fontSize="0.876em"
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+        fontSize="0.879em"
         fontWeight={400}
         id={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         _
       </p>
@@ -79,17 +79,17 @@ exports[` 1`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Max
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="default_right"
@@ -109,11 +109,11 @@ exports[` 1`] = `
     </div>
   </div>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+    className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
     fontSize="0.75em"
     fontWeight={600}
     id={null}
-    letterSpacing="0.2px"
+    letterSpacing="0.4px"
   >
     Hang in there, buddy, I'm here to help!
   </p>
@@ -142,11 +142,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+          fontSize="0.879em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Price Range
         </label>
@@ -164,17 +164,17 @@ exports[` 2`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Min
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
                 cols=""
                 disabled={false}
                 id="input_left"
@@ -196,11 +196,11 @@ exports[` 2`] = `
             className="Bar__Slot-icfo76-1 hsVbDT"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               _
             </p>
@@ -214,17 +214,17 @@ exports[` 2`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Max
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
                 cols=""
                 disabled={false}
                 id="input_right"
@@ -244,11 +244,11 @@ exports[` 2`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -259,11 +259,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+          fontSize="0.879em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Price Range (error)
         </label>
@@ -281,11 +281,11 @@ exports[` 2`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Min
               </label>
@@ -313,11 +313,11 @@ exports[` 2`] = `
             className="Bar__Slot-icfo76-1 hsVbDT"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               _
             </p>
@@ -331,11 +331,11 @@ exports[` 2`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Max
               </label>
@@ -361,11 +361,11 @@ exports[` 2`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -376,11 +376,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+          fontSize="0.879em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Price Range (With Error message)
         </label>
@@ -421,11 +421,11 @@ exports[` 2`] = `
             className="Bar__Slot-icfo76-1 hsVbDT"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               _
             </p>
@@ -460,20 +460,20 @@ exports[` 2`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Out of range!
         </p>
@@ -484,11 +484,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+          fontSize="0.879em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Price Range (disabled)
         </label>
@@ -506,17 +506,17 @@ exports[` 2`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Min
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 GIuwE"
+                className="TextInput__Input-sc-1fep8p8-2 itToUE"
                 cols=""
                 disabled={true}
                 id="inputDisabled_left"
@@ -538,11 +538,11 @@ exports[` 2`] = `
             className="Bar__Slot-icfo76-1 hsVbDT"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               _
             </p>
@@ -556,17 +556,17 @@ exports[` 2`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Max
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 GIuwE"
+                className="TextInput__Input-sc-1fep8p8-2 itToUE"
                 cols=""
                 disabled={true}
                 id="inputDisabled_right"
@@ -613,11 +613,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+          fontSize="0.879em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Input Range
         </label>
@@ -635,17 +635,17 @@ exports[` 3`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Min
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
                 cols=""
                 disabled={false}
                 id="input_left"
@@ -667,11 +667,11 @@ exports[` 3`] = `
             className="Bar__Slot-icfo76-1 hsVbDT"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               _
             </p>
@@ -685,17 +685,17 @@ exports[` 3`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Max
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
                 cols=""
                 disabled={false}
                 id="input_right"
@@ -715,11 +715,11 @@ exports[` 3`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -730,11 +730,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+          fontSize="0.879em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Select Range
         </label>
@@ -752,11 +752,11 @@ exports[` 3`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Min
               </label>
@@ -873,11 +873,11 @@ exports[` 3`] = `
             className="Bar__Slot-icfo76-1 hsVbDT"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               _
             </p>
@@ -891,11 +891,11 @@ exports[` 3`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Max
               </label>
@@ -1010,11 +1010,11 @@ exports[` 3`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -1025,11 +1025,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+          fontSize="0.879em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Select Range with Selector Operator
         </label>
@@ -1047,11 +1047,11 @@ exports[` 3`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Min
               </label>
@@ -1290,11 +1290,11 @@ exports[` 3`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Max
               </label>
@@ -1409,11 +1409,11 @@ exports[` 3`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           This help text has been passed through a prop!
         </p>

@@ -44,19 +44,11 @@ Buttons communicate actions that users can take. They are typically placed throu
   <Story name="Style">
     <ButtonGroup columns="2">
       <Button label="Standard" />
-      <Button label="Disabled" disabled />
       <Button label="Solid" isSolid />
-      <Button label="Disabled" isSolid disabled />
       <Button label="Round" isRound />
-      <Button label="Disabled" isRound disabled />
       <Button label="Solid Round" isSolid isRound />
-      <Button label="Disabled" isSolid isRound disabled />
-      <Button label="Underlined" hasUnderline />
-      <Button label="Disabled" hasUnderline disabled />
       <Button label="Plain" isPlain />
-      <Button label="Disabled" isPlain disabled />
-      <Button label="Bookmark" icon="bookmark" isPlain />
-      <Button label="Disabled" icon="bookmark" isPlain disabled />
+      <Button label="Underlined" hasUnderline />
     </ButtonGroup>
   </Story>
 </Preview>
@@ -77,17 +69,19 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Variants">
-    <ButtonGroup>
-      <Button label="Standard" />
+    <ButtonGroup columns="2">
       <Button label="Info" variant="info" />
-      <Button label="Success" variant="success" />
-      <Button label="Warning" variant="warning" />
-      <Button label="Alert" variant="alert" />
-      <Button label="Standard" isSolid />
       <Button label="Solid Info" variant="info" isSolid />
+      <Button label="Success" variant="success" />
       <Button label="Solid Success" variant="success" isSolid />
+      <Button label="Warning" variant="warning" />
       <Button label="Solid Warning" variant="warning" isSolid />
+      <Button label="Alert" variant="alert" />
       <Button label="Solid Alert" variant="alert" isSolid />
+      <Button label="Neutral" variant="neutral" />
+      <Button label="Solid Neutral" variant="neutral" isSolid/>
+      <Button label="Disabled" disabled />
+      <Button label="Solid Disabled" disabled isSolid/>
     </ButtonGroup>
   </Story>
 </Preview>
@@ -98,41 +92,12 @@ Buttons communicate actions that users can take. They are typically placed throu
   <Story name="Icons">
     <ButtonGroup  columns="3">
       <Button label="Profile" icon="user" />
-      <Button label="Expand" icon="down" />
-      <Button label="Bookmark" icon="bookmark" />
-      <Button label="Add" icon="plus" />
-      <Button label="Print" icon="print" />
-    </ButtonGroup>
-  </Story>
-</Preview>
-
-### Vertical Icons
-
-<Preview>
-  <Story name="Vertical Icons">
-    <ButtonGroup columns="5">
       <Button label="Profile" icon="user" alignCenter />
-      <Button label="Expand" icon="down" alignCenter />
-      <Button label="Bookmark" icon="bookmark" alignCenter />
-      <Button label="Add" icon="plus" alignCenter />
-      <Button label="Print" icon="print" alignCenter/>
-    </ButtonGroup>
-  </Story>
-</Preview>
-
-### Icon-Only
-
-<Preview>
-  <Story name="Icon-Only">
-    <ButtonGroup columns="5">
-      <Button icon="user" />
-      <Button icon="down" />
-      <Button icon="bookmark" />
       <Button icon="plus" />
-      <Button icon="print" />
     </ButtonGroup>
   </Story>
 </Preview>
+
 
 ### Counts
 

@@ -35,7 +35,6 @@ storiesOf("Templates|Detail Page/", module)
             }
           >
             <Page>
-
               <Tabs>
                 <TabItem label="RFP Details" isSelected />
                 <TabItem label="Property Details" />

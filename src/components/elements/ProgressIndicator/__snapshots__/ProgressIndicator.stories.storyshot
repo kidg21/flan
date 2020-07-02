@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cIDgbj"
+  id={null}
+  rows={null}
+>
+  <div
+    className="ProgressIndicator__Container-sc-1kcvu29-1 fNGRuG"
+  >
+    <div
+      className="ProgressIndicator__BarItem-sc-1kcvu29-0 ieSnNJ"
+      id={null}
+      style={
+        Object {
+          "width": "42%",
+        }
+      }
+    />
+  </div>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+    fontSize="0.879em"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0.2px"
+  >
+    42%
+  </p>
+</section>
+`;

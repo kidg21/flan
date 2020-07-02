@@ -258,7 +258,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 coWMio"
+          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -285,11 +285,11 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Toggle
           </label>
@@ -299,7 +299,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -311,7 +311,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 gmZLNs"
+          className="Command__CommandContainer-sc-13akgtp-0 jSZvNZ"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -338,11 +338,11 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Toggle
           </label>
@@ -369,7 +369,7 @@ exports[` 5`] = `
         id="List Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
           id="List Panel_header"
         >
           <div
@@ -388,7 +388,7 @@ exports[` 5`] = `
                 className="Bar__Slot-icfo76-1 fNcQEg"
               >
                 <h5
-                  className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
                   fontSize="1.15em"
                   fontWeight={600}
                   letterSpacing="0px"
@@ -401,36 +401,52 @@ exports[` 5`] = `
               >
                 <a
                   className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                  id="ListHeader-Menu"
                   onClick={[Function]}
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                    color={null}
-                    data-icon="ellipsis-v"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="inherit"
+                  <button
+                    className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                    disabled={false}
+                    htmlFor={null}
                     id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 128 512"
-                    xmlns="http://www.w3.org/2000/svg"
+                    name={null}
+                    onClick={null}
+                    tabIndex="1"
+                    type="button"
                   >
-                    <path
-                      d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                      id={null}
+                      rows={null}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="ellipsis-v"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 128 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </section>
+                  </button>
                 </a>
               </div>
             </div>
           </div>
         </section>
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
           id="List Panel_body"
         >
           <ul
@@ -457,9 +473,9 @@ exports[` 5`] = `
                     onClick={[Function]}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                       fontSize="1em"
-                      fontWeight={600}
+                      fontWeight={400}
                       id={null}
                       letterSpacing="0px"
                     >
@@ -489,9 +505,9 @@ exports[` 5`] = `
                     onClick={[Function]}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                       fontSize="1em"
-                      fontWeight={600}
+                      fontWeight={400}
                       id={null}
                       letterSpacing="0px"
                     >
@@ -521,9 +537,9 @@ exports[` 5`] = `
                     onClick={[Function]}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                       fontSize="1em"
-                      fontWeight={600}
+                      fontWeight={400}
                       id={null}
                       letterSpacing="0px"
                     >
@@ -553,9 +569,9 @@ exports[` 5`] = `
                     onClick={[Function]}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                       fontSize="1em"
-                      fontWeight={600}
+                      fontWeight={400}
                       id={null}
                       letterSpacing="0px"
                     >
@@ -941,7 +957,7 @@ exports[` 5`] = `
         id="Info Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
           id="Info Panel_header"
         >
           <div
@@ -979,7 +995,7 @@ exports[` 5`] = `
                   className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 brBuoT"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 cMhgjp"
                     id={null}
                     onClick={null}
                   >
@@ -1009,7 +1025,7 @@ exports[` 5`] = `
                   className="Bar__Slot-icfo76-1 yvaBx"
                 >
                   <h5
-                    className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                    className="Typography__TitleText-sc-19auepv-2 hSytIY"
                     fontSize="1.15em"
                     fontWeight={600}
                     letterSpacing="0px"
@@ -1017,11 +1033,11 @@ exports[` 5`] = `
                     Best Place Ever
                   </h5>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                    fontSize="0.876em"
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
                     fontWeight={400}
                     id={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   >
                     I Could Tell You More, But...
                   </p>
@@ -1031,7 +1047,7 @@ exports[` 5`] = `
           </div>
         </section>
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
           id="Info Panel_body"
         >
           <section
@@ -1045,7 +1061,7 @@ exports[` 5`] = `
               rows={null}
             >
               <h5
-                className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                className="Typography__TitleText-sc-19auepv-2 PRpBC"
                 fontSize="1.15em"
                 fontWeight={400}
                 letterSpacing="0px"
@@ -1053,20 +1069,20 @@ exports[` 5`] = `
                 Section 1
               </h5>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
               </p>
@@ -1077,7 +1093,7 @@ exports[` 5`] = `
               rows={null}
             >
               <h5
-                className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                className="Typography__TitleText-sc-19auepv-2 PRpBC"
                 fontSize="1.15em"
                 fontWeight={400}
                 letterSpacing="0px"
@@ -1085,38 +1101,38 @@ exports[` 5`] = `
                 Section 1
               </h5>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
               </p>
@@ -1142,7 +1158,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -1154,7 +1170,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 coWMio"
+          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1181,11 +1197,11 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Toggle
           </label>
@@ -1225,7 +1241,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 coWMio"
+          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1252,11 +1268,11 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Toggle
           </label>
@@ -1266,7 +1282,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -1278,7 +1294,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 gmZLNs"
+          className="Command__CommandContainer-sc-13akgtp-0 jSZvNZ"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1305,11 +1321,11 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Toggle
           </label>
@@ -1336,7 +1352,7 @@ exports[` 6`] = `
         id="List Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
           id="List Panel_header"
         >
           <div
@@ -1355,7 +1371,7 @@ exports[` 6`] = `
                 className="Bar__Slot-icfo76-1 fNcQEg"
               >
                 <h5
-                  className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
                   fontSize="1.15em"
                   fontWeight={600}
                   letterSpacing="0px"
@@ -1368,36 +1384,52 @@ exports[` 6`] = `
               >
                 <a
                   className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                  id="ListHeader-Menu"
                   onClick={[Function]}
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                    color={null}
-                    data-icon="ellipsis-v"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="inherit"
+                  <button
+                    className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                    disabled={false}
+                    htmlFor={null}
                     id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 128 512"
-                    xmlns="http://www.w3.org/2000/svg"
+                    name={null}
+                    onClick={null}
+                    tabIndex="1"
+                    type="button"
                   >
-                    <path
-                      d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                      id={null}
+                      rows={null}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="ellipsis-v"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 128 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </section>
+                  </button>
                 </a>
               </div>
             </div>
           </div>
         </section>
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
           id="List Panel_body"
         >
           <ul
@@ -1424,9 +1456,9 @@ exports[` 6`] = `
                     onClick={[Function]}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                       fontSize="1em"
-                      fontWeight={600}
+                      fontWeight={400}
                       id={null}
                       letterSpacing="0px"
                     >
@@ -1456,9 +1488,9 @@ exports[` 6`] = `
                     onClick={[Function]}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                       fontSize="1em"
-                      fontWeight={600}
+                      fontWeight={400}
                       id={null}
                       letterSpacing="0px"
                     >
@@ -1488,9 +1520,9 @@ exports[` 6`] = `
                     onClick={[Function]}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                       fontSize="1em"
-                      fontWeight={600}
+                      fontWeight={400}
                       id={null}
                       letterSpacing="0px"
                     >
@@ -1520,9 +1552,9 @@ exports[` 6`] = `
                     onClick={[Function]}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                       fontSize="1em"
-                      fontWeight={600}
+                      fontWeight={400}
                       id={null}
                       letterSpacing="0px"
                     >
@@ -1908,7 +1940,7 @@ exports[` 6`] = `
         id="Info Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
           id="Info Panel_header"
         >
           <div
@@ -1946,7 +1978,7 @@ exports[` 6`] = `
                   className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 brBuoT"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 cMhgjp"
                     id={null}
                     onClick={null}
                   >
@@ -1976,7 +2008,7 @@ exports[` 6`] = `
                   className="Bar__Slot-icfo76-1 yvaBx"
                 >
                   <h5
-                    className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                    className="Typography__TitleText-sc-19auepv-2 hSytIY"
                     fontSize="1.15em"
                     fontWeight={600}
                     letterSpacing="0px"
@@ -1984,11 +2016,11 @@ exports[` 6`] = `
                     Best Place Ever
                   </h5>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                    fontSize="0.876em"
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
                     fontWeight={400}
                     id={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   >
                     I Could Tell You More, But...
                   </p>
@@ -1998,7 +2030,7 @@ exports[` 6`] = `
           </div>
         </section>
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
           id="Info Panel_body"
         >
           <section
@@ -2012,7 +2044,7 @@ exports[` 6`] = `
               rows={null}
             >
               <h5
-                className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                className="Typography__TitleText-sc-19auepv-2 PRpBC"
                 fontSize="1.15em"
                 fontWeight={400}
                 letterSpacing="0px"
@@ -2020,20 +2052,20 @@ exports[` 6`] = `
                 Section 1
               </h5>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
               </p>
@@ -2044,7 +2076,7 @@ exports[` 6`] = `
               rows={null}
             >
               <h5
-                className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                className="Typography__TitleText-sc-19auepv-2 PRpBC"
                 fontSize="1.15em"
                 fontWeight={400}
                 letterSpacing="0px"
@@ -2052,38 +2084,38 @@ exports[` 6`] = `
                 Section 1
               </h5>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
+                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                fontSize="0.879em"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
               </p>
@@ -2109,7 +2141,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -2121,7 +2153,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 coWMio"
+          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -2148,11 +2180,11 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Toggle
           </label>

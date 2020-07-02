@@ -24,7 +24,7 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -36,7 +36,7 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -48,7 +48,7 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -85,7 +85,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -97,7 +97,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -105,11 +105,11 @@ exports[` 2`] = `
           Towgood, Gary T.
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           3082 Yellowstone Dr. Costa Mesa, CA 92612
         </p>
@@ -118,7 +118,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -160,18 +160,18 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+            className="Command__CommandContainer-sc-13akgtp-0 jYxPQo"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+              fontSize="0.879em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Command
             </label>
@@ -181,7 +181,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
             fontSize="1em"
             fontWeight={400}
             letterSpacing="0px"
@@ -193,18 +193,18 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+            className="Command__CommandContainer-sc-13akgtp-0 jYxPQo"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+              fontSize="0.879em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Command
             </label>
@@ -228,18 +228,18 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 dCykyh"
+            className="Command__CommandContainer-sc-13akgtp-0 bMbVTs"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+              fontSize="0.879em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Command
             </label>
@@ -249,7 +249,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
             fontSize="1em"
             fontWeight={400}
             letterSpacing="0px"
@@ -261,18 +261,18 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 dCykyh"
+            className="Command__CommandContainer-sc-13akgtp-0 bMbVTs"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+              fontSize="0.879em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Command
             </label>
@@ -296,18 +296,18 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 kbqNtN"
+            className="Command__CommandContainer-sc-13akgtp-0 gvrdtg"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+              fontSize="0.879em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Command
             </label>
@@ -317,7 +317,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
             fontSize="1em"
             fontWeight={400}
             letterSpacing="0px"
@@ -325,11 +325,11 @@ exports[` 3`] = `
             Towgood, Gary T.
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             3082 Yellowstone Dr. Costa Mesa, CA 92612
           </p>
@@ -338,18 +338,18 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 kbqNtN"
+            className="Command__CommandContainer-sc-13akgtp-0 gvrdtg"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+              fontSize="0.879em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Command
             </label>
@@ -398,7 +398,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -418,7 +418,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -481,7 +481,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -501,7 +501,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -525,7 +525,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
             fontSize="1em"
             fontWeight={400}
             letterSpacing="0px"
@@ -562,7 +562,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -582,7 +582,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -620,7 +620,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
             fontSize="1em"
             fontWeight={400}
             letterSpacing="0px"
@@ -657,7 +657,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -677,7 +677,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -740,7 +740,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -760,7 +760,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -784,7 +784,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
             fontSize="1em"
             fontWeight={400}
             letterSpacing="0px"

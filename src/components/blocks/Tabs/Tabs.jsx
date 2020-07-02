@@ -13,14 +13,8 @@ const TabButton = styled(Button)`
 `;
 
 const TabsWrapper = styled.section`
-  display: grid;
-  grid-gap: 2px;
-  grid-template-columns: ${(props) => {
-    return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
-  }};
-  width: ${(props) => {
-    return props.setWidth || "100%";
-  }};
+  display: flex;
+  flex-direction: row;
 `;
 function TabItem({
   count, disabled, htmlFor, icon, id, isSelected, label, onClick,
@@ -39,6 +33,7 @@ function TabItem({
         isSelected={isSelected}
         label={label}
         onClick={onClick}
+        variant={isSelected ? "" : "neutral"}
         isPlain
         hasUnderline={isSelected ? true : null}
       />
