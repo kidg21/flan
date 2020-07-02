@@ -2,1305 +2,161 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 kKZdIA"
-        color="lightBoxNavy"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        lightBoxNavy
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 bJNcJB"
+    color="navy"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 iYuTOh"
-        color="lightBoxCyan"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        lightBoxCyan
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 eKIRAB"
+    color="sky"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 byZfsD"
-        color="lightBoxGold"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        lightBoxGold
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 ghTBs"
-        color="lightBoxGrey"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        lightBoxGrey
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 dHoBKo"
-        color="softGrey"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        softGrey
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 jkbZOB"
-        color="softBlue"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        softBlue
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 jUKifb"
-        color="moss"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        moss
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 chHcJW"
-        color="robinBlue"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        robinBlue
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 kqoiTJ"
-        color="seafoam"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        seafoam
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 dUzwBW"
-        color="blueSteel"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        blueSteel
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 edwPCD"
-        color="tangerine"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        tangerine
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 jbekXy"
-        color="lemon"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        lemon
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 YEMMN"
+    color="gold"
+  />
 </section>
 `;
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 kXhmUB"
-        color="action20"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        action20
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 duAJhy"
+    color="grey"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 gfaEXj"
-        color="action40"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        action40
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 hQliAj"
+    color="seafoam"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 kCekuf"
-        color="action60"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        action60
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 fcBUAx"
+    color="whirlpool"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 kkuKhZ"
-        color="action80"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        action80
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 hdwpfI"
+    color="aqua"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 kHjOQK"
-        color="action100"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        action100
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 jgYxRr"
+    color="teal"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 hDviKM"
+    color="royal"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 lkAVmh"
+    color="orange"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 cimsUE"
+    color="yellow"
+  />
 </section>
 `;
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 cfSzhC"
-        color="info20"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        info20
-      </p>
-    </div>
-  </div>
+    className="Colors__ThemeColorBlockColor-x3fy5-0 hZQsPZ"
+    color="action40"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 clOAYY"
-        color="info40"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        info40
-      </p>
-    </div>
-  </div>
+    className="Colors__ThemeColorBlockColor-x3fy5-0 gUmLdJ"
+    color="action60"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 cvOJXM"
-        color="info60"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        info60
-      </p>
-    </div>
-  </div>
+    className="Colors__ThemeColorBlockColor-x3fy5-0 eQHnhP"
+    color="action80"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 bNlFAm"
-        color="info80"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        info80
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 fcRxKt"
-        color="info100"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        info100
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 JnpQZ"
-        color="success20"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        success20
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 DPmmq"
-        color="success40"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        success40
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 cUntmu"
-        color="success60"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        success60
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 ikKabO"
-        color="success80"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        success80
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 dNzMYM"
-        color="success100"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        success100
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 dkjXh"
-        color="warning20"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        warning20
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 dhCAQe"
-        color="warning40"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        warning40
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 EWubQ"
-        color="warning60"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        warning60
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 eujOEu"
-        color="warning80"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        warning80
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 ecickk"
-        color="warning100"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        warning100
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 jcLISl"
-        color="alert20"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        alert20
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 ghtVwO"
-        color="alert40"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        alert40
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 cJBCy"
-        color="alert60"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        alert60
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 dQPoYv"
-        color="alert80"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        alert80
-      </p>
-    </div>
-  </div>
-  <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ThemeColorBlockColor-x3fy5-0 dmhBfS"
-        color="alert100"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        alert100
-      </p>
-    </div>
-  </div>
+    className="Colors__ThemeColorBlockColor-x3fy5-0 fYlNZk"
+    color="action100"
+  />
 </section>
 `;
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 fuVHoE"
-        color="grey10"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey10
-      </p>
-    </div>
-  </div>
+    className="Colors__ThemeColorBlockColor-x3fy5-0 jfSWOE"
+    color="info80"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 fGzcih"
-        color="grey20"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey20
-      </p>
-    </div>
-  </div>
+    className="Colors__ThemeColorBlockColor-x3fy5-0 kIxPYU"
+    color="success80"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 UrXZg"
-        color="grey30"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey30
-      </p>
-    </div>
-  </div>
+    className="Colors__ThemeColorBlockColor-x3fy5-0 diWZew"
+    color="warning80"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 hrXvTF"
-        color="grey40"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey40
-      </p>
-    </div>
-  </div>
+    className="Colors__ThemeColorBlockColor-x3fy5-0 fKlBJB"
+    color="alert80"
+  />
+</section>
+`;
+
+exports[` 5`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
+  id={null}
+  rows={null}
+>
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 hLJRFJ"
-        color="grey50"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey50
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 dJfgEe"
+    color="grey10"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 gZfMvq"
-        color="grey60"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey60
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 bBGgun"
+    color="grey20"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 gIosIn"
-        color="grey70"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey70
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 kqPtPe"
+    color="grey30"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 bLnGbi"
-        color="grey80"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey80
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 kRCMhD"
+    color="grey40"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 jeSDIC"
-        color="grey90"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey90
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 izUwDH"
+    color="grey50"
+  />
   <div
-    className="Bar__BarLayout-icfo76-2 izXrkl"
-    id={null}
-    onClick={null}
-  >
-    <div
-      className="Bar__Slot-icfo76-1 bOQKbQ"
-    >
-      <div
-        className="Colors__ColorBlockColor-x3fy5-1 bsunHe"
-        color="grey100"
-      />
-    </div>
-    <div
-      className="Bar__Slot-icfo76-1 yvaBx"
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.2px"
-      >
-        grey100
-      </p>
-    </div>
-  </div>
+    className="Colors__ColorBlockColor-x3fy5-1 gTHyAg"
+    color="grey60"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 jSAiJt"
+    color="grey70"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 tMGag"
+    color="grey80"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 fAclCo"
+    color="grey90"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 gzyZqc"
+    color="grey100"
+  />
 </section>
 `;

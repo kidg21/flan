@@ -75,18 +75,17 @@ export const colors = {
   grey90: "hsl(240, 2%, 18%)",
   grey100: "hsl(34, 5%, 12%)", // blackish
 
-  lightBoxNavy: "hsl(216.6, 72%, 21%)",
-  lightBoxCyan: "hsl(197, 100%, 44%)",
-  lightBoxGold: "hsl(46, 64.2%, 52.9%)",
-  lightBoxGrey: "hsl(200, 2.6%, 77.1%)",
-  softGrey: "hsl(270, 5%, 92.2%)",
-  softBlue: "hsl(180, 33.3%, 88.8%)",
-  moss: "hsl(197, 12.9%, 55.9%)",
-  robinBlue: "hsl(196, 51.5%, 59.6%)",
-  seafoam: "hsl(179, 93.4%, 35.9%)",
-  blueSteel: "hsl(207, 88.5%, 30.6%)",
-  tangerine: "hsl(26, 89.3%, 56.1%)",
-  lemon: "hsl(45, 100%, 50%)",
+  navy: "hsl(207,100%,19.6%)",
+  sky: "hsl(197,100%,43.7%)",
+  gold: "hsl(38.7,68.3%,50.6%)",
+  grey: "hsl(270, 5%, 92.2%)",
+  seafoam: "hsl(180, 33.3%, 88.8%)",
+  whirlpool: "hsl(197, 12.9%, 55.9%)",
+  aqua: "hsl(196, 51.5%, 59.6%)",
+  teal: "hsl(179, 93.4%, 35.9%)",
+  royal: "hsl(207, 88.5%, 30.6%)",
+  orange: "hsl(26, 89.3%, 56.1%)",
+  yellow: "hsl(45, 100%, 50%)",
 };
 
 export const interaction = {
@@ -97,14 +96,14 @@ export const interaction = {
 
 // need to have hex key to work with old draw tools
 export const drawPalette = {
-  "#EBEAEC": colors.softGrey,
-  "#D9ECEC": colors.softBlue,
-  "#80959D": colors.moss,
-  "#63B1CD": colors.robinBlue,
-  "#06BFAE": colors.seafoam,
-  "#095593": colors.blueSteel,
-  "#F3822B": colors.tangerine,
-  "#FFBF00": colors.lemon,
+  "#EBEAEC": colors.grey,
+  "#D9ECEC": colors.seafoam,
+  "#80959D": colors.whirlpool,
+  "#63B1CD": colors.aqua,
+  "#06BFAE": colors.teal,
+  "#095593": colors.royal,
+  "#F3822B": colors.orange,
+  "#FFBF00": colors.yellow,
 };
 
 export const shadows = {
@@ -197,14 +196,14 @@ export const DMPTheme = {
   shadows: shadows,
   swatches: drawPalette,
   palette: {
-    research: colors.lemon,
-    jobs: colors.seafoam,
-    bi: colors.robinBlue,
-    broker: colors.blueSteel,
-    brand1: colors.moss,
-    brand2: colors.tangerine,
-    brand3: colors.softGrey,
-    brand4: colors.softBlue,
+    research: colors.yellow,
+    jobs: colors.teal,
+    bi: colors.aqua,
+    broker: colors.royal,
+    brand1: colors.whirlpool,
+    brand2: colors.orange,
+    brand3: colors.grey,
+    brand4: colors.seafoam,
     action20: colors.navy20,
     action40: colors.navy40,
     action60: colors.navy60,

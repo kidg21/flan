@@ -11,10 +11,6 @@ const ThemeColorBlockColor = styled.div`
   border-radius: 100px;
   height: 5em;
   margin: 5px;
-  border: 1px solid
-    ${(props) => {
-    return props.theme.palette.neutral80;
-  }};
 
   background-color: ${(props) => {
     return props.theme.palette[props.color] || "";
@@ -35,10 +31,6 @@ const ColorBlockColor = styled.div`
   border-radius: 100px;
   height: 5em;
   margin: 5px;
-  border: 1px solid
-    ${(props) => {
-    return props.theme.palette.neutral80;
-  }};
 
   background-color: ${(props) => {
     return colors[props.color];
@@ -55,18 +47,7 @@ const ColorBlockColor = styled.div`
 
 function ThemeColors({ color }) {
   return (
-    <Bar
-      padding="0"
-      contentAlign="center"
-      left={{
-        content: <ThemeColorBlockColor color={color} />,
-        width: "min-content",
-      }}
-      center={{
-        content: <Title text={color} />,
-        align: "left",
-      }}
-    />
+    <ThemeColorBlockColor color={color} />
   );
 }
 ThemeColors.propTypes = {
@@ -78,17 +59,7 @@ ThemeColors.defaultProps = {
 
 function Colors({ color }) {
   return (
-    <Bar
-      contentAlign="center"
-      left={{
-        content: <ColorBlockColor color={color} />,
-        width: "min-content",
-      }}
-      center={{
-        content: <Title text={color} />,
-        align: "left",
-      }}
-    />
+    <ColorBlockColor color={color} />
   );
 }
 Colors.propTypes = {
