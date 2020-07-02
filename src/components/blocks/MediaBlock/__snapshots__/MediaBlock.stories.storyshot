@@ -27,7 +27,7 @@ exports[` 1`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        className="Typography__TitleText-sc-19auepv-2 hSytIY"
         fontSize="1.15em"
         fontWeight={600}
         letterSpacing="0px"
@@ -35,11 +35,11 @@ exports[` 1`] = `
         Media Block
       </h5>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-        fontSize="0.876em"
+        className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+        fontSize="0.879em"
         fontWeight={300}
         id={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
       </p>
@@ -76,7 +76,7 @@ exports[` 2`] = `
     >
       <div>
         <h5
-          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+          className="Typography__TitleText-sc-19auepv-2 hSytIY"
           fontSize="1.15em"
           fontWeight={600}
           letterSpacing="0px"
@@ -84,11 +84,11 @@ exports[` 2`] = `
           Media Block
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+          fontSize="0.879em"
           fontWeight={300}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
         </p>
@@ -117,7 +117,7 @@ exports[` 2`] = `
     >
       <div>
         <h5
-          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+          className="Typography__TitleText-sc-19auepv-2 hSytIY"
           fontSize="1.15em"
           fontWeight={600}
           letterSpacing="0px"
@@ -125,11 +125,11 @@ exports[` 2`] = `
           Media Block (isReversed)
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+          fontSize="0.879em"
           fontWeight={300}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
         </p>
@@ -158,7 +158,7 @@ exports[` 2`] = `
     >
       <div>
         <h5
-          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+          className="Typography__TitleText-sc-19auepv-2 hSytIY"
           fontSize="1.15em"
           fontWeight={600}
           letterSpacing="0px"
@@ -166,11 +166,11 @@ exports[` 2`] = `
           Media Block - Vertical
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+          fontSize="0.879em"
           fontWeight={300}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
         </p>
@@ -199,7 +199,7 @@ exports[` 2`] = `
     >
       <div>
         <h5
-          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+          className="Typography__TitleText-sc-19auepv-2 hSytIY"
           fontSize="1.15em"
           fontWeight={600}
           letterSpacing="0px"
@@ -207,11 +207,11 @@ exports[` 2`] = `
           Media Block - Vertical (isReversed)
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+          fontSize="0.879em"
           fontWeight={300}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
         </p>
@@ -240,7 +240,7 @@ exports[` 2`] = `
     >
       <div>
         <h5
-          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+          className="Typography__TitleText-sc-19auepv-2 hSytIY"
           fontSize="1.15em"
           fontWeight={600}
           letterSpacing="0px"
@@ -248,11 +248,11 @@ exports[` 2`] = `
           Media Block - Inline
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+          fontSize="0.879em"
           fontWeight={300}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
         </p>
@@ -281,7 +281,7 @@ exports[` 2`] = `
     >
       <div>
         <h5
-          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+          className="Typography__TitleText-sc-19auepv-2 hSytIY"
           fontSize="1.15em"
           fontWeight={600}
           letterSpacing="0px"
@@ -289,11 +289,11 @@ exports[` 2`] = `
           Media Block - Inline (isReversed)
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+          fontSize="0.879em"
           fontWeight={300}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
         </p>

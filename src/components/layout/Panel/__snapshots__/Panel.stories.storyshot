@@ -14,7 +14,7 @@ exports[` 1`] = `
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
       id={null}
     />
   </div>
@@ -35,7 +35,7 @@ exports[` 2`] = `
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
       id={null}
     >
       <div
@@ -47,11 +47,11 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Header
           </p>
@@ -59,7 +59,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
       id={null}
     />
   </div>
@@ -80,11 +80,11 @@ exports[` 3`] = `
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
       id={null}
     >
       <div
@@ -96,11 +96,11 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Footer
           </p>
@@ -125,7 +125,7 @@ exports[` 4`] = `
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
       id={null}
     >
       <div
@@ -137,11 +137,11 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Header
           </p>
@@ -149,11 +149,11 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
       id={null}
     >
       <div
@@ -165,11 +165,11 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Footer
           </p>
@@ -194,7 +194,7 @@ exports[` 5`] = `
     id="Panel"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
       id="Panel_header"
     >
       <div
@@ -206,11 +206,11 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Header
           </p>
@@ -218,7 +218,7 @@ exports[` 5`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
       id="Panel_body"
     >
       <section
@@ -278,7 +278,7 @@ exports[` 5`] = `
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
       id="Panel_footer"
     >
       <div
@@ -290,11 +290,11 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Footer
           </p>
@@ -319,7 +319,7 @@ exports[` 6`] = `
     id="Panel"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
       id="Panel_header"
     >
       <div
@@ -331,11 +331,11 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Header
           </p>
@@ -343,7 +343,7 @@ exports[` 6`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
       id="Panel_body"
     >
       <section
@@ -351,13 +351,6 @@ exports[` 6`] = `
         id={null}
         rows={null}
       >
-        <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
-          href={null}
-          id="storyshots_116"
-          media={null}
-          onClick={null}
-        />
         <div
           className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
           href={null}
@@ -400,10 +393,17 @@ exports[` 6`] = `
           media={null}
           onClick={null}
         />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          href={null}
+          id="storyshots_123"
+          media={null}
+          onClick={null}
+        />
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
       id="Panel_footer"
     >
       <div
@@ -415,11 +415,11 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Footer
           </p>
