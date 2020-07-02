@@ -173,6 +173,8 @@ const Close = styled.section`
   }
 `;
 
+const animationId = "animation";
+
 function Modal({
   align,
   animationDuration,
@@ -196,7 +198,7 @@ function Modal({
 
   if (text && !media) {
     modalContent = (
-      <ContentWrapper onClick={onClick}>
+      <ContentWrapper id={animationId} onClick={onClick}>
         <Card description={text} shadow="2x" />
       </ContentWrapper>
     );
@@ -205,7 +207,7 @@ function Modal({
     justifyContent = "center";
     modalContent = (
       <Fragment>
-        <Image src={media} onClick={onClick} />
+        <Image id={animationId} src={media} onClick={onClick} />
         <Close onClick={onClose}>
           <Icon icon="close" variant="inverse" size="lg" fixedWidth />
         </Close>
@@ -213,7 +215,7 @@ function Modal({
     );
   } else {
     justifyContent = "center";
-    modalContent = (<ContentWrapper>{children}</ContentWrapper>);
+    modalContent = (<ContentWrapper id={animationId}>{children}</ContentWrapper>);
   }
 
   switch (align) {
@@ -256,7 +258,8 @@ function Modal({
   const endAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
-    if (e.target.id === uId) {
+    // id matches the ContentWrapper or Image which is animationId
+    if (e.target.id === animationId) {
       // animation completed, update internal visible state
       setState((oldState) => {
         return {
@@ -271,7 +274,8 @@ function Modal({
   const startAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
-    if (e.target.id === uId) {
+    // id matches the ContentWrapper or Image which is animationId
+    if (e.target.id === animationId) {
       if (onAnimationStart) onAnimationStart(e);
     }
   }, [onAnimationStart]);
@@ -333,7 +337,7 @@ Modal.defaultProps = {
   ariaDescribedBy: null,
   ariaLabelledBy: null,
   children: null,
-  id: "", // must be string, for id comparision
+  id: "",
   media: null,
   hasBackdrop: true,
   onAnimationStart: null,
