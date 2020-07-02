@@ -17,7 +17,7 @@ const TabsWrapper = styled.section`
   flex-direction: row;
 `;
 function TabItem({
-  count, disabled, htmlFor, icon, id, isSelected, label, onClick,
+  alignCenter, count, disabled, htmlFor, icon, id, isSelected, label, onClick,
 }) {
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -36,6 +36,7 @@ function TabItem({
         variant={isSelected ? "" : "neutral"}
         isPlain
         hasUnderline={isSelected ? true : null}
+        alignCenter={alignCenter}
       />
     </React.Fragment>
   );
@@ -83,6 +84,7 @@ function Tabs({
 }
 
 TabItem.propTypes = {
+  alignCenter: PropTypes.bool,
   count: PropTypes.string,
   disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   htmlFor: PropTypes.string,
@@ -93,6 +95,7 @@ TabItem.propTypes = {
   onClick: PropTypes.func,
 };
 TabItem.defaultProps = {
+  alignCenter: false,
   count: null,
   disabled: null,
   htmlFor: null,
