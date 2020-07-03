@@ -198,7 +198,7 @@ function Modal({
 
   if (text && !media) {
     modalContent = (
-      <ContentWrapper id={animationId} onClick={onClick}>
+      <ContentWrapper id={`${uId}-${animationId}`} onClick={onClick}>
         <Card description={text} shadow="2x" />
       </ContentWrapper>
     );
@@ -207,7 +207,7 @@ function Modal({
     justifyContent = "center";
     modalContent = (
       <Fragment>
-        <Image id={animationId} src={media} onClick={onClick} />
+        <Image id={`${uId}-${animationId}`} src={media} onClick={onClick} />
         <Close onClick={onClose}>
           <Icon icon="close" variant="inverse" size="lg" fixedWidth />
         </Close>
@@ -215,7 +215,7 @@ function Modal({
     );
   } else {
     justifyContent = "center";
-    modalContent = (<ContentWrapper id={animationId}>{children}</ContentWrapper>);
+    modalContent = (<ContentWrapper id={`${uId}-${animationId}`}>{children}</ContentWrapper>);
   }
 
   switch (align) {
@@ -259,7 +259,7 @@ function Modal({
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
     // id matches the ContentWrapper or Image which is animationId
-    if (e.target.id === animationId) {
+    if (e.target.id === `${uId}-${animationId}`) {
       // animation completed, update internal visible state
       setState((oldState) => {
         return {
@@ -275,7 +275,7 @@ function Modal({
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
     // id matches the ContentWrapper or Image which is animationId
-    if (e.target.id === animationId) {
+    if (e.target.id === `${uId}-${animationId}`) {
       if (onAnimationStart) onAnimationStart(e);
     }
   }, [onAnimationStart]);
