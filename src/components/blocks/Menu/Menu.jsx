@@ -4,6 +4,7 @@
 import React, { useState, useMemo, useRef } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
+import Button from "atoms/Button";
 import styled from "styled-components";
 import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
@@ -241,7 +242,7 @@ function getCssPosition(position) {
  * Main Menu Component
  */
 function Menu({
-  id, data, icon, visible, onClick, position,
+  id, data, icon, visible, onClick, isButton, position,
 }) {
   let visibility = visible;
   let setVisibility = onClick;
@@ -258,8 +259,8 @@ function Menu({
   return (
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
-      <MenuContainer id={uId} onClick={toggleVisibility}>
-        <Icon icon={icon} />
+      <MenuContainer onClick={toggleVisibility}>
+        { isButton ? <Button icon={icon} isPlain isRound /> : <Icon icon={icon} />}
         {visibility ? (
           <MenuComponent
             data={data}
@@ -276,6 +277,7 @@ function Menu({
 Menu.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object),
   icon: PropTypes.string,
+  isButton: PropTypes.bool,
   id: PropTypes.string,
   onClick: PropTypes.func,
   position: PropTypes.oneOf([
@@ -293,6 +295,7 @@ Menu.propTypes = {
 Menu.defaultProps = {
   data: null,
   icon: "options",
+  isButton: true,
   id: null,
   onClick: null,
   position: "default",

@@ -23,7 +23,7 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          className="Typography__TitleText-sc-19auepv-2 diCApD"
           fontSize="1.25em"
           fontWeight={600}
           letterSpacing="0px"
@@ -40,32 +40,48 @@ exports[` 1`] = `
         />
         <a
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-          id="Menu_Standard"
           onClick={[Function]}
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="ellipsis-v"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            disabled={false}
+            htmlFor={null}
             id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 128 512"
-            xmlns="http://www.w3.org/2000/svg"
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
           >
-            <path
-              d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+              id={null}
+              rows={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="ellipsis-v"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 128 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </section>
+          </button>
           <div
             className="Menu__MenuPopper-sc-17iwn6x-3 hMueFt"
-            id="menupopper-Menu_Standard"
+            id="menupopper-storyshots_91"
             onClick={null}
             onMouseLeave={[Function]}
             transform="translate(-100%, -5%)"
@@ -73,53 +89,14 @@ exports[` 1`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_95"
+              id="storyshots_96"
               media=""
               onClick={null}
             >
               <ul
                 className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
-                id="listwrapper-Menu_Standard"
+                id="listwrapper-storyshots_91"
               >
-                <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
-                  id="item-storyshots_91"
-                  onClick={[Function]}
-                  onMouseOver={[Function]}
-                >
-                  <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
-                    disabled={false}
-                    href={null}
-                    id={null}
-                    tabIndex="0"
-                  >
-                    <div
-                      className="Bar__BarLayout-icfo76-2 eUVQsH"
-                      id={null}
-                      onClick={null}
-                    >
-                      <div
-                        className="Bar__Slot-icfo76-1 RjiBe"
-                      >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
-                        >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                            fontSize="1em"
-                            fontWeight={600}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
-                      </div>
-                    </div>
-                  </section>
-                </li>
                 <li
                   className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
                   id="item-storyshots_92"
@@ -146,13 +123,13 @@ exports[` 1`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
-                            Filter
+                            Save
                           </p>
                         </a>
                       </div>
@@ -185,13 +162,13 @@ exports[` 1`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
-                            Share
+                            Filter
                           </p>
                         </a>
                       </div>
@@ -224,9 +201,48 @@ exports[` 1`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
+                            id={null}
+                            letterSpacing="0px"
+                          >
+                            Share
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                </li>
+                <li
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  id="item-storyshots_95"
+                  onClick={[Function]}
+                  onMouseOver={[Function]}
+                >
+                  <section
+                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    disabled={false}
+                    href={null}
+                    id={null}
+                    tabIndex="0"
+                  >
+                    <div
+                      className="Bar__BarLayout-icfo76-2 eUVQsH"
+                      id={null}
+                      onClick={null}
+                    >
+                      <div
+                        className="Bar__Slot-icfo76-1 RjiBe"
+                      >
+                        <a
+                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                            fontSize="1em"
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -290,7 +306,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          className="Typography__TitleText-sc-19auepv-2 diCApD"
           fontSize="1.25em"
           fontWeight={600}
           letterSpacing="0px"
@@ -307,29 +323,45 @@ exports[` 2`] = `
         />
         <a
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-          id="Menu_Icon"
           onClick={[Function]}
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="ellipsis-v"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            disabled={false}
+            htmlFor={null}
             id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 128 512"
-            xmlns="http://www.w3.org/2000/svg"
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
           >
-            <path
-              d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+              id={null}
+              rows={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="ellipsis-v"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 128 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </section>
+          </button>
           <div
             className="Menu__MenuPopper-sc-17iwn6x-3 hMueFt"
             id="menupopper-Menu_Icon"
@@ -340,7 +372,7 @@ exports[` 2`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_96"
+              id="storyshots_97"
               media=""
               onClick={null}
             >
@@ -398,9 +430,9 @@ exports[` 2`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -461,9 +493,9 @@ exports[` 2`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -524,9 +556,9 @@ exports[` 2`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -587,9 +619,9 @@ exports[` 2`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -652,7 +684,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          className="Typography__TitleText-sc-19auepv-2 diCApD"
           fontSize="1.25em"
           fontWeight={600}
           letterSpacing="0px"
@@ -669,29 +701,45 @@ exports[` 3`] = `
         />
         <a
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-          id="Menu_Position_BottomLeft"
           onClick={[Function]}
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="ellipsis-v"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            disabled={false}
+            htmlFor={null}
             id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 128 512"
-            xmlns="http://www.w3.org/2000/svg"
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
           >
-            <path
-              d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+              id={null}
+              rows={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="ellipsis-v"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 128 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </section>
+          </button>
           <div
             className="Menu__MenuPopper-sc-17iwn6x-3 hMueFt"
             id="menupopper-Menu_Position_BottomLeft"
@@ -702,7 +750,7 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_97"
+              id="storyshots_98"
               media=""
               onClick={null}
             >
@@ -736,9 +784,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -775,9 +823,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -814,9 +862,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -853,9 +901,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -913,29 +961,45 @@ exports[` 3`] = `
         />
         <a
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-          id="Menu_Position_BottomRight"
           onClick={[Function]}
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="ellipsis-v"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            disabled={false}
+            htmlFor={null}
             id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 128 512"
-            xmlns="http://www.w3.org/2000/svg"
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
           >
-            <path
-              d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+              id={null}
+              rows={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="ellipsis-v"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 128 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </section>
+          </button>
           <div
             className="Menu__MenuPopper-sc-17iwn6x-3 jKxsWq"
             id="menupopper-Menu_Position_BottomRight"
@@ -946,7 +1010,7 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_98"
+              id="storyshots_99"
               media=""
               onClick={null}
             >
@@ -980,9 +1044,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -1019,9 +1083,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -1058,9 +1122,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -1097,9 +1161,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -1119,7 +1183,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          className="Typography__TitleText-sc-19auepv-2 diCApD"
           fontSize="1.25em"
           fontWeight={600}
           letterSpacing="0px"
@@ -1183,7 +1247,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          className="Typography__TitleText-sc-19auepv-2 diCApD"
           fontSize="1.25em"
           fontWeight={600}
           letterSpacing="0px"
@@ -1200,29 +1264,45 @@ exports[` 3`] = `
         />
         <a
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-          id="Menu_Position_TopLeft"
           onClick={[Function]}
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="ellipsis-v"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            disabled={false}
+            htmlFor={null}
             id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 128 512"
-            xmlns="http://www.w3.org/2000/svg"
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
           >
-            <path
-              d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+              id={null}
+              rows={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="ellipsis-v"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 128 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </section>
+          </button>
           <div
             className="Menu__MenuPopper-sc-17iwn6x-3 bQmxWk"
             id="menupopper-Menu_Position_TopLeft"
@@ -1233,7 +1313,7 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_99"
+              id="storyshots_100"
               media=""
               onClick={null}
             >
@@ -1267,9 +1347,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -1306,9 +1386,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -1345,9 +1425,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >
@@ -1384,9 +1464,9 @@ exports[` 3`] = `
                           onClick={[Function]}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                             fontSize="1em"
-                            fontWeight={600}
+                            fontWeight={400}
                             id={null}
                             letterSpacing="0px"
                           >

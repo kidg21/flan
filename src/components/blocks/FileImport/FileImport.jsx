@@ -25,7 +25,7 @@ flex: auto;
 box-sizing: border-box;
 z-index: 0;
 border-color: ${(props) => {
-    return props.theme.palette[props.fontColor] || props.theme.palette.info80;
+    return props.theme.palette[props.fontColor] || props.theme.palette.action80;
   }};
 border: 1px solid;
 border-radius: 5px;
@@ -38,7 +38,7 @@ padding: 0em 0.75em;
 color: inherit;
 margin: 0;
 color: ${(props) => {
-    return props.theme.palette[props.fontColor] || props.theme.palette.info80;
+    return props.theme.palette[props.fontColor] || props.theme.palette.action80;
   }};
 font-family: ${(props) => { return props.theme.typography.primary; }};
 user-select: none;

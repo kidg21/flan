@@ -65,6 +65,14 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     );
   }};
   }
+  &:after {
+    content: '✔';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 10px;
+    color: white;
+  }
   &:focus {
     outline-color: ${(props) => {
     return (

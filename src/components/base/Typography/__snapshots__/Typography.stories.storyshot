@@ -7,11 +7,11 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 iujdLY"
-    fontSize="0.65em"
+    className="Typography__StyledLabel-sc-19auepv-0 jzhkTB"
+    fontSize="0.68em"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.6px"
+    letterSpacing="1px"
   >
     Label
   </label>
@@ -36,7 +36,7 @@ exports[` 1`] = `
     Text
   </p>
   <h3
-    className="Typography__TitleText-sc-19auepv-2 kRKrfk"
+    className="Typography__TitleText-sc-19auepv-2 iSdWhJ"
     fontSize="1.45em"
     fontWeight={600}
     letterSpacing="0px"
@@ -67,20 +67,20 @@ exports[` 2`] = `
       XSmall Text
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 CcLky"
+      className="Typography__Paragraph-sc-19auepv-3 BMTkE"
       fontSize="0.75em"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Small Text
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Normal Text
     </p>
@@ -100,7 +100,7 @@ exports[` 2`] = `
     rows={null}
   >
     <h6
-      className="Typography__TitleText-sc-19auepv-2 exoZGd"
+      className="Typography__TitleText-sc-19auepv-2 gDyDyY"
       fontSize="1em"
       fontWeight={400}
       letterSpacing="0px"
@@ -108,7 +108,7 @@ exports[` 2`] = `
       Normal Title
     </h6>
     <h5
-      className="Typography__TitleText-sc-19auepv-2 KxMwb"
+      className="Typography__TitleText-sc-19auepv-2 PRpBC"
       fontSize="1.15em"
       fontWeight={400}
       letterSpacing="0px"
@@ -116,7 +116,7 @@ exports[` 2`] = `
       Large Title
     </h5>
     <h4
-      className="Typography__TitleText-sc-19auepv-2 dzzrvg"
+      className="Typography__TitleText-sc-19auepv-2 kljEwZ"
       fontSize="1.25em"
       fontWeight={400}
       letterSpacing="0px"
@@ -124,7 +124,7 @@ exports[` 2`] = `
       XLarge Title
     </h4>
     <h3
-      className="Typography__TitleText-sc-19auepv-2 jRFrlq"
+      className="Typography__TitleText-sc-19auepv-2 bPwSan"
       fontSize="1.45em"
       fontWeight={400}
       letterSpacing="0px"
@@ -132,7 +132,7 @@ exports[` 2`] = `
       2XLarge Title
     </h3>
     <h2
-      className="Typography__TitleText-sc-19auepv-2 ilKhpI"
+      className="Typography__TitleText-sc-19auepv-2 bFxbmp"
       fontSize="1.65em"
       fontWeight={400}
       letterSpacing="0px"
@@ -140,7 +140,7 @@ exports[` 2`] = `
       3XLarge Title
     </h2>
     <h1
-      className="Typography__TitleText-sc-19auepv-2 dHsQDS"
+      className="Typography__TitleText-sc-19auepv-2 jZyddv"
       fontSize="2em"
       fontWeight={400}
       letterSpacing="0px"
@@ -154,11 +154,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 iujdLY"
-      fontSize="0.65em"
+      className="Typography__StyledLabel-sc-19auepv-0 jzhkTB"
+      fontSize="0.68em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.6px"
+      letterSpacing="1px"
     >
       XSmall Label
     </label>
@@ -172,11 +172,11 @@ exports[` 2`] = `
       Small Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Normal Label
     </label>
@@ -255,29 +255,29 @@ exports[` 3`] = `
     rows={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+      fontSize="0.879em"
       fontWeight={300}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Light Text
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Regular Text
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 kwdraL"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 bxdsLc"
+      fontSize="0.879em"
       fontWeight={600}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Bold Text
     </p>
@@ -288,7 +288,7 @@ exports[` 3`] = `
     rows={null}
   >
     <h6
-      className="Typography__TitleText-sc-19auepv-2 kXbqvW"
+      className="Typography__TitleText-sc-19auepv-2 erbTlz"
       fontSize="1em"
       fontWeight={300}
       letterSpacing="0px"
@@ -296,7 +296,7 @@ exports[` 3`] = `
       Light Title
     </h6>
     <h6
-      className="Typography__TitleText-sc-19auepv-2 exoZGd"
+      className="Typography__TitleText-sc-19auepv-2 gDyDyY"
       fontSize="1em"
       fontWeight={400}
       letterSpacing="0px"
@@ -304,7 +304,7 @@ exports[` 3`] = `
       Regular Title
     </h6>
     <h6
-      className="Typography__TitleText-sc-19auepv-2 cLteVL"
+      className="Typography__TitleText-sc-19auepv-2 fnUHAi"
       fontSize="1em"
       fontWeight={600}
       letterSpacing="0px"
@@ -318,29 +318,29 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eumQgn"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 gzGhsl"
+      fontSize="0.879em"
       fontWeight={300}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Light Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Regular Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+      fontSize="0.879em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Bold Label
     </label>

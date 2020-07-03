@@ -7,13 +7,15 @@ import Button from "atoms/Button";
 // Knob Values
 const knobGroups = ["Button"];
 const buttonLabel = "Button Label";
-const buttonVariants = [
-  "action",
-  "info",
-  "success",
-  "warning",
-  "alert",
-];
+const buttonVariants = {
+  default: null,
+  neutral: "neutral",
+  action: "action",
+  info: "info",
+  success: "success",
+  warning: "warning",
+  alert: "alert",
+};
 const buttonIcons = ["", "user", "down", "bookmark", "plus", "print"];
 
 export default {
@@ -28,7 +30,7 @@ export default {
 
 export const Knobs = () => {
   const label = text("label", buttonLabel, knobGroups[0]);
-  const variant = select("variant", buttonVariants, buttonVariants[0], knobGroups[0]);
+  const variant = select("variant", buttonVariants, buttonVariants.default, knobGroups[0]);
   const icon = select("icon", buttonIcons, buttonIcons[0], knobGroups[0]);
   const count = text("count", "", knobGroups[0]);
   return (

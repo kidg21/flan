@@ -18,7 +18,7 @@ const StyledButton = styled.button`
   z-index: 0;
   flex-direction: row;
   width: ${(props) => {
-    return props.fullWidth ? "100%" : "auto";
+    return props.fullWidth ? "100%" : "max-content";
   }};
   height: ${(props) => {
     return props.alignCenter ? "" : "2.4rem";
@@ -51,9 +51,6 @@ const StyledButton = styled.button`
   }};
   font-size: ${(props) => {
     return props.labelSize || "inherit";
-  }};
-  font-weight: ${(props) => {
-    return props.fontWeight || "400";
   }};
   text-transform: capitalize;
   cursor: pointer;
@@ -204,7 +201,18 @@ function Button({
       tintColor = "info20";
       shadeColor = "info100";
       break;
+    case "neutral":
+      buttonColor = "neutral120";
+      fontColor = buttonColor;
+      tintColor = "neutral20";
+      shadeColor = "neutral200";
+      break;
     case "action":
+      buttonColor = "action80";
+      fontColor = buttonColor;
+      tintColor = "action20";
+      shadeColor = "action90";
+      break;
     default:
       buttonColor = "action80";
       fontColor = buttonColor;
@@ -325,7 +333,7 @@ Button.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(["button", "reset", "submit"]),
-  variant: PropTypes.oneOf(["action", "alert", "info", "success", "warning"]),
+  variant: PropTypes.oneOf(["", "action", "alert", "info", "success", "warning", "neutral"]),
 };
 
 Button.defaultProps = {
@@ -344,7 +352,7 @@ Button.defaultProps = {
   label: null,
   onClick: null,
   type: "button",
-  variant: "action",
+  variant: null,
 };
 
 // export default Button;

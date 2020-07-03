@@ -7,11 +7,11 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-    fontSize="0.876em"
+    className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+    fontSize="0.879em"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.2px"
+    letterSpacing="0.4px"
   >
     Select Label
   </label>
@@ -120,11 +120,11 @@ exports[` 1`] = `
     </div>
   </div>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+    className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
     fontSize="0.75em"
     fontWeight={600}
     id={null}
-    letterSpacing="0.2px"
+    letterSpacing="0.4px"
   >
     Help text for the Select Menu component
   </p>
@@ -143,11 +143,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Standard
     </label>
@@ -262,11 +262,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Error
     </label>
@@ -378,11 +378,11 @@ exports[` 2`] = `
       className="SelectMenu__MessageContainer-sc-12n3hw0-0 iVWBN"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
         fontSize="0.75em"
         fontWeight={600}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.4px"
       >
         Error explaining why it is wrong
       </p>
@@ -394,11 +394,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Disabled
     </label>
@@ -532,11 +532,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gDLgcG"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 fJWZBc"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select ( Required )
         </label>
@@ -645,11 +645,11 @@ exports[` 3`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -660,11 +660,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gDLgcG"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 fJWZBc"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select ( Required w/ Clearable )
         </label>
@@ -771,11 +771,11 @@ exports[` 3`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -807,11 +807,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select ( Standard )
         </label>
@@ -920,11 +920,11 @@ exports[` 4`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -935,11 +935,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gDLgcG"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 fJWZBc"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select ( Required )
         </label>
@@ -1048,11 +1048,11 @@ exports[` 4`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -1063,11 +1063,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select ( Disabled )
         </label>
@@ -1176,11 +1176,11 @@ exports[` 4`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -1191,11 +1191,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select ( Error )
         </label>
@@ -1304,11 +1304,11 @@ exports[` 4`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -1319,11 +1319,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select ( Error )
         </label>
@@ -1432,11 +1432,11 @@ exports[` 4`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -1444,11 +1444,11 @@ exports[` 4`] = `
           className="SelectMenu__MessageContainer-sc-12n3hw0-0 iVWBN"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Error: Invalid Selection!
           </p>
@@ -1460,11 +1460,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select
         </label>
@@ -1573,11 +1573,11 @@ exports[` 4`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -1585,11 +1585,11 @@ exports[` 4`] = `
           className="SelectMenu__MessageContainer-sc-12n3hw0-0 iVWBN"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
             fontSize="0.75em"
             fontWeight={600}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             This is warning Text
           </p>
@@ -1601,11 +1601,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Single-Select ( Loading )
         </label>
@@ -1728,11 +1728,11 @@ exports[` 4`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
@@ -1743,11 +1743,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Multi-Select
         </label>
@@ -1856,11 +1856,11 @@ exports[` 4`] = `
           </div>
         </div>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
           fontSize="0.75em"
           fontWeight={600}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Help text for the Select Menu component
         </p>
