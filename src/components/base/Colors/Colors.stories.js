@@ -13,27 +13,32 @@ export default {
 
 export const Brand = () => {
   return (
-    <Grid>
-      <Colors color="lightBoxNavy" />
-      <Colors color="lightBoxCyan" />
-      <Colors color="lightBoxGold" />
-      <Colors color="lightBoxGrey" />
-      <Colors color="softGrey" />
-      <Colors color="softBlue" />
-      <Colors color="moss" />
-      <Colors color="robinBlue" />
+    <Grid columns="5">
+      <Colors color="navy" />
+      <Colors color="sky" />
+      <Colors color="gold" />
+    </Grid>
+  );
+};
+
+export const Secondary = () => {
+  return (
+    <Grid columns="5">
+      <Colors color="grey" />
       <Colors color="seafoam" />
-      <Colors color="blueSteel" />
-      <Colors color="tangerine" />
-      <Colors color="lemon" />
+      <Colors color="whirlpool" />
+      <Colors color="aqua" />
+      <Colors color="teal" />
+      <Colors color="royal" />
+      <Colors color="orange" />
+      <Colors color="yellow" />
     </Grid>
   );
 };
 
 export const Primary = () => {
   return (
-    <Grid>
-      <ThemeColors color="action20" />
+    <Grid columns="5">
       <ThemeColors color="action40" />
       <ThemeColors color="action60" />
       <ThemeColors color="action80" />
@@ -42,36 +47,20 @@ export const Primary = () => {
   );
 };
 
-export const Secondary = () => {
+export const Notification = () => {
   return (
-    <Grid>
-      <ThemeColors color="info20" />
-      <ThemeColors color="info40" />
-      <ThemeColors color="info60" />
+    <Grid columns="5">
       <ThemeColors color="info80" />
-      <ThemeColors color="info100" />
-      <ThemeColors color="success20" />
-      <ThemeColors color="success40" />
-      <ThemeColors color="success60" />
       <ThemeColors color="success80" />
-      <ThemeColors color="success100" />
-      <ThemeColors color="warning20" />
-      <ThemeColors color="warning40" />
-      <ThemeColors color="warning60" />
       <ThemeColors color="warning80" />
-      <ThemeColors color="warning100" />
-      <ThemeColors color="alert20" />
-      <ThemeColors color="alert40" />
-      <ThemeColors color="alert60" />
       <ThemeColors color="alert80" />
-      <ThemeColors color="alert100" />
     </Grid>
   );
 };
 
 export const Neutral = () => {
   return (
-    <Grid>
+    <Grid columns="5">
       <Colors color="grey10" />
       <Colors color="grey20" />
       <Colors color="grey30" />

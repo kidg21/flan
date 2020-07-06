@@ -20,6 +20,7 @@ Array [
     />
     <span
       className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      id="Modal_Standard-animation"
     >
       <div
         className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
@@ -135,6 +136,7 @@ Array [
     />
     <span
       className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      id="Modal_Knobs-animation"
       onClick={null}
     >
       <div
@@ -221,6 +223,7 @@ Array [
     />
     <span
       className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      id="Modal_Dialog-animation"
     >
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
@@ -384,6 +387,7 @@ Array [
     />
     <span
       className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      id="Modal_Text-animation"
       onClick={null}
     >
       <div
@@ -470,6 +474,7 @@ Array [
     />
     <span
       className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      id="Modal_Image-animation"
     />
   </div>,
   <button

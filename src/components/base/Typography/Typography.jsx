@@ -37,7 +37,7 @@ const LinkText = styled.a`
   font-size: ${(props) => { return props.fontSize; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   font-family: ${(props) => { return props.theme.typography.primary; }};
-  text-decoration: underline;
+  // text-decoration: underline;
   margin: -.25em;
   padding: .25em;
   letter-spacing: ${(props) => { return props.letterSpacing; }};

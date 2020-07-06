@@ -69,34 +69,34 @@ exports[` 2`] = `
     Color Picker
   </label>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eUJxgf"
     id={null}
     rows={null}
   >
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-      color="#E4423A"
+      className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+      color="#EBEAEC"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
     />
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-      color="#FF8000"
+      className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+      color="#D9ECEC"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
     />
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
-      color="#FFBF00"
+      className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+      color="#63B1CD"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
     />
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-      color="#14A939"
+      className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+      color="#06BFAE"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
@@ -123,8 +123,22 @@ exports[` 2`] = `
       </svg>
     </button>
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-      color="#2F98EE"
+      className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+      color="#095593"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    />
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+      color="#F3822B"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    />
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+      color="#FFBF00"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
@@ -154,41 +168,34 @@ exports[` 3`] = `
       Color Picker
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eUJxgf"
       id={null}
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-        color="#E4423A"
+        className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+        color="#EBEAEC"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-        color="#FF8000"
+        className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+        color="#D9ECEC"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
-        color="#FFBF00"
+        className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+        color="#63B1CD"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-        color="#14A939"
-        height="1.5rem"
-        onClick={null}
-        width="1.5rem"
-      />
-      <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-        color="#2F98EE"
+        className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+        color="#06BFAE"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
@@ -214,6 +221,27 @@ exports[` 3`] = `
           />
         </svg>
       </button>
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+        color="#095593"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+        color="#F3822B"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+        color="#FFBF00"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
     </section>
   </section>
   <section
@@ -231,41 +259,34 @@ exports[` 3`] = `
       Color Picker
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eUJxgf"
       id={null}
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dUMApd"
-        color="#E4423A"
+        className="Picker__Swatch-sc-1xwpkqn-1 gwUUeE"
+        color="#EBEAEC"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dUMApd"
-        color="#FF8000"
+        className="Picker__Swatch-sc-1xwpkqn-1 cmnzPh"
+        color="#D9ECEC"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 jhNIOm"
-        color="#FFBF00"
+        className="Picker__Swatch-sc-1xwpkqn-1 fMEfEK"
+        color="#63B1CD"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dUMApd"
-        color="#14A939"
-        height="1.5rem"
-        onClick={null}
-        width="1.5rem"
-      />
-      <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dUMApd"
-        color="#2F98EE"
+        className="Picker__Swatch-sc-1xwpkqn-1 cNrdeh"
+        color="#06BFAE"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
@@ -291,6 +312,27 @@ exports[` 3`] = `
           />
         </svg>
       </button>
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 euToNG"
+        color="#095593"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 bNTzWT"
+        color="#F3822B"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 jhNIOm"
+        color="#FFBF00"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
     </section>
   </section>
 </section>
