@@ -1,6 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 iekWxB"
+    id="toggleSelect"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+      fontSize="0.879em"
+      fontWeight={600}
+      htmlFor={null}
+      letterSpacing="0.4px"
+    >
+      Standard Swatches
+    </label>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
+      id={null}
+      rows={null}
+    >
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        color="#E4423A"
+        height="1.5rem"
+        onClick={[Function]}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        color="#14A939"
+        height="1.5rem"
+        onClick={[Function]}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        color="#2F98EE"
+        height="1.5rem"
+        onClick={[Function]}
+        width="1.5rem"
+      />
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 iekWxB"
   id="standard"
@@ -94,7 +147,7 @@ exports[` 1`] = `
 </section>
 `;
 
-exports[` 2`] = `
+exports[` 3`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
   id={null}

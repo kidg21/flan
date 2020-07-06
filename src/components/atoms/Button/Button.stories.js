@@ -1,25 +1,21 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { DMPTheme } from "Variables";
-import { ThemeProvider } from "styled-components";
-import { expect } from "chai";
-import { mount } from "enzyme";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
 // Knob Values
 const knobGroups = ["Button"];
 const buttonLabel = "Button Label";
-const buttonVariants = [
-  "standard",
-  "secondary",
-  "info",
-  "success",
-  "warning",
-  "alert",
-];
+const buttonVariants = {
+  default: null,
+  neutral: "neutral",
+  action: "action",
+  info: "info",
+  success: "success",
+  warning: "warning",
+  alert: "alert",
+};
 const buttonIcons = ["", "user", "down", "bookmark", "plus", "print"];
 
 export default {
@@ -34,7 +30,7 @@ export default {
 
 export const Knobs = () => {
   const label = text("label", buttonLabel, knobGroups[0]);
-  const variant = select("variant", buttonVariants, buttonVariants[0], knobGroups[0]);
+  const variant = select("variant", buttonVariants, buttonVariants.default, knobGroups[0]);
   const icon = select("icon", buttonIcons, buttonIcons[0], knobGroups[0]);
   const count = text("count", "", knobGroups[0]);
   return (

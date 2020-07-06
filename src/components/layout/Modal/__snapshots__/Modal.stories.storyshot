@@ -26,7 +26,7 @@ Array [
         className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
         id="storyshots_50"
-        media={null}
+        media=""
         onClick={null}
       >
         <div
@@ -143,7 +143,7 @@ Array [
         className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
         href={null}
         id="storyshots_51"
-        media={null}
+        media=""
         onClick={null}
       >
         <section
@@ -229,7 +229,7 @@ Array [
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
         id="storyshots_52"
-        media={null}
+        media=""
         onClick={null}
       >
         <section
@@ -308,7 +308,7 @@ Array [
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 KwDuT DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
               id="Confirm"
@@ -394,7 +394,7 @@ Array [
         className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
         href={null}
         id="storyshots_53"
-        media={null}
+        media=""
         onClick={null}
       >
         <section
@@ -472,37 +472,10 @@ Array [
       id="modal-bg-Modal_Image"
       onClick={[Function]}
     />
-    <img
-      className="Modal__Image-sc-15cll21-1 LeaMT"
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
       id="Modal_Image-animation"
-      onClick={[Function]}
-      src={Object {}}
     />
-    <section
-      className="Modal__Close-sc-15cll21-4 mQDax"
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 gKQaUy"
-        color="neutral20"
-        data-icon="times"
-        data-prefix="far"
-        focusable="false"
-        fontSize="1.35em"
-        id={null}
-        role="img"
-        style={Object {}}
-        viewBox="0 0 320 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </section>
   </div>,
   <button
     className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"

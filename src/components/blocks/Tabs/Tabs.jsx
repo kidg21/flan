@@ -75,21 +75,25 @@ function Tabs({
           setColumns={setColumns}
           setWidth={setWidth}
         >
-          {children
-            || data.map((item) => {
-              return (
-                <TabItem
-                  count={item.count}
-                  disabled={item.disabled || isDisabled}
-                  htmlFor={item.htmlFor}
-                  icon={item.icon}
-                  id={item.id}
-                  label={item.label}
-                  onClick={item.onClick}
-                  isSelected={item.isSelected}
-                />
-              );
-            })}
+          {children || data.map((item, index) => {
+            const itemKey = item.id
+              || (item.label && item.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
+              || (item.icon && item.icon.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
+              || index;
+            return (
+              <TabItem
+                count={item.count}
+                disabled={item.disabled || isDisabled}
+                htmlFor={item.htmlFor}
+                icon={item.icon}
+                id={item.id}
+                key={itemKey}
+                label={item.label}
+                onClick={item.onClick}
+                isSelected={item.isSelected}
+              />
+            );
+          })}
         </TabsWrapper>
       </TabsContext.Provider>
     </DisabledContext.Provider>

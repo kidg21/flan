@@ -67,7 +67,7 @@ exports[` 1`] = `
               alt="Lightbox Logo"
               className="Image__ImageWrapper-sc-18abvff-0 bmySjT"
               onClick={null}
-              src={Object {}}
+              src=""
               title="Lightbox Logo"
               width="80%"
             />
@@ -763,7 +763,7 @@ exports[` 1`] = `
                 className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
                 href={null}
                 id="Card_Header"
-                media={null}
+                media=""
                 onClick={null}
               >
                 <section
@@ -1388,7 +1388,7 @@ exports[` 1`] = `
                 className="Card__CardWrapper-sc-1g3s676-3 gvdkPj"
                 href={null}
                 id="Card_Footer"
-                media={null}
+                media=""
                 onClick={null}
               >
                 <section
@@ -2068,7 +2068,7 @@ exports[` 2`] = `
               className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
               href={null}
               id="Left_Header_Card"
-              media={null}
+              media=""
               onClick={null}
             >
               <div
@@ -2688,7 +2688,7 @@ exports[` 2`] = `
               className="Card__CardWrapper-sc-1g3s676-3 gvdkPj"
               href={null}
               id="Jobs_Summary"
-              media={null}
+              media=""
               onClick={null}
             >
               <div
