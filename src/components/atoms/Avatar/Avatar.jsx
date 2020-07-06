@@ -79,7 +79,7 @@ function Avatar({
 
   const selectedSize = size && sizeHash[size.toLowerCase()];
   const avatarSize = selectedSize ? selectedSize.avatar : "2.2rem";
-  const fontSize = selectedSize ? selectedSize.font : "0.82em";
+  const fontSize = selectedSize ? selectedSize.font : "0.876rem";
 
   let backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";
   const textColor = "inverse";
@@ -105,7 +105,7 @@ function Avatar({
   } else if (icon && typeof icon === "string") {
     iconType = <Icon icon={icon} size={size} />;
   } else {
-    labelType = <AvatarText weight="bold" fontSize={fontSize} text={label && label.substring(0, 2)} />;
+    labelType = <AvatarText weight="medium" fontSize={fontSize} text={label && label.substring(0, 2)} />;
   }
 
 

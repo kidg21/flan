@@ -18,7 +18,7 @@ const SwitchContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;

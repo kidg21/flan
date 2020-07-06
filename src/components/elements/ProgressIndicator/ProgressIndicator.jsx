@@ -6,6 +6,12 @@ import Grid from "layout/Grid";
 import Text from "base/Typography";
 
 
+const ProgressSection = styled(Grid)`
+color: ${(props) => {
+  return props.theme.text.primary;
+}};
+`;
+
 const BarItem = styled.div`
   align-items: center;
   align-self: center;
@@ -42,12 +48,12 @@ function ProgressIndicator({
 }) {
 
   return (
-      <Grid columns = "1fr auto" align="center" >
+      <ProgressSection columns = "1fr auto" align="center" >
         <Container>
         <BarItem id={id} style={{width: `${percentage}%`}} />
         </Container>
         <Text text={`${percentage}%`}/>
-      </Grid>
+      </ProgressSection>
   );
 }
 

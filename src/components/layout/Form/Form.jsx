@@ -21,15 +21,23 @@ const Header = styled(Grid)`
   margin-bottom: 1.5rem;
 `;
 
+const TitleSection = styled(Title)`
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 12px;
+font-weight: 400;
+`;
+
 const Section = styled.section`
   display: grid;
   grid-gap: 1rem;
   margin-bottom: 1rem;
 `;
+
 function FormSection({ children, title }) {
   return (
     <Section>
-      {title ? <Title size="lg" text={title} /> : null}
+      {title ? <TitleSection text={title} /> : null}
       {children}
     </Section>
   );
@@ -80,9 +88,9 @@ function Form({
     <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <Header columns="1">
-          {title ? <Title size="xl" weight="bold" text={title} /> : null}
-          {subtitle ? <Text weight="light" text={subtitle} /> : null}
-          {description ? <Text size="sm" weight="bold" text={description} /> : null}
+          {title ? <Title size="lg"  text={title} /> : null}
+          {subtitle ? <Text text={subtitle} /> : null}
+          {description ? <Text size="sm"  text={description} /> : null}
         </Header>
       ) : null}
       <Inputs setColumns={setColumns}>

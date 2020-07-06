@@ -276,7 +276,7 @@ function Button({
       rows={alignCenter ? "max-content 1fr" : null}
     >
       {icon ? <Icon icon={icon} /> : null}
-      {label ? <Label weight="" text={label} size="lg" /> : null}
+      {label ? <Label size="lg" text={label} /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>
   );

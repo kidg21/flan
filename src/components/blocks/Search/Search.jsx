@@ -17,6 +17,9 @@ import ResultContainer from "./Results.jsx";
 
 const SearchContainer = styled.form`
 display: flex;
+color: ${(props) => {
+  return props.theme.text.primary;
+}};
 align-items: center;
 flex-direction: row;
 border: 1px solid;
@@ -122,7 +125,7 @@ function Search({
   const message = (
     <React.Fragment>
       {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="4xl" />} /> : null}
-      <Bar padding="2x" center={<Text text={msg} />} />
+      <Bar padding="2x" center={<Text size="sm" text={msg} />} />
     </React.Fragment>
   );
 

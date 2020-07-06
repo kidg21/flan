@@ -4,9 +4,7 @@ import { css } from "styled-components";
 
 export const fonts = {
   headline: "Roboto, Arial, sans-serif",
-  body: "Nunito, Arial, sans-serif",
-  data: "Roboto, Arial, sans-serif",
-  numbers: "Nunito, sans-serif",
+  body: "Roboto, Arial, sans-serif",
 };
 
 // Codes for color palette
@@ -159,7 +157,7 @@ export const borders = {
 export const DMPTheme = {
   typography: {
     primary: fonts.body,
-    secondary: fonts.data,
+    secondary: fonts.body,
   },
   background: {
     alert: colors.red80,
@@ -183,7 +181,7 @@ export const DMPTheme = {
     inverse: colors.white40,
     inverseHover: colors.grey20,
     link: colors.blue80,
-    primary: colors.grey100,
+    primary: colors.grey80,
     secondary: colors.grey60,
     selected: colors.blue80,
     success: colors.green80,
@@ -273,7 +271,7 @@ export const darkTheme = {
     inverse: colors.grey100,
     inverseHover: colors.grey80,
     link: colors.blue80,
-    primary: colors.grey50,
+    primary: colors.neutral20,
     secondary: colors.grey10,
     selected: colors.blue80,
     success: colors.green20,
@@ -335,7 +333,7 @@ export const Lighten = css`
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "16px",
+  base: "14px",
 };
 
 // Media Queries

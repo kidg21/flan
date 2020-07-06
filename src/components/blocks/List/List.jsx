@@ -55,7 +55,7 @@ const ListWrapper = styled.ul`
   flex-direction: column;
   list-style: none;
   color: ${(props) => {
-    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.secondary;
+    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.theme.background[props.listBackground] || props.theme.background.app;
@@ -79,6 +79,8 @@ const ListTitleWrapper = styled.li`
 const ListTitle = styled(Title)`
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 400;
 `;
 
 const SectionWrapper = styled.li`
@@ -88,7 +90,7 @@ const SectionWrapper = styled.li`
 
 const Section = styled(Text)`
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 `;
 
 function List({
@@ -249,7 +251,7 @@ function ListItem({
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment>
-      <Text text={title || null} disabled={disabled} size="lg"  />
+      <Text text={title || null} disabled={disabled} />
       {description ? (<Text size="sm" text={description || null} disabled={disabled} />
       ) : null}
     </React.Fragment>

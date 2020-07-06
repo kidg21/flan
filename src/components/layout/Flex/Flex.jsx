@@ -7,6 +7,9 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
   flex-direction: ${(props) => {
     return props.flexDirection || "column";
   }};

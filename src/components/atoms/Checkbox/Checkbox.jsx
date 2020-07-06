@@ -24,7 +24,7 @@ const CheckboxContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary ;
   }};
   line-height: initial;
   &[disabled],
@@ -189,9 +189,9 @@ function CheckboxGroup({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label weight="bold" isRequired={isRequired} text={label} />
+        <Label size="sm" isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+      {helpText ? <Text size="xs" text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -212,7 +212,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Text size="sm" weight="bold" text={errorText} /> : null}
+      {errorText ? <Text size="xs" text={errorText} /> : null}
     </CheckboxWrapper>
   );
 }

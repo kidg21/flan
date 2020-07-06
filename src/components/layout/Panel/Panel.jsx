@@ -10,6 +10,9 @@ const PanelWrapper = styled.div`
     return props.theme.background.default;
   }};
   display: flex;
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;

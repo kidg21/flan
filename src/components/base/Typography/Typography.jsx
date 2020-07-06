@@ -16,7 +16,6 @@ const StyledLabel = styled.label`
   cursor: pointer;
   font-weight: ${(props) => { return props.fontWeight; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
-  text-transform: ${(props) => { return props.textTransform; }};
   &:after {
     display: ${(props) => {
     return props.isRequired ? "" : "none";
@@ -57,6 +56,7 @@ const TitleText = styled.h6`
   font-size: ${(props) => { return props.fontSize; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   color: inherit;
+  text-transform: ${(props) => { return props.textTransform; }};
   line-height: normal;
   font-family: ${(props) => { return props.theme.typography.secondary; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
@@ -89,7 +89,7 @@ function Text({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", letterSpacing: ".5px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0.5px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -134,13 +134,13 @@ Text.defaultProps = {
 };
 
 function Title({
-  children, className, size, text,
+  children, className, size, text, uppercase,
 }) {
 
   const sizeHash = {
     "lg": {
-      fontSize: "1.25rem",
-      letterSpacing: "0px",
+      fontSize: "1rem",
+      letterSpacing: "0.2px",
       fontWeight: "500",
       as: "h5",
     },
@@ -173,12 +173,19 @@ function Title({
   const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", as: "h6", fontWeight: "400", letterSpacing: ".15px" };
   const { fontSize, as, letterSpacing, fontWeight } = selectedSize;
 
+  let textTransform;
+
+  if (uppercase) {
+    textTransform= "uppercase";
+  };
+
   return (
     <TitleText
       as={as}
       className={className}
       fontSize={fontSize}
       fontWeight={fontWeight}
+      textTransform={textTransform}
       letterSpacing={letterSpacing}
     >
       {text || children}
@@ -191,6 +198,7 @@ Title.propTypes = {
   className: PropTypes.string,
   /** Options: 'lg', 'xl', '2xl', '3xl', '4xl' */
   size: PropTypes.string,
+  uppercase: PropTypes.bool,
   text: PropTypes.string,
   /** Options: 'light', 'bold' */
   weight: PropTypes.string,
@@ -199,6 +207,7 @@ Title.defaultProps = {
   children: null,
   className: null,
   size: null,
+  uppercase: false,
   text: null,
   weight: null,
 };
@@ -229,9 +238,9 @@ function Label({
       fontWeight: "400",
     },
     lg: {
-      fontSize: "0.875rem",
-      letterSpacing: "1.25px",
-      fontWeight: "500",
+      fontSize: "1rem",
+      letterSpacing: ".5px",
+      fontWeight: "400",
     },
   };
 

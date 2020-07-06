@@ -86,7 +86,7 @@ function DataRange({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label weight="bold" isRequired={isRequired} text={label} />
+        <Label size="sm" isRequired={isRequired} text={label} />
       ) : null}
       <Bar
         padding="0"
@@ -135,9 +135,9 @@ function DataRange({
             />)
         }
       />
-      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+      {helpText ? <Text size="xs" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Text size="sm" weight="bold" text={error} />
+        <Text size="xs" text={error} />
       ) : null}
     </RangeContainer>
   );

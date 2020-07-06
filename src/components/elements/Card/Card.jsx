@@ -351,8 +351,8 @@ function Card({
     centerContent = (
       <LinkedWrapper >
         <React.Fragment >
-          {title ? <Title size="lg" text={title} weight="bold" /> : null}
-          {description ? (<Text  text={description} />
+          {title ? <Title size="xl" text={title} /> : null}
+          {description ? (<Text size="sm" text={description} />
           ) : null}
         </React.Fragment>
       </LinkedWrapper>
@@ -360,8 +360,8 @@ function Card({
   } else {
     centerContent = (
       <React.Fragment >
-        {title ? <Title size="lg" text={title} weight="bold" /> : null}
-        {description ? (<Text  text={description} />
+        {title ? <Title size="xl" text={title}  /> : null}
+        {description ? (<Text size="sm" text={description} />
         ) : null}
       </React.Fragment>);
   }
@@ -529,7 +529,7 @@ Card.defaultProps = {
   media: null,
   more: "",
   onClick: null,
-  padding: null,
+  padding: "2x",
   shadow: null,
   title: null,
   variant: null,
