@@ -49,10 +49,6 @@ const StyledButton = styled.button`
   border-radius: ${(props) => {
     return props.borderRadius || "4px";
   }};
-  font-size: ${(props) => {
-    return props.labelSize || "inherit";
-  }};
-  text-transform: capitalize;
   cursor: pointer;
   border-bottom: ${(props) => {
     return props.borderBottom || "";
@@ -280,7 +276,7 @@ function Button({
       rows={alignCenter ? "max-content 1fr" : null}
     >
       {icon ? <Icon icon={icon} /> : null}
-      {label ? <Label weight="bold" text={label} /> : null}
+      {label ? <Label weight="" text={label} size="lg" /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>
   );

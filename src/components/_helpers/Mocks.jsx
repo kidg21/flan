@@ -512,7 +512,7 @@ const panelHeader = (
       width: "max-content",
     }}
     center={{
-      content: <Title text="Details" weight="bold" />,
+      content: <Title text="Details" />,
       align: "left",
     }}
   // right={{

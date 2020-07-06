@@ -6,14 +6,13 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
-import { Title } from "base/Typography";
+import Text from "base/Typography";
 
-const AvatarText = styled(Title)`
+const AvatarText = styled(Text)`
   color: inherit;
   font-size: ${(props) => {
     return props.fontSize || "inherit";
   }};
-  font-weight: bold;
 `;
 
 const AvatarImage = styled(Image)`
@@ -106,7 +105,7 @@ function Avatar({
   } else if (icon && typeof icon === "string") {
     iconType = <Icon icon={icon} size={size} />;
   } else {
-    labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label && label.substring(0, 2)} />;
+    labelType = <AvatarText weight="bold" fontSize={fontSize} text={label && label.substring(0, 2)} />;
   }
 
 

@@ -16,7 +16,7 @@ const StyledLabel = styled.label`
   cursor: pointer;
   font-weight: ${(props) => { return props.fontWeight; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
-
+  text-transform: ${(props) => { return props.textTransform; }};
   &:after {
     display: ${(props) => {
     return props.isRequired ? "" : "none";
@@ -76,24 +76,25 @@ function Text({
 }) {
   const sizeHash = {
     xs: {
-      fontSize: "0.65em",
-      letterSpacing: "0.6px",
-    },
-    sm: {
-      fontSize: "0.75em",
+      fontSize: "0.75rem",
       letterSpacing: "0.4px",
     },
+    sm: {
+      fontSize: "0.875rem",
+      letterSpacing: "0.25px",
+    },
     lg: {
-      fontSize: "1em",
-      letterSpacing: "0px",
+      fontSize: "0.875rem",
+      letterSpacing: "1.25px",
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", letterSpacing: ".5px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
     light: 300,
+    medium: 500,
     bold: 600,
   };
 
@@ -133,42 +134,44 @@ Text.defaultProps = {
 };
 
 function Title({
-  children, className, size, text, weight,
+  children, className, size, text,
 }) {
+
   const sizeHash = {
     "lg": {
-      fontSize: "1.15em",
+      fontSize: "1.25rem",
+      letterSpacing: "0px",
+      fontWeight: "500",
       as: "h5",
     },
     "xl": {
-      fontSize: "1.25em",
+      fontSize: "1.5rem",
+      letterSpacing: "0px",
+      fontWeight: "400",
       as: "h4",
     },
     "2xl": {
-      fontSize: "1.45em",
+      fontSize: "2.125rem",
+      letterSpacing: "0.25px",
+      fontWeight: "400",
       as: "h3",
     },
     "3xl": {
-      fontSize: "1.65em",
+      fontSize: "3rem",
+      letterSpacing: "0px",
+      fontWeight: "400",
       as: "h2",
     },
     "4xl": {
-      fontSize: "2em",
+      fontSize: "3.75rem",
+      letterSpacing: "-1.5px",
+      fontWeight: "300",
       as: "h1",
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", as: "h6" };
-  const { fontSize, as } = selectedSize;
-  const letterSpacing = "0px";
-
-  const weightHash = {
-    light: 300,
-    bold: 600,
-  };
-
-  let fontWeight = parseInt(weight, 10);
-  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", as: "h6", fontWeight: "400", letterSpacing: ".15px" };
+  const { fontSize, as, letterSpacing, fontWeight } = selectedSize;
 
   return (
     <TitleText
@@ -207,39 +210,46 @@ function Label({
   isRequired,
   size,
   text,
-  weight,
+  uppercase,
 }) {
   const sizeHash = {
+    xxs: {
+      fontSize: "0.625rem",
+      letterSpacing: "1.5px",
+      fontWeight: "500",
+    },
     xs: {
-      fontSize: "0.68em",
-      letterSpacing: "1px",
+      fontSize: "0.75em",
+      letterSpacing: "0.4px",
+      fontWeight: "400",
     },
     sm: {
-      fontSize: "0.82em",
-      letterSpacing: "0px",
+      fontSize: "0.875em",
+      letterSpacing: "0.25px",
+      fontWeight: "400",
     },
     lg: {
-      fontSize: "1em",
-      letterSpacing: "0px",
+      fontSize: "0.875rem",
+      letterSpacing: "1.25px",
+      fontWeight: "500",
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.4px" };
-  const { fontSize, letterSpacing } = selectedSize;
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", fontWeight: "400" };
+  const { fontSize, letterSpacing, fontWeight } = selectedSize;
 
-  const weightHash = {
-    light: 300,
-    bold: 600,
+  let textTransform;
+
+  if (uppercase) {
+    textTransform= "uppercase";
   };
-
-  let fontWeight = parseInt(weight, 10);
-  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
   return (
     <StyledLabel
       className={className}
       fontSize={fontSize}
       fontWeight={fontWeight}
+      textTransform={textTransform}
       htmlFor={htmlFor}
       isRequired={isRequired}
       letterSpacing={letterSpacing}
@@ -253,16 +263,18 @@ Label.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   htmlFor: PropTypes.string,
+  uppercase: PropTypes.bool,
   isRequired: PropTypes.bool,
-  /** Options: 'xs', 'sm', 'lg' */
+  /** Options: 'xxs', 'xs', 'sm', 'lg' */
   size: PropTypes.string,
   text: PropTypes.node,
-  /** Options: 'light', 'bold' */
+  /** Options: 'light', 'medium', 'bold' */
   weight: PropTypes.string,
 };
 Label.defaultProps = {
   children: null,
   className: null,
+  uppercase: false,
   htmlFor: null,
   isRequired: false,
   size: null,

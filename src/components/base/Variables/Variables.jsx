@@ -3,9 +3,9 @@ import { css } from "styled-components";
 
 
 export const fonts = {
-  headline: "Nunito, Arial, sans-serif",
+  headline: "Roboto, Arial, sans-serif",
   body: "Nunito, Arial, sans-serif",
-  data: "Lato, Arial, sans-serif",
+  data: "Roboto, Arial, sans-serif",
   numbers: "Nunito, sans-serif",
 };
 
@@ -335,7 +335,7 @@ export const Lighten = css`
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "14px",
+  base: "16px",
 };
 
 // Media Queries
