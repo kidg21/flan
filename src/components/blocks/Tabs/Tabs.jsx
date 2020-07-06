@@ -1,9 +1,11 @@
 /* eslint-disable linebreak-style */
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import { DisabledContext } from "States";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
+
+const TabsContext = React.createContext({});
 
 const TabButton = styled(Button)`
   border-width: 0 0 2px 0;
@@ -16,11 +18,14 @@ const TabsWrapper = styled.section`
   display: flex;
   flex-direction: row;
 `;
+
 function TabItem({
   alignCenter, count, disabled, htmlFor, icon, id, isSelected, label, onClick,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  // context from tab component
+  const tabsContext = useContext(TabsContext);
+  const _alignCenter = typeof alignCenter === "boolean" ? alignCenter : tabsContext.alignCenter;
 
   return (
     <React.Fragment>
@@ -36,17 +41,16 @@ function TabItem({
         variant={isSelected ? "" : "neutral"}
         isPlain
         hasUnderline={isSelected ? true : null}
-        alignCenter={alignCenter}
+        alignCenter={_alignCenter}
       />
     </React.Fragment>
   );
 }
 
 function Tabs({
-  children, data, disabled, id, isVertical,
+  alignCenter, children, data, disabled, id, isVertical,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let setColumns;
   let setWidth;
 
@@ -55,30 +59,39 @@ function Tabs({
     setWidth = "auto";
   }
 
+  // tabs context value to pass to each tab item
+  const tabsValue = useMemo(() => {
+    return {
+      alignCenter: !!alignCenter,
+    };
+  }, [alignCenter]);
+
   return (
     <DisabledContext.Provider value={disabled}>
-      <TabsWrapper
-        disabled={isDisabled}
-        id={id}
-        setColumns={setColumns}
-        setWidth={setWidth}
-      >
-        {children ||
-          data.map((item) => {
-            return (
-              <TabItem
-                count={item.count}
-                disabled={item.disabled || isDisabled}
-                htmlFor={item.htmlFor}
-                icon={item.icon}
-                id={item.id}
-                label={item.label}
-                onClick={item.onClick}
-                isSelected={item.isSelected}
-              />
-            );
-          })}
-      </TabsWrapper>
+      <TabsContext.Provider value={tabsValue}>
+        <TabsWrapper
+          disabled={isDisabled}
+          id={id}
+          setColumns={setColumns}
+          setWidth={setWidth}
+        >
+          {children
+            || data.map((item) => {
+              return (
+                <TabItem
+                  count={item.count}
+                  disabled={item.disabled || isDisabled}
+                  htmlFor={item.htmlFor}
+                  icon={item.icon}
+                  id={item.id}
+                  label={item.label}
+                  onClick={item.onClick}
+                  isSelected={item.isSelected}
+                />
+              );
+            })}
+        </TabsWrapper>
+      </TabsContext.Provider>
     </DisabledContext.Provider>
   );
 }
@@ -95,7 +108,7 @@ TabItem.propTypes = {
   onClick: PropTypes.func,
 };
 TabItem.defaultProps = {
-  alignCenter: false,
+  alignCenter: null,
   count: null,
   disabled: null,
   htmlFor: null,
@@ -107,6 +120,7 @@ TabItem.defaultProps = {
 };
 
 Tabs.propTypes = {
+  alignCenter: PropTypes.bool,
   children: PropTypes.node,
   data: PropTypes.arrayOf(PropTypes.shape(TabItem.propTypes)),
   disabled: PropTypes.bool,
@@ -114,6 +128,7 @@ Tabs.propTypes = {
   isVertical: PropTypes.bool,
 };
 Tabs.defaultProps = {
+  alignCenter: null,
   children: null,
   data: null,
   disabled: false,
