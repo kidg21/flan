@@ -14,14 +14,14 @@ const StepItem = styled.li`
   display: flex;
   border-bottom: 2px solid ${(props) => {
     if (props.isComplete) return props.theme.palette.action80;
-    else if (props.isSelected) return props.theme.palette.selected;
+    if (props.isSelected) return props.theme.palette.selected;
     return props.theme.palette.neutral40;
   }};
   align-items: baseline;
   width: 100%;
   color: ${(props) => {
     if (props.isComplete) return props.theme.text.selected;
-    else if (props.isSelected) return props.theme.palette.selected;
+    if (props.isSelected) return props.theme.palette.selected;
     return props.theme.text.secondary;
   }};
   &:before {
@@ -37,7 +37,7 @@ const StepItem = styled.li`
     width: 1.5rem;
     color: ${(props) => {
     if (props.isComplete) return props.theme.palette.inverse;
-    else if (props.isSelected) return props.theme.palette.selected;
+    if (props.isSelected) return props.theme.palette.selected;
     return "";
   }};
     background: ${(props) => {
@@ -45,14 +45,13 @@ const StepItem = styled.li`
   }};
     border: 1px solid ${(props) => {
     if (props.isComplete) return props.theme.palette.action80;
-    else if (props.isSelected) return props.theme.palette.selected;
+    if (props.isSelected) return props.theme.palette.selected;
     return props.theme.text.secondary;
   }};
     border-radius: 50%;
     font-weight: 600;
   }
 `;
-
 
 const Container = styled.ul`
   display: flex;
