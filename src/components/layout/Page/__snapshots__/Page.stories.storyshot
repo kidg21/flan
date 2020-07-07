@@ -877,61 +877,72 @@ exports[` 2`] = `
           id="A"
           placeholder="A"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+          <form
+            className="Search__SearchContainer-sey9om-0 gehspl"
             id="Map_E3"
-            rows={null}
           >
-            <form
-              className="Search__SearchContainer-sey9om-0 hvjWEc"
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
+              id="Map_E3-search-bar_container"
+              rows={null}
             >
               <input
-                className="Search__NewTextInput-sey9om-1 gIKvUj"
-                id="Map_E3-search-bar"
-                onChange={[Function]}
-                onKeyPress={[Function]}
-                placeholder="Search Location"
-                type="search"
-              />
-              <button
-                className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+                cols=""
                 disabled={false}
-                htmlFor={null}
+                id="Map_E3-search-bar"
+                list={null}
+                name="Map_E3-search-bar"
+                onBlur={null}
+                onChange={[Function]}
+                onFocus={null}
+                onKeyPress={[Function]}
+                pattern={null}
+                placeholder="Search Location"
+                rows=""
+                type="search"
+                value=""
+              />
+            </section>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
                 id={null}
-                name={null}
-                onClick={[Function]}
-                tabIndex="1"
-                type="button"
+                rows={null}
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  color={null}
+                  data-icon="search"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
                   id={null}
-                  rows={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                    color={null}
-                    data-icon="search"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="inherit"
-                    id={null}
-                    role="img"
+                  <path
+                    d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                    fill="currentColor"
                     style={Object {}}
-                    viewBox="0 0 512 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
-              </button>
-            </form>
-          </section>
+                  />
+                </svg>
+              </section>
+            </button>
+          </form>
         </section>
         <section
           className="Page__Region-mddda5-2 estfNh"
@@ -1272,61 +1283,72 @@ exports[` 3`] = `
       id="A"
       placeholder="A"
     >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+      <form
+        className="Search__SearchContainer-sey9om-0 gehspl"
         id="Search_E3"
-        rows={null}
       >
-        <form
-          className="Search__SearchContainer-sey9om-0 hvjWEc"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
+          id="Search_E3-search-bar_container"
+          rows={null}
         >
           <input
-            className="Search__NewTextInput-sey9om-1 gIKvUj"
-            id="Search_E3-search-bar"
-            onChange={[Function]}
-            onKeyPress={[Function]}
-            placeholder="Search Location"
-            type="search"
-          />
-          <button
-            className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+            cols=""
             disabled={false}
-            htmlFor={null}
+            id="Search_E3-search-bar"
+            list={null}
+            name="Search_E3-search-bar"
+            onBlur={null}
+            onChange={[Function]}
+            onFocus={null}
+            onKeyPress={[Function]}
+            pattern={null}
+            placeholder="Search Location"
+            rows=""
+            type="search"
+            value=""
+          />
+        </section>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={[Function]}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
             id={null}
-            name={null}
-            onClick={[Function]}
-            tabIndex="1"
-            type="button"
+            rows={null}
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="search"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
               id={null}
-              rows={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                color={null}
-                data-icon="search"
-                data-prefix="far"
-                focusable="false"
-                fontSize="inherit"
-                id={null}
-                role="img"
+              <path
+                d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                fill="currentColor"
                 style={Object {}}
-                viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </section>
-          </button>
-        </form>
-      </section>
+              />
+            </svg>
+          </section>
+        </button>
+      </form>
     </section>
     <section
       className="Page__Region-mddda5-2 estfNh"

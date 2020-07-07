@@ -1,120 +1,142 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+<form
+  className="Search__SearchContainer-sey9om-0 gehspl"
   id="Search_Standard"
-  rows={null}
 >
-  <form
-    className="Search__SearchContainer-sey9om-0 hvjWEc"
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
+    id="Search_Standard-search-bar_container"
+    rows={null}
   >
     <input
-      className="Search__NewTextInput-sey9om-1 gIKvUj"
-      id="Search_Standard-search-bar"
-      onChange={[Function]}
-      onKeyPress={[Function]}
-      placeholder="Search Location"
-      type="search"
-    />
-    <button
-      className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
+      autoComplete="off"
+      className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+      cols=""
       disabled={false}
-      htmlFor={null}
+      id="Search_Standard-search-bar"
+      list={null}
+      name="Search_Standard-search-bar"
+      onBlur={null}
+      onChange={[Function]}
+      onFocus={null}
+      onKeyPress={[Function]}
+      pattern={null}
+      placeholder="Search Location"
+      rows=""
+      type="search"
+      value=""
+    />
+  </section>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
       id={null}
-      name={null}
-      onClick={[Function]}
-      tabIndex="1"
-      type="button"
+      rows={null}
     >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+        color={null}
+        data-icon="search"
+        data-prefix="far"
+        focusable="false"
+        fontSize="inherit"
         id={null}
-        rows={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-          color={null}
-          data-icon="search"
-          data-prefix="far"
-          focusable="false"
-          fontSize="inherit"
-          id={null}
-          role="img"
+        <path
+          d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+          fill="currentColor"
           style={Object {}}
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </section>
-    </button>
-  </form>
-</section>
+        />
+      </svg>
+    </section>
+  </button>
+</form>
 `;
 
 exports[` 2`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+<form
+  className="Search__SearchContainer-sey9om-0 gehspl"
   id="Search_Results"
-  rows={null}
 >
-  <form
-    className="Search__SearchContainer-sey9om-0 hvjWEc"
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
+    id="Search_Results-search-bar_container"
+    rows={null}
   >
     <input
-      className="Search__NewTextInput-sey9om-1 gIKvUj"
-      id="Search_Results-search-bar"
-      onChange={[Function]}
-      onKeyPress={[Function]}
-      placeholder="Search Location"
-      type="search"
-    />
-    <button
-      className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
+      autoComplete="off"
+      className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+      cols=""
       disabled={false}
-      htmlFor={null}
+      id="Search_Results-search-bar"
+      list={null}
+      name="Search_Results-search-bar"
+      onBlur={null}
+      onChange={[Function]}
+      onFocus={null}
+      onKeyPress={[Function]}
+      pattern={null}
+      placeholder="Search Location"
+      rows=""
+      type="search"
+      value=""
+    />
+  </section>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
       id={null}
-      name={null}
-      onClick={[Function]}
-      tabIndex="1"
-      type="button"
+      rows={null}
     >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+        color={null}
+        data-icon="search"
+        data-prefix="far"
+        focusable="false"
+        fontSize="inherit"
         id={null}
-        rows={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-          color={null}
-          data-icon="search"
-          data-prefix="far"
-          focusable="false"
-          fontSize="inherit"
-          id={null}
-          role="img"
+        <path
+          d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+          fill="currentColor"
           style={Object {}}
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </section>
-    </button>
-  </form>
+        />
+      </svg>
+    </section>
+  </button>
   <div
-    className="Container__Wrapper-sc-1i4fzzd-0 cNAMYg"
+    className="Container__Wrapper-sc-1i4fzzd-0 cNAMYg Search__DropContainer-sey9om-3 kzazwM"
     height={null}
     width={null}
   >
@@ -511,28 +533,45 @@ exports[` 2`] = `
       </div>
     </div>
   </div>
-</section>
+</form>
 `;
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-  id="Search_Error"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+  id={null}
   rows={null}
 >
   <form
-    className="Search__SearchContainer-sey9om-0 hvjWEc"
+    className="Search__SearchContainer-sey9om-0 gehspl"
+    id="Search_Error"
   >
-    <input
-      className="Search__NewTextInput-sey9om-1 gIKvUj"
-      id="Search_Error-search-bar"
-      onChange={[Function]}
-      onKeyPress={[Function]}
-      placeholder="Search Location"
-      type="search"
-    />
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
+      id="Search_Error-search-bar_container"
+      rows={null}
+    >
+      <input
+        autoComplete="off"
+        className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+        cols=""
+        disabled={false}
+        id="Search_Error-search-bar"
+        list={null}
+        name="Search_Error-search-bar"
+        onBlur={null}
+        onChange={[Function]}
+        onFocus={null}
+        onKeyPress={[Function]}
+        pattern={null}
+        placeholder="Search Location"
+        rows=""
+        type="search"
+        value=""
+      />
+    </section>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
+      className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -568,424 +607,405 @@ exports[` 3`] = `
         </svg>
       </section>
     </button>
-  </form>
-  <div
-    className="Container__Wrapper-sc-1i4fzzd-0 cNAMYg"
-    height={null}
-    width={null}
-  >
     <div
-      className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
-      height=""
-      id="Search_Error-results-container"
+      className="Container__Wrapper-sc-1i4fzzd-0 cNAMYg Search__DropContainer-sey9om-3 kzazwM"
+      height={null}
+      width={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 jEWtiX"
-        id={null}
-        onClick={null}
+        className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
+        height=""
+        id="Search_Error-results-container"
       >
-        <div
-          className="Bar__Slot-icfo76-1 dLaZFL"
-        >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0.2px"
-          >
-            We recommend the following based on your key word search
-          </p>
-        </div>
-      </div>
-      <ul
-        className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
-        id={null}
-      >
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
+        <ul
+          className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
           id={null}
-          tabIndex="0"
         >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                White House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Orange House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                1224 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Red House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Green House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Black House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Blue House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Address
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                APN
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Owner
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-        <li
-          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-          disabled={false}
-          href={null}
-          id={null}
-          tabIndex="0"
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Address
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.4px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div
-        className="Bar__BarLayout-icfo76-2 jEWtiX"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 dLaZFL"
-        >
-          <a
-            className="Typography__LinkText-sc-19auepv-1 fZvALr"
-            fontSize="0.876em"
-            fontWeight={600}
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
             href={null}
-            letterSpacing="0px"
-            onClick={null}
-            target={null}
+            id={null}
+            tabIndex="0"
           >
-            View More
-          </a>
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  White House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Orange House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  1224 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Red House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Green House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Black House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Blue House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Address
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  APN
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Owner
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Address
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div
+          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 dLaZFL"
+          >
+            <a
+              className="Typography__LinkText-sc-19auepv-1 fZvALr"
+              fontSize="0.876em"
+              fontWeight={600}
+              href={null}
+              letterSpacing="0px"
+              onClick={null}
+              target={null}
+            >
+              View More
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 </section>
 `;
 
@@ -995,62 +1015,73 @@ exports[` 4`] = `
   id={null}
   rows={null}
 >
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+  <form
+    className="Search__SearchContainer-sey9om-0 gehspl"
     id="Search_Offline"
-    rows={null}
   >
-    <form
-      className="Search__SearchContainer-sey9om-0 hvjWEc"
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
+      id="Search_Offline-search-bar_container"
+      rows={null}
     >
       <input
-        className="Search__NewTextInput-sey9om-1 gIKvUj"
-        id="Search_Offline-search-bar"
-        onChange={[Function]}
-        onKeyPress={[Function]}
-        placeholder="Search Location"
-        type="search"
-      />
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
+        autoComplete="off"
+        className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+        cols=""
         disabled={false}
-        htmlFor={null}
+        id="Search_Offline-search-bar"
+        list={null}
+        name="Search_Offline-search-bar"
+        onBlur={null}
+        onChange={[Function]}
+        onFocus={null}
+        onKeyPress={[Function]}
+        pattern={null}
+        placeholder="Search Location"
+        rows=""
+        type="search"
+        value=""
+      />
+    </section>
+    <button
+      className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+      disabled={false}
+      htmlFor={null}
+      id={null}
+      name={null}
+      onClick={[Function]}
+      tabIndex="1"
+      type="button"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
         id={null}
-        name={null}
-        onClick={[Function]}
-        tabIndex="1"
-        type="button"
+        rows={null}
       >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+          color={null}
+          data-icon="search"
+          data-prefix="far"
+          focusable="false"
+          fontSize="inherit"
           id={null}
-          rows={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="search"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
-            id={null}
-            role="img"
+          <path
+            d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </section>
-      </button>
-    </form>
+          />
+        </svg>
+      </section>
+    </button>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 cNAMYg"
+      className="Container__Wrapper-sc-1i4fzzd-0 cNAMYg Search__DropContainer-sey9om-3 kzazwM"
       height={null}
       width={null}
     >
@@ -1069,12 +1100,12 @@ exports[` 4`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 brUBnv"
+              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 duCWGY"
               color={null}
               data-icon="signal-slash"
               data-prefix="far"
               focusable="false"
-              fontSize="2.5em"
+              fontSize="2em"
               id={null}
               role="img"
               style={Object {}}
@@ -1110,63 +1141,74 @@ exports[` 4`] = `
         </div>
       </div>
     </div>
-  </section>
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+  </form>
+  <form
+    className="Search__SearchContainer-sey9om-0 gehspl"
     id="Search_BadConnection"
-    rows={null}
   >
-    <form
-      className="Search__SearchContainer-sey9om-0 hvjWEc"
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
+      id="Search_BadConnection-search-bar_container"
+      rows={null}
     >
       <input
-        className="Search__NewTextInput-sey9om-1 gIKvUj"
-        id="Search_BadConnection-search-bar"
-        onChange={[Function]}
-        onKeyPress={[Function]}
-        placeholder="Search Location"
-        type="search"
-      />
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
+        autoComplete="off"
+        className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+        cols=""
         disabled={false}
-        htmlFor={null}
+        id="Search_BadConnection-search-bar"
+        list={null}
+        name="Search_BadConnection-search-bar"
+        onBlur={null}
+        onChange={[Function]}
+        onFocus={null}
+        onKeyPress={[Function]}
+        pattern={null}
+        placeholder="Search Location"
+        rows=""
+        type="search"
+        value=""
+      />
+    </section>
+    <button
+      className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+      disabled={false}
+      htmlFor={null}
+      id={null}
+      name={null}
+      onClick={[Function]}
+      tabIndex="1"
+      type="button"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
         id={null}
-        name={null}
-        onClick={[Function]}
-        tabIndex="1"
-        type="button"
+        rows={null}
       >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+          color={null}
+          data-icon="search"
+          data-prefix="far"
+          focusable="false"
+          fontSize="inherit"
           id={null}
-          rows={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="search"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
-            id={null}
-            role="img"
+          <path
+            d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </section>
-      </button>
-    </form>
+          />
+        </svg>
+      </section>
+    </button>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 cNAMYg"
+      className="Container__Wrapper-sc-1i4fzzd-0 cNAMYg Search__DropContainer-sey9om-3 kzazwM"
       height={null}
       width={null}
     >
@@ -1185,12 +1227,12 @@ exports[` 4`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 brUBnv"
+              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 duCWGY"
               color={null}
               data-icon="signal-slash"
               data-prefix="far"
               focusable="false"
-              fontSize="2.5em"
+              fontSize="2em"
               id={null}
               role="img"
               style={Object {}}
@@ -1226,6 +1268,6 @@ exports[` 4`] = `
         </div>
       </div>
     </div>
-  </section>
+  </form>
 </section>
 `;
