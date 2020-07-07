@@ -7,7 +7,6 @@ import Bar from "layout/Bar";
 import Text from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import SearchBar from "blocks/Search";
-import Dummy from "./Dummy";
 
 <Meta title="Data Entry|Search" component={SearchBar} />
 
@@ -175,18 +174,6 @@ The Search component is a set of expandable panels for showing and hiding conten
         <SearchBar id="Search_Offline" placeholder="Search Location" error="offline" />
         <SearchBar id="Search_BadConnection" placeholder="Search Location" error="connection" />
       </Grid>
-  </Story>
-</Preview>
-
-## Dummy
-
-<Preview>
-  <Story name="Dummy">
-  <Grid columns="1">
-  <Bar padding="2x" left={
-    <Dummy/>} right={<Text text="hi"/>} />
-    <Text text="can you see me, i hope not"/>
-    </Grid>
   </Story>
 </Preview>
 

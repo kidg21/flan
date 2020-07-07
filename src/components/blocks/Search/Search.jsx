@@ -141,7 +141,7 @@ function Search({
 
   const message = (
     <React.Fragment>
-      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="4xl" />} /> : null}
+      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="3xl" />} /> : null}
       <Bar padding="2x" center={<Text text={msg} />} />
     </React.Fragment>
   );
@@ -162,7 +162,7 @@ function Search({
         onChange={handleOnChange}
         onKeyPress={handleOnKeyPress}
       />
-      <SearchButton icon="search" onClick={handleOnSearch} />
+      <SearchButton icon="search" isPlain onClick={handleOnSearch} />
       {error || results ?
         <DropContainer
           padding="0"
