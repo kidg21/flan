@@ -82,7 +82,6 @@ const DropContainer = styled(Container)`
   grid-area: C;
   position: absolute;
   width: 100%;
-  opacity: 0.75;
 `;
 
 const errorHash = {
