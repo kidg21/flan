@@ -7,7 +7,7 @@ import Button from "atoms/Button";
 import Card, { CardSection } from "elements/Card";
 
 const ButtonGrid = styled(Grid)`
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto auto;
   grid-template-areas: 'blank one two';
 `;
 

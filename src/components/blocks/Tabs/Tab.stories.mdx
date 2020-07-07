@@ -18,7 +18,7 @@ import Tabs, { TabItem } from "blocks/Tabs";
 
 <Preview withToolbar>
   <Story name="Standard">
-     <Tabs>
+     <Tabs autoWidth>
           <TabItem label="Not Started" isSelected />
           <TabItem label="In Progress" />
           <TabItem label="Completed" />
@@ -84,6 +84,17 @@ Tabs should **not** be used to display multiples of the same type. Avoid using t
         <TabItem label="Small" isSelected/>
         <TabItem label="Medium" />
         <TabItem label="Large" />
+      </Tabs>),
+          align: "left",
+        }}
+      />
+      <Bar
+        padding="2x"
+        left={{
+          content: (<Tabs>
+        <TabItem label="Building 1" isSelected/>
+        <TabItem label="Building 2" />
+        <TabItem label="Building 3" />
       </Tabs>),
           align: "left",
         }}

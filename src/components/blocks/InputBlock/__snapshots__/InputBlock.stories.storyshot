@@ -7,11 +7,11 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-    fontSize="0.876em"
+    className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+    fontSize="0.879em"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.2px"
+    letterSpacing="0.4px"
   >
     Input Block ( Defaults to a standard Text Input )
   </label>
@@ -27,7 +27,7 @@ exports[` 1`] = `
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+        className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
         cols=""
         disabled={false}
         id="ID 1"
@@ -41,16 +41,16 @@ exports[` 1`] = `
         placeholder="Placeholder 1"
         rows=""
         type="text"
-        value={null}
+        value=""
       />
     </section>
   </section>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+    className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
     fontSize="0.75em"
     fontWeight={600}
     id={null}
-    letterSpacing="0.2px"
+    letterSpacing="0.4px"
   >
     Play with Knobs to see what this baby can do!
   </p>
@@ -69,11 +69,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gDLgcG"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 fJWZBc"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( Required )
     </label>
@@ -89,7 +89,7 @@ exports[` 2`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 1"
@@ -103,16 +103,16 @@ exports[` 2`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>
@@ -123,11 +123,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( Error )
     </label>
@@ -157,16 +157,16 @@ exports[` 2`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>
@@ -174,11 +174,11 @@ exports[` 2`] = `
       className="InputBlock__MessageContainer-sc-1bjt58v-2 cZMFBw"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
         fontSize="0.75em"
         fontWeight={600}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.4px"
       >
         Don't sweat it...we can fix this!
       </p>
@@ -190,11 +190,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( Disabled )
     </label>
@@ -210,7 +210,7 @@ exports[` 2`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 GIuwE"
+          className="TextInput__Input-sc-1fep8p8-2 itToUE"
           cols=""
           disabled={true}
           id="ID 1"
@@ -224,16 +224,16 @@ exports[` 2`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>
@@ -253,11 +253,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( 2 Inputs )
     </label>
@@ -273,7 +273,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 1"
@@ -287,7 +287,7 @@ exports[` 3`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
       <section
@@ -297,7 +297,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 2"
@@ -311,16 +311,16 @@ exports[` 3`] = `
           placeholder="Placeholder 2"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>
@@ -331,11 +331,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( 3 Inputs )
     </label>
@@ -351,7 +351,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 1"
@@ -365,7 +365,7 @@ exports[` 3`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
       <section
@@ -375,7 +375,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 2"
@@ -389,7 +389,7 @@ exports[` 3`] = `
           placeholder="Placeholder 2"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
       <section
@@ -399,7 +399,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 3"
@@ -413,16 +413,16 @@ exports[` 3`] = `
           placeholder="Placeholder 3"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>
@@ -433,11 +433,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( Pre-Label )
     </label>
@@ -450,11 +450,11 @@ exports[` 3`] = `
         className="InputBlock__PrePost-sc-1bjt58v-1 dbTcmg"
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           prefix
         </label>
@@ -466,7 +466,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 1"
@@ -480,16 +480,16 @@ exports[` 3`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>
@@ -500,11 +500,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( Post-Label )
     </label>
@@ -520,7 +520,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 1"
@@ -534,29 +534,29 @@ exports[` 3`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
       <div
         className="InputBlock__PrePost-sc-1bjt58v-1 dbTcmg"
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+          fontSize="0.879em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           postfix
         </label>
       </div>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>
@@ -567,11 +567,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( Pre-Icon )
     </label>
@@ -611,7 +611,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 1"
@@ -625,16 +625,16 @@ exports[` 3`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>
@@ -645,11 +645,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-      fontSize="0.876em"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+      fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Input Block ( Post-Icon )
     </label>
@@ -665,7 +665,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
           cols=""
           disabled={false}
           id="ID 1"
@@ -679,7 +679,7 @@ exports[` 3`] = `
           placeholder="Placeholder 1"
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
       <div
@@ -708,11 +708,11 @@ exports[` 3`] = `
       </div>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Hang in there, buddy, I'm here to help!
     </p>

@@ -52,16 +52,20 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${(props) => {
+    border: 0.32em solid ${(props) => {
     return (
-      props.theme.palette[props.fillColorChecked] || props.theme.palette.selected
+      props.theme.palette.selected
     );
   }};
-    border-color: ${(props) => {
-    return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.selected
-    );
-  }};
+  &:before {
+    margin: 0 -0.1em 0em 0;
+
+    width: 0.89em;
+    height: 0.89em;
+    border-radius: 100%;
+    display: inline-block;
+    content: "";
+  }
   }
   &:focus {
     border-color: ${(props) => {
@@ -215,7 +219,7 @@ Radio.propTypes = {
   onFocus: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
-  value: PropTypes.string,
+  value: PropTypes.any,
 };
 
 Radio.defaultProps = {
@@ -245,7 +249,7 @@ RadioGroup.propTypes = {
     onBlur: PropTypes.func,
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
-    value: PropTypes.string,
+    value: PropTypes.any,
   })),
   disabled: PropTypes.bool,
   error: PropTypes.string,

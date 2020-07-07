@@ -195,13 +195,11 @@ function Bar({
     </BarLayout>
   );
 
-  return typeof disabled === "boolean" ? (
+  return (
     <DisabledContext.Provider value={disabled}>
       {barLayout}
     </DisabledContext.Provider>
-  ) : (
-      barLayout
-    );
+  );
 }
 
 const SlotType = PropTypes.shape({

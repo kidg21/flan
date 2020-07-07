@@ -122,7 +122,6 @@ PanelBody.defaultProps = {
 const PanelSection = styled(PanelBody)`
   flex: none;
   padding: 0;
-  /* overflow: hidden; */
   overflow: visible;
   z-index: 1;
   &:first-of-type {

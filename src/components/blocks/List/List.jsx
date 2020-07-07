@@ -113,7 +113,7 @@ function List({
       >
         {title ? (
           <ListTitleWrapper>
-            <ListTitle text={title} size="" weight="bold" />
+            <ListTitle text={title} />
           </ListTitleWrapper>
         ) : null}
         <PaddingContext.Provider value={padding}>
@@ -249,7 +249,7 @@ function ListItem({
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment>
-      <Text text={title || null} disabled={disabled} size="lg" weight="bold" />
+      <Text text={title || null} disabled={disabled} size="lg"  />
       {description ? (<Text size="sm" text={description || null} disabled={disabled} />
       ) : null}
     </React.Fragment>
@@ -258,11 +258,7 @@ function ListItem({
   const rightContent = getRightContent(post, disabled, onClick);
 
   const handleOnClick = (e) => {
-    const val = e.target.innerText;
-
-    if (typeof onClick === "function") {
-      onClick(val);
-    }
+    onClick(e.target.innerText);
   };
 
   return (
@@ -287,7 +283,7 @@ function ListItem({
           center={{
             content: centerContent,
             align: "left",
-            onClick: handleOnClick,
+            onClick: typeof onClick === "function" ? handleOnClick : null,
           }}
           contentAlign="center"
           disabled={disabled}

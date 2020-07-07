@@ -113,7 +113,7 @@ storiesOf("Utilities|Modal", module)
                 {
                   id: "Confirm",
                   label: "Let's Do It!",
-                  type: "Success",
+                  variant: "success",
                   onClick: handleClose,
                 },
               ]}

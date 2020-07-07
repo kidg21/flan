@@ -310,7 +310,6 @@ storiesOf("Layout|Layout/", module)
                       <Command
                         icon="down"
                         label="Toggle"
-                        align="Bottom"
                         onClick={toggleBottom}
                       />
                     ),
@@ -412,7 +411,6 @@ storiesOf("Layout|Layout/", module)
                       <Command
                         icon="down"
                         label="Toggle"
-                        align="Bottom"
                         onClick={toggleBottom}
                       />
                     ),

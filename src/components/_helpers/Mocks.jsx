@@ -23,7 +23,7 @@ import SearchBar from "blocks/Search";
 
 function MockMap({ withTools, ...props }) {
   return (
-    <React.Fragment withTools={withTools}>
+    <React.Fragment>
       {withTools ? <Page
         id="Map Tools"
         template="E_03"
@@ -87,7 +87,7 @@ MockPalette.defaultProps = {
 function MockHeader() {
   return (
     <Card id="Card_Header">
-      <CardSection padding="" variant="">
+      <CardSection>
         <Title size="xl" text="This Is A Title" weight="bold" />
         <Text text="The Description Goes Here" />
       </CardSection>
@@ -580,12 +580,12 @@ function MockDetails() {
     <Panel
       id="Info Panel"
       padding="0"
-      header={[
+      header={(
         <React.Fragment>
           {panelHeader}
           {infoCard}
-        </React.Fragment>,
-      ]}
+        </React.Fragment>
+      )}
     >
       {infoBody}
     </Panel>

@@ -67,7 +67,7 @@ exports[` 1`] = `
               alt="Lightbox Logo"
               className="Image__ImageWrapper-sc-18abvff-0 bmySjT"
               onClick={null}
-              src={Object {}}
+              src=""
               title="Lightbox Logo"
               width="80%"
             />
@@ -82,7 +82,7 @@ exports[` 1`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -97,18 +97,18 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                  fontSize="0.879em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   Application A
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -123,18 +123,18 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                  fontSize="0.879em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   Application C
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -149,11 +149,11 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                  fontSize="0.879em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   Application D
                 </label>
@@ -170,72 +170,88 @@ exports[` 1`] = `
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+              className="Command__CommandContainer-sc-13akgtp-0 jYxPQo"
               id={null}
               label="Action"
               onClick={[Function]}
               title="Action"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Action
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+              className="Command__CommandContainer-sc-13akgtp-0 jYxPQo"
               id={null}
               label="Action"
               onClick={[Function]}
               title="Action"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+                fontSize="0.879em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Action
               </label>
             </a>
             <a
               className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-              id="Header_Action_Menu"
               onClick={[Function]}
             >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                color={null}
-                data-icon="ellipsis-v"
-                data-prefix="far"
-                focusable="false"
-                fontSize="inherit"
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                disabled={false}
+                htmlFor={null}
                 id={null}
-                role="img"
-                style={Object {}}
-                viewBox="0 0 128 512"
-                xmlns="http://www.w3.org/2000/svg"
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
               >
-                <path
-                  d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                  id={null}
+                  rows={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="ellipsis-v"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 128 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </section>
+              </button>
             </a>
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 jRqunA"
+              className="Avatar__TagContainer-sc-1vuf9om-2 dGrLIa"
               id={null}
               onClick={[Function]}
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+                className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
                 fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
@@ -269,9 +285,9 @@ exports[` 1`] = `
             className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+              className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               Main Menu
@@ -292,20 +308,15 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <a
-                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                  onClick={[Function]}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                    fontSize="1em"
-                    fontWeight={600}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Menu Item
-                  </p>
-                </a>
+                  Menu Item
+                </p>
               </div>
             </div>
           </li>
@@ -324,20 +335,15 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <a
-                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                  onClick={[Function]}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                    fontSize="1em"
-                    fontWeight={600}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Menu Item
-                  </p>
-                </a>
+                  Menu Item
+                </p>
               </div>
             </div>
           </li>
@@ -356,20 +362,15 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <a
-                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                  onClick={[Function]}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                    fontSize="1em"
-                    fontWeight={600}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Menu Item
-                  </p>
-                </a>
+                  Menu Item
+                </p>
               </div>
             </div>
           </li>
@@ -388,20 +389,15 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <a
-                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                  onClick={[Function]}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                    fontSize="1em"
-                    fontWeight={600}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Menu Item
-                  </p>
-                </a>
+                  Menu Item
+                </p>
               </div>
             </div>
           </li>
@@ -420,20 +416,15 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <a
-                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                  onClick={[Function]}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                    fontSize="1em"
-                    fontWeight={600}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Menu Item
-                  </p>
-                </a>
+                  Menu Item
+                </p>
               </div>
             </div>
           </li>
@@ -471,9 +462,9 @@ exports[` 1`] = `
                   className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+                    className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
                     fontSize="1em"
-                    fontWeight={600}
+                    fontWeight={400}
                     letterSpacing="0px"
                   >
                     Workflow
@@ -483,11 +474,11 @@ exports[` 1`] = `
                   className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
-                    fontSize="0.876em"
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme List__Section-sc-43f2zq-5 eiGycN"
+                    fontSize="0.879em"
                     fontWeight={400}
                     id={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   />
                 </li>
                 <li
@@ -505,20 +496,15 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <a
-                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                        onClick={[Function]}
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                        fontSize="1em"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0px"
                       >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                          fontSize="1em"
-                          fontWeight={600}
-                          id={null}
-                          letterSpacing="0px"
-                        >
-                          Menu Item
-                        </p>
-                      </a>
+                        Menu Item
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -526,11 +512,11 @@ exports[` 1`] = `
                   className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
-                    fontSize="0.876em"
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme List__Section-sc-43f2zq-5 eiGycN"
+                    fontSize="0.879em"
                     fontWeight={400}
                     id={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   />
                 </li>
                 <li
@@ -548,20 +534,15 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <a
-                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                        onClick={[Function]}
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                        fontSize="1em"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0px"
                       >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                          fontSize="1em"
-                          fontWeight={600}
-                          id={null}
-                          letterSpacing="0px"
-                        >
-                          Menu Item
-                        </p>
-                      </a>
+                        Menu Item
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -580,20 +561,15 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <a
-                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                        onClick={[Function]}
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                        fontSize="1em"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0px"
                       >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                          fontSize="1em"
-                          fontWeight={600}
-                          id={null}
-                          letterSpacing="0px"
-                        >
-                          Menu Item
-                        </p>
-                      </a>
+                        Menu Item
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -612,20 +588,15 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <a
-                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                        onClick={[Function]}
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                        fontSize="1em"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0px"
                       >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                          fontSize="1em"
-                          fontWeight={600}
-                          id={null}
-                          letterSpacing="0px"
-                        >
-                          Menu Item
-                        </p>
-                      </a>
+                        Menu Item
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -644,20 +615,15 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <a
-                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                        onClick={[Function]}
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                        fontSize="1em"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0px"
                       >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                          fontSize="1em"
-                          fontWeight={600}
-                          id={null}
-                          letterSpacing="0px"
-                        >
-                          Menu Item
-                        </p>
-                      </a>
+                        Menu Item
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -665,11 +631,11 @@ exports[` 1`] = `
                   className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
-                    fontSize="0.876em"
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme List__Section-sc-43f2zq-5 eiGycN"
+                    fontSize="0.879em"
                     fontWeight={400}
                     id={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   />
                 </li>
                 <li
@@ -687,20 +653,15 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <a
-                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                        onClick={[Function]}
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                        fontSize="1em"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0px"
                       >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                          fontSize="1em"
-                          fontWeight={600}
-                          id={null}
-                          letterSpacing="0px"
-                        >
-                          Menu Item
-                        </p>
-                      </a>
+                        Menu Item
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -719,20 +680,15 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <a
-                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                        onClick={[Function]}
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                        fontSize="1em"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0px"
                       >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                          fontSize="1em"
-                          fontWeight={600}
-                          id={null}
-                          letterSpacing="0px"
-                        >
-                          Menu Item
-                        </p>
-                      </a>
+                        Menu Item
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -747,7 +703,7 @@ exports[` 1`] = `
                 className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
                 href={null}
                 id="Card_Header"
-                media={null}
+                media=""
                 onClick={null}
               >
                 <section
@@ -756,7 +712,7 @@ exports[` 1`] = `
                   onClick={null}
                 >
                   <h4
-                    className="Typography__TitleText-sc-19auepv-2 czurBm"
+                    className="Typography__TitleText-sc-19auepv-2 diCApD"
                     fontSize="1.25em"
                     fontWeight={600}
                     letterSpacing="0px"
@@ -764,11 +720,11 @@ exports[` 1`] = `
                     This Is A Title
                   </h4>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                    fontSize="0.876em"
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
                     fontWeight={400}
                     id={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   >
                     The Description Goes Here
                   </p>
@@ -785,7 +741,7 @@ exports[` 1`] = `
                 id="Info Panel"
               >
                 <section
-                  className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+                  className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
                   id="Info Panel_header"
                 >
                   <div
@@ -798,36 +754,52 @@ exports[` 1`] = `
                     >
                       <a
                         className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                        id="MockDetails-Menu"
                         onClick={[Function]}
                       >
-                        <svg
-                          aria-hidden="true"
-                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                          color={null}
-                          data-icon="ellipsis-v"
-                          data-prefix="far"
-                          focusable="false"
-                          fontSize="inherit"
+                        <button
+                          className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                          disabled={false}
+                          htmlFor={null}
                           id={null}
-                          role="img"
-                          style={Object {}}
-                          viewBox="0 0 128 512"
-                          xmlns="http://www.w3.org/2000/svg"
+                          name={null}
+                          onClick={null}
+                          tabIndex="1"
+                          type="button"
                         >
-                          <path
-                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                            fill="currentColor"
-                            style={Object {}}
-                          />
-                        </svg>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                            id={null}
+                            rows={null}
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                              color={null}
+                              data-icon="ellipsis-v"
+                              data-prefix="far"
+                              focusable="false"
+                              fontSize="inherit"
+                              id={null}
+                              role="img"
+                              style={Object {}}
+                              viewBox="0 0 128 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                                fill="currentColor"
+                                style={Object {}}
+                              />
+                            </svg>
+                          </section>
+                        </button>
                       </a>
                     </div>
                     <div
                       className="Bar__Slot-icfo76-1 yvaBx"
                     >
                       <h6
-                        className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                        className="Typography__TitleText-sc-19auepv-2 fnUHAi"
                         fontSize="1em"
                         fontWeight={600}
                         letterSpacing="0px"
@@ -871,7 +843,7 @@ exports[` 1`] = `
                           className="Bar__Slot-icfo76-1 boCGaE"
                         >
                           <div
-                            className="Avatar__TagContainer-sc-1vuf9om-2 brBuoT"
+                            className="Avatar__TagContainer-sc-1vuf9om-2 cMhgjp"
                             id={null}
                             onClick={null}
                           >
@@ -901,7 +873,7 @@ exports[` 1`] = `
                           className="Bar__Slot-icfo76-1 yvaBx"
                         >
                           <h5
-                            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                            className="Typography__TitleText-sc-19auepv-2 hSytIY"
                             fontSize="1.15em"
                             fontWeight={600}
                             letterSpacing="0px"
@@ -909,11 +881,11 @@ exports[` 1`] = `
                             Best Place Ever
                           </h5>
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                            fontSize="0.876em"
+                            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                            fontSize="0.879em"
                             fontWeight={400}
                             id={null}
-                            letterSpacing="0px"
+                            letterSpacing="0.2px"
                           >
                             I Could Tell You More, But...
                           </p>
@@ -923,7 +895,7 @@ exports[` 1`] = `
                   </div>
                 </section>
                 <section
-                  className="Panel__SectionWrapper-sc-48epke-1 gDJXei"
+                  className="Panel__SectionWrapper-sc-48epke-1 eVhlEa"
                   id="Info Panel_body"
                 >
                   <section
@@ -932,7 +904,7 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <h6
-                      className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                      className="Typography__TitleText-sc-19auepv-2 fnUHAi"
                       fontSize="1em"
                       fontWeight={600}
                       letterSpacing="0px"
@@ -940,65 +912,65 @@ exports[` 1`] = `
                       All About This Item
                     </h6>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                      fontSize="0.876em"
+                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                      fontSize="0.879em"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.2px"
                     >
                       Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                      fontSize="0.876em"
+                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                      fontSize="0.879em"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.2px"
                     >
                       In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                      fontSize="0.876em"
+                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                      fontSize="0.879em"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.2px"
                     >
                       This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                      fontSize="0.876em"
+                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                      fontSize="0.879em"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.2px"
                     >
                       You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                      fontSize="0.876em"
+                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                      fontSize="0.879em"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.2px"
                     >
                       We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                      fontSize="0.876em"
+                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                      fontSize="0.879em"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.2px"
                     >
                       Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                      fontSize="0.876em"
+                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                      fontSize="0.879em"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.2px"
                     >
                       A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
                     </p>
@@ -1027,7 +999,7 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <form
-                      className="Search__SearchContainer-sey9om-0 kabWsY"
+                      className="Search__SearchContainer-sey9om-0 hvjWEc"
                     >
                       <input
                         className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -1038,7 +1010,7 @@ exports[` 1`] = `
                         type="search"
                       />
                       <button
-                        className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+                        className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
                         disabled={false}
                         htmlFor={null}
                         id={null}
@@ -1083,7 +1055,7 @@ exports[` 1`] = `
                   placeholder="B"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+                    className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
                     disabled={false}
                     htmlFor={null}
                     id={null}
@@ -1118,11 +1090,11 @@ exports[` 1`] = `
                         />
                       </svg>
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                        fontSize="0.876em"
+                        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                        fontSize="0.879em"
                         fontWeight={600}
                         htmlFor={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0.4px"
                       >
                         Button
                       </label>
@@ -1135,7 +1107,7 @@ exports[` 1`] = `
                   placeholder="C"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+                    className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
                     disabled={false}
                     htmlFor={null}
                     id={null}
@@ -1170,11 +1142,11 @@ exports[` 1`] = `
                         />
                       </svg>
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                        fontSize="0.876em"
+                        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                        fontSize="0.879em"
                         fontWeight={600}
                         htmlFor={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0.4px"
                       >
                         Button
                       </label>
@@ -1187,7 +1159,7 @@ exports[` 1`] = `
                   placeholder="D"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+                    className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
                     disabled={false}
                     htmlFor={null}
                     id={null}
@@ -1222,11 +1194,11 @@ exports[` 1`] = `
                         />
                       </svg>
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                        fontSize="0.876em"
+                        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                        fontSize="0.879em"
                         fontWeight={600}
                         htmlFor={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0.4px"
                       >
                         Button
                       </label>
@@ -1244,11 +1216,11 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                      fontSize="0.876em"
+                      className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                      fontSize="0.879em"
                       fontWeight={600}
                       htmlFor={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.4px"
                     >
                       Color Picker
                     </label>
@@ -1356,7 +1328,7 @@ exports[` 1`] = `
                 className="Card__CardWrapper-sc-1g3s676-3 gvdkPj"
                 href={null}
                 id="Card_Footer"
-                media={null}
+                media=""
                 onClick={null}
               >
                 <section
@@ -1370,7 +1342,7 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <a
-                      className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+                      className="Typography__LinkText-sc-19auepv-1 fZvALr"
                       fontSize="0.876em"
                       fontWeight={600}
                       href={null}
@@ -1381,11 +1353,11 @@ exports[` 1`] = `
                       1
                     </a>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                      fontSize="0.876em"
+                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                      fontSize="0.879em"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.2px"
                     >
                       Footer Content Goes Here
                     </p>
@@ -1399,7 +1371,7 @@ exports[` 1`] = `
             id="object record"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+              className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
               id="object record_header"
             >
               <div
@@ -1411,7 +1383,7 @@ exports[` 1`] = `
                   className="Bar__Slot-icfo76-1 eufPAN"
                 >
                   <h4
-                    className="Typography__TitleText-sc-19auepv-2 czurBm"
+                    className="Typography__TitleText-sc-19auepv-2 diCApD"
                     fontSize="1.25em"
                     fontWeight={600}
                     letterSpacing="0px"
@@ -1429,29 +1401,45 @@ exports[` 1`] = `
                   >
                     <a
                       className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                      id="Object_Action_Menu"
                       onClick={[Function]}
                     >
-                      <svg
-                        aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                        color={null}
-                        data-icon="ellipsis-v"
-                        data-prefix="far"
-                        focusable="false"
-                        fontSize="inherit"
+                      <button
+                        className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                        disabled={false}
+                        htmlFor={null}
                         id={null}
-                        role="img"
-                        style={Object {}}
-                        viewBox="0 0 128 512"
-                        xmlns="http://www.w3.org/2000/svg"
+                        name={null}
+                        onClick={null}
+                        tabIndex="1"
+                        type="button"
                       >
-                        <path
-                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                          fill="currentColor"
-                          style={Object {}}
-                        />
-                      </svg>
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                          id={null}
+                          rows={null}
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                            color={null}
+                            data-icon="ellipsis-v"
+                            data-prefix="far"
+                            focusable="false"
+                            fontSize="inherit"
+                            id={null}
+                            role="img"
+                            style={Object {}}
+                            viewBox="0 0 128 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                              fill="currentColor"
+                              style={Object {}}
+                            />
+                          </svg>
+                        </section>
+                      </button>
                     </a>
                     <a
                       className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
@@ -1485,7 +1473,7 @@ exports[` 1`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 gDJXei"
+              className="Panel__SectionWrapper-sc-48epke-1 eVhlEa"
               id="object record_body"
             >
               <section
@@ -1511,9 +1499,9 @@ exports[` 1`] = `
                         className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
                       >
                         <h6
-                          className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
                           fontSize="1em"
-                          fontWeight={600}
+                          fontWeight={400}
                           letterSpacing="0px"
                         >
                           1: Confirm
@@ -1539,9 +1527,9 @@ exports[` 1`] = `
                               onClick={[Function]}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                                 fontSize="1em"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0px"
                               >
@@ -1560,9 +1548,9 @@ exports[` 1`] = `
                         className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
                       >
                         <h6
-                          className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
                           fontSize="1em"
-                          fontWeight={600}
+                          fontWeight={400}
                           letterSpacing="0px"
                         >
                           2: Review
@@ -1588,9 +1576,9 @@ exports[` 1`] = `
                               onClick={[Function]}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                                 fontSize="1em"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0px"
                               >
@@ -1620,9 +1608,9 @@ exports[` 1`] = `
                               onClick={[Function]}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                                 fontSize="1em"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0px"
                               >
@@ -1652,9 +1640,9 @@ exports[` 1`] = `
                               onClick={[Function]}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                                 fontSize="1em"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0px"
                               >
@@ -1684,9 +1672,9 @@ exports[` 1`] = `
                               onClick={[Function]}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                                 fontSize="1em"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0px"
                               >
@@ -1705,9 +1693,9 @@ exports[` 1`] = `
                         className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
                       >
                         <h6
-                          className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
                           fontSize="1em"
-                          fontWeight={600}
+                          fontWeight={400}
                           letterSpacing="0px"
                         >
                           3: Export
@@ -1733,9 +1721,9 @@ exports[` 1`] = `
                               onClick={[Function]}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                                 fontSize="1em"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0px"
                               >
@@ -1757,7 +1745,7 @@ exports[` 1`] = `
                     className="Bar__Slot-icfo76-1 fNcQEg"
                   >
                     <h4
-                      className="Typography__TitleText-sc-19auepv-2 czurBm"
+                      className="Typography__TitleText-sc-19auepv-2 diCApD"
                       fontSize="1.25em"
                       fontWeight={600}
                       letterSpacing="0px"
@@ -1817,12 +1805,12 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 ivAgdI"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 jRqunA"
+            className="Avatar__TagContainer-sc-1vuf9om-2 dGrLIa"
             id={null}
             onClick={[Function]}
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
               fontSize="1em"
               fontWeight={400}
               letterSpacing="0px"
@@ -1838,7 +1826,7 @@ exports[` 2`] = `
             rows={null}
           >
             <form
-              className="Search__SearchContainer-sey9om-0 kabWsY"
+              className="Search__SearchContainer-sey9om-0 hvjWEc"
             >
               <input
                 className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -1849,7 +1837,7 @@ exports[` 2`] = `
                 type="search"
               />
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+                className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -1977,12 +1965,12 @@ exports[` 2`] = `
               </svg>
             </a>
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 jRqunA"
+              className="Avatar__TagContainer-sc-1vuf9om-2 dGrLIa"
               id={null}
               onClick={[Function]}
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+                className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
                 fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
@@ -2013,14 +2001,14 @@ exports[` 2`] = `
           id="List Panel"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+            className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
             id="List Panel_header"
           >
             <div
               className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
               href={null}
               id="Left_Header_Card"
-              media={null}
+              media=""
               onClick={null}
             >
               <div
@@ -2032,7 +2020,7 @@ exports[` 2`] = `
                   className="Bar__Slot-icfo76-1 fNcQEg"
                 >
                   <h5
-                    className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                    className="Typography__TitleText-sc-19auepv-2 hSytIY"
                     fontSize="1.15em"
                     fontWeight={600}
                     letterSpacing="0px"
@@ -2045,36 +2033,52 @@ exports[` 2`] = `
                 >
                   <a
                     className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                    id="Jobs_Header-Menu"
                     onClick={[Function]}
                   >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                      color={null}
-                      data-icon="ellipsis-v"
-                      data-prefix="far"
-                      focusable="false"
-                      fontSize="inherit"
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                      disabled={false}
+                      htmlFor={null}
                       id={null}
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 128 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      name={null}
+                      onClick={null}
+                      tabIndex="1"
+                      type="button"
                     >
-                      <path
-                        d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                        id={null}
+                        rows={null}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="ellipsis-v"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 128 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </section>
+                    </button>
                   </a>
                 </div>
               </div>
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+            className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
             id="List Panel_body"
           >
             <ul
@@ -2096,20 +2100,15 @@ exports[` 2`] = `
                   <div
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
-                    <a
-                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                      onClick={[Function]}
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
-                      >
-                        Layers
-                      </p>
-                    </a>
+                      Layers
+                    </p>
                   </div>
                 </div>
               </li>
@@ -2128,20 +2127,15 @@ exports[` 2`] = `
                   <div
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
-                    <a
-                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                      onClick={[Function]}
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
-                      >
-                        Results
-                      </p>
-                    </a>
+                      Results
+                    </p>
                   </div>
                 </div>
               </li>
@@ -2160,20 +2154,15 @@ exports[` 2`] = `
                   <div
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
-                    <a
-                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                      onClick={[Function]}
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
-                      >
-                        Form
-                      </p>
-                    </a>
+                      Form
+                    </p>
                   </div>
                 </div>
               </li>
@@ -2192,20 +2181,15 @@ exports[` 2`] = `
                   <div
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
-                    <a
-                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                      onClick={[Function]}
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
-                      >
-                        Research
-                      </p>
-                    </a>
+                      Research
+                    </p>
                   </div>
                 </div>
               </li>
@@ -2332,7 +2316,7 @@ exports[` 2`] = `
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
                             id={null}
                             onBlur={null}
                             onChange={null}
@@ -2429,7 +2413,7 @@ exports[` 2`] = `
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
                             id={null}
                             onBlur={null}
                             onChange={null}
@@ -2454,18 +2438,18 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          className="Command__CommandContainer-sc-13akgtp-0 jYxPQo"
                           id={null}
                           label="Object"
                           onClick={null}
                           title="Object"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-                            fontSize="0.876em"
+                            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+                            fontSize="0.879em"
                             fontWeight={400}
                             htmlFor={null}
-                            letterSpacing="0.2px"
+                            letterSpacing="0.4px"
                           >
                             Object
                           </label>
@@ -2492,7 +2476,7 @@ exports[` 2`] = `
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
                             id={null}
                             onBlur={null}
                             onChange={null}
@@ -2517,18 +2501,18 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          className="Command__CommandContainer-sc-13akgtp-0 jYxPQo"
                           id={null}
                           label="Object"
                           onClick={null}
                           title="Object"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-                            fontSize="0.876em"
+                            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+                            fontSize="0.879em"
                             fontWeight={400}
                             htmlFor={null}
-                            letterSpacing="0.2px"
+                            letterSpacing="0.4px"
                           >
                             Object
                           </label>
@@ -2555,7 +2539,7 @@ exports[` 2`] = `
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
                             id={null}
                             onBlur={null}
                             onChange={null}
@@ -2580,18 +2564,18 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          className="Command__CommandContainer-sc-13akgtp-0 jYxPQo"
                           id={null}
                           label="Object"
                           onClick={null}
                           title="Object"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
-                            fontSize="0.876em"
+                            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+                            fontSize="0.879em"
                             fontWeight={400}
                             htmlFor={null}
-                            letterSpacing="0.2px"
+                            letterSpacing="0.4px"
                           >
                             Object
                           </label>
@@ -2617,14 +2601,14 @@ exports[` 2`] = `
           id="Info Panel"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+            className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
             id="Info Panel_header"
           >
             <div
               className="Card__CardWrapper-sc-1g3s676-3 gvdkPj"
               href={null}
               id="Jobs_Summary"
-              media={null}
+              media=""
               onClick={null}
             >
               <div
@@ -2636,7 +2620,7 @@ exports[` 2`] = `
                   className="Bar__Slot-icfo76-1 eufPAN"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                    className="Typography__TitleText-sc-19auepv-2 fnUHAi"
                     fontSize="1em"
                     fontWeight={600}
                     letterSpacing="0px"
@@ -2679,7 +2663,7 @@ exports[` 2`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+            className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
             id="Info Panel_body"
           >
             <section
@@ -2693,7 +2677,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <h5
-                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                  className="Typography__TitleText-sc-19auepv-2 PRpBC"
                   fontSize="1.15em"
                   fontWeight={400}
                   letterSpacing="0px"
@@ -2701,20 +2685,20 @@ exports[` 2`] = `
                   Section 1
                 </h5>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
                 </p>
@@ -2725,7 +2709,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <h5
-                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                  className="Typography__TitleText-sc-19auepv-2 PRpBC"
                   fontSize="1.15em"
                   fontWeight={400}
                   letterSpacing="0px"
@@ -2733,38 +2717,38 @@ exports[` 2`] = `
                   Section 2
                 </h5>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
                 </p>
