@@ -94,7 +94,7 @@ exports[` 1`] = `
             placeholder="John"
             rows=""
             type="text"
-            value={null}
+            value=""
           />
           <p
             className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
@@ -136,7 +136,7 @@ exports[` 1`] = `
             placeholder="Williams"
             rows=""
             type="text"
-            value={null}
+            value=""
           />
           <p
             className="Typography__Paragraph-sc-19auepv-3 eFKeiu"

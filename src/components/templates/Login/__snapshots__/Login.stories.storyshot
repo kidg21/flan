@@ -83,7 +83,7 @@ exports[` 1`] = `
             placeholder="youremail@company.com"
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -116,7 +116,7 @@ exports[` 1`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
       </section>
@@ -295,7 +295,7 @@ exports[` 2`] = `
             placeholder="youremail@company.com"
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -328,7 +328,7 @@ exports[` 2`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -361,7 +361,7 @@ exports[` 2`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
       </section>
@@ -483,7 +483,7 @@ exports[` 3`] = `
             placeholder="youremail@company.com"
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
       </section>
@@ -720,7 +720,7 @@ exports[` 5`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -753,7 +753,7 @@ exports[` 5`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -786,7 +786,7 @@ exports[` 5`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
       </section>

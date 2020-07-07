@@ -45,7 +45,7 @@ exports[` 1`] = `
       placeholder={null}
       rows=""
       type="text"
-      value={null}
+      value=""
     />
   </section>
 </section>
@@ -101,7 +101,7 @@ exports[` 2`] = `
         placeholder={null}
         rows=""
         type="text"
-        value={null}
+        value=""
       />
     </section>
   </section>
