@@ -64,15 +64,16 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
       props.theme.palette[props.borderColor] || props.theme.palette.selected
     );
   }};
-  }
   &:after {
     content: '✔';
-    position: absolute;
-    top: 3px;
-    left: 3px;
+    position: fixed;
+    padding-left: 2px;
+    padding-top: 1px;
     font-size: 10px;
     color: white;
   }
+  }
+
   &:focus {
     outline-color: ${(props) => {
     return (
