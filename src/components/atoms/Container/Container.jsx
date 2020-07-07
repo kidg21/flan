@@ -69,11 +69,11 @@ const paddingHash = {
 };
 
 const Container = React.forwardRef(({
-  id, height, width, maxHeight, padding, border, children,
+  border, children, className, height, id, maxHeight, padding, width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
   return (
-    <Wrapper setPadding={setPadding} height={height} width={width}>
+    <Wrapper setPadding={setPadding} height={height} width={width} className={className}>
       <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
         {children}
       </BoxContainer>

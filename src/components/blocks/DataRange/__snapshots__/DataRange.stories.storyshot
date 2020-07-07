@@ -53,7 +53,7 @@ exports[` 1`] = `
           placeholder={null}
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </div>
@@ -103,7 +103,7 @@ exports[` 1`] = `
           placeholder={null}
           rows=""
           type="text"
-          value={null}
+          value=""
         />
       </section>
     </div>
@@ -188,7 +188,7 @@ exports[` 2`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -238,7 +238,7 @@ exports[` 2`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -305,7 +305,7 @@ exports[` 2`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -355,7 +355,7 @@ exports[` 2`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -413,7 +413,7 @@ exports[` 2`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -454,7 +454,7 @@ exports[` 2`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -530,7 +530,7 @@ exports[` 2`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -580,7 +580,7 @@ exports[` 2`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -659,7 +659,7 @@ exports[` 3`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>
@@ -709,7 +709,7 @@ exports[` 3`] = `
                 placeholder={null}
                 rows=""
                 type="text"
-                value={null}
+                value=""
               />
             </section>
           </div>

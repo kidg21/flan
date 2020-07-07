@@ -1,6 +1,7 @@
 import initStoryshots, { multiSnapshotWithOptions } from "@storybook/addon-storyshots";
 import { screen } from "Variables";
 import * as helpers from "helpers";
+import * as hooks from "hooks";
 // import { imageSnapshot } from "@storybook/addon-storyshots-puppeteer";
 
 if (!window) global.window = global;
@@ -9,6 +10,20 @@ if (!window.matchMedia) {
     return { matches: qString === screen.large };
   };
 }
+
+// Override hooks to only use passed state
+hooks.useState = (initValue) => {
+  return [initValue, () => {}];
+};
+hooks.useRef = (initValue) => {
+  return { current: initValue };
+};
+hooks.useMemo = (cb) => {
+  return cb();
+};
+hooks.useCallback = (cb) => {
+  return cb;
+};
 
 let count = 1;
 helpers.getGuid = () => {

@@ -82,7 +82,7 @@ function Avatar({
   const avatarSize = selectedSize ? selectedSize.avatar : "2.2rem";
   const fontSize = selectedSize ? selectedSize.font : "0.82em";
 
-  let backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";
+  const backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";
   const textColor = "inverse";
 
   let media = null;

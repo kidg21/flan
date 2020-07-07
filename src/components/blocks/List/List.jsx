@@ -258,11 +258,7 @@ function ListItem({
   const rightContent = getRightContent(post, disabled, onClick);
 
   const handleOnClick = (e) => {
-    const val = e.target.innerText;
-
-    if (typeof onClick === "function") {
-      onClick(val);
-    }
+    onClick(e.target.innerText);
   };
 
   return (
@@ -287,7 +283,7 @@ function ListItem({
           center={{
             content: centerContent,
             align: "left",
-            onClick: handleOnClick,
+            onClick: typeof onClick === "function" ? handleOnClick : null,
           }}
           contentAlign="center"
           disabled={disabled}

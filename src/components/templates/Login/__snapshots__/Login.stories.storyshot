@@ -15,9 +15,11 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 geRRsh"
     >
       <img
+        alt="Lightbox Logo"
         className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+        title="Lightbox Logo"
         width="10rem"
       />
     </div>
@@ -81,7 +83,7 @@ exports[` 1`] = `
             placeholder="youremail@company.com"
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -114,7 +116,7 @@ exports[` 1`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
       </section>
@@ -225,9 +227,11 @@ exports[` 2`] = `
       className="Bar__Slot-icfo76-1 geRRsh"
     >
       <img
+        alt="Lightbox Logo"
         className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+        title="Lightbox Logo"
         width="10rem"
       />
     </div>
@@ -291,7 +295,7 @@ exports[` 2`] = `
             placeholder="youremail@company.com"
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -324,7 +328,7 @@ exports[` 2`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -357,7 +361,7 @@ exports[` 2`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
       </section>
@@ -411,9 +415,11 @@ exports[` 3`] = `
       className="Bar__Slot-icfo76-1 geRRsh"
     >
       <img
+        alt="Lightbox Logo"
         className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+        title="Lightbox Logo"
         width="10rem"
       />
     </div>
@@ -477,7 +483,7 @@ exports[` 3`] = `
             placeholder="youremail@company.com"
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
       </section>
@@ -567,9 +573,11 @@ exports[` 4`] = `
       className="Bar__Slot-icfo76-1 geRRsh"
     >
       <img
+        alt="Lightbox Logo"
         className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+        title="Lightbox Logo"
         width="10rem"
       />
     </div>
@@ -644,9 +652,11 @@ exports[` 5`] = `
       className="Bar__Slot-icfo76-1 geRRsh"
     >
       <img
+        alt="Lightbox Logo"
         className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+        title="Lightbox Logo"
         width="10rem"
       />
     </div>
@@ -710,7 +720,7 @@ exports[` 5`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -743,7 +753,7 @@ exports[` 5`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
         <section
@@ -776,7 +786,7 @@ exports[` 5`] = `
             placeholder={null}
             rows=""
             type="text"
-            value={null}
+            value=""
           />
         </section>
       </section>
@@ -830,9 +840,11 @@ exports[` 6`] = `
       className="Bar__Slot-icfo76-1 geRRsh"
     >
       <img
+        alt="Lightbox Logo"
         className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+        title="Lightbox Logo"
         width="10rem"
       />
     </div>
