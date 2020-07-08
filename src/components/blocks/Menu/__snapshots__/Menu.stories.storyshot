@@ -11,7 +11,7 @@ exports[` 1`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Standard_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -90,7 +90,7 @@ exports[` 1`] = `
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
               id="storyshots_96"
-              media={null}
+              media=""
               onClick={null}
             >
               <ul
@@ -118,20 +118,15 @@ exports[` 1`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -157,20 +152,15 @@ exports[` 1`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -196,20 +186,15 @@ exports[` 1`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -235,20 +220,15 @@ exports[` 1`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -294,7 +274,7 @@ exports[` 2`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Icon_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -373,7 +353,7 @@ exports[` 2`] = `
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
               id="storyshots_97"
-              media={null}
+              media=""
               onClick={null}
             >
               <ul
@@ -425,20 +405,15 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 yvaBx"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -488,20 +463,15 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 yvaBx"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -551,20 +521,15 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 yvaBx"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -614,20 +579,15 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 yvaBx"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -672,7 +632,7 @@ exports[` 3`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Position_BottomLeft_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -751,7 +711,7 @@ exports[` 3`] = `
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
               id="storyshots_98"
-              media={null}
+              media=""
               onClick={null}
             >
               <ul
@@ -779,20 +739,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -818,20 +773,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -857,20 +807,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -896,20 +841,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -944,7 +884,7 @@ exports[` 3`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Position_BottomRight_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -1011,7 +951,7 @@ exports[` 3`] = `
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
               id="storyshots_99"
-              media={null}
+              media=""
               onClick={null}
             >
               <ul
@@ -1039,20 +979,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1078,20 +1013,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1117,20 +1047,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1156,20 +1081,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1216,7 +1136,7 @@ exports[` 3`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Position_TopLeft_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -1314,7 +1234,7 @@ exports[` 3`] = `
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
               id="storyshots_100"
-              media={null}
+              media=""
               onClick={null}
             >
               <ul
@@ -1342,20 +1262,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1381,20 +1296,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1420,20 +1330,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1459,20 +1364,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>

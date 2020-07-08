@@ -40,7 +40,8 @@
       "node_modules/(?!react-syntax-highlighter|@storybook)"
     ],
     "moduleNameMapper": {
-      "\\.(s?css|sass|pcss|styl.*|less|sss|gif|jpe?g|png|svg|mp4|webm|ogv)$": "<rootDir>/mock.js",
+      "\\.(s?css|sass|pcss|styl.*|less|sss|svg|mp4|webm|ogv)$": "<rootDir>/mock.js",
+      "\\.(gif|jpe?g|png)$": "<rootDir>/mockFilePath.js",
       "layout\\/Map$": "<rootDir>/.storybook/Mapbox.jsx"
     }
   },
@@ -106,8 +107,8 @@
     "editorconfig": "^0.15.3",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
-    "eslint-plugin-chai-friendly": "^0.4.1",
-    "eslint-plugin-cypress": "^2.0.1",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-cypress": "^2.10.2",
     "ignore-styles": "^5.0.1",
     "jest": "^25.1.0",
     "jsdom": "^15.2.1",

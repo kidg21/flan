@@ -131,7 +131,7 @@ const CardGridWrapper = styled(Grid)`
     return props.theme.shadows.dropShadow2;
   }};
     }
-    ${CardSectionWrapper}:not(${Media}) {
+    ${CardSectionWrapper}:not(${CardMedia}) {
       &:first-of-type {
         padding: 0.75em 1em 0.5em;
       }
@@ -474,19 +474,19 @@ function Card({
       {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
       {body ? (
-        <CardSection id={`${uId}-Body`} onClick={onClick}>
-          <Text text={body} />
+        <CardSection id={`${uId}-Body`}>
+          <Text>{body}</Text>
         </CardSection>
       ) : null}
       {children}
-      {commandElements ? <CardSection id={`${uId}-Footer`} footer>{commandElements}</CardSection> : null}
+      {commandElements ? <CardSection id={`${uId}-Footer`} footer={<React.Fragment />}>{commandElements}</CardSection> : null}
     </CardWrapper>
   );
 }
 
 Card.propTypes = {
   badgeLabel: PropTypes.string,
-  body: PropTypes.string,
+  body: PropTypes.node,
   children: PropTypes.node,
   className: PropTypes.string,
   href: PropTypes.node,
@@ -514,24 +514,24 @@ Card.propTypes = {
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
-  badgeLabel: null,
-  body: null,
+  badgeLabel: "",
+  body: "",
   children: null,
   className: null,
   commands: null,
-  description: null,
+  description: "",
   href: null,
-  icon: null,
-  id: null,
+  icon: "",
+  id: "",
   isInverse: false,
-  label: null,
-  mediaDesc: null,
-  media: null,
-  more: "",
+  label: "",
+  mediaDesc: "",
+  media: "",
+  more: null,
   onClick: null,
   padding: null,
   shadow: null,
-  title: null,
+  title: "",
   variant: null,
 };
 

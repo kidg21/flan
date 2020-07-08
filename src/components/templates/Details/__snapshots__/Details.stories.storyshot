@@ -232,134 +232,138 @@ exports[` 1`] = `
             className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
             id="Detail_Legend-table"
           >
-            <tr
-              className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            <tbody
+              className="Legend__Body-sc-70hm4b-5 kHKUyy"
             >
-              <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                fontSize={null}
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.2px"
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
                 >
-                  Requested by
-                </p>
-              </td>
-              <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                fontSize={null}
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Requested by
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Steve Davidson, Banking Bank USA
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.2px"
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
                 >
-                  Steve Davidson, Banking Bank USA
-                </p>
-              </td>
-            </tr>
-            <tr
-              className="Legend__Row-sc-70hm4b-4 kKuGtn"
-            >
-              <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                fontSize={null}
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Report Requested
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Evaluation Report, Narrative
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.2px"
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
                 >
-                  Report Requested
-                </p>
-              </td>
-              <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                fontSize={null}
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Response Due by
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Nov 02, 2019
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.2px"
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
                 >
-                  Evaluation Report, Narrative
-                </p>
-              </td>
-            </tr>
-            <tr
-              className="Legend__Row-sc-70hm4b-4 kKuGtn"
-            >
-              <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.2px"
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Report Requested by
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
                 >
-                  Response Due by
-                </p>
-              </td>
-              <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.2px"
-                >
-                  Nov 02, 2019
-                </p>
-              </td>
-            </tr>
-            <tr
-              className="Legend__Row-sc-70hm4b-4 kKuGtn"
-            >
-              <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.2px"
-                >
-                  Report Requested by
-                </p>
-              </td>
-              <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.2px"
-                >
-                  Nov 10,2019
-                </p>
-              </td>
-            </tr>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Nov 10,2019
+                  </p>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </section>

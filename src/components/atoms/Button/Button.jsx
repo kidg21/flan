@@ -134,7 +134,7 @@ ButtonGroup.propTypes = {
    *
    * Options: 1-6
    */
-  columns: PropTypes.string,
+  columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   className: PropTypes.string,
 };
 
@@ -333,7 +333,7 @@ Button.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(["button", "reset", "submit"]),
-  variant: PropTypes.oneOf(["action", "alert", "info", "success", "warning", "neutral"]),
+  variant: PropTypes.oneOf(["", "action", "alert", "info", "success", "warning", "neutral"]),
 };
 
 Button.defaultProps = {

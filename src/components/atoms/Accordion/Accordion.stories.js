@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "hooks";
 import Text from "base/Typography";
 import { Padding } from "helpers/Display";
 import Checkbox from "atoms/Checkbox";

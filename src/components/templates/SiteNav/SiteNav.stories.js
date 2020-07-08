@@ -17,6 +17,10 @@ import Grid from "layout/Grid";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Layout from "layout/Layout";
 
+function onCardClick(cardId) {
+  alert(`${cardId} clicked!`);
+}
+
 const siteData = (
   <Panel >
     <Tabs>
@@ -25,7 +29,7 @@ const siteData = (
     </Tabs>
     <CardGrid columns="1">
       <Card
-        onClick
+        onClick={() => { onCardClick("Card 1"); }}
         commands={
           object(
             "commands",
@@ -44,7 +48,7 @@ const siteData = (
           </Grid>}
       />
       <Card
-        onClick
+        onClick={() => { onCardClick("Card 2"); }}
         commands={
           object(
             "commands",
@@ -63,7 +67,7 @@ const siteData = (
           </Grid>}
       />
       <Card
-        onClick
+        onClick={() => { onCardClick("Card 3"); }}
         commands={
           object(
             "commands",
@@ -82,7 +86,7 @@ const siteData = (
           </Grid>}
       />
       <Card
-        onClick
+        onClick={() => { onCardClick("Card 4"); }}
         commands={
           object(
             "commands",

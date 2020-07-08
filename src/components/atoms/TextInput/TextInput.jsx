@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
@@ -221,7 +222,7 @@ function TextInput({
         readonly={readonly}
         rows={rows} // textarea attribute
         type={type} // input attribute
-        value={value}
+        value={value || ""}
       />
       {autocompleteDataList}
       {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
