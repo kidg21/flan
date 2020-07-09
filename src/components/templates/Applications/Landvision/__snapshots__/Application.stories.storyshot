@@ -1018,7 +1018,6 @@ exports[` 1`] = `
                         placeholder="Search Location"
                         rows=""
                         type="search"
-                        value=""
                       />
                     </section>
                     <button
@@ -1856,7 +1855,6 @@ exports[` 2`] = `
                 placeholder="Search"
                 rows=""
                 type="search"
-                value=""
               />
             </section>
             <button
