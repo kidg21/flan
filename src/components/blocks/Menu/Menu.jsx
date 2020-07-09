@@ -157,7 +157,8 @@ function MenuComponent({
           onMouseOver={closeMenu}
         >
           <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
-        </ItemWrapper>);
+        </ItemWrapper>
+      );
     });
   }, [data, submenuDirection, activeItem]);
 
@@ -242,7 +243,7 @@ function getCssPosition(position) {
  * Main Menu Component
  */
 function Menu({
-  id, data, icon, visible, onClick, isButton, position,
+  id, data, icon, visible, onClick, isButton, position, Anchor,
 }) {
   let visibility = visible;
   let setVisibility = onClick;
@@ -256,11 +257,21 @@ function Menu({
     setVisibility(!visibility);
   }
 
+  const anchorElement = useMemo(() => {
+    let _anchorElement = <Icon icon={icon} />;
+    if (Anchor) {
+      _anchorElement = Anchor;
+    } else if (isButton) {
+      _anchorElement = <Button icon={icon} isPlain isRound />;
+    }
+    return _anchorElement;
+  }, [Anchor, isButton, icon]);
+
   return (
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
       <MenuContainer onClick={toggleVisibility}>
-        { isButton ? <Button icon={icon} isPlain isRound /> : <Icon icon={icon} />}
+        {anchorElement}
         {visibility ? (
           <MenuComponent
             data={data}
@@ -275,6 +286,7 @@ function Menu({
 }
 
 Menu.propTypes = {
+  Anchor: PropTypes.node,
   data: PropTypes.arrayOf(PropTypes.object),
   icon: PropTypes.string,
   isButton: PropTypes.bool,
@@ -293,6 +305,7 @@ Menu.propTypes = {
 };
 
 Menu.defaultProps = {
+  Anchor: null,
   data: null,
   icon: "options",
   isButton: true,
