@@ -54,6 +54,7 @@ export { default as NavigationPanelHeader } from "./elements/PanelHeaders/Naviga
 export { default as Notification } from "./elements/Notification";
 export { default as Picker, ColorSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
+export { default as ProgressIndicator } from "./elements/ProgressIndicator";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 
