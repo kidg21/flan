@@ -295,7 +295,7 @@ Menu.propTypes = {
 Menu.defaultProps = {
   data: null,
   icon: "options",
-  isButton: true,
+  isButton: false,
   id: null,
   onClick: null,
   position: "default",
