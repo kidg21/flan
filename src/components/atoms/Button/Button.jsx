@@ -134,7 +134,7 @@ ButtonGroup.propTypes = {
    *
    * Options: 1-6
    */
-  columns: PropTypes.string,
+  columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   className: PropTypes.string,
 };
 
