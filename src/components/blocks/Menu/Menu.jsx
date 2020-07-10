@@ -243,7 +243,14 @@ function getCssPosition(position) {
  * Main Menu Component
  */
 function Menu({
-  id, data, icon, visible, onClick, isButton, position, Anchor,
+  id,
+  data,
+  icon, // deprecated use children
+  visible,
+  onClick,
+  isButton, // deprecated use children
+  position,
+  children,
 }) {
   let visibility = visible;
   let setVisibility = onClick;
@@ -257,15 +264,17 @@ function Menu({
     setVisibility(!visibility);
   }
 
+  // TODO: remove "icon" & "isButton" prop,
+  // "children" will be the anchor element
   const anchorElement = useMemo(() => {
     let _anchorElement = <Icon icon={icon} />;
-    if (Anchor) {
-      _anchorElement = Anchor;
+    if (children) {
+      _anchorElement = children;
     } else if (isButton) {
       _anchorElement = <Button icon={icon} isPlain isRound />;
     }
     return _anchorElement;
-  }, [Anchor, isButton, icon]);
+  }, [children, isButton, icon]);
 
   return (
     <React.Fragment>
@@ -286,7 +295,7 @@ function Menu({
 }
 
 Menu.propTypes = {
-  Anchor: PropTypes.node,
+  children: PropTypes.node,
   data: PropTypes.arrayOf(PropTypes.object),
   icon: PropTypes.string,
   isButton: PropTypes.bool,
@@ -305,7 +314,7 @@ Menu.propTypes = {
 };
 
 Menu.defaultProps = {
-  Anchor: null,
+  children: null,
   data: null,
   icon: "options",
   isButton: true,
