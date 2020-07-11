@@ -135,7 +135,7 @@ exports[` 2`] = `
       className="Bar__Slot-icfo76-1 boCGaE"
     >
       <div
-        className="Avatar__TagContainer-sc-1vuf9om-2 kjDGQc"
+        className="Avatar__TagContainer-sc-1vuf9om-2 ulvHg"
         id={null}
         onClick={null}
       >
@@ -229,7 +229,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 iOFdSY"
+          className="Avatar__TagContainer-sc-1vuf9om-2 bRLeGs"
           id={null}
           onClick={null}
         >
@@ -315,7 +315,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 kjDGQc"
+          className="Avatar__TagContainer-sc-1vuf9om-2 ulvHg"
           id={null}
           onClick={null}
         >
@@ -401,7 +401,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 cMrzfM"
+          className="Avatar__TagContainer-sc-1vuf9om-2 dypNbw"
           id={null}
           onClick={null}
         >
@@ -487,7 +487,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 cNGXUJ"
+          className="Avatar__TagContainer-sc-1vuf9om-2 eRECvh"
           id={null}
           onClick={null}
         >
@@ -582,7 +582,7 @@ exports[` 4`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 iOFdSY"
+          className="Avatar__TagContainer-sc-1vuf9om-2 bRLeGs"
           id={null}
           onClick={null}
         >
@@ -634,7 +634,8 @@ exports[` 4`] = `
             Upgrade to premium to take advantage of this feature.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 fZvALr"
+            className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+            disabled={false}
             fontSize="0.876em"
             fontWeight={600}
             href={null}
@@ -688,7 +689,7 @@ exports[` 4`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 cNGXUJ"
+          className="Avatar__TagContainer-sc-1vuf9om-2 eRECvh"
           id={null}
           onClick={null}
         >
@@ -740,7 +741,8 @@ exports[` 4`] = `
             Update payment information in order to complete transaction.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 fZvALr"
+            className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+            disabled={false}
             fontSize="0.876em"
             fontWeight={600}
             href={null}

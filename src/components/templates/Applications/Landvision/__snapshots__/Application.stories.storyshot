@@ -246,7 +246,7 @@ exports[` 1`] = `
               </button>
             </a>
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 dGrLIa"
+              className="Avatar__TagContainer-sc-1vuf9om-2 kWVCwa"
               id={null}
               onClick={[Function]}
             >
@@ -278,23 +278,23 @@ exports[` 1`] = `
         width="15%"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-1 dZwfPB"
+          className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
           id={null}
         >
           <li
             className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
+              className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
               fontSize="1em"
-              fontWeight={400}
+              fontWeight={600}
               letterSpacing="0px"
             >
               Main Menu
             </h6>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
             disabled={false}
             href={null}
             id={null}
@@ -321,7 +321,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 fdAPQl"
+            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
             disabled={false}
             href={null}
             id={null}
@@ -348,7 +348,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
             disabled={false}
             href={null}
             id={null}
@@ -375,7 +375,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
             disabled={false}
             href={null}
             id={null}
@@ -402,7 +402,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
             disabled={false}
             href={null}
             id={null}
@@ -455,16 +455,16 @@ exports[` 1`] = `
               placeholder="A"
             >
               <ul
-                className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
                 id={null}
               >
                 <li
                   className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
+                    className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
                     fontSize="1em"
-                    fontWeight={400}
+                    fontWeight={600}
                     letterSpacing="0px"
                   >
                     Workflow
@@ -482,7 +482,7 @@ exports[` 1`] = `
                   />
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                   disabled={false}
                   href={null}
                   id={null}
@@ -520,7 +520,7 @@ exports[` 1`] = `
                   />
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 fdAPQl"
+                  className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
                   disabled={false}
                   href={null}
                   id={null}
@@ -547,7 +547,7 @@ exports[` 1`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                   disabled={false}
                   href={null}
                   id={null}
@@ -574,7 +574,7 @@ exports[` 1`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                   disabled={false}
                   href={null}
                   id={null}
@@ -601,7 +601,7 @@ exports[` 1`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                   disabled={false}
                   href={null}
                   id={null}
@@ -639,7 +639,7 @@ exports[` 1`] = `
                   />
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                   disabled={false}
                   href={null}
                   id={null}
@@ -666,7 +666,7 @@ exports[` 1`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                   disabled={false}
                   href={null}
                   id={null}
@@ -843,7 +843,7 @@ exports[` 1`] = `
                           className="Bar__Slot-icfo76-1 boCGaE"
                         >
                           <div
-                            className="Avatar__TagContainer-sc-1vuf9om-2 cMhgjp"
+                            className="Avatar__TagContainer-sc-1vuf9om-2 gCneCZ"
                             id={null}
                             onClick={null}
                           >
@@ -1004,7 +1004,7 @@ exports[` 1`] = `
                     >
                       <input
                         autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+                        className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
                         cols=""
                         disabled={false}
                         id="Map_E3-search-bar"
@@ -1335,7 +1335,7 @@ exports[` 1`] = `
               placeholder="E"
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gvdkPj"
+                className="Card__CardWrapper-sc-1g3s676-3 GdCML"
                 href={null}
                 id="Card_Footer"
                 media=""
@@ -1352,7 +1352,8 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <a
-                      className="Typography__LinkText-sc-19auepv-1 fZvALr"
+                      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                      disabled={false}
                       fontSize="0.876em"
                       fontWeight={600}
                       href={null}
@@ -1502,23 +1503,23 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <ul
-                      className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                      className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
                       id={null}
                     >
                       <li
                         className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
                       >
                         <h6
-                          className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
                           fontSize="1em"
-                          fontWeight={400}
+                          fontWeight={600}
                           letterSpacing="0px"
                         >
                           1: Confirm
                         </h6>
                       </li>
                       <li
-                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                         disabled={false}
                         href={null}
                         id={null}
@@ -1551,23 +1552,23 @@ exports[` 1`] = `
                       </li>
                     </ul>
                     <ul
-                      className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                      className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
                       id={null}
                     >
                       <li
                         className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
                       >
                         <h6
-                          className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
                           fontSize="1em"
-                          fontWeight={400}
+                          fontWeight={600}
                           letterSpacing="0px"
                         >
                           2: Review
                         </h6>
                       </li>
                       <li
-                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                         disabled={false}
                         href={null}
                         id={null}
@@ -1599,7 +1600,7 @@ exports[` 1`] = `
                         </div>
                       </li>
                       <li
-                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                         disabled={false}
                         href={null}
                         id={null}
@@ -1631,7 +1632,7 @@ exports[` 1`] = `
                         </div>
                       </li>
                       <li
-                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                         disabled={false}
                         href={null}
                         id={null}
@@ -1663,7 +1664,7 @@ exports[` 1`] = `
                         </div>
                       </li>
                       <li
-                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                         disabled={false}
                         href={null}
                         id={null}
@@ -1696,23 +1697,23 @@ exports[` 1`] = `
                       </li>
                     </ul>
                     <ul
-                      className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                      className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
                       id={null}
                     >
                       <li
                         className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
                       >
                         <h6
-                          className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
                           fontSize="1em"
-                          fontWeight={400}
+                          fontWeight={600}
                           letterSpacing="0px"
                         >
                           3: Export
                         </h6>
                       </li>
                       <li
-                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                         disabled={false}
                         href={null}
                         id={null}
@@ -1815,7 +1816,7 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 ivAgdI"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 dGrLIa"
+            className="Avatar__TagContainer-sc-1vuf9om-2 kWVCwa"
             id={null}
             onClick={[Function]}
           >
@@ -1841,7 +1842,7 @@ exports[` 2`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+                className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
                 cols=""
                 disabled={null}
                 id="storyshots_61-search-bar"
@@ -1985,7 +1986,7 @@ exports[` 2`] = `
               </svg>
             </a>
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 dGrLIa"
+              className="Avatar__TagContainer-sc-1vuf9om-2 kWVCwa"
               id={null}
               onClick={[Function]}
             >
@@ -2102,11 +2103,11 @@ exports[` 2`] = `
             id="List Panel_body"
           >
             <ul
-              className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+              className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
               id={null}
             >
               <li
-                className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+                className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
                 disabled={false}
                 href={null}
                 id={null}
@@ -2133,7 +2134,7 @@ exports[` 2`] = `
                 </div>
               </li>
               <li
-                className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+                className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
                 disabled={false}
                 href={null}
                 id={null}
@@ -2160,7 +2161,7 @@ exports[` 2`] = `
                 </div>
               </li>
               <li
-                className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+                className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
                 disabled={false}
                 href={null}
                 id={null}
@@ -2187,7 +2188,7 @@ exports[` 2`] = `
                 </div>
               </li>
               <li
-                className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+                className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
                 disabled={false}
                 href={null}
                 id={null}
@@ -2316,7 +2317,7 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 cFSFhp"
+                        className="Table__CellWrapper-gz0dbt-1 hezgU"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2346,7 +2347,7 @@ exports[` 2`] = `
                         </div>
                       </div>
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 cFSFhp"
+                        className="Table__CellWrapper-gz0dbt-1 hezgU"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2625,7 +2626,7 @@ exports[` 2`] = `
             id="Info Panel_header"
           >
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 gvdkPj"
+              className="Card__CardWrapper-sc-1g3s676-3 GdCML"
               href={null}
               id="Jobs_Summary"
               media=""
