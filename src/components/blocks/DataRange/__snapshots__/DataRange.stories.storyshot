@@ -39,7 +39,7 @@ exports[` 1`] = `
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+          className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
           cols=""
           disabled={false}
           id="default_left"
@@ -88,7 +88,7 @@ exports[` 1`] = `
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+          className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
           cols=""
           disabled={false}
           id="default_right"
@@ -172,7 +172,7 @@ exports[` 2`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+                className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
                 cols=""
                 disabled={false}
                 id="input_left"
@@ -221,7 +221,7 @@ exports[` 2`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+                className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
                 cols=""
                 disabled={false}
                 id="input_right"
@@ -287,7 +287,7 @@ exports[` 2`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 bHjBXP"
+                className="TextInput__Input-sc-1fep8p8-2 ycSSG"
                 cols=""
                 disabled={false}
                 id="inputError_left"
@@ -336,7 +336,7 @@ exports[` 2`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 bHjBXP"
+                className="TextInput__Input-sc-1fep8p8-2 ycSSG"
                 cols=""
                 disabled={false}
                 id="inputError_right"
@@ -393,7 +393,7 @@ exports[` 2`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 bHjBXP"
+                className="TextInput__Input-sc-1fep8p8-2 ycSSG"
                 cols=""
                 disabled={false}
                 id="inputError_left"
@@ -433,7 +433,7 @@ exports[` 2`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 bHjBXP"
+                className="TextInput__Input-sc-1fep8p8-2 ycSSG"
                 cols=""
                 disabled={false}
                 id="inputError_right"
@@ -508,7 +508,7 @@ exports[` 2`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 itToUE"
+                className="TextInput__Input-sc-1fep8p8-2 gfuChF"
                 cols=""
                 disabled={true}
                 id="inputDisabled_left"
@@ -557,7 +557,7 @@ exports[` 2`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 itToUE"
+                className="TextInput__Input-sc-1fep8p8-2 gfuChF"
                 cols=""
                 disabled={true}
                 id="inputDisabled_right"
@@ -635,7 +635,7 @@ exports[` 3`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+                className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
                 cols=""
                 disabled={false}
                 id="input_left"
@@ -684,7 +684,7 @@ exports[` 3`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+                className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
                 cols=""
                 disabled={false}
                 id="input_right"

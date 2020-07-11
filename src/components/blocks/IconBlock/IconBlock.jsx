@@ -38,7 +38,7 @@ function IconBlock({
               rotation={item.rotation}
               size={size}
               spin={item.spin}
-              type={item.type}
+              variant={item.variant}
             />
           );
         })}
