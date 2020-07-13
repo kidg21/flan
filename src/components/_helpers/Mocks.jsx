@@ -28,37 +28,38 @@ import SearchBar from "blocks/Search";
 import Field, { FieldGroup } from "atoms/Field";
 import LightBoxLogo from "images/LightBoxLogo.png";
 
-
 function MockMap({ withTools, ...props }) {
   return (
     <React.Fragment>
-      {withTools ? <Template
-        id="Map Tools"
-        template="E_03"
-        hasBorders
-        isOverlay
-        A={{
-          id: "A",
-          content: <SearchBar id="Map_E3" placeholder="Search Location" />,
-        }}
-        B={{
-          id: "B",
-          content: <Button label="Button" icon="circle" alignCenter />,
-        }}
-        C={{
-          id: "C",
-          content: <Button label="Button" icon="circle" alignCenter />,
-        }}
-        D={{
-          id: "D",
-          content: <Button label="Button" icon="circle" alignCenter />,
-        }}
-        E={{
-          id: "E",
-          content: "">,
-        }}
-      /> : null}
-      <Mapbox/>
+      {withTools ? (
+        <Template
+          id="Map Tools"
+          template="E_03"
+          hasBorders
+          isOverlay
+          A={{
+            id: "A",
+            content: <SearchBar id="Map_E3" placeholder="Search Location" />,
+          }}
+          B={{
+            id: "B",
+            content: <Button label="Button" icon="circle" alignCenter />,
+          }}
+          C={{
+            id: "C",
+            content: <Button label="Button" icon="circle" alignCenter />,
+          }}
+          D={{
+            id: "D",
+            content: <Button label="Button" icon="circle" alignCenter />,
+          }}
+          E={{
+            id: "E",
+            content: <Button label="Button" icon="circle" alignCenter />,
+          }}
+        />
+      ) : null}
+      <Mapbox />
     </React.Fragment>
   );
 }
@@ -235,8 +236,8 @@ MockMenu.defaultProps = {
 function MockWorkflow({ data, title }) {
   return (
     <React.Fragment>
-      {data ? <List title={title} isInteractive data={data} /> :
-        (
+      {data ? <List title={title} isInteractive data={data} />
+        : (
           <List title={title} isInteractive>
             <ListItem
               title="Project Details"
@@ -275,8 +276,7 @@ function MockWorkflow({ data, title }) {
               />
             </ListSection>
           </List>
-        )
-      }
+        )}
     </React.Fragment>
   );
 }
@@ -940,12 +940,12 @@ function MockDetails({
   return (
     <Template>
       <Image
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-      alt="This is alt text for this image"
-      width="100%"
-    />
-      {data ? <FieldGroup id={title} title={title} data={data} /> :
-        (
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        alt="This is alt text for this image"
+        width="100%"
+      />
+      {data ? <FieldGroup id={title} title={title} data={data} />
+        : (
           <FieldGroup id="Physical Characteristics" title={title || "Physical Characteristics"}>
             <Field
               id="No. of Buildings"
@@ -973,8 +973,7 @@ function MockDetails({
               value="1978"
             />
           </FieldGroup>
-        )
-      }
+        )}
       {footer}
     </Template>
   );
