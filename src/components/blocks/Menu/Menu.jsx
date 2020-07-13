@@ -10,8 +10,7 @@ import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 import { getGuid } from "helpers";
 
-const MenuContainer = styled.a`
-  /* display: flex; */
+const MenuContainer = styled.div`
   cursor: pointer;
   padding: 0.5em;
   margin: -0.5em;
@@ -21,35 +20,13 @@ const MenuContainer = styled.a`
 `;
 
 const ListWrapper = styled(List)`
-  list-style: none;
-  background: ${(props) => {
-    return props.theme.background.default;
-  }};
-  overflow-x: hidden;
-  overflow-y: auto;
   border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
 `;
 
 const ItemWrapper = styled.li`
-  text-align: left;
-  z-index: 501;
-  &[disabled] {
-    cursor: not-allowed;
-    pointer-events: none;
-    user-select: none;
-    color: ${(props) => {
-    return props.theme.text.disabled;
-  }};
-    background-color: ${(props) => {
-    return props.theme.background.disabled;
-  }};
-    > * {
-      color: inherit;
-      background-color: inherit;
-    }
-  }
+  /* Just a wrapper for now */
 `;
 
 const MenuPopper = styled.div`
@@ -183,11 +160,21 @@ function MenuComponent({
 
 MenuComponent.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
+    commands: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      onClick: PropTypes.func,
+      disabled: PropTypes.bool,
+    })),
+    disabled: PropTypes.bool,
     id: PropTypes.string,
     icon: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
     onClickLink: PropTypes.func, // deprecated
+    pre: PropTypes.shape({
+      icon: PropTypes.string,
+    }),
   })).isRequired,
   id: PropTypes.string.isRequired,
   left: PropTypes.string,

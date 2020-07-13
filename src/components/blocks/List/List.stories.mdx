@@ -16,7 +16,7 @@ import listData from "blocks/List/List.data.js";
 
 <Preview withToolbar>
   <Story name="Standard">
-    <List title="My List">
+    <List title="My List" >
       <ListItem title="List Item" />
       <ListItem title="List Item" />
       <ListItem title="List Item" />
@@ -42,7 +42,7 @@ Lists should present icons, text, and actions in a consistent format.
 ### List Items via Array
 
 <Preview withToolbar>
-  <Story name="List Items via Array">
+  <Story name="List Items via Array" isInteractive>
     <List title="List Items via Array" data={listData} />
   </Story>
 </Preview>
@@ -51,7 +51,7 @@ Lists should present icons, text, and actions in a consistent format.
 
 <Preview>
   <Story name="States">
-    <List>
+    <List >
       <ListItem
         title="List Item (standard)"
         description="This is the description"
@@ -77,7 +77,7 @@ Standard lists are used for data display. A list should have a divider when the 
 <Preview>
   <Story name="Types">
     <Grid columns="2">
-      <List title="Standard">
+      <List title="Standard" >
         <ListItem
           title="List Item"
           description="This is the description"
