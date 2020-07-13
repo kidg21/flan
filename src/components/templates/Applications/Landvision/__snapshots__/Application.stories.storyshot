@@ -17,7 +17,7 @@ exports[` 1`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
       height={null}
       id="Header"
       overflow={null}
@@ -271,11 +271,11 @@ exports[` 1`] = `
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
         height={null}
         id="Left"
         overflow={null}
-        width="15%"
+        width="10rem"
       >
         <ul
           className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
@@ -431,11 +431,11 @@ exports[` 1`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 kvuuwd Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 WXtjA Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+        height="20rem"
         id={null}
         overflow={null}
-        width="85%"
+        width="calc(100% - 10rem)"
       >
         <div
           className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
@@ -445,7 +445,7 @@ exports[` 1`] = `
           width={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 ctTbUE"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 ctTbUE"
             id="Page Regions"
             rows={null}
           >
@@ -899,7 +899,7 @@ exports[` 1`] = `
                   id="Info Panel_body"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
                     id={null}
                     rows={null}
                   >
@@ -984,7 +984,7 @@ exports[` 1`] = `
               placeholder="D"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fXdgBx"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fXdgBx"
                 id="Map Tools"
                 rows={null}
               >
@@ -1488,7 +1488,7 @@ exports[` 1`] = `
               id="object record_body"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
                 id={null}
                 rows={null}
               >
@@ -1801,7 +1801,7 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
       height={null}
       id="Header"
       overflow={null}
@@ -2011,11 +2011,11 @@ exports[` 2`] = `
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
         height={null}
         id={null}
         overflow={null}
-        width="15%"
+        width="10rem"
       >
         <div
           className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
@@ -2219,8 +2219,8 @@ exports[` 2`] = `
         </div>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 bGQswE Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 dJGSkh Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+        height="20rem"
         id={null}
         overflow={null}
         width="100%"
@@ -2242,8 +2242,8 @@ exports[` 2`] = `
           />
         </div>
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 feYNea"
-          height="40%"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 feYNea"
+          height="20rem"
           id={null}
           overflow={null}
           width={null}
@@ -2611,11 +2611,11 @@ exports[` 2`] = `
         </div>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 gLaegA"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 gLaegA"
         height={null}
         id={null}
         overflow={null}
-        width="25%"
+        width="24rem"
       >
         <div
           className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
@@ -2688,7 +2688,7 @@ exports[` 2`] = `
             id="Info Panel_body"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
               id={null}
               rows={null}
             >

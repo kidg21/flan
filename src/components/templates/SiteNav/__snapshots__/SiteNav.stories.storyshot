@@ -9,7 +9,7 @@ exports[` 1`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
     height={null}
     id="Header"
     overflow={null}
@@ -114,11 +114,11 @@ exports[` 1`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="10rem"
     >
       <ul
         className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
@@ -316,11 +316,11 @@ exports[` 1`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
-      width="60%"
+      width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
         className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
@@ -364,11 +364,11 @@ exports[` 1`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jKdZMv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
       height={null}
       id="Right"
       overflow={null}
-      width="25%"
+      width="24rem"
     >
       <div
         className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
@@ -846,7 +846,7 @@ exports[` 2`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
     height={null}
     id="Header"
     overflow={null}
@@ -951,11 +951,11 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="10rem"
     >
       <ul
         className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
@@ -1153,11 +1153,11 @@ exports[` 2`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
-      width="60%"
+      width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
         className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
@@ -1201,11 +1201,11 @@ exports[` 2`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jKdZMv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
       height={null}
       id="Right"
       overflow={null}
-      width="25%"
+      width="24rem"
     >
       <div
         className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
