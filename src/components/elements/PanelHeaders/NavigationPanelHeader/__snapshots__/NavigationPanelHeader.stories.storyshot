@@ -59,7 +59,7 @@ exports[` 1`] = `
     <div
       className="Bar__Slot-icfo76-1 kZQbjh"
     >
-      <a
+      <div
         className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
         onClick={[Function]}
       >
@@ -100,7 +100,7 @@ exports[` 1`] = `
             </svg>
           </section>
         </button>
-      </a>
+      </div>
     </div>
   </div>
 </div>

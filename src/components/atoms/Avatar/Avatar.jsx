@@ -50,8 +50,8 @@ const sizeHash = {
     font: "0.5em",
   },
   sm: {
-    avatar: "2em",
-    font: "0.75em",
+    avatar: "1.8em",
+    font: "0.8em",
   },
   lg: {
     avatar: "3em",
@@ -79,7 +79,7 @@ function Avatar({
   let iconType;
 
   const selectedSize = size && sizeHash[size.toLowerCase()];
-  const avatarSize = selectedSize ? selectedSize.avatar : "2.2rem";
+  const avatarSize = selectedSize ? selectedSize.avatar : "2rem";
   const fontSize = selectedSize ? selectedSize.font : "0.82em";
 
   const backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";

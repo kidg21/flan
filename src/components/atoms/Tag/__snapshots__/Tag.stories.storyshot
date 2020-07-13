@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
+    className="Tag__TagContainer-sc-128kb3h-0 dykTmk"
     id={null}
     label="Tag"
   >
@@ -59,7 +59,7 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
+        className="Tag__TagContainer-sc-128kb3h-0 dykTmk"
         id={null}
         label="Brief Label"
       >
@@ -108,7 +108,7 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 bOFxOh"
+        className="Tag__TagContainer-sc-128kb3h-0 dykTmk"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
       >
@@ -134,7 +134,7 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 gXgddG"
+    className="Tag__TagContainer-sc-128kb3h-0 fUXefn"
     id={null}
     label="Info"
   >
@@ -149,7 +149,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 fZPQOe"
+    className="Tag__TagContainer-sc-128kb3h-0 htIGwb"
     id={null}
     label="Warning"
   >
@@ -164,7 +164,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 hyhlTG"
+    className="Tag__TagContainer-sc-128kb3h-0 dxjVfv"
     id={null}
     label="Success"
   >
@@ -179,7 +179,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 iCMaGv"
+    className="Tag__TagContainer-sc-128kb3h-0 bSHTQW"
     id={null}
     label="Alert"
   >

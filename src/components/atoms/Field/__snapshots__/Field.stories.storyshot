@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+  id="Field"
+  rows={null}
+>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+    fontSize="0.879em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0.4px"
+  >
+    Field Name
+  </label>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+    fontSize="0.879em"
+    fontWeight={600}
+    id={null}
+    letterSpacing="0.2px"
+  >
+    Field Value
+  </p>
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb Field__FieldGrid-sc-11od8ug-1 fqoSmg"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+    id="Default"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="0.879em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0.4px"
+    >
+      Inline Field (Default)
+    </label>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="0.879em"
+      fontWeight={600}
+      id={null}
+      letterSpacing="0.2px"
+    >
+      Field Value
+    </p>
+  </section>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 kMgEwi"
+    id="Vertical"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="0.879em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0.4px"
+    >
+      Vertically Aligned Field
+    </label>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="0.879em"
+      fontWeight={600}
+      id={null}
+      letterSpacing="0.2px"
+    >
+      Field Value
+    </p>
+  </section>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 cTvYRY"
+    id="Edge"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="0.879em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0.4px"
+    >
+      Edge Aligned Field
+    </label>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 eczWUg"
+      fontSize="0.879em"
+      fontWeight={600}
+      id={null}
+      letterSpacing="0.2px"
+    >
+      Field Value
+    </p>
+  </section>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Field__FieldGrid-sc-11od8ug-1 gWHwvt"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+    id="Standard Value"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="0.879em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0.4px"
+    >
+      Field Name
+    </label>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="0.879em"
+      fontWeight={600}
+      id={null}
+      letterSpacing="0.2px"
+    >
+      Standard Value
+    </p>
+  </section>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+    id="Linked Value"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="0.879em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0.4px"
+    >
+      Field Name
+    </label>
+    <a
+      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+      disabled={false}
+      fontSize="0.876em"
+      fontWeight={600}
+      href={null}
+      letterSpacing="0px"
+      onClick={true}
+      target={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+        fontSize="0.879em"
+        fontWeight={600}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        Linked Value
+      </p>
+    </a>
+  </section>
+</section>
+`;
