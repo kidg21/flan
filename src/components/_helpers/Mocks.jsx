@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Text, { Title, Link } from "base/Typography";
 import Icon from "atoms/Icon";
-import Command from "atoms/Command";
 import Image from "atoms/Image";
 import IconBlock from "blocks/IconBlock";
 import Card, { CardSection, CardGrid } from "elements/Card";
@@ -55,7 +54,7 @@ function MockMap({ withTools, ...props }) {
           }}
           E={{
             id: "E",
-            content: <Button label="Button" icon="circle" alignCenter />,
+            content: <MockPalette />,
           }}
         />
       ) : null}

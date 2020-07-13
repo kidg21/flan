@@ -5,6 +5,7 @@ import { Title } from "base/Typography";
 import Command from "atoms/Command";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
+import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockWorkflow, MockMap, MockTable, MockTabs, MockButtons, MockPalette, MockMenu, MockData } from "helpers/Mocks";
 
 storiesOf("Layout|Layout/", module)
   .add(
@@ -103,16 +104,16 @@ storiesOf("Layout|Layout/", module)
               ),
             }}
             left={{
-              content: "",
+              content: <MockMenu />,
               visible: leftOpen,
             }}
-            main={{ content: "" }}
+            main={{ content: <MockMap /> }}
             right={{
-              content: "",
+              content: <MockDetails />,
               visible: rightOpen,
             }}
             bottom={{
-              content: "",
+              content: <MockTable />,
               visible: bottomOpen,
             }}
             footer={{
@@ -204,16 +205,16 @@ storiesOf("Layout|Layout/", module)
               ),
             }}
             left={{
-              content: "",
+              content: <MockMenu />,
               visible: visibility.left,
             }}
-            main={{ content: "" }}
+            main={{ content: <MockMap /> }}
             right={{
-              content: "",
+              content: <MockDetails />,
               visible: visibility.right,
             }}
             bottom={{
-              content: "",
+              content: <MockTable />,
               visible: visibility.bottom,
             }}
             footer={{
