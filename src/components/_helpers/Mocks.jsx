@@ -3,31 +3,39 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Text, { Title, Link } from "base/Typography";
+import Icon from "atoms/Icon";
+import Command from "atoms/Command";
+import Image from "atoms/Image";
+import IconBlock from "blocks/IconBlock";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListSection, ListItem } from "blocks/List";
 import Tabs from "blocks/Tabs";
 import Table from "blocks/Table";
+import Mapbox from "layout/Map";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Button, { ButtonGroup } from "atoms/Button";
-import { CheckboxGroup } from "atoms/Checkbox";
+import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
+import Avatar from "atoms/Avatar";
 import Panel from "layout/Panel";
 import Bar from "layout/Bar";
 import Menu from "blocks/Menu";
-import Page from "layout/Page";
+import Template from "layout/Template";
 import Picker, { ColorSwatch } from "elements/Picker";
 import SearchBar from "blocks/Search";
+import Field, { FieldGroup } from "atoms/Field";
+import LightBoxLogo from "images/LightBoxLogo.png";
 
 
 function MockMap({ withTools, ...props }) {
   return (
     <React.Fragment>
-      {withTools ? <Page
+      {withTools ? <Template
         id="Map Tools"
         template="E_03"
-        stateCards
+        hasBorders
         isOverlay
         A={{
           id: "A",
@@ -47,12 +55,10 @@ function MockMap({ withTools, ...props }) {
         }}
         E={{
           id: "E",
-          content: <MockPalette />,
+          content: "">,
         }}
       /> : null}
-      <Mapbox
-        {...props}
-      />
+      <Mapbox/>
     </React.Fragment>
   );
 }
@@ -84,12 +90,96 @@ MockPalette.defaultProps = {
   // stuff
 };
 
+function MockHeaderGlobal({ menuClick }) {
+  function doNothing() {
+    // do nothing
+  }
+
+  return (
+    <Bar
+      contentAlign="center"
+      left={{
+        content: (
+          <Grid columns="max-content 1fr" gap="xl" align="center">
+            <Icon
+              icon="menu"
+              onClick={menuClick}
+            />
+            <Image src={LightBoxLogo} alt="Lightbox Logo" width="8vw" onClick={doNothing} />
+          </Grid>
+        ),
+        width: "15%",
+      }}
+      center={{
+        content: (
+          <ButtonGroup columns="5">
+            <Button label="JOBS PORTAL" isPlain />
+            <Button label="RESEARCH" isPlain />
+            <Button label="BI" isPlain />
+            <Button label="REPORT WRITING" isPlain />
+          </ButtonGroup>
+        ),
+        align: "left",
+      }}
+      right={{
+        content: (
+          <Grid columns="max-content max-content" gap="4xl" align="center">
+            <Avatar icon="help_solid" size="sm" onClick={doNothing} />
+            <Avatar icon="user" size="sm" onClick={doNothing} />
+          </Grid>
+        ),
+        width: "fit-content",
+      }}
+    />
+  );
+}
+MockHeaderGlobal.propTypes = {
+  menuClick: PropTypes.func,
+};
+MockHeaderGlobal.defaultProps = {
+  menuClick: null,
+};
+
 function MockHeader() {
+  const testData = [{
+    id: "a",
+    label: "Action",
+    onClick: () => { },
+  }, {
+    id: "b",
+    label: "Action",
+    onClick: () => { },
+  }, {
+    id: "c",
+    label: "Action",
+    commands: [
+      { id: "c0", label: "Action", onClick: () => { } },
+      { id: "c1", label: "Action" }],
+  }];
   return (
     <Card id="Card_Header">
-      <CardSection>
-        <Title size="xl" text="This Is A Title" weight="bold" />
-        <Text text="The Description Goes Here" />
+      <CardSection padding="2x" variant="light">
+        <Bar
+          padding="0"
+          contentAlign="center"
+          left={{
+            content: <Title size="lg" text="22902 Trabuco Road • Mission Viejo, CA 92691 • Shopping Center • 171,143 sqft" weight="bold" />,
+            align: "left",
+          }}
+          right={{
+            content: (
+              <IconBlock>
+                <Icon icon="share" onClick />
+                <Icon icon="bookmark" onClick />
+                <Menu
+                  data={testData}
+                  position="bottomLeft"
+                />
+              </IconBlock>
+            ),
+            width: "10rem",
+          }}
+        />
       </CardSection>
     </Card>
   );
@@ -103,14 +193,19 @@ MockHeader.defaultProps = {
 
 function MockFooter() {
   return (
-    <Card id="Card_Footer" isInverse>
-      <CardSection>
-        <Grid columns="auto 1fr">
-          <Link text="1" onClick={() => {}} />
-          <Text text="Footer Content Goes Here" />
-        </Grid>
-      </CardSection>
-    </Card>
+    <Bar
+      contentAlign="center"
+      padding="0"
+      left={{
+        content: (
+          <Grid columns="auto 1fr">
+            <Link text="1" onClick={() => { }} />
+            <Text text="Last Updated: May 23, 2020 • Source: CRMLS" />
+          </Grid>
+        ),
+        align: "left",
+      }}
+    />
   );
 }
 MockFooter.propTypes = {
@@ -122,12 +217,11 @@ MockFooter.defaultProps = {
 
 function MockMenu() {
   return (
-    <List title="Main Menu" isInteractive isInverse>
-      <ListItem title="Menu Item" />
-      <ListItem title="Menu Item" isSelected />
-      <ListItem title="Menu Item" />
-      <ListItem title="Menu Item" />
-      <ListItem title="Menu Item" />
+    <List title="Research" isInteractive isInverse>
+      <ListItem title="Projects" isSelected />
+      <ListItem title="Properties" />
+      <ListItem title="History" />
+      <ListItem title="Data" />
     </List>
   );
 }
@@ -138,125 +232,384 @@ MockMenu.defaultProps = {
   // stuff
 };
 
-function MockWorkflow() {
+function MockWorkflow({ data, title }) {
   return (
-    <List title="Workflow" isInteractive>
-      <ListSection section="Section Name" />
-      <ListItem title="Menu Item" />
-      <ListSection section="Section Name" />
-      <ListItem title="Menu Item" isSelected />
-      <ListItem title="Menu Item" />
-      <ListItem title="Menu Item" />
-      <ListItem title="Menu Item" />
-      <ListSection section="Section Name" />
-      <ListItem title="Menu Item" />
-      <ListItem title="Menu Item" />
-    </List>
+    <React.Fragment>
+      {data ? <List title={title} isInteractive data={data} /> :
+        (
+          <List title={title} isInteractive>
+            <ListItem
+              title="Project Details"
+              isSelected
+            />
+            <ListItem
+              title="Define Site"
+              post={{
+                type: "icon", icon: "check", variant: "success",
+              }}
+            />
+            <ListSection title="Review">
+              <ListItem
+                title="Assessment"
+                disabled
+              />
+              <ListItem
+                title="Zoning"
+                disabled
+              />
+              <ListItem
+                title="Demographics"
+                disabled
+              />
+              <ListItem
+                title="Maps"
+                disabled
+              />
+              <ListItem
+                title="Report"
+                disabled
+              />
+              <ListItem
+                title="Export"
+                disabled
+              />
+            </ListSection>
+          </List>
+        )
+      }
+    </React.Fragment>
   );
 }
 MockWorkflow.propTypes = {
-  // stuff
+  data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  title: PropTypes.string,
 };
 MockWorkflow.defaultProps = {
-  // stuff
+  data: null,
+  title: null,
 };
 
 const tableHeaders = [
-  { id: "options", label: "Actions" },
-  { id: "ACREAGE", label: "Acreage", sortable: true },
-  { id: "AGGR_ACREAGE", label: "Aggregate Acreage", sortable: true },
-  { id: "AGGR_LOT_COUNT", label: "Aggregate Lot Count" },
-  { id: "APN", label: "APN" },
-  { id: "BUILDING_SQFT", label: "Building SQFT", sortable: true },
-  { id: "DATE_TRANSFER", label: "Date Transfer", sortable: true },
-  { id: "LAND_SQFT", label: "Land SQFT" },
-  { id: "MAIL_ADDR", label: "Mailing Address" },
-  { id: "OWNER_NAME_1", label: "Owner Name 1" },
+  { id: "checkbox", label: <Grid columns="auto 1fr"><Checkbox label="Select All" /></Grid> },
+  { id: "Name", label: "Name", sortable: true },
+  { id: "Address", label: "Address", sortable: false },
+  { id: "City", label: "City", sortable: false },
+  { id: "State", label: "State", sortable: false },
+  { id: "Zip", label: "Zip", sortable: false },
+  { id: "Property_Type", label: "Property Type", sortable: false },
+  { id: "GBA", label: "GBA", sortable: false },
+  { id: "Rentable_Area", label: "Rentable Area", sortable: false },
+  { id: "Units", label: "Units", sortable: false },
+  { id: "Year_Built", label: "Year Built", sortable: false },
+  { id: "Land_SF", label: "Land(sf)", sortable: false },
+  { id: "Acres", label: "Acres", sortable: false },
+  { id: "actions", label: "Actions" },
 ];
 
 const tableData = [
   {
-    ACREAGE: "0.12",
-    AGGR_ACREAGE: "0.12",
-    AGGR_GROUP: "510684071_237050",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-015-023",
-    BUILDING_SQFT: "34658",
-    DATE_TRANSFER: "2019/09/04 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "5027",
-    MAIL_ADDR: "353 S BROADWAY # 500",
-    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
+    Name: <Link text="477 Madison Avenue" />,
+    Address: "477 Madison Avenue",
+    City: "New York",
+    State: "NY",
+    Zip: "10022",
+    Property_Type: "Office",
+    GBA: "262,287",
+    Rentable_Area: "262,287",
+    Units: "68",
+    Year_Built: "1987",
+    Land_SF: "2938",
+    Acres: "2",
   },
   {
-    ACREAGE: "1.11",
-    AGGR_ACREAGE: "1.11",
-    AGGR_GROUP: "510684071_237208",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-032-019",
-    BUILDING_SQFT: "399256",
-    DATE_TRANSFER: "2019/07/24 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "48504",
-    MAIL_ADDR: "250 W 55TH ST",
-    OWNER_NAME_1: "IDC MANAGING MEMBER TIC LLC",
+    Name: <Link text="23 E. 21 St." />,
+    Address: "23 E. 21St. #2",
+    City: "New York",
+    State: "NY",
+    Zip: "10010",
+    Property_Type: "Office",
+    GBA: "3,230",
+    Rentable_Area: "--",
+    Units: "2",
+    Year_Built: "1999",
+    Land_SF: "78",
+    Acres: "0.5",
   },
   {
-    ACREAGE: "0.94",
-    AGGR_ACREAGE: "0.94",
-    AGGR_GROUP: "510684071_238978",
-    AGGR_LOT_COUNT: "1",
-    APN: "5161-026-040",
-    BUILDING_SQFT: "223783",
-    DATE_TRANSFER: "2019/07/11 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "41050",
-    MAIL_ADDR: "",
-    OWNER_NAME_1: "EQR STOA LP",
+    Name: <Link text="11 W. 20 St." />,
+    Address: "11 W 20 St. #4R",
+    City: "New York",
+    State: "NY",
+    Zip: "10011",
+    Property_Type: "Office",
+    GBA: "2,650",
+    Rentable_Area: "--",
+    Units: "2",
+    Year_Built: "1999",
+    Land_SF: "78",
+    Acres: "0.5",
+  },
+];
+
+const tableOptions = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+  { value: "pistachio", label: "Pistachio" },
+  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+  { value: "cookie dough", label: "Cookie Dough" },
+];
+
+const rowMenu = [
+  {
+    id: "a",
+    onClick: () => {
+      console.log("clicked Save");
+    },
+    label: "Save",
   },
   {
-    ACREAGE: "0.07",
-    AGGR_ACREAGE: "0.684631",
-    AGGR_GROUP: "510684071_239100",
-    AGGR_LOT_COUNT: "3",
-    APN: "5163-002-006",
-    BUILDING_SQFT: "600",
-    DATE_TRANSFER: "2019/09/09 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "3182",
-    MAIL_ADDR: "",
-    OWNER_NAME_1: "EAST 1ST STREET PROPERTY LLC",
+    id: "b",
+    onClick: () => {
+      console.log("clicked Filter");
+    },
+    label: "Filter",
   },
   {
-    ACREAGE: "0.12",
-    AGGR_ACREAGE: "0.12",
-    AGGR_GROUP: "510684071_237050",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-015-023",
-    BUILDING_SQFT: "34658",
-    DATE_TRANSFER: "2019/09/04 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "5027",
-    MAIL_ADDR: "353 S BROADWAY # 500",
-    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
+    id: "c",
+    onClick: () => {
+      console.log("clicked Share");
+    },
+    label: "Share",
+  },
+  {
+    id: "d",
+    onClick: () => {
+      console.log("clicked Refresh");
+    },
+    label: "Refresh",
+  },
+  {
+    id: "e",
+    onClick: () => {
+      console.log("clicked Layer");
+    },
+    label: "Layer",
+  },
+];
+
+const rowActions = (
+  <Grid columns="3">
+    <Icon icon="edit" />
+    <Icon icon="delete" />
+    <Menu data={rowMenu} />
+  </Grid>
+);
+
+const iconNames = [
+  {
+    icon: "edit",
+    onClick: true,
+    // icon: "check",
+    // variant: "success",
+  },
+  {
+    icon: "delete",
+    onClick: true,
+    // icon: "close",
+    // variant: "alert",
+  },
+  {
+    icon: "options",
+    onClick: true,
   },
 ];
 
 function MockTable() {
+  const [highlightedCell, setHighlightCell] = useState(null);
+  const [selectedCell, setSelectedCell] = useState(null);
+  for (let i = 0; i < tableData.length; i++) {
+    tableData[i].checkbox = React.createElement(
+      Checkbox,
+      {
+        label: "Select",
+      },
+      null,
+    );
+  }
+  for (let i = 0; i < tableData.length; i++) {
+    tableData[i].actions = React.createElement(
+      IconBlock,
+      {
+        data: iconNames,
+      },
+      null,
+    );
+  }
+
+  const onCellClick = (e, { rowIndex }) => {
+    setSelectedCell({ rowIndex });
+  };
+
+  const onHeaderClick = (e, { columnIndex }) => {
+    alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+  };
+
+  const onCellMouseOver = (e, { rowIndex }) => {
+    setHighlightCell({ rowIndex });
+  };
   return (
-    <Table
-      id="MockTable"
-      headers={tableHeaders.slice(1)}
-      rows={tableData}
-      listId="Table"
-      columnWidth={180}
-    />
+    <React.Fragment>
+      <Card>
+        <CardSection padding="" variant="">
+          <Bar
+            contentAlign="center"
+            left={{
+              content: <Title size="" text="Results | 3" weight="bold" />,
+              align: "left",
+            }}
+            right={{
+              content: (
+                <IconBlock>
+                  <Icon icon="share" onClick />
+                  <Icon icon="delete" onClick />
+                  <Menu
+                    data={[
+                      { id: "a", label: "Action" },
+                      { id: "b", label: "Action" },
+                      { id: "c", label: "Action" },
+                    ]}
+                    position="bottomLeft"
+                    onClick
+                  />
+                </IconBlock>
+              ),
+              width: "10rem",
+            }}
+          />
+        </CardSection>
+      </Card>
+      <Table
+        id="MockTable"
+        headers={tableHeaders}
+        rows={tableData}
+        listId="Data Table"
+        onCellClick={onCellClick}
+        onHeaderClick={onHeaderClick}
+        onCellMouseOver={onCellMouseOver}
+        highlightedCell={highlightedCell}
+        selectedCell={selectedCell}
+        columnWidth={180}
+      />
+    </React.Fragment>
   );
 }
 MockMap.propTypes = {
   // stuff
 };
 MockMap.defaultProps = {
+  // stuff
+};
+
+function MockData() {
+  return (
+    <Template>
+      <FieldGroup id="General Information" title="General Information">
+        <Field
+          id="Property Name"
+          label="Property Name"
+          value="22902 Trabuco Rd"
+        />
+        <Field
+          id="Property Type"
+          label="Property Type"
+          value="Shopping Center"
+        />
+        <Field
+          id="Lat / Long"
+          label="Lat / Long"
+          value="33.629211 / -117.663988"
+        />
+        <Field
+          id="Street Address"
+          label="Street Address"
+          value="22902 Trabuco Road"
+        />
+        <Field
+          id="City, State Zip"
+          label="City, State Zip"
+          value="Mission Viejo, CA 92691"
+        />
+        <Field
+          id="Census Tract"
+          label="Census Tract"
+          value=""
+        />
+        <Field
+          id="Census Block"
+          label="Census Block"
+          value=""
+        />
+        <Field
+          id="County"
+          label="County"
+          value="Orange"
+        />
+        <Field
+          id="CBSA"
+          label="CBSA"
+          value="Los Angeles-Long Beach-Anaheim"
+        />
+      </FieldGroup>
+      <FieldGroup id="Site Characteristics" title="Site Characteristics">
+        <Field
+          id="Land SF"
+          label="Land SF"
+          value="171,143"
+        />
+        <Field
+          id="Acres"
+          label="Acres"
+          value="3.93000"
+        />
+        <Field
+          id="Land Use"
+          label="Land Use"
+          value="Shopping Center"
+        />
+        <Field
+          id="Street Address"
+          label="Street Address"
+          value="22902 Trabuco Road"
+        />
+      </FieldGroup>
+      {/* <FieldGroup id="Description" columns="1">
+          <Field
+            label="Description"
+            value="Lovely Ladera Ranch Townhome located in the highly desirable Chambray Neighborhood could be yours! Location is amazing! End unit with sprawling wrap around porch. This home is walking distance to the grocery store, restaurants, parks, hiking trails and dog park! It features an open floor plan with 3 bedrooms upstairs, living room, family room, dining room and kitchen downstairs. Professionally decorated with Italian Ceramic tile, designer paint, and upgraded carpet. 2 car garage is attached! Enjoy all of the amenities of Ladera Ranch including Top Rated Award Winning Schools, Water Parks, Skateboard parks, Tennis courts, Concerts in the park, Farmer's market and Dog Parks! Fabulous social community!"
+          />
+        </FieldGroup> */}
+      {/* <FieldGroup id="Listing Info" columns="1">
+          <Field
+            label="Listed By 1"
+            value="Tracey Ireland • DRE #01847141 • First Title Realty Inc"
+          />
+          <Field
+            label="Listed By 2"
+            value="Alex Celani • DRE #01326931 • First Title Realty Inc"
+          />
+          <Field
+            label="Last Updated"
+            value="Last updated May 23, 2020 • Source: CRMLS"
+          />
+        </FieldGroup> */}
+    </Template>
+  );
+}
+MockData.propTypes = {
+  // stuff
+};
+MockData.defaultProps = {
   // stuff
 };
 
@@ -491,104 +844,139 @@ MockForm.defaultProps = {
   // stuff
 };
 
-const menuData = [
-  { id: "a", label: "Action" },
-  { id: "b", label: "Action" },
-  { id: "c", label: "Action" },
-];
+// const menuData = [
+//   { id: "a", label: "Action" },
+//   { id: "b", label: "Action" },
+//   { id: "c", label: "Action" },
+// ];
 
-const panelHeader = (
-  <Bar
-    // padding="2x"
-    contentAlign="center"
-    left={{
-      content: (
-        <Menu
-          id="MockDetails-Menu"
-          data={menuData}
-          position="bottomRight"
-        />
-      ),
-      width: "max-content",
-    }}
-    center={{
-      content: <Title text="Details" weight="bold" />,
-      align: "left",
-    }}
-  // right={{
-  //   content: (
-  //     <Icon
-  //       icon="close"
-  //     onClick={toggleLeft}
-  //     />
-  //   ),
-  //   width: "max-content",
-  // }}
-  />
-);
+// const panelHeader = (
+//   <Bar
+// padding="2x"
+// contentAlign="center"
+// center={{
+//   content: <Title text="Location Details" weight="bold" />,
+//   align: "left",
+// }}
+// right={{
+//   content: (
+//     <Menu
+//       id="MockDetails-Menu"
+//       data={menuData}
+//       position="bottomRight"
+//     />
+//   ),
+//   width: "max-content",
+// }}
+// right={{
+//   content: (
+//     <Icon
+//       icon="close"
+//     onClick={toggleLeft}
+//     />
+//   ),
+//   width: "max-content",
+// }}
+// />
+// );
 
-const infoCard = (
-  <Card
-    id="MockDetails-Info"
-    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
-    mediaDesc="Media Description"
-    title="Best Place Ever"
-    description="I Could Tell You More, But..."
-    icon="home"
-    // commands={[
-    //   {
-    //     id: "Action One",
-    //     label: "Action",
-    //   },
-    // ]}
-    shadow="0"
-  />
-);
+// const infoCard = (
+// <Image src={StaticMap} width="100%" />
+// <Card
+// id="MockDetails-Info"
+// media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+// media={StaticMap}
+// mediaDesc="Media Description"
+// title="Best Place Ever"
+// description="I Could Tell You More, But..."
+// icon="home"
+// commands={[
+//   {
+//     id: "Action One",
+//     label: "Action",
+//   },
+// ]}
+// shadow="0"
+// />
+// );
 
-const infoBody = (
-  <Page>
-    <Title
-      text="All About This Item"
-      weight="bold"
-    />
-    <Text
-      text="Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication."
-    />
-    <Text
-      text="In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again."
-    />
-    <Text
-      text="This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need."
-    />
-    <Text
-      text="You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing."
-    />
-    <Text
-      text="We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy."
-    />
-    <Text
-      text="Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful."
-    />
-    <Text
-      text="A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend."
-    />
-  </Page>
-);
+// const infoBody = (
+//   <Template>
+//     <Image src={StaticMap} width="100%" />
+//     <Button label="View on Map" />
+//     <FieldGroup id="Physical Characteristics" title="Physical Characteristics">
+//       <Field
+//         id="No. of Buildings"
+//         label="No. of Buildings"
+//         value="3"
+//       />
+//       <Field
+//         id="GBA"
+//         label="GBA"
+//         value="25,344"
+//       />
+//       <Field
+//         id="No. of Stories"
+//         label="No. of Stories"
+//         value="1"
+//       />
+//       <Field
+//         id="No. of Units"
+//         label="No. of Units"
+//         value="4"
+//       />
+//       <Field
+//         id="Year Built"
+//         label="Year Built"
+//         value="1978"
+//       />
+//     </FieldGroup>
+//   </Template>
+// );
 
-function MockDetails() {
+function MockDetails({
+  children, image, title, data, footer,
+}) {
   return (
-    <Panel
-      id="Info Panel"
-      padding="0"
-      header={(
-        <React.Fragment>
-          {panelHeader}
-          {infoCard}
-        </React.Fragment>
-      )}
-    >
-      {infoBody}
-    </Panel>
+    <Template>
+      <Image
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      alt="This is alt text for this image"
+      width="100%"
+    />
+      {data ? <FieldGroup id={title} title={title} data={data} /> :
+        (
+          <FieldGroup id="Physical Characteristics" title={title || "Physical Characteristics"}>
+            <Field
+              id="No. of Buildings"
+              label="No. of Buildings"
+              value="3"
+            />
+            <Field
+              id="GBA"
+              label="GBA"
+              value="25,344"
+            />
+            <Field
+              id="No. of Stories"
+              label="No. of Stories"
+              value="1"
+            />
+            <Field
+              id="No. of Units"
+              label="No. of Units"
+              value="4"
+            />
+            <Field
+              id="Year Built"
+              label="Year Built"
+              value="1978"
+            />
+          </FieldGroup>
+        )
+      }
+      {footer}
+    </Template>
   );
 }
 MockDetails.propTypes = {
@@ -598,37 +986,49 @@ MockDetails.defaultProps = {
   // stuff
 };
 
-function MockTabs() {
+function MockTabs({ data }) {
   const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   const tabButtons = [
     {
       id: "Tab 1",
-      label: "Tab 1",
+      label: "Overview",
       isSelected: activeSingleTab === "tab1",
       onClick: () => { setActiveSingleTab("tab1"); },
     },
     {
       id: "Tab 2",
-      label: "Tab 2",
+      label: "Zoning",
       isSelected: activeSingleTab === "tab2",
       onClick: () => { setActiveSingleTab("tab2"); },
     },
     {
       id: "Tab 3",
-      label: "Tab 3",
+      label: "Transactions",
       isSelected: activeSingleTab === "tab3",
       onClick: () => { setActiveSingleTab("tab3"); },
     },
+    {
+      id: "Tab 4",
+      label: "Assessment & Tax",
+      isSelected: activeSingleTab === "tab4",
+      onClick: () => { setActiveSingleTab("tab4"); },
+    },
+    {
+      id: "Tab 5",
+      label: "Tenants",
+      isSelected: activeSingleTab === "tab5",
+      onClick: () => { setActiveSingleTab("tab5"); },
+    },
   ];
   return (
-    <Tabs data={tabButtons} />
+    <Tabs data={data || tabButtons} />
   );
 }
 MockTabs.propTypes = {
-  // stuff
+  data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 MockTabs.defaultProps = {
-  // stuff
+  data: null,
 };
 
 function MockButtons() {
@@ -652,10 +1052,12 @@ MockButtons.defaultProps = {
 export {
   MockButtons,
   MockCardGrid,
+  MockData,
   MockDetails,
   MockFooter,
   MockForm,
   MockHeader,
+  MockHeaderGlobal,
   MockPalette,
   MockMap,
   MockMenu,
