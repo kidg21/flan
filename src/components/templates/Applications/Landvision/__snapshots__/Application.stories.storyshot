@@ -203,7 +203,7 @@ exports[` 1`] = `
                 Action
               </label>
             </a>
-            <a
+            <div
               className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
               onClick={[Function]}
             >
@@ -244,7 +244,7 @@ exports[` 1`] = `
                   </svg>
                 </section>
               </button>
-            </a>
+            </div>
             <div
               className="Avatar__TagContainer-sc-1vuf9om-2 kWVCwa"
               id={null}
@@ -707,7 +707,7 @@ exports[` 1`] = `
                 onClick={null}
               >
                 <section
-                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
                   id={null}
                   onClick={null}
                 >
@@ -752,7 +752,7 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 boCGaE"
                     >
-                      <a
+                      <div
                         className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
                         onClick={[Function]}
                       >
@@ -793,7 +793,7 @@ exports[` 1`] = `
                             </svg>
                           </section>
                         </button>
-                      </a>
+                      </div>
                     </div>
                     <div
                       className="Bar__Slot-icfo76-1 yvaBx"
@@ -816,7 +816,7 @@ exports[` 1`] = `
                     onClick={null}
                   >
                     <section
-                      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 eIeMkT"
+                      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
                       id="MockDetails-Info-Media"
                       onClick={null}
                     >
@@ -830,7 +830,7 @@ exports[` 1`] = `
                       />
                     </section>
                     <section
-                      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
                       id="MockDetails-Info-Header"
                       onClick={null}
                     >
@@ -1342,7 +1342,7 @@ exports[` 1`] = `
                 onClick={null}
               >
                 <section
-                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
                   id={null}
                   onClick={null}
                 >
@@ -1410,7 +1410,7 @@ exports[` 1`] = `
                     id={null}
                     rows={null}
                   >
-                    <a
+                    <div
                       className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
                       onClick={[Function]}
                     >
@@ -1451,7 +1451,7 @@ exports[` 1`] = `
                           </svg>
                         </section>
                       </button>
-                    </a>
+                    </div>
                     <a
                       className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
                       disabled={null}
@@ -2052,7 +2052,7 @@ exports[` 2`] = `
                 <div
                   className="Bar__Slot-icfo76-1 kZQbjh"
                 >
-                  <a
+                  <div
                     className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
                     onClick={[Function]}
                   >
@@ -2093,7 +2093,7 @@ exports[` 2`] = `
                         </svg>
                       </section>
                     </button>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2317,7 +2317,7 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 hezgU"
+                        className="Table__CellWrapper-gz0dbt-1 gWwrWx"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2347,7 +2347,7 @@ exports[` 2`] = `
                         </div>
                       </div>
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 hezgU"
+                        className="Table__CellWrapper-gz0dbt-1 gWwrWx"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2414,7 +2414,7 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2444,7 +2444,7 @@ exports[` 2`] = `
                         </div>
                       </div>
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2477,7 +2477,7 @@ exports[` 2`] = `
                         </a>
                       </div>
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2507,7 +2507,7 @@ exports[` 2`] = `
                         </div>
                       </div>
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2540,7 +2540,7 @@ exports[` 2`] = `
                         </a>
                       </div>
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}
@@ -2570,7 +2570,7 @@ exports[` 2`] = `
                         </div>
                       </div>
                       <div
-                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                         onClick={[Function]}
                         onMouseOut={[Function]}
                         onMouseOver={[Function]}

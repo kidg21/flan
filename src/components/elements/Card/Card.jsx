@@ -47,7 +47,7 @@ const CardSectionWrapper = styled.section`
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};
-  a {
+  + a {
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
   }};
@@ -60,12 +60,13 @@ const CardSectionWrapper = styled.section`
 `;
 
 const CardMedia = styled(Media)`
+  display: inherit;
+  align-items: center;
   * {
     border-radius: ${(props) => {
     return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
   }};
     }
-  }
 `;
 
 const CardWrapper = styled.div`
@@ -113,9 +114,9 @@ const CardWrapper = styled.div`
 `;
 
 const CardGridWrapper = styled(Grid)`
-  /** TODO: Prevent Cards from being cropped in norrow containers */
-  /* grid-template-columns: repeat(auto-fill,minmax(auto, 14rem)); */
-  /* justify-content: space-between; */
+  grid-template-columns: ${(props) => {
+    return props.columns || "repeat(auto-fill, minmax(14rem, 1fr))";
+  }};
   padding: 1rem;
   ${CardWrapper} {
     height: 100%;
@@ -184,7 +185,7 @@ function ExpandingSection({
               content: (
                 <React.Fragment>
                   {title ? <Title size="lg" text={title} weight="bold" /> : null}
-                  {description ? <Text  text={description} /> : null}
+                  {description ? <Text text={description} /> : null}
                 </React.Fragment>
               ),
               align: "left",
@@ -232,6 +233,10 @@ function CardSection({
     sectionColor = "inverse";
     sectionColorHover = "inverseHover";
     sectionBackground = variant.toLowerCase();
+    if (variant === "light") {
+      sectionColor = "";
+      sectionColorHover = "";
+    }
   }
   let sectionPadding;
   const numPadding = padding ? parseInt(padding, 10) : NaN;
@@ -352,7 +357,7 @@ function Card({
       <LinkedWrapper >
         <React.Fragment >
           {title ? <Title size="lg" text={title} weight="bold" /> : null}
-          {description ? (<Text  text={description} />
+          {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
       </LinkedWrapper>
@@ -361,7 +366,7 @@ function Card({
     centerContent = (
       <React.Fragment >
         {title ? <Title size="lg" text={title} weight="bold" /> : null}
-        {description ? (<Text  text={description} />
+        {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>);
   }
