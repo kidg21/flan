@@ -16,8 +16,8 @@ exports[` 1`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bOZpvs Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 iryQpt Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
       width="100%"
@@ -52,20 +52,20 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="10rem"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
-      width="60%"
+      width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
         className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
@@ -78,11 +78,11 @@ exports[` 2`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jKdZMv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
       height={null}
       id="Right"
       overflow={null}
-      width="25%"
+      width="24rem"
     >
       
     </div>
@@ -106,23 +106,23 @@ exports[` 3`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="10rem"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
-      width="60%"
+      width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 fWTSfU Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 hGiOHx Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
         height={null}
         id="Main"
         overflow={null}
@@ -131,8 +131,8 @@ exports[` 3`] = `
         
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 iDgfpZ"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 kumGNs"
+        height="20rem"
         id="Bottom"
         overflow={null}
         width={null}
@@ -141,11 +141,11 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jKdZMv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
       height={null}
       id="Right"
       overflow={null}
-      width="25%"
+      width="24rem"
     >
       
     </div>
@@ -162,7 +162,7 @@ exports[` 4`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
     height={null}
     id="Header"
     overflow={null}
@@ -178,23 +178,23 @@ exports[` 4`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="10rem"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
-      width="60%"
+      width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 fWTSfU Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 hGiOHx Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
         height={null}
         id="Main"
         overflow={null}
@@ -203,8 +203,8 @@ exports[` 4`] = `
         
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 iDgfpZ"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 kumGNs"
+        height="20rem"
         id="Bottom"
         overflow={null}
         width={null}
@@ -213,17 +213,17 @@ exports[` 4`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jKdZMv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
       height={null}
       id="Right"
       overflow={null}
-      width="25%"
+      width="24rem"
     >
       
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fCpjke"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fgYxpX"
     height={null}
     id="Footer"
     overflow={null}
@@ -243,7 +243,7 @@ exports[` 5`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
     height={null}
     id="Header"
     overflow={null}
@@ -358,216 +358,17 @@ exports[` 5`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="15%"
+      width="10rem"
     >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
-        id="List Panel"
-      >
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
-          id="List Panel_header"
-        >
-          <div
-            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
-            href={null}
-            id="LeftPanelHeader"
-            media=""
-            onClick={null}
-          >
-            <div
-              className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id="ListHeader"
-              onClick={null}
-            >
-              <div
-                className="Bar__Slot-icfo76-1 fNcQEg"
-              >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                  fontSize="1.15em"
-                  fontWeight={600}
-                  letterSpacing="0px"
-                >
-                  Menu Header
-                </h5>
-              </div>
-              <div
-                className="Bar__Slot-icfo76-1 kZQbjh"
-              >
-                <div
-                  className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                  onClick={[Function]}
-                >
-                  <button
-                    className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
-                    disabled={false}
-                    htmlFor={null}
-                    id={null}
-                    name={null}
-                    onClick={null}
-                    tabIndex="1"
-                    type="button"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
-                      id={null}
-                      rows={null}
-                    >
-                      <svg
-                        aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                        color={null}
-                        data-icon="ellipsis-v"
-                        data-prefix="far"
-                        focusable="false"
-                        fontSize="inherit"
-                        id={null}
-                        role="img"
-                        style={Object {}}
-                        viewBox="0 0 128 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                          fill="currentColor"
-                          style={Object {}}
-                        />
-                      </svg>
-                    </section>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
-          id="List Panel_body"
-        >
-          <ul
-            className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
-            id={null}
-          >
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Layers
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Results
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Form
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Research
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
+      
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bGQswE Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dJGSkh Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
       width="100%"
@@ -579,551 +380,30 @@ exports[` 5`] = `
         overflow={null}
         width={null}
       >
-        <div
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        />
+        
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 feYNea"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 feYNea"
+        height="20rem"
         id={null}
         overflow={null}
         width={null}
       >
-        <div
-          className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
-        >
-          <div
-            style={
-              Object {
-                "height": 0,
-                "overflow": "visible",
-                "width": 0,
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "height": 100,
-                  "overflow": "visible",
-                  "width": 200,
-                }
-              }
-            >
-              <div
-                style={
-                  Object {
-                    "height": 40,
-                    "position": "relative",
-                    "width": 200,
-                  }
-                }
-              >
-                <div
-                  aria-label="grid"
-                  aria-readonly={true}
-                  className="ReactVirtualized__Grid"
-                  onScroll={[Function]}
-                  role="grid"
-                  style={
-                    Object {
-                      "WebkitOverflowScrolling": "touch",
-                      "boxSizing": "border-box",
-                      "direction": "ltr",
-                      "height": 40,
-                      "left": 0,
-                      "overflowX": "hidden",
-                      "overflowY": "hidden",
-                      "position": "absolute",
-                      "top": 0,
-                      "width": 200,
-                      "willChange": "transform",
-                    }
-                  }
-                  tabIndex={null}
-                >
-                  <div
-                    className="ReactVirtualized__Grid__innerScrollContainer"
-                    role="rowgroup"
-                    style={
-                      Object {
-                        "height": 40,
-                        "maxHeight": 40,
-                        "maxWidth": 1060,
-                        "overflow": "hidden",
-                        "pointerEvents": "",
-                        "position": "relative",
-                        "width": 1060,
-                      }
-                    }
-                  >
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 irRGFH"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      Acreage
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 irRGFH"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      Aggregate Acreage
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                style={
-                  Object {
-                    "height": 60,
-                    "overflow": "visible",
-                    "position": "relative",
-                    "width": 200,
-                  }
-                }
-              >
-                <div
-                  aria-label="grid"
-                  aria-readonly={true}
-                  className="ReactVirtualized__Grid"
-                  onScroll={[Function]}
-                  role="grid"
-                  style={
-                    Object {
-                      "WebkitOverflowScrolling": "touch",
-                      "boxSizing": "border-box",
-                      "direction": "ltr",
-                      "height": 60,
-                      "left": 0,
-                      "overflowX": "auto",
-                      "overflowY": "auto",
-                      "position": "absolute",
-                      "width": 200,
-                      "willChange": "transform",
-                    }
-                  }
-                  tabIndex={0}
-                >
-                  <div
-                    className="ReactVirtualized__Grid__innerScrollContainer"
-                    role="rowgroup"
-                    style={
-                      Object {
-                        "height": 200,
-                        "maxHeight": 200,
-                        "maxWidth": 1060,
-                        "overflow": "hidden",
-                        "pointerEvents": "",
-                        "position": "relative",
-                        "width": 1060,
-                      }
-                    }
-                  >
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 40,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      1.11
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 40,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      1.11
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 80,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.94
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 80,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.94
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.07
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.684631
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 gLaegA"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 gLaegA"
       height={null}
       id={null}
       overflow={null}
-      width="25%"
+      width="24rem"
     >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
-        id="Info Panel"
-      >
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
-          id="Info Panel_header"
-        >
-          <div
-            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
-            href={null}
-            id="RecordSummaryCard"
-            media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-            onClick={null}
-          >
-            <section
-              className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-              id="RecordSummaryCard-Media"
-              onClick={null}
-            >
-              <img
-                alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
-                onClick={null}
-                src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-                title="Media Description"
-                width="100%"
-              />
-            </section>
-            <section
-              className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-              id="RecordSummaryCard-Header"
-              onClick={null}
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 boCGaE"
-                >
-                  <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 gCneCZ"
-                    id={null}
-                    onClick={null}
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
-                      color={null}
-                      data-icon="bookmark"
-                      data-prefix="fas"
-                      focusable="false"
-                      fontSize="0.875em"
-                      id={null}
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 384 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  className="Bar__Slot-icfo76-1 yvaBx"
-                >
-                  <h5
-                    className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                    fontSize="1.15em"
-                    fontWeight={600}
-                    letterSpacing="0px"
-                  >
-                    Best Place Ever
-                  </h5>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    I Could Tell You More, But...
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
-          id="Info Panel_body"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
-            id={null}
-            rows={null}
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-              id={null}
-              rows={null}
-            >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 PRpBC"
-                fontSize="1.15em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                Section 1
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-              </p>
-            </section>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-              id={null}
-              rows={null}
-            >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 PRpBC"
-                fontSize="1.15em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                Section 1
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-              </p>
-            </section>
-          </section>
-        </section>
-      </div>
+      
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fCpjke"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fgYxpX"
     height={null}
     id="Footer"
     overflow={null}
@@ -1206,7 +486,7 @@ exports[` 6`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
     height={null}
     id="Header"
     overflow={null}
@@ -1321,216 +601,17 @@ exports[` 6`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="15%"
+      width="10rem"
     >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
-        id="List Panel"
-      >
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
-          id="List Panel_header"
-        >
-          <div
-            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
-            href={null}
-            id="LeftPanelHeader"
-            media=""
-            onClick={null}
-          >
-            <div
-              className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id="ListHeader"
-              onClick={null}
-            >
-              <div
-                className="Bar__Slot-icfo76-1 fNcQEg"
-              >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                  fontSize="1.15em"
-                  fontWeight={600}
-                  letterSpacing="0px"
-                >
-                  Menu Header
-                </h5>
-              </div>
-              <div
-                className="Bar__Slot-icfo76-1 kZQbjh"
-              >
-                <div
-                  className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                  onClick={[Function]}
-                >
-                  <button
-                    className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
-                    disabled={false}
-                    htmlFor={null}
-                    id={null}
-                    name={null}
-                    onClick={null}
-                    tabIndex="1"
-                    type="button"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
-                      id={null}
-                      rows={null}
-                    >
-                      <svg
-                        aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                        color={null}
-                        data-icon="ellipsis-v"
-                        data-prefix="far"
-                        focusable="false"
-                        fontSize="inherit"
-                        id={null}
-                        role="img"
-                        style={Object {}}
-                        viewBox="0 0 128 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                          fill="currentColor"
-                          style={Object {}}
-                        />
-                      </svg>
-                    </section>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
-          id="List Panel_body"
-        >
-          <ul
-            className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
-            id={null}
-          >
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Layers
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Results
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Form
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    Research
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
+      
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bGQswE Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dJGSkh Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
       width="100%"
@@ -1542,551 +623,30 @@ exports[` 6`] = `
         overflow={null}
         width={null}
       >
-        <div
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        />
+        
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 feYNea"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 feYNea"
+        height="20rem"
         id={null}
         overflow={null}
         width={null}
       >
-        <div
-          className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
-        >
-          <div
-            style={
-              Object {
-                "height": 0,
-                "overflow": "visible",
-                "width": 0,
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "height": 100,
-                  "overflow": "visible",
-                  "width": 200,
-                }
-              }
-            >
-              <div
-                style={
-                  Object {
-                    "height": 40,
-                    "position": "relative",
-                    "width": 200,
-                  }
-                }
-              >
-                <div
-                  aria-label="grid"
-                  aria-readonly={true}
-                  className="ReactVirtualized__Grid"
-                  onScroll={[Function]}
-                  role="grid"
-                  style={
-                    Object {
-                      "WebkitOverflowScrolling": "touch",
-                      "boxSizing": "border-box",
-                      "direction": "ltr",
-                      "height": 40,
-                      "left": 0,
-                      "overflowX": "hidden",
-                      "overflowY": "hidden",
-                      "position": "absolute",
-                      "top": 0,
-                      "width": 200,
-                      "willChange": "transform",
-                    }
-                  }
-                  tabIndex={null}
-                >
-                  <div
-                    className="ReactVirtualized__Grid__innerScrollContainer"
-                    role="rowgroup"
-                    style={
-                      Object {
-                        "height": 40,
-                        "maxHeight": 40,
-                        "maxWidth": 1060,
-                        "overflow": "hidden",
-                        "pointerEvents": "",
-                        "position": "relative",
-                        "width": 1060,
-                      }
-                    }
-                  >
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 irRGFH"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      Acreage
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 irRGFH"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      Aggregate Acreage
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                style={
-                  Object {
-                    "height": 60,
-                    "overflow": "visible",
-                    "position": "relative",
-                    "width": 200,
-                  }
-                }
-              >
-                <div
-                  aria-label="grid"
-                  aria-readonly={true}
-                  className="ReactVirtualized__Grid"
-                  onScroll={[Function]}
-                  role="grid"
-                  style={
-                    Object {
-                      "WebkitOverflowScrolling": "touch",
-                      "boxSizing": "border-box",
-                      "direction": "ltr",
-                      "height": 60,
-                      "left": 0,
-                      "overflowX": "auto",
-                      "overflowY": "auto",
-                      "position": "absolute",
-                      "width": 200,
-                      "willChange": "transform",
-                    }
-                  }
-                  tabIndex={0}
-                >
-                  <div
-                    className="ReactVirtualized__Grid__innerScrollContainer"
-                    role="rowgroup"
-                    style={
-                      Object {
-                        "height": 200,
-                        "maxHeight": 200,
-                        "maxWidth": 1060,
-                        "overflow": "hidden",
-                        "pointerEvents": "",
-                        "position": "relative",
-                        "width": 1060,
-                      }
-                    }
-                  >
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 40,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      1.11
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 40,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      1.11
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 80,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.94
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 80,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.94
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.07
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.684631
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 gLaegA"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 gLaegA"
       height={null}
       id={null}
       overflow={null}
-      width="25%"
+      width="24rem"
     >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
-        id="Info Panel"
-      >
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
-          id="Info Panel_header"
-        >
-          <div
-            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
-            href={null}
-            id="RecordSummaryCard"
-            media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-            onClick={null}
-          >
-            <section
-              className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-              id="RecordSummaryCard-Media"
-              onClick={null}
-            >
-              <img
-                alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
-                onClick={null}
-                src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-                title="Media Description"
-                width="100%"
-              />
-            </section>
-            <section
-              className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-              id="RecordSummaryCard-Header"
-              onClick={null}
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 boCGaE"
-                >
-                  <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 gCneCZ"
-                    id={null}
-                    onClick={null}
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
-                      color={null}
-                      data-icon="bookmark"
-                      data-prefix="fas"
-                      focusable="false"
-                      fontSize="0.875em"
-                      id={null}
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 384 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  className="Bar__Slot-icfo76-1 yvaBx"
-                >
-                  <h5
-                    className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                    fontSize="1.15em"
-                    fontWeight={600}
-                    letterSpacing="0px"
-                  >
-                    Best Place Ever
-                  </h5>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    I Could Tell You More, But...
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
-          id="Info Panel_body"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
-            id={null}
-            rows={null}
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-              id={null}
-              rows={null}
-            >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 PRpBC"
-                fontSize="1.15em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                Section 1
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-              </p>
-            </section>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-              id={null}
-              rows={null}
-            >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 PRpBC"
-                fontSize="1.15em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                Section 1
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-              </p>
-            </section>
-          </section>
-        </section>
-      </div>
+      
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fCpjke"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fgYxpX"
     height={null}
     id="Footer"
     overflow={null}
