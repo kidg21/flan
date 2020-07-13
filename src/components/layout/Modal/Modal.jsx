@@ -86,8 +86,8 @@ const ContentWrapper = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 `;
 
 const Image = styled.img`
@@ -97,14 +97,13 @@ const Image = styled.img`
 `;
 
 const ModalContainer = styled.div`
-  position: fixed;
+  position: absolute;
   display: ${(props) => { return (props.visible || props.action === "open" ? "flex" : "none"); }};
   z-index: 1005;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  min-height: 100vh;
   align-items: center;
   justify-content: ${(props) => { return props.justifyContent || ""; }};
   flex-direction: column;
@@ -121,7 +120,6 @@ const ModalContainer = styled.div`
     return props.action && typeof props.animationDuration === "number" ? `${props.animationDuration}s` : null;
   }};
     transform-origin: top;
-    pointer-events: initial;
     @media ${screen.medium} {
       max-width: 50vw;
     }
@@ -143,8 +141,7 @@ const ModalContainer = styled.div`
 `;
 
 const ModalBG = styled.div`
-  z-index: -1;
-  position: fixed;
+  position: absolute;
   right: 0px;
   bottom: 0px;
   top: 0px;
@@ -154,6 +151,7 @@ const ModalBG = styled.div`
       props.theme.background.modal
     );
   }};
+  z-index: -1;
   -webkit-tap-highlight-color: transparent;
   touch-action: none;
   animation-name: ${(props) => {
