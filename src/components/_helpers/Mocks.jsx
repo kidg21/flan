@@ -10,7 +10,6 @@ import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListSection, ListItem } from "blocks/List";
 import Tabs from "blocks/Tabs";
 import Table from "blocks/Table";
-import Mapbox from "layout/Map";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Button, { ButtonGroup } from "atoms/Button";
@@ -18,56 +17,13 @@ import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
 import Avatar from "atoms/Avatar";
-import Panel from "layout/Panel";
 import Bar from "layout/Bar";
 import Menu from "blocks/Menu";
 import Template from "layout/Template";
 import Picker, { ColorSwatch } from "elements/Picker";
-import SearchBar from "blocks/Search";
 import Field, { FieldGroup } from "atoms/Field";
 import LightBoxLogo from "images/LightBoxLogo.png";
-
-function MockMap({ withTools, ...props }) {
-  return (
-    <React.Fragment>
-      {withTools ? (
-        <Template
-          id="Map Tools"
-          template="E_03"
-          hasBorders
-          isOverlay
-          A={{
-            id: "A",
-            content: <SearchBar id="Map_E3" placeholder="Search Location" />,
-          }}
-          B={{
-            id: "B",
-            content: <Button label="Button" icon="circle" alignCenter />,
-          }}
-          C={{
-            id: "C",
-            content: <Button label="Button" icon="circle" alignCenter />,
-          }}
-          D={{
-            id: "D",
-            content: <Button label="Button" icon="circle" alignCenter />,
-          }}
-          E={{
-            id: "E",
-            content: <MockPalette />,
-          }}
-        />
-      ) : null}
-      <Mapbox />
-    </React.Fragment>
-  );
-}
-MockMap.propTypes = {
-  withTools: PropTypes.bool,
-};
-MockMap.defaultProps = {
-  withTools: false,
-};
+import StaticMap from "images/maps/mission-viejo.png";
 
 function MockPalette() {
   return (
@@ -157,7 +113,9 @@ function MockHeader() {
       { id: "c1", label: "Action" }],
   }];
   return (
-    <Card id="Card_Header">
+    <Card
+      id="Card_Header"
+    >
       <CardSection padding="2x" variant="light">
         <Bar
           padding="0"
@@ -288,143 +246,87 @@ MockWorkflow.defaultProps = {
   title: null,
 };
 
-const tableHeaders = [
-  { id: "checkbox", label: <Grid columns="auto 1fr"><Checkbox label="Select All" /></Grid> },
-  { id: "Name", label: "Name", sortable: true },
-  { id: "Address", label: "Address", sortable: false },
-  { id: "City", label: "City", sortable: false },
-  { id: "State", label: "State", sortable: false },
-  { id: "Zip", label: "Zip", sortable: false },
-  { id: "Property_Type", label: "Property Type", sortable: false },
-  { id: "GBA", label: "GBA", sortable: false },
-  { id: "Rentable_Area", label: "Rentable Area", sortable: false },
-  { id: "Units", label: "Units", sortable: false },
-  { id: "Year_Built", label: "Year Built", sortable: false },
-  { id: "Land_SF", label: "Land(sf)", sortable: false },
-  { id: "Acres", label: "Acres", sortable: false },
-  { id: "actions", label: "Actions" },
-];
-
-const tableData = [
-  {
-    Name: <Link text="477 Madison Avenue" />,
-    Address: "477 Madison Avenue",
-    City: "New York",
-    State: "NY",
-    Zip: "10022",
-    Property_Type: "Office",
-    GBA: "262,287",
-    Rentable_Area: "262,287",
-    Units: "68",
-    Year_Built: "1987",
-    Land_SF: "2938",
-    Acres: "2",
-  },
-  {
-    Name: <Link text="23 E. 21 St." />,
-    Address: "23 E. 21St. #2",
-    City: "New York",
-    State: "NY",
-    Zip: "10010",
-    Property_Type: "Office",
-    GBA: "3,230",
-    Rentable_Area: "--",
-    Units: "2",
-    Year_Built: "1999",
-    Land_SF: "78",
-    Acres: "0.5",
-  },
-  {
-    Name: <Link text="11 W. 20 St." />,
-    Address: "11 W 20 St. #4R",
-    City: "New York",
-    State: "NY",
-    Zip: "10011",
-    Property_Type: "Office",
-    GBA: "2,650",
-    Rentable_Area: "--",
-    Units: "2",
-    Year_Built: "1999",
-    Land_SF: "78",
-    Acres: "0.5",
-  },
-];
-
-const tableOptions = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
-  { value: "pistachio", label: "Pistachio" },
-  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" },
-];
-
-const rowMenu = [
-  {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Save");
-    },
-    label: "Save",
-  },
-  {
-    id: "b",
-    onClick: () => {
-      console.log("clicked Filter");
-    },
-    label: "Filter",
-  },
-  {
-    id: "c",
-    onClick: () => {
-      console.log("clicked Share");
-    },
-    label: "Share",
-  },
-  {
-    id: "d",
-    onClick: () => {
-      console.log("clicked Refresh");
-    },
-    label: "Refresh",
-  },
-  {
-    id: "e",
-    onClick: () => {
-      console.log("clicked Layer");
-    },
-    label: "Layer",
-  },
-];
-
-const rowActions = (
-  <Grid columns="3">
-    <Icon icon="edit" />
-    <Icon icon="delete" />
-    <Menu data={rowMenu} />
-  </Grid>
-);
-
-const iconNames = [
-  {
-    icon: "edit",
-    onClick: true,
-    // icon: "check",
-    // variant: "success",
-  },
-  {
-    icon: "delete",
-    onClick: true,
-    // icon: "close",
-    // variant: "alert",
-  },
-  {
-    icon: "options",
-    onClick: true,
-  },
-];
-
 function MockTable() {
+  const tableHeaders = [
+    { id: "checkbox", label: <Grid columns="auto 1fr"><Checkbox label="Select All" /></Grid> },
+    { id: "Name", label: "Name", sortable: true },
+    { id: "Address", label: "Address", sortable: false },
+    { id: "City", label: "City", sortable: false },
+    { id: "State", label: "State", sortable: false },
+    { id: "Zip", label: "Zip", sortable: false },
+    { id: "Property_Type", label: "Property Type", sortable: false },
+    { id: "GBA", label: "GBA", sortable: false },
+    { id: "Rentable_Area", label: "Rentable Area", sortable: false },
+    { id: "Units", label: "Units", sortable: false },
+    { id: "Year_Built", label: "Year Built", sortable: false },
+    { id: "Land_SF", label: "Land(sf)", sortable: false },
+    { id: "Acres", label: "Acres", sortable: false },
+    { id: "actions", label: "Actions" },
+  ];
+
+  const tableData = [
+    {
+      Name: <Link text="477 Madison Avenue" />,
+      Address: "477 Madison Avenue",
+      City: "New York",
+      State: "NY",
+      Zip: "10022",
+      Property_Type: "Office",
+      GBA: "262,287",
+      Rentable_Area: "262,287",
+      Units: "68",
+      Year_Built: "1987",
+      Land_SF: "2938",
+      Acres: "2",
+    },
+    {
+      Name: <Link text="23 E. 21 St." />,
+      Address: "23 E. 21St. #2",
+      City: "New York",
+      State: "NY",
+      Zip: "10010",
+      Property_Type: "Office",
+      GBA: "3,230",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="11 W. 20 St." />,
+      Address: "11 W 20 St. #4R",
+      City: "New York",
+      State: "NY",
+      Zip: "10011",
+      Property_Type: "Office",
+      GBA: "2,650",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+  ];
+
+  const iconNames = [
+    {
+      icon: "edit",
+      onClick: true,
+      // icon: "check",
+      // variant: "success",
+    },
+    {
+      icon: "delete",
+      onClick: true,
+      // icon: "close",
+      // variant: "alert",
+    },
+    {
+      icon: "options",
+      onClick: true,
+    },
+  ];
   const [highlightedCell, setHighlightCell] = useState(null);
   const [selectedCell, setSelectedCell] = useState(null);
   for (let i = 0; i < tableData.length; i++) {
@@ -460,7 +362,7 @@ function MockTable() {
   return (
     <React.Fragment>
       <Card>
-        <CardSection padding="" variant="">
+        <CardSection padding="0">
           <Bar
             contentAlign="center"
             left={{
@@ -503,10 +405,10 @@ function MockTable() {
     </React.Fragment>
   );
 }
-MockMap.propTypes = {
+MockTable.propTypes = {
   // stuff
 };
-MockMap.defaultProps = {
+MockTable.defaultProps = {
   // stuff
 };
 
@@ -582,26 +484,6 @@ function MockData() {
           value="22902 Trabuco Road"
         />
       </FieldGroup>
-      {/* <FieldGroup id="Description" columns="1">
-          <Field
-            label="Description"
-            value="Lovely Ladera Ranch Townhome located in the highly desirable Chambray Neighborhood could be yours! Location is amazing! End unit with sprawling wrap around porch. This home is walking distance to the grocery store, restaurants, parks, hiking trails and dog park! It features an open floor plan with 3 bedrooms upstairs, living room, family room, dining room and kitchen downstairs. Professionally decorated with Italian Ceramic tile, designer paint, and upgraded carpet. 2 car garage is attached! Enjoy all of the amenities of Ladera Ranch including Top Rated Award Winning Schools, Water Parks, Skateboard parks, Tennis courts, Concerts in the park, Farmer's market and Dog Parks! Fabulous social community!"
-          />
-        </FieldGroup> */}
-      {/* <FieldGroup id="Listing Info" columns="1">
-          <Field
-            label="Listed By 1"
-            value="Tracey Ireland • DRE #01847141 • First Title Realty Inc"
-          />
-          <Field
-            label="Listed By 2"
-            value="Alex Celani • DRE #01326931 • First Title Realty Inc"
-          />
-          <Field
-            label="Last Updated"
-            value="Last updated May 23, 2020 • Source: CRMLS"
-          />
-        </FieldGroup> */}
     </Template>
   );
 }
@@ -612,80 +494,9 @@ MockData.defaultProps = {
   // stuff
 };
 
-// const data = [
-//   {
-//     id: "a",
-//     // variant: "success",
-//     // media: ModernExterior1,
-//     // mediaDesc: "ModernExterior 1",
-//     icon: "bookmark_solid",
-//     title: "First Card",
-//     description: "Card Description Goes Here",
-//     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//     commands: [
-//       {
-//         id: "Command One",
-//         label: "Command One",
-//       },
-//     ],
-//   },
-//   {
-//     id: "b",
-//     // variant: "alert",
-//     // media: ModernExterior2,
-//     // mediaDesc: "ModernExterior 2",
-//     label: "GP",
-//     title: "Second Card",
-//     body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-//     commands: [
-//       {
-//         id: "Command One",
-//         label: "Command One",
-//       },
-//       {
-//         id: "Command Two",
-//         label: "Command Two",
-//       },
-//     ],
-//   },
-//   {
-//     id: "c",
-//     // variant: "info",
-//     // media: ModernExterior3,
-//     // mediaDesc: "ModernExterior 3",
-//     icon: "home",
-//     title: "Third Card",
-//     description: "Nothing To See Here",
-//     body: " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-//     commands: [
-//       {
-//         id: "Command One",
-//         label: "Command One",
-//       },
-//       {
-//         id: "Command Two",
-//         label: "Command Two",
-//       },
-//       {
-//         id: "Command Three",
-//         label: "Command Three",
-//       },
-//       {
-//         id: "Command Four",
-//         label: "Command Four",
-//       },
-//       {
-//         id: "Command Five",
-//         label: "Command Five",
-//       },
-//     ],
-//   },
-// ];
-
-function MockCardGrid({ ...props }) {
+function MockCardGrid() {
   return (
-    // <CardGrid data={data} {...props} />
-    <CardGrid {...props}>
+    <CardGrid>
       <Card id="MockCard_1" />
       <Card id="MockCard_2" />
       <Card id="MockCard_3" />
@@ -701,90 +512,89 @@ MockCardGrid.defaultProps = {
   // stuff
 };
 
-const shortBoxes = [
-  {
-    id: "box-1",
-    label: "Label 1",
-  },
-  {
-    id: "box-2",
-    label: "Label 2 (disabled)",
-    disabled: true,
-  },
-  {
-    id: "box-3",
-    label: "Label 3",
-  },
-  {
-    id: "box-4",
-    label: "Label 4",
-  },
-];
-const longBoxes = [
-  {
-    id: "box_long",
-    label:
-      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-  },
-  {
-    id: "box_long2",
-    label:
-      "Enough with these long labels already...put it on your blog, Shakespeare.",
-  },
-];
-const shortRadios = [
-  {
-    id: "radio-1",
-    name: "radio-group",
-    value: "1",
-    label: "Label 1",
-  },
-  {
-    id: "radio-2",
-    name: "radio-group",
-    value: "2",
-    label: "Label 2 (disabled)",
-    disabled: true,
-  },
-  {
-    id: "radio-3",
-    name: "radio-group",
-    value: "3",
-    label: "Label 3",
-  },
-  {
-    id: "radio-4",
-    name: "radio-group",
-    value: "4",
-    label: "Label 4",
-  },
-];
-const longRadios = [
-  {
-    id: "radio_long",
-    name: "radio-group",
-    value: "5",
-    label:
-      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-  },
-  {
-    id: "radio_long2",
-    name: "radio-group",
-    value: "6",
-    label:
-      "Enough with these long labels already...put it on your blog, Shakespeare.",
-  },
-];
-const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
-  { value: "pistachio", label: "Pistachio" },
-  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" },
-];
-
 function MockForm() {
+  const shortBoxes = [
+    {
+      id: "box-1",
+      label: "Label 1",
+    },
+    {
+      id: "box-2",
+      label: "Label 2 (disabled)",
+      disabled: true,
+    },
+    {
+      id: "box-3",
+      label: "Label 3",
+    },
+    {
+      id: "box-4",
+      label: "Label 4",
+    },
+  ];
+  const longBoxes = [
+    {
+      id: "box_long",
+      label:
+        "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+    },
+    {
+      id: "box_long2",
+      label:
+        "Enough with these long labels already...put it on your blog, Shakespeare.",
+    },
+  ];
+  const shortRadios = [
+    {
+      id: "radio-1",
+      name: "radio-group",
+      value: "1",
+      label: "Label 1",
+    },
+    {
+      id: "radio-2",
+      name: "radio-group",
+      value: "2",
+      label: "Label 2 (disabled)",
+      disabled: true,
+    },
+    {
+      id: "radio-3",
+      name: "radio-group",
+      value: "3",
+      label: "Label 3",
+    },
+    {
+      id: "radio-4",
+      name: "radio-group",
+      value: "4",
+      label: "Label 4",
+    },
+  ];
+  const longRadios = [
+    {
+      id: "radio_long",
+      name: "radio-group",
+      value: "5",
+      label:
+        "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+    },
+    {
+      id: "radio_long2",
+      name: "radio-group",
+      value: "6",
+      label:
+        "Enough with these long labels already...put it on your blog, Shakespeare.",
+    },
+  ];
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+    { value: "pistachio", label: "Pistachio" },
+    { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+    { value: "cookie dough", label: "Cookie Dough" },
+  ];
   return (
     <Form
       id="Form"
@@ -843,106 +653,12 @@ MockForm.defaultProps = {
   // stuff
 };
 
-// const menuData = [
-//   { id: "a", label: "Action" },
-//   { id: "b", label: "Action" },
-//   { id: "c", label: "Action" },
-// ];
-
-// const panelHeader = (
-//   <Bar
-// padding="2x"
-// contentAlign="center"
-// center={{
-//   content: <Title text="Location Details" weight="bold" />,
-//   align: "left",
-// }}
-// right={{
-//   content: (
-//     <Menu
-//       id="MockDetails-Menu"
-//       data={menuData}
-//       position="bottomRight"
-//     />
-//   ),
-//   width: "max-content",
-// }}
-// right={{
-//   content: (
-//     <Icon
-//       icon="close"
-//     onClick={toggleLeft}
-//     />
-//   ),
-//   width: "max-content",
-// }}
-// />
-// );
-
-// const infoCard = (
-// <Image src={StaticMap} width="100%" />
-// <Card
-// id="MockDetails-Info"
-// media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
-// media={StaticMap}
-// mediaDesc="Media Description"
-// title="Best Place Ever"
-// description="I Could Tell You More, But..."
-// icon="home"
-// commands={[
-//   {
-//     id: "Action One",
-//     label: "Action",
-//   },
-// ]}
-// shadow="0"
-// />
-// );
-
-// const infoBody = (
-//   <Template>
-//     <Image src={StaticMap} width="100%" />
-//     <Button label="View on Map" />
-//     <FieldGroup id="Physical Characteristics" title="Physical Characteristics">
-//       <Field
-//         id="No. of Buildings"
-//         label="No. of Buildings"
-//         value="3"
-//       />
-//       <Field
-//         id="GBA"
-//         label="GBA"
-//         value="25,344"
-//       />
-//       <Field
-//         id="No. of Stories"
-//         label="No. of Stories"
-//         value="1"
-//       />
-//       <Field
-//         id="No. of Units"
-//         label="No. of Units"
-//         value="4"
-//       />
-//       <Field
-//         id="Year Built"
-//         label="Year Built"
-//         value="1978"
-//       />
-//     </FieldGroup>
-//   </Template>
-// );
-
 function MockDetails({
-  children, image, title, data, footer,
+  image, title, data, footer,
 }) {
   return (
     <Template>
-      <Image
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-        alt="This is alt text for this image"
-        width="100%"
-      />
+      <Image src={image || StaticMap} width="100%" />
       {data ? <FieldGroup id={title} title={title} data={data} />
         : (
           <FieldGroup id="Physical Characteristics" title={title || "Physical Characteristics"}>
@@ -978,10 +694,16 @@ function MockDetails({
   );
 }
 MockDetails.propTypes = {
-  // stuff
+  data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  footer: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  title: PropTypes.string,
 };
 MockDetails.defaultProps = {
-  // stuff
+  data: null,
+  footer: null,
+  image: null,
+  title: null,
 };
 
 function MockTabs({ data }) {
@@ -1057,7 +779,6 @@ export {
   MockHeader,
   MockHeaderGlobal,
   MockPalette,
-  MockMap,
   MockMenu,
   MockTable,
   MockTabs,

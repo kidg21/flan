@@ -286,7 +286,7 @@ storiesOf("Templates|Panels/", module)
                 <React.Fragment>
                   <Panel
                     id="Menu 1"
-                    header={
+                    header={(
                       <React.Fragment>
                         <Bar
                           contentAlign="center"
@@ -313,16 +313,18 @@ storiesOf("Templates|Panels/", module)
                         />
                         <Tabs data={tabButtons} />
                       </React.Fragment>
-                    }
+                    )}
                     footer={
-                      footerSection ?
-                        <Card id="Menu_1_Footer">
-                          <CardSection>
-                            <ButtonGroup columns="1">
-                              <Button label="Add Files" isSolid />
-                            </ButtonGroup>
-                          </CardSection>
-                        </Card>
+                      footerSection
+                        ? (
+                          <Card id="Menu_1_Footer">
+                            <CardSection>
+                              <ButtonGroup columns="1">
+                                <Button label="Add Files" isSolid />
+                              </ButtonGroup>
+                            </CardSection>
+                          </Card>
+                        )
                         : ""
                     }
                   >
@@ -331,14 +333,14 @@ storiesOf("Templates|Panels/", module)
                   <Panel
                     id="Menu 2"
                     offcanvas={menu2}
-                    header={
+                    header={(
                       <Card
                         id="Menu_2_Header"
                         title="Record 1"
                         description="Record Description Goes Here"
                       />
-                    }
-                    footer={
+                    )}
+                    footer={(
                       <Card id="Menu_2_Footer">
                         <CardSection>
                           <ButtonGroup columns="2">
@@ -347,7 +349,7 @@ storiesOf("Templates|Panels/", module)
                           </ButtonGroup>
                         </CardSection>
                       </Card>
-                    }
+                    )}
                   >
                     {recordDetails}
                   </Panel>

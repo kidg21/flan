@@ -1,4 +1,3 @@
-/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
@@ -6,26 +5,28 @@ import { FullScreen } from "helpers/Display";
 import Panel from "layout/Panel";
 import Icon from "atoms/Icon";
 import Loader from "atoms/Loader";
-import Avatar from "atoms/Avatar";
-import Button, { ButtonGroup } from "atoms/Button";
+import Button from "atoms/Button";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
-import Grid from "layout/Grid";
 import Template from "layout/Template";
-import Image from "atoms/Image";
-import Legend from "blocks/Legend";
 import Media from "atoms/Media";
-import Field, { FieldGroup } from "atoms/Field";
-import Text, { Title, Label, Link } from "base/Typography";
-import LightBoxLogo from "images/LightBoxLogo.png";
-import LightBoxIcon from "images/LightBoxIconLogo.png";
-import Banner from "blocks/Banner";
+import { FieldGroup } from "atoms/Field";
+import Text, { Title, Link } from "base/Typography";
 import Card, { CardSection } from "elements/Card";
-import DialogBox from "elements/DialogBox";
 import Modal from "layout/Modal";
 import ParcelMap from "images/maps/parcel-map.png";
 import ReportTemp from "images/rural.jpg";
-import { MockHeader, MockFooter, MockMap, MockWorkflow, MockTable, MockCardGrid, MockDetails, MockMenu, MockData, MockTabs, MockForm, MockHeaderGlobal } from "helpers/Mocks";
+import {
+  MockData,
+  MockDetails,
+  MockFooter,
+  MockForm,
+  MockHeader,
+  MockHeaderGlobal,
+  MockMenu,
+  MockTabs,
+  MockWorkflow,
+} from "helpers/Mocks";
 
 function doNothing() {
   // do nothing
@@ -536,14 +537,14 @@ storiesOf("Templates|Applications/Appraisal", module)
                               <CardSection>
                                 <Bar
                                   padding="2x"
-                                  center={
+                                  center={(
                                     <Icon
                                       icon="file"
                                       size="4xl"
                                       fixedWidth
                                       disabled
                                     />
-                                  }
+                                  )}
                                 />
                                 <Text text="Please wait 5 seconds while we build your report..." />
                                 <Loader />
@@ -680,13 +681,13 @@ storiesOf("Templates|Applications/Appraisal", module)
                                     width: "50%",
                                     align: "left",
                                   }}
-                                  right={
+                                  right={(
                                     <Button
                                       label="Download"
                                       fullWidth
                                       onClick={doNothing}
                                     />
-                                  }
+                                  )}
                                 />
                                 <Bar
                                   contentAlign="center"
@@ -697,13 +698,13 @@ storiesOf("Templates|Applications/Appraisal", module)
                                     width: "50%",
                                     align: "left",
                                   }}
-                                  right={
+                                  right={(
                                     <Button
                                       label="Download"
                                       fullWidth
                                       onClick={doNothing}
                                     />
-                                  }
+                                  )}
                                 />
                                 <Bar
                                   contentAlign="center"
@@ -714,13 +715,13 @@ storiesOf("Templates|Applications/Appraisal", module)
                                     width: "50%",
                                     align: "left",
                                   }}
-                                  right={
+                                  right={(
                                     <Button
                                       label="Download"
                                       fullWidth
                                       onClick={doNothing}
                                     />
-                                  }
+                                  )}
                                 />
                                 <Button
                                   label="Complete Project and Publish"
