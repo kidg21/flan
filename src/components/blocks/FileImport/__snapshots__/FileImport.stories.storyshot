@@ -31,7 +31,7 @@ exports[` 1`] = `
   >
     <input
       autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+      className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
       cols=""
       disabled={false}
       id="file-textinput-FileImport_Standard"
@@ -45,7 +45,6 @@ exports[` 1`] = `
       placeholder={null}
       rows=""
       type="text"
-      value=""
     />
   </section>
 </section>
@@ -53,7 +52,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jodquI"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 bIzuts"
   id={null}
   rows={null}
 >
@@ -87,7 +86,7 @@ exports[` 2`] = `
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 jKeqyS"
+        className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
         cols=""
         disabled={false}
         id="file-textinput-FileImport_Types"
@@ -101,7 +100,6 @@ exports[` 2`] = `
         placeholder={null}
         rows=""
         type="text"
-        value=""
       />
     </section>
   </section>

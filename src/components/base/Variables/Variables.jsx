@@ -49,8 +49,8 @@ export const colors = {
   red80: "hsl(3, 61%, 44%)",
   red100: "hsl(359, 100%, 25%)",
 
-  white20: "hsl(200, 59%, 95%)", // /bluetint
-  white40: "hsl(201, 100%, 98%)", // lightblue
+  white20: "hsl(200, 19%, 95%)", // /bluetint
+  white40: "hsl(201, 59%, 98%)", // lightblue
   white60: "hsl(0, 100%, 100%)", // white
 
   shade1: "hsla(34, 5%, 12%, 0.05)",
@@ -169,10 +169,12 @@ export const DMPTheme = {
     default: colors.white60,
     disabled: colors.grey10,
     hover: interaction.hover,
+    light: colors.blue20,
     info: colors.purple100,
     inverse: colors.grey100,
     modal: colors.shade10,
-    selected: interaction.selectedLight,
+    selectedLight: interaction.selectedLight,
+    selected: colors.blue40,
     selectedDark: interaction.selectedDark,
     success: colors.green100,
     warning: colors.orange80,
@@ -262,7 +264,8 @@ export const darkTheme = {
     info: colors.blue60,
     inverse: colors.white60,
     modal: colors.shade10,
-    selected: interaction.selectedLight,
+    selectedLight: interaction.selectedLight,
+    selected: colors.blue80,
     selectedDark: interaction.selecteDark,
     success: colors.green60,
     warning: colors.orange60,

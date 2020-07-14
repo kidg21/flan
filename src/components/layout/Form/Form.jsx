@@ -21,27 +21,21 @@ const Header = styled(Grid)`
   margin-bottom: 1.5rem;
 `;
 
+const GroupTitle = styled(Text)`
+  color: ${(props) => {
+    return props.theme.text.secondary;
+  }};
+  grid-column: 1/-1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+`;
+
 const Section = styled.section`
   display: grid;
   grid-gap: 1rem;
   margin-bottom: 1rem;
 `;
-function FormSection({ children, title }) {
-  return (
-    <Section>
-      {title ? <Title size="lg" text={title} /> : null}
-      {children}
-    </Section>
-  );
-}
-FormSection.propTypes = {
-  children: PropTypes.node,
-  title: PropTypes.string,
-};
-FormSection.defaultProps = {
-  children: null,
-  title: null,
-};
+
 
 const Inputs = styled(Grid)`
   grid-template-columns: ${(props) => {
@@ -55,6 +49,35 @@ const Inputs = styled(Grid)`
     }
   }
 `;
+
+
+function FormSection({ children, title, columns }) {
+  let setColumns;
+  const _columns = parseInt(columns, 10);
+  if (_columns > 0 && columns < 4) {
+    setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
+  } else {
+    setColumns = columns;
+  }
+  return (
+    <Section>
+      {title ? <GroupTitle size="sm" weight="bold" text={title} /> : null}
+      <Inputs setColumns={setColumns}>
+        {children}
+      </Inputs>
+    </Section>
+  );
+}
+FormSection.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+  columns: PropTypes.oneOf(["1", "2", "3"]),
+};
+FormSection.defaultProps = {
+  children: null,
+  title: null,
+  columns: "1",
+};
 
 function Form({
   action,
@@ -80,7 +103,7 @@ function Form({
     <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <Header columns="1">
-          {title ? <Title size="xl" weight="bold" text={title} /> : null}
+          {title ? <Title size="lg" weight="bold" text={title} /> : null}
           {subtitle ? <Text weight="light" text={subtitle} /> : null}
           {description ? <Text size="sm" weight="bold" text={description} /> : null}
         </Header>
@@ -94,7 +117,7 @@ function Form({
 Form.propTypes = {
   action: PropTypes.node,
   children: PropTypes.node,
-  columns: PropTypes.oneOf(["1", "2", "3"]),
+  columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
   description: PropTypes.string,
   id: PropTypes.string,
   method: PropTypes.string,

@@ -10,7 +10,7 @@ const GridWrapper = styled.section`
     return props.gap || "";
   }};
   grid-template-columns: ${(props) => {
-    return props.columns || "repeat(auto-fill, minmax(18rem, 1fr))";
+    return props.columns || "repeat(auto-fill, minmax(12rem, 1fr))";
   }};
   grid-template-rows: ${(props) => {
     return props.rows || "auto";

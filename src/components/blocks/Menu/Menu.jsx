@@ -10,8 +10,7 @@ import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 import { getGuid } from "helpers";
 
-const MenuContainer = styled.a`
-  /* display: flex; */
+const MenuContainer = styled.div`
   cursor: pointer;
   padding: 0.5em;
   margin: -0.5em;
@@ -21,35 +20,13 @@ const MenuContainer = styled.a`
 `;
 
 const ListWrapper = styled(List)`
-  list-style: none;
-  background: ${(props) => {
-    return props.theme.background.default;
-  }};
-  overflow-x: hidden;
-  overflow-y: auto;
   border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
 `;
 
 const ItemWrapper = styled.li`
-  text-align: left;
-  z-index: 501;
-  &[disabled] {
-    cursor: not-allowed;
-    pointer-events: none;
-    user-select: none;
-    color: ${(props) => {
-    return props.theme.text.disabled;
-  }};
-    background-color: ${(props) => {
-    return props.theme.background.disabled;
-  }};
-    > * {
-      color: inherit;
-      background-color: inherit;
-    }
-  }
+  /* Just a wrapper for now */
 `;
 
 const MenuPopper = styled.div`
@@ -157,7 +134,8 @@ function MenuComponent({
           onMouseOver={closeMenu}
         >
           <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
-        </ItemWrapper>);
+        </ItemWrapper>
+      );
     });
   }, [data, submenuDirection, activeItem]);
 
@@ -182,11 +160,21 @@ function MenuComponent({
 
 MenuComponent.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
+    commands: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      onClick: PropTypes.func,
+      disabled: PropTypes.bool,
+    })),
+    disabled: PropTypes.bool,
     id: PropTypes.string,
     icon: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
     onClickLink: PropTypes.func, // deprecated
+    pre: PropTypes.shape({
+      icon: PropTypes.string,
+    }),
   })).isRequired,
   id: PropTypes.string.isRequired,
   left: PropTypes.string,
@@ -242,7 +230,14 @@ function getCssPosition(position) {
  * Main Menu Component
  */
 function Menu({
-  id, data, icon, visible, onClick, isButton, position,
+  id,
+  data,
+  icon, // deprecated use children
+  visible,
+  onClick,
+  isButton, // deprecated use children
+  position,
+  children,
 }) {
   let visibility = visible;
   let setVisibility = onClick;
@@ -256,11 +251,23 @@ function Menu({
     setVisibility(!visibility);
   }
 
+  // TODO: remove "icon" & "isButton" prop,
+  // "children" will be the anchor element
+  const anchorElement = useMemo(() => {
+    let _anchorElement = <Icon icon={icon} />;
+    if (children) {
+      _anchorElement = children;
+    } else if (isButton) {
+      _anchorElement = <Button icon={icon} isPlain isRound />;
+    }
+    return _anchorElement;
+  }, [children, isButton, icon]);
+
   return (
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
       <MenuContainer onClick={toggleVisibility}>
-        { isButton ? <Button icon={icon} isPlain isRound /> : <Icon icon={icon} />}
+        {anchorElement}
         {visibility ? (
           <MenuComponent
             data={data}
@@ -275,6 +282,7 @@ function Menu({
 }
 
 Menu.propTypes = {
+  children: PropTypes.node,
   data: PropTypes.arrayOf(PropTypes.object),
   icon: PropTypes.string,
   isButton: PropTypes.bool,
@@ -293,6 +301,7 @@ Menu.propTypes = {
 };
 
 Menu.defaultProps = {
+  children: null,
   data: null,
   icon: "options",
   isButton: false,
