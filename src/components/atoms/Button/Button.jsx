@@ -269,8 +269,9 @@ function Button({
     }
   }
 
-  const columns =
-    count || icon ? `${!alignCenter && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}` : "1fr";
+  const columns = count || icon
+    ? `${!alignCenter && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}`
+    : "1fr";
 
   const content = (
     <LabelWrapper
@@ -281,7 +282,7 @@ function Button({
     >
       {icon ? <Icon icon={icon} /> : null}
       {label ? <Label weight="bold" text={label} /> : null}
-      {count && !isDisabled ? <Tag label={count} /> : null}
+      {count && !isDisabled ? <Tag label={count.toString()} /> : null}
     </LabelWrapper>
   );
 
@@ -320,7 +321,7 @@ function Button({
 Button.propTypes = {
   alignCenter: PropTypes.bool,
   className: PropTypes.string,
-  count: PropTypes.string,
+  count: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
   hasUnderline: PropTypes.bool,
