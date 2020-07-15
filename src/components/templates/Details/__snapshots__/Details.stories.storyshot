@@ -11,7 +11,7 @@ exports[` 1`] = `
   >
     <div
       className="Bar__BarLayout-icfo76-2 eIFIfS"
-      id="Detail_Header"
+      id="Details_Header"
       onClick={null}
     >
       <div
@@ -79,7 +79,7 @@ exports[` 1`] = `
     id={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-0 iKEKmF"
       id={null}
       rows={null}
     >
@@ -219,154 +219,148 @@ exports[` 1`] = `
           </section>
         </button>
       </section>
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-        id={null}
-        rows={null}
+      <div
+        className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
+        id="Details_Legend"
       >
-        <div
-          className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-          id="Detail_Legend"
+        <table
+          className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
+          id="Details_Legend-table"
         >
-          <table
-            className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
-            id="Detail_Legend-table"
+          <tbody
+            className="Legend__Body-sc-70hm4b-5 kHKUyy"
           >
-            <tbody
-              className="Legend__Body-sc-70hm4b-5 kHKUyy"
+            <tr
+              className="Legend__Row-sc-70hm4b-4 kKuGtn"
             >
-              <tr
-                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              <td
+                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                fontSize={null}
               >
-                <td
-                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                  fontSize={null}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    Requested by
-                  </p>
-                </td>
-                <td
-                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                  fontSize={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    Steve Davidson, Banking Bank USA
-                  </p>
-                </td>
-              </tr>
-              <tr
-                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  Requested by
+                </p>
+              </td>
+              <td
+                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                fontSize={null}
               >
-                <td
-                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                  fontSize={null}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    Report Requested
-                  </p>
-                </td>
-                <td
-                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                  fontSize={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    Evaluation Report, Narrative
-                  </p>
-                </td>
-              </tr>
-              <tr
-                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  Steve Davidson, Banking Bank USA
+                </p>
+              </td>
+            </tr>
+            <tr
+              className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            >
+              <td
+                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                fontSize={null}
               >
-                <td
-                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                  fontSize={null}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    Response Due by
-                  </p>
-                </td>
-                <td
-                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                  fontSize={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    Nov 02, 2019
-                  </p>
-                </td>
-              </tr>
-              <tr
-                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  Report Requested
+                </p>
+              </td>
+              <td
+                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                fontSize={null}
               >
-                <td
-                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                  fontSize={null}
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    Report Requested by
-                  </p>
-                </td>
-                <td
-                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
-                  fontSize={null}
+                  Evaluation Report, Narrative
+                </p>
+              </td>
+            </tr>
+            <tr
+              className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            >
+              <td
+                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                fontSize={null}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
                 >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    Nov 10,2019
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+                  Response Due by
+                </p>
+              </td>
+              <td
+                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                fontSize={null}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  Nov 02, 2019
+                </p>
+              </td>
+            </tr>
+            <tr
+              className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            >
+              <td
+                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                fontSize={null}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  Report Requested by
+                </p>
+              </td>
+              <td
+                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                fontSize={null}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  Nov 10,2019
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </section>
 </div>

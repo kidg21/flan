@@ -5,8 +5,7 @@ import Panel from "layout/Panel";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Tabs, { TabItem } from "blocks/Tabs";
 import Legend from "blocks/Legend";
-
-import Page, { PageSection } from "layout/Page";
+import Template from "layout/Template";
 
 const data = [
   { id: "a", label: "Save" },
@@ -23,7 +22,7 @@ const options = [
   { label: "Report Requested by", value: "Nov 10,2019" },
 ];
 
-storiesOf("Templates|Detail Page/", module)
+storiesOf("Templates|Details Template/", module)
   .add(
     "Default",
     () => {
@@ -31,10 +30,10 @@ storiesOf("Templates|Detail Page/", module)
         return (
           <Panel
             header={
-              <MainPanelHeader id="Detail_Header" title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
+              <MainPanelHeader id="Details_Header" title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
             }
           >
-            <Page>
+            <Template>
               <Tabs>
                 <TabItem label="RFP Details" isSelected />
                 <TabItem label="Property Details" />
@@ -42,13 +41,9 @@ storiesOf("Templates|Detail Page/", module)
                 <TabItem label="Business Intelligence" />
                 <TabItem label="Files" />
               </Tabs>
-              <PageSection>
-                <Legend id="Detail_Legend" data={options} />
-              </PageSection>
-
-            </Page>
+              <Legend id="Details_Legend" data={options} />
+            </Template>
           </Panel>
-
         );
       });
     },

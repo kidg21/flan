@@ -33,8 +33,8 @@ const StyledButton = styled.button`
   }};
   background-color: ${(props) => {
     return (
-      props.theme.palette[props.backgroundColor] ||
-      props.theme.background.default
+      props.theme.palette[props.backgroundColor]
+      || props.theme.background.default
     );
   }};
   border-color: ${(props) => {
@@ -67,7 +67,7 @@ const StyledButton = styled.button`
   &:focus {
     outline: none;
   }
-  &:hover { 
+  &:hover {
     background-color: ${(props) => {
     return (
       props.theme.palette[props.hoverColor]);
@@ -109,6 +109,12 @@ const LabelWrapper = styled(Grid)`
   }
 `;
 
+const GroupWrapper = styled(Grid)`
+  ${StyledButton} {
+    width: auto;
+  }
+`;
+
 StyledButton.displayName = "Button";
 
 function ButtonGroup({
@@ -121,9 +127,9 @@ function ButtonGroup({
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
   return (
-    <Grid className={className} columns={setColumns} id={id}>
+    <GroupWrapper className={className} columns={setColumns} id={id}>
       {children}
-    </Grid>
+    </GroupWrapper>
   );
 }
 
@@ -257,8 +263,7 @@ function Button({
     gridGap = "0";
   }
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   if (isDisabled) {
     fontColor = "disabled";
@@ -356,5 +361,4 @@ Button.defaultProps = {
   variant: null,
 };
 
-// export default Button;
 export { Button as default, ButtonGroup };

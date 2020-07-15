@@ -63,6 +63,7 @@ export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export { default as Bar } from "./layout/Bar";
 export { default as Form, FormSection } from "./layout/Form";
 export { default as Flex } from "./layout/Flex";
+export { default as Template } from "./layout/Template";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
