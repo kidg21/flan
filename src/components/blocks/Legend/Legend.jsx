@@ -93,6 +93,10 @@ function Legend({
             if (row.onClick) {
               rowValue = (<Link onClick={row.onClick}>{rowValue}</Link>);
             }
+            if (typeof row.isText === "undefined" || row.isText) {
+              rowValue = <Text>{rowValue}</Text>;
+            }
+
             const rowKey = row.id
               || (typeof row.label === "string" && row.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
               || (typeof row.value === "string" && row.value.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
@@ -115,7 +119,7 @@ function Legend({
                   fontWeight={fontWeight}
                   fontSize={fontSize}
                 >
-                  <Text>{rowValue}</Text>
+                  {rowValue}
                 </Cell>
               </Row>
             );
@@ -140,6 +144,7 @@ Legend.propTypes = {
     id: PropTypes.string,
     label: PropTypes.node,
     value: PropTypes.node,
+    isText: PropTypes.bool,
   })),
 };
 
