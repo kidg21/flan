@@ -101,12 +101,10 @@ const templateHash = {
   },
   A_02: {
     setTemplate: [
-      "\". . .\"",
       "\". A .\"",
-      "\". . .\"",
     ].join("\n"),
     setColumns: "1fr auto 1fr",
-    setRows: "1fr auto 1fr",
+    setRows: "auto",
   },
   B_01: {
     setTemplate: [
