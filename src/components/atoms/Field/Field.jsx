@@ -153,11 +153,12 @@ function FieldGroup({
     >
       {title ? <GroupTitle text={title} weight="bold" /> : null}
       {children
-        || data.map((item) => {
+        || data.map((item, index) => {
           return (
             <Field
               align={align}
               disabled={item.disabled}
+              key={item.id || item.label || index}
               id={item.id}
               label={item.label}
               onChange={item.onChange}
