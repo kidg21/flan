@@ -109,6 +109,12 @@ const LabelWrapper = styled(Grid)`
   }
 `;
 
+const GroupWrapper = styled(Grid)`
+  ${StyledButton} {
+    width: auto;
+  }
+`;
+
 StyledButton.displayName = "Button";
 
 function ButtonGroup({
@@ -121,9 +127,9 @@ function ButtonGroup({
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
   return (
-    <Grid className={className} columns={setColumns} id={id}>
+    <GroupWrapper className={className} columns={setColumns} id={id}>
       {children}
-    </Grid>
+    </GroupWrapper>
   );
 }
 
