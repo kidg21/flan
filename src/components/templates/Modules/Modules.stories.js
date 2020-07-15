@@ -17,7 +17,6 @@ import Menu from "blocks/Menu";
 import DialogBox from "elements/DialogBox";
 import Template from "layout/Template";
 import InputBlock from "blocks/InputBlock";
-import MapBox from "layout/Map";
 import Tabs from "blocks/Tabs";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
@@ -649,7 +648,7 @@ storiesOf("Templates/Modules/Create", module)
 
             </FormSection>
           </Form>
-          <MapBox />
+          <Mapbox />
         </Grid>
       </DialogBox>
     );
@@ -809,7 +808,7 @@ storiesOf("Templates/Modules/Create", module)
 
             </FormSection>
           </Form>
-          <MapBox />
+          <Mapbox />
         </Grid>
       </DialogBox>
     );

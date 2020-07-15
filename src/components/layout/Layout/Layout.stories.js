@@ -5,7 +5,6 @@ import { Title } from "base/Typography";
 import Command from "atoms/Command";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
-import Mapbox from "layout/Map";
 import {
   MockDetails,
   MockMenu,

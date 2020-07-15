@@ -7,7 +7,6 @@ import Grid from "layout/Grid";
 import Page from "layout/Page";
 import Text, { Title } from "base/Typography";
 import SearchBar from "blocks/Search";
-import Mapbox from "layout/Map";
 import {
   MockButtons,
   MockCardGrid,

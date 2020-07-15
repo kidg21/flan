@@ -159,15 +159,21 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
                 id={null}
-                letterSpacing="0.2px"
+                rows={null}
               >
-                This is a very special message just for you...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  This is a very special message just for you...
+                </p>
+              </section>
             </div>
           </div>
         </section>
@@ -245,14 +251,20 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Default Dialog
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Default Dialog
+                </h5>
+              </section>
             </div>
           </div>
         </section>
@@ -410,15 +422,21 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
                 id={null}
-                letterSpacing="0.2px"
+                rows={null}
               >
-                This is a very special message just for you...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  This is a very special message just for you...
+                </p>
+              </section>
             </div>
           </div>
         </section>
