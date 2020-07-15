@@ -2,22 +2,56 @@
 /* eslint-disable complexity */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { FullScreen } from "helpers/Display";
+import { FullScreen, Padding } from "helpers/Display";
 import Panel from "layout/Panel";
-import { Title, Link } from "base/Typography";
+import Text, { Title, Link } from "base/Typography";
 import Button, { ButtonGroup } from "atoms/Button";
+import Accordion from "atoms/Accordion";
+import Icon from "atoms/Icon";
+import Divider from "atoms/Divider";
 import Bar from "layout/Bar";
+import Grid from "layout/Grid";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
 import Menu from "blocks/Menu";
-import Page, { PageSection } from "layout/Page";
+import DialogBox from "elements/DialogBox";
+import Template from "layout/Template";
+import InputBlock from "blocks/InputBlock";
+import MapBox from "layout/Map";
 import Tabs from "blocks/Tabs";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
-import { CheckboxGroup } from "atoms/Checkbox";
+import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
 import Legend from "blocks/Legend";
+import {
+  MockMapPalettes,
+} from "helpers/Mocks";
+
+const mapOptions = [
+  { label: <Icon icon="star_solid" />, value: "Value 0" },
+  { label: <Icon icon="star_solid" />, value: "Value 1" },
+  { label: <Icon icon="star_solid" />, value: "Value 2" },
+  { label: <Icon icon="star_solid" />, value: "Value 3" },
+  { label: <Icon icon="star_solid" />, value: "Value 4" },
+  { label: <Icon icon="star_solid" />, value: "Value 5" },
+];
+
+const inputsOne = [
+  {
+    id: "ID 1",
+    name: "ID 100",
+    type: "text",
+    placeholder: "Price",
+    pattern: "[A-Za-z]{3}",
+  },
+];
+const domains = [
+  { value: "USD", label: "USD" },
+  { value: "EUR", label: "EUR" },
+  { value: "AU", label: "AU" },
+];
 
 const shortBoxes = [
   {
@@ -77,6 +111,56 @@ const shortRadios = [
     label: "Label 4",
   },
 ];
+
+const tabRFPButtons = [
+  {
+    id: "RFPs",
+    label: "RFP Details",
+    isSelected: true,
+  },
+  {
+    id: "Bid",
+    label: "Bid Details",
+  },
+  {
+    id: "Complete",
+    label: "Completion",
+  },
+];
+
+const tabRFPButtonsTwo = [
+  {
+    id: "RFPs",
+    label: "RFP Details",
+  },
+  {
+    id: "Bid",
+    label: "Bid Details",
+    isSelected: true,
+  },
+  {
+    id: "Complete",
+    label: "Completion",
+  },
+];
+
+const tabRFPButtonsFour = [
+  {
+    id: "RFPs",
+    label: "RFP Details",
+  },
+  {
+    id: "Bid",
+    label: "Bid Details",
+
+  },
+  {
+    id: "Complete",
+    label: "Completion",
+    isSelected: true,
+  },
+];
+
 const longRadios = [
   {
     id: "radio_long",
@@ -102,13 +186,114 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-function doNothing() {
-  // do nothing
-}
-
-storiesOf("Templates|Panels/", module)
+storiesOf("Templates/Modules/Maps", module)
   .addDecorator(FullScreen)
   .addDecorator(checkA11y)
+  .add("Map Tools", () => {
+    return (
+      <React.Fragment>
+        <Template
+          id="Template Regions"
+          template="B_05"
+          isOverlay
+          A={{
+            id: "A",
+            content: (
+              // Set the 'columns' value to the # of Buttons
+              <ButtonGroup columns="1">
+                <Button label="Layers" icon="layers" alignCenter />
+                <Button label="Map" icon="map" alignCenter />
+                <Button label="Draw" icon="draw" alignCenter />
+                <Button label="List" icon="list" alignCenter />
+                <Button label="Legend" icon="legend" alignCenter />
+              </ButtonGroup>
+            ),
+          }}
+          B={{
+            id: "B",
+            content: <MockMapPalettes />,
+          }}
+        />
+        <Mapbox />
+      </React.Fragment>
+    );
+  });
+
+storiesOf("Templates/Modules/Panels", module)
+  .addDecorator(FullScreen)
+  .addDecorator(checkA11y)
+  .add("Layers Panel", () => {
+    return (
+      <Panel
+        header={(
+          <Bar
+            contentAlign="center"
+            padding="2x"
+            left={{
+              content: (
+                <Title text="Layers Panel" weight="bold" />
+              ),
+            }}
+            right={{
+              content: (
+                <Menu
+                  data={[
+                    { id: "a", label: "Action" },
+                    { id: "c", label: "Action" },
+                    { id: "b", label: "Action" },
+                  ]}
+                  position="bottomLeft"
+                />
+              ),
+              width: "min-content",
+            }}
+          />
+        )}
+      >
+        <Accordion
+          open
+          header={(
+            <Checkbox
+              label="Layer One"
+              id="checkbox-id"
+            />
+          )}
+        >
+          <Card><Legend data={mapOptions} /></Card>
+        </Accordion>
+        <Accordion
+          header={(
+            <Checkbox
+              label="Layer Two"
+              id="checkbox-id"
+            />
+          )}
+        >
+          <Card><Legend data={mapOptions} /></Card>
+        </Accordion>
+        <Accordion
+          header={(
+            <Checkbox
+              label="Layer Three"
+              id="checkbox-id"
+            />
+          )}
+        >
+          <Card><Legend data={mapOptions} /></Card>
+        </Accordion>
+        <Accordion
+          header={(
+            <Checkbox
+              label="Layer Four"
+              id="checkbox-id"
+            />
+          )}
+        >
+          <Card><Legend data={mapOptions} /></Card>
+        </Accordion>
+      </Panel>
+    );
+  })
   .add(
     "View/Edit Record",
     () => {
@@ -246,11 +431,9 @@ storiesOf("Templates|Panels/", module)
         ];
 
         const recordAttachments = (
-          <Page>
-            <PageSection>
-              <Legend id="AttachDocs_Legend" title="Attached Documents" data={attachments} />
-            </PageSection>
-          </Page>
+          <Template>
+            <Legend id="AttachDocs_Legend" title="Attached Documents" data={attachments} />
+          </Template>
         );
 
         //
@@ -361,3 +544,419 @@ storiesOf("Templates|Panels/", module)
       });
     },
   );
+
+storiesOf("Templates/Modules/Create", module)
+  .addDecorator(Padding)
+  .addDecorator(checkA11y)
+  .add("Create Project", () => {
+    return (
+      <DialogBox
+        title="Create Project"
+        buttons={[
+          {
+            id: "Cangel",
+            label: "Cancel",
+          },
+          {
+            id: "Create",
+            label: "Create",
+          },
+        ]}
+      >
+
+        <Grid columns="2">
+          <Form>
+            <FormSection>
+              <TextInput
+
+                label="Project Number"
+                value="19-12341234"
+              />
+              <TextInput
+
+                label="Project Name"
+                placeholder="New LightBox Project"
+              />
+            </FormSection>
+
+            <Divider />
+            <FormSection>
+              <Text text="Fill out form or drag and drop pin on map to update property details." />
+              <TextInput
+
+                label="Address"
+              />
+              <TextInput
+
+                label="City"
+              />
+            </FormSection>
+            <FormSection columns="2">
+              <SelectMenu
+                label="State"
+                placeholder=""
+                options={[{
+                  value: "Alabama",
+                  label: "Alabama",
+                }, {
+                  value: "Alaska",
+                  label: "Alaska",
+                }, {
+                  value: "Arizona",
+                  label: "Arizona",
+                }, {
+                  value: "Arkansas",
+                  label: "Arkansas",
+                }, {
+                  value: "California",
+                  label: "California",
+                }, {
+                  value: "Colorado",
+                  label: "Colorado",
+                }, {
+                  value: "Connecticut",
+                  label: "Connecticut",
+                }, {
+                  value: "Delaware",
+                  label: "Delaware",
+                }, {
+                  value: "Florida",
+                  label: "Florida",
+                }, {
+                  value: "Georgia",
+                  label: "Georgia",
+                }, {
+                  value: "Hawaii",
+                  label: "Hawaii",
+                }, {
+                  value: "Idaho",
+                  label: "Idaho",
+                },
+                ]}
+              />
+              <TextInput
+
+                label="Zip"
+              />
+              <TextInput
+
+                label="Property Type"
+              />
+              <TextInput
+
+                label="Property Sub-Type"
+              />
+
+            </FormSection>
+          </Form>
+          <MapBox />
+        </Grid>
+      </DialogBox>
+    );
+  })
+  .add("After Project", () => {
+    return (
+      <DialogBox
+        buttons={[
+          {
+            id: "Done",
+            label: "Done",
+          },
+          {
+            id: "Create",
+            label: "Create Project",
+          },
+        ]}
+      >
+        <Bar
+          padding="2x"
+          center={(
+            <Grid columns="1">
+              <Title size="2xl" text="Project Successfully Created!" />
+              <Text text="You can choose to begin work on your project or create another project" />
+            </Grid>
+          )}
+        />
+        <Bar center={<Button label="View Project" variant="success" />} />
+        <Divider />
+
+        <Bar
+          contentAlign="bottom"
+          padding="2x"
+          left={(
+            <Grid>
+              <Text size="lg" text="Add the following data and services to your project:" />
+              <Title weight="bold" text="Add Research" />
+              <Text text="Complete research for your project. Define and discover data for your property including Assessment Data, Demographics, and Zoning." />
+            </Grid>
+          )}
+          right={<Button label="Start Research" />}
+        />
+        <Bar
+          padding="2x"
+          contentAlign="bottom"
+          left={(
+            <Grid>
+              <Title weight="bold" text="Add Report Writing" />
+              <Text text="You can use Project360 or Narrative1 to author your reports. You can select your scope of work and templates here with the Report Writing tools." />
+            </Grid>
+          )}
+          right={<Button label="Start Report" />}
+        />
+        <Divider />
+
+      </DialogBox>
+    );
+  })
+  .add("Create RFP", () => {
+    return (
+      <DialogBox
+        title="Create RFP"
+        buttons={[
+          {
+            id: "Cancel",
+            label: "Cancel",
+          },
+          {
+            id: "Next",
+            label: "Next",
+          },
+        ]}
+      >
+        <Tabs data={tabRFPButtons} />
+        <Grid columns="2">
+          <Form>
+            <FormSection>
+              <TextInput
+
+                label="Project Number"
+                value="19-12341234"
+              />
+              <TextInput
+
+                label="Project Name"
+                placeholder="New LightBox Project"
+              />
+            </FormSection>
+
+            <Divider />
+            <FormSection>
+              <Text text="Fill out form or drag and drop pin on map to update property details." />
+              <TextInput
+
+                label="Address"
+              />
+              <TextInput
+
+                label="City"
+              />
+            </FormSection>
+            <FormSection columns="2">
+              <SelectMenu
+                label="State"
+                placeholder=""
+                options={[{
+                  value: "Alabama",
+                  label: "Alabama",
+                }, {
+                  value: "Alaska",
+                  label: "Alaska",
+                }, {
+                  value: "Arizona",
+                  label: "Arizona",
+                }, {
+                  value: "Arkansas",
+                  label: "Arkansas",
+                }, {
+                  value: "California",
+                  label: "California",
+                }, {
+                  value: "Colorado",
+                  label: "Colorado",
+                }, {
+                  value: "Connecticut",
+                  label: "Connecticut",
+                }, {
+                  value: "Delaware",
+                  label: "Delaware",
+                }, {
+                  value: "Florida",
+                  label: "Florida",
+                }, {
+                  value: "Georgia",
+                  label: "Georgia",
+                }, {
+                  value: "Hawaii",
+                  label: "Hawaii",
+                }, {
+                  value: "Idaho",
+                  label: "Idaho",
+                },
+                ]}
+              />
+              <TextInput
+
+                label="Zip"
+              />
+              <TextInput
+
+                label="Property Type"
+              />
+              <TextInput
+
+                label="Property Sub-Type"
+              />
+
+            </FormSection>
+          </Form>
+          <MapBox />
+        </Grid>
+      </DialogBox>
+    );
+  })
+  .add("Create RFP Client", () => {
+    return (
+      <DialogBox
+        title="Create RFP"
+        buttons={[
+          {
+            id: "Cancel",
+            label: "Cancel",
+          },
+          {
+            id: "Complete",
+            label: "Complete",
+          },
+        ]}
+      >
+        <Tabs data={tabRFPButtonsTwo} />
+        <Form>
+          <Grid columns="2">
+            <div>
+              <FormSection title="Client Details">
+                <TextInput
+
+                  label="Client Name"
+                  value=""
+                />
+                <TextInput
+
+                  label="Client Company"
+                  placeholder=""
+                />
+                <TextInput
+
+                  label="Address"
+                />
+                <TextInput
+
+                  label="City"
+                />
+              </FormSection>
+              <FormSection columns="2">
+                <SelectMenu
+                  label="State"
+                  placeholder=""
+                  options={[{
+                    value: "Alabama",
+                    label: "Alabama",
+                  }, {
+                    value: "Alaska",
+                    label: "Alaska",
+                  }, {
+                    value: "Arizona",
+                    label: "Arizona",
+                  }, {
+                    value: "Arkansas",
+                    label: "Arkansas",
+                  }, {
+                    value: "California",
+                    label: "California",
+                  }, {
+                    value: "Colorado",
+                    label: "Colorado",
+                  }, {
+                    value: "Connecticut",
+                    label: "Connecticut",
+                  }, {
+                    value: "Delaware",
+                    label: "Delaware",
+                  }, {
+                    value: "Florida",
+                    label: "Florida",
+                  }, {
+                    value: "Georgia",
+                    label: "Georgia",
+                  }, {
+                    value: "Hawaii",
+                    label: "Hawaii",
+                  }, {
+                    value: "Idaho",
+                    label: "Idaho",
+                  },
+                  ]}
+                />
+                <TextInput
+
+                  label="Zip"
+                />
+              </FormSection>
+            </div>
+            <div>
+              <FormSection title="Bid Details">
+                <TextInput
+
+                  label="Scope of Work"
+                  value=""
+                />
+                <InputBlock
+                  label="Bid Amount"
+                  options={domains}
+                  selectOptions={domains[0].value}
+                  textInputs={inputsOne}
+                />
+                <TextInput
+                  label="Turnaround Time"
+                />
+                <TextInput
+                  type="date"
+                  label="Expected Delivery Date"
+                />
+                <TextInput type="textarea" label="Additional Notes" />
+              </FormSection>
+            </div>
+          </Grid>
+        </Form>
+      </DialogBox>
+    );
+  })
+  .add("After RFP", () => {
+    return (
+      <DialogBox
+        title="Create RFP"
+        buttons={[
+          {
+            id: "Done",
+            label: "Done",
+          },
+          {
+            id: "Create",
+            label: "Create RFP",
+          },
+        ]}
+      >
+        <Tabs data={tabRFPButtonsFour} />
+        <Bar
+          padding="2x"
+          center={(
+            <Grid columns="1">
+              <Title size="2xl" text="RFP Successfully Created!" />
+              <Text text="You can choose to begin work on your RFP or create another RFP" />
+            </Grid>
+          )}
+        />
+        <Bar center={<Button label="View RFP" variant="success" />} />
+
+      </DialogBox>
+    );
+  });

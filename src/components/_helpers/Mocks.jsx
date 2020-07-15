@@ -27,7 +27,7 @@ import StaticMap from "images/maps/mission-viejo.png";
 
 function MockPalette() {
   return (
-    <Picker id="standard" label="Color Picker" columns="3">
+    <Picker id="standard" label="Color Palette" columns="3">
       <ColorSwatch color="#EBEAEC" />
       <ColorSwatch color="#D9ECEC" />
       <ColorSwatch isSelected color="#80959D" />
@@ -502,6 +502,8 @@ function MockCardGrid() {
       <Card id="MockCard_3" />
       <Card id="MockCard_4" />
       <Card id="MockCard_5" />
+      <Card id="MockCard_6" />
+      <Card id="MockCard_7" />
     </CardGrid>
   );
 }
@@ -509,6 +511,59 @@ MockCardGrid.propTypes = {
   // stuff
 };
 MockCardGrid.defaultProps = {
+  // stuff
+};
+
+function MockMapPalettes() {
+  function doNothing() {
+    // do nothing
+  }
+  return (
+    <CardGrid columns="1" gap="2xl">
+      <Card
+        id="Map Legend"
+        title="Map Legend"
+        description="Palette for visual explanation of the symbols used on the map"
+        commands={[
+          {
+            id: "Close Map Legend",
+            label: "Close",
+            onClick: doNothing,
+          },
+        ]}
+      />
+      <Card
+        id="Data Layers"
+        title="Data Layers"
+        description="Palette for turning data layers 'on' and 'off'"
+        commands={[
+          {
+            id: "Close Map Legend",
+            label: "Close",
+            onClick: doNothing,
+          },
+        ]}
+      />
+      <MockPalette id="Color Palette" />
+      <Card
+        id="Drawing Tools"
+        title="Drawing Tools"
+        description="Palette for selecting a tool for drawing on the map"
+        commands={[
+          {
+            id: "Close Map Legend",
+            label: "Close",
+            onClick: doNothing,
+          },
+        ]}
+      />
+    </CardGrid>
+  );
+}
+MockMapPalettes.propTypes = {
+  // stuff
+};
+MockMapPalettes.defaultProps = {
   // stuff
 };
 
@@ -779,6 +834,7 @@ export {
   MockHeader,
   MockHeaderGlobal,
   MockPalette,
+  MockMapPalettes,
   MockMenu,
   MockTable,
   MockTabs,
