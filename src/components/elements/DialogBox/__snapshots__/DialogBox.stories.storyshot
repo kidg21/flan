@@ -4,13 +4,13 @@ exports[` 1`] = `
 <div
   className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
   href={null}
-  id="storyshots_114"
+  id="storyshots_162"
   media=""
   onClick={null}
 >
   <section
     className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-    id="storyshots_114-Header"
+    id="storyshots_162-Header"
     onClick={null}
   >
     <div
@@ -21,20 +21,26 @@ exports[` 1`] = `
       <div
         className="Bar__Slot-icfo76-1 RjiBe"
       >
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 hSytIY"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
         >
-          Clear and Specific Title
-        </h5>
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hSytIY"
+            fontSize="1.15em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Clear and Specific Title
+          </h5>
+        </section>
       </div>
     </div>
   </section>
   <section
     className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-    id="storyshots_114-Body"
+    id="storyshots_162-Body"
     onClick={null}
   >
     <p
@@ -155,13 +161,13 @@ exports[` 2`] = `
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_115"
+        id="storyshots_163"
         media=""
         onClick={null}
       >
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_115-Header"
+          id="storyshots_163-Header"
           onClick={null}
         >
           <div
@@ -172,20 +178,26 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Are you sure?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Are you sure?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_115-Body"
+          id="storyshots_163-Body"
           onClick={null}
         >
           <p
@@ -300,13 +312,13 @@ exports[` 2`] = `
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_116"
+        id="storyshots_164"
         media=""
         onClick={null}
       >
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_116-Header"
+          id="storyshots_164-Header"
           onClick={null}
         >
           <div
@@ -317,20 +329,26 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Reset Settings?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Reset Settings?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_116-Body"
+          id="storyshots_164-Body"
           onClick={null}
         >
           <p
@@ -445,13 +463,13 @@ exports[` 2`] = `
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_117"
+        id="storyshots_165"
         media=""
         onClick={null}
       >
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_117-Header"
+          id="storyshots_165-Header"
           onClick={null}
         >
           <div
@@ -462,20 +480,26 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Reset Settings?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Reset Settings?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_117-Body"
+          id="storyshots_165-Body"
           onClick={null}
         >
           <p
@@ -595,13 +619,13 @@ Array [
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_118"
+        id="storyshots_166"
         media=""
         onClick={null}
       >
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_118-Header"
+          id="storyshots_166-Header"
           onClick={null}
         >
           <div
@@ -612,20 +636,26 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Reset Settings?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Reset Settings?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_118-Body"
+          id="storyshots_166-Body"
           onClick={null}
         >
           <p
@@ -740,13 +770,13 @@ Array [
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_119"
+        id="storyshots_167"
         media=""
         onClick={null}
       >
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_119-Header"
+          id="storyshots_167-Header"
           onClick={null}
         >
           <div
@@ -757,20 +787,26 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Reset Settings?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Reset Settings?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_119-Body"
+          id="storyshots_167-Body"
           onClick={null}
         >
           <p
@@ -862,13 +898,13 @@ exports[` 4`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_120"
+    id="storyshots_168"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_120-Header"
+      id="storyshots_168-Header"
       onClick={null}
     >
       <div
@@ -879,20 +915,26 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h5
-            className="Typography__TitleText-sc-19auepv-2 hSytIY"
-            fontSize="1.15em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
           >
-            Default Dialog
-          </h5>
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hSytIY"
+              fontSize="1.15em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Default Dialog
+            </h5>
+          </section>
         </div>
       </div>
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_120-Body"
+      id="storyshots_168-Body"
       onClick={null}
     >
       <p
@@ -973,13 +1015,13 @@ exports[` 4`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_121"
+    id="storyshots_169"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_121-Header"
+      id="storyshots_169-Header"
       onClick={null}
     >
       <div
@@ -990,20 +1032,26 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h5
-            className="Typography__TitleText-sc-19auepv-2 hSytIY"
-            fontSize="1.15em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
           >
-            Successful Dialog
-          </h5>
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hSytIY"
+              fontSize="1.15em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Successful Dialog
+            </h5>
+          </section>
         </div>
       </div>
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_121-Body"
+      id="storyshots_169-Body"
       onClick={null}
     >
       <p
@@ -1084,13 +1132,13 @@ exports[` 4`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_122"
+    id="storyshots_170"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_122-Header"
+      id="storyshots_170-Header"
       onClick={null}
     >
       <div
@@ -1101,20 +1149,26 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h5
-            className="Typography__TitleText-sc-19auepv-2 hSytIY"
-            fontSize="1.15em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
           >
-            Error Dialog
-          </h5>
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hSytIY"
+              fontSize="1.15em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Error Dialog
+            </h5>
+          </section>
         </div>
       </div>
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_122-Body"
+      id="storyshots_170-Body"
       onClick={null}
     >
       <p

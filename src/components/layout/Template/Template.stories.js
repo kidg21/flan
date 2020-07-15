@@ -4,7 +4,7 @@ import React from "react";
 import { FullScreen } from "helpers/Display";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
-import Page from "layout/Page";
+import Template from "layout/Template";
 import Text, { Title } from "base/Typography";
 import SearchBar from "blocks/Search";
 import {
@@ -23,8 +23,8 @@ import {
 } from "helpers/Mocks";
 
 export default {
-  title: "Layout|Page/Tests",
-  component: Page,
+  title: "Layout|Template/Tests",
+  component: Template,
   parameters: {
     docs: { page: null },
   },
@@ -33,15 +33,18 @@ export default {
 };
 
 // Knob Values
-const knobGroups = ["Page"];
+const knobGroups = ["Template"];
 const templates = {
-  "None": "",
-  "A": "A_01",
-  "A-B": "B_01",
-  "A-B-C": "C_01",
-  "A-B-C-D": "D_01",
-  "A-B-C-D-E": "E_01",
-  "'Appraisal Research'": "E_02",
+  None: "",
+  A_01: "A_01",
+  B_01: "B_01",
+  B_02: "B_02",
+  C_01: "C_01",
+  C_02: "C_02",
+  D_01: "D_01",
+  E_01: "E_01",
+  E_02: "E_02",
+  E_03: "E_03",
 };
 
 const index = [
@@ -88,7 +91,7 @@ export const Knobs = () => {
   const borders = boolean("Borders", false, knobGroups[0]);
   const shadows = boolean("Shadows", false, knobGroups[0]);
   return (
-    <Page
+    <Template
       id="Knobs"
       template={templateID}
       A={
@@ -124,13 +127,13 @@ Knobs.story = {
   },
 };
 
-storiesOf("Layout/Page/Template Library/A Templates", module)
+storiesOf("Layout/Template/Template Library/A Templates", module)
   // .addDecorator(checkA11y)
   // .addDecorator(FullScreen)
   .add("A_01", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template A_01"
           template="A_01"
           hasBorders
@@ -143,11 +146,11 @@ storiesOf("Layout/Page/Template Library/A Templates", module)
     );
   });
 
-storiesOf("Layout/Page/Template Library/B Templates", module)
+storiesOf("Layout/Template/Template Library/B Templates", module)
   .add("B_01", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template B_01"
           template="B_01"
           hasBorders
@@ -166,7 +169,7 @@ storiesOf("Layout/Page/Template Library/B Templates", module)
   .add("B_02", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template B_02"
           template="B_02"
           hasBorders
@@ -183,11 +186,11 @@ storiesOf("Layout/Page/Template Library/B Templates", module)
     );
   });
 
-storiesOf("Layout/Page/Template Library/C Templates", module)
+storiesOf("Layout/Template/Template Library/C Templates", module)
   .add("C_01", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template C_01"
           template="C_01"
           hasBorders
@@ -210,7 +213,7 @@ storiesOf("Layout/Page/Template Library/C Templates", module)
   .add("C_02", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template C_02"
           template="C_02"
           hasBorders
@@ -231,11 +234,11 @@ storiesOf("Layout/Page/Template Library/C Templates", module)
     );
   });
 
-storiesOf("Layout/Page/Template Library/D Templates", module)
+storiesOf("Layout/Template/Template Library/D Templates", module)
   .add("D_01", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template D_01"
           template="D_01"
           hasBorders
@@ -260,11 +263,11 @@ storiesOf("Layout/Page/Template Library/D Templates", module)
     );
   });
 
-storiesOf("Layout/Page/Template Library/E Templates", module)
+storiesOf("Layout/Template/Template Library/E Templates", module)
   .add("E_01", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template E_01"
           template="E_01"
           hasBorders
@@ -295,7 +298,7 @@ storiesOf("Layout/Page/Template Library/E Templates", module)
   .add("E_02", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template E_02"
           template="E_02"
           hasBorders
@@ -326,7 +329,7 @@ storiesOf("Layout/Page/Template Library/E Templates", module)
   .add("E_03", () => {
     return (
       <Grid columns="1" rows="100vh" gap="4xl">
-        <Page
+        <Template
           id="Template E_03"
           template="E_03"
           hasBorders
@@ -355,12 +358,12 @@ storiesOf("Layout/Page/Template Library/E Templates", module)
     );
   });
 
-storiesOf("Layout/Page", module)
+storiesOf("Layout/Template", module)
   .addDecorator(FullScreen)
   .add("Template Overlay", () => {
     return (
       <React.Fragment>
-        <Page
+        <Template
           id="Template Regions"
           template="E_03"
           hasBorders
@@ -392,7 +395,7 @@ storiesOf("Layout/Page", module)
   })
   .add("Content Passed As Children", () => {
     return (
-      <Page>
+      <Template>
         <Title
           size="xl"
           weight="bold"
@@ -427,6 +430,6 @@ storiesOf("Layout/Page", module)
         <Text
           text="This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
         />
-      </Page>
+      </Template>
     );
   });
