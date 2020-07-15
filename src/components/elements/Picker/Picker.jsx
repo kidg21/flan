@@ -5,15 +5,13 @@ import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
+import Card from "elements/Card";
 import Grid from "layout/Grid";
 import { getGuid } from "helpers";
 
 const InputContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text.secondary;
-  }};
-  background-color: ${(props) => {
-    return props.theme.background.default;
   }};
   width: 100%;
   padding: 1rem;
@@ -94,18 +92,20 @@ function Picker({
 }) {
   const uId = id || getGuid();
   return (
-    <InputContainer
-      className={className}
-      columns="1"
-      id={uId}
-    >
-      {label ? (
-        <Label weight="bold" text={label} />
-      ) : null}
-      <Grid columns={columns} >
-        {children}
-      </Grid>
-    </InputContainer>
+    <Card>
+      <InputContainer
+        className={className}
+        columns="1"
+        id={uId}
+      >
+        {label ? (
+          <Label weight="bold" text={label} />
+        ) : null}
+        <Grid columns={columns}>
+          {children}
+        </Grid>
+      </InputContainer>
+    </Card>
   );
 }
 
