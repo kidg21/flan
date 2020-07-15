@@ -1,315 +1,144 @@
-/* eslint-disable security/detect-object-injection */
-/* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState, useMemo, useRef } from "react";
+/* eslint-disable react/prop-types */
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Icon from "atoms/Icon";
-import Button from "atoms/Button";
 import styled from "styled-components";
-import Card from "elements/Card";
+import Popper from "layout/Popper";
+import Icon from "atoms/Icon";
 import List, { ListItem } from "blocks/List";
-import { getGuid } from "helpers";
 
-const MenuContainer = styled.div`
-  cursor: pointer;
-  padding: 0.5em;
-  margin: -0.5em;
-  &:hover {
-    filter: none;
-  }
+// for highlighing whole entry
+const ListItemWrapper = styled(ListItem)`
+  // display: flex;
+  width: 100%;
 `;
 
 const ListWrapper = styled(List)`
-  border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
-`;
-
-const ItemWrapper = styled.li`
-  /* Just a wrapper for now */
-`;
-
-const MenuPopper = styled.div`
-  position: fixed;
-  z-index: 500;
+  overflow: visible;
   width: 10rem;
+`;
+
+const NestedListWrapper = styled(ListWrapper)`
+  position: absolute;
   top: ${(props) => {
     return props.top || "";
   }};
   left: ${(props) => {
     return props.left || "";
   }};
-  right: ${(props) => {
-    return props.right || "";
-  }};
   transform: ${(props) => {
     return props.transform || "";
   }};
 `;
 
-const MenuBG = styled.div`
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  top: 0px;
-  left: 0px;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: none;
+// highlight behaviors???
+// need to get rid of last-child padding
+// for the nested item's entry
+const NestedItem = styled.li`
+  // display: flex;
+  position: relative;
+  background-color: inherit;
+  > li:last-child {
+    margin-bottom: 1px;
+  }
 `;
 
-/**
- * List component that pops out
- */
-function MenuComponent({
+const listPositionStyle = {
+  left: {
+    top: "0",
+    transform: "translateX(-100%)",
+  },
+  right: {
+    top: "0",
+    left: "100%",
+  },
+};
+
+const MenuList = ({
   data,
+  direction,
   id,
-  left,
-  onClick,
-  right,
-  submenuDirection,
-  top,
-  transform,
-}) {
-  const [activeItem, setActiveItem] = useState({});
-
-  function closeMenu() {
-    setActiveItem({});
-  }
-
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
-  const itemIds = useRef([]);
-  const listItems = useMemo(() => {
-    return data.map((item, index) => {
-      itemIds.current[index] = item.id
-        || (itemIds.current.length > index ? itemIds.current[index] : getGuid());
-      const itemId = itemIds.current[index];
-      const itemKey = item.id
-        || (item.label && item.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
-        || item.icon
-        || index;
-      if (item.commands) {
-        // nested submenu
-        return (
-          <ItemWrapper
-            disabled={item.disabled}
-            id={`item-${itemId}`}
-            key={itemKey}
-            onMouseOver={(e) => {
-              setActiveItem({
-                id: itemId,
-                top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
-                left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-                right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-              });
-            }}
-            tabIndex="0"
-          >
-            <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
-            {activeItem && activeItem.id === itemId ? (
-              <MenuComponent
-                data={item.commands}
-                id={itemId}
-                left={activeItem.left}
-                onClick={closeMenu}
-                right={activeItem.right}
-                submenuDirection={submenuDirection}
-                top={activeItem.top}
-              />
-            ) : null}
-          </ItemWrapper>
-        );
-      }
-
+  _nestedLevel,
+}) => {
+  const [activeItem, setActiveItem] = useState();
+  const validDirection = listPositionStyle.hasOwnProperty(direction.toLowerCase()) ? direction : "right";
+  // handle empty lists
+  const listItems = data.map((item) => {
+    if (item.data) {
       return (
-        <ItemWrapper
-          id={`item-${itemId}`}
-          key={itemKey}
-          disabled={item.disabled}
-          onClick={() => {
-            if (!item.disabled) {
-              if (item.onClick) item.onClick(itemId);
-              if (item.onClickLink) item.onClickLink(itemId); // deprecated
-            }
+        <NestedItem
+          onMouseEnter={() => {
+            setActiveItem(item.id);
           }}
-          onMouseOver={closeMenu}
+          onMouseLeave={() => {
+            setActiveItem();
+          }}
         >
-          <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
-        </ItemWrapper>
+          <ListItemWrapper title={item.label} onClick={() => { setActiveItem(); item.onClick(); }} />
+          {activeItem === item.id ? <MenuList _nestedLevel data={item.data} direction={validDirection} /> : null }
+        </NestedItem>
       );
-    });
-  }, [data, submenuDirection, activeItem]);
-
-  return (
-    <MenuPopper
-      id={`menupopper-${uId}`}
-      left={left}
-      onClick={onClick}
-      onMouseLeave={closeMenu}
-      right={right}
-      top={top}
-      transform={transform}
-    >
-      <Card shadow="2x">
-        <ListWrapper id={`listwrapper-${uId}`} isInteractive>
-          {listItems}
-        </ListWrapper>
-      </Card>
-    </MenuPopper>
-  );
-}
-
-MenuComponent.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
-    commands: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.string,
-      label: PropTypes.string,
-      onClick: PropTypes.func,
-      disabled: PropTypes.bool,
-    })),
-    disabled: PropTypes.bool,
-    id: PropTypes.string,
-    icon: PropTypes.string,
-    label: PropTypes.string,
-    onClick: PropTypes.func,
-    onClickLink: PropTypes.func, // deprecated
-    pre: PropTypes.shape({
-      icon: PropTypes.string,
-    }),
-  })).isRequired,
-  id: PropTypes.string.isRequired,
-  left: PropTypes.string,
-  onClick: PropTypes.func,
-  right: PropTypes.string,
-  submenuDirection: PropTypes.string,
-  top: PropTypes.string,
-  transform: PropTypes.string,
-};
-
-MenuComponent.defaultProps = {
-  left: "",
-  onClick: null,
-  right: "",
-  submenuDirection: "right",
-  top: "",
-  transform: "",
-};
-
-/**
- * Gets the correct css position informatin for the given menu popper position direction
- * @param {string} position direction the first level menu should open
- */
-function getCssPosition(position) {
-  let transform;
-  let submenuDirection = "right";
-  switch (position.toLowerCase()) {
-    case "topleft":
-      transform = "translate(-100%, -110%)";
-      submenuDirection = "left";
-      break;
-    case "topright":
-      transform = "translate(10%, -110%)";
-      break;
-    case "topcenter":
-      transform = "translate(-50%, -110%)";
-      break;
-    case "bottomleft":
-      transform = "translate(-100%, -5%)";
-      submenuDirection = "left";
-      break;
-    case "bottomcenter":
-      transform = "translate(-45%, -5%)";
-      break;
-    case "bottomright":
-    default:
-      break;
-  }
-  return { transform, submenuDirection };
-}
-
-/**
- * Main Menu Component
- */
-function Menu({
-  id,
-  data,
-  icon, // deprecated use children
-  visible,
-  onClick,
-  isButton, // deprecated use children
-  position,
-  children,
-}) {
-  let visibility = visible;
-  let setVisibility = onClick;
-  if (!setVisibility) {
-    [visibility, setVisibility] = useState(visible);
-  }
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
-
-  const { transform, submenuDirection } = getCssPosition(position);
-  function toggleVisibility() {
-    setVisibility(!visibility);
-  }
-
-  // TODO: remove "icon" & "isButton" prop,
-  // "children" will be the anchor element
-  const anchorElement = useMemo(() => {
-    let _anchorElement = <Icon icon={icon} />;
-    if (children) {
-      _anchorElement = children;
-    } else if (isButton) {
-      _anchorElement = <Button icon={icon} isPlain isRound />;
     }
-    return _anchorElement;
-  }, [children, isButton, icon]);
+    return (
+      <ListItemWrapper title={item.label} onClick={item.onClick} />
+    );
+  });
 
+  if (_nestedLevel) {
+    const positionStyle = listPositionStyle[validDirection.toLowerCase()];
+    return (
+      <NestedListWrapper isInteractive {...positionStyle}>
+        {listItems}
+      </NestedListWrapper>
+    );
+  }
   return (
-    <React.Fragment>
-      {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
-      <MenuContainer onClick={toggleVisibility}>
-        {anchorElement}
-        {visibility ? (
-          <MenuComponent
-            data={data}
-            id={uId}
-            submenuDirection={submenuDirection}
-            transform={transform}
-          />
-        ) : null}
-      </MenuContainer>
-    </React.Fragment>
+    <ListWrapper isInteractive>
+      {listItems}
+    </ListWrapper>
   );
-}
-
-Menu.propTypes = {
-  children: PropTypes.node,
-  data: PropTypes.arrayOf(PropTypes.object),
-  icon: PropTypes.string,
-  isButton: PropTypes.bool,
-  id: PropTypes.string,
-  onClick: PropTypes.func,
-  position: PropTypes.oneOf([
-    "topLeft",
-    "topRight",
-    "bottomRight",
-    "bottomLeft",
-    "bottomCenter",
-    "topCenter",
-    "default",
-  ]),
-  visible: PropTypes.bool,
 };
+
+MenuList.defaultProps = {
+  direction: "",
+};
+MenuList.propTypes = {
+  direction: PropTypes.string,
+};
+
+const Menu = ({
+  children,
+  data,
+  onClick,
+  onClose,
+  portal,
+  position,
+  visible,
+}) => {
+  return (
+    <Popper
+      portal={portal}
+      anchor={children || <Icon icon="options" onClick={onClick} />}
+      visible={visible}
+      onClose={onClose}
+      position={position}
+    >
+      <MenuList
+        data={data}
+        direction={position.toLowerCase().includes("left") ? "left" : "right"}
+      />
+    </Popper>
+  );
+};
+
 
 Menu.defaultProps = {
-  children: null,
-  data: null,
-  icon: "options",
-  isButton: true,
-  id: null,
-  onClick: null,
-  position: "default",
-  visible: false,
+  position: "",
 };
 
-Menu.displayName = "Menu";
-export default Menu;
+Menu.propTypes = {
+  position: PropTypes.string,
+};
+
+// controlled/uncontrolled menu?
+export { Menu as default, MenuList };

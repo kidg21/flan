@@ -1,0 +1,27 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import * as stories from "layout/Popper/Popper.stories.js";
+import { Padding } from "helpers/Display";
+
+<Meta title="Utilities|Popper" />
+
+# Palettes
+
+Where appropriate, we enable people to introduce their own color palettes. Our products adapt intelligently and flexibly to cater for the user's preference. We are also committed to complying with AA standard contrast ratios. To accomplish this, you should choose primary, secondary and extended colors that ensure sufficient color contrast between elements. This allows users with low vision to see and use the interface.
+
+## Brand Palettes
+
+### LightBox Primary Colors
+
+Our brand palette is comprised of neutrals, white, and blue. These colors are reppresent the Lightbox brand across products. These colors are not intended for use in our core interface but to wrap a product in a brand's theme.
+
+<Preview>
+  <Story name="Positions" decorators={[Padding]}>{stories.Position()}</Story>
+</Preview>
+
+<Preview>
+  <Story name="Positions (Portal)" decorators={[Padding]}>{stories.PositionPortal()}</Story>
+</Preview>
+
+<Preview>
+  <Story name="Anchor Ref (Portal)" decorators={[Padding]}>{stories.PortalAnchorRef()}</Story>
+</Preview>

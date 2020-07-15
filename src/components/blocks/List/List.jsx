@@ -186,6 +186,7 @@ function getLeftContent(pre, disabled, onClick) {
 function ListItem({
   as,
   children,
+  className,
   description,
   disabled,
   href,
@@ -235,6 +236,7 @@ function ListItem({
       selectedContent={selectedContent}
       selectedBackground={selectedBackground}
       tabIndex={disabled ? "-1" : tabIndex}
+      className={className}
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
@@ -295,7 +297,7 @@ ListItem.defaultProps = {
 };
 
 function List({
-  children, data, id, isDivided, isInteractive, isInverse, padding, title,
+  children, className, data, id, isDivided, isInteractive, isInverse, padding, title,
 }) {
   let listBackground;
   let listColor;
@@ -308,6 +310,7 @@ function List({
   return (
     <InteractiveContext.Provider value={isInteractive}>
       <ListWrapper
+        className={className}
         id={id}
         isDivided={isDivided}
         listBackground={listBackground}
