@@ -9,6 +9,10 @@ import Button from "atoms/Button";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
 import Template from "layout/Template";
+import Tabs, { TabItem } from "blocks/Tabs";
+import Grid from "layout/Grid";
+import Form from "layout/Form";
+import MapBox from "layout/Map";
 import Media from "atoms/Media";
 import { FieldGroup } from "atoms/Field";
 import Text, { Title, Link } from "base/Typography";
@@ -32,7 +36,126 @@ function doNothing() {
   // do nothing
 }
 
-storiesOf("Templates|Applications/Appraisal/Project Details", module)
+// storiesOf("Templates|Applications/Appraisal/Project Details", module)
+//   .addDecorator(FullScreen)
+//   .add(
+//     "Overview",
+//     () => {
+//       return React.createElement(() => {
+//         const [leftOpen, setLeftOpen] = useState(true);
+//         const toggleLeft = () => { setLeftOpen(!leftOpen); };
+
+//         const menuDetails = [
+//           {
+//             id: "Overview",
+//             title: "Overview",
+//             isSelected: true,
+//           },
+//           {
+//             id: "Define Site",
+//             title: "Define Site",
+//           },
+//           {
+//             id: "Assessment",
+//             title: "Assessment",
+//             disabled: true,
+//           },
+//           {
+//             id: "Transactions",
+//             title: "Transactions",
+//             disabled: true,
+//           },
+//           {
+//             id: "Zoning",
+//             title: "Zoning",
+//             disabled: true,
+//           },
+//           {
+//             id: "Maps",
+//             title: "Maps",
+//             disabled: true,
+//           },
+//           {
+//             id: "Review",
+//             title: "Review",
+//             disabled: true,
+//           },
+//           {
+//             id: "Export",
+//             title: "Export",
+//             disabled: true,
+//           },
+//         ];
+
+//         return (
+//           <Layout
+//             header={{
+//               id: "Header",
+//               content: <MockHeaderGlobal menuClick={toggleLeft} />,
+//             }}
+//             left={{
+//               id: "Left",
+//               content: <MockMenu />,
+//               visible: leftOpen,
+//             }}
+//             main={{
+//               id: "Main",
+//               content: (
+//                 <Panel
+//                   padding="0"
+//                   header={
+//                     <MockHeader />
+//                   }
+//                 >
+//                   <Template
+//                     id="Overview"
+//                     template="C_02"
+
+//                     A={{
+//                       id: "A",
+//                       content: (
+//                         <MockWorkflow
+//                           title="Project Menu"
+//                           data={menuDetails}
+//                         />
+//                       ),
+//                     }}
+//                     B={{
+//                       id: "B",
+//                       content: <MockTabs />,
+//                     }}
+//                     C={{
+//                       id: "C",
+//                       content: (
+//                         <Template
+//                           id="Details"
+//                           template="B_01"
+//                           A={{
+//                             id: "A",
+//                             content: <MockData />,
+//                           }}
+//                           B={{
+//                             id: "B",
+//                             content: (
+//                               <MockDetails
+//                                 footer={<Button label="View on Map" fullWidth />}
+//                               />
+//                             ),
+//                           }}
+//                         />
+//                       ),
+//                     }}
+//                   />
+//                 </Panel>
+//               ),
+//             }}
+//           />
+//         );
+//       });
+//     },
+//   );
+
+storiesOf("Templates|Applications/Appraisal", module)
   .addDecorator(FullScreen)
   .add(
     "Overview",
@@ -43,8 +166,8 @@ storiesOf("Templates|Applications/Appraisal/Project Details", module)
 
         const menuDetails = [
           {
-            id: "Project Details",
-            title: "Project Details",
+            id: "Overview",
+            title: "Overview",
             isSelected: true,
           },
           {
@@ -57,13 +180,13 @@ storiesOf("Templates|Applications/Appraisal/Project Details", module)
             disabled: true,
           },
           {
-            id: "Zoning",
-            title: "Zoning",
+            id: "Transactions",
+            title: "Transactions",
             disabled: true,
           },
           {
-            id: "Demographics",
-            title: "Demographics",
+            id: "Zoning",
+            title: "Zoning",
             disabled: true,
           },
           {
@@ -72,14 +195,44 @@ storiesOf("Templates|Applications/Appraisal/Project Details", module)
             disabled: true,
           },
           {
-            id: "Report",
-            title: "Report",
+            id: "Review",
+            title: "Review",
             disabled: true,
           },
           {
             id: "Export",
             title: "Export",
             disabled: true,
+          },
+        ];
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+      
+        const fieldData = [
+          {
+            label: "Project Name",
+            value: "22902 Trabuco Rd",
+            onClick: true,
+          },
+          {
+            label: "Job Number",
+            value: "1402-20-12345",
+          },
+          {
+            label: "Property Type",
+            value: "Shopping Center",
+          },
+          {
+            label: "Lat/Long",
+            value: "33.629211/-117.663988",
+          },
+          {
+            label: "Street Address",
+            value: "22902 Trabuco Road",
+          },
+          {
+            label: "City, State, Zip",
+            value: "Mission Viejo, CA 92691",
           },
         ];
 
@@ -104,9 +257,8 @@ storiesOf("Templates|Applications/Appraisal/Project Details", module)
                   }
                 >
                   <Template
-                    id="Overview"
-                    template="C_02"
-                    hasBorders
+                    id="Assessment"
+                    template="B_02"
                     A={{
                       id: "A",
                       content: (
@@ -118,23 +270,33 @@ storiesOf("Templates|Applications/Appraisal/Project Details", module)
                     }}
                     B={{
                       id: "B",
-                      content: <MockTabs />,
-                    }}
-                    C={{
-                      id: "C",
                       content: (
                         <Template
                           id="Details"
                           template="B_01"
+                          hasBorders
                           A={{
                             id: "A",
-                            content: <MockData />,
+                            content: (
+                              <Form title="Project Overview">
+                                <Bar padding="2x" center={{ 
+                                  content: (
+                                  <Grid columns="1">
+                              <FieldGroup columns="1" id="General Information" 
+                            data={fieldData}/>
+                            <Button label="Start Research and Define Site" variant="success"/>
+                            </Grid>),
+                            align: "center",
+                                  }}
+                            
+                            />
+                            </Form>)
+                            ,
                           }}
                           B={{
                             id: "B",
                             content: (
                               <MockDetails
-                                footer={<Button label="View on Map" fullWidth />}
                               />
                             ),
                           }}
@@ -149,10 +311,121 @@ storiesOf("Templates|Applications/Appraisal/Project Details", module)
         );
       });
     },
-  );
+  )
+  .add(
+    "Define Site",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(true);
+        const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-storiesOf("Templates|Applications/Appraisal", module)
-  .addDecorator(FullScreen)
+        const menuDetails = [
+          {
+            id: "Overview",
+            title: "Overview",
+        
+          },
+          {
+            id: "Define Site",
+            title: "Define Site",
+            isSelected: true,
+          },
+          {
+            id: "Assessment",
+            title: "Assessment",
+            disabled: true,
+          },
+          {
+            id: "Transactions",
+            title: "Transactions",
+            disabled: true,
+          },
+          {
+            id: "Zoning",
+            title: "Zoning",
+            disabled: true,
+          },
+          {
+            id: "Maps",
+            title: "Maps",
+            disabled: true,
+          },
+          {
+            id: "Review",
+            title: "Review",
+            disabled: true,
+          },
+          {
+            id: "Export",
+            title: "Export",
+            disabled: true,
+          },
+        ];
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+        
+
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: <MockHeaderGlobal menuClick={toggleLeft} />,
+            }}
+            left={{
+              id: "Left",
+              content: <MockMenu />,
+              visible: leftOpen,
+            }}
+            main={{
+              id: "Main",
+              content: (
+                <Panel
+                  padding="0"
+                  header={
+                    <MockHeader />
+                  }
+                >
+                  <Template
+                    id="Assessment"
+                    template="B_02"
+                    A={{
+                      id: "A",
+                      content: (
+                        <MockWorkflow
+                          title="Project Menu"
+                          data={menuDetails}
+                        />
+                      ),
+                    }}
+                    B={{
+                      id: "B",
+                      content: (
+                        <Template
+                          id="Details"
+                          template="B_01"
+                          hasBorders
+                          A={{
+                            id: "A",
+                            content: <MapBox />,
+                          }}
+                          B={{
+                            id: "B",
+                            content: (
+                             <Form title="Site Parcels"/>
+                            ),
+                          }}
+                        />
+                      ),
+                    }}
+                  />
+                </Panel>
+              ),
+            }}
+          />
+        );
+      });
+    },
+  )
   .add(
     "Assessment",
     () => {
@@ -162,8 +435,8 @@ storiesOf("Templates|Applications/Appraisal", module)
 
         const menuAssessment = [
           {
-            id: "Project Details",
-            title: "Project Details",
+            id: "Overview",
+            title: "Overview",
           },
           {
             id: "Define Site",
@@ -178,20 +451,20 @@ storiesOf("Templates|Applications/Appraisal", module)
             isSelected: true,
           },
           {
-            id: "Zoning",
-            title: "Zoning",
+            id: "Transactions",
+            title: "Transactions",
           },
           {
-            id: "Demographics",
-            title: "Demographics",
+            id: "Zoning",
+            title: "Zoning",
           },
           {
             id: "Maps",
             title: "Maps",
           },
           {
-            id: "Report",
-            title: "Report",
+            id: "Review",
+            title: "Review",
           },
           {
             id: "Export",
@@ -265,8 +538,8 @@ storiesOf("Templates|Applications/Appraisal", module)
                 >
                   <Template
                     id="Assessment"
-                    template="D_02"
-                    hasBorders
+                    template="B_02"
+
                     A={{
                       id: "A",
                       content: (
@@ -279,23 +552,32 @@ storiesOf("Templates|Applications/Appraisal", module)
                     B={{
                       id: "B",
                       content: (
-                        <MockTabs
-                          data={tabsAssessment}
-                        />
-                      ),
-                    }}
-                    C={{
-                      id: "C",
-                      content: <MockForm />,
-                    }}
-                    D={{
-                      id: "D",
-                      content: (
-                        <MockDetails
-                          title="Site Assessment Totals"
-                          image={ParcelMap}
-                          data={fieldData}
-                          footer={<MockFooter />}
+                        <Template
+                          id="Details"
+                          template="B_01"
+                          hasBorders
+                          A={{
+                            id: "A",
+                            content: <Grid columns="1">
+                              <Bar padding="0"
+                              left={{
+                                content: (
+                              <Tabs>
+                                <TabItem label="Parcel 1" isSelected/>
+                                <TabItem label="Parcel 2"/>
+                              </Tabs>),
+                                width: "fit-content",
+                            }}/>
+                            <Form />
+                              </Grid>,
+                          }}
+                          B={{
+                            id: "B",
+                            content: (
+                              <MockDetails
+                              />
+                            ),
+                          }}
                         />
                       ),
                     }}
@@ -309,7 +591,176 @@ storiesOf("Templates|Applications/Appraisal", module)
     },
   )
   .add(
-    "Report",
+    "Maps",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(true);
+        const toggleLeft = () => { setLeftOpen(!leftOpen); };
+
+        const menuAssessment = [
+          {
+            id: "Overview",
+            title: "Overview",
+          },
+          {
+            id: "Define Site",
+            title: "Define Site",
+            post: {
+              type: "icon", icon: "check", variant: "success", size: "lg",
+            },
+          },
+          {
+            id: "Assessment",
+            title: "Assessment",
+            isSelected: true,
+          },
+          {
+            id: "Transactions",
+            title: "Transactions",
+          },
+          {
+            id: "Zoning",
+            title: "Zoning",
+          },
+          {
+            id: "Maps",
+            title: "Maps",
+          },
+          {
+            id: "Review",
+            title: "Review",
+          },
+          {
+            id: "Export",
+            title: "Export",
+          },
+        ];
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+        const tabsAssessment = [
+          {
+            id: "Parcel 1",
+            label: "Parcel 1",
+            isSelected: activeSingleTab === "tab1",
+            onClick: () => { setActiveSingleTab("tab1"); },
+          },
+          {
+            id: "Parcel 2",
+            label: "Parcel 2",
+            isSelected: activeSingleTab === "tab2",
+            onClick: () => { setActiveSingleTab("tab2"); },
+          },
+        ];
+
+        const fieldData = [
+          {
+            label: "Tax Authority Link",
+            value: "Orange County Assessor's Office",
+            onClick: true,
+          },
+          {
+            label: "Site Land Assessment",
+            value: "$7,216,214",
+          },
+          {
+            label: "Site Assessment Improvement",
+            value: "$4,829,284",
+          },
+          {
+            label: "Site Other Assessment",
+            value: "$0",
+          },
+          {
+            label: "Site Total Assessment",
+            value: "$12,045,498",
+          },
+          {
+            label: "Site Total Assessment",
+            value: "$121,926",
+          },
+        ];
+
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: <MockHeaderGlobal menuClick={toggleLeft} />,
+            }}
+            left={{
+              id: "Left",
+              content: <MockMenu />,
+              visible: leftOpen,
+            }}
+            main={{
+              id: "Main",
+              content: (
+                <Panel
+                  padding="0"
+                  header={
+                    <MockHeader />
+                  }
+                >
+                  <Template
+                    id="Assessment"
+                    template="C_02"
+
+                    A={{
+                      id: "A",
+                      content: (
+                        <MockWorkflow
+                          title="Project Menu"
+                          data={menuAssessment}
+                        />
+                      ),
+                    }}
+                    B={{
+                      id: "B",
+                      content: (<Tabs>
+                        <TabItem label="Parcel 1" isSelected/>
+                        <TabItem label="Parcel 2"/>
+                      </Tabs>),
+
+                      }}
+                      C={{
+                        id: "C".
+                        content: (
+                        <Template
+                          id="Details"
+                          template="B_01"
+                          hasBorders
+                          A={{
+                            id: "A",
+                            content: <Grid columns="1">
+                              <Bar padding="0"
+                              left={{
+                                content: (
+                              ),
+                                width: "fit-content",
+                            }}/>
+                            <Form />
+                              </Grid>,
+                          }}
+                          B={{
+                            id: "B",
+                            content: (
+                              <MockDetails
+                              />
+                            ),
+                          }}
+                        />
+                      ),
+                    }}
+                  />
+                </Panel>
+              ),
+            }}
+          />
+        );
+      });
+    },
+  )
+  .add(
+    "Review",
     () => {
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
@@ -317,8 +768,8 @@ storiesOf("Templates|Applications/Appraisal", module)
 
         const menuReport = [
           {
-            id: "Project Details",
-            title: "Project Details",
+            id: "Overview",
+            title: "Overview",
           },
           {
             id: "Define Site",
@@ -335,15 +786,15 @@ storiesOf("Templates|Applications/Appraisal", module)
             },
           },
           {
-            id: "Zoning",
-            title: "Zoning",
+            id: "Transactions",
+            title: "Transactions",
             post: {
               type: "icon", icon: "check", variant: "success",
             },
           },
           {
-            id: "Demographics",
-            title: "Demographics",
+            id: "Zoning",
+            title: "Zoning",
             post: {
               type: "icon", icon: "check", variant: "success",
             },
@@ -356,8 +807,8 @@ storiesOf("Templates|Applications/Appraisal", module)
             },
           },
           {
-            id: "Report",
-            title: "Report",
+            id: "Review",
+            title: "Review",
             isSelected: true,
           },
           {
@@ -493,7 +944,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                   <Template
                     id="Report"
                     template="C_03"
-                    hasBorders
+
                     A={{
                       id: "A",
                       content: (
@@ -573,8 +1024,8 @@ storiesOf("Templates|Applications/Appraisal", module)
 
         const menuExport = [
           {
-            id: "Project Details",
-            title: "Project Details",
+            id: "Overview",
+            title: "Overview",
           },
           {
             id: "Define Site",
@@ -591,15 +1042,15 @@ storiesOf("Templates|Applications/Appraisal", module)
             },
           },
           {
-            id: "Zoning",
-            title: "Zoning",
+            id: "Transactions",
+            title: "Transactions",
             post: {
               type: "icon", icon: "check", variant: "success",
             },
           },
           {
-            id: "Demographics",
-            title: "Demographics",
+            id: "Zoning",
+            title: "Zoning",
             post: {
               type: "icon", icon: "check", variant: "success",
             },
@@ -612,8 +1063,8 @@ storiesOf("Templates|Applications/Appraisal", module)
             },
           },
           {
-            id: "Report",
-            title: "Report",
+            id: "Review",
+            title: "Review",
             post: {
               type: "icon", icon: "check", variant: "success",
             },

@@ -79,7 +79,7 @@ const ListTitleWrapper = styled.li`
   padding: 1rem 1rem;
 `;
 
-const ListTitle = styled(Title)`
+const ListTitle = styled(Text)`
   text-transform: uppercase;
   letter-spacing: 2px;
 `;
@@ -316,7 +316,7 @@ function List({
       >
         {title ? (
           <ListTitleWrapper>
-            <ListTitle text={title} weight="bold" />
+            <ListTitle text={title}   />
           </ListTitleWrapper>
         ) : null}
         <PaddingContext.Provider value={padding}>

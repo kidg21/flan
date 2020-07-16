@@ -6,6 +6,7 @@ import Text, { Title, Link } from "base/Typography";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
 import IconBlock from "blocks/IconBlock";
+import Divider from "atoms/Divider";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListSection, ListItem } from "blocks/List";
 import Tabs from "blocks/Tabs";
@@ -56,32 +57,36 @@ function MockHeaderGlobal({ menuClick }) {
       contentAlign="center"
       left={{
         content: (
-          <Grid columns="max-content 1fr" gap="xl" align="center">
-            <Icon
+          <Grid columns="max-content 1fr" align="center">
+            <Button
               icon="menu"
+              variant="neutral"
+              isRound
+              isPlain
               onClick={menuClick}
             />
             <Image src={LightBoxLogo} alt="Lightbox Logo" width="8vw" onClick={doNothing} />
           </Grid>
         ),
-        width: "15%",
+        width: "12%",
       }}
       center={{
         content: (
-          <ButtonGroup columns="5">
-            <Button label="JOBS PORTAL" isPlain />
+          <ButtonGroup columns="4">
+            <Button label="JOBS PORTAL" isPlain variant="neutral" />
             <Button label="RESEARCH" isPlain />
-            <Button label="BI" isPlain />
-            <Button label="REPORT WRITING" isPlain />
+            <Button label="BI" isPlain variant="neutral" />
+            <Button label="REPORT WRITING" isPlain variant="neutral" />
           </ButtonGroup>
         ),
         align: "left",
+        width: "fit-content",
       }}
       right={{
         content: (
           <Grid columns="max-content max-content" gap="4xl" align="center">
-            <Avatar icon="help_solid" size="sm" onClick={doNothing} />
-            <Avatar icon="user" size="sm" onClick={doNothing} />
+            <Button icon="help_solid" variant="neutral" isRound isPlain onClick={doNothing} />
+            <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
           </Grid>
         ),
         width: "fit-content",
@@ -116,7 +121,7 @@ function MockHeader() {
     <Card
       id="Card_Header"
     >
-      <CardSection padding="2x" variant="light">
+      <CardSection variant="light">
         <Bar
           padding="0"
           contentAlign="center"
@@ -197,7 +202,7 @@ function MockWorkflow({ data, title }) {
         : (
           <List title={title} isInteractive>
             <ListItem
-              title="Project Details"
+              title="Overview"
               isSelected
             />
             <ListItem
@@ -206,9 +211,14 @@ function MockWorkflow({ data, title }) {
                 type: "icon", icon: "check", variant: "success",
               }}
             />
-            <ListSection title="Review">
+            <Divider/>
+            <ListSection >
               <ListItem
                 title="Assessment"
+                disabled
+              />
+              <ListItem
+                title="Transactions"
                 disabled
               />
               <ListItem
@@ -216,15 +226,11 @@ function MockWorkflow({ data, title }) {
                 disabled
               />
               <ListItem
-                title="Demographics"
-                disabled
-              />
-              <ListItem
                 title="Maps"
                 disabled
               />
               <ListItem
-                title="Report"
+                title="Review"
                 disabled
               />
               <ListItem
@@ -716,31 +722,36 @@ function MockDetails({
       <Image src={image || StaticMap} width="100%" />
       {data ? <FieldGroup id={title} title={title} data={data} />
         : (
-          <FieldGroup id="Physical Characteristics" title={title || "Physical Characteristics"}>
+          <FieldGroup id="Physical Characteristics" >
             <Field
               id="No. of Buildings"
-              label="No. of Buildings"
-              value="3"
+              label="Project Owner"
+              value="Steve Davidson"
             />
             <Field
               id="GBA"
-              label="GBA"
-              value="25,344"
+              label="Project Due"
+              value="06/25/2020"
             />
             <Field
               id="No. of Stories"
-              label="No. of Stories"
-              value="1"
+              label="Project Status"
+              value="Open"
             />
             <Field
               id="No. of Units"
-              label="No. of Units"
-              value="4"
+              label="Project Created"
+              value="6/14/2020 8:00 am PT"
             />
             <Field
               id="Year Built"
-              label="Year Built"
-              value="1978"
+              label="Project Edited"
+              value="6/16/2020 12:15 pm PT"
+            />
+            <Field
+              id="Year Built"
+              label="Project Edited"
+              value={<Link text="1804"/>}
             />
           </FieldGroup>
         )}
@@ -796,7 +807,8 @@ function MockTabs({ data }) {
     },
   ];
   return (
-    <Tabs data={data || tabButtons} />
+    <Bar left={
+    <Tabs data={data || tabButtons} />}/>
   );
 }
 MockTabs.propTypes = {
