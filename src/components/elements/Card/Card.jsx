@@ -195,7 +195,8 @@ function ExpandingSection({
               width: "max-content",
             } : null}
           />
-        ) : null}
+        ) : null
+      }
     >
       {children}
     </Expander>
@@ -354,21 +355,22 @@ function Card({
 
   if (onClick) {
     centerContent = (
-      <LinkedWrapper >
-        <React.Fragment >
+      <LinkedWrapper>
+        <Grid columns="1" gap="xs">
           {title ? <Title size="lg" text={title} weight="bold" /> : null}
           {description ? (<Text text={description} />
           ) : null}
-        </React.Fragment>
+        </Grid>
       </LinkedWrapper>
     );
   } else {
     centerContent = (
-      <React.Fragment >
+      <Grid columns="1" gap="xs">
         {title ? <Title size="lg" text={title} weight="bold" /> : null}
         {description ? (<Text text={description} />
         ) : null}
-      </React.Fragment>);
+      </Grid>
+    );
   }
 
   let headerSection;
@@ -393,7 +395,7 @@ function Card({
       );
     } else {
       headerSection = (
-        <CardSection id={`${uId}-Header`} variant={variant} >
+        <CardSection id={`${uId}-Header`} variant={variant}>
           {badgeLabel ? <Badge label={badgeLabel} /> : null}
           <Bar
             padding="0"
@@ -450,13 +452,13 @@ function Card({
         <Bar
           padding="0"
           contentAlign="bottom"
-          left={
+          left={(
             <Command
               label={commands[0].label}
               onClick={commands[0].onClick}
               disabled={commands[0].disabled}
             />
-          }
+          )}
         />
       );
     }
@@ -551,8 +553,8 @@ function CardGrid({
       id={id}
       rows={rows}
     >
-      {children ||
-        data.map((item) => {
+      {children
+        || data.map((item) => {
           return (
             <Card
               body={item.body}

@@ -102,7 +102,7 @@ function Tabs({
 
 TabItem.propTypes = {
   alignCenter: PropTypes.bool,
-  count: PropTypes.string,
+  count: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   htmlFor: PropTypes.string,
   icon: PropTypes.string,

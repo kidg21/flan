@@ -364,7 +364,131 @@ exports[` 5`] = `
       overflow={null}
       width="10rem"
     >
-      
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+        id={null}
+      >
+        <li
+          className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Research
+          </h6>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Projects
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Properties
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                History
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Data
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     <div
       className="Flex__FlexWrapper-sc-7b3s7m-0 dJGSkh Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
@@ -380,7 +504,14 @@ exports[` 5`] = `
         overflow={null}
         width={null}
       >
-        
+        <div
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        />
       </div>
       <div
         className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 feYNea"
@@ -389,7 +520,530 @@ exports[` 5`] = `
         overflow={null}
         width={null}
       >
-        
+        <div
+          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          href={null}
+          id="storyshots_50"
+          media=""
+          onClick={null}
+        >
+          <section
+            className="Card__CardSectionWrapper-sc-1g3s676-1 ipvWKE"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 izXrkl"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 eufPAN"
+              >
+                <h6
+                  className="Typography__TitleText-sc-19auepv-2 fnUHAi"
+                  fontSize="1em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Results | 3
+                </h6>
+              </div>
+              <div
+                className="Bar__Slot-icfo76-1 FsWNF"
+              >
+                <div
+                  className="IconBlock__Block-nokc92-0 UCGVw"
+                  id={null}
+                >
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="share"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="trash-alt"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                  <div
+                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                      disabled={false}
+                      htmlFor={null}
+                      id={null}
+                      name={null}
+                      onClick={null}
+                      tabIndex="1"
+                      type="button"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                        id={null}
+                        rows={null}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="ellipsis-v"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 128 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </section>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
+        >
+          <div
+            style={
+              Object {
+                "height": 0,
+                "overflow": "visible",
+                "width": 0,
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "height": 100,
+                  "overflow": "visible",
+                  "width": 200,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": 40,
+                    "position": "relative",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly={true}
+                  className="ReactVirtualized__Grid"
+                  onScroll={[Function]}
+                  role="grid"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "boxSizing": "border-box",
+                      "direction": "ltr",
+                      "height": 40,
+                      "left": 0,
+                      "overflowX": "hidden",
+                      "overflowY": "hidden",
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 200,
+                      "willChange": "transform",
+                    }
+                  }
+                  tabIndex={null}
+                >
+                  <div
+                    className="ReactVirtualized__Grid__innerScrollContainer"
+                    role="rowgroup"
+                    style={
+                      Object {
+                        "height": 40,
+                        "maxHeight": 40,
+                        "maxWidth": 1560,
+                        "overflow": "hidden",
+                        "pointerEvents": "",
+                        "position": "relative",
+                        "width": 1560,
+                      }
+                    }
+                  >
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 gWwrWx"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 gCCOlW"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                            fontSize="0.879em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.4px"
+                          >
+                            Select All
+                          </label>
+                        </div>
+                      </section>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 irRGFH"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      Name
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "height": 60,
+                    "overflow": "visible",
+                    "position": "relative",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly={true}
+                  className="ReactVirtualized__Grid"
+                  onScroll={[Function]}
+                  role="grid"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "boxSizing": "border-box",
+                      "direction": "ltr",
+                      "height": 60,
+                      "left": 0,
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "position": "absolute",
+                      "width": 200,
+                      "willChange": "transform",
+                    }
+                  }
+                  tabIndex={0}
+                >
+                  <div
+                    className="ReactVirtualized__Grid__innerScrollContainer"
+                    role="rowgroup"
+                    style={
+                      Object {
+                        "height": 120,
+                        "maxHeight": 120,
+                        "maxWidth": 1560,
+                        "overflow": "hidden",
+                        "pointerEvents": "",
+                        "position": "relative",
+                        "width": 1560,
+                      }
+                    }
+                  >
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        477 Madison Avenue
+                      </a>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        23 E. 21 St.
+                      </a>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        11 W. 20 St.
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -399,7 +1053,152 @@ exports[` 5`] = `
       overflow={null}
       width="24rem"
     >
-      
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-0 iKEKmF"
+        id={null}
+        rows={null}
+      >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
+          onClick={null}
+          src=""
+          width="100%"
+        />
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 bBCooi"
+          id="Physical Characteristics"
+          rows={null}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 fnUHAi Field__GroupTitle-sc-11od8ug-2 hDNWii"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Physical Characteristics
+          </h6>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Buildings"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              No. of Buildings
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              3
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="GBA"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              GBA
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              25,344
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Stories"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              No. of Stories
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              1
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Units"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              No. of Units
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              4
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="Year Built"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              Year Built
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              1978
+            </p>
+          </section>
+        </section>
+      </section>
     </div>
   </div>
   <div
@@ -607,7 +1406,131 @@ exports[` 6`] = `
       overflow={null}
       width="10rem"
     >
-      
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+        id={null}
+      >
+        <li
+          className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Research
+          </h6>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Projects
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Properties
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                History
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Data
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     <div
       className="Flex__FlexWrapper-sc-7b3s7m-0 dJGSkh Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
@@ -623,7 +1546,14 @@ exports[` 6`] = `
         overflow={null}
         width={null}
       >
-        
+        <div
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        />
       </div>
       <div
         className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 feYNea"
@@ -632,7 +1562,530 @@ exports[` 6`] = `
         overflow={null}
         width={null}
       >
-        
+        <div
+          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          href={null}
+          id="storyshots_52"
+          media=""
+          onClick={null}
+        >
+          <section
+            className="Card__CardSectionWrapper-sc-1g3s676-1 ipvWKE"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 izXrkl"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 eufPAN"
+              >
+                <h6
+                  className="Typography__TitleText-sc-19auepv-2 fnUHAi"
+                  fontSize="1em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Results | 3
+                </h6>
+              </div>
+              <div
+                className="Bar__Slot-icfo76-1 FsWNF"
+              >
+                <div
+                  className="IconBlock__Block-nokc92-0 UCGVw"
+                  id={null}
+                >
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="share"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="trash-alt"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                  <div
+                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                      disabled={false}
+                      htmlFor={null}
+                      id={null}
+                      name={null}
+                      onClick={null}
+                      tabIndex="1"
+                      type="button"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                        id={null}
+                        rows={null}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="ellipsis-v"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 128 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </section>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
+        >
+          <div
+            style={
+              Object {
+                "height": 0,
+                "overflow": "visible",
+                "width": 0,
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "height": 100,
+                  "overflow": "visible",
+                  "width": 200,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": 40,
+                    "position": "relative",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly={true}
+                  className="ReactVirtualized__Grid"
+                  onScroll={[Function]}
+                  role="grid"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "boxSizing": "border-box",
+                      "direction": "ltr",
+                      "height": 40,
+                      "left": 0,
+                      "overflowX": "hidden",
+                      "overflowY": "hidden",
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 200,
+                      "willChange": "transform",
+                    }
+                  }
+                  tabIndex={null}
+                >
+                  <div
+                    className="ReactVirtualized__Grid__innerScrollContainer"
+                    role="rowgroup"
+                    style={
+                      Object {
+                        "height": 40,
+                        "maxHeight": 40,
+                        "maxWidth": 1560,
+                        "overflow": "hidden",
+                        "pointerEvents": "",
+                        "position": "relative",
+                        "width": 1560,
+                      }
+                    }
+                  >
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 gWwrWx"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 gCCOlW"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                            fontSize="0.879em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.4px"
+                          >
+                            Select All
+                          </label>
+                        </div>
+                      </section>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 irRGFH"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      Name
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "height": 60,
+                    "overflow": "visible",
+                    "position": "relative",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly={true}
+                  className="ReactVirtualized__Grid"
+                  onScroll={[Function]}
+                  role="grid"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "boxSizing": "border-box",
+                      "direction": "ltr",
+                      "height": 60,
+                      "left": 0,
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "position": "absolute",
+                      "width": 200,
+                      "willChange": "transform",
+                    }
+                  }
+                  tabIndex={0}
+                >
+                  <div
+                    className="ReactVirtualized__Grid__innerScrollContainer"
+                    role="rowgroup"
+                    style={
+                      Object {
+                        "height": 120,
+                        "maxHeight": 120,
+                        "maxWidth": 1560,
+                        "overflow": "hidden",
+                        "pointerEvents": "",
+                        "position": "relative",
+                        "width": 1560,
+                      }
+                    }
+                  >
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        477 Madison Avenue
+                      </a>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        23 E. 21 St.
+                      </a>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        11 W. 20 St.
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -642,7 +2095,152 @@ exports[` 6`] = `
       overflow={null}
       width="24rem"
     >
-      
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-0 iKEKmF"
+        id={null}
+        rows={null}
+      >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
+          onClick={null}
+          src=""
+          width="100%"
+        />
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 bBCooi"
+          id="Physical Characteristics"
+          rows={null}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 fnUHAi Field__GroupTitle-sc-11od8ug-2 hDNWii"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Physical Characteristics
+          </h6>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Buildings"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              No. of Buildings
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              3
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="GBA"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              GBA
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              25,344
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Stories"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              No. of Stories
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              1
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Units"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              No. of Units
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              4
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="Year Built"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="0.879em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.4px"
+            >
+              Year Built
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="0.879em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              1978
+            </p>
+          </section>
+        </section>
+      </section>
     </div>
   </div>
   <div

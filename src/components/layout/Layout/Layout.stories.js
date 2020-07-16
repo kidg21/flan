@@ -5,6 +5,11 @@ import { Title } from "base/Typography";
 import Command from "atoms/Command";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
+import {
+  MockDetails,
+  MockMenu,
+  MockTable,
+} from "helpers/Mocks";
 
 storiesOf("Layout|Layout/", module)
   .add(
@@ -103,16 +108,16 @@ storiesOf("Layout|Layout/", module)
               ),
             }}
             left={{
-              content: "",
+              content: <MockMenu />,
               visible: leftOpen,
             }}
-            main={{ content: "" }}
+            main={{ content: <Mapbox /> }}
             right={{
-              content: "",
+              content: <MockDetails />,
               visible: rightOpen,
             }}
             bottom={{
-              content: "",
+              content: <MockTable />,
               visible: bottomOpen,
             }}
             footer={{
@@ -204,16 +209,16 @@ storiesOf("Layout|Layout/", module)
               ),
             }}
             left={{
-              content: "",
+              content: <MockMenu />,
               visible: visibility.left,
             }}
-            main={{ content: "" }}
+            main={{ content: <Mapbox /> }}
             right={{
-              content: "",
+              content: <MockDetails />,
               visible: visibility.right,
             }}
             bottom={{
-              content: "",
+              content: <MockTable />,
               visible: visibility.bottom,
             }}
             footer={{

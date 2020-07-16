@@ -1,13 +1,12 @@
-/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
-import { Title } from "base/Typography";
 
-const PageWrapper = styled(Grid)`
+const TemplateWrapper = styled(Grid)`
   position: ${(props) => {
     return props.setPosition || "relative";
   }};
@@ -54,75 +53,18 @@ const PageWrapper = styled(Grid)`
   }
 `;
 
-const Section = styled(Grid)`
-  margin-bottom: 1.5em;
-  height: ${(props) => {
-    return props.height || "";
-  }};
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-`;
-
-function PageSection({
-  children, classname, id, title,
-}) {
-  return (
-    <Section id={id} classname={classname} columns="1" gap="sm">
-      {title ? <Title size="lg" text={title} /> : null}
-      {children}
-    </Section>
-  );
-}
-
-PageSection.propTypes = {
-  children: PropTypes.node,
-  classname: PropTypes.string,
-  id: PropTypes.string,
-  title: PropTypes.string,
-};
-PageSection.defaultProps = {
-  children: null,
-  classname: null,
-  id: null,
-  title: null,
-};
-
-function ContentSection({
-  children, classname, id, title,
-}) {
-  return (
-    <Section id={id} classname={classname} columns="1" gap="sm" height="100%">
-      {title ? <Title size="lg" text={title} /> : null}
-      {children}
-    </Section>
-  );
-}
-
-ContentSection.propTypes = {
-  children: PropTypes.node,
-  classname: PropTypes.string,
-  id: PropTypes.string,
-  title: PropTypes.string,
-};
-ContentSection.defaultProps = {
-  children: null,
-  classname: null,
-  id: null,
-  title: null,
-};
-
 const Region = styled.section`
   position: relative;
   grid-area: ${(props) => {
     return props.gridArea || "";
   }};
   height: inherit;
-  overflow: auto;
+  overflow: ${(props) => {
+    return props.overflow || "auto";
+  }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
-  padding: 1px;
   pointer-events: initial;
   &:focus {
     outline: ${(props) => {
@@ -160,12 +102,10 @@ const templateHash = {
   },
   A_02: {
     setTemplate: [
-      "\". . .\"",
       "\". A .\"",
-      "\". . .\"",
     ].join("\n"),
     setColumns: "1fr auto 1fr",
-    setRows: "1fr auto 1fr",
+    setRows: "auto",
   },
   B_01: {
     setTemplate: [
@@ -191,6 +131,20 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthMD} 1fr`,
+  },
+  B_05: {
+    setTemplate: [
+      "\"A . B\"",
+      "\". . .\"",
+    ].join("\n"),
+    setColumns: "auto 1fr 12rem",
+    setRows: "1fr 1rem",
+  },
+  B_06: {
+    setTemplate: [
+      "\"A B\"",
+    ].join("\n"),
+    setColumns: `1fr ${widthXL}`,
   },
   C_01: {
     setTemplate: [
@@ -253,19 +207,18 @@ const templateHash = {
   },
   E_03: {
     setTemplate: [
-      "\"A A . . E\"",
-      "\". . . . E\"",
-      "\"B . . . .\"",
-      "\"C . . . .\"",
-      "\"D . . . .\"",
+      "\". . . A A\"",
+      "\". . . . .\"",
+      "\". . . . .\"",
+      "\". . . . B\"",
       "\". . . . .\"",
     ].join("\n"),
-    setColumns: "auto 2fr 1fr 1fr auto",
-    setRows: "max-content max-content max-content max-content max-content 1fr",
+    setColumns: "40% 1fr 1fr auto auto",
+    setRows: "auto auto 1fr auto 1rem",
   },
 };
 
-function Page({
+function Template({
   A, B, C, D, E, children, classname, hasBorders, hasShadows, id, isOverlay, template,
 }) {
   let backgroundColor;
@@ -308,8 +261,9 @@ function Page({
     setPosition = "absolute";
     zIndex = "999";
   }
+
   return (
-    <PageWrapper
+    <TemplateWrapper
       backgroundColor={backgroundColor}
       classname={classname}
       id={id}
@@ -333,6 +287,7 @@ function Page({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={A.overflow}
             >
               {A.content}
             </Region>
@@ -344,6 +299,7 @@ function Page({
               gridArea={template ? "B" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={B.overflow}
             >
               {B.content}
             </Region>
@@ -355,6 +311,7 @@ function Page({
               gridArea={template ? "C" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={C.overflow}
             >
               {C.content}
             </Region>
@@ -366,6 +323,7 @@ function Page({
               gridArea={template ? "D" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={D.overflow}
             >
               {D.content}
             </Region>
@@ -377,44 +335,51 @@ function Page({
               gridArea={template ? "E" : null}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={E.overflow}
             >
               {E.content}
             </Region>
           ) : null}
         </React.Fragment>
       ) : children}
-    </PageWrapper>
+    </TemplateWrapper>
   );
 }
-Page.propTypes = {
+Template.propTypes = {
   A: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   B: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   C: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   children: PropTypes.node,
   classname: PropTypes.string,
   D: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   E: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
-  stateCards: PropTypes.bool,
+  hasBorders: PropTypes.bool,
+  hasShadows: PropTypes.bool,
   template: PropTypes.string,
 };
-Page.defaultProps = {
+Template.defaultProps = {
   A: null,
   B: null,
   C: null,
@@ -424,8 +389,9 @@ Page.defaultProps = {
   E: null,
   id: null,
   isOverlay: false,
-  stateCards: false,
+  hasBorders: false,
+  hasShadows: false,
   template: null,
 };
 
-export { Page as default, PageSection, ContentSection };
+export default Template;

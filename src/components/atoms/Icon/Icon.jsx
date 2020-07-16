@@ -8,14 +8,13 @@ import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Badge from "atoms/Badge";
 
-
 const LinkedIcon = styled.a`
   color: ${(props) => { return props.theme.text.link; }};
   width: max-content;
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
-    } else if (props.onClick || props.href) {
+    } if (props.onClick || props.href) {
       return "pointer";
     }
     return "";
@@ -120,6 +119,7 @@ const iconHash = {
   job: ["far", "construction"],
   labels: ["far", "tags"],
   layers: ["far", "layer-group"],
+  legend: ["far", "shapes"],
   link: ["far", "link"],
   list: ["far", "list-ul"],
   loading: "spinner",
@@ -239,8 +239,7 @@ function Icon({
   const fontSize = selectedSize ? selectedSize.font : "inherit";
   let content;
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
   else if (onClick || href) color = "link";
 

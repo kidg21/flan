@@ -25,7 +25,7 @@ Array [
       <div
         className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
-        id="storyshots_50"
+        id="storyshots_54"
         media=""
         onClick={null}
       >
@@ -142,13 +142,13 @@ Array [
       <div
         className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
         href={null}
-        id="storyshots_51"
+        id="storyshots_55"
         media=""
         onClick={null}
       >
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_51-Header"
+          id="storyshots_55-Header"
           onClick={null}
         >
           <div
@@ -159,15 +159,21 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
                 id={null}
-                letterSpacing="0.2px"
+                rows={null}
               >
-                This is a very special message just for you...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  This is a very special message just for you...
+                </p>
+              </section>
             </div>
           </div>
         </section>
@@ -228,13 +234,13 @@ Array [
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_52"
+        id="storyshots_56"
         media=""
         onClick={null}
       >
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_52-Header"
+          id="storyshots_56-Header"
           onClick={null}
         >
           <div
@@ -245,20 +251,26 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Default Dialog
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Default Dialog
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_52-Body"
+          id="storyshots_56-Body"
           onClick={null}
         >
           <p
@@ -393,13 +405,13 @@ Array [
       <div
         className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
         href={null}
-        id="storyshots_53"
+        id="storyshots_57"
         media=""
         onClick={null}
       >
         <section
           className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_53-Header"
+          id="storyshots_57-Header"
           onClick={null}
         >
           <div
@@ -410,15 +422,21 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
                 id={null}
-                letterSpacing="0.2px"
+                rows={null}
               >
-                This is a very special message just for you...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  This is a very special message just for you...
+                </p>
+              </section>
             </div>
           </div>
         </section>
