@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable security/detect-object-injection */
-import React, { useRef, useState, useLayoutEffect, useMemo } from "react";
+import React, { useRef, useState, useLayoutEffect, useMemo, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Portal, useId } from "helpers";
 
 // helper function, takes a number or string
 // outputs a string in "100px" format
-function sanitizePixelValue(value) {
+function formatPixelValue(value) {
   let _value = typeof value === "number" ? value.toString() : value;
   if (_value && !_value.includes("px")) {
     _value += "px";
@@ -14,16 +15,22 @@ function sanitizePixelValue(value) {
   return _value || "";
 }
 
-// flex or max-content?
 const AnchorWrapper = styled.div`
   display: flex;
   flex: auto;
-  width: max-content;
+  width: ${(props) => {
+    return props.isFlex ? "" : "max-content";
+  }};
 `;
 
 const NonPortalWrapper = styled.div`
+  display: ${(props) => {
+    return props.isFlex ? "flex" : "";
+  }};
   position: relative;
-  width: max-content;
+  width: ${(props) => {
+    return props.isFlex ? "" : "max-content";
+  }};
 `;
 
 const PopperWrapper = styled.div`
@@ -32,11 +39,11 @@ const PopperWrapper = styled.div`
   }};
   z-index: 500;
   top: ${(props) => {
-    const top = props.portal ? sanitizePixelValue(props.top) : props.top;
+    const top = props.portal ? formatPixelValue(props.top) : props.top;
     return top || "";
   }};
   left: ${(props) => {
-    const left = props.portal ? sanitizePixelValue(props.left) : props.left;
+    const left = props.portal ? formatPixelValue(props.left) : props.left;
     return left || "";
   }};
   transform: ${(props) => {
@@ -58,27 +65,12 @@ const flipX = "translateX(-100%)";
 const flipY = "translateY(-100%)";
 const flipXY = "translate(-100%, -100%)";
 
-const absolutePositionStyle = {
-  topleft: {
-    top: "0",
-    left: "100%",
-    transform: flipXY,
-  },
-  topright: {
-    top: "0",
-    transform: flipY,
-  },
-  bottomleft: {
-    left: "100%",
-    transform: flipX,
-  },
-};
-
 const PortalPopper = ({
   anchor,
   anchorRef,
   children,
   id,
+  isFlex,
   onClose,
   position,
   visible,
@@ -123,7 +115,7 @@ const PortalPopper = ({
   }, [anchorBounds, position]);
 
   const anchorElement = anchorRef ? anchor : (
-    <AnchorWrapper ref={_anchorRef}>
+    <AnchorWrapper ref={_anchorRef} isFlex={isFlex}>
       {anchor}
     </AnchorWrapper>
   );
@@ -147,17 +139,39 @@ const PortalPopper = ({
   );
 };
 
+const absolutePositionStyle = {
+  topleft: {
+    top: "0",
+    left: "100%",
+    transform: flipXY,
+  },
+  topright: {
+    top: "0",
+    transform: flipY,
+  },
+  bottomleft: {
+    top: "100%",
+    left: "100%",
+    transform: flipX,
+  },
+  bottomRight: {
+    top: "100%",
+  },
+};
+
 const NonPortalPopper = ({
   anchor,
   children,
   id,
+  isFlex,
   position,
   visible,
   onClose,
 }) => {
-  const positionStyle = absolutePositionStyle[position.toLowerCase()];
+  const validPosition = absolutePositionStyle.hasOwnProperty(position.toLowerCase()) ? position : "bottomRight";
+  const positionStyle = absolutePositionStyle[validPosition];
   return (
-    <NonPortalWrapper id={id}>
+    <NonPortalWrapper id={id} isFlex={isFlex}>
       {anchor}
       {visible ? (
         <React.Fragment>
@@ -172,8 +186,35 @@ const NonPortalPopper = ({
 };
 
 const Popper = (props) => {
-  const uId = useId(props.id);
-  return props.portal ? <PortalPopper {...props} id={uId} /> : <NonPortalPopper {...props} id={uId} />;
+  const {
+    id,
+    portal,
+    closeOnScroll,
+    visible,
+    onClose,
+  } = props;
+  const uId = useId(id);
+  const scrollListener = useRef();
+
+  // default portals to closeOnScroll if not specified since they have a fixed position
+  // portal poppers don't update their position once they are visible if their anchor moves
+  // we could probably support this in the future if needed.
+  const _closeOnScroll = typeof closeOnScroll !== "boolean" ? portal : closeOnScroll;
+  useEffect(() => {
+    if (_closeOnScroll && visible && onClose) {
+      scrollListener.current = onClose;
+      window.addEventListener("scroll", onClose);
+    }
+    return () => {
+      if (scrollListener.current) {
+        // unfortunately, we need to update everytime onClose changes
+        // make sure to memoize the function to optimize adding/removing the event listener
+        window.removeEventListener("scroll", scrollListener.current);
+      }
+    };
+  }, [_closeOnScroll, visible, onClose]);
+
+  return portal ? <PortalPopper {...props} id={uId} /> : <NonPortalPopper {...props} id={uId} />;
 };
 
 Popper.defaultProps = {
@@ -181,6 +222,7 @@ Popper.defaultProps = {
   anchorRef: null,
   children: null,
   id: "",
+  isFlex: false,
   onClose: null,
   portal: false,
   position: "",
@@ -196,6 +238,7 @@ Popper.propTypes = {
   }),
   children: PropTypes.node,
   id: PropTypes.string,
+  isFlex: PropTypes.bool,
   onClose: PropTypes.func,
   portal: PropTypes.bool,
   position: PropTypes.oneOf([

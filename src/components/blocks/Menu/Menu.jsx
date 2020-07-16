@@ -1,21 +1,23 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events1 */
 /* eslint-disable react/prop-types */
-import React, { useState, useMemo, useRef } from "react";
+import React, { useState, useMemo, useRef, useCallback } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Popper from "layout/Popper";
 import Icon from "atoms/Icon";
+import Button from "atoms/Button";
 import List, { ListItem } from "blocks/List";
 import { useId, getGuid } from "helpers";
+import CardWrapper from "elements/Card/CardWrapper.jsx";
 
 const ListWrapper = styled(List)`
   overflow: visible;
   width: 10rem;
-`;
-
-const NestedListWrapper = styled(ListWrapper)`
-  position: absolute;
+  position: ${(props) => {
+    return props.nestedLevel ? "absolute" : "";
+  }};
   top: ${(props) => {
     return props.top || "";
   }};
@@ -25,7 +27,25 @@ const NestedListWrapper = styled(ListWrapper)`
   transform: ${(props) => {
     return props.transform || "";
   }};
+  border-radius: inherit;
+  > :first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
 `;
+
+// const NestedListWrapper = styled(ListWrapper)`
+//   position: absolute;
+//   top: ${(props) => {
+//     return props.top || "";
+//   }};
+//   left: ${(props) => {
+//     return props.left || "";
+//   }};
+//   transform: ${(props) => {
+//     return props.transform || "";
+//   }};
+// `;
 
 // width: 100% needed for highlighing whole entry
 const ListItemWrapper = styled(ListItem)`
@@ -58,7 +78,7 @@ const MenuList = ({
   data,
   direction,
   id,
-  _nestedLevel,
+  _nestedLevel, // internal prop for styling nested menus
   onClose,
 }) => {
   const [activeItem, setActiveItem] = useState();
@@ -88,7 +108,13 @@ const MenuList = ({
               setActiveItem();
             }}
           >
-            <ListItemWrapper id={`nested-item-${itemId}`} title={item.label} onClick={onClick} />
+            <ListItemWrapper
+              id={`nested-item-${itemId}`}
+              title={item.label}
+              onClick={onClick}
+              pre={{ icon: item.icon }}
+              disabled={item.disabled}
+            />
             {activeItem === item.id ? (
               <MenuList
                 id={`${uId}-${itemId}`}
@@ -102,57 +128,58 @@ const MenuList = ({
         );
       }
       return (
-        <ListItemWrapper key={itemId} id={`item-${itemId}`} title={item.label} onClick={onClick} />)
+        <ListItemWrapper
+          key={itemId}
+          id={`item-${itemId}`}
+          title={item.label}
+          onClick={onClick}
+          pre={{ icon: item.icon }}
+          disabled={item.disabled}
+        />
+      );
     });
   });
-  // handle empty lists
-  // const listItems = data.map((item) => {
-  //   if (item.data) {
-  //     return (
-  //       <NestedItem
-  //         onMouseEnter={() => {
-  //           setActiveItem(item.id);
-  //         }}
-  //         onMouseLeave={() => {
-  //           setActiveItem();
-  //         }}
-  //       >
-  //         <ListItemWrapper title={item.label} onClick={() => { item.onClick(); onClose(); }} />
-  //         {activeItem === item.id ? <MenuList _nestedLevel data={item.data} direction={validDirection} onClose={onClose} /> : null }
-  //       </NestedItem>
-  //     );
-  //   }
-  //   return (
-  //     <ListItemWrapper title={item.label} onClick={() => { item.onClick(); onClose();}} />
-  //   );
-  // });
 
-  if (_nestedLevel) {
-    const positionStyle = listPositionStyle[validDirection.toLowerCase()];
-    return (
-      <NestedListWrapper isInteractive {...positionStyle} id={id}>
-        {listItems}
-      </NestedListWrapper>
-    );
-  }
+  const positionStyle = _nestedLevel ? listPositionStyle[validDirection.toLowerCase()] : {};
   return (
-    <ListWrapper isInteractive id={id}>
-      {listItems}
-    </ListWrapper>
+    <CardWrapper shadow="2x">
+      <ListWrapper id={id} isInteractive nestedLevel={_nestedLevel} {...positionStyle}>
+        {listItems}
+      </ListWrapper>
+    </CardWrapper>
   );
 };
 
-MenuList.defaultProps = {
-  direction: "",
+const itemShape = {
+  disabled: PropTypes.bool,
+  icon: PropTypes.string,
+  id: PropTypes.string,
+  label: PropTypes.string,
+  onClick: PropTypes.func,
 };
+
+MenuList.defaultProps = {
+  data: [],
+  direction: "right",
+  id: "",
+  _nestedLevel: false,
+  onClose: null,
+};
+
 MenuList.propTypes = {
-  direction: PropTypes.string,
+  data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
+  direction: PropTypes.oneOf(["", "right", "left"]),
+  id: PropTypes.string,
+  _nestedLevel: PropTypes.bool,
+  onClose: PropTypes.func,
 };
 
 const Menu = ({
   children,
   data,
+  icon,
   id,
+  isFlex,
   onClick,
   onClose,
   portal,
@@ -163,8 +190,9 @@ const Menu = ({
   return (
     <Popper
       id={`menu-popper-${uId}`}
+      isFlex={isFlex}
       portal={portal}
-      anchor={children || <Icon id={`menu-icon-${uId}`} icon="options" onClick={onClick} />}
+      anchor={children || <Button id={`menu-icon-${uId}`} icon={icon} onClick={onClick} isPlain isRound />}
       visible={visible}
       onClose={onClose}
       position={position}
@@ -179,11 +207,12 @@ const Menu = ({
   );
 };
 
-
 Menu.defaultProps = {
   children: null,
   data: [],
+  icon: "options",
   id: "",
+  isFlex: false,
   onClick: null,
   onClose: null,
   portal: false,
@@ -193,14 +222,96 @@ Menu.defaultProps = {
 
 Menu.propTypes = {
   children: PropTypes.node,
-  data: PropTypes.arrayOf(PropTypes.shape({})),
+  data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
+  icon: PropTypes.string,
   id: PropTypes.string,
+  isFlex: PropTypes.bool,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   portal: PropTypes.bool,
-  position: PropTypes.oneOf(),
+  position: PropTypes.oneOf([
+    "bottomLeft",
+    "bottomRight",
+    "topLeft",
+    "topRight",
+  ]),
   visible: PropTypes.bool,
 };
 
-// controlled/uncontrolled menu?
-export { Menu as default, MenuList };
+const FragmentWrapper = styled.div``;
+
+const StatefulMenu = ({
+  children,
+  initVisible,
+  onClose,
+  ...otherProps
+}) => {
+  const [visible, setVisible] = useState(initVisible);
+  const anchor = React.Children.toArray(children);
+  const toggleVisible = useCallback(() => {
+    setVisible((show) => { return !show; });
+  });
+  const close = useCallback(() => {
+    setVisible(false);
+    if (onClose) onClose();
+  }, [onClose]);
+
+  let anchorElement = null;
+  if (anchor.length > 0) {
+    if (anchor[0].type === React.Fragment) {
+      // wraps click in div around both children
+      // otherwise, Fragment eats onClick prop
+      // for the most part assumes a single child!
+      anchorElement = (<FragmentWrapper onClick={toggleVisible}>{children}</FragmentWrapper>);
+    } else {
+      // need to clone to preserve ref on anchor element
+      // onClick of your element will get overwritten, should keep track of your own state if this happens
+
+      // TODO: support onClick of the child element
+      // anchor[0].props.onClick???
+      anchorElement = React.cloneElement(anchor[0], {
+        onClick: toggleVisible,
+      });
+    }
+  }
+
+  return (
+    <Menu
+      {...otherProps}
+      visible={visible}
+      onClick={toggleVisible} // default anchorElement
+      onClose={close}
+    >
+      {anchorElement}
+    </Menu>
+  );
+};
+
+// additional props
+StatefulMenu.defaultProps = {
+  initVisible: false,
+};
+
+StatefulMenu.propTypes = {
+  initVisible: PropTypes.bool,
+};
+
+const _Menu = (props) => {
+  const { onClick, visible } = props;
+  // handle open/close by stateful menu if onClick & visible isn't provided
+  return (typeof onClick === "undefined" && typeof visible === "undefined")
+    ? <StatefulMenu {...props} /> : <Menu {...props} />;
+};
+
+_Menu.defaultProps = {
+  ...Menu.defaultProps,
+  ...StatefulMenu.Props,
+  onClick: undefined,
+  visible: undefined,
+};
+
+_Menu.propTypes = {
+  ...Menu.propTypes,
+  ...StatefulMenu.propTypes,
+};
+export { _Menu as default, MenuList };
