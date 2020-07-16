@@ -259,6 +259,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                   <Template
                     id="Assessment"
                     template="B_02"
+                    hasBorders
                     A={{
                       id: "A",
                       content: (
@@ -274,7 +275,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                         <Template
                           id="Details"
                           template="B_01"
-                          hasBorders
+                          
                           A={{
                             id: "A",
                             content: (
@@ -388,6 +389,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                   <Template
                     id="Assessment"
                     template="B_02"
+                    hasBorders
                     A={{
                       id: "A",
                       content: (
@@ -403,7 +405,6 @@ storiesOf("Templates|Applications/Appraisal", module)
                         <Template
                           id="Details"
                           template="B_01"
-                          hasBorders
                           A={{
                             id: "A",
                             content: <MapBox />,
@@ -539,7 +540,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                   <Template
                     id="Assessment"
                     template="B_02"
-
+                    hasBorders
                     A={{
                       id: "A",
                       content: (
@@ -555,7 +556,6 @@ storiesOf("Templates|Applications/Appraisal", module)
                         <Template
                           id="Details"
                           template="B_01"
-                          hasBorders
                           A={{
                             id: "A",
                             content: <Grid columns="1">
@@ -576,6 +576,124 @@ storiesOf("Templates|Applications/Appraisal", module)
                             content: (
                               <MockDetails
                               />
+                            ),
+                          }}
+                        />
+                      ),
+                    }}
+                  />
+                </Panel>
+              ),
+            }}
+          />
+        );
+      });
+    },
+  )
+  .add(
+    "Zoning",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(true);
+        const toggleLeft = () => { setLeftOpen(!leftOpen); };
+
+        const menuDetails = [
+          {
+            id: "Overview",
+            title: "Overview",
+        
+          },
+          {
+            id: "Define Site",
+            title: "Define Site",
+            post: {
+              type: "icon", icon: "check", variant: "success",
+            },
+          },
+          {
+            id: "Assessment",
+            title: "Assessment",
+            post: {
+              type: "icon", icon: "check", variant: "success",
+            },
+          },
+          {
+            id: "Transactions",
+            title: "Transactions",
+            isSelected: true,
+          },
+          {
+            id: "Zoning",
+            title: "Zoning",
+            
+          },
+          {
+            id: "Maps",
+            title: "Maps",
+           
+          },
+          {
+            id: "Review",
+            title: "Review",
+            
+          },
+          {
+            id: "Export",
+            title: "Export",
+        
+          },
+        ];
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+        
+
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: <MockHeaderGlobal menuClick={toggleLeft} />,
+            }}
+            left={{
+              id: "Left",
+              content: <MockMenu />,
+              visible: leftOpen,
+            }}
+            main={{
+              id: "Main",
+              content: (
+                <Panel
+                  padding="0"
+                  header={
+                    <MockHeader />
+                  }
+                >
+                  <Template
+                    id="Assessment"
+                    template="B_02"
+                    hasBorders
+                    A={{
+                      id: "A",
+                      content: (
+                        <MockWorkflow
+                          title="Project Menu"
+                          data={menuDetails}
+                        />
+                      ),
+                    }}
+                    B={{
+                      id: "B",
+                      content: (
+                        <Template
+                          id="Details"
+                          template="B_01"
+                          A={{
+                            id: "A",
+                            content: <MapBox />,
+                          }}
+                          B={{
+                            id: "B",
+                            content: (
+                             <Form title="Site Parcels"/>
                             ),
                           }}
                         />
@@ -612,19 +730,28 @@ storiesOf("Templates|Applications/Appraisal", module)
           {
             id: "Assessment",
             title: "Assessment",
-            isSelected: true,
+            post: {
+              type: "icon", icon: "check", variant: "success",
+            },
           },
           {
             id: "Transactions",
             title: "Transactions",
+            post: {
+              type: "icon", icon: "check", variant: "success",
+            },
           },
           {
             id: "Zoning",
             title: "Zoning",
+            post: {
+              type: "icon", icon: "check", variant: "success",
+            },
           },
           {
             id: "Maps",
             title: "Maps",
+            isSelected: "true",
           },
           {
             id: "Review",
@@ -703,7 +830,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                   <Template
                     id="Assessment"
                     template="C_02"
-
+                    hasBorders
                     A={{
                       id: "A",
                       content: (
@@ -715,29 +842,23 @@ storiesOf("Templates|Applications/Appraisal", module)
                     }}
                     B={{
                       id: "B",
-                      content: (<Tabs>
-                        <TabItem label="Parcel 1" isSelected/>
-                        <TabItem label="Parcel 2"/>
-                      </Tabs>),
-
-                      }}
-                      C={{
-                        id: "C".
-                        content: (
+                      content: (
                         <Template
                           id="Details"
                           template="B_01"
-                          hasBorders
                           A={{
                             id: "A",
                             content: <Grid columns="1">
                               <Bar padding="0"
                               left={{
                                 content: (
-                              ),
+                              <Tabs>
+                                <TabItem label="Parcel 1" isSelected/>
+                                <TabItem label="Parcel 2"/>
+                              </Tabs>),
                                 width: "fit-content",
                             }}/>
-                            <Form />
+                            <MapBox/>
                               </Grid>,
                           }}
                           B={{
@@ -944,7 +1065,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                   <Template
                     id="Report"
                     template="C_03"
-
+                    hasBorders
                     A={{
                       id: "A",
                       content: (
