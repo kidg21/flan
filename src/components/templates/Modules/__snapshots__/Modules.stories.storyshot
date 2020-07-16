@@ -15,7 +15,7 @@ exports[` 1`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-1 bXmVMR"
+      className="Template__Region-sc-1i4nzbu-1 hXtoKP"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -258,7 +258,7 @@ exports[` 1`] = `
       </section>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-1 gsOFvF"
+      className="Template__Region-sc-1i4nzbu-1 czNRkH"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -638,8 +638,10 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    height="100%"
     id={null}
+    width="100%"
   >
     <section
       className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
@@ -733,7 +735,7 @@ exports[` 2`] = `
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                 id="checkbox-id"
                 onBlur={null}
                 onChange={null}
@@ -1129,7 +1131,7 @@ exports[` 2`] = `
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                 id="checkbox-id"
                 onBlur={null}
                 onChange={null}
@@ -1525,7 +1527,7 @@ exports[` 2`] = `
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                 id="checkbox-id"
                 onBlur={null}
                 onChange={null}
@@ -1921,7 +1923,7 @@ exports[` 2`] = `
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                 id="checkbox-id"
                 onBlur={null}
                 onChange={null}
@@ -2341,8 +2343,10 @@ exports[` 3`] = `
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+            className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+            height="100%"
             id="Menu 1"
+            width="100%"
           >
             <section
               className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
@@ -2682,8 +2686,10 @@ exports[` 3`] = `
             </section>
           </div>
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 hA-DSpZ"
+            className="Panel__PanelWrapper-sc-48epke-0 hKBkUJ"
+            height="100%"
             id="Menu 2"
+            width="100%"
           >
             <section
               className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
@@ -2931,7 +2937,7 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                               id="box-1"
                               onBlur={null}
                               onChange={null}
@@ -2954,7 +2960,7 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 dmFgcY"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cKLjDe"
                               id="box-2"
                               onBlur={null}
                               onChange={null}
@@ -2978,7 +2984,7 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                               id="box-3"
                               onBlur={null}
                               onChange={null}
@@ -3001,7 +3007,7 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                               id="box-4"
                               onBlur={null}
                               onChange={null}
@@ -3036,7 +3042,7 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                               id="box_long"
                               onBlur={null}
                               onChange={null}
@@ -3059,7 +3065,7 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
                               id="box_long2"
                               onBlur={null}
                               onChange={null}

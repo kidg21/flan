@@ -2,8 +2,10 @@
 
 exports[` 1`] = `
 <div
-  className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+  className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+  height="100%"
   id={null}
+  width="100%"
 >
   <section
     className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
