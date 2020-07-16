@@ -650,12 +650,12 @@ storiesOf("Templates/Modules", module)
               <TextInput
 
                 label="RFP Number"
-                value="19-12341234"
+                placeholder="i.e. 934209834"
               />
               <TextInput
 
                 label="RFP Name"
-                placeholder="New LightBox RFP"
+                placeholder="i.e. New LightBox RFP"
               />
             </FormSection>
 
@@ -675,55 +675,17 @@ storiesOf("Templates/Modules", module)
             <FormSection columns="2" >
               <SelectMenu
                 label="State"
-                placeholder=""
-                options={[{
-                  value: "Alabama",
-                  label: "Alabama",
-                }, {
-                  value: "Alaska",
-                  label: "Alaska",
-                }, {
-                  value: "Arizona",
-                  label: "Arizona",
-                }, {
-                  value: "Arkansas",
-                  label: "Arkansas",
-                }, {
-                  value: "California",
-                  label: "California",
-                }, {
-                  value: "Colorado",
-                  label: "Colorado",
-                }, {
-                  value: "Connecticut",
-                  label: "Connecticut",
-                }, {
-                  value: "Delaware",
-                  label: "Delaware",
-                }, {
-                  value: "Florida",
-                  label: "Florida",
-                }, {
-                  value: "Georgia",
-                  label: "Georgia",
-                }, {
-                  value: "Hawaii",
-                  label: "Hawaii",
-                }, {
-                  value: "Idaho",
-                  label: "Idaho",
-                },
-                ]}
+              
               />
               <TextInput
 
                 label="Zip"
               />
-              <TextInput
+              <SelectMenu
 
                 label="Property Type"
               />
-              <TextInput
+              <SelectMenu
 
                 label="Property Sub-Type"
               />
@@ -751,9 +713,9 @@ storiesOf("Templates/Modules", module)
         ]}
       >
         <Tabs data={tabRFPButtonsTwo} />
-        <Form >
+        
           <Grid columns="2" >
-            <div>
+            <Form>
               <FormSection title="Client Details">
                 <TextInput
 
@@ -778,52 +740,14 @@ storiesOf("Templates/Modules", module)
                 <SelectMenu
                   label="State"
                   placeholder=""
-                  options={[{
-                    value: "Alabama",
-                    label: "Alabama",
-                  }, {
-                    value: "Alaska",
-                    label: "Alaska",
-                  }, {
-                    value: "Arizona",
-                    label: "Arizona",
-                  }, {
-                    value: "Arkansas",
-                    label: "Arkansas",
-                  }, {
-                    value: "California",
-                    label: "California",
-                  }, {
-                    value: "Colorado",
-                    label: "Colorado",
-                  }, {
-                    value: "Connecticut",
-                    label: "Connecticut",
-                  }, {
-                    value: "Delaware",
-                    label: "Delaware",
-                  }, {
-                    value: "Florida",
-                    label: "Florida",
-                  }, {
-                    value: "Georgia",
-                    label: "Georgia",
-                  }, {
-                    value: "Hawaii",
-                    label: "Hawaii",
-                  }, {
-                    value: "Idaho",
-                    label: "Idaho",
-                  },
-                  ]}
                 />
                 <TextInput
 
                   label="Zip"
                 />
               </FormSection>
-            </div>
-            <div>
+            </Form>
+            <Form>
               <FormSection title="Bid Details">
                 <TextInput
 
@@ -845,9 +769,9 @@ storiesOf("Templates/Modules", module)
                 />
                 <TextInput type="textarea" label="Additional Notes" />
               </FormSection>
-            </div>
+            </Form>
           </Grid>
-        </Form>
+       
       </DialogBox>
     );
   })
@@ -862,7 +786,7 @@ storiesOf("Templates/Modules", module)
           },
           {
             id: "Create",
-            label: "Create RFP",
+            label: "Create Another",
           },
         ]}
       >
