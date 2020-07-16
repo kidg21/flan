@@ -2,7 +2,7 @@
 import React, { useRef, useState, useLayoutEffect, useMemo } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Portal } from "helpers";
+import { Portal, useId } from "helpers";
 
 // helper function, takes a number or string
 // outputs a string in "100px" format
@@ -15,13 +15,13 @@ function sanitizePixelValue(value) {
 }
 
 // flex or max-content?
-const AnchorWrapper = styled.a`
+const AnchorWrapper = styled.div`
   display: flex;
   flex: auto;
   width: max-content;
 `;
 
-const NonPortalWrapper = styled.a`
+const NonPortalWrapper = styled.div`
   position: relative;
   width: max-content;
 `;
@@ -140,7 +140,7 @@ const PortalPopper = ({
           >
             {children}
           </PopperWrapper>
-          <PopperBG onClick={onClose} />
+          {onClose ? <PopperBG onClick={onClose} /> : null}
         </Portal>
       ) : null}
     </React.Fragment>
@@ -164,7 +164,7 @@ const NonPortalPopper = ({
           <PopperWrapper id={`popper-wrapper${id}`} {...positionStyle}>
             {children}
           </PopperWrapper>
-          <PopperBG onClick={onClose} />
+          {onClose ? <PopperBG onClick={onClose} /> : null}
         </React.Fragment>
       ) : null}
     </NonPortalWrapper>
@@ -172,7 +172,8 @@ const NonPortalPopper = ({
 };
 
 const Popper = (props) => {
-  return props.portal ? <PortalPopper {...props} /> : <NonPortalPopper {...props} />;
+  const uId = useId(props.id);
+  return props.portal ? <PortalPopper {...props} id={uId} /> : <NonPortalPopper {...props} id={uId} />;
 };
 
 Popper.defaultProps = {

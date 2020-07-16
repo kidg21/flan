@@ -1,3 +1,116 @@
+/* eslint-disable react/jsx-filename-extension */
+import React, { useState } from "react";
+import Menu from "blocks/Menu";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Button from "atoms/Button";
+
+export default {
+  title: "Atoms/Menu",
+  includeStories: [],
+  decorators: [Padding],
+};
+
+const data = [
+  { id: "option 1", label: "option 1", onClick: () => { /* alert("option 1"); */ } },
+  {
+    id: "option 2", label: "option 2", onClick: () => { /* alert("option 2"); */ },
+    data: [
+      { id: "nested option 1", label: "nested option 1", onClick: () => { /* alert("nested option 1"); */ } },
+      {
+        id: "nested option 2", label: "nested option 2", onClick: () => { /* alert("nested option 2"); */ },
+        data: [
+          { id: "nested option 21", label: "nested option 21", onClick: () => { /* alert("nested option 21"); */ } },
+          { id: "nested option 22", label: "nested option 22", onClick: () => { /* alert("nested option 22"); */} },
+        ]
+      },
+    ]
+  },
+  { id: "option 3", label: "option 3", onClick: () => { alert("option 3"); } },
+];
+
+export const SimpleMenu = () => {
+  const [visible, setVisible] = useState(false);
+  return (
+    <Menu data={data} visible={visible} onClick={() => { setVisible(true); }} onClose={() => { setVisible(false); }} />
+  );
+};
+
+export const Position = () => {
+  const [visibleMenus, setVisibleMenus] = useState({});
+  return (
+    <Grid columns="2">
+      <Menu
+        id="menu-bottomRight"
+        portal={false}
+        data={data}
+        visible={visibleMenus.bottomRight}
+        onClick={() => {
+          setVisibleMenus((visible) => {
+            return { ...visible, bottomRight: !visible.bottomRight };
+          });
+        }}
+        onClose={() => {
+          setVisibleMenus((visible) => {
+            return { ...visible, bottomRight: false };
+          });
+        }}
+      />
+      <Menu
+        id="menu-bottomLeft"
+        position="bottomLeft"
+        portal={false}
+        data={data}
+        visible={visibleMenus.bottomLeft}
+        onClick={() => {
+          setVisibleMenus((visible) => {
+            return { ...visible, bottomLeft: !visible.bottomLeft };
+          });
+        }}
+        onClose={() => {
+          setVisibleMenus((visible) => {
+            return { ...visible, bottomLeft: false };
+          });
+        }}
+      />
+      {/* new row */}
+      <Menu
+        id="menu-topRight"
+        position="topRight"
+        data={data}
+        visible={visibleMenus.topRight}
+        onClick={() => {
+          setVisibleMenus((visible) => {
+            return { ...visible, topRight: !visible.topRight };
+          });
+        }}
+        onClose={() => {
+          setVisibleMenus((visible) => {
+            return { ...visible, topRight: false };
+          });
+        }}
+      />
+      <Menu
+        id="menu-topLeft"
+        position="topLeft"
+        portal
+        data={data}
+        visible={visibleMenus.topLeft}
+        onClick={() => {
+          setVisibleMenus((visible) => {
+            return { ...visible, topLeft: !visible.topLeft };
+          });
+        }}
+        onClose={() => {
+          setVisibleMenus((visible) => {
+            return { ...visible, topLeft: false };
+          });
+        }}
+      />
+    </Grid>
+  );
+};
+
 // /* eslint-disable linebreak-style */
 // /* eslint-disable react/jsx-filename-extension, security/detect-object-injection */
 // import React from "react";

@@ -8,13 +8,21 @@ import Button from "atoms/Button";
 import Text, {Title} from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Menu from "blocks/Menu";
+import * as stories from "blocks/Menu/Menu.stories";
 
 <Meta title="Atoms|Menu" component={Menu} />
 
 # Menu
 
-#### Menus display a list of choices on temporary surfaces.
+<Preview>
+  <Story name="Simple Menu" decorators={[Padding]}>{stories.SimpleMenu()}</Story>
+</Preview>
 
+<Preview>
+  <Story name="Simple Menu Position" decorators={[Padding]}>{stories.Position()}</Story>
+</Preview>
+
+#### Menus display a list of choices on temporary surfaces.
 <Preview withToolbar>
   <Story name="Standard">
   <Grid columns="3">
@@ -149,7 +157,10 @@ Menus should be positioned relative to the edge of the screen or browser. They t
           id: "delete"
         },
       ]}
-      position="bottomLeft" />}
+      position="bottomLeft">
+        <Button icon="options" isPlain isRound />
+      </Menu>
+      }
  />
  <Bar padding="2x" 
  left={
@@ -183,7 +194,10 @@ Menus should be positioned relative to the edge of the screen or browser. They t
           id: "delete",
         },
       ]}
-      position="bottomRight" />}
+      position="bottomRight">
+        <Button icon="options" isPlain isRound />
+      </Menu>
+      }
  />
  <Bar padding="2x" 
  left={
@@ -223,7 +237,9 @@ Menus should be positioned relative to the edge of the screen or browser. They t
           id: "delete",
         },
       ]}
-      position="topLeft" />}
+      position="topLeft" >
+        <Button icon="options" label="testing" isPlain isRound />
+      </Menu>}
  />
  </Card>
       </Grid>
