@@ -100,11 +100,7 @@ exports[` 2`] = `
         >
           <input
             checked={null}
-<<<<<<< HEAD
-            className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
-=======
-            className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
->>>>>>> develop
+            className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
             id="checkbox-id"
             onBlur={null}
             onChange={null}
