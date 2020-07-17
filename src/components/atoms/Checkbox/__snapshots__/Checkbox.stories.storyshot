@@ -7,7 +7,7 @@ exports[` 1`] = `
 >
   <input
     checked={null}
-    className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+    className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
     id="Checkbox"
     onBlur={null}
     onChange={null}
@@ -38,7 +38,7 @@ exports[` 2`] = `
   >
     <input
       checked={true}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
       id="Checked"
       onBlur={null}
       onChange={null}
@@ -61,7 +61,7 @@ exports[` 2`] = `
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
       id="Unchecked"
       onBlur={null}
       onChange={null}
@@ -107,7 +107,7 @@ exports[` 2`] = `
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 dmFgcY"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 dzYtcg"
       id="Disabled"
       onBlur={null}
       onChange={null}
@@ -140,7 +140,7 @@ exports[` 3`] = `
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
       id="Left Aligned"
       onBlur={null}
       onChange={null}
@@ -163,7 +163,7 @@ exports[` 3`] = `
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
       id="Right Aligned"
       onBlur={null}
       onChange={null}
@@ -229,7 +229,7 @@ exports[` 4`] = `
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
                 id="Checkbox-1"
                 onBlur={null}
                 onChange={null}
@@ -252,7 +252,7 @@ exports[` 4`] = `
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
                 id="Checkbox-2"
                 onBlur={null}
                 onChange={null}
@@ -275,7 +275,7 @@ exports[` 4`] = `
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
                 id="Checkbox-3"
                 onBlur={null}
                 onChange={null}
@@ -298,7 +298,7 @@ exports[` 4`] = `
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
                 id="Checkbox-4"
                 onBlur={null}
                 onChange={null}

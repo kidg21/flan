@@ -12,7 +12,7 @@ exports[` 1`] = `
   >
     <input
       autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+      className="TextInput__Input-sc-1fep8p8-2 eawNkz"
       cols=""
       disabled={false}
       id="Search_Standard-search-bar"
@@ -29,7 +29,7 @@ exports[` 1`] = `
     />
   </section>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+    className="Button__StyledButton-sc-1v7sls2-0 jPqmOm Search__SearchButton-sey9om-2 cnBOie"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -80,7 +80,7 @@ exports[` 2`] = `
   >
     <input
       autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+      className="TextInput__Input-sc-1fep8p8-2 eawNkz"
       cols=""
       disabled={false}
       id="Search_Results-search-bar"
@@ -97,7 +97,7 @@ exports[` 2`] = `
     />
   </section>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+    className="Button__StyledButton-sc-1v7sls2-0 jPqmOm Search__SearchButton-sey9om-2 cnBOie"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -139,7 +139,7 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
+      className="Container__BoxContainer-sc-1i4fzzd-1 cDexjT"
       height=""
       id="Search_Results-results-container"
     >
@@ -552,7 +552,7 @@ exports[` 3`] = `
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
         cols=""
         disabled={false}
         id="Search_Error-search-bar"
@@ -569,7 +569,7 @@ exports[` 3`] = `
       />
     </section>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+      className="Button__StyledButton-sc-1v7sls2-0 jPqmOm Search__SearchButton-sey9om-2 cnBOie"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -611,7 +611,7 @@ exports[` 3`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
+        className="Container__BoxContainer-sc-1i4fzzd-1 cDexjT"
         height=""
         id="Search_Error-results-container"
       >
@@ -1025,7 +1025,7 @@ exports[` 4`] = `
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
         cols=""
         disabled={false}
         id="Search_Offline-search-bar"
@@ -1042,7 +1042,7 @@ exports[` 4`] = `
       />
     </section>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+      className="Button__StyledButton-sc-1v7sls2-0 jPqmOm Search__SearchButton-sey9om-2 cnBOie"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -1084,7 +1084,7 @@ exports[` 4`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
+        className="Container__BoxContainer-sc-1i4fzzd-1 cDexjT"
         height=""
         id="Search_Offline-results-container"
       >
@@ -1151,7 +1151,7 @@ exports[` 4`] = `
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
         cols=""
         disabled={false}
         id="Search_BadConnection-search-bar"
@@ -1168,7 +1168,7 @@ exports[` 4`] = `
       />
     </section>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 fcVknO Search__SearchButton-sey9om-2 cnBOie"
+      className="Button__StyledButton-sc-1v7sls2-0 jPqmOm Search__SearchButton-sey9om-2 cnBOie"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -1210,7 +1210,7 @@ exports[` 4`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ldPzer"
+        className="Container__BoxContainer-sc-1i4fzzd-1 cDexjT"
         height=""
         id="Search_BadConnection-results-container"
       >

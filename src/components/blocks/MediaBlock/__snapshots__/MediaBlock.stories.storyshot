@@ -27,9 +27,9 @@ exports[` 1`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Media Block
@@ -75,9 +75,9 @@ exports[` 2`] = `
       className="MediaBlock__Body-k78dm4-2 koHCVu"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Media Block
@@ -114,9 +114,9 @@ exports[` 2`] = `
       className="MediaBlock__Body-k78dm4-2 dVIBIi"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Media Block (isReversed)
@@ -153,9 +153,9 @@ exports[` 2`] = `
       className="MediaBlock__Body-k78dm4-2 iaXsTF"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Media Block - Vertical
@@ -192,9 +192,9 @@ exports[` 2`] = `
       className="MediaBlock__Body-k78dm4-2 hPQEFx"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Media Block - Vertical (isReversed)
@@ -231,9 +231,9 @@ exports[` 2`] = `
       className="MediaBlock__Body-k78dm4-2 cdLTVU"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Media Block - Inline
@@ -270,9 +270,9 @@ exports[` 2`] = `
       className="MediaBlock__Body-k78dm4-2 hePDVU"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Media Block - Inline (isReversed)
