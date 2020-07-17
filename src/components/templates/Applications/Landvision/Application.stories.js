@@ -5,18 +5,21 @@ import { FullScreen } from "helpers/Display";
 import Panel from "layout/Panel";
 import Icon from "atoms/Icon";
 import Loader from "atoms/Loader";
-import Button from "atoms/Button";
+import Button, {ButtonGroup} from "atoms/Button";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
 import Template from "layout/Template";
 import Tabs, { TabItem } from "blocks/Tabs";
+import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
 import Form from "layout/Form";
+import Divider from "atoms/Divider";
 import MapBox from "layout/Map";
+import TextInput from "atoms/TextInput";
 import Media from "atoms/Media";
-import { FieldGroup } from "atoms/Field";
+import Field, { FieldGroup } from "atoms/Field";
 import Text, { Title, Link } from "base/Typography";
-import Card, { CardSection } from "elements/Card";
+import Card, { CardSection, CardGrid } from "elements/Card";
 import Modal from "layout/Modal";
 import ParcelMap from "images/maps/parcel-map.png";
 import ReportTemp from "images/rural.jpg";
@@ -164,55 +167,13 @@ storiesOf("Templates|Applications/Appraisal", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const menuDetails = [
-          {
-            id: "Overview",
-            title: "Overview",
-            isSelected: true,
-          },
-          {
-            id: "Define Site",
-            title: "Define Site",
-          },
-          {
-            id: "Assessment",
-            title: "Assessment",
-            disabled: true,
-          },
-          {
-            id: "Transactions",
-            title: "Transactions",
-            disabled: true,
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-            disabled: true,
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-            disabled: true,
-          },
-          {
-            id: "Review",
-            title: "Review",
-            disabled: true,
-          },
-          {
-            id: "Export",
-            title: "Export",
-            disabled: true,
-          },
-        ];
-
         const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-      
+
         const fieldData = [
           {
             label: "Project Name",
             value: "22902 Trabuco Rd",
-            onClick: true,
+            
           },
           {
             label: "Job Number",
@@ -253,20 +214,28 @@ storiesOf("Templates|Applications/Appraisal", module)
                 <Panel
                   padding="0"
                   header={
-                    <MockHeader />
+                    <MockHeader percentage="0" />
                   }
                 >
                   <Template
                     id="Assessment"
+                   
                     template="B_02"
-                    hasBorders
                     A={{
                       id: "A",
                       content: (
-                        <MockWorkflow
-                          title="Project Menu"
-                          data={menuDetails}
-                        />
+                        <List title="Project Menu" isInteractive isLight >
+                          <ListItem title="Overview" isSelected/>
+                          <ListItem title="Define Site" />
+                          <Divider/>
+                          <ListItem title="Assessment" disabled/>
+                          <ListItem title="Transactions" disabled/>
+                          <ListItem title="Zoning" disabled/>
+                          <ListItem title="Maps" disabled/>
+                          <ListItem title="Review" disabled/>
+                          <ListItem title="Export" disabled/>
+                          </List>
+                          
                       ),
                     }}
                     B={{
@@ -274,33 +243,38 @@ storiesOf("Templates|Applications/Appraisal", module)
                       content: (
                         <Template
                           id="Details"
-                          template="B_01"
-                          
+                          template="A_01"
+                 
                           A={{
                             id: "A",
                             content: (
-                              <Form title="Project Overview">
-                                <Bar padding="2x" center={{ 
-                                  content: (
-                                  <Grid columns="1">
-                              <FieldGroup columns="1" id="General Information" 
-                            data={fieldData}/>
-                            <Button label="Start Research and Define Site" variant="success"/>
-                            </Grid>),
-                            align: "center",
+                              <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="lg" text="Project Overview" weight="bold"/>} right={<Button icon="share_content" isRound isPlain/>}/>}>
+                              <Grid columns="60% 40%">
+                              <Bar
+                                  padding="2x"
+                                  center={{
+                                    content: (
+                                      <Form >
+                                      <Grid columns="1">
+                                        <FieldGroup
+                                          columns="1"
+                                          id="General Information"
+                                          data={fieldData}
+                                        />
+                                        <Bar center={<Button label="Start Research"  isSolid />}/>
+                                      </Grid>
+                                      </Form>),
+                                    align: "center",
                                   }}
-                            
-                            />
-                            </Form>)
+                                />
+              
+                                <MockDetails />
+                                
+                                </Grid>
+                              </Panel>)
                             ,
                           }}
-                          B={{
-                            id: "B",
-                            content: (
-                              <MockDetails
-                              />
-                            ),
-                          }}
+                          
                         />
                       ),
                     }}
@@ -320,51 +294,7 @@ storiesOf("Templates|Applications/Appraisal", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const menuDetails = [
-          {
-            id: "Overview",
-            title: "Overview",
-        
-          },
-          {
-            id: "Define Site",
-            title: "Define Site",
-            isSelected: true,
-          },
-          {
-            id: "Assessment",
-            title: "Assessment",
-            disabled: true,
-          },
-          {
-            id: "Transactions",
-            title: "Transactions",
-            disabled: true,
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-            disabled: true,
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-            disabled: true,
-          },
-          {
-            id: "Review",
-            title: "Review",
-            disabled: true,
-          },
-          {
-            id: "Export",
-            title: "Export",
-            disabled: true,
-          },
-        ];
-
         const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-        
 
         return (
           <Layout
@@ -383,20 +313,27 @@ storiesOf("Templates|Applications/Appraisal", module)
                 <Panel
                   padding="0"
                   header={
-                    <MockHeader />
+                    <MockHeader  percentage="0" />
                   }
                 >
                   <Template
-                    id="Assessment"
+                    id="Define"
                     template="B_02"
-                    hasBorders
                     A={{
                       id: "A",
                       content: (
-                        <MockWorkflow
-                          title="Project Menu"
-                          data={menuDetails}
-                        />
+                        <List title="Project Menu" isInteractive isLight >
+                          <ListItem title="Overview"/>
+                          <ListItem title="Define Site" isSelected/>
+                          <Divider/>
+                          <ListItem title="Assessment" disabled/>
+                          <ListItem title="Transactions" disabled/>
+                          <ListItem title="Zoning" disabled/>
+                          <ListItem title="Maps" disabled/>
+                          <ListItem title="Review" disabled/>
+                          <ListItem title="Export" disabled/>
+                          </List>
+                          
                       ),
                     }}
                     B={{
@@ -405,14 +342,143 @@ storiesOf("Templates|Applications/Appraisal", module)
                         <Template
                           id="Details"
                           template="B_01"
+                        
                           A={{
                             id: "A",
-                            content: <MapBox />,
+                            content: <Panel
+                            header={
+                              <Bar 
+                              padding="1x"
+                              contentAlign="center" left={{
+                                content: (<Text text="Select Parcels on Map to Define Site" size="lg"/>)}}
+                              right={{
+                                content: (
+                                <ButtonGroup columns="3"><Button alignCenter isPlain icon="layers" label="Layers"/><Button alignCenter isPlain icon="legend" label="Legend"/><Button alignCenter isPlain icon="sync" label="Reset"/></ButtonGroup>),
+                                align: "right",
+                                width: "fit-content",
+                              }}/>
+                            }
+                            padding="0"
+                            footer={<Bar 
+                              contentAlign="bottom" 
+                              left={{
+                              content: (
+                            <Icon icon="database" size="sm" />),
+                          width: "fit-content",
+                        }}
+                            center={{
+                              content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020"/>),
+                            align: "left",}}
+                            />}>
+                              <MapBox />
+                              </Panel>,
                           }}
                           B={{
                             id: "B",
                             content: (
-                             <Form title="Site Parcels"/>
+                              <Panel
+                              padding="0"
+                              footer={
+                                <Bar right={{
+                                  content:( <Button label="Save & Next" isSolid/>),
+                                }}/>
+                              }
+                              >
+                              <Form title="Site Parcels" >
+                                
+                                  <Card
+        title="42 Wallaby Way, Sydney, Australia"
+        description="APN: 93423438492038"
+        commands={[
+          {
+            id: "Command One",
+            label: "View Details",
+            onClick: action("Command One Clicked"),
+          }]}
+          body={
+       <FieldGroup
+        id="Group1"
+        columns="1"
+      >
+        <Field
+          id="Field 1"
+          label="Owner"
+          value="Forrest Gump"
+        />
+        <Field
+          id="Field 3"
+          label="Last Sale"
+          value="10/23/86"
+        />
+        <Field
+          id="Field 3"
+          label="Doc #"
+          value="837489274927"
+        />
+      </FieldGroup>}/>
+      <Card
+        title="42 Wallaby Way, Sydney, Australia"
+        description="APN: 93423438492038"
+        commands={[
+          {
+            id: "Command One",
+            label: "View Details",
+            onClick: action("Command One Clicked"),
+          }]}
+          body={
+       <FieldGroup
+        id="Group1"
+        columns="1"
+      >
+        <Field
+          id="Field 1"
+          label="Owner"
+          value="Forrest Gump"
+        />
+        <Field
+          id="Field 3"
+          label="Last Sale"
+          value="10/23/86"
+        />
+        <Field
+          id="Field 3"
+          label="Doc #"
+          value="837489274927"
+        />
+      </FieldGroup>}/>
+      <Card
+        title="42 Wallaby Way, Sydney, Australia"
+        description="APN: 93423438492038"
+        commands={[
+          {
+            id: "Command One",
+            label: "View Details",
+            onClick: action("Command One Clicked"),
+          }]}
+          body={
+       <FieldGroup
+        id="Group1"
+        columns="1"
+      >
+        <Field
+          id="Field 1"
+          label="Owner"
+          value="Forrest Gump"
+        />
+        <Field
+          id="Field 3"
+          label="Last Sale"
+          value="10/23/86"
+        />
+        <Field
+          id="Field 3"
+          label="Doc #"
+          value="837489274927"
+        />
+      </FieldGroup>}/>
+                                
+                              </Form>
+                              </Panel>
                             ),
                           }}
                         />
@@ -434,45 +500,6 @@ storiesOf("Templates|Applications/Appraisal", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const menuAssessment = [
-          {
-            id: "Overview",
-            title: "Overview",
-          },
-          {
-            id: "Define Site",
-            title: "Define Site",
-            post: {
-              type: "icon", icon: "check", variant: "success", size: "lg",
-            },
-          },
-          {
-            id: "Assessment",
-            title: "Assessment",
-            isSelected: true,
-          },
-          {
-            id: "Transactions",
-            title: "Transactions",
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-          },
-          {
-            id: "Review",
-            title: "Review",
-          },
-          {
-            id: "Export",
-            title: "Export",
-          },
-        ];
-
         const [activeSingleTab, setActiveSingleTab] = useState("tab1");
         const tabsAssessment = [
           {
@@ -534,20 +561,27 @@ storiesOf("Templates|Applications/Appraisal", module)
                 <Panel
                   padding="0"
                   header={
-                    <MockHeader />
+                    <MockHeader  percentage="25" />
                   }
                 >
                   <Template
                     id="Assessment"
                     template="B_02"
-                    hasBorders
                     A={{
                       id: "A",
                       content: (
-                        <MockWorkflow
-                          title="Project Menu"
-                          data={menuAssessment}
-                        />
+                        <List title="Project Menu" isInteractive isLight >
+                          <ListItem title="Overview"/>
+                          <ListItem title="Define Site" post={{type: "icon", icon: "check", variant: "success"}} />
+                          <Divider/>
+                          <ListItem title="Assessment" isSelected/>
+                          <ListItem title="Transactions" />
+                          <ListItem title="Zoning" />
+                          <ListItem title="Maps" />
+                          <ListItem title="Review" />
+                          <ListItem title="Export" />
+                          </List>
+                          
                       ),
                     }}
                     B={{
@@ -558,24 +592,58 @@ storiesOf("Templates|Applications/Appraisal", module)
                           template="B_01"
                           A={{
                             id: "A",
-                            content: <Grid columns="1">
-                              <Bar padding="0"
-                              left={{
+                            content: <Panel
+                            header={<Bar passing="0" 
+                            left={{
                                 content: (
-                              <Tabs>
-                                <TabItem label="Parcel 1" isSelected/>
-                                <TabItem label="Parcel 2"/>
-                              </Tabs>),
+                                  <Tabs>
+                                    <TabItem label="Parcel 1" isSelected/>
+                                    <TabItem label="Parcel 2"/>
+                                  </Tabs>
+
+                                ),
                                 width: "fit-content",
-                            }}/>
-                            <Form />
-                              </Grid>,
+                              }}
+                              />}
+                            padding="0"
+                            footer={<Bar 
+                              
+                              contentAlign="bottom" 
+                              left={{
+                              content: (
+                            <Icon icon="database" size="sm"/>),
+                          width: "fit-content",
+                        }}
+                            center={{
+                              content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020 " size="sm"/>),
+                            align: "left",}}
+                            />}>
+                              
+                              <Form>
+                              <Field label="Parcel Link" value={<Link text="808-23093"/>}/>
+                              
+                                <TextInput label="Assessment Year(s)"/>
+                                <TextInput label="Land Assessment"/>
+                                <TextInput label="Improvement Assessment"/>
+                                <TextInput label="Other Assessment"/>
+                                <TextInput label="Total Assessment"/>
+                                <TextInput label="Total Taxes"/>
+                                <Bar 
+                                contentAlign="bottom" 
+                                left={{
+                                  content:(
+                                  <Button label="Attachments" />),}}
+                              right={{
+                                content:(
+                                <Button label="Save & Next" isSolid/>),}}
+                              />
+                                </Form>
+                              </Panel>,
                           }}
                           B={{
                             id: "B",
                             content: (
-                              <MockDetails
-                              />
+                              <MockDetails />
                             ),
                           }}
                         />
@@ -596,57 +664,6 @@ storiesOf("Templates|Applications/Appraisal", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const menuDetails = [
-          {
-            id: "Overview",
-            title: "Overview",
-        
-          },
-          {
-            id: "Define Site",
-            title: "Define Site",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Assessment",
-            title: "Assessment",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Transactions",
-            title: "Transactions",
-            isSelected: true,
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-            
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-           
-          },
-          {
-            id: "Review",
-            title: "Review",
-            
-          },
-          {
-            id: "Export",
-            title: "Export",
-        
-          },
-        ];
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-        
-
         return (
           <Layout
             header={{
@@ -664,39 +681,103 @@ storiesOf("Templates|Applications/Appraisal", module)
                 <Panel
                   padding="0"
                   header={
-                    <MockHeader />
+                    <MockHeader  percentage="50" />
                   }
                 >
                   <Template
-                    id="Assessment"
+                    id="Zoning"
                     template="B_02"
-                    hasBorders
+                    
                     A={{
                       id: "A",
                       content: (
-                        <MockWorkflow
-                          title="Project Menu"
-                          data={menuDetails}
-                        />
+                        <List title="Project Menu" isInteractive isLight >
+                          <ListItem title="Overview"/>
+                          <ListItem title="Define Site" post={{type: "icon", icon: "check", variant: "success"}} />
+                          <Divider/>
+                          <ListItem title="Assessment" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Transactions" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Zoning" isSelected/>
+                          <ListItem title="Maps" />
+                          <ListItem title="Review" />
+                          <ListItem title="Export" />
+                          </List>
+                          
                       ),
                     }}
                     B={{
                       id: "B",
                       content: (
+                        
                         <Template
                           id="Details"
                           template="B_01"
                           A={{
                             id: "A",
-                            content: <MapBox />,
+                            content: <Panel
+                            padding="0"
+                            header={
+                              <Bar 
+                              padding="1x"
+                              contentAlign="center" left={{
+                                content: (<Button label="Request Data" isSolid />)}}
+                              right={
+                                <ButtonGroup columns="6"><Button alignCenter isPlain icon="measure" label="Measure"/><Button alignCenter isPlain icon="draw" label="Draw"/><Button alignCenter isPlain icon="layers" label="Layers"/><Button alignCenter isPlain icon="legend" label="Legend"/><Button alignCenter isPlain icon="photos" label="Image"/><Button alignCenter isPlain icon="sync" label="Reset"/></ButtonGroup>
+                              }/>
+                            }
+                            footer={<Bar 
+                              contentAlign="bottom" left={{
+                              content: (
+                            <Icon icon="database" size="sm"/>),
+                          width: "fit-content",
+                        }}
+                            center={{
+                              content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020 " size="sm"/>),
+                            align: "left",}}
+                            />}
+                            
+                            >
+                              <MapBox />
+                              </Panel>,
                           }}
                           B={{
                             id: "B",
                             content: (
-                             <Form title="Site Parcels"/>
+                              <Panel padding="0" 
+                              footer={<Bar 
+                                contentAlign="bottom" 
+                              right={{
+                                content:(
+                                <Button label="Save & Next" isSolid/>),}}
+                              />}
+                              header={
+                                <Bar left={{
+                                  content: (
+                              <Tabs>
+                                <TabItem label="Zone 1" isSelected/>
+                                <TabItem label="Zone 2"/>
+                              </Tabs>),
+                              width: "fit-content"}}
+                              right={{
+                                content: (<ButtonGroup columns="2"><Button icon="plus" isRound/><Button icon="photos" isPlain/></ButtonGroup>),
+                                width: "fit-content",
+                              }}/>}
+                              >
+                              <Form >
+                              <Field label="Zoning Authority" value={<Link text="City of Mission Viejo"/>}/>
+                                <TextInput label="Zoning District"/>
+                                <TextInput label="Zoning"/>
+                                <TextInput label="Zoning Type"/>
+                                <TextInput label="Zoned Density"/>
+                                <TextInput label="Zoning Summary"/>
+                                <TextInput label="Maximum Site Coverage"/>
+                                
+                                </Form>
+                              </Panel>
                             ),
                           }}
                         />
+                      
                       ),
                     }}
                   />
@@ -715,97 +796,9 @@ storiesOf("Templates|Applications/Appraisal", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const menuAssessment = [
-          {
-            id: "Overview",
-            title: "Overview",
-          },
-          {
-            id: "Define Site",
-            title: "Define Site",
-            post: {
-              type: "icon", icon: "check", variant: "success", size: "lg",
-            },
-          },
-          {
-            id: "Assessment",
-            title: "Assessment",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Transactions",
-            title: "Transactions",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-            isSelected: "true",
-          },
-          {
-            id: "Review",
-            title: "Review",
-          },
-          {
-            id: "Export",
-            title: "Export",
-          },
-        ];
 
         const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-        const tabsAssessment = [
-          {
-            id: "Parcel 1",
-            label: "Parcel 1",
-            isSelected: activeSingleTab === "tab1",
-            onClick: () => { setActiveSingleTab("tab1"); },
-          },
-          {
-            id: "Parcel 2",
-            label: "Parcel 2",
-            isSelected: activeSingleTab === "tab2",
-            onClick: () => { setActiveSingleTab("tab2"); },
-          },
-        ];
-
-        const fieldData = [
-          {
-            label: "Tax Authority Link",
-            value: "Orange County Assessor's Office",
-            onClick: true,
-          },
-          {
-            label: "Site Land Assessment",
-            value: "$7,216,214",
-          },
-          {
-            label: "Site Assessment Improvement",
-            value: "$4,829,284",
-          },
-          {
-            label: "Site Other Assessment",
-            value: "$0",
-          },
-          {
-            label: "Site Total Assessment",
-            value: "$12,045,498",
-          },
-          {
-            label: "Site Total Assessment",
-            value: "$121,926",
-          },
-        ];
+      
 
         return (
           <Layout
@@ -824,51 +817,118 @@ storiesOf("Templates|Applications/Appraisal", module)
                 <Panel
                   padding="0"
                   header={
-                    <MockHeader />
+                    <MockHeader  percentage="75" />
                   }
                 >
                   <Template
-                    id="Assessment"
-                    template="C_02"
-                    hasBorders
+                    id="Maps"
+                    template="B_02"
+                    
                     A={{
                       id: "A",
                       content: (
-                        <MockWorkflow
-                          title="Project Menu"
-                          data={menuAssessment}
-                        />
+                        <List title="Project Menu" isInteractive isLight >
+                          <ListItem title="Overview"/>
+                          <ListItem title="Define Site" post={{type: "icon", icon: "check", variant: "success"}} />
+                          <Divider/>
+                          <ListItem title="Assessment" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Transactions" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Zoning" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Maps" isSelected />
+                          <ListItem title="Review" />
+                          <ListItem title="Export" />
+                          </List>
+                          
                       ),
                     }}
                     B={{
                       id: "B",
                       content: (
+                        <Panel
+                        padding="0"
+                        header={<Bar
+                          padding="0"
+                          left={{
+                            content: (
+                              <Tabs>
+                                <TabItem label="Subject Map" isSelected />
+                                <TabItem label="Flood" />
+                                <TabItem label="Wetlands" />
+                                <TabItem label="Traffic & Transit" />
+                                <TabItem label="Market Boundaries" />
+                                <TabItem label="Crime" />
+                                <TabItem label="Schools" />
+                              </Tabs>),
+                            width: "fit-content",
+                          }}
+                        />}
+                        >
                         <Template
                           id="Details"
                           template="B_01"
                           A={{
                             id: "A",
-                            content: <Grid columns="1">
-                              <Bar padding="0"
-                              left={{
-                                content: (
-                              <Tabs>
-                                <TabItem label="Parcel 1" isSelected/>
-                                <TabItem label="Parcel 2"/>
-                              </Tabs>),
-                                width: "fit-content",
-                            }}/>
-                            <MapBox/>
-                              </Grid>,
-                          }}
+                              content: (
+                                <Panel
+                                padding="0"
+                                footer={<Bar
+                                  contentAlign="bottom" left={{
+                                  content: (
+                                <Icon icon="database" size="sm"/>),
+                              width: "fit-content",
+                            }}
+                                center={{
+                                  content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020 " size="sm"/>),
+                                align: "left",}}
+                                />}>
+                                  <Template
+                                  template="A_01"
+                                  isOverlay
+                                  A={{
+                                    id: "A",
+                                    content:(
+                                      <Bar 
+                                      padding="0"
+                                      contentAlign="center" 
+                         
+                                      right={
+                                        <Card ><ButtonGroup columns="4"><Button alignCenter isPlain icon="draw" /><Button alignCenter isPlain icon="measure" /><Button alignCenter isPlain icon="layers" /><Button alignCenter isPlain icon="legend" /></ButtonGroup></Card>
+                                      }/>
+                                    )
+                                  }}/>
+                                <MapBox/>
+                                </Panel>
+                              ),
+                            }}
                           B={{
                             id: "B",
-                            content: (
-                              <MockDetails
-                              />
-                            ),
+                            content: (  
+                              <Panel
+                              padding="0"
+                              footer={<Bar 
+                                contentAlign="bottom" 
+                              right={{
+                                content:(
+                                <Button label="Save & Next" isSolid/>),}}
+                              />}
+                              >                                
+                              <Form title="Subject Map" >
+                                <TextInput label="Dimensions"/>
+                                <TextInput label="Primary Frontage Street"/>
+                                <TextInput label="Primary Frontage Feet"/>
+                                <TextInput label="Secondary Frontage Street"/>
+                                <TextInput label="Secondary Frontage Feet"/>
+                                <Bar padding="1x" center={<ButtonGroup columns="2">
+                                <Button label="Map Images"/>
+                                <Button label="Save" isSolid/>
+                                
+                              </ButtonGroup>}/>
+                              </Form>
+                              </Panel>
+                             ),
                           }}
                         />
+                        </Panel>
                       ),
                     }}
                   />
@@ -887,57 +947,7 @@ storiesOf("Templates|Applications/Appraisal", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const menuReport = [
-          {
-            id: "Overview",
-            title: "Overview",
-          },
-          {
-            id: "Define Site",
-            title: "Define Site",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Assessment",
-            title: "Assessment",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Transactions",
-            title: "Transactions",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Review",
-            title: "Review",
-            isSelected: true,
-          },
-          {
-            id: "Export",
-            title: "Export",
-          },
-        ];
-
+        
         const [sectionState, setSectionState] = useState(true);
 
         const reportSections = [
@@ -1059,20 +1069,28 @@ storiesOf("Templates|Applications/Appraisal", module)
                 <Panel
                   padding="0"
                   header={
-                    <MockHeader />
+                    <MockHeader  percentage="100" />
                   }
                 >
                   <Template
                     id="Report"
                     template="C_03"
-                    hasBorders
+                    
                     A={{
                       id: "A",
                       content: (
-                        <MockWorkflow
-                          title="Project Menu"
-                          data={menuReport}
-                        />
+                        <List title="Project Menu" isInteractive isLight >
+                          <ListItem title="Overview"/>
+                          <ListItem title="Define Site" post={{type: "icon", icon: "check", variant: "success"}} />
+                          <Divider/>
+                          <ListItem title="Assessment" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Transactions" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Zoning" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Maps" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Review" isSelected/>
+                          <ListItem title="Export" />
+                          </List>
+                          
                       ),
                     }}
                     B={{
@@ -1142,61 +1160,6 @@ storiesOf("Templates|Applications/Appraisal", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const menuExport = [
-          {
-            id: "Overview",
-            title: "Overview",
-          },
-          {
-            id: "Define Site",
-            title: "Define Site",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Assessment",
-            title: "Assessment",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Transactions",
-            title: "Transactions",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Review",
-            title: "Review",
-            post: {
-              type: "icon", icon: "check", variant: "success",
-            },
-          },
-          {
-            id: "Export",
-            title: "Export",
-            isSelected: true,
-          },
-        ];
-
         return (
           <Layout
             header={{
@@ -1214,20 +1177,28 @@ storiesOf("Templates|Applications/Appraisal", module)
                 <Panel
                   padding="0"
                   header={
-                    <MockHeader />
+                    <MockHeader percentage="100" />
                   }
                 >
                   <Template
                     id="Report"
                     template="B_02"
-                    hasBorders
+                   
                     A={{
                       id: "A",
                       content: (
-                        <MockWorkflow
-                          title="Project Menu"
-                          data={menuExport}
-                        />
+                        <List title="Project Menu" isInteractive isLight >
+                          <ListItem title="Overview"/>
+                          <ListItem title="Define Site" post={{type: "icon", icon: "check", variant: "success"}} />
+                          <Divider/>
+                          <ListItem title="Assessment" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Transactions" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Zoning" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Maps" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Review" post={{type: "icon", icon: "check", variant: "success"}}/>
+                          <ListItem title="Export" isSelected/>
+                          </List>
+                          
                       ),
                     }}
                     B={{
@@ -1238,7 +1209,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: (
-                              <Template>
+                              <Grid columns="1">
                                 <Title
                                   text="You have completed your research for this project. Download and Publish your work."
                                   size="2xl"
@@ -1302,7 +1273,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                                   isSolid
                                   fullWidth
                                 />
-                              </Template>
+                              </Grid>
                             ),
                           }}
                         />

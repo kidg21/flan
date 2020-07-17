@@ -6,6 +6,7 @@ import Text, { Title, Link } from "base/Typography";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
 import IconBlock from "blocks/IconBlock";
+import ProgressIndicator from "elements/ProgressIndicator";
 import Divider from "atoms/Divider";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListSection, ListItem } from "blocks/List";
@@ -85,7 +86,7 @@ function MockHeaderGlobal({ menuClick }) {
       right={{
         content: (
           <Grid columns="max-content max-content" gap="4xl" align="center">
-            <Button icon="help_solid" variant="neutral" isRound isPlain onClick={doNothing} />
+            <Button icon="help_circle"  variant="neutral" isRound isPlain onClick={doNothing} />
             <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
           </Grid>
         ),
@@ -101,7 +102,7 @@ MockHeaderGlobal.defaultProps = {
   menuClick: null,
 };
 
-function MockHeader() {
+function MockHeader({ percentage }) {
   const testData = [{
     id: "a",
     label: "Action",
@@ -120,27 +121,23 @@ function MockHeader() {
   return (
     <Card
       id="Card_Header"
+  
     >
-      <CardSection variant="light">
+      <CardSection variant="light" padding="0">
         <Bar
-          padding="0"
           contentAlign="center"
+          padding="2x"
           left={{
-            content: <Title size="lg" text="22902 Trabuco Road • Mission Viejo, CA 92691 • Shopping Center • 171,143 sqft" weight="bold" />,
+            content: (
+              <Grid columns="1" gap="xs">
+            <Text text="Project" size="sm"/>
+            <Title weight="bold" size="lg" text="22902 Trabuco Road, Mission Viejo, CA 92691 • Shopping Center • 1402-20-12345" weight="bold" /></Grid>),
             align: "left",
           }}
           right={{
-            content: (
-              <IconBlock>
-                <Icon icon="share" onClick />
-                <Icon icon="bookmark" onClick />
-                <Menu
-                  data={testData}
-                  position="bottomLeft"
-                />
-              </IconBlock>
-            ),
-            width: "10rem",
+            content: <ProgressIndicator percentage={percentage}/>,
+            width: "fit-content",
+            align: "left",
           }}
         />
       </CardSection>
@@ -198,7 +195,7 @@ MockMenu.defaultProps = {
 function MockWorkflow({ data, title }) {
   return (
     <React.Fragment>
-      {data ? <List title={title} isInteractive data={data} />
+      {data ? <List title={title} isInteractive isLight data={data} />
         : (
           <List title={title} isInteractive>
             <ListItem
