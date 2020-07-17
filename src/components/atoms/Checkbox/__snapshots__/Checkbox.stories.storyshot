@@ -7,7 +7,11 @@ exports[` 1`] = `
 >
   <input
     checked={null}
+<<<<<<< HEAD
     className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+    className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
     id="Checkbox"
     onBlur={null}
     onChange={null}
@@ -38,7 +42,11 @@ exports[` 2`] = `
   >
     <input
       checked={true}
+<<<<<<< HEAD
       className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
       id="Checked"
       onBlur={null}
       onChange={null}
@@ -61,7 +69,11 @@ exports[` 2`] = `
   >
     <input
       checked={null}
+<<<<<<< HEAD
       className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
       id="Unchecked"
       onBlur={null}
       onChange={null}
@@ -84,7 +96,7 @@ exports[` 2`] = `
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 kvzrcf"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 biqtvl"
       id="Error"
       onBlur={null}
       onChange={null}
@@ -107,7 +119,11 @@ exports[` 2`] = `
   >
     <input
       checked={null}
+<<<<<<< HEAD
       className="Checkbox__CheckboxInput-sc-1gwp7am-2 dzYtcg"
+=======
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cKLjDe"
+>>>>>>> develop
       id="Disabled"
       onBlur={null}
       onChange={null}
@@ -140,7 +156,11 @@ exports[` 3`] = `
   >
     <input
       checked={null}
+<<<<<<< HEAD
       className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
       id="Left Aligned"
       onBlur={null}
       onChange={null}
@@ -163,7 +183,11 @@ exports[` 3`] = `
   >
     <input
       checked={null}
+<<<<<<< HEAD
       className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
       id="Right Aligned"
       onBlur={null}
       onChange={null}
@@ -229,7 +253,11 @@ exports[` 4`] = `
             >
               <input
                 checked={null}
+<<<<<<< HEAD
                 className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                 id="Checkbox-1"
                 onBlur={null}
                 onChange={null}
@@ -252,7 +280,11 @@ exports[` 4`] = `
             >
               <input
                 checked={null}
+<<<<<<< HEAD
                 className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                 id="Checkbox-2"
                 onBlur={null}
                 onChange={null}
@@ -275,7 +307,11 @@ exports[` 4`] = `
             >
               <input
                 checked={null}
+<<<<<<< HEAD
                 className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                 id="Checkbox-3"
                 onBlur={null}
                 onChange={null}
@@ -298,7 +334,11 @@ exports[` 4`] = `
             >
               <input
                 checked={null}
+<<<<<<< HEAD
                 className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                 id="Checkbox-4"
                 onBlur={null}
                 onChange={null}

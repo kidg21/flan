@@ -15,7 +15,11 @@ exports[` 1`] = `
     rows={null}
   >
     <section
+<<<<<<< HEAD
       className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+=======
+      className="Template__Region-sc-1i4nzbu-1 hXtoKP"
+>>>>>>> develop
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -258,7 +262,11 @@ exports[` 1`] = `
       </section>
     </section>
     <section
+<<<<<<< HEAD
       className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+=======
+      className="Template__Region-sc-1i4nzbu-1 czNRkH"
+>>>>>>> develop
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -638,8 +646,10 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    height="100%"
     id={null}
+    width="100%"
   >
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
@@ -733,7 +743,11 @@ exports[` 2`] = `
             >
               <input
                 checked={null}
+<<<<<<< HEAD
                 className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                 id="checkbox-id"
                 onBlur={null}
                 onChange={null}
@@ -1129,7 +1143,11 @@ exports[` 2`] = `
             >
               <input
                 checked={null}
+<<<<<<< HEAD
                 className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                 id="checkbox-id"
                 onBlur={null}
                 onChange={null}
@@ -1525,7 +1543,11 @@ exports[` 2`] = `
             >
               <input
                 checked={null}
+<<<<<<< HEAD
                 className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                 id="checkbox-id"
                 onBlur={null}
                 onChange={null}
@@ -1921,7 +1943,11 @@ exports[` 2`] = `
             >
               <input
                 checked={null}
+<<<<<<< HEAD
                 className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                 id="checkbox-id"
                 onBlur={null}
                 onChange={null}
@@ -2341,8 +2367,10 @@ exports[` 3`] = `
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+            className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+            height="100%"
             id="Menu 1"
+            width="100%"
           >
             <section
               className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
@@ -2682,8 +2710,10 @@ exports[` 3`] = `
             </section>
           </div>
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 hA-DSpZ"
+            className="Panel__PanelWrapper-sc-48epke-0 hKBkUJ"
+            height="100%"
             id="Menu 2"
+            width="100%"
           >
             <section
               className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
@@ -2931,7 +2961,11 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
+<<<<<<< HEAD
                               className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                               id="box-1"
                               onBlur={null}
                               onChange={null}
@@ -2954,7 +2988,11 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
+<<<<<<< HEAD
                               className="Checkbox__CheckboxInput-sc-1gwp7am-2 dzYtcg"
+=======
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cKLjDe"
+>>>>>>> develop
                               id="box-2"
                               onBlur={null}
                               onChange={null}
@@ -2978,7 +3016,11 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
+<<<<<<< HEAD
                               className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                               id="box-3"
                               onBlur={null}
                               onChange={null}
@@ -3001,7 +3043,11 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
+<<<<<<< HEAD
                               className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                               id="box-4"
                               onBlur={null}
                               onChange={null}
@@ -3036,7 +3082,11 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
+<<<<<<< HEAD
                               className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                               id="box_long"
                               onBlur={null}
                               onChange={null}
@@ -3059,7 +3109,11 @@ exports[` 3`] = `
                           >
                             <input
                               checked={null}
+<<<<<<< HEAD
                               className="Checkbox__CheckboxInput-sc-1gwp7am-2 jCwBNi"
+=======
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 doLGRg"
+>>>>>>> develop
                               id="box_long2"
                               onBlur={null}
                               onChange={null}

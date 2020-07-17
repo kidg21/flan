@@ -104,12 +104,10 @@ const templateHash = {
   },
   A_02: {
     setTemplate: [
-      "\". . .\"",
       "\". A .\"",
-      "\". . .\"",
     ].join("\n"),
     setColumns: "1fr auto 1fr",
-    setRows: "1fr auto 1fr",
+    setRows: "auto",
   },
   B_01: {
     setTemplate: [
@@ -143,6 +141,12 @@ const templateHash = {
     ].join("\n"),
     setColumns: "auto 1fr 12rem",
     setRows: "1fr 1rem",
+  },
+  B_06: {
+    setTemplate: [
+      "\"A B\"",
+    ].join("\n"),
+    setColumns: `1fr ${widthXL}`,
   },
   C_01: {
     setTemplate: [
@@ -287,6 +291,7 @@ function Template({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={A.overflow}
             >
               {A.content}
             </Region>
@@ -298,6 +303,7 @@ function Template({
               gridArea={template ? "B" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={B.overflow}
             >
               {B.content}
             </Region>
@@ -309,6 +315,7 @@ function Template({
               gridArea={template ? "C" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={C.overflow}
             >
               {C.content}
             </Region>
@@ -320,6 +327,7 @@ function Template({
               gridArea={template ? "D" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={D.overflow}
             >
               {D.content}
             </Region>
@@ -331,6 +339,7 @@ function Template({
               gridArea={template ? "E" : null}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={E.overflow}
             >
               {E.content}
             </Region>
@@ -344,24 +353,29 @@ Template.propTypes = {
   A: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   B: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   C: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   children: PropTypes.node,
   classname: PropTypes.string,
   D: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   E: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,

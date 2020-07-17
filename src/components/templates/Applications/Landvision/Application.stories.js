@@ -21,7 +21,7 @@ import Field, { FieldGroup } from "atoms/Field";
 import Text, { Title, Link } from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Modal from "layout/Modal";
-import ParcelMap from "images/maps/parcel-map.png";
+import ParcelMap from "images/maps/map-parcel.png";
 import ReportTemp from "images/rural.jpg";
 import {
   MockData,
