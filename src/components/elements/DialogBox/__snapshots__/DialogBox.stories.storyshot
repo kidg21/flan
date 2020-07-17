@@ -4,13 +4,13 @@ exports[` 1`] = `
 <div
   className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
   href={null}
-  id="storyshots_101"
-  media={null}
+  id="storyshots_181"
+  media=""
   onClick={null}
 >
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-    id="storyshots_101-Header"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+    id="storyshots_181-Header"
     onClick={null}
   >
     <div
@@ -21,20 +21,26 @@ exports[` 1`] = `
       <div
         className="Bar__Slot-icfo76-1 RjiBe"
       >
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 hSytIY"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
         >
-          Clear and Specific Title
-        </h5>
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dSpuln"
+            fontSize="1.15em"
+            fontWeight={500}
+            letterSpacing="0px"
+          >
+            Clear and Specific Title
+          </h5>
+        </section>
       </div>
     </div>
   </section>
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-    id="storyshots_101-Body"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+    id="storyshots_181-Body"
     onClick={null}
   >
     <p
@@ -48,7 +54,7 @@ exports[` 1`] = `
     </p>
   </section>
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
     id={null}
     onClick={null}
   >
@@ -58,7 +64,7 @@ exports[` 1`] = `
       rows={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bdaVXm DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+        className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
         disabled={false}
         htmlFor={null}
         id="Negative"
@@ -84,7 +90,7 @@ exports[` 1`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+        className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
         disabled={false}
         htmlFor={null}
         id="Affirmative"
@@ -155,13 +161,13 @@ exports[` 2`] = `
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_102"
-        media={null}
+        id="storyshots_182"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_102-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_182-Header"
           onClick={null}
         >
           <div
@@ -172,20 +178,26 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Are you sure?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
+                  fontSize="1.15em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Are you sure?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_102-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_182-Body"
           onClick={null}
         >
           <p
@@ -199,7 +211,7 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
           id={null}
           onClick={null}
         >
@@ -209,7 +221,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -235,7 +247,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -300,13 +312,13 @@ exports[` 2`] = `
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_103"
-        media={null}
+        id="storyshots_183"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_103-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_183-Header"
           onClick={null}
         >
           <div
@@ -317,20 +329,26 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Reset Settings?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
+                  fontSize="1.15em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Reset Settings?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_103-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_183-Body"
           onClick={null}
         >
           <p
@@ -344,7 +362,7 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
           id={null}
           onClick={null}
         >
@@ -354,7 +372,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -380,7 +398,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -445,13 +463,13 @@ exports[` 2`] = `
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_104"
-        media={null}
+        id="storyshots_184"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_104-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_184-Header"
           onClick={null}
         >
           <div
@@ -462,20 +480,26 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Reset Settings?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
+                  fontSize="1.15em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Reset Settings?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_104-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_184-Body"
           onClick={null}
         >
           <p
@@ -489,7 +513,7 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
           id={null}
           onClick={null}
         >
@@ -499,7 +523,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -525,7 +549,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -595,13 +619,13 @@ Array [
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_105"
-        media={null}
+        id="storyshots_185"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_105-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_185-Header"
           onClick={null}
         >
           <div
@@ -612,20 +636,26 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Reset Settings?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
+                  fontSize="1.15em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Reset Settings?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_105-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_185-Body"
           onClick={null}
         >
           <p
@@ -639,7 +669,7 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
           id={null}
           onClick={null}
         >
@@ -740,13 +770,13 @@ Array [
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_106"
-        media={null}
+        id="storyshots_186"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_106-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_186-Header"
           onClick={null}
         >
           <div
@@ -757,20 +787,26 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Reset Settings?
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
+                  fontSize="1.15em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Reset Settings?
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_106-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_186-Body"
           onClick={null}
         >
           <p
@@ -784,7 +820,7 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
           id={null}
           onClick={null}
         >
@@ -794,7 +830,7 @@ Array [
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -855,20 +891,20 @@ Array [
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 bIzuts"
   id={null}
   rows={null}
 >
   <div
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_107"
-    media={null}
+    id="storyshots_187"
+    media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-      id="storyshots_107-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+      id="storyshots_187-Header"
       onClick={null}
     >
       <div
@@ -879,20 +915,26 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h5
-            className="Typography__TitleText-sc-19auepv-2 hSytIY"
-            fontSize="1.15em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
           >
-            Default Dialog
-          </h5>
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 dSpuln"
+              fontSize="1.15em"
+              fontWeight={500}
+              letterSpacing="0px"
+            >
+              Default Dialog
+            </h5>
+          </section>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-      id="storyshots_107-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+      id="storyshots_187-Body"
       onClick={null}
     >
       <p
@@ -906,7 +948,7 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
       id={null}
       onClick={null}
     >
@@ -916,7 +958,7 @@ exports[` 4`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bdaVXm DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -942,7 +984,7 @@ exports[` 4`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -973,13 +1015,13 @@ exports[` 4`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_108"
-    media={null}
+    id="storyshots_188"
+    media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-      id="storyshots_108-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+      id="storyshots_188-Header"
       onClick={null}
     >
       <div
@@ -990,20 +1032,26 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h5
-            className="Typography__TitleText-sc-19auepv-2 hSytIY"
-            fontSize="1.15em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
           >
-            Successful Dialog
-          </h5>
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 dSpuln"
+              fontSize="1.15em"
+              fontWeight={500}
+              letterSpacing="0px"
+            >
+              Successful Dialog
+            </h5>
+          </section>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-      id="storyshots_108-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+      id="storyshots_188-Body"
       onClick={null}
     >
       <p
@@ -1017,7 +1065,7 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
       id={null}
       onClick={null}
     >
@@ -1084,13 +1132,13 @@ exports[` 4`] = `
   <div
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_109"
-    media={null}
+    id="storyshots_189"
+    media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-      id="storyshots_109-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+      id="storyshots_189-Header"
       onClick={null}
     >
       <div
@@ -1101,20 +1149,26 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h5
-            className="Typography__TitleText-sc-19auepv-2 hSytIY"
-            fontSize="1.15em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
           >
-            Error Dialog
-          </h5>
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 dSpuln"
+              fontSize="1.15em"
+              fontWeight={500}
+              letterSpacing="0px"
+            >
+              Error Dialog
+            </h5>
+          </section>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-      id="storyshots_109-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+      id="storyshots_189-Body"
       onClick={null}
     >
       <p
@@ -1128,7 +1182,7 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
       id={null}
       onClick={null}
     >

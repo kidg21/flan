@@ -16,7 +16,8 @@ exports[` 1`] = `
     Label
   </label>
   <a
-    className="Typography__LinkText-sc-19auepv-1 fZvALr"
+    className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+    disabled={false}
     fontSize="0.876em"
     fontWeight={600}
     href={null}
@@ -36,9 +37,9 @@ exports[` 1`] = `
     Text
   </p>
   <h3
-    className="Typography__TitleText-sc-19auepv-2 iSdWhJ"
+    className="Typography__TitleText-sc-19auepv-2 kcuwPy"
     fontSize="1.45em"
-    fontWeight={600}
+    fontWeight={500}
     letterSpacing="0px"
   >
     Title
@@ -196,7 +197,8 @@ exports[` 2`] = `
     rows={null}
   >
     <a
-      className="Typography__LinkText-sc-19auepv-1 fZvALr"
+      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+      disabled={false}
       fontSize="0.876em"
       fontWeight={600}
       href={null}
@@ -207,7 +209,8 @@ exports[` 2`] = `
       Normal Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 fbMYDr"
+      className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+      disabled={false}
       fontSize="1.15em"
       fontWeight={600}
       href={null}
@@ -218,7 +221,8 @@ exports[` 2`] = `
       Large Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 cnagos"
+      className="Typography__LinkText-sc-19auepv-1 cnLHpC"
+      disabled={false}
       fontSize="1.25em"
       fontWeight={600}
       href={null}
@@ -229,7 +233,8 @@ exports[` 2`] = `
       XLarge Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 eWPUBW"
+      className="Typography__LinkText-sc-19auepv-1 eIgJvk"
+      disabled={false}
       fontSize="1.45em"
       fontWeight={600}
       href={null}
@@ -304,9 +309,9 @@ exports[` 3`] = `
       Regular Title
     </h6>
     <h6
-      className="Typography__TitleText-sc-19auepv-2 fnUHAi"
+      className="Typography__TitleText-sc-19auepv-2 gymxyt"
       fontSize="1em"
-      fontWeight={600}
+      fontWeight={500}
       letterSpacing="0px"
     >
       Bold Title
@@ -351,7 +356,8 @@ exports[` 3`] = `
     rows={null}
   >
     <a
-      className="Typography__LinkText-sc-19auepv-1 hJgudu"
+      className="Typography__LinkText-sc-19auepv-1 dzmSHo"
+      disabled={false}
       fontSize="0.876em"
       fontWeight={300}
       href={null}
@@ -362,7 +368,8 @@ exports[` 3`] = `
       Light Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 fZvALr"
+      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+      disabled={false}
       fontSize="0.876em"
       fontWeight={600}
       href={null}
@@ -373,7 +380,8 @@ exports[` 3`] = `
       Regular Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 fZvALr"
+      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+      disabled={false}
       fontSize="0.876em"
       fontWeight={600}
       href={null}

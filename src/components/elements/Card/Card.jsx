@@ -47,7 +47,7 @@ const CardSectionWrapper = styled.section`
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};
-  a {
+  + a {
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
   }};
@@ -60,12 +60,13 @@ const CardSectionWrapper = styled.section`
 `;
 
 const CardMedia = styled(Media)`
+  display: inherit;
+  align-items: center;
   * {
     border-radius: ${(props) => {
     return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
   }};
     }
-  }
 `;
 
 const CardWrapper = styled.div`
@@ -113,9 +114,9 @@ const CardWrapper = styled.div`
 `;
 
 const CardGridWrapper = styled(Grid)`
-  /** TODO: Prevent Cards from being cropped in norrow containers */
-  /* grid-template-columns: repeat(auto-fill,minmax(auto, 14rem)); */
-  /* justify-content: space-between; */
+  grid-template-columns: ${(props) => {
+    return props.columns || "repeat(auto-fill, minmax(14rem, 1fr))";
+  }};
   padding: 1rem;
   ${CardWrapper} {
     height: 100%;
@@ -131,7 +132,7 @@ const CardGridWrapper = styled(Grid)`
     return props.theme.shadows.dropShadow2;
   }};
     }
-    ${CardSectionWrapper}:not(${Media}) {
+    ${CardSectionWrapper}:not(${CardMedia}) {
       &:first-of-type {
         padding: 0.75em 1em 0.5em;
       }
@@ -184,7 +185,7 @@ function ExpandingSection({
               content: (
                 <React.Fragment>
                   {title ? <Title size="lg" text={title} weight="bold" /> : null}
-                  {description ? <Text  text={description} /> : null}
+                  {description ? <Text text={description} /> : null}
                 </React.Fragment>
               ),
               align: "left",
@@ -194,7 +195,8 @@ function ExpandingSection({
               width: "max-content",
             } : null}
           />
-        ) : null}
+        ) : null
+      }
     >
       {children}
     </Expander>
@@ -232,6 +234,10 @@ function CardSection({
     sectionColor = "inverse";
     sectionColorHover = "inverseHover";
     sectionBackground = variant.toLowerCase();
+    if (variant === "light") {
+      sectionColor = "";
+      sectionColorHover = "";
+    }
   }
   let sectionPadding;
   const numPadding = padding ? parseInt(padding, 10) : NaN;
@@ -350,11 +356,11 @@ function Card({
   if (onClick) {
     centerContent = (
       <LinkedWrapper >
-        <React.Fragment >
+        <Grid columns="1">
           {title ? <Title size="xl" text={title} /> : null}
           {description ? (<Text size="sm" text={description} />
           ) : null}
-        </React.Fragment>
+        </Grid>
       </LinkedWrapper>
     );
   } else {
@@ -363,7 +369,8 @@ function Card({
         {title ? <Title size="xl" text={title}  /> : null}
         {description ? (<Text size="sm" text={description} />
         ) : null}
-      </React.Fragment>);
+      </React.Fragment>
+    );
   }
 
   let headerSection;
@@ -388,7 +395,7 @@ function Card({
       );
     } else {
       headerSection = (
-        <CardSection id={`${uId}-Header`} variant={variant} >
+        <CardSection id={`${uId}-Header`} variant={variant}>
           {badgeLabel ? <Badge label={badgeLabel} /> : null}
           <Bar
             padding="0"
@@ -445,13 +452,13 @@ function Card({
         <Bar
           padding="0"
           contentAlign="bottom"
-          left={
+          left={(
             <Command
               label={commands[0].label}
               onClick={commands[0].onClick}
               disabled={commands[0].disabled}
             />
-          }
+          )}
         />
       );
     }
@@ -474,19 +481,19 @@ function Card({
       {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
       {body ? (
-        <CardSection id={`${uId}-Body`} onClick={onClick}>
-          <Text text={body} />
+        <CardSection id={`${uId}-Body`}>
+          <Text>{body}</Text>
         </CardSection>
       ) : null}
       {children}
-      {commandElements ? <CardSection id={`${uId}-Footer`} footer>{commandElements}</CardSection> : null}
+      {commandElements ? <CardSection id={`${uId}-Footer`} footer={<React.Fragment />}>{commandElements}</CardSection> : null}
     </CardWrapper>
   );
 }
 
 Card.propTypes = {
   badgeLabel: PropTypes.string,
-  body: PropTypes.string,
+  body: PropTypes.node,
   children: PropTypes.node,
   className: PropTypes.string,
   href: PropTypes.node,
@@ -514,24 +521,24 @@ Card.propTypes = {
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
-  badgeLabel: null,
-  body: null,
+  badgeLabel: "",
+  body: "",
   children: null,
   className: null,
   commands: null,
-  description: null,
+  description: "",
   href: null,
-  icon: null,
-  id: null,
+  icon: "",
+  id: "",
   isInverse: false,
-  label: null,
-  mediaDesc: null,
-  media: null,
-  more: "",
+  label: "",
+  mediaDesc: "",
+  media: "",
+  more: null,
   onClick: null,
   padding: "2x",
   shadow: null,
-  title: null,
+  title: "",
   variant: null,
 };
 
@@ -546,8 +553,8 @@ function CardGrid({
       id={id}
       rows={rows}
     >
-      {children ||
-        data.map((item) => {
+      {children
+        || data.map((item) => {
           return (
             <Card
               body={item.body}

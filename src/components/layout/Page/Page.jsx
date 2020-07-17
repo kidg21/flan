@@ -18,7 +18,7 @@ const PageWrapper = styled(Grid)`
     return props.setTemplate || "";
   }};
   grid-template-columns: ${(props) => {
-    return props.setColumns || "initial";
+    return props.setColumns || "100%";
   }};
   grid-column-gap: ${(props) => {
     return props.setColumnGap || "";
@@ -49,7 +49,7 @@ const PageWrapper = styled(Grid)`
     &:before {
       white-space: pre;
       ${PlaceholderText}
-      content: "{ Page }";
+      content: "{ Template }";
     }
   }
 `;
@@ -120,9 +120,16 @@ const Region = styled.section`
   height: inherit;
   overflow: auto;
   box-shadow: ${(props) => {
-    return props.stateCards ? props.theme.shadows.dropShadow2 : props.theme.shadows.outlineShadow;
+    return props.theme.shadows[props.regionShadow];
   }};
+  padding: 1px;
   pointer-events: initial;
+  &:focus {
+    outline: ${(props) => {
+    return `1px solid ${props.theme.palette.selected}`;
+  }};
+  outline-offset: -1px;
+  }
   &:empty {
     &:before {
       ${PlaceholderText}
@@ -139,55 +146,109 @@ const Region = styled.section`
   }
 `;
 
+const widthXS = "12rem";
+const widthSM = "18rem";
+const widthMD = "24rem";
+const widthLG = "30rem";
+const widthXL = "36rem";
+
 const templateHash = {
   A_01: {
     setTemplate: "\n\"A\"\n",
     setColumns: "1fr",
     setRows: "auto",
   },
+  A_02: {
+    setTemplate: [
+      "\". . .\"",
+      "\". A .\"",
+      "\". . .\"",
+    ].join("\n"),
+    setColumns: "1fr auto 1fr",
+    setRows: "1fr auto 1fr",
+  },
   B_01: {
     setTemplate: [
       "\"A B\"",
-      "\"A .\"",
     ].join("\n"),
-    setColumns: "1fr 1fr",
-    setRows: "auto auto",
+    setColumns: `1fr ${widthMD}`,
+  },
+  B_02: {
+    setTemplate: [
+      "\"A B\"",
+    ].join("\n"),
+    setColumns: `${widthXS} 1fr`,
+  },
+  B_03: {
+    setTemplate: [
+      "\"A\"",
+      "\"B\"",
+    ].join("\n"),
+    setRows: "auto 1fr",
+  },
+  B_04: {
+    setTemplate: [
+      "\"A B\"",
+    ].join("\n"),
+    setColumns: `${widthMD} 1fr`,
   },
   C_01: {
     setTemplate: [
-      "\". . A . .\"",
-      "\". B B B .\"",
-      "\"C C C C C\"",
+      "\"A A A\"",
+      "\"B B C\"",
     ].join("\n"),
-    setColumns: "1fr 1fr 1fr 1fr 1fr",
-    setRows: "1fr 1fr 1fr",
+    setColumns: `${widthXS} 1fr 1fr`,
+    setRows: "auto 1fr",
+  },
+  C_02: {
+    setTemplate: [
+      "\"A B\"",
+      "\"A C\"",
+    ].join("\n"),
+    setColumns: `${widthXS} 1fr`,
+    setRows: "auto 1fr",
+  },
+  C_03: {
+    setTemplate: [
+      "\"A B C\"",
+    ].join("\n"),
+    setColumns: `${widthXS} ${widthSM} 1fr`,
+    setRows: "1fr",
   },
   D_01: {
     setTemplate: [
+      "\"A A B\"",
       "\"A A C\"",
-      "\"D . C\"",
-      "\"B B B\"",
+      "\"D D D\"",
     ].join("\n"),
-    setColumns: "1fr 1fr 3fr",
-    setRows: "3fr 1fr 1fr",
+    setColumns: "auto 1fr 3fr",
+    setRows: "3fr 1fr auto",
+  },
+  D_02: {
+    setTemplate: [
+      "\"A B D\"",
+      "\"A C D\"",
+    ].join("\n"),
+    setColumns: `${widthXS} 1fr ${widthXL}`,
+    setRows: "auto 1fr",
   },
   E_01: {
     setTemplate: [
-      "\"C D A\"",
-      "\"B B B\"",
+      "\"A A A\"",
+      "\"B C D\"",
       "\"E E E\"",
     ].join("\n"),
-    setColumns: "2fr 5fr 1fr",
-    setRows: "1fr auto auto",
+    setColumns: "1fr 5fr 2fr",
+    setRows: "auto 1fr auto",
   },
   E_02: {
     setTemplate: [
-      "\"A B B\"",
-      "\"A D C\"",
-      "\"A D C\"",
-      "\"A E C\"",
+      "\"A B B B\"",
+      "\"A C C E\"",
+      "\"A C C E\"",
+      "\"A D D E\"",
     ].join("\n"),
-    setColumns: "10rem 4fr 20rem",
+    setColumns: `${widthXS} ${widthXS} 1fr ${widthMD}`,
     setRows: "auto 1fr 1fr auto",
   },
   E_03: {
@@ -200,15 +261,16 @@ const templateHash = {
       "\". . . . .\"",
     ].join("\n"),
     setColumns: "auto 2fr 1fr 1fr auto",
-    setRows: "auto auto auto auto auto 1fr",
+    setRows: "max-content max-content max-content max-content max-content 1fr",
   },
 };
 
 function Page({
-  A, B, C, children, classname, D, stateCards, E, id, isOverlay, template,
+  A, B, C, D, E, children, classname, hasBorders, hasShadows, id, isOverlay, template,
 }) {
   let backgroundColor;
   let pointerEvents;
+  let regionShadow;
   let setColumnGap;
   let setColumns;
   let setHeight;
@@ -230,10 +292,14 @@ function Page({
     setColumnGap = "1rem";
     setRowGap = "1rem";
   }
-  if (stateCards) {
+  if (hasBorders || hasShadows) {
     setPadding = "1rem";
     setColumnGap = "1rem";
     setRowGap = "1rem";
+    regionShadow = "outlineShadow";
+    if (hasShadows) {
+      regionShadow = "dropShadow2";
+    }
   }
   if (isOverlay) {
     backgroundColor = "none";
@@ -265,7 +331,8 @@ function Page({
               id={A.id || "A"}
               placeholder="A"
               gridArea={template ? "A" : ""}
-              stateCards={stateCards}
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {A.content}
             </Region>
@@ -275,7 +342,8 @@ function Page({
               id={B.id || "B"}
               placeholder="B"
               gridArea={template ? "B" : ""}
-              stateCards={stateCards}
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {B.content}
             </Region>
@@ -285,7 +353,8 @@ function Page({
               id={C.id || "C"}
               placeholder="C"
               gridArea={template ? "C" : ""}
-              stateCards={stateCards}
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {C.content}
             </Region>
@@ -295,7 +364,8 @@ function Page({
               id={D.id || "D"}
               placeholder="D"
               gridArea={template ? "D" : ""}
-              stateCards={stateCards}
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {D.content}
             </Region>
@@ -305,7 +375,8 @@ function Page({
               id={E.id || "E"}
               placeholder="E"
               gridArea={template ? "E" : null}
-              stateCards={stateCards}
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {E.content}
             </Region>

@@ -1,11 +1,12 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React from "react";
+import React, { useState } from "react";
 import { FullScreen } from "helpers/Display";
 import Bar from "layout/Bar";
 import Card, { CardGrid } from "elements/Card";
 import Panel from "layout/Panel";
 import Title from "base/Typography";
+import SearchBar from "blocks/Search";
 
 storiesOf("Layout|Panel", module)
   .addDecorator(FullScreen)

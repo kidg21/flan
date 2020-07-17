@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
@@ -184,7 +185,6 @@ function TextInput({
     messageColor = "alert";
   }
 
-
   return (
     <TextInputContainer
       className={className}
@@ -299,7 +299,7 @@ TextInput.defaultProps = {
   rows: "",
   transparent: false,
   type: "text",
-  value: null,
+  value: undefined,
   warning: "",
 };
 

@@ -53,10 +53,10 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   -webkit-appearance: none;
   &:checked {
     border: 0.32em solid ${(props) => {
-      return (
-        props.theme.palette.selected
-      );
-    }};
+    return (
+      props.theme.palette.selected
+    );
+  }};
   &:before {
     margin: 0 -0.1em 0em 0;
 
@@ -219,7 +219,7 @@ Radio.propTypes = {
   onFocus: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
-  value: PropTypes.string,
+  value: PropTypes.any,
 };
 
 Radio.defaultProps = {
@@ -249,7 +249,7 @@ RadioGroup.propTypes = {
     onBlur: PropTypes.func,
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
-    value: PropTypes.string,
+    value: PropTypes.any,
   })),
   disabled: PropTypes.bool,
   error: PropTypes.string,

@@ -11,7 +11,7 @@ exports[` 1`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Standard_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -23,9 +23,9 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -38,12 +38,12 @@ exports[` 1`] = `
           className="Menu__MenuBG-sc-17iwn6x-4 hjUiBO"
           onClick={[Function]}
         />
-        <a
+        <div
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -81,7 +81,7 @@ exports[` 1`] = `
           </button>
           <div
             className="Menu__MenuPopper-sc-17iwn6x-3 hMueFt"
-            id="menupopper-storyshots_91"
+            id="menupopper-storyshots_158"
             onClick={null}
             onMouseLeave={[Function]}
             transform="translate(-100%, -5%)"
@@ -89,22 +89,22 @@ exports[` 1`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_96"
-              media={null}
+              id="storyshots_163"
+              media=""
               onClick={null}
             >
               <ul
-                className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
-                id="listwrapper-storyshots_91"
+                className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+                id="listwrapper-storyshots_158"
               >
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
-                  id="item-storyshots_92"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
+                  id="item-storyshots_159"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -118,32 +118,27 @@ exports[` 1`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
-                  id="item-storyshots_93"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
+                  id="item-storyshots_160"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -157,32 +152,27 @@ exports[` 1`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
-                  id="item-storyshots_94"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
+                  id="item-storyshots_161"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -196,32 +186,27 @@ exports[` 1`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
-                  id="item-storyshots_95"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
+                  id="item-storyshots_162"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -235,20 +220,15 @@ exports[` 1`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -256,7 +236,7 @@ exports[` 1`] = `
               </ul>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     <div
@@ -294,7 +274,7 @@ exports[` 2`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Icon_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -306,9 +286,9 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -321,12 +301,12 @@ exports[` 2`] = `
           className="Menu__MenuBG-sc-17iwn6x-4 hjUiBO"
           onClick={[Function]}
         />
-        <a
+        <div
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -372,22 +352,22 @@ exports[` 2`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_97"
-              media={null}
+              id="storyshots_164"
+              media=""
               onClick={null}
             >
               <ul
-                className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
                 id="listwrapper-Menu_Icon"
               >
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-save"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -425,32 +405,27 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 yvaBx"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-filter"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -488,32 +463,27 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 yvaBx"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-share"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -551,32 +521,27 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 yvaBx"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-delete"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -614,20 +579,15 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 yvaBx"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -635,7 +595,7 @@ exports[` 2`] = `
               </ul>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     <div
@@ -672,7 +632,7 @@ exports[` 3`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Position_BottomLeft_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -684,9 +644,9 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -699,12 +659,12 @@ exports[` 3`] = `
           className="Menu__MenuBG-sc-17iwn6x-4 hjUiBO"
           onClick={[Function]}
         />
-        <a
+        <div
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -750,22 +710,22 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_98"
-              media={null}
+              id="storyshots_165"
+              media=""
               onClick={null}
             >
               <ul
-                className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
                 id="listwrapper-Menu_Position_BottomLeft"
               >
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-save"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -779,32 +739,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-filter"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -818,32 +773,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-share"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -857,32 +807,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-delete"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -896,20 +841,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -917,7 +857,7 @@ exports[` 3`] = `
               </ul>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     <div
@@ -944,7 +884,7 @@ exports[` 3`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Position_BottomRight_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -959,12 +899,12 @@ exports[` 3`] = `
           className="Menu__MenuBG-sc-17iwn6x-4 hjUiBO"
           onClick={[Function]}
         />
-        <a
+        <div
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1010,22 +950,22 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_99"
-              media={null}
+              id="storyshots_166"
+              media=""
               onClick={null}
             >
               <ul
-                className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
                 id="listwrapper-Menu_Position_BottomRight"
               >
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-save"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -1039,32 +979,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-filter"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -1078,32 +1013,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-share"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -1117,32 +1047,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-delete"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -1156,20 +1081,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1177,15 +1097,15 @@ exports[` 3`] = `
               </ul>
             </div>
           </div>
-        </a>
+        </div>
       </div>
       <div
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -1216,7 +1136,7 @@ exports[` 3`] = `
     className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
     id="Menu_Position_TopLeft_Card"
-    media={null}
+    media=""
     onClick={null}
   >
     <div
@@ -1247,9 +1167,9 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -1262,12 +1182,12 @@ exports[` 3`] = `
           className="Menu__MenuBG-sc-17iwn6x-4 hjUiBO"
           onClick={[Function]}
         />
-        <a
+        <div
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1313,22 +1233,22 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_100"
-              media={null}
+              id="storyshots_167"
+              media=""
               onClick={null}
             >
               <ul
-                className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
                 id="listwrapper-Menu_Position_TopLeft"
               >
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-save"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -1342,32 +1262,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Save
-                          </p>
-                        </a>
+                          Save
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-filter"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -1381,32 +1296,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Filter
-                          </p>
-                        </a>
+                          Filter
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-share"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -1420,32 +1330,27 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Share
-                          </p>
-                        </a>
+                          Share
+                        </p>
                       </div>
                     </div>
                   </section>
                 </li>
                 <li
-                  className="Menu__ItemWrapper-sc-17iwn6x-2 bRKcyV"
+                  className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
                   id="item-delete"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
                   <section
-                    className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                    className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                     disabled={false}
                     href={null}
                     id={null}
@@ -1459,20 +1364,15 @@ exports[` 3`] = `
                       <div
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
-                        <a
-                          className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                          onClick={[Function]}
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                          fontSize="1em"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0px"
                         >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
-                            fontWeight={400}
-                            id={null}
-                            letterSpacing="0px"
-                          >
-                            Delete
-                          </p>
-                        </a>
+                          Delete
+                        </p>
                       </div>
                     </div>
                   </section>
@@ -1480,7 +1380,7 @@ exports[` 3`] = `
               </ul>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>

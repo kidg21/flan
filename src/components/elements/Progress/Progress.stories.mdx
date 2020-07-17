@@ -8,7 +8,8 @@ import Bar from "layout/Bar";
 import Button from "atoms/Button";
 import Icon from "atoms/Icon";
 import Card, { CardSection, CardGrid } from "elements/Card";
-import Progress, {Step} from "elements/Progress";
+import Progress, { Step } from "elements/Progress";
+import ProgressIndicator from "elements/ProgressIndicator";
 
 <Meta title="Elements|Workflow Progress Bar" component={Progress} />
 
@@ -17,20 +18,25 @@ import Progress, {Step} from "elements/Progress";
 #### A workflow progress bar conveys progress through numbered steps. It provides a wizard-like workflow. 
 
 <Preview withToolbar>
-<Story name="Standard">
-<Grid columns="1">
-  <Progress>
+  <Story name="Standard">
+    <Grid columns="1">
+      <Progress>
         <Step isComplete title="Task" description="this is what you do" />
         <Step isComplete title="Task" description="this is what you do" />
         <Step isSelected title="Task" description="this is what you do" />
         <Step title="Task" description="this is what you do" />
         <Step title="Task" description="this is what you do" />
-    </Progress>
-    <Bar padding="2x" 
-    left={{content: <Button label="Back"/>,
-    width: "max-content",}}
-    right={<Button label="Next" isSolid/>}/>
-  </Grid>
+      </Progress>
+      <Bar padding="2x" 
+        left={{
+          content: <Button label="Back"/>,
+          width: "max-content",
+        }}
+        right={
+          <Button label="Next" isSolid/>
+        }
+      />
+    </Grid>
   </Story>
 </Preview>
 
@@ -43,33 +49,37 @@ Within these progress bars it is the developers choice to configure it so that a
 
 
 <Preview withToolbar>
-<Story name="Types">
-<Grid columns="1" gap="4xl">
-  <Progress>
-        <Step isSelected title="Task"  />
-        <Step  title="Task"  />
-        <Step  title="Task"  />
-        <Step title="Task"  />
-        <Step title="Task"  />
-    </Progress>
-    <Progress>
-        <Step isComplete title="Task"  />
-        <Step isComplete title="Task"  />
-        <Step isSelected title="Task"  />
-        <Step title="Task"  />
-        <Step title="Task"  />
-    </Progress>
-    <Bar contentAlign= "center" left={
-    <Progress>
-        <BarStep isComplete  />
-        <BarStep isComplete  />
-        <BarStep isComplete  />
-        <BarStep  />
-        <BarStep  />
-    </Progress>}
-    right={{content: (<Text text="30%"/>),
-    width: "min-content",
-    }}/>
+  <Story name="Types">
+    <Grid columns="1" gap="4xl">
+      <Progress>
+        <Step isSelected title="Task" />
+        <Step title="Task" />
+        <Step title="Task" />
+        <Step title="Task" />
+        <Step title="Task" />
+      </Progress>
+      <Progress>
+        <Step isComplete title="Task" />
+        <Step isComplete title="Task" />
+        <Step isSelected title="Task" />
+        <Step title="Task" />
+        <Step title="Task" />
+      </Progress>
+      <Bar contentAlign="center"
+        left={
+          <Progress>
+            <Step isComplete />
+            <Step isComplete />
+            <Step isComplete />
+            <Step />
+            <Step />
+          </Progress>
+        }
+        right={{
+          content: (<Text text="30%"/>),
+          width: "min-content",
+        }}
+      />
     </Grid>
   </Story>
 </Preview>
@@ -79,12 +89,14 @@ Within these progress bars it is the developers choice to configure it so that a
 
 
 <Preview withToolbar>
-<Story name="Indicator">
-<Bar left={<Text text="Hello Object"/>}
-right={{
-  content: (<ProgressIndicator percentage={42} />),
-  width: "20%",}
-}/>
+  <Story name="Indicator">
+    <Bar
+      left={<Text text="Hello Object"/>}
+      right={{
+        content: (<ProgressIndicator percentage={42} />),
+        width: "20%",
+      }}
+    />
   </Story>
 </Preview>
 

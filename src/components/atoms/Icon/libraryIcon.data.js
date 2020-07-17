@@ -271,6 +271,10 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
+    icon: "legend",
+    desc: placeholder.desc,
+  },
+  {
     icon: "link",
     desc: placeholder.desc,
   },

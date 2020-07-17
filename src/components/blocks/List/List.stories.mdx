@@ -6,6 +6,7 @@ import Grid from "layout/Grid";
 import Text from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListItem } from "blocks/List";
+import listData from "blocks/List/List.data.js";
 
 <Meta title="Data Display|List" component={List} />
 
@@ -15,11 +16,11 @@ import List, { ListItem } from "blocks/List";
 
 <Preview withToolbar>
   <Story name="Standard">
-        <List title="My List">
-          <ListItem title="List Item" />
-          <ListItem title="List Item" />
-          <ListItem title="List Item" />
-        </List>
+    <List title="My List" >
+      <ListItem title="List Item" />
+      <ListItem title="List Item" />
+      <ListItem title="List Item" />
+    </List>
   </Story>
 </Preview>
 
@@ -36,28 +37,35 @@ Lists present content in a way that makes it easy to identify a specific item in
 - **Consistent**
 Lists should present icons, text, and actions in a consistent format.
 
-
 # Examples
+
+### List Items via Array
+
+<Preview withToolbar>
+  <Story name="List Items via Array" isInteractive>
+    <List title="List Items via Array" data={listData} />
+  </Story>
+</Preview>
 
 ### States
 
 <Preview>
   <Story name="States">
-   <List>
-        <ListItem
-          title="List Item (standard)"
-          description="This is the description"
-        />
-        <ListItem
-          title="List Item (selected)"
-          description="This is the description"
-          isSelected
-        />
-        <ListItem
-          title="List Item (disabled)"
-          description="This is the description"
-          disabled
-        />
+    <List >
+      <ListItem
+        title="List Item (standard)"
+        description="This is the description"
+      />
+      <ListItem
+        title="List Item (selected)"
+        description="This is the description"
+        isSelected
+      />
+      <ListItem
+        title="List Item (disabled)"
+        description="This is the description"
+        disabled
+      />
     </List>
   </Story>
 </Preview>
@@ -68,8 +76,8 @@ Standard lists are used for data display. A list should have a divider when the 
 
 <Preview>
   <Story name="Types">
-  <Grid columns="2">
-  <List title="Standard">
+    <Grid columns="2">
+      <List title="Standard" >
         <ListItem
           title="List Item"
           description="This is the description"
@@ -82,8 +90,8 @@ Standard lists are used for data display. A list should have a divider when the 
           title="List Item"
           description="This is the description"
         />
-    </List>
-      <List title="With a Divider" isDivided >
+      </List>
+      <List title="Standard (inverse)" isInverse>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -96,28 +104,55 @@ Standard lists are used for data display. A list should have a divider when the 
           title="List Item"
           description="This is the description"
         />
-    </List>
-    <List title="Interactive" isInteractive>
+      </List>
+      <List title="With a Divider" isDivided>
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+      </List>
+      <List title="With a Divider (inverse)" isDivided isInverse>
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+      </List>
+      <List title="Interactive" isInteractive>
         <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
       </List>
-       <List title="Interactive" isInverse isInteractive>
+       <List title="Interactive (inverse)" isInteractive isInverse>
         <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
       </List>
-      </Grid>
+    </Grid>
   </Story>
 </Preview>
-
 
 ### List Item Types
 
 <Preview>
   <Story name="List Item Types">
-  <Grid columns="2">
-    <List title="Pre-Label">
+    <Grid columns="2">
+      <List title="Pre-Label">
         <ListItem
           title="List Item"
           description="This is the description"
@@ -138,8 +173,8 @@ Standard lists are used for data display. A list should have a divider when the 
           description="This is the description"
           pre={{ label: "GH" }}
         />
-     </List>
-     <List title="Post Label">
+      </List>
+      <List title="Post Label">
         <ListItem
           title="List Item"
           description="This is the description"
@@ -175,29 +210,24 @@ Standard lists are used for data display. A list should have a divider when the 
         <ListItem
           title="List Item"
           description="This is the description"
-          post={{ type: "icon", icon: "home", onClick: true }}
+          post={{ type: "icon", icon: "home", onClick: () => {} }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          post={{ type: "icon", icon: "bookmark", onClick: true }}
+          post={{ type: "icon", icon: "bookmark", onClick: () => {} }}
         />
       </List>
-      </Grid>
+    </Grid>
   </Story>
 </Preview>
-
-
-
-
-
 
 ### List Controls
 
 <Preview>
   <Story name="List Controls">
-  <Grid columns="2">
-  <List title="Checkbox">
+    <Grid columns="2">
+      <List title="Checkbox">
         <ListItem
           title="List Item"
           description="This is the description"
@@ -219,7 +249,7 @@ Standard lists are used for data display. A list should have a divider when the 
           post={{ type: "checkbox" }}
         />
       </List>
-    <List title="Toggle">
+      <List title="Toggle">
         <ListItem
           title="List Item"
           description="This is the description"
@@ -241,12 +271,9 @@ Standard lists are used for data display. A list should have a divider when the 
           post={{ type: "toggle" }}
         />
       </List>
-      </Grid>
+    </Grid>
   </Story>
 </Preview>
-
-
-
 
 ## Props
 

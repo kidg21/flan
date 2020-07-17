@@ -3,13 +3,14 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useRef, useMemo } from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import Bar from "layout/Bar";
 import Text from "base/Typography";
 import Button from "atoms/Button";
-import Grid from "layout/Grid";
+// import Grid from "layout/Grid";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
-import styled from "styled-components";
+import TextInput from "atoms/TextInput";
 import { getGuid } from "helpers";
 import ResultContainer from "./Results.jsx";
 
@@ -27,45 +28,53 @@ border-radius: 4px;
 border-color: ${(props) => {
     return (props.theme.palette.neutral60
     );
-  }};
-&:hover {
-  border-color: ${(props) => {
+  }}; */
+  /* &:hover {
+    border-color: ${(props) => {
     return (
       props.theme.palette.selected
     );
   }};
-  }
-&:selected {
-  border-color: ${(props) => {
+  } */
+  /* &:selected {
+    border-color: ${(props) => {
     return (
       props.theme.palette.selected
     );
   }};
-}
-}
+  } */
 `;
 
-const NewTextInput = styled.input`
-flex-grow: 2;
-border: none;
-min-height: 1.875rem;
-height: 2.4rem;
-padding: 0.125rem 0.5rem;
-font-family: ${(props) => { return props.theme.typography.primary; }};
-::placeholder {
-  font-weight: initial;
-  font-size: 0.90em;
-  letter-spacing: 0.5px;
-  color: ${(props) => {
+// const NewTextInput = styled.input`
+const NewTextInput = styled(TextInput)`
+  grid-area: A;
+  /* flex-grow: 2; */
+  /* border: none; */
+  /* min-height: 1.875rem; */
+  /* height: 2.4rem; */
+  /* padding: 0.125rem 0.5rem; */
+  /* font-family: ${(props) => { return props.theme.typography.primary; }}; */
+  /* ::placeholder {
+    font-weight: initial;
+    font-size: 0.90em;
+    letter-spacing: 0.5px;
+    color: ${(props) => {
     return (
       props.theme.text[props.placeholderColor] || props.theme.text.secondary
     );
   }};
-}
+  } */
+`;
+
+const SearchButton = styled(Button)`
+  grid-area: B;
 `;
 
 const DropContainer = styled(Container)`
-position: fixed;
+  /* position: fixed; */
+  grid-area: C;
+  position: absolute;
+  width: 100%;
 `;
 
 const errorHash = {
@@ -124,8 +133,8 @@ function Search({
 
   const message = (
     <React.Fragment>
-      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="4xl" />} /> : null}
-      <Bar padding="2x" center={<Text size="sm" text={msg} />} />
+      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="3xl" />} /> : null}
+      <Bar padding="2x" center={<Text text={msg} />} />
     </React.Fragment>
   );
 
@@ -137,21 +146,25 @@ function Search({
   );
 
   return (
-    <Grid columns="1" id={uId}>
-      <SearchContainer>
-        <NewTextInput
-          id={`${uId}-search-bar`}
-          placeholder={placeholder}
-          type="search"
-          onChange={handleOnChange}
-          onKeyPress={handleOnKeyPress}
-        />
-        <Button icon="search" isPlain onClick={handleOnSearch} />
-      </SearchContainer>
-      {/* <Button icon="more" isPlain /> */}
-      {error || results ? <DropContainer padding="0" id={`${uId}-results-container`} maxHeight="22rem">{Body}</DropContainer> : null}
-      {/* { advance ? <Advanced inputs={inputs} /> : null} */}
-    </Grid>
+    <SearchContainer id={uId}>
+      <NewTextInput
+        id={`${uId}-search-bar`}
+        placeholder={placeholder}
+        type="search"
+        onChange={handleOnChange}
+        onKeyPress={handleOnKeyPress}
+      />
+      <SearchButton icon="search" isPlain onClick={handleOnSearch} />
+      {error || results ?
+        <DropContainer
+          padding="0"
+          id={`${uId}-results-container`}
+          maxHeight="22rem"
+        >
+          {Body}
+        </DropContainer>
+        : null}
+    </SearchContainer>
   );
 }
 

@@ -8,14 +8,13 @@ import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Badge from "atoms/Badge";
 
-
 const LinkedIcon = styled.a`
   color: ${(props) => { return props.theme.text.link; }};
   width: max-content;
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
-    } else if (props.onClick || props.href) {
+    } if (props.onClick || props.href) {
       return "pointer";
     }
     return "";
@@ -110,6 +109,9 @@ const iconHash = {
   gps: ["far", "location-arrow"],
   heatmap: ["far", "chart-scatter"],
   help: ["far", "question"],
+  help_solid: "question",
+  help_circle: ["far", "question-circle"],
+  help_circle_solid: "question-circle",
   home: "home-alt",
   include: ["far", "check-circle"],
   info_circle: ["far", "info-circle"],
@@ -117,6 +119,7 @@ const iconHash = {
   job: ["far", "construction"],
   labels: ["far", "tags"],
   layers: ["far", "layer-group"],
+  legend: ["far", "shapes"],
   link: ["far", "link"],
   list: ["far", "list-ul"],
   loading: "spinner",
@@ -126,7 +129,7 @@ const iconHash = {
   map_pin: "map-pin",
   map: ["far", "map"],
   maximize: ["far", "expand-alt"],
-  measure: ["far", "ruler-combined"],
+  measure: ["far", "ruler-triangle"],
   message: ["far", "comment-alt"],
   minimize: ["far", "compress-alt"],
   minus_square: ["far", "minus-square"],
@@ -236,8 +239,7 @@ function Icon({
   const fontSize = selectedSize ? selectedSize.font : "inherit";
   let content;
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
   else if (onClick || href) color = "link";
 

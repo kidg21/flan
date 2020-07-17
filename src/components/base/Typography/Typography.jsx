@@ -43,6 +43,16 @@ const LinkText = styled.a`
   color: ${(props) => { return props.theme.text.link; }};
   cursor: pointer;
 
+  
+  &[disabled] {
+    color: ${(props) => {
+    return props.theme.text.disabled;
+  }};
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    border-left: none;
+  }
   &:hover,
   &:focus {
     ${Darken};
@@ -174,6 +184,10 @@ function Title({
   const { fontSize, as, letterSpacing, fontWeight } = selectedSize;
 
   let textTransform;
+  const weightHash = {
+    light: 300,
+    bold: 500,
+  };
 
   if (uppercase) {
     textTransform= "uppercase";
@@ -326,7 +340,7 @@ function Link({
       fontSize={fontSize}
       fontWeight={fontWeight}
       href={href}
-      isDisabled={disabled}
+      disabled={disabled}
       letterSpacing={letterSpacing}
       onClick={onClick}
       target={target}

@@ -27,9 +27,9 @@ exports[` 1`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Media Block
@@ -74,25 +74,23 @@ exports[` 2`] = `
     <section
       className="MediaBlock__Body-k78dm4-2 koHCVu"
     >
-      <div>
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 hSytIY"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          Media Block
-        </h5>
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-          fontSize="0.879em"
-          fontWeight={300}
-          id={null}
-          letterSpacing="0.2px"
-        >
-          In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-        </p>
-      </div>
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
+        fontSize="1.15em"
+        fontWeight={500}
+        letterSpacing="0px"
+      >
+        Media Block
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+        fontSize="0.879em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
     </section>
   </div>
   <div
@@ -115,25 +113,23 @@ exports[` 2`] = `
     <section
       className="MediaBlock__Body-k78dm4-2 dVIBIi"
     >
-      <div>
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 hSytIY"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          Media Block (isReversed)
-        </h5>
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-          fontSize="0.879em"
-          fontWeight={300}
-          id={null}
-          letterSpacing="0.2px"
-        >
-          In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-        </p>
-      </div>
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
+        fontSize="1.15em"
+        fontWeight={500}
+        letterSpacing="0px"
+      >
+        Media Block (isReversed)
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+        fontSize="0.879em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
     </section>
   </div>
   <div
@@ -156,25 +152,23 @@ exports[` 2`] = `
     <section
       className="MediaBlock__Body-k78dm4-2 iaXsTF"
     >
-      <div>
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 hSytIY"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          Media Block - Vertical
-        </h5>
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-          fontSize="0.879em"
-          fontWeight={300}
-          id={null}
-          letterSpacing="0.2px"
-        >
-          In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-        </p>
-      </div>
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
+        fontSize="1.15em"
+        fontWeight={500}
+        letterSpacing="0px"
+      >
+        Media Block - Vertical
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+        fontSize="0.879em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
     </section>
   </div>
   <div
@@ -197,25 +191,23 @@ exports[` 2`] = `
     <section
       className="MediaBlock__Body-k78dm4-2 hPQEFx"
     >
-      <div>
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 hSytIY"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          Media Block - Vertical (isReversed)
-        </h5>
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-          fontSize="0.879em"
-          fontWeight={300}
-          id={null}
-          letterSpacing="0.2px"
-        >
-          In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-        </p>
-      </div>
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
+        fontSize="1.15em"
+        fontWeight={500}
+        letterSpacing="0px"
+      >
+        Media Block - Vertical (isReversed)
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+        fontSize="0.879em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
     </section>
   </div>
   <div
@@ -238,25 +230,23 @@ exports[` 2`] = `
     <section
       className="MediaBlock__Body-k78dm4-2 cdLTVU"
     >
-      <div>
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 hSytIY"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          Media Block - Inline
-        </h5>
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-          fontSize="0.879em"
-          fontWeight={300}
-          id={null}
-          letterSpacing="0.2px"
-        >
-          In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-        </p>
-      </div>
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
+        fontSize="1.15em"
+        fontWeight={500}
+        letterSpacing="0px"
+      >
+        Media Block - Inline
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+        fontSize="0.879em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
     </section>
   </div>
   <div
@@ -279,25 +269,23 @@ exports[` 2`] = `
     <section
       className="MediaBlock__Body-k78dm4-2 hePDVU"
     >
-      <div>
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 hSytIY"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          Media Block - Inline (isReversed)
-        </h5>
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-          fontSize="0.879em"
-          fontWeight={300}
-          id={null}
-          letterSpacing="0.2px"
-        >
-          In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-        </p>
-      </div>
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
+        fontSize="1.15em"
+        fontWeight={500}
+        letterSpacing="0px"
+      >
+        Media Block - Inline (isReversed)
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+        fontSize="0.879em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
     </section>
   </div>
 </section>

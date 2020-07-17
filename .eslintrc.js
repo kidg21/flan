@@ -250,6 +250,7 @@ module.exports = {
     select: true,
     options: true,
     specs: true,
+    action: true,
     describe: true,
     it: true,
     before: true,

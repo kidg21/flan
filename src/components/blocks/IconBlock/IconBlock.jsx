@@ -32,12 +32,13 @@ function IconBlock({
               href={item.href}
               icon={item.icon}
               id={item.id}
+              key={item.id || item.icon}
               onClick={item.onClick}
               pulse={item.pulse}
               rotation={item.rotation}
               size={size}
               spin={item.spin}
-              type={item.type}
+              variant={item.variant}
             />
           );
         })}

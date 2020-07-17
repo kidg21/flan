@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "hooks";
 import { Padding } from "helpers/Display";
 import Picker, { ColorSwatch } from "elements/Picker";
 

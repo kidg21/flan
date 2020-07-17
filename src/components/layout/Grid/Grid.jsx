@@ -10,7 +10,7 @@ const GridWrapper = styled.section`
     return props.gap || "";
   }};
   grid-template-columns: ${(props) => {
-    return props.columns || "repeat(auto-fill, minmax(18rem, 1fr))";
+    return props.columns || "repeat(auto-fill, minmax(12rem, 1fr))";
   }};
   grid-template-rows: ${(props) => {
     return props.rows || "auto";
@@ -103,7 +103,7 @@ Grid.propTypes = {
    *
    * Options: 1-12 or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
    */
-  columns: PropTypes.string,
+  columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** Sets the 'gutter' between grid items */
   gap: PropTypes.oneOfType([
     PropTypes.string,

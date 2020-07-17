@@ -49,8 +49,8 @@ const sizeHash = {
     font: "0.5em",
   },
   sm: {
-    avatar: "2em",
-    font: "0.75em",
+    avatar: "1.8em",
+    font: "0.8em",
   },
   lg: {
     avatar: "3em",
@@ -81,7 +81,7 @@ function Avatar({
   const avatarSize = selectedSize ? selectedSize.avatar : "2.2rem";
   const fontSize = selectedSize ? selectedSize.font : "0.876rem";
 
-  let backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";
+  const backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";
   const textColor = "inverse";
 
   let media = null;

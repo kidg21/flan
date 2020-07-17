@@ -19,6 +19,7 @@ export { default as Checkbox, CheckboxGroup } from "./atoms/Checkbox";
 export { default as Command } from "./atoms/Command";
 export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
+export { default as Field, FieldGroup } from "./atoms/Field";
 export { default as Icon } from "./atoms/Icon";
 export { default as Image } from "./atoms/Image";
 export { default as Loader } from "./atoms/Loader";
@@ -53,7 +54,8 @@ export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHea
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
 export { default as Picker, ColorSwatch } from "./elements/Picker";
-export { default as ProgressBar, Step, BarStep } from "./elements/Progress";
+export { default as ProgressBar, Step } from "./elements/Progress";
+export { default as ProgressIndicator } from "./elements/ProgressIndicator";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 
@@ -61,6 +63,7 @@ export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export { default as Bar } from "./layout/Bar";
 export { default as Form, FormSection } from "./layout/Form";
 export { default as Flex } from "./layout/Flex";
+export { default as Template } from "./layout/Template";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";

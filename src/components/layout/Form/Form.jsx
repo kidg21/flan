@@ -34,22 +34,22 @@ const Section = styled.section`
   margin-bottom: 1rem;
 `;
 
-function FormSection({ children, title }) {
-  return (
-    <Section>
-      {title ? <TitleSection text={title} /> : null}
-      {children}
-    </Section>
-  );
-}
-FormSection.propTypes = {
-  children: PropTypes.node,
-  title: PropTypes.string,
-};
-FormSection.defaultProps = {
-  children: null,
-  title: null,
-};
+// function FormSection({ children, title }) {
+//   return (
+//     <Section>
+//       {title ? <TitleSection text={title} /> : null}
+//       {children}
+//     </Section>
+//   );
+// }
+// FormSection.propTypes = {
+//   children: PropTypes.node,
+//   title: PropTypes.string,
+// };
+// FormSection.defaultProps = {
+//   children: null,
+//   title: null,
+// };
 
 const Inputs = styled(Grid)`
   grid-template-columns: ${(props) => {
@@ -63,6 +63,35 @@ const Inputs = styled(Grid)`
     }
   }
 `;
+
+
+function FormSection({ children, title, columns }) {
+  let setColumns;
+  const _columns = parseInt(columns, 10);
+  if (_columns > 0 && columns < 4) {
+    setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
+  } else {
+    setColumns = columns;
+  }
+  return (
+    <Section>
+      {title ? <GroupTitle size="sm" weight="bold" text={title} /> : null}
+      <Inputs setColumns={setColumns}>
+        {children}
+      </Inputs>
+    </Section>
+  );
+}
+FormSection.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+  columns: PropTypes.oneOf(["1", "2", "3"]),
+};
+FormSection.defaultProps = {
+  children: null,
+  title: null,
+  columns: "1",
+};
 
 function Form({
   action,
@@ -102,7 +131,7 @@ function Form({
 Form.propTypes = {
   action: PropTypes.node,
   children: PropTypes.node,
-  columns: PropTypes.oneOf(["1", "2", "3"]),
+  columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
   description: PropTypes.string,
   id: PropTypes.string,
   method: PropTypes.string,

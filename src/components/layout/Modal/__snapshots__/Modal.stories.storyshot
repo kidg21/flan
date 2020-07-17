@@ -6,7 +6,7 @@ Array [
     action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    className="Modal__ModalContainer-sc-15cll21-2 iRlunR"
     id="Modal_Standard"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
@@ -14,18 +14,19 @@ Array [
   >
     <div
       action="close"
-      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
       id="modal-bg-Modal_Standard"
       onClick={[Function]}
     />
     <span
-      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Standard-animation"
     >
       <div
         className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
-        id="storyshots_50"
-        media={null}
+        id="storyshots_54"
+        media=""
         onClick={null}
       >
         <div
@@ -87,7 +88,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -121,7 +122,7 @@ Array [
     action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    className="Modal__ModalContainer-sc-15cll21-2 iRlunR"
     id="Modal_Knobs"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
@@ -129,24 +130,25 @@ Array [
   >
     <div
       action="close"
-      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
       id="modal-bg-Modal_Knobs"
       onClick={[Function]}
     />
     <span
-      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Knobs-animation"
       onClick={null}
     >
       <div
         className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
         href={null}
-        id="storyshots_51"
-        media={null}
+        id="storyshots_55"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_51-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_55-Header"
           onClick={null}
         >
           <div
@@ -157,15 +159,21 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
                 id={null}
-                letterSpacing="0.2px"
+                rows={null}
               >
-                This is a very special message just for you...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  This is a very special message just for you...
+                </p>
+              </section>
             </div>
           </div>
         </section>
@@ -173,7 +181,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -207,7 +215,7 @@ Array [
     action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    className="Modal__ModalContainer-sc-15cll21-2 iRlunR"
     id="Modal_Dialog"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
@@ -215,23 +223,24 @@ Array [
   >
     <div
       action="close"
-      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
       id="modal-bg-Modal_Dialog"
       onClick={[Function]}
     />
     <span
-      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Dialog-animation"
     >
       <div
         className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_52"
-        media={null}
+        id="storyshots_56"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_52-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_56-Header"
           onClick={null}
         >
           <div
@@ -242,20 +251,26 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Default Dialog
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
+                  fontSize="1.15em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Default Dialog
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_52-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_56-Body"
           onClick={null}
         >
           <p
@@ -269,7 +284,7 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
           id={null}
           onClick={null}
         >
@@ -279,7 +294,7 @@ Array [
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Cancel"
@@ -305,7 +320,7 @@ Array [
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 KwDuT DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
               id="Confirm"
@@ -336,7 +351,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -370,7 +385,7 @@ Array [
     action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 cAXnsN"
+    className="Modal__ModalContainer-sc-15cll21-2 dklVI"
     id="Modal_Text"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
@@ -378,24 +393,25 @@ Array [
   >
     <div
       action="close"
-      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
       id="modal-bg-Modal_Text"
       onClick={[Function]}
     />
     <span
-      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Text-animation"
       onClick={null}
     >
       <div
         className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
         href={null}
-        id="storyshots_53"
-        media={null}
+        id="storyshots_57"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id="storyshots_53-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_57-Header"
           onClick={null}
         >
           <div
@@ -406,15 +422,21 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
                 id={null}
-                letterSpacing="0.2px"
+                rows={null}
               >
-                This is a very special message just for you...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  This is a very special message just for you...
+                </p>
+              </section>
             </div>
           </div>
         </section>
@@ -422,7 +444,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -456,7 +478,7 @@ Array [
     action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    className="Modal__ModalContainer-sc-15cll21-2 iRlunR"
     id="Modal_Image"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
@@ -464,43 +486,17 @@ Array [
   >
     <div
       action="close"
-      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
       id="modal-bg-Modal_Image"
       onClick={[Function]}
     />
-    <img
-      className="Modal__Image-sc-15cll21-1 LeaMT"
-      onClick={[Function]}
-      src={Object {}}
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Image-animation"
     />
-    <section
-      className="Modal__Close-sc-15cll21-4 mQDax"
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 gKQaUy"
-        color="neutral20"
-        data-icon="times"
-        data-prefix="far"
-        focusable="false"
-        fontSize="1.35em"
-        id={null}
-        role="img"
-        style={Object {}}
-        viewBox="0 0 320 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </section>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}

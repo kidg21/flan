@@ -86,8 +86,8 @@ const ContentWrapper = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 `;
 
 const Image = styled.img`
@@ -97,14 +97,13 @@ const Image = styled.img`
 `;
 
 const ModalContainer = styled.div`
-  position: fixed;
+  position: absolute;
   display: ${(props) => { return (props.visible || props.action === "open" ? "flex" : "none"); }};
   z-index: 1005;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  min-height: 100vh;
   align-items: center;
   justify-content: ${(props) => { return props.justifyContent || ""; }};
   flex-direction: column;
@@ -121,7 +120,6 @@ const ModalContainer = styled.div`
     return props.action && typeof props.animationDuration === "number" ? `${props.animationDuration}s` : null;
   }};
     transform-origin: top;
-    pointer-events: initial;
     @media ${screen.medium} {
       max-width: 50vw;
     }
@@ -143,8 +141,7 @@ const ModalContainer = styled.div`
 `;
 
 const ModalBG = styled.div`
-  z-index: -1;
-  position: fixed;
+  position: absolute;
   right: 0px;
   bottom: 0px;
   top: 0px;
@@ -154,6 +151,7 @@ const ModalBG = styled.div`
       props.theme.background.modal
     );
   }};
+  z-index: -1;
   -webkit-tap-highlight-color: transparent;
   touch-action: none;
   animation-name: ${(props) => {
@@ -172,6 +170,8 @@ const Close = styled.section`
     opacity: 1;
   }
 `;
+
+const animationId = "animation";
 
 function Modal({
   align,
@@ -196,7 +196,7 @@ function Modal({
 
   if (text && !media) {
     modalContent = (
-      <ContentWrapper onClick={onClick}>
+      <ContentWrapper id={`${uId}-${animationId}`} onClick={onClick}>
         <Card description={text} shadow="2x" />
       </ContentWrapper>
     );
@@ -205,7 +205,7 @@ function Modal({
     justifyContent = "center";
     modalContent = (
       <Fragment>
-        <Image src={media} onClick={onClick} />
+        <Image id={`${uId}-${animationId}`} src={media} onClick={onClick} />
         <Close onClick={onClose}>
           <Icon icon="close" variant="inverse" size="lg" fixedWidth />
         </Close>
@@ -213,7 +213,7 @@ function Modal({
     );
   } else {
     justifyContent = "center";
-    modalContent = (<ContentWrapper>{children}</ContentWrapper>);
+    modalContent = (<ContentWrapper id={`${uId}-${animationId}`}>{children}</ContentWrapper>);
   }
 
   switch (align) {
@@ -256,7 +256,8 @@ function Modal({
   const endAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
-    if (e.target.id === uId) {
+    // id matches the ContentWrapper or Image which is animationId
+    if (e.target.id === `${uId}-${animationId}`) {
       // animation completed, update internal visible state
       setState((oldState) => {
         return {
@@ -271,7 +272,8 @@ function Modal({
   const startAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
-    if (e.target.id === uId) {
+    // id matches the ContentWrapper or Image which is animationId
+    if (e.target.id === `${uId}-${animationId}`) {
       if (onAnimationStart) onAnimationStart(e);
     }
   }, [onAnimationStart]);
@@ -333,7 +335,7 @@ Modal.defaultProps = {
   ariaDescribedBy: null,
   ariaLabelledBy: null,
   children: null,
-  id: "", // must be string, for id comparision
+  id: "",
   media: null,
   hasBackdrop: true,
   onAnimationStart: null,

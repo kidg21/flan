@@ -6,6 +6,7 @@ import Grid from "layout/Grid";
 import Text from "base/Typography";
 import Bar from "layout/Bar";
 import Icon from "atoms/Icon";
+import Button from "atoms/Button";
 import Card, { CardSection, CardGrid } from "elements/Card";
 
 <Meta title="Data Display|Card" component={Card} />
@@ -16,21 +17,13 @@ import Card, { CardSection, CardGrid } from "elements/Card";
 
 <Preview withToolbar>
   <Story name="Standard">
-  <Grid columns="3">
-  <div/>
-   <Card
-        // isInverse
-        // variant="info"
-        id="Card_Standard"
+    <Grid columns="3">
+      <div/>
+      <Card
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
-        // media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
-        // media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
-        // media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
-        // media="https://player.vimeo.com/video/798022" // Vimeo
         title="Card Title"
         description="Card Description"
-        // label="GP"
         icon="bookmark_solid"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
@@ -73,9 +66,6 @@ Cards are surfaces that display content and actions on a single topic.
 
 They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
 
-
-
-
 # Principles
 
 - **Contained**
@@ -87,11 +77,9 @@ A card can stand alone, without relying on surrounding elements for context.
 - **Individual**
 A card cannot merge with another card, or divide into multiple cards.
 
-
-
 # Examples
 
-The card container is the only required element in a card. All other elements shown here are optional. 
+The card container is the only required element in a card. All other elements shown here are optional.
 
 The primary action area of a card is typically the card itself. Often cards are one large touch target to a detail screen on a subject. Supplemental actions are represented by icons, text, and UI controls on cards. They are typically placed at the bottom of the card. For more than two supplemental actions, use an overflow menu instead.
 
@@ -99,34 +87,28 @@ The primary action area of a card is typically the card itself. Often cards are 
 
 <Preview>
   <Story name="Types">
-   <CardGrid columns="2">
-      <Card id="Card_Simple" />
+    <CardGrid columns="2">
+      <Card/>
       <Card
-        id="Card_Title_Description"
         title="Card Title"
         description="Card Description"
       />
       <Card
-        id="Card_Body"
         title="Card Title"
         description="Card Description"
-        // label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <Card
-        id="Card_Label"
         title="Card Title"
         label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <Card
-        id="Card_Icon"
         title="Card Title"
         icon="star"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <Card
-        id="Card_Commands"
         title="Card Title"
         description="Card Description"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -144,7 +126,6 @@ The primary action area of a card is typically the card itself. Often cards are 
         ]}
       />
       <Card
-        id="Card_OnClick"
         title="Card Title"
         description="Card Description"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -177,7 +158,7 @@ The primary action area of a card is typically the card itself. Often cards are 
         ]}
         onClick={action("Primary Action Area Clicked")}
       />
-      </CardGrid>
+    </CardGrid>
   </Story>
 </Preview>
 
@@ -185,14 +166,12 @@ The primary action area of a card is typically the card itself. Often cards are 
 
 <Preview>
   <Story name="Media">
-   <CardGrid columns="2">
+    <CardGrid columns="2">
       <Card
-        id="Card_Media_Image"
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
         title="Card Title"
         description="Card Description"
-        // label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
           {
@@ -221,15 +200,13 @@ The primary action area of a card is typically the card itself. Often cards are 
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
       <Card
-        id="Card_Media_Vimeo"
         title="Card Title"
         media="https://player.vimeo.com/video/798022" // Vimeo
         description="Card Description"
-        // label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
           {
@@ -258,15 +235,13 @@ The primary action area of a card is typically the card itself. Often cards are 
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
       <Card
-        id="Card_Media_Video"
         media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
         title="Card Title"
         description="Card Description"
-        // label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
           {
@@ -295,15 +270,13 @@ The primary action area of a card is typically the card itself. Often cards are 
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
       <Card
-        id="Card_Media_YouTube"
         media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
         title="Card Title"
         description="Card Description"
-        // label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
           {
@@ -332,15 +305,13 @@ The primary action area of a card is typically the card itself. Often cards are 
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
       <Card
-        id="Card_Media_Audio"
-        media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio       
+        media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
         title="Card Title"
         description="Card Description"
-        // label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
           {
@@ -369,14 +340,12 @@ The primary action area of a card is typically the card itself. Often cards are 
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
-      </CardGrid>
+    </CardGrid>
   </Story>
 </Preview>
-
-
 
 ## Props
 

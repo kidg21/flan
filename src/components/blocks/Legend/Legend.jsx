@@ -69,6 +69,8 @@ const Row = styled.tr`
   }
 `;
 
+const Body = styled.tbody``;
+
 function Legend({
   id,
   fontSize,
@@ -81,6 +83,50 @@ function Legend({
   let cellBorderColor;
 
   const uId = useMemo(() => { return id || getGuid(); }, [id]);
+
+  const content = data instanceof Array
+    ? (
+      <TableContainer id={`${uId}-table`}>
+        <Body>
+          {data.map((row, index) => {
+            let rowValue = row.value;
+            if (row.onClick) {
+              rowValue = (<Link onClick={row.onClick}>{rowValue}</Link>);
+            }
+            if (typeof row.isText === "undefined" || row.isText) {
+              rowValue = <Text>{rowValue}</Text>;
+            }
+
+            const rowKey = row.id
+              || (typeof row.label === "string" && row.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
+              || (typeof row.value === "string" && row.value.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
+              || index;
+            return (
+              <Row key={rowKey}>
+                <Cell
+                  cellBorder={cellBorder}
+                  cellPadding={cellPadding}
+                  cellBorderColor={cellBorderColor}
+                  fontWeight={fontWeight}
+                  fontSize={fontSize}
+                >
+                  <Text>{row.label}</Text>
+                </Cell>
+                <Cell
+                  cellBorder={cellBorder}
+                  cellPadding={cellPadding}
+                  cellBorderColor={cellBorderColor}
+                  fontWeight={fontWeight}
+                  fontSize={fontSize}
+                >
+                  {rowValue}
+                </Cell>
+              </Row>
+            );
+          })}
+        </Body>
+      </TableContainer>
+    ) : <Loader />;
 
   return (
     <Wrapper id={uId}>
@@ -133,13 +179,15 @@ Legend.propTypes = {
     id: PropTypes.string,
     label: PropTypes.node,
     value: PropTypes.node,
-  })).isRequired,
+    isText: PropTypes.bool,
+  })),
 };
 
 Legend.defaultProps = {
   id: null,
   fontSize: null,
   title: null,
+  data: null,
 };
 
 export default Legend;

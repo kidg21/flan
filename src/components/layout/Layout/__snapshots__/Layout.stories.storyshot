@@ -16,8 +16,8 @@ exports[` 1`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bOZpvs Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 iryQpt Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
       width="100%"
@@ -52,20 +52,20 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="10rem"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
-      width="60%"
+      width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
         className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
@@ -78,11 +78,11 @@ exports[` 2`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jKdZMv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
       height={null}
       id="Right"
       overflow={null}
-      width="25%"
+      width="24rem"
     >
       
     </div>
@@ -106,23 +106,23 @@ exports[` 3`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="10rem"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
-      width="60%"
+      width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 fWTSfU Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 hGiOHx Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
         height={null}
         id="Main"
         overflow={null}
@@ -131,8 +131,8 @@ exports[` 3`] = `
         
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 iDgfpZ"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 kumGNs"
+        height="20rem"
         id="Bottom"
         overflow={null}
         width={null}
@@ -141,11 +141,11 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jKdZMv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
       height={null}
       id="Right"
       overflow={null}
-      width="25%"
+      width="24rem"
     >
       
     </div>
@@ -162,7 +162,7 @@ exports[` 4`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
     height={null}
     id="Header"
     overflow={null}
@@ -178,23 +178,23 @@ exports[` 4`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="10rem"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
-      width="60%"
+      width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 fWTSfU Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 hGiOHx Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
         height={null}
         id="Main"
         overflow={null}
@@ -203,8 +203,8 @@ exports[` 4`] = `
         
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 iDgfpZ"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 kumGNs"
+        height="20rem"
         id="Bottom"
         overflow={null}
         width={null}
@@ -213,17 +213,17 @@ exports[` 4`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jKdZMv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
       height={null}
       id="Right"
       overflow={null}
-      width="25%"
+      width="24rem"
     >
       
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fCpjke"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fgYxpX"
     height={null}
     id="Footer"
     overflow={null}
@@ -243,7 +243,7 @@ exports[` 5`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
     height={null}
     id="Header"
     overflow={null}
@@ -258,7 +258,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -285,7 +285,7 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -311,7 +311,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 jSZvNZ"
+          className="Command__CommandContainer-sc-13akgtp-0 fXpBjx"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -338,7 +338,7 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -358,236 +358,142 @@ exports[` 5`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="15%"
+      width="10rem"
     >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
-        id="List Panel"
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+        id={null}
       >
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
-          id="List Panel_header"
+        <li
+          className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+            fontSize="0.879em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.2px"
+          >
+            Research
+          </p>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
-            href={null}
-            id="LeftPanelHeader"
-            media={null}
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
             onClick={null}
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id="ListHeader"
-              onClick={null}
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <div
-                className="Bar__Slot-icfo76-1 fNcQEg"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                  fontSize="1.15em"
-                  fontWeight={600}
-                  letterSpacing="0px"
-                >
-                  Menu Header
-                </h5>
-              </div>
-              <div
-                className="Bar__Slot-icfo76-1 kZQbjh"
-              >
-                <a
-                  className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                  onClick={[Function]}
-                >
-                  <button
-                    className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
-                    disabled={false}
-                    htmlFor={null}
-                    id={null}
-                    name={null}
-                    onClick={null}
-                    tabIndex="1"
-                    type="button"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
-                      id={null}
-                      rows={null}
-                    >
-                      <svg
-                        aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                        color={null}
-                        data-icon="ellipsis-v"
-                        data-prefix="far"
-                        focusable="false"
-                        fontSize="inherit"
-                        id={null}
-                        role="img"
-                        style={Object {}}
-                        viewBox="0 0 128 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                          fill="currentColor"
-                          style={Object {}}
-                        />
-                      </svg>
-                    </section>
-                  </button>
-                </a>
-              </div>
+                Projects
+              </p>
             </div>
           </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
-          id="List Panel_body"
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
         >
-          <ul
-            className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
             id={null}
+            onClick={null}
           >
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
                 id={null}
-                onClick={null}
+                letterSpacing="0px"
               >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <a
-                    className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                    onClick={[Function]}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0px"
-                    >
-                      Layers
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
+                Properties
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
                 id={null}
-                onClick={null}
+                letterSpacing="0px"
               >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <a
-                    className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                    onClick={[Function]}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0px"
-                    >
-                      Results
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
+                History
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
                 id={null}
-                onClick={null}
+                letterSpacing="0px"
               >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <a
-                    className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                    onClick={[Function]}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0px"
-                    >
-                      Form
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <a
-                    className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                    onClick={[Function]}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0px"
-                    >
-                      Research
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
+                Data
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bGQswE Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dJGSkh Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
       width="100%"
@@ -609,12 +515,149 @@ exports[` 5`] = `
         />
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 feYNea"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 feYNea"
+        height="20rem"
         id={null}
         overflow={null}
         width={null}
       >
+        <div
+          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          href={null}
+          id="storyshots_50"
+          media=""
+          onClick={null}
+        >
+          <section
+            className="Card__CardSectionWrapper-sc-1g3s676-1 ipvWKE"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 izXrkl"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 eufPAN"
+              >
+                <h6
+                  className="Typography__TitleText-sc-19auepv-2 gymxyt"
+                  fontSize="1em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Results | 3
+                </h6>
+              </div>
+              <div
+                className="Bar__Slot-icfo76-1 FsWNF"
+              >
+                <div
+                  className="IconBlock__Block-nokc92-0 UCGVw"
+                  id={null}
+                >
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="share"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="trash-alt"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                  <div
+                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
+                      disabled={false}
+                      htmlFor={null}
+                      id={null}
+                      name={null}
+                      onClick={null}
+                      tabIndex="1"
+                      type="button"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                        id={null}
+                        rows={null}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="ellipsis-v"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 128 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </section>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         <div
           className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
         >
@@ -675,16 +718,16 @@ exports[` 5`] = `
                       Object {
                         "height": 40,
                         "maxHeight": 40,
-                        "maxWidth": 1060,
+                        "maxWidth": 1560,
                         "overflow": "hidden",
                         "pointerEvents": "",
                         "position": "relative",
-                        "width": 1060,
+                        "width": 1560,
                       }
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 eTCUgj"
+                      className="Table__CellWrapper-gz0dbt-1 gWwrWx"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -698,10 +741,38 @@ exports[` 5`] = `
                         }
                       }
                     >
-                      Acreage
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 gCCOlW"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                            fontSize="0.879em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.4px"
+                          >
+                            Select All
+                          </label>
+                        </div>
+                      </section>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 eTCUgj"
+                      className="Table__CellWrapper-gz0dbt-1 irRGFH"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -715,7 +786,7 @@ exports[` 5`] = `
                         }
                       }
                     >
-                      Aggregate Acreage
+                      Name
                     </div>
                   </div>
                 </div>
@@ -757,18 +828,18 @@ exports[` 5`] = `
                     role="rowgroup"
                     style={
                       Object {
-                        "height": 200,
-                        "maxHeight": 200,
-                        "maxWidth": 1060,
+                        "height": 120,
+                        "maxHeight": 120,
+                        "maxWidth": 1560,
                         "overflow": "hidden",
                         "pointerEvents": "",
                         "position": "relative",
-                        "width": 1060,
+                        "width": 1560,
                       }
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -782,10 +853,32 @@ exports[` 5`] = `
                         }
                       }
                     >
-                      0.12
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -799,10 +892,21 @@ exports[` 5`] = `
                         }
                       }
                     >
-                      0.12
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        477 Madison Avenue
+                      </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -816,10 +920,32 @@ exports[` 5`] = `
                         }
                       }
                     >
-                      1.11
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -833,10 +959,21 @@ exports[` 5`] = `
                         }
                       }
                     >
-                      1.11
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        23 E. 21 St.
+                      </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -850,10 +987,32 @@ exports[` 5`] = `
                         }
                       }
                     >
-                      0.94
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -867,75 +1026,18 @@ exports[` 5`] = `
                         }
                       }
                     >
-                      0.94
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.07
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.684631
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        11 W. 20 St.
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -946,204 +1048,189 @@ exports[` 5`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 gLaegA"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 gLaegA"
       height={null}
       id={null}
       overflow={null}
-      width="25%"
+      width="24rem"
     >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
-        id="Info Panel"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fdMpxY"
+        id={null}
+        rows={null}
       >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
+          onClick={null}
+          src=""
+          width="100%"
+        />
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
-          id="Info Panel_header"
-        >
-          <div
-            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
-            href={null}
-            id="RecordSummaryCard"
-            media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-            onClick={null}
-          >
-            <section
-              className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 eIeMkT"
-              id="RecordSummaryCard-Media"
-              onClick={null}
-            >
-              <img
-                alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
-                onClick={null}
-                src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-                title="Media Description"
-                width="100%"
-              />
-            </section>
-            <section
-              className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-              id="RecordSummaryCard-Header"
-              onClick={null}
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 boCGaE"
-                >
-                  <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 cMhgjp"
-                    id={null}
-                    onClick={null}
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
-                      color={null}
-                      data-icon="bookmark"
-                      data-prefix="fas"
-                      focusable="false"
-                      fontSize="0.875em"
-                      id={null}
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 384 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  className="Bar__Slot-icfo76-1 yvaBx"
-                >
-                  <h5
-                    className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                    fontSize="1.15em"
-                    fontWeight={600}
-                    letterSpacing="0px"
-                  >
-                    Best Place Ever
-                  </h5>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    I Could Tell You More, But...
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
-          id="Info Panel_body"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 bBCooi"
+          id="Physical Characteristics"
+          rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
-            id={null}
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Buildings"
             rows={null}
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-              id={null}
-              rows={null}
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 PRpBC"
-                fontSize="1.15em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                Section 1
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-              </p>
-            </section>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
+              Project Owner
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
               id={null}
-              rows={null}
+              letterSpacing="0px"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 PRpBC"
-                fontSize="1.15em"
-                fontWeight={400}
+              Steve Davidson
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="GBA"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Due
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              06/25/2020
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Stories"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Status
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              Open
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Units"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Created
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              6/14/2020 8:00 am PT
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="Year Built"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Edited
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              6/16/2020 12:15 pm PT
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="Year Built"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Edited
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              <a
+                className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                disabled={false}
+                fontSize="0.876em"
+                fontWeight={600}
+                href={null}
                 letterSpacing="0px"
+                onClick={null}
+                target={null}
               >
-                Section 1
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-              </p>
-            </section>
+                1804
+              </a>
+            </p>
           </section>
         </section>
-      </div>
+      </section>
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fCpjke"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fgYxpX"
     height={null}
     id="Footer"
     overflow={null}
@@ -1170,7 +1257,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1197,7 +1284,7 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -1226,7 +1313,7 @@ exports[` 6`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
     height={null}
     id="Header"
     overflow={null}
@@ -1241,7 +1328,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1268,7 +1355,7 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -1294,7 +1381,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 jSZvNZ"
+          className="Command__CommandContainer-sc-13akgtp-0 fXpBjx"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1321,7 +1408,7 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -1341,236 +1428,142 @@ exports[` 6`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="15%"
+      width="10rem"
     >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
-        id="List Panel"
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+        id={null}
       >
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
-          id="List Panel_header"
+        <li
+          className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+            fontSize="0.879em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.2px"
+          >
+            Research
+          </p>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
-            href={null}
-            id="LeftPanelHeader"
-            media={null}
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
             onClick={null}
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id="ListHeader"
-              onClick={null}
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <div
-                className="Bar__Slot-icfo76-1 fNcQEg"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                  fontSize="1.15em"
-                  fontWeight={600}
-                  letterSpacing="0px"
-                >
-                  Menu Header
-                </h5>
-              </div>
-              <div
-                className="Bar__Slot-icfo76-1 kZQbjh"
-              >
-                <a
-                  className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                  onClick={[Function]}
-                >
-                  <button
-                    className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
-                    disabled={false}
-                    htmlFor={null}
-                    id={null}
-                    name={null}
-                    onClick={null}
-                    tabIndex="1"
-                    type="button"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
-                      id={null}
-                      rows={null}
-                    >
-                      <svg
-                        aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                        color={null}
-                        data-icon="ellipsis-v"
-                        data-prefix="far"
-                        focusable="false"
-                        fontSize="inherit"
-                        id={null}
-                        role="img"
-                        style={Object {}}
-                        viewBox="0 0 128 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                          fill="currentColor"
-                          style={Object {}}
-                        />
-                      </svg>
-                    </section>
-                  </button>
-                </a>
-              </div>
+                Projects
+              </p>
             </div>
           </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
-          id="List Panel_body"
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
         >
-          <ul
-            className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
             id={null}
+            onClick={null}
           >
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
                 id={null}
-                onClick={null}
+                letterSpacing="0px"
               >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <a
-                    className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                    onClick={[Function]}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0px"
-                    >
-                      Layers
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
+                Properties
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
                 id={null}
-                onClick={null}
+                letterSpacing="0px"
               >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <a
-                    className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                    onClick={[Function]}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0px"
-                    >
-                      Results
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
+                History
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
+                fontWeight={400}
                 id={null}
-                onClick={null}
+                letterSpacing="0px"
               >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <a
-                    className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                    onClick={[Function]}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0px"
-                    >
-                      Form
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
-              disabled={false}
-              href={null}
-              id={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 RjiBe"
-                >
-                  <a
-                    className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
-                    onClick={[Function]}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0px"
-                    >
-                      Research
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
+                Data
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bGQswE Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dJGSkh Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="20rem"
       id={null}
       overflow={null}
       width="100%"
@@ -1592,12 +1585,149 @@ exports[` 6`] = `
         />
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 feYNea"
-        height="40%"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jIhJpo Layout__RegionBottom-sc-19tlhp4-7 feYNea"
+        height="20rem"
         id={null}
         overflow={null}
         width={null}
       >
+        <div
+          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          href={null}
+          id="storyshots_52"
+          media=""
+          onClick={null}
+        >
+          <section
+            className="Card__CardSectionWrapper-sc-1g3s676-1 ipvWKE"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 izXrkl"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 eufPAN"
+              >
+                <h6
+                  className="Typography__TitleText-sc-19auepv-2 gymxyt"
+                  fontSize="1em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Results | 3
+                </h6>
+              </div>
+              <div
+                className="Bar__Slot-icfo76-1 FsWNF"
+              >
+                <div
+                  className="IconBlock__Block-nokc92-0 UCGVw"
+                  id={null}
+                >
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="share"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="trash-alt"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                  <div
+                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
+                      disabled={false}
+                      htmlFor={null}
+                      id={null}
+                      name={null}
+                      onClick={null}
+                      tabIndex="1"
+                      type="button"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                        id={null}
+                        rows={null}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="ellipsis-v"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 128 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </section>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         <div
           className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
         >
@@ -1658,16 +1788,16 @@ exports[` 6`] = `
                       Object {
                         "height": 40,
                         "maxHeight": 40,
-                        "maxWidth": 1060,
+                        "maxWidth": 1560,
                         "overflow": "hidden",
                         "pointerEvents": "",
                         "position": "relative",
-                        "width": 1060,
+                        "width": 1560,
                       }
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 eTCUgj"
+                      className="Table__CellWrapper-gz0dbt-1 gWwrWx"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -1681,10 +1811,38 @@ exports[` 6`] = `
                         }
                       }
                     >
-                      Acreage
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 gCCOlW"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                            fontSize="0.879em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.4px"
+                          >
+                            Select All
+                          </label>
+                        </div>
+                      </section>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 eTCUgj"
+                      className="Table__CellWrapper-gz0dbt-1 irRGFH"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -1698,7 +1856,7 @@ exports[` 6`] = `
                         }
                       }
                     >
-                      Aggregate Acreage
+                      Name
                     </div>
                   </div>
                 </div>
@@ -1740,18 +1898,18 @@ exports[` 6`] = `
                     role="rowgroup"
                     style={
                       Object {
-                        "height": 200,
-                        "maxHeight": 200,
-                        "maxWidth": 1060,
+                        "height": 120,
+                        "maxHeight": 120,
+                        "maxWidth": 1560,
                         "overflow": "hidden",
                         "pointerEvents": "",
                         "position": "relative",
-                        "width": 1060,
+                        "width": 1560,
                       }
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -1765,10 +1923,32 @@ exports[` 6`] = `
                         }
                       }
                     >
-                      0.12
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -1782,10 +1962,21 @@ exports[` 6`] = `
                         }
                       }
                     >
-                      0.12
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        477 Madison Avenue
+                      </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -1799,10 +1990,32 @@ exports[` 6`] = `
                         }
                       }
                     >
-                      1.11
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -1816,10 +2029,21 @@ exports[` 6`] = `
                         }
                       }
                     >
-                      1.11
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        23 E. 21 St.
+                      </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -1833,10 +2057,32 @@ exports[` 6`] = `
                         }
                       }
                     >
-                      0.94
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+                          fontSize="0.879em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.4px"
+                        >
+                          Select
+                        </label>
+                      </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                      className="Table__CellWrapper-gz0dbt-1 ewFnqP"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -1850,75 +2096,18 @@ exports[` 6`] = `
                         }
                       }
                     >
-                      0.94
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.07
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.684631
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                        disabled={false}
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        11 W. 20 St.
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1929,204 +2118,189 @@ exports[` 6`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 gLaegA"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 gLaegA"
       height={null}
       id={null}
       overflow={null}
-      width="25%"
+      width="24rem"
     >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
-        id="Info Panel"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fdMpxY"
+        id={null}
+        rows={null}
       >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
+          onClick={null}
+          src=""
+          width="100%"
+        />
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
-          id="Info Panel_header"
-        >
-          <div
-            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
-            href={null}
-            id="RecordSummaryCard"
-            media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-            onClick={null}
-          >
-            <section
-              className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 eIeMkT"
-              id="RecordSummaryCard-Media"
-              onClick={null}
-            >
-              <img
-                alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
-                onClick={null}
-                src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-                title="Media Description"
-                width="100%"
-              />
-            </section>
-            <section
-              className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-              id="RecordSummaryCard-Header"
-              onClick={null}
-            >
-              <div
-                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-icfo76-1 boCGaE"
-                >
-                  <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 cMhgjp"
-                    id={null}
-                    onClick={null}
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
-                      color={null}
-                      data-icon="bookmark"
-                      data-prefix="fas"
-                      focusable="false"
-                      fontSize="0.875em"
-                      id={null}
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 384 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  className="Bar__Slot-icfo76-1 yvaBx"
-                >
-                  <h5
-                    className="Typography__TitleText-sc-19auepv-2 hSytIY"
-                    fontSize="1.15em"
-                    fontWeight={600}
-                    letterSpacing="0px"
-                  >
-                    Best Place Ever
-                  </h5>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                    fontSize="0.879em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.2px"
-                  >
-                    I Could Tell You More, But...
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
-          id="Info Panel_body"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 bBCooi"
+          id="Physical Characteristics"
+          rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
-            id={null}
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Buildings"
             rows={null}
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-              id={null}
-              rows={null}
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 PRpBC"
-                fontSize="1.15em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                Section 1
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-              </p>
-            </section>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
+              Project Owner
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
               id={null}
-              rows={null}
+              letterSpacing="0px"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 PRpBC"
-                fontSize="1.15em"
-                fontWeight={400}
+              Steve Davidson
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="GBA"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Due
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              06/25/2020
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Stories"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Status
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              Open
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="No. of Units"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Created
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              6/14/2020 8:00 am PT
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="Year Built"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Edited
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              6/16/2020 12:15 pm PT
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="Year Built"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Edited
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              <a
+                className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                disabled={false}
+                fontSize="0.876em"
+                fontWeight={600}
+                href={null}
                 letterSpacing="0px"
+                onClick={null}
+                target={null}
               >
-                Section 1
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-              </p>
-            </section>
+                1804
+              </a>
+            </p>
           </section>
         </section>
-      </div>
+      </section>
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fCpjke"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 fgYxpX"
     height={null}
     id="Footer"
     overflow={null}
@@ -2153,7 +2327,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -2180,7 +2354,7 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
