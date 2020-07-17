@@ -79,7 +79,7 @@ const ListTitleWrapper = styled.li`
   padding: 1rem 1rem;
 `;
 
-const ListTitle = styled(Title)`
+const ListTitle = styled(Text)`
   text-transform: uppercase;
   letter-spacing: 2px;
 `;
@@ -295,7 +295,7 @@ ListItem.defaultProps = {
 };
 
 function List({
-  children, data, id, isDivided, isInteractive, isInverse, padding, title,
+  children, data, id, isDivided, isInteractive, isInverse, isLight, padding, title,
 }) {
   let listBackground;
   let listColor;
@@ -303,6 +303,11 @@ function List({
   if (isInverse) {
     listBackground = "alt";
     listColor = "inverse";
+    listDivider = "neutral100";
+  }
+  if (isLight) {
+    listBackground = "app";
+    listColor = "neutral40";
     listDivider = "neutral100";
   }
   return (
@@ -316,7 +321,7 @@ function List({
       >
         {title ? (
           <ListTitleWrapper>
-            <ListTitle text={title} weight="bold" />
+            <ListTitle text={title}   />
           </ListTitleWrapper>
         ) : null}
         <PaddingContext.Provider value={padding}>
@@ -349,6 +354,7 @@ List.propTypes = {
   id: PropTypes.string,
   isDivided: PropTypes.bool,
   isInteractive: PropTypes.bool,
+  isLight: PropTypes.bool,
   isInverse: PropTypes.bool,
   padding: PropTypes.string,
   title: PropTypes.string,
@@ -358,6 +364,7 @@ List.defaultProps = {
   data: [],
   id: null,
   isDivided: false,
+  isLight: false,
   isInteractive: false,
   isInverse: false,
   padding: "0",

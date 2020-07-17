@@ -7,9 +7,9 @@ exports[` 1`] = `
   rows={null}
 >
   <h6
-    className="Typography__TitleText-sc-19auepv-2 fnUHAi Field__GroupTitle-sc-11od8ug-2 hDNWii"
+    className="Typography__TitleText-sc-19auepv-2 gymxyt Field__GroupTitle-sc-11od8ug-2 hDNWii"
     fontSize="1em"
-    fontWeight={600}
+    fontWeight={500}
     letterSpacing="0px"
   >
     This is the first group
@@ -20,20 +20,20 @@ exports[` 1`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 1
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     >
       Value Goes Here
     </p>
@@ -44,20 +44,20 @@ exports[` 1`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 2
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     >
       Value Goes Here
     </p>
@@ -68,20 +68,20 @@ exports[` 1`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 3
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     />
   </section>
 </section>
@@ -94,9 +94,9 @@ exports[` 2`] = `
   rows={null}
 >
   <h6
-    className="Typography__TitleText-sc-19auepv-2 fnUHAi Field__GroupTitle-sc-11od8ug-2 hDNWii"
+    className="Typography__TitleText-sc-19auepv-2 gymxyt Field__GroupTitle-sc-11od8ug-2 hDNWii"
     fontSize="1em"
-    fontWeight={600}
+    fontWeight={500}
     letterSpacing="0px"
   >
     Fields via Array
@@ -107,20 +107,20 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 1
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     >
       Value Goes Here
     </p>
@@ -131,20 +131,20 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 2
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     >
       Value Goes Here
     </p>
@@ -155,20 +155,20 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 3
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     >
       Value Goes Here
     </p>
@@ -183,9 +183,9 @@ exports[` 3`] = `
   rows={null}
 >
   <h6
-    className="Typography__TitleText-sc-19auepv-2 fnUHAi Field__GroupTitle-sc-11od8ug-2 hDNWii"
+    className="Typography__TitleText-sc-19auepv-2 gymxyt Field__GroupTitle-sc-11od8ug-2 hDNWii"
     fontSize="1em"
-    fontWeight={600}
+    fontWeight={500}
     letterSpacing="0px"
   >
     Inline Fields (Default)
@@ -196,20 +196,20 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 1
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     >
       Value Goes Here
     </p>
@@ -220,20 +220,20 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 2
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     >
       Value Goes Here
     </p>
@@ -244,20 +244,20 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+      fontSize="1em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="0px"
     >
       Field 3
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0px"
     >
       Value Goes Here
     </p>

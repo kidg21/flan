@@ -7,7 +7,7 @@ exports[` 1`] = `
 >
   <input
     checked={null}
-    className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+    className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
     id="radio"
     name="standard"
     onBlur={null}
@@ -68,7 +68,7 @@ Array [
       >
         <input
           checked={null}
-          className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+          className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
           id="brief"
           name="guidelines"
           onBlur={null}
@@ -127,7 +127,7 @@ Array [
       >
         <input
           checked={null}
-          className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+          className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
           id="long"
           name="guidelines"
           onBlur={null}
@@ -163,7 +163,7 @@ exports[` 3`] = `
   >
     <input
       checked={true}
-      className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+      className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
       id="Selected"
       name="states"
       onBlur={null}
@@ -188,7 +188,7 @@ exports[` 3`] = `
   >
     <input
       checked={null}
-      className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+      className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
       id="Unselected"
       name="states"
       onBlur={null}
@@ -213,7 +213,7 @@ exports[` 3`] = `
   >
     <input
       checked={null}
-      className="Radio__RadioInput-sc-3ox61a-2 knjFiP"
+      className="Radio__RadioInput-sc-3ox61a-2 dntbLj"
       id="Disabled"
       name="states"
       onBlur={null}
@@ -248,7 +248,7 @@ exports[` 4`] = `
   >
     <input
       checked={null}
-      className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+      className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
       id="Left Aligned"
       name="alignment"
       onBlur={null}
@@ -273,7 +273,7 @@ exports[` 4`] = `
   >
     <input
       checked={null}
-      className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+      className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
       id="Right Aligned"
       name="alignment"
       onBlur={null}
@@ -341,7 +341,7 @@ exports[` 5`] = `
             >
               <input
                 checked={null}
-                className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+                className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
                 id="radio-1"
                 name="radio-group"
                 onBlur={null}
@@ -366,7 +366,7 @@ exports[` 5`] = `
             >
               <input
                 checked={null}
-                className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+                className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
                 id="radio-2"
                 name="radio-group"
                 onBlur={null}
@@ -391,7 +391,7 @@ exports[` 5`] = `
             >
               <input
                 checked={null}
-                className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+                className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
                 id="radio-3"
                 name="radio-group"
                 onBlur={null}
@@ -416,7 +416,7 @@ exports[` 5`] = `
             >
               <input
                 checked={null}
-                className="Radio__RadioInput-sc-3ox61a-2 iMfWuB"
+                className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
                 id="radio-4"
                 name="radio-group"
                 onBlur={null}
