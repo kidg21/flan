@@ -348,12 +348,12 @@ storiesOf("Templates|Applications/Appraisal", module)
                             content: <Panel
                             header={
                               <Bar 
-                              padding="1x"
+                              padding="2x"
                               contentAlign="center" left={{
                                 content: (<Text text="Select Parcels on Map to Define Site" size="lg"/>)}}
                               right={{
                                 content: (
-                                <ButtonGroup columns="3"><Button alignCenter isPlain icon="layers" label="Layers"/><Button alignCenter isPlain icon="legend" label="Legend"/><Button alignCenter isPlain icon="sync" label="Reset"/></ButtonGroup>),
+                                <Button label="Show Related Parcels" variant="success" />),
                                 align: "right",
                                 width: "fit-content",
                               }}/>
@@ -370,6 +370,21 @@ storiesOf("Templates|Applications/Appraisal", module)
                               content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020"/>),
                             align: "left",}}
                             />}>
+                              <Template
+                                  template="A_01"
+                                  isOverlay
+                                  A={{
+                                    id: "A",
+                                    content:(
+                                      <Bar 
+                                      padding="0"
+                                      contentAlign="center" 
+                         
+                                      right={
+                                        <Card ><ButtonGroup columns="4"><Button alignCenter isPlain icon="draw" /><Button alignCenter isPlain icon="measure" /><Button alignCenter isPlain icon="layers" /><Button alignCenter isPlain icon="list" /></ButtonGroup></Card>
+                                      }/>
+                                    )
+                                  }}/>
                               <MapBox />
                               </Panel>,
                           }}
@@ -718,11 +733,11 @@ storiesOf("Templates|Applications/Appraisal", module)
                             padding="0"
                             header={
                               <Bar 
-                              padding="1x"
+                              padding="2x"
                               contentAlign="center" left={{
                                 content: (<Button label="Request Data" isSolid />)}}
                               right={
-                                <ButtonGroup columns="6"><Button alignCenter isPlain icon="measure" label="Measure"/><Button alignCenter isPlain icon="draw" label="Draw"/><Button alignCenter isPlain icon="layers" label="Layers"/><Button alignCenter isPlain icon="legend" label="Legend"/><Button alignCenter isPlain icon="photos" label="Image"/><Button alignCenter isPlain icon="sync" label="Reset"/></ButtonGroup>
+                                <Button icon="photos" label="Map Image"/>
                               }/>
                             }
                             footer={<Bar 
@@ -737,6 +752,21 @@ storiesOf("Templates|Applications/Appraisal", module)
                             />}
                             
                             >
+                              <Template
+                                  template="A_01"
+                                  isOverlay
+                                  A={{
+                                    id: "A",
+                                    content:(
+                                      <Bar 
+                                      padding="0"
+                                      contentAlign="center" 
+                         
+                                      right={
+                                        <Card ><ButtonGroup columns="4"><Button alignCenter isPlain icon="draw" /><Button alignCenter isPlain icon="measure" /><Button alignCenter isPlain icon="layers" /><Button alignCenter isPlain icon="list" /></ButtonGroup></Card>
+                                      }/>
+                                    )
+                                  }}/>
                               <MapBox />
                               </Panel>,
                           }}
@@ -871,6 +901,15 @@ storiesOf("Templates|Applications/Appraisal", module)
                               content: (
                                 <Panel
                                 padding="0"
+                                header={<Bar
+                                  contentAlign="center" left={{
+                                  content: (
+                                <Text text="Capture Map Image to add to Report"/>),
+                              width: "fit-content",
+                            }}
+                            right={{
+                              content: (<Button label="Map Capture" icon="photos"/>),
+                            }}/>}
                                 footer={<Bar
                                   contentAlign="bottom" left={{
                                   content: (
@@ -892,7 +931,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                                       contentAlign="center" 
                          
                                       right={
-                                        <Card ><ButtonGroup columns="4"><Button alignCenter isPlain icon="draw" /><Button alignCenter isPlain icon="measure" /><Button alignCenter isPlain icon="layers" /><Button alignCenter isPlain icon="legend" /></ButtonGroup></Card>
+                                        <Card ><ButtonGroup columns="4"><Button alignCenter isPlain icon="draw" /><Button alignCenter isPlain icon="measure" /><Button alignCenter isPlain icon="layers" /><Button alignCenter isPlain icon="list" /></ButtonGroup></Card>
                                       }/>
                                     )
                                   }}/>
