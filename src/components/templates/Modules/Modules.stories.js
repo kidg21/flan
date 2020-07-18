@@ -19,11 +19,15 @@ import Template from "layout/Template";
 import InputBlock from "blocks/InputBlock";
 import Tabs from "blocks/Tabs";
 import Form, { FormSection } from "layout/Form";
+import Image from "atoms/Image";
 import TextInput from "atoms/TextInput";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
 import Legend from "blocks/Legend";
+import MapStreets from "images/maps/map-streets.png";
+import MapSatellite from "images/maps/map-satellite.jpg";
+import MapHybrid from "images/maps/map-hybrid.jpg";
 import {
   MockMapPalettes,
 } from "helpers/Mocks";
@@ -193,7 +197,8 @@ storiesOf("Templates/Modules/Maps", module)
       <React.Fragment>
         <Template
           id="Template Regions"
-          template="B_05"
+          // template="B_05"
+          template="C_04"
           isOverlay
           A={{
             id: "A",
@@ -211,6 +216,23 @@ storiesOf("Templates/Modules/Maps", module)
           B={{
             id: "B",
             content: <MockMapPalettes />,
+          }}
+          C={{
+            id: "C",
+            content: (
+              // Set the 'columns' value to the # of Buttons
+              <CardGrid columns="3">
+                <Card shadow="2x">
+                  <Image src={MapStreets} width="75" onClick />
+                </Card>
+                <Card shadow="2x">
+                  <Image src={MapSatellite} width="75" onClick />
+                </Card>
+                <Card shadow="2x">
+                  <Image src={MapHybrid} width="75" onClick />
+                </Card>
+              </CardGrid>
+            ),
           }}
         />
         <Mapbox />
