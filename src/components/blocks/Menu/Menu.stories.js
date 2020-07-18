@@ -1,118 +1,245 @@
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
 import Menu from "blocks/Menu";
-import { Padding } from "helpers/Display";
+import { Padding, CenterDecorator, Container } from "helpers/Display";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
 export default {
-  title: "Atoms/Menu",
-  includeStories: [],
-  decorators: [Padding],
+  title: "Atoms/Menu/Tests",
+  parameters: {
+    docs: { page: null }, // canvas view for these stories
+  },
+  decorators: [CenterDecorator, Container, Padding, Padding],
+  excludeStories: /.*Mock$/,
 };
 
-const data = [
-  { id: "option 1", label: "option 1", onClick: () => { /* alert("option 1"); */ } },
-  {
-    id: "option 2", label: "option 2", onClick: () => { /* alert("option 2"); */ },
-    data: [
-      { id: "nested option 1", label: "nested option 1", onClick: () => { /* alert("nested option 1"); */ } },
-      {
-        id: "nested option 2", label: "nested option 2", onClick: () => { /* alert("nested option 2"); */ },
-        data: [
-          { id: "nested option 21", label: "nested option 21", onClick: () => { /* alert("nested option 21"); */ } },
-          { id: "nested option 22", label: "nested option 22", onClick: () => { /* alert("nested option 22"); */} },
-        ]
-      },
-    ]
-  },
-  { id: "option 3", label: "option 3", onClick: () => { alert("option 3"); } },
-];
+export const textMock = `Live the California dream at this modern paradise right on the beach in Malibu. Whether it's
+ your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on
+ the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking
+ distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with
+ nature and start living your Malibu dream now. This is the best deal under $4 million on the beach.
+`;
 
-export const SimpleMenu = () => {
-  const [visible, setVisible] = useState(false);
+
+const dataMock = [{
+  label: "Save",
+  id: "save",
+  onClick: action("Save Clicked"),
+}, {
+  label: "Filter",
+  id: "filter",
+  onClick: action("Filter Clicked"),
+}, {
+  label: "Share",
+  id: "share",
+  onClick: action("Share Clicked"),
+}, {
+  label: "Delete",
+  id: "delete",
+  onClick: action("Delete Clicked"),
+}];
+
+const nestedMock = [{
+  id: "save",
+  label: "Save",
+  onClick: action("Save Clicked"),
+}, {
+  id: "filter",
+  label: "Filter",
+  onClick: action("Filter Clicked"),
+}, {
+  id: "share",
+  label: "Share",
+  onClick: action("Share Clicked"),
+  data: [{
+    id: "nested-share-1",
+    label: "Nested Share 1",
+    onClick: action("Nested 1 Clicked"),
+  }, {
+    id: "nested-share-2",
+    label: "Nested Share 2",
+    onClick: action("Nested 2 Clicked"),
+    data: [{
+      id: "toast",
+      label: "Toast",
+      onClick: action("Toast Clicked"),
+    }, {
+      id: "popcorn",
+      label: "Popcorn",
+      onClick: action("Popcorn Clicked"),
+    }],
+  }],
+}, {
+  id: "delete",
+  label: "Delete",
+  onClick: action("Delete Clicked"),
+}];
+
+export const PortalPositions = () => {
   return (
-    <Menu data={data} visible={visible} onClick={() => { setVisible(true); }} onClose={() => { setVisible(false); }} />
+    <Grid columns={4}>
+      <Menu
+        id="menu-portal-position-bottomRight"
+        initVisible
+        portal
+        data={dataMock}
+        position="bottomRight"
+      >
+        <Button id="button-bottomRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-topRight"
+        initVisible
+        portal
+        data={dataMock}
+        position="topRight"
+      >
+        <Button id="button-topRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-bottomLeft"
+        initVisible
+        portal
+        data={dataMock}
+        position="bottomLeft"
+      >
+        <Button id="button-bottomLeft" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-topLeft"
+        initVisible
+        portal
+        data={dataMock}
+        position="topLeft"
+      >
+        <Button id="button-topLeft" icon="options" isSolid />
+      </Menu>
+    </Grid>
   );
 };
 
-export const Position = () => {
-  const [visibleMenus, setVisibleMenus] = useState({});
+export const FlexPositons = () => {
   return (
-    <Grid columns="2">
+    <Grid columns={4}>
       <Menu
-        id="menu-bottomRight"
-        portal={false}
-        data={data}
-        visible={visibleMenus.bottomRight}
-        onClick={() => {
-          setVisibleMenus((visible) => {
-            return { ...visible, bottomRight: !visible.bottomRight };
-          });
-        }}
-        onClose={() => {
-          setVisibleMenus((visible) => {
-            return { ...visible, bottomRight: false };
-          });
-        }}
-      />
+        id="menu-flex-position-bottomRight"
+        initVisible
+        isFlex
+        data={dataMock}
+        position="bottomRight"
+      >
+        <Button id="button-bottomRight" icon="options" isSolid />
+      </Menu>
       <Menu
-        id="menu-bottomLeft"
-        position="bottomLeft"
-        portal={false}
-        data={data}
-        visible={visibleMenus.bottomLeft}
-        onClick={() => {
-          setVisibleMenus((visible) => {
-            return { ...visible, bottomLeft: !visible.bottomLeft };
-          });
-        }}
-        onClose={() => {
-          setVisibleMenus((visible) => {
-            return { ...visible, bottomLeft: false };
-          });
-        }}
-      />
-      {/* new row */}
-      <Menu
-        id="menu-topRight"
+        id="menu-flex-position-topRight"
+        initVisible
+        isFlex
+        data={dataMock}
         position="topRight"
-        data={data}
-        visible={visibleMenus.topRight}
-        onClick={() => {
-          setVisibleMenus((visible) => {
-            return { ...visible, topRight: !visible.topRight };
-          });
-        }}
-        onClose={() => {
-          setVisibleMenus((visible) => {
-            return { ...visible, topRight: false };
-          });
-        }}
+      >
+        <Button id="button-topRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-flex-position-bottomLeft"
+        initVisible
+        isFlex
+        data={dataMock}
+        position="bottomLeft"
+      >
+        <Button id="button-bottomLeft" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-flex-position-topLeft"
+        initVisible
+        isFlex
+        data={dataMock}
+        position="topLeft"
+      >
+        <Button id="button-topLeft" icon="options" isSolid />
+      </Menu>
+    </Grid>
+  );
+};
+
+export const PortalFlexPositions = () => {
+  return (
+    <Grid columns={4}>
+      <Menu
+        id="menu-portal-flex-bottomRight"
+        initVisible
+        portal
+        isFlex
+        data={dataMock}
+        position="bottomRight"
+      >
+        <Button id="button-bottomRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-flex-topRight"
+        initVisible
+        portal
+        isFlex
+        data={dataMock}
+        position="topRight"
+      >
+        <Button id="button-topRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-flex-bottomLeft"
+        initVisible
+        portal
+        isFlex
+        data={dataMock}
+        position="bottomLeft"
+      >
+        <Button id="button-bottomLeft" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-flex-topLeft"
+        initVisible
+        portal
+        isFlex
+        data={dataMock}
+        position="topLeft"
+      >
+        <Button id="button-topLeft" icon="options" isSolid />
+      </Menu>
+    </Grid>
+  );
+};
+
+export const NestedPositions = () => {
+  return (
+    <Grid columns={4}>
+      <Menu
+        id="menu-nested-position-bottomRight"
+        initVisible
+        data={nestedMock}
+        position="bottomRight"
       />
       <Menu
-        id="menu-topLeft"
+        id="menu-nested-position-topRight"
+        initVisible
+        data={nestedMock}
+        position="topRight"
+      />
+      <Menu
+        id="menu-nested-position-bottomLeft"
+        initVisible
+        data={nestedMock}
+        position="bottomLeft"
+      />
+      <Menu
+        id="menu-nested-position-topLeft"
+        initVisible
+        data={nestedMock}
         position="topLeft"
-        portal
-        data={data}
-        visible={visibleMenus.topLeft}
-        onClick={() => {
-          setVisibleMenus((visible) => {
-            return { ...visible, topLeft: !visible.topLeft };
-          });
-        }}
-        onClose={() => {
-          setVisibleMenus((visible) => {
-            return { ...visible, topLeft: false };
-          });
-        }}
       />
     </Grid>
   );
 };
 
-// /* eslint-disable linebreak-style */
-// /* eslint-disable react/jsx-filename-extension, security/detect-object-injection */
 // import React from "react";
 
 // import { expect } from "chai";

@@ -6,7 +6,6 @@ import React, { useState, useMemo, useRef, useCallback } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Popper from "layout/Popper";
-import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 import List, { ListItem } from "blocks/List";
 import { useId, getGuid } from "helpers";
@@ -28,12 +27,19 @@ const ListWrapper = styled(List)`
     return props.transform || "";
   }};
   border-radius: inherit;
+  z-index: 500;
+`;
+
+const StyledCardWrapper = styled(CardWrapper)`
   > :first-child {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
+  };
+  > :last-child {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
   }
 `;
-
 // const NestedListWrapper = styled(ListWrapper)`
 //   position: absolute;
 //   top: ${(props) => {
@@ -49,6 +55,7 @@ const ListWrapper = styled(List)`
 
 // width: 100% needed for highlighing whole entry
 const ListItemWrapper = styled(ListItem)`
+  border-radius: inherit;
   // width: 100%;
 `;
 
@@ -128,7 +135,7 @@ const MenuList = ({
         );
       }
       return (
-        <ListItemWrapper
+        <ListItem
           key={itemId}
           id={`item-${itemId}`}
           title={item.label}
@@ -142,11 +149,11 @@ const MenuList = ({
 
   const positionStyle = _nestedLevel ? listPositionStyle[validDirection.toLowerCase()] : {};
   return (
-    <CardWrapper shadow="2x">
-      <ListWrapper id={id} isInteractive nestedLevel={_nestedLevel} {...positionStyle}>
+    <ListWrapper id={id} isInteractive nestedLevel={_nestedLevel} {...positionStyle}>
+      <StyledCardWrapper shadow="2x">
         {listItems}
-      </ListWrapper>
-    </CardWrapper>
+      </StyledCardWrapper>
+    </ListWrapper>
   );
 };
 
@@ -304,14 +311,47 @@ const _Menu = (props) => {
 };
 
 _Menu.defaultProps = {
-  ...Menu.defaultProps,
-  ...StatefulMenu.Props,
+  children: null,
+  data: [],
+  icon: "options",
+  initVisible: false,
+  id: "",
+  isFlex: false,
   onClick: undefined,
+  onClose: null,
+  portal: false,
+  position: "bottomRight",
   visible: undefined,
+  ...StatefulMenu.Props,
 };
 
 _Menu.propTypes = {
-  ...Menu.propTypes,
-  ...StatefulMenu.propTypes,
+  /** custom anchor element */
+  children: PropTypes.node,
+  /** list of item objects in menu */
+  data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
+  /** icon name for default button anchor */
+  icon: PropTypes.string,
+  /** menu id */
+  id: PropTypes.string,
+  /** the initial visible value for stateful/uncontrolled menus */
+  initVisible: PropTypes.bool,
+  /** to specify an anchor element to be flex so it won't break */
+  isFlex: PropTypes.bool,
+  /** onClick callback for the default anchor element */
+  onClick: PropTypes.func,
+  /** onClose callback when menu closes */
+  onClose: PropTypes.func,
+  /** places menu in a portal */
+  portal: PropTypes.bool,
+  /** open position relative to anchor element */
+  position: PropTypes.oneOf([
+    "bottomLeft",
+    "bottomRight",
+    "topLeft",
+    "topRight",
+  ]),
+  /** open/close state of menu */
+  visible: PropTypes.bool,
 };
 export { _Menu as default, MenuList };

@@ -1,27 +1,210 @@
-import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { useState } from "react";
+import { Meta, Story, Preview, Props, Source } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
 import * as stories from "layout/Popper/Popper.stories.js";
-import { Padding } from "helpers/Display";
+import { Padding, CenterDecorator, Container, DisplayGrid } from "helpers/Display";
+import Popper from "layout/Popper";
+import Card from "elements/Card";
+import Button, { ButtonGroup } from "atoms/Button";
+import Grid from "layout/Grid";
 
-<Meta title="Utilities|Popper" />
+<Meta title="Utilities|Popper" component={Popper} />
 
-# Palettes
+# Popper
 
-Where appropriate, we enable people to introduce their own color palettes. Our products adapt intelligently and flexibly to cater for the user's preference. We are also committed to complying with AA standard contrast ratios. To accomplish this, you should choose primary, secondary and extended colors that ensure sufficient color contrast between elements. This allows users with low vision to see and use the interface.
+#### Popcorn is yummy :)
 
-## Brand Palettes
-
-### LightBox Primary Colors
-
-Our brand palette is comprised of neutrals, white, and blue. These colors are reppresent the Lightbox brand across products. These colors are not intended for use in our core interface but to wrap a product in a brand's theme.
-
-<Preview>
-  <Story name="Positions" decorators={[Padding]}>{stories.Position()}</Story>
+<Preview withToolbar>
+  <Story name="Standard" decorators={[Container, Padding, DisplayGrid]}>
+    {() => {
+        const [visible, setVisible] = useState(true);
+        return (
+          <Popper
+            id="popper-standard"
+            anchor={(
+              <Button
+                label="Pop"
+                isSolid
+                onClick={() => { setVisible((show) => { return !show; })}}
+              />
+            )}
+            visible={visible}
+            onClose={() => { setVisible(false); }}
+          >
+            <Grid>
+              <Card
+                title="Corn"
+                description="Live the California dream at this modern paradise right on the beach in Malibu."
+              />
+            </Grid>
+        </Popper>
+        );
+      }}
+  </Story>
 </Preview>
 
-<Preview>
-  <Story name="Positions (Portal)" decorators={[Padding]}>{stories.PositionPortal()}</Story>
-</Preview>
+## Props
+
+<Props of={Popper} />
+
+## Examples
+
+### Positions
 
 <Preview>
-  <Story name="Anchor Ref (Portal)" decorators={[Padding]}>{stories.PortalAnchorRef()}</Story>
+  <Story name="Position" decorators={[CenterDecorator, Container, Padding]}>
+    <Grid columns="4">
+      <Popper
+        id="popper-position-bottomRight"
+        anchor={(
+          <Button
+            label="Bottom Right"
+            isSolid
+          />
+        )}
+        visible
+        position="bottomRight"
+      >
+        <Grid>
+          <Card
+            title="Corn"
+            description="Live the California dream at this modern paradise right on the beach in Malibu."
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-position-topRight"
+        anchor={(
+          <Button
+            label="Top Right"
+            isSolid
+          />
+        )}
+        visible
+        position="topRight"
+     >
+        <Grid>
+          <Card
+            title="Corn"
+            description="Live the California dream at this modern paradise right on the beach in Malibu."
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-position-bottomLeft"
+        anchor={(
+          <Button
+            label="Bottom Left"
+            isSolid
+          />
+        )}
+        visible
+        position="bottomLeft"
+      >
+        <Grid>
+          <Card
+            title="Corn"
+            description="Live the California dream at this modern paradise right on the beach in Malibu."
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-position-topLeft"
+        anchor={(
+          <Button
+            label="Top Left"
+            isSolid
+          />
+        )}
+        visible
+        position="topLeft"
+      >
+       <Grid>
+          <Card
+            title="Corn"
+            description="Live the California dream at this modern paradise right on the beach in Malibu."
+          />
+        </Grid>
+      </Popper>
+    </Grid>
+  </Story>
+</Preview>
+
+### Portal
+
+<Preview>
+  <Story name="Portal" decorators={[Padding, DisplayGrid]}>
+    {() => {
+        const [visible, setVisible] = useState(false);
+        return (
+          <Popper
+            id="popper-portal"
+            anchor={(
+              <Button
+                label="Portal Popper"
+                onClick={() => { setVisible((show) => { return !show; })}}
+                isSolid
+              />
+            )}
+            portal
+            visible={visible}
+            onClose={() => { setVisible(false); }}
+          >
+            <Grid>
+              <Card
+                title="Corn"
+                description="Live the California dream at this modern paradise right on the beach in Malibu."
+              />
+            </Grid>
+        </Popper>
+        );
+      }}
+  </Story>
+</Preview>
+
+### Flex Wrapper
+
+<Preview>
+  <Story name="Flex" decorators={[CenterDecorator, Container, Padding]}>
+    <ButtonGroup columns={4}>
+      <Button label="Normal Button" />
+      <Popper
+        id="popper-position-bottomRight"
+        anchor={(
+          <Button
+            label="Flex Popper"
+            isSolid
+          />
+        )}
+        visible
+        isFlex
+        position="bottomRight"
+      >
+        <Grid>
+          <Card
+            title="Corn"
+            description="Live the California dream at this modern paradise right on the beach in Malibu."
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-position-bottomRight"
+        anchor={(
+          <Button
+            label="Normal Popper"
+          />
+        )}
+        visible
+        position="bottomRight"
+      >
+        <Grid>
+          <Card
+            title="Corn"
+            description="Live the California dream at this modern paradise right on the beach in Malibu."
+          />
+        </Grid>
+      </Popper>
+      <Button label="Normal Button" />
+    </ButtonGroup>
+  </Story>
 </Preview>

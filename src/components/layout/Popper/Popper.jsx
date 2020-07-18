@@ -49,6 +49,7 @@ const PopperWrapper = styled.div`
   transform: ${(props) => {
     return props.transform || "";
   }};
+  // width: max-content;
 `;
 
 const PopperBG = styled.div`
@@ -154,7 +155,7 @@ const absolutePositionStyle = {
     left: "100%",
     transform: flipX,
   },
-  bottomRight: {
+  bottomright: {
     top: "100%",
   },
 };
@@ -169,7 +170,7 @@ const NonPortalPopper = ({
   onClose,
 }) => {
   const validPosition = absolutePositionStyle.hasOwnProperty(position.toLowerCase()) ? position : "bottomRight";
-  const positionStyle = absolutePositionStyle[validPosition];
+  const positionStyle = absolutePositionStyle[validPosition.toLowerCase()];
   return (
     <NonPortalWrapper id={id} isFlex={isFlex}>
       {anchor}
@@ -221,11 +222,12 @@ Popper.defaultProps = {
   anchor: null,
   anchorRef: null,
   children: null,
+  closeOnScroll: undefined,
   id: "",
   isFlex: false,
   onClose: null,
   portal: false,
-  position: "",
+  position: "bottomRight",
   visible: false,
 };
 PortalPopper.defaultProps = Popper.defaultProps;
@@ -237,6 +239,7 @@ Popper.propTypes = {
     current: PropTypes.any,
   }),
   children: PropTypes.node,
+  closeOnScroll: PropTypes.bool,
   id: PropTypes.string,
   isFlex: PropTypes.bool,
   onClose: PropTypes.func,

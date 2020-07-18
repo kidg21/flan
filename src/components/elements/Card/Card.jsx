@@ -16,6 +16,7 @@ import Menu from "blocks/Menu";
 import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
+import CardWrapper from "./CardWrapper.jsx";
 
 const LinkedWrapper = styled.a`
   flex: auto;
@@ -67,50 +68,6 @@ const CardMedia = styled(Media)`
     return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
   }};
     }
-`;
-
-const CardWrapper = styled.div`
-  position: relative;
-  display: flex;
-  cursor: ${(props) => {
-    return props.onClick ? "pointer" : "";
-  }};
-  flex-direction: column;
-  flex: none;
-  background-color: ${(props) => {
-    return props.cardBackground
-      ? props.theme.background[props.cardBackground]
-      : props.theme.background.default;
-  }};
-  padding: ${(props) => {
-    return props.cardPadding || "";
-  }};
-  color: ${(props) => {
-    return props.cardColor ? props.theme.text[props.cardColor] : props.theme.text.primary;
-  }};
-  border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
-
-  box-shadow: ${(props) => {
-    return props.theme.shadows[props.cardShadow] || "";
-  }};
-  a {
-  color: ${(props) => {
-    return props.theme.text[props.cardColor] || "";
-  }};
-  }
-  /* Prototype Content - displays when a Card is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      color: ${(props) => {
-    return props.theme.text.primary;
-  }};
-      content: "Card";
-      padding: 2rem;
-    }
-  }
 `;
 
 const CardGridWrapper = styled(Grid)`
@@ -314,33 +271,6 @@ function Card({
   variant,
 }) {
   const uId = useMemo(() => { return id || getGuid(); }, [id]);
-
-  let cardColor;
-  let cardBackground;
-  if (isInverse) {
-    cardColor = "inverse";
-    cardBackground = "inverse";
-  }
-
-  let cardPadding;
-  const numPadding = padding ? parseInt(padding, 10) : NaN;
-  if (numPadding > 0 && numPadding < 5) {
-    cardPadding = `${0.25 * numPadding}em`;
-  }
-
-  let cardShadow;
-  switch (shadow) {
-    case "0":
-      cardShadow = null;
-      break;
-    case "2x":
-      cardShadow = "dropShadow2";
-      break;
-    default:
-      cardShadow = "outlineShadow";
-      break;
-  }
-
   const disableTransition = useContext(DisableTransitionContext);
   const [open, setOpen] = useState(false);
   function toggleDropdown() {
@@ -466,16 +396,13 @@ function Card({
 
   return (
     <CardWrapper
-      cardBackground={cardBackground}
-      cardColor={cardColor}
-      cardPadding={cardPadding}
-      cardShadow={cardShadow}
       className={className}
-      onClick={onClick}
       id={uId}
-      href={href}
       isInverse={isInverse}
+      href={href}
       media={media}
+      onClick={onClick}
+      padding={padding}
       shadow={shadow}
     >
       {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
