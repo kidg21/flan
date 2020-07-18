@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <a
-  className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
   id={null}
   label="Print"
   onClick={null}
@@ -29,7 +29,7 @@ exports[` 1`] = `
     />
   </svg>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+    className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
     fontSize="0.879em"
     fontWeight={400}
     htmlFor={null}
@@ -47,7 +47,7 @@ exports[` 2`] = `
   rows={null}
 >
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+    className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
     id={null}
     label="Active"
     onClick={null}
@@ -74,7 +74,7 @@ exports[` 2`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
       fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
@@ -84,7 +84,7 @@ exports[` 2`] = `
     </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 fZFvYV"
+    className="Command__CommandContainer-sc-13akgtp-0 eifuBx"
     id={null}
     label="Disabled"
     onClick={null}
@@ -111,7 +111,7 @@ exports[` 2`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
       fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
@@ -130,7 +130,7 @@ exports[` 3`] = `
   rows={null}
 >
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 cbcXQq"
+    className="Command__CommandContainer-sc-13akgtp-0 hsaNfi"
     id={null}
     label="Small"
     onClick={null}
@@ -157,7 +157,7 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
       fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
@@ -167,7 +167,7 @@ exports[` 3`] = `
     </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+    className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
     id={null}
     label="Standard"
     onClick={null}
@@ -194,7 +194,7 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
       fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
@@ -204,7 +204,7 @@ exports[` 3`] = `
     </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 idzYhN"
+    className="Command__CommandContainer-sc-13akgtp-0 eihxsV"
     id={null}
     label="Large"
     onClick={null}
@@ -231,7 +231,7 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
       fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
@@ -250,7 +250,7 @@ exports[` 4`] = `
   rows={null}
 >
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+    className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
     id={null}
     label="Icon-Left"
     onClick={null}
@@ -277,7 +277,7 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
       fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
@@ -287,7 +287,7 @@ exports[` 4`] = `
     </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 kcjboZ"
+    className="Command__CommandContainer-sc-13akgtp-0 ebBnup"
     id={null}
     label="Icon-Top"
     onClick={null}
@@ -314,7 +314,7 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
       fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
@@ -324,7 +324,7 @@ exports[` 4`] = `
     </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 jSZvNZ"
+    className="Command__CommandContainer-sc-13akgtp-0 fXpBjx"
     id={null}
     label="Icon-Right"
     onClick={null}
@@ -351,7 +351,7 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
       fontSize="0.879em"
       fontWeight={400}
       htmlFor={null}
