@@ -21,10 +21,10 @@ const StyledButton = styled.button`
     return props.fullWidth ? "100%" : "max-content";
   }};
   height: ${(props) => {
-    return props.alignCenter ? "" : "2.4rem";
+    return props.isSmall ? "fit-content" : props.alignCenter ? "" : "2.4rem";
   }};
   padding: ${(props) => {
-    return props.alignCenter ? "0.75em" : "0em 0.75em";
+    return props.isSmall ? "0.25em" : props.alignCenter ? "0.75em" : "0em 0.75em";
   }};
   justify-content: center;
   align-items: center;
@@ -161,6 +161,7 @@ function Button({
   isRound,
   isSolid,
   type,
+  isSmall,
   variant,
   hasUnderline,
   alignCenter,
@@ -173,9 +174,10 @@ function Button({
   let borderColor;
   let buttonColor;
   let fontColor;
+  let buttonPadding;
+  let buttonHeight;
   let fontWeight;
   let shadeColor;
-  let labelSize;
   let tintColor;
 
   switch (variant && variant.toLowerCase()) {
@@ -250,6 +252,17 @@ function Button({
     borderColor = buttonColor;
   }
 
+let labelSize;
+let iconSize;
+
+if (isSmall) {
+  labelSize= "xs";
+  iconSize = "sm";
+} else {
+  labelSize= "lg";
+  iconSize = "";
+}
+
   let gridGap = null;
   let justifyItems = null;
   if (alignCenter) {
@@ -281,8 +294,8 @@ function Button({
       justifyItems={justifyItems}
       rows={alignCenter ? "max-content 1fr" : null}
     >
-      {icon ? <Icon icon={icon} /> : null}
-      {label ? <Label size="lg" text={label} /> : null}
+      {icon ? <Icon icon={icon} size={iconSize} /> : null}
+      {label ? <Label size={labelSize} text={label} /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>
   );
@@ -296,10 +309,13 @@ function Button({
       borderStyle={borderStyle}
       borderWidth={borderWidth}
       buttonColor={buttonColor}
+      buttonPadding={buttonPadding}
       className={className}
       disabled={isDisabled}
       fontColor={fontColor}
+      buttonHeight={buttonHeight}
       fontWeight={fontWeight}
+      isSmall={isSmall}
       fullWidth={fullWidth}
       hasUnderline={hasUnderline}
       hoverColor={hoverColor}
@@ -308,7 +324,7 @@ function Button({
       isPlain={isPlain}
       isRound={isRound}
       isSolid={isSolid}
-      labelSize={labelSize}
+      
       name={id}
       onClick={onClick}
       tabIndex={disabled ? "-1" : "1"}

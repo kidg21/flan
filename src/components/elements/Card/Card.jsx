@@ -27,7 +27,7 @@ const CardSectionWrapper = styled.section`
   flex-direction: column;
   flex: 0 0 auto;
   color: ${(props) => {
-    return props.theme.text[props.sectionColor] || "";
+    return props.theme.text[props.sectionColor] || props.theme.text.secondary;
   }};
   background-color: ${(props) => {
     return props.theme.background[props.sectionBackground] || "";
@@ -356,18 +356,18 @@ function Card({
   if (onClick) {
     centerContent = (
       <LinkedWrapper >
-        <Grid columns="1">
+        <React.Fragment >
           {title ? <Title size="xl" text={title} /> : null}
-          {description ? (<Text size="sm" text={description} />
+          {description ? (<Text  text={description} />
           ) : null}
-        </Grid>
+        </React.Fragment>
       </LinkedWrapper>
     );
   } else {
     centerContent = (
       <React.Fragment >
         {title ? <Title size="xl" text={title}  /> : null}
-        {description ? (<Text size="sm" text={description} />
+        {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>
     );

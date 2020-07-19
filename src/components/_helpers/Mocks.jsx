@@ -86,7 +86,7 @@ function MockHeaderGlobal({ menuClick }) {
       right={{
         content: (
           <Grid columns="max-content max-content" gap="4xl" align="center">
-            <Button icon="help_circle"  variant="neutral" isRound isPlain onClick={doNothing} />
+            <Button icon="help_circle"  variant="neutral" isPlain/>
             <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
           </Grid>
         ),
@@ -121,17 +121,18 @@ function MockHeader({ percentage }) {
   return (
     <Card
       id="Card_Header"
+      padding="0"
   
     >
-      <CardSection variant="light" padding="0">
+      <CardSection variant="light" padding="1x">
         <Bar
           contentAlign="center"
-          padding="2x"
+          padding="1x"
           left={{
             content: (
               <Grid columns="1" gap="xs">
-            <Text text="Project" size="sm"/>
-            <Title weight="bold" size="lg" text="22902 Trabuco Road, Mission Viejo, CA 92691 • Shopping Center • 1402-20-12345" weight="bold" /></Grid>),
+            <Text text="Project" size="xs"/>
+            <Title  size="xl" text="22902 Trabuco Road, Mission Viejo, CA 92691 • Shopping Center • 1402-20-12345" weight="bold" /></Grid>),
             align: "left",
           }}
           right={{
@@ -716,7 +717,7 @@ function MockDetails({
 }) {
   return (
     <Template>
-      <Image src={image || StaticMap} width="100%" />
+      <Image src={image || StaticMap} width="80%" />
       {data ? <FieldGroup id={title} title={title} data={data} />
         : (
           <FieldGroup id="Physical Characteristics" >
@@ -747,8 +748,8 @@ function MockDetails({
             />
             <Field
               id="Year Built"
-              label="Project Edited"
-              value={<Link text="1804"/>}
+              label="N1 ID"
+              value={<Link text="1804"size="lg"/>}
             />
           </FieldGroup>
         )}

@@ -8,6 +8,7 @@ import Loader from "atoms/Loader";
 import Button, {ButtonGroup} from "atoms/Button";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
+import Command from "atoms/Command";
 import Template from "layout/Template";
 import Tabs, { TabItem } from "blocks/Tabs";
 import List, { ListItem } from "blocks/List";
@@ -348,43 +349,31 @@ storiesOf("Templates|Applications/Appraisal", module)
                             content: <Panel
                             header={
                               <Bar 
-                              padding="2x"
+                              padding="1x"
                               contentAlign="center" left={{
                                 content: (<Text text="Select Parcels on Map to Define Site" size="lg"/>)}}
                               right={{
                                 content: (
-                                <Button label="Show Related Parcels" variant="success" />),
+                                  <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button alignCenter isSmall isPlain icon="measure" label="Measure" variant="neutral"/><Button isSmall alignCenter isPlain icon="layers" label="Layers" variant="neutral"/><Button alignCenter isSmall isPlain icon="list" label="Legend" variant="neutral"/><Button alignCenter isPlain isSmall variant="neutral" icon="sync" label="Reset" /></ButtonGroup>
+                                  ),
                                 align: "right",
                                 width: "fit-content",
                               }}/>
                             }
                             padding="0"
                             footer={<Bar 
+                              padding="0"
                               contentAlign="bottom" 
                               left={{
                               content: (
-                            <Icon icon="database" size="sm" />),
+                            <Icon icon="database" size="xs" onClick />),
                           width: "fit-content",
                         }}
                             center={{
-                              content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020"/>),
+                              content:(<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020"/>),
                             align: "left",}}
                             />}>
-                              <Template
-                                  template="A_01"
-                                  isOverlay
-                                  A={{
-                                    id: "A",
-                                    content:(
-                                      <Bar 
-                                      padding="0"
-                                      contentAlign="center" 
-                         
-                                      right={
-                                        <Card ><ButtonGroup columns="4"><Button alignCenter isPlain icon="draw" label="Draw" /><Button alignCenter isPlain icon="measure" label="Measure" /><Button alignCenter isPlain icon="layers" label="Layers" /><Button alignCenter isPlain icon="list" label="Legend" /></ButtonGroup></Card>
-                                      }/>
-                                    )
-                                  }}/>
+          
                               <MapBox map="satellite" />
                               </Panel>,
                           }}
@@ -393,27 +382,26 @@ storiesOf("Templates|Applications/Appraisal", module)
                             content: (
                               <Panel
                               padding="0"
+                              header={
+                                <Bar contentAlign="center" left={<Title size="xl" text="Site Parcels"/>} right={<Button label="Show Related Parcels"/>}/>
+                              }
                               footer={
                                 <Bar right={{
                                   content:( <Button label="Save & Next" isSolid/>),
                                 }}/>
                               }
                               >
-                              <Form title="Site Parcels" >
+                              <Form >
                                 
                                   <Card
+                                  padding="0"
         title="42 Wallaby Way, Sydney, Australia"
         description="APN: 93423438492038"
-        commands={[
-          {
-            id: "Command One",
-            label: "View Details",
-            onClick: action("Command One Clicked"),
-          }]}
+
           body={
        <FieldGroup
         id="Group1"
-        columns="1"
+        
       >
         <Field
           id="Field 1"
@@ -432,18 +420,14 @@ storiesOf("Templates|Applications/Appraisal", module)
         />
       </FieldGroup>}/>
       <Card
+      padding="0"
         title="42 Wallaby Way, Sydney, Australia"
         description="APN: 93423438492038"
-        commands={[
-          {
-            id: "Command One",
-            label: "View Details",
-            onClick: action("Command One Clicked"),
-          }]}
+          
           body={
        <FieldGroup
         id="Group1"
-        columns="1"
+        
       >
         <Field
           id="Field 1"
@@ -462,14 +446,10 @@ storiesOf("Templates|Applications/Appraisal", module)
         />
       </FieldGroup>}/>
       <Card
+      padding="0"
         title="42 Wallaby Way, Sydney, Australia"
         description="APN: 93423438492038"
-        commands={[
-          {
-            id: "Command One",
-            label: "View Details",
-            onClick: action("Command One Clicked"),
-          }]}
+        
           body={
        <FieldGroup
         id="Group1"
@@ -622,20 +602,20 @@ storiesOf("Templates|Applications/Appraisal", module)
                               />}
                             padding="0"
                             footer={<Bar 
-                              
+                              padding="0"
                               contentAlign="bottom" 
                               left={{
                               content: (
-                            <Icon icon="database" size="sm"/>),
+                            <Icon icon="database" size="xs" onClick />),
                           width: "fit-content",
                         }}
                             center={{
-                              content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020 " size="sm"/>),
+                              content:(<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020"/>),
                             align: "left",}}
                             />}>
                               
                               <Form>
-                              <Field label="Parcel Link" value={<Link text="808-23093"/>}/>
+                              <Field label="Parcel Link" value={<Link text="808-23093" size="lg"/>}/>
                               
                                 <TextInput label="Assessment Year(s)"/>
                                 <TextInput label="Land Assessment"/>
@@ -730,44 +710,36 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: <Panel
-                            padding="0"
                             header={
                               <Bar 
-                              padding="2x"
-                              contentAlign="center" left={{
-                                content: (<Button label="Request Data" isSolid />)}}
-                              right={
-                                <Button icon="photos" label="Map Image"/>
-                              }/>
+                              padding="1x"
+                              contentAlign="center" 
+                              left={{
+                                content: (<Button label="Request Data" />)}}
+                              right={{
+                                content: (
+                                  <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button alignCenter isSmall isPlain icon="measure" label="Measure" variant="neutral"/><Button alignCenter isPlain isSmall icon="layers" label="Layers" variant="neutral"/><Button alignCenter isPlain isSmall icon="list" label="Legend" variant="neutral"/><Button isSmall alignCenter isPlain icon="photos" label="Image" variant="neutral"/></ButtonGroup>
+                                  ),
+                                
+                               
+                              }}/>
                             }
+                            padding="0"
                             footer={<Bar 
-                              contentAlign="bottom" left={{
+                              padding="0"
+                              contentAlign="bottom" 
+                              left={{
                               content: (
-                            <Icon icon="database" size="sm"/>),
+                            <Icon icon="database" size="xs" onClick />),
                           width: "fit-content",
                         }}
                             center={{
-                              content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020 " size="sm"/>),
+                              content:(<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020"/>),
                             align: "left",}}
-                            />}
-                            
+                            />}   
                             >
-                              <Template
-                                  template="A_01"
-                                  isOverlay
-                                  A={{
-                                    id: "A",
-                                    content:(
-                                      <Bar 
-                                      padding="0"
-                                      contentAlign="center" 
-                         
-                                      right={
-                                        <Card ><ButtonGroup columns="4"><Button alignCenter isPlain icon="draw" /><Button alignCenter isPlain icon="measure" /><Button alignCenter isPlain icon="layers" /><Button alignCenter isPlain icon="list" /></ButtonGroup></Card>
-                                      }/>
-                                    )
-                                  }}/>
-                              <MapBox />
+
+                              <MapBox map="satellite"/>
                               </Panel>,
                           }}
                           B={{
@@ -776,6 +748,8 @@ storiesOf("Templates|Applications/Appraisal", module)
                               <Panel padding="0" 
                               footer={<Bar 
                                 contentAlign="bottom" 
+                                left={<Button label="Attachments"/>}
+                                center={<Button label="Save" isSolid />}
                               right={{
                                 content:(
                                 <Button label="Save & Next" isSolid/>),}}
@@ -789,7 +763,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                               </Tabs>),
                               width: "fit-content"}}
                               right={{
-                                content: (<ButtonGroup columns="2"><Button icon="plus" isRound/><Button icon="photos" isPlain/></ButtonGroup>),
+                                content: (<Button icon="plus" isRound/>),
                                 width: "fit-content",
                               }}/>}
                               >
@@ -886,8 +860,8 @@ storiesOf("Templates|Applications/Appraisal", module)
                                 <TabItem label="Wetlands" />
                                 <TabItem label="Traffic & Transit" />
                                 <TabItem label="Market Boundaries" />
-                                <TabItem label="Crime" />
                                 <TabItem label="Schools" />
+                                <TabItem label="Other" />
                               </Tabs>),
                             width: "fit-content",
                           }}
@@ -898,70 +872,65 @@ storiesOf("Templates|Applications/Appraisal", module)
                           template="B_01"
                           A={{
                             id: "A",
+                            content: <Panel
+                            
+                            header={
+                              
+                                
+                              <Bar 
+                              padding="1x"
+                              
+                              contentAlign="center" 
+                              left={{
+                                content: (
+                                  <ButtonGroup columns="5"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Image" /></ButtonGroup>
+                                  ),
+                                
+                              }}/>
+                          
+                            }
+                            padding="0"
+                            footer={<Bar 
+                              padding="0"
+                              contentAlign="bottom" 
+                              left={{
                               content: (
-                                <Panel
-                                padding="0"
-                                header={<Bar
-                                  contentAlign="center" left={{
-                                  content: (
-                                <Text text="Capture Map Image to add to Report"/>),
-                              width: "fit-content",
-                            }}
-                            right={{
-                              content: (<Button label="Map Capture" icon="photos"/>),
-                            }}/>}
-                                footer={<Bar
-                                  contentAlign="bottom" left={{
-                                  content: (
-                                <Icon icon="database" size="sm"/>),
-                              width: "fit-content",
-                            }}
-                                center={{
-                                  content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020 " size="sm"/>),
-                                align: "left",}}
-                                />}>
-                                  <Template
-                                  template="A_01"
-                                  isOverlay
-                                  A={{
-                                    id: "A",
-                                    content:(
-                                      <Bar 
-                                      padding="0"
-                                      contentAlign="center" 
-                         
-                                      right={
-                                        <Card ><ButtonGroup columns="4"><Button alignCenter isPlain icon="draw" /><Button alignCenter isPlain icon="measure" /><Button alignCenter isPlain icon="layers" /><Button alignCenter isPlain icon="list" /></ButtonGroup></Card>
-                                      }/>
-                                    )
-                                  }}/>
-                                <MapBox/>
-                                </Panel>
-                              ),
-                            }}
+                            <Icon icon="database" size="xs" onClick />),
+                          width: "fit-content",
+                        }}
+                            center={{
+                              content:(<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020"/>),
+                            align: "left",}}
+                            />}   
+                            >
+
+                              <MapBox map="satellite"/>
+                              </Panel>,
+                          }}
                           B={{
                             id: "B",
                             content: (  
                               <Panel
                               padding="0"
+                              
+                              header={
+                                <Bar contentAlign="center" left={<Title size="lg" text="Subject Map"/>}
+                                right={<Button label="Save" />}/>
+                              }
                               footer={<Bar 
-                                contentAlign="bottom" 
                               right={{
                                 content:(
                                 <Button label="Save & Next" isSolid/>),}}
                               />}
                               >                                
-                              <Form title="Subject Map" >
+                              <Form  >
                                 <TextInput label="Dimensions"/>
                                 <TextInput label="Primary Frontage Street"/>
                                 <TextInput label="Primary Frontage Feet"/>
                                 <TextInput label="Secondary Frontage Street"/>
                                 <TextInput label="Secondary Frontage Feet"/>
-                                <Bar padding="1x" center={<ButtonGroup columns="2">
+                        
                                 <Button label="Map Images"/>
-                                <Button label="Save" isSolid/>
-                                
-                              </ButtonGroup>}/>
                               </Form>
                               </Panel>
                              ),
@@ -1243,14 +1212,24 @@ storiesOf("Templates|Applications/Appraisal", module)
                     B={{
                       id: "B",
                       content: (
+                        <Panel
+                      header={<Bar padding="2x" left={<Title size="xl" text="Export"/>}/>}>
                         <Template
                           template="A_02"
                           A={{
                             id: "A",
                             content: (
+                              <Bar padding="3x" center={
+                                <Template>
                               <Grid columns="1">
                                 <Title
-                                  text="You have completed your research for this project. Download and Publish your work."
+                                  text="You have completed your research for this project. "
+    
+                                  size="2xl"
+                                  weight="bold"
+                                />
+                                <Title
+                                  text=" Download and Publish your work."
                                   size="2xl"
                                   weight="bold"
                                 />
@@ -1313,12 +1292,15 @@ storiesOf("Templates|Applications/Appraisal", module)
                                   fullWidth
                                 />
                               </Grid>
+                              </Template>}/>
                             ),
                           }}
                         />
+                        </Panel>
                       ),
                     }}
                   />
+                  
                 </Panel>
               ),
             }}

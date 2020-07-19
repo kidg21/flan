@@ -155,7 +155,7 @@ function Title({
       as: "h5",
     },
     "xl": {
-      fontSize: "1.5rem",
+      fontSize: "1.2rem",
       letterSpacing: "0px",
       fontWeight: "400",
       as: "h4",
@@ -310,7 +310,7 @@ function Link({
 }) {
   const sizeHash = {
     "lg": {
-      fontSize: "1.15em",
+      fontSize: "1em",
       letterSpacing: "0.2px",
     },
     "xl": {
@@ -332,7 +332,7 @@ function Link({
   };
 
   let fontWeight = parseInt(weight, 10);
-  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 600;
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 500;
 
   return (
     <LinkText

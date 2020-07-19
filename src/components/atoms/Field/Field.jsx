@@ -51,7 +51,7 @@ const FieldValue = styled(Text)`
     return props.valueAlign || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.text[props.valueColor] || "inherit";
+    return props.theme.text[props.valueColor] || props.theme.text.secondary;
   }};
   /* Default Value - displays when a Field's value is empty */
   &:empty {
@@ -84,8 +84,8 @@ function Field({
     <FieldValue
       onChange={onChange}
       text={value}
-      size="lg"
-      weight="bold"
+      
+      weight="medium"
       valueAlign={valueAlign}
     />
   );
@@ -103,10 +103,10 @@ function Field({
       className={className}
       fieldColumns={fieldColumns}
       fieldGap={fieldGap}
-      gap="xs"
+      
       id={id}
     >
-      <FieldLabel size="lg" text={label} />
+      <FieldLabel size="xl" text={label} />
       {field}
     </FieldItem>
   );
