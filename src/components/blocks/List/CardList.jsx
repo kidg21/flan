@@ -252,8 +252,16 @@ class CardList extends PureComponent {
     style,
   }) {
     const {
-      Template, data, selectedCell, highlightedCell,
-      onCellClick, onCellMouseEnter, onCellMouseLeave, onCellMouseOut, onCellMouseOver,
+      Template,
+      data,
+      selectedCell,
+      highlightedCell,
+      onCellClick,
+      onCellMouseEnter,
+      onCellMouseLeave,
+      onCellMouseOut,
+      onCellMouseOver,
+      removeRecord,
     } = this.props;
     const cellProps = {
       isSelected: false,
@@ -291,6 +299,7 @@ class CardList extends PureComponent {
       <CellWrapper id={`cellwrapper-${rowIndex}-${columnIndex}`} key={key} style={{ ...style, width: this._columnWidth }} {...cellProps}>
         <Template
           data={data[index]}
+          removeRecord={removeRecord}
           isHighlighted={cellProps.isHighlighted}
           isSelected={cellProps.isSelected}
           index={index}
@@ -529,6 +538,7 @@ CardList.defaultProps = {
   loadRows: null,
   listId: null,
   minimumBatchSize: 10,
+  removeRecord: null,
 };
 
 CardList.propTypes = {
@@ -561,6 +571,7 @@ CardList.propTypes = {
   focusedRow: PropTypes.number,
   loadRows: PropTypes.func,
   minimumBatchSize: PropTypes.number,
+  removeRecord: PropTypes.func,
 };
 
 CardList.displayName = "cardList";
