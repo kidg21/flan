@@ -10,11 +10,13 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    height="100%"
     id={null}
+    width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
       id={null}
     />
   </div>
@@ -31,11 +33,13 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    height="100%"
     id={null}
+    width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
       id={null}
     >
       <div
@@ -59,7 +63,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
       id={null}
     />
   </div>
@@ -76,15 +80,17 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    height="100%"
     id={null}
+    width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
       id={null}
     >
       <div
@@ -121,11 +127,13 @@ exports[` 4`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    height="100%"
     id={null}
+    width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
       id={null}
     >
       <div
@@ -149,11 +157,11 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
       id={null}
     >
       <div
@@ -190,11 +198,13 @@ exports[` 5`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    height="100%"
     id="Panel"
+    width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
       id="Panel_header"
     >
       <div
@@ -218,7 +228,7 @@ exports[` 5`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
       id="Panel_body"
     >
       <section
@@ -278,7 +288,7 @@ exports[` 5`] = `
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
       id="Panel_footer"
     >
       <div
@@ -315,11 +325,13 @@ exports[` 6`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    height="100%"
     id="Panel"
+    width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
       id="Panel_header"
     >
       <div
@@ -343,7 +355,7 @@ exports[` 6`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
       id="Panel_body"
     >
       <section
@@ -354,56 +366,56 @@ exports[` 6`] = `
         <div
           className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
           href={null}
-          id="storyshots_184"
+          id="storyshots_203"
           media=""
           onClick={null}
         />
         <div
           className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
           href={null}
-          id="storyshots_185"
+          id="storyshots_204"
           media=""
           onClick={null}
         />
         <div
           className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
           href={null}
-          id="storyshots_186"
+          id="storyshots_205"
           media=""
           onClick={null}
         />
         <div
           className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
           href={null}
-          id="storyshots_187"
+          id="storyshots_206"
           media=""
           onClick={null}
         />
         <div
           className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
           href={null}
-          id="storyshots_188"
+          id="storyshots_207"
           media=""
           onClick={null}
         />
         <div
           className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
           href={null}
-          id="storyshots_189"
+          id="storyshots_208"
           media=""
           onClick={null}
         />
         <div
           className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
           href={null}
-          id="storyshots_190"
+          id="storyshots_209"
           media=""
           onClick={null}
         />
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
       id="Panel_footer"
     >
       <div

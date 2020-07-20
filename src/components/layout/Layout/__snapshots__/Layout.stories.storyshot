@@ -258,7 +258,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -285,7 +285,7 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -311,7 +311,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 jSZvNZ"
+          className="Command__CommandContainer-sc-13akgtp-0 fXpBjx"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -338,7 +338,7 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -371,14 +371,15 @@ exports[` 5`] = `
         <li
           className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+            fontSize="0.879em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.2px"
           >
             Research
-          </h6>
+          </p>
         </li>
         <li
           className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
@@ -541,9 +542,9 @@ exports[` 5`] = `
                 className="Bar__Slot-icfo76-1 eufPAN"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 fnUHAi"
+                  className="Typography__TitleText-sc-19auepv-2 gymxyt"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={500}
                   letterSpacing="0px"
                 >
                   Results | 3
@@ -615,7 +616,7 @@ exports[` 5`] = `
                     onClick={[Function]}
                   >
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                      className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -751,7 +752,7 @@ exports[` 5`] = `
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
                             id={null}
                             onBlur={null}
                             onChange={null}
@@ -858,7 +859,7 @@ exports[` 5`] = `
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -925,7 +926,7 @@ exports[` 5`] = `
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -992,7 +993,7 @@ exports[` 5`] = `
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -1054,7 +1055,7 @@ exports[` 5`] = `
       width="24rem"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-0 iKEKmF"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fdMpxY"
         id={null}
         rows={null}
       >
@@ -1069,36 +1070,28 @@ exports[` 5`] = `
           id="Physical Characteristics"
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 fnUHAi Field__GroupTitle-sc-11od8ug-2 hDNWii"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
-          >
-            Physical Characteristics
-          </h6>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
             id="No. of Buildings"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              No. of Buildings
+              Project Owner
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              3
+              Steve Davidson
             </p>
           </section>
           <section
@@ -1107,22 +1100,22 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              GBA
+              Project Due
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              25,344
+              06/25/2020
             </p>
           </section>
           <section
@@ -1131,22 +1124,22 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              No. of Stories
+              Project Status
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              1
+              Open
             </p>
           </section>
           <section
@@ -1155,22 +1148,22 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              No. of Units
+              Project Created
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              4
+              6/14/2020 8:00 am PT
             </p>
           </section>
           <section
@@ -1179,22 +1172,57 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              Year Built
+              Project Edited
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              1978
+              6/16/2020 12:15 pm PT
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="Year Built"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Edited
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              <a
+                className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                disabled={false}
+                fontSize="0.876em"
+                fontWeight={600}
+                href={null}
+                letterSpacing="0px"
+                onClick={null}
+                target={null}
+              >
+                1804
+              </a>
             </p>
           </section>
         </section>
@@ -1229,7 +1257,7 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1256,7 +1284,7 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -1300,7 +1328,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1327,7 +1355,7 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -1353,7 +1381,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 jSZvNZ"
+          className="Command__CommandContainer-sc-13akgtp-0 fXpBjx"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -1380,7 +1408,7 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}
@@ -1413,14 +1441,15 @@ exports[` 6`] = `
         <li
           className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+            fontSize="0.879em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.2px"
           >
             Research
-          </h6>
+          </p>
         </li>
         <li
           className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
@@ -1583,9 +1612,9 @@ exports[` 6`] = `
                 className="Bar__Slot-icfo76-1 eufPAN"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 fnUHAi"
+                  className="Typography__TitleText-sc-19auepv-2 gymxyt"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={500}
                   letterSpacing="0px"
                 >
                   Results | 3
@@ -1657,7 +1686,7 @@ exports[` 6`] = `
                     onClick={[Function]}
                   >
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                      className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -1793,7 +1822,7 @@ exports[` 6`] = `
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
                             id={null}
                             onBlur={null}
                             onChange={null}
@@ -1900,7 +1929,7 @@ exports[` 6`] = `
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -1967,7 +1996,7 @@ exports[` 6`] = `
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -2034,7 +2063,7 @@ exports[` 6`] = `
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -2096,7 +2125,7 @@ exports[` 6`] = `
       width="24rem"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-0 iKEKmF"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fdMpxY"
         id={null}
         rows={null}
       >
@@ -2111,36 +2140,28 @@ exports[` 6`] = `
           id="Physical Characteristics"
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 fnUHAi Field__GroupTitle-sc-11od8ug-2 hDNWii"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
-          >
-            Physical Characteristics
-          </h6>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
             id="No. of Buildings"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              No. of Buildings
+              Project Owner
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              3
+              Steve Davidson
             </p>
           </section>
           <section
@@ -2149,22 +2170,22 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              GBA
+              Project Due
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              25,344
+              06/25/2020
             </p>
           </section>
           <section
@@ -2173,22 +2194,22 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              No. of Stories
+              Project Status
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              1
+              Open
             </p>
           </section>
           <section
@@ -2197,22 +2218,22 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              No. of Units
+              Project Created
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              4
+              6/14/2020 8:00 am PT
             </p>
           </section>
           <section
@@ -2221,22 +2242,57 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Field__FieldLabel-sc-11od8ug-3 beNKSV"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="0px"
             >
-              Year Built
+              Project Edited
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bxdsLc Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
               fontWeight={600}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0px"
             >
-              1978
+              6/16/2020 12:15 pm PT
+            </p>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+            id="Year Built"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
+              fontSize="1em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              Project Edited
+            </label>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              <a
+                className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                disabled={false}
+                fontSize="0.876em"
+                fontWeight={600}
+                href={null}
+                letterSpacing="0px"
+                onClick={null}
+                target={null}
+              >
+                1804
+              </a>
             </p>
           </section>
         </section>
@@ -2271,7 +2327,7 @@ exports[` 6`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <a
-          className="Command__CommandContainer-sc-13akgtp-0 fUWwiV"
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
           id={null}
           label="Toggle"
           onClick={[Function]}
@@ -2298,7 +2354,7 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 RLnA-D"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
             fontSize="0.879em"
             fontWeight={400}
             htmlFor={null}

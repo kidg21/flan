@@ -84,6 +84,7 @@ function Field({
     <FieldValue
       onChange={onChange}
       text={value}
+      size="lg"
       weight="bold"
       valueAlign={valueAlign}
     />
@@ -91,7 +92,7 @@ function Field({
 
   if (onClick) {
     field = (
-      <Link disabled={disabled} onClick={onClick}>
+      <Link disabled={disabled} size="lg" onClick={onClick}>
         {field}
       </Link>
     );
@@ -105,7 +106,7 @@ function Field({
       gap="xs"
       id={id}
     >
-      <FieldLabel text={label} />
+      <FieldLabel size="lg" text={label} />
       {field}
     </FieldItem>
   );

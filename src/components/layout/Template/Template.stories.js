@@ -261,6 +261,33 @@ storiesOf("Layout/Template/Template Library/D Templates", module)
         />
       </Grid>
     );
+  })
+  .add("D_02", () => {
+    return (
+      <Grid columns="1" rows="100vh" gap="4xl">
+        <Template
+          id="Template D_02"
+          template="D_02"
+          hasBorders
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+          D={{
+            id: "D",
+            content: "",
+          }}
+        />
+      </Grid>
+    );
   });
 
 storiesOf("Layout/Template/Template Library/E Templates", module)

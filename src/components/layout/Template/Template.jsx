@@ -6,6 +6,43 @@ import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
 
+
+const Region = styled.section`
+  position: relative;
+  grid-area: ${(props) => {
+    return props.gridArea || "";
+  }};
+  height: inherit;
+  border-right: 1px solid  ${(props) => {
+    return  props.theme.palette.neutral40 ;
+  }};
+  overflow: auto;
+  box-shadow: ${(props) => {
+    return props.theme.shadows[props.regionShadow];
+  }};
+  padding: 1px;
+  pointer-events: initial;
+  &:focus {
+    outline: ${(props) => {
+    return `1px solid ${props.theme.palette.selected}`;
+  }};
+  outline-offset: -1px;
+  }
+  &:empty {
+    &:before {
+      ${PlaceholderText}
+
+      height: inherit;
+      font-size: 2em;
+      font-weight: bold;
+      content: '${(props) => {
+    return props.placeholder || "";
+  }}';
+    }
+  }
+`;
+
+
 const TemplateWrapper = styled(Grid)`
   position: ${(props) => {
     return props.setPosition || "relative";
@@ -53,40 +90,6 @@ const TemplateWrapper = styled(Grid)`
   }
 `;
 
-const Region = styled.section`
-  position: relative;
-  grid-area: ${(props) => {
-    return props.gridArea || "";
-  }};
-  height: inherit;
-  overflow: auto;
-  box-shadow: ${(props) => {
-    return props.theme.shadows[props.regionShadow];
-  }};
-  padding: 1px;
-  pointer-events: initial;
-  &:focus {
-    outline: ${(props) => {
-    return `1px solid ${props.theme.palette.selected}`;
-  }};
-  outline-offset: -1px;
-  }
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      color: deeppink;
-      background-color: pink;
-      border: 0.25rem solid deeppink;
-      height: inherit;
-      font-size: 2em;
-      font-weight: bold;
-      content: '${(props) => {
-    return props.placeholder || "";
-  }}';
-    }
-  }
-`;
-
 const widthXS = "12rem";
 const widthSM = "18rem";
 const widthMD = "24rem";
@@ -110,7 +113,7 @@ const templateHash = {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
-    setColumns: `1fr ${widthMD}`,
+    setColumns: `1fr ${widthLG}`,
   },
   B_02: {
     setTemplate: [
@@ -139,12 +142,18 @@ const templateHash = {
     setColumns: "auto 1fr 12rem",
     setRows: "1fr 1rem",
   },
+  B_06: {
+    setTemplate: [
+      "\"A B\"",
+    ].join("\n"),
+    setColumns: `1fr ${widthXL}`,
+  },
   C_01: {
     setTemplate: [
       "\"A A A\"",
       "\"B B C\"",
     ].join("\n"),
-    setColumns: `${widthXS} 1fr 1fr`,
+    setColumns: `${widthXS} 1fr ${widthLG}`,
     setRows: "auto 1fr",
   },
   C_02: {
@@ -212,7 +221,7 @@ const templateHash = {
 };
 
 function Template({
-  A, B, C, D, E, children, classname, hasBorders, hasShadows, id, isOverlay, template,
+  A, B, C, D, E, children, classname, hasCards, hasShadows, id, isOverlay, template,
 }) {
   let backgroundColor;
   let pointerEvents;
@@ -238,7 +247,7 @@ function Template({
     setColumnGap = "1rem";
     setRowGap = "1rem";
   }
-  if (hasBorders || hasShadows) {
+  if (hasCards || hasShadows) {
     setPadding = "1rem";
     setColumnGap = "1rem";
     setRowGap = "1rem";
@@ -250,16 +259,18 @@ function Template({
   if (isOverlay) {
     backgroundColor = "none";
     pointerEvents = "none";
-    setPadding = "1rem";
+    setPadding = "0.5rem";
     setPosition = "absolute";
     zIndex = "999";
   }
+
 
   return (
     <TemplateWrapper
       backgroundColor={backgroundColor}
       classname={classname}
       id={id}
+
       pointerEvents={pointerEvents}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
@@ -280,6 +291,7 @@ function Template({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={A.overflow}
             >
               {A.content}
             </Region>
@@ -291,6 +303,7 @@ function Template({
               gridArea={template ? "B" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={B.overflow}
             >
               {B.content}
             </Region>
@@ -302,6 +315,7 @@ function Template({
               gridArea={template ? "C" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={C.overflow}
             >
               {C.content}
             </Region>
@@ -313,6 +327,7 @@ function Template({
               gridArea={template ? "D" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={D.overflow}
             >
               {D.content}
             </Region>
@@ -324,6 +339,7 @@ function Template({
               gridArea={template ? "E" : null}
               regionShadow={regionShadow}
               tabIndex="0"
+              overflow={E.overflow}
             >
               {E.content}
             </Region>
@@ -337,28 +353,33 @@ Template.propTypes = {
   A: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   B: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   C: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   children: PropTypes.node,
   classname: PropTypes.string,
   D: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   E: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    overflow: PropTypes.string,
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
-  hasBorders: PropTypes.bool,
+  hasCards: PropTypes.bool,
   hasShadows: PropTypes.bool,
   template: PropTypes.string,
 };
@@ -372,7 +393,7 @@ Template.defaultProps = {
   E: null,
   id: null,
   isOverlay: false,
-  hasBorders: false,
+  hasCards: false,
   hasShadows: false,
   template: null,
 };

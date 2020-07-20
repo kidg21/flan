@@ -174,7 +174,7 @@ function Title({
 
   const weightHash = {
     light: 300,
-    bold: 600,
+    bold: 500,
   };
 
   let fontWeight = parseInt(weight, 10);

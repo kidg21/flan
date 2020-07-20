@@ -23,9 +23,9 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -43,7 +43,7 @@ exports[` 1`] = `
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -81,7 +81,7 @@ exports[` 1`] = `
           </button>
           <div
             className="Menu__MenuPopper-sc-17iwn6x-3 hMueFt"
-            id="menupopper-storyshots_139"
+            id="menupopper-storyshots_158"
             onClick={null}
             onMouseLeave={[Function]}
             transform="translate(-100%, -5%)"
@@ -89,17 +89,17 @@ exports[` 1`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_144"
+              id="storyshots_163"
               media=""
               onClick={null}
             >
               <ul
                 className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
-                id="listwrapper-storyshots_139"
+                id="listwrapper-storyshots_158"
               >
                 <li
                   className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
-                  id="item-storyshots_140"
+                  id="item-storyshots_159"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
@@ -133,7 +133,7 @@ exports[` 1`] = `
                 </li>
                 <li
                   className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
-                  id="item-storyshots_141"
+                  id="item-storyshots_160"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
@@ -167,7 +167,7 @@ exports[` 1`] = `
                 </li>
                 <li
                   className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
-                  id="item-storyshots_142"
+                  id="item-storyshots_161"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
@@ -201,7 +201,7 @@ exports[` 1`] = `
                 </li>
                 <li
                   className="Menu__ItemWrapper-sc-17iwn6x-2 QuClB"
-                  id="item-storyshots_143"
+                  id="item-storyshots_162"
                   onClick={[Function]}
                   onMouseOver={[Function]}
                 >
@@ -286,9 +286,9 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -306,7 +306,7 @@ exports[` 2`] = `
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -352,7 +352,7 @@ exports[` 2`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_145"
+              id="storyshots_164"
               media=""
               onClick={null}
             >
@@ -644,9 +644,9 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -664,7 +664,7 @@ exports[` 3`] = `
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -710,7 +710,7 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_146"
+              id="storyshots_165"
               media=""
               onClick={null}
             >
@@ -904,7 +904,7 @@ exports[` 3`] = `
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -950,7 +950,7 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_147"
+              id="storyshots_166"
               media=""
               onClick={null}
             >
@@ -1103,9 +1103,9 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -1167,9 +1167,9 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 diCApD"
+          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
           fontSize="1.25em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Malibu, CA
@@ -1187,7 +1187,7 @@ exports[` 3`] = `
           onClick={[Function]}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+            className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1233,7 +1233,7 @@ exports[` 3`] = `
             <div
               className="Card__CardWrapper-sc-1g3s676-3 eKxcvy"
               href={null}
-              id="storyshots_148"
+              id="storyshots_167"
               media=""
               onClick={null}
             >
