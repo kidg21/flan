@@ -99,9 +99,9 @@ export const CellWrapper = styled.div`
   [class^="Menu"],
   [class^="Command"] {
     color: ${(props) => {
-    if (props.isSelected) {
-      return props.theme.text.inverse;
-    }
+    // if (props.isSelected) {
+    //   return props.theme.text.inverse;
+    // }
     return "";
   }};
   }
