@@ -70,7 +70,7 @@ export { default as Modal } from "./layout/Modal";
 export { default as Page, PageSection, ContentSection } from "./layout/Page";
 export { default as Panel } from "./layout/Panel";
 export { default as Expander } from "./utils/Expander";
-export { default as Popper } from "./layer/Popper";
+export { default as Popper } from "./layout/Popper";
 
 export {
   colors,

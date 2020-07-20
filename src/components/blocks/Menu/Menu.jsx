@@ -26,7 +26,7 @@ const ListWrapper = styled(List)`
   transform: ${(props) => {
     return props.transform || "";
   }};
-  border-radius: inherit;
+  border-radius: 0.5em;
   z-index: 500;
 `;
 
@@ -38,7 +38,7 @@ const StyledCardWrapper = styled(CardWrapper)`
   > :last-child {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
-  }
+  };
 `;
 // const NestedListWrapper = styled(ListWrapper)`
 //   position: absolute;
@@ -94,57 +94,72 @@ const MenuList = ({
   const validDirection = listPositionStyle.hasOwnProperty(direction.toLowerCase()) ? direction : "right";
 
   const listItems = useMemo(() => {
-    return data.map((item, index) => {
-      itemIds.current[index] = item.id
-        || (itemIds.current.length > index ? itemIds.current[index] : getGuid());
-      const itemId = itemIds.current[index];
-      const onClick = () => {
-        if (item.onClick) item.onClick();
-        if (onClose) onClose();
-      };
-      if (item.data) {
-        // nested submenu
+    // empty list, display "No Commands" entry
+    let _listItems = (
+      <ListItem
+        key={`${uId}-none`}
+        id="item-none"
+        title="No Commands"
+        disabled
+      />
+    );
+
+    if (data && data.length > 0) {
+      // populated list
+      _listItems = data.map((item, index) => {
+        itemIds.current[index] = item.id
+          || (itemIds.current.length > index ? itemIds.current[index] : getGuid());
+        const itemId = itemIds.current[index];
+        const onClick = () => {
+          if (item.onClick) item.onClick();
+          if (onClose) onClose();
+        };
+        if (item.data && item.data.length > 0) {
+          // nested submenu
+          return (
+            <NestedItem
+              key={itemId}
+              id={`item-${itemId}`}
+              onMouseEnter={() => {
+                setActiveItem(item.id);
+              }}
+              onMouseLeave={() => {
+                setActiveItem();
+              }}
+            >
+              <ListItemWrapper
+                id={`nested-item-${itemId}`}
+                title={item.label}
+                onClickItem={onClick}
+                pre={{ icon: item.icon }}
+                disabled={item.disabled}
+              />
+              {activeItem === item.id ? (
+                <MenuList
+                  id={`${uId}-${itemId}`}
+                  data={item.data}
+                  direction={validDirection}
+                  onClose={onClose}
+                  _nestedLevel
+                />
+              ) : null}
+            </NestedItem>
+          );
+        }
         return (
-          <NestedItem
+          <ListItem
             key={itemId}
             id={`item-${itemId}`}
-            onMouseEnter={() => {
-              setActiveItem(item.id);
-            }}
-            onMouseLeave={() => {
-              setActiveItem();
-            }}
-          >
-            <ListItemWrapper
-              id={`nested-item-${itemId}`}
-              title={item.label}
-              onClick={onClick}
-              pre={{ icon: item.icon }}
-              disabled={item.disabled}
-            />
-            {activeItem === item.id ? (
-              <MenuList
-                id={`${uId}-${itemId}`}
-                data={item.data}
-                direction={validDirection}
-                onClose={onClose}
-                _nestedLevel
-              />
-            ) : null}
-          </NestedItem>
+            title={item.label}
+            onClickItem={onClick}
+            pre={{ icon: item.icon }}
+            disabled={item.disabled}
+          />
         );
-      }
-      return (
-        <ListItem
-          key={itemId}
-          id={`item-${itemId}`}
-          title={item.label}
-          onClick={onClick}
-          pre={{ icon: item.icon }}
-          disabled={item.disabled}
-        />
-      );
-    });
+      });
+    }
+
+    return _listItems;
   });
 
   const positionStyle = _nestedLevel ? listPositionStyle[validDirection.toLowerCase()] : {};

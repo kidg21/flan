@@ -193,6 +193,7 @@ function ListItem({
   id,
   isSelected,
   onClick,
+  onClickItem,
   post,
   pre,
   tabIndex,
@@ -237,6 +238,7 @@ function ListItem({
       selectedBackground={selectedBackground}
       tabIndex={disabled ? "-1" : tabIndex}
       className={className}
+      onClick={onClickItem} // to target whole list item
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
