@@ -127,7 +127,7 @@ function MockHeader({ percentage }) {
       <CardSection variant="light" padding="1x">
         <Bar
           contentAlign="center"
-          padding="1x"
+          padding="0"
           left={{
             content: (
               <Grid columns="1" gap="xs">

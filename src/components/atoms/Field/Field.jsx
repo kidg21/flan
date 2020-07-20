@@ -22,6 +22,9 @@ const FieldGrid = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.columns || "repeat(auto-fill, minmax(20rem, 1fr))";
   }};
+  grid-row-gap: ${(props) => {
+    return props.isDense ? "0rem" : "";
+  }};
   grid-column-gap: 2rem;
   overflow: auto;
   &:not(:last-of-type) {
@@ -135,7 +138,7 @@ Field.defaultProps = {
 };
 
 function FieldGroup({
-  align, children, className, columns, data, id, title,
+  align, children, className, columns, data, id, title, isDense,
 }) {
   // 1-3 colums
   let setColumns;
@@ -150,6 +153,7 @@ function FieldGroup({
     <FieldGrid
       className={className}
       columns={setColumns}
+      isDense={isDense}
       id={id}
     >
       {title ? <GroupTitle text={title} weight="bold" /> : null}
@@ -183,6 +187,7 @@ FieldGroup.propTypes = {
   columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
   data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
   id: PropTypes.string,
+  isDense: PropTypes.bool,
   title: PropTypes.string,
 };
 
@@ -193,6 +198,7 @@ FieldGroup.defaultProps = {
   columns: null,
   data: [],
   id: null,
+  isDense: false,
   title: null,
 };
 

@@ -249,7 +249,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: (
-                              <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="lg" text="Project Overview" weight="bold"/>} right={<Button icon="share_content" isRound isPlain/>}/>}>
+                              <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Project Overview" weight="bold"/>} right={<Button icon="share_content" isRound isPlain/>}/>}>
                               <Grid columns="60% 40%">
                               <Bar
                                   padding="2x"
@@ -342,7 +342,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                       content: (
                         <Template
                           id="Details"
-                          template="B_01"
+                          template="B_06"
                         
                           A={{
                             id: "A",
@@ -350,14 +350,15 @@ storiesOf("Templates|Applications/Appraisal", module)
                             header={
                               <Bar 
                               padding="1x"
-                              contentAlign="center" left={{
-                                content: (<Text text="Select Parcels on Map to Define Site" size="lg"/>)}}
+                              contentAlign="center" 
+                              left={{
+                                content: (<Text text="Select Parcels on Map to Define Site" />),
+                              width: "fit-content",}}
                               right={{
                                 content: (
                                   <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button alignCenter isSmall isPlain icon="measure" label="Measure" variant="neutral"/><Button isSmall alignCenter isPlain icon="layers" label="Layers" variant="neutral"/><Button alignCenter isSmall isPlain icon="list" label="Legend" variant="neutral"/><Button alignCenter isPlain isSmall variant="neutral" icon="sync" label="Reset" /></ButtonGroup>
                                   ),
-                                align: "right",
-                                width: "fit-content",
+                                
                               }}/>
                             }
                             padding="0"
@@ -397,11 +398,23 @@ storiesOf("Templates|Applications/Appraisal", module)
                                   padding="0"
         title="42 Wallaby Way, Sydney, Australia"
         description="APN: 93423438492038"
+        commands={[{
+          id: "Command One",
+          label: "View Details",
+          onClick: action("Command One Clicked")
+        },
+        {
+          id: "Command One",
+          label: <Icon icon="delete" variant="alert"/>,
+          onClick: action("Command One Clicked")
+        },
+        
+       ]}
+          body={
 
-          body={
        <FieldGroup
         id="Group1"
-        
+        isDense
       >
         <Field
           id="Field 1"
@@ -423,11 +436,19 @@ storiesOf("Templates|Applications/Appraisal", module)
       padding="0"
         title="42 Wallaby Way, Sydney, Australia"
         description="APN: 93423438492038"
-          
+        commands={[{
+          id: "Command One",
+          label: "View Details",
+          onClick: action("Command One Clicked")
+        }, {
+          id: "Command One",
+          label: <Icon icon="delete" variant="alert"/>,
+          onClick: action("Command One Clicked")
+        }, ]}
           body={
        <FieldGroup
         id="Group1"
-        
+        isDense
       >
         <Field
           id="Field 1"
@@ -449,11 +470,20 @@ storiesOf("Templates|Applications/Appraisal", module)
       padding="0"
         title="42 Wallaby Way, Sydney, Australia"
         description="APN: 93423438492038"
-        
+        commands={[{
+          id: "Command One",
+          label: "View Details",
+          onClick: action("Command One Clicked")
+        }, 
+        {
+          id: "Command One",
+          label: <Icon icon="delete" variant="alert"/>,
+          onClick: action("Command One Clicked")
+        },]}
           body={
        <FieldGroup
         id="Group1"
-        columns="1"
+        isDense
       >
         <Field
           id="Field 1"
@@ -514,7 +544,7 @@ storiesOf("Templates|Applications/Appraisal", module)
         const fieldData = [
           {
             label: "Tax Authority Link",
-            value: "Orange County Assessor's Office",
+            value: <Link size="lg" text="Orange County Tax Authority"/>,
             onClick: true,
           },
           {
@@ -588,7 +618,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: <Panel
-                            header={<Bar passing="0" 
+                            header={<Bar 
                             left={{
                                 content: (
                                   <Tabs>
@@ -613,16 +643,17 @@ storiesOf("Templates|Applications/Appraisal", module)
                               content:(<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020"/>),
                             align: "left",}}
                             />}>
-                              
+                          
                               <Form>
                               <Field label="Parcel Link" value={<Link text="808-23093" size="lg"/>}/>
-                              
+                              <Form columns="2">
                                 <TextInput label="Assessment Year(s)"/>
                                 <TextInput label="Land Assessment"/>
                                 <TextInput label="Improvement Assessment"/>
                                 <TextInput label="Other Assessment"/>
                                 <TextInput label="Total Assessment"/>
                                 <TextInput label="Total Taxes"/>
+                                </Form>
                                 <Bar 
                                 contentAlign="bottom" 
                                 left={{
@@ -638,7 +669,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                           B={{
                             id: "B",
                             content: (
-                              <MockDetails />
+                              <MockDetails title="Site Assessment Tools" data={fieldData}/>
                             ),
                           }}
                         />
@@ -715,13 +746,13 @@ storiesOf("Templates|Applications/Appraisal", module)
                               padding="1x"
                               contentAlign="center" 
                               left={{
-                                content: (<Button label="Request Data" />)}}
-                              right={{
+                                content: (<Command label="Request Data" />),
+                                width: "fit-content",}}
+                              center={{
                                 content: (
                                   <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button alignCenter isSmall isPlain icon="measure" label="Measure" variant="neutral"/><Button alignCenter isPlain isSmall icon="layers" label="Layers" variant="neutral"/><Button alignCenter isPlain isSmall icon="list" label="Legend" variant="neutral"/><Button isSmall alignCenter isPlain icon="photos" label="Image" variant="neutral"/></ButtonGroup>
                                   ),
                                 
-                               
                               }}/>
                             }
                             padding="0"
@@ -768,7 +799,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                               }}/>}
                               >
                               <Form >
-                              <Field label="Zoning Authority" value={<Link text="City of Mission Viejo"/>}/>
+                              <Field label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo"/>}/>
                                 <TextInput label="Zoning District"/>
                                 <TextInput label="Zoning"/>
                                 <TextInput label="Zoning Type"/>
@@ -873,7 +904,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: <Panel
-                            
+                            padding="0"
                             header={
                               
                                 
@@ -883,7 +914,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                               contentAlign="center" 
                               left={{
                                 content: (
-                                  <ButtonGroup columns="5"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Image" /></ButtonGroup>
+                                  <ButtonGroup columns="6"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Image" /><Button alignCenter variant="neutral" isSmall isPlain  icon="sync" label="Reset" /></ButtonGroup>
                                   ),
                                 
                               }}/>
@@ -912,25 +943,21 @@ storiesOf("Templates|Applications/Appraisal", module)
                             content: (  
                               <Panel
                               padding="0"
-                              
-                              header={
-                                <Bar contentAlign="center" left={<Title size="lg" text="Subject Map"/>}
-                                right={<Button label="Save" />}/>
-                              }
                               footer={<Bar 
+                                contentAlign="bottom" 
+                                left={<Button label="Attachments"/>}
+                                center={<Button label="Save" isSolid />}
                               right={{
                                 content:(
                                 <Button label="Save & Next" isSolid/>),}}
                               />}
                               >                                
-                              <Form  >
+                              <Form  title="Subject Site">
                                 <TextInput label="Dimensions"/>
                                 <TextInput label="Primary Frontage Street"/>
                                 <TextInput label="Primary Frontage Feet"/>
                                 <TextInput label="Secondary Frontage Street"/>
                                 <TextInput label="Secondary Frontage Feet"/>
-                        
-                                <Button label="Map Images"/>
                               </Form>
                               </Panel>
                              ),
@@ -1081,8 +1108,8 @@ storiesOf("Templates|Applications/Appraisal", module)
                   }
                 >
                   <Template
-                    id="Report"
-                    template="C_03"
+                    id="Maps"
+                    template="B_02"
                     
                     A={{
                       id: "A",
@@ -1094,8 +1121,8 @@ storiesOf("Templates|Applications/Appraisal", module)
                           <ListItem title="Assessment" post={{type: "icon", icon: "check", variant: "success"}}/>
                           <ListItem title="Transactions" post={{type: "icon", icon: "check", variant: "success"}}/>
                           <ListItem title="Zoning" post={{type: "icon", icon: "check", variant: "success"}}/>
-                          <ListItem title="Maps" post={{type: "icon", icon: "check", variant: "success"}}/>
-                          <ListItem title="Review" isSelected/>
+                          <ListItem title="Maps" post={{type: "icon", icon: "check", variant: "success"}} />
+                          <ListItem title="Review" isSelected />
                           <ListItem title="Export" />
                           </List>
                           
@@ -1104,26 +1131,34 @@ storiesOf("Templates|Applications/Appraisal", module)
                     B={{
                       id: "B",
                       content: (
-                        <Template>
+                        <Panel
+                        header={<Bar padding="2x" left={<Title size="xl" text="Review"/>}/>}>
+                        <Template
+                    id="Review"
+                    template="B_04"
+                     A={{
+                      id: "A",
+                      content: (
+                        <Panel>
                           <FieldGroup
                             id="Report Review"
-                            title="Report Review"
+                            title="Report Sections"
                             data={reportSections}
                             align="edge"
                           />
-                          <Button
+                          <Bar padding="2x" center={<Button
                             label={buttonLabel}
                             onClick={handleOpen}
                             variant="success"
                             isSolid
                             fullWidth
                             disabled={!firstReport}
-                          />
-                        </Template>
+                          />}/>
+                        </Panel>
                       ),
                     }}
-                    C={{
-                      id: "C",
+                    B={{
+                      id: "B",
                       content: (
                         <React.Fragment>
                           <Modal
@@ -1153,7 +1188,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                         </React.Fragment>
                       ),
                     }}
-                  />
+                  /></Panel>),}}/>
                 </Panel>
               ),
             }}
@@ -1219,32 +1254,33 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: (
-                              <Bar padding="3x" center={
-                                <Template>
+                              <React.Fragment>
+                              <Bar padding="3x" center={<Grid columns="1">
+                              <Title
+                                text="You have completed your research for this project. "
+                                size="2xl"
+                                weight="bold"
+                              />
+                              <Title
+                                text=" Download and Publish your work."
+                                size="2xl"
+                                weight="bold"
+                              />
+                              </Grid>}/>
                               <Grid columns="1">
-                                <Title
-                                  text="You have completed your research for this project. "
-    
-                                  size="2xl"
-                                  weight="bold"
-                                />
-                                <Title
-                                  text=" Download and Publish your work."
-                                  size="2xl"
-                                  weight="bold"
-                                />
+                                
                                 <Bar
                                   contentAlign="center"
                                   padding="2x"
                                   left={<Title text="Report" />}
                                   center={{
-                                    content: <Link text="1402-20-12345_Research_Report.pdf" />,
+                                    content: <Text text="1402-20-12345_Research_Report.pdf" />,
                                     width: "50%",
                                     align: "left",
                                   }}
                                   right={(
                                     <Button
-                                      label="Download"
+                                      label="View"
                                       fullWidth
                                       onClick={doNothing}
                                     />
@@ -1284,15 +1320,16 @@ storiesOf("Templates|Applications/Appraisal", module)
                                     />
                                   )}
                                 />
+                                <Bar center={
                                 <Button
                                   label="Complete Project and Publish"
                                   onClick={doNothing}
-                                  variant="success"
                                   isSolid
-                                  fullWidth
-                                />
+                                 
+                                />}/>
+                              
                               </Grid>
-                              </Template>}/>
+                              </React.Fragment>
                             ),
                           }}
                         />

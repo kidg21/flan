@@ -94,7 +94,7 @@ const widthXS = "12rem";
 const widthSM = "18rem";
 const widthMD = "24rem";
 const widthLG = "30rem";
-const widthXL = "36rem";
+const widthXL = "33rem";
 
 const templateHash = {
   A_01: {
