@@ -322,7 +322,6 @@ _Menu.defaultProps = {
   portal: false,
   position: "bottomRight",
   visible: undefined,
-  ...StatefulMenu.Props,
 };
 
 _Menu.propTypes = {
@@ -336,7 +335,7 @@ _Menu.propTypes = {
   id: PropTypes.string,
   /** the initial visible value for stateful/uncontrolled menus */
   initVisible: PropTypes.bool,
-  /** to specify an anchor element to be flex so it won't break */
+  /** to specify an anchor element to be flex */
   isFlex: PropTypes.bool,
   /** onClick callback for the default anchor element */
   onClick: PropTypes.func,
@@ -354,4 +353,5 @@ _Menu.propTypes = {
   /** open/close state of menu */
   visible: PropTypes.bool,
 };
+
 export { _Menu as default, MenuList };

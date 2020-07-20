@@ -6,7 +6,7 @@ import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
 export default {
-  title: "Atoms/Menu/Tests",
+  title: "Atoms/Menu/Tests", // storyshots - .js & .mdx file
   parameters: {
     docs: { page: null }, // canvas view for these stories
   },
