@@ -153,7 +153,7 @@ return (
             >
               {column.render('Header')}
               <span>
-              {column.isSorted ? (column.isSortedDesc ? ' 🔽' : ' 🔼') : ''}
+              {column.isSorted ? (column.isSortedDesc ? '  ▼' : '  ▲') : ''}
               </span>
             </NewHeaderCell>
           ))}
@@ -195,7 +195,7 @@ return (
           {pageIndex + 1} of {pageOptions.length}
         </strong>{' '}
       </span>
-      <select
+      {/* <select
         value={pageSize}
         onChange={e => {
           setPageSize(Number(e.target.value))
@@ -206,7 +206,7 @@ return (
             Show {pageSize}
           </option>
         ))}
-      </select>
+      </select> */}
       </div>)}}
     right={{
       content: (
@@ -220,7 +220,7 @@ return (
         
       </Grid>
 
-  <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
+  {/* <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
   <pre>
     <code>
       {JSON.stringify(
@@ -254,7 +254,7 @@ return (
             2
           )}
         </code>
-      </pre>
+      </pre> */}
 </>
 )
 };

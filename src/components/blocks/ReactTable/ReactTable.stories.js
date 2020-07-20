@@ -6,7 +6,9 @@ import { Link } from "base/Typography";
 import Tag from "atoms/Tag";
 import ReactTable from "./ReactTable.jsx";
 import Panel from "layout/Panel";
+import Bar from "layout/Bar";
 import Page from "layout/Page";
+import TextInput from "atoms/TextInput";
 import Button from "atoms/Button";
 import Menu from "blocks/Menu";
 import Text from "base/Typography";
@@ -197,7 +199,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="In Progress" type="info"/>,
+              col8: <Tag label="In Progress" variant="info"/>,
 
             },
             {
@@ -208,7 +210,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="In Progress" type="info"/>,
+              col8: <Tag label="In Progress" variant="info"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -218,7 +220,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed" variant="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -228,7 +230,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed" variant="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -238,7 +240,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed" variant="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -248,7 +250,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed"  variant="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -258,7 +260,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed"  variant="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -268,7 +270,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed" variant="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -278,7 +280,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed" variant="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -288,7 +290,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed" variant="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
@@ -298,7 +300,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "10023",
               col6: "Senior Housing",
               col7: "6/19/2020",
-              col8: <Tag label="Completed" type="success"/>,
+              col8: <Tag label="Completed" variant="success"/>,
             },
           ];
         },
@@ -355,6 +357,9 @@ storiesOf("Data Display|ReactTable", module)
       return (
         <Panel>
           <Page>
+            <Bar padding="0" left={{
+              content: (<TextInput type="search" placeholder="Filter projects"/>),
+            width: "fit-content",}}/>
           <Button label="Filters" icon="filter" isSolid />
          <ReactTable columns={columns} data={data} />
          </Page>
@@ -532,6 +537,9 @@ storiesOf("Data Display|ReactTable", module)
       return (
         <Panel>
           <Page>
+          <Bar padding="0" left={{
+              content: (<TextInput type="search" placeholder="Filter jobs"/>),
+            width: "fit-content",}}/>
           <Button label="Filters" icon="filter" isSolid />
          <ReactTable columns={columns} data={data} />
          </Page>
