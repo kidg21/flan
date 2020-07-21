@@ -4,7 +4,9 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
-  display: block;
+display: ${(props) => {
+  return props.setOffCanvas ? "none" : "block";
+}};
   padding: ${(props) => {
     return props.setPadding || "";
   }};
@@ -45,11 +47,11 @@ const paddingHash = {
 };
 
 const Container = React.forwardRef(({
-  children, className, height, id, maxHeight, padding, hasBorder, width,
+  children, className, height, id, maxHeight, padding, setOffCanvas, hasBorder, width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
   return (
-    <Wrapper setPadding={setPadding} height={height} width={width} className={className}>
+    <Wrapper setOffCanvas={setOffCanvas} setPadding={setPadding} height={height} width={width} className={className}>
       <BoxContainer hasBorder={hasBorder} id={id} height={height ? "100%" : ""} maxHeight={maxHeight} ref={ref}>
         {children}
       </BoxContainer>
@@ -66,6 +68,7 @@ Container.propTypes = {
   maxHeight: PropTypes.string,
   padding: PropTypes.oneOf(["0", "2x", "3x"]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  setOffCanvas: PropTypes.bool,
 };
 
 Container.defaultProps = {
@@ -77,6 +80,7 @@ Container.defaultProps = {
   maxHeight: null,
   padding: "0",
   width: null,
+  setOffCanvas: false,
 };
 
 export default Container;
