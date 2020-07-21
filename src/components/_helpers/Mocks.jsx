@@ -717,7 +717,7 @@ function MockDetails({
 }) {
   return (
     <Template>
-      <Bar padding="2x" center={<Image src={image || StaticMap} width="80%" />}/>
+      <Image src={image || StaticMap} width="80%" />
       {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
         : (
           <FieldGroup  id="Physical Characteristics" >
