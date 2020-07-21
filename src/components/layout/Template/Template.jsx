@@ -22,19 +22,6 @@ const Region = styled.section`
   }};
   padding: 0px;
   pointer-events: initial;
- 
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-
-      height: inherit;
-      font-size: 2em;
-      font-weight: bold;
-      content: '${(props) => {
-    return props.placeholder || "";
-  }}';
-    }
-  }
 `;
 
 

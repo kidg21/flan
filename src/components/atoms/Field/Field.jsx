@@ -87,7 +87,6 @@ function Field({
     <FieldValue
       onChange={onChange}
       text={value}
-      
       weight="medium"
       valueAlign={valueAlign}
     />
@@ -109,7 +108,7 @@ function Field({
       
       id={id}
     >
-      <FieldLabel size="xl" text={label} />
+      <FieldLabel size="lg" text={label} />
       {field}
     </FieldItem>
   );
@@ -156,7 +155,7 @@ function FieldGroup({
       isDense={isDense}
       id={id}
     >
-      {title ? <GroupTitle text={title} weight="bold" /> : null}
+      {title ? <GroupTitle text={title} size="lg" /> : null}
       {children
         || data.map((item, index) => {
           return (

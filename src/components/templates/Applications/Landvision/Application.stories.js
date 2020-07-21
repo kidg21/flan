@@ -13,7 +13,7 @@ import Template from "layout/Template";
 import Tabs, { TabItem } from "blocks/Tabs";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
-import Form from "layout/Form";
+import Form, {FormSection} from "layout/Form";
 import Divider from "atoms/Divider";
 import MapBox from "layout/Map";
 import TextInput from "atoms/TextInput";
@@ -170,33 +170,6 @@ storiesOf("Templates|Applications/Appraisal", module)
 
         const [activeSingleTab, setActiveSingleTab] = useState("tab1");
 
-        const fieldData = [
-          {
-            label: "Project Name",
-            value: "22902 Trabuco Rd",
-            
-          },
-          {
-            label: "Job Number",
-            value: "1402-20-12345",
-          },
-          {
-            label: "Property Type",
-            value: "Shopping Center",
-          },
-          {
-            label: "Lat/Long",
-            value: "33.629211/-117.663988",
-          },
-          {
-            label: "Street Address",
-            value: "22902 Trabuco Road",
-          },
-          {
-            label: "City, State, Zip",
-            value: "Mission Viejo, CA 92691",
-          },
-        ];
 
         return (
           <Layout
@@ -250,19 +223,27 @@ storiesOf("Templates|Applications/Appraisal", module)
                             id: "A",
                             content: (
                               <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Project Overview" weight="bold"/>} right={<Button icon="share_content" isRound isPlain/>}/>}>
-                              <Grid columns="2">
+                              <Grid columns="60% 40%">
                               <Bar
                                   padding="0"
                                   center={{
                                     content: (
                                       <Form >
                                       <Grid columns="1">
-                                        <FieldGroup
-                                          columns="1"
-                                          align="edge"
-                                          id="General Information"
-                                          data={fieldData}
-                                        />
+                                        <FormSection>
+                                      <FieldGroup align="edge">
+                                        <Field align="edge" label="Project Name" value="22902 Trabuco Rd."/>
+                                        <Field align="edge" label="Job Number" value="1402-20-12345"/>
+                                        <Field align="edge" label="Property Type" value="Shopping Center"/>
+                                      </FieldGroup>
+                                      </FormSection>
+                                      <FormSection>
+                                        <Field align="edge" label="Lat/Long" value="33.629211/-117.663988"/>
+                                      </FormSection>
+                                      <FormSection>
+                                        <Field align="edge" label="Street Address" value="22902 Trabuco Road"/>
+                                        <Field align="edge" label="City, State, Zip" value="Mission Viejo, CA 92691"/>
+                                      </FormSection>
                                         <Bar center={<Button label="Start Research"  isSolid />}/>
                                       </Grid>
                                       </Form>),
@@ -399,13 +380,21 @@ storiesOf("Templates|Applications/Appraisal", module)
       <Card
          padding="0"   
           body={
-            <Bar padding="0" left={{
-              content: (
-            
-              <Grid columns="1" gap="xs">
-              <Title size="lg" text="Parcel APN: 93084203492"/>
-              
-         <FieldGroup
+            <Grid columns="1" gap="sm">
+            <Bar padding="0" 
+            alignContent="top"
+            left={{
+              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+            }}
+            right={{
+              content: (<Command label="View Details"/>),
+              width: "fit-content",
+            }}/>
+            <Bar 
+            padding="0"
+            contentAlign="bottom"
+            left={{
+              content: ( <FieldGroup
         id="Group1"
         isDense
       >
@@ -430,30 +419,39 @@ storiesOf("Templates|Applications/Appraisal", module)
           value="837489274927"
         />
       </FieldGroup>
-      </Grid>),
-      align: "left",
-      }}
+         
+         ),
+         align: "left",
+        }}
       right={{
         content: (
-          <Grid columns="1" gap="4xl" >
-      <Command label="View Details"/>
       <Button label="Remove" variant="alert"  />
-      </Grid>
               ),
         width: "fit-content",
         align: "right",
       }}
-     />}/>
- <Card
+     />
+     </Grid>
+     }/>
+
+<Card
          padding="0"   
           body={
-            <Bar padding="0" left={{
-              content: (
-            
-              <Grid columns="1" gap="xs">
-              <Title size="lg" text="Parcel APN: 93084203492"/>
-              
-         <FieldGroup
+            <Grid columns="1" gap="sm">
+            <Bar padding="0" 
+            alignContent="top"
+            left={{
+              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+            }}
+            right={{
+              content: (<Command label="View Details"/>),
+              width: "fit-content",
+            }}/>
+            <Bar 
+            padding="0"
+            contentAlign="bottom"
+            left={{
+              content: ( <FieldGroup
         id="Group1"
         isDense
       >
@@ -478,34 +476,42 @@ storiesOf("Templates|Applications/Appraisal", module)
           value="837489274927"
         />
       </FieldGroup>
-      </Grid>),
-      align: "left",
-      }}
+         
+         ),
+         align: "left",
+        }}
       right={{
         content: (
-          <Grid columns="1" gap="4xl" >
-      <Command label="View Details"/>
-      <Button label="Remove" variant="alert" />
-      </Grid>
+      <Button label="Remove" variant="alert"  />
               ),
         width: "fit-content",
         align: "right",
       }}
-     />}/>
-      <Card
+     />
+     </Grid>
+     }/>
+         <Card
          padding="0"   
           body={
-            <Bar padding="0" left={{
-              content: (
-            
-              <Grid columns="1" gap="xs">
-              <Title size="lg" text="Parcel APN: 93084203492"/>
-              
-         <FieldGroup
+            <Grid columns="1" gap="sm">
+            <Bar padding="0" 
+            alignContent="top"
+            left={{
+              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+            }}
+            right={{
+              content: (<Command label="View Details"/>),
+              width: "fit-content",
+            }}/>
+            <Bar 
+            padding="0"
+            contentAlign="bottom"
+            left={{
+              content: ( <FieldGroup
         id="Group1"
         isDense
       >
-        <Field
+         <Field
           id="Field 1"
           label="Address"
           value="42 Wallaby Way, Sydney, Australia"
@@ -526,20 +532,244 @@ storiesOf("Templates|Applications/Appraisal", module)
           value="837489274927"
         />
       </FieldGroup>
-      </Grid>),
-      align: "left",
-      }}
+         
+         ),
+         align: "left",
+        }}
       right={{
         content: (
-          <Grid columns="1" gap="4xl" >
-      <Command label="View Details"/>
-      <Button label="Remove" variant="alert" />
-      </Grid>
+      <Button label="Remove" variant="alert"  />
               ),
         width: "fit-content",
         align: "right",
       }}
-     />}/>
+     />
+     </Grid>
+     }/>
+         <Card
+         padding="0"   
+          body={
+            <Grid columns="1" gap="sm">
+            <Bar padding="0" 
+            alignContent="top"
+            left={{
+              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+            }}
+            right={{
+              content: (<Command label="View Details"/>),
+              width: "fit-content",
+            }}/>
+            <Bar 
+            padding="0"
+            contentAlign="bottom"
+            left={{
+              content: ( <FieldGroup
+        id="Group1"
+        isDense
+      >
+         <Field
+          id="Field 1"
+          label="Address"
+          value="42 Wallaby Way, Sydney, Australia"
+        />
+        <Field
+          id="Field 1"
+          label="Owner"
+          value="Forrest Gump"
+        />
+        <Field
+          id="Field 3"
+          label="Last Sale"
+          value="10/23/86"
+        />
+        <Field
+          id="Field 3"
+          label="Doc #"
+          value="837489274927"
+        />
+      </FieldGroup>
+         
+         ),
+         align: "left",
+        }}
+      right={{
+        content: (
+      <Button label="Remove" variant="alert"  />
+              ),
+        width: "fit-content",
+        align: "right",
+      }}
+     />
+     </Grid>
+     }/>
+         <Card
+         padding="0"   
+          body={
+            <Grid columns="1" gap="sm">
+            <Bar padding="0" 
+            alignContent="top"
+            left={{
+              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+            }}
+            right={{
+              content: (<Command label="View Details"/>),
+              width: "fit-content",
+            }}/>
+            <Bar 
+            padding="0"
+            contentAlign="bottom"
+            left={{
+              content: ( <FieldGroup
+        id="Group1"
+        isDense
+      >
+         <Field
+          id="Field 1"
+          label="Address"
+          value="42 Wallaby Way, Sydney, Australia"
+        />
+        <Field
+          id="Field 1"
+          label="Owner"
+          value="Forrest Gump"
+        />
+        <Field
+          id="Field 3"
+          label="Last Sale"
+          value="10/23/86"
+        />
+        <Field
+          id="Field 3"
+          label="Doc #"
+          value="837489274927"
+        />
+      </FieldGroup>
+         
+         ),
+         align: "left",
+        }}
+      right={{
+        content: (
+      <Button label="Remove" variant="alert"  />
+              ),
+        width: "fit-content",
+        align: "right",
+      }}
+     />
+     </Grid>
+     }/>
+         <Card
+         padding="0"   
+          body={
+            <Grid columns="1" gap="sm">
+            <Bar padding="0" 
+            alignContent="top"
+            left={{
+              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+            }}
+            right={{
+              content: (<Command label="View Details"/>),
+              width: "fit-content",
+            }}/>
+            <Bar 
+            padding="0"
+            contentAlign="bottom"
+            left={{
+              content: ( <FieldGroup
+        id="Group1"
+        isDense
+      >
+         <Field
+          id="Field 1"
+          label="Address"
+          value="42 Wallaby Way, Sydney, Australia"
+        />
+        <Field
+          id="Field 1"
+          label="Owner"
+          value="Forrest Gump"
+        />
+        <Field
+          id="Field 3"
+          label="Last Sale"
+          value="10/23/86"
+        />
+        <Field
+          id="Field 3"
+          label="Doc #"
+          value="837489274927"
+        />
+      </FieldGroup>
+         
+         ),
+         align: "left",
+        }}
+      right={{
+        content: (
+      <Button label="Remove" variant="alert"  />
+              ),
+        width: "fit-content",
+        align: "right",
+      }}
+     />
+     </Grid>
+     }/>
+         <Card
+         padding="0"   
+          body={
+            <Grid columns="1" gap="sm">
+            <Bar padding="0" 
+            alignContent="top"
+            left={{
+              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
+            }}
+            right={{
+              content: (<Command label="View Details"/>),
+              width: "fit-content",
+            }}/>
+            <Bar 
+            padding="0"
+            contentAlign="bottom"
+            left={{
+              content: ( <FieldGroup
+        id="Group1"
+        isDense
+      >
+         <Field
+          id="Field 1"
+          label="Address"
+          value="42 Wallaby Way, Sydney, Australia"
+        />
+        <Field
+          id="Field 1"
+          label="Owner"
+          value="Forrest Gump"
+        />
+        <Field
+          id="Field 3"
+          label="Last Sale"
+          value="10/23/86"
+        />
+        <Field
+          id="Field 3"
+          label="Doc #"
+          value="837489274927"
+        />
+      </FieldGroup>
+         
+         ),
+         align: "left",
+        }}
+      right={{
+        content: (
+      <Button label="Remove" variant="alert"  />
+              ),
+        width: "fit-content",
+        align: "right",
+      }}
+     />
+     </Grid>
+     }/>
                                 
                               </Form>
                               </Panel>
@@ -710,7 +940,8 @@ storiesOf("Templates|Applications/Appraisal", module)
                           B={{
                             id: "B",
                             content: (
-                              <MockDetails title="Site Assessment Tools" data={fieldData}/>
+                              <Bar padding="2x" left={
+                              <MockDetails title="Site Assessment Tools" data={fieldData}/>}/>
                             ),
                           }}
                         />
@@ -791,7 +1022,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                                 width: "fit-content",}}
                               center={{
                                 content: (
-                                  <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button alignCenter isSmall isPlain icon="measure" label="Measure" variant="neutral"/><Button alignCenter isPlain isSmall icon="layers" label="Layers" variant="neutral"/><Button alignCenter isPlain isSmall icon="list" label="Legend" variant="neutral"/><Button isSmall alignCenter isPlain icon="photos" label="Image" variant="neutral"/></ButtonGroup>
+                                  <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button alignCenter isPlain isSmall icon="layers" label="Layers" variant="neutral"/><Button alignCenter isPlain isSmall icon="list" label="Legend" variant="neutral"/><Button isSmall alignCenter isPlain icon="map" label="Map Type" variant="neutral"/><Button isSmall alignCenter isPlain icon="photos" label="Image" variant="neutral"/></ButtonGroup>
                                   ),
                                 
                               }}/>
@@ -837,7 +1068,9 @@ storiesOf("Templates|Applications/Appraisal", module)
                               />}
                               >
                               <Form >
-                              <Field label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo"/>}/>
+                                <FormSection>
+                              <Field align="edge" label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo"/>}/>
+                              </FormSection>
                                 <TextInput label="Zoning District"/>
                                 <TextInput label="Zoning"/>
                                 <TextInput label="Zoning Type"/>
@@ -952,7 +1185,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                               contentAlign="center" 
                               left={{
                                 content: (
-                                  <ButtonGroup columns="6"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Image" /><Button alignCenter variant="neutral" isSmall isPlain  icon="sync" label="Reset" /></ButtonGroup>
+                                  <ButtonGroup columns="6"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Image" /><Button alignCenter variant="neutral" isSmall isPlain icon="map" label="Map Type"/><Button alignCenter variant="neutral" isSmall isPlain  icon="sync" label="Reset" /></ButtonGroup>
                                   ),
                                 
                               }}/>
