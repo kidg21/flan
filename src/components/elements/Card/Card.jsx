@@ -70,12 +70,16 @@ const CardMedia = styled(Media)`
     }
 `;
 
+// needed for className passing
+// gets rid of component-selector warning
+const StyledCardWrapper = styled(CardWrapper)``;
+
 const CardGridWrapper = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.columns || "repeat(auto-fill, minmax(14rem, 1fr))";
   }};
   padding: 1rem;
-  ${CardWrapper} {
+  ${StyledCardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
@@ -395,8 +399,9 @@ function Card({
   }
 
   return (
-    <CardWrapper
+    <StyledCardWrapper
       className={className}
+      as={className}
       id={uId}
       isInverse={isInverse}
       href={href}
@@ -414,7 +419,7 @@ function Card({
       ) : null}
       {children}
       {commandElements ? <CardSection id={`${uId}-Footer`} footer={<React.Fragment />}>{commandElements}</CardSection> : null}
-    </CardWrapper>
+    </StyledCardWrapper>
   );
 }
 
