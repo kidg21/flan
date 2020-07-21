@@ -3,7 +3,7 @@
 // import React from "react";
 // import { Padding } from "helpers/Display";
 // import Container from "atoms/Container";
-// import Card from "elements/Card";
+// import Card from "layout/Card";
 
 
 // storiesOf("Atoms|Container", module)
