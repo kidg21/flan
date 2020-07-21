@@ -299,7 +299,11 @@ class CardList extends PureComponent {
       <CellWrapper id={`cellwrapper-${rowIndex}-${columnIndex}`} key={key} style={{ ...style, width: this._columnWidth }} {...cellProps}>
         <Template
           data={data[index]}
-          removeRecord={removeRecord}
+          removeRecord={() => {
+            if (removeRecord && data && data.length > 1) {
+              removeRecord(index);
+            }
+          }}
           isHighlighted={cellProps.isHighlighted}
           isSelected={cellProps.isSelected}
           index={index}
@@ -452,7 +456,7 @@ class CardList extends PureComponent {
           this._registerInfiniteChild = registerChild;
           this._onRowsRendered = onRowsRendered;
           return (
-          // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
+            // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
             <DisableTransitionContext.Provider value>
               <GridWrapper>
                 <AutoSizer
