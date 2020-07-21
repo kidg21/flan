@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable jsx-a11y/mouse-events-have-key-events1 */
-/* eslint-disable react/prop-types */
-import React, { useState, useMemo, useRef, useCallback } from "react";
+import React, {
+  useState, useMemo, useRef, useCallback,
+} from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Popper from "layout/Popper";
@@ -44,13 +44,11 @@ const StyledCardWrapper = styled(CardWrapper)`
   };
 `;
 
-// width: 100% needed for highlighing whole entry
 const ListItemWrapper = styled(ListItem)`
   border-radius: inherit;
-  // width: 100%;
 `;
 
-// highlight behaviors???
+// highlight behaviors
 // need to get rid of last-child padding
 // for the nested item's entry
 const NestedItem = styled.div`
@@ -64,11 +62,11 @@ const NestedItem = styled.div`
 const listPositionStyle = {
   left: {
     top: "0",
-    transform: "translateX(-100%)",
+    transform: "translateX(-100%)", // nested container's width
   },
   right: {
     top: "0",
-    left: "100%",
+    left: "100%", // parent container's width
   },
 };
 
@@ -176,7 +174,7 @@ MenuList.defaultProps = {
   data: [],
   direction: "right",
   id: "",
-  _nestedLevel: false,
+  _isNested: false,
   onClose: null,
 };
 
@@ -184,7 +182,7 @@ MenuList.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
   direction: PropTypes.oneOf(["", "right", "left"]),
   id: PropTypes.string,
-  _nestedLevel: PropTypes.bool,
+  _isNested: PropTypes.bool,
   onClose: PropTypes.func,
 };
 
@@ -304,11 +302,15 @@ const StatefulMenu = ({
 
 // additional props
 StatefulMenu.defaultProps = {
+  children: null,
   initVisible: false,
+  onClose: null,
 };
 
 StatefulMenu.propTypes = {
+  children: PropTypes.node,
   initVisible: PropTypes.bool,
+  onClose: PropTypes.func,
 };
 
 const _Menu = (props) => {
@@ -362,4 +364,5 @@ _Menu.propTypes = {
   visible: PropTypes.bool,
 };
 
+_Menu.displayName = "Menu";
 export { _Menu as default, MenuList };

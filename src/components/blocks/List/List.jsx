@@ -262,12 +262,14 @@ function ListItem({
 ListItem.propTypes = {
   as: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.node,
   id: PropTypes.string,
   isSelected: PropTypes.bool,
   onClick: PropTypes.func,
+  onClickItem: PropTypes.func,
   title: PropTypes.string.isRequired,
   post: PropTypes.shape({
     type: PropTypes.string.isRequired,
@@ -287,19 +289,30 @@ ListItem.propTypes = {
 ListItem.defaultProps = {
   as: null,
   children: null,
+  className: null,
   description: null,
   disabled: false,
   href: null,
   id: null,
   isSelected: false,
   onClick: null,
+  onClickItem: null,
   post: null,
   pre: null,
   tabIndex: "0",
 };
 
 function List({
-  children, className, data, id, isDivided, isInteractive, isInverse, isLight, padding, title,
+  children,
+  className,
+  data,
+  id,
+  isDivided,
+  isInteractive,
+  isInverse,
+  isLight,
+  padding,
+  title,
 }) {
   let listBackground;
   let listColor;
@@ -355,6 +368,7 @@ function List({
 
 List.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape(ListItem.propTypes)),
   id: PropTypes.string,
   isDivided: PropTypes.bool,
@@ -366,6 +380,7 @@ List.propTypes = {
 };
 List.defaultProps = {
   children: null,
+  className: null,
   data: [],
   id: null,
   isDivided: false,
