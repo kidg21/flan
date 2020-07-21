@@ -38,7 +38,7 @@ export const colors = {
   navy20: "hsl(213, 63%, 96%)",
   navy40: "hsl(212, 82%, 87%)",
   navy60: "hsl(213, 48%, 44%)",
-  navy80: "hsl(215, 22%, 26%)",
+  navy80: "hsl(216, 26%, 32%)",
   navy100: "hsl(215, 44%, 16%)",
 
   red20: "hsl(3, 96%, 97%)",

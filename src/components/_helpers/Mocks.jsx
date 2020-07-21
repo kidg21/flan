@@ -718,38 +718,44 @@ function MockDetails({
   return (
     <Template>
       <Image src={image || StaticMap} width="80%" />
-      {data ? <FieldGroup id={title} title={title} data={data} />
+      {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
         : (
-          <FieldGroup id="Physical Characteristics" >
+          <FieldGroup  id="Physical Characteristics" >
             <Field
+            align="edge"
               id="No. of Buildings"
               label="Project Owner"
               value="Steve Davidson"
             />
             <Field
+            align="edge"
               id="GBA"
               label="Project Due"
               value="06/25/2020"
             />
             <Field
+            align="edge"
               id="No. of Stories"
               label="Project Status"
               value="Open"
             />
             <Field
+            align="edge"
               id="No. of Units"
               label="Project Created"
               value="6/14/2020 8:00 am PT"
             />
             <Field
+            align="edge"
               id="Year Built"
               label="Project Edited"
               value="6/16/2020 12:15 pm PT"
             />
             <Field
+            align="edge"
               id="Year Built"
               label="N1 ID"
-              value={<Link text="1804"size="lg"/>}
+              value="1804"
             />
           </FieldGroup>
         )}

@@ -149,7 +149,7 @@ function Title({
 
   const sizeHash = {
     "lg": {
-      fontSize: "1rem",
+      fontSize: "1.2rem",
       letterSpacing: "0.2px",
       fontWeight: "500",
       as: "h5",

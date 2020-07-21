@@ -20,14 +20,9 @@ const Region = styled.section`
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
-  padding: 1px;
+  padding: 0px;
   pointer-events: initial;
-  &:focus {
-    outline: ${(props) => {
-    return `1px solid ${props.theme.palette.selected}`;
-  }};
-  outline-offset: -1px;
-  }
+ 
   &:empty {
     &:before {
       ${PlaceholderText}
@@ -94,7 +89,7 @@ const widthXS = "12rem";
 const widthSM = "18rem";
 const widthMD = "24rem";
 const widthLG = "30rem";
-const widthXL = "33rem";
+const widthXL = "38rem";
 
 const templateHash = {
   A_01: {

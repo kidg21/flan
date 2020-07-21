@@ -250,15 +250,16 @@ storiesOf("Templates|Applications/Appraisal", module)
                             id: "A",
                             content: (
                               <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Project Overview" weight="bold"/>} right={<Button icon="share_content" isRound isPlain/>}/>}>
-                              <Grid columns="60% 40%">
+                              <Grid columns="2">
                               <Bar
-                                  padding="2x"
+                                  padding="0"
                                   center={{
                                     content: (
                                       <Form >
                                       <Grid columns="1">
                                         <FieldGroup
                                           columns="1"
+                                          align="edge"
                                           id="General Information"
                                           data={fieldData}
                                         />
@@ -356,7 +357,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                               width: "fit-content",}}
                               right={{
                                 content: (
-                                  <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button alignCenter isSmall isPlain icon="measure" label="Measure" variant="neutral"/><Button isSmall alignCenter isPlain icon="layers" label="Layers" variant="neutral"/><Button alignCenter isSmall isPlain icon="list" label="Legend" variant="neutral"/><Button alignCenter isPlain isSmall variant="neutral" icon="sync" label="Reset" /></ButtonGroup>
+                                  <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button isSmall alignCenter isPlain icon="layers" label="Layers" variant="neutral"/><Button alignCenter isSmall isPlain icon="list" label="Legend" variant="neutral"/><Button alignCenter isPlain isSmall variant="neutral" icon="map" label="Map Type"/><Button alignCenter isPlain isSmall variant="neutral" icon="sync" label="Reset" /></ButtonGroup>
                                   ),
                                 
                               }}/>
@@ -388,68 +389,31 @@ storiesOf("Templates|Applications/Appraisal", module)
                               }
                               footer={
                                 <Bar right={{
-                                  content:( <Button label="Save & Next" isSolid/>),
+                                  content:( <Button label="Define Site" isSolid/>),
                                 }}/>
                               }
                               >
                               <Form >
                                 
-                                  <Card
-                                  padding="0"
-        title="42 Wallaby Way, Sydney, Australia"
-        description="APN: 93423438492038"
-        commands={[{
-          id: "Command One",
-          label: "View Details",
-          onClick: action("Command One Clicked")
-        },
-        {
-          id: "Command One",
-          label: <Icon icon="delete" variant="alert"/>,
-          onClick: action("Command One Clicked")
-        },
-        
-       ]}
-          body={
-
-       <FieldGroup
-        id="Group1"
-        isDense
-      >
-        <Field
-          id="Field 1"
-          label="Owner"
-          value="Forrest Gump"
-        />
-        <Field
-          id="Field 3"
-          label="Last Sale"
-          value="10/23/86"
-        />
-        <Field
-          id="Field 3"
-          label="Doc #"
-          value="837489274927"
-        />
-      </FieldGroup>}/>
+                                
       <Card
-      padding="0"
-        title="42 Wallaby Way, Sydney, Australia"
-        description="APN: 93423438492038"
-        commands={[{
-          id: "Command One",
-          label: "View Details",
-          onClick: action("Command One Clicked")
-        }, {
-          id: "Command One",
-          label: <Icon icon="delete" variant="alert"/>,
-          onClick: action("Command One Clicked")
-        }, ]}
+         padding="0"   
           body={
-       <FieldGroup
+            <Bar padding="0" left={{
+              content: (
+            
+              <Grid columns="1" gap="xs">
+              <Title size="lg" text="Parcel APN: 93084203492"/>
+              
+         <FieldGroup
         id="Group1"
         isDense
       >
+         <Field
+          id="Field 1"
+          label="Address"
+          value="42 Wallaby Way, Sydney, Australia"
+        />
         <Field
           id="Field 1"
           label="Owner"
@@ -465,26 +429,87 @@ storiesOf("Templates|Applications/Appraisal", module)
           label="Doc #"
           value="837489274927"
         />
-      </FieldGroup>}/>
+      </FieldGroup>
+      </Grid>),
+      align: "left",
+      }}
+      right={{
+        content: (
+          <Grid columns="1" gap="4xl" >
+      <Command label="View Details"/>
+      <Button label="Remove" variant="alert"  />
+      </Grid>
+              ),
+        width: "fit-content",
+        align: "right",
+      }}
+     />}/>
+ <Card
+         padding="0"   
+          body={
+            <Bar padding="0" left={{
+              content: (
+            
+              <Grid columns="1" gap="xs">
+              <Title size="lg" text="Parcel APN: 93084203492"/>
+              
+         <FieldGroup
+        id="Group1"
+        isDense
+      >
+         <Field
+          id="Field 1"
+          label="Address"
+          value="42 Wallaby Way, Sydney, Australia"
+        />
+        <Field
+          id="Field 1"
+          label="Owner"
+          value="Forrest Gump"
+        />
+        <Field
+          id="Field 3"
+          label="Last Sale"
+          value="10/23/86"
+        />
+        <Field
+          id="Field 3"
+          label="Doc #"
+          value="837489274927"
+        />
+      </FieldGroup>
+      </Grid>),
+      align: "left",
+      }}
+      right={{
+        content: (
+          <Grid columns="1" gap="4xl" >
+      <Command label="View Details"/>
+      <Button label="Remove" variant="alert" />
+      </Grid>
+              ),
+        width: "fit-content",
+        align: "right",
+      }}
+     />}/>
       <Card
-      padding="0"
-        title="42 Wallaby Way, Sydney, Australia"
-        description="APN: 93423438492038"
-        commands={[{
-          id: "Command One",
-          label: "View Details",
-          onClick: action("Command One Clicked")
-        }, 
-        {
-          id: "Command One",
-          label: <Icon icon="delete" variant="alert"/>,
-          onClick: action("Command One Clicked")
-        },]}
+         padding="0"   
           body={
-       <FieldGroup
+            <Bar padding="0" left={{
+              content: (
+            
+              <Grid columns="1" gap="xs">
+              <Title size="lg" text="Parcel APN: 93084203492"/>
+              
+         <FieldGroup
         id="Group1"
         isDense
       >
+        <Field
+          id="Field 1"
+          label="Address"
+          value="42 Wallaby Way, Sydney, Australia"
+        />
         <Field
           id="Field 1"
           label="Owner"
@@ -500,7 +525,21 @@ storiesOf("Templates|Applications/Appraisal", module)
           label="Doc #"
           value="837489274927"
         />
-      </FieldGroup>}/>
+      </FieldGroup>
+      </Grid>),
+      align: "left",
+      }}
+      right={{
+        content: (
+          <Grid columns="1" gap="4xl" >
+      <Command label="View Details"/>
+      <Button label="Remove" variant="alert" />
+      </Grid>
+              ),
+        width: "fit-content",
+        align: "right",
+      }}
+     />}/>
                                 
                               </Form>
                               </Panel>
@@ -614,7 +653,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                       content: (
                         <Template
                           id="Details"
-                          template="B_01"
+                          template="B_06"
                           A={{
                             id: "A",
                             content: <Panel
@@ -645,8 +684,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                             />}>
                           
                               <Form>
-                              <Field label="Parcel Link" value={<Link text="808-23093" size="lg"/>}/>
-                              <Form columns="2">
+                              <Field label="Direct Link:" value={<Link text="808-23093" size="lg"/>}/>
                                 <TextInput label="Assessment Year(s)"/>
                                 <TextInput label="Land Assessment"/>
                                 <TextInput label="Improvement Assessment"/>
@@ -659,11 +697,14 @@ storiesOf("Templates|Applications/Appraisal", module)
                                 left={{
                                   content:(
                                   <Button label="Attachments" />),}}
+                                  center={{
+                                    content:(
+                                    <Button label="Save" isSolid/>),}}
                               right={{
                                 content:(
                                 <Button label="Save & Next" isSolid/>),}}
                               />
-                                </Form>
+                                
                               </Panel>,
                           }}
                           B={{
@@ -746,7 +787,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                               padding="1x"
                               contentAlign="center" 
                               left={{
-                                content: (<Command label="Request Data" />),
+                                content: (<Button label="Request Data" isSolid />),
                                 width: "fit-content",}}
                               center={{
                                 content: (
@@ -793,10 +834,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                                 <TabItem label="Zone 2"/>
                               </Tabs>),
                               width: "fit-content"}}
-                              right={{
-                                content: (<Button icon="plus" isRound/>),
-                                width: "fit-content",
-                              }}/>}
+                              />}
                               >
                               <Form >
                               <Field label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo"/>}/>
@@ -945,7 +983,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                               padding="0"
                               footer={<Bar 
                                 contentAlign="bottom" 
-                                left={<Button label="Attachments"/>}
+                                left={<Button label="Map Images"/>}
                                 center={<Button label="Save" isSolid />}
                               right={{
                                 content:(
@@ -1106,6 +1144,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                   header={
                     <MockHeader  percentage="100" />
                   }
+                  
                 >
                   <Template
                     id="Maps"
@@ -1132,7 +1171,11 @@ storiesOf("Templates|Applications/Appraisal", module)
                       id: "B",
                       content: (
                         <Panel
-                        header={<Bar padding="2x" left={<Title size="xl" text="Review"/>}/>}>
+                        header={<Bar padding="2x" left={<Title size="xl" text="Review"/>}/>}
+                        footer={
+                          <Bar padding="2x" left={<Button label="Attachments"/>} right={<Button label="Complete" isSolid/>} />
+                        }
+                        >
                         <Template
                     id="Review"
                     template="B_04"
@@ -1166,6 +1209,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                             visible={visible}
                             animationDuration={0.5}
                           >
+                          
                             <Card>
                               <CardSection>
                                 <Bar
@@ -1183,6 +1227,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                                 <Loader />
                               </CardSection>
                             </Card>
+                            
                           </Modal>
                           {reportWindow}
                         </React.Fragment>
