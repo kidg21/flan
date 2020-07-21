@@ -10,24 +10,53 @@ import Button from "atoms/Button";
 import List, { ListItem } from "blocks/List";
 import { useId, getGuid } from "helpers";
 import CardWrapper from "elements/Card/CardWrapper.jsx";
+import { formatPixelValue } from "utils/format";
 
 const ListWrapper = styled(List)`
-  overflow: visible;
+  overflow-y: auto;
   width: 10rem;
   position: ${(props) => {
-    return props.nestedLevel ? "absolute" : "";
+    return props.isNested ? "fixed" : "";
   }};
   top: ${(props) => {
-    return props.top || "";
+    return formatPixelValue(props.top);
   }};
   left: ${(props) => {
-    return props.left || "";
+    return formatPixelValue(props.left);
   }};
   transform: ${(props) => {
     return props.transform || "";
   }};
+  /* cardwrapper border-radius */
   border-radius: 0.5em;
   z-index: 500;
+
+  /* overflow-y w/scroll bar */
+  max-height: 12rem;
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => {
+    return props.theme.palette.action80;
+  }};
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track:horizontal {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+}
+  ::-webkit-scrollbar-thumb:horizontal{
+    background-color: ${(props) => {
+    return props.theme.palette.action80;
+  }};
 `;
 
 const StyledCardWrapper = styled(CardWrapper)`
@@ -40,18 +69,6 @@ const StyledCardWrapper = styled(CardWrapper)`
     border-bottom-right-radius: inherit;
   };
 `;
-// const NestedListWrapper = styled(ListWrapper)`
-//   position: absolute;
-//   top: ${(props) => {
-//     return props.top || "";
-//   }};
-//   left: ${(props) => {
-//     return props.left || "";
-//   }};
-//   transform: ${(props) => {
-//     return props.transform || "";
-//   }};
-// `;
 
 // width: 100% needed for highlighing whole entry
 const ListItemWrapper = styled(ListItem)`
@@ -70,28 +87,17 @@ const NestedItem = styled.div`
   }
 `;
 
-const listPositionStyle = {
-  left: {
-    top: "0",
-    transform: "translateX(-100%)",
-  },
-  right: {
-    top: "0",
-    left: "100%",
-  },
-};
-
 const MenuList = ({
   data,
   direction,
   id,
-  _nestedLevel, // internal prop for styling nested menus
+  _nestedRef, // internal prop for styling nested menus
   onClose,
 }) => {
   const [activeItem, setActiveItem] = useState();
+  const nestedRef = useRef();
   const uId = useId(id);
   const itemIds = useRef([]);
-  const validDirection = listPositionStyle.hasOwnProperty(direction.toLowerCase()) ? direction : "right";
 
   const listItems = useMemo(() => {
     // empty list, display "No Commands" entry
@@ -118,6 +124,7 @@ const MenuList = ({
           // nested submenu
           return (
             <NestedItem
+              ref={nestedRef}
               key={itemId}
               id={`item-${itemId}`}
               onMouseEnter={() => {
@@ -138,9 +145,10 @@ const MenuList = ({
                 <MenuList
                   id={`${uId}-${itemId}`}
                   data={item.data}
-                  direction={validDirection}
+                  direction={direction}
                   onClose={onClose}
                   _nestedLevel
+                  _nestedRef={nestedRef}
                 />
               ) : null}
             </NestedItem>
@@ -162,9 +170,26 @@ const MenuList = ({
     return _listItems;
   });
 
-  const positionStyle = _nestedLevel ? listPositionStyle[validDirection.toLowerCase()] : {};
+  const positionStyle = useMemo(() => {
+    const style = {};
+    if (_nestedRef && _nestedRef.current) {
+      // need to use top & left px values to support max-width & scroll overflow
+      // measures nestedItem
+      const bound = _nestedRef.current.getBoundingClientRect();
+      if (direction.toLowerCase() === "left") {
+        style.top = bound.top;
+        style.left = bound.left;
+        style.transform = "translateX(-100%)";
+      } else {
+        style.top = bound.top;
+        style.left = bound.left + bound.width;
+      }
+    }
+    return style;
+  }, [_nestedRef]);
+
   return (
-    <ListWrapper id={id} isInteractive nestedLevel={_nestedLevel} {...positionStyle}>
+    <ListWrapper id={id} isInteractive isNested={!!_nestedRef} {...positionStyle}>
       <StyledCardWrapper shadow="2x">
         {listItems}
       </StyledCardWrapper>

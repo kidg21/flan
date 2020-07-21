@@ -4,16 +4,7 @@ import React, { useRef, useState, useLayoutEffect, useMemo, useEffect } from "re
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Portal, useId } from "helpers";
-
-// helper function, takes a number or string
-// outputs a string in "100px" format
-function formatPixelValue(value) {
-  let _value = typeof value === "number" ? value.toString() : value;
-  if (_value && !_value.includes("px")) {
-    _value += "px";
-  }
-  return _value || "";
-}
+import { formatPixelValue } from "utils/format";
 
 const AnchorWrapper = styled.div`
   display: flex;
