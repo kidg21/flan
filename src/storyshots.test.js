@@ -1,7 +1,7 @@
 import initStoryshots, { multiSnapshotWithOptions } from "@storybook/addon-storyshots";
 import { screen } from "Variables";
-import * as helpers from "helpers";
 import * as hooks from "hooks";
+import * as helpers from "helpers/useId";
 // import { imageSnapshot } from "@storybook/addon-storyshots-puppeteer";
 
 if (!window) global.window = global;
