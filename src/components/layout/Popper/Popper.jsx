@@ -3,7 +3,8 @@
 import React, { useRef, useState, useLayoutEffect, useMemo, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Portal, useId } from "helpers";
+import { useId } from "helpers";
+import Portal from "utils/Portal";
 import { formatPixelValue } from "utils/format";
 
 const AnchorWrapper = styled.div`
@@ -216,6 +217,7 @@ Popper.defaultProps = {
   anchor: null,
   anchorRef: null,
   children: null,
+  closeOnClickAway: undefined,
   closeOnScroll: undefined,
   id: "",
   isFlex: false,
@@ -236,6 +238,8 @@ Popper.propTypes = {
   }),
   /** pop-out content shown when visible */
   children: PropTypes.node,
+  /** close popper when clicking outside of pop-out */
+  closeOnClickAway: PropTypes.bool,
   /** close popper on window scroll, by default portal closes on scroll */
   closeOnScroll: PropTypes.bool,
   /** id of popper */

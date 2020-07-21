@@ -21,14 +21,6 @@ const Center = ({ children }) => {
   return (<div style={centerStyles}>{children}</div>);
 };
 
-const centerDecoratorStyles = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "inherit",
-};
-const CenterDecorator = (storyFn) => { return (<div style={centerDecoratorStyles}>{storyFn()}</div>); };
-
 Center.propTypes = {
   children: PropTypes.node,
 };
@@ -55,10 +47,6 @@ const DisplayGrid = (storyFn) => {
   return (<Grid>{storyFn()}</Grid>);
 };
 
-const CenterDisplayGrid = (storyFn) => {
-  return (<Grid columns={3}><div />{storyFn()}<div /></Grid>);
-};
-
 function CommandGrid({ data }) {
   return data.map((item) => {
     return (
@@ -69,6 +57,21 @@ function CommandGrid({ data }) {
     );
   });
 }
+
+const centerDecoratorStyles = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "inherit",
+};
+
+const CenterDecorator = (storyFn) => {
+  return (<div style={centerDecoratorStyles}>{storyFn()}</div>);
+};
+
+const CenterDisplayGrid = (storyFn) => {
+  return (<Grid columns={3}><div />{storyFn()}<div /></Grid>);
+};
 
 export {
   FullScreen,

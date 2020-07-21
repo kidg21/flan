@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState, useRef } from "react";
+import React from "react";
+import { useState, useRef } from "hooks";
 import Popper from "layout/Popper";
-import Button, { ButtonGroup } from "atoms/Button";
+import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import Card from "elements/Card";
 import { Padding, CenterDecorator, Container } from "helpers/Display";
@@ -21,7 +22,13 @@ export const textMock = `Maize, also known as corn, is a cereal grain first dome
  by indigenous peoples in southern Mexico about 10,000 years ago. Also, popcorn is yummy.
 `;
 
-const EmptySpace = <div />; // absolute width instead of inconsistent grid
+export const BoxMock = ({ children }) => {
+  return (
+    <div style={{ width: "12rem" }}>
+      {children}
+    </div>
+  );
+}; // absolute width instead of inconsistent grid
 
 export const PortalPostions = () => {
   const [visiblePoppers, setVisiblePoppers] = useState({
@@ -55,13 +62,13 @@ export const PortalPostions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-portal-position-topRight"
@@ -86,13 +93,13 @@ export const PortalPostions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-portal-position-bottomLeft"
@@ -117,13 +124,13 @@ export const PortalPostions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-portal-position-topLeft"
@@ -148,13 +155,13 @@ export const PortalPostions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
     </Grid>
   );
@@ -192,13 +199,13 @@ export const FlexPositions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-flex-position-topRight"
@@ -223,13 +230,13 @@ export const FlexPositions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-flex-position-bottomLeft"
@@ -254,13 +261,13 @@ export const FlexPositions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-flex-position-topLeft"
@@ -285,13 +292,13 @@ export const FlexPositions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
     </Grid>
   );
@@ -330,13 +337,13 @@ export const PortalFlexPositions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-portal-flex-position-topRight"
@@ -362,13 +369,13 @@ export const PortalFlexPositions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-portal-flex-position-bottomLeft"
@@ -394,13 +401,13 @@ export const PortalFlexPositions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-portal-flex-position-topLeft"
@@ -426,13 +433,13 @@ export const PortalFlexPositions = () => {
           });
         }}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
     </Grid>
   );
@@ -449,13 +456,13 @@ export const AnchorRef = () => {
         visible
         anchorRef={anchorRef}
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
     </Grid>
   );

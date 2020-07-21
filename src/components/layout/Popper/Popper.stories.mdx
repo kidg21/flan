@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState } from "hooks";
 import { Meta, Story, Preview, Props, Source } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
-import { textMock } from "layout/Popper/Popper.stories.js";
+import { textMock, BoxMock } from "layout/Popper/Popper.stories.js";
 import { Padding, CenterDecorator, Container, CenterDisplayGrid, DisplayGrid } from "helpers/Display";
 import Popper from "layout/Popper";
 import Card from "elements/Card";
@@ -32,12 +32,12 @@ import List, { ListItem } from "blocks/List";
             visible={visible}
             onClose={() => { setVisible(false); }}
           >
-            <Grid>
+            <BoxMock>
               <Card
                 title="Corn"
                 description={textMock}
               />
-            </Grid>
+            </BoxMock>
         </Popper>
         );
       }}
@@ -67,13 +67,13 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
         visible
         position="bottomRight"
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-position-topRight"
@@ -87,13 +87,13 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
         visible
         position="topRight"
      >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-position-bottomLeft"
@@ -107,13 +107,13 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
         visible
         position="bottomLeft"
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-position-topLeft"
@@ -127,13 +127,13 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
         visible
         position="topLeft"
       >
-       <Grid>
+       <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
     </Grid>
   </Story>
@@ -159,12 +159,12 @@ The anchor element refers to the component the popper will open around. Use the
         />
       )}
     >
-      <Grid>
+      <BoxMock>
         <Card
           title="Corn"
           description={textMock}
         />
-      </Grid>
+      </BoxMock>
     </Popper>
   </Story>
 </Preview>
@@ -185,7 +185,7 @@ The anchor element refers to the component the popper will open around. Use the
         />
       )}
     >
-      <Grid>
+      <BoxMock>
         <List
           id="content-list"
           title="Popcorn Content"
@@ -195,7 +195,7 @@ The anchor element refers to the component the popper will open around. Use the
           <ListItem title="Kettle Corn" />
           <ListItem title="Cheesy Jalapeno" />
         </List>
-      </Grid>
+      </BoxMock>
     </Popper>
   </Story>
 </Preview>
@@ -228,13 +228,13 @@ the `children` content in a `React.Portal`.
             visible={visible}
             onClose={() => { setVisible(false); }}
           >
-            <Grid>
+            <BoxMock>
               <Card
                 id="card"
                 title="Corn"
                 description={textMock}
               />
-            </Grid>
+            </BoxMock>
         </Popper>
         );
       }}
@@ -262,13 +262,13 @@ Use `isFlex` prop when the anchor element needs to be a flex component.
         isFlex
         position="bottomRight"
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Popper
         id="popper-not-flex"
@@ -281,13 +281,13 @@ Use `isFlex` prop when the anchor element needs to be a flex component.
         visible
         position="bottomRight"
       >
-        <Grid>
+        <BoxMock>
           <Card
             id="card"
             title="Corn"
             description={textMock}
           />
-        </Grid>
+        </BoxMock>
       </Popper>
       <Button id="button-normal-2" label="Normal Button" />
     </ButtonGroup>
