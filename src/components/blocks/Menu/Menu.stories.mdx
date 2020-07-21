@@ -48,10 +48,6 @@ levels of hierarchy. They are organized into menus of parent list items that con
 list items appear to the right or left of parent list items, depending on the position of the menu. Nested Menus
 are generated based on the data array passed through.
 
-## Props
-
-<Props of={Menu} />
-
 ## Examples
 
 ### Menu Item Data
@@ -207,7 +203,7 @@ the menu properly so it doesn't get cut off. Supported positions include: `botto
   </Story>
 </Preview>
 
-### Anchor Element
+### Anchor
 
 The anchor element refers to the component the menu will open around. The default 
 anchor element is `<Button icon="options" isPlain isRound />`. If you just want to change
@@ -288,6 +284,7 @@ pass in a `visible`, `onClose`, `onClick` (for default anchor button or specify 
         >
           <Button
             label="Anchor"
+            isSolid
             onClick={() => { setVisible((show) => { return !show; }); }}
           />
         </Menu>
@@ -426,6 +423,10 @@ Use `isFlex` prop when the anchor element needs to be a flex component.
     </ButtonGroup>
   </Story>
 </Preview>
+
+## Props
+
+<Props of={Menu} />
 
 ## Related Components
 

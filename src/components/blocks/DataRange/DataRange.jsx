@@ -8,7 +8,7 @@ import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
-import { getGuid } from "helpers";
+import { useId } from "helpers";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
@@ -49,7 +49,7 @@ function DataRange({
     if (typeof setMaxState === "function") setMaxState(newState);
   }
 
-  const uId = id || getGuid();
+  const uId = useId(id);
 
   let centerContent;
   let barAlignment;

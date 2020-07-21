@@ -2,348 +2,461 @@
 import React, { useState, useRef } from "react";
 import Popper from "layout/Popper";
 import Button, { ButtonGroup } from "atoms/Button";
-import Tabs, { TabItem } from "blocks/Tabs";
-import Menu from "blocks/Menu";
 import Grid from "layout/Grid";
 import Card from "elements/Card";
-import { Padding } from "helpers/Display";
+import { Padding, CenterDecorator, Container } from "helpers/Display";
 
 export default {
-  title: "Utilities/Popper",
+  title: "Utilities/Popper/Tests", // storyshots - js & mdx file
   component: Popper,
   parameters: {
-    docs: { page: null },
+    docs: { page: null }, // canvas view for these stories
+
   },
-  decorators: [Padding],
-  includeStories: [],
+  decorators: [CenterDecorator, Container, Padding, Padding],
+  excludeStories: /.*Mock$/,
 };
 
-const EmptySpace = <div />;
+export const textMock = `Maize, also known as corn, is a cereal grain first domesticated
+ by indigenous peoples in southern Mexico about 10,000 years ago. Also, popcorn is yummy.
+`;
 
-export const Position = () => {
-  const [visible, setVisible] = useState({});
+const EmptySpace = <div />; // absolute width instead of inconsistent grid
+
+export const PortalPostions = () => {
+  const [visiblePoppers, setVisiblePoppers] = useState({
+    bottomRight: true,
+    bottomLeft: true,
+    topRight: true,
+    topLeft: true,
+  });
   return (
     <Grid columns="4">
-      {EmptySpace}
-      <Popper
-        id="popper-position-bottomRight"
-        anchor={(
-          <Button
-            // icon="options"
-            // isPlain
-            // isRound
-            label="Bottom Right"
-            onClick={() => {
-              setVisible((hash) => { return { ...hash, bottomRight: !hash.bottomRight }; });
-            }}
-          />
-        )}
-        position="bottomRight"
-        visible={visible.bottomRight}
-        onClose={() => {
-          setVisible((hash) => { return { ...hash, bottomRight: false }; });
-        }}
-      >
-        <Card />
-      </Popper>
-      <Popper
-        id="popper-position-bottomLeft"
-        anchor={(
-          <Button
-            // icon="options"
-            // isPlain
-            // isRound
-            label="Bottom Left"
-            onClick={() => {
-              setVisible((hash) => { return { ...hash, bottomLeft: !hash.bottomLeft }; });
-            }}
-          />
-        )}
-        position="bottomLeft"
-        visible={visible.bottomLeft}
-        onClose={() => {
-          setVisible((hash) => { return { ...hash, bottomLeft: false }; });
-        }}
-      >
-        <Card />
-      </Popper>
-      {EmptySpace}
-      {EmptySpace}
-      <Popper
-        id="popper-position-topRight"
-        anchor={(
-          <Button
-            // icon="options"
-            // isPlain
-            // isRound
-            label="Top Right"
-            onClick={() => {
-              setVisible((hash) => { return { ...hash, topRight: !hash.topRight }; });
-            }}
-          />
-        )}
-        position="topRight"
-        visible={visible.topRight}
-        onClose={() => {
-          setVisible((hash) => { return { ...hash, topRight: false }; });
-        }}
-      >
-        <Card />
-      </Popper>
-      <Popper
-        id="popper-position-topLeft"
-        anchor={(
-          <Button
-            // icon="options"
-            // isPlain
-            // isRound
-            label="Top Left"
-            onClick={() => {
-              setVisible((hash) => { return { ...hash, topLeft: !hash.topLeft }; });
-            }}
-          />
-        )}
-        position="topLeft"
-        visible={visible.topLeft}
-        onClose={() => {
-          setVisible((hash) => { return { ...hash, topLeft: false }; });
-        }}
-      >
-        <Card />
-      </Popper>
-      {EmptySpace}
-    </Grid>
-  );
-};
-
-export const PositionPortal = () => {
-  const [visible, setVisible] = useState({});
-  return (
-    <Grid columns="4">
-      {EmptySpace}
       <Popper
         id="popper-portal-position-bottomRight"
         portal
         anchor={(
           <Button
-            // icon="options"
-            // isPlain
-            // isRound
+            id="popper-button-bottomRight"
             label="Bottom Right"
+            isSolid
             onClick={() => {
-              setVisible((hash) => { return { ...hash, bottomRight: !hash.bottomRight }; });
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, bottomRight: !poppers.bottomRight };
+              });
             }}
           />
         )}
+        visible={visiblePoppers.bottomRight}
         position="bottomRight"
-        visible={visible.bottomRight}
         onClose={() => {
-          setVisible((hash) => { return { ...hash, bottomRight: false }; });
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, bottomRight: false };
+          });
         }}
       >
-        <Card />
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-portal-position-topRight"
+        portal
+        anchor={(
+          <Button
+            id="popper-button-topRight"
+            label="Top Right"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, topRight: !poppers.topRight };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.topRight}
+        position="topRight"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, topRight: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
       </Popper>
       <Popper
         id="popper-portal-position-bottomLeft"
         portal
         anchor={(
           <Button
-            // icon="options"
-            // isPlain
-            // isRound
+            id="popper-button-bottomLeft"
             label="Bottom Left"
+            isSolid
             onClick={() => {
-              setVisible((hash) => { return { ...hash, bottomLeft: !hash.bottomLeft }; });
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, bottomLeft: !poppers.bottomLeft };
+              });
             }}
           />
         )}
+        visible={visiblePoppers.bottomLeft}
         position="bottomLeft"
-        visible={visible.bottomLeft}
         onClose={() => {
-          setVisible((hash) => { return { ...hash, bottomLeft: false }; });
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, bottomLeft: false };
+          });
         }}
       >
-        <Card />
-      </Popper>
-      {EmptySpace}
-      {EmptySpace}
-      <Popper
-        id="popper-portal-position-topRight"
-        portal
-        anchor={(
-          <Button
-            // icon="options"
-            // isPlain
-            // isRound
-            label="Top Right"
-            onClick={() => {
-              setVisible((hash) => { return { ...hash, topRight: !hash.topRight }; });
-            }}
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
           />
-        )}
-        position="topRight"
-        visible={visible.topRight}
-        onClose={() => {
-          setVisible((hash) => { return { ...hash, topRight: false }; });
-        }}
-      >
-        <Card />
+        </Grid>
       </Popper>
       <Popper
         id="popper-portal-position-topLeft"
         portal
         anchor={(
           <Button
-            // icon="options"
-            // isPlain
-            // isRound
+            id="popper-button-topLeft"
             label="Top Left"
+            isSolid
             onClick={() => {
-              setVisible((hash) => { return { ...hash, topLeft: !hash.topLeft }; });
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, topLeft: !poppers.topLeft };
+              });
             }}
           />
         )}
+        visible={visiblePoppers.topLeft}
         position="topLeft"
-        visible={visible.topLeft}
         onClose={() => {
-          setVisible((hash) => { return { ...hash, topLeft: false }; });
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, topLeft: false };
+          });
         }}
       >
-        <Card />
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
       </Popper>
-      {EmptySpace}
     </Grid>
   );
 };
 
-export const PortalAnchorRef = () => {
-  const [activeAnchor, setActiveAnchor] = useState(true);
-  // true - anchorRef, false - anchorRef2
-  const anchorRef = useRef();
-  const anchorRef2 = useRef();
-  const [visible, setVisible] = useState(true);
-
+export const FlexPositions = () => {
+  const [visiblePoppers, setVisiblePoppers] = useState({
+    bottomRight: true,
+    bottomLeft: true,
+    topRight: true,
+    topLeft: true,
+  });
   return (
-    <Grid columns="3">
-      <Button label="Toggle Anchor Ref" onClick={() => { setActiveAnchor((show) => { return !show; }); }} />
-      <Button label="Toggle Popper On/Off" onClick={() => { setVisible((show) => { return !show; }); }} />
-      {EmptySpace}
+    <Grid columns="4">
+      <Popper
+        id="popper-flex-position-bottomRight"
+        isFlex
+        anchor={(
+          <Button
+            id="popper-button-bottomRight"
+            label="Bottom Right"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, bottomRight: !poppers.bottomRight };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.bottomRight}
+        position="bottomRight"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, bottomRight: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-flex-position-topRight"
+        isFlex
+        anchor={(
+          <Button
+            id="popper-button-topRight"
+            label="Top Right"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, topRight: !poppers.topRight };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.topRight}
+        position="topRight"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, topRight: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-flex-position-bottomLeft"
+        isFlex
+        anchor={(
+          <Button
+            id="popper-button-bottomLeft"
+            label="Bottom Left"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, bottomLeft: !poppers.bottomLeft };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.bottomLeft}
+        position="bottomLeft"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, bottomLeft: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-flex-position-topLeft"
+        isFlex
+        anchor={(
+          <Button
+            id="popper-button-topLeft"
+            label="Top Left"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, topLeft: !poppers.topLeft };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.topLeft}
+        position="topLeft"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, topLeft: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+    </Grid>
+  );
+};
+
+export const PortalFlexPositions = () => {
+  const [visiblePoppers, setVisiblePoppers] = useState({
+    bottomRight: true,
+    bottomLeft: true,
+    topRight: true,
+    topLeft: true,
+  });
+  return (
+    <Grid columns="4">
+      <Popper
+        id="popper-portal-flex-position-bottomRight"
+        portal
+        isFlex
+        anchor={(
+          <Button
+            id="popper-button-bottomRight"
+            label="Bottom Right"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, bottomRight: !poppers.bottomRight };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.bottomRight}
+        position="bottomRight"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, bottomRight: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-portal-flex-position-topRight"
+        portal
+        isFlex
+        anchor={(
+          <Button
+            id="popper-button-topRight"
+            label="Top Right"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, topRight: !poppers.topRight };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.topRight}
+        position="topRight"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, topRight: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-portal-flex-position-bottomLeft"
+        portal
+        isFlex
+        anchor={(
+          <Button
+            id="popper-button-bottomLeft"
+            label="Bottom Left"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, bottomLeft: !poppers.bottomLeft };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.bottomLeft}
+        position="bottomLeft"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, bottomLeft: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+      <Popper
+        id="popper-portal-flex-position-topLeft"
+        portal
+        isFlex
+        anchor={(
+          <Button
+            id="popper-button-topLeft"
+            label="Top Left"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, topLeft: !poppers.topLeft };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.topLeft}
+        position="topLeft"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, topLeft: false };
+          });
+        }}
+      >
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
+      </Popper>
+    </Grid>
+  );
+};
+
+export const AnchorRef = () => {
+  const anchorRef = useRef();
+  return (
+    <Grid>
+      <div ref={anchorRef} style={{ width: "100px", height: "100px", background: "grey" }}>Anchor</div>
       <Popper
         id="popper-anchor-ref"
         portal
-        anchor={(
-          <React.Fragment>
-            <div ref={anchorRef} style={{ width: "100px", height: "100px", background: "green" }}>Anchor</div>
-            {EmptySpace}
-            <div ref={anchorRef2} style={{ width: "100px", height: "100px", background: "lightgreen" }}>Anchor 2</div>
-          </React.Fragment>
-        )}
-        visible={visible}
-        anchorRef={activeAnchor ? anchorRef : anchorRef2}
+        visible
+        anchorRef={anchorRef}
       >
-        <Card />
+        <Grid>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </Grid>
       </Popper>
     </Grid>
   );
 };
-
-// const data = [
-//   { id: "option 1", label: "option 1", onClick: () => { alert("option 1"); } },
-//   {
-//     id: "option 2", label: "option 2", onClick: () => { alert("option 2"); },
-//     data: [
-//       { id: "nested option 1", label: "nested option 1", onClick: () => { alert("nested option 1"); } },
-//       {
-//         id: "nested option 2", label: "nested option 2", onClick: () => { alert("nested option 2"); },
-//         data: [
-//           { id: "nested option 21", label: "nested option 21", onClick: () => { alert("nested option 21"); } },
-//           { id: "nested option 22", label: "nested option 22", onClick: () => { alert("nested option 22"); } },
-//         ]
-//       },
-//     ]
-//   },
-//   { id: "option 3", label: "option 3", onClick: () => { alert("option 3"); } },
-// ];
-// export const MenuTest = () => {
-//   return (<React.Fragment>
-//     {/* <div style={{ height: "500px", width: "500px", background: "green"}} /> */}
-//     <Menu visible position="bottomRight" data={data} />
-//   </React.Fragment>)
-//   // return <Menu visible />;
-// };
-
-// export const PopperTest = () => {
-//   const [visible, setVisible] = useState(false);
-//   return (
-//     <React.Fragment>
-//       <div style={{ padding: "100px" }}>
-//         <Popper
-//           anchor={<Button label="testing" onClick={() => { setVisible((vis) => { return !vis; }); }} />}
-//           position="bottomLeft"
-//           visible={visible}
-//         >
-//           <div style={{ height: "100px", width: "100px", background: "green" }} >testing</div>
-//         </Popper>
-//         <div style={{ height: "500px", width: "500px", background: "gray" }} />
-//       </div>
-//     </React.Fragment>
-//   )
-// }
-// export const PopperTest2 = () => {
-//   const [visible, setVisible] = useState(false);
-//   return (
-//     <React.Fragment>
-//       <div style={{ padding: "100px" }}>
-//         <Popper
-//           anchor={<Button label="testing" onClick={() => { setVisible((vis) => { return !vis; }); }} />}
-//           position="bottomLeft"
-//           visible={visible}
-//         >
-//           <div style={{ height: "100px", width: "100px", background: "green" }} >testing</div>
-//         </Popper>
-//         <div style={{ height: "500px", width: "500px", background: "gray" }} />
-//       </div>
-//     </React.Fragment>
-//   )
-// }
-
-
-// export const Test = () => {
-//   const anchorRef = useRef();
-//   const [visible, setVisible] = useState(false);
-//   return (
-//     <React.Fragment>
-//       <Tabs>
-//         <div style={{ height: "100px" }} ref={anchorRef}>testing anchor</div>
-//         <TabItem label="test1" onClick={() => {
-//           setVisible((vis) => { return !vis; });
-//         }} />
-//         <Popper
-//           portal
-//           anchor={(<TabItem label="test2" onClick={() => {
-//             setVisible((vis) => { return !vis; });
-//           }} />)}
-//           visible
-//           onClose={() => {
-//             setVisible(false);
-//           }}
-//           position="bottomLeft"
-//           anchorRef={visible ? anchorRef : undefined}
-//         >
-//           <div>hello world</div>
-//         </Popper>
-//         <TabItem label="test3" />
-//       </Tabs>
-//       {/* <ButtonGroup> */}
-//       {/* <Popper
-//         anchor={<div ref={anchorRef}>wowowow</div>}
-//         visible
-//         position="topLeft"
-//         anchorRef={visible ? anchorRef : undefined}
-//       >
-//         <div>number 2</div>
-//       </Popper> */}
-//       {/* </ButtonGroup> */}
-//     </React.Fragment>
-//   );
-// };

@@ -287,12 +287,13 @@ const StatefulMenu = ({
       anchorElement = (<FragmentWrapper onClick={toggleVisible}>{children}</FragmentWrapper>);
     } else {
       // need to clone to preserve ref on anchor element
-      // onClick of your element will get overwritten, should keep track of your own state if this happens
-
-      // TODO: support onClick of the child element
-      // anchor[0].props.onClick???
       anchorElement = React.cloneElement(anchor[0], {
-        onClick: toggleVisible,
+        onClick: () => {
+          toggleVisible();
+          if (anchor[0].props.onClick) {
+            anchor[0].props.onClick();
+          }
+        },
       });
     }
   }

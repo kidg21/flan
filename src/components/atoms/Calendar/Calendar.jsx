@@ -5,7 +5,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
-import { getGuid } from "helpers";
+import { useId } from "helpers";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
@@ -52,7 +52,7 @@ function Calendar({
     },
   };
 
-  const uId = id || getGuid();
+  const uId = useId(id);
   const inputTypes =
     type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {

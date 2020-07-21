@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { useMemo } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Text, { Title, Link } from "base/Typography";
-import { SkeletonStatic, getGuid } from "helpers";
+import { SkeletonStatic, useId } from "helpers";
 import Loader from "atoms/Loader";
 
 const LegendTitle = styled(Title)`
@@ -82,7 +82,7 @@ function Legend({
   let cellBorder;
   let cellBorderColor;
 
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+  const uId = useId(id);
 
   const content = data instanceof Array
     ? (

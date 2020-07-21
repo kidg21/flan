@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
-import React, { useMemo } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { getGuid } from "helpers";
+import { useId } from "helpers";
 import Bar from "layout/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
@@ -10,7 +10,7 @@ import Menu from "blocks/Menu";
 function MainPanelHeader({
   id, menuData, title,
 }) {
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+  const uId = useId(id);
   return (
     <Bar
       id={uId}

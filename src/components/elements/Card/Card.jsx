@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable complexity */
-import React, { useState, useContext, useMemo } from "react";
+import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText, Spacer, getGuid } from "helpers";
+import { PlaceholderText, Spacer, useId } from "helpers";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
@@ -270,7 +270,7 @@ function Card({
   title,
   variant,
 }) {
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+  const uId = useId(id);
   const disableTransition = useContext(DisableTransitionContext);
   const [open, setOpen] = useState(false);
   function toggleDropdown() {

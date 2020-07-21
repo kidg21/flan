@@ -70,6 +70,7 @@ const PortalPopper = ({
   anchor,
   anchorRef,
   children,
+  closeOnClickAway,
   id,
   isFlex,
   onClose,
@@ -133,7 +134,7 @@ const PortalPopper = ({
           >
             {children}
           </PopperWrapper>
-          {onClose ? <PopperBG onClick={onClose} /> : null}
+          {onClose && closeOnClickAway ? <PopperBG onClick={onClose} /> : null}
         </Portal>
       ) : null}
     </React.Fragment>
@@ -163,6 +164,7 @@ const absolutePositionStyle = {
 const NonPortalPopper = ({
   anchor,
   children,
+  closeOnClickAway,
   id,
   isFlex,
   position,
@@ -179,7 +181,7 @@ const NonPortalPopper = ({
           <PopperWrapper id={`popper-wrapper${id}`} {...positionStyle}>
             {children}
           </PopperWrapper>
-          {onClose ? <PopperBG onClick={onClose} /> : null}
+          {onClose && closeOnClickAway ? <PopperBG onClick={onClose} /> : null}
         </React.Fragment>
       ) : null}
     </NonPortalWrapper>
@@ -191,6 +193,7 @@ const Popper = (props) => {
     id,
     portal,
     closeOnScroll,
+    closeOnClickAway,
     visible,
     onClose,
   } = props;
@@ -234,16 +237,25 @@ PortalPopper.defaultProps = Popper.defaultProps;
 NonPortalPopper.defaultProps = Popper.defaultProps;
 
 Popper.propTypes = {
+  /** anchor element to open around */
   anchor: PropTypes.node,
+  /** ref of outside element to be the anchor, can only be used with portal */
   anchorRef: PropTypes.shape({
     current: PropTypes.any,
   }),
+  /** pop-out content shown when visible */
   children: PropTypes.node,
+  /** close popper on window scroll, by default portal closes on scroll */
   closeOnScroll: PropTypes.bool,
+  /** id of popper */
   id: PropTypes.string,
+  /** to specify an anchor element to be flex */
   isFlex: PropTypes.bool,
+  /** onClose callback when popper closes */
   onClose: PropTypes.func,
+  /** places popper content in a portal */
   portal: PropTypes.bool,
+  /** open position relative to anchor element */
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
@@ -251,6 +263,7 @@ Popper.propTypes = {
     "bottomRight",
     "",
   ]),
+  /** opne/close state of popper */
   visible: PropTypes.bool,
 };
 PortalPopper.propTypes = Popper.propTypes;
