@@ -14,6 +14,9 @@ const FormWrapper = styled.form`
     return props.theme.background.default;
   }};
   height: 100%;
+  display: ${(props) => {
+    return props.setOffCanvas ? "none" : "block";
+  }};
   padding: 1rem 1rem 1.5rem;
 `;
 
@@ -86,6 +89,7 @@ function Form({
   description,
   id,
   method,
+  setOffCanvas,
   novalidate,
   onSubmit,
   subtitle,
@@ -100,7 +104,7 @@ function Form({
     setColumns = columns;
   }
   return (
-    <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
+    <FormWrapper action={action} id={id} method={method} setOffCanvas={setOffCanvas} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <Header columns="1">
           {title ? <Title size="lg" weight="bold" text={title} /> : null}
@@ -125,6 +129,7 @@ Form.propTypes = {
   onSubmit: PropTypes.func,
   subtitle: PropTypes.string,
   title: PropTypes.string,
+  setOffCanvas: PropTypes.bool,
 };
 Form.defaultProps = {
   action: null,
@@ -137,6 +142,7 @@ Form.defaultProps = {
   onSubmit: null,
   subtitle: null,
   title: null,
+  setOffCanvas: false,
 };
 
 export { Form as default, FormSection };
