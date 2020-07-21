@@ -88,7 +88,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -181,7 +181,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -257,9 +257,9 @@ Array [
                 rows={null}
               >
                 <h5
-                  className="Typography__TitleText-sc-19auepv-2 hSytIY"
+                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
                   fontSize="1.15em"
-                  fontWeight={600}
+                  fontWeight={500}
                   letterSpacing="0px"
                 >
                   Default Dialog
@@ -294,7 +294,7 @@ Array [
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bdaVXm DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Cancel"
@@ -351,7 +351,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -444,7 +444,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -496,7 +496,7 @@ Array [
     />
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
     disabled={false}
     htmlFor={null}
     id={null}

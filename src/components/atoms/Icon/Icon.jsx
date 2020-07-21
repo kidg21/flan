@@ -129,7 +129,7 @@ const iconHash = {
   map_pin: "map-pin",
   map: ["far", "map"],
   maximize: ["far", "expand-alt"],
-  measure: ["far", "ruler-combined"],
+  measure: ["far", "ruler-triangle"],
   message: ["far", "comment-alt"],
   minimize: ["far", "compress-alt"],
   minus_square: ["far", "minus-square"],
