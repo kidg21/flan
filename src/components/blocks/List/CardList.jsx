@@ -300,7 +300,7 @@ class CardList extends PureComponent {
         <Template
           data={data[index]}
           removeRecord={() => {
-            if (removeRecord && data && data.length > 1) {
+            if (removeRecord) {
               removeRecord(index);
             }
           }}
