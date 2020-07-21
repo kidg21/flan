@@ -96,7 +96,6 @@ storiesOf("Layout|Form", module)
   .add("Form Layout", () => {
     return (
       <Form
-
         id="Form"
         title="Form Header"
         subtitle="This is the subtitle"
