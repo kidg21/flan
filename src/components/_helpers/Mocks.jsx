@@ -315,19 +315,19 @@ function MockTable() {
   const iconNames = [
     {
       icon: "edit",
-      onClick: true,
+      onClick: () => {},
       // icon: "check",
       // variant: "success",
     },
     {
       icon: "delete",
-      onClick: true,
+      onClick: () => {},
       // icon: "close",
       // variant: "alert",
     },
     {
       icon: "options",
-      onClick: true,
+      onClick: () => {},
     },
   ];
   const [highlightedCell, setHighlightCell] = useState(null);

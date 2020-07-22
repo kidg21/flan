@@ -206,10 +206,9 @@ the menu properly so it doesn't get cut off. Supported positions include: `botto
 ### Anchor
 
 The anchor element refers to the component the menu will open around. The default 
-anchor element is `<Button icon="options" isPlain isRound />`. If you just want to change
-the icon of the `Button`, you can simply use the `icon` prop of the `Menu` (see `Libraries/Iconography`
-for supported icons). If you want to change the anchor's style or use a different component, you
-can specify it as a child of `Menu`. 
+anchor element is `<Button icon="options" isPlain isRound />`. If you want to change the anchor's
+style (i.e. Button is not round, or icon should be menu) or use a different component (`<Icon/>`),
+you can specify it as a child of `Menu`.
 
 <Preview>
   <Story name="Anchor" decorators={[Container, Padding, CenterDisplayGrid]}>
@@ -232,36 +231,9 @@ can specify it as a child of `Menu`.
 ### Stateless vs Stateful Menu
 
 There are two types of management to handle the visible state of `Menu`: stateless / controlled or stateful / uncontrolled.
-If a `visible` and `onClick` (for default anchor button) prop isn't set, `Menu` will handle its own state to open and close.
-The `onClose` callback will still be notified in this mode. If you want a parenet componet to control opening and closing,
-pass in a `visible`, `onClose`, `onClick` (for default anchor button or specify `onClick` on anchor element). With a stateless
-`Menu` it gives you the flexibility to controll its visibilty from outside components.
-
-#### Stateless Menu with Default Anchor
-
-<Preview>
-  <Story name="Stateless" decorators={[Container, Padding, CenterDisplayGrid]}>
-    {() => {
-      const [visible, setVisible] = useState(true);
-      return (
-        <Menu
-          id="menu-stateless"
-          visible={visible}
-          icon="menu"
-          onClick={() => { setVisible((show) => { return !show; }); }}
-          onClose={() => { setVisible(false); }}
-          data={[
-            { label: "Save" },
-            { label: "Filter" },
-            { label: "Share" },
-            { label: "Delete" },
-          ]}
-          position="bottomRight"
-        />
-      );
-    }}
-  </Story>
-</Preview>
+If a `visible` prop isn't set, `Menu` will handle its own state to open and close. If you want a parent component to control
+opening/closing, pass in `visible` to `Menu`. Use `Menu`'s' `onClose` prop and `onClick` prop of an anchor element to help toggle
+the visibility. With a stateless `Menu` it gives you the flexibility to control its visibilty from outside components.
 
 #### Stateless Menu with Custom Anchor
 
@@ -365,7 +337,7 @@ sure submenus don't get cut off and become inaccessible to users.
 
 ### Portal
 
-For cases when `Menu` needs to break out of the DOM hierarchy, use the `portal` prop. It places the
+For cases when `Menu` needs to break out of the DOM hierarchy, use the `usePortal` prop. It places the
 menu list container in a `React.Portal`.
 
 > Currently, we only calculate the screen positon of the pop out
@@ -377,7 +349,7 @@ menu list container in a `React.Portal`.
   <Story name="Portal" decorators={[Padding]}>
     <Menu
       id="menu-portal"
-      portal
+      usePortal
       data={[
         { id: "save", label: "Save" },
         { id: "filter", label: "Filter" },
@@ -399,6 +371,7 @@ Use `isFlex` prop when the anchor element needs to be a flex component.
       <Menu
         id="menu-flex"
         isFlex
+        visible
         data={[
           { id: "save", label: "Save" },
           { id: "filter", label: "Filter" },
@@ -410,6 +383,7 @@ Use `isFlex` prop when the anchor element needs to be a flex component.
       </Menu>
       <Menu
         id="menu-normal"
+        visible
         data={[
           { id: "save", label: "Save" },
           { id: "filter", label: "Filter" },
@@ -447,13 +421,21 @@ Today, we give new life to `Menu`! But, in order to do so, we must shed some tea
 
 **Breaking Changes**
 
-- **Removed `isButton` prop** -
-We updated the default to be a `<Button />` with an `icon`. You just need to
-remove this prop from your code.
+- **Default anchor element switched from `<Icon icon={icon} />` to `<Button icon="options" isPlain isRound />`** -
+Making the default a `<Button />` makes the anchor element easier to target. If you want `<Icon />` to be
+your anchor element you will need to pass it in as a child.
 
-- **Default anchor element switched from `<Icon icon={icon} />` to `<Button icon={icon} isPlain isRound />`** -
-Making the default a `<Button />` with an icon makes the anchor element easier to target. The `icon` prop is still supported so
-no changes will need to be done. If you specifically want `<Icon />` to be your anchor element you will need to pass it in as a child. 
+- **Removed `icon` prop** -
+For an anchor element with a different icon than `options`, you will need to remove this
+prop and pass a custom anchor element with your desired icon.
+
+- **Removed `onClick` prop** -
+For a custom `onClick` callback when clicking on the anchor element, you will need to remove this
+prop and attach the `onClick` event to the custom anchor element.
+
+- **Removed `isButton` prop** -
+We updated the default to be a `<Button />`. You will just need to remove this prop from your code.
+If the default anchor element isn't quite right, pass in a custom anchor element.
 
 - **Renamed `item.commands` to `item.data` for `data` prop** -
 This prop indicates a sub/nested menu. We renamed the prop

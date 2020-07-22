@@ -202,7 +202,7 @@ The anchor element refers to the component the popper will open around. Use the
 
 ### Portal
 
-For cases when `Popper` needs to break out of the DOM hierarchy, use the `portal` prop. It places
+For cases when `Popper` needs to break out of the DOM hierarchy, use the `usePortal` prop. It places
 the `children` content in a `React.Portal`.
 
 > By default, the popper will close on scroll to avoid the pop-out position to be out of sync
@@ -224,7 +224,7 @@ the `children` content in a `React.Portal`.
                 isSolid
               />
             )}
-            portal
+            usePortal
             visible={visible}
             onClose={() => { setVisible(false); }}
           >

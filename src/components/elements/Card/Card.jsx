@@ -401,7 +401,6 @@ function Card({
   return (
     <StyledCardWrapper
       className={className}
-      as={className}
       id={uId}
       isInverse={isInverse}
       href={href}

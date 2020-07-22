@@ -7,6 +7,8 @@ import { useId } from "helpers";
 import Portal from "utils/Portal";
 import { formatPixelValue } from "utils/format";
 
+let popperZIndex = 500;
+
 const AnchorWrapper = styled.div`
   display: flex;
   flex: auto;
@@ -27,15 +29,17 @@ const NonPortalWrapper = styled.div`
 
 const PopperWrapper = styled.div`
   position ${(props) => {
-    return props.portal ? "fixed" : "absolute";
+    return props.usePortal ? "fixed" : "absolute";
   }};
-  z-index: 500;
+  z-index: ${(props) => {
+    return props.zIndex;
+  }};
   top: ${(props) => {
-    const top = props.portal ? formatPixelValue(props.top) : props.top;
+    const top = props.usePortal ? formatPixelValue(props.top) : props.top;
     return top || "";
   }};
   left: ${(props) => {
-    const left = props.portal ? formatPixelValue(props.left) : props.left;
+    const left = props.usePortal ? formatPixelValue(props.left) : props.left;
     return left || "";
   }};
   transform: ${(props) => {
@@ -68,6 +72,7 @@ const PortalPopper = ({
   onClose,
   position,
   visible,
+  zIndex,
 }) => {
   const defaultAnchorRef = useRef();
   const _anchorRef = anchorRef || defaultAnchorRef;
@@ -78,7 +83,7 @@ const PortalPopper = ({
       // measure/get position of the anchor element
       setAnchorBounds(_anchorRef.current.getBoundingClientRect().toJSON());
     }
-  }, [_anchorRef, visible]);
+  }, [_anchorRef, _anchorRef.current, visible]);
 
   const positionStyle = useMemo(() => {
     const resultStyle = {};
@@ -120,8 +125,9 @@ const PortalPopper = ({
       {visible ? (
         <Portal id={`popper-portal-${id}`}>
           <PopperWrapper
-            portal
+            usePortal
             id={`popper-wrapper${id}`}
+            zIndex={zIndex}
             {...positionStyle}
           >
             {children}
@@ -162,6 +168,7 @@ const NonPortalPopper = ({
   position,
   visible,
   onClose,
+  zIndex,
 }) => {
   const validPosition = absolutePositionStyle.hasOwnProperty(position.toLowerCase()) ? position : "bottomRight";
   const positionStyle = absolutePositionStyle[validPosition.toLowerCase()];
@@ -170,7 +177,11 @@ const NonPortalPopper = ({
       {anchor}
       {visible ? (
         <React.Fragment>
-          <PopperWrapper id={`popper-wrapper${id}`} {...positionStyle}>
+          <PopperWrapper
+            id={`popper-wrapper${id}`}
+            zIndex={zIndex}
+            {...positionStyle}
+          >
             {children}
           </PopperWrapper>
           {onClose && closeOnClickAway ? <PopperBG onClick={onClose} /> : null}
@@ -183,19 +194,22 @@ const NonPortalPopper = ({
 const Popper = (props) => {
   const {
     id,
-    portal,
+    usePortal,
     closeOnScroll,
-    closeOnClickAway,
     visible,
     onClose,
+    zIndex,
   } = props;
   const uId = useId(id);
   const scrollListener = useRef();
 
+  let _zIndex = parseInt(zIndex, 10);
+  if (isNaN(_zIndex)) { _zIndex = 500; }
+
   // default portals to closeOnScroll if not specified since they have a fixed position
   // portal poppers don't update their position once they are visible if their anchor moves
   // we could probably support this in the future if needed.
-  const _closeOnScroll = typeof closeOnScroll !== "boolean" ? portal : closeOnScroll;
+  const _closeOnScroll = typeof closeOnScroll !== "boolean" ? usePortal : closeOnScroll;
   useEffect(() => {
     if (_closeOnScroll && visible && onClose) {
       scrollListener.current = onClose;
@@ -210,7 +224,9 @@ const Popper = (props) => {
     };
   }, [_closeOnScroll, visible, onClose]);
 
-  return portal ? <PortalPopper {...props} id={uId} /> : <NonPortalPopper {...props} id={uId} />;
+  return usePortal
+    ? <PortalPopper {...props} id={uId} zIndex={_zIndex} />
+    : <NonPortalPopper {...props} id={uId} zIndex={_zIndex} />;
 };
 
 Popper.defaultProps = {
@@ -222,9 +238,10 @@ Popper.defaultProps = {
   id: "",
   isFlex: false,
   onClose: null,
-  portal: false,
+  usePortal: false,
   position: "bottomRight",
   visible: false,
+  zIndex: 500,
 };
 PortalPopper.defaultProps = Popper.defaultProps;
 NonPortalPopper.defaultProps = Popper.defaultProps;
@@ -249,7 +266,7 @@ Popper.propTypes = {
   /** onClose callback when popper closes */
   onClose: PropTypes.func,
   /** places popper content in a portal */
-  portal: PropTypes.bool,
+  usePortal: PropTypes.bool,
   /** open position relative to anchor element */
   position: PropTypes.oneOf([
     "topLeft",
@@ -260,6 +277,8 @@ Popper.propTypes = {
   ]),
   /** opne/close state of popper */
   visible: PropTypes.bool,
+  /** to specify zIndex of pop-out wrapper, defaults to 500 */
+  zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 PortalPopper.propTypes = Popper.propTypes;
 NonPortalPopper.propTypes = Popper.propTypes;

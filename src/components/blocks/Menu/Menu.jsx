@@ -149,13 +149,13 @@ const MenuList = ({
     }
 
     return _listItems;
-  });
+  }, [uId, data, onClose, activeItem, validDirection, _isNested]);
 
   const positionStyle = _isNested ? listPositionStyle[validDirection.toLowerCase()] : {};
 
   return (
     <ListWrapper id={id} isInteractive isNested={_isNested} {...positionStyle}>
-      <StyledCardWrapper shadow="2x">
+      <StyledCardWrapper id={`cardwrapper-${id}`} shadow="2x">
         {listItems}
       </StyledCardWrapper>
     </ListWrapper>
@@ -186,31 +186,32 @@ MenuList.propTypes = {
   onClose: PropTypes.func,
 };
 
+const defaultAnchor = <Button icon="options" isPlain isRound />;
+
 const Menu = ({
   children,
   data,
-  icon,
   id,
   isFlex,
-  onClick,
   onClose,
-  portal,
+  usePortal,
   position,
   visible,
+  zIndex,
 }) => {
-  const uId = useId(id);
   return (
     <Popper
-      id={`menu-popper-${uId}`}
+      id={`menu-popper-${id}`}
       isFlex={isFlex}
-      portal={portal}
-      anchor={children || <Button id={`menu-icon-${uId}`} icon={icon} onClick={onClick} isPlain isRound />}
+      usePortal={usePortal}
+      anchor={children || React.cloneElement(defaultAnchor, { id: `menu-icon-${id}` })}
       visible={visible}
       onClose={onClose}
       position={position}
+      zIndex={zIndex}
     >
       <MenuList
-        id={uId}
+        id={id}
         data={data}
         direction={position.toLowerCase().includes("left") ? "left" : "right"}
         onClose={onClose}
@@ -222,25 +223,22 @@ const Menu = ({
 Menu.defaultProps = {
   children: null,
   data: [],
-  icon: "options",
   id: "",
   isFlex: false,
-  onClick: null,
   onClose: null,
-  portal: false,
+  usePortal: false,
   position: "bottomRight",
   visible: false,
+  zIndex: null,
 };
 
 Menu.propTypes = {
   children: PropTypes.node,
   data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
-  icon: PropTypes.string,
   id: PropTypes.string,
   isFlex: PropTypes.bool,
-  onClick: PropTypes.func,
   onClose: PropTypes.func,
-  portal: PropTypes.bool,
+  usePortal: PropTypes.bool,
   position: PropTypes.oneOf([
     "bottomLeft",
     "bottomRight",
@@ -248,12 +246,14 @@ Menu.propTypes = {
     "topRight",
   ]),
   visible: PropTypes.bool,
+  zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 const FragmentWrapper = styled.div``;
 
 const StatefulMenu = ({
   children,
+  id,
   initVisible,
   onClose,
   ...otherProps
@@ -268,7 +268,8 @@ const StatefulMenu = ({
     if (onClose) onClose();
   }, [onClose]);
 
-  let anchorElement = null;
+  // default Menu button with onClick
+  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); //(<Button icon="options" onClick={toggleVisible} isPlain isRound />);
   if (anchor.length > 0) {
     if (anchor[0].type === React.Fragment) {
       // wraps click in div around both children
@@ -292,8 +293,8 @@ const StatefulMenu = ({
     <Menu
       {...otherProps}
       visible={visible}
-      onClick={toggleVisible} // default anchorElement
       onClose={close}
+      id={id}
     >
       {anchorElement}
     </Menu>
@@ -303,35 +304,37 @@ const StatefulMenu = ({
 // additional props
 StatefulMenu.defaultProps = {
   children: null,
+  id: "",
   initVisible: false,
   onClose: null,
 };
 
 StatefulMenu.propTypes = {
   children: PropTypes.node,
+  id: PropTypes.string,
   initVisible: PropTypes.bool,
   onClose: PropTypes.func,
 };
 
 const _Menu = (props) => {
-  const { onClick, visible } = props;
-  // handle open/close by stateful menu if onClick & visible isn't provided
-  return (typeof onClick === "undefined" && typeof visible === "undefined")
-    ? <StatefulMenu {...props} /> : <Menu {...props} />;
+  const { visible, id } = props;
+  const uId = useId(id);
+  // handle open/close by stateful menu if visible isn't provided
+  return (typeof visible === "undefined")
+    ? <StatefulMenu {...props} id={uId} /> : <Menu {...props} id={uId} />;
 };
 
 _Menu.defaultProps = {
   children: null,
   data: [],
-  icon: "options",
   initVisible: false,
   id: "",
   isFlex: false,
-  onClick: undefined,
   onClose: null,
-  portal: false,
+  usePortal: false,
   position: "bottomRight",
   visible: undefined,
+  zIndex: null,
 };
 
 _Menu.propTypes = {
@@ -339,20 +342,16 @@ _Menu.propTypes = {
   children: PropTypes.node,
   /** list of item objects in menu */
   data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
-  /** icon name for default button anchor */
-  icon: PropTypes.string,
   /** menu id */
   id: PropTypes.string,
   /** the initial visible value for stateful/uncontrolled menus */
   initVisible: PropTypes.bool,
   /** to specify an anchor element to be flex */
   isFlex: PropTypes.bool,
-  /** onClick callback for the default anchor element */
-  onClick: PropTypes.func,
   /** onClose callback when menu closes */
   onClose: PropTypes.func,
   /** places menu in a portal */
-  portal: PropTypes.bool,
+  usePortal: PropTypes.bool,
   /** open position relative to anchor element */
   position: PropTypes.oneOf([
     "bottomLeft",
@@ -362,6 +361,7 @@ _Menu.propTypes = {
   ]),
   /** open/close state of menu */
   visible: PropTypes.bool,
+  zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 _Menu.displayName = "Menu";

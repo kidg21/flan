@@ -82,7 +82,7 @@ export const PortalPositions = () => {
       <Menu
         id="menu-portal-position-bottomRight"
         initVisible
-        portal
+        usePortal
         data={dataMock}
         position="bottomRight"
       >
@@ -91,7 +91,7 @@ export const PortalPositions = () => {
       <Menu
         id="menu-portal-position-topRight"
         initVisible
-        portal
+        usePortal
         data={dataMock}
         position="topRight"
       >
@@ -100,7 +100,7 @@ export const PortalPositions = () => {
       <Menu
         id="menu-portal-position-bottomLeft"
         initVisible
-        portal
+        usePortal
         data={dataMock}
         position="bottomLeft"
       >
@@ -109,7 +109,7 @@ export const PortalPositions = () => {
       <Menu
         id="menu-portal-position-topLeft"
         initVisible
-        portal
+        usePortal
         data={dataMock}
         position="topLeft"
       >
@@ -168,7 +168,7 @@ export const PortalFlexPositions = () => {
       <Menu
         id="menu-portal-flex-bottomRight"
         initVisible
-        portal
+        usePortal
         isFlex
         data={dataMock}
         position="bottomRight"
@@ -178,7 +178,7 @@ export const PortalFlexPositions = () => {
       <Menu
         id="menu-portal-flex-topRight"
         initVisible
-        portal
+        usePortal
         isFlex
         data={dataMock}
         position="topRight"
@@ -188,7 +188,7 @@ export const PortalFlexPositions = () => {
       <Menu
         id="menu-portal-flex-bottomLeft"
         initVisible
-        portal
+        usePortal
         isFlex
         data={dataMock}
         position="bottomLeft"
@@ -198,7 +198,7 @@ export const PortalFlexPositions = () => {
       <Menu
         id="menu-portal-flex-topLeft"
         initVisible
-        portal
+        usePortal
         isFlex
         data={dataMock}
         position="topLeft"

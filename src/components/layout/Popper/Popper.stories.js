@@ -41,7 +41,7 @@ export const PortalPostions = () => {
     <Grid columns="4">
       <Popper
         id="popper-portal-position-bottomRight"
-        portal
+        usePortal
         anchor={(
           <Button
             id="popper-button-bottomRight"
@@ -72,7 +72,7 @@ export const PortalPostions = () => {
       </Popper>
       <Popper
         id="popper-portal-position-topRight"
-        portal
+        usePortal
         anchor={(
           <Button
             id="popper-button-topRight"
@@ -103,7 +103,7 @@ export const PortalPostions = () => {
       </Popper>
       <Popper
         id="popper-portal-position-bottomLeft"
-        portal
+        usePortal
         anchor={(
           <Button
             id="popper-button-bottomLeft"
@@ -134,7 +134,7 @@ export const PortalPostions = () => {
       </Popper>
       <Popper
         id="popper-portal-position-topLeft"
-        portal
+        usePortal
         anchor={(
           <Button
             id="popper-button-topLeft"
@@ -315,7 +315,7 @@ export const PortalFlexPositions = () => {
     <Grid columns="4">
       <Popper
         id="popper-portal-flex-position-bottomRight"
-        portal
+        usePortal
         isFlex
         anchor={(
           <Button
@@ -347,7 +347,7 @@ export const PortalFlexPositions = () => {
       </Popper>
       <Popper
         id="popper-portal-flex-position-topRight"
-        portal
+        usePortal
         isFlex
         anchor={(
           <Button
@@ -379,7 +379,7 @@ export const PortalFlexPositions = () => {
       </Popper>
       <Popper
         id="popper-portal-flex-position-bottomLeft"
-        portal
+        usePortal
         isFlex
         anchor={(
           <Button
@@ -411,7 +411,7 @@ export const PortalFlexPositions = () => {
       </Popper>
       <Popper
         id="popper-portal-flex-position-topLeft"
-        portal
+        usePortal
         isFlex
         anchor={(
           <Button
@@ -452,7 +452,7 @@ export const AnchorRef = () => {
       <div ref={anchorRef} style={{ width: "100px", height: "100px", background: "grey" }}>Anchor</div>
       <Popper
         id="popper-anchor-ref"
-        portal
+        usePortal
         visible
         anchorRef={anchorRef}
       >
