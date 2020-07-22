@@ -4,7 +4,9 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
-  display: block;
+  display: ${(props) => {
+    return props.visible ? "block" : "none";
+  }};
   padding: ${(props) => {
     return props.setPadding || "";
   }};
@@ -69,11 +71,11 @@ const paddingHash = {
 };
 
 const Container = React.forwardRef(({
-  border, children, className, height, id, maxHeight, padding, width,
+  border, children, className, visible, height, id, maxHeight, padding, width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
   return (
-    <Wrapper setPadding={setPadding} height={height} width={width} className={className}>
+    <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
       <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
         {children}
       </BoxContainer>
@@ -83,6 +85,7 @@ const Container = React.forwardRef(({
 
 Container.propTypes = {
   border: PropTypes.string,
+  visible: PropTypes.bool,
   children: PropTypes.node,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
@@ -93,6 +96,7 @@ Container.propTypes = {
 
 Container.defaultProps = {
   border: null,
+  visible: true,
   children: null,
   height: null,
   id: null,
