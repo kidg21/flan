@@ -149,7 +149,7 @@ const MenuList = ({
     }
 
     return _listItems;
-  }, [uId, data, onClose, activeItem, validDirection, _isNested]);
+  }, [uId, data, onClose, activeItem, validDirection]);
 
   const positionStyle = _isNested ? listPositionStyle[validDirection.toLowerCase()] : {};
 
