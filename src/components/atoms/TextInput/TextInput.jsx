@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
-import { getGuid } from "helpers";
+import { useId } from "helpers";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
@@ -129,7 +129,7 @@ function TextInput({
     inputHeight = "4.75rem";
   }
 
-  const uId = id || getGuid();
+  const uId = useId(id);
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element

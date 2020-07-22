@@ -315,19 +315,19 @@ function MockTable() {
   const iconNames = [
     {
       icon: "edit",
-      onClick: true,
+      onClick: () => {},
       // icon: "check",
       // variant: "success",
     },
     {
       icon: "delete",
-      onClick: true,
+      onClick: () => {},
       // icon: "close",
       // variant: "alert",
     },
     {
       icon: "options",
-      onClick: true,
+      onClick: () => {},
     },
   ];
   const [highlightedCell, setHighlightCell] = useState(null);
@@ -375,8 +375,8 @@ function MockTable() {
             right={{
               content: (
                 <IconBlock>
-                  <Icon icon="share" onClick />
-                  <Icon icon="delete" onClick />
+                  <Icon icon="share" />
+                  <Icon icon="delete" />
                   <Menu
                     data={[
                       { id: "a", label: "Action" },
@@ -384,7 +384,6 @@ function MockTable() {
                       { id: "c", label: "Action" },
                     ]}
                     position="bottomLeft"
-                    onClick
                   />
                 </IconBlock>
               ),
@@ -716,7 +715,7 @@ function MockDetails({
 }) {
   return (
     <Template>
-      <Image src={image || StaticMap} width="100%" />
+      <Image src={image || StaticMap} width="100%" alt="mockImage" />
       {data ? <FieldGroup id={title} title={title} data={data} />
         : (
           <FieldGroup id="Physical Characteristics" >

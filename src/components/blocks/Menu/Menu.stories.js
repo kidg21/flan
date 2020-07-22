@@ -1,5 +1,258 @@
-// /* eslint-disable linebreak-style */
-// /* eslint-disable react/jsx-filename-extension, security/detect-object-injection */
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
+import Menu from "blocks/Menu";
+import { Padding, CenterDecorator, Container } from "helpers/Display";
+import Grid from "layout/Grid";
+import Button from "atoms/Button";
+
+export default {
+  title: "Atoms/Menu/Tests", // storyshots - js & mdx file
+  parameters: {
+    docs: { page: null }, // canvas view for these stories
+  },
+  decorators: [CenterDecorator, Container, Padding, Padding],
+  excludeStories: /.*Mock$/,
+};
+
+export const textMock = `Live the California dream at this modern paradise right on the beach in Malibu. Whether it's
+ your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on
+ the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking
+ distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with
+ nature and start living your Malibu dream now. This is the best deal under $4 million on the beach.
+`;
+
+
+const dataMock = [{
+  label: "Save",
+  id: "save",
+  onClick: action("Save Clicked"),
+}, {
+  label: "Filter",
+  id: "filter",
+  onClick: action("Filter Clicked"),
+}, {
+  label: "Share",
+  id: "share",
+  onClick: action("Share Clicked"),
+}, {
+  label: "Delete",
+  id: "delete",
+  onClick: action("Delete Clicked"),
+}];
+
+const nestedMock = [{
+  id: "save",
+  label: "Save",
+  onClick: action("Save Clicked"),
+}, {
+  id: "filter",
+  label: "Filter",
+  onClick: action("Filter Clicked"),
+}, {
+  id: "share",
+  label: "Share",
+  onClick: action("Share Clicked"),
+  data: [{
+    id: "nested-share-1",
+    label: "Nested Share 1",
+    onClick: action("Nested 1 Clicked"),
+  }, {
+    id: "nested-share-2",
+    label: "Nested Share 2",
+    onClick: action("Nested 2 Clicked"),
+    data: [{
+      id: "toast",
+      label: "Toast",
+      onClick: action("Toast Clicked"),
+    }, {
+      id: "popcorn",
+      label: "Popcorn",
+      onClick: action("Popcorn Clicked"),
+    }],
+  }],
+}, {
+  id: "delete",
+  label: "Delete",
+  onClick: action("Delete Clicked"),
+}];
+
+export const PortalPositions = () => {
+  return (
+    <Grid columns={4}>
+      <Menu
+        id="menu-portal-position-bottomRight"
+        initVisible
+        usePortal
+        data={dataMock}
+        position="bottomRight"
+      >
+        <Button id="button-bottomRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-topRight"
+        initVisible
+        usePortal
+        data={dataMock}
+        position="topRight"
+      >
+        <Button id="button-topRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-bottomLeft"
+        initVisible
+        usePortal
+        data={dataMock}
+        position="bottomLeft"
+      >
+        <Button id="button-bottomLeft" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-topLeft"
+        initVisible
+        usePortal
+        data={dataMock}
+        position="topLeft"
+      >
+        <Button id="button-topLeft" icon="options" isSolid />
+      </Menu>
+    </Grid>
+  );
+};
+
+export const FlexPositons = () => {
+  return (
+    <Grid columns={4}>
+      <Menu
+        id="menu-flex-position-bottomRight"
+        initVisible
+        isFlex
+        data={dataMock}
+        position="bottomRight"
+      >
+        <Button id="button-bottomRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-flex-position-topRight"
+        initVisible
+        isFlex
+        data={dataMock}
+        position="topRight"
+      >
+        <Button id="button-topRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-flex-position-bottomLeft"
+        initVisible
+        isFlex
+        data={dataMock}
+        position="bottomLeft"
+      >
+        <Button id="button-bottomLeft" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-flex-position-topLeft"
+        initVisible
+        isFlex
+        data={dataMock}
+        position="topLeft"
+      >
+        <Button id="button-topLeft" icon="options" isSolid />
+      </Menu>
+    </Grid>
+  );
+};
+
+export const PortalFlexPositions = () => {
+  return (
+    <Grid columns={4}>
+      <Menu
+        id="menu-portal-flex-bottomRight"
+        initVisible
+        usePortal
+        isFlex
+        data={dataMock}
+        position="bottomRight"
+      >
+        <Button id="button-bottomRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-flex-topRight"
+        initVisible
+        usePortal
+        isFlex
+        data={dataMock}
+        position="topRight"
+      >
+        <Button id="button-topRight" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-flex-bottomLeft"
+        initVisible
+        usePortal
+        isFlex
+        data={dataMock}
+        position="bottomLeft"
+      >
+        <Button id="button-bottomLeft" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-flex-topLeft"
+        initVisible
+        usePortal
+        isFlex
+        data={dataMock}
+        position="topLeft"
+      >
+        <Button id="button-topLeft" icon="options" isSolid />
+      </Menu>
+    </Grid>
+  );
+};
+
+export const NestedPositions = () => {
+  return (
+    <Grid columns={4}>
+      <Menu
+        id="menu-nested-position-bottomRight"
+        initVisible
+        data={nestedMock}
+        position="bottomRight"
+      />
+      <Menu
+        id="menu-nested-position-topRight"
+        initVisible
+        data={nestedMock}
+        position="topRight"
+      />
+      <Menu
+        id="menu-nested-position-bottomLeft"
+        initVisible
+        data={nestedMock}
+        position="bottomLeft"
+      />
+      <Menu
+        id="menu-nested-position-topLeft"
+        initVisible
+        data={nestedMock}
+        position="topLeft"
+      />
+    </Grid>
+  );
+};
+
+export const Empty = () => {
+  return (
+    <Grid>
+      <Menu
+        id="menu-empty"
+        initVisible
+        data={[]}
+        position="bottomRight"
+      />
+    </Grid>
+  );
+};
+
 // import React from "react";
 
 // import { expect } from "chai";

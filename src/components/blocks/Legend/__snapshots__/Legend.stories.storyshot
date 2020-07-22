@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
   href={null}
   id="Legend_Standard_Card"
   media=""
@@ -160,7 +160,7 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="Legend_Icon_Card"
     media=""
@@ -386,7 +386,7 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="Legend_Tag_Card"
     media=""

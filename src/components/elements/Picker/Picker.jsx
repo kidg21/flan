@@ -7,7 +7,7 @@ import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 import Card from "elements/Card";
 import Grid from "layout/Grid";
-import { getGuid } from "helpers";
+import { useId } from "helpers";
 
 const InputContainer = styled(Grid)`
   color: ${(props) => {
@@ -90,7 +90,7 @@ ColorSwatch.defaultProps = {
 function Picker({
   children, className, columns, id, label,
 }) {
-  const uId = id || getGuid();
+  const uId = useId(id);
   return (
     <Card>
       <InputContainer
