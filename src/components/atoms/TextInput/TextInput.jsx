@@ -194,7 +194,7 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label size="xs" isRequired={isRequired} text={label} />
+        <Label  isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}

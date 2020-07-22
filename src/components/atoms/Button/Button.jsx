@@ -119,7 +119,7 @@ function ButtonGroup({
   // 1-6 colums
   let setColumns;
   const _columns = parseInt(columns, 10);
-  if (_columns > 0 && columns < 7) {
+  if (_columns > 0 && columns < 8) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
   return (

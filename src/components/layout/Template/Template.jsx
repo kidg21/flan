@@ -13,8 +13,11 @@ const Region = styled.section`
     return props.gridArea || "";
   }};
   height: inherit;
-  border-right: 1px solid  ${(props) => {
-    return  props.theme.palette.neutral40 ;
+  border-right: ${(props) => {
+    return props.setBorder || "";
+  }};
+  border-color: ${(props) => {
+    return props.theme.palette.neutral40 ;
   }};
   overflow: auto;
   box-shadow: ${(props) => {
@@ -78,6 +81,8 @@ const widthMD = "24rem";
 const widthLG = "30rem";
 const widthXL = "38rem";
 
+
+
 const templateHash = {
   A_01: {
     setTemplate: "\n\"A\"\n",
@@ -96,12 +101,14 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
+    setBorder: "1px solid",
   },
   B_02: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthXS} 1fr`,
+    setBorder: "1px solid",
   },
   B_03: {
     setTemplate: [
@@ -109,12 +116,14 @@ const templateHash = {
       "\"B\"",
     ].join("\n"),
     setRows: "auto 1fr",
+    setBorder: "1px solid",
   },
   B_04: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthMD} 1fr`,
+    setBorder: "1px solid",
   },
   B_05: {
     setTemplate: [
@@ -123,12 +132,14 @@ const templateHash = {
     ].join("\n"),
     setColumns: "auto 1fr 12rem",
     setRows: "1fr 1rem",
+    setBorder: "1px solid",
   },
   B_06: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthXL}`,
+    setBorder: "1px solid",
   },
   C_01: {
     setTemplate: [
@@ -215,10 +226,11 @@ function Template({
   let setPosition;
   let setRowGap;
   let setRows;
+  let setBorder;
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
-    ({ setTemplate, setColumns, setRows } = templateHash[template.toUpperCase()]);
+    ({ setTemplate, setColumns, setRows, setBorder } = templateHash[template.toUpperCase()]);
     setHeight = "100%";
     setPadding = "0";
     setColumnGap = "0";
@@ -273,6 +285,7 @@ function Template({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              setBorder={setBorder}
               overflow={A.overflow}
             >
               {A.content}

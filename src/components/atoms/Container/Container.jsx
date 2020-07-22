@@ -31,11 +31,15 @@ const BoxContainer = styled.div`
   width: ${(props) => {
     return props.width || "";
   }};
-  border: 1px solid
-    ${(props) => {
-    return props.border || props.theme.palette.neutral40;
+  border: ${(props) => {
+    return props.hasBorder ? "1px solid" : "";
   }};
-  border-radius: 5px;
+  border-color: ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  border-radius: ${(props) => {
+    return props.radiusMin;
+  }};
   ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
@@ -71,12 +75,12 @@ const paddingHash = {
 };
 
 const Container = React.forwardRef(({
-  border, children, className, visible, height, id, maxHeight, padding, width,
+  hasBorder, children, className, visible, height, id, maxHeight, padding, width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
   return (
     <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
-      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
+      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} hasBorder={hasBorder} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -84,7 +88,7 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
-  border: PropTypes.string,
+  hasBorder: PropTypes.string,
   visible: PropTypes.bool,
   children: PropTypes.node,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -95,7 +99,7 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
-  border: null,
+  hasBorder: null,
   visible: true,
   children: null,
   height: null,

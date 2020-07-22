@@ -159,7 +159,7 @@ function doNothing() {
 //     },
 //   );
 
-storiesOf("Templates|Applications/Appraisal", module)
+storiesOf("Templates|Applications/Research", module)
   .addDecorator(FullScreen)
   .add(
     "Overview",
@@ -329,20 +329,6 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: <Panel
-                            header={
-                              <Bar 
-                              padding="1x"
-                              contentAlign="center" 
-                              left={{
-                                content: (<Text text="Select Parcels on Map to Define Site" />),
-                              width: "fit-content",}}
-                              right={{
-                                content: (
-                                  <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button isSmall alignCenter isPlain icon="layers" label="Layers" variant="neutral"/><Button alignCenter isSmall isPlain icon="list" label="Legend" variant="neutral"/><Button alignCenter isPlain isSmall variant="neutral" icon="map" label="Map Type"/><Button alignCenter isPlain isSmall variant="neutral" icon="sync" label="Reset" /></ButtonGroup>
-                                  ),
-                                
-                              }}/>
-                            }
                             padding="0"
                             footer={<Bar 
                               padding="0"
@@ -356,7 +342,31 @@ storiesOf("Templates|Applications/Appraisal", module)
                               content:(<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020"/>),
                             align: "left",}}
                             />}>
-          
+          <Template
+template="E_01"
+isOverlay
+A={{
+  id: "A",
+  content: (
+    <Card padding="1x">
+    <Bar 
+                              padding="0"
+                              
+                              contentAlign="center" 
+                              left={{
+                                content: (
+                                  <Text text="  Select Parcels on Map to Define Site" />
+                                ),
+                                width: "fit-content",
+                              }}
+                              center={{
+                                content: (
+                                  <ButtonGroup columns="5"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="map" label="Map Type"/><Button label="Reset" icon="sync" alignCenter isSmall isPlain variant="neutral"/></ButtonGroup>
+                                  ),
+                                
+                              }}/></Card>
+  )
+}}/>
                               <MapBox map="satellite" />
                               </Panel>,
                           }}
@@ -384,7 +394,7 @@ storiesOf("Templates|Applications/Appraisal", module)
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -441,7 +451,7 @@ storiesOf("Templates|Applications/Appraisal", module)
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -497,7 +507,7 @@ storiesOf("Templates|Applications/Appraisal", module)
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -553,7 +563,7 @@ storiesOf("Templates|Applications/Appraisal", module)
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -609,7 +619,7 @@ storiesOf("Templates|Applications/Appraisal", module)
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -665,7 +675,7 @@ storiesOf("Templates|Applications/Appraisal", module)
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="lg" text="Parcel APN: 93084203492"/>)
+              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -927,12 +937,10 @@ storiesOf("Templates|Applications/Appraisal", module)
                                 left={{
                                   content:(
                                   <Button label="Attachments" />),}}
-                                  center={{
-                                    content:(
-                                    <Button label="Save" isSolid/>),}}
+                    
                               right={{
                                 content:(
-                                <Button label="Save & Next" isSolid/>),}}
+                                  <ButtonGroup columns="2"><Button label="Save" isSolid/><Button label="Save & Next" isSolid/></ButtonGroup>),}}
                               />
                                 
                               </Panel>,
@@ -1013,20 +1021,6 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: <Panel
-                            header={
-                              <Bar 
-                              padding="1x"
-                              contentAlign="center" 
-                              left={{
-                                content: (<Button label="Request Data" isSolid />),
-                                width: "fit-content",}}
-                              center={{
-                                content: (
-                                  <ButtonGroup columns="5"><Button alignCenter isPlain isSmall variant="neutral" icon="draw" label="Draw" /><Button alignCenter isPlain isSmall icon="layers" label="Layers" variant="neutral"/><Button alignCenter isPlain isSmall icon="list" label="Legend" variant="neutral"/><Button isSmall alignCenter isPlain icon="map" label="Map Type" variant="neutral"/><Button isSmall alignCenter isPlain icon="photos" label="Image" variant="neutral"/></ButtonGroup>
-                                  ),
-                                
-                              }}/>
-                            }
                             padding="0"
                             footer={<Bar 
                               padding="0"
@@ -1041,7 +1035,31 @@ storiesOf("Templates|Applications/Appraisal", module)
                             align: "left",}}
                             />}   
                             >
-
+<Template
+template="E_01"
+isOverlay
+A={{
+  id: "A",
+  content: (
+    <Card padding="1x">
+    <Bar 
+                              padding="0"
+                              
+                              contentAlign="center" 
+                              left={{
+                                content: (
+                                  <Text text="Fulfillment Complete"/>
+                                ),
+                                width: "fit-content",
+                              }}
+                              center={{
+                                content: (
+                                  <ButtonGroup columns="5"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Map Capture" /><Button alignCenter variant="neutral" isSmall isPlain icon="map" label="Map Type"/></ButtonGroup>
+                                  ),
+                                
+                              }}/></Card>
+  )
+}}/>
                               <MapBox map="satellite"/>
                               </Panel>,
                           }}
@@ -1065,6 +1083,11 @@ storiesOf("Templates|Applications/Appraisal", module)
                                 <TabItem label="Zone 2"/>
                               </Tabs>),
                               width: "fit-content"}}
+                              right={{
+                                content: (
+                                  <Button label="Request Correction"/> ),
+                                   width: "fit-content",
+                              }}
                               />}
                               >
                               <Form >
@@ -1153,7 +1176,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                         <Panel
                         padding="0"
                         header={<Bar
-                          padding="0"
+                          padding="1x"
                           left={{
                             content: (
                               <Tabs>
@@ -1175,22 +1198,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                           A={{
                             id: "A",
                             content: <Panel
-                            padding="0"
-                            header={
-                              
-                                
-                              <Bar 
-                              padding="1x"
-                              
-                              contentAlign="center" 
-                              left={{
-                                content: (
-                                  <ButtonGroup columns="6"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Image" /><Button alignCenter variant="neutral" isSmall isPlain icon="map" label="Map Type"/><Button alignCenter variant="neutral" isSmall isPlain  icon="sync" label="Reset" /></ButtonGroup>
-                                  ),
-                                
-                              }}/>
-                          
-                            }
+                            
                             padding="0"
                             footer={<Bar 
                               padding="0"
@@ -1205,7 +1213,25 @@ storiesOf("Templates|Applications/Appraisal", module)
                             align: "left",}}
                             />}   
                             >
-
+<Template
+template="E_01"
+isOverlay
+A={{
+  id: "A",
+  content: (
+    <Card padding="1x">
+    <Bar 
+                              padding="0"
+                              
+                              contentAlign="center" 
+                              left={{
+                                content: (
+                                  <ButtonGroup columns="7"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Map Capture" /><Button alignCenter variant="neutral" isSmall isPlain icon="map" label="Map Type"/><Button alignCenter variant="neutral" isSmall isPlain  icon="sync" label="Reset" /></ButtonGroup>
+                                  ),
+                                
+                              }}/></Card>
+  )
+}}/>
                               <MapBox map="satellite"/>
                               </Panel>,
                           }}
@@ -1256,57 +1282,57 @@ storiesOf("Templates|Applications/Appraisal", module)
         
         const [sectionState, setSectionState] = useState(true);
 
-        const reportSections = [
-          {
-            id: "Define Site",
-            label: "Define Site",
-            value: "Review",
-            onClick: () => { },
-            disabled: sectionState,
-          },
-          {
-            id: "Data Extraction",
-            label: "Data Extraction",
-            value: "Review",
-            onClick: () => { },
-            disabled: sectionState,
-          },
-          {
-            id: "Assessment Data",
-            label: "Assessment Data",
-            value: "Review",
-            onClick: () => { },
-            disabled: sectionState,
-          },
-          {
-            id: "Zoning",
-            label: "Zoning",
-            value: "Review",
-            onClick: () => { },
-            disabled: sectionState,
-          },
-          {
-            id: "Demographics",
-            label: "Demographics",
-            value: "Review",
-            onClick: () => { },
-            disabled: sectionState,
-          },
-          {
-            id: "Maps",
-            label: "Maps",
-            value: "Review",
-            onClick: () => { },
-            disabled: sectionState,
-          },
-          {
-            id: "Appendices",
-            label: "Appendices",
-            value: "Review",
-            onClick: () => { },
-            disabled: sectionState,
-          },
-        ];
+        // const reportSections = [
+        //   {
+        //     id: "Define Site",
+        //     label: "Define Site",
+        //     value: "Review",
+        //     onClick: () => { },
+        //     disabled: sectionState,
+        //   },
+        //   {
+        //     id: "Data Extraction",
+        //     label: "Data Extraction",
+        //     value: "Review",
+        //     onClick: () => { },
+        //     disabled: sectionState,
+        //   },
+        //   {
+        //     id: "Assessment Data",
+        //     label: "Assessment Data",
+        //     value: "Review",
+        //     onClick: () => { },
+        //     disabled: sectionState,
+        //   },
+        //   {
+        //     id: "Zoning",
+        //     label: "Zoning",
+        //     value: "Review",
+        //     onClick: () => { },
+        //     disabled: sectionState,
+        //   },
+        //   {
+        //     id: "Demographics",
+        //     label: "Demographics",
+        //     value: "Review",
+        //     onClick: () => { },
+        //     disabled: sectionState,
+        //   },
+        //   {
+        //     id: "Maps",
+        //     label: "Maps",
+        //     value: "Review",
+        //     onClick: () => { },
+        //     disabled: sectionState,
+        //   },
+        //   {
+        //     id: "Appendices",
+        //     label: "Appendices",
+        //     value: "Review",
+        //     onClick: () => { },
+        //     disabled: sectionState,
+        //   },
+        // ];
 
         const buttonLabelOne = (
           "Create Report"
@@ -1406,7 +1432,7 @@ storiesOf("Templates|Applications/Appraisal", module)
                         <Panel
                         header={<Bar padding="2x" left={<Title size="xl" text="Review"/>}/>}
                         footer={
-                          <Bar padding="2x" left={<Button label="Attachments"/>} right={<Button label="Complete" isSolid/>} />
+                          <Bar padding="2x" contentAlign="center" left={<Button label="Attachments"/>} right={<Button label="Complete" isSolid/>} />
                         }
                         >
                         <Template
@@ -1415,22 +1441,24 @@ storiesOf("Templates|Applications/Appraisal", module)
                      A={{
                       id: "A",
                       content: (
-                        <Panel>
-                          <FieldGroup
-                            id="Report Review"
-                            title="Report Sections"
-                            data={reportSections}
-                            align="edge"
-                          />
-                          <Bar padding="2x" center={<Button
-                            label={buttonLabel}
-                            onClick={handleOpen}
-                            variant="success"
-                            isSolid
-                            fullWidth
-                            disabled={!firstReport}
-                          />}/>
-                        </Panel>
+                        
+                          <Form>
+                          <Text text="Report Sections"/>
+                          <Link text="Site Overview"/>
+                          <Link text="Subject Map"/>
+                          <Link text="Assessment"/>
+                          <Link text="Transactions"/>
+                          <Link text="Zoning"/>
+                          <Link text="Demographics"/>
+                          <Link text="Flood"/>
+                          <Link text="Wetlands"/>
+                          <Link text="Traffic"/>
+                          <Link text="Market Boundaries"/>
+                          <Link text="Schools"/>
+                          <Link text="Other"/>
+                          </Form>
+                          
+                        
                       ),
                     }}
                     B={{
@@ -1617,6 +1645,166 @@ storiesOf("Templates|Applications/Appraisal", module)
                   />
                   
                 </Panel>
+              ),
+            }}
+          />
+        );
+      });
+    },
+  );
+
+
+  storiesOf("Templates|Applications/Jobs Portal", module)
+  .addDecorator(FullScreen)
+  .add(
+    "Jobs Page",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(true);
+        const toggleLeft = () => { setLeftOpen(!leftOpen); };
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+
+
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: <MockHeaderGlobal menuClick={toggleLeft} />,
+            }}
+            left={{
+              id: "Left",
+              content: (<List title="Jobs Portal" isInteractive isInverse>
+              <ListItem title="Dashboard" />
+              <ListItem title="Jobs" isSelected/>
+              <ListItem title="RFPs" />
+            </List>),
+              visible: leftOpen,
+            }}
+            main={{
+              id: "Main",
+              content: (
+                
+                  <Template
+                    id="Assessment"
+                   
+                    template="B_02"
+                    A={{
+                      id: "A",
+                      content: (
+                        <List title="Jobs Menu" isInteractive isLight >
+                          <ListItem title="All Jobs" isSelected/>
+                          <ListItem title="Not Started" post={{type: "label", label: "4",}} />
+                          <ListItem title="In Progress" post={{type: "label", label: "28",}} />
+                          <ListItem title="Completed" />
+                          </List>
+                          
+                      ),
+                    }}
+                    B={{
+                      id: "B",
+                      content: (
+                        <Template
+                          id="Details"
+                          template="A_01"
+                 
+                          A={{
+                            id: "A",
+                            content: (
+                              <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Jobs" />} right={<Button icon="plus" label="Create" />}/>}>
+                              <Form>
+                                
+                                <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter Jobs"/>), width: "fit-content"}}/>
+                                
+                                <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid/>} />
+                              </Form>
+                              </Panel>)
+                            ,
+                          }}
+                          
+                        />
+                      ),
+                    }}
+                  />
+                
+              ),
+            }}
+          />
+        );
+      });
+    },
+  )
+  .add(
+    "RFPs Page",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(true);
+        const toggleLeft = () => { setLeftOpen(!leftOpen); };
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+
+
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: <MockHeaderGlobal menuClick={toggleLeft} />,
+            }}
+            left={{
+              id: "Left",
+              content: (<List title="Jobs Portal" isInteractive isInverse>
+              <ListItem title="Dashboard" />
+              <ListItem title="Jobs" />
+              <ListItem title="RFPs" isSelected/>
+            </List>),
+              visible: leftOpen,
+            }}
+            main={{
+              id: "Main",
+              content: (
+                
+                  <Template
+                    id="Assessment"
+                   
+                    template="B_02"
+                    A={{
+                      id: "A",
+                      content: (
+                        <List title="RFPs Menu" isInteractive  >
+                          <ListItem title="All RFPs" isSelected/>
+                          <ListItem title="Needs Response" post={{type: "label", label: "4",}} />
+                          <ListItem title="Submitted" post={{type: "label", label: "28",}} />
+                          <ListItem title="Awaiting Acceptance" />
+                          </List>
+                          
+                      ),
+                    }}
+                    B={{
+                      id: "B",
+                      content: (
+                        <Template
+                          id="Details"
+                          template="A_01"
+                 
+                          A={{
+                            id: "A",
+                            content: (
+                              <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="RFPs" />} right={<Button icon="plus" label="Create" />}/>}>
+                              <Form>
+                                
+                                <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter RFPs"/>), width: "fit-content"}}/>
+                                
+                                <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid/>} />
+                              </Form>
+                              </Panel>)
+                            ,
+                          }}
+                          
+                        />
+                      ),
+                    }}
+                  />
+                
               ),
             }}
           />
