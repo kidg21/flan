@@ -296,6 +296,7 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -323,6 +324,7 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -350,6 +352,7 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -377,6 +380,7 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -426,7 +430,7 @@ exports[` 1`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -542,6 +546,7 @@ exports[` 1`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -569,6 +574,7 @@ exports[` 1`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -599,6 +605,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -626,6 +633,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -653,6 +661,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -680,6 +689,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -707,6 +717,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -734,6 +745,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1076,9 +1088,11 @@ exports[` 1`] = `
                               rows={null}
                             >
                               <img
+                                alt="mockImage"
                                 className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
                                 onClick={null}
                                 src=""
+                                title="mockImage"
                                 width="100%"
                               />
                               <section
@@ -1555,6 +1569,7 @@ exports[` 2`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -1582,6 +1597,7 @@ exports[` 2`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -1609,6 +1625,7 @@ exports[` 2`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -1636,6 +1653,7 @@ exports[` 2`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -1685,7 +1703,7 @@ exports[` 2`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -1801,6 +1819,7 @@ exports[` 2`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -1828,6 +1847,7 @@ exports[` 2`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -1858,6 +1878,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1885,6 +1906,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1912,6 +1934,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1939,6 +1962,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1966,6 +1990,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1993,6 +2018,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -2118,7 +2144,7 @@ exports[` 2`] = `
                                   className="Bar__Slot-icfo76-1 kZQbjh"
                                 >
                                   <div
-                                    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                    className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                     href={null}
                                     id="storyshots_67"
                                     media=""
@@ -2385,7 +2411,7 @@ exports[` 2`] = `
                               rows={null}
                             >
                               <div
-                                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_68"
                                 media=""
@@ -2557,7 +2583,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_69"
                                 media=""
@@ -2729,7 +2755,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_70"
                                 media=""
@@ -3254,6 +3280,7 @@ exports[` 3`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -3281,6 +3308,7 @@ exports[` 3`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -3308,6 +3336,7 @@ exports[` 3`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -3335,6 +3364,7 @@ exports[` 3`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -3384,7 +3414,7 @@ exports[` 3`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -3500,6 +3530,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3527,6 +3558,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3581,6 +3613,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3608,6 +3641,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3635,6 +3669,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3662,6 +3697,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3689,6 +3725,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3716,6 +3753,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -4210,9 +4248,11 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <img
+                          alt="mockImage"
                           className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
                           onClick={null}
                           src=""
+                          title="mockImage"
                           width="100%"
                         />
                         <section
@@ -4686,6 +4726,7 @@ exports[` 4`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -4713,6 +4754,7 @@ exports[` 4`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -4740,6 +4782,7 @@ exports[` 4`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -4767,6 +4810,7 @@ exports[` 4`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -4816,7 +4860,7 @@ exports[` 4`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -4932,6 +4976,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -4959,6 +5004,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5013,6 +5059,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5064,6 +5111,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5115,6 +5163,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5142,6 +5191,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5169,6 +5219,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5196,6 +5247,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5358,7 +5410,7 @@ exports[` 4`] = `
                                   className="Bar__Slot-icfo76-1 kZQbjh"
                                 >
                                   <div
-                                    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                    className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                     href={null}
                                     id="storyshots_77"
                                     media=""
@@ -6348,6 +6400,7 @@ exports[` 5`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -6375,6 +6428,7 @@ exports[` 5`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -6402,6 +6456,7 @@ exports[` 5`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -6429,6 +6484,7 @@ exports[` 5`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -6478,7 +6534,7 @@ exports[` 5`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -6594,6 +6650,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6621,6 +6678,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6675,6 +6733,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6726,6 +6785,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6777,6 +6837,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6828,6 +6889,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6855,6 +6917,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6882,6 +6945,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -7240,7 +7304,7 @@ exports[` 5`] = `
                                       className="Bar__Slot-icfo76-1 kZQbjh"
                                     >
                                       <div
-                                        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                        className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                         href={null}
                                         id="storyshots_84"
                                         media=""
@@ -8090,6 +8154,7 @@ exports[` 6`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -8117,6 +8182,7 @@ exports[` 6`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -8144,6 +8210,7 @@ exports[` 6`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -8171,6 +8238,7 @@ exports[` 6`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -8220,7 +8288,7 @@ exports[` 6`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -8336,6 +8404,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8363,6 +8432,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8417,6 +8487,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8468,6 +8539,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8519,6 +8591,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8570,6 +8643,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8621,6 +8695,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8648,6 +8723,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8997,7 +9073,7 @@ exports[` 6`] = `
                       id="Modal_Text-animation"
                     >
                       <div
-                        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                        className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                         href={null}
                         id="storyshots_90"
                         media=""
@@ -9414,6 +9490,7 @@ exports[` 7`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -9441,6 +9518,7 @@ exports[` 7`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -9468,6 +9546,7 @@ exports[` 7`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -9495,6 +9574,7 @@ exports[` 7`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -9544,7 +9624,7 @@ exports[` 7`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 eyvPRU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -9660,6 +9740,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9687,6 +9768,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9741,6 +9823,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9792,6 +9875,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9843,6 +9927,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9894,6 +9979,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9945,6 +10031,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9996,6 +10083,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
