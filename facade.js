@@ -35,7 +35,10 @@ function decorator(getStory) {
 }
 export const withKnobs = decorator;
 export const checkA11y = decorator;
-export const action = decorator;
+
+export const action = function action(/* value */) {
+  return () => {};
+};
 
 function inputSelector(name, value) {
   return value;
