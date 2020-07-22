@@ -7,7 +7,7 @@ import { useId } from "helpers";
 import Portal from "utils/Portal";
 import { formatPixelValue } from "utils/format";
 
-let popperZIndex = 500;
+const popperZIndex = 500;
 
 const AnchorWrapper = styled.div`
   display: flex;
@@ -204,7 +204,7 @@ const Popper = (props) => {
   const scrollListener = useRef();
 
   let _zIndex = parseInt(zIndex, 10);
-  if (isNaN(_zIndex)) { _zIndex = 500; }
+  if (isNaN(_zIndex)) { _zIndex = popperZIndex; }
 
   // default portals to closeOnScroll if not specified since they have a fixed position
   // portal poppers don't update their position once they are visible if their anchor moves
@@ -241,7 +241,7 @@ Popper.defaultProps = {
   usePortal: false,
   position: "bottomRight",
   visible: false,
-  zIndex: 500,
+  zIndex: popperZIndex,
 };
 PortalPopper.defaultProps = Popper.defaultProps;
 NonPortalPopper.defaultProps = Popper.defaultProps;
