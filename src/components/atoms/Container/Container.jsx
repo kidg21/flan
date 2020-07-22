@@ -4,9 +4,9 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
-display: ${(props) => {
-  return props.setOffCanvas ? "none" : "block";
-}};
+  display: ${(props) => {
+    return props.visible ? "block" : "none";
+  }};
   padding: ${(props) => {
     return props.setPadding || "";
   }};
@@ -31,13 +31,37 @@ const BoxContainer = styled.div`
   width: ${(props) => {
     return props.width || "";
   }};
-  border: ${(props) => {
-    return props.hasBorder ? "1px solid" : "";
-  }};
-  border-color:  ${(props) => {
-    return props.hasBorder ? props.theme.palette.neutral40 : "";
+  border: 1px solid
+    ${(props) => {
+    return props.border || props.theme.palette.neutral40;
   }};
   border-radius: 5px;
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => {
+    return props.theme.palette.action80;
+  }};
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track:horizontal {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+}
+  ::-webkit-scrollbar-thumb:horizontal{
+    background-color: ${(props) => {
+    return props.theme.palette.action80;
+  }};
+  border-radius: 20px;
+}
 `;
 
 const paddingHash = {
@@ -47,12 +71,12 @@ const paddingHash = {
 };
 
 const Container = React.forwardRef(({
-  children, className, height, id, maxHeight, padding, setOffCanvas, hasBorder, width,
+  border, children, className, visible, height, id, maxHeight, padding, width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
   return (
-    <Wrapper setOffCanvas={setOffCanvas} setPadding={setPadding} height={height} width={width} className={className}>
-      <BoxContainer hasBorder={hasBorder} id={id} height={height ? "100%" : ""} maxHeight={maxHeight} ref={ref}>
+    <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
+      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -60,27 +84,25 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
-  hasBorder: PropTypes.bool,
+  border: PropTypes.string,
+  visible: PropTypes.bool,
   children: PropTypes.node,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
-  className: PropTypes.string,
   maxHeight: PropTypes.string,
   padding: PropTypes.oneOf(["0", "2x", "3x"]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  setOffCanvas: PropTypes.bool,
 };
 
 Container.defaultProps = {
-  hasBorder: false,
+  border: null,
+  visible: true,
   children: null,
   height: null,
   id: null,
-  className: null,
   maxHeight: null,
-  padding: "0",
+  padding: null,
   width: null,
-  setOffCanvas: false,
 };
 
 export default Container;

@@ -633,7 +633,6 @@ storiesOf("Templates|Applications/Appraisal", module)
                               content:(<Text text="Data Source: EASI, Last Updated: 01/01/2020 " size="sm"/>),
                             align: "left",}}
                             />}>
-                              
                               <Form>
                               <Field label="Parcel Link" value={<Link text="808-23093"/>}/>
                               
