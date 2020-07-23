@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
-
 export const fonts = {
   headline: "Roboto, Arial, sans-serif",
   body: "Roboto, Arial, sans-serif",
@@ -332,7 +331,6 @@ export const Darken = css`
 export const Lighten = css`
   filter: brightness(115%) saturate(80%) ;
 `;
-
 
 // Sizes for typography scale
 export const fontSize = {
