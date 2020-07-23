@@ -4,7 +4,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Text, { Title, Link } from "base/Typography";
-import { SkeletonStatic, useId } from "helpers";
+import { useId } from "utils/hooks";
+import { SkeletonStatic } from "helpers/Skeleton";
 import Loader from "atoms/Loader";
 
 const LegendTitle = styled(Title)`

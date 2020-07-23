@@ -3,7 +3,7 @@
 import React, { useRef, useState, useLayoutEffect, useMemo, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 import Portal from "utils/Portal";
 import { formatPixelValue } from "utils/format";
 

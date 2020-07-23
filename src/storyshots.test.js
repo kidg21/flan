@@ -1,7 +1,7 @@
 import initStoryshots, { multiSnapshotWithOptions } from "@storybook/addon-storyshots";
 import { screen } from "Variables";
 import * as hooks from "hooks";
-import * as helpers from "helpers/getGuid";
+import * as getGuid from "utils/getGuid";
 // import { imageSnapshot } from "@storybook/addon-storyshots-puppeteer";
 
 if (!window) global.window = global;
@@ -27,7 +27,7 @@ hooks.useCallback = (cb) => {
 
 let count = 1;
 // override getGuid
-helpers.default = () => {
+getGuid.default = () => {
   return `storyshots_${count++}`;
 };
 

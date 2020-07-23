@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
