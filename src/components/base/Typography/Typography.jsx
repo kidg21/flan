@@ -94,8 +94,8 @@ function Text({
       letterSpacing: "0.25px",
     },
     lg: {
-      fontSize: "1.2rem",
-      letterSpacing: "1.25px",
+      fontSize: "1.1rem",
+      letterSpacing: "0.8px",
     },
   };
 
@@ -149,38 +149,38 @@ function Title({
 
   const sizeHash = {
     "lg": {
-      fontSize: "1.1rem",
-      letterSpacing: "0.2px",
+      fontSize: "1.2rem",
+      letterSpacing: "0.4px",
       fontWeight: "500",
       as: "h5",
     },
     "xl": {
-      fontSize: "1.2rem",
+      fontSize: "1.35rem",
       letterSpacing: "0px",
       fontWeight: "400",
       as: "h4",
     },
     "2xl": {
-      fontSize: "2.125rem",
+      fontSize: "1.5rem",
       letterSpacing: "0.25px",
       fontWeight: "400",
       as: "h3",
     },
     "3xl": {
-      fontSize: "3rem",
+      fontSize: "2rem",
       letterSpacing: "0px",
       fontWeight: "400",
       as: "h2",
     },
     "4xl": {
-      fontSize: "3.75rem",
+      fontSize: "2.5rem",
       letterSpacing: "-1.5px",
       fontWeight: "300",
       as: "h1",
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1rem", as: "h6", fontWeight: "400", letterSpacing: ".15px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1.2rem", as: "h6", fontWeight: "400", letterSpacing: "1px" };
   const { fontSize, as, letterSpacing, fontWeight } = selectedSize;
 
   let textTransform;

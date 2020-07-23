@@ -390,7 +390,7 @@ A={{
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
+              content: (<Title text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -447,7 +447,7 @@ A={{
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
+              content: (<Title text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -503,7 +503,7 @@ A={{
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
+              content: (<Title  text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -559,7 +559,7 @@ A={{
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
+              content: (<Title  text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -615,7 +615,7 @@ A={{
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
+              content: (<Title  text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -671,7 +671,7 @@ A={{
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
+              content: (<Title  text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
@@ -727,7 +727,7 @@ A={{
             <Bar padding="0" 
             alignContent="top"
             left={{
-              content: (<Title size="xl" text="Parcel APN: 93084203492"/>)
+              content: (<Title  text="Parcel APN: 93084203492"/>)
             }}
             right={{
               content: (<Command label="View Details"/>),
