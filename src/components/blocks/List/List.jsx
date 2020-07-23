@@ -339,12 +339,12 @@ function List({
       >
         {title ? (
           <ListTitleWrapper>
-            <ListTitle text={title}   />
+            <ListTitle text={title} />
           </ListTitleWrapper>
         ) : null}
         <PaddingContext.Provider value={padding}>
-          {children ||
-            data.map((item, index) => {
+          {children
+            || data.map((item, index) => {
               const itemKey = item.id || item.title || index;
               return (
                 <ListItem

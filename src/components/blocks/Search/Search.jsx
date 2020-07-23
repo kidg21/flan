@@ -1,87 +1,64 @@
-/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Bar from "layout/Bar";
+import Flex from "layout/Flex";
 import Text from "base/Typography";
 import Button from "atoms/Button";
-// import Grid from "layout/Grid";
+import Menu from "blocks/Menu";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import TextInput from "atoms/TextInput";
 import { useId } from "helpers";
 import ResultContainer from "./Results.jsx";
 
-// const SearchContainer = styled.div`
-
 const SearchContainer = styled.form`
-  /* display: flex; */
   display: grid;
   grid-template-areas:
-  "A B"
-  "C C";
-  grid-template-columns: 1fr auto;
+  "A"
+  "B";
   grid-template-rows: auto 1fr;
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
+  grid-row-gap: 0.25rem;
   position: relative;
   padding: 0.5rem 0.5rem 0;
-  /* align-items: center; */
-  /* flex-direction: row; */
-  /* border: 1px solid; */
-  /* border-radius: 4px; */
-  /* border-color: ${(props) => {
-    return (props.theme.palette.neutral60
-    );
-  }}; */
-  /* &:hover {
-    border-color: ${(props) => {
-    return (
-      props.theme.palette.selected
-    );
-  }};
-  } */
-  /* &:selected {
-    border-color: ${(props) => {
-    return (
-      props.theme.palette.selected
-    );
-  }};
-  } */
 `;
 
-// const NewTextInput = styled.input`
-const NewTextInput = styled(TextInput)`
+const SearchInput = styled(Flex)`
   grid-area: A;
-  /* flex-grow: 2; */
-  /* border: none; */
-  /* min-height: 1.875rem; */
-  /* height: 2.4rem; */
-  /* padding: 0.125rem 0.5rem; */
-  /* font-family: ${(props) => { return props.theme.typography.primary; }}; */
-  /* ::placeholder {
-    font-weight: initial;
-    font-size: 0.90em;
-    letter-spacing: 0.5px;
-    color: ${(props) => {
-    return (
-      props.theme.text[props.placeholderColor] || props.theme.text.secondary
-    );
+  background-color: ${(props) => {
+    return props.theme.background.default;
   }};
-  } */
+  border: ${(props) => {
+    return `1px solid ${props.theme.palette.neutral60}`;
+  }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+  /* The padding gives the buttons space so they don't overlap the rounded corners of the container */
+  padding: 1px;
+  /* Necessary for the Menu List isn't cropped */
+  overflow: visible;
+`;
+
+const NewTextInput = styled(TextInput)`
+  flex: auto;
+  > * {
+    border: none;
+  }
 `;
 
 const SearchButton = styled(Button)`
-  grid-area: B;
+  flex: none;
 `;
 
 const DropContainer = styled(Container)`
-  /* position: fixed; */
-  grid-area: C;
+  grid-area: B;
   position: absolute;
   width: 100%;
+  /* opacity: 0.5; */
 `;
 
 const errorHash = {
@@ -92,7 +69,9 @@ const errorHash = {
 
 function Search({
   error,
+  hasOptions,
   id,
+  options,
   onChange,
   onKeyPress,
   onSearch,
@@ -154,29 +133,67 @@ function Search({
 
   return (
     <SearchContainer id={uId}>
-      <NewTextInput
-        id={`${uId}-search-bar`}
-        placeholder={placeholder}
-        type="search"
-        onChange={handleOnChange}
-        onKeyPress={handleOnKeyPress}
-      />
-      <SearchButton icon="search" isPlain onClick={handleOnSearch} />
-      {error || results ?
-        <DropContainer
-          padding="0"
-          id={`${uId}-results-container`}
-          maxHeight="22rem"
-        >
-          {Body}
-        </DropContainer>
+      <SearchInput flexDirection="row">
+        <SearchButton
+          id={`${uId}-search-button`}
+          icon="search"
+          isPlain
+          onClick={handleOnSearch}
+        />
+        <NewTextInput
+          id={`${uId}-search-bar`}
+          placeholder={placeholder}
+          type="search"
+          onChange={handleOnChange}
+          onKeyPress={handleOnKeyPress}
+        />
+        {hasOptions
+          ? (
+            <Menu
+              icon="down"
+              position="bottomLeft"
+              data={options}
+            >
+              <Button
+                id={`${uId}-search-options`}
+                icon="down"
+                isPlain
+              />
+            </Menu>
+          ) : null}
+      </SearchInput>
+      {error || results
+        ? (
+          <DropContainer
+            padding="0"
+            id={`${uId}-results-container`}
+            maxHeight="22rem"
+          >
+            {Body}
+          </DropContainer>
+        )
         : null}
     </SearchContainer>
   );
 }
 
-Search.propTypes = {
+const itemShape = {
+  disabled: PropTypes.bool,
+  icon: PropTypes.string,
   id: PropTypes.string,
+  label: PropTypes.string,
+  onClick: PropTypes.func,
+};
+
+Search.propTypes = {
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  hasOptions: PropTypes.bool,
+  id: PropTypes.string,
+  onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
+  onSearch: PropTypes.func,
+  options: PropTypes.arrayOf(PropTypes.shape(itemShape)),
+  placeholder: PropTypes.string,
   results: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -184,21 +201,18 @@ Search.propTypes = {
     href: PropTypes.string,
     onClick: PropTypes.func,
   })),
-  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  onChange: PropTypes.func,
-  onKeyPress: PropTypes.func,
-  onSearch: PropTypes.func,
-  placeholder: PropTypes.string,
 };
 
 Search.defaultProps = {
-  id: null,
-  results: null,
   error: "",
+  hasOptions: false,
+  id: null,
   onChange: null,
   onKeyPress: null,
   onSearch: null,
+  options: [],
   placeholder: null,
+  results: null,
 };
 
 export default Search;

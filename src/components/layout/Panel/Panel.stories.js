@@ -11,13 +11,104 @@ import SearchBar from "blocks/Search";
 storiesOf("Layout|Panel", module)
   .addDecorator(FullScreen)
   .addDecorator(checkA11y)
+  .add("Panel with Search in header", () => {
+    const results = [
+      {
+        title: "White House",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Orange House",
+        description: "1224 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Red House",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Green House",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Black House",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Blue House",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Address",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "APN",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Owner",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Address",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Address",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "APN",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Owner",
+        description: "123 Malibu Drive, CA 92660",
+      },
+      {
+        title: "Address",
+        description: "123 Malibu Drive, CA 92660",
+      },
+    ];
+    const [stateResults, setResultsState] = useState(false);
+    const toggleResults = () => { setResultsState(!stateResults); };
+
+    return React.createElement(() => {
+      return (
+        <Panel
+          padding="0"
+          header={(
+            <SearchBar
+              id="Search_Error"
+              placeholder="Search Location"
+              error2
+              results={stateResults ? results : null}
+              onSearch={toggleResults}
+              hasOptions
+            />
+          )}
+        >
+          <CardGrid>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </CardGrid>
+        </Panel>
+      );
+    });
+  })
+
   .add("Panel", () => {
     return <Panel />;
   })
   .add("Panel with header", () => {
     return (
       <Panel
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -25,14 +116,15 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
   .add("Panel with footer", () => {
     return (
       <Panel
-        footer={
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -40,14 +132,15 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
   .add("Panel with header/footer", () => {
     return (
       <Panel
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -55,8 +148,9 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
-        footer={
+          />
+        )}
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -64,7 +158,8 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
@@ -72,7 +167,7 @@ storiesOf("Layout|Panel", module)
     return (
       <Panel
         id="Panel"
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -80,8 +175,9 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
-        footer={
+          />
+        )}
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -89,7 +185,8 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       >
         <CardGrid>
           <Card />
@@ -130,7 +227,7 @@ export const Knobs = () => {
     <Panel
       id="Panel"
       offcanvas={offcanvas}
-      header={
+      header={(
         <Bar
           contentAlign="center"
           padding="2x"
@@ -138,8 +235,9 @@ export const Knobs = () => {
             content: <Title text="Header" />,
             align: "center",
           }}
-        />}
-      footer={
+        />
+      )}
+      footer={(
         <Bar
           contentAlign="center"
           padding="2x"
@@ -147,7 +245,8 @@ export const Knobs = () => {
             content: <Title text="Footer" />,
             align: "center",
           }}
-        />}
+        />
+      )}
     >
       <CardGrid>
         <Card />

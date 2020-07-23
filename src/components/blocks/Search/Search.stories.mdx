@@ -2,13 +2,14 @@ import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
+import { FullScreen } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import SearchBar from "blocks/Search";
 
-<Meta title="Data Entry|Search" component={SearchBar} />
+<Meta title="Data Entry|Search" component={SearchBar} decorators={[FullScreen]} />
 
 # Search
 
@@ -29,7 +30,7 @@ The Search component is a set of expandable panels for showing and hiding conten
 ### Types
 
 <Preview>
-  <Story name="Types">
+  <Story name="Types" parameters={{ decorators: [FullScreen] }}>
    <SearchBar id="Search_Results" placeholder="Search Location" results={[
   {
     title: "White House",
@@ -95,7 +96,7 @@ The Search component is a set of expandable panels for showing and hiding conten
 ### Suggestions
 
 <Preview>
-  <Story name="Suggestions">
+  <Story name="Suggestions" parameters={{ decorators: [FullScreen] }}>
     <Grid columns="2">
       <SearchBar
         id="Search_Error"
@@ -169,14 +170,17 @@ The Search component is a set of expandable panels for showing and hiding conten
 ### Errors
 
 <Preview>
-  <Story name="Errors">
+  <Story name="Errors" parameters={{ decorators: [FullScreen] }}>
     <Grid columns="1">
-        <SearchBar id="Search_Offline" placeholder="Search Location" error="offline" />
-        <SearchBar id="Search_BadConnection" placeholder="Search Location" error="connection" />
-      </Grid>
+      <SearchBar id="Search_Offline" placeholder="Search Location" error="offline" />
+      <SearchBar id="Search_BadConnection" placeholder="Search Location" error="connection" />
+    </Grid>
   </Story>
 </Preview>
 
 ## Props
+
+**Note:**
+lskadjflj lkjsdfkjf sdfkj sdljkskljf
 
 <Props of={SearchBar} />

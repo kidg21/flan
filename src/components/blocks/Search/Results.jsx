@@ -2,29 +2,32 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from "react";
 import PropTypes from "prop-types";
-import Bar from "layout/Bar";
 import { Link } from "base/Typography";
 import List, { ListItem } from "blocks/List";
 
-
-function ResultContainer({ id, results }) {
+function ResultContainer({ id, more, results }) {
   return (
     <React.Fragment>
-      <List id={id} interactive>
+      <List
+        id={id}
+        isInteractive
+      >
         {results.slice(0, 10).map((item, index) => {
           return <ListItem key={item.id || index} {...item} />;
         })}
+        {results.length >= 10 ? (
+          <ListItem>
+            <Link text="View More" onClick={more} />
+          </ListItem>
+        ) : null}
       </List>
-      {results.length >= 10 ? <Bar
-        padding="2x"
-        center={<Link text="View More" />}
-      /> : null}
     </React.Fragment>
   );
 }
 
 ResultContainer.propTypes = {
   id: PropTypes.string,
+  more: PropTypes.func,
   results: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -36,6 +39,7 @@ ResultContainer.propTypes = {
 
 ResultContainer.defaultProps = {
   id: null,
+  more: null,
   results: null,
 
 };
