@@ -223,9 +223,9 @@ storiesOf("Templates|Applications/Research", module)
                             id: "A",
                             content: (
                               <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Project Overview" weight="bold"/>} right={<Button icon="share_content" isRound isPlain/>}/>}>
-                              <Grid columns="60% 40%">
-                              
-                                      <Form >
+                              <Grid columns="1fr 6fr 1fr 4fr">
+                                <div/>
+                                         <Form >
                                       
                                         <FormSection>
                                       <FieldGroup align="edge">
@@ -244,6 +244,8 @@ storiesOf("Templates|Applications/Research", module)
                                         <Bar center={<Button label="Start Research"  isSolid />}/>
                                      
                                       </Form>
+                                      
+                                      <div/>
               
                                 <MockDetails />
                                 

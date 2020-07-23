@@ -270,7 +270,7 @@ const sizeHash = {
     padding: "0.5em 0.75em",
   },
   "xl": {
-    label: "xl",
+    label: "lg",
     icon: "xl",
     height: "3.4rem",
     padding: "1.5em 1.75em",
