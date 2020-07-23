@@ -9,7 +9,7 @@ import Grid from "layout/Grid";
 import { Label } from "base/Typography";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
-import { Skeleton } from "helpers";
+import { Skeleton } from "helpers/Skeleton";
 
 const StyledButton = styled.button`
   display: flex;

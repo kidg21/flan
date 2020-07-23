@@ -8,7 +8,8 @@ import React, {
 import GlobalStyles from "GlobalStyles";
 import styled, { keyframes, ThemeProvider } from "styled-components";
 import { DMPTheme, screen } from "Variables";
-import { PlaceholderText, useId } from "helpers";
+import { useId } from "utils/hooks";
+import { PlaceholderText } from "helpers/Skeleton";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Card from "elements/Card";

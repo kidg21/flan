@@ -8,7 +8,7 @@ import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {

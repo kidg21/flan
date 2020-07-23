@@ -7,7 +7,7 @@ import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 import Card from "elements/Card";
 import Grid from "layout/Grid";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 
 const InputContainer = styled(Grid)`
   color: ${(props) => {

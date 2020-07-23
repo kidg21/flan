@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// import { Skeleton } from "helpers";
+// import { Skeleton } from "helpers/Skeleton";
 import { Lighten, Darken } from "Variables";
 
 

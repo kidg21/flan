@@ -5,7 +5,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {

@@ -3,7 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { PlaceholderText } from "helpers/Skeleton";
 import Grid from "layout/Grid";
 
 
@@ -14,7 +14,7 @@ const Region = styled.section`
   }};
   height: inherit;
   border-right: 1px solid  ${(props) => {
-    return  props.theme.palette.neutral40 ;
+    return props.theme.palette.neutral40 ;
   }};
   overflow: auto;
   box-shadow: ${(props) => {

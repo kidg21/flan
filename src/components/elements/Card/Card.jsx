@@ -4,7 +4,9 @@
 import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText, Spacer, useId } from "helpers";
+import { useId } from "utils/hooks";
+import { PlaceholderText } from "helpers/Skeleton";
+import { Spacer } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";

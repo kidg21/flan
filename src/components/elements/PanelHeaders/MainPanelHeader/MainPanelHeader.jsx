@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 import Bar from "layout/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
