@@ -253,7 +253,6 @@ storiesOf("Templates|Applications/Research", module)
                               </Panel>)
                             ,
                           }}
-                          
                         />
                       ),
                     }}
