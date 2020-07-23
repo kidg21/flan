@@ -66,7 +66,8 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   }};
   &:after {
     content: '✔';
-    position: fixed;
+    position: relative;
+    display: block;
     padding-left: 2px;
     padding-top: 1px;
     font-size: 10px;

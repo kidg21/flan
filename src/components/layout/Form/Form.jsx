@@ -75,7 +75,7 @@ function FormSection({ children, title, columns }) {
   }
   return (
     <Section>
-      {title ? <GroupTitle size="sm" weight="bold" text={title} /> : null}
+      {title ? <TitleSection size="sm" weight="bold" text={title} /> : null}
       <Inputs setColumns={setColumns}>
         {children}
       </Inputs>
