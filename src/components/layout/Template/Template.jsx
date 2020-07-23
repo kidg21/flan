@@ -3,9 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
-
 
 const Region = styled.section`
   position: relative;
@@ -65,14 +63,6 @@ const TemplateWrapper = styled(Grid)`
   pointer-events: ${(props) => {
     return props.pointerEvents || "";
   }};
-  /* Prototype Content - displays when empty */
-  &:empty {
-    &:before {
-      white-space: pre;
-      ${PlaceholderText}
-      content: "{ Template }";
-    }
-  }
 `;
 
 const widthXS = "12rem";
