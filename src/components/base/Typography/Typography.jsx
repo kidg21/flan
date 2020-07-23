@@ -247,8 +247,8 @@ function Label({
       fontWeight: "400",
     },
     sm: {
-      fontSize: "0.875em",
-      letterSpacing: "0.25px",
+      fontSize: "0.875rem",
+      letterSpacing: "0.5px",
       fontWeight: "400",
     },
     lg: {

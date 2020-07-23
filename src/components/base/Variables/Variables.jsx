@@ -336,7 +336,7 @@ export const Lighten = css`
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "15px",
+  base: "14px",
 };
 
 // Media Queries

@@ -23,6 +23,7 @@ const Region = styled.section`
   }};
   padding: 0px;
   pointer-events: initial;
+  outline: none;
 `;
 
 const TemplateWrapper = styled(Grid)`
