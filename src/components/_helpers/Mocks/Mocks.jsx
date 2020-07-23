@@ -86,7 +86,7 @@ function MockHeaderGlobal({ menuClick }) {
       right={{
         content: (
           <Grid columns="max-content max-content" gap="4xl" align="center">
-            <Button size="lg" isRound icon="help_circle" variant="neutral" isPlain/>
+            <Button size="lg" isRound icon="help_circle" variant="neutral" isPlain />
             <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
           </Grid>
         ),
@@ -122,7 +122,7 @@ function MockHeader({ percentage }) {
     <Card
       id="Card_Header"
       padding="0"
-  
+
     >
       <CardSection variant="light" padding="1x">
         <Bar
@@ -131,12 +131,13 @@ function MockHeader({ percentage }) {
           left={{
             content: (
               <Grid columns="1" gap="xs">
-            <Text text="Project" size="xs"/>
-            <Title  size="xl" text="22902 Trabuco Road, Mission Viejo, CA 92691 • Shopping Center • 1402-20-12345" weight="bold" /></Grid>),
+                <Text text="Project" size="xs" />
+                <Title size="xl" text="22902 Trabuco Road, Mission Viejo, CA 92691 • Shopping Center • 1402-20-12345" weight="bold" />
+              </Grid>),
             align: "left",
           }}
           right={{
-            content: <ProgressIndicator percentage={percentage}/>,
+            content: <ProgressIndicator percentage={percentage} />,
             width: "fit-content",
             align: "left",
           }}
@@ -209,8 +210,8 @@ function MockWorkflow({ data, title }) {
                 type: "icon", icon: "check", variant: "success",
               }}
             />
-            <Divider/>
-            <ListSection >
+            <Divider />
+            <ListSection>
               <ListItem
                 title="Assessment"
                 disabled
@@ -716,48 +717,53 @@ function MockDetails({
 }) {
   return (
     <Template>
-      <Bar center={<Image src={image || StaticMap} width="80%" alt="mockImage" />}/>
+
+      <Bar center={<Image src={image || StaticMap} width="80%" alt="mockImage" />} />
       {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
         : (
-          <Bar padding="2x" center={
-          <FieldGroup  id="Physical Characteristics" >
-            <Field
-            align="edge"
-              id="No. of Buildings"
-              label="Project Owner"
-              value="Steve Davidson"
-            />
-            <Field
-            align="edge"
-              id="GBA"
-              label="Project Due"
-              value="06/25/2020"
-            />
-            <Field
-            align="edge"
-              id="No. of Stories"
-              label="Project Status"
-              value="Open"
-            />
-            <Field
-            align="edge"
-              id="No. of Units"
-              label="Project Created"
-              value="6/14/2020 8:00 am PT"
-            />
-            <Field
-            align="edge"
-              id="Year Built"
-              label="Project Edited"
-              value="6/16/2020 12:15 pm PT"
-            />
-            <Field
-            align="edge"
-              id="Year Built"
-              label="N1 ID"
-              value="1804"
-            />
-          </FieldGroup>}/>
+          <Bar
+            padding="2x"
+            center={(
+              <FieldGroup id="Physical Characteristics">
+                <Field
+                  align="edge"
+                  id="No. of Buildings"
+                  label="Project Owner"
+                  value="Steve Davidson"
+                />
+                <Field
+                  align="edge"
+                  id="GBA"
+                  label="Project Due"
+                  value="06/25/2020"
+                />
+                <Field
+                  align="edge"
+                  id="No. of Stories"
+                  label="Project Status"
+                  value="Open"
+                />
+                <Field
+                  align="edge"
+                  id="No. of Units"
+                  label="Project Created"
+                  value="6/14/2020 8:00 am PT"
+                />
+                <Field
+                  align="edge"
+                  id="Year Built"
+                  label="Project Edited"
+                  value="6/16/2020 12:15 pm PT"
+                />
+                <Field
+                  align="edge"
+                  id="Year Built"
+                  label="N1 ID"
+                  value="1804"
+                />
+              </FieldGroup>
+          )}
+          />
         )}
       {footer}
     </Template>
@@ -812,7 +818,9 @@ function MockTabs({ data }) {
   ];
   return (
     <Bar left={
-    <Tabs data={data || tabButtons} />}/>
+      <Tabs data={data || tabButtons} />
+}
+    />
   );
 }
 MockTabs.propTypes = {
