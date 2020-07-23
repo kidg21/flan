@@ -21,10 +21,10 @@ const StyledButton = styled.button`
     return props.fullWidth ? "100%" : "max-content";
   }};
   height: ${(props) => {
-    return props.isSmall ? "fit-content" : props.alignCenter ? "" : "2.4rem";
+    return props.setHeight;
   }};
   padding: ${(props) => {
-    return props.isSmall ? "0.25em" : props.alignCenter ? "0.75em" : "0em 0.75em";
+    return props.setPadding;
   }};
   justify-content: center;
   align-items: center;
@@ -161,7 +161,7 @@ function Button({
   isRound,
   isSolid,
   type,
-  isSmall,
+  size,
   variant,
   hasUnderline,
   alignCenter,
@@ -179,6 +179,7 @@ function Button({
   let fontWeight;
   let shadeColor;
   let tintColor;
+
 
   switch (variant && variant.toLowerCase()) {
     case "success":
@@ -252,16 +253,36 @@ function Button({
     borderColor = buttonColor;
   }
 
-let labelSize;
-let iconSize;
 
-if (isSmall) {
-  labelSize= "xs";
-  iconSize = "sm";
-} else {
-  labelSize= "lg";
-  iconSize = "";
-}
+
+
+const sizeHash = {
+  "sm": {
+    label: "xs",
+    icon: "sm",
+    height: "fit-content",
+    padding: "0.25em 0em",
+  },
+  "lg": {
+    label: "lg",
+    icon: "xl",
+    height: "2.4rem",
+    padding: "0.5em 0.75em",
+  },
+  "xl": {
+    label: "xl",
+    icon: "xl",
+    height: "3.4rem",
+    padding: "1.5em 1.75em",
+  },
+};
+
+
+const selectedSize = size && sizeHash[size.toLowerCase()];
+const labelSize = selectedSize ? selectedSize.label : "lg";
+const iconSize = selectedSize ? selectedSize.icon : "inherit";
+const setHeight = selectedSize ? selectedSize.height : "2.4rem";
+const setPadding = selectedSize ? selectedSize.padding : "0em 0.75em";
 
   let gridGap = null;
   let justifyItems = null;
@@ -307,6 +328,8 @@ if (isSmall) {
       borderColor={borderColor}
       borderRadius={borderRadius}
       borderStyle={borderStyle}
+      setPadding={setPadding}
+      setHeight={setHeight}
       borderWidth={borderWidth}
       buttonColor={buttonColor}
       buttonPadding={buttonPadding}
@@ -315,7 +338,7 @@ if (isSmall) {
       fontColor={fontColor}
       buttonHeight={buttonHeight}
       fontWeight={fontWeight}
-      isSmall={isSmall}
+      size={size}
       fullWidth={fullWidth}
       hasUnderline={hasUnderline}
       hoverColor={hoverColor}
@@ -324,7 +347,6 @@ if (isSmall) {
       isPlain={isPlain}
       isRound={isRound}
       isSolid={isSolid}
-      
       name={id}
       onClick={onClick}
       tabIndex={disabled ? "-1" : "1"}

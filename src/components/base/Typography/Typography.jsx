@@ -256,6 +256,11 @@ function Label({
       letterSpacing: ".5px",
       fontWeight: "400",
     },
+    xl: {
+      fontSize: "1.2rem",
+      letterSpacing: ".25px",
+      fontWeight: "400",
+    },
   };
 
   const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", fontWeight: "400" };

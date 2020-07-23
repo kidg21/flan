@@ -86,7 +86,7 @@ function MockHeaderGlobal({ menuClick }) {
       right={{
         content: (
           <Grid columns="max-content max-content" gap="4xl" align="center">
-            <Button icon="help_circle"  variant="neutral" isPlain/>
+            <Button size="lg" isRound icon="help_circle" variant="neutral" isPlain/>
             <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
           </Grid>
         ),

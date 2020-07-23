@@ -224,12 +224,9 @@ storiesOf("Templates|Applications/Research", module)
                             content: (
                               <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Project Overview" weight="bold"/>} right={<Button icon="share_content" isRound isPlain/>}/>}>
                               <Grid columns="60% 40%">
-                              <Bar
-                                  padding="0"
-                                  center={{
-                                    content: (
+                              
                                       <Form >
-                                      <Grid columns="1">
+                                      
                                         <FormSection>
                                       <FieldGroup align="edge">
                                         <Field align="edge" label="Project Name" value="22902 Trabuco Rd."/>
@@ -245,11 +242,8 @@ storiesOf("Templates|Applications/Research", module)
                                         <Field align="edge" label="City, State, Zip" value="Mission Viejo, CA 92691"/>
                                       </FormSection>
                                         <Bar center={<Button label="Start Research"  isSolid />}/>
-                                      </Grid>
-                                      </Form>),
-                                    align: "center",
-                                  }}
-                                />
+                                     
+                                      </Form>
               
                                 <MockDetails />
                                 
@@ -355,13 +349,13 @@ A={{
                               contentAlign="center" 
                               left={{
                                 content: (
-                                  <Text text="  Select Parcels on Map to Define Site" />
+                                  <Text text=".  Select Parcels on Map to Define Site" />
                                 ),
                                 width: "fit-content",
                               }}
                               center={{
                                 content: (
-                                  <ButtonGroup columns="5"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="map" label="Map Type"/><Button label="Reset" icon="sync" alignCenter isSmall isPlain variant="neutral"/></ButtonGroup>
+                                  <ButtonGroup columns="5"><Button alignCenter variant="neutral" size="sm" isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type"/><Button label="Reset" icon="sync" alignCenter size="sm" isPlain variant="neutral"/></ButtonGroup>
                                   ),
                                 
                               }}/></Card>
@@ -1048,13 +1042,13 @@ A={{
                               contentAlign="center" 
                               left={{
                                 content: (
-                                  <Text text="Fulfillment Complete"/>
+                                  <Text text=".   Fulfillment Complete"/>
                                 ),
                                 width: "fit-content",
                               }}
                               center={{
                                 content: (
-                                  <ButtonGroup columns="5"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Map Capture" /><Button alignCenter variant="neutral" isSmall isPlain icon="map" label="Map Type"/></ButtonGroup>
+                                  <ButtonGroup columns="5"><Button alignCenter variant="neutral" size="sm" isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" size="sm" isPlain icon="photos" label="Map Capture" /><Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type"/></ButtonGroup>
                                   ),
                                 
                               }}/></Card>
@@ -1173,33 +1167,29 @@ A={{
                     B={{
                       id: "B",
                       content: (
-                        <Panel
-                        padding="0"
-                        header={<Bar
-                          padding="1x"
-                          left={{
-                            content: (
-                              <Tabs>
-                                <TabItem label="Subject Map" isSelected />
-                                <TabItem label="Flood" />
-                                <TabItem label="Wetlands" />
-                                <TabItem label="Traffic & Transit" />
-                                <TabItem label="Market Boundaries" />
-                                <TabItem label="Schools" />
-                                <TabItem label="Other" />
-                              </Tabs>),
-                            width: "fit-content",
-                          }}
-                        />}
-                        >
                         <Template
                           id="Details"
                           template="B_01"
                           A={{
                             id: "A",
                             content: <Panel
-                            
-                            padding="0"
+                            header={<Bar
+                                padding="1x"
+                                left={{
+                                  content: (
+                                    <Tabs>
+                                      <TabItem label="Subject Map" isSelected />
+                                      <TabItem label="Flood" />
+                                      <TabItem label="Wetlands" />
+                                      <TabItem label="Traffic & Transit" />
+                                      <TabItem label="Market Boundaries" />
+                                      <TabItem label="Schools" />
+                                      <TabItem label="Other" />
+                                    </Tabs>),
+                                  width: "fit-content",
+                                }}
+                              />}
+                              padding="0"
                             footer={<Bar 
                               padding="0"
                               contentAlign="bottom" 
@@ -1226,7 +1216,7 @@ A={{
                               contentAlign="center" 
                               left={{
                                 content: (
-                                  <ButtonGroup columns="7"><Button alignCenter variant="neutral" isSmall isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" isSmall isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" isSmall isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter isSmall isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" isSmall isPlain icon="photos" label="Map Capture" /><Button alignCenter variant="neutral" isSmall isPlain icon="map" label="Map Type"/><Button alignCenter variant="neutral" isSmall isPlain  icon="sync" label="Reset" /></ButtonGroup>
+                                  <ButtonGroup columns="7"><Button alignCenter variant="neutral" size="sm" isPlain  icon="draw" label="Draw" /><Button alignCenter variant="neutral" size="sm" isPlain icon="measure" label="Measure" /><Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" /><Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" /><Button alignCenter variant="neutral" size="sm" isPlain icon="photos" label="Map Capture" /><Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type"/><Button alignCenter variant="neutral" size="sm" isPlain  icon="sync" label="Reset" /></ButtonGroup>
                                   ),
                                 
                               }}/></Card>
@@ -1260,7 +1250,6 @@ A={{
                              ),
                           }}
                         />
-                        </Panel>
                       ),
                     }}
                   />
@@ -1441,9 +1430,7 @@ A={{
                      A={{
                       id: "A",
                       content: (
-                        
                           <Form>
-                          <Text text="Report Sections"/>
                           <Link text="Site Overview"/>
                           <Link text="Subject Map"/>
                           <Link text="Assessment"/>
@@ -1631,7 +1618,6 @@ A={{
                                   label="Complete Project and Publish"
                                   onClick={doNothing}
                                   isSolid
-                                 
                                 />}/>
                               
                               </Grid>
