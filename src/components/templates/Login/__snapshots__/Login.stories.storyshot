@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
   id={null}
   rows={null}
 >
@@ -37,9 +37,9 @@ exports[` 1`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Login
@@ -74,7 +74,7 @@ exports[` 1`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="login-email"
@@ -106,7 +106,7 @@ exports[` 1`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="login-password"
@@ -133,7 +133,7 @@ exports[` 1`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+            className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -189,7 +189,7 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 dLaZFL"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ"
+                className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -225,7 +225,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
   id={null}
   rows={null}
 >
@@ -260,9 +260,9 @@ exports[` 2`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Registration
@@ -297,7 +297,7 @@ exports[` 2`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="registration-email"
@@ -329,7 +329,7 @@ exports[` 2`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="registration-password"
@@ -361,7 +361,7 @@ exports[` 2`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="registration-confirm-password"
@@ -388,7 +388,7 @@ exports[` 2`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+            className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -422,7 +422,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
   id={null}
   rows={null}
 >
@@ -457,9 +457,9 @@ exports[` 3`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Reset Password
@@ -494,7 +494,7 @@ exports[` 3`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="reset-email"
@@ -521,7 +521,7 @@ exports[` 3`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+            className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -555,7 +555,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 dLaZFL"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 gfYaJZ"
+                className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -591,7 +591,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
   id={null}
   rows={null}
 >
@@ -626,9 +626,9 @@ exports[` 4`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Email Sent
@@ -677,7 +677,7 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
   id={null}
   rows={null}
 >
@@ -712,9 +712,9 @@ exports[` 5`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Create New Password
@@ -749,7 +749,7 @@ exports[` 5`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="new-email"
@@ -781,7 +781,7 @@ exports[` 5`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="new-password"
@@ -813,7 +813,7 @@ exports[` 5`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
               cols=""
               disabled={false}
               id="new-confirm"
@@ -840,7 +840,7 @@ exports[` 5`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+            className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -874,7 +874,7 @@ exports[` 5`] = `
 
 exports[` 6`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 fmRzob"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
   id={null}
   rows={null}
 >
@@ -909,9 +909,9 @@ exports[` 6`] = `
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Confirmed New Password
@@ -950,7 +950,7 @@ exports[` 6`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 bdaVXm"
+            className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
             disabled={false}
             htmlFor={null}
             id={null}

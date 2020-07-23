@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// import { Skeleton } from "helpers";
+// import { Skeleton } from "helpers/Skeleton";
 import { Lighten, Darken } from "Variables";
 
 
@@ -174,7 +174,7 @@ function Title({
 
   const weightHash = {
     light: 300,
-    bold: 600,
+    bold: 500,
   };
 
   let fontWeight = parseInt(weight, 10);

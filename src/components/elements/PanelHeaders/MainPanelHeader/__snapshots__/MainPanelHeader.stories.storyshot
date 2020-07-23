@@ -17,9 +17,9 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 fNcQEg"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hSytIY"
+        className="Typography__TitleText-sc-19auepv-2 dSpuln"
         fontSize="1.15em"
-        fontWeight={600}
+        fontWeight={500}
         letterSpacing="0px"
       >
         Main Header
@@ -29,16 +29,16 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 kZQbjh"
     >
       <div
-        className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-        onClick={[Function]}
+        className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+        id="menu-popper-Header_Main-Menu"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+          className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
           disabled={false}
           htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
+          id="menu-icon-Header_Main-Menu"
+          name="menu-icon-Header_Main-Menu"
+          onClick={[Function]}
           tabIndex="1"
           type="button"
         >

@@ -63,12 +63,14 @@ export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export { default as Bar } from "./layout/Bar";
 export { default as Form, FormSection } from "./layout/Form";
 export { default as Flex } from "./layout/Flex";
+export { default as Template } from "./layout/Template";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page, PageSection, ContentSection } from "./layout/Page";
 export { default as Panel } from "./layout/Panel";
 export { default as Expander } from "./utils/Expander";
+export { default as Popper } from "./layout/Popper";
 
 export {
   colors,

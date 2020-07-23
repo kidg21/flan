@@ -1,9 +1,17 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 
-import { Grid, CellMeasurerCache, CellMeasurer, ColumnSizer, AutoSizer, InfiniteLoader } from "react-virtualized";
+import {
+  Grid,
+  CellMeasurerCache,
+  CellMeasurer,
+  ColumnSizer,
+  AutoSizer,
+  InfiniteLoader,
+} from "react-virtualized";
 import styled from "styled-components";
 import { DisableTransitionContext } from "States";
+import getGuid from "utils/getGuid";
 
 /* eslint-disable security/detect-object-injection */
 // const GridWrapper = styled.div`
@@ -66,11 +74,7 @@ export const CellWrapper = styled.div`
   align-items: center;
   padding: 0.5em 1em;
   color: ${(props) => {
-    if (props.isHeader) {
-      return props.theme.text.primary;
-    } else if (props.isSelected) {
-      return props.theme.text.inverse;
-    }
+    if (props.isSelected && !props.isHeader) return props.theme.text.inverse;
     return props.theme.text.primary;
   }};
   font-weight: ${(props) => {
@@ -95,9 +99,9 @@ export const CellWrapper = styled.div`
   [class^="Menu"],
   [class^="Command"] {
     color: ${(props) => {
-    if (props.isSelected) {
-      return props.theme.text.inverse;
-    }
+    // if (props.isSelected) {
+    //   return props.theme.text.inverse;
+    // }
     return "";
   }};
   }
@@ -119,6 +123,7 @@ class CardList extends PureComponent {
     this.rowCount = 1;
     this.width = props.width;
     this.height = props.height;
+    this.id = props.id || getGuid();
     this.cache = null;
 
     this._cellRenderer = this._cellRenderer.bind(this);
@@ -138,22 +143,38 @@ class CardList extends PureComponent {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.listId !== this.props.listId
-      || prevProps.data.length !== this.props.data.length) {
+    const {
+      id,
+      listId,
+      data,
+      columnWidth,
+      columnCount,
+    } = this.props;
+
+    let bUpdate = false;
+    if (id !== prevProps.id) {
+      this.id = id || getGuid();
+      bUpdate = true;
+    }
+
+    if (prevProps.listId !== listId
+      || prevProps.data.length !== data.length) {
       this._recalculateGridSize();
       this.remeasureCells(null, true);
       this._loadMissingRowsInView(
-        this.props.data,
+        data,
         this._visibleRowStartIndex,
         this._visibleRowStopIndex,
       ).then(() => {
         this.forceUpdate();
       });
-    } else if (prevProps.columnWidth !== this.props.columnWidth
-      || prevProps.columnCount !== this.props.columnCount) {
+    } else if (prevProps.columnWidth !== columnWidth
+      || prevProps.columnCount !== columnCount) {
       // if any of these props are NaNi, the component will break
       this._recalculateGridSize();
       this.remeasureCells(null, true);
+      this.forceUpdate();
+    } else if (bUpdate) {
       this.forceUpdate();
     }
   }
@@ -231,8 +252,16 @@ class CardList extends PureComponent {
     style,
   }) {
     const {
-      Template, data, selectedCell, highlightedCell,
-      onCellClick, onCellMouseEnter, onCellMouseLeave, onCellMouseOut, onCellMouseOver,
+      Template,
+      data,
+      selectedCell,
+      highlightedCell,
+      onCellClick,
+      onCellMouseEnter,
+      onCellMouseLeave,
+      onCellMouseOut,
+      onCellMouseOver,
+      removeRecord,
     } = this.props;
     const cellProps = {
       isSelected: false,
@@ -270,6 +299,11 @@ class CardList extends PureComponent {
       <CellWrapper id={`cellwrapper-${rowIndex}-${columnIndex}`} key={key} style={{ ...style, width: this._columnWidth }} {...cellProps}>
         <Template
           data={data[index]}
+          removeRecord={() => {
+            if (removeRecord) {
+              removeRecord(index);
+            }
+          }}
           isHighlighted={cellProps.isHighlighted}
           isSelected={cellProps.isSelected}
           index={index}
@@ -323,8 +357,9 @@ class CardList extends PureComponent {
   // recalculating row/col count & remeasure row/col sizes
   // on resizing the grid width/height
   _onResize({ width, height }) {
-    this.width = this.props.width || width;
-    this.height = this.props.height || height;
+    const { width: prevWidth, height: prevHeight } = this.props;
+    this.width = prevWidth || width;
+    this.height = prevHeight || height;
     this._recalculateGridSize();
     this.remeasureCells(null, true);
     this.forceUpdate();
@@ -374,7 +409,7 @@ class CardList extends PureComponent {
 
   render() {
     const {
-      data, id, rowHeight, minRowHeight, selectedCell, highlightedCell,
+      data, rowHeight, minRowHeight, selectedCell, highlightedCell,
       scrollToAlignment, scrollTop, focusedRow, onScroll, minimumBatchSize,
     } = this.props;
 
@@ -421,7 +456,7 @@ class CardList extends PureComponent {
           this._registerInfiniteChild = registerChild;
           this._onRowsRendered = onRowsRendered;
           return (
-          // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
+            // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
             <DisableTransitionContext.Provider value>
               <GridWrapper>
                 <AutoSizer
@@ -447,7 +482,7 @@ class CardList extends PureComponent {
                           this._registerColumnChild = registerColumnChild;
                           return (
                             <Grid
-                              id={id}
+                              id={this.id}
                               ref={this._setRefGrid}
                               cellRenderer={this._cellRenderer}
                               columnCount={this.columnCount}
@@ -486,6 +521,7 @@ class CardList extends PureComponent {
 }
 
 CardList.defaultProps = {
+  id: null,
   columnCount: 1,
   columnWidth: null,
   width: 0,
@@ -506,10 +542,11 @@ CardList.defaultProps = {
   loadRows: null,
   listId: null,
   minimumBatchSize: 10,
+  removeRecord: null,
 };
 
 CardList.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   listId: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
   Template: PropTypes.elementType.isRequired,
@@ -538,6 +575,7 @@ CardList.propTypes = {
   focusedRow: PropTypes.number,
   loadRows: PropTypes.func,
   minimumBatchSize: PropTypes.number,
+  removeRecord: PropTypes.func,
 };
 
 CardList.displayName = "cardList";

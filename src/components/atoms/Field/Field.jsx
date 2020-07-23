@@ -80,32 +80,24 @@ function Field({
       break;
   }
 
-  let field;
+  let field = (
+    <FieldValue
+      onChange={onChange}
+      text={value}
+      size="lg"
+      weight="bold"
+      valueAlign={valueAlign}
+    />
+  );
+
   if (onClick) {
-    field =
-      (
-        <Link
-          disabled={disabled}
-          onClick={onClick}
-        >
-          <FieldValue
-            onChange={onChange}
-            text={value}
-            weight="bold"
-            valueAlign={valueAlign}
-          />
-        </Link>
-      );
-  } else {
     field = (
-      <FieldValue
-        onChange={onChange}
-        text={value}
-        weight="bold"
-        valueAlign={valueAlign}
-      />
+      <Link disabled={disabled} size="lg" onClick={onClick}>
+        {field}
+      </Link>
     );
   }
+
   return (
     <FieldItem
       className={className}
@@ -114,7 +106,7 @@ function Field({
       gap="xs"
       id={id}
     >
-      <FieldLabel text={label} />
+      <FieldLabel size="lg" text={label} />
       {field}
     </FieldItem>
   );
@@ -161,12 +153,13 @@ function FieldGroup({
       id={id}
     >
       {title ? <GroupTitle text={title} weight="bold" /> : null}
-      {children ||
-        data.map((item) => {
+      {children
+        || data.map((item, index) => {
           return (
             <Field
               align={align}
               disabled={item.disabled}
+              key={item.id || item.label || index}
               id={item.id}
               label={item.label}
               onChange={item.onChange}

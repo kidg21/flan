@@ -58,4 +58,29 @@ function CommandGrid({ data }) {
   });
 }
 
-export { FullScreen, Center, Padding, Container, Spacer, DisplayGrid, CommandGrid };
+const centerDecoratorStyles = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "inherit",
+};
+
+const CenterDecorator = (storyFn) => {
+  return (<div style={centerDecoratorStyles}>{storyFn()}</div>);
+};
+
+const CenterDisplayGrid = (storyFn) => {
+  return (<Grid columns={3}><div />{storyFn()}<div /></Grid>);
+};
+
+export {
+  FullScreen,
+  Center,
+  CenterDecorator,
+  CenterDisplayGrid,
+  Padding,
+  Container,
+  Spacer,
+  DisplayGrid,
+  CommandGrid,
+};

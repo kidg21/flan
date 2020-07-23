@@ -8,20 +8,22 @@ exports[` 1`] = `
   <li
     className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-      fontSize="1em"
-      fontWeight={600}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+      fontSize="0.879em"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.2px"
     >
       My List
-    </h6>
+    </p>
   </li>
   <li
     className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -49,6 +51,7 @@ exports[` 1`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -76,6 +79,7 @@ exports[` 1`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -109,20 +113,22 @@ exports[` 2`] = `
   <li
     className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-      fontSize="1em"
-      fontWeight={600}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+      fontSize="0.879em"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.2px"
     >
       List Items via Array
-    </h6>
+    </p>
   </li>
   <li
     className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
     disabled={false}
     href={null}
     id="List Item 1"
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -150,6 +156,7 @@ exports[` 2`] = `
     disabled={true}
     href={null}
     id="List Item 2"
+    onClick={null}
     tabIndex="-1"
   >
     <div
@@ -177,6 +184,7 @@ exports[` 2`] = `
     disabled={false}
     href={null}
     id="List Item 3"
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -204,6 +212,7 @@ exports[` 2`] = `
     disabled={false}
     href={null}
     id="List Item 4"
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -239,6 +248,7 @@ exports[` 3`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -275,6 +285,7 @@ exports[` 3`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -311,6 +322,7 @@ exports[` 3`] = `
     disabled={true}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="-1"
   >
     <div
@@ -358,20 +370,22 @@ exports[` 4`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Standard
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -408,6 +422,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -444,6 +459,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -483,20 +499,22 @@ exports[` 4`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Standard (inverse)
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -533,6 +551,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -569,6 +588,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -608,20 +628,22 @@ exports[` 4`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         With a Divider
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -658,6 +680,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -694,6 +717,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -733,20 +757,22 @@ exports[` 4`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         With a Divider (inverse)
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -783,6 +809,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -819,6 +846,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -858,20 +886,22 @@ exports[` 4`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Interactive
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -908,6 +938,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -944,6 +975,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -983,20 +1015,22 @@ exports[` 4`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Interactive (inverse)
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1033,6 +1067,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1069,6 +1104,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1117,20 +1153,22 @@ exports[` 5`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Pre-Label
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1185,6 +1223,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1239,6 +1278,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1293,6 +1333,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1350,20 +1391,22 @@ exports[` 5`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Post Label
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1397,7 +1440,7 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 dykTmk"
+            className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
             id={null}
             label="Label"
           >
@@ -1419,6 +1462,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1452,7 +1496,7 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 dykTmk"
+            className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
             id={null}
             label="6"
           >
@@ -1474,6 +1518,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1507,7 +1552,7 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 dykTmk"
+            className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
             id={null}
             label="NEW!"
           >
@@ -1529,6 +1574,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1562,7 +1608,7 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 dykTmk"
+            className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
             id={null}
             label="9"
           >
@@ -1587,20 +1633,22 @@ exports[` 5`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Post Icon
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1661,6 +1709,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1721,6 +1770,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1793,6 +1843,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1877,20 +1928,22 @@ exports[` 6`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Checkbox
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1929,7 +1982,7 @@ exports[` 6`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
               id={null}
               onBlur={null}
               onChange={null}
@@ -1945,6 +1998,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1983,7 +2037,7 @@ exports[` 6`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
               id={null}
               onBlur={null}
               onChange={null}
@@ -1999,6 +2053,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2037,7 +2092,7 @@ exports[` 6`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
               id={null}
               onBlur={null}
               onChange={null}
@@ -2053,6 +2108,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2091,7 +2147,7 @@ exports[` 6`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 jqvvci"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
               id={null}
               onBlur={null}
               onChange={null}
@@ -2110,20 +2166,22 @@ exports[` 6`] = `
     <li
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 fnUHAi List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
       >
         Toggle
-      </h6>
+      </p>
     </li>
     <li
       className="List__ListItemWrapper-sc-43f2zq-1 hugnlQ"
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2184,6 +2242,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2244,6 +2303,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2304,6 +2364,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div

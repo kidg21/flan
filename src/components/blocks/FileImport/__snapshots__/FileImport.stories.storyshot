@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="FileImport__NewLabel-sc-1hxbe60-1 eqsSEs"
+    className="FileImport__NewLabel-sc-1hxbe60-1 chlcs"
   >
     <p
       className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
@@ -31,7 +31,7 @@ exports[` 1`] = `
   >
     <input
       autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+      className="TextInput__Input-sc-1fep8p8-2 eawNkz"
       cols=""
       disabled={false}
       id="file-textinput-FileImport_Standard"
@@ -52,7 +52,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 bIzuts"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 fNSwGV"
   id={null}
   rows={null}
 >
@@ -62,7 +62,7 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="FileImport__NewLabel-sc-1hxbe60-1 eqsSEs"
+      className="FileImport__NewLabel-sc-1hxbe60-1 chlcs"
     >
       <p
         className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
@@ -86,7 +86,7 @@ exports[` 2`] = `
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 kMwpmX"
+        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
         cols=""
         disabled={false}
         id="file-textinput-FileImport_Types"

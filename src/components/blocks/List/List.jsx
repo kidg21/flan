@@ -9,7 +9,7 @@ import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text, { Title } from "base/Typography";
+import Text from "base/Typography";
 import { InteractiveContext, DisabledContext, PaddingContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -79,7 +79,7 @@ const ListTitleWrapper = styled.li`
   padding: 1rem 1rem;
 `;
 
-const ListTitle = styled(Title)`
+const ListTitle = styled(Text)`
   text-transform: uppercase;
   letter-spacing: 2px;
 `;
@@ -186,12 +186,14 @@ function getLeftContent(pre, disabled, onClick) {
 function ListItem({
   as,
   children,
+  className,
   description,
   disabled,
   href,
   id,
   isSelected,
   onClick,
+  onClickItem,
   post,
   pre,
   tabIndex,
@@ -235,6 +237,8 @@ function ListItem({
       selectedContent={selectedContent}
       selectedBackground={selectedBackground}
       tabIndex={disabled ? "-1" : tabIndex}
+      className={className}
+      onClick={onClickItem} // to target whole list item
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
@@ -258,12 +262,14 @@ function ListItem({
 ListItem.propTypes = {
   as: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.node,
   id: PropTypes.string,
   isSelected: PropTypes.bool,
   onClick: PropTypes.func,
+  onClickItem: PropTypes.func,
   title: PropTypes.string.isRequired,
   post: PropTypes.shape({
     type: PropTypes.string.isRequired,
@@ -283,19 +289,30 @@ ListItem.propTypes = {
 ListItem.defaultProps = {
   as: null,
   children: null,
+  className: null,
   description: null,
   disabled: false,
   href: null,
   id: null,
   isSelected: false,
   onClick: null,
+  onClickItem: null,
   post: null,
   pre: null,
   tabIndex: "0",
 };
 
 function List({
-  children, data, id, isDivided, isInteractive, isInverse, padding, title,
+  children,
+  className,
+  data,
+  id,
+  isDivided,
+  isInteractive,
+  isInverse,
+  isLight,
+  padding,
+  title,
 }) {
   let listBackground;
   let listColor;
@@ -305,9 +322,15 @@ function List({
     listColor = "inverse";
     listDivider = "neutral100";
   }
+  if (isLight) {
+    listBackground = "app";
+    listColor = "neutral40";
+    listDivider = "neutral100";
+  }
   return (
     <InteractiveContext.Provider value={isInteractive}>
       <ListWrapper
+        className={className}
         id={id}
         isDivided={isDivided}
         listBackground={listBackground}
@@ -316,7 +339,7 @@ function List({
       >
         {title ? (
           <ListTitleWrapper>
-            <ListTitle text={title} weight="bold" />
+            <ListTitle text={title}   />
           </ListTitleWrapper>
         ) : null}
         <PaddingContext.Provider value={padding}>
@@ -345,19 +368,23 @@ function List({
 
 List.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape(ListItem.propTypes)),
   id: PropTypes.string,
   isDivided: PropTypes.bool,
   isInteractive: PropTypes.bool,
+  isLight: PropTypes.bool,
   isInverse: PropTypes.bool,
   padding: PropTypes.string,
   title: PropTypes.string,
 };
 List.defaultProps = {
   children: null,
+  className: null,
   data: [],
   id: null,
   isDivided: false,
+  isLight: false,
   isInteractive: false,
   isInverse: false,
   padding: "0",

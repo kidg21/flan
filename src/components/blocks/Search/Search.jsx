@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useRef, useMemo } from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Bar from "layout/Bar";
@@ -11,7 +11,7 @@ import Button from "atoms/Button";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import TextInput from "atoms/TextInput";
-import { getGuid } from "helpers";
+import { useId } from "utils/hooks";
 import ResultContainer from "./Results.jsx";
 
 // const SearchContainer = styled.div`
@@ -100,7 +100,7 @@ function Search({
   results,
 }) {
   const searchVal = useRef("");
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+  const uId = useId(id);
   /**
    * Set state to current input value in search box.
    * Pass back input value to onChange function, if provided.

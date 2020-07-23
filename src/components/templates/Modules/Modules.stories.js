@@ -25,6 +25,33 @@ import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
 import Legend from "blocks/Legend";
+import {
+  MockMapPalettes,
+} from "helpers/Mocks";
+
+const mapOptions = [
+  { label: <Icon icon="star_solid" />, value: "Value 0" },
+  { label: <Icon icon="star_solid" />, value: "Value 1" },
+  { label: <Icon icon="star_solid" />, value: "Value 2" },
+  { label: <Icon icon="star_solid" />, value: "Value 3" },
+  { label: <Icon icon="star_solid" />, value: "Value 4" },
+  { label: <Icon icon="star_solid" />, value: "Value 5" },
+];
+
+const inputsOne = [
+  {
+    id: "ID 1",
+    name: "ID 100",
+    type: "text",
+    placeholder: "Price",
+    pattern: "[A-Za-z]{3}",
+  },
+];
+const domains = [
+  { value: "USD", label: "USD" },
+  { value: "EUR", label: "EUR" },
+  { value: "AU", label: "AU" },
+];
 
 
 const mapOptions = [
@@ -142,7 +169,6 @@ const tabRFPButtonsTwo = [
   },
 ];
 
-
 const tabRFPButtonsFour = [
   {
     id: "RFPs",
@@ -188,6 +214,78 @@ const options = [
 storiesOf("Templates|Panels/", module)
   .addDecorator(FullScreen)
   .addDecorator(checkA11y)
+  .add("Layers Panel", () => {
+    return (
+      <Panel
+        header={(
+          <Bar
+            contentAlign="center"
+            padding="2x"
+            left={{
+              content: (
+                <Title text="Layers Panel" weight="bold" />
+              ),
+            }}
+            right={{
+              content: (
+                <Menu
+                  data={[
+                    { id: "a", label: "Action" },
+                    { id: "c", label: "Action" },
+                    { id: "b", label: "Action" },
+                  ]}
+                  position="bottomLeft"
+                />
+              ),
+              width: "min-content",
+            }}
+          />
+        )}
+      >
+        <Accordion
+          open
+          header={(
+            <Checkbox
+              label="Layer One"
+              id="checkbox-id"
+            />
+          )}
+        >
+          <Card><Legend data={mapOptions} /></Card>
+        </Accordion>
+        <Accordion
+          header={(
+            <Checkbox
+              label="Layer Two"
+              id="checkbox-id"
+            />
+          )}
+        >
+          <Card><Legend data={mapOptions} /></Card>
+        </Accordion>
+        <Accordion
+          header={(
+            <Checkbox
+              label="Layer Three"
+              id="checkbox-id"
+            />
+          )}
+        >
+          <Card><Legend data={mapOptions} /></Card>
+        </Accordion>
+        <Accordion
+          header={(
+            <Checkbox
+              label="Layer Four"
+              id="checkbox-id"
+            />
+          )}
+        >
+          <Card><Legend data={mapOptions} /></Card>
+        </Accordion>
+      </Panel>
+    );
+  })
   .add(
     "View/Edit Record",
     () => {
@@ -325,9 +423,15 @@ storiesOf("Templates|Panels/", module)
         ];
 
         const recordAttachments = (
+<<<<<<< HEAD
           
             <Legend id="AttachDocs_Legend" title="Attached Documents" data={attachments} />
           
+=======
+          <Template>
+            <Legend id="AttachDocs_Legend" title="Attached Documents" data={attachments} />
+          </Template>
+>>>>>>> develop
         );
 
         //
@@ -363,7 +467,7 @@ storiesOf("Templates|Panels/", module)
                 <React.Fragment>
                   <Panel
                     id="Menu 1"
-                    header={
+                    header={(
                       <React.Fragment>
                         <Bar
                           contentAlign="center"
@@ -390,16 +494,18 @@ storiesOf("Templates|Panels/", module)
                         />
                         <Tabs data={tabButtons} />
                       </React.Fragment>
-                    }
+                    )}
                     footer={
-                      footerSection ?
-                        <Card id="Menu_1_Footer">
-                          <CardSection>
-                            <ButtonGroup columns="1">
-                              <Button label="Add Files" isSolid />
-                            </ButtonGroup>
-                          </CardSection>
-                        </Card>
+                      footerSection
+                        ? (
+                          <Card id="Menu_1_Footer">
+                            <CardSection>
+                              <ButtonGroup columns="1">
+                                <Button label="Add Files" isSolid />
+                              </ButtonGroup>
+                            </CardSection>
+                          </Card>
+                        )
                         : ""
                     }
                   >
@@ -408,14 +514,14 @@ storiesOf("Templates|Panels/", module)
                   <Panel
                     id="Menu 2"
                     offcanvas={menu2}
-                    header={
+                    header={(
                       <Card
                         id="Menu_2_Header"
                         title="Record 1"
                         description="Record Description Goes Here"
                       />
-                    }
-                    footer={
+                    )}
+                    footer={(
                       <Card id="Menu_2_Footer">
                         <CardSection>
                           <ButtonGroup columns="2">
@@ -424,7 +530,7 @@ storiesOf("Templates|Panels/", module)
                           </ButtonGroup>
                         </CardSection>
                       </Card>
-                    }
+                    )}
                   >
                     {recordDetails}
                   </Panel>
@@ -437,6 +543,7 @@ storiesOf("Templates|Panels/", module)
     },
   );
 
+<<<<<<< HEAD
 storiesOf("Templates/Modules", module)
   .addDecorator(FullScreen)
   .addDecorator(checkA11y)
@@ -510,12 +617,19 @@ storiesOf("Templates/Modules", module)
 
 
 storiesOf("Templates/Modules", module)
+=======
+storiesOf("Templates/Modules/Create", module)
+>>>>>>> develop
   .addDecorator(Padding)
   .addDecorator(checkA11y)
   .add("Create Project", () => {
     return (
       <DialogBox
+<<<<<<< HEAD
         title="Create Job"
+=======
+        title="Create Project"
+>>>>>>> develop
         buttons={[
           {
             id: "Cangel",
@@ -529,11 +643,19 @@ storiesOf("Templates/Modules", module)
       >
 
         <Grid columns="2">
+<<<<<<< HEAD
           <Form >
             <FormSection >
               <TextInput
 
                 label="Job Number"
+=======
+          <Form>
+            <FormSection>
+              <TextInput
+
+                label="Project Number"
+>>>>>>> develop
                 value="19-12341234"
               />
               <TextInput
@@ -565,11 +687,19 @@ storiesOf("Templates/Modules", module)
 
                 label="Zip"
               />
+<<<<<<< HEAD
               <SelectMenu
 
                 label="Property Type"
               />
               <SelectMenu
+=======
+              <TextInput
+
+                label="Property Type"
+              />
+              <TextInput
+>>>>>>> develop
 
                 label="Property Sub-Type"
               />

@@ -1,10 +1,11 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { useMemo } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Text, { Title, Link } from "base/Typography";
-import { SkeletonStatic, getGuid } from "helpers";
+import { useId } from "utils/hooks";
+import { SkeletonStatic } from "helpers/Skeleton";
 import Loader from "atoms/Loader";
 
 const LegendTitle = styled(Title)`
@@ -82,7 +83,7 @@ function Legend({
   let cellBorder;
   let cellBorderColor;
 
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+  const uId = useId(id);
 
   const content = data instanceof Array
     ? (
@@ -93,6 +94,10 @@ function Legend({
             if (row.onClick) {
               rowValue = (<Link onClick={row.onClick}>{rowValue}</Link>);
             }
+            if (typeof row.isText === "undefined" || row.isText) {
+              rowValue = <Text>{rowValue}</Text>;
+            }
+
             const rowKey = row.id
               || (typeof row.label === "string" && row.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
               || (typeof row.value === "string" && row.value.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
@@ -115,7 +120,7 @@ function Legend({
                   fontWeight={fontWeight}
                   fontSize={fontSize}
                 >
-                  <Text>{rowValue}</Text>
+                  {rowValue}
                 </Cell>
               </Row>
             );
@@ -140,6 +145,7 @@ Legend.propTypes = {
     id: PropTypes.string,
     label: PropTypes.node,
     value: PropTypes.node,
+    isText: PropTypes.bool,
   })),
 };
 
