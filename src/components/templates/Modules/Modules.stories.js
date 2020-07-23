@@ -54,29 +54,7 @@ const domains = [
 ];
 
 
-const mapOptions = [
-  { label: <Icon icon="star_solid" />, value: "Value 0" },
-  { label: <Icon icon="star_solid" />, value: "Value 1" },
-  { label: <Icon icon="star_solid" />, value: "Value 2" },
-  { label: <Icon icon="star_solid" />, value: "Value 3" },
-  { label: <Icon icon="star_solid" />, value: "Value 4" },
-  { label: <Icon icon="star_solid" />, value: "Value 5" },
-];
 
-const inputsOne = [
-  {
-    id: "ID 1",
-    name: "ID 100",
-    type: "text",
-    placeholder: "Price",
-    pattern: "[A-Za-z]{3}",
-  },
-];
-const domains = [
-  { value: "USD", label: "USD" },
-  { value: "EUR", label: "EUR" },
-  { value: "AU", label: "AU" },
-];
 
 const shortBoxes = [
   {
@@ -423,15 +401,9 @@ storiesOf("Templates|Panels/", module)
         ];
 
         const recordAttachments = (
-<<<<<<< HEAD
           
             <Legend id="AttachDocs_Legend" title="Attached Documents" data={attachments} />
           
-=======
-          <Template>
-            <Legend id="AttachDocs_Legend" title="Attached Documents" data={attachments} />
-          </Template>
->>>>>>> develop
         );
 
         //
@@ -543,7 +515,6 @@ storiesOf("Templates|Panels/", module)
     },
   );
 
-<<<<<<< HEAD
 storiesOf("Templates/Modules", module)
   .addDecorator(FullScreen)
   .addDecorator(checkA11y)
@@ -617,19 +588,12 @@ storiesOf("Templates/Modules", module)
 
 
 storiesOf("Templates/Modules", module)
-=======
-storiesOf("Templates/Modules/Create", module)
->>>>>>> develop
   .addDecorator(Padding)
   .addDecorator(checkA11y)
   .add("Create Project", () => {
     return (
       <DialogBox
-<<<<<<< HEAD
         title="Create Job"
-=======
-        title="Create Project"
->>>>>>> develop
         buttons={[
           {
             id: "Cangel",
@@ -643,19 +607,11 @@ storiesOf("Templates/Modules/Create", module)
       >
 
         <Grid columns="2">
-<<<<<<< HEAD
           <Form >
             <FormSection >
               <TextInput
 
                 label="Job Number"
-=======
-          <Form>
-            <FormSection>
-              <TextInput
-
-                label="Project Number"
->>>>>>> develop
                 value="19-12341234"
               />
               <TextInput
@@ -687,19 +643,11 @@ storiesOf("Templates/Modules/Create", module)
 
                 label="Zip"
               />
-<<<<<<< HEAD
               <SelectMenu
 
                 label="Property Type"
               />
               <SelectMenu
-=======
-              <TextInput
-
-                label="Property Type"
-              />
-              <TextInput
->>>>>>> develop
 
                 label="Property Sub-Type"
               />
