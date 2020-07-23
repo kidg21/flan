@@ -70,7 +70,13 @@ const CenterDecorator = (storyFn) => {
 };
 
 const CenterDisplayGrid = (storyFn) => {
-  return (<Grid columns={3}><div />{storyFn()}<div /></Grid>);
+  return (
+    <Grid columns={3}>
+      <div />
+      {storyFn()}
+      <div />
+    </Grid>
+  );
 };
 
 export {
