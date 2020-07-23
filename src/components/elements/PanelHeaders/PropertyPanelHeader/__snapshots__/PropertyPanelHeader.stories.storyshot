@@ -60,16 +60,16 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 gxusZp"
     >
       <div
-        className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-        onClick={[Function]}
+        className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+        id="menu-popper-Property_Header-Menu"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
+          className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
           disabled={false}
           htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
+          id="menu-icon-Property_Header-Menu"
+          name="menu-icon-Property_Header-Menu"
+          onClick={[Function]}
           tabIndex="1"
           type="button"
         >

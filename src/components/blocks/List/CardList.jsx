@@ -11,7 +11,7 @@ import {
 } from "react-virtualized";
 import styled from "styled-components";
 import { DisableTransitionContext } from "States";
-import { getGuid } from "helpers";
+import getGuid from "utils/getGuid";
 
 /* eslint-disable security/detect-object-injection */
 // const GridWrapper = styled.div`

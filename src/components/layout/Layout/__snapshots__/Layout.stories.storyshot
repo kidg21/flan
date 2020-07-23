@@ -386,6 +386,7 @@ exports[` 5`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -413,6 +414,7 @@ exports[` 5`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -440,6 +442,7 @@ exports[` 5`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -467,6 +470,7 @@ exports[` 5`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -522,7 +526,7 @@ exports[` 5`] = `
         width={null}
       >
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_50"
           media=""
@@ -557,71 +561,57 @@ exports[` 5`] = `
                   className="IconBlock__Block-nokc92-0 UCGVw"
                   id={null}
                 >
-                  <a
-                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
-                    disabled={null}
-                    href={null}
-                    onClick={true}
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="share"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
-                      color="link"
-                      data-icon="share"
-                      data-prefix="far"
-                      focusable="false"
-                      fontSize="inherit"
-                      id={null}
-                      role="img"
+                    <path
+                      d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
+                      fill="currentColor"
                       style={Object {}}
-                      viewBox="0 0 576 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
-                    disabled={null}
-                    href={null}
-                    onClick={true}
+                    />
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="trash-alt"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
-                      color="link"
-                      data-icon="trash-alt"
-                      data-prefix="far"
-                      focusable="false"
-                      fontSize="inherit"
-                      id={null}
-                      role="img"
+                    <path
+                      d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                      fill="currentColor"
                       style={Object {}}
-                      viewBox="0 0 448 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </a>
+                    />
+                  </svg>
                   <div
-                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                    onClick={[Function]}
+                    className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                    id="menu-popper-storyshots_51"
                   >
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
+                      className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
                       disabled={false}
                       htmlFor={null}
-                      id={null}
-                      name={null}
-                      onClick={null}
+                      id="menu-icon-storyshots_51"
+                      name="menu-icon-storyshots_51"
+                      onClick={[Function]}
                       tabIndex="1"
                       type="button"
                     >
@@ -1060,9 +1050,11 @@ exports[` 5`] = `
         rows={null}
       >
         <img
+          alt="mockImage"
           className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
           onClick={null}
           src=""
+          title="mockImage"
           width="100%"
         />
         <section
@@ -1456,6 +1448,7 @@ exports[` 6`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1483,6 +1476,7 @@ exports[` 6`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1510,6 +1504,7 @@ exports[` 6`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1537,6 +1532,7 @@ exports[` 6`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1592,7 +1588,7 @@ exports[` 6`] = `
         width={null}
       >
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_52"
           media=""
@@ -1627,71 +1623,57 @@ exports[` 6`] = `
                   className="IconBlock__Block-nokc92-0 UCGVw"
                   id={null}
                 >
-                  <a
-                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
-                    disabled={null}
-                    href={null}
-                    onClick={true}
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="share"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
-                      color="link"
-                      data-icon="share"
-                      data-prefix="far"
-                      focusable="false"
-                      fontSize="inherit"
-                      id={null}
-                      role="img"
+                    <path
+                      d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
+                      fill="currentColor"
                       style={Object {}}
-                      viewBox="0 0 576 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
-                    disabled={null}
-                    href={null}
-                    onClick={true}
+                    />
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="trash-alt"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
-                      color="link"
-                      data-icon="trash-alt"
-                      data-prefix="far"
-                      focusable="false"
-                      fontSize="inherit"
-                      id={null}
-                      role="img"
+                    <path
+                      d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                      fill="currentColor"
                       style={Object {}}
-                      viewBox="0 0 448 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </a>
+                    />
+                  </svg>
                   <div
-                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                    onClick={[Function]}
+                    className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                    id="menu-popper-storyshots_53"
                   >
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
+                      className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
                       disabled={false}
                       htmlFor={null}
-                      id={null}
-                      name={null}
-                      onClick={null}
+                      id="menu-icon-storyshots_53"
+                      name="menu-icon-storyshots_53"
+                      onClick={[Function]}
                       tabIndex="1"
                       type="button"
                     >
@@ -2130,9 +2112,11 @@ exports[` 6`] = `
         rows={null}
       >
         <img
+          alt="mockImage"
           className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
           onClick={null}
           src=""
+          title="mockImage"
           width="100%"
         />
         <section

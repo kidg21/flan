@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
 // Default content if component is empty - good for prototyping
-export const PlaceholderText = css`
+const PlaceholderText = css`
   content: "";
   display: flex;
   flex: auto;
@@ -17,3 +17,5 @@ export const PlaceholderText = css`
   padding: 0.5rem;
   white-space: pre-wrap;
 `;
+
+export default PlaceholderText;

@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { PlaceholderText } from "helpers/Skeleton";
 import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
 

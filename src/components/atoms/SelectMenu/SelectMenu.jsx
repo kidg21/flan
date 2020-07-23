@@ -9,7 +9,7 @@ import Grid from "layout/Grid";
 import Text, { Label } from "base/Typography";
 import Select from "react-select";
 import Creatable from "react-select/creatable";
-import { Skeleton } from "helpers";
+import { Skeleton } from "helpers/Skeleton";
 import { DisabledContext } from "States";
 import { withOnChangeState } from "utils/hocs";
 

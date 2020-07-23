@@ -15,7 +15,7 @@ const Region = styled.section`
     return props.setBorder || "";
   }};
   border-color: ${(props) => {
-    return props.theme.palette.neutral40 ;
+    return props.theme.palette.neutral40;
   }};
   overflow: auto;
   box-shadow: ${(props) => {
@@ -24,7 +24,6 @@ const Region = styled.section`
   padding: 0px;
   pointer-events: initial;
 `;
-
 
 const TemplateWrapper = styled(Grid)`
   position: ${(props) => {
@@ -70,8 +69,6 @@ const widthSM = "18rem";
 const widthMD = "24rem";
 const widthLG = "30rem";
 const widthXL = "38rem";
-
-
 
 const templateHash = {
   A_01: {
@@ -220,7 +217,9 @@ function Template({
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
-    ({ setTemplate, setColumns, setRows, setBorder } = templateHash[template.toUpperCase()]);
+    ({
+      setTemplate, setColumns, setRows, setBorder,
+    } = templateHash[template.toUpperCase()]);
     setHeight = "100%";
     setPadding = "0";
     setColumnGap = "0";
@@ -247,7 +246,6 @@ function Template({
     setPosition = "absolute";
     zIndex = "999";
   }
-
 
   return (
     <TemplateWrapper

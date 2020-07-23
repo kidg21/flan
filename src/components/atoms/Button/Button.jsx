@@ -9,7 +9,7 @@ import Grid from "layout/Grid";
 import { Label } from "base/Typography";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
-import { Skeleton } from "helpers";
+import { Skeleton } from "helpers/Skeleton";
 
 const StyledButton = styled.button`
   display: flex;
@@ -180,7 +180,6 @@ function Button({
   let shadeColor;
   let tintColor;
 
-
   switch (variant && variant.toLowerCase()) {
     case "success":
       buttonColor = "success80";
@@ -253,36 +252,32 @@ function Button({
     borderColor = buttonColor;
   }
 
+  const sizeHash = {
+    sm: {
+      label: "xs",
+      icon: "sm",
+      height: "fit-content",
+      padding: "0.25em 0em",
+    },
+    lg: {
+      label: "lg",
+      icon: "xl",
+      height: "2.4rem",
+      padding: "0.5em 0.75em",
+    },
+    xl: {
+      label: "lg",
+      icon: "xl",
+      height: "3.4rem",
+      padding: "1.5em 1.75em",
+    },
+  };
 
-
-
-const sizeHash = {
-  "sm": {
-    label: "xs",
-    icon: "sm",
-    height: "fit-content",
-    padding: "0.25em 0em",
-  },
-  "lg": {
-    label: "lg",
-    icon: "xl",
-    height: "2.4rem",
-    padding: "0.5em 0.75em",
-  },
-  "xl": {
-    label: "lg",
-    icon: "xl",
-    height: "3.4rem",
-    padding: "1.5em 1.75em",
-  },
-};
-
-
-const selectedSize = size && sizeHash[size.toLowerCase()];
-const labelSize = selectedSize ? selectedSize.label : "lg";
-const iconSize = selectedSize ? selectedSize.icon : "inherit";
-const setHeight = selectedSize ? selectedSize.height : "2.4rem";
-const setPadding = selectedSize ? selectedSize.padding : "0em 0.75em";
+  const selectedSize = size && sizeHash[size.toLowerCase()];
+  const labelSize = selectedSize ? selectedSize.label : "lg";
+  const iconSize = selectedSize ? selectedSize.icon : "inherit";
+  const setHeight = selectedSize ? selectedSize.height : "2.4rem";
+  const setPadding = selectedSize ? selectedSize.padding : "0em 0.75em";
 
   let gridGap = null;
   let justifyItems = null;
@@ -370,6 +365,7 @@ Button.propTypes = {
   isPlain: PropTypes.bool,
   isRound: PropTypes.bool,
   isSolid: PropTypes.bool,
+  size: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(["button", "reset", "submit"]),
@@ -389,6 +385,7 @@ Button.defaultProps = {
   isPlain: null,
   isRound: null,
   isSolid: null,
+  size: null,
   label: null,
   onClick: null,
   type: "button",

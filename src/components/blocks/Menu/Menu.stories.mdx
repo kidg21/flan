@@ -1,60 +1,41 @@
+import { useState } from "hooks";
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
-import { Padding } from "helpers/Display";
+import { Padding, CenterDecorator, CenterDisplayGrid, Container } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
-import Button from "atoms/Button";
-import Text, {Title} from "base/Typography";
+import Button, { ButtonGroup } from "atoms/Button";
+import Text, { Title } from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Menu from "blocks/Menu";
+import { textMock } from "blocks/Menu/Menu.stories";
 
-<Meta title="Atoms|Menu" component={Menu} />
+<Meta title="Atoms/Menu" component={Menu} />
 
 # Menu
 
 #### Menus display a list of choices on temporary surfaces.
 
-<Preview withToolbar>
-  <Story name="Standard">
-  <Grid columns="3">
-  <div/>
-  <Card id="Menu_Standard_Card">
-  <Bar padding="2x" 
-  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
-  right={
-     <Menu  isButton visible 
-     data={[
-  {
-    label: "Save",
-  },
-  {
-    label: "Filter",
-  },
-  {
-    label: "Share",
-  },
-  {
-    label: "Delete",
-  },
-]}
- position="bottomLeft" />}
- />
- <Bar padding="2x" 
- left={
-   <Text size="lg" 
-   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
-   />
-   } />
- </Card>
- <div/>
- </Grid>
+<Preview>
+  <Story name="Standard" decorators={[Container, Padding, CenterDisplayGrid]}>
+    <Menu
+      id="menu-standard"
+      initVisible
+      data={[
+        { id: "save", label: "Save" },
+        { id: "filter", label: "Filter" },
+        { id: "share", label: "Share" },
+        { id: "delete", label: "Delete" },
+      ]}
+      position="bottomRight"
+    />
   </Story>
 </Preview>
 
-# Usage
+## Usage
 
-A menu displays a list of choices on a temporary surface. They appear when users interact with a button, action, or other control. Menus appear in front of all other permanent UI elements.
+A menu displays a list of choices on a temporary surface. They appear when users interact with a button,
+action, or other control. Menus appear in front of all other permanent UI elements.
 
 - **Focused**
 Menu content should be suited to user needs.
@@ -62,176 +43,413 @@ Menu content should be suited to user needs.
 - **Scannable**
 Menu items should be easy to scan.
 
-**Nested Menus** allow users to choose from a large variety of choices, by displaying menus with multiple levels of hierarchy. They are organized into menus of parent list items that contain child list items. Child list items appear to the right or left of parent list items, depending on where there is room to expand child list items. Nested Menus are generated based on the data array passed through.
+**Nested Menus** allow users to choose from a large variety of choices, by displaying menus with multiple
+levels of hierarchy. They are organized into menus of parent list items that contain child list items. Child
+list items appear to the right or left of parent list items, depending on the position of the menu. Nested Menus
+are generated based on the data array passed through.
 
-# Examples
+## Examples
 
-### Types
+### Menu Item Data
 
-Menus display lists of related options (which can be grouped together) as well as unrelated options. Menus can be text or text and icon. Adding an icon is an additional benefit to the user and provides extra context and guidance. If you are using icon and icons try to make sure that all of the Menu Items have an icon.
+Menus display lists of related options (which can be grouped together) as well as unrelated options. Menus can be
+text or text and icon. Adding an icon is an additional benefit to the user and provides extra context and guidance.
+If you are using icon and icons try to make sure that all of the Menu Items have an icon.
 
 <Preview>
-  <Story name="Types">
-   <Grid columns="3" gap="3xl">
-   <div/>
- <Card id="Menu_Icon_Card">
-  <Bar padding="2x" 
-  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
-  right={
-     <Menu
-      visible
-      id="Menu_Icon"
-      data={[
-        {
-          label: "Save",
-          icon: "save",
-          id: "save",
-        },
-        {
-          label: "Filter",
-          icon: "filter",
-          id: "filter",
-        },
-        {
-          label: "Share",
-          icon: "share",
-          id: "share",
-        },
-        {
-          label: "Delete",
-          icon: "delete",
-          id: "delete",
-        },
-      ]}
-      position="bottomLeft" />}
- />
- <Bar padding="2x" 
- left={
-   <Text size="lg" 
-   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
-   />
-   } />
- </Card>
- <div/>
-      </Grid>
+  <Story name="Menu Items" decorators={[CenterDisplayGrid]}>
+    <Card id="story-card">
+      <Bar
+        id="story-bar-title"
+        padding="2x" 
+        left={(<Title id="story-title" size="xl" weight="bold" text="Malibu, CA"/>)}
+        right={(
+          <Menu
+            id="menu-items"
+            visible
+            data={[{
+              label: "Save",
+              icon: "save",
+              id: "save",
+              onClick: action("Save Clicked"),
+            }, {
+              label: "Filter",
+              icon: "filter",
+              id: "filter",
+              onClick: action("Filter Clicked"),
+            }, {
+              disabled: true,
+              label: "Share",
+              icon: "share",
+              id: "share",
+              onClick: action("Click Disabled"),
+            }, {
+              label: "Delete",
+              icon: "delete",
+              id: "delete",
+              onClick: action("Delete Clicked"),
+            }]}
+            position="bottomLeft"
+          />
+        )}
+      />
+      <Bar
+        id="story-bar-text"
+        padding="2x" 
+        left={(
+          <Text
+            id="story-text"
+            size="lg" 
+            text={textMock}
+          />
+        )}
+      />
+    </Card>
   </Story>
 </Preview>
+
+Each item entry in a menu is configured by the `data` prop.
+
+| Property Key | Type     | Description |
+|-----------|----------|-------------|
+| id        | string   | id of the item, must be unique 
+| label     | string   | text to display
+| onClick   | function | callback when user clicks ite
+| icon      | string   | optional icon added to the beginning of the entry, see Libraries/Iconography for supported icons 
+| disabled  | boolean  | disabling an item, prevents user from clicking item 
+| data      | array    | nested submenu 
 
 ### Positions
 
-Menus should be positioned relative to the edge of the screen or browser. They typically appear next to (or in front of) the element that generates them. If they are in a position to be cut off by the browser or screen’s edge, the menu can should appear to the left, right, or above the element that generates it.
+`Menu` uses `Popper` to open a `MenuList` and position it relative to its anchor element. Make sure to position
+the menu properly so it doesn't get cut off. Supported positions include: `bottomRight` (default), `topRight`, `bottomLeft`, `topLeft`.
 
 <Preview>
-  <Story name="Position">
-   <Grid columns="3" gap="3xl">
-  <Card id="Menu_Position_BottomLeft_Card">
-  <Bar padding="2x" 
-  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
-  right={
-     <Menu
-      visible
-      id="Menu_Position_BottomLeft"
-      data={[
-        {
-          label: "Save",
-          id: "save"
-        },
-        {
-          label: "Filter",
-          id: "filter"
-        },
-        {
-          label: "Share",
-          id: "share"
-        },
-        {
-          label: "Delete",
-          id: "delete"
-        },
-      ]}
-      position="bottomLeft" />}
- />
- <Bar padding="2x" 
- left={
-   <Text size="lg" 
-   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
-   />
-   } />
- </Card>
-  <Card id="Menu_Position_BottomRight_Card">
-  <Bar padding="2x" 
-  right = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
-  left={
-     <Menu
-      visible
-      id="Menu_Position_BottomRight"
-      data={[
-        {
+  <Story name="Position" decorators={[CenterDecorator, Container, Padding]}>
+    <Grid columns={4}>
+      <Menu
+        id="menu-position-bottomRight"
+        visible
+        data={[{
           label: "Save",
           id: "save",
-        },
-        {
+        }, {
           label: "Filter",
           id: "filter",
-        },
-        {
+        }, {
           label: "Share",
           id: "share",
-        },
-        {
+        }, {
           label: "Delete",
           id: "delete",
-        },
-      ]}
-      position="bottomRight" />}
- />
- <Bar padding="2x" 
- left={
-   <Text size="lg" 
-   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
-   />
-   } />
- </Card>
- <Card id="Menu_Position_TopLeft_Card">
- <Bar padding="2x" 
- left={
-   <Text size="lg" 
-   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
-   />
-   } />
-   <Bar padding="2x" 
-  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
-  right={
-     <Menu
-      visible
-      id="Menu_Position_TopLeft"
-      data={[
-        {
+        }]}
+        position="bottomRight"
+      />
+      <Menu
+        visible
+        id="menu-position-topRight"
+        data={[{
           label: "Save",
           id: "save",
-        },
-        {
+        }, {
           label: "Filter",
-          id: "filter"
-        },
-        {
+          id: "filter",
+        }, {
           label: "Share",
-          id: "share"
-        },
-        {
+          id: "share",
+        }, {
           label: "Delete",
           id: "delete",
-        },
+        }]}
+        position="topRight"
+      />
+      <Menu
+        visible
+        id="menu-position-bottomLeft"
+        data={[{
+          label: "Save",
+          id: "save",
+        }, {
+          label: "Filter",
+          id: "filter",
+        }, {
+          label: "Share",
+          id: "share",
+        }, {
+          label: "Delete",
+          id: "delete",
+        }]}
+        position="bottomLeft"
+      />
+      <Menu
+        visible
+        id="menu-position-topLeft"
+        data={[{
+          label: "Save",
+          id: "save",
+        }, {
+          label: "Filter",
+          id: "filter",
+        }, {
+          label: "Share",
+          id: "share",
+        }, {
+          label: "Delete",
+          id: "delete",
+        }]}
+        position="topLeft"
+      />
+    </Grid>
+  </Story>
+</Preview>
+
+### Anchor
+
+The anchor element refers to the component the menu will open around. The default 
+anchor element is `<Button icon="options" isPlain isRound />`. If you want to change the anchor's
+style (i.e. Button is not round, or icon should be menu) or use a different component (`<Icon/>`),
+you can specify it as a child of `Menu`.
+
+<Preview>
+  <Story name="Anchor" decorators={[Container, Padding, CenterDisplayGrid]}>
+    <Menu
+      id="menu-anchor"
+      visible
+      data={[
+        { label: "Save" },
+        { label: "Filter" },
+        { label: "Share" },
+        { label: "Delete" },
       ]}
-      position="topLeft" />}
- />
- </Card>
-      </Grid>
+      position="bottomRight"
+    >
+      <Button id="button-anchor" label="Anchor" icon="star" alignCenter variant="warning" />
+    </Menu>
+  </Story>
+</Preview>
+
+### Stateless vs Stateful Menu
+
+There are two types of management to handle the visible state of `Menu`: stateless / controlled or stateful / uncontrolled.
+If a `visible` prop isn't set, `Menu` will handle its own state to open and close. If you want a parent component to control
+opening/closing, pass in `visible` to `Menu`. Use `Menu`'s' `onClose` prop and `onClick` prop of an anchor element to help toggle
+the visibility. With a stateless `Menu` it gives you the flexibility to control its visibilty from outside components.
+
+#### Stateless Menu with Custom Anchor
+
+<Preview>
+  <Story name="Stateless with Anchor Child" decorators={[Container, Padding, CenterDisplayGrid]}>
+    {() => {
+      const [visible, setVisible] = useState(true);
+      return (
+        <Menu
+          id="menu-stateless-anchor"
+          visible={visible}
+          onClose={() => { setVisible(false); }}
+          data={[
+            { label: "Save" },
+            { label: "Filter" },
+            { label: "Share" },
+            { label: "Delete" },
+          ]}
+          position="bottomRight"
+        >
+          <Button
+            label="Anchor"
+            isSolid
+            onClick={() => { setVisible((show) => { return !show; }); }}
+          />
+        </Menu>
+      );
+    }}
   </Story>
 </Preview>
 
 
+### Nested Menu
+
+`Menu` supports multiple levels of hierarchy. Use the `data` key on the item object to add
+an array of submenu item objects. All item objects are shaped the same no matter the level (ReCuRsIoN).
+If you are specifying ids, it is best to be sure all ids are unique. To make a submenu visible,
+hover over the entry (logic is handled internally). The position of the submenu
+will open in the same direction (to the left or right) as `position` provided to `Menu` (i.e.
+`position` is `bottomRight` -> `direction` is `right`, `position` is `bottomLeft` -> `direction` is `left`).
+
+Although `Menu` can handle n levels deep, they probably shouldn't go past 2 levels. Also, make
+sure submenus don't get cut off and become inaccessible to users.
+
+<Preview>
+  <Story name="Nested" decorators={[Container, Padding]}>
+    <Grid columns={2}>
+      <Menu
+        id="menu-nested-bottomRight"
+        initVisible
+        data={[{
+          id: "save",
+          label: "Save",
+        }, {
+          id: "filter",
+          label: "Filter",
+        }, {
+          id: "share",
+          label: "Share",
+          data: [{
+            id: "toasts",
+            label: "Toasts",
+          }, {
+            id: "popcorn",
+            label: "Popcorn",
+          }],
+        }, {
+          id: "delete",
+          label: "Delete",
+        }]}
+        position="bottomRight"
+      />
+      <Menu
+        id="menu-nested-bottomLeft"
+        initVisible
+        data={[{
+          id: "save",
+          label: "Save",
+        }, {
+          id: "filter",
+          label: "Filter",
+        }, {
+          id: "share",
+          label: "Share",
+          data: [{
+            id: "toast",
+            label: "Toast",
+          }, {
+            id: "popcorn",
+            label: "Popcorn",
+          }],
+        }, {
+          id: "delete",
+          label: "Delete",
+        }]}
+        position="bottomLeft"
+      />
+    </Grid>
+  </Story>
+</Preview>
+
+### Portal
+
+For cases when `Menu` needs to break out of the DOM hierarchy, use the `usePortal` prop. It places the
+menu list container in a `React.Portal`.
+
+> Currently, we only calculate the screen positon of the pop out
+> every time it gets opened. If a user scrolls, the position will get out of sync with its anchor.
+> So by default, we close the `Menu` when scrolling. In the future, we may support updating the
+> location of the pop out as the anchor element moves. Development would stem from `Popper` component.
+
+<Preview>
+  <Story name="Portal" decorators={[Padding]}>
+    <Menu
+      id="menu-portal"
+      usePortal
+      data={[
+        { id: "save", label: "Save" },
+        { id: "filter", label: "Filter" },
+        { id: "share", label: "Share" },
+        { id: "delete", label: "Delete" },
+      ]}
+    />
+  </Story>
+</Preview>
+
+### Flex Wrapper
+
+Use `isFlex` prop when the anchor element needs to be a flex component.
+
+<Preview>
+  <Story name="Flex" decorators={[CenterDecorator, Container, Padding]}>
+    <ButtonGroup columns={4}>
+      <Button id="button-normal1" label="Normal Button" />
+      <Menu
+        id="menu-flex"
+        isFlex
+        visible
+        data={[
+          { id: "save", label: "Save" },
+          { id: "filter", label: "Filter" },
+          { id: "share", label: "Share" },
+          { id: "delete", label: "Delete" },
+        ]}
+      >
+        <Button id="button-flex" label="Flex Menu" isSolid />
+      </Menu>
+      <Menu
+        id="menu-normal"
+        visible
+        data={[
+          { id: "save", label: "Save" },
+          { id: "filter", label: "Filter" },
+          { id: "share", label: "Share" },
+          { id: "delete", label: "Delete" },
+        ]}
+      >
+        <Button id="button-not-flex" label="Normal Menu" />
+      </Menu>
+      <Button id="button-normal2" label="Normal Button" />
+    </ButtonGroup>
+  </Story>
+</Preview>
 
 ## Props
 
 <Props of={Menu} />
+
+## Related Components
+
+Check out related components/stories used to create `Menu`!
+
+- Popper
+- List
+- ListItem
+- Button
+- Iconography
+
+## Deprecated Notes / Updates
+
+#### Giving New Life to Menu
+
+Unfortunately, the first iteration of `Menu`, was a bit inconsistent, easily broken, and hard to maintain.
+Today, we give new life to `Menu`! But, in order to do so, we must shed some tears to the fallen props.
+
+**Breaking Changes**
+
+- **Default anchor element switched from `<Icon icon={icon} />` to `<Button icon="options" isPlain isRound />`** -
+Making the default a `<Button />` makes the anchor element easier to target. If you want `<Icon />` to be
+your anchor element you will need to pass it in as a child.
+
+- **Removed `icon` prop** -
+For an anchor element with a different icon than `options`, you will need to remove this
+prop and pass a custom anchor element with your desired icon.
+
+- **Removed `onClick` prop** -
+For a custom `onClick` callback when clicking on the anchor element, you will need to remove this
+prop and attach the `onClick` event to the custom anchor element.
+
+- **Removed `isButton` prop** -
+We updated the default to be a `<Button />`. You will just need to remove this prop from your code.
+If the default anchor element isn't quite right, pass in a custom anchor element.
+
+- **Renamed `item.commands` to `item.data` for `data` prop** -
+This prop indicates a sub/nested menu. We renamed the prop
+to keep it consistent and indicate the recursion of the `data` prop.
+
+- **Removed `item.onClickLink` for `data` prop** -
+In a very early iteration, we named the `onClick` callback of an item to `item.onClickLink`.
+Long story short, I hope you were never using it. Use `item.onClick`.
+
+Newly supported features & fixes are documented above. Let's use this as a baseline so I don't have to
+list it all out. Make sure to keep these docs updated with changes :D
+
+---
+
+#### Birth of Menu
+
+`Menu` was born!

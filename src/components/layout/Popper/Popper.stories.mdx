@@ -1,0 +1,299 @@
+import { useState } from "hooks";
+import { Meta, Story, Preview, Props, Source } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { textMock, BoxMock } from "layout/Popper/Popper.stories.js";
+import { Padding, CenterDecorator, Container, CenterDisplayGrid, DisplayGrid } from "helpers/Display";
+import Popper from "layout/Popper";
+import Card from "elements/Card";
+import Button, { ButtonGroup } from "atoms/Button";
+import Grid from "layout/Grid";
+import List, { ListItem } from "blocks/List";
+
+<Meta title="Utilities/Popper" component={Popper} />
+
+# Popper
+
+#### Popper displays & positions content over an anchor element.
+
+<Preview withToolbar>
+  <Story name="Standard" decorators={[Container, Padding, CenterDisplayGrid]}>
+    {() => {
+        const [visible, setVisible] = useState(true);
+        return (
+          <Popper
+            id="popper-standard"
+            anchor={(
+              <Button
+                label="Pop"
+                isSolid
+                onClick={() => { setVisible((show) => { return !show; })}}
+              />
+            )}
+            visible={visible}
+            onClose={() => { setVisible(false); }}
+          >
+            <BoxMock>
+              <Card
+                title="Corn"
+                description={textMock}
+              />
+            </BoxMock>
+        </Popper>
+        );
+      }}
+  </Story>
+</Preview>
+
+## Examples
+
+### Positions
+
+`Popper` supports different positions in relation to the anchor element. Make sure
+to position `Popper` properly so it doesn't get cut off. Supported positions include:
+`bottomRight` (default), `topRight`, `bottomLeft`, `topLeft`.
+
+<Preview>
+  <Story name="Position" decorators={[CenterDecorator, Container, Padding]}>
+    <Grid columns="4">
+      <Popper
+        id="popper-position-bottomRight"
+        anchor={(
+          <Button
+            id="popper-button-bottomRight"
+            label="Bottom Right"
+            isSolid
+          />
+        )}
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-topRight"
+        anchor={(
+          <Button
+            id="popper-button-topRight"
+            label="Top Right"
+            isSolid
+          />
+        )}
+        visible
+        position="topRight"
+     >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-bottomLeft"
+        anchor={(
+          <Button
+            id="popper-button-bottomLeft"
+            label="Bottom Left"
+            isSolid
+          />
+        )}
+        visible
+        position="bottomLeft"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-topLeft"
+        anchor={(
+          <Button
+            id="popper-button-topLeft"
+            label="Top Left"
+            isSolid
+          />
+        )}
+        visible
+        position="topLeft"
+      >
+       <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </BoxMock>
+      </Popper>
+    </Grid>
+  </Story>
+</Preview>
+
+### Anchor
+
+The anchor element refers to the component the popper will open around. Use the
+`anchor` prop.
+
+<Preview>
+  <Story name="Anchor" decorators={[Container, Padding, CenterDecorator]}>
+    <Popper
+      id="popper-anchor"
+      visible
+      anchor={(
+        <Button
+          id="button-anchor"
+          label="Anchor"
+          icon="star"
+          alignCenter
+          variant="warning"
+        />
+      )}
+    >
+      <BoxMock>
+        <Card
+          title="Corn"
+          description={textMock}
+        />
+      </BoxMock>
+    </Popper>
+  </Story>
+</Preview>
+
+### Children Content
+
+`children` prop is used to determine what content will show in the pop-out.
+
+<Preview>
+  <Story name="Content" decorators={[Container, Padding, CenterDecorator]}>
+    <Popper
+      id="popper-content"
+      visible
+      anchor={(
+        <Button
+          id="button-anchor"
+          label="Anchor"
+        />
+      )}
+    >
+      <BoxMock>
+        <List
+          id="content-list"
+          title="Popcorn Content"
+          isInverse
+        >
+          <ListItem title="Butter" />
+          <ListItem title="Kettle Corn" />
+          <ListItem title="Cheesy Jalapeno" />
+        </List>
+      </BoxMock>
+    </Popper>
+  </Story>
+</Preview>
+
+### Portal
+
+For cases when `Popper` needs to break out of the DOM hierarchy, use the `usePortal` prop. It places
+the `children` content in a `React.Portal`.
+
+> By default, the popper will close on scroll to avoid the pop-out position to be out of sync
+> with its anchor. In the future, we may support updating the location of the pop-out as the
+> anchor position moves.
+
+<Preview>
+  <Story name="Portal" decorators={[Padding, DisplayGrid]}>
+    {() => {
+        const [visible, setVisible] = useState(false);
+        return (
+          <Popper
+            id="popper-portal"
+            anchor={(
+              <Button
+                id="button"
+                label="Portal Popper"
+                onClick={() => { setVisible((show) => { return !show; })}}
+                isSolid
+              />
+            )}
+            usePortal
+            visible={visible}
+            onClose={() => { setVisible(false); }}
+          >
+            <BoxMock>
+              <Card
+                id="card"
+                title="Corn"
+                description={textMock}
+              />
+            </BoxMock>
+        </Popper>
+        );
+      }}
+  </Story>
+</Preview>
+
+### Flex
+
+Use `isFlex` prop when the anchor element needs to be a flex component.
+
+<Preview>
+  <Story name="Flex" decorators={[CenterDecorator, Container, Padding]}>
+    <ButtonGroup columns={4}>
+      <Button id="button-normal" label="Normal Button" />
+      <Popper
+        id="popper-flex"
+        anchor={(
+          <Button
+            id="button-flex"
+            label="Flex Popper"
+            isSolid
+          />
+        )}
+        visible
+        isFlex
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-not-flex"
+        anchor={(
+          <Button
+            id="button-not-flex"
+            label="Normal Popper"
+          />
+        )}
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Button id="button-normal-2" label="Normal Button" />
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Popper} />
