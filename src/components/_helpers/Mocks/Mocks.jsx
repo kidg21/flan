@@ -103,21 +103,6 @@ MockHeaderGlobal.defaultProps = {
 };
 
 function MockHeader({ percentage }) {
-  const testData = [{
-    id: "a",
-    label: "Action",
-    onClick: () => { },
-  }, {
-    id: "b",
-    label: "Action",
-    onClick: () => { },
-  }, {
-    id: "c",
-    label: "Action",
-    commands: [
-      { id: "c0", label: "Action", onClick: () => { } },
-      { id: "c1", label: "Action" }],
-  }];
   return (
     <Card
       id="Card_Header"
@@ -147,10 +132,10 @@ function MockHeader({ percentage }) {
   );
 }
 MockHeader.propTypes = {
-  // stuff
+  percentage: PropTypes.number,
 };
 MockHeader.defaultProps = {
-  // stuff
+  percentage: 0,
 };
 
 function MockFooter() {
@@ -161,7 +146,7 @@ function MockFooter() {
       left={{
         content: (
           <Grid columns="auto 1fr">
-            <Link text="1" onClick={() => { }} />
+            <Icon icon="database" size="xs" />
             <Text text="Last Updated: May 23, 2020 • Source: CRMLS" />
           </Grid>
         ),
@@ -271,7 +256,7 @@ function MockTable() {
 
   const tableData = [
     {
-      Name: <Link text="477 Madison Avenue" />,
+      Name: <Link text="477 Madison Avenue" href="www.google.com" />,
       Address: "477 Madison Avenue",
       City: "New York",
       State: "NY",
@@ -285,7 +270,7 @@ function MockTable() {
       Acres: "2",
     },
     {
-      Name: <Link text="23 E. 21 St." />,
+      Name: <Link text="23 E. 21 St." href="www.google.com" />,
       Address: "23 E. 21St. #2",
       City: "New York",
       State: "NY",
@@ -299,7 +284,7 @@ function MockTable() {
       Acres: "0.5",
     },
     {
-      Name: <Link text="11 W. 20 St." />,
+      Name: <Link text="11 W. 20 St." href="www.google.com" />,
       Address: "11 W 20 St. #4R",
       City: "New York",
       State: "NY",
