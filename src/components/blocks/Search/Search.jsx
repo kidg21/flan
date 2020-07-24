@@ -51,7 +51,6 @@ const SearchTextInput = styled(TextInput)`
 
 const SearchButton = styled(Button)`
   flex: none;
-  /* margin-right: 0.5rem; */
 `;
 
 const DropContainer = styled(Container)`
