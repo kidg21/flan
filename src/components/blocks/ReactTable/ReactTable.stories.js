@@ -334,6 +334,7 @@ storiesOf("Data Display|ReactTable", module)
               Header: "Zip",
               accessor: "col5",
               sortType: 'basic',
+              isNumerical: 'true',
             },
             {
               Header: "Property Type",
@@ -361,7 +362,7 @@ storiesOf("Data Display|ReactTable", module)
               content: (<TextInput type="search" placeholder="Filter projects"/>),
             width: "fit-content",}}/>
           <Button label="Filters" icon="filter" isSolid />
-         <ReactTable columns={columns} data={data} />
+         <ReactTable hasSelection columns={columns} data={data} />
          </Page>
         </Panel>);
     });

@@ -54,6 +54,7 @@ border-color: ${(props) => {
   return ( props.theme.palette.neutral60
   );
 }};
+
 `;
 
 const IndeterminateCheckbox = React.forwardRef(
