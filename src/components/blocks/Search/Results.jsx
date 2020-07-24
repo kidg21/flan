@@ -9,7 +9,7 @@ function ResultContainer({ id, results }) {
     <React.Fragment>
       <List
         id={id}
-        title={`Showing 10 of ${results.length} Results`}
+        title={results.length >= 10 ? `Showing 10 of ${results.length} Results` : null}
         isInteractive
       >
         {results.slice(0, 10).map((item, index) => {
