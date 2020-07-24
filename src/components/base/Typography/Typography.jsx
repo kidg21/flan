@@ -263,7 +263,6 @@ function Label({
   text,
   isUppercase,
 }) {
-
   const weightHash = {
     light: 300,
     medium: 500,
