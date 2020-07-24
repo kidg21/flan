@@ -407,7 +407,7 @@ exports[` 10`] = `
           width={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hkSjVt Search__SearchButton-sey9om-3 hoihNF"
+            className="Button__StyledButton-sc-1v7sls2-0 dHqqoa Search__SearchButton-sey9om-3 htUUHK"
             disabled={false}
             htmlFor={null}
             id="Search_E3-search-button"
@@ -444,7 +444,7 @@ exports[` 10`] = `
             </section>
           </button>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-2 ewHPVk"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__SearchTextInput-sey9om-2 cNvUXa"
             id="Search_E3-search-bar_container"
             rows={null}
           >

@@ -13,7 +13,7 @@ exports[` 1`] = `
     width={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 hkSjVt Search__SearchButton-sey9om-3 hoihNF"
+      className="Button__StyledButton-sc-1v7sls2-0 dHqqoa Search__SearchButton-sey9om-3 htUUHK"
       disabled={false}
       htmlFor={null}
       id="Search_Standard-search-button"
@@ -50,7 +50,7 @@ exports[` 1`] = `
       </section>
     </button>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-2 ewHPVk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__SearchTextInput-sey9om-2 cNvUXa"
       id="Search_Standard-search-bar_container"
       rows={null}
     >
@@ -97,7 +97,7 @@ exports[` 2`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hkSjVt Search__SearchButton-sey9om-3 hoihNF"
+        className="Button__StyledButton-sc-1v7sls2-0 dHqqoa Search__SearchButton-sey9om-3 htUUHK"
         disabled={false}
         htmlFor={null}
         id="Suggestions-search-button"
@@ -134,7 +134,7 @@ exports[` 2`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-2 ewHPVk"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__SearchTextInput-sey9om-2 cNvUXa"
         id="Suggestions-search-bar_container"
         rows={null}
       >
@@ -310,7 +310,7 @@ exports[` 3`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hkSjVt Search__SearchButton-sey9om-3 hoihNF"
+        className="Button__StyledButton-sc-1v7sls2-0 dHqqoa Search__SearchButton-sey9om-3 htUUHK"
         disabled={false}
         htmlFor={null}
         id="Suggestions_More-search-button"
@@ -347,7 +347,7 @@ exports[` 3`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-2 ewHPVk"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__SearchTextInput-sey9om-2 cNvUXa"
         id="Suggestions_More-search-bar_container"
         rows={null}
       >
@@ -385,19 +385,6 @@ exports[` 3`] = `
           className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
           id={null}
         >
-          <li
-            className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
-          >
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-              fontSize="0.879em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.2px"
-            >
-              Showing 10 of 14 Results
-            </p>
-          </li>
           <li
             className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
             disabled={false}
@@ -793,6 +780,15 @@ exports[` 3`] = `
                 >
                   View All
                 </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 BMTkE"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  Showing 10 of 14 Results
+                </p>
               </div>
               <div
                 className="Bar__Slot-icfo76-1 cxljst"
@@ -800,7 +796,7 @@ exports[` 3`] = `
                 <div
                   className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
                   id={null}
-                  label="+ 4"
+                  label="14"
                 >
                   <label
                     className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
@@ -809,7 +805,7 @@ exports[` 3`] = `
                     htmlFor={null}
                     letterSpacing="1px"
                   >
-                    + 4
+                    14
                   </label>
                 </div>
               </div>
@@ -842,7 +838,7 @@ exports[` 4`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hkSjVt Search__SearchButton-sey9om-3 hoihNF"
+        className="Button__StyledButton-sc-1v7sls2-0 dHqqoa Search__SearchButton-sey9om-3 htUUHK"
         disabled={false}
         htmlFor={null}
         id="Search_Offline-search-button"
@@ -879,7 +875,7 @@ exports[` 4`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-2 ewHPVk"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__SearchTextInput-sey9om-2 cNvUXa"
         id="Search_Offline-search-bar_container"
         rows={null}
       >
@@ -988,7 +984,7 @@ exports[` 5`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hkSjVt Search__SearchButton-sey9om-3 hoihNF"
+        className="Button__StyledButton-sc-1v7sls2-0 dHqqoa Search__SearchButton-sey9om-3 htUUHK"
         disabled={false}
         htmlFor={null}
         id="Search_BadConnection-search-button"
@@ -1025,7 +1021,7 @@ exports[` 5`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-2 ewHPVk"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__SearchTextInput-sey9om-2 cNvUXa"
         id="Search_BadConnection-search-bar_container"
         rows={null}
       >
