@@ -7,7 +7,7 @@ import TextInput from "atoms/TextInput";
 import Button from "atoms/Button";
 // import Table from "blocks/Table";
 import Panel from "layout/Panel";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 
 function NewRoles({ id, columns, roles }) {
   const uId = useId(id);

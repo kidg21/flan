@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Text from "base/Typography";
 import TextInput from "atoms/TextInput";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 
 const NewInput = styled.input`
 display: none;

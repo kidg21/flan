@@ -11,7 +11,7 @@ import Button from "atoms/Button";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import TextInput from "atoms/TextInput";
-import { useId } from "helpers";
+import { useId } from "utils/hooks";
 import ResultContainer from "./Results.jsx";
 
 const SearchContainer = styled.form`

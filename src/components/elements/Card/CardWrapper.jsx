@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import styled from "styled-components";
-import { PlaceholderText, useId } from "helpers";
+import { useId } from "utils/hooks";
+import { PlaceholderText } from "helpers/Skeleton";
 
 const StyledCardWrapper = styled.div`
   position: relative;
