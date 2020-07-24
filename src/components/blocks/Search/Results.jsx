@@ -18,7 +18,6 @@ function ResultContainer({ id, maxRecords, results }) {
     <React.Fragment>
       <List
         id={id}
-        title={results.length > visibleRecords ? `Showing ${visibleRecords} of ${results.length} Results` : null}
         isInteractive
       >
         {results.slice(0, visibleRecords).map((item, index) => {
@@ -28,9 +27,10 @@ function ResultContainer({ id, maxRecords, results }) {
         {results.length > visibleRecords ? (
           <ListItem
             title="View All"
+            description={`Showing ${visibleRecords} of ${results.length} Results`}
             post={{
               type: "label",
-              label: `+ ${results.length - visibleRecords}`,
+              label: results.length.toString(),
             }}
             onClickItem={viewAll}
           />
