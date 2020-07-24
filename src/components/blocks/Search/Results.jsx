@@ -7,7 +7,7 @@ import List, { ListItem } from "blocks/List";
 
 function ResultContainer({ id, maxRecords, results }) {
   const [visibleRecords, setVisibleRecords] = useState(maxRecords);
-  function viewMore() { setVisibleRecords(visibleRecords + maxRecords); }
+  function viewAll() { setVisibleRecords(results.length); }
 
   // Reset visibleRecords when results changes
   useLayoutEffect(() => {
@@ -32,7 +32,7 @@ function ResultContainer({ id, maxRecords, results }) {
               type: "label",
               label: `+ ${results.length - visibleRecords}`,
             }}
-            onClickItem={viewMore}
+            onClickItem={viewAll}
           />
         ) : null}
       </List>
