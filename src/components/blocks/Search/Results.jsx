@@ -3,8 +3,6 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useState, useLayoutEffect } from "react";
 import PropTypes from "prop-types";
-import Bar from "layout/Bar";
-import { Link } from "base/Typography";
 import List, { ListItem } from "blocks/List";
 
 function ResultContainer({ id, maxRecords, results }) {
@@ -18,19 +16,26 @@ function ResultContainer({ id, maxRecords, results }) {
 
   return (
     <React.Fragment>
-      <List id={id} isInteractive>
+      <List
+        id={id}
+        title={results.length > visibleRecords ? `Showing ${visibleRecords} of ${results.length} Results` : null}
+        isInteractive
+      >
         {results.slice(0, visibleRecords).map((item, index) => {
           const { onClick, ...itemParams } = item;
           return <ListItem key={item.id || index} onClickItem={onClick} {...itemParams} />;
         })}
-      </List>
-      {results.length > visibleRecords
-        ? (
-          <Bar
-            padding="2x"
-            center={<Link text="View More" onClick={viewMore} />}
+        {results.length > visibleRecords ? (
+          <ListItem
+            title="View All"
+            post={{
+              type: "label",
+              label: `+ ${results.length - visibleRecords}`,
+            }}
+            onClickItem={viewMore}
           />
         ) : null}
+      </List>
     </React.Fragment>
   );
 }

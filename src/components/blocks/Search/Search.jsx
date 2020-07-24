@@ -1,85 +1,61 @@
-/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Bar from "layout/Bar";
+import Flex from "layout/Flex";
 import Text from "base/Typography";
 import Button from "atoms/Button";
-// import Grid from "layout/Grid";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import TextInput from "atoms/TextInput";
 import { useId } from "utils/hooks";
 import ResultContainer from "./Results.jsx";
 
-// const SearchContainer = styled.div`
-
 const SearchContainer = styled.form`
-  /* display: flex; */
   display: grid;
   grid-template-areas:
-  "A B"
-  "C C";
-  grid-template-columns: 1fr auto;
+  "A"
+  "B";
   grid-template-rows: auto 1fr;
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
+  grid-row-gap: 0.25rem;
   position: relative;
   padding: 0.5rem 0.5rem 0;
-  /* align-items: center; */
-  /* flex-direction: row; */
-  /* border: 1px solid; */
-  /* border-radius: 4px; */
-  /* border-color: ${(props) => {
-    return (props.theme.palette.neutral60
-    );
-  }}; */
-  /* &:hover {
-    border-color: ${(props) => {
-    return (
-      props.theme.palette.selected
-    );
-  }};
-  } */
-  /* &:selected {
-    border-color: ${(props) => {
-    return (
-      props.theme.palette.selected
-    );
-  }};
-  } */
 `;
 
-// const NewTextInput = styled.input`
-const NewTextInput = styled(TextInput)`
+const SearchInput = styled(Flex)`
   grid-area: A;
-  /* flex-grow: 2; */
-  /* border: none; */
-  /* min-height: 1.875rem; */
-  /* height: 2.4rem; */
-  /* padding: 0.125rem 0.5rem; */
-  /* font-family: ${(props) => { return props.theme.typography.primary; }}; */
-  /* ::placeholder {
-    font-weight: initial;
-    font-size: 0.90em;
-    letter-spacing: 0.5px;
-    color: ${(props) => {
-    return (
-      props.theme.text[props.placeholderColor] || props.theme.text.secondary
-    );
+  background-color: ${(props) => {
+    return props.theme.background.default;
   }};
-  } */
+  border: ${(props) => {
+    return `1px solid ${props.theme.palette.neutral60}`;
+  }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+  /* The padding gives the buttons space so they don't overlap the rounded corners of the container */
+  padding: 2px;
+  /* Necessary for the Menu List isn't cropped */
+  overflow: visible;
+`;
+
+const NewTextInput = styled(TextInput)`
+  flex: auto;
+  > * {
+    border: none;
+  }
 `;
 
 const SearchButton = styled(Button)`
-  grid-area: B;
+  flex: none;
+  margin-right: 0.5rem;
 `;
 
 const DropContainer = styled(Container)`
-  /* position: fixed; */
-  grid-area: C;
+  grid-area: B;
   position: absolute;
   width: 100%;
   z-index: ${(props) => {
@@ -156,23 +132,29 @@ function Search({
 
   return (
     <SearchContainer id={uId}>
-      <NewTextInput
-        id={`${uId}-search-bar`}
-        placeholder={placeholder}
-        type="search"
-        onChange={handleOnChange}
-        onKeyPress={handleOnKeyPress}
-        value={searchVal}
-      />
-      <SearchButton icon="search" isPlain onClick={handleOnSearch} />
+      <SearchInput flexDirection="row">
+        <SearchButton
+          id={`${uId}-search-button`}
+          icon="search"
+          isSolid
+          onClick={handleOnSearch}
+        />
+        <NewTextInput
+          id={`${uId}-search-bar`}
+          placeholder={placeholder}
+          type="search"
+          onChange={handleOnChange}
+          onKeyPress={handleOnKeyPress}
+          value={searchVal}
+        />
+      </SearchInput>
       {error || results
         ? (
           <DropContainer
             padding="0"
             id={`${uId}-results-container`}
-            maxHeight="23rem"
+            maxHeight="22rem"
             zIndex={zIndex}
-            hasBackground
           >
             {Body}
           </DropContainer>
@@ -183,7 +165,12 @@ function Search({
 }
 
 Search.propTypes = {
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
+  onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
+  onSearch: PropTypes.func,
+  placeholder: PropTypes.string,
   results: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -191,23 +178,18 @@ Search.propTypes = {
     href: PropTypes.string,
     onClick: PropTypes.func,
   })),
-  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  onChange: PropTypes.func,
-  onKeyPress: PropTypes.func,
-  onSearch: PropTypes.func,
-  placeholder: PropTypes.string,
   value: PropTypes.string,
   zIndex: PropTypes.number,
 };
 
 Search.defaultProps = {
-  id: null,
-  results: null,
   error: "",
+  id: null,
   onChange: null,
   onKeyPress: null,
   onSearch: null,
   placeholder: null,
+  results: null,
   value: "",
   zIndex: 1,
 };
