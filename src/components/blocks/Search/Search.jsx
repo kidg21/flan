@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Bar from "layout/Bar";
@@ -82,6 +82,9 @@ const DropContainer = styled(Container)`
   grid-area: C;
   position: absolute;
   width: 100%;
+  z-index: ${(props) => {
+    return props.zIndex;
+  }};
 `;
 
 const errorHash = {
@@ -98,8 +101,13 @@ function Search({
   onSearch,
   placeholder,
   results,
+  value,
+  zIndex,
 }) {
-  const searchVal = useRef("");
+  let searchVal = value;
+  let setSearchValue = onChange;
+  if (!setSearchValue) [searchVal, setSearchValue] = useState(value);
+
   const uId = useId(id);
   /**
    * Set state to current input value in search box.
@@ -107,13 +115,7 @@ function Search({
    * @param {object} e - event object that contains input value.
    */
   const handleOnChange = (e) => {
-    const currVal = e.target.value;
-
-    searchVal.current = currVal;
-
-    if (typeof onChange === "function") {
-      onChange(searchVal.current);
-    }
+    setSearchValue(e.target.value);
   };
 
   /**
@@ -123,7 +125,7 @@ function Search({
   const handleOnKeyPress = (e) => {
     if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
       e.preventDefault();
-      onKeyPress(searchVal.current);
+      onKeyPress(searchVal);
     }
   };
 
@@ -132,7 +134,7 @@ function Search({
    */
   const handleOnSearch = () => {
     if (typeof onSearch === "function") {
-      onSearch(searchVal.current);
+      onSearch(searchVal);
     }
   };
 
@@ -160,16 +162,21 @@ function Search({
         type="search"
         onChange={handleOnChange}
         onKeyPress={handleOnKeyPress}
+        value={searchVal}
       />
       <SearchButton icon="search" isPlain onClick={handleOnSearch} />
-      {error || results ?
-        <DropContainer
-          padding="0"
-          id={`${uId}-results-container`}
-          maxHeight="22rem"
-        >
-          {Body}
-        </DropContainer>
+      {error || results
+        ? (
+          <DropContainer
+            padding="0"
+            id={`${uId}-results-container`}
+            maxHeight="23rem"
+            zIndex={zIndex}
+            hasBackground
+          >
+            {Body}
+          </DropContainer>
+        )
         : null}
     </SearchContainer>
   );
@@ -189,6 +196,8 @@ Search.propTypes = {
   onKeyPress: PropTypes.func,
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
+  value: PropTypes.string,
+  zIndex: PropTypes.number,
 };
 
 Search.defaultProps = {
@@ -199,6 +208,8 @@ Search.defaultProps = {
   onKeyPress: null,
   onSearch: null,
   placeholder: null,
+  value: "",
+  zIndex: 1,
 };
 
 export default Search;
