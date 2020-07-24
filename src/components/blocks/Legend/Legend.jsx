@@ -132,42 +132,7 @@ function Legend({
   return (
     <Wrapper id={uId}>
       {title ? <LegendTitle weight="bold" text={title} /> : null}
-      <TableContainer id={`${uId}-table`}>
-        {/* if data is an array (possibly empty) then content has been loaded
-          and we should display it if it's not an array then assume content is still loading */}
-        {data instanceof Array > 0 ? data.map((row, index) => {
-          let rowValue = row.value;
-          if (row.onClick) {
-            rowValue = (<Link onClick={row.onClick} text={row.value} />);
-          }
-          const rowKey = row.id
-          || (typeof row.label === "string" && row.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
-          || (typeof row.value === "string" && row.value.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
-          || index;
-          return (
-            <Row key={rowKey}>
-              <Cell
-                cellBorder={cellBorder}
-                cellPadding={cellPadding}
-                cellBorderColor={cellBorderColor}
-                fontWeight={fontWeight}
-                fontSize={fontSize}
-              >
-                <Text size="sm" text={row.label} />
-              </Cell>
-              <Cell
-                cellBorder={cellBorder}
-                cellPadding={cellPadding}
-                cellBorderColor={cellBorderColor}
-                fontWeight={fontWeight}
-                fontSize={fontSize}
-              >
-                <Text size="sm" text={rowValue} />
-              </Cell>
-            </Row>
-          );
-        }) : <Loader />}
-      </TableContainer>
+      {content}
     </Wrapper>
   );
 }

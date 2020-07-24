@@ -34,23 +34,6 @@ const Section = styled.section`
   margin-bottom: 1rem;
 `;
 
-// function FormSection({ children, title }) {
-//   return (
-//     <Section>
-//       {title ? <TitleSection text={title} /> : null}
-//       {children}
-//     </Section>
-//   );
-// }
-// FormSection.propTypes = {
-//   children: PropTypes.node,
-//   title: PropTypes.string,
-// };
-// FormSection.defaultProps = {
-//   children: null,
-//   title: null,
-// };
-
 const Inputs = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(1, minmax(0, 1fr))";

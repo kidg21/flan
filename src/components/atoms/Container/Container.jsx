@@ -38,7 +38,7 @@ const BoxContainer = styled.div`
     return props.theme.palette.neutral40;
   }};
   border-radius: ${(props) => {
-    return props.radiusMin;
+    return props.theme.borders.radiusMin;
   }};
   ::-webkit-scrollbar {
     width: 0.5em;
@@ -88,7 +88,7 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
-  hasBorder: PropTypes.string,
+  hasBorder: PropTypes.bool,
   visible: PropTypes.bool,
   children: PropTypes.node,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -99,7 +99,7 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
-  hasBorder: null,
+  hasBorder: false,
   visible: true,
   children: null,
   height: null,

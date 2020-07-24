@@ -147,6 +147,27 @@ ButtonGroup.defaultProps = {
   className: null,
 };
 
+const sizeHash = {
+  sm: {
+    label: "xs",
+    icon: "sm",
+    height: "fit-content",
+    padding: "0.25em 0em",
+  },
+  lg: {
+    label: "lg",
+    icon: "xl",
+    height: "2.4rem",
+    padding: "0.5em 0.75em",
+  },
+  xl: {
+    label: "lg",
+    icon: "xl",
+    height: "3.4rem",
+    padding: "1.5em 1.75em",
+  },
+};
+
 function Button({
   className,
   count,
@@ -174,8 +195,6 @@ function Button({
   let borderColor;
   let buttonColor;
   let fontColor;
-  let buttonPadding;
-  let buttonHeight;
   let fontWeight;
   let shadeColor;
   let tintColor;
@@ -252,27 +271,6 @@ function Button({
     borderColor = buttonColor;
   }
 
-  const sizeHash = {
-    sm: {
-      label: "xs",
-      icon: "sm",
-      height: "fit-content",
-      padding: "0.25em 0em",
-    },
-    lg: {
-      label: "lg",
-      icon: "xl",
-      height: "2.4rem",
-      padding: "0.5em 0.75em",
-    },
-    xl: {
-      label: "lg",
-      icon: "xl",
-      height: "3.4rem",
-      padding: "1.5em 1.75em",
-    },
-  };
-
   const selectedSize = size && sizeHash[size.toLowerCase()];
   const labelSize = selectedSize ? selectedSize.label : "lg";
   const iconSize = selectedSize ? selectedSize.icon : "inherit";
@@ -327,13 +325,10 @@ function Button({
       setHeight={setHeight}
       borderWidth={borderWidth}
       buttonColor={buttonColor}
-      buttonPadding={buttonPadding}
       className={className}
       disabled={isDisabled}
       fontColor={fontColor}
-      buttonHeight={buttonHeight}
       fontWeight={fontWeight}
-      size={size}
       fullWidth={fullWidth}
       hasUnderline={hasUnderline}
       hoverColor={hoverColor}
@@ -365,7 +360,7 @@ Button.propTypes = {
   isPlain: PropTypes.bool,
   isRound: PropTypes.bool,
   isSolid: PropTypes.bool,
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["sm", "lg", "xl", ""]),
   label: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(["button", "reset", "submit"]),
@@ -385,7 +380,7 @@ Button.defaultProps = {
   isPlain: null,
   isRound: null,
   isSolid: null,
-  size: null,
+  size: "",
   label: null,
   onClick: null,
   type: "button",

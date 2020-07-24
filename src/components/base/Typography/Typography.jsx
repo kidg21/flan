@@ -5,13 +5,13 @@ import styled from "styled-components";
 // import { Skeleton } from "helpers/Skeleton";
 import { Lighten, Darken } from "Variables";
 
-
 const StyledLabel = styled.label`
   color: inherit;
   margin: 0;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   line-height: ${(props) => { return props.lineHeight; }};
   user-select: none;
+  text-transform: ${(props) => { return props.textTransform; }};
   font-size: ${(props) => { return props.fontSize; }};
   cursor: pointer;
   font-weight: ${(props) => { return props.fontWeight; }};
@@ -42,8 +42,6 @@ const LinkText = styled.a`
   letter-spacing: ${(props) => { return props.letterSpacing; }};
   color: ${(props) => { return props.theme.text.link; }};
   cursor: pointer;
-
-  
   &[disabled] {
     color: ${(props) => {
     return props.theme.text.disabled;
@@ -81,27 +79,91 @@ const Paragraph = styled.p`
   letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 
+const textSizeHash = {
+  xs: {
+    fontSize: "0.75rem",
+    letterSpacing: "0.4px",
+  },
+  sm: {
+    fontSize: "0.875rem",
+    letterSpacing: "0.25px",
+  },
+  lg: {
+    fontSize: "1.1rem",
+    letterSpacing: "0.8px",
+  },
+};
+
+const titleSizeHash = {
+  "lg": {
+    fontSize: "1.15rem",
+    letterSpacing: "0.4px",
+    fontWeight: "500",
+    as: "h5",
+  },
+  "xl": {
+    fontSize: "1.35rem",
+    letterSpacing: "0px",
+    fontWeight: "400",
+    as: "h4",
+  },
+  "2xl": {
+    fontSize: "1.5rem",
+    letterSpacing: "0.25px",
+    fontWeight: "400",
+    as: "h3",
+  },
+  "3xl": {
+    fontSize: "2rem",
+    letterSpacing: "0px",
+    fontWeight: "400",
+    as: "h2",
+  },
+  "4xl": {
+    fontSize: "2.5rem",
+    letterSpacing: "-1.5px",
+    fontWeight: "300",
+    as: "h1",
+  },
+};
+
+const labelSizeHash = {
+  xs: {
+    fontSize: "0.75em",
+    letterSpacing: "0.4px",
+  },
+  sm: {
+    fontSize: "0.8rem",
+    letterSpacing: "1px",
+  },
+  lg: {
+    fontSize: "1rem",
+    letterSpacing: ".5px",
+  },
+  xl: {
+    fontSize: "1.2rem",
+    letterSpacing: ".25px",
+  },
+};
+
+const linkSizeHash = {
+  "lg": {
+    fontSize: "1rem",
+    letterSpacing: "0.2px",
+  },
+  "xl": {
+    fontSize: "1.25rem",
+    letterSpacing: "0px",
+  },
+  "2xl": {
+    fontSize: "1.45rem",
+    letterSpacing: "0px",
+  },
+};
+
 function Text({
   children, className, id, size, text, weight,
 }) {
-  const sizeHash = {
-    xs: {
-      fontSize: "0.75rem",
-      letterSpacing: "0.4px",
-    },
-    sm: {
-      fontSize: "0.875rem",
-      letterSpacing: "0.25px",
-    },
-    lg: {
-      fontSize: "1.1rem",
-      letterSpacing: "0.8px",
-    },
-  };
-
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0.5px" };
-  const { fontSize, letterSpacing } = selectedSize;
-
   const weightHash = {
     light: 300,
     medium: 500,
@@ -110,6 +172,9 @@ function Text({
 
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+  const selectedSize = textSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0.5px" };
+  const { fontSize, letterSpacing } = selectedSize;
 
   return (
     <Paragraph
@@ -144,54 +209,19 @@ Text.defaultProps = {
 };
 
 function Title({
-  children, className, size, text, uppercase,
+  children, className, size, text, isUppercase,
 }) {
-
-  const sizeHash = {
-    "lg": {
-      fontSize: "1.15rem",
-      letterSpacing: "0.4px",
-      fontWeight: "500",
-      as: "h5",
-    },
-    "xl": {
-      fontSize: "1.35rem",
-      letterSpacing: "0px",
-      fontWeight: "400",
-      as: "h4",
-    },
-    "2xl": {
-      fontSize: "1.5rem",
-      letterSpacing: "0.25px",
-      fontWeight: "400",
-      as: "h3",
-    },
-    "3xl": {
-      fontSize: "2rem",
-      letterSpacing: "0px",
-      fontWeight: "400",
-      as: "h2",
-    },
-    "4xl": {
-      fontSize: "2.5rem",
-      letterSpacing: "-1.5px",
-      fontWeight: "300",
-      as: "h1",
-    },
+  const selectedSize = titleSizeHash[size && size.toLowerCase()] || {
+    fontSize: "1.2rem", as: "h6", fontWeight: "400", letterSpacing: "1px",
   };
-
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1.2rem", as: "h6", fontWeight: "400", letterSpacing: "1px" };
-  const { fontSize, as, letterSpacing, fontWeight } = selectedSize;
+  const {
+    fontSize, as, letterSpacing, fontWeight,
+  } = selectedSize;
 
   let textTransform;
-  const weightHash = {
-    light: 300,
-    bold: 500,
-  };
-
-  if (uppercase) {
-    textTransform= "uppercase";
-  };
+  if (isUppercase) {
+    textTransform = "uppercase";
+  }
 
   return (
     <TitleText
@@ -212,18 +242,15 @@ Title.propTypes = {
   className: PropTypes.string,
   /** Options: 'lg', 'xl', '2xl', '3xl', '4xl' */
   size: PropTypes.string,
-  uppercase: PropTypes.bool,
+  isUppercase: PropTypes.bool,
   text: PropTypes.string,
-  /** Options: 'light', 'bold' */
-  weight: PropTypes.string,
 };
 Title.defaultProps = {
   children: null,
   className: null,
   size: null,
-  uppercase: false,
+  isUppercase: false,
   text: null,
-  weight: null,
 };
 
 function Label({
@@ -231,46 +258,29 @@ function Label({
   className,
   htmlFor,
   isRequired,
+  weight,
   size,
   text,
-  uppercase,
+  isUppercase,
 }) {
-  const sizeHash = {
-    xxs: {
-      fontSize: "0.625rem",
-      letterSpacing: "1.5px",
-      fontWeight: "500",
-    },
-    xs: {
-      fontSize: "0.75em",
-      letterSpacing: "0.4px",
-      fontWeight: "400",
-    },
-    sm: {
-      fontSize: "0.875rem",
-      letterSpacing: "0.5px",
-      fontWeight: "400",
-    },
-    lg: {
-      fontSize: "1rem",
-      letterSpacing: ".5px",
-      fontWeight: "400",
-    },
-    xl: {
-      fontSize: "1.2rem",
-      letterSpacing: ".25px",
-      fontWeight: "400",
-    },
+
+  const weightHash = {
+    light: 300,
+    medium: 500,
+    bold: 600,
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", fontWeight: "400" };
-  const { fontSize, letterSpacing, fontWeight } = selectedSize;
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", fontWeight: "400" };
+  const { fontSize, letterSpacing } = selectedSize;
 
   let textTransform;
 
-  if (uppercase) {
-    textTransform= "uppercase";
-  };
+  if (isUppercase) {
+    textTransform = "uppercase";
+  }
 
   return (
     <StyledLabel
@@ -291,9 +301,9 @@ Label.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   htmlFor: PropTypes.string,
-  uppercase: PropTypes.bool,
+  isUppercase: PropTypes.bool,
   isRequired: PropTypes.bool,
-  /** Options: 'xxs', 'xs', 'sm', 'lg' */
+  /** Options: 'xs', 'sm', 'lg' */
   size: PropTypes.string,
   text: PropTypes.node,
   /** Options: 'light', 'medium', 'bold' */
@@ -302,7 +312,7 @@ Label.propTypes = {
 Label.defaultProps = {
   children: null,
   className: null,
-  uppercase: false,
+  isUppercase: false,
   htmlFor: null,
   isRequired: false,
   size: null,
@@ -313,22 +323,7 @@ Label.defaultProps = {
 function Link({
   children, className, disabled, href, onClick, size, target, text, weight,
 }) {
-  const sizeHash = {
-    "lg": {
-      fontSize: "1rem",
-      letterSpacing: "0.2px",
-    },
-    "xl": {
-      fontSize: "1.25rem",
-      letterSpacing: "0px",
-    },
-    "2xl": {
-      fontSize: "1.45rem",
-      letterSpacing: "0px",
-    },
-  };
-
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0px" };
+  const selectedSize = linkSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -380,4 +375,6 @@ Link.defaultProps = {
   weight: null,
 };
 
-export { Text as default, Title, Label, Link };
+export {
+  Text as default, Title, Label, Link,
+};

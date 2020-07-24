@@ -150,6 +150,7 @@ export const shadows = {
 
 export const borders = {
   radiusMin: "0.5rem",
+  radiusMed: "0.25rem",
   radiusMax: "5rem",
 };
 
@@ -190,6 +191,7 @@ export const DMPTheme = {
   },
   borders: {
     radiusMin: borders.radiusMin,
+    radiusMed: borders.radiusMed,
     radiusMax: borders.radiusMax,
   },
   shadows: shadows,
@@ -280,8 +282,8 @@ export const darkTheme = {
     warning: colors.orange20,
   },
   borders: {
-    border: borders.borderPrimary,
     radiusMin: borders.radiusMin,
+    radiusMed: borders.radiusMed,
     radiusMax: borders.radiusMax,
   },
   shadows: shadows,

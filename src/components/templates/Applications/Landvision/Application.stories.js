@@ -168,8 +168,6 @@ storiesOf("Templates|Applications/Research", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
         return (
           <Layout
             header={{
@@ -246,7 +244,7 @@ storiesOf("Templates|Applications/Research", module)
                                             </FormSection>
                                             <Bar center={<Button label="Start Research" isSolid />} />
                                           </Form>
-                                       )}
+                                        )}
                                         />
                                       </Panel>),
                                   }}
@@ -277,8 +275,6 @@ storiesOf("Templates|Applications/Research", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
 
         return (
           <Layout
@@ -345,7 +341,7 @@ storiesOf("Templates|Applications/Research", module)
                                     align: "left",
                                   }}
                                 />
-)}
+                              )}
                             >
                               <Template
                                 template="E_01"
@@ -391,13 +387,13 @@ storiesOf("Templates|Applications/Research", module)
                                 padding="0"
                                 header={
                                   <Bar contentAlign="center" left={<Title size="xl" text="Site Parcels" />} right={<Button label="Show Related Parcels" />} />
-                              }
+                                }
                                 footer={(
                                   <Bar right={{
                                     content: (<Button label="Define Site" isSolid />),
                                   }}
                                   />
-                              )}
+                                )}
                               >
                                 <Form>
 
@@ -444,7 +440,7 @@ storiesOf("Templates|Applications/Research", module)
                                                 label="Doc #"
                                                 value="837489274927"
                                               />
-                                                      </FieldGroup>
+                                            </FieldGroup>
 
                                             ),
                                             align: "left",
@@ -458,7 +454,7 @@ storiesOf("Templates|Applications/Research", module)
                                           }}
                                         />
                                       </Grid>
-          )}
+                                    )}
                                   />
 
                                   <Card
@@ -504,7 +500,7 @@ storiesOf("Templates|Applications/Research", module)
                                                 label="Doc #"
                                                 value="837489274927"
                                               />
-                                                      </FieldGroup>
+                                            </FieldGroup>
 
                                             ),
                                             align: "left",
@@ -518,7 +514,7 @@ storiesOf("Templates|Applications/Research", module)
                                           }}
                                         />
                                       </Grid>
-          )}
+                                    )}
                                   />
                                   <Card
                                     padding="0"
@@ -563,7 +559,7 @@ storiesOf("Templates|Applications/Research", module)
                                                 label="Doc #"
                                                 value="837489274927"
                                               />
-                                                      </FieldGroup>
+                                            </FieldGroup>
 
                                             ),
                                             align: "left",
@@ -577,7 +573,7 @@ storiesOf("Templates|Applications/Research", module)
                                           }}
                                         />
                                       </Grid>
-          )}
+                                    )}
                                   />
                                   <Card
                                     padding="0"
@@ -622,7 +618,7 @@ storiesOf("Templates|Applications/Research", module)
                                                 label="Doc #"
                                                 value="837489274927"
                                               />
-                                                      </FieldGroup>
+                                            </FieldGroup>
 
                                             ),
                                             align: "left",
@@ -636,7 +632,7 @@ storiesOf("Templates|Applications/Research", module)
                                           }}
                                         />
                                       </Grid>
-          )}
+                                    )}
                                   />
                                   <Card
                                     padding="0"
@@ -681,7 +677,7 @@ storiesOf("Templates|Applications/Research", module)
                                                 label="Doc #"
                                                 value="837489274927"
                                               />
-                                                      </FieldGroup>
+                                            </FieldGroup>
 
                                             ),
                                             align: "left",
@@ -695,7 +691,7 @@ storiesOf("Templates|Applications/Research", module)
                                           }}
                                         />
                                       </Grid>
-          )}
+                                    )}
                                   />
                                   <Card
                                     padding="0"
@@ -740,7 +736,7 @@ storiesOf("Templates|Applications/Research", module)
                                                 label="Doc #"
                                                 value="837489274927"
                                               />
-                                                      </FieldGroup>
+                                            </FieldGroup>
 
                                             ),
                                             align: "left",
@@ -754,7 +750,7 @@ storiesOf("Templates|Applications/Research", module)
                                           }}
                                         />
                                       </Grid>
-          )}
+                                    )}
                                   />
                                   <Card
                                     padding="0"
@@ -799,7 +795,7 @@ storiesOf("Templates|Applications/Research", module)
                                                 label="Doc #"
                                                 value="837489274927"
                                               />
-                                                      </FieldGroup>
+                                            </FieldGroup>
 
                                             ),
                                             align: "left",
@@ -813,7 +809,7 @@ storiesOf("Templates|Applications/Research", module)
                                           }}
                                         />
                                       </Grid>
-          )}
+                                    )}
                                   />
 
                                 </Form>
@@ -945,7 +941,7 @@ storiesOf("Templates|Applications/Research", module)
                                     width: "fit-content",
                                   }}
                                 />
-)}
+                              )}
                               padding="0"
                               footer={(
                                 <Bar
@@ -961,7 +957,7 @@ storiesOf("Templates|Applications/Research", module)
                                     align: "left",
                                   }}
                                 />
-)}
+                              )}
                             >
 
                               <Form>
@@ -998,7 +994,7 @@ storiesOf("Templates|Applications/Research", module)
                                 padding="2x"
                                 left={
                                   <MockDetails title="Site Assessment Totals" data={fieldData} />
-}
+                                }
                               />
                             ),
                           }}
@@ -1086,7 +1082,7 @@ storiesOf("Templates|Applications/Research", module)
                                     align: "left",
                                   }}
                                 />
-)}
+                              )}
                             >
                               <Template
                                 template="E_01"
@@ -1140,7 +1136,7 @@ storiesOf("Templates|Applications/Research", module)
                                         <Button label="Save & Next" isSolid />),
                                     }}
                                   />
-)}
+                                )}
                                 header={(
                                   <Bar
                                     left={{
@@ -1157,7 +1153,7 @@ storiesOf("Templates|Applications/Research", module)
                                       width: "fit-content",
                                     }}
                                   />
-                              )}
+                                )}
                               >
                                 <Form>
                                   <FormSection>
@@ -1263,7 +1259,7 @@ storiesOf("Templates|Applications/Research", module)
                                     width: "fit-content",
                                   }}
                                 />
-)}
+                              )}
                               padding="0"
                               footer={(
                                 <Bar
@@ -1279,7 +1275,7 @@ storiesOf("Templates|Applications/Research", module)
                                     align: "left",
                                   }}
                                 />
-)}
+                              )}
                             >
                               <Template
                                 template="E_01"
@@ -1329,7 +1325,7 @@ storiesOf("Templates|Applications/Research", module)
                                         <Button label="Save & Next" isSolid />),
                                     }}
                                   />
-)}
+                                )}
                               >
                                 <Form title="Subject Site">
                                   <TextInput label="Dimensions" />
@@ -1513,7 +1509,7 @@ storiesOf("Templates|Applications/Research", module)
                           header={<Bar padding="2x" left={<Title size="xl" text="Review" />} />}
                           footer={
                             <Bar padding="2x" contentAlign="center" left={<Button label="Attachments" />} right={<Button label="Complete" isSolid />} />
-                        }
+                          }
                         >
                           <Template
                             id="Review"
@@ -1553,13 +1549,13 @@ storiesOf("Templates|Applications/Research", module)
                                         <Bar
                                           padding="2x"
                                           center={(
-                                          <Icon
-                                      icon="file"
-                                      size="4xl"
-                                      fixedWidth
-                                      disabled
-                                    />
-                                  )}
+                                            <Icon
+                                              icon="file"
+                                              size="4xl"
+                                              fixedWidth
+                                              disabled
+                                            />
+                                          )}
                                         />
                                         <Text text="Please wait 5 seconds while we build your report..." />
                                         <Loader />
@@ -1657,7 +1653,7 @@ storiesOf("Templates|Applications/Research", module)
                                           weight="bold"
                                         />
                                       </Grid>
-)}
+                                    )}
                                   />
                                   <Grid columns="1">
 
@@ -1676,7 +1672,7 @@ storiesOf("Templates|Applications/Research", module)
                                           fullWidth
                                           onClick={doNothing}
                                         />
-                                  )}
+                                      )}
                                     />
                                     <Bar
                                       contentAlign="center"
@@ -1693,7 +1689,7 @@ storiesOf("Templates|Applications/Research", module)
                                           fullWidth
                                           onClick={doNothing}
                                         />
-                                  )}
+                                      )}
                                     />
                                     <Bar
                                       contentAlign="center"
@@ -1710,7 +1706,7 @@ storiesOf("Templates|Applications/Research", module)
                                           fullWidth
                                           onClick={doNothing}
                                         />
-                                  )}
+                                      )}
                                     />
                                     <Bar center={(
                                       <Button
@@ -1718,7 +1714,7 @@ storiesOf("Templates|Applications/Research", module)
                                         onClick={doNothing}
                                         isSolid
                                       />
-                              )}
+                                    )}
                                     />
 
                                   </Grid>

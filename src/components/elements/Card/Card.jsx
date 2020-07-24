@@ -84,7 +84,7 @@ const CardGridWrapper = styled(Grid)`
   ${StyledCardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
+    return props.theme.borders.radiusMed;
   }};
     box-shadow: ${(props) => {
     return props.theme.shadows.dropShadow;
@@ -147,7 +147,7 @@ function ExpandingSection({
             center={{
               content: (
                 <React.Fragment>
-                  {title ? <Title size="lg" text={title} weight="bold" /> : null}
+                  {title ? <Title size="xl" text={title} weight="bold" /> : null}
                   {description ? <Text text={description} /> : null}
                 </React.Fragment>
               ),
@@ -294,7 +294,7 @@ function Card({
       <LinkedWrapper >
         <React.Fragment >
           {title ? <Title size="xl" text={title} /> : null}
-          {description ? (<Text  text={description} />
+          {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
       </LinkedWrapper>
@@ -469,7 +469,7 @@ Card.defaultProps = {
   media: "",
   more: null,
   onClick: null,
-  padding: "2x",
+  padding: "0",
   shadow: null,
   title: "",
   variant: null,

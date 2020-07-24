@@ -21,7 +21,6 @@ const Region = styled.section`
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
-  padding: 0px;
   pointer-events: initial;
   outline: none;
 `;

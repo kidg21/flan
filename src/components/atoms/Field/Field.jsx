@@ -8,6 +8,9 @@ import Text, { Title, Label, Link } from "base/Typography";
 
 const FieldItem = styled(Grid)`
   text-align: left;
+  color: ${(props) => {
+    return props.theme.text.secondary;
+  }};
   align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
@@ -43,7 +46,7 @@ const GroupTitle = styled(Title)`
 const FieldLabel = styled(Label)`
   text-align: inherit;
   color: ${(props) => {
-    return props.theme.text[props.labelColor] || props.theme.text.secondary;
+    return props.theme.text[props.labelColor] || "inherit";
   }};
   cursor: initial;
   user-select: initial;
@@ -54,7 +57,7 @@ const FieldValue = styled(Text)`
     return props.valueAlign || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.text[props.valueColor] || props.theme.text.secondary;
+    return props.theme.text[props.valueColor] || "inherit";
   }};
   /* Default Value - displays when a Field's value is empty */
   &:empty {

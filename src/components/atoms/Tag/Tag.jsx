@@ -24,7 +24,7 @@ const TagContainer = styled.div`
   }};
   text-align: center;
   padding: ${(props) => {
-    return props.badgePadding || "";
+    return props.badgePadding || "0.2em .5em";
   }};
   line-height: normal;
   border-radius: ${(props) => {
@@ -51,7 +51,7 @@ function Tag({
     badgePadding = ".75em";
     borderRadius = "50%";
   } else if (label) {
-    labelType = <Label size="xxs" weight="medium" text={label} uppercase />;
+    labelType = <Label text={label} />;
 
     if (hasBackground) {
       badgeTextColor = "inverse";
