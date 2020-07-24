@@ -42,7 +42,7 @@ const SearchInput = styled(Flex)`
   overflow: visible;
 `;
 
-const NewTextInput = styled(TextInput)`
+const SearchTextInput = styled(TextInput)`
   flex: auto;
   > * {
     border: none;
@@ -51,7 +51,7 @@ const NewTextInput = styled(TextInput)`
 
 const SearchButton = styled(Button)`
   flex: none;
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
 `;
 
 const DropContainer = styled(Container)`
@@ -134,10 +134,10 @@ function Search({
         <SearchButton
           id={`${uId}-search-button`}
           icon="search"
-          isSolid
+          isPlain
           onClick={handleOnSearch}
         />
-        <NewTextInput
+        <SearchTextInput
           id={`${uId}-search-bar`}
           placeholder={placeholder}
           type="search"
