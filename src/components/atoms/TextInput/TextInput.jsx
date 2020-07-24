@@ -63,16 +63,16 @@ const Input = styled.input`
   &:hover {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.neutral80
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.neutral80
     );
   }};
     }
   &:focus {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.selected
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.selected
     );
   }};
     ::selection {
@@ -81,8 +81,8 @@ const Input = styled.input`
   }};
       background-color: ${(props) => {
     return (
-      props.theme.palette[props.inputSelectColor] ||
-      props.theme.palette.selected
+      props.theme.palette[props.inputSelectColor]
+      || props.theme.palette.selected
     );
   }};
     }
@@ -162,8 +162,7 @@ function TextInput({
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let errorText = "";
   if (isDisabled) {
     inputBorderColor = "neutral40";

@@ -219,8 +219,12 @@ function ListItem({
 
   const rightContent = getRightContent(post, disabled, onClick);
 
-  const handleOnClick = (e) => {
-    onClick(e.target.innerText);
+  const handleOnClick = () => {
+    onClick(title || description);
+  };
+
+  const handleOnClickItem = () => {
+    onClickItem(title || description);
   };
 
   const isInteractive = useContext(InteractiveContext);
@@ -238,7 +242,7 @@ function ListItem({
       selectedBackground={selectedBackground}
       tabIndex={disabled ? "-1" : tabIndex}
       className={className}
-      onClick={onClickItem} // to target whole list item
+      onClick={typeof onClickItem === "function" ? handleOnClickItem : null} // to target whole list item
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
@@ -339,12 +343,12 @@ function List({
       >
         {title ? (
           <ListTitleWrapper>
-            <ListTitle text={title}   />
+            <ListTitle text={title} />
           </ListTitleWrapper>
         ) : null}
         <PaddingContext.Provider value={padding}>
-          {children ||
-            data.map((item, index) => {
+          {children
+            || data.map((item, index) => {
               const itemKey = item.id || item.title || index;
               return (
                 <ListItem

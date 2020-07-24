@@ -5,7 +5,6 @@ import styled from "styled-components";
 // import { Skeleton } from "helpers/Skeleton";
 import { Lighten, Darken } from "Variables";
 
-
 const StyledLabel = styled.label`
   color: inherit;
   margin: 0;
@@ -37,14 +36,14 @@ const LinkText = styled.a`
   font-size: ${(props) => { return props.fontSize; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   font-family: ${(props) => { return props.theme.typography.primary; }};
-  // text-decoration: underline;
+  text-decoration: underline;
   margin: -.25em;
   padding: .25em;
   letter-spacing: ${(props) => { return props.letterSpacing; }};
   color: ${(props) => { return props.theme.text.link; }};
   cursor: pointer;
 
-  
+
   &[disabled] {
     color: ${(props) => {
     return props.theme.text.disabled;
@@ -350,4 +349,6 @@ Link.defaultProps = {
   weight: null,
 };
 
-export { Text as default, Title, Label, Link };
+export {
+  Text as default, Title, Label, Link,
+};

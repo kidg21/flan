@@ -6,7 +6,6 @@ import styled from "styled-components";
 import { PlaceholderText } from "helpers/Skeleton";
 import Grid from "layout/Grid";
 
-
 const Region = styled.section`
   position: relative;
   grid-area: ${(props) => {
@@ -14,9 +13,11 @@ const Region = styled.section`
   }};
   height: inherit;
   border-right: 1px solid  ${(props) => {
-    return props.theme.palette.neutral40 ;
+    return props.theme.palette.neutral40;
   }};
-  overflow: auto;
+  overflow: ${(props) => {
+    return props.overflow || "auto";
+  }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
@@ -41,7 +42,6 @@ const Region = styled.section`
     }
   }
 `;
-
 
 const TemplateWrapper = styled(Grid)`
   position: ${(props) => {
@@ -263,7 +263,6 @@ function Template({
     setPosition = "absolute";
     zIndex = "999";
   }
-
 
   return (
     <TemplateWrapper
