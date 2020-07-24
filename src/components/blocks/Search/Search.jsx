@@ -8,7 +8,6 @@ import Bar from "layout/Bar";
 import Flex from "layout/Flex";
 import Text from "base/Typography";
 import Button from "atoms/Button";
-import Menu from "blocks/Menu";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import TextInput from "atoms/TextInput";
@@ -38,7 +37,7 @@ const SearchInput = styled(Flex)`
     return props.theme.borders.radiusMin;
   }};
   /* The padding gives the buttons space so they don't overlap the rounded corners of the container */
-  padding: 1px;
+  padding: 2px;
   /* Necessary for the Menu List isn't cropped */
   overflow: visible;
 `;
@@ -52,13 +51,13 @@ const NewTextInput = styled(TextInput)`
 
 const SearchButton = styled(Button)`
   flex: none;
+  margin-right: 0.5rem;
 `;
 
 const DropContainer = styled(Container)`
   grid-area: B;
   position: absolute;
   width: 100%;
-  /* opacity: 0.5; */
 `;
 
 const errorHash = {
@@ -69,9 +68,7 @@ const errorHash = {
 
 function Search({
   error,
-  hasOptions,
   id,
-  options,
   onChange,
   onKeyPress,
   onSearch,
@@ -137,7 +134,7 @@ function Search({
         <SearchButton
           id={`${uId}-search-button`}
           icon="search"
-          isPlain
+          isSolid
           onClick={handleOnSearch}
         />
         <NewTextInput
@@ -147,20 +144,6 @@ function Search({
           onChange={handleOnChange}
           onKeyPress={handleOnKeyPress}
         />
-        {hasOptions
-          ? (
-            <Menu
-              icon="down"
-              position="bottomLeft"
-              data={options}
-            >
-              <Button
-                id={`${uId}-search-options`}
-                icon="down"
-                isPlain
-              />
-            </Menu>
-          ) : null}
       </SearchInput>
       {error || results
         ? (
@@ -177,40 +160,29 @@ function Search({
   );
 }
 
-const itemShape = {
-  disabled: PropTypes.bool,
-  icon: PropTypes.string,
-  id: PropTypes.string,
-  label: PropTypes.string,
-  onClick: PropTypes.func,
-};
-
 Search.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  hasOptions: PropTypes.bool,
   id: PropTypes.string,
   onChange: PropTypes.func,
   onKeyPress: PropTypes.func,
   onSearch: PropTypes.func,
-  options: PropTypes.arrayOf(PropTypes.shape(itemShape)),
   placeholder: PropTypes.string,
   results: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
     href: PropTypes.string,
+    more: PropTypes.func,
     onClick: PropTypes.func,
   })),
 };
 
 Search.defaultProps = {
   error: "",
-  hasOptions: false,
   id: null,
   onChange: null,
   onKeyPress: null,
   onSearch: null,
-  options: [],
   placeholder: null,
   results: null,
 };
