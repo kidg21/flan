@@ -18,16 +18,16 @@ exports[` 1`] = `
     onClick={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-3 eKxcvy Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
       href={null}
-      id="storyshots_190"
+      id="storyshots_188"
       media=""
       onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
-        id="storyshots_191"
+        id="storyshots_189"
         media=""
         onClick={null}
       >
@@ -90,7 +90,7 @@ exports[` 1`] = `
     </div>
   </div>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -120,9 +120,9 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
   href={null}
-  id="storyshots_192"
+  id="storyshots_190"
   media=""
   onClick={null}
 >
@@ -209,14 +209,14 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 bIzuts"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 fNSwGV"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_193"
+    id="storyshots_191"
     media=""
     onClick={null}
   >
@@ -300,9 +300,9 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_194"
+    id="storyshots_192"
     media=""
     onClick={null}
   >
@@ -386,9 +386,9 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_195"
+    id="storyshots_193"
     media=""
     onClick={null}
   >
@@ -472,9 +472,9 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_196"
+    id="storyshots_194"
     media=""
     onClick={null}
   >
@@ -562,14 +562,14 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 bIzuts"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 fNSwGV"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_197"
+    id="storyshots_195"
     media=""
     onClick={null}
   >
@@ -634,7 +634,7 @@ exports[` 4`] = `
             Upgrade to premium to take advantage of this feature.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+            className="Typography__LinkText-sc-19auepv-1 hDCmeI"
             disabled={false}
             fontSize="0.876em"
             fontWeight={600}
@@ -674,9 +674,9 @@ exports[` 4`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 kgJVYQ Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
-    id="storyshots_198"
+    id="storyshots_196"
     media=""
     onClick={null}
   >
@@ -741,7 +741,7 @@ exports[` 4`] = `
             Update payment information in order to complete transaction.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+            className="Typography__LinkText-sc-19auepv-1 hDCmeI"
             disabled={false}
             fontSize="0.876em"
             fontWeight={600}

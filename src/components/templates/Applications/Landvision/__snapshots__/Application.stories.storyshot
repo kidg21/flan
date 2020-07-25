@@ -37,7 +37,7 @@ exports[` 1`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -92,7 +92,7 @@ exports[` 1`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -118,7 +118,7 @@ exports[` 1`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jPqmOm"
+              className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -144,7 +144,7 @@ exports[` 1`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -170,7 +170,7 @@ exports[` 1`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -206,7 +206,7 @@ exports[` 1`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -296,6 +296,7 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -323,6 +324,7 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -350,6 +352,7 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -377,6 +380,7 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -426,7 +430,7 @@ exports[` 1`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -515,7 +519,7 @@ exports[` 1`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                  className="Template__Region-sc-1i4nzbu-0 kcJhik"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -542,6 +546,7 @@ exports[` 1`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -569,6 +574,7 @@ exports[` 1`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -599,6 +605,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -626,6 +633,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -653,6 +661,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -680,6 +689,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -707,6 +717,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -734,6 +745,7 @@ exports[` 1`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -759,7 +771,7 @@ exports[` 1`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                  className="Template__Region-sc-1i4nzbu-0 izDKsY"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -770,7 +782,7 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                      className="Template__Region-sc-1i4nzbu-0 kcJhik"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -806,7 +818,7 @@ exports[` 1`] = `
                               className="Bar__Slot-icfo76-1 kZQbjh"
                             >
                               <button
-                                className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
+                                className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
                                 disabled={false}
                                 htmlFor={null}
                                 id={null}
@@ -1038,7 +1050,7 @@ exports[` 1`] = `
                                           className="Bar__Slot-icfo76-1 dLaZFL"
                                         >
                                           <button
-                                            className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                                            className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                                             disabled={false}
                                             htmlFor={null}
                                             id={null}
@@ -1076,9 +1088,11 @@ exports[` 1`] = `
                               rows={null}
                             >
                               <img
+                                alt="mockImage"
                                 className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
                                 onClick={null}
                                 src=""
+                                title="mockImage"
                                 width="100%"
                               />
                               <section
@@ -1228,7 +1242,7 @@ exports[` 1`] = `
                                     letterSpacing="0px"
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                                      className="Typography__LinkText-sc-19auepv-1 hDCmeI"
                                       disabled={false}
                                       fontSize="0.876em"
                                       fontWeight={600}
@@ -1296,7 +1310,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1351,7 +1365,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1377,7 +1391,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jPqmOm"
+              className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1403,7 +1417,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1429,7 +1443,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1465,7 +1479,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1555,6 +1569,7 @@ exports[` 2`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -1582,6 +1597,7 @@ exports[` 2`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -1609,6 +1625,7 @@ exports[` 2`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -1636,6 +1653,7 @@ exports[` 2`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -1685,7 +1703,7 @@ exports[` 2`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -1774,7 +1792,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                  className="Template__Region-sc-1i4nzbu-0 kcJhik"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -1801,6 +1819,7 @@ exports[` 2`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -1828,6 +1847,7 @@ exports[` 2`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -1858,6 +1878,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1885,6 +1906,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1912,6 +1934,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1939,6 +1962,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1966,6 +1990,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -1993,6 +2018,7 @@ exports[` 2`] = `
                       disabled={true}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="-1"
                     >
                       <div
@@ -2018,7 +2044,7 @@ exports[` 2`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                  className="Template__Region-sc-1i4nzbu-0 izDKsY"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -2029,7 +2055,7 @@ exports[` 2`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                      className="Template__Region-sc-1i4nzbu-0 kcJhik"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -2066,7 +2092,7 @@ exports[` 2`] = `
                               className="Bar__Slot-icfo76-1 fiTHpV"
                             >
                               <button
-                                className="Button__StyledButton-sc-1v7sls2-0 iIqFDu"
+                                className="Button__StyledButton-sc-1v7sls2-0 gqVIPO"
                                 disabled={false}
                                 htmlFor={null}
                                 id={null}
@@ -2104,7 +2130,7 @@ exports[` 2`] = `
                             rows={null}
                           >
                             <section
-                              className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                              className="Template__Region-sc-1i4nzbu-0 kcJhik"
                               id="A"
                               placeholder="A"
                               tabIndex="0"
@@ -2118,7 +2144,7 @@ exports[` 2`] = `
                                   className="Bar__Slot-icfo76-1 kZQbjh"
                                 >
                                   <div
-                                    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                     href={null}
                                     id="storyshots_67"
                                     media=""
@@ -2130,7 +2156,7 @@ exports[` 2`] = `
                                       rows={null}
                                     >
                                       <button
-                                        className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                        className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                         disabled={false}
                                         htmlFor={null}
                                         id={null}
@@ -2167,7 +2193,7 @@ exports[` 2`] = `
                                         </section>
                                       </button>
                                       <button
-                                        className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                        className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                         disabled={false}
                                         htmlFor={null}
                                         id={null}
@@ -2204,7 +2230,7 @@ exports[` 2`] = `
                                         </section>
                                       </button>
                                       <button
-                                        className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                        className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                         disabled={false}
                                         htmlFor={null}
                                         id={null}
@@ -2241,7 +2267,7 @@ exports[` 2`] = `
                                         </section>
                                       </button>
                                       <button
-                                        className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                        className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                         disabled={false}
                                         htmlFor={null}
                                         id={null}
@@ -2343,7 +2369,7 @@ exports[` 2`] = `
                       </div>
                     </section>
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                      className="Template__Region-sc-1i4nzbu-0 izDKsY"
                       id="B"
                       placeholder="B"
                       tabIndex="0"
@@ -2385,7 +2411,7 @@ exports[` 2`] = `
                               rows={null}
                             >
                               <div
-                                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_68"
                                 media=""
@@ -2557,7 +2583,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_69"
                                 media=""
@@ -2729,7 +2755,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_70"
                                 media=""
@@ -2916,7 +2942,7 @@ exports[` 2`] = `
                               className="Bar__Slot-icfo76-1 kZQbjh"
                             >
                               <button
-                                className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                                className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                                 disabled={false}
                                 htmlFor={null}
                                 id={null}
@@ -2995,7 +3021,7 @@ exports[` 3`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3050,7 +3076,7 @@ exports[` 3`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3076,7 +3102,7 @@ exports[` 3`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jPqmOm"
+              className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3102,7 +3128,7 @@ exports[` 3`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3128,7 +3154,7 @@ exports[` 3`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3164,7 +3190,7 @@ exports[` 3`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3254,6 +3280,7 @@ exports[` 3`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -3281,6 +3308,7 @@ exports[` 3`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -3308,6 +3336,7 @@ exports[` 3`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -3335,6 +3364,7 @@ exports[` 3`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -3384,7 +3414,7 @@ exports[` 3`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -3473,7 +3503,7 @@ exports[` 3`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                  className="Template__Region-sc-1i4nzbu-0 kcJhik"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -3500,6 +3530,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3527,6 +3558,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3581,6 +3613,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3608,6 +3641,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3635,6 +3669,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3662,6 +3697,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3689,6 +3725,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3716,6 +3753,7 @@ exports[` 3`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -3741,7 +3779,7 @@ exports[` 3`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                  className="Template__Region-sc-1i4nzbu-0 izDKsY"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -3752,7 +3790,7 @@ exports[` 3`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                      className="Template__Region-sc-1i4nzbu-0 kcJhik"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -3781,7 +3819,7 @@ exports[` 3`] = `
                                 id={null}
                               >
                                 <button
-                                  className="Button__StyledButton-sc-1v7sls2-0 coRBFl Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+                                  className="Button__StyledButton-sc-1v7sls2-0 caABMl Tabs__TabButton-sc-1aqycph-0 jSVuAs"
                                   disabled={false}
                                   htmlFor={null}
                                   id={null}
@@ -3807,7 +3845,7 @@ exports[` 3`] = `
                                   </section>
                                 </button>
                                 <button
-                                  className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                                  className="Button__StyledButton-sc-1v7sls2-0 dkxGxr Tabs__TabButton-sc-1aqycph-0 gzDOzw"
                                   disabled={false}
                                   htmlFor={null}
                                   id={null}
@@ -3874,7 +3912,7 @@ exports[` 3`] = `
                                   letterSpacing="0px"
                                 >
                                   <a
-                                    className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                                    className="Typography__LinkText-sc-19auepv-1 hDCmeI"
                                     disabled={false}
                                     fontSize="0.876em"
                                     fontWeight={600}
@@ -4088,7 +4126,7 @@ exports[` 3`] = `
                                   className="Bar__Slot-icfo76-1 fNcQEg"
                                 >
                                   <button
-                                    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+                                    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
                                     disabled={false}
                                     htmlFor={null}
                                     id={null}
@@ -4118,7 +4156,7 @@ exports[` 3`] = `
                                   className="Bar__Slot-icfo76-1 kZQbjh"
                                 >
                                   <button
-                                    className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                                    className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                                     disabled={false}
                                     htmlFor={null}
                                     id={null}
@@ -4199,7 +4237,7 @@ exports[` 3`] = `
                       </div>
                     </section>
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                      className="Template__Region-sc-1i4nzbu-0 izDKsY"
                       id="B"
                       placeholder="B"
                       tabIndex="0"
@@ -4210,9 +4248,11 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <img
+                          alt="mockImage"
                           className="Image__ImageWrapper-sc-18abvff-0 hXzVKy"
                           onClick={null}
                           src=""
+                          title="mockImage"
                           width="100%"
                         />
                         <section
@@ -4362,7 +4402,7 @@ exports[` 3`] = `
                               letterSpacing="0px"
                             >
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                                className="Typography__LinkText-sc-19auepv-1 hDCmeI"
                                 disabled={false}
                                 fontSize="0.876em"
                                 fontWeight={600}
@@ -4427,7 +4467,7 @@ exports[` 4`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -4482,7 +4522,7 @@ exports[` 4`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -4508,7 +4548,7 @@ exports[` 4`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jPqmOm"
+              className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -4534,7 +4574,7 @@ exports[` 4`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -4560,7 +4600,7 @@ exports[` 4`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -4596,7 +4636,7 @@ exports[` 4`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -4686,6 +4726,7 @@ exports[` 4`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -4713,6 +4754,7 @@ exports[` 4`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -4740,6 +4782,7 @@ exports[` 4`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -4767,6 +4810,7 @@ exports[` 4`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -4816,7 +4860,7 @@ exports[` 4`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -4905,7 +4949,7 @@ exports[` 4`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                  className="Template__Region-sc-1i4nzbu-0 kcJhik"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -4932,6 +4976,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -4959,6 +5004,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5013,6 +5059,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5064,6 +5111,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5115,6 +5163,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5142,6 +5191,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5169,6 +5219,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5196,6 +5247,7 @@ exports[` 4`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -5221,7 +5273,7 @@ exports[` 4`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                  className="Template__Region-sc-1i4nzbu-0 izDKsY"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -5232,7 +5284,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                      className="Template__Region-sc-1i4nzbu-0 kcJhik"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -5256,7 +5308,7 @@ exports[` 4`] = `
                               className="Bar__Slot-icfo76-1 fNcQEg"
                             >
                               <button
-                                className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                                className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                                 disabled={false}
                                 htmlFor={null}
                                 id={null}
@@ -5286,7 +5338,7 @@ exports[` 4`] = `
                               className="Bar__Slot-icfo76-1 kZQbjh"
                             >
                               <button
-                                className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+                                className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
                                 disabled={false}
                                 htmlFor={null}
                                 id={null}
@@ -5344,7 +5396,7 @@ exports[` 4`] = `
                             rows={null}
                           >
                             <section
-                              className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                              className="Template__Region-sc-1i4nzbu-0 kcJhik"
                               id="A"
                               placeholder="A"
                               tabIndex="0"
@@ -5358,7 +5410,7 @@ exports[` 4`] = `
                                   className="Bar__Slot-icfo76-1 kZQbjh"
                                 >
                                   <div
-                                    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                     href={null}
                                     id="storyshots_77"
                                     media=""
@@ -5370,7 +5422,7 @@ exports[` 4`] = `
                                       rows={null}
                                     >
                                       <button
-                                        className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                        className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                         disabled={false}
                                         htmlFor={null}
                                         id={null}
@@ -5407,7 +5459,7 @@ exports[` 4`] = `
                                         </section>
                                       </button>
                                       <button
-                                        className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                        className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                         disabled={false}
                                         htmlFor={null}
                                         id={null}
@@ -5444,7 +5496,7 @@ exports[` 4`] = `
                                         </section>
                                       </button>
                                       <button
-                                        className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                        className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                         disabled={false}
                                         htmlFor={null}
                                         id={null}
@@ -5481,7 +5533,7 @@ exports[` 4`] = `
                                         </section>
                                       </button>
                                       <button
-                                        className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                        className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                         disabled={false}
                                         htmlFor={null}
                                         id={null}
@@ -5583,7 +5635,7 @@ exports[` 4`] = `
                       </div>
                     </section>
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                      className="Template__Region-sc-1i4nzbu-0 izDKsY"
                       id="B"
                       placeholder="B"
                       tabIndex="0"
@@ -5612,7 +5664,7 @@ exports[` 4`] = `
                                 id={null}
                               >
                                 <button
-                                  className="Button__StyledButton-sc-1v7sls2-0 coRBFl Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+                                  className="Button__StyledButton-sc-1v7sls2-0 caABMl Tabs__TabButton-sc-1aqycph-0 jSVuAs"
                                   disabled={false}
                                   htmlFor={null}
                                   id={null}
@@ -5638,7 +5690,7 @@ exports[` 4`] = `
                                   </section>
                                 </button>
                                 <button
-                                  className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                                  className="Button__StyledButton-sc-1v7sls2-0 dkxGxr Tabs__TabButton-sc-1aqycph-0 gzDOzw"
                                   disabled={false}
                                   htmlFor={null}
                                   id={null}
@@ -5674,7 +5726,7 @@ exports[` 4`] = `
                                 rows={null}
                               >
                                 <button
-                                  className="Button__StyledButton-sc-1v7sls2-0 hmjgoU"
+                                  className="Button__StyledButton-sc-1v7sls2-0 bFnwvU"
                                   disabled={false}
                                   htmlFor={null}
                                   id={null}
@@ -5711,7 +5763,7 @@ exports[` 4`] = `
                                   </section>
                                 </button>
                                 <button
-                                  className="Button__StyledButton-sc-1v7sls2-0 jPqmOm"
+                                  className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
                                   disabled={false}
                                   htmlFor={null}
                                   id={null}
@@ -5789,7 +5841,7 @@ exports[` 4`] = `
                                   letterSpacing="0px"
                                 >
                                   <a
-                                    className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                                    className="Typography__LinkText-sc-19auepv-1 hDCmeI"
                                     disabled={false}
                                     fontSize="0.876em"
                                     fontWeight={600}
@@ -6010,7 +6062,7 @@ exports[` 4`] = `
                               className="Bar__Slot-icfo76-1 kZQbjh"
                             >
                               <button
-                                className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                                className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                                 disabled={false}
                                 htmlFor={null}
                                 id={null}
@@ -6089,7 +6141,7 @@ exports[` 5`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -6144,7 +6196,7 @@ exports[` 5`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -6170,7 +6222,7 @@ exports[` 5`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jPqmOm"
+              className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -6196,7 +6248,7 @@ exports[` 5`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -6222,7 +6274,7 @@ exports[` 5`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -6258,7 +6310,7 @@ exports[` 5`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -6348,6 +6400,7 @@ exports[` 5`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -6375,6 +6428,7 @@ exports[` 5`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -6402,6 +6456,7 @@ exports[` 5`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -6429,6 +6484,7 @@ exports[` 5`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -6478,7 +6534,7 @@ exports[` 5`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -6567,7 +6623,7 @@ exports[` 5`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                  className="Template__Region-sc-1i4nzbu-0 kcJhik"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -6594,6 +6650,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6621,6 +6678,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6675,6 +6733,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6726,6 +6785,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6777,6 +6837,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6828,6 +6889,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6855,6 +6917,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6882,6 +6945,7 @@ exports[` 5`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -6907,7 +6971,7 @@ exports[` 5`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                  className="Template__Region-sc-1i4nzbu-0 izDKsY"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -6936,7 +7000,7 @@ exports[` 5`] = `
                             id={null}
                           >
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 coRBFl Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+                              className="Button__StyledButton-sc-1v7sls2-0 caABMl Tabs__TabButton-sc-1aqycph-0 jSVuAs"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -6962,7 +7026,7 @@ exports[` 5`] = `
                               </section>
                             </button>
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr Tabs__TabButton-sc-1aqycph-0 gzDOzw"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -6988,7 +7052,7 @@ exports[` 5`] = `
                               </section>
                             </button>
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr Tabs__TabButton-sc-1aqycph-0 gzDOzw"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -7014,7 +7078,7 @@ exports[` 5`] = `
                               </section>
                             </button>
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr Tabs__TabButton-sc-1aqycph-0 gzDOzw"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -7040,7 +7104,7 @@ exports[` 5`] = `
                               </section>
                             </button>
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr Tabs__TabButton-sc-1aqycph-0 gzDOzw"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -7066,7 +7130,7 @@ exports[` 5`] = `
                               </section>
                             </button>
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr Tabs__TabButton-sc-1aqycph-0 gzDOzw"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -7092,7 +7156,7 @@ exports[` 5`] = `
                               </section>
                             </button>
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr Tabs__TabButton-sc-1aqycph-0 gzDOzw"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -7131,7 +7195,7 @@ exports[` 5`] = `
                         rows={null}
                       >
                         <section
-                          className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                          className="Template__Region-sc-1i4nzbu-0 kcJhik"
                           id="A"
                           placeholder="A"
                           tabIndex="0"
@@ -7168,7 +7232,7 @@ exports[` 5`] = `
                                   className="Bar__Slot-icfo76-1 kZQbjh"
                                 >
                                   <button
-                                    className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+                                    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
                                     disabled={false}
                                     htmlFor={null}
                                     id={null}
@@ -7226,7 +7290,7 @@ exports[` 5`] = `
                                 rows={null}
                               >
                                 <section
-                                  className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                                  className="Template__Region-sc-1i4nzbu-0 kcJhik"
                                   id="A"
                                   placeholder="A"
                                   tabIndex="0"
@@ -7240,7 +7304,7 @@ exports[` 5`] = `
                                       className="Bar__Slot-icfo76-1 kZQbjh"
                                     >
                                       <div
-                                        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                                        className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                         href={null}
                                         id="storyshots_84"
                                         media=""
@@ -7252,7 +7316,7 @@ exports[` 5`] = `
                                           rows={null}
                                         >
                                           <button
-                                            className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                            className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                             disabled={false}
                                             htmlFor={null}
                                             id={null}
@@ -7289,7 +7353,7 @@ exports[` 5`] = `
                                             </section>
                                           </button>
                                           <button
-                                            className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                            className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                             disabled={false}
                                             htmlFor={null}
                                             id={null}
@@ -7326,7 +7390,7 @@ exports[` 5`] = `
                                             </section>
                                           </button>
                                           <button
-                                            className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                            className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                             disabled={false}
                                             htmlFor={null}
                                             id={null}
@@ -7363,7 +7427,7 @@ exports[` 5`] = `
                                             </section>
                                           </button>
                                           <button
-                                            className="Button__StyledButton-sc-1v7sls2-0 fWSOgU"
+                                            className="Button__StyledButton-sc-1v7sls2-0 lbRPoQ"
                                             disabled={false}
                                             htmlFor={null}
                                             id={null}
@@ -7465,7 +7529,7 @@ exports[` 5`] = `
                           </div>
                         </section>
                         <section
-                          className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                          className="Template__Region-sc-1i4nzbu-0 izDKsY"
                           id="B"
                           placeholder="B"
                           tabIndex="0"
@@ -7680,7 +7744,7 @@ exports[` 5`] = `
                                         rows={null}
                                       >
                                         <button
-                                          className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+                                          className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
                                           disabled={false}
                                           htmlFor={null}
                                           id={null}
@@ -7706,7 +7770,7 @@ exports[` 5`] = `
                                           </section>
                                         </button>
                                         <button
-                                          className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                                          className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                                           disabled={false}
                                           htmlFor={null}
                                           id={null}
@@ -7750,7 +7814,7 @@ exports[` 5`] = `
                                   className="Bar__Slot-icfo76-1 kZQbjh"
                                 >
                                   <button
-                                    className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                                    className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
                                     disabled={false}
                                     htmlFor={null}
                                     id={null}
@@ -7831,7 +7895,7 @@ exports[` 6`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -7886,7 +7950,7 @@ exports[` 6`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -7912,7 +7976,7 @@ exports[` 6`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jPqmOm"
+              className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -7938,7 +8002,7 @@ exports[` 6`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -7964,7 +8028,7 @@ exports[` 6`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -8000,7 +8064,7 @@ exports[` 6`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -8090,6 +8154,7 @@ exports[` 6`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -8117,6 +8182,7 @@ exports[` 6`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -8144,6 +8210,7 @@ exports[` 6`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -8171,6 +8238,7 @@ exports[` 6`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -8220,7 +8288,7 @@ exports[` 6`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -8309,7 +8377,7 @@ exports[` 6`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                  className="Template__Region-sc-1i4nzbu-0 kcJhik"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -8336,6 +8404,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8363,6 +8432,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8417,6 +8487,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8468,6 +8539,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8519,6 +8591,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8570,6 +8643,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8621,6 +8695,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8648,6 +8723,7 @@ exports[` 6`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -8673,7 +8749,7 @@ exports[` 6`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                  className="Template__Region-sc-1i4nzbu-0 izDKsY"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -8711,7 +8787,7 @@ exports[` 6`] = `
                           Define Site
                         </label>
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+                          className="Typography__LinkText-sc-19auepv-1 dzfPGc"
                           disabled={true}
                           fontSize="1.15em"
                           fontWeight={600}
@@ -8746,7 +8822,7 @@ exports[` 6`] = `
                           Data Extraction
                         </label>
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+                          className="Typography__LinkText-sc-19auepv-1 dzfPGc"
                           disabled={true}
                           fontSize="1.15em"
                           fontWeight={600}
@@ -8781,7 +8857,7 @@ exports[` 6`] = `
                           Assessment Data
                         </label>
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+                          className="Typography__LinkText-sc-19auepv-1 dzfPGc"
                           disabled={true}
                           fontSize="1.15em"
                           fontWeight={600}
@@ -8816,7 +8892,7 @@ exports[` 6`] = `
                           Zoning
                         </label>
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+                          className="Typography__LinkText-sc-19auepv-1 dzfPGc"
                           disabled={true}
                           fontSize="1.15em"
                           fontWeight={600}
@@ -8851,7 +8927,7 @@ exports[` 6`] = `
                           Demographics
                         </label>
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+                          className="Typography__LinkText-sc-19auepv-1 dzfPGc"
                           disabled={true}
                           fontSize="1.15em"
                           fontWeight={600}
@@ -8886,7 +8962,7 @@ exports[` 6`] = `
                           Maps
                         </label>
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+                          className="Typography__LinkText-sc-19auepv-1 dzfPGc"
                           disabled={true}
                           fontSize="1.15em"
                           fontWeight={600}
@@ -8921,7 +8997,7 @@ exports[` 6`] = `
                           Appendices
                         </label>
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+                          className="Typography__LinkText-sc-19auepv-1 dzfPGc"
                           disabled={true}
                           fontSize="1.15em"
                           fontWeight={600}
@@ -8943,7 +9019,7 @@ exports[` 6`] = `
                       </section>
                     </section>
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 icvNFT"
+                      className="Button__StyledButton-sc-1v7sls2-0 fdvWlH"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -8971,7 +9047,7 @@ exports[` 6`] = `
                   </section>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
+                  className="Template__Region-sc-1i4nzbu-0 ccKPvg"
                   id="C"
                   placeholder="C"
                   tabIndex="0"
@@ -8997,7 +9073,7 @@ exports[` 6`] = `
                       id="Modal_Text-animation"
                     >
                       <div
-                        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                        className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                         href={null}
                         id="storyshots_90"
                         media=""
@@ -9155,7 +9231,7 @@ exports[` 7`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -9210,7 +9286,7 @@ exports[` 7`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -9236,7 +9312,7 @@ exports[` 7`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jPqmOm"
+              className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -9262,7 +9338,7 @@ exports[` 7`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -9288,7 +9364,7 @@ exports[` 7`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX"
+              className="Button__StyledButton-sc-1v7sls2-0 dkxGxr"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -9324,7 +9400,7 @@ exports[` 7`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ephmdd"
+              className="Button__StyledButton-sc-1v7sls2-0 ePOypF"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -9414,6 +9490,7 @@ exports[` 7`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -9441,6 +9518,7 @@ exports[` 7`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -9468,6 +9546,7 @@ exports[` 7`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -9495,6 +9574,7 @@ exports[` 7`] = `
             disabled={false}
             href={null}
             id={null}
+            onClick={null}
             tabIndex="0"
           >
             <div
@@ -9544,7 +9624,7 @@ exports[` 7`] = `
               id={null}
             >
               <div
-                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -9633,7 +9713,7 @@ exports[` 7`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                  className="Template__Region-sc-1i4nzbu-0 kcJhik"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -9660,6 +9740,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9687,6 +9768,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9741,6 +9823,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9792,6 +9875,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9843,6 +9927,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9894,6 +9979,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9945,6 +10031,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -9996,6 +10083,7 @@ exports[` 7`] = `
                       disabled={false}
                       href={null}
                       id={null}
+                      onClick={null}
                       tabIndex="0"
                     >
                       <div
@@ -10021,7 +10109,7 @@ exports[` 7`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+                  className="Template__Region-sc-1i4nzbu-0 izDKsY"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -10032,7 +10120,7 @@ exports[` 7`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+                      className="Template__Region-sc-1i4nzbu-0 kcJhik"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -10071,7 +10159,7 @@ exports[` 7`] = `
                             className="Bar__Slot-icfo76-1 lcNrQi"
                           >
                             <a
-                              className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+                              className="Typography__LinkText-sc-19auepv-1 hDCmeI"
                               disabled={false}
                               fontSize="0.876em"
                               fontWeight={600}
@@ -10087,7 +10175,7 @@ exports[` 7`] = `
                             className="Bar__Slot-icfo76-1 kZQbjh"
                           >
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 gBRVom"
+                              className="Button__StyledButton-sc-1v7sls2-0 hZBXqq"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -10148,7 +10236,7 @@ exports[` 7`] = `
                             className="Bar__Slot-icfo76-1 kZQbjh"
                           >
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 gBRVom"
+                              className="Button__StyledButton-sc-1v7sls2-0 hZBXqq"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -10209,7 +10297,7 @@ exports[` 7`] = `
                             className="Bar__Slot-icfo76-1 kZQbjh"
                           >
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 gBRVom"
+                              className="Button__StyledButton-sc-1v7sls2-0 hZBXqq"
                               disabled={false}
                               htmlFor={null}
                               id={null}
@@ -10237,7 +10325,7 @@ exports[` 7`] = `
                           </div>
                         </div>
                         <button
-                          className="Button__StyledButton-sc-1v7sls2-0 icvNFT"
+                          className="Button__StyledButton-sc-1v7sls2-0 fdvWlH"
                           disabled={false}
                           htmlFor={null}
                           id={null}

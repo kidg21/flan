@@ -3,7 +3,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import PropTypes from "prop-types";
 import { screen } from "Variables";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { PlaceholderText } from "helpers/Skeleton";
 import Card from "elements/Card";
 
 /** TODO: Move keyframe animations into their own variable/component files */

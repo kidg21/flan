@@ -4,7 +4,9 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
-  display: block;
+  display: ${(props) => {
+    return props.visible ? "block" : "none";
+  }};
   padding: ${(props) => {
     return props.setPadding || "";
   }};
@@ -28,6 +30,9 @@ const BoxContainer = styled.div`
   }};
   width: ${(props) => {
     return props.width || "";
+  }};
+  background-color: ${(props) => {
+    return props.hasBackground ? props.theme.background.default : "";
   }};
   border: 1px solid
     ${(props) => {
@@ -69,12 +74,18 @@ const paddingHash = {
 };
 
 const Container = React.forwardRef(({
-  border, children, className, height, id, maxHeight, padding, width,
+  border, children, className, visible, hasBackground, height, id, maxHeight, padding, width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
   return (
-    <Wrapper setPadding={setPadding} height={height} width={width} className={className}>
-      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
+    <Wrapper
+      setPadding={setPadding}
+      height={height}
+      width={width}
+      visible={visible}
+      className={className}
+    >
+      <BoxContainer id={id} hasBackground={hasBackground} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -84,16 +95,22 @@ const Container = React.forwardRef(({
 Container.propTypes = {
   border: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
+  hasBackground: PropTypes.bool,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
   maxHeight: PropTypes.string,
   padding: PropTypes.oneOf(["0", "2x", "3x"]),
+  visible: PropTypes.bool,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Container.defaultProps = {
   border: null,
+  visible: true,
   children: null,
+  className: null,
+  hasBackground: false,
   height: null,
   id: null,
   maxHeight: null,

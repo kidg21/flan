@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
-import { getGuid } from "helpers";
+import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
@@ -63,16 +63,16 @@ const Input = styled.input`
   &:hover {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.neutral80
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.neutral80
     );
   }};
     }
   &:focus {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.selected
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.selected
     );
   }};
     ::selection {
@@ -81,8 +81,8 @@ const Input = styled.input`
   }};
       background-color: ${(props) => {
     return (
-      props.theme.palette[props.inputSelectColor] ||
-      props.theme.palette.selected
+      props.theme.palette[props.inputSelectColor]
+      || props.theme.palette.selected
     );
   }};
     }
@@ -129,7 +129,7 @@ function TextInput({
     inputHeight = "4.75rem";
   }
 
-  const uId = id || getGuid();
+  const uId = useId(id);
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -162,8 +162,7 @@ function TextInput({
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let errorText = "";
   if (isDisabled) {
     inputBorderColor = "neutral40";

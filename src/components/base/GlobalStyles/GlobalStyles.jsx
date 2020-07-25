@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
-import { Skeleton } from "helpers";
+import { Skeleton } from "helpers/Skeleton";
 // Import variables
 import { fonts, fontSize } from "Variables";
 // Import Fonts
