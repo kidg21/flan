@@ -19,7 +19,7 @@ const TabButton = styled(Button)`
 
 const TabsWrapper = styled.section`
   ${(props) => {
-    if(props.setWrap){
+    if(!props.setTruncate){
       return `overflow: auto;`
     }else{
       return `
@@ -57,7 +57,7 @@ function TabItem({
 }
 
 function Tabs({
-  children, data, disabled, id, isVertical, wrapItems
+  children, data, disabled, id, isVertical, truncateItems
 }) {
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -76,11 +76,11 @@ function Tabs({
         id={id}
         setColumns={setColumns}
         setWidth={setWidth}
-        setWrap={wrapItems}
+        setTruncate={truncateItems}
       >
         {
           children
-          ? (wrapItems ? children.map((ele) => React.cloneElement(ele, {float:'left'})) : children)
+          ? (truncateItems ? children : children.map((ele) => React.cloneElement(ele, {float:'left'})))
           : data.map((item) => {
             return (
               <TabItem
@@ -129,7 +129,7 @@ Tabs.propTypes = {
   disabled: PropTypes.bool,
   id: PropTypes.string,
   isVertical: PropTypes.bool,
-  wrapItems: PropTypes.bool,
+  truncateItems: PropTypes.bool,
 };
 Tabs.defaultProps = {
   children: null,
@@ -137,7 +137,7 @@ Tabs.defaultProps = {
   disabled: false,
   id: null,
   isVertical: false,
-  wrapItems: false,
+  truncateItems: true,
 };
 
 export { Tabs as default, TabItem };
