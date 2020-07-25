@@ -73,6 +73,18 @@ The standard Command is left-aligned with its Icon on the left. Set the 'align' 
   </Story>
 </Preview>
 
+### Invisible Labels
+
+In some cases, the presentation may call for a Command where only the Icon should show in a standard browser viewing experience. Set the 'labelVisible' property to 'false' in this case. Using a Command is preferable to an Icon because a Command with 'labelVisible' property of 'false' will include a Label in a manner visible to assistive technologies.
+
+<Preview>
+  <Story name="InvisibleLabels">
+    <Grid columns="3">
+      <Command label="This is visible to ATs" labelVisible={false} icon="view" />
+    </Grid>
+  </Story>
+</Preview>
+
 ## Props
 
 <Props of={Command} />
