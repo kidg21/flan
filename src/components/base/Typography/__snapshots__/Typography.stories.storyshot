@@ -16,7 +16,7 @@ exports[` 1`] = `
     Label
   </label>
   <a
-    className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+    className="Typography__LinkText-sc-19auepv-1 hDCmeI"
     disabled={false}
     fontSize="0.876em"
     fontWeight={600}
@@ -197,7 +197,7 @@ exports[` 2`] = `
     rows={null}
   >
     <a
-      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+      className="Typography__LinkText-sc-19auepv-1 hDCmeI"
       disabled={false}
       fontSize="0.876em"
       fontWeight={600}
@@ -209,7 +209,7 @@ exports[` 2`] = `
       Normal Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+      className="Typography__LinkText-sc-19auepv-1 dzfPGc"
       disabled={false}
       fontSize="1.15em"
       fontWeight={600}
@@ -221,7 +221,7 @@ exports[` 2`] = `
       Large Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 cnLHpC"
+      className="Typography__LinkText-sc-19auepv-1 ccRqLj"
       disabled={false}
       fontSize="1.25em"
       fontWeight={600}
@@ -233,7 +233,7 @@ exports[` 2`] = `
       XLarge Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 eIgJvk"
+      className="Typography__LinkText-sc-19auepv-1 dUPywt"
       disabled={false}
       fontSize="1.45em"
       fontWeight={600}
@@ -356,7 +356,7 @@ exports[` 3`] = `
     rows={null}
   >
     <a
-      className="Typography__LinkText-sc-19auepv-1 dzmSHo"
+      className="Typography__LinkText-sc-19auepv-1 laagDZ"
       disabled={false}
       fontSize="0.876em"
       fontWeight={300}
@@ -368,7 +368,7 @@ exports[` 3`] = `
       Light Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+      className="Typography__LinkText-sc-19auepv-1 hDCmeI"
       disabled={false}
       fontSize="0.876em"
       fontWeight={600}
@@ -380,7 +380,7 @@ exports[` 3`] = `
       Regular Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+      className="Typography__LinkText-sc-19auepv-1 hDCmeI"
       disabled={false}
       fontSize="0.876em"
       fontWeight={600}

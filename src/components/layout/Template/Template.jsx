@@ -17,7 +17,9 @@ const Region = styled.section`
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
   }};
-  overflow: auto;
+  overflow: ${(props) => {
+    return props.overflow || "auto";
+  }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
