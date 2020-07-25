@@ -10,20 +10,29 @@ const TabButton = styled(Button)`
   border-color: ${(props) => {
     return props.hasUnderline || "transparent";
   }};
+  ${(props) => {
+    if(props.float){
+      return `float: ${props.float};`
+    }
+  }}
 `;
 
 const TabsWrapper = styled.section`
-  display: grid;
-  grid-gap: 2px;
-  grid-template-columns: ${(props) => {
-    return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
-  }};
-  width: ${(props) => {
-    return props.setWidth || "100%";
-  }};
+  ${(props) => {
+    if(props.setWrap){
+      return `overflow: auto;`
+    }else{
+      return `
+          display: grid;
+          grid-gap: 2px;
+          grid-template-columns: ${props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
+          width: ${props.setWidth || "100%"};
+      `;
+    }
+  }}
 `;
 function TabItem({
-  count, disabled, htmlFor, icon, id, isSelected, label, onClick,
+  count, disabled, htmlFor, icon, id, isSelected, label, onClick, float
 }) {
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -41,13 +50,14 @@ function TabItem({
         onClick={onClick}
         isPlain
         hasUnderline={isSelected ? true : null}
+        float={float}
       />
     </React.Fragment>
   );
 }
 
 function Tabs({
-  children, data, disabled, id, isVertical,
+  children, data, disabled, id, isVertical, wrapItems
 }) {
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -66,9 +76,12 @@ function Tabs({
         id={id}
         setColumns={setColumns}
         setWidth={setWidth}
+        setWrap={wrapItems}
       >
-        {children ||
-          data.map((item) => {
+        {
+          children
+          ? (wrapItems ? children.map((ele) => React.cloneElement(ele, {float:'left'})) : children)
+          : data.map((item) => {
             return (
               <TabItem
                 count={item.count}
@@ -96,6 +109,7 @@ TabItem.propTypes = {
   isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
+  float: PropTypes.string,
 };
 TabItem.defaultProps = {
   count: null,
@@ -106,6 +120,7 @@ TabItem.defaultProps = {
   isSelected: false,
   label: null,
   onClick: null,
+  float: null,
 };
 
 Tabs.propTypes = {
@@ -114,6 +129,7 @@ Tabs.propTypes = {
   disabled: PropTypes.bool,
   id: PropTypes.string,
   isVertical: PropTypes.bool,
+  wrapItems: PropTypes.bool,
 };
 Tabs.defaultProps = {
   children: null,
@@ -121,6 +137,7 @@ Tabs.defaultProps = {
   disabled: false,
   id: null,
   isVertical: false,
+  wrapItems: false,
 };
 
 export { Tabs as default, TabItem };
