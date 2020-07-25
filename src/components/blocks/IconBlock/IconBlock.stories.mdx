@@ -1,0 +1,289 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Text from "base/Typography";
+import Icon from "atoms/Icon";
+import Card, { CardSection, CardGrid } from "elements/Card";
+import IconBlock from "blocks/IconBlock";
+
+<Meta title="Atoms|Icon/Icon Block" component={IconBlock} />
+
+# Icon Block
+
+#### An Icon Block allows users to toggle the display of sections of content
+
+<Preview withToolbar>
+  <Story name="Standard">
+       <IconBlock>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
+        </IconBlock>
+  </Story>
+</Preview>
+
+# Usage
+
+The IconBlock component is a set of expandable panels for showing and hiding content from the user to make the UI less crowded. The component works well on both mobile and desktop environment and it supports keyboard and screen readers too. The component supports Lumo and Material themes.
+
+# Examples
+
+### Types
+
+<Preview>
+  <Story name="Types">
+   <Grid>
+        <IconBlock>
+          <Icon icon="circle_solid" />
+        </IconBlock>
+        <IconBlock>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" variant="info" />
+        </IconBlock>
+        <IconBlock>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
+        </IconBlock>
+        <IconBlock>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
+          <Icon icon="circle_solid" variant="warning" />
+        </IconBlock>
+        <IconBlock>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
+          <Icon icon="circle_solid" variant="warning" />
+          <Icon icon="circle_solid" variant="alert" />
+        </IconBlock>
+        <IconBlock>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
+          <Icon icon="circle_solid" variant="warning" />
+          <Icon icon="circle_solid" variant="alert" />
+          <Icon icon="circle_solid" />
+        </IconBlock>
+      </Grid>
+  </Story>
+</Preview>
+
+### Size
+
+<Preview>
+  <Story name="Size">
+<Grid columns="1" gap="xl">
+        <IconBlock data={[
+  {
+    icon: "bookmark",
+    onClick: () => {},
+  },
+  {
+    icon: "calendar",
+    disabled: true,
+  },
+  {
+    icon: "call",
+    spin: true,
+  },
+  {
+    icon: "delete",
+    variant: "alert",
+  },
+  {
+    icon: "chat",
+    pulse: true,
+  },
+  {
+    icon: "edit",
+  },
+]} size="xs" />
+        <IconBlock data={[
+  {
+    icon: "bookmark",
+    onClick: () => {},
+  },
+  {
+    icon: "calendar",
+    disabled: true,
+  },
+  {
+    icon: "call",
+    spin: true,
+  },
+  {
+    icon: "delete",
+    variant: "alert",
+  },
+  {
+    icon: "chat",
+    pulse: true,
+  },
+  {
+    icon: "edit",
+  },
+]} size="sm" />
+        <IconBlock data={[
+  {
+    icon: "bookmark",
+    onClick: () => {},
+  },
+  {
+    icon: "calendar",
+    disabled: true,
+  },
+  {
+    icon: "call",
+    spin: true,
+  },
+  {
+    icon: "delete",
+    variant: "alert",
+  },
+  {
+    icon: "chat",
+    pulse: true,
+  },
+  {
+    icon: "edit",
+  },
+]} />
+        <IconBlock data={[
+  {
+    icon: "bookmark",
+    onClick: () => {},
+  },
+  {
+    icon: "calendar",
+    disabled: true,
+  },
+  {
+    icon: "call",
+    spin: true,
+  },
+  {
+    icon: "delete",
+    variant: "alert",
+  },
+  {
+    icon: "chat",
+    pulse: true,
+  },
+  {
+    icon: "edit",
+  },
+]} size="lg" />
+        <IconBlock data={[
+  {
+    icon: "bookmark",
+    onClick: () => {},
+  },
+  {
+    icon: "calendar",
+    disabled: true,
+  },
+  {
+    icon: "call",
+    spin: true,
+  },
+  {
+    icon: "delete",
+    variant: "alert",
+  },
+  {
+    icon: "chat",
+    pulse: true,
+  },
+  {
+    icon: "edit",
+  },
+]} size="xl" />
+        <IconBlock data={[
+  {
+    icon: "bookmark",
+    onClick: () => {},
+  },
+  {
+    icon: "calendar",
+    disabled: true,
+  },
+  {
+    icon: "call",
+    spin: true,
+  },
+  {
+    icon: "delete",
+    variant: "alert",
+  },
+  {
+    icon: "chat",
+    pulse: true,
+  },
+  {
+    icon: "edit",
+  },
+]} size="2xl" />
+        <IconBlock data={[
+  {
+    icon: "bookmark",
+    onClick: () => {},
+  },
+  {
+    icon: "calendar",
+    disabled: true,
+  },
+  {
+    icon: "call",
+    spin: true,
+  },
+  {
+    icon: "delete",
+    variant: "alert",
+  },
+  {
+    icon: "chat",
+    pulse: true,
+  },
+  {
+    icon: "edit",
+  },
+]} size="3xl" />
+<IconBlock data={[
+  {
+    icon: "bookmark",
+    onClick: () => {},
+  },
+  {
+    icon: "calendar",
+    disabled: true,
+  },
+  {
+    icon: "call",
+    spin: true,
+  },
+  {
+    icon: "delete",
+    variant: "alert",
+  },
+  {
+    icon: "chat",
+    pulse: true,
+  },
+  {
+    icon: "edit",
+  },
+]} size="4xl" />
+      </Grid>
+  </Story>
+</Preview>
+
+
+
+
+## Props
+
+<Props of={IconBlock} />

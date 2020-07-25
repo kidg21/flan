@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { PlaceholderText } from "helpers/Skeleton";
 
 const PanelWrapper = styled.div`
   position: absolute;
@@ -13,8 +13,8 @@ const PanelWrapper = styled.div`
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  width: 100%;
-  height: 100%;
+  width: ${(props) => { return props.width; }};
+  height: ${(props) => { return props.height; }};
   max-height: 100vh;
   overflow: hidden;
   transform: ${(props) => {
@@ -122,7 +122,7 @@ PanelBody.defaultProps = {
 const PanelSection = styled(PanelBody)`
   flex: none;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
   z-index: 1;
   &:first-of-type {
     border-bottom: 1px solid ${(props) => {
@@ -137,7 +137,7 @@ const PanelSection = styled(PanelBody)`
 `;
 
 function Panel({
-  children, classname, footer, header, id, offcanvas, padding,
+  children, classname, footer, header, height, id, offcanvas, padding, width,
 }) {
   let isOffCanvas;
   switch (offcanvas) {
@@ -160,8 +160,10 @@ function Panel({
   return (
     <PanelWrapper
       classname={classname}
+      height={height}
       id={id}
       isOffCanvas={isOffCanvas}
+      width={width}
     >
       {header ? <PanelSection id={id ? `${id}_header` : null}>{header}</PanelSection> : null}
       <PanelBody padding={padding} id={id ? `${id}_body` : null}>{children}</PanelBody>
@@ -174,19 +176,23 @@ Panel.propTypes = {
   children: PropTypes.node,
   classname: PropTypes.string,
   footer: PropTypes.node,
-  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   header: PropTypes.node,
+  height: PropTypes.string,
   id: PropTypes.string,
   offcanvas: PropTypes.string,
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
+  width: PropTypes.string,
 };
 Panel.defaultProps = {
   children: null,
   classname: null,
   footer: null,
-  padding: null,
   header: null,
+  height: "100%",
   id: null,
   offcanvas: null,
+  padding: null,
+  width: "100%",
 };
 
 export default Panel;

@@ -406,7 +406,7 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-storiesOf("Blocks|Table", module)
+storiesOf("Data Display|Table", module)
   .addDecorator(FullScreen)
   .add("Simple", () => {
     return (
@@ -460,6 +460,7 @@ storiesOf("Blocks|Table", module)
           Menu,
           {
             data: menu,
+            id: `Menu_Row_${i}`,
             // onClick: e => {
             //   e.stopPropagation();
             //   alert(`data entry edit ${i} clicked`);

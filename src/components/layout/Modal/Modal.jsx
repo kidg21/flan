@@ -1,9 +1,15 @@
 /* eslint-disable linebreak-style */
-import React, { Fragment, useState } from "react";
+import React, {
+  Fragment,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 import GlobalStyles from "GlobalStyles";
 import styled, { keyframes, ThemeProvider } from "styled-components";
 import { DMPTheme, screen } from "Variables";
-import { PlaceholderText } from "helpers";
+import { useId } from "utils/hooks";
+import { PlaceholderText } from "helpers/Skeleton";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Card from "elements/Card";
@@ -80,8 +86,8 @@ const ContentWrapper = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 `;
 
 const Image = styled.img`
@@ -91,14 +97,13 @@ const Image = styled.img`
 `;
 
 const ModalContainer = styled.div`
-  position: fixed;
-  display: ${(props) => { return (props.visible ? "flex" : "none"); }};
+  position: absolute;
+  display: ${(props) => { return (props.visible || props.action === "open" ? "flex" : "none"); }};
   z-index: 1005;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  min-height: 100vh;
   align-items: center;
   justify-content: ${(props) => { return props.justifyContent || ""; }};
   flex-direction: column;
@@ -115,7 +120,6 @@ const ModalContainer = styled.div`
     return props.action && typeof props.animationDuration === "number" ? `${props.animationDuration}s` : null;
   }};
     transform-origin: top;
-    pointer-events: initial;
     @media ${screen.medium} {
       max-width: 50vw;
     }
@@ -137,8 +141,7 @@ const ModalContainer = styled.div`
 `;
 
 const ModalBG = styled.div`
-  z-index: -1;
-  position: fixed;
+  position: absolute;
   right: 0px;
   bottom: 0px;
   top: 0px;
@@ -148,6 +151,7 @@ const ModalBG = styled.div`
       props.theme.background.modal
     );
   }};
+  z-index: -1;
   -webkit-tap-highlight-color: transparent;
   touch-action: none;
   animation-name: ${(props) => {
@@ -167,6 +171,8 @@ const Close = styled.section`
   }
 `;
 
+const animationId = "animation";
+
 function Modal({
   align,
   animationDuration,
@@ -176,6 +182,8 @@ function Modal({
   id,
   media,
   hasBackdrop,
+  onAnimationStart,
+  onAnimationEnd,
   onClick,
   onClose,
   text,
@@ -184,10 +192,11 @@ function Modal({
   let modalContent;
   let justifyContent;
   const pointerEvents = hasBackdrop ? "auto" : "none";
+  const uId = useId(id);
 
   if (text && !media) {
     modalContent = (
-      <ContentWrapper onClick={onClick}>
+      <ContentWrapper id={`${uId}-${animationId}`} onClick={onClick}>
         <Card description={text} shadow="2x" />
       </ContentWrapper>
     );
@@ -196,7 +205,7 @@ function Modal({
     justifyContent = "center";
     modalContent = (
       <Fragment>
-        <Image src={media} onClick={onClick} />
+        <Image id={`${uId}-${animationId}`} src={media} onClick={onClick} />
         <Close onClick={onClose}>
           <Icon icon="close" variant="inverse" size="lg" fixedWidth />
         </Close>
@@ -204,7 +213,7 @@ function Modal({
     );
   } else {
     justifyContent = "center";
-    modalContent = (<ContentWrapper>{children}</ContentWrapper>);
+    modalContent = (<ContentWrapper id={`${uId}-${animationId}`}>{children}</ContentWrapper>);
   }
 
   switch (align) {
@@ -222,50 +231,79 @@ function Modal({
   }
 
   // Hide container when fade is complete
-  let action = null;
+  // internal state to know when content is fully visible or fully hidden
+  // animation takes time!
   const [state, setState] = useState({
-    visible: false,
-    animation: null,
+    action: visible ? "open" : "close",
+    visible: visible,
   });
 
-  function beginAnimation() {
-    action = visible ? "open" : "close";
-    state.animation = setTimeout(() => {
+  useEffect(() => {
+    if (!animationDuration) {
       setState({ visible });
-    }, (Math.max((animationDuration || 0), (animationDuration || 0)) - 0.1) * 1000);
-  }
-
-  if (state.visible !== visible) {
-    if (!state.animation) {
-      beginAnimation();
+    } else if (state.visible !== visible) {
+      // init animation
+      setState((oldState) => {
+        return {
+          ...oldState,
+          action: visible ? "open" : "close",
+        };
+      });
     }
-  } else if (state.animation) {
-    clearTimeout(state.animation);
-    state.visible = !state.visible;
-    beginAnimation();
-  }
+  }, [state.visible, visible]);
+
+  // use to be notified when content is fully visible or fully hidden
+  const endAnimation = useCallback((e) => {
+    // if hasBackdrop, the ModalBG animation bubbles up
+    // causing 2 onAnimationEnd events to fire
+    // id matches the ContentWrapper or Image which is animationId
+    if (e.target.id === `${uId}-${animationId}`) {
+      // animation completed, update internal visible state
+      setState((oldState) => {
+        return {
+          ...oldState,
+          visible,
+        };
+      });
+      if (onAnimationEnd) onAnimationEnd(e);
+    }
+  }, [onAnimationEnd, visible]);
+
+  const startAnimation = useCallback((e) => {
+    // if hasBackdrop, the ModalBG animation bubbles up
+    // causing 2 onAnimationEnd events to fire
+    // id matches the ContentWrapper or Image which is animationId
+    if (e.target.id === `${uId}-${animationId}`) {
+      if (onAnimationStart) onAnimationStart(e);
+    }
+  }, [onAnimationStart]);
 
   return (
     <React.Fragment>
       <GlobalStyles />
       <ThemeProvider theme={DMPTheme}>
         <ModalContainer
-          action={action}
+          action={state.action}
           align={align}
           animationDuration={animationDuration}
           aria-describedby={ariaDescribedBy}
           aria-labelledby={ariaLabelledBy}
-          id={id}
+          id={uId}
           hasBackdrop={hasBackdrop}
           justifyContent={justifyContent}
           pointerEvents={pointerEvents}
-          visible={visible || state.visible}
+          visible={state.visible}
+          onAnimationStart={startAnimation}
+          onAnimationEnd={endAnimation}
         >
-          {hasBackdrop ? <ModalBG
-            action={action}
-            animationDuration={animationDuration}
-            onClick={onClose}
-          /> : null}
+          {hasBackdrop ? (
+            <ModalBG
+              id={`modal-bg-${uId}`}
+              action={state.action}
+              animationDuration={animationDuration}
+              onClick={onClose}
+            />
+          ) : null}
           {modalContent}
         </ModalContainer>
       </ThemeProvider>
@@ -283,6 +321,8 @@ Modal.propTypes = {
   id: PropTypes.string,
   media: PropTypes.string,
   hasBackdrop: PropTypes.bool,
+  onAnimationStart: PropTypes.func,
+  onAnimationEnd: PropTypes.func,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   text: PropTypes.string,
@@ -295,9 +335,11 @@ Modal.defaultProps = {
   ariaDescribedBy: null,
   ariaLabelledBy: null,
   children: null,
-  id: null,
+  id: "",
   media: null,
   hasBackdrop: true,
+  onAnimationStart: null,
+  onAnimationEnd: null,
   onClick: null,
   onClose: null,
   text: null,

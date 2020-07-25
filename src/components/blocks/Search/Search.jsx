@@ -1,70 +1,66 @@
-/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import Bar from "layout/Bar";
+import Flex from "layout/Flex";
 import Text from "base/Typography";
 import Button from "atoms/Button";
-import Grid from "layout/Grid";
-import ResultContainer from "./Results.jsx";
-import TextInput from "atoms/TextInput";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
-import styled from "styled-components";
-
-// const SearchContainer = styled.div`
+import TextInput from "atoms/TextInput";
+import { useId } from "utils/hooks";
+import ResultContainer from "./Results.jsx";
 
 const SearchContainer = styled.form`
-display: flex;
-align-items: center;
-flex-direction: row;
-border: 1px solid;
-border-radius: 4px;
-border-color: ${(props) => {
-    return (props.theme.palette.neutral60
-    );
-  }};
-&:hover {
-  border-color: ${(props) => {
-    return (
-      props.theme.palette.selected
-    );
-  }};
-  }
-&:selected {
-  border-color: ${(props) => {
-    return (
-      props.theme.palette.selected
-    );
-  }};
-}
-}
+  display: grid;
+  grid-template-areas:
+  "A"
+  "B";
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 0.25rem;
+  position: relative;
+  padding: 0.5rem 0.5rem 0;
 `;
 
-const NewTextInput = styled.input`
-flex-grow: 2;
-border: none;
-min-height: 1.875rem;
-height: 2.4rem;
-padding: 0.125rem 0.5rem;
-font-family: ${(props) => { return props.theme.typography.primary; }};
-::placeholder {
-  font-weight: initial;
-  font-size: 0.90em;
-  letter-spacing: 0.5px;
-  color: ${(props) => {
-    return (
-      props.theme.text[props.placeholderColor] || props.theme.text.secondary
-    );
+const SearchInput = styled(Flex)`
+  grid-area: A;
+  background-color: ${(props) => {
+    return props.theme.background.default;
   }};
-}
+  border: ${(props) => {
+    return `1px solid ${props.theme.palette.neutral60}`;
+  }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+  /* The padding gives the buttons space so they don't overlap the rounded corners of the container */
+  padding: 2px;
+  /* Necessary for the Menu List isn't cropped */
+  overflow: visible;
+`;
+
+const SearchTextInput = styled(TextInput)`
+  flex: auto;
+  > * {
+    border: none;
+  }
+`;
+
+const SearchButton = styled(Button)`
+  flex: none;
 `;
 
 const DropContainer = styled(Container)`
-position: fixed;
+  grid-area: B;
+  position: absolute;
+  width: 100%;
+  z-index: ${(props) => {
+    return props.zIndex;
+  }};
 `;
-
 
 const errorHash = {
   connection: "Check your internet connection",
@@ -73,13 +69,55 @@ const errorHash = {
 };
 
 function Search({
-  id, error, results, onSearch, placeholder,
+  error,
+  id,
+  onChange,
+  onKeyPress,
+  onSearch,
+  placeholder,
+  results,
+  value,
+  zIndex,
 }) {
+  let searchVal = value;
+  let setSearchValue = onChange;
+  if (!setSearchValue) [searchVal, setSearchValue] = useState(value);
+
+  const uId = useId(id);
+  /**
+   * Set state to current input value in search box.
+   * Pass back input value to onChange function, if provided.
+   * @param {object} e - event object that contains input value.
+   */
+  const handleOnChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+  /**
+   * If "enter" key was pressed, pass back current search value.
+   * @param {object} e - event object that contains key press info.
+   */
+  const handleOnKeyPress = (e) => {
+    if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
+      e.preventDefault();
+      onKeyPress(searchVal);
+    }
+  };
+
+  /**
+   * Pass back input value to onSearch function, if provided.
+   */
+  const handleOnSearch = () => {
+    if (typeof onSearch === "function") {
+      onSearch(searchVal);
+    }
+  };
+
   const msg = errorHash[typeof error === "string" ? error.toLowerCase() : "default"];
 
   const message = (
     <React.Fragment>
-      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="4xl" />} /> : null}
+      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="3xl" />} /> : null}
       <Bar padding="2x" center={<Text text={msg} />} />
     </React.Fragment>
   );
@@ -92,24 +130,46 @@ function Search({
   );
 
   return (
-    <Grid columns="1" gap="xs" id={id}>
-      <SearchContainer>
-        <NewTextInput
-          id="my-search-bar"
+    <SearchContainer id={uId}>
+      <SearchInput flexDirection="row">
+        <SearchButton
+          id={`${uId}-search-button`}
+          icon="search"
+          isPlain
+          onClick={handleOnSearch}
+        />
+        <SearchTextInput
+          id={`${uId}-search-bar`}
           placeholder={placeholder}
           type="search"
+          onChange={handleOnChange}
+          onKeyPress={handleOnKeyPress}
+          value={searchVal}
         />
-        <Button icon="search" isPlain onClick={onSearch} />
-      </SearchContainer>
-      {/* <Button icon="more" isPlain /> */}
-      {error || results ? <DropContainer id="results-container" maxHeight="22rem" > {Body}</DropContainer> : null}
-      {/* { advance ? <Advanced inputs={inputs} /> : null} */}
-    </Grid>
+      </SearchInput>
+      {error || results
+        ? (
+          <DropContainer
+            padding="0"
+            id={`${uId}-results-container`}
+            maxHeight="22rem"
+            zIndex={zIndex}
+          >
+            {Body}
+          </DropContainer>
+        )
+        : null}
+    </SearchContainer>
   );
 }
 
 Search.propTypes = {
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
+  onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
+  onSearch: PropTypes.func,
+  placeholder: PropTypes.string,
   results: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -117,17 +177,20 @@ Search.propTypes = {
     href: PropTypes.string,
     onClick: PropTypes.func,
   })),
-  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  onSearch: PropTypes.func,
-  placeholder: PropTypes.string,
+  value: PropTypes.string,
+  zIndex: PropTypes.number,
 };
 
 Search.defaultProps = {
-  id: null,
-  results: "",
   error: "",
+  id: null,
+  onChange: null,
+  onKeyPress: null,
   onSearch: null,
   placeholder: null,
+  results: null,
+  value: "",
+  zIndex: 1,
 };
 
 export default Search;

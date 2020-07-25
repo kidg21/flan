@@ -64,7 +64,16 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
       props.theme.palette[props.borderColor] || props.theme.palette.selected
     );
   }};
+  &:after {
+    content: '✔';
+    position: relative;
+    padding-top: .5px;
+    padding-left: 2px;
+    font-size: 0.75rem;
+    color: white;
   }
+  }
+  
   &:focus {
     outline-color: ${(props) => {
     return (
@@ -259,15 +268,7 @@ CheckboxGroup.defaultProps = {
   align: null,
   children: null,
   columns: null,
-  data: {
-    checked: false,
-    disabled: false,
-    id: null,
-    label: null,
-    onBlur: null,
-    onChange: null,
-    onFocus: null,
-  },
+  data: [],
   disabled: false,
   error: null,
   helpText: null,

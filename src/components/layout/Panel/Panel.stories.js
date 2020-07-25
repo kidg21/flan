@@ -1,11 +1,12 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React from "react";
+import React, { useState } from "react";
 import { FullScreen } from "helpers/Display";
 import Bar from "layout/Bar";
 import Card, { CardGrid } from "elements/Card";
 import Panel from "layout/Panel";
 import Title from "base/Typography";
+import SearchBar from "blocks/Search";
 
 storiesOf("Layout|Panel", module)
   .addDecorator(FullScreen)
@@ -16,7 +17,7 @@ storiesOf("Layout|Panel", module)
   .add("Panel with header", () => {
     return (
       <Panel
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -24,14 +25,15 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
   .add("Panel with footer", () => {
     return (
       <Panel
-        footer={
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -39,14 +41,15 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
   .add("Panel with header/footer", () => {
     return (
       <Panel
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -54,8 +57,9 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
-        footer={
+          />
+        )}
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -63,7 +67,8 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
@@ -71,7 +76,7 @@ storiesOf("Layout|Panel", module)
     return (
       <Panel
         id="Panel"
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -79,8 +84,9 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
-        footer={
+          />
+        )}
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -88,7 +94,8 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       >
         <CardGrid>
           <Card />
@@ -129,7 +136,7 @@ export const Knobs = () => {
     <Panel
       id="Panel"
       offcanvas={offcanvas}
-      header={
+      header={(
         <Bar
           contentAlign="center"
           padding="2x"
@@ -137,8 +144,9 @@ export const Knobs = () => {
             content: <Title text="Header" />,
             align: "center",
           }}
-        />}
-      footer={
+        />
+      )}
+      footer={(
         <Bar
           contentAlign="center"
           padding="2x"
@@ -146,7 +154,8 @@ export const Knobs = () => {
             content: <Title text="Footer" />,
             align: "center",
           }}
-        />}
+        />
+      )}
     >
       <CardGrid>
         <Card />

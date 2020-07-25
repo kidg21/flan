@@ -12,11 +12,12 @@ const data = [
   { id: "e", label: "Layer" },
 ];
 
-storiesOf("Templates|07_Pieces/Headers/", module)
+storiesOf("Templates|Headers/", module)
   .addDecorator(Padding)
   .add("Property", () => {
     return (
       <PropertyPanelHeader
+        id="Property_Header"
         title="5201 California Ave, Irvine, CA 92614"
         menuData={data}
         onClick={() => { }}

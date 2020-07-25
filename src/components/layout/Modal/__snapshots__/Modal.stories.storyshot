@@ -3,26 +3,30 @@
 exports[` 1`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 iRlunR"
+    id="Modal_Standard"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
+      id="modal-bg-Modal_Standard"
       onClick={[Function]}
     />
     <span
-      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Standard-animation"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
-        id={null}
-        media={null}
+        id="storyshots_54"
+        media=""
         onClick={null}
       >
         <div
@@ -38,14 +42,14 @@ Array [
               id={null}
               rows={null}
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 KxMwb"
-                fontSize="1.15em"
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 gDyDyY"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 This is a Standard notification telling you stuff.
-              </h5>
+              </h6>
             </section>
           </div>
           <div
@@ -59,12 +63,12 @@ Array [
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 fvyOLy Banner__Close-sc-6825al-1 cgOoTm"
+                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu Banner__Close-sc-6825al-1 cgOoTm"
                 color="link"
                 data-icon="times"
                 data-prefix="far"
                 focusable="false"
-                fontSize="1.35em"
+                fontSize="inherit"
                 id={null}
                 role="img"
                 style={Object {}}
@@ -84,7 +88,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -99,11 +103,11 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+        fontSize="0.879em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.4px"
       >
         Default Modal
       </label>
@@ -115,32 +119,36 @@ Array [
 exports[` 2`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 iRlunR"
+    id="Modal_Knobs"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
+      id="modal-bg-Modal_Knobs"
       onClick={[Function]}
     />
     <span
-      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Knobs-animation"
       onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gemaRk"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
-        id={null}
-        media={null}
+        id="storyshots_55"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id={null}
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_55-Header"
           onClick={null}
         >
           <div
@@ -151,15 +159,21 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
-                fontWeight={400}
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
                 id={null}
-                letterSpacing="0px"
+                rows={null}
               >
-                This is a very special message just for you...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  This is a very special message just for you...
+                </p>
+              </section>
             </div>
           </div>
         </section>
@@ -167,7 +181,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -182,11 +196,11 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+        fontSize="0.879em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.4px"
       >
         Open Modal
       </label>
@@ -198,31 +212,35 @@ Array [
 exports[` 3`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 iRlunR"
+    id="Modal_Dialog"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
+      id="modal-bg-Modal_Dialog"
       onClick={[Function]}
     />
     <span
-      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Dialog-animation"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 dihrKb DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id={null}
-        media={null}
+        id="storyshots_56"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id={null}
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_56-Header"
           onClick={null}
         >
           <div
@@ -233,44 +251,50 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
-                fontSize="1.15em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
               >
-                Default Dialog
-              </h5>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
+                  fontSize="1.15em"
+                  fontWeight={500}
+                  letterSpacing="0px"
+                >
+                  Default Dialog
+                </h5>
+              </section>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id={null}
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_56-Body"
           onClick={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
           id={null}
           onClick={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bnyJVr DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 PrSNy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Cancel"
@@ -285,18 +309,18 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                  fontSize="0.879em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   Nevermind...
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 eKnWUJ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 knQEvv DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
               id="Confirm"
@@ -311,11 +335,11 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                  fontSize="0.879em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.4px"
                 >
                   Let's Do It!
                 </label>
@@ -327,7 +351,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -342,11 +366,11 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+        fontSize="0.879em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.4px"
       >
         Dialog Modal
       </label>
@@ -358,32 +382,36 @@ Array [
 exports[` 4`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 enBxPE"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 dklVI"
+    id="Modal_Text"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
+      id="modal-bg-Modal_Text"
       onClick={[Function]}
     />
     <span
-      className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Text-animation"
       onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gemaRk"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
-        id={null}
-        media={null}
+        id="storyshots_57"
+        media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-          id={null}
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
+          id="storyshots_57-Header"
           onClick={null}
         >
           <div
@@ -394,15 +422,21 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                fontSize="0.876em"
-                fontWeight={400}
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
                 id={null}
-                letterSpacing="0px"
+                rows={null}
               >
-                This is a very special message just for you...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                  fontSize="0.879em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  This is a very special message just for you...
+                </p>
+              </section>
             </div>
           </div>
         </section>
@@ -410,7 +444,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -425,11 +459,11 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+        fontSize="0.879em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.4px"
       >
         Text Modal
       </label>
@@ -441,51 +475,28 @@ Array [
 exports[` 5`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 iRlunR"
+    id="Modal_Image"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 gUzVOX"
+      id="modal-bg-Modal_Image"
       onClick={[Function]}
     />
-    <img
-      className="Modal__Image-sc-15cll21-1 LeaMT"
-      onClick={[Function]}
-      src={Object {}}
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="Modal_Image-animation"
     />
-    <section
-      className="Modal__Close-sc-15cll21-4 mQDax"
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 gKQaUy"
-        color="neutral20"
-        data-icon="times"
-        data-prefix="far"
-        focusable="false"
-        fontSize="1.35em"
-        id={null}
-        role="img"
-        style={Object {}}
-        viewBox="0 0 320 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </section>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -500,11 +511,11 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+        fontSize="0.879em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.4px"
       >
         Image Modal
       </label>

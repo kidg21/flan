@@ -2,9 +2,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// import { Skeleton } from "helpers";
+// import { Skeleton } from "helpers/Skeleton";
 import { Lighten, Darken } from "Variables";
-
 
 const StyledLabel = styled.label`
   color: inherit;
@@ -44,6 +43,16 @@ const LinkText = styled.a`
   color: ${(props) => { return props.theme.text.link; }};
   cursor: pointer;
 
+
+  &[disabled] {
+    color: ${(props) => {
+    return props.theme.text.disabled;
+  }};
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    border-left: none;
+  }
   &:hover,
   &:focus {
     ${Darken};
@@ -58,7 +67,7 @@ const TitleText = styled.h6`
   font-weight: ${(props) => { return props.fontWeight; }};
   color: inherit;
   line-height: normal;
-  font-family: ${(props) => { return props.theme.typography.primary; }};
+  font-family: ${(props) => { return props.theme.typography.secondary; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 
@@ -81,7 +90,7 @@ function Text({
     },
     sm: {
       fontSize: "0.75em",
-      letterSpacing: "0.2px",
+      letterSpacing: "0.4px",
     },
     lg: {
       fontSize: "1em",
@@ -89,7 +98,7 @@ function Text({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.2px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -164,7 +173,7 @@ function Title({
 
   const weightHash = {
     light: 300,
-    bold: 600,
+    bold: 500,
   };
 
   let fontWeight = parseInt(weight, 10);
@@ -211,8 +220,8 @@ function Label({
 }) {
   const sizeHash = {
     xs: {
-      fontSize: "0.65em",
-      letterSpacing: "0.6px",
+      fontSize: "0.68em",
+      letterSpacing: "1px",
     },
     sm: {
       fontSize: "0.82em",
@@ -224,7 +233,7 @@ function Label({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0.2px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.4px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -305,7 +314,7 @@ function Link({
       fontSize={fontSize}
       fontWeight={fontWeight}
       href={href}
-      isDisabled={disabled}
+      disabled={disabled}
       letterSpacing={letterSpacing}
       onClick={onClick}
       target={target}
@@ -340,4 +349,6 @@ Link.defaultProps = {
   weight: null,
 };
 
-export { Text as default, Title, Label, Link };
+export {
+  Text as default, Title, Label, Link,
+};

@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-Array [
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
   <div
     className="Expander__HeaderWrapper-sc-147204-0 insQpf"
     id={null}
@@ -16,7 +22,7 @@ Array [
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -49,94 +55,32 @@ Array [
         </svg>
       </div>
     </div>
-  </div>,
+  </div>
   <div
     className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
     open={false}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       hi
     </p>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[` 2`] = `
-Array [
-  <div
-    className="Expander__HeaderWrapper-sc-147204-0 insQpf"
-    id={null}
-    onClick={[Function]}
-  >
-    <div
-      className="Bar__BarLayout-icfo76-2 izXrkl"
-      id={null}
-      onClick={null}
-    >
-      <div
-        className="Bar__Slot-icfo76-1 fNcQEg"
-      >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
-          fontWeight={400}
-          id={null}
-          letterSpacing="0px"
-        >
-          Accordion Title
-        </p>
-      </div>
-      <div
-        className="Bar__Slot-icfo76-1 cxljst"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-          color={null}
-          data-icon="angle-up"
-          data-prefix="far"
-          focusable="false"
-          fontSize="inherit"
-          id={null}
-          role="img"
-          style={Object {}}
-          viewBox="0 0 320 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </div>
-    </div>
-  </div>,
-  <div
-    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-    open={false}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0px"
-    >
-      hi
-    </p>
-  </div>,
-]
-`;
-
-exports[` 3`] = `
-Array [
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
   <div
     className="Expander__HeaderWrapper-sc-147204-0 insQpf"
     id={null}
@@ -156,7 +100,7 @@ Array [
         >
           <input
             checked={null}
-            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+            className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
             id="checkbox-id"
             onBlur={null}
             onChange={null}
@@ -164,11 +108,11 @@ Array [
             type="checkbox"
           />
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
+            fontSize="0.879em"
             fontWeight={400}
             htmlFor="checkbox-id"
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Label 1
           </label>
@@ -199,19 +143,95 @@ Array [
         </svg>
       </div>
     </div>
+  </div>
+  <div
+    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+    open={false}
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.2px"
+    >
+      hi
+    </p>
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+Array [
+  <div
+    className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+    id={null}
+    onClick={[Function]}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 izXrkl"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
+          fontSize="1em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Accordion Title
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.2px"
+        >
+          This is a description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 cxljst"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+          color={null}
+          data-icon="angle-up"
+          data-prefix="far"
+          focusable="false"
+          fontSize="inherit"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 320 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+    </div>
   </div>,
   <div
     className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
     open={false}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
-      hi
+      This is the body of the accordion. Put whatever you want in here
     </p>
   </div>,
 ]
@@ -233,7 +253,7 @@ Array [
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
           fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
@@ -241,11 +261,11 @@ Array [
           Accordion Title
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is a description
         </p>
@@ -281,87 +301,11 @@ Array [
     open={false}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
-    >
-      This is the body of the accordion. Put whatever you want in here
-    </p>
-  </div>,
-]
-`;
-
-exports[` 5`] = `
-Array [
-  <div
-    className="Expander__HeaderWrapper-sc-147204-0 insQpf"
-    id={null}
-    onClick={[Function]}
-  >
-    <div
-      className="Bar__BarLayout-icfo76-2 izXrkl"
-      id={null}
-      onClick={null}
-    >
-      <div
-        className="Bar__Slot-icfo76-1 fNcQEg"
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 exoZGd"
-          fontSize="1em"
-          fontWeight={400}
-          letterSpacing="0px"
-        >
-          Accordion Title
-        </h6>
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
-          fontWeight={400}
-          id={null}
-          letterSpacing="0px"
-        >
-          This is a description
-        </p>
-      </div>
-      <div
-        className="Bar__Slot-icfo76-1 cxljst"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-          color={null}
-          data-icon="angle-up"
-          data-prefix="far"
-          focusable="false"
-          fontSize="inherit"
-          id={null}
-          role="img"
-          style={Object {}}
-          viewBox="0 0 320 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </div>
-    </div>
-  </div>,
-  <div
-    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-    open={false}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       This is the body of the accordion. Put whatever you want in here
     </p>

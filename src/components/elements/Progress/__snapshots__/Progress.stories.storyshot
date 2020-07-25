@@ -1,116 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+  id={null}
+  rows={null}
 >
   <ul
     className="Progress__Container-pxi9hw-1 ijZjmM"
     id={null}
   >
     <li
-      className="Progress__StepItem-pxi9hw-0 djFafc"
+      className="Progress__StepItem-pxi9hw-0 gXerTG"
       id={null}
     >
       <div
         className="Progress__ItemContainer-pxi9hw-2 gjnABh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 cLteVL"
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
           fontSize="1em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Task
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           this is what you do
         </p>
       </div>
     </li>
     <li
-      className="Progress__StepItem-pxi9hw-0 djFafc"
+      className="Progress__StepItem-pxi9hw-0 gXerTG"
       id={null}
     >
       <div
         className="Progress__ItemContainer-pxi9hw-2 gjnABh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 cLteVL"
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
           fontSize="1em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Task
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           this is what you do
         </p>
       </div>
     </li>
     <li
-      className="Progress__StepItem-pxi9hw-0 bepUrb"
+      className="Progress__StepItem-pxi9hw-0 iLOSNh"
       id={null}
     >
       <div
         className="Progress__ItemContainer-pxi9hw-2 gjnABh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 cLteVL"
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
           fontSize="1em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Task
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
-        >
-          this is what you do
-        </p>
-      </div>
-    </li>
-    <li
-      className="Progress__StepItem-pxi9hw-0 hGunIJ"
-      id={null}
-    >
-      <div
-        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 cLteVL"
-          fontSize="1em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          Task
-        </h6>
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
-          fontWeight={400}
-          id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           this is what you do
         </p>
@@ -124,24 +96,462 @@ exports[` 1`] = `
         className="Progress__ItemContainer-pxi9hw-2 gjnABh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 cLteVL"
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
           fontSize="1em"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing="0px"
         >
           Task
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-          fontSize="0.876em"
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
           fontWeight={400}
           id={null}
+          letterSpacing="0.2px"
+        >
+          this is what you do
+        </p>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
           letterSpacing="0px"
+        >
+          Task
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+          fontSize="0.879em"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.2px"
         >
           this is what you do
         </p>
       </div>
     </li>
   </ul>
+  <div
+    className="Bar__BarLayout-icfo76-2 jEWtiX"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-icfo76-1 boCGaE"
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+        disabled={false}
+        htmlFor={null}
+        id={null}
+        name={null}
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+            fontSize="0.879em"
+            fontWeight={600}
+            htmlFor={null}
+            letterSpacing="0.4px"
+          >
+            Back
+          </label>
+        </section>
+      </button>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 kZQbjh"
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+        disabled={false}
+        htmlFor={null}
+        id={null}
+        name={null}
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+            fontSize="0.879em"
+            fontWeight={600}
+            htmlFor={null}
+            letterSpacing="0.4px"
+          >
+            Next
+          </label>
+        </section>
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 caSwqL"
+  id={null}
+  rows={null}
+>
+  <ul
+    className="Progress__Container-pxi9hw-1 ijZjmM"
+    id={null}
+  >
+    <li
+      className="Progress__StepItem-pxi9hw-0 iLOSNh"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+  </ul>
+  <ul
+    className="Progress__Container-pxi9hw-1 ijZjmM"
+    id={null}
+  >
+    <li
+      className="Progress__StepItem-pxi9hw-0 gXerTG"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 gXerTG"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 iLOSNh"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gymxyt"
+          fontSize="1em"
+          fontWeight={500}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+      </div>
+    </li>
+  </ul>
+  <div
+    className="Bar__BarLayout-icfo76-2 izXrkl"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-icfo76-1 fNcQEg"
+    >
+      <ul
+        className="Progress__Container-pxi9hw-1 ijZjmM"
+        id={null}
+      >
+        <li
+          className="Progress__StepItem-pxi9hw-0 gXerTG"
+          id={null}
+        >
+          <div
+            className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 gymxyt"
+              fontSize="1em"
+              fontWeight={500}
+              letterSpacing="0px"
+            />
+          </div>
+        </li>
+        <li
+          className="Progress__StepItem-pxi9hw-0 gXerTG"
+          id={null}
+        >
+          <div
+            className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 gymxyt"
+              fontSize="1em"
+              fontWeight={500}
+              letterSpacing="0px"
+            />
+          </div>
+        </li>
+        <li
+          className="Progress__StepItem-pxi9hw-0 gXerTG"
+          id={null}
+        >
+          <div
+            className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 gymxyt"
+              fontSize="1em"
+              fontWeight={500}
+              letterSpacing="0px"
+            />
+          </div>
+        </li>
+        <li
+          className="Progress__StepItem-pxi9hw-0 hGunIJ"
+          id={null}
+        >
+          <div
+            className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 gymxyt"
+              fontSize="1em"
+              fontWeight={500}
+              letterSpacing="0px"
+            />
+          </div>
+        </li>
+        <li
+          className="Progress__StepItem-pxi9hw-0 hGunIJ"
+          id={null}
+        >
+          <div
+            className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 gymxyt"
+              fontSize="1em"
+              fontWeight={500}
+              letterSpacing="0px"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 gxusZp"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        30%
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[` 3`] = `
+<div
+  className="Bar__BarLayout-icfo76-2 fliBOc"
+  id={null}
+  onClick={null}
+>
+  <div
+    className="Bar__Slot-icfo76-1 fNcQEg"
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.2px"
+    >
+      Hello Object
+    </p>
+  </div>
+  <div
+    className="Bar__Slot-icfo76-1 kmncZp"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 cIDgbj"
+      id={null}
+      rows={null}
+    >
+      <div
+        className="ProgressIndicator__Container-sc-1kcvu29-1 fNGRuG"
+      >
+        <div
+          className="ProgressIndicator__BarItem-sc-1kcvu29-0 kQKTnh"
+          id={null}
+          style={
+            Object {
+              "width": "42%",
+            }
+          }
+        />
+      </div>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+        fontSize="0.879em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.2px"
+      >
+        42%
+      </p>
+    </section>
+  </div>
 </div>
 `;

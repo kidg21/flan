@@ -7,8 +7,6 @@ import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 
-
-
 const CommandContainer = styled.a`
   display: ${(props) => {
     return props.icon ? "grid" : "";
@@ -49,8 +47,7 @@ const CommandContainer = styled.a`
 const CommandName = styled(Label)`
   grid-area: name;
   font-size: inherit;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 700;
   color: inherit;
   text-transform: capitalize;
   overflow: hidden;
@@ -155,22 +152,22 @@ function Command({
       break;
   }
   return (
-       <CommandContainer
-         alignCommand={alignCommand}
-         alignIcon={alignIcon}
-         commandColor={commandColor}
-         commandSize={commandSize}
-         icon={cmd.icon}
-         id={id}
-         isDisabled={isDisabled}
-         justifyIcon={justifyIcon}
-         label={label}
-         onClick={onClick}
-         title={cmd.label}
-       >
-         {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
-         <CommandName text={cmd.label} />
-       </CommandContainer>
+    <CommandContainer
+      alignCommand={alignCommand}
+      alignIcon={alignIcon}
+      commandColor={commandColor}
+      commandSize={commandSize}
+      icon={cmd.icon}
+      id={id}
+      isDisabled={isDisabled}
+      justifyIcon={justifyIcon}
+      label={label}
+      onClick={onClick}
+      title={cmd.label}
+    >
+      {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
+      <CommandName text={cmd.label} />
+    </CommandContainer>
   );
 }
 

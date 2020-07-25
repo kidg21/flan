@@ -4,7 +4,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Text, { Title, Link } from "base/Typography";
-import { SkeletonStatic } from "helpers";
+import { useId } from "utils/hooks";
+import { SkeletonStatic } from "helpers/Skeleton";
 import Loader from "atoms/Loader";
 
 const LegendTitle = styled(Title)`
@@ -69,6 +70,8 @@ const Row = styled.tr`
   }
 `;
 
+const Body = styled.tbody``;
+
 function Legend({
   id,
   fontSize,
@@ -80,41 +83,56 @@ function Legend({
   let cellBorder;
   let cellBorderColor;
 
-  return (
-    <Wrapper id={id}>
-      {title ? <LegendTitle weight="bold" text={title} /> : null}
-      <TableContainer id={id}>
-        {/* if data is an array (possibly empty) then content has been loaded
-          and we should display it if it's not an array then assume content is still loading */}
-        {data instanceof Array > 0 ? data.map((row) => {
-          let rowValue = row.value;
-          if (row.onClick) {
-            rowValue = (<Link onClick={row.onClick} text={row.value} />);
-          }
-          return (
-            <Row key={row.id}>
-              <Cell
-                cellBorder={cellBorder}
-                cellPadding={cellPadding}
-                cellBorderColor={cellBorderColor}
-                fontWeight={fontWeight}
-                fontSize={fontSize}
-              >
-                <Text text={row.label} />
-              </Cell>
-              <Cell
-                cellBorder={cellBorder}
-                cellPadding={cellPadding}
-                cellBorderColor={cellBorderColor}
-                fontWeight={fontWeight}
-                fontSize={fontSize}
-              >
-                <Text text={rowValue} />
-              </Cell>
-            </Row>
-          );
-        }) : <Loader />}
+  const uId = useId(id);
+
+  const content = data instanceof Array
+    ? (
+      <TableContainer id={`${uId}-table`}>
+        <Body>
+          {data.map((row, index) => {
+            let rowValue = row.value;
+            if (row.onClick) {
+              rowValue = (<Link onClick={row.onClick}>{rowValue}</Link>);
+            }
+            if (typeof row.isText === "undefined" || row.isText) {
+              rowValue = <Text>{rowValue}</Text>;
+            }
+
+            const rowKey = row.id
+              || (typeof row.label === "string" && row.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
+              || (typeof row.value === "string" && row.value.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
+              || index;
+            return (
+              <Row key={rowKey}>
+                <Cell
+                  cellBorder={cellBorder}
+                  cellPadding={cellPadding}
+                  cellBorderColor={cellBorderColor}
+                  fontWeight={fontWeight}
+                  fontSize={fontSize}
+                >
+                  <Text>{row.label}</Text>
+                </Cell>
+                <Cell
+                  cellBorder={cellBorder}
+                  cellPadding={cellPadding}
+                  cellBorderColor={cellBorderColor}
+                  fontWeight={fontWeight}
+                  fontSize={fontSize}
+                >
+                  {rowValue}
+                </Cell>
+              </Row>
+            );
+          })}
+        </Body>
       </TableContainer>
+    ) : <Loader />;
+
+  return (
+    <Wrapper id={uId}>
+      {title ? <LegendTitle weight="bold" text={title} /> : null}
+      {content}
     </Wrapper>
   );
 }
@@ -125,15 +143,17 @@ Legend.propTypes = {
   title: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    label: PropTypes.string,
+    label: PropTypes.node,
     value: PropTypes.node,
-  })).isRequired,
+    isText: PropTypes.bool,
+  })),
 };
 
 Legend.defaultProps = {
   id: null,
   fontSize: null,
   title: null,
+  data: null,
 };
 
 export default Legend;

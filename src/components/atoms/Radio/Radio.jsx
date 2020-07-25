@@ -52,17 +52,20 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${(props) => {
+    border: 0.32em solid ${(props) => {
     return (
-      props.theme.palette[props.fillColorChecked] ||
       props.theme.palette.selected
     );
   }};
-    border-color: ${(props) => {
-    return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.selected
-    );
-  }};
+  &:before {
+    margin: 0 -0.1em 0em 0;
+
+    width: 0.89em;
+    height: 0.89em;
+    border-radius: 100%;
+    display: inline-block;
+    content: "";
+  }
   }
   &:focus {
     border-color: ${(props) => {
@@ -99,8 +102,7 @@ function Radio({
   let fillColorChecked;
   let alignInput;
   let tabIndex;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     fillColor = "neutral40";
     fillColorChecked = "neutral40";
@@ -161,8 +163,7 @@ function RadioGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
@@ -182,22 +183,21 @@ function RadioGroup({
       ) : null}
       {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
       <InputGroup columns={columns}>
-        {children ||
-          data.map((item) => {
-            return (
-              <Radio
-                align={align}
-                disabled={item.disabled || isDisabled}
-                error={!!error}
-                id={item.id}
-                key={item.id}
-                label={item.label}
-                name={item.name}
-                onChange={onChange}
-                value={item.value}
-              />
-            );
-          })}
+        {children || data.map((item) => {
+          return (
+            <Radio
+              align={align}
+              disabled={item.disabled || isDisabled}
+              error={!!error}
+              id={item.id}
+              key={item.id}
+              label={item.label}
+              name={item.name}
+              onChange={onChange}
+              value={item.value}
+            />
+          );
+        })}
       </InputGroup>
       {errorText ? <Text size="sm" weight="bold" text={errorText} /> : null}
     </RadioWrapper>
@@ -219,7 +219,7 @@ Radio.propTypes = {
   onFocus: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
-  value: PropTypes.string,
+  value: PropTypes.any,
 };
 
 Radio.defaultProps = {
@@ -249,7 +249,7 @@ RadioGroup.propTypes = {
     onBlur: PropTypes.func,
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
-    value: PropTypes.string,
+    value: PropTypes.any,
   })),
   disabled: PropTypes.bool,
   error: PropTypes.string,
@@ -264,17 +264,7 @@ RadioGroup.defaultProps = {
   align: null,
   children: null,
   columns: null,
-  data: {
-    checked: false,
-    disabled: false,
-    id: null,
-    label: null,
-    name: null,
-    onBlur: null,
-    onChange: null,
-    onFocus: null,
-    value: null,
-  },
+  data: [],
   disabled: false,
   error: null,
   helpText: null,

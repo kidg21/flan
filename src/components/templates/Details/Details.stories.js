@@ -1,23 +1,11 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
 import Panel from "layout/Panel";
-import List, { ListItem } from "blocks/List";
-import Grid from "layout/Grid";
-import Icon from "atoms/Icon";
-import Button from "atoms/Button";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Tabs, { TabItem } from "blocks/Tabs";
-import Text, { Link } from "base/Typography";
-import Image from "atoms/Image";
-import Card from "elements/Card";
 import Legend from "blocks/Legend";
-
-import Page, { PageSection } from "layout/Page";
-import DialogBox from "elements/DialogBox";
-import Bar from "layout/Bar";
-import Form, { FormSection } from "layout/Form";
-
+import Template from "layout/Template";
 
 const data = [
   { id: "a", label: "Save" },
@@ -34,7 +22,7 @@ const options = [
   { label: "Report Requested by", value: "Nov 10,2019" },
 ];
 
-storiesOf("Templates|04_Details", module)
+storiesOf("Templates|Details Template/", module)
   .add(
     "Default",
     () => {
@@ -42,11 +30,10 @@ storiesOf("Templates|04_Details", module)
         return (
           <Panel
             header={
-              <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
+              <MainPanelHeader id="Details_Header" title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
             }
           >
-            <Page>
-
+            <Template>
               <Tabs>
                 <TabItem label="RFP Details" isSelected />
                 <TabItem label="Property Details" />
@@ -54,43 +41,9 @@ storiesOf("Templates|04_Details", module)
                 <TabItem label="Business Intelligence" />
                 <TabItem label="Files" />
               </Tabs>
-              <PageSection>
-                <Legend data={options} />
-              </PageSection>
-
-            </Page>
+              <Legend id="Details_Legend" data={options} />
+            </Template>
           </Panel>
-
-        );
-      });
-    },
-  )
-  .add(
-    "Section",
-    () => {
-      return React.createElement(() => {
-        return (
-          <Panel
-            header={
-
-              <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
-
-            }
-          >
-            <Page>
-              <Tabs>
-                <TabItem label="RFP Details" />
-                <TabItem label="Property Details" isSelected />
-                <TabItem label="Scope of Work" />
-                <TabItem label="Business Intelligence" />
-                <TabItem label="Files" />
-              </Tabs>
-              <PageSection>
-                <Legend data={options} />
-              </PageSection>
-            </Page>
-          </Panel>
-
         );
       });
     },

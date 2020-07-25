@@ -8,7 +8,7 @@ import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
-import { getGuid } from "helpers";
+import { useId } from "utils/hooks";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
@@ -49,7 +49,34 @@ function DataRange({
     if (typeof setMaxState === "function") setMaxState(newState);
   }
 
-  const uId = id || getGuid();
+  const uId = useId(id);
+
+  let centerContent;
+  let barAlignment;
+  if (select.options) {
+    centerContent = {
+      content: (
+        <SelectMenu
+          disabled={select.disabled || isDisabled}
+          error={!!error}
+          id={`${uId}_center`}
+          label={select.label}
+          onChangeState={select.onChange}
+          options={select.options}
+          selectOptions={select.selected}
+        />),
+    },
+    barAlignment = "bottom";
+  } else {
+    centerContent = {
+      content: (
+        <Text text="_" />
+      ),
+      width: "min-content",
+    },
+    barAlignment = "center";
+  }
+
   return (
     <RangeContainer
       columns="1"
@@ -63,7 +90,7 @@ function DataRange({
       ) : null}
       <Bar
         padding="0"
-        contentAlign="bottom"
+        contentAlign={barAlignment}
         left={
           min.options ? (
             <SelectMenu
@@ -85,19 +112,7 @@ function DataRange({
               value={min.value}
             />)
         }
-        center={
-          select.options ? (
-            <SelectMenu
-              disabled={select.disabled || isDisabled}
-              error={!!error}
-              id={`${uId}_center`}
-              label={select.label}
-              onChangeState={select.onChange}
-              options={select.options}
-              selectOptions={select.selected}
-            />
-          ) : null
-        }
+        center={centerContent}
         right={
           max.options ? (
             <SelectMenu

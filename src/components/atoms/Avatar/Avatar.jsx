@@ -50,8 +50,8 @@ const sizeHash = {
     font: "0.5em",
   },
   sm: {
-    avatar: "2em",
-    font: "0.75em",
+    avatar: "1.8em",
+    font: "0.8em",
   },
   lg: {
     avatar: "3em",
@@ -69,19 +69,20 @@ const variantHash = {
   alert: "alert80",
   info: "info80",
   action: "action80",
+  neutral: "neutral100",
 };
 
 function Avatar({
-  alt, brand, icon, id, label, onClick, size, variant,
+  alt, icon, id, label, onClick, size, variant,
 }) {
   let labelType;
   let iconType;
 
   const selectedSize = size && sizeHash[size.toLowerCase()];
-  const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
-  const fontSize = selectedSize ? selectedSize.font : "1em";
+  const avatarSize = selectedSize ? selectedSize.avatar : "2rem";
+  const fontSize = selectedSize ? selectedSize.font : "0.82em";
 
-  let backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action40";
+  const backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";
   const textColor = "inverse";
 
   let media = null;
@@ -108,9 +109,6 @@ function Avatar({
     labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label && label.substring(0, 2)} />;
   }
 
-  if (!variant && brand) {
-    backgroundColor = brand;
-  }
 
   return (
     <TagContainer
@@ -127,7 +125,6 @@ function Avatar({
 
 Avatar.propTypes = {
   alt: PropTypes.string,
-  brand: PropTypes.oneOf("research", "jobs", "bi", "broker", "brand1", "brand2", "brand3", "brand4"),
   /** Option 1:
    * <br>
    * Enter the name of the icon as the prop value. (ex. icon="circle"
@@ -146,7 +143,6 @@ Avatar.propTypes = {
 
 Avatar.defaultProps = {
   alt: null,
-  brand: null,
   icon: null,
   id: null,
   label: null,

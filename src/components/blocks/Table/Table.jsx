@@ -89,9 +89,9 @@ export const CellWrapper = styled.div`
   }
 
   &:after {
-    content: "v";
+    content: "↓";
     position: absolute;
-    right: 0;
+    right: 10%;
     display: ${(props) => {
     return props.isSortable ? "" : "none";
   }};

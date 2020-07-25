@@ -9,7 +9,7 @@ import Grid from "layout/Grid";
 import { Label } from "base/Typography";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
-import { Skeleton } from "helpers";
+import { Skeleton } from "helpers/Skeleton";
 
 const StyledButton = styled.button`
   display: flex;
@@ -18,7 +18,7 @@ const StyledButton = styled.button`
   z-index: 0;
   flex-direction: row;
   width: ${(props) => {
-    return props.fullWidth ? "100%" : "auto";
+    return props.fullWidth ? "100%" : "max-content";
   }};
   height: ${(props) => {
     return props.alignCenter ? "" : "2.4rem";
@@ -33,8 +33,8 @@ const StyledButton = styled.button`
   }};
   background-color: ${(props) => {
     return (
-      props.theme.palette[props.backgroundColor] ||
-      props.theme.background.default
+      props.theme.palette[props.backgroundColor]
+      || props.theme.background.default
     );
   }};
   border-color: ${(props) => {
@@ -52,9 +52,6 @@ const StyledButton = styled.button`
   font-size: ${(props) => {
     return props.labelSize || "inherit";
   }};
-  font-weight: ${(props) => {
-    return props.fontWeight || "400";
-  }};
   text-transform: capitalize;
   cursor: pointer;
   border-bottom: ${(props) => {
@@ -70,7 +67,7 @@ const StyledButton = styled.button`
   &:focus {
     outline: none;
   }
-  &:hover { 
+  &:hover {
     background-color: ${(props) => {
     return (
       props.theme.palette[props.hoverColor]);
@@ -112,6 +109,12 @@ const LabelWrapper = styled(Grid)`
   }
 `;
 
+const GroupWrapper = styled(Grid)`
+  ${StyledButton} {
+    width: auto;
+  }
+`;
+
 StyledButton.displayName = "Button";
 
 function ButtonGroup({
@@ -124,9 +127,9 @@ function ButtonGroup({
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
   return (
-    <Grid className={className} columns={setColumns} id={id}>
+    <GroupWrapper className={className} columns={setColumns} id={id}>
       {children}
-    </Grid>
+    </GroupWrapper>
   );
 }
 
@@ -137,7 +140,7 @@ ButtonGroup.propTypes = {
    *
    * Options: 1-6
    */
-  columns: PropTypes.string,
+  columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   className: PropTypes.string,
 };
 
@@ -204,11 +207,17 @@ function Button({
       tintColor = "info20";
       shadeColor = "info100";
       break;
+    case "neutral":
+      buttonColor = "neutral120";
+      fontColor = buttonColor;
+      tintColor = "neutral20";
+      shadeColor = "neutral200";
+      break;
     case "action":
       buttonColor = "action80";
       fontColor = buttonColor;
       tintColor = "action20";
-      shadeColor = "action100";
+      shadeColor = "action90";
       break;
     default:
       buttonColor = "action80";
@@ -254,8 +263,7 @@ function Button({
     gridGap = "0";
   }
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   if (isDisabled) {
     fontColor = "disabled";
@@ -266,8 +274,9 @@ function Button({
     }
   }
 
-  const columns =
-    count || icon ? `${!alignCenter && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}` : "1fr";
+  const columns = count || icon
+    ? `${!alignCenter && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}`
+    : "1fr";
 
   const content = (
     <LabelWrapper
@@ -278,7 +287,7 @@ function Button({
     >
       {icon ? <Icon icon={icon} /> : null}
       {label ? <Label weight="bold" text={label} /> : null}
-      {count && !isDisabled ? <Tag label={count} /> : null}
+      {count && !isDisabled ? <Tag label={count.toString()} /> : null}
     </LabelWrapper>
   );
 
@@ -317,7 +326,7 @@ function Button({
 Button.propTypes = {
   alignCenter: PropTypes.bool,
   className: PropTypes.string,
-  count: PropTypes.string,
+  count: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
   hasUnderline: PropTypes.bool,
@@ -330,7 +339,7 @@ Button.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(["button", "reset", "submit"]),
-  variant: PropTypes.oneOf(["action", "alert", "info", "success", "warning"]),
+  variant: PropTypes.oneOf(["", "action", "alert", "info", "success", "warning", "neutral"]),
 };
 
 Button.defaultProps = {
@@ -352,5 +361,4 @@ Button.defaultProps = {
   variant: null,
 };
 
-// export default Button;
 export { Button as default, ButtonGroup };

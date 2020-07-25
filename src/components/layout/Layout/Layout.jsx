@@ -3,7 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { PlaceholderText } from "helpers//Skeleton";
 import { screen } from "Variables";
 import Flex from "layout/Flex";
 
@@ -15,7 +15,7 @@ const WrapperOuter = styled(Flex)`
 const Header = styled(Flex)`
   flex: none;
   box-shadow: ${(props) => {
-    return props.hasShadow ? props.theme.shadows.outerShadow : "";
+    return props.hasShadow ? props.theme.shadows.outlineShadow : "";
   }};
   &:empty {
     &:before {
@@ -31,7 +31,7 @@ const Header = styled(Flex)`
 const Footer = styled(Flex)`
   flex: none;
   box-shadow: ${(props) => {
-    return props.theme.shadows.outerShadow;
+    return props.theme.shadows.outlineShadow;
   }};
   &:empty {
     &:before {
@@ -65,7 +65,7 @@ const RegionLeft = styled(Flex)`
     return props.open ? "none" : `translate3d(-100%, 0, 0)`;
   }};
   box-shadow: ${(props) => {
-    return props.open ? props.theme.shadows.outerShadow : "";
+    return props.open ? props.theme.shadows.outlineShadow : "";
   }};
   &:empty {
     &:before {
@@ -139,7 +139,7 @@ const RegionBottom = styled(Flex)`
     return props.open ? "none" : "translate3d(0, 100%, 0)";
   }};
   box-shadow: ${(props) => {
-    return props.open ? props.theme.shadows.outerShadow : "";
+    return props.open ? props.theme.shadows.outlineShadow : "";
   }};
   &:empty {
     &:before {
@@ -166,7 +166,7 @@ const RegionRight = styled(Flex)`
     return props.open ? "none" : `translate3d(100%, 0, 0)`;
   }};
   box-shadow: ${(props) => {
-    return props.open ? props.theme.shadows.outerShadow : "";
+    return props.open ? props.theme.shadows.outlineShadow : "";
   }};
   &:empty {
     &:before {
@@ -198,14 +198,14 @@ function Layout({
   let bottomHeight;
   let zIndex = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
-    leftWidth = "15%";
-    rightWidth = "25%";
-    bottomHeight = "40%";
+    leftWidth = "10rem";
+    rightWidth = "24rem";
+    bottomHeight = "20rem";
     zIndex = "1";
   } else {
     leftWidth = "100%";
     rightWidth = "100%";
-    bottomHeight = "60%";
+    bottomHeight = "30rem";
     zIndex = "1";
   }
 
@@ -272,15 +272,16 @@ function Layout({
     if (screenLarge.matches || screenMedium.matches) {
       // On larger screens, both left and right regions can be open at the same time
       if (leftOpen) {
-        mainLeft = "15%";
-        mainWidth = "85%";
+        mainLeft = `${leftWidth}`;
+        mainWidth = `calc(${mainWidth} - ${leftWidth})`;
         if (rightOpen) {
-          mainWidth = "60%";
+          mainWidth = `calc(${mainWidth} - ${rightWidth})`;
         }
       } else {
         mainLeft = "0";
       }
-    }/* else if (leftOpen && openOrder[0] !== "left") {
+    }
+    /* else if (leftOpen && openOrder[0] !== "left") {
       // On small screens, either the left or right region can be open, but not both.
       // If the right region was previously open, it's state is restored when the left region is closed.
       leftOpen = false;
@@ -290,7 +291,7 @@ function Layout({
   if (right) {
     if (screenLarge.matches || screenMedium.matches) {
       // On larger screens, both left and right regions can be open at the same time
-      if (rightOpen && !leftOpen) mainWidth = "75%";
+      if (rightOpen && !leftOpen) mainWidth = `calc(${mainWidth} - ${rightWidth})`;
     }/* else if (rightOpen && openOrder[0] !== "right") {
       // On small screens, either the left or right region can be open, but not both.
       // If the left region was previously open, it's state is restored when the right region is closed.

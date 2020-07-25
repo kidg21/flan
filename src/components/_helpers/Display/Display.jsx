@@ -1,11 +1,8 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
-import Text, { Title } from "base/Typography";
-import Bar from "layout/Bar";
-import Card, { CardSection } from "elements/Card";
+import Text from "base/Typography";
 import Grid from "layout/Grid";
-import Icon from "atoms/Icon";
 import Command from "atoms/Command";
 
 const fullscreen = {
@@ -37,10 +34,20 @@ const padding = {
 };
 const Padding = (storyFn) => { return (<div style={padding}>{storyFn()}</div>); };
 
+const containerSmall = {
+  height: "150px",
+};
+const ContainerSmall = (storyFn) => { return (<div style={containerSmall}>{storyFn()}</div>); };
+
 const container = {
   height: "250px",
 };
 const Container = (storyFn) => { return (<div style={container}>{storyFn()}</div>); };
+
+const containerLarge = {
+  height: "400px",
+};
+const ContainerLarge = (storyFn) => { return (<div style={containerLarge}>{storyFn()}</div>); };
 
 function Spacer() {
   return <span>&nbsp;</span>;
@@ -50,46 +57,10 @@ const DisplayGrid = (storyFn) => {
   return (<Grid>{storyFn()}</Grid>);
 };
 
-function IconGrid({ data }) {
-  return data.map((item) => {
-    return (
-      <Card
-        key={item.icon}
-        id={item.icon}
-        hover
-      >
-        <Bar
-          contentAlign="center"
-          left={{
-            content: <Icon
-              icon={item.icon}
-              variant={item.variant}
-              size={item.size || "xl"}
-              spin={item.spin}
-              pulse={item.pulse}
-              fixedWidth
-            />,
-            width: "min-content",
-          }}
-          center={{
-            content: (
-              <React.Fragment>
-                <Title text={item.name || item.icon} size="lg" select="all" />
-                <Text text={item.desc} />
-              </React.Fragment>
-            ),
-            align: "left",
-          }}
-        />
-      </Card>
-    );
-  });
-}
-
 function CommandGrid({ data }) {
   return data.map((item) => {
     return (
-      <Grid gap="xs">
+      <Grid gap="xs" key={item.command}>
         <Command command={item.command} />
         <Text text={item.desc} />
       </Grid>
@@ -97,4 +68,37 @@ function CommandGrid({ data }) {
   });
 }
 
-export { FullScreen, Center, Padding, Container, Spacer, DisplayGrid, IconGrid, CommandGrid };
+const centerDecoratorStyles = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "inherit",
+};
+
+const CenterDecorator = (storyFn) => {
+  return (<div style={centerDecoratorStyles}>{storyFn()}</div>);
+};
+
+const CenterDisplayGrid = (storyFn) => {
+  return (
+    <Grid columns={3}>
+      <div />
+      {storyFn()}
+      <div />
+    </Grid>
+  );
+};
+
+export {
+  FullScreen,
+  Center,
+  CenterDecorator,
+  CenterDisplayGrid,
+  Padding,
+  ContainerSmall,
+  Container,
+  ContainerLarge,
+  Spacer,
+  DisplayGrid,
+  CommandGrid,
+};

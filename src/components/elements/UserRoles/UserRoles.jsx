@@ -229,7 +229,7 @@ UserRoles.propTypes = {
   ])),
   commands: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
+    label: PropTypes.string,
     onClick: PropTypes.func,
   })),
   right: PropTypes.node,

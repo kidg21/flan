@@ -1,0 +1,67 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Icon from "atoms/Icon";
+import Tag from "atoms/Tag";
+import Text from "base/Typography";
+import Card, { CardSection, CardGrid } from "elements/Card";
+import Legend from "blocks/Legend";
+
+<Meta title="Data Display|Legend" component={Legend} />
+
+# Legend
+
+#### An Legend allows users to toggle the display of sections of content
+
+<Preview withToolbar>
+  <Story name="Standard">
+  <Card id="Legend_Standard_Card">
+     <Legend id="Legend_Standard" data={[
+  { label: "Name", value: "Forrest Gump" },
+  { label: "Address", value: "213 Chippewa Sq." },
+  { label: "City", value: "Savannah" },
+  { label: "State", value: "GA" },
+]} />
+  </Card>
+  </Story>
+</Preview>
+
+# Usage
+
+The Legend component is a set of expandable panels for showing and hiding content from the user to make the UI less crowded. The component works well on both mobile and desktop environment and it supports keyboard and screen readers too. The component supports Lumo and Material themes.
+
+# Examples
+
+### Types
+
+<Preview>
+  <Story name="Types">
+  <Grid columns="2">
+    <Card id="Legend_Icon_Card">
+    <Legend id="Legend_Icon" data={[
+      { label: ( <Icon icon="map" /> ), value: "Map" },
+      { label: ( <Icon icon="report" /> ), value: "Education" },
+      { label: ( <Icon icon="circle" /> ), value: "Parcel" },
+      { label: ( <Icon icon="star" /> ), value: "Movie" },
+    ]} />
+    </Card>
+    <Card id="Legend_Tag_Card">
+    <Legend id="Legend_Tag" data={[
+      { label: ( <Tag label="Info" variant="info" /> ), value: "Map" },
+      { label: ( <Tag label="Warning" variant="warning" /> ), value: "Education" },
+      { label: ( <Tag label="Success" variant="success" /> ), value: "Parcel" },
+      { label: ( <Tag label="Alert" variant="alert" /> ), value: "Movie" },
+    ]} />
+    </Card>
+  </Grid>
+  </Story>
+</Preview>
+
+
+
+
+## Props
+
+<Props of={Legend} />

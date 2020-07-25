@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
+import { useId } from "utils/hooks";
 import Icon from "atoms/Icon";
 import Bar from "layout/Bar";
 import { Title } from "base/Typography";
@@ -10,25 +11,25 @@ import Menu from "blocks/Menu";
 function PropertyPanelHeader({
   id, title, onClick, menuData,
 }) {
+  const uId = useId(id);
   return (
-    <React.Fragment id={id}>
-      <Bar
-        padding="2x"
-        contentAlign="center"
-        left={{
-          content: <Icon icon="directions" size="lg" onClick={onClick} />,
-          width: "min-content",
-        }}
-        center={{
-          content: <Title text={title} size="lg" weight="bold" />,
-          align: "left",
-        }}
-        right={{
-          content: <Menu data={menuData} position="bottomLeft" />,
-          width: "min-content",
-        }}
-      />
-    </React.Fragment>
+    <Bar
+      id={uId}
+      padding="2x"
+      contentAlign="center"
+      left={{
+        content: <Icon icon="directions" size="lg" onClick={onClick} />,
+        width: "min-content",
+      }}
+      center={{
+        content: <Title text={title} size="lg" weight="bold" />,
+        align: "left",
+      }}
+      right={{
+        content: <Menu id={`${uId}-Menu`} data={menuData} position="bottomLeft" />,
+        width: "min-content",
+      }}
+    />
   );
 }
 

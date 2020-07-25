@@ -2,12 +2,25 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { FullScreen } from "helpers/Display";
-import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockWorkflow, MockMap, MockTable, MockTabs, MockButtons, MockPalette, MockMenu } from "helpers/Mocks";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import Page from "layout/Page";
 import Text, { Title } from "base/Typography";
 import SearchBar from "blocks/Search";
+import {
+  MockButtons,
+  MockCardGrid,
+  MockData,
+  MockDetails,
+  MockFooter,
+  MockForm,
+  MockHeader,
+  MockMenu,
+  MockPalette,
+  MockTable,
+  MockTabs,
+  MockWorkflow,
+} from "helpers/Mocks";
 
 export default {
   title: "Layout|Page/Tests",
@@ -35,16 +48,17 @@ const index = [
   "",
   <MockHeader />,
   <MockFooter />,
-  <MockMap />,
-  <MockMap map="satellite" />,
-  <MockCardGrid />,
+  <Mapbox />,
+  <MockMenu />,
   <MockWorkflow />,
+  <MockDetails />,
+  <MockCardGrid />,
   <MockTable />,
   <MockForm />,
-  <MockDetails />,
   <MockTabs />,
   <MockButtons />,
   <MockPalette />,
+  <MockData />,
 ];
 
 const content = {
@@ -52,16 +66,16 @@ const content = {
   "Header": 1,
   "Footer": 2,
   "Map": 3,
-  "Map (satellite)": 4,
-  "Main Menu": 5,
-  "WorkFlow Menu": 6,
-  "Details": 7,
-  "Card Grid": 8,
-  "Table": 9,
-  "Form": 10,
-  "Tabs": 11,
-  "Buttons": 12,
-  "Palette": 13,
+  "Main Menu": 4,
+  "WorkFlow Menu": 5,
+  "Details": 6,
+  "Card Grid": 7,
+  "Table": 8,
+  "Form": 9,
+  "Tabs": 10,
+  "Buttons": 11,
+  "Palette": 12,
+  "Data": 13,
 };
 
 export const Knobs = () => {
@@ -71,33 +85,34 @@ export const Knobs = () => {
   const contentC = select("C", content, content[0], knobGroups[0]);
   const contentD = select("D", content, content[0], knobGroups[0]);
   const contentE = select("E", content, content[0], knobGroups[0]);
-  const cardState = boolean("Card State", false, knobGroups[0]);
+  const borders = boolean("Borders", false, knobGroups[0]);
+  const shadows = boolean("Shadows", false, knobGroups[0]);
   return (
     <Page
       id="Knobs"
       template={templateID}
       A={
         boolean("Include A", true, knobGroups[0])
-        &&
-        { id: "A", content: index[parseFloat(contentA)] }}
+        && { id: "A", content: index[parseFloat(contentA)] }
+      }
       B={
         boolean("Include B", true, knobGroups[0])
-        &&
-        { id: "B", content: index[parseFloat(contentB)] }}
+        && { id: "B", content: index[parseFloat(contentB)] }
+      }
       C={
         boolean("Include C", true, knobGroups[0])
-        &&
-        { id: "C", content: index[parseFloat(contentC)] }}
+        && { id: "C", content: index[parseFloat(contentC)] }
+      }
       D={
         boolean("Include D", true, knobGroups[0])
-        &&
-        { id: "D", content: index[parseFloat(contentD)] }}
+        && { id: "D", content: index[parseFloat(contentD)] }
+      }
       E={
         boolean("Include E", true, knobGroups[0])
-        &&
-        { id: "E", content: index[parseFloat(contentE)] }
+        && { id: "E", content: index[parseFloat(contentE)] }
       }
-      stateCards={cardState}
+      hasBorders={borders}
+      hasShadows={shadows}
     />
   );
 };
@@ -109,25 +124,33 @@ Knobs.story = {
   },
 };
 
-storiesOf("Layout|Page", module)
-  .addDecorator(checkA11y)
-  .addDecorator(FullScreen)
-  .add("Template Library", () => {
+storiesOf("Layout/Page/Template Library/A Templates", module)
+  // .addDecorator(checkA11y)
+  // .addDecorator(FullScreen)
+  .add("A_01", () => {
     return (
-      <Grid gap="4xl">
+      <Grid columns="1" rows="100vh" gap="4xl">
         <Page
           id="Template A_01"
           template="A_01"
-          stateCards
+          hasBorders
           A={{
             id: "A",
             content: "",
           }}
         />
+      </Grid>
+    );
+  });
+
+storiesOf("Layout/Page/Template Library/B Templates", module)
+  .add("B_01", () => {
+    return (
+      <Grid columns="1" rows="100vh" gap="4xl">
         <Page
           id="Template B_01"
           template="B_01"
-          stateCards
+          hasBorders
           A={{
             id: "A",
             content: "",
@@ -137,10 +160,37 @@ storiesOf("Layout|Page", module)
             content: "",
           }}
         />
+      </Grid>
+    );
+  })
+  .add("B_02", () => {
+    return (
+      <Grid columns="1" rows="100vh" gap="4xl">
+        <Page
+          id="Template B_02"
+          template="B_02"
+          hasBorders
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+        />
+      </Grid>
+    );
+  });
+
+storiesOf("Layout/Page/Template Library/C Templates", module)
+  .add("C_01", () => {
+    return (
+      <Grid columns="1" rows="100vh" gap="4xl">
         <Page
           id="Template C_01"
           template="C_01"
-          stateCards
+          hasBorders
           A={{
             id: "A",
             content: "",
@@ -154,10 +204,41 @@ storiesOf("Layout|Page", module)
             content: "",
           }}
         />
+      </Grid>
+    );
+  })
+  .add("C_02", () => {
+    return (
+      <Grid columns="1" rows="100vh" gap="4xl">
+        <Page
+          id="Template C_02"
+          template="C_02"
+          hasBorders
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+        />
+      </Grid>
+    );
+  });
+
+storiesOf("Layout/Page/Template Library/D Templates", module)
+  .add("D_01", () => {
+    return (
+      <Grid columns="1" rows="100vh" gap="4xl">
         <Page
           id="Template D_01"
           template="D_01"
-          stateCards
+          hasBorders
           A={{
             id: "A",
             content: "",
@@ -175,60 +256,18 @@ storiesOf("Layout|Page", module)
             content: "",
           }}
         />
+      </Grid>
+    );
+  });
+
+storiesOf("Layout/Page/Template Library/E Templates", module)
+  .add("E_01", () => {
+    return (
+      <Grid columns="1" rows="100vh" gap="4xl">
         <Page
           id="Template E_01"
           template="E_01"
-          stateCards
-          A={{
-            id: "A",
-            content: "",
-          }}
-          B={{
-            id: "B",
-            content: "",
-          }}
-          C={{
-            id: "C",
-            content: "",
-          }}
-          D={{
-            id: "D",
-            content: "",
-          }}
-          E={{
-            id: "E",
-            content: "",
-          }}
-        />
-        <Page
-          id="Template E_02"
-          template="E_02"
-          stateCards
-          A={{
-            id: "A",
-            content: "",
-          }}
-          B={{
-            id: "B",
-            content: "",
-          }}
-          C={{
-            id: "C",
-            content: "",
-          }}
-          D={{
-            id: "D",
-            content: "",
-          }}
-          E={{
-            id: "E",
-            content: "",
-          }}
-        />
-        <Page
-          id="Template E_03"
-          template="E_03"
-          stateCards
+          hasBorders
           A={{
             id: "A",
             content: "",
@@ -253,50 +292,82 @@ storiesOf("Layout|Page", module)
       </Grid>
     );
   })
-  .add("App: Research", () => {
+  .add("E_02", () => {
     return (
-      <Page
-        id="Page Regions"
-        template="E_02"
-        A={{
-          id: "A",
-          content: <MockWorkflow />,
-        }}
-        B={{
-          id: "B",
-          content: (
-            <React.Fragment>
-              <MockHeader />
-              <MockTabs />
-            </React.Fragment>
-          ),
-        }}
-        C={{
-          id: "C",
-          content: <MockDetails />,
-        }}
-        D={{
-          id: "D",
-          content: <MockMap withTools />,
-        }}
-        E={{
-          id: "E",
-          content: <MockFooter />,
-        }}
-      />
+      <Grid columns="1" rows="100vh" gap="4xl">
+        <Page
+          id="Template E_02"
+          template="E_02"
+          hasBorders
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+          D={{
+            id: "D",
+            content: "",
+          }}
+          E={{
+            id: "E",
+            content: "",
+          }}
+        />
+      </Grid>
     );
   })
-  .add("Page Overlay", () => {
+  .add("E_03", () => {
+    return (
+      <Grid columns="1" rows="100vh" gap="4xl">
+        <Page
+          id="Template E_03"
+          template="E_03"
+          hasBorders
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+          D={{
+            id: "D",
+            content: "",
+          }}
+          E={{
+            id: "E",
+            content: "",
+          }}
+        />
+      </Grid>
+    );
+  });
+
+storiesOf("Layout/Page", module)
+  .addDecorator(FullScreen)
+  .add("Template Overlay", () => {
     return (
       <React.Fragment>
         <Page
-          id="Page Regions"
+          id="Template Regions"
           template="E_03"
-          stateCards
+          hasBorders
           isOverlay
           A={{
             id: "A",
-            content: <SearchBar placeholder="Search Location" />,
+            content: <SearchBar id="Search_E3" placeholder="Search Location" />,
           }}
           B={{
             id: "B",
@@ -315,7 +386,7 @@ storiesOf("Layout|Page", module)
             content: <MockPalette />,
           }}
         />
-        <MockMap />
+        <Mapbox />
       </React.Fragment>
     );
   })

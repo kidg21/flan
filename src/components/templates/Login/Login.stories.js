@@ -10,7 +10,7 @@ import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Page from "layout/Page";
 
-storiesOf("Templates|00_Login", module)
+storiesOf("Templates|Login", module)
   .add(
     "Login",
     () => {
@@ -25,6 +25,7 @@ storiesOf("Templates|00_Login", module)
                 content: (
                   <Image
                     src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    alt="Lightbox Logo"
                     width="10rem"
                   />
                 ),
@@ -73,6 +74,7 @@ storiesOf("Templates|00_Login", module)
                 content: (
                   <Image
                     src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    alt="Lightbox Logo"
                     width="10rem"
                   />
                 ),
@@ -106,7 +108,7 @@ storiesOf("Templates|00_Login", module)
     },
   );
 
-storiesOf("Templates|00_Login/Password", module)
+storiesOf("Templates|Login/Password", module)
   .add(
     "Reset",
     () => {
@@ -121,6 +123,7 @@ storiesOf("Templates|00_Login/Password", module)
                 content: (
                   <Image
                     src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    alt="Lightbox Logo"
                     width="10rem"
                   />
                 ),
@@ -162,6 +165,7 @@ storiesOf("Templates|00_Login/Password", module)
                 content: (
                   <Image
                     src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    alt="Lightbox Logo"
                     width="10rem"
                   />
                 ),
@@ -195,6 +199,7 @@ storiesOf("Templates|00_Login/Password", module)
                 content: (
                   <Image
                     src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    alt="Lightbox Logo"
                     width="10rem"
                   />
                 ),
@@ -241,6 +246,7 @@ storiesOf("Templates|00_Login/Password", module)
                 content: (
                   <Image
                     src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    alt="Lightbox Logo"
                     width="10rem"
                   />
                 ),

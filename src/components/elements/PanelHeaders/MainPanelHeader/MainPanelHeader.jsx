@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
+import { useId } from "utils/hooks";
 import Bar from "layout/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
@@ -9,15 +10,15 @@ import Menu from "blocks/Menu";
 function MainPanelHeader({
   id, menuData, title,
 }) {
+  const uId = useId(id);
   return (
-    <React.Fragment id={id} >
-      <Bar
-        padding="2x"
-        left={<Title text={title} size="lg" weight="bold" />}
-        contentAlign="center"
-        right={menuData ? <Menu data={menuData} position="bottomLeft" /> : null}
-      />
-    </React.Fragment>
+    <Bar
+      id={uId}
+      padding="2x"
+      left={<Title text={title} size="lg" weight="bold" />}
+      contentAlign="center"
+      right={menuData ? <Menu id={`${uId}-Menu`} data={menuData} position="bottomLeft" /> : null}
+    />
   );
 }
 

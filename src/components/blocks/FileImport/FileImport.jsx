@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Text from "base/Typography";
 import TextInput from "atoms/TextInput";
-
+import { useId } from "utils/hooks";
 
 const NewInput = styled.input`
 display: none;
@@ -25,7 +25,7 @@ flex: auto;
 box-sizing: border-box;
 z-index: 0;
 border-color: ${(props) => {
-    return props.theme.palette[props.fontColor] || props.theme.palette.info80;
+    return props.theme.palette[props.fontColor] || props.theme.palette.action80;
   }};
 border: 1px solid;
 border-radius: 5px;
@@ -38,7 +38,7 @@ padding: 0em 0.75em;
 color: inherit;
 margin: 0;
 color: ${(props) => {
-    return props.theme.palette[props.fontColor] || props.theme.palette.info80;
+    return props.theme.palette[props.fontColor] || props.theme.palette.action80;
   }};
 font-family: ${(props) => { return props.theme.typography.primary; }};
 user-select: none;
@@ -63,8 +63,9 @@ cursor: pointer;
 function FileImport({ id, onChange }) {
   const [state, setState] = useState();
 
+  const uId = useId(id);
   return (
-    <Grid columns="1fr 3fr" gap="xs" id={id}>
+    <Grid columns="1fr 3fr" gap="xs" id={uId}>
       <NewLabel>
         <Text weight="bold" size="lg" text="Browse File" />
         <NewInput
@@ -77,7 +78,7 @@ function FileImport({ id, onChange }) {
           }}
         />
       </NewLabel>
-      <TextInput id={`file-textinput-${id}`} placeholder={state} />
+      <TextInput id={`file-textinput-${uId}`} placeholder={state} />
     </Grid>
   );
 }

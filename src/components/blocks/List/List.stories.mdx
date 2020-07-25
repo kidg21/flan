@@ -1,0 +1,284 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Text from "base/Typography";
+import Card, { CardSection, CardGrid } from "elements/Card";
+import List, { ListItem } from "blocks/List";
+import listData from "blocks/List/List.data.js";
+
+<Meta title="Data Display|List" component={List} />
+
+# List
+
+#### Lists are continuous, vertical indexes of text or images.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <List title="My List" >
+      <ListItem title="List Item" />
+      <ListItem title="List Item" />
+      <ListItem title="List Item" />
+    </List>
+  </Story>
+</Preview>
+
+# Usage
+
+Lists are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+
+- **Logical**
+Lists should be sorted in logical ways that make content easy to scan, such as alphabetical, numerical, chronological, or by user preference.
+
+- **Actionable**
+Lists present content in a way that makes it easy to identify a specific item in a collection and act on it.
+
+- **Consistent**
+Lists should present icons, text, and actions in a consistent format.
+
+# Examples
+
+### List Items via Array
+
+<Preview withToolbar>
+  <Story name="List Items via Array" isInteractive>
+    <List title="List Items via Array" data={listData} />
+  </Story>
+</Preview>
+
+### States
+
+<Preview>
+  <Story name="States">
+    <List >
+      <ListItem
+        title="List Item (standard)"
+        description="This is the description"
+      />
+      <ListItem
+        title="List Item (selected)"
+        description="This is the description"
+        isSelected
+      />
+      <ListItem
+        title="List Item (disabled)"
+        description="This is the description"
+        disabled
+      />
+    </List>
+  </Story>
+</Preview>
+
+### Types
+
+Standard lists are used for data display. A list should have a divider when the list items are dense, with either a pre-icon or multiple lines of data. An interactive list is utilized when there is an onClick for the list items. An interactive list should be utilized when a user needs to select an item in order to get to the next stop of completing an action. For example, if clicking a list item would open the that item in a separate page or highlight it on a map, that list should be interactive.
+
+<Preview>
+  <Story name="Types">
+    <Grid columns="2">
+      <List title="Standard" >
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+      </List>
+      <List title="Standard (inverse)" isInverse>
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+      </List>
+      <List title="With a Divider" isDivided>
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+      </List>
+      <List title="With a Divider (inverse)" isDivided isInverse>
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+      </List>
+      <List title="Interactive" isInteractive>
+        <ListItem title="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
+      </List>
+       <List title="Interactive (inverse)" isInteractive isInverse>
+        <ListItem title="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
+      </List>
+    </Grid>
+  </Story>
+</Preview>
+
+### List Item Types
+
+<Preview>
+  <Story name="List Item Types">
+    <Grid columns="2">
+      <List title="Pre-Label">
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          pre={{ label: "AB" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          pre={{ label: "CD" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          pre={{ label: "EF" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          pre={{ label: "GH" }}
+        />
+      </List>
+      <List title="Post Label">
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "label", label: "Label" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "label", label: "6" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "label", label: "NEW!" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "label", label: "9" }}
+        />
+      </List>
+      <List title="Post Icon">
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "icon", icon: "right" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "icon", icon: "info" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "icon", icon: "home", onClick: () => {} }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "icon", icon: "bookmark", onClick: () => {} }}
+        />
+      </List>
+    </Grid>
+  </Story>
+</Preview>
+
+### List Controls
+
+<Preview>
+  <Story name="List Controls">
+    <Grid columns="2">
+      <List title="Checkbox">
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "checkbox" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "checkbox" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "checkbox" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "checkbox" }}
+        />
+      </List>
+      <List title="Toggle">
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "toggle" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "toggle" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "toggle" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "toggle" }}
+        />
+      </List>
+    </Grid>
+  </Story>
+</Preview>
+
+## Props
+
+#### List Props
+<Props of={List} />
+
+#### List Item Props
+<Props of={ListItem} />

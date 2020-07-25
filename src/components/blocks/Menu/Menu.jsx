@@ -1,287 +1,369 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from "react";
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable security/detect-object-injection */
+import React, {
+  useState, useMemo, useRef, useCallback,
+} from "react";
 import PropTypes from "prop-types";
-import Icon from "atoms/Icon";
 import styled from "styled-components";
-import Card from "elements/Card";
+import Popper from "layout/Popper";
+import Button from "atoms/Button";
 import List, { ListItem } from "blocks/List";
-
-const MenuContainer = styled.a`
-  /* display: flex; */
-  cursor: pointer;
-  padding: 0.5em;
-  margin: -0.5em;
-  &:hover {
-    filter: none;
-  }
-`;
+import getGuid from "utils/getGuid";
+import { useId } from "utils/hooks";
+import CardWrapper from "elements/Card/CardWrapper.jsx";
 
 const ListWrapper = styled(List)`
-  list-style: none;
-  background: ${(props) => {
-    return props.theme.background.default;
-  }};
-  overflow-x: hidden;
-  overflow-y: auto;
-  border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
-`;
-
-const ItemWrapper = styled.li`
-  text-align: left;
-  z-index: 501;
-  &[disabled] {
-    cursor: not-allowed;
-    pointer-events: none;
-    user-select: none;
-    color: ${(props) => {
-    return props.theme.text.disabled;
-  }};
-    background-color: ${(props) => {
-    return props.theme.background.disabled;
-  }};
-    > * {
-      color: inherit;
-      background-color: inherit;
-    }
-  }
-`;
-
-const MenuPopper = styled.div`
-  position: fixed;
-  z-index: 500;
+  /* no max-height overflow-y scroll bar */
+  /* update logic to measure itemwrapper top/left (fixed position) */
+  overflow: visible;
   width: 10rem;
+  position: ${(props) => {
+    return props.isNested ? "absolute" : "";
+  }};
   top: ${(props) => {
     return props.top || "";
   }};
   left: ${(props) => {
     return props.left || "";
   }};
-  right: ${(props) => {
-    return props.right || "";
-  }};
   transform: ${(props) => {
     return props.transform || "";
   }};
+  /* cardwrapper border-radius */
+  border-radius: 0.5em;
+  z-index: 500;
 `;
 
-const MenuBG = styled.div`
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  top: 0px;
-  left: 0px;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: none;
+const StyledCardWrapper = styled(CardWrapper)`
+  > :first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  };
+  > :last-child {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  };
 `;
 
-/**
- * List component that pops out
- */
-function MenuComponent({
+const ListItemWrapper = styled(ListItem)`
+  border-radius: inherit;
+`;
+
+// highlight behaviors
+// need to get rid of last-child padding
+// for the nested item's entry
+const NestedItem = styled.div`
+  position: relative;
+  background-color: inherit;
+  > li:last-child {
+    margin-bottom: 1px;
+  }
+`;
+
+const listPositionStyle = {
+  left: {
+    top: "0",
+    transform: "translateX(-100%)", // nested container's width
+  },
+  right: {
+    top: "0",
+    left: "100%", // parent container's width
+  },
+};
+
+const MenuList = ({
   data,
+  direction,
   id,
-  left,
-  onClick,
-  right,
-  submenuDirection,
-  top,
-  transform,
-}) {
-  const [activeItem, setActiveItem] = useState({});
+  _isNested, // internal prop for styling nested menus
+  onClose,
+}) => {
+  const [activeItem, setActiveItem] = useState();
+  const uId = useId(id);
+  const itemIds = useRef([]);
+  const validDirection = listPositionStyle.hasOwnProperty(direction.toLowerCase()) ? direction : "right";
 
-  function closeMenu() {
-    setActiveItem({});
-  }
+  const listItems = useMemo(() => {
+    // empty list, display "No Commands" entry
+    let _listItems = (
+      <ListItem
+        key={`${uId}-none`}
+        id="item-none"
+        title="No Commands"
+        disabled
+      />
+    );
 
-  return (
-    <MenuPopper
-      id={`menupopper-${id}`}
-      left={left}
-      onClick={onClick}
-      onMouseLeave={closeMenu}
-      right={right}
-      top={top}
-      transform={transform}
-    >
-      <Card shadow="2x">
-        <ListWrapper id={`listwrapper-${id}`} isInteractive>
-          {data.map((item) => {
-            // nested submenu
-            if (item.commands) {
-              return (
-                <ItemWrapper
-                  disabled={item.disabled}
-                  id={`item-${item.id}`}
-                  key={`item-${item.id}`}
-                  onMouseOver={(e) => {
-                    setActiveItem({
-                      id: item.id,
-                      top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
-                      left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-                      right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-                    });
-                  }}
-                  tabIndex="0"
-                >
-                  <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
-                  {activeItem && activeItem.id === item.id ? (
-                    <MenuComponent
-                      data={item.commands}
-                      id={item.id}
-                      left={activeItem.left}
-                      onClick={closeMenu}
-                      right={activeItem.right}
-                      submenuDirection={submenuDirection}
-                      top={activeItem.top}
-                    />
-                  ) : null}
-                </ItemWrapper>
-              );
-            }
-
-            return (
-              <ItemWrapper
-                id={`item-${item.id}`}
-                key={`item-${item.id}`}
+    if (data && data.length > 0) {
+      // populated list
+      _listItems = data.map((item, index) => {
+        itemIds.current[index] = item.id
+          || (itemIds.current.length > index ? itemIds.current[index] : getGuid());
+        const itemId = itemIds.current[index];
+        const onClick = () => {
+          if (item.onClick) item.onClick();
+          if (onClose) onClose();
+        };
+        if (item.data && item.data.length > 0) {
+          // nested submenu
+          return (
+            <NestedItem
+              key={itemId}
+              id={`item-${itemId}`}
+              onMouseEnter={() => {
+                setActiveItem(item.id);
+              }}
+              onMouseLeave={() => {
+                setActiveItem();
+              }}
+            >
+              <ListItemWrapper
+                id={`nested-item-${itemId}`}
+                title={item.label}
+                onClickItem={onClick}
+                pre={{ icon: item.icon }}
                 disabled={item.disabled}
-                onClick={() => {
-                  if (!item.disabled) {
-                    if (item.onClick) item.onClick(item.id);
-                    if (item.onClickLink) item.onClickLink(item.id); // deprecated
-                  }
-                }}
-                onMouseOver={closeMenu}
-              >
-                <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
-              </ItemWrapper>);
-          })}
-        </ListWrapper>
-      </Card>
-    </MenuPopper>
-  );
-}
+              />
+              {activeItem === item.id ? (
+                <MenuList
+                  id={`${uId}-${itemId}`}
+                  data={item.data}
+                  direction={validDirection}
+                  onClose={onClose}
+                  _isNested
+                />
+              ) : null}
+            </NestedItem>
+          );
+        }
+        return (
+          <ListItem
+            key={itemId}
+            id={`item-${itemId}`}
+            title={item.label}
+            onClickItem={onClick}
+            pre={{ icon: item.icon }}
+            disabled={item.disabled}
+          />
+        );
+      });
+    }
 
-MenuComponent.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string,
-    icon: PropTypes.string,
-    label: PropTypes.string,
-    onClick: PropTypes.func,
-    onClickLink: PropTypes.func, // deprecated
-  })).isRequired,
-  id: PropTypes.string.isRequired,
-  left: PropTypes.string,
-  onClick: PropTypes.func,
-  right: PropTypes.string,
-  submenuDirection: PropTypes.string,
-  top: PropTypes.string,
-  transform: PropTypes.string,
-};
+    return _listItems;
+  }, [uId, data, onClose, activeItem, validDirection]);
 
-MenuComponent.defaultProps = {
-  left: "",
-  onClick: null,
-  right: "",
-  submenuDirection: "right",
-  top: "",
-  transform: "",
-};
-
-/**
- * Gets the correct css position informatin for the given menu popper position direction
- * @param {string} position direction the first level menu should open
- */
-function getCssPosition(position) {
-  let transform;
-  let submenuDirection = "right";
-  switch (position.toLowerCase()) {
-    case "topleft":
-      transform = "translate(-100%, -110%)";
-      submenuDirection = "left";
-      break;
-    case "topright":
-      transform = "translate(10%, -110%)";
-      break;
-    case "topcenter":
-      transform = "translate(-50%, -110%)";
-      break;
-    case "bottomleft":
-      transform = "translate(-100%, -5%)";
-      submenuDirection = "left";
-      break;
-    case "bottomcenter":
-      transform = "translate(-45%, -5%)";
-      break;
-    case "bottomright":
-    default:
-      break;
-  }
-  return { transform, submenuDirection };
-}
-
-/**
- * Main Menu Component
- */
-function Menu({
-  id, data, icon, visible, onClick, position,
-}) {
-  let visibility = visible;
-  let setVisibility = onClick;
-  if (!setVisibility) {
-    [visibility, setVisibility] = useState(visible);
-  }
-
-  const { transform, submenuDirection } = getCssPosition(position);
-  function toggleVisibility() {
-    setVisibility(!visibility);
-  }
+  const positionStyle = _isNested ? listPositionStyle[validDirection.toLowerCase()] : {};
 
   return (
-    <React.Fragment>
-      {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
-      <MenuContainer onClick={toggleVisibility}>
-        <Icon icon={icon} />
-        {visibility ? (
-          <MenuComponent
-            data={data}
-            id={id}
-            submenuDirection={submenuDirection}
-            transform={transform}
-          />
-        ) : null}
-      </MenuContainer>
-    </React.Fragment>
+    <ListWrapper id={id} isInteractive isNested={_isNested} {...positionStyle}>
+      <StyledCardWrapper id={`cardwrapper-${id}`} shadow="2x">
+        {listItems}
+      </StyledCardWrapper>
+    </ListWrapper>
   );
-}
+};
 
-Menu.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object),
+const itemShape = {
+  disabled: PropTypes.bool,
   icon: PropTypes.string,
   id: PropTypes.string,
+  label: PropTypes.string,
   onClick: PropTypes.func,
-  position: PropTypes.oneOf([
-    "topLeft",
-    "topRight",
-    "bottomRight",
-    "bottomLeft",
-    "bottomCenter",
-    "topCenter",
-    "default",
-  ]),
-  visible: PropTypes.bool,
+};
+
+MenuList.defaultProps = {
+  data: [],
+  direction: "right",
+  id: "",
+  _isNested: false,
+  onClose: null,
+};
+
+MenuList.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
+  direction: PropTypes.oneOf(["", "right", "left"]),
+  id: PropTypes.string,
+  _isNested: PropTypes.bool,
+  onClose: PropTypes.func,
+};
+
+const defaultAnchor = <Button icon="options" isPlain isRound />;
+
+const Menu = ({
+  children,
+  data,
+  id,
+  isFlex,
+  onClose,
+  usePortal,
+  position,
+  visible,
+  zIndex,
+}) => {
+  return (
+    <Popper
+      id={`menu-popper-${id}`}
+      isFlex={isFlex}
+      usePortal={usePortal}
+      anchor={children || React.cloneElement(defaultAnchor, { id: `menu-icon-${id}` })}
+      visible={visible}
+      onClose={onClose}
+      position={position}
+      zIndex={zIndex}
+    >
+      <MenuList
+        id={id}
+        data={data}
+        direction={position.toLowerCase().includes("left") ? "left" : "right"}
+        onClose={onClose}
+      />
+    </Popper>
+  );
 };
 
 Menu.defaultProps = {
-  data: null,
-  icon: "options",
-  id: null,
-  onClick: null,
-  position: "default",
+  children: null,
+  data: [],
+  id: "",
+  isFlex: false,
+  onClose: null,
+  usePortal: false,
+  position: "bottomRight",
   visible: false,
+  zIndex: null,
 };
 
-Menu.displayName = "Menu";
-export default Menu;
+Menu.propTypes = {
+  children: PropTypes.node,
+  data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
+  id: PropTypes.string,
+  isFlex: PropTypes.bool,
+  onClose: PropTypes.func,
+  usePortal: PropTypes.bool,
+  position: PropTypes.oneOf([
+    "bottomLeft",
+    "bottomRight",
+    "topLeft",
+    "topRight",
+  ]),
+  visible: PropTypes.bool,
+  zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+};
+
+const FragmentWrapper = styled.div``;
+
+const StatefulMenu = ({
+  children,
+  id,
+  initVisible,
+  onClose,
+  ...otherProps
+}) => {
+  const [visible, setVisible] = useState(initVisible);
+  const anchor = React.Children.toArray(children);
+  const toggleVisible = useCallback(() => {
+    setVisible((show) => { return !show; });
+  });
+  const close = useCallback(() => {
+    setVisible(false);
+    if (onClose) onClose();
+  }, [onClose]);
+
+  // default Menu button with onClick
+  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); //(<Button icon="options" onClick={toggleVisible} isPlain isRound />);
+  if (anchor.length > 0) {
+    if (anchor[0].type === React.Fragment) {
+      // wraps click in div around both children
+      // otherwise, Fragment eats onClick prop
+      // for the most part assumes a single child!
+      anchorElement = (<FragmentWrapper onClick={toggleVisible}>{children}</FragmentWrapper>);
+    } else {
+      // need to clone to preserve ref on anchor element
+      anchorElement = React.cloneElement(anchor[0], {
+        onClick: () => {
+          toggleVisible();
+          if (anchor[0].props.onClick) {
+            anchor[0].props.onClick();
+          }
+        },
+      });
+    }
+  }
+
+  return (
+    <Menu
+      {...otherProps}
+      visible={visible}
+      onClose={close}
+      id={id}
+    >
+      {anchorElement}
+    </Menu>
+  );
+};
+
+// additional props
+StatefulMenu.defaultProps = {
+  children: null,
+  id: "",
+  initVisible: false,
+  onClose: null,
+};
+
+StatefulMenu.propTypes = {
+  children: PropTypes.node,
+  id: PropTypes.string,
+  initVisible: PropTypes.bool,
+  onClose: PropTypes.func,
+};
+
+const _Menu = (props) => {
+  const { visible, id } = props;
+  const uId = useId(id);
+  // handle open/close by stateful menu if visible isn't provided
+  return (typeof visible === "undefined")
+    ? <StatefulMenu {...props} id={uId} /> : <Menu {...props} id={uId} />;
+};
+
+_Menu.defaultProps = {
+  children: null,
+  data: [],
+  initVisible: false,
+  id: "",
+  isFlex: false,
+  onClose: null,
+  usePortal: false,
+  position: "bottomRight",
+  visible: undefined,
+  zIndex: null,
+};
+
+_Menu.propTypes = {
+  /** custom anchor element */
+  children: PropTypes.node,
+  /** list of item objects in menu */
+  data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
+  /** menu id */
+  id: PropTypes.string,
+  /** the initial visible value for stateful/uncontrolled menus */
+  initVisible: PropTypes.bool,
+  /** to specify an anchor element to be flex */
+  isFlex: PropTypes.bool,
+  /** onClose callback when menu closes */
+  onClose: PropTypes.func,
+  /** places menu in a portal */
+  usePortal: PropTypes.bool,
+  /** open position relative to anchor element */
+  position: PropTypes.oneOf([
+    "bottomLeft",
+    "bottomRight",
+    "topLeft",
+    "topRight",
+  ]),
+  /** open/close state of menu */
+  visible: PropTypes.bool,
+  zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+};
+
+_Menu.displayName = "Menu";
+export { _Menu as default, MenuList };
