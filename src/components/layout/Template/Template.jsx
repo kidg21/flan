@@ -12,7 +12,7 @@ const Region = styled.section`
   }};
   height: inherit;
   border-right: ${(props) => {
-    return props.setBorder || "";
+    return props.hasBorder ? "1px solid" : "";
   }};
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
@@ -90,14 +90,14 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
-    setBorder: "1px solid",
+    hasBorder: true,
   },
   B_02: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthXS} 1fr`,
-    setBorder: "1px solid",
+    hasBorder: true,
   },
   B_03: {
     setTemplate: [
@@ -105,14 +105,14 @@ const templateHash = {
       "\"B\"",
     ].join("\n"),
     setRows: "auto 1fr",
-    setBorder: "1px solid",
+    hasBorder: true,
   },
   B_04: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthMD} 1fr`,
-    setBorder: "1px solid",
+    hasBorder: true,
   },
   B_05: {
     setTemplate: [
@@ -121,14 +121,14 @@ const templateHash = {
     ].join("\n"),
     setColumns: "auto 1fr 12rem",
     setRows: "1fr 1rem",
-    setBorder: "1px solid",
+    hasBorder: true,
   },
   B_06: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthXL}`,
-    setBorder: "1px solid",
+    hasBorder: true,
   },
   C_01: {
     setTemplate: [
@@ -215,12 +215,12 @@ function Template({
   let setPosition;
   let setRowGap;
   let setRows;
-  let setBorder;
+  let hasBorder;
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
     ({
-      setTemplate, setColumns, setRows, setBorder,
+      setTemplate, setColumns, setRows, hasBorder,
     } = templateHash[template.toUpperCase()]);
     setHeight = "100%";
     setPadding = "0";
@@ -275,7 +275,7 @@ function Template({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
-              setBorder={setBorder}
+              hasBorder={hasBorder}
               overflow={A.overflow}
             >
               {A.content}
