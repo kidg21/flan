@@ -23,6 +23,7 @@ const Header = styled(Grid)`
 
 const TitleSection = styled(Title)`
 text-transform: uppercase;
+grid-column: 1/-1;
 letter-spacing: 2px;
 font-size: 12px;
 font-weight: 400;

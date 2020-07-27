@@ -92,12 +92,10 @@ Container.propTypes = {
   visible: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
-  hasBackground: PropTypes.bool,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
   maxHeight: PropTypes.string,
   padding: PropTypes.oneOf(["0", "2x", "3x"]),
-  visible: PropTypes.bool,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
@@ -106,7 +104,6 @@ Container.defaultProps = {
   visible: true,
   children: null,
   className: null,
-  hasBackground: false,
   height: null,
   id: null,
   maxHeight: null,

@@ -275,7 +275,7 @@ export const darkTheme = {
     inverse: colors.grey100,
     inverseHover: colors.grey80,
     link: colors.blue80,
-    primary: colors.neutral20,
+    primary: colors.grey50,
     secondary: colors.grey10,
     selected: colors.blue80,
     success: colors.green20,

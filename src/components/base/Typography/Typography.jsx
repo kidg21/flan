@@ -161,14 +161,16 @@ const linkSizeHash = {
   },
 };
 
+const weightHash = {
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 600,
+};
+
 function Text({
   children, className, id, size, text, weight,
 }) {
-  const weightHash = {
-    light: 300,
-    medium: 500,
-    bold: 600,
-  };
 
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
@@ -263,16 +265,11 @@ function Label({
   text,
   isUppercase,
 }) {
-  const weightHash = {
-    light: 300,
-    medium: 500,
-    bold: 600,
-  };
 
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
-  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", fontWeight: "400" };
+  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", };
   const { fontSize, letterSpacing } = selectedSize;
 
   let textTransform;
@@ -324,11 +321,6 @@ function Link({
 }) {
   const selectedSize = linkSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
-
-  const weightHash = {
-    light: 300,
-    regular: 400,
-  };
 
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 500;
