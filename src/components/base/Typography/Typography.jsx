@@ -195,17 +195,15 @@ Text.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   id: PropTypes.string,
-  /** Options: 'xs', 'sm', 'lg' */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["xs", "sm", "lg", ""]),
   text: PropTypes.string,
-  /** Options: 'light', 'bold' */
-  weight: PropTypes.string,
+  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Text.defaultProps = {
   children: null,
   className: null,
   id: null,
-  size: null,
+  size: "",
   text: null,
   weight: null,
 };
@@ -242,15 +240,14 @@ function Title({
 Title.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  /** Options: 'lg', 'xl', '2xl', '3xl', '4xl' */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["lg", "xl", "2xl", "3xl", "4xl", ""]),
   isUppercase: PropTypes.bool,
   text: PropTypes.string,
 };
 Title.defaultProps = {
   children: null,
   className: null,
-  size: null,
+  size: "",
   isUppercase: false,
   text: null,
 };
@@ -299,11 +296,9 @@ Label.propTypes = {
   htmlFor: PropTypes.string,
   isUppercase: PropTypes.bool,
   isRequired: PropTypes.bool,
-  /** Options: 'xs', 'sm', 'lg' */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["xs", "sm", "lg", "xl", ""]),
   text: PropTypes.node,
-  /** Options: 'light', 'medium', 'bold' */
-  weight: PropTypes.string,
+  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Label.defaultProps = {
   children: null,
@@ -311,7 +306,7 @@ Label.defaultProps = {
   isUppercase: false,
   htmlFor: null,
   isRequired: false,
-  size: null,
+  size: "",
   text: null,
   weight: null,
 };
@@ -347,12 +342,10 @@ Link.propTypes = {
   disabled: PropTypes.bool,
   href: PropTypes.string,
   onClick: PropTypes.func,
-  /** Options: 'lg', 'xl', '2xl' */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["lg", "xl", "2xl", ""]),
   target: PropTypes.string,
   text: PropTypes.string,
-  /** Options: 'light', 'regukar' */
-  weight: PropTypes.string,
+  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Link.defaultProps = {
   children: null,
@@ -360,7 +353,7 @@ Link.defaultProps = {
   disabled: false,
   href: null,
   onClick: null,
-  size: null,
+  size: "",
   target: null,
   text: null,
   weight: null,
