@@ -961,13 +961,13 @@ storiesOf("Templates|Applications/Research", module)
                             >
 
                               <Form>
-                                <Field label="Direct Link:" value={<Link text="808-23093" size="lg" />} />
-                                <TextInput label="Assessment Year(s)" />
-                                <TextInput label="Land Assessment" />
-                                <TextInput label="Improvement Assessment" />
+                                <Field align="edge" label="Direct Parcel Link:" value={<Link text="808-23093" size="lg" />} />
+                                <TextInput label="Assessment Year(s)" value="2019"/>
+                                <TextInput label="Land Assessment" value="$6,155,006" />
+                                <TextInput label="Improvement Assessment" value="$3,890,864" />
                                 <TextInput label="Other Assessment" />
-                                <TextInput label="Total Assessment" />
-                                <TextInput label="Total Taxes" />
+                                <TextInput label="Total Assessment" value="$10,045,870" />
+                                <TextInput label="Total Taxes" value="$101,680" />
                               </Form>
                               <Bar
                                 contentAlign="bottom"
@@ -1159,12 +1159,12 @@ storiesOf("Templates|Applications/Research", module)
                                   <FormSection>
                                     <Field align="edge" label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo" />} />
                                   </FormSection>
-                                  <TextInput label="Zoning District" />
-                                  <TextInput label="Zoning" />
-                                  <TextInput label="Zoning Type" />
-                                  <TextInput label="Zoned Density" />
-                                  <TextInput label="Zoning Summary" />
-                                  <TextInput label="Maximum Site Coverage" />
+                                  <TextInput label="Zoning District" value="Commercial" />
+                                  <TextInput label="Zoning" value="CN"/>
+                                  <TextInput label="Zoning Type" value="Commercial Neighborhood" />
+                                  <TextInput label="Zoned Density" value="0.75"/>
+                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business"/>
+                                  <TextInput label="Maximum Site Coverage" value="50%"/>
 
                                 </Form>
                               </Panel>
@@ -1248,8 +1248,8 @@ storiesOf("Templates|Applications/Research", module)
                                   left={{
                                     content: (
                                       <Tabs>
-                                        <TabItem label="Subject Map" isSelected />
-                                        <TabItem label="Flood" />
+                                        <TabItem label="Subject Map"  />
+                                        <TabItem label="Flood" isSelected />
                                         <TabItem label="Wetlands" />
                                         <TabItem label="Traffic & Transit" />
                                         <TabItem label="Market Boundaries" />
@@ -1327,12 +1327,12 @@ storiesOf("Templates|Applications/Research", module)
                                   />
                                 )}
                               >
-                                <Form title="Subject Site">
-                                  <TextInput label="Dimensions" />
-                                  <TextInput label="Primary Frontage Street" />
-                                  <TextInput label="Primary Frontage Feet" />
-                                  <TextInput label="Secondary Frontage Street" />
-                                  <TextInput label="Secondary Frontage Feet" />
+                                <Form title="FEMA Flood">
+                                  <TextInput label="Flood Zone" value="X"/>
+                                  <TextInput label="In 100-yr Zone" value="No"/>
+                                  <TextInput label="DFIRM ID" value="06037C"/>
+                                  <TextInput label="Flood Panel" value="06037C1617G"/>
+                                  <TextInput label="Effective Date" value="12/21/2018"/>
                                 </Form>
                               </Panel>
                             ),
@@ -1773,7 +1773,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                   A={{
                     id: "A",
                     content: (
-                      <List title="Jobs Menu" isInteractive isLight>
+                      <List title="Jobs Menu" isInteractive >
                         <ListItem title="All Jobs" isSelected />
                         <ListItem title="Not Started" post={{ type: "label", label: "4" }} />
                         <ListItem title="In Progress" post={{ type: "label", label: "28" }} />
@@ -1883,6 +1883,57 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                   }}
                 />
 
+              ),
+            }}
+          />
+        );
+      });
+    },
+  )
+  .add(
+    "Projects Page",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(true);
+        const toggleLeft = () => { setLeftOpen(!leftOpen); };
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: <MockHeaderGlobal menuClick={toggleLeft} />,
+            }}
+            left={{
+              id: "Left",
+              content: (<List title="Research" isInteractive isInverse>
+                <ListItem title="Projects" isSelected/>
+                <ListItem title="Properties" />
+                <ListItem title="History" />
+                <ListItem title="Data"/>
+              </List>),
+              visible: leftOpen,
+            }}
+            main={{
+              id: "Main",
+              content: (
+              <Template
+                        id="Details"
+                        template="A_01"
+
+                        A={{
+                          id: "A",
+                          content: (
+                            <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Projects" />} right={<Button icon="plus" label="Create" />} />}>
+                              <Form>
+                                <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter Projects" />), width: "fit-content" }} />
+                                <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid />} />
+                              </Form>
+                            </Panel>)
+                          ,
+                        }}
+                      />
               ),
             }}
           />
