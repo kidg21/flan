@@ -24,7 +24,6 @@ const BoxContainer = styled.div`
   max-height: ${(props) => {
     return props.maxHeight || "";
   }};
-  padding: 0;
   height: ${(props) => {
     return props.height || "";
   }};
@@ -70,14 +69,15 @@ const BoxContainer = styled.div`
 
 const paddingHash = {
   "0": "0",
-  "2x": "2em",
-  "3x": "3em",
+  "1x": "1rem",
+  "2x": "2rem",
+  "3x": "3rem",
 };
 
 const Container = React.forwardRef(({
   hasBorder, children, className, visible, height, id, maxHeight, padding, width,
 }, ref) => {
-  const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
+  const setPadding = padding ? paddingHash[padding.toLowerCase()] : "0";
   return (
     <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
       <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} hasBorder={hasBorder} ref={ref}>
@@ -95,7 +95,7 @@ Container.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
   maxHeight: PropTypes.string,
-  padding: PropTypes.oneOf(["0", "2x", "3x"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
