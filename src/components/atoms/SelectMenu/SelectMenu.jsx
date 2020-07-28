@@ -300,10 +300,10 @@ function SelectMenu({
       isRequired={isRequired}
       textColor={textColor}
     >
-      {label ? <Label isRequired={isRequired} text={label} /> : null}
+      {label ? <Label size="xs" isRequired={isRequired} text={label} /> : null}
       {select}
-      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
+      {helpText ? <Text size="xs" text={helpText} /> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText || warning} /></MessageContainer> : null}
     </SelectMenuContainer>
   );
 }

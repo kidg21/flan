@@ -7,17 +7,17 @@ exports[` 1`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 eVQhdJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 TNHFz"
     id="Template A_01"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
   </section>
 </section>
@@ -30,25 +30,25 @@ exports[` 2`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gAvnef"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bHNVdZ"
     id="Template B_01"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 GaHDh"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      
+      B
     </section>
   </section>
 </section>
@@ -61,25 +61,25 @@ exports[` 3`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bGiKXX"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bDBOMh"
     id="Template B_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 GaHDh"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      
+      B
     </section>
   </section>
 </section>
@@ -92,33 +92,33 @@ exports[` 4`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 iBgsth"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 kLEkNn"
     id="Template C_01"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      
+      B
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
-      
+      C
     </section>
   </section>
 </section>
@@ -131,33 +131,33 @@ exports[` 5`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 jFSSKj"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bkJWlh"
     id="Template C_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      
+      B
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
-      
+      C
     </section>
   </section>
 </section>
@@ -170,41 +170,41 @@ exports[` 6`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 faOpSb"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 cwxEPh"
     id="Template D_01"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      
+      B
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
-      
+      C
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dTMzvb"
+      className="Template__Region-sc-1i4nzbu-0 eGelAc"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
-      
+      D
     </section>
   </section>
 </section>
@@ -217,41 +217,41 @@ exports[` 7`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 iILVdA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 edIvSY"
     id="Template D_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      
+      B
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
-      
+      C
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dTMzvb"
+      className="Template__Region-sc-1i4nzbu-0 eGelAc"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
-      
+      D
     </section>
   </section>
 </section>
@@ -264,49 +264,49 @@ exports[` 8`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 jfuMpw"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 lhhFzu"
     id="Template E_01"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      
+      B
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
-      
+      C
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dTMzvb"
+      className="Template__Region-sc-1i4nzbu-0 eGelAc"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
-      
+      D
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 eGFUTr"
+      className="Template__Region-sc-1i4nzbu-0 gmrxwt"
       id="E"
       placeholder="E"
       tabIndex="0"
     >
-      
+      E
     </section>
   </section>
 </section>
@@ -319,110 +319,55 @@ exports[` 9`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 kjztzS"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 cEkwws"
     id="Template E_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      
+      B
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
-      
+      C
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dTMzvb"
+      className="Template__Region-sc-1i4nzbu-0 eGelAc"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
-      
+      D
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 eGFUTr"
+      className="Template__Region-sc-1i4nzbu-0 gmrxwt"
       id="E"
       placeholder="E"
       tabIndex="0"
     >
-      
+      E
     </section>
   </section>
 </section>
 `;
 
 exports[` 10`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 dkEEDI"
-    id="Template E_03"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dTMzvb"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 eGFUTr"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    >
-      
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 11`] = `
 <div
   style={
     Object {
@@ -432,90 +377,99 @@ exports[` 11`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 jvmiEZ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 chPGDT"
     id="Template Regions"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 fZJrhz"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
       <form
-        className="Search__SearchContainer-sey9om-0 gehspl"
+        className="Search__SearchContainer-sey9om-0 bVywlp"
         id="Search_E3"
       >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
-          id="Search_E3-search-bar_container"
-          rows={null}
-        >
-          <input
-            autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eawNkz"
-            cols=""
-            disabled={false}
-            id="Search_E3-search-bar"
-            list={null}
-            name="Search_E3-search-bar"
-            onBlur={null}
-            onChange={[Function]}
-            onFocus={null}
-            onKeyPress={[Function]}
-            pattern={null}
-            placeholder="Search Location"
-            rows=""
-            type="search"
-          />
-        </section>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 dHqqoa Search__SearchButton-sey9om-2 cnBOie"
-          disabled={false}
-          htmlFor={null}
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+          height={null}
           id={null}
-          name={null}
-          onClick={[Function]}
-          tabIndex="1"
-          type="button"
+          overflow={null}
+          width={null}
         >
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+            disabled={false}
+            htmlFor={null}
+            id="Search_E3-search-button"
+            name="Search_E3-search-button"
+            onClick={[Function]}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+              id={null}
+              rows={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="search"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </section>
+          </button>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
-            id={null}
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+            id="Search_E3-search-bar_container"
             rows={null}
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="search"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+              cols=""
+              disabled={false}
+              id="Search_E3-search-bar"
+              list={null}
+              name="Search_E3-search-bar"
+              onBlur={null}
+              onChange={[Function]}
+              onFocus={null}
+              onKeyPress={[Function]}
+              pattern={null}
+              placeholder="Search Location"
+              rows=""
+              type="search"
+              value=""
+            />
           </section>
-        </button>
+        </div>
       </form>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gVDLnH"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cPcgyo"
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -550,11 +504,11 @@ exports[` 11`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Button
           </label>
@@ -562,13 +516,13 @@ exports[` 11`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jzZdA-D"
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cPcgyo"
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -603,11 +557,11 @@ exports[` 11`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Button
           </label>
@@ -615,13 +569,13 @@ exports[` 11`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dTMzvb"
+      className="Template__Region-sc-1i4nzbu-0 eGelAc"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cPcgyo"
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -656,11 +610,11 @@ exports[` 11`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Button
           </label>
@@ -668,13 +622,13 @@ exports[` 11`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 eGFUTr"
+      className="Template__Region-sc-1i4nzbu-0 gmrxwt"
       id="E"
       placeholder="E"
       tabIndex="0"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
         id="storyshots_66"
         media=""
@@ -686,11 +640,11 @@ exports[` 11`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+            fontSize="0.875rem"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Color Palette
           </label>
@@ -792,6 +746,102 @@ exports[` 11`] = `
 </div>
 `;
 
+exports[` 11`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+    id={null}
+    rows={null}
+  >
+    <h4
+      className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+      fontSize="1.35rem"
+      fontWeight="400"
+      letterSpacing="0px"
+    >
+      My Latest Musings
+    </h4>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
+      fontSize="1rem"
+      fontWeight={300}
+      id={null}
+      letterSpacing="0.5px"
+    >
+      Totally Worth The Read...Enjoy!
+    </p>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz"
+      fontSize="0.875rem"
+      fontWeight={600}
+      id={null}
+      letterSpacing="0.25px"
+    >
+      Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
+    </p>
+    <h5
+      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+      fontSize="1.15rem"
+      fontWeight="500"
+      letterSpacing="0.4px"
+    >
+      Section 1
+    </h5>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.5px"
+    >
+      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
+    </p>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.5px"
+    >
+      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
+    </p>
+    <h5
+      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+      fontSize="1.15rem"
+      fontWeight="500"
+      letterSpacing="0.4px"
+    >
+      Section 2
+    </h5>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.5px"
+    >
+      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
+    </p>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.5px"
+    >
+      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
+    </p>
+  </section>
+</div>
+`;
+
 exports[` 12`] = `
 <div
   style={
@@ -802,132 +852,36 @@ exports[` 12`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fdMpxY"
-    id={null}
-    rows={null}
-  >
-    <h4
-      className="Typography__TitleText-sc-19auepv-2 hiLzNo"
-      fontSize="1.25em"
-      fontWeight={500}
-      letterSpacing="0px"
-    >
-      My Latest Musings
-    </h4>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-      fontSize="0.879em"
-      fontWeight={300}
-      id={null}
-      letterSpacing="0.2px"
-    >
-      Totally Worth The Read...Enjoy!
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-      fontSize="0.75em"
-      fontWeight={600}
-      id={null}
-      letterSpacing="0.4px"
-    >
-      Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
-    </p>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 PRpBC"
-      fontSize="1.15em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      Section 1
-    </h5>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.2px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.2px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 PRpBC"
-      fontSize="1.15em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      Section 2
-    </h5>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.2px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.2px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-  </section>
-</div>
-`;
-
-exports[` 13`] = `
-<div
-  style={
-    Object {
-      "height": "100vh",
-      "width": "100%",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fdMpxY"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
     id="Knobs"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 iVdIUC"
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
       id="A"
       placeholder="A"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 fLPjBl"
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
       id="B"
       placeholder="B"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 cBRWQo"
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
       id="C"
       placeholder="C"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 kGJLEP"
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
       id="D"
       placeholder="D"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 hwMyTS"
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
       id="E"
       placeholder="E"
       tabIndex="0"

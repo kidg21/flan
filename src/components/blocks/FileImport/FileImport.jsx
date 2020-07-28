@@ -35,6 +35,7 @@ justify-content: center;
 align-items: center;
 height: 100%;
 padding: 0em 0.75em;
+letter-spacing: .5px;
 color: inherit;
 margin: 0;
 color: ${(props) => {
@@ -43,9 +44,8 @@ color: ${(props) => {
 font-family: ${(props) => { return props.theme.typography.primary; }};
 user-select: none;
 cursor: pointer;
-
-  font-size: ${(props) => {
-    return props.labelSize || "inherit";
+font-size: ${(props) => {
+    return props.labelSize || "1rem";
   }};
   text-transform: capitalize;
   &:hover { 
@@ -67,7 +67,7 @@ function FileImport({ id, onChange }) {
   return (
     <Grid columns="1fr 3fr" gap="xs" id={uId}>
       <NewLabel>
-        <Text weight="bold" size="lg" text="Browse File" />
+        <Text text="Browse File" />
         <NewInput
           type="file"
           onChange={(e) => {

@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -22,18 +22,18 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Button
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -48,18 +48,18 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Button
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -74,18 +74,18 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Button
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -100,11 +100,11 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Button
       </label>

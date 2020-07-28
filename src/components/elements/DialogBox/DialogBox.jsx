@@ -95,6 +95,7 @@ function DialogBox({
 
   return (
     <DialogCard
+    padding="2x"
       body={body}
       id={id}
       title={title}

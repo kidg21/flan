@@ -5,18 +5,17 @@ import styled from "styled-components";
 // import { Skeleton } from "helpers/Skeleton";
 import { Lighten, Darken } from "Variables";
 
-
 const StyledLabel = styled.label`
   color: inherit;
   margin: 0;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   line-height: ${(props) => { return props.lineHeight; }};
   user-select: none;
+  text-transform: ${(props) => { return props.textTransform; }};
   font-size: ${(props) => { return props.fontSize; }};
   cursor: pointer;
   font-weight: ${(props) => { return props.fontWeight; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
-
   &:after {
     display: ${(props) => {
     return props.isRequired ? "" : "none";
@@ -37,14 +36,12 @@ const LinkText = styled.a`
   font-size: ${(props) => { return props.fontSize; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   font-family: ${(props) => { return props.theme.typography.primary; }};
-  // text-decoration: underline;
+  text-decoration: underline;
   margin: -.25em;
   padding: .25em;
   letter-spacing: ${(props) => { return props.letterSpacing; }};
   color: ${(props) => { return props.theme.text.link; }};
   cursor: pointer;
-
-  
   &[disabled] {
     color: ${(props) => {
     return props.theme.text.disabled;
@@ -67,6 +64,7 @@ const TitleText = styled.h6`
   font-size: ${(props) => { return props.fontSize; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   color: inherit;
+  text-transform: ${(props) => { return props.textTransform; }};
   line-height: normal;
   font-family: ${(props) => { return props.theme.typography.secondary; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
@@ -81,34 +79,104 @@ const Paragraph = styled.p`
   letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 
+const textSizeHash = {
+  xs: {
+    fontSize: "0.75rem",
+    letterSpacing: "0.4px",
+  },
+  sm: {
+    fontSize: "0.875rem",
+    letterSpacing: "0.25px",
+  },
+  lg: {
+    fontSize: "1.1rem",
+    letterSpacing: "0.8px",
+  },
+};
+
+const titleSizeHash = {
+  "lg": {
+    fontSize: "1.15rem",
+    letterSpacing: "0.4px",
+    fontWeight: "500",
+    as: "h5",
+  },
+  "xl": {
+    fontSize: "1.35rem",
+    letterSpacing: "0px",
+    fontWeight: "400",
+    as: "h4",
+  },
+  "2xl": {
+    fontSize: "1.5rem",
+    letterSpacing: "0.25px",
+    fontWeight: "400",
+    as: "h3",
+  },
+  "3xl": {
+    fontSize: "2rem",
+    letterSpacing: "0px",
+    fontWeight: "400",
+    as: "h2",
+  },
+  "4xl": {
+    fontSize: "2.5rem",
+    letterSpacing: "-1.5px",
+    fontWeight: "300",
+    as: "h1",
+  },
+};
+
+const labelSizeHash = {
+  xs: {
+    fontSize: "0.75em",
+    letterSpacing: "0.4px",
+  },
+  sm: {
+    fontSize: "0.8rem",
+    letterSpacing: "1px",
+  },
+  lg: {
+    fontSize: "1rem",
+    letterSpacing: ".5px",
+  },
+  xl: {
+    fontSize: "1.2rem",
+    letterSpacing: ".25px",
+  },
+};
+
+const linkSizeHash = {
+  "lg": {
+    fontSize: "1rem",
+    letterSpacing: "0.2px",
+  },
+  "xl": {
+    fontSize: "1.25rem",
+    letterSpacing: "0px",
+  },
+  "2xl": {
+    fontSize: "1.45rem",
+    letterSpacing: "0px",
+  },
+};
+
+const weightHash = {
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 600,
+};
+
 function Text({
   children, className, id, size, text, weight,
 }) {
-  const sizeHash = {
-    xs: {
-      fontSize: "0.65em",
-      letterSpacing: "0.6px",
-    },
-    sm: {
-      fontSize: "0.75em",
-      letterSpacing: "0.4px",
-    },
-    lg: {
-      fontSize: "1em",
-      letterSpacing: "0px",
-    },
-  };
-
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.2px" };
-  const { fontSize, letterSpacing } = selectedSize;
-
-  const weightHash = {
-    light: 300,
-    bold: 600,
-  };
 
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+  const selectedSize = textSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0.5px" };
+  const { fontSize, letterSpacing } = selectedSize;
 
   return (
     <Paragraph
@@ -127,58 +195,33 @@ Text.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   id: PropTypes.string,
-  /** Options: 'xs', 'sm', 'lg' */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["xs", "sm", "lg", ""]),
   text: PropTypes.string,
-  /** Options: 'light', 'bold' */
-  weight: PropTypes.string,
+  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Text.defaultProps = {
   children: null,
   className: null,
   id: null,
-  size: null,
+  size: "",
   text: null,
   weight: null,
 };
 
 function Title({
-  children, className, size, text, weight,
+  children, className, size, text, isUppercase,
 }) {
-  const sizeHash = {
-    "lg": {
-      fontSize: "1.15em",
-      as: "h5",
-    },
-    "xl": {
-      fontSize: "1.25em",
-      as: "h4",
-    },
-    "2xl": {
-      fontSize: "1.45em",
-      as: "h3",
-    },
-    "3xl": {
-      fontSize: "1.65em",
-      as: "h2",
-    },
-    "4xl": {
-      fontSize: "2em",
-      as: "h1",
-    },
+  const selectedSize = titleSizeHash[size && size.toLowerCase()] || {
+    fontSize: "1.2rem", as: "h6", fontWeight: "400", letterSpacing: "1px",
   };
+  const {
+    fontSize, as, letterSpacing, fontWeight,
+  } = selectedSize;
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", as: "h6" };
-  const { fontSize, as } = selectedSize;
-  const letterSpacing = "0px";
-
-  const weightHash = {
-    light: 300,
-    bold: 500,
-  };
-
-  let fontWeight = parseInt(weight, 10);
-  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+  let textTransform;
+  if (isUppercase) {
+    textTransform = "uppercase";
+  }
 
   return (
     <TitleText
@@ -186,6 +229,7 @@ function Title({
       className={className}
       fontSize={fontSize}
       fontWeight={fontWeight}
+      textTransform={textTransform}
       letterSpacing={letterSpacing}
     >
       {text || children}
@@ -196,18 +240,16 @@ function Title({
 Title.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  /** Options: 'lg', 'xl', '2xl', '3xl', '4xl' */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["lg", "xl", "2xl", "3xl", "4xl", ""]),
+  isUppercase: PropTypes.bool,
   text: PropTypes.string,
-  /** Options: 'light', 'bold' */
-  weight: PropTypes.string,
 };
 Title.defaultProps = {
   children: null,
   className: null,
-  size: null,
+  size: "",
+  isUppercase: false,
   text: null,
-  weight: null,
 };
 
 function Label({
@@ -215,41 +257,30 @@ function Label({
   className,
   htmlFor,
   isRequired,
+  weight,
   size,
   text,
-  weight,
+  isUppercase,
 }) {
-  const sizeHash = {
-    xs: {
-      fontSize: "0.68em",
-      letterSpacing: "1px",
-    },
-    sm: {
-      fontSize: "0.82em",
-      letterSpacing: "0px",
-    },
-    lg: {
-      fontSize: "1em",
-      letterSpacing: "0px",
-    },
-  };
-
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.4px" };
-  const { fontSize, letterSpacing } = selectedSize;
-
-  const weightHash = {
-    light: 300,
-    bold: 600,
-  };
 
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", };
+  const { fontSize, letterSpacing } = selectedSize;
+
+  let textTransform;
+
+  if (isUppercase) {
+    textTransform = "uppercase";
+  }
 
   return (
     <StyledLabel
       className={className}
       fontSize={fontSize}
       fontWeight={fontWeight}
+      textTransform={textTransform}
       htmlFor={htmlFor}
       isRequired={isRequired}
       letterSpacing={letterSpacing}
@@ -263,19 +294,19 @@ Label.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   htmlFor: PropTypes.string,
+  isUppercase: PropTypes.bool,
   isRequired: PropTypes.bool,
-  /** Options: 'xs', 'sm', 'lg' */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["xs", "sm", "lg", "xl", ""]),
   text: PropTypes.node,
-  /** Options: 'light', 'bold' */
-  weight: PropTypes.string,
+  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Label.defaultProps = {
   children: null,
   className: null,
+  isUppercase: false,
   htmlFor: null,
   isRequired: false,
-  size: null,
+  size: "",
   text: null,
   weight: null,
 };
@@ -283,31 +314,11 @@ Label.defaultProps = {
 function Link({
   children, className, disabled, href, onClick, size, target, text, weight,
 }) {
-  const sizeHash = {
-    "lg": {
-      fontSize: "1.15em",
-      letterSpacing: "0.2px",
-    },
-    "xl": {
-      fontSize: "1.25em",
-      letterSpacing: "0px",
-    },
-    "2xl": {
-      fontSize: "1.45em",
-      letterSpacing: "0px",
-    },
-  };
-
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const selectedSize = linkSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
-  const weightHash = {
-    light: 300,
-    regular: 400,
-  };
-
   let fontWeight = parseInt(weight, 10);
-  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 600;
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 500;
 
   return (
     <LinkText
@@ -331,12 +342,10 @@ Link.propTypes = {
   disabled: PropTypes.bool,
   href: PropTypes.string,
   onClick: PropTypes.func,
-  /** Options: 'lg', 'xl', '2xl' */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["lg", "xl", "2xl", ""]),
   target: PropTypes.string,
   text: PropTypes.string,
-  /** Options: 'light', 'regukar' */
-  weight: PropTypes.string,
+  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Link.defaultProps = {
   children: null,
@@ -344,10 +353,12 @@ Link.defaultProps = {
   disabled: false,
   href: null,
   onClick: null,
-  size: null,
+  size: "",
   target: null,
   text: null,
   weight: null,
 };
 
-export { Text as default, Title, Label, Link };
+export {
+  Text as default, Title, Label, Link,
+};

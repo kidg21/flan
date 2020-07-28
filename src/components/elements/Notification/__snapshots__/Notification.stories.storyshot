@@ -11,23 +11,23 @@ exports[` 1`] = `
   <div
     aria-describedby={null}
     aria-labelledby={null}
-    className="Notification__NotificationContainer-sc-1wz6254-1 jOMjPT"
+    className="Notification__NotificationContainer-sc-1wz6254-1 fPTXXL"
     id={null}
     onAnimationEnd={null}
     onAnimationStart={null}
     onClick={null}
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
       href={null}
-      id="storyshots_188"
+      id="storyshots_195"
       media=""
       onClick={null}
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 foIpbH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
         href={null}
-        id="storyshots_189"
+        id="storyshots_196"
         media=""
         onClick={null}
       >
@@ -45,10 +45,10 @@ exports[` 1`] = `
               rows={null}
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-                fontSize="1em"
-                fontWeight={400}
-                letterSpacing="0px"
+                className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+                fontSize="1.2rem"
+                fontWeight="400"
+                letterSpacing="1px"
               >
                 This is a Standard notification.
               </h6>
@@ -90,7 +90,7 @@ exports[` 1`] = `
     </div>
   </div>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -105,11 +105,11 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Show Notification
       </label>
@@ -120,9 +120,9 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 foIpbH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
   href={null}
-  id="storyshots_190"
+  id="storyshots_197"
   media=""
   onClick={null}
 >
@@ -135,7 +135,7 @@ exports[` 2`] = `
       className="Bar__Slot-icfo76-1 boCGaE"
     >
       <div
-        className="Avatar__TagContainer-sc-1vuf9om-2 ulvHg"
+        className="Avatar__TagContainer-sc-1vuf9om-2 kjDGQc"
         id={null}
         onClick={null}
       >
@@ -170,10 +170,10 @@ exports[` 2`] = `
         rows={null}
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-          fontSize="1em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Your payment method has been updated.
         </h6>
@@ -209,14 +209,14 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 fNSwGV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 cvDlTr"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 foIpbH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
-    id="storyshots_191"
+    id="storyshots_198"
     media=""
     onClick={null}
   >
@@ -229,7 +229,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 bRLeGs"
+          className="Avatar__TagContainer-sc-1vuf9om-2 iOFdSY"
           id={null}
           onClick={null}
         >
@@ -264,10 +264,10 @@ exports[` 3`] = `
           rows={null}
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             The latest version of LandVision is available for update.
           </h6>
@@ -300,9 +300,9 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 foIpbH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
-    id="storyshots_192"
+    id="storyshots_199"
     media=""
     onClick={null}
   >
@@ -315,7 +315,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 ulvHg"
+          className="Avatar__TagContainer-sc-1vuf9om-2 kjDGQc"
           id={null}
           onClick={null}
         >
@@ -350,10 +350,10 @@ exports[` 3`] = `
           rows={null}
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             Project has successfully been added to the list.
           </h6>
@@ -386,9 +386,9 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 foIpbH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
-    id="storyshots_193"
+    id="storyshots_200"
     media=""
     onClick={null}
   >
@@ -401,7 +401,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 dypNbw"
+          className="Avatar__TagContainer-sc-1vuf9om-2 cMrzfM"
           id={null}
           onClick={null}
         >
@@ -436,10 +436,10 @@ exports[` 3`] = `
           rows={null}
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             No results returned. Query is too big and needs to be filtered.
           </h6>
@@ -472,9 +472,9 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 foIpbH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
-    id="storyshots_194"
+    id="storyshots_201"
     media=""
     onClick={null}
   >
@@ -487,7 +487,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 eRECvh"
+          className="Avatar__TagContainer-sc-1vuf9om-2 cNGXUJ"
           id={null}
           onClick={null}
         >
@@ -522,10 +522,10 @@ exports[` 3`] = `
           rows={null}
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             Payment did not go through successfully.
           </h6>
@@ -562,14 +562,14 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 fNSwGV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 cvDlTr"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 foIpbH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
-    id="storyshots_195"
+    id="storyshots_202"
     media=""
     onClick={null}
   >
@@ -582,7 +582,7 @@ exports[` 4`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 bRLeGs"
+          className="Avatar__TagContainer-sc-1vuf9om-2 iOFdSY"
           id={null}
           onClick={null}
         >
@@ -617,27 +617,27 @@ exports[` 4`] = `
           rows={null}
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             This service is not available with your plan.
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
+            fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             Upgrade to premium to take advantage of this feature.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+            className="Typography__LinkText-sc-19auepv-1 gokaHf"
             disabled={false}
-            fontSize="0.876em"
-            fontWeight={600}
+            fontSize="1rem"
+            fontWeight={500}
             href={null}
             letterSpacing="0px"
             onClick={null}
@@ -674,9 +674,9 @@ exports[` 4`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 eRQFkB Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 foIpbH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
-    id="storyshots_196"
+    id="storyshots_203"
     media=""
     onClick={null}
   >
@@ -689,7 +689,7 @@ exports[` 4`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 eRECvh"
+          className="Avatar__TagContainer-sc-1vuf9om-2 cNGXUJ"
           id={null}
           onClick={null}
         >
@@ -724,27 +724,27 @@ exports[` 4`] = `
           rows={null}
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             Payment did not go through successfully.
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
+            fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             Update payment information in order to complete transaction.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+            className="Typography__LinkText-sc-19auepv-1 gokaHf"
             disabled={false}
-            fontSize="0.876em"
-            fontWeight={600}
+            fontSize="1rem"
+            fontWeight={500}
             href={null}
             letterSpacing="0px"
             onClick={null}

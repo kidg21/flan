@@ -74,6 +74,8 @@ const ListItemWrapper = styled.li`
   }
 `;
 
+
+
 const ListTitleWrapper = styled.li`
   color: inherit;
   padding: 1rem 1rem;
@@ -82,6 +84,8 @@ const ListTitleWrapper = styled.li`
 const ListTitle = styled(Text)`
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 400;
 `;
 
 const SectionWrapper = styled.li`
@@ -91,7 +95,7 @@ const SectionWrapper = styled.li`
 
 const Section = styled(Text)`
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 `;
 
 function ListSection({
@@ -211,7 +215,7 @@ function ListItem({
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment>
-      <Text text={title || null} disabled={disabled} size="lg" />
+      <Text text={title || null} disabled={disabled} />
       {description ? (<Text size="sm" text={description || null} disabled={disabled} />
       ) : null}
     </React.Fragment>
@@ -219,8 +223,12 @@ function ListItem({
 
   const rightContent = getRightContent(post, disabled, onClick);
 
-  const handleOnClick = (e) => {
-    onClick(e.target.innerText);
+  const handleOnClick = () => {
+    onClick(title || description);
+  };
+
+  const handleOnClickItem = () => {
+    onClickItem(title || description);
   };
 
   const isInteractive = useContext(InteractiveContext);
@@ -238,7 +246,7 @@ function ListItem({
       selectedBackground={selectedBackground}
       tabIndex={disabled ? "-1" : tabIndex}
       className={className}
-      onClick={onClickItem} // to target whole list item
+      onClick={typeof onClickItem === "function" ? handleOnClickItem : null} // to target whole list item
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
@@ -339,12 +347,12 @@ function List({
       >
         {title ? (
           <ListTitleWrapper>
-            <ListTitle text={title}   />
+            <ListTitle text={title} />
           </ListTitleWrapper>
         ) : null}
         <PaddingContext.Provider value={padding}>
-          {children ||
-            data.map((item, index) => {
+          {children
+            || data.map((item, index) => {
               const itemKey = item.id || item.title || index;
               return (
                 <ListItem

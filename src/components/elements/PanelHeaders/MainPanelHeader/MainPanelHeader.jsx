@@ -15,7 +15,7 @@ function MainPanelHeader({
     <Bar
       id={uId}
       padding="2x"
-      left={<Title text={title} size="lg" weight="bold" />}
+      left={<Title size="lg" text={title} />}
       contentAlign="center"
       right={menuData ? <Menu id={`${uId}-Menu`} data={menuData} position="bottomLeft" /> : null}
     />

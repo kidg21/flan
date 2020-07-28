@@ -41,7 +41,7 @@ exports[` 1`] = `
             className="Popper__AnchorWrapper-sc-1t9125t-0 byAKbr"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-bottomRight"
@@ -82,7 +82,7 @@ exports[` 1`] = `
             className="Popper__AnchorWrapper-sc-1t9125t-0 byAKbr"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-topRight"
@@ -123,7 +123,7 @@ exports[` 1`] = `
             className="Popper__AnchorWrapper-sc-1t9125t-0 byAKbr"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-bottomLeft"
@@ -164,7 +164,7 @@ exports[` 1`] = `
             className="Popper__AnchorWrapper-sc-1t9125t-0 byAKbr"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-topLeft"
@@ -250,7 +250,7 @@ exports[` 2`] = `
             id="menu-popper-menu-flex-position-bottomRight"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-bottomRight"
@@ -295,7 +295,7 @@ exports[` 2`] = `
                 id="menu-flex-position-bottomRight"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-flex-position-bottomRight"
                 >
                   <li
@@ -315,11 +315,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Save
                         </p>
@@ -343,11 +343,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Filter
                         </p>
@@ -371,11 +371,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Share
                         </p>
@@ -399,11 +399,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Delete
                         </p>
@@ -419,7 +419,7 @@ exports[` 2`] = `
             id="menu-popper-menu-flex-position-topRight"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-topRight"
@@ -465,7 +465,7 @@ exports[` 2`] = `
                 id="menu-flex-position-topRight"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-flex-position-topRight"
                 >
                   <li
@@ -485,11 +485,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Save
                         </p>
@@ -513,11 +513,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Filter
                         </p>
@@ -541,11 +541,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Share
                         </p>
@@ -569,11 +569,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Delete
                         </p>
@@ -589,7 +589,7 @@ exports[` 2`] = `
             id="menu-popper-menu-flex-position-bottomLeft"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-bottomLeft"
@@ -635,7 +635,7 @@ exports[` 2`] = `
                 id="menu-flex-position-bottomLeft"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-flex-position-bottomLeft"
                 >
                   <li
@@ -655,11 +655,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Save
                         </p>
@@ -683,11 +683,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Filter
                         </p>
@@ -711,11 +711,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Share
                         </p>
@@ -739,11 +739,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Delete
                         </p>
@@ -759,7 +759,7 @@ exports[` 2`] = `
             id="menu-popper-menu-flex-position-topLeft"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-topLeft"
@@ -805,7 +805,7 @@ exports[` 2`] = `
                 id="menu-flex-position-topLeft"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-flex-position-topLeft"
                 >
                   <li
@@ -825,11 +825,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Save
                         </p>
@@ -853,11 +853,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Filter
                         </p>
@@ -881,11 +881,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Share
                         </p>
@@ -909,11 +909,11 @@ exports[` 2`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Delete
                         </p>
@@ -972,7 +972,7 @@ exports[` 3`] = `
             className="Popper__AnchorWrapper-sc-1t9125t-0 jsmisT"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-bottomRight"
@@ -1013,7 +1013,7 @@ exports[` 3`] = `
             className="Popper__AnchorWrapper-sc-1t9125t-0 jsmisT"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-topRight"
@@ -1054,7 +1054,7 @@ exports[` 3`] = `
             className="Popper__AnchorWrapper-sc-1t9125t-0 jsmisT"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-bottomLeft"
@@ -1095,7 +1095,7 @@ exports[` 3`] = `
             className="Popper__AnchorWrapper-sc-1t9125t-0 jsmisT"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
               disabled={false}
               htmlFor={null}
               id="button-topLeft"
@@ -1181,7 +1181,7 @@ exports[` 4`] = `
             id="menu-popper-menu-nested-position-bottomRight"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
               id="menu-icon-menu-nested-position-bottomRight"
@@ -1226,7 +1226,7 @@ exports[` 4`] = `
                 id="menu-nested-position-bottomRight"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-nested-position-bottomRight"
                 >
                   <li
@@ -1246,11 +1246,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Save
                         </p>
@@ -1274,11 +1274,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Filter
                         </p>
@@ -1308,11 +1308,11 @@ exports[` 4`] = `
                           className="Bar__Slot-icfo76-1 RjiBe"
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
+                            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                            fontSize="1rem"
                             fontWeight={400}
                             id={null}
-                            letterSpacing="0px"
+                            letterSpacing="0.5px"
                           >
                             Share
                           </p>
@@ -1337,11 +1337,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Delete
                         </p>
@@ -1357,7 +1357,7 @@ exports[` 4`] = `
             id="menu-popper-menu-nested-position-topRight"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
               id="menu-icon-menu-nested-position-topRight"
@@ -1403,7 +1403,7 @@ exports[` 4`] = `
                 id="menu-nested-position-topRight"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-nested-position-topRight"
                 >
                   <li
@@ -1423,11 +1423,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Save
                         </p>
@@ -1451,11 +1451,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Filter
                         </p>
@@ -1485,11 +1485,11 @@ exports[` 4`] = `
                           className="Bar__Slot-icfo76-1 RjiBe"
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
+                            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                            fontSize="1rem"
                             fontWeight={400}
                             id={null}
-                            letterSpacing="0px"
+                            letterSpacing="0.5px"
                           >
                             Share
                           </p>
@@ -1514,11 +1514,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Delete
                         </p>
@@ -1534,7 +1534,7 @@ exports[` 4`] = `
             id="menu-popper-menu-nested-position-bottomLeft"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
               id="menu-icon-menu-nested-position-bottomLeft"
@@ -1580,7 +1580,7 @@ exports[` 4`] = `
                 id="menu-nested-position-bottomLeft"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-nested-position-bottomLeft"
                 >
                   <li
@@ -1600,11 +1600,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Save
                         </p>
@@ -1628,11 +1628,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Filter
                         </p>
@@ -1662,11 +1662,11 @@ exports[` 4`] = `
                           className="Bar__Slot-icfo76-1 RjiBe"
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
+                            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                            fontSize="1rem"
                             fontWeight={400}
                             id={null}
-                            letterSpacing="0px"
+                            letterSpacing="0.5px"
                           >
                             Share
                           </p>
@@ -1691,11 +1691,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Delete
                         </p>
@@ -1711,7 +1711,7 @@ exports[` 4`] = `
             id="menu-popper-menu-nested-position-topLeft"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
               id="menu-icon-menu-nested-position-topLeft"
@@ -1757,7 +1757,7 @@ exports[` 4`] = `
                 id="menu-nested-position-topLeft"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-nested-position-topLeft"
                 >
                   <li
@@ -1777,11 +1777,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Save
                         </p>
@@ -1805,11 +1805,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Filter
                         </p>
@@ -1839,11 +1839,11 @@ exports[` 4`] = `
                           className="Bar__Slot-icfo76-1 RjiBe"
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                            fontSize="1em"
+                            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                            fontSize="1rem"
                             fontWeight={400}
                             id={null}
-                            letterSpacing="0px"
+                            letterSpacing="0.5px"
                           >
                             Share
                           </p>
@@ -1868,11 +1868,11 @@ exports[` 4`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           Delete
                         </p>
@@ -1932,7 +1932,7 @@ exports[` 5`] = `
             id="menu-popper-menu-empty"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
               id="menu-icon-menu-empty"
@@ -1977,7 +1977,7 @@ exports[` 5`] = `
                 id="menu-empty"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                   id="cardwrapper-menu-empty"
                 >
                   <li
@@ -1997,11 +1997,11 @@ exports[` 5`] = `
                         className="Bar__Slot-icfo76-1 RjiBe"
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                          fontSize="1em"
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
                           fontWeight={400}
                           id={null}
-                          letterSpacing="0px"
+                          letterSpacing="0.5px"
                         >
                           No Commands
                         </p>
@@ -2045,7 +2045,7 @@ exports[` 6`] = `
         id="menu-popper-menu-standard"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+          className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
           disabled={false}
           htmlFor={null}
           id="menu-icon-menu-standard"
@@ -2090,7 +2090,7 @@ exports[` 6`] = `
             id="menu-standard"
           >
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
               id="cardwrapper-menu-standard"
             >
               <li
@@ -2110,11 +2110,11 @@ exports[` 6`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Save
                     </p>
@@ -2138,11 +2138,11 @@ exports[` 6`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Filter
                     </p>
@@ -2166,11 +2166,11 @@ exports[` 6`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Share
                     </p>
@@ -2194,11 +2194,11 @@ exports[` 6`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Delete
                     </p>
@@ -2223,7 +2223,7 @@ exports[` 7`] = `
 >
   <div />
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="story-card"
     media=""
@@ -2238,9 +2238,9 @@ exports[` 7`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h4
-          className="Typography__TitleText-sc-19auepv-2 hiLzNo"
-          fontSize="1.25em"
-          fontWeight={500}
+          className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+          fontSize="1.35rem"
+          fontWeight="400"
           letterSpacing="0px"
         >
           Malibu, CA
@@ -2254,7 +2254,7 @@ exports[` 7`] = `
           id="menu-popper-menu-items"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+            className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
             disabled={false}
             htmlFor={null}
             id="menu-icon-menu-items"
@@ -2300,7 +2300,7 @@ exports[` 7`] = `
               id="menu-items"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                 id="cardwrapper-menu-items"
               >
                 <li
@@ -2344,11 +2344,11 @@ exports[` 7`] = `
                       className="Bar__Slot-icfo76-1 yvaBx"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Save
                       </p>
@@ -2396,11 +2396,11 @@ exports[` 7`] = `
                       className="Bar__Slot-icfo76-1 yvaBx"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Filter
                       </p>
@@ -2448,11 +2448,11 @@ exports[` 7`] = `
                       className="Bar__Slot-icfo76-1 yvaBx"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -2500,11 +2500,11 @@ exports[` 7`] = `
                       className="Bar__Slot-icfo76-1 yvaBx"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Delete
                       </p>
@@ -2526,11 +2526,11 @@ exports[` 7`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 enVeME"
+          fontSize="1.1rem"
           fontWeight={400}
           id="story-text"
-          letterSpacing="0px"
+          letterSpacing="0.8px"
         >
           Live the California dream at this modern paradise right on the beach in Malibu. Whether it's
  your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on
@@ -2581,7 +2581,7 @@ exports[` 8`] = `
           id="menu-popper-menu-position-bottomRight"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+            className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
             disabled={false}
             htmlFor={null}
             id="menu-icon-menu-position-bottomRight"
@@ -2626,7 +2626,7 @@ exports[` 8`] = `
               id="menu-position-bottomRight"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                 id="cardwrapper-menu-position-bottomRight"
               >
                 <li
@@ -2646,11 +2646,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Save
                       </p>
@@ -2674,11 +2674,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Filter
                       </p>
@@ -2702,11 +2702,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -2730,11 +2730,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Delete
                       </p>
@@ -2750,7 +2750,7 @@ exports[` 8`] = `
           id="menu-popper-menu-position-topRight"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+            className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
             disabled={false}
             htmlFor={null}
             id="menu-icon-menu-position-topRight"
@@ -2796,7 +2796,7 @@ exports[` 8`] = `
               id="menu-position-topRight"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                 id="cardwrapper-menu-position-topRight"
               >
                 <li
@@ -2816,11 +2816,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Save
                       </p>
@@ -2844,11 +2844,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Filter
                       </p>
@@ -2872,11 +2872,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -2900,11 +2900,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Delete
                       </p>
@@ -2920,7 +2920,7 @@ exports[` 8`] = `
           id="menu-popper-menu-position-bottomLeft"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+            className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
             disabled={false}
             htmlFor={null}
             id="menu-icon-menu-position-bottomLeft"
@@ -2966,7 +2966,7 @@ exports[` 8`] = `
               id="menu-position-bottomLeft"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                 id="cardwrapper-menu-position-bottomLeft"
               >
                 <li
@@ -2986,11 +2986,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Save
                       </p>
@@ -3014,11 +3014,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Filter
                       </p>
@@ -3042,11 +3042,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -3070,11 +3070,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Delete
                       </p>
@@ -3090,7 +3090,7 @@ exports[` 8`] = `
           id="menu-popper-menu-position-topLeft"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+            className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
             disabled={false}
             htmlFor={null}
             id="menu-icon-menu-position-topLeft"
@@ -3136,7 +3136,7 @@ exports[` 8`] = `
               id="menu-position-topLeft"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                 id="cardwrapper-menu-position-topLeft"
               >
                 <li
@@ -3156,11 +3156,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Save
                       </p>
@@ -3184,11 +3184,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Filter
                       </p>
@@ -3212,11 +3212,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -3240,11 +3240,11 @@ exports[` 8`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Delete
                       </p>
@@ -3287,7 +3287,7 @@ exports[` 9`] = `
         id="menu-popper-menu-anchor"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jepCvs"
+          className="Button__StyledButton-sc-1v7sls2-0 juxZuP"
           disabled={false}
           htmlFor={null}
           id="button-anchor"
@@ -3322,11 +3322,11 @@ exports[` 9`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Anchor
             </label>
@@ -3341,14 +3341,14 @@ exports[` 9`] = `
             id="menu-anchor"
           >
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
               id="cardwrapper-menu-anchor"
             >
               <li
                 className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                 disabled={false}
                 href={null}
-                id="item-storyshots_158"
+                id="item-storyshots_165"
                 onClick={[Function]}
                 tabIndex="0"
               >
@@ -3361,11 +3361,11 @@ exports[` 9`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Save
                     </p>
@@ -3376,7 +3376,7 @@ exports[` 9`] = `
                 className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                 disabled={false}
                 href={null}
-                id="item-storyshots_159"
+                id="item-storyshots_166"
                 onClick={[Function]}
                 tabIndex="0"
               >
@@ -3389,11 +3389,11 @@ exports[` 9`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Filter
                     </p>
@@ -3404,7 +3404,7 @@ exports[` 9`] = `
                 className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                 disabled={false}
                 href={null}
-                id="item-storyshots_160"
+                id="item-storyshots_167"
                 onClick={[Function]}
                 tabIndex="0"
               >
@@ -3417,11 +3417,11 @@ exports[` 9`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Share
                     </p>
@@ -3432,7 +3432,7 @@ exports[` 9`] = `
                 className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                 disabled={false}
                 href={null}
-                id="item-storyshots_161"
+                id="item-storyshots_168"
                 onClick={[Function]}
                 tabIndex="0"
               >
@@ -3445,11 +3445,11 @@ exports[` 9`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Delete
                     </p>
@@ -3492,7 +3492,7 @@ exports[` 10`] = `
         id="menu-popper-menu-stateless-anchor"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -3507,11 +3507,11 @@ exports[` 10`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Anchor
             </label>
@@ -3526,14 +3526,14 @@ exports[` 10`] = `
             id="menu-stateless-anchor"
           >
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
               id="cardwrapper-menu-stateless-anchor"
             >
               <li
                 className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                 disabled={false}
                 href={null}
-                id="item-storyshots_162"
+                id="item-storyshots_169"
                 onClick={[Function]}
                 tabIndex="0"
               >
@@ -3546,11 +3546,11 @@ exports[` 10`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Save
                     </p>
@@ -3561,7 +3561,7 @@ exports[` 10`] = `
                 className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                 disabled={false}
                 href={null}
-                id="item-storyshots_163"
+                id="item-storyshots_170"
                 onClick={[Function]}
                 tabIndex="0"
               >
@@ -3574,11 +3574,11 @@ exports[` 10`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Filter
                     </p>
@@ -3589,7 +3589,7 @@ exports[` 10`] = `
                 className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                 disabled={false}
                 href={null}
-                id="item-storyshots_164"
+                id="item-storyshots_171"
                 onClick={[Function]}
                 tabIndex="0"
               >
@@ -3602,11 +3602,11 @@ exports[` 10`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Share
                     </p>
@@ -3617,7 +3617,7 @@ exports[` 10`] = `
                 className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
                 disabled={false}
                 href={null}
-                id="item-storyshots_165"
+                id="item-storyshots_172"
                 onClick={[Function]}
                 tabIndex="0"
               >
@@ -3630,11 +3630,11 @@ exports[` 10`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Delete
                     </p>
@@ -3676,7 +3676,7 @@ exports[` 11`] = `
         id="menu-popper-menu-nested-bottomRight"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+          className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
           disabled={false}
           htmlFor={null}
           id="menu-icon-menu-nested-bottomRight"
@@ -3721,7 +3721,7 @@ exports[` 11`] = `
             id="menu-nested-bottomRight"
           >
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
               id="cardwrapper-menu-nested-bottomRight"
             >
               <li
@@ -3741,11 +3741,11 @@ exports[` 11`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Save
                     </p>
@@ -3769,11 +3769,11 @@ exports[` 11`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Filter
                     </p>
@@ -3803,11 +3803,11 @@ exports[` 11`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -3832,11 +3832,11 @@ exports[` 11`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Delete
                     </p>
@@ -3852,7 +3852,7 @@ exports[` 11`] = `
         id="menu-popper-menu-nested-bottomLeft"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+          className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
           disabled={false}
           htmlFor={null}
           id="menu-icon-menu-nested-bottomLeft"
@@ -3898,7 +3898,7 @@ exports[` 11`] = `
             id="menu-nested-bottomLeft"
           >
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
               id="cardwrapper-menu-nested-bottomLeft"
             >
               <li
@@ -3918,11 +3918,11 @@ exports[` 11`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Save
                     </p>
@@ -3946,11 +3946,11 @@ exports[` 11`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Filter
                     </p>
@@ -3980,11 +3980,11 @@ exports[` 11`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -4009,11 +4009,11 @@ exports[` 11`] = `
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0px"
+                      letterSpacing="0.5px"
                     >
                       Delete
                     </p>
@@ -4041,7 +4041,7 @@ exports[` 12`] = `
     className="Popper__AnchorWrapper-sc-1t9125t-0 byAKbr"
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+      className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
       disabled={false}
       htmlFor={null}
       id="menu-icon-menu-portal"
@@ -4112,7 +4112,7 @@ exports[` 13`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
           disabled={false}
           htmlFor={null}
           id="button-normal1"
@@ -4127,11 +4127,11 @@ exports[` 13`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Normal Button
             </label>
@@ -4142,7 +4142,7 @@ exports[` 13`] = `
           id="menu-popper-menu-flex"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+            className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
             disabled={false}
             htmlFor={null}
             id="button-flex"
@@ -4157,11 +4157,11 @@ exports[` 13`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
-                fontWeight={600}
+                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                fontSize="1rem"
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Flex Menu
               </label>
@@ -4176,7 +4176,7 @@ exports[` 13`] = `
               id="menu-flex"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                 id="cardwrapper-menu-flex"
               >
                 <li
@@ -4196,11 +4196,11 @@ exports[` 13`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Save
                       </p>
@@ -4224,11 +4224,11 @@ exports[` 13`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Filter
                       </p>
@@ -4252,11 +4252,11 @@ exports[` 13`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -4280,11 +4280,11 @@ exports[` 13`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Delete
                       </p>
@@ -4300,7 +4300,7 @@ exports[` 13`] = `
           id="menu-popper-menu-normal"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
             disabled={false}
             htmlFor={null}
             id="button-not-flex"
@@ -4315,11 +4315,11 @@ exports[` 13`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
-                fontWeight={600}
+                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                fontSize="1rem"
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Normal Menu
               </label>
@@ -4334,7 +4334,7 @@ exports[` 13`] = `
               id="menu-normal"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 lcnmSD Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fFvWIZ Menu__StyledCardWrapper-sc-17iwn6x-1 dBZWko"
                 id="cardwrapper-menu-normal"
               >
                 <li
@@ -4354,11 +4354,11 @@ exports[` 13`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Save
                       </p>
@@ -4382,11 +4382,11 @@ exports[` 13`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Filter
                       </p>
@@ -4410,11 +4410,11 @@ exports[` 13`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Share
                       </p>
@@ -4438,11 +4438,11 @@ exports[` 13`] = `
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                        fontSize="1em"
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
                         fontWeight={400}
                         id={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.5px"
                       >
                         Delete
                       </p>
@@ -4454,7 +4454,7 @@ exports[` 13`] = `
           </div>
         </div>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
           disabled={false}
           htmlFor={null}
           id="button-normal2"
@@ -4469,11 +4469,11 @@ exports[` 13`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Normal Button
             </label>

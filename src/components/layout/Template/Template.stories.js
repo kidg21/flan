@@ -139,7 +139,7 @@ storiesOf("Layout/Template/Template Library/A Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
         />
       </Grid>
@@ -156,11 +156,11 @@ storiesOf("Layout/Template/Template Library/B Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
           B={{
             id: "B",
-            content: "",
+            content: "B",
           }}
         />
       </Grid>
@@ -175,11 +175,11 @@ storiesOf("Layout/Template/Template Library/B Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
           B={{
             id: "B",
-            content: "",
+            content: "B",
           }}
         />
       </Grid>
@@ -196,15 +196,15 @@ storiesOf("Layout/Template/Template Library/C Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
           B={{
             id: "B",
-            content: "",
+            content: "B",
           }}
           C={{
             id: "C",
-            content: "",
+            content: "C",
           }}
         />
       </Grid>
@@ -219,15 +219,15 @@ storiesOf("Layout/Template/Template Library/C Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
           B={{
             id: "B",
-            content: "",
+            content: "B",
           }}
           C={{
             id: "C",
-            content: "",
+            content: "C",
           }}
         />
       </Grid>
@@ -244,19 +244,19 @@ storiesOf("Layout/Template/Template Library/D Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
           B={{
             id: "B",
-            content: "",
+            content: "B",
           }}
           C={{
             id: "C",
-            content: "",
+            content: "C",
           }}
           D={{
             id: "D",
-            content: "",
+            content: "D",
           }}
         />
       </Grid>
@@ -271,19 +271,19 @@ storiesOf("Layout/Template/Template Library/D Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
           B={{
             id: "B",
-            content: "",
+            content: "B",
           }}
           C={{
             id: "C",
-            content: "",
+            content: "C",
           }}
           D={{
             id: "D",
-            content: "",
+            content: "D",
           }}
         />
       </Grid>
@@ -300,23 +300,23 @@ storiesOf("Layout/Template/Template Library/E Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
           B={{
             id: "B",
-            content: "",
+            content: "B",
           }}
           C={{
             id: "C",
-            content: "",
+            content: "C",
           }}
           D={{
             id: "D",
-            content: "",
+            content: "D",
           }}
           E={{
             id: "E",
-            content: "",
+            content: "E",
           }}
         />
       </Grid>
@@ -331,54 +331,23 @@ storiesOf("Layout/Template/Template Library/E Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "",
+            content: "A",
           }}
           B={{
             id: "B",
-            content: "",
+            content: "B",
           }}
           C={{
             id: "C",
-            content: "",
+            content: "C",
           }}
           D={{
             id: "D",
-            content: "",
+            content: "D",
           }}
           E={{
             id: "E",
-            content: "",
-          }}
-        />
-      </Grid>
-    );
-  })
-  .add("E_03", () => {
-    return (
-      <Grid columns="1" rows="100vh" gap="4xl">
-        <Template
-          id="Template E_03"
-          template="E_03"
-          hasBorders
-          A={{
-            id: "A",
-            content: "",
-          }}
-          B={{
-            id: "B",
-            content: "",
-          }}
-          C={{
-            id: "C",
-            content: "",
-          }}
-          D={{
-            id: "D",
-            content: "",
-          }}
-          E={{
-            id: "E",
-            content: "",
+            content: "E",
           }}
         />
       </Grid>

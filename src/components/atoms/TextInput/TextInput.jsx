@@ -11,7 +11,7 @@ import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
   }};
   width: 100%;
 `;
@@ -63,16 +63,16 @@ const Input = styled.input`
   &:hover {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.neutral80
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.neutral80
     );
   }};
     }
   &:focus {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.selected
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.selected
     );
   }};
     ::selection {
@@ -81,8 +81,8 @@ const Input = styled.input`
   }};
       background-color: ${(props) => {
     return (
-      props.theme.palette[props.inputSelectColor] ||
-      props.theme.palette.selected
+      props.theme.palette[props.inputSelectColor]
+      || props.theme.palette.selected
     );
   }};
     }
@@ -162,8 +162,7 @@ function TextInput({
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let errorText = "";
   if (isDisabled) {
     inputBorderColor = "neutral40";
@@ -194,7 +193,7 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label isRequired={isRequired} text={label} />
+        <Label  isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
@@ -224,9 +223,9 @@ function TextInput({
         value={value}
       />
       {autocompleteDataList}
-      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+      {helpText ? <Text size="xs" text={helpText} /> : null}
       {children}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs"  text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }
