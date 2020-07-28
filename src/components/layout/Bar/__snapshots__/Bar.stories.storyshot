@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_1"
     media=""
@@ -24,10 +24,10 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-          fontSize="1em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Left
         </h6>
@@ -36,10 +36,10 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-          fontSize="1em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Center
         </h6>
@@ -48,10 +48,10 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-          fontSize="1em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Right
         </h6>
@@ -70,7 +70,7 @@ exports[` 2`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_2"
     media=""
@@ -85,10 +85,10 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-          fontSize="1em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Left
         </h6>
@@ -97,19 +97,19 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-          fontSize="1em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Towgood, Gary T.
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           3082 Yellowstone Dr. Costa Mesa, CA 92612
         </p>
@@ -118,10 +118,10 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-          fontSize="1em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Right
         </h6>
@@ -140,12 +140,12 @@ exports[` 3`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 iWpEQy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 crWWGQ"
     id={null}
     rows={null}
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_3"
       media=""
@@ -167,11 +167,11 @@ exports[` 3`] = `
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Command
             </label>
@@ -181,10 +181,10 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             A Standard Title
           </h6>
@@ -200,11 +200,11 @@ exports[` 3`] = `
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Command
             </label>
@@ -213,7 +213,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_4"
       media=""
@@ -235,11 +235,11 @@ exports[` 3`] = `
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Command
             </label>
@@ -249,10 +249,10 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             A Title So Long That It May Take Up Multiple Lines
           </h6>
@@ -268,11 +268,11 @@ exports[` 3`] = `
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Command
             </label>
@@ -281,7 +281,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_5"
       media=""
@@ -303,11 +303,11 @@ exports[` 3`] = `
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Command
             </label>
@@ -317,19 +317,19 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             Towgood, Gary T.
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             3082 Yellowstone Dr. Costa Mesa, CA 92612
           </p>
@@ -345,11 +345,11 @@ exports[` 3`] = `
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Command
             </label>
@@ -358,7 +358,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_6"
       media=""
@@ -441,7 +441,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_7"
       media=""
@@ -525,10 +525,10 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             A Title So Long That It May Take Up Multiple Lines
           </h6>
@@ -605,7 +605,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_8"
       media=""
@@ -620,10 +620,10 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             A Standard Title
           </h6>
@@ -700,7 +700,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_9"
       media=""
@@ -784,10 +784,10 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-            fontSize="1em"
-            fontWeight={400}
-            letterSpacing="0px"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
             A Standard Title
           </h6>

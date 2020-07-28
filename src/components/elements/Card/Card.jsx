@@ -30,7 +30,7 @@ const CardSectionWrapper = styled.section`
   flex-direction: column;
   flex: 0 0 auto;
   color: ${(props) => {
-    return props.theme.text[props.sectionColor] || "";
+    return props.theme.text[props.sectionColor] || props.theme.text.secondary;
   }};
   background-color: ${(props) => {
     return props.theme.background[props.sectionBackground] || "";
@@ -84,7 +84,7 @@ const CardGridWrapper = styled(Grid)`
   ${StyledCardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
+    return props.theme.borders.radiusMed;
   }};
     box-shadow: ${(props) => {
     return props.theme.shadows.dropShadow;
@@ -147,7 +147,7 @@ function ExpandingSection({
             center={{
               content: (
                 <React.Fragment>
-                  {title ? <Title size="lg" text={title} weight="bold" /> : null}
+                  {title ? <Title size="xl" text={title} weight="bold" /> : null}
                   {description ? <Text text={description} /> : null}
                 </React.Fragment>
               ),
@@ -291,21 +291,21 @@ function Card({
 
   if (onClick) {
     centerContent = (
-      <LinkedWrapper>
-        <Grid columns="1" gap="xs">
-          {title ? <Title size="lg" text={title} weight="bold" /> : null}
+      <LinkedWrapper >
+        <React.Fragment >
+          {title ? <Title size="xl" text={title} /> : null}
           {description ? (<Text text={description} />
           ) : null}
-        </Grid>
+        </React.Fragment>
       </LinkedWrapper>
     );
   } else {
     centerContent = (
-      <Grid columns="1" gap="xs">
-        {title ? <Title size="lg" text={title} weight="bold" /> : null}
+      <React.Fragment >
+        {title ? <Title size="xl" text={title}  /> : null}
         {description ? (<Text text={description} />
         ) : null}
-      </Grid>
+      </React.Fragment>
     );
   }
 
@@ -469,7 +469,7 @@ Card.defaultProps = {
   media: "",
   more: null,
   onClick: null,
-  padding: null,
+  padding: "0",
   shadow: null,
   title: "",
   variant: null,
