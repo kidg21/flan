@@ -97,6 +97,14 @@ storiesOf("Templates/Modules/Toolbar", module)
                   alt="This is alt text for this image"
                 />
               </Accordion>
+              <Accordion description="Demographics">
+            <Image
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+                  alt="This is alt text for this image"
+                />
+              </Accordion>
+              <Card description="Income" 
+             more={{ content: <CardSection variant="light"><Button label="Button" variant="success" isSolid fullWidth /></CardSection> }}/>
               </Card>
         </Popper>
                   </ButtonGroup>}/></Card>
