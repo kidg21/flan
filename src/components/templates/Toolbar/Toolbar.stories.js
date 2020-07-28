@@ -3,12 +3,10 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { FullScreen, Padding } from "helpers/Display";
-import Panel from "layout/Panel";
-import Text, { Title, Link } from "base/Typography";
 import Button, { ButtonGroup } from "atoms/Button";
-import Icon from "atoms/Icon";
 import Bar from "layout/Bar";
 import Mapbox from "layout/Map";
+import Grid from "layout/Grid";
 import Radio from "atoms/Radio";
 import Image from "atoms/Image";
 import Switch from "atoms/Switch";
@@ -53,14 +51,42 @@ storiesOf("Templates/Modules/Toolbar", module)
                 }, ]} position="bottomRight">
                     <Button id="button-anchor" isPlain variant="neutral" label="Layers" icon="layers" alignCenter />
                   </Menu>
-                  <Menu id="menu-anchor" visible data={[{
-                label:  <Image
+                    <Button id="button-anchor" isPlain variant="neutral" label="Legend" icon="list" alignCenter />
+                  </ButtonGroup>}/></Card>
+            )
+          }}/>
+        <Mapbox />
+      </React.Fragment>
+    );
+  })
+  .add("Map Legend", () => {
+    return (
+      <React.Fragment>
+        <Template
+          id="Template Regions"
+          template="A_01"
+          isOverlay
+          A={{
+            id: "A",
+            content:(
+              <Card ><Bar left={<ButtonGroup columns="5"><Button alignCenter isPlain label="Draw" icon="draw" /><Button alignCenter label="Measure" isPlain icon="measure" />
+                    <Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />
+                    <Button id="button-anchor" isPlain variant="neutral" label="Layers" icon="layers" alignCenter />
+                   
+                    <Menu id="menu-anchor" visible data={[{
+                label:  <Grid columns="1"><Image
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
                 alt="This is alt text for this image"
               />
+              <Image
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+                alt="This is alt text for this image"
+              />
+              </Grid>
                 }, ]} position="bottomRight">
                     <Button id="button-anchor" isPlain variant="neutral" label="Legend" icon="list" alignCenter />
-                  </Menu></ButtonGroup>}/></Card>
+                  </Menu>
+                  </ButtonGroup>}/></Card>
             )
           }}/>
         <Mapbox />

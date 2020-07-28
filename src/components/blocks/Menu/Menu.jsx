@@ -16,7 +16,8 @@ const ListWrapper = styled(List)`
   /* no max-height overflow-y scroll bar */
   /* update logic to measure itemwrapper top/left (fixed position) */
   overflow: visible;
-  width: 10rem;
+  width: fit-content;
+  min-width: 10rem;
   position: ${(props) => {
     return props.isNested ? "absolute" : "";
   }};
@@ -30,7 +31,9 @@ const ListWrapper = styled(List)`
     return props.transform || "";
   }};
   /* cardwrapper border-radius */
-  border-radius: 0.5em;
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
   z-index: 500;
 `;
 
