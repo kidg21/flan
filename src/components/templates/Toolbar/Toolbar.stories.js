@@ -7,6 +7,10 @@ import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
 import Mapbox from "layout/Map";
 import Grid from "layout/Grid";
+import Popper from "layout/Popper";
+import Container from "atoms/Container";
+import Text from "base/Typography";
+import Accordion from "atoms/Accordion";
 import Radio from "atoms/Radio";
 import Image from "atoms/Image";
 import Switch from "atoms/Switch";
@@ -70,22 +74,31 @@ storiesOf("Templates/Modules/Toolbar", module)
             id: "A",
             content:(
               <Card ><Bar left={<ButtonGroup columns="5"><Button alignCenter isPlain label="Draw" icon="draw" /><Button alignCenter label="Measure" isPlain icon="measure" />
-                    <Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />
-                    <Button id="button-anchor" isPlain variant="neutral" label="Layers" icon="layers" alignCenter />
+                    <Button id="button-anchor" isSmall isPlain variant="neutral" label="Map Type" icon="map" alignCenter />
+                    <Button id="button-anchor" isPlain isSmall variant="neutral" label="Layers" icon="layers" alignCenter />
                    
-                    <Menu id="menu-anchor" visible data={[{
-                label:  <Grid columns="1"><Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                alt="This is alt text for this image"
+                    <Popper
+            id="popper-standard"
+            anchor={(
+              <Button
+                label="Legend"
+                icon="list"
+                isSmall
+                isPlain
+                alignCenter
               />
-              <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                alt="This is alt text for this image"
-              />
-              </Grid>
-                }, ]} position="bottomRight">
-                    <Button id="button-anchor" isPlain variant="neutral" label="Legend" icon="list" alignCenter />
-                  </Menu>
+            )}
+           visible
+          >
+            <Card>
+            <Accordion description="Demographics">
+            <Image
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+                  alt="This is alt text for this image"
+                />
+              </Accordion>
+              </Card>
+        </Popper>
                   </ButtonGroup>}/></Card>
             )
           }}/>

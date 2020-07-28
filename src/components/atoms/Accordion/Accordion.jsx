@@ -1,58 +1,67 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import Bar from "layout/Bar";
 import Icon from "atoms/Icon";
+import Avatar from "atoms/Avatar";
 import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";
 
-function AccordionHeader({ title, description }) {
-  return (
-    <React.Fragment>
-      {title ? <Title text={title} /> : null}
-      {description ? <Text text={description} /> : null}
-    </React.Fragment>
-  );
-}
-
-AccordionHeader.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-};
-
-AccordionHeader.defaultProps = {
-  title: "",
-  description: "",
-};
 
 function Accordion({
-  children, header, id, onClick, open,
+  children, description, id, title,
 }) {
-  let rotation;
-  if (open) {
-    rotation = 180;
-  } else {
-    rotation = 0;
+
+ 
+
+  const [open, setOpen] = useState(null);
+  function toggleDropdown() {
+    if (open) {
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
   }
 
-  const _header = (header.title || header.description) ? <AccordionHeader {...header} /> : header;
+  let rotation;
+  let iconContent;
+
+  if (open) {
+    rotation = 180;
+    iconContent = "minus";
+  } else {
+    rotation = 0;
+    iconContent = "plus";
+  }
 
   return (
     <Expander
       id={id}
-      onClick={onClick}
+      onClick={(e) => {
+        toggleDropdown(e);
+      }}
       open={open}
       header={
-        _header ? (
+        title || description ? (
           <Bar
+            padding="1x"
             contentAlign="center"
-            left={_header}
+            left={{
+              content: (
+                <React.Fragment>
+                  {title ? <Title text={title} /> : null}
+                  {description ? <Text text={description} /> : null}
+                </React.Fragment>
+              ),
+              align: "left",
+            }}
             right={children ? {
-              content: <Icon icon="up" rotation={rotation} />,
+              content: <Icon icon={iconContent} rotation={rotation} />,
               width: "max-content",
             } : null}
           />
-        ) : null}
+        ) : null
+      }
     >
       {children}
     </Expander>
@@ -61,17 +70,15 @@ function Accordion({
 
 Accordion.propTypes = {
   children: PropTypes.node,
-  header: PropTypes.oneOfType([PropTypes.node, PropTypes.shape(AccordionHeader.propTypes)]),
+  description: PropTypes.string,
   id: PropTypes.string,
-  onClick: PropTypes.func,
-  open: PropTypes.bool,
+  title: PropTypes.string,
 };
 Accordion.defaultProps = {
   children: null,
-  header: null,
+  description: null,
   id: null,
-  onClick: null,
-  open: false,
+  title: null,
 };
 
 export default Accordion;

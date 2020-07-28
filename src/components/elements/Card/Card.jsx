@@ -125,10 +125,13 @@ function ExpandingSection({
   children, description, icon, id, label, onClick, open, title,
 }) {
   let rotation;
+  let iconContent;
   if (open) {
     rotation = 180;
+    iconContent = "minus";
   } else {
     rotation = 0;
+    iconContent = "plus";
   }
   return (
     <Expander
@@ -154,7 +157,7 @@ function ExpandingSection({
               align: "left",
             }}
             right={children ? {
-              content: <Icon icon="down" size="lg" rotation={rotation} />,
+              content: <Icon icon={iconContent} rotation={rotation} />,
               width: "max-content",
             } : null}
           />
