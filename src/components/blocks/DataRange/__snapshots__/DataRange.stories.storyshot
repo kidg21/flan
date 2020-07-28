@@ -7,11 +7,11 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-    fontSize="0.879em"
-    fontWeight={600}
+    className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+    fontSize="0.8rem"
+    fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.4px"
+    letterSpacing="1px"
   >
     Data Range (default)
   </label>
@@ -24,22 +24,22 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 fNcQEg"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
         id="default_left_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-          fontSize="0.879em"
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Min
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
           cols=""
           disabled={false}
           id="default_left"
@@ -60,11 +60,11 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 hsVbDT"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         _
       </p>
@@ -73,22 +73,22 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 kZQbjh"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
         id="default_right_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-          fontSize="0.879em"
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Max
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
           cols=""
           disabled={false}
           id="default_right"
@@ -107,9 +107,9 @@ exports[` 1`] = `
     </div>
   </div>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-    fontSize="0.75em"
-    fontWeight={600}
+    className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+    fontSize="0.75rem"
+    fontWeight={400}
     id={null}
     letterSpacing="0.4px"
   >
@@ -121,13 +121,13 @@ exports[` 1`] = `
 exports[` 2`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-0 fMolQ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
@@ -135,7 +135,7 @@ exports[` 2`] = `
       className="Form__Section-v2wrel-3 wHYQL"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -145,11 +145,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Price Range
           </label>
@@ -162,22 +162,22 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
                 id="input_left_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Min
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                   cols=""
                   disabled={false}
                   id="input_left"
@@ -198,11 +198,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -211,22 +211,22 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
                 id="input_right_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Max
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                   cols=""
                   disabled={false}
                   id="input_right"
@@ -245,9 +245,9 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -260,11 +260,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Price Range (error)
           </label>
@@ -282,17 +282,17 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Min
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -313,11 +313,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -331,17 +331,17 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Max
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -360,9 +360,9 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -375,11 +375,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Price Range (With Error message)
           </label>
@@ -398,7 +398,7 @@ exports[` 2`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -419,11 +419,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -438,7 +438,7 @@ exports[` 2`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -457,18 +457,18 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -481,11 +481,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Price Range (disabled)
           </label>
@@ -503,17 +503,17 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Min
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 igWSUZ"
+                  className="TextInput__Input-sc-1fep8p8-2 hObFTZ"
                   cols=""
                   disabled={true}
                   id="inputDisabled_left"
@@ -534,11 +534,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -552,17 +552,17 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Max
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 igWSUZ"
+                  className="TextInput__Input-sc-1fep8p8-2 hObFTZ"
                   cols=""
                   disabled={true}
                   id="inputDisabled_right"
@@ -590,13 +590,13 @@ exports[` 2`] = `
 exports[` 3`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-0 fMolQ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
@@ -604,7 +604,7 @@ exports[` 3`] = `
       className="Form__Section-v2wrel-3 wHYQL"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -614,11 +614,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Input Range
           </label>
@@ -631,22 +631,22 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
                 id="input_left_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Min
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                   cols=""
                   disabled={false}
                   id="input_left"
@@ -667,11 +667,11 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -680,22 +680,22 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
                 id="input_right_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Max
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                   cols=""
                   disabled={false}
                   id="input_right"
@@ -714,9 +714,9 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -729,11 +729,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Select Range
           </label>
@@ -746,13 +746,13 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                  fontSize="0.75em"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing="0.4px"
@@ -760,7 +760,7 @@ exports[` 3`] = `
                   Min
                 </label>
                 <div
-                  className=" css-jf3hug-container"
+                  className=" css-3p29ga-container"
                   id="select_left"
                   onKeyDown={[Function]}
                 >
@@ -773,7 +773,7 @@ exports[` 3`] = `
                       className=" css-g1d714-ValueContainer"
                     >
                       <div
-                        className=" css-krol22-placeholder"
+                        className=" css-1m79im8-placeholder"
                       />
                       <div
                         className="css-b8ldur-Input"
@@ -872,11 +872,11 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -885,13 +885,13 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                  fontSize="0.75em"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing="0.4px"
@@ -899,7 +899,7 @@ exports[` 3`] = `
                   Max
                 </label>
                 <div
-                  className=" css-jf3hug-container"
+                  className=" css-3p29ga-container"
                   id="select_right"
                   onKeyDown={[Function]}
                 >
@@ -912,7 +912,7 @@ exports[` 3`] = `
                       className=" css-g1d714-ValueContainer"
                     >
                       <div
-                        className=" css-krol22-placeholder"
+                        className=" css-1m79im8-placeholder"
                       />
                       <div
                         className="css-b8ldur-Input"
@@ -1009,9 +1009,9 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -1024,11 +1024,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Select Range with Selector Operator
           </label>
@@ -1041,13 +1041,13 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                  fontSize="0.75em"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing="0.4px"
@@ -1055,7 +1055,7 @@ exports[` 3`] = `
                   Min
                 </label>
                 <div
-                  className=" css-jf3hug-container"
+                  className=" css-3p29ga-container"
                   id="selectOperation_left"
                   onKeyDown={[Function]}
                 >
@@ -1068,7 +1068,7 @@ exports[` 3`] = `
                       className=" css-g1d714-ValueContainer"
                     >
                       <div
-                        className=" css-krol22-placeholder"
+                        className=" css-1m79im8-placeholder"
                       />
                       <div
                         className="css-b8ldur-Input"
@@ -1167,12 +1167,12 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 hVtzoz"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
                 id={null}
                 rows={null}
               >
                 <div
-                  className=" css-jf3hug-container"
+                  className=" css-3p29ga-container"
                   id="selectOperation_center"
                   onKeyDown={[Function]}
                 >
@@ -1185,7 +1185,7 @@ exports[` 3`] = `
                       className=" css-g1d714-ValueContainer"
                     >
                       <div
-                        className=" css-krol22-placeholder"
+                        className=" css-1m79im8-placeholder"
                       />
                       <div
                         className="css-b8ldur-Input"
@@ -1284,13 +1284,13 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                  fontSize="0.75em"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing="0.4px"
@@ -1298,7 +1298,7 @@ exports[` 3`] = `
                   Max
                 </label>
                 <div
-                  className=" css-jf3hug-container"
+                  className=" css-3p29ga-container"
                   id="selectOperation_right"
                   onKeyDown={[Function]}
                 >
@@ -1311,7 +1311,7 @@ exports[` 3`] = `
                       className=" css-g1d714-ValueContainer"
                     >
                       <div
-                        className=" css-krol22-placeholder"
+                        className=" css-1m79im8-placeholder"
                       />
                       <div
                         className="css-b8ldur-Input"
@@ -1408,9 +1408,9 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >

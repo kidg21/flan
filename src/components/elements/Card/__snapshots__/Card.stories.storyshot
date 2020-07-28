@@ -8,15 +8,15 @@ exports[` 1`] = `
 >
   <div />
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 hMEyir Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_166"
+    id="storyshots_173"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={[Function]}
   >
     <section
       className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_166-Media"
+      id="storyshots_173-Media"
       onClick={null}
     >
       <img
@@ -29,8 +29,8 @@ exports[` 1`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_166-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_173-Header"
       onClick={null}
     >
       <div
@@ -74,51 +74,45 @@ exports[` 1`] = `
           <a
             className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-              id={null}
-              rows={null}
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
+              letterSpacing="0px"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                fontSize="1.15em"
-                fontWeight={500}
-                letterSpacing="0px"
-              >
-                Card Title
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                Card Description
-              </p>
-            </section>
+              Card Title
+            </h4>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Card Description
+            </p>
           </a>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_166-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_173-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-      id="storyshots_166-Footer"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_173-Footer"
       onClick={null}
     >
       <div
@@ -142,11 +136,11 @@ exports[` 1`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command One
               </label>
@@ -159,11 +153,11 @@ exports[` 1`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command Two
               </label>
@@ -175,14 +169,14 @@ exports[` 1`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_166-Menu"
+            id="menu-popper-storyshots_173-Menu"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_166-Menu"
-              name="menu-icon-storyshots_166-Menu"
+              id="menu-icon-storyshots_173-Menu"
+              name="menu-icon-storyshots_173-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -225,27 +219,27 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cCcBKL Card__CardGridWrapper-sc-1g3s676-4 dKulJa"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cCcBKL Card__CardGridWrapper-sc-1g3s676-4 dKngjY"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_167"
+    id="storyshots_174"
     media=""
     onClick={null}
   />
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_168"
+    id="storyshots_175"
     media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_168-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_175-Header"
       onClick={null}
     >
       <div
@@ -256,43 +250,37 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-            id={null}
-            rows={null}
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
-              letterSpacing="0px"
-            >
-              Card Title
-            </h5>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.2px"
-            >
-              Card Description
-            </p>
-          </section>
+            Card Title
+          </h4>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Card Description
+          </p>
         </div>
       </div>
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_169"
+    id="storyshots_176"
     media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_169-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_176-Header"
       onClick={null}
     >
       <div
@@ -303,58 +291,52 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-            id={null}
-            rows={null}
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
-              letterSpacing="0px"
-            >
-              Card Title
-            </h5>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.2px"
-            >
-              Card Description
-            </p>
-          </section>
+            Card Title
+          </h4>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Card Description
+          </p>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_169-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_176-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_170"
+    id="storyshots_177"
     media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_170-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_177-Header"
       onClick={null}
     >
       <div
@@ -370,62 +352,57 @@ exports[` 2`] = `
             id={null}
             onClick={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 bXQPOo"
-              fontSize="1em"
-              fontWeight={400}
-              letterSpacing="0px"
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 jRlbNO"
+              fontSize="1rem"
+              fontWeight={500}
+              id={null}
+              letterSpacing="0.5px"
             >
               GP
-            </h6>
+            </p>
           </div>
         </div>
         <div
           className="Bar__Slot-icfo76-1 yvaBx"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-            id={null}
-            rows={null}
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
-              letterSpacing="0px"
-            >
-              Card Title
-            </h5>
-          </section>
+            Card Title
+          </h4>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_170-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_177-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_171"
+    id="storyshots_178"
     media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_171-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_178-Header"
       onClick={null}
     >
       <div
@@ -466,49 +443,43 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 yvaBx"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-            id={null}
-            rows={null}
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
-              letterSpacing="0px"
-            >
-              Card Title
-            </h5>
-          </section>
+            Card Title
+          </h4>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_171-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_178-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_172"
+    id="storyshots_179"
     media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_172-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_179-Header"
       onClick={null}
     >
       <div
@@ -519,50 +490,44 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-            id={null}
-            rows={null}
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
-              letterSpacing="0px"
-            >
-              Card Title
-            </h5>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.2px"
-            >
-              Card Description
-            </p>
-          </section>
+            Card Title
+          </h4>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Card Description
+          </p>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_172-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_179-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-      id="storyshots_172-Footer"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_179-Footer"
       onClick={null}
     >
       <div
@@ -586,11 +551,11 @@ exports[` 2`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command One
               </label>
@@ -603,11 +568,11 @@ exports[` 2`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command Two
               </label>
@@ -625,15 +590,15 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 hMEyir Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_173"
+    id="storyshots_180"
     media=""
     onClick={[Function]}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_173-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_180-Header"
       onClick={null}
     >
       <div
@@ -647,51 +612,45 @@ exports[` 2`] = `
           <a
             className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-              id={null}
-              rows={null}
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
+              letterSpacing="0px"
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                fontSize="1.15em"
-                fontWeight={500}
-                letterSpacing="0px"
-              >
-                Card Title
-              </h5>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                Card Description
-              </p>
-            </section>
+              Card Title
+            </h4>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Card Description
+            </p>
           </a>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_173-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_180-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-      id="storyshots_173-Footer"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_180-Footer"
       onClick={null}
     >
       <div
@@ -715,11 +674,11 @@ exports[` 2`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command One
               </label>
@@ -732,11 +691,11 @@ exports[` 2`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command Two
               </label>
@@ -748,14 +707,14 @@ exports[` 2`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_173-Menu"
+            id="menu-popper-storyshots_180-Menu"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_173-Menu"
-              name="menu-icon-storyshots_173-Menu"
+              id="menu-icon-storyshots_180-Menu"
+              name="menu-icon-storyshots_180-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -797,20 +756,20 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cCcBKL Card__CardGridWrapper-sc-1g3s676-4 dKulJa"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cCcBKL Card__CardGridWrapper-sc-1g3s676-4 dKngjY"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 hMEyir Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_174"
+    id="storyshots_181"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={[Function]}
   >
     <section
       className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_174-Media"
+      id="storyshots_181-Media"
       onClick={null}
     >
       <img
@@ -823,8 +782,8 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_174-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_181-Header"
       onClick={null}
     >
       <div
@@ -840,20 +799,20 @@ exports[` 3`] = `
           <div
             className="Bar__Slot-icfo76-1 fIRUJx"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
               letterSpacing="0px"
             >
               Card Title
-            </h5>
+            </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Card Description
             </p>
@@ -889,7 +848,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 fdvWlH"
+          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -904,11 +863,11 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Button
             </label>
@@ -917,23 +876,23 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_174-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_181-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-      id="storyshots_174-Footer"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_181-Footer"
       onClick={null}
     >
       <div
@@ -957,11 +916,11 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command One
               </label>
@@ -974,11 +933,11 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command Two
               </label>
@@ -990,14 +949,14 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_174-Menu"
+            id="menu-popper-storyshots_181-Menu"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_174-Menu"
-              name="menu-icon-storyshots_174-Menu"
+              id="menu-icon-storyshots_181-Menu"
+              name="menu-icon-storyshots_181-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -1035,15 +994,15 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 hMEyir Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_175"
+    id="storyshots_182"
     media="https://player.vimeo.com/video/798022"
     onClick={[Function]}
   >
     <section
       className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_175-Media"
+      id="storyshots_182-Media"
       onClick={null}
     >
       <iframe
@@ -1058,8 +1017,8 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_175-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_182-Header"
       onClick={null}
     >
       <div
@@ -1075,20 +1034,20 @@ exports[` 3`] = `
           <div
             className="Bar__Slot-icfo76-1 fIRUJx"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
               letterSpacing="0px"
             >
               Card Title
-            </h5>
+            </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Card Description
             </p>
@@ -1124,7 +1083,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 fdvWlH"
+          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1139,11 +1098,11 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Button
             </label>
@@ -1152,23 +1111,23 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_175-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_182-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-      id="storyshots_175-Footer"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_182-Footer"
       onClick={null}
     >
       <div
@@ -1192,11 +1151,11 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command One
               </label>
@@ -1209,11 +1168,11 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command Two
               </label>
@@ -1225,14 +1184,14 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_175-Menu"
+            id="menu-popper-storyshots_182-Menu"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_175-Menu"
-              name="menu-icon-storyshots_175-Menu"
+              id="menu-icon-storyshots_182-Menu"
+              name="menu-icon-storyshots_182-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -1270,15 +1229,15 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 hMEyir Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_176"
+    id="storyshots_183"
     media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
     onClick={[Function]}
   >
     <section
       className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_176-Media"
+      id="storyshots_183-Media"
       onClick={null}
     >
       <video
@@ -1295,8 +1254,8 @@ exports[` 3`] = `
       </video>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_176-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_183-Header"
       onClick={null}
     >
       <div
@@ -1312,20 +1271,20 @@ exports[` 3`] = `
           <div
             className="Bar__Slot-icfo76-1 fIRUJx"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
               letterSpacing="0px"
             >
               Card Title
-            </h5>
+            </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Card Description
             </p>
@@ -1361,7 +1320,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 fdvWlH"
+          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1376,11 +1335,11 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Button
             </label>
@@ -1389,23 +1348,23 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_176-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_183-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-      id="storyshots_176-Footer"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_183-Footer"
       onClick={null}
     >
       <div
@@ -1429,11 +1388,11 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command One
               </label>
@@ -1446,11 +1405,11 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command Two
               </label>
@@ -1462,14 +1421,14 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_176-Menu"
+            id="menu-popper-storyshots_183-Menu"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_176-Menu"
-              name="menu-icon-storyshots_176-Menu"
+              id="menu-icon-storyshots_183-Menu"
+              name="menu-icon-storyshots_183-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -1507,15 +1466,15 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 hMEyir Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_177"
+    id="storyshots_184"
     media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
     onClick={[Function]}
   >
     <section
       className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_177-Media"
+      id="storyshots_184-Media"
       onClick={null}
     >
       <iframe
@@ -1530,8 +1489,8 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_177-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_184-Header"
       onClick={null}
     >
       <div
@@ -1547,20 +1506,20 @@ exports[` 3`] = `
           <div
             className="Bar__Slot-icfo76-1 fIRUJx"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
               letterSpacing="0px"
             >
               Card Title
-            </h5>
+            </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Card Description
             </p>
@@ -1596,7 +1555,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 fdvWlH"
+          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1611,11 +1570,11 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Button
             </label>
@@ -1624,23 +1583,23 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_177-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_184-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-      id="storyshots_177-Footer"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_184-Footer"
       onClick={null}
     >
       <div
@@ -1664,11 +1623,11 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command One
               </label>
@@ -1681,11 +1640,11 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command Two
               </label>
@@ -1697,14 +1656,14 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_177-Menu"
+            id="menu-popper-storyshots_184-Menu"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_177-Menu"
-              name="menu-icon-storyshots_177-Menu"
+              id="menu-icon-storyshots_184-Menu"
+              name="menu-icon-storyshots_184-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -1742,15 +1701,15 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 hMEyir Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_178"
+    id="storyshots_185"
     media="https://www.w3schools.com/html/horse.mp3"
     onClick={[Function]}
   >
     <section
       className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_178-Media"
+      id="storyshots_185-Media"
       onClick={null}
     >
       <audio
@@ -1766,8 +1725,8 @@ exports[` 3`] = `
       </audio>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_178-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_185-Header"
       onClick={null}
     >
       <div
@@ -1783,20 +1742,20 @@ exports[` 3`] = `
           <div
             className="Bar__Slot-icfo76-1 fIRUJx"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
               letterSpacing="0px"
             >
               Card Title
-            </h5>
+            </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Card Description
             </p>
@@ -1832,7 +1791,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 fdvWlH"
+          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1847,11 +1806,11 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Button
             </label>
@@ -1860,23 +1819,23 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_178-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_185-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-      id="storyshots_178-Footer"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_185-Footer"
       onClick={null}
     >
       <div
@@ -1900,11 +1859,11 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command One
               </label>
@@ -1917,11 +1876,11 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Command Two
               </label>
@@ -1933,14 +1892,14 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_178-Menu"
+            id="menu-popper-storyshots_185-Menu"
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDwQfQ"
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_178-Menu"
-              name="menu-icon-storyshots_178-Menu"
+              id="menu-icon-storyshots_185-Menu"
+              name="menu-icon-storyshots_185-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"

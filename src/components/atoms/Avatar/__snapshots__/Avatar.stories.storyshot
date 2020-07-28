@@ -2,18 +2,19 @@
 
 exports[` 1`] = `
 <div
-  className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+  className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
   id={null}
   onClick={null}
 >
-  <h6
-    className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-    fontSize="1em"
-    fontWeight={400}
-    letterSpacing="0px"
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+    fontSize="1rem"
+    fontWeight={500}
+    id={null}
+    letterSpacing="0.5px"
   >
     LG
-  </h6>
+  </p>
 </div>
 `;
 
@@ -24,60 +25,64 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       AB
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       CD
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       ST
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       UV
-    </h6>
+    </p>
   </div>
 </section>
 `;
@@ -89,88 +94,94 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       DF
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 bRLeGs"
+    className="Avatar__TagContainer-sc-1vuf9om-2 iOFdSY"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       IN
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 ulvHg"
+    className="Avatar__TagContainer-sc-1vuf9om-2 kjDGQc"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       SC
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 dypNbw"
+    className="Avatar__TagContainer-sc-1vuf9om-2 cMrzfM"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       WN
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 eRECvh"
+    className="Avatar__TagContainer-sc-1vuf9om-2 cNGXUJ"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       AL
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 kmhuxT"
+    className="Avatar__TagContainer-sc-1vuf9om-2 jAjgCj"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       LN
-    </h6>
+    </p>
   </div>
 </section>
 `;
@@ -182,7 +193,7 @@ exports[` 4`] = `
   rows={null}
 >
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
@@ -208,7 +219,7 @@ exports[` 4`] = `
     </svg>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
@@ -234,7 +245,7 @@ exports[` 4`] = `
     </svg>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
@@ -260,7 +271,7 @@ exports[` 4`] = `
     </svg>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
@@ -295,73 +306,73 @@ exports[` 5`] = `
   rows={null}
 >
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
     <img
       alt="kitten"
-      className="Image__ImageWrapper-sc-18abvff-0 eMlCkO Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
+      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
       onClick={null}
       src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"}
       title="kitten"
-      width="2rem"
+      width="2.2rem"
     />
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
     <img
       alt="skyline"
-      className="Image__ImageWrapper-sc-18abvff-0 eMlCkO Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
+      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
       onClick={null}
       src={"https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"}
       title="skyline"
-      width="2rem"
+      width="2.2rem"
     />
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
     <img
       alt="building"
-      className="Image__ImageWrapper-sc-18abvff-0 eMlCkO Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
+      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
       onClick={null}
       src={"http://localhost:9009/static/media/modern%20exterior%201.31bf3931.jpg"}
       title="building"
-      width="2rem"
+      width="2.2rem"
     />
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
     <img
       alt="skyline"
-      className="Image__ImageWrapper-sc-18abvff-0 eMlCkO Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
+      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
       onClick={null}
       src={"https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"}
       title="skyline"
-      width="2rem"
+      width="2.2rem"
     />
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
     <img
       alt="kitten"
-      className="Image__ImageWrapper-sc-18abvff-0 eMlCkO Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
+      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
       onClick={null}
       src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"}
       title="kitten"
-      width="2rem"
+      width="2.2rem"
     />
   </div>
 </section>
@@ -378,70 +389,75 @@ exports[` 6`] = `
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 dBYaKd"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 jSDpQX"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       xs
-    </h6>
+    </p>
   </div>
   <div
     className="Avatar__TagContainer-sc-1vuf9om-2 gCneCZ"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 bXQPOo"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 jRlbNO"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       sm
-    </h6>
+    </p>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       df
-    </h6>
+    </p>
   </div>
   <div
     className="Avatar__TagContainer-sc-1vuf9om-2 jVyJit"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 ehmoRK"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 iYpKXM"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       lg
-    </h6>
+    </p>
   </div>
   <div
     className="Avatar__TagContainer-sc-1vuf9om-2 kmEojp"
     id={null}
     onClick={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 fiMrLE"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 jSDray"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     >
       xl
-    </h6>
+    </p>
   </div>
   <div
     className="Avatar__TagContainer-sc-1vuf9om-2 cChUol"
@@ -496,7 +512,7 @@ exports[` 6`] = `
     </svg>
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
     id={null}
     onClick={null}
   >

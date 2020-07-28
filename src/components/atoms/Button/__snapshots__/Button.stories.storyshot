@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -24,11 +24,11 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Button Label
       </label>
@@ -46,7 +46,7 @@ exports[` 2`] = `
   }
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -61,11 +61,11 @@ exports[` 2`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Click Me!
       </label>
@@ -76,7 +76,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <button
-  className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+  className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
   disabled={false}
   htmlFor={null}
   id={null}
@@ -91,11 +91,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-      fontSize="0.879em"
-      fontWeight={600}
+      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+      fontSize="1rem"
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Standard Button
     </label>
@@ -110,7 +110,7 @@ exports[` 4`] = `
   rows={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -125,18 +125,18 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Standard
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 hkSjVt"
+    className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -151,18 +151,18 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Solid
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bFnwvU"
+    className="Button__StyledButton-sc-1v7sls2-0 eqJpRB"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -177,18 +177,18 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Round
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 dzJrcb"
+    className="Button__StyledButton-sc-1v7sls2-0 jiNYBq"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -203,18 +203,18 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Solid Round
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 dHqqoa"
+    className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -229,18 +229,18 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Plain
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 caABMl"
+    className="Button__StyledButton-sc-1v7sls2-0 ljVVQ"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -255,11 +255,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Underlined
       </label>
@@ -275,7 +275,7 @@ exports[` 5`] = `
   rows={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -290,18 +290,18 @@ exports[` 5`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Button
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -316,18 +316,18 @@ exports[` 5`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Reset
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -342,11 +342,11 @@ exports[` 5`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Submit
       </label>
@@ -362,7 +362,7 @@ exports[` 6`] = `
   rows={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 ciildJ"
+    className="Button__StyledButton-sc-1v7sls2-0 gRwtsI"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -377,18 +377,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Info
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 kIlLoC"
+    className="Button__StyledButton-sc-1v7sls2-0 iepeYP"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -403,18 +403,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Solid Info
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 gqVIPO"
+    className="Button__StyledButton-sc-1v7sls2-0 gcEfQr"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -429,18 +429,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Success
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 knQEvv"
+    className="Button__StyledButton-sc-1v7sls2-0 jSJvUK"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -455,18 +455,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Solid Success
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 khvLby"
+    className="Button__StyledButton-sc-1v7sls2-0 juxZuP"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -481,18 +481,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Warning
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 eiYEaL"
+    className="Button__StyledButton-sc-1v7sls2-0 chOhlK"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -507,18 +507,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Solid Warning
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 fMihJG"
+    className="Button__StyledButton-sc-1v7sls2-0 ijaYPf"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -533,18 +533,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Alert
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 kEOjpB"
+    className="Button__StyledButton-sc-1v7sls2-0 gujtSI"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -559,18 +559,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Solid Alert
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 cVlxOr"
+    className="Button__StyledButton-sc-1v7sls2-0 dgZmNi"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -585,18 +585,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Neutral
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 dpjTRJ"
+    className="Button__StyledButton-sc-1v7sls2-0 iPowrM"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -611,18 +611,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Solid Neutral
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 ehVVHG"
+    className="Button__StyledButton-sc-1v7sls2-0 cbfzOH"
     disabled={true}
     htmlFor={null}
     id={null}
@@ -637,18 +637,18 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Disabled
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 bhDbmV"
+    className="Button__StyledButton-sc-1v7sls2-0 jXBYHM"
     disabled={true}
     htmlFor={null}
     id={null}
@@ -663,11 +663,11 @@ exports[` 6`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Solid Disabled
       </label>
@@ -683,7 +683,7 @@ exports[` 7`] = `
   rows={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -718,18 +718,18 @@ exports[` 7`] = `
         />
       </svg>
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Profile
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 cPcgyo"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -764,18 +764,18 @@ exports[` 7`] = `
         />
       </svg>
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Profile
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -821,7 +821,7 @@ exports[` 8`] = `
   rows={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -836,25 +836,25 @@ exports[` 8`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Count Button
       </label>
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+        className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="2"
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-          fontSize="0.68em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="1px"
+          letterSpacing=".5px"
         >
           2
         </label>
@@ -862,7 +862,7 @@ exports[` 8`] = `
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -897,25 +897,25 @@ exports[` 8`] = `
         />
       </svg>
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Count Button
       </label>
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+        className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="2"
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-          fontSize="0.68em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="1px"
+          letterSpacing=".5px"
         >
           2
         </label>

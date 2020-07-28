@@ -7,12 +7,12 @@ exports[` 1`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 jpOlOk"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 coiTMo"
     id="Template A_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -30,12 +30,12 @@ exports[` 2`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kQlhXX"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gcGecX"
     id="Template B_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -43,7 +43,7 @@ exports[` 2`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -61,12 +61,12 @@ exports[` 3`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gssTGa"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gykPSC"
     id="Template B_02"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -74,7 +74,7 @@ exports[` 3`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -92,12 +92,12 @@ exports[` 4`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 jtjAs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kACcHs"
     id="Template C_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -105,7 +105,7 @@ exports[` 4`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -113,7 +113,7 @@ exports[` 4`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -131,12 +131,12 @@ exports[` 5`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gykKiS"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 jynZxK"
     id="Template C_02"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -144,7 +144,7 @@ exports[` 5`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -152,7 +152,7 @@ exports[` 5`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -170,12 +170,12 @@ exports[` 6`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 bRIIjG"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gBFoEG"
     id="Template D_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -183,7 +183,7 @@ exports[` 6`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -191,7 +191,7 @@ exports[` 6`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -199,7 +199,7 @@ exports[` 6`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -217,12 +217,12 @@ exports[` 7`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 lkqGVR"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 hFuFRp"
     id="Template E_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -230,7 +230,7 @@ exports[` 7`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -238,7 +238,7 @@ exports[` 7`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -246,7 +246,7 @@ exports[` 7`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -254,7 +254,7 @@ exports[` 7`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 eBTnga"
+      className="Page__Region-mddda5-2 bSMYtw"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -272,12 +272,12 @@ exports[` 8`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 hjIlFP"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 exrEtT"
     id="Template E_02"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -285,7 +285,7 @@ exports[` 8`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -293,7 +293,7 @@ exports[` 8`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -301,7 +301,7 @@ exports[` 8`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -309,7 +309,7 @@ exports[` 8`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 eBTnga"
+      className="Page__Region-mddda5-2 bSMYtw"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -327,12 +327,12 @@ exports[` 9`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kMlXSd"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 HdklZ"
     id="Template E_03"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -340,7 +340,7 @@ exports[` 9`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -348,7 +348,7 @@ exports[` 9`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -356,7 +356,7 @@ exports[` 9`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -364,7 +364,7 @@ exports[` 9`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 eBTnga"
+      className="Page__Region-mddda5-2 bSMYtw"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -385,12 +385,12 @@ exports[` 10`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kYDMEx"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 bVajWt"
     id="Template Regions"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -400,14 +400,14 @@ exports[` 10`] = `
         id="Search_E3"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 bJMnrR Search__SearchInput-sey9om-1 ftjKE"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
           height={null}
           id={null}
           overflow={null}
           width={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 dHqqoa Search__SearchButton-sey9om-3 htUUHK"
+            className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
             disabled={false}
             htmlFor={null}
             id="Search_E3-search-button"
@@ -444,13 +444,13 @@ exports[` 10`] = `
             </section>
           </button>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__SearchTextInput-sey9om-2 cNvUXa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
             id="Search_E3-search-bar_container"
             rows={null}
           >
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="Search_E3-search-bar"
@@ -471,13 +471,13 @@ exports[` 10`] = `
       </form>
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cPcgyo"
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -512,11 +512,11 @@ exports[` 10`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Button
           </label>
@@ -524,13 +524,13 @@ exports[` 10`] = `
       </button>
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cPcgyo"
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -565,11 +565,11 @@ exports[` 10`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Button
           </label>
@@ -577,13 +577,13 @@ exports[` 10`] = `
       </button>
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cPcgyo"
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -618,11 +618,11 @@ exports[` 10`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Button
           </label>
@@ -630,13 +630,13 @@ exports[` 10`] = `
       </button>
     </section>
     <section
-      className="Page__Region-mddda5-2 eBTnga"
+      className="Page__Region-mddda5-2 bSMYtw"
       id="E"
       placeholder="E"
       tabIndex="0"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
         id="storyshots_58"
         media=""
@@ -648,11 +648,11 @@ exports[` 10`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+            fontSize="0.875rem"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Color Palette
           </label>
@@ -764,85 +764,85 @@ exports[` 11`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
     id={null}
     rows={null}
   >
     <h4
-      className="Typography__TitleText-sc-19auepv-2 hiLzNo"
-      fontSize="1.25em"
-      fontWeight={500}
+      className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+      fontSize="1.35rem"
+      fontWeight="400"
       letterSpacing="0px"
     >
       My Latest Musings
     </h4>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
+      fontSize="1rem"
       fontWeight={300}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       Totally Worth The Read...Enjoy!
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-      fontSize="0.75em"
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz"
+      fontSize="0.875rem"
       fontWeight={600}
       id={null}
-      letterSpacing="0.4px"
+      letterSpacing="0.25px"
     >
       Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
     </p>
     <h5
-      className="Typography__TitleText-sc-19auepv-2 PRpBC"
-      fontSize="1.15em"
-      fontWeight={400}
-      letterSpacing="0px"
+      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+      fontSize="1.15rem"
+      fontWeight="500"
+      letterSpacing="0.4px"
     >
       Section 1
     </h5>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <h5
-      className="Typography__TitleText-sc-19auepv-2 PRpBC"
-      fontSize="1.15em"
-      fontWeight={400}
-      letterSpacing="0px"
+      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+      fontSize="1.15rem"
+      fontWeight="500"
+      letterSpacing="0.4px"
     >
       Section 2
     </h5>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
@@ -860,36 +860,36 @@ exports[` 12`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
     id="Knobs"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 fWRsgb"
+      className="Page__Region-mddda5-2 gBizQl"
       id="A"
       placeholder="A"
       tabIndex="0"
     />
     <section
-      className="Page__Region-mddda5-2 jBDheA"
+      className="Page__Region-mddda5-2 jKxaMO"
       id="B"
       placeholder="B"
       tabIndex="0"
     />
     <section
-      className="Page__Region-mddda5-2 bwcLlp"
+      className="Page__Region-mddda5-2 laJKur"
       id="C"
       placeholder="C"
       tabIndex="0"
     />
     <section
-      className="Page__Region-mddda5-2 elnoBa"
+      className="Page__Region-mddda5-2 gHZDSM"
       id="D"
       placeholder="D"
       tabIndex="0"
     />
     <section
-      className="Page__Region-mddda5-2 hviCgL"
+      className="Page__Region-mddda5-2 hZzJQV"
       id="E"
       placeholder="E"
       tabIndex="0"
