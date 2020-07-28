@@ -16,7 +16,9 @@ const ListWrapper = styled(List)`
   /* no max-height overflow-y scroll bar */
   /* update logic to measure itemwrapper top/left (fixed position) */
   overflow: visible;
-  width: 10rem;
+  width: ${(props) => {
+    return props.width;
+  }};
   position: ${(props) => {
     return props.isNested ? "absolute" : "";
   }};
@@ -77,6 +79,7 @@ const MenuList = ({
   id,
   _isNested, // internal prop for styling nested menus
   onClose,
+  width,
 }) => {
   const [activeItem, setActiveItem] = useState();
   const uId = useId(id);
@@ -155,7 +158,7 @@ const MenuList = ({
   const positionStyle = _isNested ? listPositionStyle[validDirection.toLowerCase()] : {};
 
   return (
-    <ListWrapper id={id} isInteractive isNested={_isNested} {...positionStyle}>
+    <ListWrapper id={id} isInteractive isNested={_isNested} width={width} {...positionStyle}>
       <StyledCardWrapper id={`cardwrapper-${id}`} shadow="2x">
         {listItems}
       </StyledCardWrapper>
@@ -177,6 +180,7 @@ MenuList.defaultProps = {
   id: "",
   _isNested: false,
   onClose: null,
+  width: "10rem",
 };
 
 MenuList.propTypes = {
@@ -185,6 +189,7 @@ MenuList.propTypes = {
   id: PropTypes.string,
   _isNested: PropTypes.bool,
   onClose: PropTypes.func,
+  width: PropTypes.string,
 };
 
 const defaultAnchor = <Button icon="options" isPlain isRound />;
@@ -198,6 +203,7 @@ const Menu = ({
   usePortal,
   position,
   visible,
+  width,
   zIndex,
 }) => {
   return (
@@ -216,6 +222,7 @@ const Menu = ({
         data={data}
         direction={position.toLowerCase().includes("left") ? "left" : "right"}
         onClose={onClose}
+        width={width}
       />
     </Popper>
   );
@@ -230,6 +237,7 @@ Menu.defaultProps = {
   usePortal: false,
   position: "bottomRight",
   visible: false,
+  width: undefined,
   zIndex: null,
 };
 
@@ -247,6 +255,7 @@ Menu.propTypes = {
     "topRight",
   ]),
   visible: PropTypes.bool,
+  width: PropTypes.string,
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
@@ -335,6 +344,7 @@ _Menu.defaultProps = {
   usePortal: false,
   position: "bottomRight",
   visible: undefined,
+  width: undefined,
   zIndex: null,
 };
 
@@ -362,6 +372,7 @@ _Menu.propTypes = {
   ]),
   /** open/close state of menu */
   visible: PropTypes.bool,
+  width: PropTypes.string,
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
