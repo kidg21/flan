@@ -180,7 +180,7 @@ MenuList.defaultProps = {
   id: "",
   _isNested: false,
   onClose: null,
-  width: "10rem",
+  width: undefined,
 };
 
 MenuList.propTypes = {
@@ -344,7 +344,7 @@ _Menu.defaultProps = {
   usePortal: false,
   position: "bottomRight",
   visible: undefined,
-  width: undefined,
+  width: "10rem",
   zIndex: null,
 };
 
@@ -372,6 +372,7 @@ _Menu.propTypes = {
   ]),
   /** open/close state of menu */
   visible: PropTypes.bool,
+  /** width of the menu */
   width: PropTypes.string,
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
