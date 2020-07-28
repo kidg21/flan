@@ -24,21 +24,21 @@ const BoxContainer = styled.div`
   max-height: ${(props) => {
     return props.maxHeight || "";
   }};
-  padding: 0;
   height: ${(props) => {
     return props.height || "";
   }};
   width: ${(props) => {
     return props.width || "";
   }};
-  background-color: ${(props) => {
-    return props.hasBackground ? props.theme.background.default : "";
+  border: ${(props) => {
+    return props.hasBorder ? "1px solid" : "";
   }};
-  border: 1px solid
-    ${(props) => {
-    return props.border || props.theme.palette.neutral40;
+  border-color: ${(props) => {
+    return props.theme.palette.neutral40;
   }};
-  border-radius: 5px;
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
   ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
@@ -69,23 +69,18 @@ const BoxContainer = styled.div`
 
 const paddingHash = {
   "0": "0",
-  "2x": "2em",
-  "3x": "3em",
+  "1x": "1rem",
+  "2x": "2rem",
+  "3x": "3rem",
 };
 
 const Container = React.forwardRef(({
-  border, children, className, visible, hasBackground, height, id, maxHeight, padding, width,
+  hasBorder, children, className, visible, height, id, maxHeight, padding, width,
 }, ref) => {
-  const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
+  const setPadding = padding ? paddingHash[padding.toLowerCase()] : "0";
   return (
-    <Wrapper
-      setPadding={setPadding}
-      height={height}
-      width={width}
-      visible={visible}
-      className={className}
-    >
-      <BoxContainer id={id} hasBackground={hasBackground} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
+    <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
+      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} hasBorder={hasBorder} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -93,24 +88,22 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
-  border: PropTypes.string,
+  hasBorder: PropTypes.bool,
+  visible: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
-  hasBackground: PropTypes.bool,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
   maxHeight: PropTypes.string,
-  padding: PropTypes.oneOf(["0", "2x", "3x"]),
-  visible: PropTypes.bool,
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Container.defaultProps = {
-  border: null,
+  hasBorder: false,
   visible: true,
   children: null,
   className: null,
-  hasBackground: false,
   height: null,
   id: null,
   maxHeight: null,

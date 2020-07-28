@@ -47,7 +47,7 @@ const CommandContainer = styled.a`
 const CommandName = styled(Label)`
   grid-area: name;
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 500;
   color: inherit;
   text-transform: capitalize;
   overflow: hidden;

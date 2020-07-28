@@ -29,11 +29,11 @@ exports[` 1`] = `
     />
   </svg>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-    fontSize="0.879em"
+    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+    fontSize="0.875rem"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.4px"
+    letterSpacing=".5px"
   >
     Print
   </label>
@@ -74,11 +74,11 @@ exports[` 2`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Active
     </label>
@@ -111,11 +111,11 @@ exports[` 2`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Disabled
     </label>
@@ -157,11 +157,11 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Small
     </label>
@@ -194,11 +194,11 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Standard
     </label>
@@ -231,11 +231,11 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Large
     </label>
@@ -277,11 +277,11 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Icon-Left
     </label>
@@ -314,11 +314,11 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Icon-Top
     </label>
@@ -351,13 +351,59 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Icon-Right
+    </label>
+  </a>
+</section>
+`;
+
+exports[` 5`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+  id={null}
+  rows={null}
+>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+    id={null}
+    label="This is visible to ATs"
+    onClick={null}
+    title="This is visible to ATs"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-eye fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="eye"
+      data-prefix="far"
+      focusable="false"
+      fontSize="inherit"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 bfEaal"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      This is visible to ATs
     </label>
   </a>
 </section>

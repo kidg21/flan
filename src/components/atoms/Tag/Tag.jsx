@@ -23,9 +23,8 @@ const TagContainer = styled.div`
     return props.theme.text[props.badgeTextColor];
   }};
   text-align: center;
-  text-transform: uppercase;
   padding: ${(props) => {
-    return props.badgePadding || "";
+    return props.badgePadding || "0.2em .5em";
   }};
   line-height: normal;
   border-radius: ${(props) => {
@@ -52,7 +51,7 @@ function Tag({
     badgePadding = ".75em";
     borderRadius = "50%";
   } else if (label) {
-    labelType = <Label size="xs" weight="bold" text={label} />;
+    labelType = <Label text={label} />;
 
     if (hasBackground) {
       badgeTextColor = "inverse";

@@ -9,9 +9,9 @@ exports[` 1`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_197"
+    id="storyshots_204"
     media=""
     onClick={null}
   >
@@ -21,11 +21,11 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+        fontSize="0.875rem"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Standard Swatches
       </label>
@@ -63,9 +63,9 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
   href={null}
-  id="storyshots_198"
+  id="storyshots_205"
   media=""
   onClick={null}
 >
@@ -75,11 +75,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+      fontSize="0.875rem"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Color Picker
     </label>
@@ -170,9 +170,9 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_199"
+    id="storyshots_206"
     media=""
     onClick={null}
   >
@@ -182,11 +182,11 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+        fontSize="0.875rem"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Color Picker
       </label>
@@ -269,9 +269,9 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 ezOGuA Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_200"
+    id="storyshots_207"
     media=""
     onClick={null}
   >
@@ -281,11 +281,11 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+        fontSize="0.875rem"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Color Picker
       </label>

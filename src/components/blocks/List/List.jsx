@@ -74,6 +74,8 @@ const ListItemWrapper = styled.li`
   }
 `;
 
+
+
 const ListTitleWrapper = styled.li`
   color: inherit;
   padding: 1rem 1rem;
@@ -82,6 +84,8 @@ const ListTitleWrapper = styled.li`
 const ListTitle = styled(Text)`
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 400;
 `;
 
 const SectionWrapper = styled.li`
@@ -91,7 +95,7 @@ const SectionWrapper = styled.li`
 
 const Section = styled(Text)`
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 `;
 
 function ListSection({
@@ -211,7 +215,7 @@ function ListItem({
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment>
-      <Text text={title || null} disabled={disabled} size="lg" />
+      <Text text={title || null} disabled={disabled} />
       {description ? (<Text size="sm" text={description || null} disabled={disabled} />
       ) : null}
     </React.Fragment>

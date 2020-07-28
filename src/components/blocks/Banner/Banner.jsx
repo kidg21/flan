@@ -14,6 +14,9 @@ const StyledBanner = styled(Card)`
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
 `;
 
 const Close = styled(Icon)`
@@ -62,7 +65,7 @@ function Banner({
           content: (
             <Grid columns="1" gap="xs">
               <Title text={title} />
-              {description ? <Text size="sm" weight="bold" text={description} /> : null}
+              {description ? <Text size="sm" text={description} /> : null}
               {link ? (
                 <Link href={href} onClick={onClick} text={link} />
               ) : null}

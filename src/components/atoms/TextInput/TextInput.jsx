@@ -11,7 +11,7 @@ import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
   }};
   width: 100%;
 `;
@@ -193,7 +193,7 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label isRequired={isRequired} text={label} />
+        <Label  isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
@@ -223,9 +223,9 @@ function TextInput({
         value={value}
       />
       {autocompleteDataList}
-      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+      {helpText ? <Text size="xs" text={helpText} /> : null}
       {children}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs"  text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }

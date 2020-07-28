@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Switch__SwitchContainer-sc-1bvlvzt-0 iuomPM"
+  className="Switch__SwitchContainer-sc-1bvlvzt-0 byojpT"
   disabled={false}
   id={null}
   label="Switch"
@@ -21,11 +21,11 @@ exports[` 1`] = `
     />
   </div>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 RzJFI"
-    fontSize="0.82em"
+    className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+    fontSize="0.8rem"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="1px"
   >
     Switch
   </label>
@@ -39,7 +39,7 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 iuomPM"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 byojpT"
     disabled={false}
     id={null}
     label="Selected"
@@ -47,28 +47,28 @@ exports[` 2`] = `
   >
     <div
       checked={true}
-      className="Switch__StyledSwitch-sc-1bvlvzt-1 cAhDIp"
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 bmZUEp"
       disabled={false}
       onChange={null}
     >
       <div
         checked={true}
-        className="Switch__Circle-sc-1bvlvzt-2 cbGbDX"
+        className="Switch__Circle-sc-1bvlvzt-2 eFFeTd"
         disabled={false}
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 RzJFI"
-      fontSize="0.82em"
+      className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+      fontSize="0.8rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="1px"
     >
       Selected
     </label>
   </div>
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 iuomPM"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 byojpT"
     disabled={false}
     id={null}
     label="Unselected"
@@ -87,11 +87,11 @@ exports[` 2`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 RzJFI"
-      fontSize="0.82em"
+      className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+      fontSize="0.8rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="1px"
     >
       Unselected
     </label>
@@ -116,11 +116,11 @@ exports[` 2`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 RzJFI"
-      fontSize="0.82em"
+      className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+      fontSize="0.8rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="1px"
     >
       Disabled
     </label>
@@ -135,7 +135,7 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 iuomPM"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 byojpT"
     disabled={false}
     id={null}
     label="Left Aligned"
@@ -154,17 +154,17 @@ exports[` 3`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 RzJFI"
-      fontSize="0.82em"
+      className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+      fontSize="0.8rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="1px"
     >
       Left Aligned
     </label>
   </div>
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 kJWxTM"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 gZOOnL"
     disabled={false}
     id={null}
     label="Right Aligned"
@@ -183,11 +183,11 @@ exports[` 3`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 RzJFI"
-      fontSize="0.82em"
+      className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+      fontSize="0.8rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="1px"
     >
       Right Aligned
     </label>

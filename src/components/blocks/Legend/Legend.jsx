@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const TableContainer = styled.table`
   width: 100%;
   color: ${(props) => {
-    return props.theme.text.secondary;
+    return props.theme.text.primary;
   }};
   table-layout: fixed;
   border-collapse: collapse;

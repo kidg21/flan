@@ -1,12 +1,9 @@
 /* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
-
 export const fonts = {
-  headline: "Nunito, Arial, sans-serif",
-  body: "Nunito, Arial, sans-serif",
-  data: "Lato, Arial, sans-serif",
-  numbers: "Nunito, sans-serif",
+  headline: "Roboto, Arial, sans-serif",
+  body: "Roboto, Arial, sans-serif",
 };
 
 // Codes for color palette
@@ -40,7 +37,7 @@ export const colors = {
   navy20: "hsl(213, 63%, 96%)",
   navy40: "hsl(212, 82%, 87%)",
   navy60: "hsl(213, 48%, 44%)",
-  navy80: "hsl(215, 22%, 26%)",
+  navy80: "hsl(216, 26%, 32%)",
   navy100: "hsl(215, 44%, 16%)",
 
   red20: "hsl(3, 96%, 97%)",
@@ -153,13 +150,14 @@ export const shadows = {
 
 export const borders = {
   radiusMin: "0.5rem",
+  radiusMed: "0.25rem",
   radiusMax: "5rem",
 };
 
 export const DMPTheme = {
   typography: {
     primary: fonts.body,
-    secondary: fonts.data,
+    secondary: fonts.body,
   },
   background: {
     alert: colors.red80,
@@ -185,7 +183,7 @@ export const DMPTheme = {
     inverse: colors.white40,
     inverseHover: colors.grey20,
     link: colors.blue80,
-    primary: colors.grey100,
+    primary: colors.grey80,
     secondary: colors.grey60,
     selected: colors.blue80,
     success: colors.green80,
@@ -193,6 +191,7 @@ export const DMPTheme = {
   },
   borders: {
     radiusMin: borders.radiusMin,
+    radiusMed: borders.radiusMed,
     radiusMax: borders.radiusMax,
   },
   shadows: shadows,
@@ -283,8 +282,8 @@ export const darkTheme = {
     warning: colors.orange20,
   },
   borders: {
-    border: borders.borderPrimary,
     radiusMin: borders.radiusMin,
+    radiusMed: borders.radiusMed,
     radiusMax: borders.radiusMax,
   },
   shadows: shadows,
@@ -334,7 +333,6 @@ export const Darken = css`
 export const Lighten = css`
   filter: brightness(115%) saturate(80%) ;
 `;
-
 
 // Sizes for typography scale
 export const fontSize = {

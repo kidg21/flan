@@ -7,16 +7,16 @@ exports[` 1`] = `
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+    className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
     id={null}
     label="Tag"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-      fontSize="0.68em"
-      fontWeight={600}
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="1px"
+      letterSpacing=".5px"
     >
       Tag
     </label>
@@ -59,16 +59,16 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+        className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Brief Label"
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-          fontSize="0.68em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="1px"
+          letterSpacing=".5px"
         >
           Brief Label
         </label>
@@ -108,16 +108,16 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+        className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-          fontSize="0.68em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="1px"
+          letterSpacing=".5px"
         >
           Tag with a long label because you cannot be concise with your words.
         </label>
@@ -134,61 +134,61 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 fUXefn"
+    className="Tag__TagContainer-sc-128kb3h-0 cTlzw"
     id={null}
     label="Info"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-      fontSize="0.68em"
-      fontWeight={600}
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="1px"
+      letterSpacing=".5px"
     >
       Info
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 htIGwb"
+    className="Tag__TagContainer-sc-128kb3h-0 kKdtCs"
     id={null}
     label="Warning"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-      fontSize="0.68em"
-      fontWeight={600}
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="1px"
+      letterSpacing=".5px"
     >
       Warning
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 dxjVfv"
+    className="Tag__TagContainer-sc-128kb3h-0 fXnXWY"
     id={null}
     label="Success"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-      fontSize="0.68em"
-      fontWeight={600}
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="1px"
+      letterSpacing=".5px"
     >
       Success
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 bSHTQW"
+    className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
     id={null}
     label="Alert"
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-      fontSize="0.68em"
-      fontWeight={600}
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="1px"
+      letterSpacing=".5px"
     >
       Alert
     </label>
