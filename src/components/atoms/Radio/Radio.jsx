@@ -11,7 +11,7 @@ const RadioWrapper = styled(Grid)`
     return props.theme.text[props.inputTextColor] || "inherit";
   }};
   &:last-child {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 `;
 

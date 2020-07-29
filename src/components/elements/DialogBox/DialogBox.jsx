@@ -8,7 +8,7 @@ import Card, { CardSection } from "elements/Card";
 
 const ButtonGrid = styled(Grid)`
   grid-template-columns: 1fr auto auto;
-  grid-template-areas: 'blank one two';
+  grid-template-areas: '. one two';
 `;
 
 const DialogCard = styled(Card)`
@@ -56,7 +56,8 @@ function DialogBox({
             isSolid
             variant={buttons[1].variant}
           />
-        </ButtonGrid >);
+        </ButtonGrid>
+      );
     } else if (buttons.length === 1) {
       buttonElements = (
         <SecondaryButton
@@ -72,21 +73,25 @@ function DialogBox({
         <Grid columns={buttons.length.toString()}>
           {buttons.forEach((button, index) => {
             if (index === 0) {
-              return (<PrimaryButton
+              return (
+                <PrimaryButton
+                  disabled={button.disabled}
+                  id={button.id}
+                  label={button.label}
+                  onClick={button.onClick}
+                  variant={button.variant}
+                />
+              );
+            }
+            return (
+              <SecondaryButton
                 disabled={button.disabled}
                 id={button.id}
                 label={button.label}
                 onClick={button.onClick}
                 variant={button.variant}
-              />);
-            }
-            return (<SecondaryButton
-              disabled={button.disabled}
-              id={button.id}
-              label={button.label}
-              onClick={button.onClick}
-              variant={button.variant}
-            />);
+              />
+            );
           })}
         </Grid>
       );
@@ -95,17 +100,17 @@ function DialogBox({
 
   return (
     <DialogCard
-    padding="2x"
+      padding="2x"
       body={body}
       id={id}
       title={title}
     >
-      {children ? <ChildSection>{children}</ChildSection> : null}
+      {children}
+      {/* {children ? <ChildSection>{children}</ChildSection> : null} */}
       {buttonElements ? <CardSection padding="2x">{buttonElements}</CardSection> : null}
     </DialogCard>
   );
 }
-
 
 DialogBox.propTypes = {
   body: PropTypes.node,

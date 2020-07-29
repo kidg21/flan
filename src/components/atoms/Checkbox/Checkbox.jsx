@@ -12,7 +12,7 @@ const CheckboxWrapper = styled(Grid)`
   }};
 
   &:last-child {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 `;
 
@@ -24,7 +24,7 @@ const CheckboxContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary ;
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   line-height: initial;
   &[disabled],
@@ -55,8 +55,8 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   &:checked {
     background-color: ${(props) => {
     return (
-      props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.selected
+      props.theme.palette[props.fillColorChecked]
+      || props.theme.palette.selected
     );
   }};
     border-color: ${(props) => {
@@ -74,7 +74,6 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     color: white;
   }
   }
-
   &:focus {
     outline-color: ${(props) => {
     return (
@@ -109,8 +108,7 @@ function Checkbox({
   let borderColorChecked;
   let alignInput;
   let tabIndex;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     borderColor = "neutral80";
     fillColor = "neutral40";
@@ -173,8 +171,7 @@ function CheckboxGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
@@ -195,8 +192,8 @@ function CheckboxGroup({
       ) : null}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       <InputGroup columns={columns}>
-        {children ||
-          data.map((item) => {
+        {children
+          || data.map((item) => {
             return (
               <Checkbox
                 align={align}
