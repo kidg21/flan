@@ -91,7 +91,7 @@ function getPadding(left, right, center) {
 
 const paddingHash = {
   "0": "0",
-  "1x": "0em 0.5em",
+  "1x": "0.5em 0.5em",
   "2x": "1em 1.25em",
   "3x": "1.5em 1.5em",
 };

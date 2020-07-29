@@ -12,9 +12,9 @@ import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 
 const TextInputContainer = styled(Grid)`
-  color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
-  }};
+color: ${(props) => {
+  return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
+}};
   align-items: center;
   width: 100%;
 `;
@@ -163,9 +163,9 @@ function InputBlock({
   } else if (text) {
     inputContainer = (
       <Grid columns={gridColumns} gap="xs">
-        {hasPrefix ? <PrePost><Label text={text} /></PrePost> : null}
+        {hasPrefix ? <PrePost><Label size="sm" text={text} /></PrePost> : null}
         {inputElements}
-        {!hasPrefix ? <PrePost><Label text={text} /></PrePost> : null}
+        {!hasPrefix ? <PrePost><Label size="sm" text={text} /></PrePost> : null}
       </Grid>
     );
   } else if (options) {
@@ -239,12 +239,12 @@ function InputBlock({
         text={text}
       >
         {label ? (
-          <Label isRequired={isRequired} text={label} />
+          <Label size="xs" isRequired={isRequired} text={label} />
         ) : null}
 
         {inputContainer}
-        {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
-        {errorText ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText} /></MessageContainer> : null}
+        {helpText ? <Text size="xs" text={helpText} /> : null}
+        {errorText ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText} /></MessageContainer> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );

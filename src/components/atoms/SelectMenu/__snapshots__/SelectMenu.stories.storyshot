@@ -2,13 +2,13 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
   id={null}
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-    fontSize="0.879em"
+    className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+    fontSize="0.75em"
     fontWeight={400}
     htmlFor={null}
     letterSpacing="0.4px"
@@ -16,7 +16,7 @@ exports[` 1`] = `
     Select Label
   </label>
   <div
-    className=" css-jf3hug-container"
+    className=" css-3p29ga-container"
     id={null}
     onKeyDown={[Function]}
   >
@@ -29,7 +29,7 @@ exports[` 1`] = `
         className=" css-g1d714-ValueContainer"
       >
         <div
-          className=" css-krol22-placeholder"
+          className=" css-1m79im8-placeholder"
         >
           Select
         </div>
@@ -120,9 +120,9 @@ exports[` 1`] = `
     </div>
   </div>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-    fontSize="0.75em"
-    fontWeight={600}
+    className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+    fontSize="0.75rem"
+    fontWeight={400}
     id={null}
     letterSpacing="0.4px"
   >
@@ -138,13 +138,13 @@ exports[` 2`] = `
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+      fontSize="0.75em"
       fontWeight={400}
       htmlFor={null}
       letterSpacing="0.4px"
@@ -152,7 +152,7 @@ exports[` 2`] = `
       Standard
     </label>
     <div
-      className=" css-jf3hug-container"
+      className=" css-3p29ga-container"
       id={null}
       onKeyDown={[Function]}
     >
@@ -165,7 +165,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-krol22-placeholder"
+            className=" css-1m79im8-placeholder"
           >
             Select
           </div>
@@ -262,8 +262,8 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+      fontSize="0.75em"
       fontWeight={400}
       htmlFor={null}
       letterSpacing="0.4px"
@@ -271,7 +271,7 @@ exports[` 2`] = `
       Error
     </label>
     <div
-      className=" css-jf3hug-container"
+      className=" css-3p29ga-container"
       id={null}
       onKeyDown={[Function]}
     >
@@ -284,7 +284,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-krol22-placeholder"
+            className=" css-1m79im8-placeholder"
           >
             Select
           </div>
@@ -378,9 +378,9 @@ exports[` 2`] = `
       className="SelectMenu__MessageContainer-sc-12n3hw0-0 iVWBN"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -394,8 +394,8 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+      fontSize="0.75em"
       fontWeight={400}
       htmlFor={null}
       letterSpacing="0.4px"
@@ -403,7 +403,7 @@ exports[` 2`] = `
       Disabled
     </label>
     <div
-      className=" css-wqw4zn-container"
+      className=" css-fj9z8l-container"
       id={null}
       onKeyDown={[Function]}
     >
@@ -416,7 +416,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-krol22-placeholder"
+            className=" css-1m79im8-placeholder"
           >
             Select
           </div>
@@ -513,13 +513,13 @@ exports[` 2`] = `
 exports[` 3`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-0 fMolQ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
@@ -527,18 +527,18 @@ exports[` 3`] = `
       className="Form__Section-v2wrel-3 wHYQL"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 fJWZBc"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 djDGef"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -546,7 +546,7 @@ exports[` 3`] = `
             Single-Select ( Required )
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -559,7 +559,7 @@ exports[` 3`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   You Must Choose...
                 </div>
@@ -650,9 +650,9 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -660,13 +660,13 @@ exports[` 3`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 fJWZBc"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 djDGef"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -674,7 +674,7 @@ exports[` 3`] = `
             Single-Select ( Required w/ Clearable )
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -687,7 +687,7 @@ exports[` 3`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 />
                 <div
                   className="css-b8ldur-Input"
@@ -776,9 +776,9 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -794,13 +794,13 @@ exports[` 3`] = `
 exports[` 4`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-0 fMolQ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
@@ -808,18 +808,18 @@ exports[` 4`] = `
       className="Form__Section-v2wrel-3 wHYQL"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -827,7 +827,7 @@ exports[` 4`] = `
             Single-Select ( Standard )
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -840,7 +840,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   Choose...
                 </div>
@@ -931,9 +931,9 @@ exports[` 4`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -941,13 +941,13 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 fJWZBc"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 djDGef"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -955,7 +955,7 @@ exports[` 4`] = `
             Single-Select ( Required )
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -968,7 +968,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   You Must Choose...
                 </div>
@@ -1059,9 +1059,9 @@ exports[` 4`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -1074,8 +1074,8 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -1083,7 +1083,7 @@ exports[` 4`] = `
             Single-Select ( Disabled )
           </label>
           <div
-            className=" css-wqw4zn-container"
+            className=" css-fj9z8l-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -1096,7 +1096,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   You Can't Choose...
                 </div>
@@ -1187,9 +1187,9 @@ exports[` 4`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -1202,8 +1202,8 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -1211,7 +1211,7 @@ exports[` 4`] = `
             Single-Select ( Error )
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -1224,7 +1224,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1315,9 +1315,9 @@ exports[` 4`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -1330,8 +1330,8 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -1339,7 +1339,7 @@ exports[` 4`] = `
             Single-Select ( Error )
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -1352,7 +1352,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1443,9 +1443,9 @@ exports[` 4`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -1455,9 +1455,9 @@ exports[` 4`] = `
             className="SelectMenu__MessageContainer-sc-12n3hw0-0 iVWBN"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-              fontSize="0.75em"
-              fontWeight={600}
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
               id={null}
               letterSpacing="0.4px"
             >
@@ -1466,13 +1466,13 @@ exports[` 4`] = `
           </section>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -1480,7 +1480,7 @@ exports[` 4`] = `
             Single-Select
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -1493,7 +1493,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1584,9 +1584,9 @@ exports[` 4`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -1596,9 +1596,9 @@ exports[` 4`] = `
             className="SelectMenu__MessageContainer-sc-12n3hw0-0 iVWBN"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-              fontSize="0.75em"
-              fontWeight={600}
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
               id={null}
               letterSpacing="0.4px"
             >
@@ -1607,13 +1607,13 @@ exports[` 4`] = `
           </section>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -1621,7 +1621,7 @@ exports[` 4`] = `
             Single-Select ( Loading )
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -1634,7 +1634,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   Give Me A Minute...
                 </div>
@@ -1739,9 +1739,9 @@ exports[` 4`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -1749,13 +1749,13 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+            fontSize="0.75em"
             fontWeight={400}
             htmlFor={null}
             letterSpacing="0.4px"
@@ -1763,7 +1763,7 @@ exports[` 4`] = `
             Multi-Select
           </label>
           <div
-            className=" css-jf3hug-container"
+            className=" css-3p29ga-container"
             id={null}
             onKeyDown={[Function]}
           >
@@ -1776,7 +1776,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-krol22-placeholder"
+                  className=" css-1m79im8-placeholder"
                 >
                   Choose One Or More...
                 </div>
@@ -1867,9 +1867,9 @@ exports[` 4`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >

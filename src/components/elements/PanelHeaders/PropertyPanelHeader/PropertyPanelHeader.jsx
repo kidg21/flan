@@ -22,7 +22,7 @@ function PropertyPanelHeader({
         width: "min-content",
       }}
       center={{
-        content: <Title text={title} size="lg" weight="bold" />,
+        content: <Title size="lg" text={title}  />,
         align: "left",
       }}
       right={{

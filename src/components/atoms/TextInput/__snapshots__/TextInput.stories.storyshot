@@ -2,22 +2,22 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
   id="standard_container"
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-    fontSize="0.879em"
+    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    fontSize="0.875rem"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.4px"
+    letterSpacing=".5px"
   >
     TextInput
   </label>
   <input
     autoComplete="off"
-    className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
     cols=""
     disabled={false}
     id="standard"
@@ -70,22 +70,22 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
         id="briefLabel_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-          fontSize="0.879em"
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Brief Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
           cols=""
           disabled={null}
           id="briefLabel"
@@ -136,13 +136,13 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
         id="noLabel_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
           cols=""
           disabled={null}
           id="noLabel"
@@ -166,33 +166,33 @@ Array [
 exports[` 3`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-0 fMolQ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="default_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text Input
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="default"
@@ -208,9 +208,9 @@ exports[` 3`] = `
         type="text"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -223,17 +223,17 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text Input ( Disabled )
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 igWSUZ"
+        className="TextInput__Input-sc-1fep8p8-2 hObFTZ"
         cols=""
         disabled={true}
         id="disabled"
@@ -249,9 +249,9 @@ exports[` 3`] = `
         type="text"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -264,17 +264,17 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text Input ( Error )
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+        className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
         cols=""
         disabled={false}
         id="error"
@@ -290,9 +290,9 @@ exports[` 3`] = `
         type="text"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -305,17 +305,17 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text Input ( Error )
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+        className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
         cols=""
         disabled={false}
         id="error"
@@ -331,9 +331,9 @@ exports[` 3`] = `
         type="text"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -343,9 +343,9 @@ exports[` 3`] = `
         className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-          fontSize="0.75em"
-          fontWeight={600}
+          className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+          fontSize="0.75rem"
+          fontWeight={400}
           id={null}
           letterSpacing="0.4px"
         >
@@ -354,22 +354,22 @@ exports[` 3`] = `
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="error_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text Input ( Warning )
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="error"
@@ -388,9 +388,9 @@ exports[` 3`] = `
         className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-          fontSize="0.75em"
-          fontWeight={600}
+          className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+          fontSize="0.75rem"
+          fontWeight={400}
           id={null}
           letterSpacing="0.4px"
         >
@@ -399,22 +399,22 @@ exports[` 3`] = `
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="error_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text Input ( Warning )
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="error"
@@ -430,9 +430,9 @@ exports[` 3`] = `
         type="text"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -442,9 +442,9 @@ exports[` 3`] = `
         className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-          fontSize="0.75em"
-          fontWeight={600}
+          className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+          fontSize="0.75rem"
+          fontWeight={400}
           id={null}
           letterSpacing="0.4px"
         >
@@ -459,33 +459,33 @@ exports[` 3`] = `
 exports[` 4`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-0 fMolQ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="required_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 fJWZBc"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 khJFYm"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text Input ( Required )
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="required"
@@ -501,9 +501,9 @@ exports[` 4`] = `
         type="text"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -511,22 +511,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="pattern_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="pattern"
@@ -542,9 +542,9 @@ exports[` 4`] = `
         type="text"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -552,22 +552,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="textarea_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Text Area
       </label>
       <textarea
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 bfwNDk"
+        className="TextInput__Input-sc-1fep8p8-2 iqyrro"
         cols=""
         disabled={false}
         id="textarea"
@@ -583,9 +583,9 @@ exports[` 4`] = `
         type="textarea"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -593,22 +593,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="number_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Number
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="number"
@@ -624,9 +624,9 @@ exports[` 4`] = `
         type="number"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -634,22 +634,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="search_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Search
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="search"
@@ -665,9 +665,9 @@ exports[` 4`] = `
         type="search"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -675,22 +675,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="password_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Password
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="password"
@@ -706,9 +706,9 @@ exports[` 4`] = `
         type="password"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -716,22 +716,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="email_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Email
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="email"
@@ -747,9 +747,9 @@ exports[` 4`] = `
         type="email"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -757,22 +757,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="phone_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Telephone Number
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="phone"
@@ -788,9 +788,9 @@ exports[` 4`] = `
         type="tel"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -798,22 +798,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="url_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         URL
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="url"
@@ -829,9 +829,9 @@ exports[` 4`] = `
         type="url"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -839,22 +839,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="color_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Color
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="color"
@@ -870,9 +870,9 @@ exports[` 4`] = `
         type="color"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -880,22 +880,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="date_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Date
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="date"
@@ -911,9 +911,9 @@ exports[` 4`] = `
         type="date"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -921,22 +921,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="time_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Time
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="time"
@@ -952,9 +952,9 @@ exports[` 4`] = `
         type="time"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -962,22 +962,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="datetime_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Local Date/Time
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="datetime"
@@ -993,9 +993,9 @@ exports[` 4`] = `
         type="datetime-local"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -1003,22 +1003,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="month_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Month
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="month"
@@ -1034,9 +1034,9 @@ exports[` 4`] = `
         type="month"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -1044,22 +1044,22 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="week_container"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-        fontSize="0.879em"
+        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Week
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="week"
@@ -1075,9 +1075,9 @@ exports[` 4`] = `
         type="week"
       />
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+        fontSize="0.75rem"
+        fontWeight={400}
         id={null}
         letterSpacing="0.4px"
       >
@@ -1090,22 +1090,22 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
   id="autocomplete_container"
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-    fontSize="0.879em"
+    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    fontSize="0.875rem"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.4px"
+    letterSpacing=".5px"
   >
     Colors
   </label>
   <input
     autoComplete="on"
-    className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
     cols=""
     disabled={false}
     id="autocomplete"

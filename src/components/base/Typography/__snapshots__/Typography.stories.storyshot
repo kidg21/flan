@@ -7,19 +7,19 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 jzhkTB"
-    fontSize="0.68em"
+    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    fontSize="0.875rem"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="1px"
+    letterSpacing=".5px"
   >
     Label
   </label>
   <a
-    className="Typography__LinkText-sc-19auepv-1 hDCmeI"
+    className="Typography__LinkText-sc-19auepv-1 gokaHf"
     disabled={false}
-    fontSize="0.876em"
-    fontWeight={600}
+    fontSize="1rem"
+    fontWeight={500}
     href={null}
     letterSpacing="0px"
     onClick={null}
@@ -28,22 +28,22 @@ exports[` 1`] = `
     Link
   </a>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-    fontSize="1em"
+    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+    fontSize="1rem"
     fontWeight={400}
     id={null}
-    letterSpacing="0px"
+    letterSpacing="0.5px"
   >
     Text
   </p>
-  <h3
-    className="Typography__TitleText-sc-19auepv-2 kcuwPy"
-    fontSize="1.45em"
-    fontWeight={500}
-    letterSpacing="0px"
+  <h6
+    className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+    fontSize="1.2rem"
+    fontWeight="400"
+    letterSpacing="1px"
   >
     Title
-  </h3>
+  </h6>
 </section>
 `;
 
@@ -53,204 +53,180 @@ exports[` 2`] = `
   id={null}
   rows={null}
 >
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-    id={null}
-    rows={null}
+  <h1
+    className="Typography__TitleText-sc-19auepv-2 khBUUO"
+    fontSize="2.5rem"
+    fontWeight="300"
+    letterSpacing="-1.5px"
   >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-      fontSize="0.65em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.6px"
-    >
-      XSmall Text
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-      fontSize="0.75em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.4px"
-    >
-      Small Text
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.2px"
-    >
-      Normal Text
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-      fontSize="1em"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0px"
-    >
-      Large Text
-    </p>
-  </section>
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-    id={null}
-    rows={null}
+    Title 4XL
+  </h1>
+  <h2
+    className="Typography__TitleText-sc-19auepv-2 ciwjIt"
+    fontSize="2rem"
+    fontWeight="400"
+    letterSpacing="0px"
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      Normal Title
-    </h6>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 PRpBC"
-      fontSize="1.15em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      Large Title
-    </h5>
-    <h4
-      className="Typography__TitleText-sc-19auepv-2 kljEwZ"
-      fontSize="1.25em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      XLarge Title
-    </h4>
-    <h3
-      className="Typography__TitleText-sc-19auepv-2 bPwSan"
-      fontSize="1.45em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      2XLarge Title
-    </h3>
-    <h2
-      className="Typography__TitleText-sc-19auepv-2 bFxbmp"
-      fontSize="1.65em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      3XLarge Title
-    </h2>
-    <h1
-      className="Typography__TitleText-sc-19auepv-2 jZyddv"
-      fontSize="2em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      4XLarge Title
-    </h1>
-  </section>
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-    id={null}
-    rows={null}
+    Title 3XL
+  </h2>
+  <h3
+    className="Typography__TitleText-sc-19auepv-2 gzJfws"
+    fontSize="1.5rem"
+    fontWeight="400"
+    letterSpacing="0.25px"
   >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 jzhkTB"
-      fontSize="0.68em"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="1px"
-    >
-      XSmall Label
-    </label>
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 RzJFI"
-      fontSize="0.82em"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="0px"
-    >
-      Small Label
-    </label>
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="0.4px"
-    >
-      Normal Label
-    </label>
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM"
-      fontSize="1em"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="0px"
-    >
-      Large Label
-    </label>
-  </section>
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-    id={null}
-    rows={null}
+    Title 2XL
+  </h3>
+  <h4
+    className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+    fontSize="1.35rem"
+    fontWeight="400"
+    letterSpacing="0px"
   >
-    <a
-      className="Typography__LinkText-sc-19auepv-1 hDCmeI"
-      disabled={false}
-      fontSize="0.876em"
-      fontWeight={600}
-      href={null}
-      letterSpacing="0px"
-      onClick={null}
-      target={null}
-    >
-      Normal Link
-    </a>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 dzfPGc"
-      disabled={false}
-      fontSize="1.15em"
-      fontWeight={600}
-      href={null}
-      letterSpacing="0.2px"
-      onClick={null}
-      target={null}
-    >
-      Large Link
-    </a>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 ccRqLj"
-      disabled={false}
-      fontSize="1.25em"
-      fontWeight={600}
-      href={null}
-      letterSpacing="0px"
-      onClick={null}
-      target={null}
-    >
-      XLarge Link
-    </a>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 dUPywt"
-      disabled={false}
-      fontSize="1.45em"
-      fontWeight={600}
-      href={null}
-      letterSpacing="0px"
-      onClick={null}
-      target={null}
-    >
-      XXLarge Link
-    </a>
-  </section>
+    Title XL
+  </h4>
+  <h5
+    className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+    fontSize="1.15rem"
+    fontWeight="500"
+    letterSpacing="0.4px"
+  >
+    Title LG
+  </h5>
+  <h6
+    className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+    fontSize="1.2rem"
+    fontWeight="400"
+    letterSpacing="1px"
+  >
+    Title
+  </h6>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 enVeME"
+    fontSize="1.1rem"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0.8px"
+  >
+    Text LG
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+    fontSize="1rem"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0.5px"
+  >
+    Text Regular
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+    fontSize="0.875rem"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0.25px"
+  >
+    Text SM
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+    fontSize="0.75rem"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0.4px"
+  >
+    Text XS
+  </p>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+    fontSize="0.75em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0.4px"
+  >
+    Label XS
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+    fontSize="0.8rem"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="1px"
+  >
+    Label SM
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    fontSize="0.875rem"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing=".5px"
+  >
+    Label Regular
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+    fontSize="1rem"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing=".5px"
+  >
+    Label LG
+  </label>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 gokaHf"
+    disabled={false}
+    fontSize="1rem"
+    fontWeight={500}
+    href={null}
+    letterSpacing="0px"
+    onClick={null}
+    target={null}
+  >
+    Normal Link
+  </a>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 kZPEOL"
+    disabled={false}
+    fontSize="1rem"
+    fontWeight={500}
+    href={null}
+    letterSpacing="0.2px"
+    onClick={null}
+    target={null}
+  >
+    Large Link
+  </a>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 jNRCzC"
+    disabled={false}
+    fontSize="1.25rem"
+    fontWeight={500}
+    href={null}
+    letterSpacing="0px"
+    onClick={null}
+    target={null}
+  >
+    XLarge Link
+  </a>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 fZKBBk"
+    disabled={false}
+    fontSize="1.45rem"
+    fontWeight={500}
+    href={null}
+    letterSpacing="0px"
+    onClick={null}
+    target={null}
+  >
+    XXLarge Link
+  </a>
 </section>
 `;
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 caSwqL"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 liKUbB"
   id={null}
   rows={null}
 >
@@ -260,29 +236,29 @@ exports[` 3`] = `
     rows={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
+      fontSize="1rem"
       fontWeight={300}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       Light Text
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       Regular Text
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bxdsLc"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+      fontSize="1rem"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       Bold Text
     </p>
@@ -293,26 +269,26 @@ exports[` 3`] = `
     rows={null}
   >
     <h6
-      className="Typography__TitleText-sc-19auepv-2 erbTlz"
-      fontSize="1em"
-      fontWeight={300}
-      letterSpacing="0px"
+      className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+      fontSize="1.2rem"
+      fontWeight="400"
+      letterSpacing="1px"
     >
       Light Title
     </h6>
     <h6
-      className="Typography__TitleText-sc-19auepv-2 gDyDyY"
-      fontSize="1em"
-      fontWeight={400}
-      letterSpacing="0px"
+      className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+      fontSize="1.2rem"
+      fontWeight="400"
+      letterSpacing="1px"
     >
       Regular Title
     </h6>
     <h6
-      className="Typography__TitleText-sc-19auepv-2 gymxyt"
-      fontSize="1em"
-      fontWeight={500}
-      letterSpacing="0px"
+      className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+      fontSize="1.2rem"
+      fontWeight="400"
+      letterSpacing="1px"
     >
       Bold Title
     </h6>
@@ -323,29 +299,29 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gzGhsl"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 kqrMZT"
+      fontSize="0.875rem"
       fontWeight={300}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Light Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Regular Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+      fontSize="0.875rem"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Bold Label
     </label>
@@ -356,9 +332,9 @@ exports[` 3`] = `
     rows={null}
   >
     <a
-      className="Typography__LinkText-sc-19auepv-1 laagDZ"
+      className="Typography__LinkText-sc-19auepv-1 kNfFSF"
       disabled={false}
-      fontSize="0.876em"
+      fontSize="1rem"
       fontWeight={300}
       href={null}
       letterSpacing="0px"
@@ -368,10 +344,10 @@ exports[` 3`] = `
       Light Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 hDCmeI"
+      className="Typography__LinkText-sc-19auepv-1 gokaHf"
       disabled={false}
-      fontSize="0.876em"
-      fontWeight={600}
+      fontSize="1rem"
+      fontWeight={500}
       href={null}
       letterSpacing="0px"
       onClick={null}
@@ -380,9 +356,9 @@ exports[` 3`] = `
       Regular Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 hDCmeI"
+      className="Typography__LinkText-sc-19auepv-1 jSNUPg"
       disabled={false}
-      fontSize="0.876em"
+      fontSize="1rem"
       fontWeight={600}
       href={null}
       letterSpacing="0px"

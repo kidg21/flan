@@ -37,7 +37,7 @@ const CommandContainer = styled.a`
   pointer-events: ${(props) => {
     return props.isDisabled ? "none" : "";
   }};
-  &:hover { 
+  &:hover {
     color: ${(props) => {
     return props.theme.palette.action100;
   }};
@@ -47,7 +47,7 @@ const CommandContainer = styled.a`
 const CommandName = styled(Label)`
   grid-area: name;
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 500;
   color: inherit;
   text-transform: capitalize;
   overflow: hidden;
@@ -63,6 +63,33 @@ const CommandName = styled(Label)`
   }
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+
+  ${(props) => {
+    if(props.hidden){
+      return `
+        position: absolute;
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+
+        &.focusable {
+            &:active, &:focus {
+                position: static;
+                overflow: visible;
+                height: auto;
+                width: auto;
+                margin: 0;
+                clip: auto;
+            }
+        }
+      `
+    }
+  }}
 `;
 
 const CommandIcon = styled(Icon)`
@@ -113,7 +140,7 @@ const commandHash = {
 };
 
 function Command({
-  align, command, disabled, icon, id, label, onClick, size,
+  align, command, disabled, icon, id, label, onClick, size, labelVisible,
 }) {
   const cmd = commandHash[command] || { icon, label };
   let alignCommand = "";
@@ -166,7 +193,7 @@ function Command({
       title={cmd.label}
     >
       {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
-      <CommandName text={cmd.label} />
+      <CommandName text={cmd.label} hidden={!labelVisible} />
     </CommandContainer>
   );
 }
@@ -178,6 +205,7 @@ Command.propTypes = {
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
+  labelVisible: PropTypes.bool,
   onClick: PropTypes.func,
   size: PropTypes.oneOf(["sm", "lg"]),
 };
@@ -189,6 +217,7 @@ Command.defaultProps = {
   icon: null,
   id: null,
   label: "Command",
+  labelVisible: true,
   onClick: null,
   size: null,
 };

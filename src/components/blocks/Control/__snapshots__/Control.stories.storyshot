@@ -7,7 +7,7 @@ exports[` 1`] = `
   id={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 hkSjVt Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+    className="Button__StyledButton-sc-1v7sls2-0 dhrQhU Control__SegmentButton-sc-37ejc4-0 gwcNuk"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -22,18 +22,18 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Rent
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+    className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -48,11 +48,11 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-        fontSize="0.879em"
-        fontWeight={600}
+        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        fontSize="1rem"
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0.4px"
+        letterSpacing=".5px"
       >
         Buy
       </label>
@@ -101,7 +101,7 @@ Array [
         id={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -116,18 +116,18 @@ Array [
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Rent
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -142,11 +142,11 @@ Array [
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Buy
             </label>
@@ -193,7 +193,7 @@ Array [
         id={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -208,18 +208,18 @@ Array [
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Rent
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -234,18 +234,18 @@ Array [
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Buy
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -260,18 +260,18 @@ Array [
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Sell
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -286,18 +286,18 @@ Array [
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Short-term lease
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -312,11 +312,11 @@ Array [
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Long-term lease
             </label>
@@ -340,7 +340,7 @@ exports[` 3`] = `
     id={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 hkSjVt Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 dhrQhU Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -355,18 +355,18 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Selected option
         </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 ehVVHG Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 cbfzOH Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={true}
       htmlFor={null}
       id={null}
@@ -381,18 +381,18 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Disabled Option
         </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -407,11 +407,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Unselected Option
         </label>
@@ -424,7 +424,7 @@ exports[` 3`] = `
     id={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 bhDbmV Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 jXBYHM Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={true}
       htmlFor={null}
       id={null}
@@ -439,18 +439,18 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Selected option
         </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 ehVVHG Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 cbfzOH Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={true}
       htmlFor={null}
       id={null}
@@ -465,18 +465,18 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Disabled Option
         </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 ehVVHG Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 cbfzOH Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={true}
       htmlFor={null}
       id={null}
@@ -491,11 +491,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Unselected Option
         </label>
@@ -517,7 +517,7 @@ exports[` 4`] = `
     id={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -532,18 +532,18 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           List View
         </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -558,11 +558,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Map View
         </label>
@@ -575,7 +575,7 @@ exports[` 4`] = `
     id={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -610,18 +610,18 @@ exports[` 4`] = `
           />
         </svg>
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           List View
         </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -656,11 +656,11 @@ exports[` 4`] = `
           />
         </svg>
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-          fontSize="0.879em"
-          fontWeight={600}
+          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+          fontSize="1rem"
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Map View
         </label>
@@ -673,7 +673,7 @@ exports[` 4`] = `
     id={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -710,7 +710,7 @@ exports[` 4`] = `
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 PrSNy Control__SegmentButton-sc-37ejc4-0 gwcNuk"
+      className="Button__StyledButton-sc-1v7sls2-0 duxIaX Control__SegmentButton-sc-37ejc4-0 gwcNuk"
       disabled={false}
       htmlFor={null}
       id={null}

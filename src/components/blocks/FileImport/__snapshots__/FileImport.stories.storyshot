@@ -7,14 +7,14 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="FileImport__NewLabel-sc-1hxbe60-1 chlcs"
+    className="FileImport__NewLabel-sc-1hxbe60-1 bMnLVm"
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-      fontSize="1em"
-      fontWeight={600}
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
+      fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.5px"
     >
       Browse File
     </p>
@@ -25,13 +25,13 @@ exports[` 1`] = `
     />
   </label>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
     id="file-textinput-FileImport_Standard_container"
     rows={null}
   >
     <input
       autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
       cols=""
       disabled={false}
       id="file-textinput-FileImport_Standard"
@@ -52,7 +52,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 fNSwGV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 cvDlTr"
   id={null}
   rows={null}
 >
@@ -62,14 +62,14 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="FileImport__NewLabel-sc-1hxbe60-1 chlcs"
+      className="FileImport__NewLabel-sc-1hxbe60-1 bMnLVm"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
         id={null}
-        letterSpacing="0px"
+        letterSpacing="0.5px"
       >
         Browse File
       </p>
@@ -80,13 +80,13 @@ exports[` 2`] = `
       />
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
       id="file-textinput-FileImport_Types_container"
       rows={null}
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
         cols=""
         disabled={false}
         id="file-textinput-FileImport_Types"

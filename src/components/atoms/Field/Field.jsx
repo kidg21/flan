@@ -8,6 +8,9 @@ import Text, { Title, Label, Link } from "base/Typography";
 
 const FieldItem = styled(Grid)`
   text-align: left;
+  color: ${(props) => {
+    return props.theme.text.secondary;
+  }};
   align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
@@ -21,6 +24,9 @@ const FieldItem = styled(Grid)`
 const FieldGrid = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.columns || "repeat(auto-fill, minmax(20rem, 1fr))";
+  }};
+  grid-row-gap: ${(props) => {
+    return props.isDense ? "0rem" : "";
   }};
   grid-column-gap: 2rem;
   overflow: auto;
@@ -40,7 +46,7 @@ const GroupTitle = styled(Title)`
 const FieldLabel = styled(Label)`
   text-align: inherit;
   color: ${(props) => {
-    return props.theme.text[props.labelColor] || props.theme.text.secondary;
+    return props.theme.text[props.labelColor] || "inherit";
   }};
   cursor: initial;
   user-select: initial;
@@ -84,8 +90,7 @@ function Field({
     <FieldValue
       onChange={onChange}
       text={value}
-      size="lg"
-      weight="bold"
+      weight="medium"
       valueAlign={valueAlign}
     />
   );
@@ -103,7 +108,7 @@ function Field({
       className={className}
       fieldColumns={fieldColumns}
       fieldGap={fieldGap}
-      gap="xs"
+      
       id={id}
     >
       <FieldLabel size="lg" text={label} />
@@ -135,7 +140,7 @@ Field.defaultProps = {
 };
 
 function FieldGroup({
-  align, children, className, columns, data, id, title,
+  align, children, className, columns, data, id, title, isDense,
 }) {
   // 1-3 colums
   let setColumns;
@@ -150,9 +155,10 @@ function FieldGroup({
     <FieldGrid
       className={className}
       columns={setColumns}
+      isDense={isDense}
       id={id}
     >
-      {title ? <GroupTitle text={title} weight="bold" /> : null}
+      {title ? <GroupTitle text={title} size="lg" /> : null}
       {children
         || data.map((item, index) => {
           return (
@@ -183,6 +189,7 @@ FieldGroup.propTypes = {
   columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
   data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
   id: PropTypes.string,
+  isDense: PropTypes.bool,
   title: PropTypes.string,
 };
 
@@ -193,6 +200,7 @@ FieldGroup.defaultProps = {
   columns: null,
   data: [],
   id: null,
+  isDense: false,
   title: null,
 };
 
