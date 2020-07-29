@@ -33,7 +33,7 @@ storiesOf("Templates/Modules/Toolbar", module)
             id: "A",
             content:(
               <Card ><Bar left={<ButtonGroup columns="5"><Button alignCenter isPlain label="Draw" icon="draw" /><Button alignCenter label="Measure" isPlain icon="measure" />
-              <Menu id="menu-anchor" visible data={[{
+              <Menu isFlex id="menu-anchor" visible data={[{
                 label: <Radio label="Satellite" isSelected/>
                 }, {
                 label: <Radio label="Hybrid"/>
@@ -42,7 +42,7 @@ storiesOf("Templates/Modules/Toolbar", module)
                 }, ]} position="bottomRight">
                     <Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />
                   </Menu>
-                  <Menu id="menu-anchor" visible data={[{
+                  <Menu id="menu-anchor" isFlex visible data={[{
                 label: <Checkbox label="Demographics" />
                 }, {
                 label: <Checkbox label="Income" isSelected/>
@@ -78,6 +78,7 @@ storiesOf("Templates/Modules/Toolbar", module)
                     <Button id="button-anchor" isPlain isSmall variant="neutral" label="Layers" icon="layers" alignCenter />
                    
                     <Popper
+                    isFlex
             id="popper-standard"
             anchor={(
               <Button
@@ -91,19 +92,11 @@ storiesOf("Templates/Modules/Toolbar", module)
            visible
           >
             <Card>
-            <Accordion description="Demographics">
-            <Image
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                  alt="This is alt text for this image"
-                />
-              </Accordion>
-              <Accordion description="Demographics">
-            <Image
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                  alt="This is alt text for this image"
-                />
-              </Accordion>
-              <Card description="Income" 
+           
+            <Card description="Legend 1" 
+             more={{ content: <CardSection variant="light"><Button label="Button" variant="success" isSolid fullWidth /></CardSection> }}/>
+              
+              <Card description="Legend 2" 
              more={{ content: <CardSection variant="light"><Button label="Button" variant="success" isSolid fullWidth /></CardSection> }}/>
               </Card>
         </Popper>
