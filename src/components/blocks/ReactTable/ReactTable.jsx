@@ -28,7 +28,6 @@ const NewBody = styled.tbody`
 color: ${(props) => {
   return props.theme.text.primary;
 }};
-font-weight: 600;
 
 `;
 
@@ -43,8 +42,7 @@ padding-right: 1.5rem;
 
 const NewHeaderCell = styled.th`
 padding: 1rem;
-
-font-weight: 600;
+font-weight: 500;
 
 `;
 

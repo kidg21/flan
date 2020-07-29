@@ -384,7 +384,7 @@ storiesOf("Data Display|ReactTable", module)
               col4: "CA",
               col5: "Shopping Center",
               col6: "6/25/2020",
-              col7: <Tag label="In Progress"/>,
+              col7: <Tag label="In Progress"  brand="jobs"/>,
               col8: <Icon icon="more"/>,
 
             },
@@ -405,7 +405,7 @@ storiesOf("Data Display|ReactTable", module)
               col4: "TX",
               col5: "Shopping Center",
               col6: "6/12/2020",
-              col7: <Tag label="In Progress"  />,
+              col7: <Tag label="In Progress"  brand="jobs" />,
               col8: <Icon icon="more"/>,
             },
             {
@@ -415,7 +415,7 @@ storiesOf("Data Display|ReactTable", module)
               col4: "TX",
               col5: "Shopping Center",
               col6: "6/26/2020",
-              col7: <Tag label="In Progress"  />,
+              col7: <Tag label="In Progress"  brand="jobs" />,
               col8: <Icon icon="more"/>,
             },
             {
@@ -425,7 +425,7 @@ storiesOf("Data Display|ReactTable", module)
               col4: "CO",
               col5: "Shopping Center",
               col6: "6/18/2020",
-              col7: <Tag label="Not Started" variant="warning" />,
+              col7: <Tag label="Not Started" />,
               col8: <Icon icon="more"/>,
             },
             {
@@ -435,7 +435,7 @@ storiesOf("Data Display|ReactTable", module)
               col4: "OK",
               col5: "Shopping Center",
               col6: "6/18/2020",
-              col7: <Tag label="Not Started" variant="warning" />,
+              col7: <Tag label="Not Started" />,
               col8: <Icon icon="more"/>,
             },
             {
@@ -445,7 +445,7 @@ storiesOf("Data Display|ReactTable", module)
               col4: "TX",
               col5: "Shopping Center",
               col6: "6/24/2020",
-              col7: <Tag label="In Progress"  />,
+              col7: <Tag label="In Progress"  brand="jobs" />,
               col8: <Icon icon="more"/>,
             },
             {
@@ -455,7 +455,7 @@ storiesOf("Data Display|ReactTable", module)
               col4: "OK",
               col5: "Shopping Center",
               col6: "6/16/2020",
-              col7: <Tag label="In Progress"  />,
+              col7: <Tag label="In Progress"  brand="jobs" />,
               col8: <Icon icon="more"/>,
             },
             {
@@ -475,7 +475,7 @@ storiesOf("Data Display|ReactTable", module)
               col4: "PA",
               col5: "Shopping Center",
               col6: "6/19/2020",
-              col7: <Tag label="In Progress" />,
+              col7: <Tag label="In Progress"  brand="jobs" />,
               col8: <Icon icon="more"/>,
             },
           ];
@@ -555,7 +555,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "Shopping Center",
               col6: "6/25/2020",
               col7: "North Banking Company",
-              col8: <Tag label="Needs Response" variant="alert"/>,
+              col8: <Tag label="Needs Response"  brand="research" />,
               col9: <Icon icon="more"/>,
             },
             {
@@ -599,7 +599,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "Shopping Center",
               col6: "6/18/2020",
               col7: "North Banking Company",
-              col8: <Tag label="Needs Response" variant="alert" />,
+              col8: <Tag label="Needs Response" brand="research" />,
               col9: <Icon icon="more"/>,
             },
             {
@@ -610,7 +610,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "Shopping Center",
               col6: "6/18/2020",
               col7: "North Banking Company",
-              col8: <Tag label="Awaiting Acceptance" variant="success" />,
+              col8: <Tag label="Awaiting Acceptance" brand="bi" />,
               col9: <Icon icon="more"/>,
             },
             {
@@ -621,7 +621,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "Shopping Center",
               col6: "6/24/2020",
               col7: "North Banking Company",
-              col8: <Tag label="Awaiting Acceptance" variant="success" />,
+              col8: <Tag label="Awaiting Acceptance"  brand="bi" />,
               col9: <Icon icon="more"/>,
             },
             {
@@ -632,7 +632,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "Shopping Center",
               col6: "6/16/2020",
               col7: "North Banking Company",
-              col8: <Tag label="Needs Response" variant="alert" />,
+              col8: <Tag label="Needs Response" brand="research" />,
               col9: <Icon icon="more"/>,
             },
             {
@@ -643,7 +643,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "Shopping Center",
               col6: "6/24/2020",
               col7: "North Banking Company",
-              col8: <Tag label="Completed"  />,
+              col8: <Tag label="Needs Response" brand="research" />,
               col9: <Icon icon="more"/>,
             },
             {
@@ -654,7 +654,7 @@ storiesOf("Data Display|ReactTable", module)
               col5: "Shopping Center",
               col6: "6/19/2020",
               col7: "North Banking Company",
-              col8: <Tag label="Completed"  />,
+              col8: <Tag label="Needs Response" brand="research" />,
               col9: <Icon icon="more"/>,
             },
           ];
