@@ -19,6 +19,7 @@ const ListWrapper = styled(List)`
   width: ${(props) => {
     return props.width;
   }};
+  min-width: 10rem;
   position: ${(props) => {
     return props.isNested ? "absolute" : "";
   }};
@@ -344,7 +345,7 @@ _Menu.defaultProps = {
   usePortal: false,
   position: "bottomRight",
   visible: undefined,
-  width: "10rem",
+  width: "max-content",
   zIndex: null,
 };
 
