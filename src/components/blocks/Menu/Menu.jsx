@@ -201,6 +201,7 @@ const Menu = ({
   id,
   isFlex,
   onClose,
+  closeOnClickAway,
   usePortal,
   position,
   visible,
@@ -221,6 +222,7 @@ const Menu = ({
       <MenuList
         id={id}
         data={data}
+        closeOnClickAway={closeOnClickAway}
         direction={position.toLowerCase().includes("left") ? "left" : "right"}
         onClose={onClose}
         width={width}
@@ -235,6 +237,7 @@ Menu.defaultProps = {
   id: "",
   isFlex: false,
   onClose: null,
+  closeOnClickAway: null,
   usePortal: false,
   position: "bottomRight",
   visible: false,
@@ -248,6 +251,7 @@ Menu.propTypes = {
   id: PropTypes.string,
   isFlex: PropTypes.bool,
   onClose: PropTypes.func,
+  clockOnClickAway: PropTypes.func,
   usePortal: PropTypes.bool,
   position: PropTypes.oneOf([
     "bottomLeft",
