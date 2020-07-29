@@ -962,7 +962,7 @@ storiesOf("Templates|Applications/Research", module)
 
                               <Form>
                                 <Field align="edge" label="Direct Parcel Link:" value={<Link text="808-23093" size="lg" />} />
-                                <TextInput label="Assessment Year(s)" value="2019"/>
+                                <TextInput label="Assessment Year(s)" value="2019" />
                                 <TextInput label="Land Assessment" value="$6,155,006" />
                                 <TextInput label="Improvement Assessment" value="$3,890,864" />
                                 <TextInput label="Other Assessment" />
@@ -1160,11 +1160,11 @@ storiesOf("Templates|Applications/Research", module)
                                     <Field align="edge" label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo" />} />
                                   </FormSection>
                                   <TextInput label="Zoning District" value="Commercial" />
-                                  <TextInput label="Zoning" value="CN"/>
+                                  <TextInput label="Zoning" value="CN" />
                                   <TextInput label="Zoning Type" value="Commercial Neighborhood" />
-                                  <TextInput label="Zoned Density" value="0.75"/>
-                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business"/>
-                                  <TextInput label="Maximum Site Coverage" value="50%"/>
+                                  <TextInput label="Zoned Density" value="0.75" />
+                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business" />
+                                  <TextInput label="Maximum Site Coverage" value="50%" />
 
                                 </Form>
                               </Panel>
@@ -1248,7 +1248,7 @@ storiesOf("Templates|Applications/Research", module)
                                   left={{
                                     content: (
                                       <Tabs>
-                                        <TabItem label="Subject Map"  />
+                                        <TabItem label="Subject Map" />
                                         <TabItem label="Flood" isSelected />
                                         <TabItem label="Wetlands" />
                                         <TabItem label="Traffic & Transit" />
@@ -1328,11 +1328,11 @@ storiesOf("Templates|Applications/Research", module)
                                 )}
                               >
                                 <Form title="FEMA Flood">
-                                  <TextInput label="Flood Zone" value="X"/>
-                                  <TextInput label="In 100-yr Zone" value="No"/>
-                                  <TextInput label="DFIRM ID" value="06037C"/>
-                                  <TextInput label="Flood Panel" value="06037C1617G"/>
-                                  <TextInput label="Effective Date" value="12/21/2018"/>
+                                  <TextInput label="Flood Zone" value="X" />
+                                  <TextInput label="In 100-yr Zone" value="No" />
+                                  <TextInput label="DFIRM ID" value="06037C" />
+                                  <TextInput label="Flood Panel" value="06037C1617G" />
+                                  <TextInput label="Effective Date" value="12/21/2018" />
                                 </Form>
                               </Panel>
                             ),

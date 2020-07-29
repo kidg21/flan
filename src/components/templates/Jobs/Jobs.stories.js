@@ -44,26 +44,26 @@ const headers = [
   { id: "ADDRESS", label: "Address" },
   { id: "CITY", label: "City" },
   { id: "STATE", label: "State" },
-  { id: "PROPERTY_TYPE", label: "Property Type", sortable: true},
-  { id: "CLIENT", label: "Client", sortable: true},
-  { id: "REPORT_TYPE", label: "Report Type", sortable: true},
+  { id: "PROPERTY_TYPE", label: "Property Type", sortable: true },
+  { id: "CLIENT", label: "Client", sortable: true },
+  { id: "REPORT_TYPE", label: "Report Type", sortable: true },
   { id: "DUE_DATE", label: "Due Date", sortable: true },
-  { id: "STATUS", label: "Status"},
+  { id: "STATUS", label: "Status" },
   { id: "options", label: "Actions" },
 ];
 
 const rfpheaders = [
-    { id: "JOB_NUMBER", label: "RFP Number", sortable: true },
-    { id: "ADDRESS", label: "Address" },
-    { id: "CITY", label: "City" },
-    { id: "STATE", label: "State" },
-    { id: "PROPERTY_TYPE", label: "Property Type", sortable: true},
-    { id: "CLIENT", label: "Client", sortable: true},
-    { id: "REPORT_TYPE", label: "Report Type", sortable: true},
-    { id: "DUE_DATE", label: "Due Date", sortable: true },
-    { id: "STATUS", label: "Status"},
-    { id: "options", label: "Actions" },
-  ];
+  { id: "JOB_NUMBER", label: "RFP Number", sortable: true },
+  { id: "ADDRESS", label: "Address" },
+  { id: "CITY", label: "City" },
+  { id: "STATE", label: "State" },
+  { id: "PROPERTY_TYPE", label: "Property Type", sortable: true },
+  { id: "CLIENT", label: "Client", sortable: true },
+  { id: "REPORT_TYPE", label: "Report Type", sortable: true },
+  { id: "DUE_DATE", label: "Due Date", sortable: true },
+  { id: "STATUS", label: "Status" },
+  { id: "options", label: "Actions" },
+];
 
 const data = [
   {
@@ -203,12 +203,12 @@ storiesOf("Templates|Applications/Jobs Portal", module)
         const [selectedCell, setSelectedCell] = useState(null);
         for (let i = 0; i < data.length; i++) {
           data[i].options = <Menu isFlex position="bottomLeft"
-          data={[
-            { id: "save", label: "Verify Site", icon: "export"},
-            { id: "filter", label: "Research", icon: "export" },
-            { id: "share", label: "Report Writing", icon: "export"},
-            { id: "delete", label: "Delete" , icon: "delete"},
-          ]}><Icon icon="more" /></Menu>;
+            data={[
+              { id: "save", label: "Verify Site", icon: "export" },
+              { id: "filter", label: "Research", icon: "export" },
+              { id: "share", label: "Report Writing", icon: "export" },
+              { id: "delete", label: "Delete", icon: "delete" },
+            ]}><Icon icon="more" /></Menu>;
         }
 
         const onCellClick = (e, { rowIndex }) => {
@@ -308,12 +308,12 @@ storiesOf("Templates|Applications/Jobs Portal", module)
         const [selectedCell, setSelectedCell] = useState(null);
         for (let i = 0; i < data.length; i++) {
           data[i].options = <Menu isFlex position="bottomLeft"
-          data={[
-            { id: "save", label: "Verify Site", icon: "export"},
-            { id: "filter", label: "Research", icon: "export" },
-            { id: "share", label: "Report Writing", icon: "export"},
-            { id: "delete", label: "Delete" , icon: "delete"},
-          ]}><Icon icon="more" /></Menu>;
+            data={[
+              { id: "save", label: "Verify Site", icon: "export" },
+              { id: "filter", label: "Research", icon: "export" },
+              { id: "share", label: "Report Writing", icon: "export" },
+              { id: "delete", label: "Delete", icon: "delete" },
+            ]}><Icon icon="more" /></Menu>;
         }
 
         const onCellClick = (e, { rowIndex }) => {
@@ -374,12 +374,12 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           id: "A",
                           content: (
                             <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="RFPs" />} right={<Button icon="plus" label="Create" />} />}>
-                              
 
-                                <Bar padding="1x" left={{ content: (<TextInput type="search" placeholder="Search RFPs" />), width: "fit-content" }} />
 
-                                <Bar padding="1x" left={<Button label="Filters" icon="filter" isSolid />} />
-                                <Table
+                              <Bar padding="1x" left={{ content: (<TextInput type="search" placeholder="Search RFPs" />), width: "fit-content" }} />
+
+                              <Bar padding="1x" left={<Button label="Filters" icon="filter" isSolid />} />
+                              <Table
                                 headers={rfpheaders}
                                 rows={data}
                                 listId="foo"
@@ -388,7 +388,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                                 onCellMouseOver={onCellMouseOver}
                                 columnWidth={144}
                               />
-                              
+
                             </Panel>)
                           ,
                         }}
