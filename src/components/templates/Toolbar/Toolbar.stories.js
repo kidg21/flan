@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "hooks";
 import { FullScreen, Padding } from "helpers/Display";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
@@ -15,7 +16,7 @@ import Radio from "atoms/Radio";
 import Image from "atoms/Image";
 import Switch from "atoms/Switch";
 import Checkbox from "atoms/Checkbox";
-import Card, { CardSection, CardGrid } from "elements/Card";
+import Card, { CardSection } from "elements/Card";
 import Menu from "blocks/Menu";
 import Template from "layout/Template";
 
@@ -31,34 +32,54 @@ storiesOf("Templates/Modules/Toolbar", module)
           isOverlay
           A={{
             id: "A",
-            content:(
-              <Card ><Bar left={<ButtonGroup columns="5"><Button alignCenter isPlain label="Draw" icon="draw" /><Button alignCenter label="Measure" isPlain icon="measure" />
-              <Menu isFlex id="menu-anchor" visible data={[{
-                label: <Radio label="Satellite" isSelected/>
-                }, {
-                label: <Radio label="Hybrid"/>
-                }, {
-                label: <Radio label="Roads"/>
-                }, ]} position="bottomRight">
-                    <Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />
-                  </Menu>
-                  <Menu id="menu-anchor" isFlex visible data={[{
-                label: <Checkbox label="Demographics" />
-                }, {
-                label: <Checkbox label="Income" isSelected/>
-                }, {
-                label: <Checkbox label="Floods"/>
-                }, {
-                label: <Checkbox label="Crime" isSelected/>
-                }, {
-                label: <Checkbox label="Wetlands"/>
-                }, ]} position="bottomRight">
-                    <Button id="button-anchor" isPlain variant="neutral" label="Layers" icon="layers" alignCenter />
-                  </Menu>
+            content: (
+              <Card>
+                <Bar left={(
+                  <ButtonGroup columns="5">
+                    <Button alignCenter isPlain label="Draw" icon="draw" />
+                    <Button alignCenter label="Measure" isPlain icon="measure" />
+                    <Menu
+                      isFlex
+                      id="menu-anchor"
+                      visible
+                      data={[{
+                        label: <Radio label="Satellite" isSelected />,
+                      }, {
+                        label: <Radio label="Hybrid" />,
+                      }, {
+                        label: <Radio label="Roads" />,
+                      }]}
+                      position="bottomRight"
+                    >
+                      <Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />
+                    </Menu>
+                    <Menu
+                      id="menu-anchor"
+                      isFlex
+                      visible
+                      data={[{
+                        label: <Checkbox label="Demographics" />,
+                      }, {
+                        label: <Checkbox label="Income" isSelected />,
+                      }, {
+                        label: <Checkbox label="Floods" />,
+                      }, {
+                        label: <Checkbox label="Crime" isSelected />,
+                      }, {
+                        label: <Checkbox label="Wetlands" />,
+                      }]}
+                      position="bottomRight"
+                    >
+                      <Button id="button-anchor" isPlain variant="neutral" label="Layers" icon="layers" alignCenter />
+                    </Menu>
                     <Button id="button-anchor" isPlain variant="neutral" label="Legend" icon="list" alignCenter />
-                  </ButtonGroup>}/></Card>
-            )
-          }}/>
+                  </ButtonGroup>
+)}
+                />
+              </Card>
+            ),
+          }}
+        />
         <Mapbox />
       </React.Fragment>
     );
@@ -72,37 +93,60 @@ storiesOf("Templates/Modules/Toolbar", module)
           isOverlay
           A={{
             id: "A",
-            content:(
-              <Card ><Bar left={<ButtonGroup columns="5"><Button alignCenter isPlain label="Draw" icon="draw" /><Button alignCenter label="Measure" isPlain icon="measure" />
+            content: (
+              <Card>
+                <Bar left={(
+                  <ButtonGroup columns="5">
+                    <Button alignCenter isPlain label="Draw" icon="draw" />
+                    <Button alignCenter label="Measure" isPlain icon="measure" />
                     <Button id="button-anchor" isSmall isPlain variant="neutral" label="Map Type" icon="map" alignCenter />
                     <Button id="button-anchor" isPlain isSmall variant="neutral" label="Layers" icon="layers" alignCenter />
-                   
                     <Popper
-                    isFlex
-            id="popper-standard"
-            anchor={(
-              <Button
-                label="Legend"
-                icon="list"
-                isSmall
-                isPlain
-                alignCenter
-              />
-            )}
-           visible
-          >
-            <Card>
-           
-            <Card description="Legend 1" 
-             more={{ content: <CardSection variant="light"><Button label="Button" variant="success" isSolid fullWidth /></CardSection> }}/>
-              
-              <Card description="Legend 2" 
-             more={{ content: <CardSection variant="light"><Button label="Button" variant="success" isSolid fullWidth /></CardSection> }}/>
+                      isFlex
+                      id="popper-standard"
+                      anchor={(
+                        <Button
+                          label="Legend"
+                          icon="list"
+                          isSmall
+                          isPlain
+                          alignCenter
+                        />
+)}
+                      visible
+                    >
+                      <Card>
+
+                        <Card
+                          description="Legend 1"
+                          more={{
+                            content: (
+                              <CardSection variant="light">
+                                <Button label="Button" variant="success" isSolid fullWidth />
+                              </CardSection>
+                            ),
+                          }}
+                        />
+
+                        <Card
+                          description="Legend 2"
+                          more={{
+                            content: (
+                              <CardSection variant="light">
+                                <Button label="Button" variant="success" isSolid fullWidth />
+                              </CardSection>
+                            ),
+                          }}
+                        />
+                      </Card>
+                    </Popper>
+                  </ButtonGroup>
+)}
+                />
               </Card>
-        </Popper>
-                  </ButtonGroup>}/></Card>
-            )
-          }}/>
+            ),
+          }}
+        />
         <Mapbox />
       </React.Fragment>
     );

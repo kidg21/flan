@@ -1,36 +1,26 @@
 /* eslint-disable linebreak-style */
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Bar from "layout/Bar";
 import Icon from "atoms/Icon";
-import Avatar from "atoms/Avatar";
 import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";
 
-
 function Accordion({
-  children, description, id, title,
+  children, description, id, onClick, open, title,
 }) {
-
- 
-
-  const [open, setOpen] = useState(null);
+  let expanded = open;
+  let setExpanded = onClick;
+  if (!setExpanded) [expanded, setExpanded] = useState(open);
   function toggleDropdown() {
-    if (open) {
-      setOpen(false);
-    } else {
-      setOpen(true);
-    }
+    setExpanded(!expanded);
   }
 
-  let rotation;
   let iconContent;
 
-  if (open) {
-    rotation = 180;
+  if (expanded) {
     iconContent = "minus";
   } else {
-    rotation = 0;
     iconContent = "plus";
   }
 
@@ -40,7 +30,7 @@ function Accordion({
       onClick={(e) => {
         toggleDropdown(e);
       }}
-      open={open}
+      open={expanded}
       header={
         title || description ? (
           <Bar
@@ -56,7 +46,7 @@ function Accordion({
               align: "left",
             }}
             right={children ? {
-              content: <Icon icon={iconContent} rotation={rotation} />,
+              content: <Icon icon={iconContent} />,
               width: "max-content",
             } : null}
           />
@@ -72,12 +62,16 @@ Accordion.propTypes = {
   children: PropTypes.node,
   description: PropTypes.string,
   id: PropTypes.string,
+  onClick: PropTypes.func,
+  open: PropTypes.bool,
   title: PropTypes.string,
 };
 Accordion.defaultProps = {
   children: null,
   description: null,
   id: null,
+  onClick: null,
+  open: false,
   title: null,
 };
 
