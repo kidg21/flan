@@ -6,7 +6,6 @@ import { useState } from "hooks";
 import { FullScreen, Padding } from "helpers/Display";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
-import Mapbox from "layout/Map";
 import Grid from "layout/Grid";
 import Popper from "layout/Popper";
 import Container from "atoms/Container";
