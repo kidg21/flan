@@ -80,7 +80,7 @@ function Search({
 }) {
   let searchVal = value;
   let setSearchValue = onChange;
-  let [searchVal, setSearchValue] = useState(value);
+  if (!setSearchValue) [searchVal, setSearchValue] = useState(value);
 
   const uId = useId(id);
   /**
