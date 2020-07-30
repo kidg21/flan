@@ -32,7 +32,7 @@ export const MultiGridWrapper = styled.div`
     }
     ::-webkit-scrollbar-thumb {
       background-color: ${(props) => {
-    return props.theme.palette.link;
+    return props.theme.palette.action80;
   }};
     border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
