@@ -42,11 +42,14 @@ storiesOf("Templates/Modules/Toolbar", module)
                       id="menu-anchor"
                       visible
                       data={[{
-                        label: <Radio label="Satellite" isSelected />,
+                        label: "Satellite",
+                        pre: { type: "radio" },
                       }, {
-                        label: <Radio label="Hybrid" />,
+                        label: "Hybrid",
+                        pre: { type: "radio" },
                       }, {
-                        label: <Radio label="Roads" />,
+                         label: "Roads",
+                        pre: { type: "radio" },
                       }]}
                       position="bottomRight"
                     >
@@ -57,15 +60,20 @@ storiesOf("Templates/Modules/Toolbar", module)
                       isFlex
                       visible
                       data={[{
-                        label: <Checkbox label="Demographics" />,
+                        label: "Demographics",
+                        pre: { type: "checkbox" },
                       }, {
-                        label: <Checkbox label="Income" isSelected />,
+                        label: "Household Income",
+                        pre: { type: "checkbox" },
                       }, {
-                        label: <Checkbox label="Floods" />,
+                        label: "Floods",
+                        pre: { type: "checkbox" },
                       }, {
-                        label: <Checkbox label="Crime" isSelected />,
+                        label: "Wetlands",
+                        pre: { type: "checkbox" },
                       }, {
-                        label: <Checkbox label="Wetlands" />,
+                        label: "Age",
+                        pre: { type: "checkbox" },
                       }]}
                       position="bottomRight"
                     >

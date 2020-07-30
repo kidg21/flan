@@ -127,7 +127,7 @@ const MenuList = ({
                 id={`nested-item-${itemId}`}
                 title={item.label}
                 onClickItem={onClick}
-                pre={{ icon: item.icon }}
+                pre={item.pre}
                 disabled={item.disabled}
               />
               {activeItem === item.id ? (
@@ -148,7 +148,7 @@ const MenuList = ({
             id={`item-${itemId}`}
             title={item.label}
             onClickItem={onClick}
-            pre={{ icon: item.icon }}
+            pre={item.pre}
             disabled={item.disabled}
           />
         );
