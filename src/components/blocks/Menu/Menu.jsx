@@ -213,6 +213,7 @@ const Menu = ({
       id={`menu-popper-${id}`}
       isFlex={isFlex}
       usePortal={usePortal}
+      closeOnClickAway={closeOnClickAway}
       anchor={children || React.cloneElement(defaultAnchor, { id: `menu-icon-${id}` })}
       visible={visible}
       onClose={onClose}
@@ -222,7 +223,6 @@ const Menu = ({
       <MenuList
         id={id}
         data={data}
-        closeOnClickAway={closeOnClickAway}
         direction={position.toLowerCase().includes("left") ? "left" : "right"}
         onClose={onClose}
         width={width}
@@ -237,7 +237,8 @@ Menu.defaultProps = {
   id: "",
   isFlex: false,
   onClose: null,
-  closeOnClickAway: null,
+  /** close menu when clicking outside of pop-out */
+  closeOnClickAway: false,
   usePortal: false,
   position: "bottomRight",
   visible: false,
@@ -251,7 +252,7 @@ Menu.propTypes = {
   id: PropTypes.string,
   isFlex: PropTypes.bool,
   onClose: PropTypes.func,
-  clockOnClickAway: PropTypes.func,
+  closeOnClickAway: PropTypes.bool,
   usePortal: PropTypes.bool,
   position: PropTypes.oneOf([
     "bottomLeft",

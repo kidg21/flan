@@ -202,7 +202,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
         const [highlightedCell, setHighlightCell] = useState(null);
         const [selectedCell, setSelectedCell] = useState(null);
         for (let i = 0; i < data.length; i++) {
-          data[i].options = <Menu isFlex position="bottomLeft"
+          data[i].options = <Menu  closeOnClickAway isFlex position="bottomLeft"
             data={[
               { id: "save", label: "Verify Site", icon: "export" },
               { id: "filter", label: "Research", icon: "export" },
