@@ -78,7 +78,9 @@ function Search({
   value,
   zIndex,
 }) {
-  const [searchVal, setSearchValue] = useState(value);
+  let searchVal = value;
+  let setSearchValue = onChange;
+  let [searchVal, setSearchValue] = useState(value);
 
   const uId = useId(id);
   /**
@@ -88,7 +90,6 @@ function Search({
    */
   const handleOnChange = (e) => {
     setSearchValue(e.target.value);
-    onChange(e.target.value);
   };
 
   /**
