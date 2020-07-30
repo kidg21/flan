@@ -72,16 +72,13 @@ function Search({
   error,
   id,
   onChange,
-  onKeyPress,
   onSearch,
   placeholder,
   results,
   value,
   zIndex,
 }) {
-  let searchVal = value;
-  let setSearchValue = onChange;
-  if (!setSearchValue) [searchVal, setSearchValue] = useState(value);
+  const [searchVal, setSearchValue] = useState(value);
 
   const uId = useId(id);
   /**
@@ -91,17 +88,7 @@ function Search({
    */
   const handleOnChange = (e) => {
     setSearchValue(e.target.value);
-  };
-
-  /**
-   * If "enter" key was pressed, pass back current search value.
-   * @param {object} e - event object that contains key press info.
-   */
-  const handleOnKeyPress = (e) => {
-    if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
-      e.preventDefault();
-      onKeyPress(searchVal);
-    }
+    onChange(e.target.value);
   };
 
   /**
@@ -149,7 +136,6 @@ function Search({
           placeholder={placeholder}
           type="search"
           onChange={handleOnChange}
-          onKeyPress={handleOnKeyPress}
           value={searchVal}
         />
       </SearchInput>
@@ -173,7 +159,6 @@ Search.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
   onChange: PropTypes.func,
-  onKeyPress: PropTypes.func,
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
   results: PropTypes.arrayOf(PropTypes.shape({
@@ -191,7 +176,6 @@ Search.defaultProps = {
   error: "",
   id: null,
   onChange: null,
-  onKeyPress: null,
   onSearch: null,
   placeholder: null,
   results: null,
