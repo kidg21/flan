@@ -17,13 +17,16 @@ import InputBlock from "blocks/InputBlock";
 import Form, { FormSection } from "layout/Form";
 import Template from "layout/Template";
 import Image from "atoms/Image";
+import Legend from "blocks/Legend";
+import Picker, { ColorSwatch } from "elements/Picker";
 import TextInput from "atoms/TextInput";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import Radio, { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
-import MapStreets from "images/maps/map-streets.png";
-import MapSatellite from "images/maps/map-satellite.jpg";
-import MapHybrid from "images/maps/map-hybrid.jpg";
+import PrintNone from "images/dialogs/image-none.gif";
+import PrintFull from "images/dialogs/image-full.gif";
+import PrintHalf from "images/dialogs/image-half.gif";
+import PrintQuarter from "images/dialogs/image-quarter.gif";
 
 function doNothing() {
   // do nothing
@@ -41,48 +44,74 @@ storiesOf("Templates/Modules/Dialogs", module)
           {
             id: "Cancel",
             label: "Cancel",
-            // onClick: doNothing,
+            onClick: doNothing,
           },
           {
             id: "Save Map",
             label: "Save Map",
+            onClick: doNothing,
           },
         ]}
       >
         <Form
           title="Capture Map Image"
         >
-          <FormSection title="Choose a Map Size">
-            <RadioGroup columns="4" gap="2x">
-              <Radio id="radio-1" name="radio-group" value="1" label="Radio 1" />
-              <Radio id="radio-2" name="radio-group" value="2" label="Radio 2" />
-              <Radio id="radio-3" name="radio-group" value="3" label="Radio 3" />
-              <Radio id="radio-4" name="radio-group" value="4" label="Radio 4" />
+          <FormSection title="Choose an Image Size">
+            <Grid columns="4">
+              <Image src={PrintNone} width="75" />
+              <Image src={PrintFull} width="75" />
+              <Image src={PrintHalf} width="75" />
+              <Image src={PrintQuarter} width="75" />
+            </Grid>
+            <RadioGroup columns="4" align="center">
+              <Radio
+                id="radio-1"
+                name="radio-group"
+                value="1"
+                label="None"
+                align="center"
+                checked
+              />
+              <Radio
+                id="radio-2"
+                name="radio-group"
+                value="2"
+                label="Quarter"
+                align="center"
+              />
+              <Radio
+                id="radio-3"
+                name="radio-group"
+                value="3"
+                label="Half"
+                align="center"
+              />
+              <Radio
+                id="radio-4"
+                name="radio-group"
+                value="4"
+                label="Full"
+                align="center"
+              />
             </RadioGroup>
+            {/* <CheckboxGroup columns="1" gap="2x">
+              <Checkbox id="Checkbox 1" label="Include Legend" />
+            </CheckboxGroup> */}
           </FormSection>
-          <FormSection title="Include Legend">
+          <FormSection title="">
             <CheckboxGroup columns="1" gap="2x">
-              <Checkbox id="Checkbox 1" label="Checkbox 1" />
+              <Checkbox id="Checkbox 1" label="Include Map Legend" />
+              <Picker id="standard" label="" columns="6">
+                <ColorSwatch color="#D9ECEC" square />
+                <ColorSwatch color="#63B1CD" square />
+                <ColorSwatch color="#06BFAE" square />
+                <ColorSwatch color="#095593" square />
+                <ColorSwatch color="#F3822B" square />
+                <ColorSwatch color="#FFBF00" square />
+              </Picker>
             </CheckboxGroup>
           </FormSection>
         </Form>
       </DialogBox>
-      // <CardGrid columns="3">
-      //   <Card shadow="2x">
-      //     <Image src={MapStreets} width="75" onClick />
-      //     <Image src={MapSatellite} width="75" onClick />
-      //     <Image src={MapHybrid} width="75" onClick />
-      //   </Card>
-      //   <Card shadow="2x">
-      //     <Image src={MapStreets} width="75" onClick />
-      //     <Image src={MapSatellite} width="75" onClick />
-      //     <Image src={MapHybrid} width="75" onClick />
-      //   </Card>
-      //   <Card shadow="2x">
-      //     <Image src={MapStreets} width="75" onClick />
-      //     <Image src={MapSatellite} width="75" onClick />
-      //     <Image src={MapHybrid} width="75" onClick />
-      //   </Card>
-      // </CardGrid>
     );
   });

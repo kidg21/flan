@@ -704,9 +704,9 @@ function MockDetails({
   image, title, data, footer, offcanvas,
 }) {
   return (
-    <Panel offcanvas={offcanvas}>
+    <Panel padding="0" offcanvas={offcanvas}>
       <Template>
-        <Bar center={<Image src={image || StaticMap} width="80%" alt="mockImage" />} />
+        <Image src={image || StaticMap} alt="mockImage" />
         {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
           : (
             <Bar

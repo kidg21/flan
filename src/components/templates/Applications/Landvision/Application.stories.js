@@ -215,7 +215,6 @@ storiesOf("Templates|Applications/Research", module)
                         <Template
                           id="Details"
                           template="A_01"
-
                           A={{
                             id: "A",
                             content: (
@@ -322,7 +321,6 @@ storiesOf("Templates|Applications/Research", module)
                         <Template
                           id="Details"
                           template="B_06"
-
                           A={{
                             id: "A",
                             content: (
@@ -398,7 +396,6 @@ storiesOf("Templates|Applications/Research", module)
                                 )}
                               >
                                 <Form>
-
                                   <Card
                                     padding="0"
                                     body={(
@@ -1169,13 +1166,11 @@ storiesOf("Templates|Applications/Research", module)
                                   <TextInput label="Zoned Density" value="0.75" />
                                   <TextInput label="Zoning Summary" value="This zone is intended for small-scale business" />
                                   <TextInput label="Maximum Site Coverage" value="50%" />
-
                                 </Form>
                               </Panel>
                             ),
                           }}
                         />
-
                       ),
                     }}
                   />
@@ -1490,7 +1485,6 @@ storiesOf("Templates|Applications/Research", module)
                   <Template
                     id="Maps"
                     template="B_02"
-
                     A={{
                       id: "A",
                       content: (
@@ -1942,8 +1936,8 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter Projects" />), width: "fit-content" }} />
                           <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid />} />
                         </Form>
-                      </Panel>)
-                    ,
+                      </Panel>
+                    ),
                   }}
                 />
               ),
