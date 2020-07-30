@@ -6,6 +6,7 @@ import { Darken } from "Variables";
 import Bar from "layout/Bar";
 import Tag from "atoms/Tag";
 import Avatar from "atoms/Avatar";
+import Radio from "atoms/Radio";
 import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
@@ -162,26 +163,43 @@ function getRightContent(post, disabled, onClick) {
 
 function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
-  let leftContentComponent = null;
-  if (pre && (pre.label || pre.icon)) {
-    const {
-      label,
-      icon,
-      onClick: sectionOnClick,
-      ...props
-    } = pre;
 
-    if (pre.label) {
-      leftContentComponent = <Avatar label={label} disabled={disabled} {...props} />;
-    } else if (pre.icon) {
-      leftContentComponent = <Icon icon={pre.icon} disabled={disabled} {...props} />;
+  if (pre && pre.type) {
+    const preType = pre.type.toLowerCase();
+    if (preType === "checkbox") {
+      leftContent = {
+        content: <Checkbox id={pre.label} label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
+        width: "max-content",
+        onClick: pre.onClick || onClick,
+      };
+    } else if (preType === "radio") {
+      leftContent = {
+        content: <Radio label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
+        width: "max-content",
+        onClick: pre.onClick || onClick,
+      };
+    } else if (preType === "label" && pre.label) {
+      leftContent = {
+        content: <Avatar label={pre.label} disabled={disabled} />,
+        width: "max-content",
+        onClick: pre.onClick || onClick,
+      };
+    } else if (preType === "icon" && pre.icon) {
+      leftContent = {
+        content: (
+          <Icon
+            icon={pre.icon}
+            size={pre.size}
+            variant={pre.variant}
+            onClick={pre.onClick}
+            fixedWidth
+          />
+        ),
+        width: "max-content",
+        onClick: pre.onClick || onClick,
+      };
     }
-    leftContent = { 
-      content: leftContentComponent,
-      width: "max-content",
-      onClick: sectionOnClick || onClick,
-    };
-  }
+  }  
   return leftContent;
 }
 function ListItem({
@@ -284,14 +302,14 @@ ListItem.propTypes = {
     size: PropTypes.string,
     variant: PropTypes.string,
   }),
-  pre: PropTypes.oneOfType([
-    PropTypes.shape({
-      label: PropTypes.string,
-      icon: PropTypes.string,
-      onClick: PropTypes.func,
-    }),
-    PropTypes.node,
-  ]),
+  pre: PropTypes.shape({
+    type: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    checked: PropTypes.bool,
+    onClick: PropTypes.func,
+    size: PropTypes.string,
+    variant: PropTypes.string,
+  }),
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
