@@ -130,7 +130,13 @@ function Search({
   );
 
   return (
-    <SearchContainer id={uId}>
+    <SearchContainer
+      id={uId}
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleOnSearch();
+      }}
+    >
       <SearchInput flexDirection="row">
         <SearchButton
           id={`${uId}-search-button`}
