@@ -74,8 +74,6 @@ const ListItemWrapper = styled.li`
   }
 `;
 
-
-
 const ListTitleWrapper = styled.li`
   color: inherit;
   padding: 1rem 1rem;
@@ -178,13 +176,12 @@ function getLeftContent(pre, disabled, onClick) {
     } else if (pre.icon) {
       leftContentComponent = <Icon icon={pre.icon} disabled={disabled} {...props} />;
     }
-    leftContent = {
+    leftContent = { 
       content: leftContentComponent,
       width: "max-content",
       onClick: sectionOnClick || onClick,
     };
   }
-
   return leftContent;
 }
 function ListItem({
@@ -287,11 +284,14 @@ ListItem.propTypes = {
     size: PropTypes.string,
     variant: PropTypes.string,
   }),
-  pre: PropTypes.shape({
-    label: PropTypes.string,
-    icon: PropTypes.string,
-    onClick: PropTypes.func,
-  }),
+  pre: PropTypes.oneOfType([
+    PropTypes.shape({
+      label: PropTypes.string,
+      icon: PropTypes.string,
+      onClick: PropTypes.func,
+    }),
+    PropTypes.node,
+  ]),
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
