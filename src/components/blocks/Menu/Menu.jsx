@@ -238,7 +238,7 @@ Menu.defaultProps = {
   isFlex: false,
   onClose: null,
   /** close menu when clicking outside of pop-out */
-  closeOnClickAway: false,
+  closeOnClickAway: true,
   usePortal: false,
   position: "bottomRight",
   visible: false,

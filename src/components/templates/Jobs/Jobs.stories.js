@@ -189,7 +189,6 @@ const data = [
   },
 ];
 
-
 storiesOf("Templates|Applications/Jobs Portal", module)
   .addDecorator(FullScreen)
   .add(
@@ -202,13 +201,21 @@ storiesOf("Templates|Applications/Jobs Portal", module)
         const [highlightedCell, setHighlightCell] = useState(null);
         const [selectedCell, setSelectedCell] = useState(null);
         for (let i = 0; i < data.length; i++) {
-          data[i].options = <Menu  closeOnClickAway isFlex position="bottomLeft"
-            data={[
-              { id: "save", label: "Verify Site", icon: "export" },
-              { id: "filter", label: "Research", icon: "export" },
-              { id: "share", label: "Report Writing", icon: "export" },
-              { id: "delete", label: "Delete", icon: "delete" },
-            ]}><Icon icon="more" /></Menu>;
+          data[i].options = (
+            <Menu
+              closeOnClickAway
+              isFlex
+              position="bottomLeft"
+              data={[
+                { id: "save", label: "Verify Site", icon: "export" },
+                { id: "filter", label: "Research", icon: "export" },
+                { id: "share", label: "Report Writing", icon: "export" },
+                { id: "delete", label: "Delete", icon: "delete" },
+              ]}
+            >
+              <Icon icon="more" />
+            </Menu>
+          );
         }
 
         const onCellClick = (e, { rowIndex }) => {
@@ -307,13 +314,21 @@ storiesOf("Templates|Applications/Jobs Portal", module)
         const [highlightedCell, setHighlightCell] = useState(null);
         const [selectedCell, setSelectedCell] = useState(null);
         for (let i = 0; i < data.length; i++) {
-          data[i].options = <Menu isFlex position="bottomLeft"
-            data={[
-              { id: "save", label: "Verify Site", icon: "export" },
-              { id: "filter", label: "Research", icon: "export" },
-              { id: "share", label: "Report Writing", icon: "export" },
-              { id: "delete", label: "Delete", icon: "delete" },
-            ]}><Icon icon="more" /></Menu>;
+          data[i].options = (
+            <Menu
+              isFlex
+              closeOnClickAway
+              position="bottomLeft"
+              data={[
+                { id: "save", label: "Verify Site", icon: "export" },
+                { id: "filter", label: "Research", icon: "export" },
+                { id: "share", label: "Report Writing", icon: "export" },
+                { id: "delete", label: "Delete", icon: "delete" },
+              ]}
+            >
+              <Icon icon="more" />
+            </Menu>
+          );
         }
 
         const onCellClick = (e, { rowIndex }) => {
@@ -374,7 +389,6 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           id: "A",
                           content: (
                             <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="RFPs" />} right={<Button icon="plus" label="Create" />} />}>
-
 
                               <Bar padding="1x" left={{ content: (<TextInput type="search" placeholder="Search RFPs" />), width: "fit-content" }} />
 
