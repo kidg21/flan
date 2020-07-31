@@ -120,48 +120,57 @@ storiesOf("Templates|Applications/Research/Property Details", module)
                         id: "A",
                         content: (
                           <Template>
-                            <FieldGroup columns="1" gap="lg" id="General Information" title="General Information">
+                            <FieldGroup align="edge" columns="2" gap="lg" id="General Information" title="General Information">
                               <Field
+                              align="edge"
                                 id="Property Name"
                                 label="Property Name"
                                 value="22902 Trabuco Rd"
                               />
                               <Field
+                              align="edge"
                                 id="Property Type"
                                 label="Property Type"
                                 value="Shopping Center"
                               />
                               <Field
+                              align="edge"
                                 id="Lat / Long"
                                 label="Lat / Long"
                                 value="33.629211 / -117.663988"
                               />
                               <Field
+                              align="edge"
                                 id="Street Address"
                                 label="Street Address"
                                 value="22902 Trabuco Road"
                               />
                               <Field
+                              align="edge"
                                 id="City, State Zip"
                                 label="City, State Zip"
                                 value="Mission Viejo, CA 92691"
                               />
                               <Field
+                              vertical="edge"
                                 id="Census Tract"
                                 label="Census Tract"
                                 value=""
                               />
                               <Field
+                              vertical="edge"
                                 id="Census Block"
                                 label="Census Block"
                                 value=""
                               />
                               <Field
+                              vertical="edge"
                                 id="County"
                                 label="County"
                                 value="Orange"
                               />
                               <Field
+                              vertical="edge"
                                 id="CBSA"
                                 label="CBSA"
                                 value="Los Angeles-Long Beach-Anaheim"

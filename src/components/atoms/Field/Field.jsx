@@ -14,7 +14,7 @@ const FieldItem = styled(Grid)`
   align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
-    return props.fieldColumns || "20rem 1fr";
+    return props.fieldColumns || "7rem 1fr";
   }};
   grid-gap: ${(props) => {
     return props.fieldGap || "";
