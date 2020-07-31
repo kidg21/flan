@@ -10,6 +10,7 @@ import Grid from "layout/Grid";
 import Popper from "layout/Popper";
 import Container from "atoms/Container";
 import Text from "base/Typography";
+import List from "blocks/List";
 import Accordion from "atoms/Accordion";
 import Radio from "atoms/Radio";
 import Image from "atoms/Image";
@@ -37,48 +38,51 @@ storiesOf("Templates/Modules/Toolbar", module)
                   <ButtonGroup columns="5">
                     <Button alignCenter isPlain label="Draw" icon="draw" />
                     <Button alignCenter label="Measure" isPlain icon="measure" />
-                    <Menu
+                    <Popper isFlex visible anchor={<Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />}>
+                      <Card>
+                        <List
+                          data={[{
+                            title: "Satellite",
+                            pre: { type: "radio" },
+                          }, {
+                            title: "Hybrid",
+                            pre: { type: "radio" },
+                          }, {
+                            title: "Roads",
+                            pre: { type: "radio" },
+                          }]}
+                          position="bottomRight"
+                        />
+                      </Card>
+                    </Popper>
+                    <Popper
+                      anchor={<Button id="button-anchor" isPlain variant="neutral" label="Layers" icon="layers" alignCenter />}
                       isFlex
-                      id="menu-anchor"
                       visible
-                      data={[{
-                        label: "Satellite",
-                        pre: { type: "radio" },
-                      }, {
-                        label: "Hybrid",
-                        pre: { type: "radio" },
-                      }, {
-                         label: "Roads",
-                        pre: { type: "radio" },
-                      }]}
                       position="bottomRight"
                     >
-                      <Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />
-                    </Menu>
-                    <Menu
-                      id="menu-anchor"
-                      isFlex
-                      visible
-                      data={[{
-                        label: "Demographics",
-                        pre: { type: "checkbox" },
-                      }, {
-                        label: "Household Income",
-                        pre: { type: "checkbox" },
-                      }, {
-                        label: "Floods",
-                        pre: { type: "checkbox" },
-                      }, {
-                        label: "Wetlands",
-                        pre: { type: "checkbox" },
-                      }, {
-                        label: "Age",
-                        pre: { type: "checkbox" },
-                      }]}
-                      position="bottomRight"
-                    >
-                      <Button id="button-anchor" isPlain variant="neutral" label="Layers" icon="layers" alignCenter />
-                    </Menu>
+                      <Card>
+                        <List
+                          data={[{
+                            title: "Demographics",
+                            pre: { type: "checkbox" },
+                          }, {
+                            title: "Household Income",
+                            pre: { type: "checkbox" },
+                          }, {
+                            title: "Floods",
+                            pre: { type: "checkbox" },
+                          }, {
+                            title: "Wetlands",
+                            pre: { type: "checkbox" },
+                          }, {
+                            title: "Age",
+                            pre: { type: "checkbox" },
+                          }]}
+                        />
+                      </Card>
+
+                    </Popper>
                     <Button id="button-anchor" isPlain variant="neutral" label="Legend" icon="list" alignCenter />
                   </ButtonGroup>
 )}
