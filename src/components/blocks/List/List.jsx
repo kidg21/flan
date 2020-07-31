@@ -122,7 +122,6 @@ ListSection.defaultProps = {
 
 function getRightContent(post, disabled, onClick) {
   let rightContent = null;
-
   if (post && post.type) {
     const postType = post.type.toLowerCase();
     if (postType === "checkbox") {
@@ -155,16 +154,17 @@ function getRightContent(post, disabled, onClick) {
           />
         ),
       };
-    } else if (post) {
-      rightContent = {
-        content: post,
-        width: "max-content",
-        onClick: post.OnClick || onClick,
-      };
     }
+  } else if (post) {
+    rightContent = {
+      content: post,
+      width: "max-content",
+      onClick: post.OnClick || onClick,
+    };
   }
   return rightContent;
 }
+
 
 function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
