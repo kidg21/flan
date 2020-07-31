@@ -27,7 +27,7 @@ const FormWrapper = styled.form`
 `;
 
 const Header = styled(Grid)`
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 `;
 
 const TitleSection = styled(Title)`

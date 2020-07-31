@@ -53,7 +53,7 @@ export { default as DialogBox } from "./elements/DialogBox";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
-export { default as Picker, ColorSwatch } from "./elements/Picker";
+export { default as Picker, ColorSwatch, ImageSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as ProgressIndicator } from "./elements/ProgressIndicator";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
