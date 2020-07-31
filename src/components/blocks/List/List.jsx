@@ -122,6 +122,7 @@ ListSection.defaultProps = {
 
 function getRightContent(post, disabled, onClick) {
   let rightContent = null;
+
   if (post && post.type) {
     const postType = post.type.toLowerCase();
     if (postType === "checkbox") {
@@ -161,7 +162,6 @@ function getRightContent(post, disabled, onClick) {
         onClick: post.OnClick || onClick,
       };
     }
-    return rightContent;
   }
   return rightContent;
 }
@@ -305,14 +305,14 @@ ListItem.propTypes = {
   onClick: PropTypes.func,
   onClickItem: PropTypes.func,
   title: PropTypes.string.isRequired,
-  post: PropTypes.shape({
+  post: PropTypes.oneOfType(PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
     checked: PropTypes.bool,
     onClick: PropTypes.func,
     size: PropTypes.string,
     variant: PropTypes.string,
-  }),
+  }), PropTypes.node),
   pre: PropTypes.oneOfType(PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
