@@ -14,7 +14,7 @@ const FieldItem = styled(Grid)`
   align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
-    return props.fieldColumns || "7rem 1fr";
+    return props.fieldColumns || "20rem 1fr";
   }};
   grid-gap: ${(props) => {
     return props.fieldGap || "";
@@ -22,12 +22,6 @@ const FieldItem = styled(Grid)`
 `;
 
 const FieldGrid = styled(Grid)`
-  grid-template-columns: ${(props) => {
-    return props.columns || "repeat(auto-fill, minmax(20rem, 1fr))";
-  }};
-  grid-row-gap: ${(props) => {
-    return props.isDense ? "0rem" : "";
-  }};
   grid-column-gap: 2rem;
   overflow: auto;
   &:not(:last-of-type) {
@@ -35,12 +29,14 @@ const FieldGrid = styled(Grid)`
   }
 `;
 
-const GroupTitle = styled(Title)`
+const GroupTitle = styled(Text)`
   color: ${(props) => {
     return props.theme.text.secondary;
   }};
+  text-transform: uppercase;
   grid-column: 1/-1;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: 400;
 `;
 
 const FieldLabel = styled(Label)`
@@ -140,7 +136,7 @@ Field.defaultProps = {
 };
 
 function FieldGroup({
-  align, children, className, columns, data, id, title, isDense,
+  align, children, className, columns, data, gap, id, title, isDense,
 }) {
   // 1-3 colums
   let setColumns;
@@ -155,10 +151,11 @@ function FieldGroup({
     <FieldGrid
       className={className}
       columns={setColumns}
+      gap={gap}
       isDense={isDense}
       id={id}
     >
-      {title ? <GroupTitle text={title} size="lg" /> : null}
+      {title ? <GroupTitle size="sm" text={title} /> : null}
       {children
         || data.map((item, index) => {
           return (
@@ -186,6 +183,19 @@ FieldGroup.propTypes = {
    * Options: 1-3
    */
   className: PropTypes.string,
+  gap: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([
+      "0",
+      "xs",
+      "sm",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "4xl",
+    ]),
+  ]),
   columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
   data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
   id: PropTypes.string,
@@ -197,6 +207,7 @@ FieldGroup.defaultProps = {
   align: null,
   children: null,
   className: null,
+  gap: null,
   columns: null,
   data: [],
   id: null,

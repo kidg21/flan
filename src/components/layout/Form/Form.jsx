@@ -21,12 +21,13 @@ const Header = styled(Grid)`
   margin-bottom: 1.5rem;
 `;
 
-const TitleSection = styled(Title)`
+const TitleSection = styled(Text)`
+color: ${(props) => {
+  return props.theme.text.secondary;
+}};
 text-transform: uppercase;
 grid-column: 1/-1;
 letter-spacing: 2px;
-font-size: 12px;
-font-weight: 400;
 `;
 
 const Section = styled.section`
@@ -59,7 +60,7 @@ function FormSection({ children, title, columns }) {
   }
   return (
     <Section>
-      {title ? <TitleSection size="sm" weight="bold" text={title} /> : null}
+      {title ? <TitleSection size="sm"  text={title} /> : null}
       <Inputs setColumns={setColumns}>
         {children}
       </Inputs>
