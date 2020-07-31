@@ -12,10 +12,10 @@ import Container from "atoms/Container";
 import Text from "base/Typography";
 import List from "blocks/List";
 import Accordion from "atoms/Accordion";
-import Radio from "atoms/Radio";
+import Radio, { RadioGroup } from "atoms/Radio";
 import Image from "atoms/Image";
 import Switch from "atoms/Switch";
-import Checkbox from "atoms/Checkbox";
+import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import Card, { CardSection } from "elements/Card";
 import Menu from "blocks/Menu";
 import Template from "layout/Template";
@@ -39,20 +39,12 @@ storiesOf("Templates/Modules/Toolbar", module)
                     <Button alignCenter isPlain label="Draw" icon="draw" />
                     <Button alignCenter label="Measure" isPlain icon="measure" />
                     <Popper isFlex visible anchor={<Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />}>
-                      <Card>
-                        <List
-                          data={[{
-                            title: "Satellite",
-                            pre: { type: "radio" },
-                          }, {
-                            title: "Hybrid",
-                            pre: { type: "radio" },
-                          }, {
-                            title: "Roads",
-                            pre: { type: "radio" },
-                          }]}
-                          position="bottomRight"
-                        />
+                      <Card padding="3x">
+                        <RadioGroup columns="1">
+                          <Radio id="radio-1" name="radio-group" value="1" label="Satellite" />
+                          <Radio id="radio-2" name="radio-group" value="2" label="Hybrid" />
+                          <Radio id="radio-3" name="radio-group" value="3" label="Roads" />
+                        </RadioGroup>
                       </Card>
                     </Popper>
                     <Popper
@@ -61,25 +53,33 @@ storiesOf("Templates/Modules/Toolbar", module)
                       visible
                       position="bottomRight"
                     >
-                      <Card>
-                        <List
-                          data={[{
-                            title: "Demographics",
-                            pre: { type: "checkbox" },
-                          }, {
-                            title: "Household Income",
-                            pre: { type: "checkbox" },
-                          }, {
-                            title: "Floods",
-                            pre: { type: "checkbox" },
-                          }, {
-                            title: "Wetlands",
-                            pre: { type: "checkbox" },
-                          }, {
-                            title: "Age",
-                            pre: { type: "checkbox" },
-                          }]}
-                        />
+                      <Card padding="3x">
+                        <CheckboxGroup columns="1">
+                          <Checkbox
+                            id="Checkbox-1"
+                            name="Checkbox-group"
+                            value="1"
+                            label="Demographics"
+                          />
+                          <Checkbox
+                            id="Checkbox-2"
+                            name="Checkbox-group"
+                            value="2"
+                            label="Household Income"
+                          />
+                          <Checkbox
+                            id="Checkbox-3"
+                            name="Checkbox-group"
+                            value="3"
+                            label="Population Density"
+                          />
+                          <Checkbox
+                            id="Checkbox-4"
+                            name="Checkbox-group"
+                            value="4"
+                            label="Household Age"
+                          />
+                        </CheckboxGroup>
                       </Card>
 
                     </Popper>
