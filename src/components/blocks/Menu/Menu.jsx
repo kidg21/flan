@@ -171,7 +171,7 @@ const MenuList = ({
 
 const itemShape = {
   disabled: PropTypes.bool,
-  icon: PropTypes.string,
+  pre: PropTypes.oneOfType([PropTypes.shape, PropTypes.node]),
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
