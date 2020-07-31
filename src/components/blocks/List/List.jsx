@@ -153,17 +153,20 @@ function getRightContent(post, disabled, onClick) {
             fixedWidth
           />
         ),
+      };
+    } else if (post) {
+      rightContent = {
+        content: post,
         width: "max-content",
-        onClick: post.onClick || onClick,
       };
     }
+    return rightContent;
   }
   return rightContent;
 }
 
 function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
-
   if (pre && pre.type) {
     const preType = pre.type.toLowerCase();
     if (preType === "checkbox") {
@@ -199,9 +202,15 @@ function getLeftContent(pre, disabled, onClick) {
         onClick: pre.onClick || onClick,
       };
     }
-  }  
+  } else if (pre) {
+    leftContent = {
+      content: pre,
+      width: "max-content",
+    };
+  }
   return leftContent;
 }
+
 function ListItem({
   as,
   children,
@@ -302,14 +311,14 @@ ListItem.propTypes = {
     size: PropTypes.string,
     variant: PropTypes.string,
   }),
-  pre: PropTypes.shape({
+  pre: PropTypes.oneOfType(PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
     checked: PropTypes.bool,
     onClick: PropTypes.func,
     size: PropTypes.string,
     variant: PropTypes.string,
-  }),
+  }), PropTypes.node),
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
