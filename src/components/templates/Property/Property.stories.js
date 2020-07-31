@@ -115,7 +115,7 @@ storiesOf("Templates|Applications/Research/Property Details", module)
                   <Panel header={<MockTabs />}>
                     <Template
                       id="overview"
-                      template="B_01"
+                      template="B_07"
                       A={{
                         id: "A",
                         content: (
