@@ -158,7 +158,7 @@ function getRightContent(post, disabled, onClick) {
       rightContent = {
         content: post,
         width: "max-content",
-        onClick: sectionOnClick || onClick,
+        onClick: post.OnClick || onClick,
       };
     }
     return rightContent;
@@ -207,7 +207,7 @@ function getLeftContent(pre, disabled, onClick) {
     leftContent = {
       content: pre,
       width: "max-content",
-      onClick: sectionOnClick || onClick,
+      onClick: pre.OnClick || onClick,
     };
   }
   return leftContent;
