@@ -58,7 +58,7 @@ const TagIconContainer = styled.div`
       border-${props.iconPosition === "right" ? "left" : "right"}: 1px solid ${props.theme.text[props.badgeTextColor]};
     `;
   }}
-  cursor: ${(props) => { return props.onClick ? "pointer" : "default"; }}
+  cursor: ${(props) => { return props.onClick ? "pointer" : "inherit"; }}
 `;
 
 function Tag({
@@ -75,7 +75,7 @@ function Tag({
 
   if (icon && label) {
     iconType = <Icon icon={icon} size="xs" variant={hasBackground ? "inverse" : variant} />;
-    labelType = <Label text={label} cursor={onClick ? "pointer" : "default"} />;
+    labelType = <Label text={label} cursor={onClick ? "pointer" : "inherit"} />;
     badgeHeight = "1.5em";
     if (iconSeparator === "radial") {
       if (iconPosition === "right") {
