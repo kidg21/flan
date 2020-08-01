@@ -6,7 +6,6 @@ import { Darken } from "Variables";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
 import { Label } from "base/Typography";
-import Card from "elements/Card";
 import Grid from "layout/Grid";
 import { useId } from "utils/hooks";
 
@@ -50,13 +49,6 @@ const Swatch = styled.button`
   }
 `;
 
-const baseInputStyles = css`
-  border: 10px solid green;
-  border-radius: 4px;
-  outline: none;
-  padding: 0.5em;
-`;
-
 const ImageContainer = styled.a`
   display: grid;
   grid-gap: 0.75rem;
@@ -78,7 +70,7 @@ const ImageWrapper = styled.div`
         width: 100%;
         height: 100%;
         outline: ${() => {
-          return `2px solid ${props.theme.background.selected
+          return `2px solid ${props.theme.palette.success60
             }`;
         }};
      `;
@@ -91,43 +83,18 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const SelectedIcon = styled(Icon)`
+const IconSelected = styled(Icon)`
   position: absolute;
   width: 100%;
   height: 100%;
   color: ${(props) => {
-    return props.theme.text.selected;
+    return props.theme.palette.success80;
   }};
+  stroke: ${(props) => {
+    return props.theme.palette.success20;
+  }};
+  stroke-width: 20;
 `;
-
-function ImageSwatch({
-  isSelected, label, onClick, src, width,
-}) {
-  return (
-    <ImageContainer
-      onClick={onClick}
-    >
-      <ImageWrapper
-        isSelected={isSelected}
-      >
-        {isSelected ? (
-          <SelectedIcon
-            icon="check"
-            size="4xl"
-          // variant="success"
-          />
-        ) : null}
-        <Image
-          src={src}
-          width={width}
-        />
-      </ImageWrapper>
-      {label ? (
-        <Label weight="bold" text={label} />
-      ) : null}
-    </ImageContainer>
-  );
-}
 
 function ColorSwatch({
   color, isSelected, onClick, square,
@@ -167,25 +134,66 @@ ColorSwatch.defaultProps = {
   square: false,
 };
 
+function ImageSwatch({
+  isSelected, label, onClick, src, width,
+}) {
+  return (
+    <ImageContainer
+      onClick={onClick}
+    >
+      <ImageWrapper
+        isSelected={isSelected}
+      >
+        {isSelected ? (
+          <IconSelected
+            icon="check"
+            size="4xl"
+          />
+        ) : null}
+        <Image
+          src={src}
+          width={width}
+        />
+      </ImageWrapper>
+      {label ? (
+        <Label text={label} />
+      ) : null}
+    </ImageContainer>
+  );
+}
+
+ImageSwatch.propTypes = {
+  isSelected: PropTypes.bool,
+  label: PropTypes.string,
+  onClick: PropTypes.func,
+  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+};
+ImageSwatch.defaultProps = {
+  isSelected: false,
+  label: null,
+  onClick: null,
+  src: null,
+  width: null,
+};
+
 function Picker({
-  children, className, columns, id, isSelected, label,
+  children, className, columns, id, label,
 }) {
   const uId = useId(id);
   return (
-    // <Card>
     <InputContainer
       className={className}
       columns="1"
       id={uId}
     >
       {label ? (
-        <Label weight="bold" text={label} />
+        <Label text={label} />
       ) : null}
       <Grid columns={columns}>
         {children}
       </Grid>
     </InputContainer>
-    // </Card>
   );
 }
 
