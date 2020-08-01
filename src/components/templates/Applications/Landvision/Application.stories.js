@@ -959,6 +959,7 @@ storiesOf("Templates|Applications/Research", module)
                                   />
                                 )}
                               >
+
                                 <Form>
                                   <Field align="edge" label="Direct Parcel Link:" value={<Link text="808-23093" size="lg" />} />
                                   <TextInput label="Assessment Year(s)" value="2019" />

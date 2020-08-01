@@ -6,10 +6,10 @@ import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
-import SearchBar from "blocks/Search";
+import Search from "blocks/Search";
 import * as stories from 'blocks/Search/Search.stories.js';
 
-<Meta title="Data Entry|Search" component={SearchBar}/>
+<Meta title="Data Entry|Search" component={Search}/>
 
 # Search
 
@@ -19,7 +19,7 @@ import * as stories from 'blocks/Search/Search.stories.js';
 
 <Preview withToolbar>
   <Story name="Standard">
-     <SearchBar
+     <Search
       id="Search_Standard"
       placeholder="Search Location"
     />
@@ -49,7 +49,7 @@ The Search component is a set of expandable panels for showing and hiding conten
     name="Suggestions"
     parameters={{ decorators: [Container] }}
   >
-    <SearchBar
+    <Search
       id="Suggestions"
       placeholder="Search Location"
       results={[
@@ -75,7 +75,7 @@ The Search component is a set of expandable panels for showing and hiding conten
     name="Suggestions ( max )"
     parameters={{ decorators: [ContainerLarge] }}
   >
-    <SearchBar
+    <Search
       id="Suggestions_More"
       placeholder="Search Location"
       results={[
@@ -144,16 +144,16 @@ The Search component is a set of expandable panels for showing and hiding conten
 
 <Preview>
   <Story name="Offline" parameters={{ decorators: [ContainerSmall] }}>
-    <SearchBar id="Search_Offline" placeholder="Search Location" error="offline" />
+    <Search id="Search_Offline" placeholder="Search Location" error="offline" />
   </Story>
 </Preview>
 
 <Preview>
   <Story name="Connection" parameters={{ decorators: [ContainerSmall] }}>
-    <SearchBar id="Search_BadConnection" placeholder="Search Location" error="connection" />
+    <Search id="Search_BadConnection" placeholder="Search Location" error="connection" />
   </Story>
 </Preview>
 
 ## Props
 
-<Props of={SearchBar} />
+<Props of={Search} />

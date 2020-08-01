@@ -4,6 +4,7 @@ exports[` 1`] = `
 <form
   className="Search__SearchContainer-sey9om-0 bVywlp"
   id="Search_Standard"
+  onSubmit={[Function]}
 >
   <div
     className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
@@ -65,7 +66,8 @@ exports[` 1`] = `
         onBlur={null}
         onChange={[Function]}
         onFocus={null}
-        onKeyPress={[Function]}
+        onKeyPress={null}
+        onKeyUp={[Function]}
         pattern={null}
         placeholder="Search Location"
         rows=""
@@ -88,6 +90,7 @@ exports[` 2`] = `
   <form
     className="Search__SearchContainer-sey9om-0 bVywlp"
     id="Suggestions"
+    onSubmit={[Function]}
   >
     <div
       className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
@@ -149,7 +152,8 @@ exports[` 2`] = `
           onBlur={null}
           onChange={[Function]}
           onFocus={null}
-          onKeyPress={[Function]}
+          onKeyPress={null}
+          onKeyUp={[Function]}
           pattern={null}
           placeholder="Search Location"
           rows=""
@@ -301,6 +305,7 @@ exports[` 3`] = `
   <form
     className="Search__SearchContainer-sey9om-0 bVywlp"
     id="Suggestions_More"
+    onSubmit={[Function]}
   >
     <div
       className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
@@ -362,7 +367,8 @@ exports[` 3`] = `
           onBlur={null}
           onChange={[Function]}
           onFocus={null}
-          onKeyPress={[Function]}
+          onKeyPress={null}
+          onKeyUp={[Function]}
           pattern={null}
           placeholder="Search Location"
           rows=""
@@ -829,6 +835,7 @@ exports[` 4`] = `
   <form
     className="Search__SearchContainer-sey9om-0 bVywlp"
     id="Search_Offline"
+    onSubmit={[Function]}
   >
     <div
       className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
@@ -890,7 +897,8 @@ exports[` 4`] = `
           onBlur={null}
           onChange={[Function]}
           onFocus={null}
-          onKeyPress={[Function]}
+          onKeyPress={null}
+          onKeyUp={[Function]}
           pattern={null}
           placeholder="Search Location"
           rows=""
@@ -975,6 +983,7 @@ exports[` 5`] = `
   <form
     className="Search__SearchContainer-sey9om-0 bVywlp"
     id="Search_BadConnection"
+    onSubmit={[Function]}
   >
     <div
       className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
@@ -1036,7 +1045,8 @@ exports[` 5`] = `
           onBlur={null}
           onChange={[Function]}
           onFocus={null}
-          onKeyPress={[Function]}
+          onKeyPress={null}
+          onKeyUp={[Function]}
           pattern={null}
           placeholder="Search Location"
           rows=""
