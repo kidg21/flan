@@ -104,6 +104,7 @@ function TextInput({
   onChange,
   onFocus,
   onKeyPress,
+  onKeyUp,
   pattern,
   placeholder,
   readonly,
@@ -213,6 +214,7 @@ function TextInput({
         onBlur={onBlur}
         onChange={onChange}
         onFocus={onFocus}
+        onKeyUp={onKeyUp}
         onKeyPress={onKeyPress}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
@@ -248,6 +250,7 @@ TextInput.propTypes = {
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  onKeyUp: PropTypes.func,
   onKeyPress: PropTypes.func,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
@@ -291,6 +294,7 @@ TextInput.defaultProps = {
   onBlur: null,
   onChange: null,
   onFocus: null,
+  onKeyUp: null,
   onKeyPress: null,
   pattern: null,
   placeholder: null,

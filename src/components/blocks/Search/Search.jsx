@@ -72,7 +72,7 @@ function Search({
   error,
   id,
   onChange,
-  onKeyPress,
+  onKeyUp,
   onSearch,
   placeholder,
   results,
@@ -87,6 +87,7 @@ function Search({
   /**
    * Set state to current input value in search box.
    * Pass back input value to onChange function, if provided.
+   * Use of onChange prop means you have to manage your own state.
    * @param {object} e - event object that contains input value.
    */
   const handleOnChange = (e) => {
@@ -94,13 +95,13 @@ function Search({
   };
 
   /**
-   * If "enter" key was pressed, pass back current search value.
-   * @param {object} e - event object that contains key press info.
+   * Pass back input value to onKeyUp function, if provided.
+   * This is alternative to onChange that still lets <Search>
+   * manage its own state.
    */
-  const handleOnKeyPress = (e) => {
-    if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
-      e.preventDefault();
-      onKeyPress(searchVal);
+  const handleOnKeyUp = (e) => {
+    if (typeof onKeyUp === "function") {
+      onKeyUp(e.target.value);
     }
   };
 
@@ -130,7 +131,13 @@ function Search({
   );
 
   return (
-    <SearchContainer id={uId}>
+    <SearchContainer
+      id={uId}
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleOnSearch();
+      }}
+    >
       <SearchInput flexDirection="row">
         <SearchButton
           id={`${uId}-search-button`}
@@ -143,7 +150,7 @@ function Search({
           placeholder={placeholder}
           type="search"
           onChange={handleOnChange}
-          onKeyPress={handleOnKeyPress}
+          onKeyUp={handleOnKeyUp}
           value={searchVal}
         />
       </SearchInput>
@@ -167,7 +174,7 @@ Search.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
   onChange: PropTypes.func,
-  onKeyPress: PropTypes.func,
+  onKeyUp: PropTypes.func,
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
   results: PropTypes.arrayOf(PropTypes.shape({
@@ -185,7 +192,7 @@ Search.defaultProps = {
   error: "",
   id: null,
   onChange: null,
-  onKeyPress: null,
+  onKeyUp: null,
   onSearch: null,
   placeholder: null,
   results: null,
