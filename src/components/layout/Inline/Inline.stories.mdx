@@ -25,34 +25,16 @@ import Card, { CardSection } from "elements/Card";
 
 # Usage
 
-If you need to represent the Taging between two states or on-off state.
+If you have a set of elements that you wish to inline, make them children of this component.
 
-The difference between Tag and Checkbox is that Tag will trigger a state change directly when you toggle it, while Checkbox is generally used for state marking, which should work in conjunction with submit operation.
+You can:
 
-A Tag is typically utilized in the following areas:
+* Control horizontal alignment with `contentJustify` of `left` (default), `center` or `right`
+* Control vertical alignment with `contentAlign` of `center` (default), `top` or `bottom`
+* Set horizontal spacing between elements with `spacingX`
+* Set vertical spacing between elements with `spacingY`
 
-- Input Forms
-- Filters
-- Settings
-
-Tags may appear in groups. When a Tag group is necessary use the TagGroup wrapper from the Tag directory to control the Tag layout.
-
-# Guidelines
-
-- **Opposing Options:**
-  Typically Tags would be used where the options are very different from each other so no user would ever consider selecting more than one option. If a user selects Option A, Option B should not be desirable to them.
-- **Clear:**
-  A Tag’s action and state should be clear.
-- **Be Brief**
-  Tag labels should be short and to the point. They should be one or two words. A label should never be a sentence.
-
-# Anatomy
-
-Tags consist of a circular input and a label. It is important that the label also has an htmlFor tag in order to link the Tag and be another way to select.
-
-A Tag may appear to the left or right of it's corresponding label. A Tag may not appear above or below the label.
-
-<!-- ## Behavior -->
+This element is a block, and it's children behave like `display: inline-block` but with flexbox-enabled alignment controls.
 
 # Examples
 
