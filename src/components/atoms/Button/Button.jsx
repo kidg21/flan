@@ -114,7 +114,7 @@ const GroupWrapper = styled(Grid)`
 StyledButton.displayName = "Button";
 
 function ButtonGroup({
-  children, className, columns, id,
+  children, className, columns, gap, id,
 }) {
   // 1-6 colums
   let setColumns;
@@ -123,7 +123,7 @@ function ButtonGroup({
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
   return (
-    <GroupWrapper className={className} columns={setColumns} id={id}>
+    <GroupWrapper className={className} gap={gap} columns={setColumns} id={id}>
       {children}
     </GroupWrapper>
   );
@@ -132,10 +132,19 @@ function ButtonGroup({
 ButtonGroup.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
-  /** Defines the widths of grid columns
-   *
-   * Options: 1-6
-   */
+  gap: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([
+      "0",
+      "xs",
+      "sm",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "4xl",
+    ]),
+  ]),
   columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   className: PropTypes.string,
 };
@@ -143,6 +152,7 @@ ButtonGroup.propTypes = {
 ButtonGroup.defaultProps = {
   id: null,
   children: null,
+  gap: null,
   columns: null,
   className: null,
 };
@@ -152,7 +162,7 @@ const sizeHash = {
     label: "xs",
     icon: "sm",
     height: "fit-content",
-    padding: "0.25em 0em",
+    padding: "0.25em 0.25em",
   },
   lg: {
     label: "lg",

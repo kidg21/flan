@@ -8,8 +8,11 @@ import Loader from "atoms/Loader";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
+import Container from "atoms/Container";
 import Command from "atoms/Command";
 import Template from "layout/Template";
+import Menu from "blocks/Menu";
+import SearchBar from "blocks/Search";
 import Tabs, { TabItem } from "blocks/Tabs";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
@@ -843,7 +846,7 @@ storiesOf("Templates|Applications/Research", module)
 
                               <Form>
                                 <Field align="edge" label="Direct Parcel Link:" value={<Link text="808-23093" size="lg" />} />
-                                <TextInput label="Assessment Year(s)" value="2019"/>
+                                <TextInput label="Assessment Year(s)" value="2019" />
                                 <TextInput label="Land Assessment" value="$6,155,006" />
                                 <TextInput label="Improvement Assessment" value="$3,890,864" />
                                 <TextInput label="Other Assessment" />
@@ -1041,11 +1044,11 @@ storiesOf("Templates|Applications/Research", module)
                                     <Field align="edge" label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo" />} />
                                   </FormSection>
                                   <TextInput label="Zoning District" value="Commercial" />
-                                  <TextInput label="Zoning" value="CN"/>
+                                  <TextInput label="Zoning" value="CN" />
                                   <TextInput label="Zoning Type" value="Commercial Neighborhood" />
-                                  <TextInput label="Zoned Density" value="0.75"/>
-                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business"/>
-                                  <TextInput label="Maximum Site Coverage" value="50%"/>
+                                  <TextInput label="Zoned Density" value="0.75" />
+                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business" />
+                                  <TextInput label="Maximum Site Coverage" value="50%" />
 
                                 </Form>
                               </Panel>
@@ -1129,7 +1132,7 @@ storiesOf("Templates|Applications/Research", module)
                                   left={{
                                     content: (
                                       <Tabs>
-                                        <TabItem label="Subject Map"  />
+                                        <TabItem label="Subject Map" />
                                         <TabItem label="Flood" isSelected />
                                         <TabItem label="Wetlands" />
                                         <TabItem label="Traffic & Transit" />
@@ -1209,11 +1212,11 @@ storiesOf("Templates|Applications/Research", module)
                                 )}
                               >
                                 <Form title="FEMA Flood">
-                                  <TextInput label="Flood Zone" value="X"/>
-                                  <TextInput label="In 100-yr Zone" value="No"/>
-                                  <TextInput label="DFIRM ID" value="06037C"/>
-                                  <TextInput label="Flood Panel" value="06037C1617G"/>
-                                  <TextInput label="Effective Date" value="12/21/2018"/>
+                                  <TextInput label="Flood Zone" value="X" />
+                                  <TextInput label="In 100-yr Zone" value="No" />
+                                  <TextInput label="DFIRM ID" value="06037C" />
+                                  <TextInput label="Flood Panel" value="06037C1617G" />
+                                  <TextInput label="Effective Date" value="12/21/2018" />
                                 </Form>
                               </Panel>
                             ),
@@ -1654,7 +1657,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                   A={{
                     id: "A",
                     content: (
-                      <List title="Jobs Menu" isInteractive >
+                      <List title="Jobs Menu" isInteractive>
                         <ListItem title="All Jobs" isSelected />
                         <ListItem title="Not Started" post={{ type: "label", label: "4" }} />
                         <ListItem title="In Progress" post={{ type: "label", label: "28" }} />
@@ -1789,33 +1792,115 @@ storiesOf("Templates|Applications/Jobs Portal", module)
             left={{
               id: "Left",
               content: (<List title="Research" isInteractive isInverse>
-                <ListItem title="Projects" isSelected/>
+                <ListItem title="Projects" isSelected />
                 <ListItem title="Properties" />
                 <ListItem title="History" />
-                <ListItem title="Data"/>
+                <ListItem title="Data" />
               </List>),
               visible: leftOpen,
             }}
             main={{
               id: "Main",
               content: (
-              <Template
-                        id="Details"
-                        template="A_01"
+                <Template
+                  id="Details"
+                  template="A_01"
 
-                        A={{
-                          id: "A",
-                          content: (
-                            <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Projects" />} right={<Button icon="plus" label="Create" />} />}>
-                              <Form>
-                                <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter Projects" />), width: "fit-content" }} />
-                                <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid />} />
-                              </Form>
-                            </Panel>)
-                          ,
-                        }}
-                      />
+                  A={{
+                    id: "A",
+                    content: (
+                      <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Projects" />} right={<Button icon="plus" label="Create" />} />}>
+                        <Form>
+                          <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter Projects" />), width: "fit-content" }} />
+                          <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid />} />
+                        </Form>
+                      </Panel>)
+                    ,
+                  }}
+                />
               ),
+            }}
+          />
+        );
+      });
+    },
+  );
+
+storiesOf("Templates|Applications/Research", module)
+  .addDecorator(FullScreen)
+  .add(
+    "Properties",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(true);
+        const toggleLeft = () => { setLeftOpen(!leftOpen); };
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: <MockHeaderGlobal menuClick={toggleLeft} />,
+            }}
+            left={{
+              id: "Left",
+              content: (<List title="Research" isInteractive isInverse>
+                <ListItem title="Dashboard" />
+                <ListItem title="Projects"  />
+                <ListItem title="Properties" isSelected />
+              </List>),
+              visible: leftOpen,
+            }}
+            main={{
+              id: "Main",
+              content: (
+                <Panel 
+                padding="0"
+                header={
+                  <Bar 
+                  padding="1x"
+                  contentAlign="center" 
+                  left={{
+                    content: (
+                    <SearchBar/>),
+                  }}
+                  center={{
+                    content: (<Command label="309 results" size="lg"/>),
+                    align: "right",
+                  }}
+                  right={{
+                    content: (<Button label="View Results" isSolid/>),
+                    width: "fit-content",
+                  }}
+                  />
+                }>
+                  <Template
+                    id="Assessment"
+                    isOverlay
+                    template="D_02"
+                    A={{
+                      id: "A",
+                      content: (
+                        <Container width="4rem">
+                        <Card padding="2x">
+                          <ButtonGroup gap="3xl" columns="1">
+                            <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
+                            <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
+                            <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
+                            <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
+                            <Button label="View" icon="map" isPlain size="sm" alignCenter />
+                            <Button label="Reset" icon="sync" isPlain size="sm" alignCenter />
+                            <Button label="More" icon="more" isPlain size="sm" alignCenter />
+                          </ButtonGroup>
+                        </Card>
+                        </Container>
+                      ),
+                    }}
+                   
+                  />
+                  <MapBox />
+                </Panel>),
             }}
           />
         );

@@ -4,6 +4,7 @@ import React from "react";
 import { FullScreen } from "helpers/Display";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
+import Card from "elements/Card";
 import Template from "layout/Template";
 import Text, { Title } from "base/Typography";
 import SearchBar from "blocks/Search";
@@ -139,7 +140,7 @@ storiesOf("Layout/Template/Template Library/A Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "A",
+            content: <Card title="A"/>,
           }}
         />
       </Grid>
@@ -156,11 +157,11 @@ storiesOf("Layout/Template/Template Library/B Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "A",
+            content: <Card padding="2x" variant="alt" title="A"/>,
           }}
           B={{
             id: "B",
-            content: "B",
+            content: <Card padding="2x" variant="alt" title="B"/>,
           }}
         />
       </Grid>
@@ -271,19 +272,19 @@ storiesOf("Layout/Template/Template Library/D Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "A",
+            content: <Card padding="2x" variant="alt" title="A"/>,
           }}
           B={{
             id: "B",
-            content: "B",
+            content: <Card padding="2x" variant="alt" title="B"/>,
           }}
           C={{
             id: "C",
-            content: "C",
+            content: <Card padding="2x" variant="alt" title="C"/>,
           }}
           D={{
             id: "D",
-            content: "D",
+            content: <Card padding="2x" variant="alt" title="D"/>,
           }}
         />
       </Grid>
@@ -300,23 +301,23 @@ storiesOf("Layout/Template/Template Library/E Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "A",
+            content: <Card padding="2x" variant="alt" title="A"/>,
           }}
           B={{
             id: "B",
-            content: "B",
+            content: <Card padding="2x" variant="alt" title="B"/>,
           }}
           C={{
             id: "C",
-            content: "C",
+            content: <Card padding="2x" variant="alt" title="C"/>,
           }}
           D={{
             id: "D",
-            content: "D",
+            content: <Card padding="2x" variant="alt" title="D"/>,
           }}
           E={{
             id: "E",
-            content: "E",
+            content: <Card padding="2x" variant="alt" title="E"/>,
           }}
         />
       </Grid>
@@ -331,23 +332,23 @@ storiesOf("Layout/Template/Template Library/E Templates", module)
           hasBorders
           A={{
             id: "A",
-            content: "A",
+            content: <Card padding="2x" variant="alt" title="A"/>,
           }}
           B={{
             id: "B",
-            content: "B",
+            content: <Card padding="2x" variant="alt" title="B"/>,
           }}
           C={{
             id: "C",
-            content: "C",
+            content: <Card padding="2x" variant="alt" title="C"/>,
           }}
           D={{
             id: "D",
-            content: "D",
+            content: <Card padding="2x" variant="alt" title="D"/>,
           }}
           E={{
             id: "E",
-            content: "E",
+            content: <Card padding="2x" variant="alt" title="E"/>,
           }}
         />
       </Grid>
