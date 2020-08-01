@@ -12,16 +12,20 @@ const CheckboxWrapper = styled(Grid)`
   }};
 
   &:last-child {
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
   }
 `;
 
 const CheckboxContainer = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 0.75rem;
   grid-template-areas: ${(props) => {
-    return props.alignInput || "";
+    return props.gridAreas || "";
+  }};
+  grid-template-columns: ${(props) => {
+    return props.gridColumns || "auto 1fr";
+  }};
+  grid-gap: ${(props) => {
+    return props.gridGap || "0.75rem";
   }};
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
@@ -100,14 +104,20 @@ function Checkbox({
   onChange,
   onFocus,
 }) {
-  let inputTextColor;
-  let fillColor;
   let borderColor;
-  let outlineColor;
-  let fillColorChecked;
   let borderColorChecked;
-  let alignInput;
+  let fillColor;
+  let fillColorChecked;
+  let gridAreas;
+  let gridColumns;
+  let gridGap;
+  let inputTextColor;
+  let outlineColor;
   let tabIndex;
+  if (!label) {
+    gridColumns = "1fr";
+    gridGap = "0";
+  }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     borderColor = "neutral80";
@@ -126,16 +136,18 @@ function Checkbox({
 
   switch (align) {
     case "right":
-      alignInput = "'label input'";
+      gridAreas = "'label input'";
       break;
     default:
-      alignInput = "'input label'";
+      gridAreas = "'input label'";
       break;
   }
   return (
     <CheckboxContainer
-      alignInput={alignInput}
+      gridAreas={gridAreas}
       disabled={isDisabled}
+      gridColumns={gridColumns}
+      gridGap={gridGap}
       inputTextColor={inputTextColor}
     >
       <CheckboxInput
@@ -241,7 +253,7 @@ Checkbox.defaultProps = {
 };
 
 CheckboxGroup.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
   children: PropTypes.node,
   columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
   data: PropTypes.arrayOf(PropTypes.shape({
