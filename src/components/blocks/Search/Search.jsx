@@ -20,7 +20,7 @@ const SearchContainer = styled.form`
   "A"
   "B";
   grid-template-rows: auto 1fr;
-  grid-row-gap: 0.25rem;
+  grid-row-gap: ${(props) => { return props.gridRowGap ? "0.25rem" : "0"; }};
   position: relative;
   padding: 0.5rem 0.5rem 0;
 `;
@@ -133,6 +133,7 @@ function Search({
   return (
     <SearchContainer
       id={uId}
+      gridRowGap={error || results}
       onSubmit={(e) => {
         e.preventDefault();
         handleOnSearch();
