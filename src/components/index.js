@@ -65,6 +65,7 @@ export { default as Form, FormSection } from "./layout/Form";
 export { default as Flex } from "./layout/Flex";
 export { default as Template } from "./layout/Template";
 export { default as Grid } from "./layout/Grid";
+export { default as Inline } from "./layout/Inline";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page, PageSection, ContentSection } from "./layout/Page";
