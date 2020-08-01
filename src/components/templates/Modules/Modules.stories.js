@@ -547,10 +547,10 @@ storiesOf("Templates/Modules/Panels", module)
 storiesOf("Templates/Modules/Create", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
-  .add("Create Project", () => {
+  .add("Create Job", () => {
     return (
       <DialogBox
-        title="Create Project"
+        title="Create Job"
         buttons={[
           {
             id: "Cangel",
@@ -563,97 +563,54 @@ storiesOf("Templates/Modules/Create", module)
         ]}
       >
 
-        <Grid columns="2">
-          <Form>
-            <FormSection>
-              <TextInput
+        <Form>
+          <FormSection>
+            <TextInput
 
-                label="Project Number"
-                value="19-12341234"
-              />
-              <TextInput
+              label="Job Number"
+              value="19-12341234"
+            />
+            <TextInput
 
-                label="Project Name"
-                placeholder="New LightBox Project"
-              />
-            </FormSection>
+              label="Job Name"
+              placeholder="New LightBox Job"
+            />
+          </FormSection>
 
-            <Divider />
-            <FormSection>
-              <Text text="Fill out form or drag and drop pin on map to update property details." />
-              <TextInput
+          <Divider />
+          <FormSection columns="2" title="Property Info">
 
-                label="Address"
-              />
-              <TextInput
+            <TextInput
 
-                label="City"
-              />
-            </FormSection>
-            <FormSection columns="2">
-              <SelectMenu
-                label="State"
-                placeholder=""
-                options={[{
-                  value: "Alabama",
-                  label: "Alabama",
-                }, {
-                  value: "Alaska",
-                  label: "Alaska",
-                }, {
-                  value: "Arizona",
-                  label: "Arizona",
-                }, {
-                  value: "Arkansas",
-                  label: "Arkansas",
-                }, {
-                  value: "California",
-                  label: "California",
-                }, {
-                  value: "Colorado",
-                  label: "Colorado",
-                }, {
-                  value: "Connecticut",
-                  label: "Connecticut",
-                }, {
-                  value: "Delaware",
-                  label: "Delaware",
-                }, {
-                  value: "Florida",
-                  label: "Florida",
-                }, {
-                  value: "Georgia",
-                  label: "Georgia",
-                }, {
-                  value: "Hawaii",
-                  label: "Hawaii",
-                }, {
-                  value: "Idaho",
-                  label: "Idaho",
-                },
-                ]}
-              />
-              <TextInput
+              label="Address"
+            />
+            <TextInput
 
-                label="Zip"
-              />
-              <TextInput
+              label="City"
+            />
+            <SelectMenu
+              label="State"
+              placeholder=""
+            />
+            <TextInput
 
-                label="Property Type"
-              />
-              <TextInput
+              label="Zip"
+            />
+            <SelectMenu
 
-                label="Property Sub-Type"
-              />
+              label="Property Type"
+            />
+            <SelectMenu
 
-            </FormSection>
-          </Form>
-          <Mapbox />
-        </Grid>
+              label="Property Sub-Type"
+            />
+
+          </FormSection>
+        </Form>
       </DialogBox>
     );
   })
-  .add("After Project", () => {
+  .add("After Job", () => {
     return (
       <DialogBox
         buttons={[
@@ -663,7 +620,7 @@ storiesOf("Templates/Modules/Create", module)
           },
           {
             id: "Create",
-            label: "Create Project",
+            label: "Create Another",
           },
         ]}
       >
@@ -671,22 +628,22 @@ storiesOf("Templates/Modules/Create", module)
           padding="2x"
           center={(
             <Grid columns="1">
-              <Title size="2xl" text="Project Successfully Created!" />
-              <Text text="You can choose to begin work on your project or create another project" />
+              <Title size="2xl" text="Job Successfully Created!" />
+              <Text text="You can choose to begin work on your job or create another job" />
             </Grid>
           )}
         />
-        <Bar center={<Button label="View Project" variant="success" />} />
+        <Bar center={<Button label="View Job" variant="success" />} />
         <Divider />
 
         <Bar
           contentAlign="bottom"
           padding="2x"
           left={(
-            <Grid>
-              <Text size="lg" text="Add the following data and services to your project:" />
+            <Grid columns="1">
+              <Text size="lg" text="Add the following data and services to your job:" />
               <Title weight="bold" text="Add Research" />
-              <Text text="Complete research for your project. Define and discover data for your property including Assessment Data, Demographics, and Zoning." />
+              <Text text="Complete research for your job. Define and discover data for your property including Assessment Data, Demographics, and Zoning." />
             </Grid>
           )}
           right={<Button label="Start Research" />}
@@ -695,7 +652,7 @@ storiesOf("Templates/Modules/Create", module)
           padding="2x"
           contentAlign="bottom"
           left={(
-            <Grid>
+            <Grid columns="1">
               <Title weight="bold" text="Add Report Writing" />
               <Text text="You can use Project360 or Narrative1 to author your reports. You can select your scope of work and templates here with the Report Writing tools." />
             </Grid>
@@ -723,25 +680,23 @@ storiesOf("Templates/Modules/Create", module)
         ]}
       >
         <Tabs data={tabRFPButtons} />
-        <Grid columns="2">
           <Form>
             <FormSection>
               <TextInput
 
-                label="Project Number"
+                label="RFP Number"
                 value="19-12341234"
               />
               <TextInput
 
-                label="Project Name"
+                label="RFP Name"
                 placeholder="New LightBox Project"
               />
             </FormSection>
 
             <Divider />
-            <FormSection>
-              <Text text="Fill out form or drag and drop pin on map to update property details." />
-              <TextInput
+            <FormSection columns="2" title="Property Info">
+            <TextInput
 
                 label="Address"
               />
@@ -749,67 +704,27 @@ storiesOf("Templates/Modules/Create", module)
 
                 label="City"
               />
-            </FormSection>
-            <FormSection columns="2">
+            
               <SelectMenu
                 label="State"
                 placeholder=""
-                options={[{
-                  value: "Alabama",
-                  label: "Alabama",
-                }, {
-                  value: "Alaska",
-                  label: "Alaska",
-                }, {
-                  value: "Arizona",
-                  label: "Arizona",
-                }, {
-                  value: "Arkansas",
-                  label: "Arkansas",
-                }, {
-                  value: "California",
-                  label: "California",
-                }, {
-                  value: "Colorado",
-                  label: "Colorado",
-                }, {
-                  value: "Connecticut",
-                  label: "Connecticut",
-                }, {
-                  value: "Delaware",
-                  label: "Delaware",
-                }, {
-                  value: "Florida",
-                  label: "Florida",
-                }, {
-                  value: "Georgia",
-                  label: "Georgia",
-                }, {
-                  value: "Hawaii",
-                  label: "Hawaii",
-                }, {
-                  value: "Idaho",
-                  label: "Idaho",
-                },
-                ]}
               />
               <TextInput
 
                 label="Zip"
               />
-              <TextInput
+              <SelectMenu
 
                 label="Property Type"
               />
-              <TextInput
+              <SelectMenu
 
                 label="Property Sub-Type"
               />
 
             </FormSection>
           </Form>
-          <Mapbox />
-        </Grid>
+  
       </DialogBox>
     );
   })
@@ -940,7 +855,7 @@ storiesOf("Templates/Modules/Create", module)
           },
           {
             id: "Create",
-            label: "Create RFP",
+            label: "Create Another",
           },
         ]}
       >

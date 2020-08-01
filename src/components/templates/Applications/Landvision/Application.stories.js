@@ -962,7 +962,7 @@ storiesOf("Templates|Applications/Research", module)
 
                               <Form>
                                 <Field align="edge" label="Direct Parcel Link:" value={<Link text="808-23093" size="lg" />} />
-                                <TextInput label="Assessment Year(s)" value="2019"/>
+                                <TextInput label="Assessment Year(s)" value="2019" />
                                 <TextInput label="Land Assessment" value="$6,155,006" />
                                 <TextInput label="Improvement Assessment" value="$3,890,864" />
                                 <TextInput label="Other Assessment" />
@@ -1160,11 +1160,11 @@ storiesOf("Templates|Applications/Research", module)
                                     <Field align="edge" label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo" />} />
                                   </FormSection>
                                   <TextInput label="Zoning District" value="Commercial" />
-                                  <TextInput label="Zoning" value="CN"/>
+                                  <TextInput label="Zoning" value="CN" />
                                   <TextInput label="Zoning Type" value="Commercial Neighborhood" />
-                                  <TextInput label="Zoned Density" value="0.75"/>
-                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business"/>
-                                  <TextInput label="Maximum Site Coverage" value="50%"/>
+                                  <TextInput label="Zoned Density" value="0.75" />
+                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business" />
+                                  <TextInput label="Maximum Site Coverage" value="50%" />
 
                                 </Form>
                               </Panel>
@@ -1248,7 +1248,7 @@ storiesOf("Templates|Applications/Research", module)
                                   left={{
                                     content: (
                                       <Tabs>
-                                        <TabItem label="Subject Map"  />
+                                        <TabItem label="Subject Map" />
                                         <TabItem label="Flood" isSelected />
                                         <TabItem label="Wetlands" />
                                         <TabItem label="Traffic & Transit" />
@@ -1328,11 +1328,11 @@ storiesOf("Templates|Applications/Research", module)
                                 )}
                               >
                                 <Form title="FEMA Flood">
-                                  <TextInput label="Flood Zone" value="X"/>
-                                  <TextInput label="In 100-yr Zone" value="No"/>
-                                  <TextInput label="DFIRM ID" value="06037C"/>
-                                  <TextInput label="Flood Panel" value="06037C1617G"/>
-                                  <TextInput label="Effective Date" value="12/21/2018"/>
+                                  <TextInput label="Flood Zone" value="X" />
+                                  <TextInput label="In 100-yr Zone" value="No" />
+                                  <TextInput label="DFIRM ID" value="06037C" />
+                                  <TextInput label="Flood Panel" value="06037C1617G" />
+                                  <TextInput label="Effective Date" value="12/21/2018" />
                                 </Form>
                               </Panel>
                             ),
@@ -1728,212 +1728,6 @@ storiesOf("Templates|Applications/Research", module)
                   />
 
                 </Panel>
-              ),
-            }}
-          />
-        );
-      });
-    },
-  );
-
-storiesOf("Templates|Applications/Jobs Portal", module)
-  .addDecorator(FullScreen)
-  .add(
-    "Jobs Page",
-    () => {
-      return React.createElement(() => {
-        const [leftOpen, setLeftOpen] = useState(true);
-        const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
-        return (
-          <Layout
-            header={{
-              id: "Header",
-              content: <MockHeaderGlobal menuClick={toggleLeft} />,
-            }}
-            left={{
-              id: "Left",
-              content: (<List title="Jobs Portal" isInteractive isInverse>
-                <ListItem title="Dashboard" />
-                <ListItem title="Jobs" isSelected />
-                <ListItem title="RFPs" />
-              </List>),
-              visible: leftOpen,
-            }}
-            main={{
-              id: "Main",
-              content: (
-
-                <Template
-                  id="Assessment"
-
-                  template="B_02"
-                  A={{
-                    id: "A",
-                    content: (
-                      <List title="Jobs Menu" isInteractive >
-                        <ListItem title="All Jobs" isSelected />
-                        <ListItem title="Not Started" post={{ type: "label", label: "4" }} />
-                        <ListItem title="In Progress" post={{ type: "label", label: "28" }} />
-                        <ListItem title="Completed" />
-                      </List>
-
-                    ),
-                  }}
-                  B={{
-                    id: "B",
-                    content: (
-                      <Template
-                        id="Details"
-                        template="A_01"
-
-                        A={{
-                          id: "A",
-                          content: (
-                            <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Jobs" />} right={<Button icon="plus" label="Create" />} />}>
-                              <Form>
-
-                                <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter Jobs" />), width: "fit-content" }} />
-
-                                <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid />} />
-                              </Form>
-                            </Panel>)
-                          ,
-                        }}
-                      />
-                    ),
-                  }}
-                />
-
-              ),
-            }}
-          />
-        );
-      });
-    },
-  )
-  .add(
-    "RFPs Page",
-    () => {
-      return React.createElement(() => {
-        const [leftOpen, setLeftOpen] = useState(true);
-        const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
-        return (
-          <Layout
-            header={{
-              id: "Header",
-              content: <MockHeaderGlobal menuClick={toggleLeft} />,
-            }}
-            left={{
-              id: "Left",
-              content: (<List title="Jobs Portal" isInteractive isInverse>
-                <ListItem title="Dashboard" />
-                <ListItem title="Jobs" />
-                <ListItem title="RFPs" isSelected />
-              </List>),
-              visible: leftOpen,
-            }}
-            main={{
-              id: "Main",
-              content: (
-
-                <Template
-                  id="Assessment"
-
-                  template="B_02"
-                  A={{
-                    id: "A",
-                    content: (
-                      <List title="RFPs Menu" isInteractive>
-                        <ListItem title="All RFPs" isSelected />
-                        <ListItem title="Needs Response" post={{ type: "label", label: "4" }} />
-                        <ListItem title="Submitted" post={{ type: "label", label: "28" }} />
-                        <ListItem title="Awaiting Acceptance" />
-                      </List>
-
-                    ),
-                  }}
-                  B={{
-                    id: "B",
-                    content: (
-                      <Template
-                        id="Details"
-                        template="A_01"
-
-                        A={{
-                          id: "A",
-                          content: (
-                            <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="RFPs" />} right={<Button icon="plus" label="Create" />} />}>
-                              <Form>
-
-                                <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter RFPs" />), width: "fit-content" }} />
-
-                                <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid />} />
-                              </Form>
-                            </Panel>)
-                          ,
-                        }}
-                      />
-                    ),
-                  }}
-                />
-
-              ),
-            }}
-          />
-        );
-      });
-    },
-  )
-  .add(
-    "Projects Page",
-    () => {
-      return React.createElement(() => {
-        const [leftOpen, setLeftOpen] = useState(true);
-        const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
-        return (
-          <Layout
-            header={{
-              id: "Header",
-              content: <MockHeaderGlobal menuClick={toggleLeft} />,
-            }}
-            left={{
-              id: "Left",
-              content: (<List title="Research" isInteractive isInverse>
-                <ListItem title="Projects" isSelected/>
-                <ListItem title="Properties" />
-                <ListItem title="History" />
-                <ListItem title="Data"/>
-              </List>),
-              visible: leftOpen,
-            }}
-            main={{
-              id: "Main",
-              content: (
-              <Template
-                        id="Details"
-                        template="A_01"
-
-                        A={{
-                          id: "A",
-                          content: (
-                            <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="Projects" />} right={<Button icon="plus" label="Create" />} />}>
-                              <Form>
-                                <Bar padding="0" left={{ content: (<TextInput type="search" placeholder="Filter Projects" />), width: "fit-content" }} />
-                                <Bar padding="0" left={<Button label="Filters" icon="filter" isSolid />} />
-                              </Form>
-                            </Panel>)
-                          ,
-                        }}
-                      />
               ),
             }}
           />
