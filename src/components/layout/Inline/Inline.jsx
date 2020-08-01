@@ -64,10 +64,10 @@ function Inline({
 
 Inline.propTypes = {
   children: PropTypes.node,
-  spacingX: PropTypes.oneOf(PropTypes.string, PropTypes.number),
-  spacingY: PropTypes.oneOf(PropTypes.string, PropTypes.number),
-  contentJustify: PropTypes.oneOf("left", "center", "right"),
-  contentAlign: PropTypes.oneOf("top", "center", "bottom"),
+  spacingX: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+  spacingY: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+  contentJustify: PropTypes.oneOf(["left", "center", "right"]),
+  contentAlign: PropTypes.oneOf(["top", "center", "bottom"]),
 };
 
 Inline.defaultProps = {
