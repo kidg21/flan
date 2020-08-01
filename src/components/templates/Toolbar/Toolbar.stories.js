@@ -15,8 +15,11 @@ import Accordion from "atoms/Accordion";
 import Radio, { RadioGroup } from "atoms/Radio";
 import Image from "atoms/Image";
 import Switch from "atoms/Switch";
+import LegendValue1 from "images/maps/legendvalue1.png";
+import LegendValue2 from "images/maps/legendvalue2.png";
+import LegendValue3 from "images/maps/legendvalue3.png";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
-import Card, { CardSection } from "elements/Card";
+import Card, { CardGrid, CardSection } from "elements/Card";
 import Menu from "blocks/Menu";
 import Template from "layout/Template";
 
@@ -41,9 +44,9 @@ storiesOf("Templates/Modules/Toolbar", module)
                     <Popper isFlex visible anchor={<Button id="button-anchor" isPlain variant="neutral" label="Map Type" icon="map" alignCenter />}>
                       <Card padding="3x">
                         <RadioGroup columns="1">
-                          <Radio id="radio-1" name="radio-group" value="1" label="Satellite" />
-                          <Radio id="radio-2" name="radio-group" value="2" label="Hybrid" />
-                          <Radio id="radio-3" name="radio-group" value="3" label="Roads" />
+                          <Radio id="radio-1" name="radio-group" value="1" label="Roads" />
+                          <Radio id="radio-2" name="radio-group" value="2" label="Aerial" />
+                          <Radio id="radio-3" name="radio-group" value="3" label="Aerial with Labels" />
                         </RadioGroup>
                       </Card>
                     </Popper>
@@ -126,30 +129,39 @@ storiesOf("Templates/Modules/Toolbar", module)
 )}
                       visible
                     >
-                      <Card>
-
-                        <Card
-                          description="Legend 1"
-                          more={{
-                            content: (
-                              <CardSection variant="light">
-                                <Button label="Button" variant="success" isSolid fullWidth />
+                      <Container padding="0" hasBorder height="20rem">
+                        <Card>
+                          <CardGrid>
+                            <Card
+                              description="Legend 1"
+                            >
+                              <CardSection variant="modal">
+                                <Image
+                                  src={LegendValue1}
+                                />
                               </CardSection>
-                            ),
-                          }}
-                        />
-
-                        <Card
-                          description="Legend 2"
-                          more={{
-                            content: (
-                              <CardSection variant="light">
-                                <Button label="Button" variant="success" isSolid fullWidth />
+                            </Card>
+                            <Card
+                              description="Legend 2"
+                            >
+                              <CardSection>
+                                <Image
+                                  src={LegendValue2}
+                                />
                               </CardSection>
-                            ),
-                          }}
-                        />
-                      </Card>
+                            </Card>
+                            <Card
+                              description="Legend 3"
+                            >
+                              <CardSection variant="modal">
+                                <Image
+                                  src={LegendValue3}
+                                />
+                              </CardSection>
+                            </Card>
+                          </CardGrid>
+                        </Card>
+                      </Container>
                     </Popper>
                   </ButtonGroup>
 )}
