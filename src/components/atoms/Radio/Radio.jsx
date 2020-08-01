@@ -11,15 +11,14 @@ const RadioWrapper = styled(Grid)`
     return props.theme.text[props.inputTextColor] || "inherit";
   }};
   &:last-child {
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
   }
 `;
 
 const RadioContainer = styled.div`
   display: grid;
-  /* grid-template-columns: auto 1fr; */
   grid-template-areas: ${(props) => {
-    return props.alignInput || "";
+    return props.gridAreas || "";
   }};
   grid-template-columns: ${(props) => {
     return props.gridColumns || "auto 1fr";
@@ -27,10 +26,6 @@ const RadioContainer = styled.div`
   grid-gap: ${(props) => {
     return props.gridGap || "0.75rem";
   }};
-  justify-items: ${(props) => {
-    return props.justifyInput || "";
-  }};
-  /* grid-gap: 0.75rem; */
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
@@ -68,7 +63,6 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   }};
   &:before {
     margin: 0 -0.1em 0em 0;
-
     width: 0.89em;
     height: 0.89em;
     border-radius: 100%;
@@ -90,9 +84,6 @@ const InputGroup = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.setColumns || "";
   }};
-  justify-items: ${(props) => {
-    return props.justifyGroup || "";
-  }};
 `;
 
 function Radio({
@@ -108,13 +99,12 @@ function Radio({
   onFocus,
   value,
 }) {
-  let alignInput;
   let fillColor;
   let fillColorChecked;
+  let gridAreas;
   let gridColumns;
   let gridGap;
   let inputTextColor;
-  let justifyInput;
   let outlineColor;
   let tabIndex;
   if (!label) {
@@ -136,26 +126,20 @@ function Radio({
   }
   switch (align) {
     case "right":
-      alignInput = "'label input'";
-      break;
-    case "center":
-      alignInput = "'input' 'label'";
-      gridColumns = "auto";
-      justifyInput = "center";
+      gridAreas = "'label input'";
       break;
     case "left":
     default:
-      alignInput = "'input label'";
+      gridAreas = "'input label'";
       break;
   }
   return (
     <RadioContainer
-      alignInput={alignInput}
+      gridAreas={gridAreas}
       disabled={isDisabled}
       gridColumns={gridColumns}
       gridGap={gridGap}
       inputTextColor={inputTextColor}
-      justifyInput={justifyInput}
     >
       <RadioInput
         checked={checked}
@@ -188,23 +172,6 @@ function RadioGroup({
   label,
   onChange,
 }) {
-  let justifyGroup;
-  switch (align) {
-    case "right":
-      justifyGroup = "flex-end";
-      break;
-    case "center":
-      justifyGroup = "center";
-      break;
-    case "left":
-    default:
-      justifyGroup = "flex-start";
-      break;
-  }
-  let justifyInput;
-  if (justifyGroup === "center") {
-    justifyInput = "center";
-  }
   let inputTextColor;
   let errorText;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -217,23 +184,21 @@ function RadioGroup({
 
   return (
     <RadioWrapper
-      // align={align}
+      align={align}
       disabled={isDisabled}
       columns="1"
       inputTextColor={inputTextColor}
       id={id}
-      align={justifyInput}
     >
       {label ? (
         <Label size="sm" isRequired={isRequired} text={label} />
       ) : null}
       {helpText ? <Text size="xs" text={helpText} /> : null}
-      <InputGroup columns={columns} justifyGroup={justifyGroup}>
+      <InputGroup columns={columns}>
         {children || data.map((item) => {
           return (
             <Radio
-              // align={align}
-              align={justifyInput}
+              align={align}
               disabled={item.disabled || isDisabled}
               error={!!error}
               id={item.id}
