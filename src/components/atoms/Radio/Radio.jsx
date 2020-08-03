@@ -231,11 +231,11 @@ Radio.propTypes = {
   onFocus: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
-  value: PropTypes.any,
+  value: PropTypes.string,
 };
 
 Radio.defaultProps = {
-  align: null,
+  align: "left",
   checked: null,
   disabled: false,
   error: false,
@@ -261,7 +261,7 @@ RadioGroup.propTypes = {
     onBlur: PropTypes.func,
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
-    value: PropTypes.any,
+    value: PropTypes.string,
   })),
   disabled: PropTypes.bool,
   error: PropTypes.string,
@@ -273,7 +273,7 @@ RadioGroup.propTypes = {
 };
 
 RadioGroup.defaultProps = {
-  align: null,
+  align: "left",
   children: null,
   columns: null,
   data: [],

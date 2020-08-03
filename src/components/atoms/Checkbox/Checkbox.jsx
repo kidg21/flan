@@ -230,7 +230,7 @@ function CheckboxGroup({
 }
 
 Checkbox.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
@@ -242,7 +242,7 @@ Checkbox.propTypes = {
 };
 
 Checkbox.defaultProps = {
-  align: null,
+  align: "left",
   checked: null,
   disabled: false,
   error: null,
@@ -276,7 +276,7 @@ CheckboxGroup.propTypes = {
 };
 
 CheckboxGroup.defaultProps = {
-  align: null,
+  align: "left",
   children: null,
   columns: null,
   data: [],
