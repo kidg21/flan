@@ -17,7 +17,7 @@ const ListWrapper = styled(List)`
   /* update logic to measure itemwrapper top/left (fixed position) */
   overflow: visible;
   width: ${(props) => {
-    return props.width || "fit-content";
+    return props.width;
   }};
   min-width: 10rem;
   position: ${(props) => {
@@ -33,9 +33,7 @@ const ListWrapper = styled(List)`
     return props.transform || "";
   }};
   /* cardwrapper border-radius */
-  border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
+  border-radius: 0.5em;
   z-index: 500;
 `;
 
@@ -127,7 +125,7 @@ const MenuList = ({
                 id={`nested-item-${itemId}`}
                 title={item.label}
                 onClickItem={onClick}
-                pre={item.pre}
+                pre={{ icon: item.icon }}
                 disabled={item.disabled}
               />
               {activeItem === item.id ? (
@@ -148,7 +146,7 @@ const MenuList = ({
             id={`item-${itemId}`}
             title={item.label}
             onClickItem={onClick}
-            pre={item.pre}
+            pre={{ icon: item.icon }}
             disabled={item.disabled}
           />
         );
@@ -171,13 +169,7 @@ const MenuList = ({
 
 const itemShape = {
   disabled: PropTypes.bool,
-  pre: PropTypes.oneOfType([PropTypes.shape({
-    type: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    icon: PropTypes.string,
-    checked: PropTypes.bool,
-    onClick: PropTypes.func
-  }), PropTypes.node]),
+  icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -209,6 +201,7 @@ const Menu = ({
   id,
   isFlex,
   onClose,
+  closeOnClickAway,
   usePortal,
   position,
   visible,
@@ -220,6 +213,7 @@ const Menu = ({
       id={`menu-popper-${id}`}
       isFlex={isFlex}
       usePortal={usePortal}
+      closeOnClickAway={closeOnClickAway}
       anchor={children || React.cloneElement(defaultAnchor, { id: `menu-icon-${id}` })}
       visible={visible}
       onClose={onClose}
@@ -243,6 +237,8 @@ Menu.defaultProps = {
   id: "",
   isFlex: false,
   onClose: null,
+  /** close menu when clicking outside of pop-out */
+  closeOnClickAway: true,
   usePortal: false,
   position: "bottomRight",
   visible: false,
@@ -256,6 +252,7 @@ Menu.propTypes = {
   id: PropTypes.string,
   isFlex: PropTypes.bool,
   onClose: PropTypes.func,
+  closeOnClickAway: PropTypes.bool,
   usePortal: PropTypes.bool,
   position: PropTypes.oneOf([
     "bottomLeft",
@@ -288,7 +285,7 @@ const StatefulMenu = ({
   }, [onClose]);
 
   // default Menu button with onClick
-  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); // (<Button icon="options" onClick={toggleVisible} isPlain isRound />);
+  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); //(<Button icon="options" onClick={toggleVisible} isPlain isRound />);
   if (anchor.length > 0) {
     if (anchor[0].type === React.Fragment) {
       // wraps click in div around both children
