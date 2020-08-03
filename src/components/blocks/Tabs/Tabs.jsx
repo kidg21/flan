@@ -8,37 +8,56 @@ import Button from "atoms/Button";
 const TabsContext = React.createContext({});
 
 const TabButton = styled(Button)`
-  border-width: 0 0 2px 0;
+  border-width: ${(props) => {
+    return props.isUnderline ? "0 0 2px 0" : null;
+  }};
+  border-radius: ${(props) => {
+    return props.isUnderline ? "0px" : null;
+  }};
+  margin: 0 -1px -1px 0;
   border-color: ${(props) => {
-    return props.hasUnderline || "transparent";
+    return props.isUnderline || "";
   }};
   ${(props) => {
-    if(props.float){
-      return `float: ${props.float};`
+    if (props.float) {
+      return `float: ${props.float};`;
     }
   }}
 `;
 
 const TabsWrapper = styled.section`
   ${(props) => {
-    if(!props.setTruncate){
-      return `overflow: auto;`
-    }else{
-      return `
+    if (!props.setTruncate) {
+      return `overflow: auto;`;
+    }
+    return `
         display: flex;
         flex-direction: row;
       `;
-    }
   }}
 `;
 
 function TabItem({
-  alignCenter, count, disabled, htmlFor, icon, id, isSelected, label, float, onClick,
+  alignCenter, count, disabled, htmlFor, icon, id, hasFolder, isSelected, label, float, onClick,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   // context from tab component
   const tabsContext = useContext(TabsContext);
   const _alignCenter = typeof alignCenter === "boolean" ? alignCenter : tabsContext.alignCenter;
+
+  let isFolder;
+  let isSolid;
+  let isPlain;
+  let isUnderline;
+
+  if (hasFolder) {
+    isFolder = "true";
+  } else {
+    isPlain = "true";
+  }
+
+  if (hasFolder && isSelected) isSolid = "true";
+  if (!hasFolder && isSelected) isUnderline = "true";
 
   return (
     <React.Fragment>
@@ -52,8 +71,10 @@ function TabItem({
         label={label}
         onClick={onClick}
         variant={isSelected ? "" : "neutral"}
-        isPlain
-        hasUnderline={isSelected ? true : null}
+        isPlain={isPlain}
+        isUnderline={isUnderline}
+        isFolder={isFolder}
+        isSolid={isSolid}
         alignCenter={_alignCenter}
         float={float}
       />
@@ -91,26 +112,26 @@ function Tabs({
           setTruncate={truncateItems}
         >
           {children
-          ? (truncateItems ? children : children.map((ele) => React.cloneElement(ele, {float:'left'})))
-          : data.map((item, index) => {
-            const itemKey = item.id
+            ? (truncateItems ? children : children.map((ele) => { return React.cloneElement(ele, { float: "left" }); }))
+            : data.map((item, index) => {
+              const itemKey = item.id
               || (item.label && item.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
               || (item.icon && item.icon.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
               || index;
-            return (
-              <TabItem
-                count={item.count}
-                disabled={item.disabled || isDisabled}
-                htmlFor={item.htmlFor}
-                icon={item.icon}
-                id={item.id}
-                key={itemKey}
-                label={item.label}
-                onClick={item.onClick}
-                isSelected={item.isSelected}
-              />
-            );
-          })}
+              return (
+                <TabItem
+                  count={item.count}
+                  disabled={item.disabled || isDisabled}
+                  htmlFor={item.htmlFor}
+                  icon={item.icon}
+                  id={item.id}
+                  key={itemKey}
+                  label={item.label}
+                  onClick={item.onClick}
+                  isSelected={item.isSelected}
+                />
+              );
+            })}
         </TabsWrapper>
       </TabsContext.Provider>
     </DisabledContext.Provider>
@@ -124,6 +145,7 @@ TabItem.propTypes = {
   htmlFor: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
+  hasFolder: PropTypes.bool,
   isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -135,6 +157,7 @@ TabItem.defaultProps = {
   disabled: null,
   htmlFor: null,
   icon: null,
+  hasFolder: false,
   id: null,
   isSelected: false,
   label: null,
