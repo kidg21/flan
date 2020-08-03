@@ -138,6 +138,7 @@ function Checkbox({
     case "right":
       gridAreas = "'label input'";
       break;
+    case "left":
     default:
       gridAreas = "'input label'";
       break;
