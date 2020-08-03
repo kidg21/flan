@@ -15,10 +15,6 @@ const DialogCard = styled(Card)`
   width: 100%;
 `;
 
-const ChildSection = styled(CardSection)`
-  z-index: 2;
-`;
-
 const PrimaryButton = styled(Button)`
   grid-area: one;
 `;
