@@ -69,16 +69,8 @@ const ImageWrapper = styled.div`
         position: absolute;
         width: 100%;
         height: 100%;
-        outline: ${() => {
-          return `2px solid ${props.theme.palette.success60
-            }`;
-        }};
+        outline: ${() => { return `2px solid ${props.theme.palette.success60}`; }};
      `;
-  }}
-  }
-  &:after {
-   ${(props) => {
-    return props.imageLabel || null;
   }}
   }
 `;
@@ -166,7 +158,7 @@ ImageSwatch.propTypes = {
   isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  src: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 ImageSwatch.defaultProps = {
