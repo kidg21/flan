@@ -82,3 +82,10 @@ export {
   darkTheme,
 } from "./base/Variables/Variables.jsx";
 export { ThemeProvider } from "styled-components";
+
+// Image dependencies
+export { PrintNone } from "images/dialogs/image-none.gif";
+export { PrintFull } from "images/dialogs/image-full.gif";
+export { PrintHalf } from "images/dialogs/image-half.gif";
+export { PrintQuarter } from "images/dialogs/image-quarter.gif";
+export { PrintLegend } from "images/dialogs/image-legend.gif";
