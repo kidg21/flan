@@ -2,26 +2,19 @@
 /* eslint-disable complexity */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { useState } from "hooks";
-import { FullScreen, Padding } from "helpers/Display";
+import { FullScreen } from "helpers/Display";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
-import Grid from "layout/Grid";
 import Popper from "layout/Popper";
 import Container from "atoms/Container";
-import Text from "base/Typography";
-import List from "blocks/List";
-import Accordion from "atoms/Accordion";
 import Radio, { RadioGroup } from "atoms/Radio";
 import Image from "atoms/Image";
-import Switch from "atoms/Switch";
+import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
+import Card, { CardGrid, CardSection } from "elements/Card";
+import Template from "layout/Template";
 import LegendValue1 from "images/maps/legendvalue1.png";
 import LegendValue2 from "images/maps/legendvalue2.png";
 import LegendValue3 from "images/maps/legendvalue3.png";
-import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
-import Card, { CardGrid, CardSection } from "elements/Card";
-import Menu from "blocks/Menu";
-import Template from "layout/Template";
 
 storiesOf("Templates/Modules/Toolbar", module)
   .addDecorator(FullScreen)
@@ -84,17 +77,16 @@ storiesOf("Templates/Modules/Toolbar", module)
                           />
                         </CheckboxGroup>
                       </Card>
-
                     </Popper>
                     <Button id="button-anchor" isPlain variant="neutral" label="Legend" icon="list" alignCenter />
                   </ButtonGroup>
-)}
+                )}
                 />
               </Card>
             ),
           }}
         />
-        <Mapbox />
+
       </React.Fragment>
     );
   })
@@ -126,7 +118,7 @@ storiesOf("Templates/Modules/Toolbar", module)
                           isPlain
                           alignCenter
                         />
-)}
+                      )}
                       visible
                     >
                       <Container padding="0" hasBorder height="20rem">
@@ -164,13 +156,12 @@ storiesOf("Templates/Modules/Toolbar", module)
                       </Container>
                     </Popper>
                   </ButtonGroup>
-)}
+                )}
                 />
               </Card>
             ),
           }}
         />
-        <Mapbox />
       </React.Fragment>
     );
   });

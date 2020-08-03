@@ -153,6 +153,8 @@ function getRightContent(post, disabled, onClick) {
             fixedWidth
           />
         ),
+        width: "max-content",
+        onClick: post.onClick || onClick,
       };
     }
   } else if (post) {
@@ -309,6 +311,7 @@ ListItem.propTypes = {
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
     checked: PropTypes.bool,
+    icon: PropTypes.string,
     onClick: PropTypes.func,
     size: PropTypes.string,
     variant: PropTypes.string,
@@ -317,6 +320,7 @@ ListItem.propTypes = {
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
     checked: PropTypes.bool,
+    icon: PropTypes.string,
     onClick: PropTypes.func,
     size: PropTypes.string,
     variant: PropTypes.string,
