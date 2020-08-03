@@ -6,6 +6,8 @@ import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
+import Flex from "layout/Flex";
+import InputBlock from "blocks/InputBlock";
 
 <Meta title="Atoms|Tag" component={Tag} />
 
@@ -91,12 +93,15 @@ A Tag may appear to the left or right of it's corresponding label. A Tag may not
 
 <Preview>
   <Story name="Types">
-    <Grid columns="4">
+   <Flex flexDirection="row">
       <Tag label="Info" variant="info" />
       <Tag label="Warning" variant="warning" />
+      <Tag label="Warning" variant="warning" />
+      <Tag label="ksdfksjdhkjfshdfkjshfk" variant="warning" />
       <Tag label="Success" variant="success" />
+      <Tag label="Succekdfjlkdsjflkdjfljdss" variant="success" />
       <Tag label="Alert" variant="alert" />
-    </Grid>
+      </Flex>
   </Story>
 </Preview>
 
