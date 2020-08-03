@@ -223,13 +223,13 @@ storiesOf("Templates/Modules/Maps", module)
               // Set the 'columns' value to the # of Buttons
               <CardGrid columns="3">
                 <Card shadow="2x">
-                  <Image src={MapStreets} width="75" onClick />
+                  <Image src={MapStreets} width="75" onClick={() => { }} />
                 </Card>
                 <Card shadow="2x">
-                  <Image src={MapSatellite} width="75" onClick />
+                  <Image src={MapSatellite} width="75" onClick={() => { }} />
                 </Card>
                 <Card shadow="2x">
-                  <Image src={MapHybrid} width="75" onClick />
+                  <Image src={MapHybrid} width="75" onClick={() => { }} />
                 </Card>
               </CardGrid>
             ),
@@ -702,51 +702,51 @@ storiesOf("Templates/Modules/Create", module)
         ]}
       >
         <Tabs data={tabRFPButtons} />
-          <Form>
-            <FormSection>
-              <TextInput
-
-                label="RFP Number"
-                value="19-12341234"
-              />
-              <TextInput
-
-                label="RFP Name"
-                placeholder="New LightBox Project"
-              />
-            </FormSection>
-
-            <Divider />
-            <FormSection columns="2" title="Property Info">
+        <Form>
+          <FormSection>
             <TextInput
 
-                label="Address"
-              />
-              <TextInput
+              label="RFP Number"
+              value="19-12341234"
+            />
+            <TextInput
 
-                label="City"
-              />
-            
-              <SelectMenu
-                label="State"
-                placeholder=""
-              />
-              <TextInput
+              label="RFP Name"
+              placeholder="New LightBox Project"
+            />
+          </FormSection>
 
-                label="Zip"
-              />
-              <SelectMenu
+          <Divider />
+          <FormSection columns="2" title="Property Info">
+            <TextInput
 
-                label="Property Type"
-              />
-              <SelectMenu
+              label="Address"
+            />
+            <TextInput
 
-                label="Property Sub-Type"
-              />
+              label="City"
+            />
 
-            </FormSection>
-          </Form>
-  
+            <SelectMenu
+              label="State"
+              placeholder=""
+            />
+            <TextInput
+
+              label="Zip"
+            />
+            <SelectMenu
+
+              label="Property Type"
+            />
+            <SelectMenu
+
+              label="Property Sub-Type"
+            />
+
+          </FormSection>
+        </Form>
+
       </DialogBox>
     );
   })
