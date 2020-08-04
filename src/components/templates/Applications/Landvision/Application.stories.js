@@ -1857,6 +1857,30 @@ storiesOf("Templates|Applications/Research", module)
               content: (
                 <Panel 
                 padding="0"
+                header={<Card
+                  id="Card_Header"
+                  padding="0"
+            
+                >
+                  <CardSection variant="light" padding="1x">
+                    <Bar
+                      contentAlign="center"
+                      padding="0"
+                      left={{
+                        content: (
+                            <Title size="xl" text="Properties" weight="bold" />),
+                        align: "left",
+                      }}
+                      right={{
+                        content: (
+                          <Button icon="options" isRound isPlain variant="neutral"/>
+                        )
+                      }}
+                    />
+                  </CardSection>
+                </Card>}>
+                <Panel 
+                padding="0"
                 header={
                   <Bar 
                   padding="1x"
@@ -1866,7 +1890,7 @@ storiesOf("Templates|Applications/Research", module)
                     <SearchBar/>),
                   }}
                   center={{
-                    content: (<Command label="309 results" size="lg"/>),
+                    content: (<Title text="309 results" size="lg"/>),
                     align: "right",
                   }}
                   right={{
@@ -1900,6 +1924,7 @@ storiesOf("Templates|Applications/Research", module)
                    
                   />
                   <MapBox />
+                </Panel>
                 </Panel>),
             }}
           />
