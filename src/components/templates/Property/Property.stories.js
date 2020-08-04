@@ -263,36 +263,45 @@ storiesOf("Templates|Applications/Research/Property", module)
                       B={{
                         id: "B",
                         content: (
-                          <Panel>
+                          <Panel
+                            header={(
+                              <Bar
+                                contentAlign="center"
+                                padding="1x"
+                                left={<Text size="lg" text="22902 Trabuco Rd., Mission Viejo CA" />}
+                                right={{
+                                  content: (<Menu />),
+                                  width: "fit-content",
+                                }}
+                              />
+                          )}
+                          >
+                            <Grid columns="1" gap="lg">
+                              <Bar
+                                padding="0"
+                                center={
+                                  <Image width="20rem" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" />
+}
+                              />
+                              <FieldSection>
+                                <FieldGroup columns="1" title="Property">
+                                  <Field label="Parcel No." value="808-221-12" onClick />
+                                  <Field label="Land User" value="Commercial Shopping Center" />
+                                  <Field label="Building Area" value="25,344 SF" />
+                                  <Field label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
+                                  <Field label="Building/Lot" value="0.15" />
+                                  <Field label="No. of Units" value="" />
+                                  <Field label="Year Built" value="1978" />
+                                </FieldGroup>
+                                <FieldGroup columns="1" title="Owners">
+                                  <Field label="Owners" value="SCF-Los Alisos LLC" onClick />
+                                  <Field label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
+                                  <Field label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick />
+                                  <Field label="Last Sale" value="10/2/15 for $11,500,000" onClick />
+                                  <Field label="Total Assd Value" value="$10,045,870" />
 
-                            <Bar
-                              contentAlign="center"
-                              padding="1x"
-                              left={<Text size="lg" text="22902 Trabuco Rd., Mission Viejo CA" />}
-                              right={{
-                                content: (<Menu />),
-                                width: "fit-content",
-                              }}
-                            />
-                            <Grid colums="1">
-                              <Image width="20rem" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" />
-                              <FieldGroup columns="1">
-                                <Field label="Parcel No." value="808-221-12" onClick />
-                                <Field label="Land User" value="Commercial Shopping Center" />
-                                <Field label="Building Area" value="25,344 SF" />
-                                <Field label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
-                                <Field label="Building/Lot" value="0.15" />
-                                <Field label="No. of Units" value="" />
-                                <Field label="Year Built" value="1978" />
-                              </FieldGroup>
-                              <FieldGroup columns="1" title="Owners">
-                                <Field label="Owners" value="SCF-Los Alisos LLC" onClick />
-                                <Field label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
-                                <Field label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick />
-                                <Field label="Last Sale" value="10/2/15 for $11,500,000" onClick />
-                                <Field label="Total Assd Value" value="$10,045,870" />
-
-                              </FieldGroup>
+                                </FieldGroup>
+                              </FieldSection>
                             </Grid>
 
                           </Panel>),
@@ -312,48 +321,6 @@ storiesOf("Templates|Applications/Research/Property", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const menuDetails = [
-          {
-            id: "Overview",
-            title: "Overview",
-            isSelected: true,
-          },
-          {
-            id: "Define Site",
-            title: "Define Site",
-          },
-          {
-            id: "Assessment",
-            title: "Assessment",
-            disabled: true,
-          },
-          {
-            id: "Transactions",
-            title: "Transactions",
-            disabled: true,
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-            disabled: true,
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-            disabled: true,
-          },
-          {
-            id: "Review",
-            title: "Review",
-            disabled: true,
-          },
-          {
-            id: "Export",
-            title: "Export",
-            disabled: true,
-          },
-        ];
 
         return (
           <Layout
