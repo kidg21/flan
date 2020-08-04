@@ -22,7 +22,7 @@ const SearchContainer = styled.form`
   grid-template-rows: auto 1fr;
   grid-row-gap: "0.25rem";
   position: relative;
-  padding: 0.5rem 0.5rem 0;
+  padding: 0 0.5rem;
 `;
 
 const SearchInput = styled(Flex)`
