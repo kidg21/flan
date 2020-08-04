@@ -98,7 +98,7 @@ const LabelWrapper = styled(Grid)`
   }};
   width: auto;
   > * {
-    line-height: inherit;
+    line-height: initial;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

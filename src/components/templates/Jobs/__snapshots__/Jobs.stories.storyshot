@@ -1,0 +1,3486 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 izXrkl"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 gzlDXA"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 sWSdM"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 llxHeE"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  color={null}
+                  data-icon="bars"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+            <img
+              alt="Lightbox Logo"
+              className="Image__ImageWrapper-sc-18abvff-0 dLVSBY"
+              onClick={[Function]}
+              src=""
+              title="Lightbox Logo"
+              width="8vw"
+            />
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hHFvYO"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  JOBS PORTAL
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  RESEARCH
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  BI
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  REPORT WRITING
+                </label>
+              </section>
+            </button>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 fiTHpV"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dzakr"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 jZXJFj"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
+                  color={null}
+                  data-icon="question-circle"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="1.5em"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+            <div
+              className="Avatar__TagContainer-sc-1vuf9om-2 hPqJxg"
+              id={null}
+              onClick={[Function]}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 jRlbNO"
+                fontSize="1rem"
+                fontWeight={500}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                AB
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        height={null}
+        id="Left"
+        overflow={null}
+        width="10rem"
+      >
+        <ul
+          className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+          id={null}
+        >
+          <li
+            className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Jobs Portal
+            </p>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Dashboard
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Jobs
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  RFPs
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 cNCsoM Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        height="20rem"
+        id={null}
+        overflow={null}
+        width="calc(100% - 10rem)"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          height={null}
+          id="Main"
+          overflow={null}
+          width={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bDBOMh"
+            id="Assessment"
+            rows={null}
+          >
+            <section
+              className="Template__Region-sc-1i4nzbu-0 GaHDh"
+              id="A"
+              placeholder="A"
+              tabIndex="0"
+            >
+              <ul
+                className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+                id={null}
+              >
+                <li
+                  className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    Jobs Menu
+                  </p>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        All Jobs
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 fIRUJx"
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Submitted
+                      </p>
+                    </div>
+                    <div
+                      className="Bar__Slot-icfo76-1 cxljst"
+                    >
+                      <div
+                        className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+                        id={null}
+                        label="28"
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          28
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 fIRUJx"
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        In Progress
+                      </p>
+                    </div>
+                    <div
+                      className="Bar__Slot-icfo76-1 cxljst"
+                    >
+                      <div
+                        className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+                        id={null}
+                        label="5"
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          5
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Completed
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section
+              className="Template__Region-sc-1i4nzbu-0 dLRjEu"
+              id="B"
+              placeholder="B"
+              tabIndex="0"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 TNHFz"
+                id="Details"
+                rows={null}
+              >
+                <section
+                  className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+                  id="A"
+                  placeholder="A"
+                  tabIndex="0"
+                >
+                  <div
+                    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                    height="100%"
+                    id={null}
+                    width="100%"
+                  >
+                    <section
+                      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                      id={null}
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 eIFIfS"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 fNcQEg"
+                        >
+                          <h4
+                            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                            fontSize="1.35rem"
+                            fontWeight="400"
+                            letterSpacing="0px"
+                          >
+                            Jobs
+                          </h4>
+                        </div>
+                        <div
+                          className="Bar__Slot-icfo76-1 kZQbjh"
+                        >
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={null}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                              id={null}
+                              rows={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                color={null}
+                                data-icon="plus"
+                                data-prefix="far"
+                                focusable="false"
+                                fontSize="inherit"
+                                id={null}
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 384 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                htmlFor={null}
+                                letterSpacing=".5px"
+                              >
+                                Create
+                              </label>
+                            </section>
+                          </button>
+                        </div>
+                      </div>
+                    </section>
+                    <section
+                      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                      id={null}
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 koRqOO"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 czCRqU"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                            id="storyshots_98_container"
+                            rows={null}
+                          >
+                            <input
+                              autoComplete="off"
+                              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                              cols=""
+                              disabled={null}
+                              id="storyshots_98"
+                              list={null}
+                              name="storyshots_98"
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              onKeyPress={null}
+                              onKeyUp={null}
+                              pattern={null}
+                              placeholder="Search Jobs"
+                              rows=""
+                              type="search"
+                            />
+                          </section>
+                        </div>
+                      </div>
+                      <div
+                        className="Bar__BarLayout-icfo76-2 koRqOO"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 fNcQEg"
+                        >
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={null}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                              id={null}
+                              rows={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-filter fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                color={null}
+                                data-icon="filter"
+                                data-prefix="far"
+                                focusable="false"
+                                fontSize="inherit"
+                                id={null}
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M463.952 0H48.057C5.419 0-16.094 51.731 14.116 81.941L176 243.882V416c0 15.108 7.113 29.335 19.2 40l64 47.066c31.273 21.855 76.8 1.538 76.8-38.4V243.882L497.893 81.941C528.042 51.792 506.675 0 463.952 0zM288 224v240l-64-48V224L48 48h416L288 224z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                htmlFor={null}
+                                letterSpacing=".5px"
+                              >
+                                Filters
+                              </label>
+                            </section>
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+                      >
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "overflow": "visible",
+                              "width": 0,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "height": 100,
+                                "overflow": "visible",
+                                "width": 200,
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "height": 40,
+                                  "position": "relative",
+                                  "width": 200,
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="grid"
+                                aria-readonly={true}
+                                className="ReactVirtualized__Grid"
+                                onScroll={[Function]}
+                                role="grid"
+                                style={
+                                  Object {
+                                    "WebkitOverflowScrolling": "touch",
+                                    "boxSizing": "border-box",
+                                    "direction": "ltr",
+                                    "height": 40,
+                                    "left": 0,
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "position": "absolute",
+                                    "top": 0,
+                                    "width": 200,
+                                    "willChange": "transform",
+                                  }
+                                }
+                                tabIndex={null}
+                              >
+                                <div
+                                  className="ReactVirtualized__Grid__innerScrollContainer"
+                                  role="rowgroup"
+                                  style={
+                                    Object {
+                                      "height": 40,
+                                      "maxHeight": 40,
+                                      "maxWidth": 1088,
+                                      "overflow": "hidden",
+                                      "pointerEvents": "",
+                                      "position": "relative",
+                                      "width": 1088,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 0,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    Job Number
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 bDTUkP"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 0,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    Address
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              style={
+                                Object {
+                                  "height": 60,
+                                  "overflow": "visible",
+                                  "position": "relative",
+                                  "width": 200,
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="grid"
+                                aria-readonly={true}
+                                className="ReactVirtualized__Grid"
+                                onScroll={[Function]}
+                                role="grid"
+                                style={
+                                  Object {
+                                    "WebkitOverflowScrolling": "touch",
+                                    "boxSizing": "border-box",
+                                    "direction": "ltr",
+                                    "height": 60,
+                                    "left": 0,
+                                    "overflowX": "auto",
+                                    "overflowY": "auto",
+                                    "position": "absolute",
+                                    "width": 200,
+                                    "willChange": "transform",
+                                  }
+                                }
+                                tabIndex={0}
+                              >
+                                <div
+                                  className="ReactVirtualized__Grid__innerScrollContainer"
+                                  role="rowgroup"
+                                  style={
+                                    Object {
+                                      "height": 440,
+                                      "maxHeight": 440,
+                                      "maxWidth": 1088,
+                                      "overflow": "hidden",
+                                      "pointerEvents": "",
+                                      "position": "relative",
+                                      "width": 1088,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 0,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 0,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 40,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 40,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 80,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 80,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 120,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 120,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 160,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 160,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 200,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 200,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 240,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 240,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 280,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 280,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 320,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 320,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 360,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 360,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 400,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 400,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </section>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 izXrkl"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 gzlDXA"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 sWSdM"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 llxHeE"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  color={null}
+                  data-icon="bars"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+            <img
+              alt="Lightbox Logo"
+              className="Image__ImageWrapper-sc-18abvff-0 dLVSBY"
+              onClick={[Function]}
+              src=""
+              title="Lightbox Logo"
+              width="8vw"
+            />
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hHFvYO"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  JOBS PORTAL
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  RESEARCH
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  BI
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  REPORT WRITING
+                </label>
+              </section>
+            </button>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 fiTHpV"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dzakr"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 jZXJFj"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
+                  color={null}
+                  data-icon="question-circle"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="1.5em"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+            <div
+              className="Avatar__TagContainer-sc-1vuf9om-2 hPqJxg"
+              id={null}
+              onClick={[Function]}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 jRlbNO"
+                fontSize="1rem"
+                fontWeight={500}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                AB
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        height={null}
+        id="Left"
+        overflow={null}
+        width="10rem"
+      >
+        <ul
+          className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+          id={null}
+        >
+          <li
+            className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Jobs Portal
+            </p>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Dashboard
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Jobs
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  RFPs
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 cNCsoM Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        height="20rem"
+        id={null}
+        overflow={null}
+        width="calc(100% - 10rem)"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          height={null}
+          id="Main"
+          overflow={null}
+          width={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bDBOMh"
+            id="Assessment"
+            rows={null}
+          >
+            <section
+              className="Template__Region-sc-1i4nzbu-0 GaHDh"
+              id="A"
+              placeholder="A"
+              tabIndex="0"
+            >
+              <ul
+                className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+                id={null}
+              >
+                <li
+                  className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    RFPs Menu
+                  </p>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        All RFPs
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 fIRUJx"
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Needs Response
+                      </p>
+                    </div>
+                    <div
+                      className="Bar__Slot-icfo76-1 cxljst"
+                    >
+                      <div
+                        className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+                        id={null}
+                        label="4"
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          4
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 fIRUJx"
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Submitted
+                      </p>
+                    </div>
+                    <div
+                      className="Bar__Slot-icfo76-1 cxljst"
+                    >
+                      <div
+                        className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+                        id={null}
+                        label="28"
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          28
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Awaiting Acceptance
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section
+              className="Template__Region-sc-1i4nzbu-0 dLRjEu"
+              id="B"
+              placeholder="B"
+              tabIndex="0"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 TNHFz"
+                id="Details"
+                rows={null}
+              >
+                <section
+                  className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+                  id="A"
+                  placeholder="A"
+                  tabIndex="0"
+                >
+                  <div
+                    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                    height="100%"
+                    id={null}
+                    width="100%"
+                  >
+                    <section
+                      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                      id={null}
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 eIFIfS"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 fNcQEg"
+                        >
+                          <h4
+                            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                            fontSize="1.35rem"
+                            fontWeight="400"
+                            letterSpacing="0px"
+                          >
+                            RFPs
+                          </h4>
+                        </div>
+                        <div
+                          className="Bar__Slot-icfo76-1 kZQbjh"
+                        >
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={null}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                              id={null}
+                              rows={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                color={null}
+                                data-icon="plus"
+                                data-prefix="far"
+                                focusable="false"
+                                fontSize="inherit"
+                                id={null}
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 384 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                htmlFor={null}
+                                letterSpacing=".5px"
+                              >
+                                Create
+                              </label>
+                            </section>
+                          </button>
+                        </div>
+                      </div>
+                    </section>
+                    <section
+                      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                      id={null}
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 koRqOO"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 czCRqU"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                            id="storyshots_99_container"
+                            rows={null}
+                          >
+                            <input
+                              autoComplete="off"
+                              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                              cols=""
+                              disabled={null}
+                              id="storyshots_99"
+                              list={null}
+                              name="storyshots_99"
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              onKeyPress={null}
+                              onKeyUp={null}
+                              pattern={null}
+                              placeholder="Search RFPs"
+                              rows=""
+                              type="search"
+                            />
+                          </section>
+                        </div>
+                      </div>
+                      <div
+                        className="Bar__BarLayout-icfo76-2 koRqOO"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 fNcQEg"
+                        >
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={null}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                              id={null}
+                              rows={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-filter fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                color={null}
+                                data-icon="filter"
+                                data-prefix="far"
+                                focusable="false"
+                                fontSize="inherit"
+                                id={null}
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M463.952 0H48.057C5.419 0-16.094 51.731 14.116 81.941L176 243.882V416c0 15.108 7.113 29.335 19.2 40l64 47.066c31.273 21.855 76.8 1.538 76.8-38.4V243.882L497.893 81.941C528.042 51.792 506.675 0 463.952 0zM288 224v240l-64-48V224L48 48h416L288 224z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                htmlFor={null}
+                                letterSpacing=".5px"
+                              >
+                                Filters
+                              </label>
+                            </section>
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+                      >
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "overflow": "visible",
+                              "width": 0,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "height": 100,
+                                "overflow": "visible",
+                                "width": 200,
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "height": 40,
+                                  "position": "relative",
+                                  "width": 200,
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="grid"
+                                aria-readonly={true}
+                                className="ReactVirtualized__Grid"
+                                onScroll={[Function]}
+                                role="grid"
+                                style={
+                                  Object {
+                                    "WebkitOverflowScrolling": "touch",
+                                    "boxSizing": "border-box",
+                                    "direction": "ltr",
+                                    "height": 40,
+                                    "left": 0,
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "position": "absolute",
+                                    "top": 0,
+                                    "width": 200,
+                                    "willChange": "transform",
+                                  }
+                                }
+                                tabIndex={null}
+                              >
+                                <div
+                                  className="ReactVirtualized__Grid__innerScrollContainer"
+                                  role="rowgroup"
+                                  style={
+                                    Object {
+                                      "height": 40,
+                                      "maxHeight": 40,
+                                      "maxWidth": 1088,
+                                      "overflow": "hidden",
+                                      "pointerEvents": "",
+                                      "position": "relative",
+                                      "width": 1088,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 0,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    RFP Number
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 bDTUkP"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 0,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    Address
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              style={
+                                Object {
+                                  "height": 60,
+                                  "overflow": "visible",
+                                  "position": "relative",
+                                  "width": 200,
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="grid"
+                                aria-readonly={true}
+                                className="ReactVirtualized__Grid"
+                                onScroll={[Function]}
+                                role="grid"
+                                style={
+                                  Object {
+                                    "WebkitOverflowScrolling": "touch",
+                                    "boxSizing": "border-box",
+                                    "direction": "ltr",
+                                    "height": 60,
+                                    "left": 0,
+                                    "overflowX": "auto",
+                                    "overflowY": "auto",
+                                    "position": "absolute",
+                                    "width": 200,
+                                    "willChange": "transform",
+                                  }
+                                }
+                                tabIndex={0}
+                              >
+                                <div
+                                  className="ReactVirtualized__Grid__innerScrollContainer"
+                                  role="rowgroup"
+                                  style={
+                                    Object {
+                                      "height": 440,
+                                      "maxHeight": 440,
+                                      "maxWidth": 1088,
+                                      "overflow": "hidden",
+                                      "pointerEvents": "",
+                                      "position": "relative",
+                                      "width": 1088,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 0,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 0,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 40,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 40,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 80,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 80,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 120,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 120,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 160,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 160,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 200,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 200,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 240,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 240,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 280,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 280,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 320,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 320,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 360,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 360,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 0,
+                                        "position": "absolute",
+                                        "top": 400,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                                      disabled={false}
+                                      fontSize="1rem"
+                                      fontWeight={500}
+                                      href={null}
+                                      letterSpacing="0px"
+                                      onClick={null}
+                                      target={null}
+                                    >
+                                      1402-20-12345
+                                    </a>
+                                  </div>
+                                  <div
+                                    className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                                    onClick={[Function]}
+                                    onMouseOut={[Function]}
+                                    onMouseOver={[Function]}
+                                    style={
+                                      Object {
+                                        "height": 40,
+                                        "left": 144,
+                                        "position": "absolute",
+                                        "top": 400,
+                                        "width": 144,
+                                      }
+                                    }
+                                  >
+                                    22902 Trabuco Rd.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </section>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 izXrkl"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 gzlDXA"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 sWSdM"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 llxHeE"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  color={null}
+                  data-icon="bars"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+            <img
+              alt="Lightbox Logo"
+              className="Image__ImageWrapper-sc-18abvff-0 dLVSBY"
+              onClick={[Function]}
+              src=""
+              title="Lightbox Logo"
+              width="8vw"
+            />
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hHFvYO"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  JOBS PORTAL
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  RESEARCH
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  BI
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  REPORT WRITING
+                </label>
+              </section>
+            </button>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 fiTHpV"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dzakr"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 jZXJFj"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
+                  color={null}
+                  data-icon="question-circle"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="1.5em"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+            <div
+              className="Avatar__TagContainer-sc-1vuf9om-2 hPqJxg"
+              id={null}
+              onClick={[Function]}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 jRlbNO"
+                fontSize="1rem"
+                fontWeight={500}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                AB
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        height={null}
+        id="Left"
+        overflow={null}
+        width="10rem"
+      >
+        <ul
+          className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+          id={null}
+        >
+          <li
+            className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Research
+            </p>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Projects
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Properties
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  History
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Data
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 cNCsoM Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        height="20rem"
+        id={null}
+        overflow={null}
+        width="calc(100% - 10rem)"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          height={null}
+          id="Main"
+          overflow={null}
+          width={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 TNHFz"
+            id="Details"
+            rows={null}
+          >
+            <section
+              className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+              id="A"
+              placeholder="A"
+              tabIndex="0"
+            >
+              <div
+                className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                height="100%"
+                id={null}
+                width="100%"
+              >
+                <section
+                  className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                  id={null}
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eIFIfS"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 fNcQEg"
+                    >
+                      <h4
+                        className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                        fontSize="1.35rem"
+                        fontWeight="400"
+                        letterSpacing="0px"
+                      >
+                        Projects
+                      </h4>
+                    </div>
+                    <div
+                      className="Bar__Slot-icfo76-1 kZQbjh"
+                    >
+                      <button
+                        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+                        disabled={false}
+                        htmlFor={null}
+                        id={null}
+                        name={null}
+                        onClick={null}
+                        tabIndex="1"
+                        type="button"
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                          id={null}
+                          rows={null}
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                            color={null}
+                            data-icon="plus"
+                            data-prefix="far"
+                            focusable="false"
+                            fontSize="inherit"
+                            id={null}
+                            role="img"
+                            style={Object {}}
+                            viewBox="0 0 384 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                              fill="currentColor"
+                              style={Object {}}
+                            />
+                          </svg>
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                            fontSize="1rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Create
+                          </label>
+                        </section>
+                      </button>
+                    </div>
+                  </div>
+                </section>
+                <section
+                  className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                  id={null}
+                >
+                  <form
+                    action={null}
+                    className="Form__FormWrapper-v2wrel-1 jozDvZ"
+                    id={null}
+                    method={null}
+                    onSubmit={null}
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                      id={null}
+                      rows={null}
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 jGhkbe"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 czCRqU"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                            id="storyshots_100_container"
+                            rows={null}
+                          >
+                            <input
+                              autoComplete="off"
+                              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                              cols=""
+                              disabled={null}
+                              id="storyshots_100"
+                              list={null}
+                              name="storyshots_100"
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              onKeyPress={null}
+                              onKeyUp={null}
+                              pattern={null}
+                              placeholder="Filter Projects"
+                              rows=""
+                              type="search"
+                            />
+                          </section>
+                        </div>
+                      </div>
+                      <div
+                        className="Bar__BarLayout-icfo76-2 jGhkbe"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 fNcQEg"
+                        >
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={null}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                              id={null}
+                              rows={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-filter fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                color={null}
+                                data-icon="filter"
+                                data-prefix="far"
+                                focusable="false"
+                                fontSize="inherit"
+                                id={null}
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M463.952 0H48.057C5.419 0-16.094 51.731 14.116 81.941L176 243.882V416c0 15.108 7.113 29.335 19.2 40l64 47.066c31.273 21.855 76.8 1.538 76.8-38.4V243.882L497.893 81.941C528.042 51.792 506.675 0 463.952 0zM288 224v240l-64-48V224L48 48h416L288 224z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                htmlFor={null}
+                                letterSpacing=".5px"
+                              >
+                                Filters
+                              </label>
+                            </section>
+                          </button>
+                        </div>
+                      </div>
+                    </section>
+                  </form>
+                </section>
+              </div>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

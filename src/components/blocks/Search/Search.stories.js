@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React, { useState } from "react";
-import SearchBar from "blocks/Search";
+import Search from "blocks/Search";
 
 export default {
   title: "Data Entry/Search",
-  component: SearchBar,
+  component: Search,
   parameters: {
     docs: { page: null },
   },
@@ -26,7 +26,7 @@ export const Interaction = () => {
   const [stateResults, setResultsState] = useState(false);
   const toggleResults = () => { setResultsState(!stateResults); };
   return (
-    <SearchBar
+    <Search
       id="Interaction"
       placeholder="Search Location"
       error2

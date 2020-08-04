@@ -21,6 +21,7 @@ import SelectMenu from "atoms/SelectMenu";
 import Avatar from "atoms/Avatar";
 import Bar from "layout/Bar";
 import Menu from "blocks/Menu";
+import Panel from "layout/Panel";
 import Template from "layout/Template";
 import Picker, { ColorSwatch } from "elements/Picker";
 import Field, { FieldGroup } from "atoms/Field";
@@ -302,19 +303,19 @@ function MockTable() {
   const iconNames = [
     {
       icon: "edit",
-      onClick: () => {},
+      onClick: () => { },
       // icon: "check",
       // variant: "success",
     },
     {
       icon: "delete",
-      onClick: () => {},
+      onClick: () => { },
       // icon: "close",
       // variant: "alert",
     },
     {
       icon: "options",
-      onClick: () => {},
+      onClick: () => { },
     },
   ];
   const [highlightedCell, setHighlightCell] = useState(null);
@@ -485,15 +486,17 @@ MockData.defaultProps = {
 
 function MockCardGrid() {
   return (
-    <CardGrid>
-      <Card id="MockCard_1" />
-      <Card id="MockCard_2" />
-      <Card id="MockCard_3" />
-      <Card id="MockCard_4" />
-      <Card id="MockCard_5" />
-      <Card id="MockCard_6" />
-      <Card id="MockCard_7" />
-    </CardGrid>
+    <Panel>
+      <CardGrid>
+        <Card id="MockCard_1" />
+        <Card id="MockCard_2" />
+        <Card id="MockCard_3" />
+        <Card id="MockCard_4" />
+        <Card id="MockCard_5" />
+        <Card id="MockCard_6" />
+        <Card id="MockCard_7" />
+      </CardGrid>
+    </Panel>
   );
 }
 MockCardGrid.propTypes = {
@@ -698,72 +701,75 @@ MockForm.defaultProps = {
 };
 
 function MockDetails({
-  image, title, data, footer,
+  image, title, data, footer, offcanvas,
 }) {
   return (
-    <Template>
-
-      <Bar center={<Image src={image || StaticMap} width="80%" alt="mockImage" />} />
-      {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
-        : (
-          <Bar
-            padding="2x"
-            center={(
-              <FieldGroup id="Physical Characteristics">
-                <Field
-                  align="edge"
-                  id="No. of Buildings"
-                  label="Project Owner"
-                  value="Steve Davidson"
-                />
-                <Field
-                  align="edge"
-                  id="GBA"
-                  label="Project Due"
-                  value="06/25/2020"
-                />
-                <Field
-                  align="edge"
-                  id="No. of Stories"
-                  label="Project Status"
-                  value="Open"
-                />
-                <Field
-                  align="edge"
-                  id="No. of Units"
-                  label="Project Created"
-                  value="6/14/2020 8:00 am PT"
-                />
-                <Field
-                  align="edge"
-                  id="Year Built"
-                  label="Project Edited"
-                  value="6/16/2020 12:15 pm PT"
-                />
-                <Field
-                  align="edge"
-                  id="Year Built"
-                  label="N1 ID"
-                  value="1804"
-                />
-              </FieldGroup>
+    <Panel padding="0" offcanvas={offcanvas}>
+      <Template>
+        <Image src={image || StaticMap} alt="mockImage" />
+        {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
+          : (
+            <Bar
+              padding="2x"
+              center={(
+                <FieldGroup id="Physical Characteristics">
+                  <Field
+                    align="edge"
+                    id="No. of Buildings"
+                    label="Project Owner"
+                    value="Steve Davidson"
+                  />
+                  <Field
+                    align="edge"
+                    id="GBA"
+                    label="Project Due"
+                    value="06/25/2020"
+                  />
+                  <Field
+                    align="edge"
+                    id="No. of Stories"
+                    label="Project Status"
+                    value="Open"
+                  />
+                  <Field
+                    align="edge"
+                    id="No. of Units"
+                    label="Project Created"
+                    value="6/14/2020 8:00 am PT"
+                  />
+                  <Field
+                    align="edge"
+                    id="Year Built"
+                    label="Project Edited"
+                    value="6/16/2020 12:15 pm PT"
+                  />
+                  <Field
+                    align="edge"
+                    id="Year Built"
+                    label="N1 ID"
+                    value="1804"
+                  />
+                </FieldGroup>
+              )}
+            />
           )}
-          />
-        )}
-      {footer}
-    </Template>
+        {footer}
+      </Template>
+    </Panel>
   );
 }
 MockDetails.propTypes = {
   data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   footer: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  offcanvas: PropTypes.string,
   title: PropTypes.string,
 };
 MockDetails.defaultProps = {
   data: null,
   footer: null,
   image: null,
+  offcanvas: null,
   title: null,
 };
 
@@ -804,7 +810,7 @@ function MockTabs({ data }) {
   return (
     <Bar left={
       <Tabs data={data || tabButtons} />
-}
+    }
     />
   );
 }

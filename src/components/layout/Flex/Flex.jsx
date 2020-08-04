@@ -16,8 +16,15 @@ const FlexWrapper = styled.div`
   flex: ${(props) => {
     return props.flex || "1 1 auto";
   }};
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  flex-wrap: ${(props) => {
+    return props.flexWrap || "nowrap";
+  }};
+  align-items: ${(props) => {
+    return props.alignItems;
+  }};
+  justify-content: ${(props) => {
+    return props.justifyContent;
+  }};
   order: 0;
   position: ${(props) => {
     return props.position || "relative";
@@ -66,14 +73,16 @@ const FlexWrapper = styled.div`
   }
 `;
 
-
 function Flex({
+  alignItems,
   bottom,
   children,
   className,
   flexDirection,
+  flexWrap,
   height,
   id,
+  justifyContent,
   left,
   right,
   flex,
@@ -85,11 +94,14 @@ function Flex({
 }) {
   return (
     <FlexWrapper
+      alignItems={alignItems}
       bottom={bottom}
       className={className}
       flexDirection={flexDirection}
+      flexWrap={flexWrap}
       height={height}
       id={id}
+      justifyContent={justifyContent}
       left={left}
       right={right}
       flex={flex}
@@ -105,6 +117,7 @@ function Flex({
 }
 
 Flex.propTypes = {
+  alignItems: PropTypes.string,
   /** Sets the bottom edge (in percentage) of a Flex component. */
   bottom: PropTypes.string,
   /** Allows for the nesting of Flex components */
@@ -125,10 +138,12 @@ Flex.propTypes = {
    */
   flex: PropTypes.string,
   flexDirection: PropTypes.string,
+  flexWrap: PropTypes.string,
   /** Sets the height (in percentage) of a Flex component. */
   height: PropTypes.string,
   /** Allows each component to have a unique identifier */
   id: PropTypes.string,
+  justifyContent: PropTypes.string,
   /** Sets the left edge (in percentage) of a Flex component.
    *
    * 'left' is the primary control for horizontal sizing.  For a horizontal Flex component that does not extend to the right edge of the viewport, the 'right' prop is required
@@ -163,13 +178,16 @@ Flex.propTypes = {
 };
 
 Flex.defaultProps = {
+  alignItems: "normal",
   bottom: null,
   children: null,
   className: null,
   flex: null,
   flexDirection: null,
+  flexWrap: "nowrap",
   height: null,
   id: null,
+  justifyContent: "normal",
   left: null,
   overflow: null,
   position: null,

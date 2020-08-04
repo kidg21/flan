@@ -349,7 +349,7 @@ exports[` 1`] = `
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id="storyshots_136"
+              id="storyshots_137"
               onClick={null}
             >
               <div
@@ -406,7 +406,7 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
@@ -432,7 +432,7 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
@@ -454,104 +454,7 @@ exports[` 1`] = `
             rows={null}
           >
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-              href={null}
-              id="storyshots_137"
-              media=""
-              onClick={[Function]}
-            >
-              <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                id="storyshots_137-Body"
-                onClick={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
-                      fontSize="1rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Lollipop Factory
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      145 Lollipop Way, Lollipop LA 34209
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      APN # 1239832947
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Owner Name
-                    </p>
-                  </section>
-                </p>
-              </section>
-              <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
-                id="storyshots_137-Footer"
-                onClick={null}
-              >
-                <div
-                  className="Bar__BarLayout-icfo76-2 bHddGh"
-                  id={null}
-                  onClick={null}
-                >
-                  <div
-                    className="Bar__Slot-icfo76-1 fNcQEg"
-                  >
-                    <a
-                      className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
-                      id={null}
-                      label="View Details"
-                      onClick={null}
-                      title="View Details"
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        View Details
-                      </label>
-                    </a>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
               href={null}
               id="storyshots_138"
               media=""
@@ -648,7 +551,7 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
               href={null}
               id="storyshots_139"
               media=""
@@ -745,7 +648,7 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
               href={null}
               id="storyshots_140"
               media=""
@@ -810,6 +713,103 @@ exports[` 1`] = `
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
                 id="storyshots_140-Footer"
+                onClick={null}
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 bHddGh"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 fNcQEg"
+                  >
+                    <a
+                      className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+                      id={null}
+                      label="View Details"
+                      onClick={null}
+                      title="View Details"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                      >
+                        View Details
+                      </label>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div
+              className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+              href={null}
+              id="storyshots_141"
+              media=""
+              onClick={[Function]}
+            >
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                id="storyshots_141-Body"
+                onClick={null}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                      fontSize="1rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      Lollipop Factory
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      145 Lollipop Way, Lollipop LA 34209
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      APN # 1239832947
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      Owner Name
+                    </p>
+                  </section>
+                </p>
+              </section>
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+                id="storyshots_141-Footer"
                 onClick={null}
               >
                 <div
@@ -1198,7 +1198,7 @@ exports[` 2`] = `
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id="storyshots_141"
+              id="storyshots_142"
               onClick={null}
             >
               <div
@@ -1241,7 +1241,7 @@ exports[` 2`] = `
         >
           <div
             className="Bar__BarLayout-icfo76-2 eIFIfS"
-            id="storyshots_142"
+            id="storyshots_143"
             onClick={null}
           >
             <div
@@ -1285,20 +1285,20 @@ exports[` 2`] = `
             >
               <div
                 className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-                id="menu-popper-storyshots_142-Menu"
+                id="menu-popper-storyshots_143-Menu"
               >
                 <button
                   className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
                   disabled={false}
                   htmlFor={null}
-                  id="menu-icon-storyshots_142-Menu"
-                  name="menu-icon-storyshots_142-Menu"
+                  id="menu-icon-storyshots_143-Menu"
+                  name="menu-icon-storyshots_143-Menu"
                   onClick={[Function]}
                   tabIndex="1"
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                     id={null}
                     rows={null}
                   >
@@ -1334,11 +1334,11 @@ exports[` 2`] = `
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_143"
+            id="storyshots_144"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_143-table"
+              id="storyshots_144-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"

@@ -10,12 +10,12 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 iEnobZ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 cZEutg"
     id="Template Regions"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 GaHDh"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -36,7 +36,7 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
             id={null}
             rows="max-content 1fr"
           >
@@ -82,7 +82,7 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
             id={null}
             rows="max-content 1fr"
           >
@@ -128,7 +128,7 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
             id={null}
             rows="max-content 1fr"
           >
@@ -174,7 +174,7 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
             id={null}
             rows="max-content 1fr"
           >
@@ -220,7 +220,7 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
             id={null}
             rows="max-content 1fr"
           >
@@ -269,7 +269,7 @@ exports[` 1`] = `
         rows={null}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Map Legend"
           media=""
@@ -343,7 +343,7 @@ exports[` 1`] = `
           </section>
         </div>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Data Layers"
           media=""
@@ -416,114 +416,106 @@ exports[` 1`] = `
             </div>
           </section>
         </div>
-        <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-          href={null}
-          id="storyshots_98"
-          media=""
-          onClick={null}
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
+          id="standard"
+          rows={null}
         >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Color Palette
+          </label>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
-            id="standard"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+            id={null}
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
-              fontSize="0.875rem"
-              fontWeight={600}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <button
+              className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+              color="#EBEAEC"
+              height="1.5rem"
+              onClick={null}
+              width="1.5rem"
+            />
+            <button
+              className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+              color="#D9ECEC"
+              height="1.5rem"
+              onClick={null}
+              width="1.5rem"
+            />
+            <button
+              className="Picker__Swatch-sc-1xwpkqn-1 bdCBXP"
+              color="#80959D"
+              height="1.5rem"
+              onClick={null}
+              width="1.5rem"
             >
-              Color Palette
-            </label>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
-              id={null}
-              rows={null}
-            >
-              <button
-                className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
-                color="#EBEAEC"
-                height="1.5rem"
-                onClick={null}
-                width="1.5rem"
-              />
-              <button
-                className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
-                color="#D9ECEC"
-                height="1.5rem"
-                onClick={null}
-                width="1.5rem"
-              />
-              <button
-                className="Picker__Swatch-sc-1xwpkqn-1 bdCBXP"
-                color="#80959D"
-                height="1.5rem"
-                onClick={null}
-                width="1.5rem"
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="check"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                  color={null}
-                  data-icon="check"
-                  data-prefix="far"
-                  focusable="false"
-                  fontSize="inherit"
-                  id={null}
-                  role="img"
+                <path
+                  d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
+                  fill="currentColor"
                   style={Object {}}
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </button>
-              <button
-                className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
-                color="#63B1CD"
-                height="1.5rem"
-                onClick={null}
-                width="1.5rem"
-              />
-              <button
-                className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
-                color="#06BFAE"
-                height="1.5rem"
-                onClick={null}
-                width="1.5rem"
-              />
-              <button
-                className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
-                color="#095593"
-                height="1.5rem"
-                onClick={null}
-                width="1.5rem"
-              />
-              <button
-                className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
-                color="#F3822B"
-                height="1.5rem"
-                onClick={null}
-                width="1.5rem"
-              />
-              <button
-                className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
-                color="#FFBF00"
-                height="1.5rem"
-                onClick={null}
-                width="1.5rem"
-              />
-            </section>
+                />
+              </svg>
+            </button>
+            <button
+              className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+              color="#63B1CD"
+              height="1.5rem"
+              onClick={null}
+              width="1.5rem"
+            />
+            <button
+              className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+              color="#06BFAE"
+              height="1.5rem"
+              onClick={null}
+              width="1.5rem"
+            />
+            <button
+              className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+              color="#095593"
+              height="1.5rem"
+              onClick={null}
+              width="1.5rem"
+            />
+            <button
+              className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+              color="#F3822B"
+              height="1.5rem"
+              onClick={null}
+              width="1.5rem"
+            />
+            <button
+              className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+              color="#FFBF00"
+              height="1.5rem"
+              onClick={null}
+              width="1.5rem"
+            />
           </section>
-        </div>
+        </section>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Drawing Tools"
           media=""
@@ -598,6 +590,61 @@ exports[` 1`] = `
         </div>
       </section>
     </section>
+    <section
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 iDqIwp"
+        id={null}
+        rows={null}
+      >
+        <div
+          className="CardWrapper__StyledCardWrapper-meln7c-0 cYTQus Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          href={null}
+          id="storyshots_101"
+          media=""
+          onClick={null}
+        >
+          <img
+            className="Image__ImageWrapper-sc-18abvff-0 bPzCqv"
+            onClick={[Function]}
+            src=""
+            width="75"
+          />
+        </div>
+        <div
+          className="CardWrapper__StyledCardWrapper-meln7c-0 cYTQus Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          href={null}
+          id="storyshots_102"
+          media=""
+          onClick={null}
+        >
+          <img
+            className="Image__ImageWrapper-sc-18abvff-0 bPzCqv"
+            onClick={[Function]}
+            src=""
+            width="75"
+          />
+        </div>
+        <div
+          className="CardWrapper__StyledCardWrapper-meln7c-0 cYTQus Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          href={null}
+          id="storyshots_103"
+          media=""
+          onClick={null}
+        >
+          <img
+            className="Image__ImageWrapper-sc-18abvff-0 bPzCqv"
+            onClick={[Function]}
+            src=""
+            width="75"
+          />
+        </div>
+      </section>
+    </section>
   </section>
   <div
     style={
@@ -651,20 +698,20 @@ exports[` 2`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_99"
+            id="menu-popper-storyshots_104"
           >
             <button
               className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_99"
-              name="menu-icon-storyshots_99"
+              id="menu-icon-storyshots_104"
+              name="menu-icon-storyshots_104"
               onClick={[Function]}
               tabIndex="1"
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                 id={null}
                 rows={null}
               >
@@ -702,83 +749,25 @@ exports[` 2`] = `
         className="Expander__HeaderWrapper-sc-147204-0 insQpf"
         id={null}
         onClick={[Function]}
-      >
-        <div
-          className="Bar__BarLayout-icfo76-2 izXrkl"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-icfo76-1 fNcQEg"
-          >
-            <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
-              disabled={false}
-            >
-              <input
-                checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
-                id="checkbox-id"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                type="checkbox"
-              />
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor="checkbox-id"
-                letterSpacing=".5px"
-              >
-                Layer One
-              </label>
-            </div>
-          </div>
-          <div
-            className="Bar__Slot-icfo76-1 cxljst"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-180 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="angle-up"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 320 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      />
       <div
         className="Expander__ChildrenWrapper-sc-147204-1 ZMMBw"
         open={true}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_100"
+          id="storyshots_105"
           media=""
           onClick={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_101"
+            id="storyshots_106"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_101-table"
+              id="storyshots_106-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
@@ -1098,83 +1087,25 @@ exports[` 2`] = `
         className="Expander__HeaderWrapper-sc-147204-0 insQpf"
         id={null}
         onClick={[Function]}
-      >
-        <div
-          className="Bar__BarLayout-icfo76-2 izXrkl"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-icfo76-1 fNcQEg"
-          >
-            <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
-              disabled={false}
-            >
-              <input
-                checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
-                id="checkbox-id"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                type="checkbox"
-              />
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor="checkbox-id"
-                letterSpacing=".5px"
-              >
-                Layer Two
-              </label>
-            </div>
-          </div>
-          <div
-            className="Bar__Slot-icfo76-1 cxljst"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="angle-up"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 320 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      />
       <div
         className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
         open={false}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_102"
+          id="storyshots_107"
           media=""
           onClick={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_103"
+            id="storyshots_108"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_103-table"
+              id="storyshots_108-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
@@ -1494,83 +1425,25 @@ exports[` 2`] = `
         className="Expander__HeaderWrapper-sc-147204-0 insQpf"
         id={null}
         onClick={[Function]}
-      >
-        <div
-          className="Bar__BarLayout-icfo76-2 izXrkl"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-icfo76-1 fNcQEg"
-          >
-            <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
-              disabled={false}
-            >
-              <input
-                checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
-                id="checkbox-id"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                type="checkbox"
-              />
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor="checkbox-id"
-                letterSpacing=".5px"
-              >
-                Layer Three
-              </label>
-            </div>
-          </div>
-          <div
-            className="Bar__Slot-icfo76-1 cxljst"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="angle-up"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 320 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      />
       <div
         className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
         open={false}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_104"
+          id="storyshots_109"
           media=""
           onClick={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_105"
+            id="storyshots_110"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_105-table"
+              id="storyshots_110-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
@@ -1890,83 +1763,25 @@ exports[` 2`] = `
         className="Expander__HeaderWrapper-sc-147204-0 insQpf"
         id={null}
         onClick={[Function]}
-      >
-        <div
-          className="Bar__BarLayout-icfo76-2 izXrkl"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-icfo76-1 fNcQEg"
-          >
-            <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
-              disabled={false}
-            >
-              <input
-                checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
-                id="checkbox-id"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                type="checkbox"
-              />
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor="checkbox-id"
-                letterSpacing=".5px"
-              >
-                Layer Four
-              </label>
-            </div>
-          </div>
-          <div
-            className="Bar__Slot-icfo76-1 cxljst"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="angle-up"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 320 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      />
       <div
         className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
         open={false}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_106"
+          id="storyshots_111"
           media=""
           onClick={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_107"
+            id="storyshots_112"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_107-table"
+              id="storyshots_112-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
@@ -2369,7 +2184,7 @@ exports[` 3`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                         id={null}
                         rows={null}
                       >
@@ -2414,7 +2229,7 @@ exports[` 3`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kKYaBx Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kKYaBx Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
@@ -2455,7 +2270,7 @@ exports[` 3`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kKYaBx Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kKYaBx Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
@@ -2497,7 +2312,7 @@ exports[` 3`] = `
                 rows={null}
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                   href={null}
                   id="1"
                   media=""
@@ -2575,7 +2390,7 @@ exports[` 3`] = `
                   </section>
                 </div>
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 eDlRvZ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                   href={null}
                   id="2"
                   media=""
@@ -2666,7 +2481,7 @@ exports[` 3`] = `
               id="Menu 2_header"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Menu_2_Header"
                 media=""
@@ -2713,7 +2528,7 @@ exports[` 3`] = `
             >
               <form
                 action={null}
-                className="Form__FormWrapper-v2wrel-0 fMolQ"
+                className="Form__FormWrapper-v2wrel-1 jozDvZ"
                 id={null}
                 method={null}
                 onSubmit={null}
@@ -2724,7 +2539,7 @@ exports[` 3`] = `
                   rows={null}
                 >
                   <section
-                    className="Form__Section-v2wrel-3 wHYQL"
+                    className="Form__Section-v2wrel-0 XxWIM"
                   >
                     <section
                       className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
@@ -2757,6 +2572,7 @@ exports[` 3`] = `
                           onChange={null}
                           onFocus={null}
                           onKeyPress={null}
+                          onKeyUp={null}
                           pattern={null}
                           placeholder={null}
                           rows=""
@@ -2799,6 +2615,7 @@ exports[` 3`] = `
                           onChange={null}
                           onFocus={null}
                           onKeyPress={null}
+                          onKeyUp={null}
                           pattern={null}
                           placeholder={null}
                           rows=""
@@ -2841,6 +2658,7 @@ exports[` 3`] = `
                           onChange={null}
                           onFocus={null}
                           onKeyPress={null}
+                          onKeyUp={null}
                           pattern={null}
                           placeholder={null}
                           rows=""
@@ -2860,7 +2678,7 @@ exports[` 3`] = `
                     </section>
                   </section>
                   <section
-                    className="Form__Section-v2wrel-3 wHYQL"
+                    className="Form__Section-v2wrel-0 XxWIM"
                   >
                     <section
                       className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
@@ -2896,7 +2714,7 @@ exports[` 3`] = `
                           rows={null}
                         >
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                             disabled={false}
                           >
                             <input
@@ -2919,7 +2737,7 @@ exports[` 3`] = `
                             </label>
                           </div>
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 loOzdz"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 cQLJfv"
                             disabled={true}
                           >
                             <input
@@ -2943,7 +2761,7 @@ exports[` 3`] = `
                             </label>
                           </div>
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                             disabled={false}
                           >
                             <input
@@ -2966,7 +2784,7 @@ exports[` 3`] = `
                             </label>
                           </div>
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                             disabled={false}
                           >
                             <input
@@ -3001,7 +2819,7 @@ exports[` 3`] = `
                           rows={null}
                         >
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                             disabled={false}
                           >
                             <input
@@ -3024,7 +2842,7 @@ exports[` 3`] = `
                             </label>
                           </div>
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                             disabled={false}
                           >
                             <input
@@ -3179,7 +2997,7 @@ exports[` 3`] = `
                     </section>
                   </section>
                   <section
-                    className="Form__Section-v2wrel-3 wHYQL"
+                    className="Form__Section-v2wrel-0 XxWIM"
                   >
                     <section
                       className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
@@ -3215,7 +3033,7 @@ exports[` 3`] = `
                           rows={null}
                         >
                           <div
-                            className="Radio__RadioContainer-sc-3ox61a-1 lQsXo"
+                            className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                             disabled={false}
                           >
                             <input
@@ -3240,7 +3058,7 @@ exports[` 3`] = `
                             </label>
                           </div>
                           <div
-                            className="Radio__RadioContainer-sc-3ox61a-1 fXxza-D"
+                            className="Radio__RadioContainer-sc-3ox61a-1 cCsbQj"
                             disabled={true}
                           >
                             <input
@@ -3266,7 +3084,7 @@ exports[` 3`] = `
                             </label>
                           </div>
                           <div
-                            className="Radio__RadioContainer-sc-3ox61a-1 lQsXo"
+                            className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                             disabled={false}
                           >
                             <input
@@ -3291,7 +3109,7 @@ exports[` 3`] = `
                             </label>
                           </div>
                           <div
-                            className="Radio__RadioContainer-sc-3ox61a-1 lQsXo"
+                            className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                             disabled={false}
                           >
                             <input
@@ -3328,7 +3146,7 @@ exports[` 3`] = `
                           rows={null}
                         >
                           <div
-                            className="Radio__RadioContainer-sc-3ox61a-1 lQsXo"
+                            className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                             disabled={false}
                           >
                             <input
@@ -3353,7 +3171,7 @@ exports[` 3`] = `
                             </label>
                           </div>
                           <div
-                            className="Radio__RadioContainer-sc-3ox61a-1 lQsXo"
+                            className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                             disabled={false}
                           >
                             <input
@@ -3389,7 +3207,7 @@ exports[` 3`] = `
               id="Menu 2_footer"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Menu_2_Footer"
                 media=""
@@ -3416,7 +3234,7 @@ exports[` 3`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                         id={null}
                         rows={null}
                       >
@@ -3442,7 +3260,7 @@ exports[` 3`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                         id={null}
                         rows={null}
                       >
@@ -3478,15 +3296,15 @@ exports[` 4`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iWuTVd Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_108"
+    id="storyshots_113"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_108-Header"
+      id="storyshots_113-Header"
       onClick={null}
     >
       <div
@@ -3503,27 +3321,25 @@ exports[` 4`] = `
             fontWeight="400"
             letterSpacing="0px"
           >
-            Create Project
+            Create Job
           </h4>
         </div>
       </div>
     </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF DialogBox__ChildSection-iv0dnf-2 bgZSbS"
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-1 jozDvZ"
       id={null}
-      onClick={null}
+      method={null}
+      onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
-        <form
-          action={null}
-          className="Form__FormWrapper-v2wrel-0 fMolQ"
-          id={null}
-          method={null}
-          onSubmit={null}
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
         >
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
@@ -3531,415 +3347,561 @@ exports[` 4`] = `
             rows={null}
           >
             <section
-              className="Form__Section-v2wrel-3 wHYQL"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_114_container"
+              rows={null}
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
-                id={null}
-                rows={null}
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_109_container"
-                  rows={null}
-                >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    Project Number
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_109"
-                    list={null}
-                    name="storyshots_109"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
-                    pattern={null}
-                    placeholder={null}
-                    rows=""
-                    type="text"
-                    value="19-12341234"
-                  />
-                </section>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_110_container"
-                  rows={null}
-                >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    Project Name
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_110"
-                    list={null}
-                    name="storyshots_110"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
-                    pattern={null}
-                    placeholder="New LightBox Project"
-                    rows=""
-                    type="text"
-                  />
-                </section>
-              </section>
-            </section>
-            <hr
-              className="Divider__Line-sc-1k80dpa-0 fLuYGp"
-            />
-            <section
-              className="Form__Section-v2wrel-3 wHYQL"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
-                id={null}
-                rows={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Fill out form or drag and drop pin on map to update property details.
-                </p>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_111_container"
-                  rows={null}
-                >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    Address
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_111"
-                    list={null}
-                    name="storyshots_111"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
-                    pattern={null}
-                    placeholder={null}
-                    rows=""
-                    type="text"
-                  />
-                </section>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_112_container"
-                  rows={null}
-                >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    City
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_112"
-                    list={null}
-                    name="storyshots_112"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
-                    pattern={null}
-                    placeholder={null}
-                    rows=""
-                    type="text"
-                  />
-                </section>
-              </section>
+                Job Number
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_114"
+                list={null}
+                name="storyshots_114"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+                value="19-12341234"
+              />
             </section>
             <section
-              className="Form__Section-v2wrel-3 wHYQL"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_115_container"
+              rows={null}
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
-                id={null}
-                rows={null}
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
-                  id={null}
-                  rows={null}
+                Job Name
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_115"
+                list={null}
+                name="storyshots_115"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder="New LightBox Job"
+                rows=""
+                type="text"
+              />
+            </section>
+          </section>
+        </section>
+        <hr
+          className="Divider__Line-sc-1k80dpa-0 hYpRQN"
+        />
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
+          >
+            Property Info
+          </h6>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
+            id={null}
+            rows={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_116_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Address
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_116"
+                list={null}
+                name="storyshots_116"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_117_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                City
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_117"
+                list={null}
+                name="storyshots_117"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                fontSize="0.75em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.4px"
+              >
+                State
+              </label>
+              <div
+                className=" css-3p29ga-container"
+                id={null}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-14ku2k9-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
-                    fontSize="0.75em"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing="0.4px"
-                  >
-                    State
-                  </label>
                   <div
-                    className=" css-3p29ga-container"
-                    id={null}
-                    onKeyDown={[Function]}
+                    className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-14ku2k9-control"
-                      onMouseDown={[Function]}
-                      onTouchEnd={[Function]}
+                      className=" css-1m79im8-placeholder"
+                    >
+                      
+                    </div>
+                    <div
+                      className="css-b8ldur-Input"
                     >
                       <div
-                        className=" css-g1d714-ValueContainer"
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
                       >
-                        <div
-                          className=" css-1m79im8-placeholder"
-                        >
-                          
-                        </div>
-                        <div
-                          className="css-b8ldur-Input"
-                        >
-                          <div
-                            className=""
-                            style={
-                              Object {
-                                "display": "inline-block",
-                              }
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-16-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
                             }
-                          >
-                            <input
-                              aria-autocomplete="list"
-                              autoCapitalize="none"
-                              autoComplete="off"
-                              autoCorrect="off"
-                              disabled={false}
-                              id="react-select-16-input"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              onFocus={[Function]}
-                              spellCheck="false"
-                              style={
-                                Object {
-                                  "background": 0,
-                                  "border": 0,
-                                  "boxSizing": "content-box",
-                                  "color": "inherit",
-                                  "fontSize": "inherit",
-                                  "label": "input",
-                                  "opacity": 1,
-                                  "outline": 0,
-                                  "padding": 0,
-                                  "width": "1px",
-                                }
-                              }
-                              tabIndex="0"
-                              type="text"
-                              value=""
-                            />
-                            <div
-                              style={
-                                Object {
-                                  "height": 0,
-                                  "left": 0,
-                                  "overflow": "scroll",
-                                  "position": "absolute",
-                                  "top": 0,
-                                  "visibility": "hidden",
-                                  "whiteSpace": "pre",
-                                }
-                              }
-                            >
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className=" css-1hb7zxy-IndicatorsContainer"
-                      >
-                        <span
-                          className=" css-rci3ok-indicatorSeparator"
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
                         />
                         <div
-                          aria-hidden="true"
-                          className=" css-1jw44s5-indicatorContainer"
-                          onMouseDown={[Function]}
-                          onTouchEnd={[Function]}
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
                         >
-                          <svg
-                            aria-hidden="true"
-                            className="css-6q0nyr-Svg"
-                            focusable="false"
-                            height={20}
-                            viewBox="0 0 20 20"
-                            width={20}
-                          >
-                            <path
-                              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                            />
-                          </svg>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
-                </section>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_113_container"
-                  rows={null}
-                >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
                   >
-                    Zip
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_113"
-                    list={null}
-                    name="storyshots_113"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
-                    pattern={null}
-                    placeholder={null}
-                    rows=""
-                    type="text"
-                  />
-                </section>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_114_container"
-                  rows={null}
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_118_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Zip
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_118"
+                list={null}
+                name="storyshots_118"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                fontSize="0.75em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.4px"
+              >
+                Property Type
+              </label>
+              <div
+                className=" css-3p29ga-container"
+                id={null}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-14ku2k9-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <div
+                    className=" css-g1d714-ValueContainer"
                   >
-                    Property Type
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_114"
-                    list={null}
-                    name="storyshots_114"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
-                    pattern={null}
-                    placeholder={null}
-                    rows=""
-                    type="text"
-                  />
-                </section>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_115_container"
-                  rows={null}
+                    <div
+                      className=" css-1m79im8-placeholder"
+                    />
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-17-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                fontSize="0.75em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.4px"
+              >
+                Property Sub-Type
+              </label>
+              <div
+                className=" css-3p29ga-container"
+                id={null}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-14ku2k9-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <div
+                    className=" css-g1d714-ValueContainer"
                   >
-                    Property Sub-Type
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_115"
-                    list={null}
-                    name="storyshots_115"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
-                    pattern={null}
-                    placeholder={null}
-                    rows=""
-                    type="text"
-                  />
-                </section>
-              </section>
+                    <div
+                      className=" css-1m79im8-placeholder"
+                    />
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-18-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
           </section>
-        </form>
-        <div
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        />
+        </section>
       </section>
-    </section>
+    </form>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 Skgmv"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id={null}
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Cangel"
@@ -3949,7 +3911,7 @@ exports[` 4`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
@@ -3965,7 +3927,7 @@ exports[` 4`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Create"
@@ -3975,7 +3937,7 @@ exports[` 4`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
@@ -4005,240 +3967,234 @@ exports[` 5`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iWuTVd Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_116"
+    id="storyshots_119"
     media=""
     onClick={null}
   >
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF DialogBox__ChildSection-iv0dnf-2 bgZSbS"
+    <div
+      className="Bar__BarLayout-icfo76-2 jEWtiX"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 jEWtiX"
-        id={null}
-        onClick={null}
+        className="Bar__Slot-icfo76-1 dLaZFL"
       >
-        <div
-          className="Bar__Slot-icfo76-1 dLaZFL"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+          id={null}
+          rows={null}
+        >
+          <h3
+            className="Typography__TitleText-sc-19auepv-2 gzJfws"
+            fontSize="1.5rem"
+            fontWeight="400"
+            letterSpacing="0.25px"
+          >
+            Job Successfully Created!
+          </h3>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            You can choose to begin work on your job or create another job
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      className="Bar__BarLayout-icfo76-2 fliBOc"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 dLaZFL"
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 gcEfQr"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
-            <h3
-              className="Typography__TitleText-sc-19auepv-2 gzJfws"
-              fontSize="1.5rem"
-              fontWeight="400"
-              letterSpacing="0.25px"
-            >
-              Project Successfully Created!
-            </h3>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
               fontSize="1rem"
               fontWeight={400}
-              id={null}
-              letterSpacing="0.5px"
+              htmlFor={null}
+              letterSpacing=".5px"
             >
-              You can choose to begin work on your project or create another project
-            </p>
+              View Job
+            </label>
           </section>
-        </div>
+        </button>
       </div>
+    </div>
+    <hr
+      className="Divider__Line-sc-1k80dpa-0 hYpRQN"
+    />
+    <div
+      className="Bar__BarLayout-icfo76-2 cnmtbQ"
+      id={null}
+      onClick={null}
+    >
       <div
-        className="Bar__BarLayout-icfo76-2 fliBOc"
-        id={null}
-        onClick={null}
+        className="Bar__Slot-icfo76-1 fNcQEg"
       >
-        <div
-          className="Bar__Slot-icfo76-1 dLaZFL"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+          id={null}
+          rows={null}
         >
-          <button
-            className="Button__StyledButton-sc-1v7sls2-0 gcEfQr"
-            disabled={false}
-            htmlFor={null}
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 enVeME"
+            fontSize="1.1rem"
+            fontWeight={400}
             id={null}
-            name={null}
-            onClick={null}
-            tabIndex="1"
-            type="button"
+            letterSpacing="0.8px"
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-              id={null}
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-                fontSize="1rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                View Project
-              </label>
-            </section>
-          </button>
-        </div>
+            Add the following data and services to your job:
+          </p>
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
+          >
+            Add Research
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Complete research for your job. Define and discover data for your property including Assessment Data, Demographics, and Zoning.
+          </p>
+        </section>
       </div>
-      <hr
-        className="Divider__Line-sc-1k80dpa-0 fLuYGp"
-      />
       <div
-        className="Bar__BarLayout-icfo76-2 cnmtbQ"
-        id={null}
-        onClick={null}
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
-        <div
-          className="Bar__Slot-icfo76-1 fNcQEg"
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 enVeME"
-              fontSize="1.1rem"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.8px"
-            >
-              Add the following data and services to your project:
-            </p>
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-              fontSize="1.2rem"
-              fontWeight="400"
-              letterSpacing="1px"
-            >
-              Add Research
-            </h6>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
               fontSize="1rem"
               fontWeight={400}
-              id={null}
-              letterSpacing="0.5px"
+              htmlFor={null}
+              letterSpacing=".5px"
             >
-              Complete research for your project. Define and discover data for your property including Assessment Data, Demographics, and Zoning.
-            </p>
+              Start Research
+            </label>
           </section>
-        </div>
-        <div
-          className="Bar__Slot-icfo76-1 kZQbjh"
+        </button>
+      </div>
+    </div>
+    <div
+      className="Bar__BarLayout-icfo76-2 cnmtbQ"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+          id={null}
+          rows={null}
         >
-          <button
-            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
-            disabled={false}
-            htmlFor={null}
-            id={null}
-            name={null}
-            onClick={null}
-            tabIndex="1"
-            type="button"
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-              id={null}
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-                fontSize="1rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Start Research
-              </label>
-            </section>
-          </button>
-        </div>
+            Add Report Writing
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            You can use Project360 or Narrative1 to author your reports. You can select your scope of work and templates here with the Report Writing tools.
+          </p>
+        </section>
       </div>
       <div
-        className="Bar__BarLayout-icfo76-2 cnmtbQ"
-        id={null}
-        onClick={null}
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
-        <div
-          className="Bar__Slot-icfo76-1 fNcQEg"
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-              fontSize="1.2rem"
-              fontWeight="400"
-              letterSpacing="1px"
-            >
-              Add Report Writing
-            </h6>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
               fontSize="1rem"
               fontWeight={400}
-              id={null}
-              letterSpacing="0.5px"
+              htmlFor={null}
+              letterSpacing=".5px"
             >
-              You can use Project360 or Narrative1 to author your reports. You can select your scope of work and templates here with the Report Writing tools.
-            </p>
+              Start Report
+            </label>
           </section>
-        </div>
-        <div
-          className="Bar__Slot-icfo76-1 kZQbjh"
-        >
-          <button
-            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
-            disabled={false}
-            htmlFor={null}
-            id={null}
-            name={null}
-            onClick={null}
-            tabIndex="1"
-            type="button"
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-              id={null}
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-                fontSize="1rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Start Report
-              </label>
-            </section>
-          </button>
-        </div>
+        </button>
       </div>
-      <hr
-        className="Divider__Line-sc-1k80dpa-0 fLuYGp"
-      />
-    </section>
+    </div>
+    <hr
+      className="Divider__Line-sc-1k80dpa-0 hYpRQN"
+    />
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 Skgmv"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id={null}
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Done"
@@ -4248,7 +4204,7 @@ exports[` 5`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
@@ -4264,7 +4220,7 @@ exports[` 5`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Create"
@@ -4274,7 +4230,7 @@ exports[` 5`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
@@ -4285,7 +4241,7 @@ exports[` 5`] = `
               htmlFor={null}
               letterSpacing=".5px"
             >
-              Create Project
+              Create Another
             </label>
           </section>
         </button>
@@ -4304,15 +4260,15 @@ exports[` 6`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iWuTVd Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_117"
+    id="storyshots_120"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_117-Header"
+      id="storyshots_120-Header"
       onClick={null}
     >
       <div
@@ -4335,105 +4291,103 @@ exports[` 6`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF DialogBox__ChildSection-iv0dnf-2 bgZSbS"
+      className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+      disabled={false}
       id={null}
-      onClick={null}
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
+        disabled={false}
+        htmlFor={null}
+        id="RFPs"
+        name="RFPs"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            RFP Details
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        disabled={false}
+        htmlFor={null}
+        id="Bid"
+        name="Bid"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Bid Details
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        disabled={false}
+        htmlFor={null}
+        id="Complete"
+        name="Complete"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Completion
+          </label>
+        </section>
+      </button>
+    </section>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-1 jozDvZ"
+      id={null}
+      method={null}
+      onSubmit={null}
     >
       <section
-        className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
-        disabled={false}
-        id={null}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
-          disabled={false}
-          htmlFor={null}
-          id="RFPs"
-          name="RFPs"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              RFP Details
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
-          disabled={false}
-          htmlFor={null}
-          id="Bid"
-          name="Bid"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Bid Details
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
-          disabled={false}
-          htmlFor={null}
-          id="Complete"
-          name="Complete"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Completion
-            </label>
-          </section>
-        </button>
-      </section>
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
-        <form
-          action={null}
-          className="Form__FormWrapper-v2wrel-0 fMolQ"
-          id={null}
-          method={null}
-          onSubmit={null}
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
         >
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
@@ -4441,8 +4395,769 @@ exports[` 6`] = `
             rows={null}
           >
             <section
-              className="Form__Section-v2wrel-3 wHYQL"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_121_container"
+              rows={null}
             >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                RFP Number
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_121"
+                list={null}
+                name="storyshots_121"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+                value="19-12341234"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_122_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                RFP Name
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_122"
+                list={null}
+                name="storyshots_122"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder="New LightBox Project"
+                rows=""
+                type="text"
+              />
+            </section>
+          </section>
+        </section>
+        <hr
+          className="Divider__Line-sc-1k80dpa-0 hYpRQN"
+        />
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
+          >
+            Property Info
+          </h6>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
+            id={null}
+            rows={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_123_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Address
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_123"
+                list={null}
+                name="storyshots_123"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_124_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                City
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_124"
+                list={null}
+                name="storyshots_124"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                fontSize="0.75em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.4px"
+              >
+                State
+              </label>
+              <div
+                className=" css-3p29ga-container"
+                id={null}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-14ku2k9-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <div
+                    className=" css-g1d714-ValueContainer"
+                  >
+                    <div
+                      className=" css-1m79im8-placeholder"
+                    >
+                      
+                    </div>
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-19-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_125_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Zip
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_125"
+                list={null}
+                name="storyshots_125"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                fontSize="0.75em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.4px"
+              >
+                Property Type
+              </label>
+              <div
+                className=" css-3p29ga-container"
+                id={null}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-14ku2k9-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <div
+                    className=" css-g1d714-ValueContainer"
+                  >
+                    <div
+                      className=" css-1m79im8-placeholder"
+                    />
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-20-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                fontSize="0.75em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.4px"
+              >
+                Property Sub-Type
+              </label>
+              <div
+                className=" css-3p29ga-container"
+                id={null}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-14ku2k9-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <div
+                    className=" css-g1d714-ValueContainer"
+                  >
+                    <div
+                      className=" css-1m79im8-placeholder"
+                    />
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-21-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </form>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          disabled={false}
+          htmlFor={null}
+          id="Cancel"
+          name="Cancel"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Cancel
+            </label>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          disabled={false}
+          htmlFor={null}
+          id="Next"
+          name="Next"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Next
+            </label>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 7`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    href={null}
+    id="storyshots_126"
+    media=""
+    onClick={null}
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_126-Header"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 RjiBe"
+        >
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
+          >
+            Create RFP
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+      disabled={false}
+      id={null}
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        disabled={false}
+        htmlFor={null}
+        id="RFPs"
+        name="RFPs"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            RFP Details
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
+        disabled={false}
+        htmlFor={null}
+        id="Bid"
+        name="Bid"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Bid Details
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        disabled={false}
+        htmlFor={null}
+        id="Complete"
+        name="Complete"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Completion
+          </label>
+        </section>
+      </button>
+    </section>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-1 jozDvZ"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+          id={null}
+          rows={null}
+        >
+          <div>
+            <section
+              className="Form__Section-v2wrel-0 XxWIM"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+                fontSize="1.2rem"
+                fontWeight="400"
+                letterSpacing="1px"
+              >
+                Client Details
+              </h6>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
                 id={null}
@@ -4450,7 +5165,7 @@ exports[` 6`] = `
               >
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_118_container"
+                  id="storyshots_127_container"
                   rows={null}
                 >
                   <label
@@ -4460,30 +5175,31 @@ exports[` 6`] = `
                     htmlFor={null}
                     letterSpacing=".5px"
                   >
-                    Project Number
+                    Client Name
                   </label>
                   <input
                     autoComplete="off"
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_118"
+                    id="storyshots_127"
                     list={null}
-                    name="storyshots_118"
+                    name="storyshots_127"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
                     onKeyPress={null}
+                    onKeyUp={null}
                     pattern={null}
                     placeholder={null}
                     rows=""
                     type="text"
-                    value="19-12341234"
+                    value=""
                   />
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_119_container"
+                  id="storyshots_128_container"
                   rows={null}
                 >
                   <label
@@ -4493,51 +5209,30 @@ exports[` 6`] = `
                     htmlFor={null}
                     letterSpacing=".5px"
                   >
-                    Project Name
+                    Client Company
                   </label>
                   <input
                     autoComplete="off"
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_119"
+                    id="storyshots_128"
                     list={null}
-                    name="storyshots_119"
+                    name="storyshots_128"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
                     onKeyPress={null}
+                    onKeyUp={null}
                     pattern={null}
-                    placeholder="New LightBox Project"
+                    placeholder=""
                     rows=""
                     type="text"
                   />
                 </section>
-              </section>
-            </section>
-            <hr
-              className="Divider__Line-sc-1k80dpa-0 fLuYGp"
-            />
-            <section
-              className="Form__Section-v2wrel-3 wHYQL"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
-                id={null}
-                rows={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Fill out form or drag and drop pin on map to update property details.
-                </p>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_120_container"
+                  id="storyshots_129_container"
                   rows={null}
                 >
                   <label
@@ -4554,13 +5249,14 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_120"
+                    id="storyshots_129"
                     list={null}
-                    name="storyshots_120"
+                    name="storyshots_129"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
                     onKeyPress={null}
+                    onKeyUp={null}
                     pattern={null}
                     placeholder={null}
                     rows=""
@@ -4569,7 +5265,7 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_121_container"
+                  id="storyshots_130_container"
                   rows={null}
                 >
                   <label
@@ -4586,13 +5282,14 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_121"
+                    id="storyshots_130"
                     list={null}
-                    name="storyshots_121"
+                    name="storyshots_130"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
                     onKeyPress={null}
+                    onKeyUp={null}
                     pattern={null}
                     placeholder={null}
                     rows=""
@@ -4602,7 +5299,7 @@ exports[` 6`] = `
               </section>
             </section>
             <section
-              className="Form__Section-v2wrel-3 wHYQL"
+              className="Form__Section-v2wrel-0 XxWIM"
             >
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
@@ -4658,7 +5355,7 @@ exports[` 6`] = `
                               autoComplete="off"
                               autoCorrect="off"
                               disabled={false}
-                              id="react-select-17-input"
+                              id="react-select-22-input"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onFocus={[Function]}
@@ -4730,7 +5427,7 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_122_container"
+                  id="storyshots_131_container"
                   rows={null}
                 >
                   <label
@@ -4747,77 +5444,14 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_122"
+                    id="storyshots_131"
                     list={null}
-                    name="storyshots_122"
+                    name="storyshots_131"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
                     onKeyPress={null}
-                    pattern={null}
-                    placeholder={null}
-                    rows=""
-                    type="text"
-                  />
-                </section>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_123_container"
-                  rows={null}
-                >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    Property Type
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_123"
-                    list={null}
-                    name="storyshots_123"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
-                    pattern={null}
-                    placeholder={null}
-                    rows=""
-                    type="text"
-                  />
-                </section>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_124_container"
-                  rows={null}
-                >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    Property Sub-Type
-                  </label>
-                  <input
-                    autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                    cols=""
-                    disabled={false}
-                    id="storyshots_124"
-                    list={null}
-                    name="storyshots_124"
-                    onBlur={null}
-                    onChange={null}
-                    onFocus={null}
-                    onKeyPress={null}
+                    onKeyUp={null}
                     pattern={null}
                     placeholder={null}
                     rows=""
@@ -4826,860 +5460,330 @@ exports[` 6`] = `
                 </section>
               </section>
             </section>
-          </section>
-        </form>
-        <div
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        />
-      </section>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 Skgmv"
-      id={null}
-      onClick={null}
-    >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
-        id={null}
-        rows={null}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
-          disabled={false}
-          htmlFor={null}
-          id="Cancel"
-          name="Cancel"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+          </div>
+          <div>
+            <section
+              className="Form__Section-v2wrel-0 XxWIM"
             >
-              Cancel
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-4 RChLi"
-          disabled={false}
-          htmlFor={null}
-          id="Next"
-          name="Next"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Next
-            </label>
-          </section>
-        </button>
-      </section>
-    </section>
-  </div>
-</div>
-`;
-
-exports[` 7`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iWuTVd Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
-    href={null}
-    id="storyshots_125"
-    media=""
-    onClick={null}
-  >
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_125-Header"
-      onClick={null}
-    >
-      <div
-        className="Bar__BarLayout-icfo76-2 eUVQsH"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 RjiBe"
-        >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
-          >
-            Create RFP
-          </h4>
-        </div>
-      </div>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF DialogBox__ChildSection-iv0dnf-2 bgZSbS"
-      id={null}
-      onClick={null}
-    >
-      <section
-        className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
-        disabled={false}
-        id={null}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
-          disabled={false}
-          htmlFor={null}
-          id="RFPs"
-          name="RFPs"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              RFP Details
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
-          disabled={false}
-          htmlFor={null}
-          id="Bid"
-          name="Bid"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Bid Details
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
-          disabled={false}
-          htmlFor={null}
-          id="Complete"
-          name="Complete"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Completion
-            </label>
-          </section>
-        </button>
-      </section>
-      <form
-        action={null}
-        className="Form__FormWrapper-v2wrel-0 fMolQ"
-        id={null}
-        method={null}
-        onSubmit={null}
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
-          id={null}
-          rows={null}
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
-            id={null}
-            rows={null}
-          >
-            <div>
-              <section
-                className="Form__Section-v2wrel-3 wHYQL"
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+                fontSize="1.2rem"
+                fontWeight="400"
+                letterSpacing="1px"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-2 dnSjhm"
-                  fontSize="1.2rem"
-                  fontWeight="400"
-                  letterSpacing="1px"
-                >
-                  Client Details
-                </h6>
+                Bid Details
+              </h6>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                id={null}
+                rows={null}
+              >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
-                  id={null}
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                  id="storyshots_132_container"
                   rows={null}
                 >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_126_container"
-                    rows={null}
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Client Name
-                    </label>
-                    <input
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_126"
-                      list={null}
-                      name="storyshots_126"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder={null}
-                      rows=""
-                      type="text"
-                      value=""
-                    />
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_127_container"
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Client Company
-                    </label>
-                    <input
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_127"
-                      list={null}
-                      name="storyshots_127"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder=""
-                      rows=""
-                      type="text"
-                    />
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_128_container"
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Address
-                    </label>
-                    <input
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_128"
-                      list={null}
-                      name="storyshots_128"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder={null}
-                      rows=""
-                      type="text"
-                    />
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_129_container"
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      City
-                    </label>
-                    <input
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_129"
-                      list={null}
-                      name="storyshots_129"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder={null}
-                      rows=""
-                      type="text"
-                    />
-                  </section>
+                    Scope of Work
+                  </label>
+                  <input
+                    autoComplete="off"
+                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                    cols=""
+                    disabled={false}
+                    id="storyshots_132"
+                    list={null}
+                    name="storyshots_132"
+                    onBlur={null}
+                    onChange={null}
+                    onFocus={null}
+                    onKeyPress={null}
+                    onKeyUp={null}
+                    pattern={null}
+                    placeholder={null}
+                    rows=""
+                    type="text"
+                    value=""
+                  />
                 </section>
-              </section>
-              <section
-                className="Form__Section-v2wrel-3 wHYQL"
-              >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
                   id={null}
                   rows={null}
                 >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                    fontSize="0.75em"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="0.4px"
+                  >
+                    Bid Amount
+                  </label>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 clwYuU"
                     id={null}
                     rows={null}
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
-                      fontSize="0.75em"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing="0.4px"
-                    >
-                      State
-                    </label>
-                    <div
-                      className=" css-3p29ga-container"
-                      id={null}
-                      onKeyDown={[Function]}
-                    >
-                      <div
-                        className=" css-14ku2k9-control"
-                        onMouseDown={[Function]}
-                        onTouchEnd={[Function]}
-                      >
-                        <div
-                          className=" css-g1d714-ValueContainer"
-                        >
-                          <div
-                            className=" css-1m79im8-placeholder"
-                          >
-                            
-                          </div>
-                          <div
-                            className="css-b8ldur-Input"
-                          >
-                            <div
-                              className=""
-                              style={
-                                Object {
-                                  "display": "inline-block",
-                                }
-                              }
-                            >
-                              <input
-                                aria-autocomplete="list"
-                                autoCapitalize="none"
-                                autoComplete="off"
-                                autoCorrect="off"
-                                disabled={false}
-                                id="react-select-18-input"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onFocus={[Function]}
-                                spellCheck="false"
-                                style={
-                                  Object {
-                                    "background": 0,
-                                    "border": 0,
-                                    "boxSizing": "content-box",
-                                    "color": "inherit",
-                                    "fontSize": "inherit",
-                                    "label": "input",
-                                    "opacity": 1,
-                                    "outline": 0,
-                                    "padding": 0,
-                                    "width": "1px",
-                                  }
-                                }
-                                tabIndex="0"
-                                type="text"
-                                value=""
-                              />
-                              <div
-                                style={
-                                  Object {
-                                    "height": 0,
-                                    "left": 0,
-                                    "overflow": "scroll",
-                                    "position": "absolute",
-                                    "top": 0,
-                                    "visibility": "hidden",
-                                    "whiteSpace": "pre",
-                                  }
-                                }
-                              >
-                                
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className=" css-1hb7zxy-IndicatorsContainer"
-                        >
-                          <span
-                            className=" css-rci3ok-indicatorSeparator"
-                          />
-                          <div
-                            aria-hidden="true"
-                            className=" css-1jw44s5-indicatorContainer"
-                            onMouseDown={[Function]}
-                            onTouchEnd={[Function]}
-                          >
-                            <svg
-                              aria-hidden="true"
-                              className="css-6q0nyr-Svg"
-                              focusable="false"
-                              height={20}
-                              viewBox="0 0 20 20"
-                              width={20}
-                            >
-                              <path
-                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_130_container"
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Zip
-                    </label>
-                    <input
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_130"
-                      list={null}
-                      name="storyshots_130"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder={null}
-                      rows=""
-                      type="text"
-                    />
-                  </section>
-                </section>
-              </section>
-            </div>
-            <div>
-              <section
-                className="Form__Section-v2wrel-3 wHYQL"
-              >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-2 dnSjhm"
-                  fontSize="1.2rem"
-                  fontWeight="400"
-                  letterSpacing="1px"
-                >
-                  Bid Details
-                </h6>
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
-                  id={null}
-                  rows={null}
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_131_container"
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Scope of Work
-                    </label>
-                    <input
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_131"
-                      list={null}
-                      name="storyshots_131"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder={null}
-                      rows=""
-                      type="text"
-                      value=""
-                    />
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
-                    id={null}
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
-                      fontSize="0.75em"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing="0.4px"
-                    >
-                      Bid Amount
-                    </label>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 clwYuU"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                      id="ID 1_container"
+                      rows={null}
+                    >
+                      <input
+                        autoComplete="off"
+                        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                        cols=""
+                        disabled={false}
+                        id="ID 1"
+                        list={null}
+                        name="ID 1"
+                        onBlur={null}
+                        onChange={null}
+                        onFocus={null}
+                        onKeyPress={null}
+                        onKeyUp={null}
+                        pattern="[A-Za-z]{3}"
+                        placeholder="Price"
+                        rows=""
+                        type="text"
+                      />
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
                       id={null}
                       rows={null}
                     >
-                      <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                        id="ID 1_container"
-                        rows={null}
-                      >
-                        <input
-                          autoComplete="off"
-                          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                          cols=""
-                          disabled={false}
-                          id="ID 1"
-                          list={null}
-                          name="ID 1"
-                          onBlur={null}
-                          onChange={null}
-                          onFocus={null}
-                          onKeyPress={null}
-                          pattern="[A-Za-z]{3}"
-                          placeholder="Price"
-                          rows=""
-                          type="text"
-                        />
-                      </section>
-                      <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                      <div
+                        className=" css-3p29ga-container"
                         id={null}
-                        rows={null}
+                        onKeyDown={[Function]}
                       >
                         <div
-                          className=" css-3p29ga-container"
-                          id={null}
-                          onKeyDown={[Function]}
+                          className=" css-14ku2k9-control"
+                          onMouseDown={[Function]}
+                          onTouchEnd={[Function]}
                         >
                           <div
-                            className=" css-14ku2k9-control"
-                            onMouseDown={[Function]}
-                            onTouchEnd={[Function]}
+                            className=" css-g1d714-ValueContainer"
                           >
                             <div
-                              className=" css-g1d714-ValueContainer"
+                              className=" css-10150nb-singleValue"
+                            >
+                              USD
+                            </div>
+                            <div
+                              className="css-b8ldur-Input"
                             >
                               <div
-                                className=" css-10150nb-singleValue"
+                                className=""
+                                style={
+                                  Object {
+                                    "display": "inline-block",
+                                  }
+                                }
                               >
-                                USD
-                              </div>
-                              <div
-                                className="css-b8ldur-Input"
-                              >
-                                <div
-                                  className=""
+                                <input
+                                  aria-autocomplete="list"
+                                  autoCapitalize="none"
+                                  autoComplete="off"
+                                  autoCorrect="off"
+                                  disabled={false}
+                                  id="react-select-23-input"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onFocus={[Function]}
+                                  spellCheck="false"
                                   style={
                                     Object {
-                                      "display": "inline-block",
+                                      "background": 0,
+                                      "border": 0,
+                                      "boxSizing": "content-box",
+                                      "color": "inherit",
+                                      "fontSize": "inherit",
+                                      "label": "input",
+                                      "opacity": 1,
+                                      "outline": 0,
+                                      "padding": 0,
+                                      "width": "1px",
+                                    }
+                                  }
+                                  tabIndex="0"
+                                  type="text"
+                                  value=""
+                                />
+                                <div
+                                  style={
+                                    Object {
+                                      "height": 0,
+                                      "left": 0,
+                                      "overflow": "scroll",
+                                      "position": "absolute",
+                                      "top": 0,
+                                      "visibility": "hidden",
+                                      "whiteSpace": "pre",
                                     }
                                   }
                                 >
-                                  <input
-                                    aria-autocomplete="list"
-                                    autoCapitalize="none"
-                                    autoComplete="off"
-                                    autoCorrect="off"
-                                    disabled={false}
-                                    id="react-select-19-input"
-                                    onBlur={[Function]}
-                                    onChange={[Function]}
-                                    onFocus={[Function]}
-                                    spellCheck="false"
-                                    style={
-                                      Object {
-                                        "background": 0,
-                                        "border": 0,
-                                        "boxSizing": "content-box",
-                                        "color": "inherit",
-                                        "fontSize": "inherit",
-                                        "label": "input",
-                                        "opacity": 1,
-                                        "outline": 0,
-                                        "padding": 0,
-                                        "width": "1px",
-                                      }
-                                    }
-                                    tabIndex="0"
-                                    type="text"
-                                    value=""
-                                  />
-                                  <div
-                                    style={
-                                      Object {
-                                        "height": 0,
-                                        "left": 0,
-                                        "overflow": "scroll",
-                                        "position": "absolute",
-                                        "top": 0,
-                                        "visibility": "hidden",
-                                        "whiteSpace": "pre",
-                                      }
-                                    }
-                                  >
-                                    
-                                  </div>
+                                  
                                 </div>
                               </div>
                             </div>
+                          </div>
+                          <div
+                            className=" css-1hb7zxy-IndicatorsContainer"
+                          >
+                            <span
+                              className=" css-rci3ok-indicatorSeparator"
+                            />
                             <div
-                              className=" css-1hb7zxy-IndicatorsContainer"
+                              aria-hidden="true"
+                              className=" css-1jw44s5-indicatorContainer"
+                              onMouseDown={[Function]}
+                              onTouchEnd={[Function]}
                             >
-                              <span
-                                className=" css-rci3ok-indicatorSeparator"
-                              />
-                              <div
+                              <svg
                                 aria-hidden="true"
-                                className=" css-1jw44s5-indicatorContainer"
-                                onMouseDown={[Function]}
-                                onTouchEnd={[Function]}
+                                className="css-6q0nyr-Svg"
+                                focusable="false"
+                                height={20}
+                                viewBox="0 0 20 20"
+                                width={20}
                               >
-                                <svg
-                                  aria-hidden="true"
-                                  className="css-6q0nyr-Svg"
-                                  focusable="false"
-                                  height={20}
-                                  viewBox="0 0 20 20"
-                                  width={20}
-                                >
-                                  <path
-                                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                                  />
-                                </svg>
-                              </div>
+                                <path
+                                  d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                                />
+                              </svg>
                             </div>
                           </div>
                         </div>
-                      </section>
+                      </div>
                     </section>
                   </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_132_container"
-                    rows={null}
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                  id="storyshots_133_container"
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Turnaround Time
-                    </label>
-                    <input
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_132"
-                      list={null}
-                      name="storyshots_132"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder={null}
-                      rows=""
-                      type="text"
-                    />
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_133_container"
-                    rows={null}
+                    Turnaround Time
+                  </label>
+                  <input
+                    autoComplete="off"
+                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                    cols=""
+                    disabled={false}
+                    id="storyshots_133"
+                    list={null}
+                    name="storyshots_133"
+                    onBlur={null}
+                    onChange={null}
+                    onFocus={null}
+                    onKeyPress={null}
+                    onKeyUp={null}
+                    pattern={null}
+                    placeholder={null}
+                    rows=""
+                    type="text"
+                  />
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                  id="storyshots_134_container"
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Expected Delivery Date
-                    </label>
-                    <input
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_133"
-                      list={null}
-                      name="storyshots_133"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder={null}
-                      rows=""
-                      type="date"
-                    />
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                    id="storyshots_134_container"
-                    rows={null}
+                    Expected Delivery Date
+                  </label>
+                  <input
+                    autoComplete="off"
+                    className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                    cols=""
+                    disabled={false}
+                    id="storyshots_134"
+                    list={null}
+                    name="storyshots_134"
+                    onBlur={null}
+                    onChange={null}
+                    onFocus={null}
+                    onKeyPress={null}
+                    onKeyUp={null}
+                    pattern={null}
+                    placeholder={null}
+                    rows=""
+                    type="date"
+                  />
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                  id="storyshots_135_container"
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Additional Notes
-                    </label>
-                    <textarea
-                      autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 iqyrro"
-                      cols=""
-                      disabled={false}
-                      id="storyshots_134"
-                      list={null}
-                      name="storyshots_134"
-                      onBlur={null}
-                      onChange={null}
-                      onFocus={null}
-                      onKeyPress={null}
-                      pattern={null}
-                      placeholder={null}
-                      rows=""
-                      type="textarea"
-                    />
-                  </section>
+                    Additional Notes
+                  </label>
+                  <textarea
+                    autoComplete="off"
+                    className="TextInput__Input-sc-1fep8p8-2 iqyrro"
+                    cols=""
+                    disabled={false}
+                    id="storyshots_135"
+                    list={null}
+                    name="storyshots_135"
+                    onBlur={null}
+                    onChange={null}
+                    onFocus={null}
+                    onKeyPress={null}
+                    onKeyUp={null}
+                    pattern={null}
+                    placeholder={null}
+                    rows=""
+                    type="textarea"
+                  />
                 </section>
               </section>
-            </div>
-          </section>
+            </section>
+          </div>
         </section>
-      </form>
-    </section>
+      </section>
+    </form>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 Skgmv"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id={null}
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Cancel"
@@ -5689,7 +5793,7 @@ exports[` 7`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
@@ -5705,7 +5809,7 @@ exports[` 7`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Complete"
@@ -5715,7 +5819,7 @@ exports[` 7`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
@@ -5745,15 +5849,15 @@ exports[` 8`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iWuTVd Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_135"
+    id="storyshots_136"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_135-Header"
+      id="storyshots_136-Header"
       onClick={null}
     >
       <div
@@ -5776,176 +5880,170 @@ exports[` 8`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF DialogBox__ChildSection-iv0dnf-2 bgZSbS"
+      className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+      disabled={false}
       id={null}
-      onClick={null}
     >
-      <section
-        className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
         disabled={false}
-        id={null}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
-          disabled={false}
-          htmlFor={null}
-          id="RFPs"
-          name="RFPs"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              RFP Details
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
-          disabled={false}
-          htmlFor={null}
-          id="Bid"
-          name="Bid"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Bid Details
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
-          disabled={false}
-          htmlFor={null}
-          id="Complete"
-          name="Complete"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Completion
-            </label>
-          </section>
-        </button>
-      </section>
-      <div
-        className="Bar__BarLayout-icfo76-2 jEWtiX"
-        id={null}
+        htmlFor={null}
+        id="RFPs"
+        name="RFPs"
         onClick={null}
+        tabIndex="1"
+        type="button"
       >
-        <div
-          className="Bar__Slot-icfo76-1 dLaZFL"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-            id={null}
-            rows={null}
-          >
-            <h3
-              className="Typography__TitleText-sc-19auepv-2 gzJfws"
-              fontSize="1.5rem"
-              fontWeight="400"
-              letterSpacing="0.25px"
-            >
-              RFP Successfully Created!
-            </h3>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-              fontSize="1rem"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.5px"
-            >
-              You can choose to begin work on your RFP or create another RFP
-            </p>
-          </section>
-        </div>
-      </div>
-      <div
-        className="Bar__BarLayout-icfo76-2 fliBOc"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 dLaZFL"
-        >
-          <button
-            className="Button__StyledButton-sc-1v7sls2-0 gcEfQr"
-            disabled={false}
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            id={null}
-            name={null}
-            onClick={null}
-            tabIndex="1"
-            type="button"
+            letterSpacing=".5px"
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-              id={null}
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
-                fontSize="1rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                View RFP
-              </label>
-            </section>
-          </button>
-        </div>
-      </div>
+            RFP Details
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        disabled={false}
+        htmlFor={null}
+        id="Bid"
+        name="Bid"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Bid Details
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
+        disabled={false}
+        htmlFor={null}
+        id="Complete"
+        name="Complete"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Completion
+          </label>
+        </section>
+      </button>
     </section>
+    <div
+      className="Bar__BarLayout-icfo76-2 jEWtiX"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 dLaZFL"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+          id={null}
+          rows={null}
+        >
+          <h3
+            className="Typography__TitleText-sc-19auepv-2 gzJfws"
+            fontSize="1.5rem"
+            fontWeight="400"
+            letterSpacing="0.25px"
+          >
+            RFP Successfully Created!
+          </h3>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            You can choose to begin work on your RFP or create another RFP
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      className="Bar__BarLayout-icfo76-2 fliBOc"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 dLaZFL"
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 gcEfQr"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              View RFP
+            </label>
+          </section>
+        </button>
+      </div>
+    </div>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 Skgmv"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id={null}
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Done"
@@ -5955,7 +6053,7 @@ exports[` 8`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
@@ -5971,7 +6069,7 @@ exports[` 8`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Create"
@@ -5981,7 +6079,7 @@ exports[` 8`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
@@ -5992,7 +6090,7 @@ exports[` 8`] = `
               htmlFor={null}
               letterSpacing=".5px"
             >
-              Create RFP
+              Create Another
             </label>
           </section>
         </button>

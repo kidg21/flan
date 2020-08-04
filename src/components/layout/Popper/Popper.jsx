@@ -51,6 +51,8 @@ const PopperWrapper = styled.div`
 const PopperBG = styled.div`
   position: fixed;
   right: 0px;
+  width: 100%;
+  height: 100%;
   bottom: 0px;
   top: 0px;
   left: 0px;

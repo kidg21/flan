@@ -8,66 +8,150 @@ exports[` 1`] = `
     }
   }
 >
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-    href={null}
-    id="storyshots_204"
-    media=""
-    onClick={null}
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
+    id="toggleSelect"
+    rows={null}
   >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      Standard Swatches
+    </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
-      id="toggleSelect"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
+      id={null}
       rows={null}
     >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
-        fontSize="0.875rem"
-        fontWeight={600}
-        htmlFor={null}
-        letterSpacing=".5px"
-      >
-        Standard Swatches
-      </label>
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
-        id={null}
-        rows={null}
-      >
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-          color="#E4423A"
-          height="1.5rem"
-          onClick={[Function]}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-          color="#14A939"
-          height="1.5rem"
-          onClick={[Function]}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
-          color="#2F98EE"
-          height="1.5rem"
-          onClick={[Function]}
-          width="1.5rem"
-        />
-      </section>
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        color="#E4423A"
+        height="1.5rem"
+        onClick={[Function]}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        color="#14A939"
+        height="1.5rem"
+        onClick={[Function]}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        color="#2F98EE"
+        height="1.5rem"
+        onClick={[Function]}
+        width="1.5rem"
+      />
     </section>
-  </div>
+  </section>
 </div>
 `;
 
 exports[` 2`] = `
-<div
-  className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-  href={null}
-  id="storyshots_205"
-  media=""
-  onClick={null}
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
+  id="standard"
+  rows={null}
+>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    fontSize="0.875rem"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing=".5px"
+  >
+    Color Picker
+  </label>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eUJxgf"
+    id={null}
+    rows={null}
+  >
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+      color="#EBEAEC"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    />
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+      color="#D9ECEC"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    />
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+      color="#63B1CD"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    />
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+      color="#06BFAE"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+        color={null}
+        data-icon="check"
+        data-prefix="far"
+        focusable="false"
+        fontSize="inherit"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+      color="#095593"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    />
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+      color="#F3822B"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    />
+    <button
+      className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+      color="#FFBF00"
+      height="1.5rem"
+      onClick={null}
+      width="1.5rem"
+    />
+  </section>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+  id={null}
+  rows={null}
 >
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
@@ -75,9 +159,9 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
       fontSize="0.875rem"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
     >
@@ -160,212 +244,96 @@ exports[` 2`] = `
       />
     </section>
   </section>
-</div>
-`;
-
-exports[` 3`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-  id={null}
-  rows={null}
->
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-    href={null}
-    id="storyshots_206"
-    media=""
-    onClick={null}
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
+    id="standard"
+    rows={null}
   >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      Color Picker
+    </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
-      id="standard"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eUJxgf"
+      id={null}
       rows={null}
     >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
-        fontSize="0.875rem"
-        fontWeight={600}
-        htmlFor={null}
-        letterSpacing=".5px"
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 gwUUeE"
+        color="#EBEAEC"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 cmnzPh"
+        color="#D9ECEC"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 fMEfEK"
+        color="#63B1CD"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 cNrdeh"
+        color="#06BFAE"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
       >
-        Color Picker
-      </label>
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 eUJxgf"
-        id={null}
-        rows={null}
-      >
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
-          color="#EBEAEC"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
-          color="#D9ECEC"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
-          color="#63B1CD"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
-          color="#06BFAE"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+          color={null}
+          data-icon="check"
+          data-prefix="far"
+          focusable="false"
+          fontSize="inherit"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="check"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
-            id={null}
-            role="img"
+          <path
+            d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </button>
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
-          color="#095593"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
-          color="#F3822B"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
-          color="#FFBF00"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-      </section>
+          />
+        </svg>
+      </button>
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 euToNG"
+        color="#095593"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 bNTzWT"
+        color="#F3822B"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
+      <button
+        className="Picker__Swatch-sc-1xwpkqn-1 jhNIOm"
+        color="#FFBF00"
+        height="1.5rem"
+        onClick={null}
+        width="1.5rem"
+      />
     </section>
-  </div>
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-    href={null}
-    id="storyshots_207"
-    media=""
-    onClick={null}
-  >
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
-      id="standard"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
-        fontSize="0.875rem"
-        fontWeight={600}
-        htmlFor={null}
-        letterSpacing=".5px"
-      >
-        Color Picker
-      </label>
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 eUJxgf"
-        id={null}
-        rows={null}
-      >
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 gwUUeE"
-          color="#EBEAEC"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 cmnzPh"
-          color="#D9ECEC"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 fMEfEK"
-          color="#63B1CD"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 cNrdeh"
-          color="#06BFAE"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="check"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
-            id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </button>
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 euToNG"
-          color="#095593"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 bNTzWT"
-          color="#F3822B"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-        <button
-          className="Picker__Swatch-sc-1xwpkqn-1 jhNIOm"
-          color="#FFBF00"
-          height="1.5rem"
-          onClick={null}
-          width="1.5rem"
-        />
-      </section>
-    </section>
-  </div>
+  </section>
 </section>
 `;
