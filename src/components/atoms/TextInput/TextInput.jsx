@@ -7,11 +7,11 @@ import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
-import { getGuid } from "helpers";
+import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
   }};
   width: 100%;
 `;
@@ -63,16 +63,16 @@ const Input = styled.input`
   &:hover {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.neutral80
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.neutral80
     );
   }};
     }
   &:focus {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.selected
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.selected
     );
   }};
     ::selection {
@@ -81,8 +81,8 @@ const Input = styled.input`
   }};
       background-color: ${(props) => {
     return (
-      props.theme.palette[props.inputSelectColor] ||
-      props.theme.palette.selected
+      props.theme.palette[props.inputSelectColor]
+      || props.theme.palette.selected
     );
   }};
     }
@@ -104,6 +104,7 @@ function TextInput({
   onChange,
   onFocus,
   onKeyPress,
+  onKeyUp,
   pattern,
   placeholder,
   readonly,
@@ -129,7 +130,7 @@ function TextInput({
     inputHeight = "4.75rem";
   }
 
-  const uId = id || getGuid();
+  const uId = useId(id);
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -162,8 +163,7 @@ function TextInput({
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let errorText = "";
   if (isDisabled) {
     inputBorderColor = "neutral40";
@@ -194,7 +194,7 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label isRequired={isRequired} text={label} />
+        <Label  isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
@@ -214,6 +214,7 @@ function TextInput({
         onBlur={onBlur}
         onChange={onChange}
         onFocus={onFocus}
+        onKeyUp={onKeyUp}
         onKeyPress={onKeyPress}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
@@ -224,9 +225,9 @@ function TextInput({
         value={value}
       />
       {autocompleteDataList}
-      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+      {helpText ? <Text size="xs" text={helpText} /> : null}
       {children}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs"  text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }
@@ -249,6 +250,7 @@ TextInput.propTypes = {
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  onKeyUp: PropTypes.func,
   onKeyPress: PropTypes.func,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
@@ -292,6 +294,7 @@ TextInput.defaultProps = {
   onBlur: null,
   onChange: null,
   onFocus: null,
+  onKeyUp: null,
   onKeyPress: null,
   pattern: null,
   placeholder: null,

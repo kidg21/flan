@@ -6,10 +6,11 @@ import { Darken } from "Variables";
 import Bar from "layout/Bar";
 import Tag from "atoms/Tag";
 import Avatar from "atoms/Avatar";
+import Radio from "atoms/Radio";
 import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text, { Title } from "base/Typography";
+import Text from "base/Typography";
 import { InteractiveContext, DisabledContext, PaddingContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -82,6 +83,8 @@ const ListTitleWrapper = styled.li`
 const ListTitle = styled(Text)`
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 400;
 `;
 
 const SectionWrapper = styled.li`
@@ -91,7 +94,7 @@ const SectionWrapper = styled.li`
 
 const Section = styled(Text)`
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 `;
 
 function ListSection({
@@ -154,44 +157,75 @@ function getRightContent(post, disabled, onClick) {
         onClick: post.onClick || onClick,
       };
     }
+  } else if (post) {
+    rightContent = {
+      content: post,
+      width: "max-content",
+      onClick: post.OnClick || onClick,
+    };
   }
   return rightContent;
 }
 
+
 function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
-  let leftContentComponent = null;
-  if (pre && (pre.label || pre.icon)) {
-    const {
-      label,
-      icon,
-      onClick: sectionOnClick,
-      ...props
-    } = pre;
-
-    if (pre.label) {
-      leftContentComponent = <Avatar label={label} disabled={disabled} {...props} />;
-    } else if (pre.icon) {
-      leftContentComponent = <Icon icon={pre.icon} disabled={disabled} {...props} />;
+  if (pre && pre.type) {
+    const preType = pre.type.toLowerCase();
+    if (preType === "checkbox") {
+      leftContent = {
+        content: <Checkbox id={pre.label} label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
+        width: "max-content",
+        onClick: pre.onClick || onClick,
+      };
+    } else if (preType === "radio") {
+      leftContent = {
+        content: <Radio label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
+        width: "max-content",
+        onClick: pre.onClick || onClick,
+      };
+    } else if (preType === "label" && pre.label) {
+      leftContent = {
+        content: <Avatar label={pre.label} disabled={disabled} />,
+        width: "max-content",
+        onClick: pre.onClick || onClick,
+      };
+    } else if (preType === "icon" && pre.icon) {
+      leftContent = {
+        content: (
+          <Icon
+            icon={pre.icon}
+            size={pre.size}
+            variant={pre.variant}
+            onClick={pre.onClick}
+            fixedWidth
+          />
+        ),
+        width: "max-content",
+        onClick: pre.onClick || onClick,
+      };
     }
+  } else if (pre) {
     leftContent = {
-      content: leftContentComponent,
+      content: pre,
       width: "max-content",
-      onClick: sectionOnClick || onClick,
+      onClick: pre.OnClick || onClick,
     };
   }
-
   return leftContent;
 }
+
 function ListItem({
   as,
   children,
+  className,
   description,
   disabled,
   href,
   id,
   isSelected,
   onClick,
+  onClickItem,
   post,
   pre,
   tabIndex,
@@ -209,7 +243,7 @@ function ListItem({
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment>
-      <Text text={title || null} disabled={disabled} size="lg" />
+      <Text text={title || null} disabled={disabled} />
       {description ? (<Text size="sm" text={description || null} disabled={disabled} />
       ) : null}
     </React.Fragment>
@@ -217,8 +251,12 @@ function ListItem({
 
   const rightContent = getRightContent(post, disabled, onClick);
 
-  const handleOnClick = (e) => {
-    onClick(e.target.innerText);
+  const handleOnClick = () => {
+    onClick(title || description);
+  };
+
+  const handleOnClickItem = () => {
+    onClickItem(title || description);
   };
 
   const isInteractive = useContext(InteractiveContext);
@@ -235,6 +273,8 @@ function ListItem({
       selectedContent={selectedContent}
       selectedBackground={selectedBackground}
       tabIndex={disabled ? "-1" : tabIndex}
+      className={className}
+      onClick={typeof onClickItem === "function" ? handleOnClickItem : null} // to target whole list item
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
@@ -258,44 +298,62 @@ function ListItem({
 ListItem.propTypes = {
   as: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.node,
   id: PropTypes.string,
   isSelected: PropTypes.bool,
   onClick: PropTypes.func,
+  onClickItem: PropTypes.func,
   title: PropTypes.string.isRequired,
-  post: PropTypes.shape({
+  post: PropTypes.oneOfType(PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
     checked: PropTypes.bool,
+    icon: PropTypes.string,
     onClick: PropTypes.func,
     size: PropTypes.string,
     variant: PropTypes.string,
-  }),
-  pre: PropTypes.shape({
+  }), PropTypes.node),
+  pre: PropTypes.oneOfType(PropTypes.shape({
+    type: PropTypes.string.isRequired,
     label: PropTypes.string,
+    checked: PropTypes.bool,
     icon: PropTypes.string,
     onClick: PropTypes.func,
-  }),
+    size: PropTypes.string,
+    variant: PropTypes.string,
+  }), PropTypes.node),
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
   as: null,
   children: null,
+  className: null,
   description: null,
   disabled: false,
   href: null,
   id: null,
   isSelected: false,
   onClick: null,
+  onClickItem: null,
   post: null,
   pre: null,
   tabIndex: "0",
 };
 
 function List({
-  children, data, id, isDivided, isInteractive, isInverse, isLight, padding, title,
+  children,
+  className,
+  data,
+  id,
+  isDivided,
+  isInteractive,
+  isInverse,
+  isLight,
+  padding,
+  title,
 }) {
   let listBackground;
   let listColor;
@@ -313,6 +371,7 @@ function List({
   return (
     <InteractiveContext.Provider value={isInteractive}>
       <ListWrapper
+        className={className}
         id={id}
         isDivided={isDivided}
         listBackground={listBackground}
@@ -321,12 +380,12 @@ function List({
       >
         {title ? (
           <ListTitleWrapper>
-            <ListTitle text={title}   />
+            <ListTitle text={title} />
           </ListTitleWrapper>
         ) : null}
         <PaddingContext.Provider value={padding}>
-          {children ||
-            data.map((item, index) => {
+          {children
+            || data.map((item, index) => {
               const itemKey = item.id || item.title || index;
               return (
                 <ListItem
@@ -350,6 +409,7 @@ function List({
 
 List.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape(ListItem.propTypes)),
   id: PropTypes.string,
   isDivided: PropTypes.bool,
@@ -361,6 +421,7 @@ List.propTypes = {
 };
 List.defaultProps = {
   children: null,
+  className: null,
   data: [],
   id: null,
   isDivided: false,

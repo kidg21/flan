@@ -9,11 +9,11 @@ exports[` 1`] = `
     className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       My List
     </p>
@@ -23,6 +23,7 @@ exports[` 1`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -34,11 +35,11 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item
         </p>
@@ -50,6 +51,7 @@ exports[` 1`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -61,11 +63,11 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item
         </p>
@@ -77,6 +79,7 @@ exports[` 1`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -88,11 +91,11 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item
         </p>
@@ -111,11 +114,11 @@ exports[` 2`] = `
     className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       List Items via Array
     </p>
@@ -125,6 +128,7 @@ exports[` 2`] = `
     disabled={false}
     href={null}
     id="List Item 1"
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -136,11 +140,11 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item 1
         </p>
@@ -152,6 +156,7 @@ exports[` 2`] = `
     disabled={true}
     href={null}
     id="List Item 2"
+    onClick={null}
     tabIndex="-1"
   >
     <div
@@ -163,11 +168,11 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item 2
         </p>
@@ -179,6 +184,7 @@ exports[` 2`] = `
     disabled={false}
     href={null}
     id="List Item 3"
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -190,11 +196,11 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item 3
         </p>
@@ -206,6 +212,7 @@ exports[` 2`] = `
     disabled={false}
     href={null}
     id="List Item 4"
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -217,11 +224,11 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item 4
         </p>
@@ -241,6 +248,7 @@ exports[` 3`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -252,20 +260,20 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item (standard)
         </p>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-          fontSize="0.75em"
+          className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+          fontSize="0.875rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.4px"
+          letterSpacing="0.25px"
         >
           This is the description
         </p>
@@ -277,6 +285,7 @@ exports[` 3`] = `
     disabled={false}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="0"
   >
     <div
@@ -288,20 +297,20 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item (selected)
         </p>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-          fontSize="0.75em"
+          className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+          fontSize="0.875rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.4px"
+          letterSpacing="0.25px"
         >
           This is the description
         </p>
@@ -313,6 +322,7 @@ exports[` 3`] = `
     disabled={true}
     href={null}
     id={null}
+    onClick={null}
     tabIndex="-1"
   >
     <div
@@ -324,20 +334,20 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 RjiBe"
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.5px"
         >
           List Item (disabled)
         </p>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-          fontSize="0.75em"
+          className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+          fontSize="0.875rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.4px"
+          letterSpacing="0.25px"
         >
           This is the description
         </p>
@@ -361,11 +371,11 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Standard
       </p>
@@ -375,6 +385,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -386,20 +397,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -411,6 +422,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -422,20 +434,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -447,6 +459,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -458,20 +471,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -487,11 +500,11 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Standard (inverse)
       </p>
@@ -501,6 +514,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -512,20 +526,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -537,6 +551,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -548,20 +563,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -573,6 +588,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -584,20 +600,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -613,11 +629,11 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         With a Divider
       </p>
@@ -627,6 +643,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -638,20 +655,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -663,6 +680,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -674,20 +692,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -699,6 +717,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -710,20 +729,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -739,11 +758,11 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         With a Divider (inverse)
       </p>
@@ -753,6 +772,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -764,20 +784,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -789,6 +809,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -800,20 +821,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -825,6 +846,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -836,20 +858,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -865,11 +887,11 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Interactive
       </p>
@@ -879,6 +901,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -890,20 +913,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -915,6 +938,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -926,20 +950,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -951,6 +975,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -962,20 +987,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -991,11 +1016,11 @@ exports[` 4`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Interactive (inverse)
       </p>
@@ -1005,6 +1030,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1016,20 +1042,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1041,6 +1067,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1052,20 +1079,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1077,6 +1104,7 @@ exports[` 4`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1088,20 +1116,20 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 RjiBe"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1126,11 +1154,11 @@ exports[` 5`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Pre-Label
       </p>
@@ -1140,6 +1168,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1151,38 +1180,39 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-              fontSize="1em"
-              fontWeight={400}
-              letterSpacing="0px"
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+              fontSize="1rem"
+              fontWeight={500}
+              id={null}
+              letterSpacing="0.5px"
             >
               AB
-            </h6>
+            </p>
           </div>
         </div>
         <div
           className="Bar__Slot-icfo76-1 yvaBx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1194,6 +1224,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1205,38 +1236,39 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-              fontSize="1em"
-              fontWeight={400}
-              letterSpacing="0px"
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+              fontSize="1rem"
+              fontWeight={500}
+              id={null}
+              letterSpacing="0.5px"
             >
               CD
-            </h6>
+            </p>
           </div>
         </div>
         <div
           className="Bar__Slot-icfo76-1 yvaBx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1248,6 +1280,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1259,38 +1292,39 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-              fontSize="1em"
-              fontWeight={400}
-              letterSpacing="0px"
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+              fontSize="1rem"
+              fontWeight={500}
+              id={null}
+              letterSpacing="0.5px"
             >
-              EF
-            </h6>
+              EG
+            </p>
           </div>
         </div>
         <div
           className="Bar__Slot-icfo76-1 yvaBx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1302,6 +1336,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1313,38 +1348,39 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-              fontSize="1em"
-              fontWeight={400}
-              letterSpacing="0px"
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+              fontSize="1rem"
+              fontWeight={500}
+              id={null}
+              letterSpacing="0.5px"
             >
               GH
-            </h6>
+            </p>
           </div>
         </div>
         <div
           className="Bar__Slot-icfo76-1 yvaBx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1360,11 +1396,11 @@ exports[` 5`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Post Label
       </p>
@@ -1374,6 +1410,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1385,20 +1422,20 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1407,16 +1444,16 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+            className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="Label"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-              fontSize="0.68em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="1px"
+              letterSpacing=".5px"
             >
               Label
             </label>
@@ -1429,6 +1466,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1440,20 +1478,20 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1462,16 +1500,16 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+            className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="6"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-              fontSize="0.68em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="1px"
+              letterSpacing=".5px"
             >
               6
             </label>
@@ -1484,6 +1522,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1495,20 +1534,20 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1517,16 +1556,16 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+            className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="NEW!"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-              fontSize="0.68em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="1px"
+              letterSpacing=".5px"
             >
               NEW!
             </label>
@@ -1539,6 +1578,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1550,20 +1590,20 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1572,16 +1612,16 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Tag__TagContainer-sc-128kb3h-0 lcEzps"
+            className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="9"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-              fontSize="0.68em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="1px"
+              letterSpacing=".5px"
             >
               9
             </label>
@@ -1598,11 +1638,11 @@ exports[` 5`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Post Icon
       </p>
@@ -1612,6 +1652,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1623,20 +1664,20 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1672,6 +1713,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1683,20 +1725,20 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1732,6 +1774,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1743,20 +1786,20 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1804,6 +1847,7 @@ exports[` 5`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1815,20 +1859,20 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1889,11 +1933,11 @@ exports[` 6`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Checkbox
       </p>
@@ -1903,6 +1947,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1914,20 +1959,20 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1936,12 +1981,12 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 hTLhND"
+            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 lmjTDl"
             disabled={false}
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
               id={null}
               onBlur={null}
               onChange={null}
@@ -1957,6 +2002,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -1968,20 +2014,20 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -1990,12 +2036,12 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 hTLhND"
+            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 lmjTDl"
             disabled={false}
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
               id={null}
               onBlur={null}
               onChange={null}
@@ -2011,6 +2057,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2022,20 +2069,20 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -2044,12 +2091,12 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 hTLhND"
+            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 lmjTDl"
             disabled={false}
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
               id={null}
               onBlur={null}
               onChange={null}
@@ -2065,6 +2112,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2076,20 +2124,20 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -2098,12 +2146,12 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 hTLhND"
+            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 lmjTDl"
             disabled={false}
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
               id={null}
               onBlur={null}
               onChange={null}
@@ -2123,11 +2171,11 @@ exports[` 6`] = `
       className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme List__ListTitle-sc-43f2zq-3 bbfEBL"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Toggle
       </p>
@@ -2137,6 +2185,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2148,20 +2197,20 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -2170,7 +2219,7 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Switch__SwitchContainer-sc-1bvlvzt-0 hGOHyg"
+            className="Switch__SwitchContainer-sc-1bvlvzt-0 kzBbzH"
             disabled={false}
             id={null}
             label={null}
@@ -2197,6 +2246,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2208,20 +2258,20 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -2230,7 +2280,7 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Switch__SwitchContainer-sc-1bvlvzt-0 hGOHyg"
+            className="Switch__SwitchContainer-sc-1bvlvzt-0 kzBbzH"
             disabled={false}
             id={null}
             label={null}
@@ -2257,6 +2307,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2268,20 +2319,20 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -2290,7 +2341,7 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Switch__SwitchContainer-sc-1bvlvzt-0 hGOHyg"
+            className="Switch__SwitchContainer-sc-1bvlvzt-0 kzBbzH"
             disabled={false}
             id={null}
             label={null}
@@ -2317,6 +2368,7 @@ exports[` 6`] = `
       disabled={false}
       href={null}
       id={null}
+      onClick={null}
       tabIndex="0"
     >
       <div
@@ -2328,20 +2380,20 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.5px"
           >
             List Item
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 BMTkE"
-            fontSize="0.75em"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+            fontSize="0.875rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.4px"
+            letterSpacing="0.25px"
           >
             This is the description
           </p>
@@ -2350,7 +2402,7 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Switch__SwitchContainer-sc-1bvlvzt-0 hGOHyg"
+            className="Switch__SwitchContainer-sc-1bvlvzt-0 kzBbzH"
             disabled={false}
             id={null}
             label={null}

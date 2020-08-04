@@ -4,12 +4,12 @@ import React, {
   useState,
   useEffect,
   useCallback,
-  useMemo,
 } from "react";
 import GlobalStyles from "GlobalStyles";
 import styled, { keyframes, ThemeProvider } from "styled-components";
 import { DMPTheme, screen } from "Variables";
-import { PlaceholderText, getGuid } from "helpers";
+import { useId } from "utils/hooks";
+import { PlaceholderText } from "helpers/Skeleton";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Card from "elements/Card";
@@ -192,7 +192,7 @@ function Modal({
   let modalContent;
   let justifyContent;
   const pointerEvents = hasBackdrop ? "auto" : "none";
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+  const uId = useId(id);
 
   if (text && !media) {
     modalContent = (

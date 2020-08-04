@@ -9,7 +9,7 @@ import Grid from "layout/Grid";
 import { Label } from "base/Typography";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
-import { Skeleton } from "helpers";
+import { Skeleton } from "helpers/Skeleton";
 
 const StyledButton = styled.button`
   display: flex;
@@ -21,10 +21,10 @@ const StyledButton = styled.button`
     return props.fullWidth ? "100%" : "max-content";
   }};
   height: ${(props) => {
-    return props.alignCenter ? "" : "2.4rem";
+    return props.setHeight;
   }};
   padding: ${(props) => {
-    return props.alignCenter ? "0.75em" : "0em 0.75em";
+    return props.setPadding;
   }};
   justify-content: center;
   align-items: center;
@@ -49,10 +49,6 @@ const StyledButton = styled.button`
   border-radius: ${(props) => {
     return props.borderRadius || "4px";
   }};
-  font-size: ${(props) => {
-    return props.labelSize || "inherit";
-  }};
-  text-transform: capitalize;
   cursor: pointer;
   border-bottom: ${(props) => {
     return props.borderBottom || "";
@@ -102,7 +98,7 @@ const LabelWrapper = styled(Grid)`
   }};
   width: auto;
   > * {
-    line-height: inherit;
+    line-height: initial;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -123,7 +119,7 @@ function ButtonGroup({
   // 1-6 colums
   let setColumns;
   const _columns = parseInt(columns, 10);
-  if (_columns > 0 && columns < 7) {
+  if (_columns > 0 && columns < 8) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
   return (
@@ -151,6 +147,27 @@ ButtonGroup.defaultProps = {
   className: null,
 };
 
+const sizeHash = {
+  sm: {
+    label: "xs",
+    icon: "sm",
+    height: "fit-content",
+    padding: "0.25em 0em",
+  },
+  lg: {
+    label: "lg",
+    icon: "xl",
+    height: "2.4rem",
+    padding: "0.5em 0.75em",
+  },
+  xl: {
+    label: "lg",
+    icon: "xl",
+    height: "3.4rem",
+    padding: "1.5em 1.75em",
+  },
+};
+
 function Button({
   className,
   count,
@@ -165,6 +182,7 @@ function Button({
   isRound,
   isSolid,
   type,
+  size,
   variant,
   hasUnderline,
   alignCenter,
@@ -179,7 +197,6 @@ function Button({
   let fontColor;
   let fontWeight;
   let shadeColor;
-  let labelSize;
   let tintColor;
 
   switch (variant && variant.toLowerCase()) {
@@ -254,6 +271,12 @@ function Button({
     borderColor = buttonColor;
   }
 
+  const selectedSize = size && sizeHash[size.toLowerCase()];
+  const labelSize = selectedSize ? selectedSize.label : "lg";
+  const iconSize = selectedSize ? selectedSize.icon : "inherit";
+  const setHeight = selectedSize ? selectedSize.height : "2.4rem";
+  const setPadding = selectedSize ? selectedSize.padding : "0em 0.75em";
+
   let gridGap = null;
   let justifyItems = null;
   if (alignCenter) {
@@ -285,8 +308,8 @@ function Button({
       justifyItems={justifyItems}
       rows={alignCenter ? "max-content 1fr" : null}
     >
-      {icon ? <Icon icon={icon} /> : null}
-      {label ? <Label weight="bold" text={label} /> : null}
+      {icon ? <Icon icon={icon} size={iconSize} /> : null}
+      {label ? <Label size={labelSize} text={label} /> : null}
       {count && !isDisabled ? <Tag label={count.toString()} /> : null}
     </LabelWrapper>
   );
@@ -298,6 +321,8 @@ function Button({
       borderColor={borderColor}
       borderRadius={borderRadius}
       borderStyle={borderStyle}
+      setPadding={setPadding}
+      setHeight={setHeight}
       borderWidth={borderWidth}
       buttonColor={buttonColor}
       className={className}
@@ -312,7 +337,6 @@ function Button({
       isPlain={isPlain}
       isRound={isRound}
       isSolid={isSolid}
-      labelSize={labelSize}
       name={id}
       onClick={onClick}
       tabIndex={disabled ? "-1" : "1"}
@@ -336,6 +360,7 @@ Button.propTypes = {
   isPlain: PropTypes.bool,
   isRound: PropTypes.bool,
   isSolid: PropTypes.bool,
+  size: PropTypes.oneOf(["sm", "lg", "xl", ""]),
   label: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(["button", "reset", "submit"]),
@@ -355,6 +380,7 @@ Button.defaultProps = {
   isPlain: null,
   isRound: null,
   isSolid: null,
+  size: "",
   label: null,
   onClick: null,
   type: "button",

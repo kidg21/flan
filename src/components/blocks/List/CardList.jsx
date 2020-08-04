@@ -11,7 +11,7 @@ import {
 } from "react-virtualized";
 import styled from "styled-components";
 import { DisableTransitionContext } from "States";
-import { getGuid } from "helpers";
+import getGuid from "utils/getGuid";
 
 /* eslint-disable security/detect-object-injection */
 // const GridWrapper = styled.div`
@@ -99,9 +99,9 @@ export const CellWrapper = styled.div`
   [class^="Menu"],
   [class^="Command"] {
     color: ${(props) => {
-    if (props.isSelected) {
-      return props.theme.text.inverse;
-    }
+    // if (props.isSelected) {
+    //   return props.theme.text.inverse;
+    // }
     return "";
   }};
   }
@@ -252,8 +252,16 @@ class CardList extends PureComponent {
     style,
   }) {
     const {
-      Template, data, selectedCell, highlightedCell,
-      onCellClick, onCellMouseEnter, onCellMouseLeave, onCellMouseOut, onCellMouseOver,
+      Template,
+      data,
+      selectedCell,
+      highlightedCell,
+      onCellClick,
+      onCellMouseEnter,
+      onCellMouseLeave,
+      onCellMouseOut,
+      onCellMouseOver,
+      removeRecord,
     } = this.props;
     const cellProps = {
       isSelected: false,
@@ -291,6 +299,11 @@ class CardList extends PureComponent {
       <CellWrapper id={`cellwrapper-${rowIndex}-${columnIndex}`} key={key} style={{ ...style, width: this._columnWidth }} {...cellProps}>
         <Template
           data={data[index]}
+          removeRecord={() => {
+            if (removeRecord) {
+              removeRecord(index);
+            }
+          }}
           isHighlighted={cellProps.isHighlighted}
           isSelected={cellProps.isSelected}
           index={index}
@@ -443,7 +456,7 @@ class CardList extends PureComponent {
           this._registerInfiniteChild = registerChild;
           this._onRowsRendered = onRowsRendered;
           return (
-          // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
+            // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
             <DisableTransitionContext.Provider value>
               <GridWrapper>
                 <AutoSizer
@@ -529,6 +542,7 @@ CardList.defaultProps = {
   loadRows: null,
   listId: null,
   minimumBatchSize: 10,
+  removeRecord: null,
 };
 
 CardList.propTypes = {
@@ -561,6 +575,7 @@ CardList.propTypes = {
   focusedRow: PropTypes.number,
   loadRows: PropTypes.func,
   minimumBatchSize: PropTypes.number,
+  removeRecord: PropTypes.func,
 };
 
 CardList.displayName = "cardList";

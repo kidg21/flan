@@ -2,25 +2,25 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 bviaEQ"
   id="Field"
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
-    fontSize="1em"
+    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+    fontSize="1rem"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing=".5px"
   >
     Field Name
   </label>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-    fontSize="1em"
-    fontWeight={600}
+    className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+    fontSize="1rem"
+    fontWeight={500}
     id={null}
-    letterSpacing="0px"
+    letterSpacing="0.5px"
   >
     Field Value
   </p>
@@ -29,78 +29,78 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb Field__FieldGrid-sc-11od8ug-1 fqoSmg"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb Field__FieldGrid-sc-11od8ug-1 fnjiXG"
   id={null}
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 bviaEQ"
     id="Default"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="1em"
+      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+      fontSize="1rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing=".5px"
     >
       Inline Field (Default)
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="1em"
-      fontWeight={600}
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1rem"
+      fontWeight={500}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.5px"
     >
       Field Value
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 kMgEwi"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fWfYAC"
     id="Vertical"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="1em"
+      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+      fontSize="1rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing=".5px"
     >
       Vertically Aligned Field
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="1em"
-      fontWeight={600}
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1rem"
+      fontWeight={500}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.5px"
     >
       Field Value
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 cTvYRY"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
     id="Edge"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="1em"
+      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+      fontSize="1rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing=".5px"
     >
       Edge Aligned Field
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 eczWUg"
-      fontSize="1em"
-      fontWeight={600}
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+      fontSize="1rem"
+      fontWeight={500}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.5px"
     >
       Field Value
     </p>
@@ -110,64 +110,64 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Field__FieldGrid-sc-11od8ug-1 gWHwvt"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Field__FieldGrid-sc-11od8ug-1 ejVjID"
   id={null}
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 bviaEQ"
     id="Standard Value"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="1em"
+      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+      fontSize="1rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing=".5px"
     >
       Field Name
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-      fontSize="1em"
-      fontWeight={600}
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+      fontSize="1rem"
+      fontWeight={500}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.5px"
     >
       Standard Value
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 jaAXEt Field__FieldItem-sc-11od8ug-0 hMEZxk"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 bviaEQ"
     id="Linked Value"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 kWqyoM Field__FieldLabel-sc-11od8ug-3 beNKSV"
-      fontSize="1em"
+      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+      fontSize="1rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing=".5px"
     >
       Field Name
     </label>
     <a
-      className="Typography__LinkText-sc-19auepv-1 hGkuqN"
+      className="Typography__LinkText-sc-19auepv-1 kZPEOL"
       disabled={false}
-      fontSize="1.15em"
-      fontWeight={600}
+      fontSize="1rem"
+      fontWeight={500}
       href={null}
       letterSpacing="0.2px"
       onClick={[Function]}
       target={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt Field__FieldValue-sc-11od8ug-4 lnIMQZ"
-        fontSize="1em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 lnIMQZ"
+        fontSize="1rem"
+        fontWeight={500}
         id={null}
-        letterSpacing="0px"
+        letterSpacing="0.5px"
       >
         Linked Value
       </p>

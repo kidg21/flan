@@ -1,0 +1,139 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Inline from "layout/Inline";
+import Tag from "atoms/Tag";
+import Card, { CardSection } from "elements/Card";
+
+<Meta title="Layout|Inline" component={Inline} />
+
+# Inline
+
+#### Inline is used to align a sent of elements inline next to each other
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Inline>
+      <Tag label="Tag 1" />
+      <Tag label="Tag 222222" />
+      <Tag label="Tag 33333333333" />
+      <Tag label="Tag 444444444444444444" />
+    </Inline>
+  </Story>
+</Preview>
+
+# Usage
+
+If you have a set of elements that you wish to inline, make them children of this component.
+
+You can:
+
+* Control horizontal alignment with `contentJustify` of `left` (default), `center` or `right`
+* Control vertical alignment with `contentAlign` of `center` (default), `top` or `bottom`
+* Set horizontal spacing between elements with `spacingX`
+* Set vertical spacing between elements with `spacingY`
+
+This element is a block, and it's children behave like `display: inline-block` but with flexbox-enabled alignment controls.
+
+# Examples
+
+### Spacing Content
+
+<Preview>
+  <Story name="Spacing Content">
+    <div style={{width: "15em"}}>
+      <Inline spacingX="0.4em" spacingY="0.3em">
+        <Tag label="Tag 1" />
+        <Tag label="Tag 222222" />
+        <Tag label="Tag 33333333333" />
+        <Tag label="Tag 444444444444444444" />
+      </Inline>
+    </div>
+  </Story>
+</Preview>
+
+### Center-justified Content
+
+<Preview>
+  <Story name="Center Justify">
+    <Inline spacingX="0.4em" spacingY="0.3em" contentJustify="center">
+      <Tag label="Tag 1" />
+      <Tag label="Tag 222222" />
+      <Tag label="Tag 33333333333" />
+      <Tag label="Tag 444444444444444444" />
+    </Inline>
+  </Story>
+</Preview>
+
+### Right-justified Content
+
+<Preview>
+  <Story name="Right Justify">
+    <Inline spacingX="0.4em" spacingY="0.3em" contentJustify="right">
+      <Tag label="Tag 1" />
+      <Tag label="Tag 222222" />
+      <Tag label="Tag 33333333333" />
+      <Tag label="Tag 444444444444444444" />
+    </Inline>
+  </Story>
+</Preview>
+
+### Default (Center) Content Alignment
+
+<Preview>
+  <Story name="Center (Default) Align">
+    <Inline spacingX="0.4em" spacingY="0.3em">
+      <Tag label="Tag 1" />
+      <Card>
+        <CardSection>
+          <div style={{ width: "10em" }}>
+            Different size in content
+          </div>
+        </CardSection>
+      </Card>
+      <Tag label="Tag 33333333333" />
+    </Inline>
+  </Story>
+</Preview>
+
+### Top-aligned Content
+
+<Preview>
+  <Story name="Top Align">
+    <Inline spacingX="0.4em" spacingY="0.3em" contentAlign="top">
+      <Tag label="Tag 1" />
+      <Card>
+        <CardSection>
+          <div style={{ width: "10em" }}>
+            Different size in content
+          </div>
+        </CardSection>
+      </Card>
+      <Tag label="Tag 33333333333" />
+    </Inline>
+  </Story>
+</Preview>
+
+### Bottom-aligned Content
+
+<Preview>
+  <Story name="Bottom Align">
+    <Inline spacingX="0.4em" spacingY="0.3em" contentAlign="bottom">
+      <Tag label="Tag 1" />
+      <Card>
+        <CardSection>
+          <div style={{ width: "10em" }}>
+            Different size in content
+          </div>
+        </CardSection>
+      </Card>
+      <Tag label="Tag 33333333333" />
+    </Inline>
+  </Story>
+</Preview>
+
+
+### Props
+
+<Props of={Inline} />

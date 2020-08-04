@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
   href={null}
   id="Legend_Standard_Card"
   media=""
@@ -13,25 +13,25 @@ exports[` 1`] = `
     id="Legend_Standard"
   >
     <table
-      className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
+      className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
       id="Legend_Standard-table"
     >
       <tbody
         className="Legend__Body-sc-70hm4b-5 kHKUyy"
       >
         <tr
-          className="Legend__Row-sc-70hm4b-4 kKuGtn"
+          className="Legend__Row-sc-70hm4b-4 kNHlAf"
         >
           <td
             className="Legend__Cell-sc-70hm4b-3 NrCgM"
             fontSize={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Name
             </p>
@@ -41,29 +41,29 @@ exports[` 1`] = `
             fontSize={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Forrest Gump
             </p>
           </td>
         </tr>
         <tr
-          className="Legend__Row-sc-70hm4b-4 kKuGtn"
+          className="Legend__Row-sc-70hm4b-4 kNHlAf"
         >
           <td
             className="Legend__Cell-sc-70hm4b-3 NrCgM"
             fontSize={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Address
             </p>
@@ -73,29 +73,29 @@ exports[` 1`] = `
             fontSize={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               213 Chippewa Sq.
             </p>
           </td>
         </tr>
         <tr
-          className="Legend__Row-sc-70hm4b-4 kKuGtn"
+          className="Legend__Row-sc-70hm4b-4 kNHlAf"
         >
           <td
             className="Legend__Cell-sc-70hm4b-3 NrCgM"
             fontSize={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               City
             </p>
@@ -105,29 +105,29 @@ exports[` 1`] = `
             fontSize={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               Savannah
             </p>
           </td>
         </tr>
         <tr
-          className="Legend__Row-sc-70hm4b-4 kKuGtn"
+          className="Legend__Row-sc-70hm4b-4 kNHlAf"
         >
           <td
             className="Legend__Cell-sc-70hm4b-3 NrCgM"
             fontSize={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               State
             </p>
@@ -137,11 +137,11 @@ exports[` 1`] = `
             fontSize={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-              fontSize="0.879em"
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.5px"
             >
               GA
             </p>
@@ -160,7 +160,7 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="Legend_Icon_Card"
     media=""
@@ -171,25 +171,25 @@ exports[` 2`] = `
       id="Legend_Icon"
     >
       <table
-        className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
+        className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
         id="Legend_Icon-table"
       >
         <tbody
           className="Legend__Body-sc-70hm4b-5 kHKUyy"
         >
           <tr
-            className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            className="Legend__Row-sc-70hm4b-4 kNHlAf"
           >
             <td
               className="Legend__Cell-sc-70hm4b-3 NrCgM"
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 <svg
                   aria-hidden="true"
@@ -218,29 +218,29 @@ exports[` 2`] = `
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 Map
               </p>
             </td>
           </tr>
           <tr
-            className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            className="Legend__Row-sc-70hm4b-4 kNHlAf"
           >
             <td
               className="Legend__Cell-sc-70hm4b-3 NrCgM"
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 <svg
                   aria-hidden="true"
@@ -269,29 +269,29 @@ exports[` 2`] = `
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 Education
               </p>
             </td>
           </tr>
           <tr
-            className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            className="Legend__Row-sc-70hm4b-4 kNHlAf"
           >
             <td
               className="Legend__Cell-sc-70hm4b-3 NrCgM"
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 <svg
                   aria-hidden="true"
@@ -320,29 +320,29 @@ exports[` 2`] = `
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 Parcel
               </p>
             </td>
           </tr>
           <tr
-            className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            className="Legend__Row-sc-70hm4b-4 kNHlAf"
           >
             <td
               className="Legend__Cell-sc-70hm4b-3 NrCgM"
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 <svg
                   aria-hidden="true"
@@ -371,11 +371,11 @@ exports[` 2`] = `
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 Movie
               </p>
@@ -386,7 +386,7 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="Legend_Tag_Card"
     media=""
@@ -397,37 +397,37 @@ exports[` 2`] = `
       id="Legend_Tag"
     >
       <table
-        className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
+        className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
         id="Legend_Tag-table"
       >
         <tbody
           className="Legend__Body-sc-70hm4b-5 kHKUyy"
         >
           <tr
-            className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            className="Legend__Row-sc-70hm4b-4 kNHlAf"
           >
             <td
               className="Legend__Cell-sc-70hm4b-3 NrCgM"
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 <div
-                  className="Tag__TagContainer-sc-128kb3h-0 fUXefn"
+                  className="Tag__TagContainer-sc-128kb3h-0 cTlzw"
                   id={null}
                   label="Info"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-                    fontSize="0.68em"
-                    fontWeight={600}
+                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    fontSize="0.875rem"
+                    fontWeight={400}
                     htmlFor={null}
-                    letterSpacing="1px"
+                    letterSpacing=".5px"
                   >
                     Info
                   </label>
@@ -439,41 +439,41 @@ exports[` 2`] = `
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 Map
               </p>
             </td>
           </tr>
           <tr
-            className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            className="Legend__Row-sc-70hm4b-4 kNHlAf"
           >
             <td
               className="Legend__Cell-sc-70hm4b-3 NrCgM"
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 <div
-                  className="Tag__TagContainer-sc-128kb3h-0 htIGwb"
+                  className="Tag__TagContainer-sc-128kb3h-0 kKdtCs"
                   id={null}
                   label="Warning"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-                    fontSize="0.68em"
-                    fontWeight={600}
+                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    fontSize="0.875rem"
+                    fontWeight={400}
                     htmlFor={null}
-                    letterSpacing="1px"
+                    letterSpacing=".5px"
                   >
                     Warning
                   </label>
@@ -485,41 +485,41 @@ exports[` 2`] = `
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 Education
               </p>
             </td>
           </tr>
           <tr
-            className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            className="Legend__Row-sc-70hm4b-4 kNHlAf"
           >
             <td
               className="Legend__Cell-sc-70hm4b-3 NrCgM"
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 <div
-                  className="Tag__TagContainer-sc-128kb3h-0 dxjVfv"
+                  className="Tag__TagContainer-sc-128kb3h-0 fXnXWY"
                   id={null}
                   label="Success"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-                    fontSize="0.68em"
-                    fontWeight={600}
+                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    fontSize="0.875rem"
+                    fontWeight={400}
                     htmlFor={null}
-                    letterSpacing="1px"
+                    letterSpacing=".5px"
                   >
                     Success
                   </label>
@@ -531,41 +531,41 @@ exports[` 2`] = `
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 Parcel
               </p>
             </td>
           </tr>
           <tr
-            className="Legend__Row-sc-70hm4b-4 kKuGtn"
+            className="Legend__Row-sc-70hm4b-4 kNHlAf"
           >
             <td
               className="Legend__Cell-sc-70hm4b-3 NrCgM"
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 <div
-                  className="Tag__TagContainer-sc-128kb3h-0 bSHTQW"
+                  className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
                   id={null}
                   label="Alert"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 lgicJH"
-                    fontSize="0.68em"
-                    fontWeight={600}
+                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    fontSize="0.875rem"
+                    fontWeight={400}
                     htmlFor={null}
-                    letterSpacing="1px"
+                    letterSpacing=".5px"
                   >
                     Alert
                   </label>
@@ -577,11 +577,11 @@ exports[` 2`] = `
               fontSize={null}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 Movie
               </p>

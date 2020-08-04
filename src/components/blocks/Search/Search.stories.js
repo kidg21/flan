@@ -1,122 +1,44 @@
-// /* eslint-disable linebreak-style */
-// /* eslint-disable no-unused-vars */
-// /* eslint-disable import/extensions */
-// /* eslint-disable react/jsx-filename-extension */
-// import React from "react";
-// import SearchBar from "./Search.jsx";
-// import Grid from "layout/Grid";
-// import Panel from "layout/Panel";
-// import List, { ListItem } from "blocks/List";
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
+import React, { useState } from "react";
+import Search from "blocks/Search";
 
+export default {
+  title: "Data Entry/Search",
+  component: Search,
+  parameters: {
+    docs: { page: null },
+  },
+  includeStories: [],
+};
 
-
-// const SmallData = [
-//   {
-//     title: "Address",
-//     description: "address",
-//   },
-//   {
-//     title: "APN",
-//     description: "apn",
-//   },
-
-// ];
-
-// const AdvancedInputs = [
-//     {
-//       placeholder: "Owner",
-//     },
-//     {
-//       placeholder: "APN",
-//     },
-  
-//   ];
-
-
-
-// const Data = [
-//   {
-//     title: "White House",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Orange House",
-//     description: "1224 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Red House",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Green House",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Black House",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Blue House",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Address",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "APN",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Owner",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Address",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Address",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "APN",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Owner",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-//   {
-//     title: "Address",
-//     description: "123 Malibu Drive, CA 92660",
-//   },
-
-// ];
-
-// storiesOf("Blocks|Search", module)
-//   .add("Default", () => {
-//     return (
-//       <SearchBar placeholder="Search Location" />
-//     );
-//   })
-//   .add("Advanced Search", () => {
-//     return (
-//       <SearchBar placeholder="Search Location" advance inputs={AdvancedInputs} />
-//     );
-//   })
-//   .add("Results", () => {
-//     return (
-//         <SearchBar placeholder="Search Location" results={Data} />
-//     );
-//   })
-//   .add("Error Message", () => {
-//     return (
-//       <Grid columns="1">
-//         <SearchBar placeholder="Search Location" error results={Data}/>
-//         <SearchBar placeholder="Search Location" error="offline" />
-//         <SearchBar placeholder="Search Location" error="connection" />
-//       </Grid>
-//     );
-//   });
-
+export const Interaction = () => {
+  const results = [
+    {
+      title: "White House",
+      description: "123 Malibu Drive, CA 92660",
+    },
+    {
+      title: "Orange House",
+      description: "1224 Malibu Drive, CA 92660",
+    },
+  ];
+  const [stateResults, setResultsState] = useState(false);
+  const toggleResults = () => { setResultsState(!stateResults); };
+  return (
+    <Search
+      id="Interaction"
+      placeholder="Search Location"
+      error2
+      results={stateResults ? results : null}
+      onSearch={toggleResults}
+    />
+  );
+};
+Interaction.story = {
+  parameters: {
+    parameters: {
+      viewMode: "story",
+    },
+  },
+};

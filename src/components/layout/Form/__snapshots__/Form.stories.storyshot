@@ -11,82 +11,81 @@ exports[` 1`] = `
 >
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    className="Form__FormWrapper-v2wrel-1 jozDvZ"
     id="Form"
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dSpuln"
-        fontSize="1.15em"
-        fontWeight={500}
-        letterSpacing="0px"
+        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        fontSize="1.15rem"
+        fontWeight="500"
+        letterSpacing="0.4px"
       >
         Form Header
       </h5>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-        fontSize="0.879em"
-        fontWeight={300}
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         This is the subtitle
       </p>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-        fontSize="0.75em"
-        fontWeight={600}
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+        fontSize="0.875rem"
+        fontWeight={400}
         id={null}
-        letterSpacing="0.4px"
+        letterSpacing="0.25px"
       >
         Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind.
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-          fontSize="0.75em"
-          fontWeight={600}
-          id={null}
-          letterSpacing="0.4px"
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Group 1
-        </p>
+        </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="firstName_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               First Name
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="firstName"
@@ -96,15 +95,16 @@ exports[` 1`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder="John"
               rows=""
               type="text"
             />
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-              fontSize="0.75em"
-              fontWeight={600}
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
               id={null}
               letterSpacing="0.4px"
             >
@@ -112,22 +112,22 @@ exports[` 1`] = `
             </p>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="lastName_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Last Name
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="lastName"
@@ -137,15 +137,16 @@ exports[` 1`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder="Williams"
               rows=""
               type="text"
             />
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-              fontSize="0.75em"
-              fontWeight={600}
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
               id={null}
               letterSpacing="0.4px"
             >
@@ -155,19 +156,18 @@ exports[` 1`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-          fontSize="0.75em"
-          fontWeight={600}
-          id={null}
-          letterSpacing="0.4px"
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Group 2
-        </p>
+        </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
@@ -177,18 +177,18 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+              fontSize="0.8rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="1px"
             >
               Checkbox Group Label
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-              fontSize="0.75em"
-              fontWeight={600}
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
               id={null}
               letterSpacing="0.4px"
             >
@@ -200,12 +200,12 @@ exports[` 1`] = `
               rows={null}
             >
               <div
-                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                   id="box-1"
                   onBlur={null}
                   onChange={null}
@@ -213,22 +213,22 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="box-1"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Label 1
                 </label>
               </div>
               <div
-                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 loOzdz"
+                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 cQLJfv"
                 disabled={true}
               >
                 <input
                   checked={null}
-                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 kcLpFG"
+                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 fpvwYH"
                   id="box-2"
                   onBlur={null}
                   onChange={null}
@@ -237,22 +237,22 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="box-2"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Label 2 (disabled)
                 </label>
               </div>
               <div
-                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                   id="box-3"
                   onBlur={null}
                   onChange={null}
@@ -260,22 +260,22 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="box-3"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Label 3
                 </label>
               </div>
               <div
-                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                   id="box-4"
                   onBlur={null}
                   onChange={null}
@@ -283,11 +283,11 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="box-4"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Label 4
                 </label>
@@ -305,12 +305,12 @@ exports[` 1`] = `
               rows={null}
             >
               <div
-                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                   id="box_long"
                   onBlur={null}
                   onChange={null}
@@ -318,22 +318,22 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="box_long"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.
                 </label>
               </div>
               <div
-                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                  className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                   id="box_long2"
                   onBlur={null}
                   onChange={null}
@@ -341,11 +341,11 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="box_long2"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Enough with these long labels already...put it on your blog, Shakespeare.
                 </label>
@@ -353,13 +353,13 @@ exports[` 1`] = `
             </section>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hxAWzs"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+              fontSize="0.75em"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="0.4px"
@@ -367,7 +367,7 @@ exports[` 1`] = `
               Multi-Select
             </label>
             <div
-              className=" css-jf3hug-container"
+              className=" css-3p29ga-container"
               id={null}
               onKeyDown={[Function]}
             >
@@ -380,7 +380,7 @@ exports[` 1`] = `
                   className=" css-g1d714-ValueContainer"
                 >
                   <div
-                    className=" css-krol22-placeholder"
+                    className=" css-1m79im8-placeholder"
                   >
                     Choose One Or More...
                   </div>
@@ -471,9 +471,9 @@ exports[` 1`] = `
               </div>
             </div>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-              fontSize="0.75em"
-              fontWeight={600}
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
               id={null}
               letterSpacing="0.4px"
             >
@@ -483,19 +483,18 @@ exports[` 1`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-          fontSize="0.75em"
-          fontWeight={600}
-          id={null}
-          letterSpacing="0.4px"
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
         >
           Group 3
-        </p>
+        </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
@@ -505,18 +504,18 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+              fontSize="0.8rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="1px"
             >
               Radio Group Label
             </label>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-              fontSize="0.75em"
-              fontWeight={600}
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
               id={null}
               letterSpacing="0.4px"
             >
@@ -528,12 +527,12 @@ exports[` 1`] = `
               rows={null}
             >
               <div
-                className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
+                  className="Radio__RadioInput-sc-3ox61a-2 bFDhxp"
                   id="radio-1"
                   name="radio-group"
                   onBlur={null}
@@ -543,22 +542,22 @@ exports[` 1`] = `
                   value="1"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio-1"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Label 1
                 </label>
               </div>
               <div
-                className="Radio__RadioContainer-sc-3ox61a-1 fXxza-D"
+                className="Radio__RadioContainer-sc-3ox61a-1 cCsbQj"
                 disabled={true}
               >
                 <input
                   checked={null}
-                  className="Radio__RadioInput-sc-3ox61a-2 dntbLj"
+                  className="Radio__RadioInput-sc-3ox61a-2 BLUjR"
                   id="radio-2"
                   name="radio-group"
                   onBlur={null}
@@ -569,22 +568,22 @@ exports[` 1`] = `
                   value="2"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio-2"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Label 2 (disabled)
                 </label>
               </div>
               <div
-                className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
+                  className="Radio__RadioInput-sc-3ox61a-2 bFDhxp"
                   id="radio-3"
                   name="radio-group"
                   onBlur={null}
@@ -594,22 +593,22 @@ exports[` 1`] = `
                   value="3"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio-3"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Label 3
                 </label>
               </div>
               <div
-                className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
+                  className="Radio__RadioInput-sc-3ox61a-2 bFDhxp"
                   id="radio-4"
                   name="radio-group"
                   onBlur={null}
@@ -619,11 +618,11 @@ exports[` 1`] = `
                   value="4"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio-4"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Label 4
                 </label>
@@ -641,12 +640,12 @@ exports[` 1`] = `
               rows={null}
             >
               <div
-                className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
+                  className="Radio__RadioInput-sc-3ox61a-2 bFDhxp"
                   id="radio_long"
                   name="radio-group"
                   onBlur={null}
@@ -656,22 +655,22 @@ exports[` 1`] = `
                   value="5"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio_long"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.
                 </label>
               </div>
               <div
-                className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
                 disabled={false}
               >
                 <input
                   checked={null}
-                  className="Radio__RadioInput-sc-3ox61a-2 hnXXqB"
+                  className="Radio__RadioInput-sc-3ox61a-2 bFDhxp"
                   id="radio_long2"
                   name="radio-group"
                   onBlur={null}
@@ -681,11 +680,11 @@ exports[` 1`] = `
                   value="6"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio_long2"
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Enough with these long labels already...put it on your blog, Shakespeare.
                 </label>

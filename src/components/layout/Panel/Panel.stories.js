@@ -17,7 +17,7 @@ storiesOf("Layout|Panel", module)
   .add("Panel with header", () => {
     return (
       <Panel
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -25,14 +25,15 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
   .add("Panel with footer", () => {
     return (
       <Panel
-        footer={
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -40,14 +41,15 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
   .add("Panel with header/footer", () => {
     return (
       <Panel
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -55,8 +57,9 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
-        footer={
+          />
+        )}
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -64,7 +67,8 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       />
     );
   })
@@ -72,7 +76,7 @@ storiesOf("Layout|Panel", module)
     return (
       <Panel
         id="Panel"
-        header={
+        header={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -80,8 +84,9 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Header" />,
               align: "center",
             }}
-          />}
-        footer={
+          />
+        )}
+        footer={(
           <Bar
             contentAlign="center"
             padding="2x"
@@ -89,7 +94,8 @@ storiesOf("Layout|Panel", module)
               content: <Title text="Footer" />,
               align: "center",
             }}
-          />}
+          />
+        )}
       >
         <CardGrid>
           <Card />
@@ -130,7 +136,7 @@ export const Knobs = () => {
     <Panel
       id="Panel"
       offcanvas={offcanvas}
-      header={
+      header={(
         <Bar
           contentAlign="center"
           padding="2x"
@@ -138,8 +144,9 @@ export const Knobs = () => {
             content: <Title text="Header" />,
             align: "center",
           }}
-        />}
-      footer={
+        />
+      )}
+      footer={(
         <Bar
           contentAlign="center"
           padding="2x"
@@ -147,7 +154,8 @@ export const Knobs = () => {
             content: <Title text="Footer" />,
             align: "center",
           }}
-        />}
+        />
+      )}
     >
       <CardGrid>
         <Card />

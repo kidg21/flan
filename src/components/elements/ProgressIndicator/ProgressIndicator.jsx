@@ -5,6 +5,11 @@ import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Text from "base/Typography";
 
+const ProgressSection = styled(Grid)`
+color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+`;
 
 const BarItem = styled.div`
   align-items: center;
@@ -35,19 +40,16 @@ const Container = styled.div`
   background-color: ${(props) => { return props.theme.palette.neutral40; }};
 `;
 
-
-
 function ProgressIndicator({
   percentage, id,
 }) {
-
   return (
-      <Grid columns = "1fr auto" align="center" >
-        <Container>
-        <BarItem id={id} style={{width: `${percentage}%`}} />
-        </Container>
-        <Text text={`${percentage}%`}/>
-      </Grid>
+    <ProgressSection columns="1fr auto" align="center">
+      <Container>
+        <BarItem id={id} style={{ width: `${percentage}%` }} />
+      </Container>
+      <Text text={`${percentage}%`} />
+    </ProgressSection>
   );
 }
 

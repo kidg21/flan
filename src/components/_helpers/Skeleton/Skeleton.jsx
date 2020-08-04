@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
 // Default content if component is empty - good for prototyping
-export const Skeleton = css`
+const Skeleton = css`
   content: "";
   display: block;
   background-image: linear-gradient(
@@ -22,3 +22,5 @@ export const Skeleton = css`
     }
   }
 `;
+
+export default Skeleton;

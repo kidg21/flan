@@ -2,9 +2,15 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { PlaceholderText } from "helpers/Skeleton";
 import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
+
+const Section = styled.section`
+  display: grid;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+`;
 
 const FormWrapper = styled.form`
   color: ${(props) => {
@@ -15,27 +21,22 @@ const FormWrapper = styled.form`
   }};
   height: 100%;
   padding: 1rem 1rem 1.5rem;
+  ${Section}:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 const Header = styled(Grid)`
-  margin-bottom: 1.5rem;
-`;
-
-const GroupTitle = styled(Text)`
-  color: ${(props) => {
-    return props.theme.text.secondary;
-  }};
-  grid-column: 1/-1;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-`;
-
-const Section = styled.section`
-  display: grid;
-  grid-gap: 1rem;
   margin-bottom: 1rem;
 `;
 
+const TitleSection = styled(Title)`
+text-transform: uppercase;
+grid-column: 1/-1;
+letter-spacing: 2px;
+font-size: 12px;
+font-weight: 400;
+`;
 
 const Inputs = styled(Grid)`
   grid-template-columns: ${(props) => {
@@ -50,7 +51,6 @@ const Inputs = styled(Grid)`
   }
 `;
 
-
 function FormSection({ children, title, columns }) {
   let setColumns;
   const _columns = parseInt(columns, 10);
@@ -61,7 +61,7 @@ function FormSection({ children, title, columns }) {
   }
   return (
     <Section>
-      {title ? <GroupTitle size="sm" weight="bold" text={title} /> : null}
+      {title ? <TitleSection size="sm" weight="bold" text={title} /> : null}
       <Inputs setColumns={setColumns}>
         {children}
       </Inputs>
@@ -103,9 +103,9 @@ function Form({
     <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <Header columns="1">
-          {title ? <Title size="lg" weight="bold" text={title} /> : null}
-          {subtitle ? <Text weight="light" text={subtitle} /> : null}
-          {description ? <Text size="sm" weight="bold" text={description} /> : null}
+          {title ? <Title size="lg" text={title} /> : null}
+          {subtitle ? <Text text={subtitle} /> : null}
+          {description ? <Text size="sm" text={description} /> : null}
         </Header>
       ) : null}
       <Inputs setColumns={setColumns}>

@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <div
-  className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+  className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
   disabled={false}
 >
   <input
     checked={null}
-    className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+    className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
     id="Checkbox"
     onBlur={null}
     onChange={null}
@@ -15,11 +15,11 @@ exports[` 1`] = `
     type="checkbox"
   />
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-    fontSize="0.879em"
+    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    fontSize="0.875rem"
     fontWeight={400}
     htmlFor="Checkbox"
-    letterSpacing="0.4px"
+    letterSpacing=".5px"
   >
     Checkbox
   </label>
@@ -33,12 +33,12 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
     disabled={false}
   >
     <input
       checked={true}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
       id="Checked"
       onBlur={null}
       onChange={null}
@@ -46,22 +46,22 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Checked"
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Checked
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
     disabled={false}
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
       id="Unchecked"
       onBlur={null}
       onChange={null}
@@ -69,22 +69,22 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Unchecked"
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Unchecked
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gxdWlF"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 kDRkeN"
     disabled={false}
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 biqtvl"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cQJaxC"
       id="Error"
       onBlur={null}
       onChange={null}
@@ -92,22 +92,22 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Error"
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Error
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 loOzdz"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 cQLJfv"
     disabled={true}
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 kcLpFG"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 fpvwYH"
       id="Disabled"
       onBlur={null}
       onChange={null}
@@ -116,11 +116,11 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Disabled"
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Disabled
     </label>
@@ -135,12 +135,12 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
     disabled={false}
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
       id="Left Aligned"
       onBlur={null}
       onChange={null}
@@ -148,22 +148,22 @@ exports[` 3`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Left Aligned"
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Left Aligned
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 hTLhND"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 kGGlpk"
     disabled={false}
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
       id="Right Aligned"
       onBlur={null}
       onChange={null}
@@ -171,11 +171,11 @@ exports[` 3`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-      fontSize="0.879em"
+      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Right Aligned"
-      letterSpacing="0.4px"
+      letterSpacing=".5px"
     >
       Right Aligned
     </label>
@@ -186,30 +186,29 @@ exports[` 3`] = `
 exports[` 4`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-1 jozDvZ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-        fontSize="0.75em"
-        fontWeight={600}
-        id={null}
-        letterSpacing="0.4px"
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
       >
         Checkbox Group (2 Columns)
-      </p>
+      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -224,12 +223,12 @@ exports[` 4`] = `
             rows={null}
           >
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
               disabled={false}
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                 id="Checkbox-1"
                 onBlur={null}
                 onChange={null}
@@ -237,22 +236,22 @@ exports[` 4`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor="Checkbox-1"
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Checkbox 1
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
               disabled={false}
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                 id="Checkbox-2"
                 onBlur={null}
                 onChange={null}
@@ -260,22 +259,22 @@ exports[` 4`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor="Checkbox-2"
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Checkbox 2
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
               disabled={false}
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                 id="Checkbox-3"
                 onBlur={null}
                 onChange={null}
@@ -283,22 +282,22 @@ exports[` 4`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor="Checkbox-3"
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Checkbox 3
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
               disabled={false}
             >
               <input
                 checked={null}
-                className="Checkbox__CheckboxInput-sc-1gwp7am-2 cHALbI"
+                className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
                 id="Checkbox-4"
                 onBlur={null}
                 onChange={null}
@@ -306,11 +305,11 @@ exports[` 4`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor="Checkbox-4"
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Checkbox 4
               </label>

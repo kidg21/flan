@@ -91,7 +91,7 @@ function getPadding(left, right, center) {
 
 const paddingHash = {
   "0": "0",
-  "1x": "0em 0.5em",
+  "1x": "0.5em 0.5em",
   "2x": "1em 1.25em",
   "3x": "1.5em 1.5em",
 };
@@ -232,7 +232,7 @@ Bar.propTypes = {
   left: PropTypes.oneOfType([PropTypes.node, SlotType]),
   onClick: PropTypes.func,
   /** Sets the padding of the Bar component */
-  padding: PropTypes.oneOf(["0", "2x", "3x"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   /** Used to define the content in the right 'slot' */
   right: PropTypes.oneOfType([PropTypes.node, SlotType]),
 };

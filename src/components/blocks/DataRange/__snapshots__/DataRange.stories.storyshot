@@ -7,11 +7,11 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-    fontSize="0.879em"
-    fontWeight={600}
+    className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+    fontSize="0.8rem"
+    fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.4px"
+    letterSpacing="1px"
   >
     Data Range (default)
   </label>
@@ -24,22 +24,22 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 fNcQEg"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
         id="default_left_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-          fontSize="0.879em"
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Min
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
           cols=""
           disabled={false}
           id="default_left"
@@ -49,6 +49,7 @@ exports[` 1`] = `
           onChange={[Function]}
           onFocus={null}
           onKeyPress={null}
+          onKeyUp={null}
           pattern={null}
           placeholder={null}
           rows=""
@@ -60,11 +61,11 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 hsVbDT"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         _
       </p>
@@ -73,22 +74,22 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 kZQbjh"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
         id="default_right_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-          fontSize="0.879em"
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0.4px"
+          letterSpacing=".5px"
         >
           Max
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
           cols=""
           disabled={false}
           id="default_right"
@@ -98,6 +99,7 @@ exports[` 1`] = `
           onChange={[Function]}
           onFocus={null}
           onKeyPress={null}
+          onKeyUp={null}
           pattern={null}
           placeholder={null}
           rows=""
@@ -107,9 +109,9 @@ exports[` 1`] = `
     </div>
   </div>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-    fontSize="0.75em"
-    fontWeight={600}
+    className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+    fontSize="0.75rem"
+    fontWeight={400}
     id={null}
     letterSpacing="0.4px"
   >
@@ -121,21 +123,21 @@ exports[` 1`] = `
 exports[` 2`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-1 jozDvZ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -145,11 +147,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Price Range
           </label>
@@ -162,22 +164,22 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
                 id="input_left_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Min
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                   cols=""
                   disabled={false}
                   id="input_left"
@@ -187,6 +189,7 @@ exports[` 2`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -198,11 +201,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -211,22 +214,22 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
                 id="input_right_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Max
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                   cols=""
                   disabled={false}
                   id="input_right"
@@ -236,6 +239,7 @@ exports[` 2`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -245,9 +249,9 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -260,11 +264,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Price Range (error)
           </label>
@@ -282,17 +286,17 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Min
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -302,6 +306,7 @@ exports[` 2`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -313,11 +318,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -331,17 +336,17 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Max
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -351,6 +356,7 @@ exports[` 2`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -360,9 +366,9 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -375,11 +381,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Price Range (With Error message)
           </label>
@@ -398,7 +404,7 @@ exports[` 2`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -408,6 +414,7 @@ exports[` 2`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -419,11 +426,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -438,7 +445,7 @@ exports[` 2`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 ycSSG"
+                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -448,6 +455,7 @@ exports[` 2`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -457,18 +465,18 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -481,11 +489,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Price Range (disabled)
           </label>
@@ -503,17 +511,17 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Min
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 igWSUZ"
+                  className="TextInput__Input-sc-1fep8p8-2 hObFTZ"
                   cols=""
                   disabled={true}
                   id="inputDisabled_left"
@@ -523,6 +531,7 @@ exports[` 2`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -534,11 +543,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -552,17 +561,17 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Max
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 igWSUZ"
+                  className="TextInput__Input-sc-1fep8p8-2 hObFTZ"
                   cols=""
                   disabled={true}
                   id="inputDisabled_right"
@@ -572,6 +581,7 @@ exports[` 2`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -590,21 +600,21 @@ exports[` 2`] = `
 exports[` 3`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-1 jozDvZ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -614,11 +624,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Input Range
           </label>
@@ -631,22 +641,22 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
                 id="input_left_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Min
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                   cols=""
                   disabled={false}
                   id="input_left"
@@ -656,6 +666,7 @@ exports[` 3`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -667,11 +678,11 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 hsVbDT"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.5px"
               >
                 _
               </p>
@@ -680,22 +691,22 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
                 id="input_right_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                  fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Max
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                   cols=""
                   disabled={false}
                   id="input_right"
@@ -705,6 +716,7 @@ exports[` 3`] = `
                   onChange={[Function]}
                   onFocus={null}
                   onKeyPress={null}
+                  onKeyUp={null}
                   pattern={null}
                   placeholder={null}
                   rows=""
@@ -714,9 +726,9 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >
@@ -729,11 +741,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Select Range
           </label>
@@ -746,13 +758,13 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hxAWzs"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
+                  className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                  fontSize="0.75em"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing="0.4px"
@@ -760,7 +772,7 @@ exports[` 3`] = `
                   Min
                 </label>
                 <div
-                  className=" css-jf3hug-container"
+                  className=" css-3p29ga-container"
                   id="select_left"
                   onKeyDown={[Function]}
                 >
@@ -773,545 +785,7 @@ exports[` 3`] = `
                       className=" css-g1d714-ValueContainer"
                     >
                       <div
-                        className=" css-krol22-placeholder"
-                      />
-                      <div
-                        className="css-b8ldur-Input"
-                      >
-                        <div
-                          className=""
-                          style={
-                            Object {
-                              "display": "inline-block",
-                            }
-                          }
-                        >
-                          <input
-                            aria-autocomplete="list"
-                            autoCapitalize="none"
-                            autoComplete="off"
-                            autoCorrect="off"
-                            disabled={false}
-                            id="react-select-34-input"
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onFocus={[Function]}
-                            spellCheck="false"
-                            style={
-                              Object {
-                                "background": 0,
-                                "border": 0,
-                                "boxSizing": "content-box",
-                                "color": "inherit",
-                                "fontSize": "inherit",
-                                "label": "input",
-                                "opacity": 1,
-                                "outline": 0,
-                                "padding": 0,
-                                "width": "1px",
-                              }
-                            }
-                            tabIndex="0"
-                            type="text"
-                            value=""
-                          />
-                          <div
-                            style={
-                              Object {
-                                "height": 0,
-                                "left": 0,
-                                "overflow": "scroll",
-                                "position": "absolute",
-                                "top": 0,
-                                "visibility": "hidden",
-                                "whiteSpace": "pre",
-                              }
-                            }
-                          >
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className=" css-1hb7zxy-IndicatorsContainer"
-                    >
-                      <span
-                        className=" css-rci3ok-indicatorSeparator"
-                      />
-                      <div
-                        aria-hidden="true"
-                        className=" css-1jw44s5-indicatorContainer"
-                        onMouseDown={[Function]}
-                        onTouchEnd={[Function]}
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="css-6q0nyr-Svg"
-                          focusable="false"
-                          height={20}
-                          viewBox="0 0 20 20"
-                          width={20}
-                        >
-                          <path
-                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <input
-                    name="select_left"
-                    type="hidden"
-                    value=""
-                  />
-                </div>
-              </section>
-            </div>
-            <div
-              className="Bar__Slot-icfo76-1 hsVbDT"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                fontSize="0.879em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                _
-              </p>
-            </div>
-            <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hxAWzs"
-                id={null}
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="0.4px"
-                >
-                  Max
-                </label>
-                <div
-                  className=" css-jf3hug-container"
-                  id="select_right"
-                  onKeyDown={[Function]}
-                >
-                  <div
-                    className=" css-14ku2k9-control"
-                    onMouseDown={[Function]}
-                    onTouchEnd={[Function]}
-                  >
-                    <div
-                      className=" css-g1d714-ValueContainer"
-                    >
-                      <div
-                        className=" css-krol22-placeholder"
-                      />
-                      <div
-                        className="css-b8ldur-Input"
-                      >
-                        <div
-                          className=""
-                          style={
-                            Object {
-                              "display": "inline-block",
-                            }
-                          }
-                        >
-                          <input
-                            aria-autocomplete="list"
-                            autoCapitalize="none"
-                            autoComplete="off"
-                            autoCorrect="off"
-                            disabled={false}
-                            id="react-select-35-input"
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onFocus={[Function]}
-                            spellCheck="false"
-                            style={
-                              Object {
-                                "background": 0,
-                                "border": 0,
-                                "boxSizing": "content-box",
-                                "color": "inherit",
-                                "fontSize": "inherit",
-                                "label": "input",
-                                "opacity": 1,
-                                "outline": 0,
-                                "padding": 0,
-                                "width": "1px",
-                              }
-                            }
-                            tabIndex="0"
-                            type="text"
-                            value=""
-                          />
-                          <div
-                            style={
-                              Object {
-                                "height": 0,
-                                "left": 0,
-                                "overflow": "scroll",
-                                "position": "absolute",
-                                "top": 0,
-                                "visibility": "hidden",
-                                "whiteSpace": "pre",
-                              }
-                            }
-                          >
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className=" css-1hb7zxy-IndicatorsContainer"
-                    >
-                      <span
-                        className=" css-rci3ok-indicatorSeparator"
-                      />
-                      <div
-                        aria-hidden="true"
-                        className=" css-1jw44s5-indicatorContainer"
-                        onMouseDown={[Function]}
-                        onTouchEnd={[Function]}
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="css-6q0nyr-Svg"
-                          focusable="false"
-                          height={20}
-                          viewBox="0 0 20 20"
-                          width={20}
-                        >
-                          <path
-                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <input
-                    name="select_right"
-                    type="hidden"
-                    value=""
-                  />
-                </div>
-              </section>
-            </div>
-          </div>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
-            id={null}
-            letterSpacing="0.4px"
-          >
-            Hang in there, buddy, I'm here to help!
-          </p>
-        </section>
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 jeAbEq"
-          id="selectOperation"
-          rows={null}
-        >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
-            htmlFor={null}
-            letterSpacing="0.4px"
-          >
-            Select Range with Selector Operator
-          </label>
-          <div
-            className="Bar__BarLayout-icfo76-2 bHddGh"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 fNcQEg"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hxAWzs"
-                id={null}
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="0.4px"
-                >
-                  Min
-                </label>
-                <div
-                  className=" css-jf3hug-container"
-                  id="selectOperation_left"
-                  onKeyDown={[Function]}
-                >
-                  <div
-                    className=" css-14ku2k9-control"
-                    onMouseDown={[Function]}
-                    onTouchEnd={[Function]}
-                  >
-                    <div
-                      className=" css-g1d714-ValueContainer"
-                    >
-                      <div
-                        className=" css-krol22-placeholder"
-                      />
-                      <div
-                        className="css-b8ldur-Input"
-                      >
-                        <div
-                          className=""
-                          style={
-                            Object {
-                              "display": "inline-block",
-                            }
-                          }
-                        >
-                          <input
-                            aria-autocomplete="list"
-                            autoCapitalize="none"
-                            autoComplete="off"
-                            autoCorrect="off"
-                            disabled={false}
-                            id="react-select-36-input"
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onFocus={[Function]}
-                            spellCheck="false"
-                            style={
-                              Object {
-                                "background": 0,
-                                "border": 0,
-                                "boxSizing": "content-box",
-                                "color": "inherit",
-                                "fontSize": "inherit",
-                                "label": "input",
-                                "opacity": 1,
-                                "outline": 0,
-                                "padding": 0,
-                                "width": "1px",
-                              }
-                            }
-                            tabIndex="0"
-                            type="text"
-                            value=""
-                          />
-                          <div
-                            style={
-                              Object {
-                                "height": 0,
-                                "left": 0,
-                                "overflow": "scroll",
-                                "position": "absolute",
-                                "top": 0,
-                                "visibility": "hidden",
-                                "whiteSpace": "pre",
-                              }
-                            }
-                          >
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className=" css-1hb7zxy-IndicatorsContainer"
-                    >
-                      <span
-                        className=" css-rci3ok-indicatorSeparator"
-                      />
-                      <div
-                        aria-hidden="true"
-                        className=" css-1jw44s5-indicatorContainer"
-                        onMouseDown={[Function]}
-                        onTouchEnd={[Function]}
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="css-6q0nyr-Svg"
-                          focusable="false"
-                          height={20}
-                          viewBox="0 0 20 20"
-                          width={20}
-                        >
-                          <path
-                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <input
-                    name="selectOperation_left"
-                    type="hidden"
-                    value=""
-                  />
-                </div>
-              </section>
-            </div>
-            <div
-              className="Bar__Slot-icfo76-1 hVtzoz"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hxAWzs"
-                id={null}
-                rows={null}
-              >
-                <div
-                  className=" css-jf3hug-container"
-                  id="selectOperation_center"
-                  onKeyDown={[Function]}
-                >
-                  <div
-                    className=" css-14ku2k9-control"
-                    onMouseDown={[Function]}
-                    onTouchEnd={[Function]}
-                  >
-                    <div
-                      className=" css-g1d714-ValueContainer"
-                    >
-                      <div
-                        className=" css-krol22-placeholder"
-                      />
-                      <div
-                        className="css-b8ldur-Input"
-                      >
-                        <div
-                          className=""
-                          style={
-                            Object {
-                              "display": "inline-block",
-                            }
-                          }
-                        >
-                          <input
-                            aria-autocomplete="list"
-                            autoCapitalize="none"
-                            autoComplete="off"
-                            autoCorrect="off"
-                            disabled={false}
-                            id="react-select-37-input"
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onFocus={[Function]}
-                            spellCheck="false"
-                            style={
-                              Object {
-                                "background": 0,
-                                "border": 0,
-                                "boxSizing": "content-box",
-                                "color": "inherit",
-                                "fontSize": "inherit",
-                                "label": "input",
-                                "opacity": 1,
-                                "outline": 0,
-                                "padding": 0,
-                                "width": "1px",
-                              }
-                            }
-                            tabIndex="0"
-                            type="text"
-                            value=""
-                          />
-                          <div
-                            style={
-                              Object {
-                                "height": 0,
-                                "left": 0,
-                                "overflow": "scroll",
-                                "position": "absolute",
-                                "top": 0,
-                                "visibility": "hidden",
-                                "whiteSpace": "pre",
-                              }
-                            }
-                          >
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className=" css-1hb7zxy-IndicatorsContainer"
-                    >
-                      <span
-                        className=" css-rci3ok-indicatorSeparator"
-                      />
-                      <div
-                        aria-hidden="true"
-                        className=" css-1jw44s5-indicatorContainer"
-                        onMouseDown={[Function]}
-                        onTouchEnd={[Function]}
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="css-6q0nyr-Svg"
-                          focusable="false"
-                          height={20}
-                          viewBox="0 0 20 20"
-                          width={20}
-                        >
-                          <path
-                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <input
-                    name="selectOperation_center"
-                    type="hidden"
-                    value=""
-                  />
-                </div>
-              </section>
-            </div>
-            <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hxAWzs"
-                id={null}
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-                  fontSize="0.879em"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="0.4px"
-                >
-                  Max
-                </label>
-                <div
-                  className=" css-jf3hug-container"
-                  id="selectOperation_right"
-                  onKeyDown={[Function]}
-                >
-                  <div
-                    className=" css-14ku2k9-control"
-                    onMouseDown={[Function]}
-                    onTouchEnd={[Function]}
-                  >
-                    <div
-                      className=" css-g1d714-ValueContainer"
-                    >
-                      <div
-                        className=" css-krol22-placeholder"
+                        className=" css-1m79im8-placeholder"
                       />
                       <div
                         className="css-b8ldur-Input"
@@ -1399,6 +873,544 @@ exports[` 3`] = `
                     </div>
                   </div>
                   <input
+                    name="select_left"
+                    type="hidden"
+                    value=""
+                  />
+                </div>
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-icfo76-1 hsVbDT"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                _
+              </p>
+            </div>
+            <div
+              className="Bar__Slot-icfo76-1 kZQbjh"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="0.4px"
+                >
+                  Max
+                </label>
+                <div
+                  className=" css-3p29ga-container"
+                  id="select_right"
+                  onKeyDown={[Function]}
+                >
+                  <div
+                    className=" css-14ku2k9-control"
+                    onMouseDown={[Function]}
+                    onTouchEnd={[Function]}
+                  >
+                    <div
+                      className=" css-g1d714-ValueContainer"
+                    >
+                      <div
+                        className=" css-1m79im8-placeholder"
+                      />
+                      <div
+                        className="css-b8ldur-Input"
+                      >
+                        <div
+                          className=""
+                          style={
+                            Object {
+                              "display": "inline-block",
+                            }
+                          }
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoCapitalize="none"
+                            autoComplete="off"
+                            autoCorrect="off"
+                            disabled={false}
+                            id="react-select-39-input"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            spellCheck="false"
+                            style={
+                              Object {
+                                "background": 0,
+                                "border": 0,
+                                "boxSizing": "content-box",
+                                "color": "inherit",
+                                "fontSize": "inherit",
+                                "label": "input",
+                                "opacity": 1,
+                                "outline": 0,
+                                "padding": 0,
+                                "width": "1px",
+                              }
+                            }
+                            tabIndex="0"
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            style={
+                              Object {
+                                "height": 0,
+                                "left": 0,
+                                "overflow": "scroll",
+                                "position": "absolute",
+                                "top": 0,
+                                "visibility": "hidden",
+                                "whiteSpace": "pre",
+                              }
+                            }
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className=" css-1hb7zxy-IndicatorsContainer"
+                    >
+                      <span
+                        className=" css-rci3ok-indicatorSeparator"
+                      />
+                      <div
+                        aria-hidden="true"
+                        className=" css-1jw44s5-indicatorContainer"
+                        onMouseDown={[Function]}
+                        onTouchEnd={[Function]}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="css-6q0nyr-Svg"
+                          focusable="false"
+                          height={20}
+                          viewBox="0 0 20 20"
+                          width={20}
+                        >
+                          <path
+                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    name="select_right"
+                    type="hidden"
+                    value=""
+                  />
+                </div>
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 jeAbEq"
+          id="selectOperation"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+            fontSize="0.8rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="1px"
+          >
+            Select Range with Selector Operator
+          </label>
+          <div
+            className="Bar__BarLayout-icfo76-2 bHddGh"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 fNcQEg"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="0.4px"
+                >
+                  Min
+                </label>
+                <div
+                  className=" css-3p29ga-container"
+                  id="selectOperation_left"
+                  onKeyDown={[Function]}
+                >
+                  <div
+                    className=" css-14ku2k9-control"
+                    onMouseDown={[Function]}
+                    onTouchEnd={[Function]}
+                  >
+                    <div
+                      className=" css-g1d714-ValueContainer"
+                    >
+                      <div
+                        className=" css-1m79im8-placeholder"
+                      />
+                      <div
+                        className="css-b8ldur-Input"
+                      >
+                        <div
+                          className=""
+                          style={
+                            Object {
+                              "display": "inline-block",
+                            }
+                          }
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoCapitalize="none"
+                            autoComplete="off"
+                            autoCorrect="off"
+                            disabled={false}
+                            id="react-select-40-input"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            spellCheck="false"
+                            style={
+                              Object {
+                                "background": 0,
+                                "border": 0,
+                                "boxSizing": "content-box",
+                                "color": "inherit",
+                                "fontSize": "inherit",
+                                "label": "input",
+                                "opacity": 1,
+                                "outline": 0,
+                                "padding": 0,
+                                "width": "1px",
+                              }
+                            }
+                            tabIndex="0"
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            style={
+                              Object {
+                                "height": 0,
+                                "left": 0,
+                                "overflow": "scroll",
+                                "position": "absolute",
+                                "top": 0,
+                                "visibility": "hidden",
+                                "whiteSpace": "pre",
+                              }
+                            }
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className=" css-1hb7zxy-IndicatorsContainer"
+                    >
+                      <span
+                        className=" css-rci3ok-indicatorSeparator"
+                      />
+                      <div
+                        aria-hidden="true"
+                        className=" css-1jw44s5-indicatorContainer"
+                        onMouseDown={[Function]}
+                        onTouchEnd={[Function]}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="css-6q0nyr-Svg"
+                          focusable="false"
+                          height={20}
+                          viewBox="0 0 20 20"
+                          width={20}
+                        >
+                          <path
+                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    name="selectOperation_left"
+                    type="hidden"
+                    value=""
+                  />
+                </div>
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-icfo76-1 hVtzoz"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                id={null}
+                rows={null}
+              >
+                <div
+                  className=" css-3p29ga-container"
+                  id="selectOperation_center"
+                  onKeyDown={[Function]}
+                >
+                  <div
+                    className=" css-14ku2k9-control"
+                    onMouseDown={[Function]}
+                    onTouchEnd={[Function]}
+                  >
+                    <div
+                      className=" css-g1d714-ValueContainer"
+                    >
+                      <div
+                        className=" css-1m79im8-placeholder"
+                      />
+                      <div
+                        className="css-b8ldur-Input"
+                      >
+                        <div
+                          className=""
+                          style={
+                            Object {
+                              "display": "inline-block",
+                            }
+                          }
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoCapitalize="none"
+                            autoComplete="off"
+                            autoCorrect="off"
+                            disabled={false}
+                            id="react-select-41-input"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            spellCheck="false"
+                            style={
+                              Object {
+                                "background": 0,
+                                "border": 0,
+                                "boxSizing": "content-box",
+                                "color": "inherit",
+                                "fontSize": "inherit",
+                                "label": "input",
+                                "opacity": 1,
+                                "outline": 0,
+                                "padding": 0,
+                                "width": "1px",
+                              }
+                            }
+                            tabIndex="0"
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            style={
+                              Object {
+                                "height": 0,
+                                "left": 0,
+                                "overflow": "scroll",
+                                "position": "absolute",
+                                "top": 0,
+                                "visibility": "hidden",
+                                "whiteSpace": "pre",
+                              }
+                            }
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className=" css-1hb7zxy-IndicatorsContainer"
+                    >
+                      <span
+                        className=" css-rci3ok-indicatorSeparator"
+                      />
+                      <div
+                        aria-hidden="true"
+                        className=" css-1jw44s5-indicatorContainer"
+                        onMouseDown={[Function]}
+                        onTouchEnd={[Function]}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="css-6q0nyr-Svg"
+                          focusable="false"
+                          height={20}
+                          viewBox="0 0 20 20"
+                          width={20}
+                        >
+                          <path
+                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    name="selectOperation_center"
+                    type="hidden"
+                    value=""
+                  />
+                </div>
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-icfo76-1 kZQbjh"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="0.4px"
+                >
+                  Max
+                </label>
+                <div
+                  className=" css-3p29ga-container"
+                  id="selectOperation_right"
+                  onKeyDown={[Function]}
+                >
+                  <div
+                    className=" css-14ku2k9-control"
+                    onMouseDown={[Function]}
+                    onTouchEnd={[Function]}
+                  >
+                    <div
+                      className=" css-g1d714-ValueContainer"
+                    >
+                      <div
+                        className=" css-1m79im8-placeholder"
+                      />
+                      <div
+                        className="css-b8ldur-Input"
+                      >
+                        <div
+                          className=""
+                          style={
+                            Object {
+                              "display": "inline-block",
+                            }
+                          }
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoCapitalize="none"
+                            autoComplete="off"
+                            autoCorrect="off"
+                            disabled={false}
+                            id="react-select-42-input"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            spellCheck="false"
+                            style={
+                              Object {
+                                "background": 0,
+                                "border": 0,
+                                "boxSizing": "content-box",
+                                "color": "inherit",
+                                "fontSize": "inherit",
+                                "label": "input",
+                                "opacity": 1,
+                                "outline": 0,
+                                "padding": 0,
+                                "width": "1px",
+                              }
+                            }
+                            tabIndex="0"
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            style={
+                              Object {
+                                "height": 0,
+                                "left": 0,
+                                "overflow": "scroll",
+                                "position": "absolute",
+                                "top": 0,
+                                "visibility": "hidden",
+                                "whiteSpace": "pre",
+                              }
+                            }
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className=" css-1hb7zxy-IndicatorsContainer"
+                    >
+                      <span
+                        className=" css-rci3ok-indicatorSeparator"
+                      />
+                      <div
+                        aria-hidden="true"
+                        className=" css-1jw44s5-indicatorContainer"
+                        onMouseDown={[Function]}
+                        onTouchEnd={[Function]}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="css-6q0nyr-Svg"
+                          focusable="false"
+                          height={20}
+                          viewBox="0 0 20 20"
+                          width={20}
+                        >
+                          <path
+                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <input
                     name="selectOperation_right"
                     type="hidden"
                     value=""
@@ -1408,9 +1420,9 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-            fontSize="0.75em"
-            fontWeight={600}
+            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            fontSize="0.75rem"
+            fontWeight={400}
             id={null}
             letterSpacing="0.4px"
           >

@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 cVUDzi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 iDqIwp"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="address"
     media=""
@@ -46,19 +46,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           address
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -66,7 +66,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="alert"
     media=""
@@ -105,19 +105,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           alert
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -125,7 +125,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="alert_triangle"
     media=""
@@ -164,19 +164,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           alert_triangle
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -184,7 +184,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="analytics"
     media=""
@@ -223,19 +223,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           analytics
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -243,7 +243,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="apn"
     media=""
@@ -282,19 +282,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           apn
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -302,7 +302,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="attach"
     media=""
@@ -341,19 +341,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           attach
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -361,7 +361,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="bookmark"
     media=""
@@ -400,19 +400,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           bookmark
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -420,7 +420,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="bookmark_solid"
     media=""
@@ -459,19 +459,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           bookmark_solid
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -479,7 +479,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="calendar"
     media=""
@@ -518,19 +518,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           calendar
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -538,7 +538,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="call"
     media=""
@@ -577,19 +577,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           call
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -597,7 +597,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="chat"
     media=""
@@ -636,19 +636,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           chat
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -656,7 +656,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="check"
     media=""
@@ -695,19 +695,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           check
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -715,7 +715,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="check_circle"
     media=""
@@ -754,19 +754,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           check_circle
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -774,7 +774,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="circle"
     media=""
@@ -813,19 +813,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           circle
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -833,7 +833,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="circle_solid"
     media=""
@@ -872,19 +872,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           circle_solid
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -892,7 +892,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="clone"
     media=""
@@ -931,19 +931,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           clone
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -951,7 +951,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="cloud_download"
     media=""
@@ -990,19 +990,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           cloud_download
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1010,7 +1010,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="cloud_upload"
     media=""
@@ -1049,19 +1049,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           cloud_upload
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1069,7 +1069,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="close"
     media=""
@@ -1108,19 +1108,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           close
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1128,7 +1128,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="compare"
     media=""
@@ -1167,19 +1167,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           compare
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1187,7 +1187,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="configure"
     media=""
@@ -1226,19 +1226,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           configure
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1246,7 +1246,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="contact"
     media=""
@@ -1285,19 +1285,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           contact
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1305,7 +1305,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="contacts"
     media=""
@@ -1344,19 +1344,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           contacts
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1364,7 +1364,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="copy"
     media=""
@@ -1403,19 +1403,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           copy
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1423,7 +1423,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="delete"
     media=""
@@ -1462,19 +1462,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           delete
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1482,7 +1482,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="directions"
     media=""
@@ -1521,19 +1521,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           directions
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1541,7 +1541,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="draw"
     media=""
@@ -1580,19 +1580,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           draw
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1600,7 +1600,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="drawings"
     media=""
@@ -1639,19 +1639,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           drawings
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1659,7 +1659,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="edit"
     media=""
@@ -1698,19 +1698,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           edit
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1718,7 +1718,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="exchange"
     media=""
@@ -1757,19 +1757,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           exchange
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1777,7 +1777,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="exclude"
     media=""
@@ -1816,19 +1816,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           exclude
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1836,7 +1836,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="file"
     media=""
@@ -1875,19 +1875,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           file
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1895,7 +1895,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="filter"
     media=""
@@ -1934,19 +1934,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           filter
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -1954,7 +1954,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="gps"
     media=""
@@ -1993,19 +1993,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           gps
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2013,7 +2013,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="heatmap"
     media=""
@@ -2052,19 +2052,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           heatmap
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2072,7 +2072,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="help"
     media=""
@@ -2111,19 +2111,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           help
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2131,7 +2131,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="home"
     media=""
@@ -2170,19 +2170,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           home
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2190,7 +2190,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="include"
     media=""
@@ -2229,19 +2229,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           include
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2249,7 +2249,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="info"
     media=""
@@ -2288,19 +2288,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           info
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2308,7 +2308,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="info_circle"
     media=""
@@ -2347,19 +2347,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           info_circle
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2367,7 +2367,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="labels"
     media=""
@@ -2406,19 +2406,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           labels
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2426,7 +2426,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="layers"
     media=""
@@ -2465,19 +2465,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           layers
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2485,7 +2485,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="legend"
     media=""
@@ -2524,19 +2524,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           legend
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2544,7 +2544,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="link"
     media=""
@@ -2583,19 +2583,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           link
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2603,7 +2603,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="list"
     media=""
@@ -2642,19 +2642,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           list
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2662,7 +2662,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="loading"
     media=""
@@ -2701,19 +2701,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           loading
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2721,7 +2721,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="location"
     media=""
@@ -2760,19 +2760,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           location
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2780,7 +2780,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="mail"
     media=""
@@ -2819,19 +2819,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           mail
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2839,7 +2839,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="mail_solid"
     media=""
@@ -2878,19 +2878,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           mail_solid
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2898,7 +2898,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="map"
     media=""
@@ -2937,19 +2937,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           map
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -2957,7 +2957,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="map_pin"
     media=""
@@ -2996,19 +2996,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           map_pin
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3016,7 +3016,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="maximize"
     media=""
@@ -3055,19 +3055,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           maximize
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3075,7 +3075,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="measure"
     media=""
@@ -3114,19 +3114,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           measure
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3134,7 +3134,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="message"
     media=""
@@ -3173,19 +3173,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           message
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3193,7 +3193,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="minimize"
     media=""
@@ -3232,19 +3232,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           minimize
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3252,7 +3252,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="minus"
     media=""
@@ -3291,19 +3291,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           minus
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3311,7 +3311,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="minus_square"
     media=""
@@ -3350,19 +3350,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           minus_square
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3370,7 +3370,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="more"
     media=""
@@ -3409,19 +3409,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           more
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3429,7 +3429,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="my_location"
     media=""
@@ -3468,19 +3468,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           my_location
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3488,7 +3488,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="notification"
     media=""
@@ -3527,19 +3527,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           notification
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3547,7 +3547,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="notification_solid"
     media=""
@@ -3586,19 +3586,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           notification_solid
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3606,7 +3606,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="open"
     media=""
@@ -3645,19 +3645,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           open
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3665,7 +3665,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="options"
     media=""
@@ -3704,19 +3704,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           options
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3724,7 +3724,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="owner"
     media=""
@@ -3763,19 +3763,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           owner
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3783,7 +3783,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="photos"
     media=""
@@ -3822,19 +3822,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           photos
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3842,7 +3842,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="plus"
     media=""
@@ -3881,19 +3881,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           plus
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3901,7 +3901,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="plus_square"
     media=""
@@ -3940,19 +3940,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           plus_square
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -3960,7 +3960,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="preferences"
     media=""
@@ -3999,19 +3999,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           preferences
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4019,7 +4019,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="print"
     media=""
@@ -4058,19 +4058,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           print
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4078,7 +4078,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="redo"
     media=""
@@ -4117,19 +4117,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           redo
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4137,7 +4137,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="report"
     media=""
@@ -4176,19 +4176,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           report
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4196,7 +4196,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="save"
     media=""
@@ -4235,19 +4235,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           save
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4255,7 +4255,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="scroll_top"
     media=""
@@ -4294,19 +4294,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           scroll_top
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4314,7 +4314,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="search"
     media=""
@@ -4353,19 +4353,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           search
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4373,7 +4373,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="settings"
     media=""
@@ -4412,19 +4412,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           settings
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4432,7 +4432,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="settings_user"
     media=""
@@ -4471,19 +4471,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           settings_user
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4491,7 +4491,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="settings_users"
     media=""
@@ -4530,19 +4530,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           settings_users
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4550,7 +4550,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="share"
     media=""
@@ -4589,19 +4589,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           share
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4609,7 +4609,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="share_content"
     media=""
@@ -4648,19 +4648,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           share_content
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4668,7 +4668,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="signal"
     media=""
@@ -4707,19 +4707,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           signal
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4727,7 +4727,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="signal_none"
     media=""
@@ -4766,19 +4766,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           signal_none
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4786,7 +4786,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="sign_in"
     media=""
@@ -4825,19 +4825,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           sign_in
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4845,7 +4845,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="sign_out"
     media=""
@@ -4884,19 +4884,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           sign_out
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4904,7 +4904,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="star"
     media=""
@@ -4943,19 +4943,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           star
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -4963,7 +4963,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="star_solid"
     media=""
@@ -5002,19 +5002,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           star_solid
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5022,7 +5022,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="support"
     media=""
@@ -5061,19 +5061,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           support
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5081,7 +5081,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="sync"
     media=""
@@ -5120,19 +5120,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           sync
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5140,7 +5140,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="table"
     media=""
@@ -5179,19 +5179,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           table
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5199,7 +5199,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="undo"
     media=""
@@ -5238,19 +5238,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           undo
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5258,7 +5258,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="user"
     media=""
@@ -5297,19 +5297,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           user
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5317,7 +5317,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="users"
     media=""
@@ -5356,19 +5356,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           users
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5376,7 +5376,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="user_add"
     media=""
@@ -5415,19 +5415,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           user_add
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5435,7 +5435,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="user_circle"
     media=""
@@ -5474,19 +5474,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           user_circle
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5494,7 +5494,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="view"
     media=""
@@ -5533,19 +5533,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           view
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5553,7 +5553,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="wifi"
     media=""
@@ -5592,19 +5592,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           wifi
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5612,7 +5612,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="wifi_none"
     media=""
@@ -5651,19 +5651,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           wifi_none
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5671,7 +5671,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="zoom_extents"
     media=""
@@ -5710,19 +5710,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           zoom_extents
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5730,7 +5730,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="zoom_in"
     media=""
@@ -5769,19 +5769,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           zoom_in
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5789,7 +5789,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="zoom_out"
     media=""
@@ -5828,19 +5828,19 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           zoom_out
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5852,12 +5852,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 cVUDzi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 iDqIwp"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="menu"
     media=""
@@ -5896,19 +5896,19 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           menu
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5916,7 +5916,7 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="up"
     media=""
@@ -5955,19 +5955,19 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           up
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -5975,7 +5975,7 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="down"
     media=""
@@ -6014,19 +6014,19 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           down
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -6034,7 +6034,7 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="left"
     media=""
@@ -6073,19 +6073,19 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           left
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -6093,7 +6093,7 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="right"
     media=""
@@ -6132,19 +6132,19 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           right
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -6156,12 +6156,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 cVUDzi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 iDqIwp"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="apple"
     media=""
@@ -6200,19 +6200,19 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           apple
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -6220,7 +6220,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="facebook"
     media=""
@@ -6259,19 +6259,19 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           facebook
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -6279,7 +6279,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="firefox"
     media=""
@@ -6318,19 +6318,19 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           firefox
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -6338,7 +6338,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="internet_explorer"
     media=""
@@ -6377,19 +6377,19 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           internet_explorer
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -6397,7 +6397,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="twitter"
     media=""
@@ -6436,19 +6436,19 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           twitter
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>
@@ -6456,7 +6456,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="windows"
     media=""
@@ -6495,19 +6495,19 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 yvaBx"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 PRpBC"
-          fontSize="1.15em"
-          fontWeight={400}
-          letterSpacing="0px"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           windows
         </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-          fontSize="0.879em"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
           fontWeight={400}
           id={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.5px"
         >
           Short description of meaning and usage.
         </p>

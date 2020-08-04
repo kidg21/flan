@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
   id={null}
   rows={null}
 >
@@ -26,55 +26,55 @@ exports[` 1`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    className="Form__FormWrapper-v2wrel-1 jozDvZ"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dSpuln"
-        fontSize="1.15em"
-        fontWeight={500}
-        letterSpacing="0px"
+        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        fontSize="1.15rem"
+        fontWeight="500"
+        letterSpacing="0.4px"
       >
         Login
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="login-email_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Email
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="login-email"
@@ -84,6 +84,7 @@ exports[` 1`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder="youremail@company.com"
               rows=""
@@ -91,22 +92,22 @@ exports[` 1`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="login-password_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Password
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="login-password"
@@ -116,6 +117,7 @@ exports[` 1`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder={null}
               rows=""
@@ -125,15 +127,15 @@ exports[` 1`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -143,16 +145,16 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
-                fontWeight={600}
+                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                fontSize="1rem"
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Login
               </label>
@@ -167,9 +169,9 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 dLaZFL"
             >
               <a
-                className="Typography__LinkText-sc-19auepv-1 efZDIn"
+                className="Typography__LinkText-sc-19auepv-1 bzwZve"
                 disabled={false}
-                fontSize="0.876em"
+                fontSize="1rem"
                 fontWeight={400}
                 href={null}
                 letterSpacing="0px"
@@ -189,7 +191,7 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 dLaZFL"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -199,16 +201,16 @@ exports[` 1`] = `
                 type="button"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                    fontSize="0.879em"
-                    fontWeight={600}
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
                     htmlFor={null}
-                    letterSpacing="0.4px"
+                    letterSpacing=".5px"
                   >
                     New User? Go to Register
                   </label>
@@ -225,7 +227,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
   id={null}
   rows={null}
 >
@@ -249,55 +251,55 @@ exports[` 2`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    className="Form__FormWrapper-v2wrel-1 jozDvZ"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dSpuln"
-        fontSize="1.15em"
-        fontWeight={500}
-        letterSpacing="0px"
+        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        fontSize="1.15rem"
+        fontWeight="500"
+        letterSpacing="0.4px"
       >
         Registration
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="registration-email_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Email
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="registration-email"
@@ -307,6 +309,7 @@ exports[` 2`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder="youremail@company.com"
               rows=""
@@ -314,22 +317,22 @@ exports[` 2`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="registration-password_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Password
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="registration-password"
@@ -339,6 +342,7 @@ exports[` 2`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder={null}
               rows=""
@@ -346,22 +350,22 @@ exports[` 2`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="registration-confirm-password_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Confirm Password
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="registration-confirm-password"
@@ -371,6 +375,7 @@ exports[` 2`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder={null}
               rows=""
@@ -380,15 +385,15 @@ exports[` 2`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -398,16 +403,16 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
-                fontWeight={600}
+                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                fontSize="1rem"
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Register
               </label>
@@ -422,7 +427,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
   id={null}
   rows={null}
 >
@@ -446,55 +451,55 @@ exports[` 3`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    className="Form__FormWrapper-v2wrel-1 jozDvZ"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dSpuln"
-        fontSize="1.15em"
-        fontWeight={500}
-        letterSpacing="0px"
+        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        fontSize="1.15rem"
+        fontWeight="500"
+        letterSpacing="0.4px"
       >
         Reset Password
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="reset-email_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Email
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="reset-email"
@@ -504,6 +509,7 @@ exports[` 3`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder="youremail@company.com"
               rows=""
@@ -513,15 +519,15 @@ exports[` 3`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -531,16 +537,16 @@ exports[` 3`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
-                fontWeight={600}
+                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                fontSize="1rem"
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Send
               </label>
@@ -555,7 +561,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 dLaZFL"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 iwwIFV"
+                className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -565,16 +571,16 @@ exports[` 3`] = `
                 type="button"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                    fontSize="0.879em"
-                    fontWeight={600}
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
                     htmlFor={null}
-                    letterSpacing="0.4px"
+                    letterSpacing=".5px"
                   >
                     New User? Go to Register
                   </label>
@@ -591,7 +597,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
   id={null}
   rows={null}
 >
@@ -615,52 +621,52 @@ exports[` 4`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    className="Form__FormWrapper-v2wrel-1 jozDvZ"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dSpuln"
-        fontSize="1.15em"
-        fontWeight={500}
-        letterSpacing="0px"
+        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        fontSize="1.15rem"
+        fontWeight="500"
+        letterSpacing="0.4px"
       >
         Email Sent
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             If you don't see an email in the next few minutes please select the link to send again.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 eTJmhB"
+            className="Typography__LinkText-sc-19auepv-1 gokaHf"
             disabled={false}
-            fontSize="0.876em"
-            fontWeight={600}
+            fontSize="1rem"
+            fontWeight={500}
             href={null}
             letterSpacing="0px"
             onClick={null}
@@ -677,7 +683,7 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
   id={null}
   rows={null}
 >
@@ -701,55 +707,55 @@ exports[` 5`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    className="Form__FormWrapper-v2wrel-1 jozDvZ"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dSpuln"
-        fontSize="1.15em"
-        fontWeight={500}
-        letterSpacing="0px"
+        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        fontSize="1.15rem"
+        fontWeight="500"
+        letterSpacing="0.4px"
       >
         Create New Password
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="new-email_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Confirm Email
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="new-email"
@@ -759,6 +765,7 @@ exports[` 5`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder={null}
               rows=""
@@ -766,22 +773,22 @@ exports[` 5`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="new-password_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Password
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="new-password"
@@ -791,6 +798,7 @@ exports[` 5`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder={null}
               rows=""
@@ -798,22 +806,22 @@ exports[` 5`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
             id="new-confirm_container"
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hskbRy"
-              fontSize="0.879em"
+              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Confirm Password
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eawNkz"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
               cols=""
               disabled={false}
               id="new-confirm"
@@ -823,6 +831,7 @@ exports[` 5`] = `
               onChange={null}
               onFocus={null}
               onKeyPress={null}
+              onKeyUp={null}
               pattern={null}
               placeholder={null}
               rows=""
@@ -832,15 +841,15 @@ exports[` 5`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -850,16 +859,16 @@ exports[` 5`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
-                fontWeight={600}
+                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                fontSize="1rem"
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Confirm
               </label>
@@ -874,7 +883,7 @@ exports[` 5`] = `
 
 exports[` 6`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
   id={null}
   rows={null}
 >
@@ -898,59 +907,59 @@ exports[` 6`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    className="Form__FormWrapper-v2wrel-1 jozDvZ"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dSpuln"
-        fontSize="1.15em"
-        fontWeight={500}
-        letterSpacing="0px"
+        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        fontSize="1.15rem"
+        fontWeight="500"
+        letterSpacing="0.4px"
       >
         Confirmed New Password
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             You have successfully changed your password. Return to Login to re-enter your new credentials.
           </p>
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-3 wHYQL"
+        className="Form__Section-v2wrel-0 XxWIM"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 ellgwy"
+            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -960,16 +969,16 @@ exports[` 6`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
-                fontWeight={600}
+                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                fontSize="1rem"
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 Go to Login
               </label>

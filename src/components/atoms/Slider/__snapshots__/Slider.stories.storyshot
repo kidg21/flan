@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <input
-    className="Slider__SliderPiece-sc-1hp9era-0 lnogdg"
+    className="Slider__SliderPiece-sc-1hp9era-0 bVxLfS"
     disabled={false}
     id="default"
     max={20}
@@ -23,30 +23,29 @@ exports[` 1`] = `
 exports[` 2`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-1 jozDvZ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-        fontSize="0.75em"
-        fontWeight={600}
-        id={null}
-        letterSpacing="0.4px"
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
       >
         Standard
-      </p>
+      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -56,7 +55,7 @@ exports[` 2`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 lnogdg"
+            className="Slider__SliderPiece-sc-1hp9era-0 bVxLfS"
             disabled={false}
             id={null}
             max={20}
@@ -70,19 +69,18 @@ exports[` 2`] = `
       </section>
     </section>
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-        fontSize="0.75em"
-        fontWeight={600}
-        id={null}
-        letterSpacing="0.4px"
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
       >
         Error
-      </p>
+      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -92,7 +90,7 @@ exports[` 2`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 keKhPv"
+            className="Slider__SliderPiece-sc-1hp9era-0 kjlJtp"
             disabled={false}
             id={null}
             max={20}
@@ -106,19 +104,18 @@ exports[` 2`] = `
       </section>
     </section>
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-        fontSize="0.75em"
-        fontWeight={600}
-        id={null}
-        letterSpacing="0.4px"
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
       >
         Disabled
-      </p>
+      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -128,7 +125,7 @@ exports[` 2`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 lnogdg"
+            className="Slider__SliderPiece-sc-1hp9era-0 bVxLfS"
             disabled={true}
             id={null}
             max={20}
@@ -148,30 +145,29 @@ exports[` 2`] = `
 exports[` 3`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  className="Form__FormWrapper-v2wrel-1 jozDvZ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-        fontSize="0.75em"
-        fontWeight={600}
-        id={null}
-        letterSpacing="0.4px"
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
       >
         Standard
-      </p>
+      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -181,7 +177,7 @@ exports[` 3`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 lnogdg"
+            className="Slider__SliderPiece-sc-1hp9era-0 bVxLfS"
             disabled={false}
             id={null}
             max={20}
@@ -195,19 +191,18 @@ exports[` 3`] = `
       </section>
     </section>
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-        fontSize="0.75em"
-        fontWeight={600}
-        id={null}
-        letterSpacing="0.4px"
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
       >
         With Label
-      </p>
+      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -217,16 +212,16 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo Slider__SliderLabel-sc-1hp9era-1 bMyAub"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 fwqfhW Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+            fontSize="0.875rem"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             1
           </label>
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 lnogdg"
+            className="Slider__SliderPiece-sc-1hp9era-0 bVxLfS"
             disabled={false}
             id={null}
             max={20}
@@ -245,11 +240,11 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 1
               </label>
@@ -258,11 +253,11 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 20
               </label>
@@ -272,19 +267,18 @@ exports[` 3`] = `
       </section>
     </section>
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eFKeiu Form__GroupTitle-v2wrel-2 dgUYZh"
-        fontSize="0.75em"
-        fontWeight={600}
-        id={null}
-        letterSpacing="0.4px"
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
       >
         With Range
-      </p>
+      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 cngVTJ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
         rows={null}
       >
@@ -294,7 +288,7 @@ exports[` 3`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 lnogdg"
+            className="Slider__SliderPiece-sc-1hp9era-0 bVxLfS"
             disabled={false}
             id={null}
             max={20}
@@ -313,11 +307,11 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 1
               </label>
@@ -326,11 +320,11 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                fontSize="0.879em"
+                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing=".5px"
               >
                 20
               </label>

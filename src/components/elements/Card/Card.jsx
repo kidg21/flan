@@ -1,10 +1,12 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable complexity */
-import React, { useState, useContext, useMemo } from "react";
+import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText, Spacer, getGuid } from "helpers";
+import { useId } from "utils/hooks";
+import { PlaceholderText } from "helpers/Skeleton";
+import { Spacer } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
@@ -16,6 +18,7 @@ import Menu from "blocks/Menu";
 import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
+import CardWrapper from "./CardWrapper.jsx";
 
 const LinkedWrapper = styled.a`
   flex: auto;
@@ -27,7 +30,7 @@ const CardSectionWrapper = styled.section`
   flex-direction: column;
   flex: 0 0 auto;
   color: ${(props) => {
-    return props.theme.text[props.sectionColor] || "";
+    return props.theme.text[props.sectionColor] || props.theme.text.secondary;
   }};
   background-color: ${(props) => {
     return props.theme.background[props.sectionBackground] || "";
@@ -69,59 +72,19 @@ const CardMedia = styled(Media)`
     }
 `;
 
-const CardWrapper = styled.div`
-  position: relative;
-  display: flex;
-  cursor: ${(props) => {
-    return props.onClick ? "pointer" : "";
-  }};
-  flex-direction: column;
-  flex: none;
-  background-color: ${(props) => {
-    return props.cardBackground
-      ? props.theme.background[props.cardBackground]
-      : props.theme.background.default;
-  }};
-  padding: ${(props) => {
-    return props.cardPadding || "";
-  }};
-  color: ${(props) => {
-    return props.cardColor ? props.theme.text[props.cardColor] : props.theme.text.primary;
-  }};
-  border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
-
-  box-shadow: ${(props) => {
-    return props.theme.shadows[props.cardShadow] || "";
-  }};
-  a {
-  color: ${(props) => {
-    return props.theme.text[props.cardColor] || "";
-  }};
-  }
-  /* Prototype Content - displays when a Card is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      color: ${(props) => {
-    return props.theme.text.primary;
-  }};
-      content: "Card";
-      padding: 2rem;
-    }
-  }
-`;
+// needed for className passing
+// gets rid of component-selector warning
+const StyledCardWrapper = styled(CardWrapper)``;
 
 const CardGridWrapper = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.columns || "repeat(auto-fill, minmax(14rem, 1fr))";
   }};
   padding: 1rem;
-  ${CardWrapper} {
+  ${StyledCardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
+    return props.theme.borders.radiusMed;
   }};
     box-shadow: ${(props) => {
     return props.theme.shadows.dropShadow;
@@ -161,11 +124,11 @@ const CardGridWrapper = styled(Grid)`
 function ExpandingSection({
   children, description, icon, id, label, onClick, open, title,
 }) {
-  let rotation;
+  let iconContent;
   if (open) {
-    rotation = 180;
+    iconContent = "minus";
   } else {
-    rotation = 0;
+    iconContent = "plus";
   }
   return (
     <Expander
@@ -184,14 +147,14 @@ function ExpandingSection({
             center={{
               content: (
                 <React.Fragment>
-                  {title ? <Title size="lg" text={title} weight="bold" /> : null}
+                  {title ? <Title size="xl" text={title} weight="bold" /> : null}
                   {description ? <Text text={description} /> : null}
                 </React.Fragment>
               ),
               align: "left",
             }}
             right={children ? {
-              content: <Icon icon="down" size="lg" rotation={rotation} />,
+              content: <Icon icon={iconContent} />,
               width: "max-content",
             } : null}
           />
@@ -313,34 +276,7 @@ function Card({
   title,
   variant,
 }) {
-  const uId = useMemo(() => { return id || getGuid(); }, [id]);
-
-  let cardColor;
-  let cardBackground;
-  if (isInverse) {
-    cardColor = "inverse";
-    cardBackground = "inverse";
-  }
-
-  let cardPadding;
-  const numPadding = padding ? parseInt(padding, 10) : NaN;
-  if (numPadding > 0 && numPadding < 5) {
-    cardPadding = `${0.25 * numPadding}em`;
-  }
-
-  let cardShadow;
-  switch (shadow) {
-    case "0":
-      cardShadow = null;
-      break;
-    case "2x":
-      cardShadow = "dropShadow2";
-      break;
-    default:
-      cardShadow = "outlineShadow";
-      break;
-  }
-
+  const uId = useId(id);
   const disableTransition = useContext(DisableTransitionContext);
   const [open, setOpen] = useState(false);
   function toggleDropdown() {
@@ -356,20 +292,20 @@ function Card({
   if (onClick) {
     centerContent = (
       <LinkedWrapper>
-        <Grid columns="1" gap="xs">
-          {title ? <Title size="lg" text={title} weight="bold" /> : null}
+        <React.Fragment>
+          {title ? <Title size="xl" text={title} /> : null}
           {description ? (<Text text={description} />
           ) : null}
-        </Grid>
+        </React.Fragment>
       </LinkedWrapper>
     );
   } else {
     centerContent = (
-      <Grid columns="1" gap="xs">
-        {title ? <Title size="lg" text={title} weight="bold" /> : null}
+      <React.Fragment>
+        {title ? <Title size="xl" text={title} /> : null}
         {description ? (<Text text={description} />
         ) : null}
-      </Grid>
+      </React.Fragment>
     );
   }
 
@@ -465,17 +401,14 @@ function Card({
   }
 
   return (
-    <CardWrapper
-      cardBackground={cardBackground}
-      cardColor={cardColor}
-      cardPadding={cardPadding}
-      cardShadow={cardShadow}
+    <StyledCardWrapper
       className={className}
-      onClick={onClick}
       id={uId}
-      href={href}
       isInverse={isInverse}
+      href={href}
       media={media}
+      onClick={onClick}
+      padding={padding}
       shadow={shadow}
     >
       {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
@@ -487,7 +420,7 @@ function Card({
       ) : null}
       {children}
       {commandElements ? <CardSection id={`${uId}-Footer`} footer={<React.Fragment />}>{commandElements}</CardSection> : null}
-    </CardWrapper>
+    </StyledCardWrapper>
   );
 }
 
@@ -536,7 +469,7 @@ Card.defaultProps = {
   media: "",
   more: null,
   onClick: null,
-  padding: null,
+  padding: "0",
   shadow: null,
   title: "",
   variant: null,

@@ -3,9 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
-
 
 const Region = styled.section`
   position: relative;
@@ -13,35 +11,21 @@ const Region = styled.section`
     return props.gridArea || "";
   }};
   height: inherit;
-  border-right: 1px solid  ${(props) => {
-    return  props.theme.palette.neutral40 ;
+  border-right: ${(props) => {
+    return props.hasBorder ? "1px solid" : "";
   }};
-  overflow: auto;
+  border-color: ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  overflow: ${(props) => {
+    return props.overflow || "auto";
+  }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
-  padding: 1px;
   pointer-events: initial;
-  &:focus {
-    outline: ${(props) => {
-    return `1px solid ${props.theme.palette.selected}`;
-  }};
-  outline-offset: -1px;
-  }
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-
-      height: inherit;
-      font-size: 2em;
-      font-weight: bold;
-      content: '${(props) => {
-    return props.placeholder || "";
-  }}';
-    }
-  }
+  outline: none;
 `;
-
 
 const TemplateWrapper = styled(Grid)`
   position: ${(props) => {
@@ -80,21 +64,13 @@ const TemplateWrapper = styled(Grid)`
   pointer-events: ${(props) => {
     return props.pointerEvents || "";
   }};
-  /* Prototype Content - displays when empty */
-  &:empty {
-    &:before {
-      white-space: pre;
-      ${PlaceholderText}
-      content: "{ Template }";
-    }
-  }
 `;
 
 const widthXS = "12rem";
 const widthSM = "18rem";
 const widthMD = "24rem";
 const widthLG = "30rem";
-const widthXL = "36rem";
+const widthXL = "38rem";
 
 const templateHash = {
   A_01: {
@@ -114,12 +90,14 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
+    hasBorder: true,
   },
   B_02: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthXS} 1fr`,
+    hasBorder: true,
   },
   B_03: {
     setTemplate: [
@@ -127,12 +105,14 @@ const templateHash = {
       "\"B\"",
     ].join("\n"),
     setRows: "auto 1fr",
+    hasBorder: true,
   },
   B_04: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthMD} 1fr`,
+    hasBorder: true,
   },
   B_05: {
     setTemplate: [
@@ -141,12 +121,14 @@ const templateHash = {
     ].join("\n"),
     setColumns: "auto 1fr 12rem",
     setRows: "1fr 1rem",
+    hasBorder: true,
   },
   B_06: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthXL}`,
+    hasBorder: true,
   },
   C_01: {
     setTemplate: [
@@ -170,6 +152,15 @@ const templateHash = {
     ].join("\n"),
     setColumns: `${widthXS} ${widthSM} 1fr`,
     setRows: "1fr",
+  },
+  C_04: {
+    setTemplate: [
+      "\"A . . B\"",
+      "\"C C . B\"",
+      "\". . . .\"",
+    ].join("\n"),
+    setColumns: "auto auto 1fr 12rem",
+    setRows: "1fr auto 2rem",
   },
   D_01: {
     setTemplate: [
@@ -233,10 +224,13 @@ function Template({
   let setPosition;
   let setRowGap;
   let setRows;
+  let hasBorder;
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
-    ({ setTemplate, setColumns, setRows } = templateHash[template.toUpperCase()]);
+    ({
+      setTemplate, setColumns, setRows, hasBorder,
+    } = templateHash[template.toUpperCase()]);
     setHeight = "100%";
     setPadding = "0";
     setColumnGap = "0";
@@ -264,7 +258,6 @@ function Template({
     zIndex = "999";
   }
 
-
   return (
     <TemplateWrapper
       backgroundColor={backgroundColor}
@@ -291,6 +284,7 @@ function Template({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              hasBorder={hasBorder}
               overflow={A.overflow}
             >
               {A.content}

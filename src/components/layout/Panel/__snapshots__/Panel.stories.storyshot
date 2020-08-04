@@ -10,13 +10,13 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
     height="100%"
     id={null}
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
       id={null}
     />
   </div>
@@ -33,13 +33,13 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
     height="100%"
     id={null}
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
       id={null}
     >
       <div
@@ -51,11 +51,11 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Header
           </p>
@@ -63,7 +63,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
       id={null}
     />
   </div>
@@ -80,17 +80,17 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
     height="100%"
     id={null}
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
       id={null}
     >
       <div
@@ -102,11 +102,11 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Footer
           </p>
@@ -127,13 +127,13 @@ exports[` 4`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
     height="100%"
     id={null}
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
       id={null}
     >
       <div
@@ -145,11 +145,11 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Header
           </p>
@@ -157,11 +157,11 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
       id={null}
     >
       <div
@@ -173,11 +173,11 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Footer
           </p>
@@ -198,13 +198,13 @@ exports[` 5`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
     height="100%"
     id="Panel"
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
       id="Panel_header"
     >
       <div
@@ -216,11 +216,11 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Header
           </p>
@@ -228,67 +228,67 @@ exports[` 5`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
       id="Panel_body"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 cmdDQj"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 crWWGQ"
         id={null}
         rows={null}
       >
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
-          href={null}
-          id="storyshots_59"
-          media=""
-          onClick={null}
-        />
-        <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
-          href={null}
-          id="storyshots_60"
-          media=""
-          onClick={null}
-        />
-        <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
-          href={null}
-          id="storyshots_61"
-          media=""
-          onClick={null}
-        />
-        <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_62"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_63"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_64"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_65"
+          media=""
+          onClick={null}
+        />
+        <div
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          href={null}
+          id="storyshots_66"
+          media=""
+          onClick={null}
+        />
+        <div
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          href={null}
+          id="storyshots_67"
+          media=""
+          onClick={null}
+        />
+        <div
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          href={null}
+          id="storyshots_68"
           media=""
           onClick={null}
         />
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
       id="Panel_footer"
     >
       <div
@@ -300,11 +300,11 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Footer
           </p>
@@ -325,13 +325,13 @@ exports[` 6`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
     height="100%"
     id="Panel"
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
       id="Panel_header"
     >
       <div
@@ -343,11 +343,11 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Header
           </p>
@@ -355,67 +355,67 @@ exports[` 6`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
       id="Panel_body"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 cmdDQj"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 crWWGQ"
         id={null}
         rows={null}
       >
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_203"
+          id="storyshots_215"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_204"
+          id="storyshots_216"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_205"
+          id="storyshots_217"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_206"
+          id="storyshots_218"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_207"
+          id="storyshots_219"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_208"
+          id="storyshots_220"
           media=""
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_209"
+          id="storyshots_221"
           media=""
           onClick={null}
         />
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
       id="Panel_footer"
     >
       <div
@@ -427,11 +427,11 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Footer
           </p>

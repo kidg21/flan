@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { PlaceholderText } from "helpers/Skeleton";
 
 const PanelWrapper = styled.div`
   position: absolute;
@@ -126,12 +126,12 @@ const PanelSection = styled(PanelBody)`
   z-index: 1;
   &:first-of-type {
     border-bottom: 1px solid ${(props) => {
-    return props.theme.palette.neutral40;
+    return props.theme.palette.neutral20;
   }};
   }
   &:last-of-type {
     border-top: 1px solid ${(props) => {
-    return props.theme.palette.neutral40;
+    return props.theme.palette.neutral20;
   }};
   }
 `;

@@ -2,14 +2,14 @@
 
 exports[` 1`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
     height={null}
     id="Header"
     overflow={null}
@@ -31,11 +31,11 @@ exports[` 1`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            fontSize="0.875rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             LightBox
           </label>
@@ -89,32 +89,33 @@ exports[` 1`] = `
             />
           </svg>
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-              fontSize="1em"
-              fontWeight={400}
-              letterSpacing="0px"
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+              fontSize="1rem"
+              fontWeight={500}
+              id={null}
+              letterSpacing="0.5px"
             >
               LG
-            </h6>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
       height={null}
       id="Left"
       overflow={null}
@@ -129,6 +130,7 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -140,11 +142,11 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 &lt; Jobs
               </p>
@@ -156,6 +158,7 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -167,11 +170,11 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Job Details
               </p>
@@ -183,6 +186,7 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -194,11 +198,11 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Site Verification
               </p>
@@ -210,6 +214,7 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -221,11 +226,11 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Data Checklist
               </p>
@@ -237,6 +242,7 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -248,11 +254,11 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Schedule Visit
               </p>
@@ -264,6 +270,7 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -275,11 +282,11 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Report
               </p>
@@ -291,6 +298,7 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -302,11 +310,11 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 ReviewSend
               </p>
@@ -316,42 +324,42 @@ exports[` 1`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fhwwVx Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
       height="20rem"
       id={null}
       overflow={null}
       width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
         height={null}
         id="Main"
         overflow={null}
         width={null}
       >
         <div
-          className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+          className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
           height="100%"
           id={null}
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+            className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
             id={null}
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id="storyshots_129"
+              id="storyshots_137"
               onClick={null}
             >
               <div
                 className="Bar__Slot-icfo76-1 fNcQEg"
               >
                 <h5
-                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                  fontSize="1.15em"
-                  fontWeight={500}
-                  letterSpacing="0px"
+                  className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+                  fontSize="1.15rem"
+                  fontWeight="500"
+                  letterSpacing="0.4px"
                 >
                   Site Verification
                 </h5>
@@ -359,36 +367,36 @@ exports[` 1`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 gBtFXK"
+            className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
             id={null}
           />
         </div>
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 ciGVI Layout__RegionRight-sc-19tlhp4-8 fkttIO"
       height={null}
       id="Right"
       overflow={null}
       width="24rem"
     >
       <div
-        className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
         height="100%"
         id={null}
         width="100%"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
+          className="Panel__SectionWrapper-sc-48epke-1 irgvti"
           id={null}
         >
           <section
-            className="Tabs__TabsWrapper-sc-1aqycph-1 fervoP"
+            className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
             disabled={false}
             id={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 coRBFl Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+              className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -398,23 +406,23 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Parcels in Site
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -424,16 +432,16 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Measurements
                 </label>
@@ -441,28 +449,28 @@ exports[` 1`] = `
             </button>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 bIzuts"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 cvDlTr"
             id={null}
             rows={null}
           >
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
               href={null}
-              id="storyshots_130"
+              id="storyshots_138"
               media=""
               onClick={[Function]}
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-                id="storyshots_130-Body"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                id="storyshots_138-Body"
                 onClick={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.5px"
                 >
                   <section
                     className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
@@ -470,38 +478,38 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bxdsLc"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                      fontSize="1rem"
                       fontWeight={600}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Lollipop Factory
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       145 Lollipop Way, Lollipop LA 34209
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       APN # 1239832947
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Owner Name
                     </p>
@@ -509,8 +517,8 @@ exports[` 1`] = `
                 </p>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-                id="storyshots_130-Footer"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+                id="storyshots_138-Footer"
                 onClick={null}
               >
                 <div
@@ -529,11 +537,11 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                        fontSize="0.879em"
+                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
-                        letterSpacing="0.4px"
+                        letterSpacing=".5px"
                       >
                         View Details
                       </label>
@@ -543,23 +551,23 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
               href={null}
-              id="storyshots_131"
+              id="storyshots_139"
               media=""
               onClick={[Function]}
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-                id="storyshots_131-Body"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                id="storyshots_139-Body"
                 onClick={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.5px"
                 >
                   <section
                     className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
@@ -567,38 +575,38 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bxdsLc"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                      fontSize="1rem"
                       fontWeight={600}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Lollipop Factory
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       145 Lollipop Way, Lollipop LA 34209
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       APN # 1239832947
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Owner Name
                     </p>
@@ -606,8 +614,8 @@ exports[` 1`] = `
                 </p>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-                id="storyshots_131-Footer"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+                id="storyshots_139-Footer"
                 onClick={null}
               >
                 <div
@@ -626,11 +634,11 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                        fontSize="0.879em"
+                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
-                        letterSpacing="0.4px"
+                        letterSpacing=".5px"
                       >
                         View Details
                       </label>
@@ -640,23 +648,23 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
               href={null}
-              id="storyshots_132"
+              id="storyshots_140"
               media=""
               onClick={[Function]}
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-                id="storyshots_132-Body"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                id="storyshots_140-Body"
                 onClick={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.5px"
                 >
                   <section
                     className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
@@ -664,38 +672,38 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bxdsLc"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                      fontSize="1rem"
                       fontWeight={600}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Lollipop Factory
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       145 Lollipop Way, Lollipop LA 34209
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       APN # 1239832947
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Owner Name
                     </p>
@@ -703,8 +711,8 @@ exports[` 1`] = `
                 </p>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-                id="storyshots_132-Footer"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+                id="storyshots_140-Footer"
                 onClick={null}
               >
                 <div
@@ -723,11 +731,11 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                        fontSize="0.879em"
+                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
-                        letterSpacing="0.4px"
+                        letterSpacing=".5px"
                       >
                         View Details
                       </label>
@@ -737,23 +745,23 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
               href={null}
-              id="storyshots_133"
+              id="storyshots_141"
               media=""
               onClick={[Function]}
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-                id="storyshots_133-Body"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                id="storyshots_141-Body"
                 onClick={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                  fontSize="0.879em"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
                   fontWeight={400}
                   id={null}
-                  letterSpacing="0.2px"
+                  letterSpacing="0.5px"
                 >
                   <section
                     className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
@@ -761,38 +769,38 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bxdsLc"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                      fontSize="1rem"
                       fontWeight={600}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Lollipop Factory
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       145 Lollipop Way, Lollipop LA 34209
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       APN # 1239832947
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Owner Name
                     </p>
@@ -800,8 +808,8 @@ exports[` 1`] = `
                 </p>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 dQRyvT"
-                id="storyshots_133-Footer"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+                id="storyshots_141-Footer"
                 onClick={null}
               >
                 <div
@@ -820,11 +828,11 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-                        fontSize="0.879em"
+                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
-                        letterSpacing="0.4px"
+                        letterSpacing=".5px"
                       >
                         View Details
                       </label>
@@ -843,14 +851,14 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 blbSTQ"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
     height={null}
     id="Header"
     overflow={null}
@@ -872,11 +880,11 @@ exports[` 2`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hskbRy Command__CommandName-sc-13akgtp-1 nUMnn"
-            fontSize="0.879em"
+            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            fontSize="0.875rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             LightBox
           </label>
@@ -930,32 +938,33 @@ exports[` 2`] = `
             />
           </svg>
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 jpzouZ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
             id={null}
             onClick={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 gDyDyY Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
-              fontSize="1em"
-              fontWeight={400}
-              letterSpacing="0px"
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+              fontSize="1rem"
+              fontWeight={500}
+              id={null}
+              letterSpacing="0.5px"
             >
               LG
-            </h6>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 cWGAaP Layout__RegionLeft-sc-19tlhp4-4 bFSzYz"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
       height={null}
       id="Left"
       overflow={null}
@@ -970,6 +979,7 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -981,11 +991,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 &lt; Jobs
               </p>
@@ -997,6 +1007,7 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1008,11 +1019,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Job Details
               </p>
@@ -1024,6 +1035,7 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1035,11 +1047,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Site Verification
               </p>
@@ -1051,6 +1063,7 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1062,11 +1075,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Data Checklist
               </p>
@@ -1078,6 +1091,7 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1089,11 +1103,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Schedule Visit
               </p>
@@ -1105,6 +1119,7 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1116,11 +1131,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 Report
               </p>
@@ -1132,6 +1147,7 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
+          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1143,11 +1159,11 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
                 fontWeight={400}
                 id={null}
-                letterSpacing="0px"
+                letterSpacing="0.5px"
               >
                 ReviewSend
               </p>
@@ -1157,42 +1173,42 @@ exports[` 2`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 faLMAB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fhwwVx Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
       height="20rem"
       id={null}
       overflow={null}
       width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
         height={null}
         id="Main"
         overflow={null}
         width={null}
       >
         <div
-          className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+          className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
           height="100%"
           id={null}
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+            className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
             id={null}
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id="storyshots_134"
+              id="storyshots_142"
               onClick={null}
             >
               <div
                 className="Bar__Slot-icfo76-1 fNcQEg"
               >
                 <h5
-                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                  fontSize="1.15em"
-                  fontWeight={500}
-                  letterSpacing="0px"
+                  className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+                  fontSize="1.15rem"
+                  fontWeight="500"
+                  letterSpacing="0.4px"
                 >
                   Site Verification
                 </h5>
@@ -1200,32 +1216,32 @@ exports[` 2`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 gBtFXK"
+            className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
             id={null}
           />
         </div>
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jkLZgg Layout__RegionRight-sc-19tlhp4-8 hiwLem"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 ciGVI Layout__RegionRight-sc-19tlhp4-8 fkttIO"
       height={null}
       id="Right"
       overflow={null}
       width="24rem"
     >
       <div
-        className="Panel__PanelWrapper-sc-48epke-0 hTudsh"
+        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
         height="100%"
         id={null}
         width="100%"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jbIIiy Panel__PanelSection-sc-48epke-2 dGRqRM"
+          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
           id={null}
         >
           <div
             className="Bar__BarLayout-icfo76-2 eIFIfS"
-            id="storyshots_135"
+            id="storyshots_143"
             onClick={null}
           >
             <div
@@ -1256,10 +1272,10 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 bOWYHS"
             >
               <h5
-                className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                fontSize="1.15em"
-                fontWeight={500}
-                letterSpacing="0px"
+                className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
               >
                 Site A1A
               </h5>
@@ -1268,21 +1284,21 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <div
-                className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                onClick={[Function]}
+                className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                id="menu-popper-storyshots_143-Menu"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 hKRhCA"
+                  className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
                   disabled={false}
                   htmlFor={null}
-                  id={null}
-                  name={null}
-                  onClick={null}
+                  id="menu-icon-storyshots_143-Menu"
+                  name="menu-icon-storyshots_143-Menu"
+                  onClick={[Function]}
                   tabIndex="1"
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                     id={null}
                     rows={null}
                   >
@@ -1313,33 +1329,33 @@ exports[` 2`] = `
           </div>
         </section>
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jbIIiy"
+          className="Panel__SectionWrapper-sc-48epke-1 irgvti"
           id={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_136"
+            id="storyshots_144"
           >
             <table
-              className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
-              id="storyshots_136-table"
+              className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
+              id="storyshots_144-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
               >
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       LightBox ID
                     </p>
@@ -1349,29 +1365,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       1212123232
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Latitude
                     </p>
@@ -1381,29 +1397,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       40.34234
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Longitude
                     </p>
@@ -1413,29 +1429,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       -73.432432
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Assessor Parcel Reconciliation
                     </p>
@@ -1445,29 +1461,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Owner Check
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Address
                     </p>
@@ -1477,29 +1493,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       477 Madison Avenue
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       City
                     </p>
@@ -1509,29 +1525,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       New York
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       State
                     </p>
@@ -1541,29 +1557,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       New York
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Zip
                     </p>
@@ -1573,29 +1589,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       10222
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Census Tract
                     </p>
@@ -1605,29 +1621,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       10200
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Census Block
                     </p>
@@ -1637,29 +1653,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       N/A
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       County
                     </p>
@@ -1669,29 +1685,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       New York
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       CBSA
                     </p>
@@ -1701,29 +1717,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       New York-Newark-New Jersey
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Market
                     </p>
@@ -1733,29 +1749,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       New York
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Submarket
                     </p>
@@ -1765,29 +1781,29 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Midtown East
                     </p>
                   </td>
                 </tr>
                 <tr
-                  className="Legend__Row-sc-70hm4b-4 kKuGtn"
+                  className="Legend__Row-sc-70hm4b-4 kNHlAf"
                 >
                   <td
                     className="Legend__Cell-sc-70hm4b-3 NrCgM"
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Opportunity Zone
                     </p>
@@ -1797,11 +1813,11 @@ exports[` 2`] = `
                     fontSize={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-                      fontSize="0.879em"
+                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                      fontSize="1rem"
                       fontWeight={400}
                       id={null}
-                      letterSpacing="0.2px"
+                      letterSpacing="0.5px"
                     >
                       Yes
                     </p>

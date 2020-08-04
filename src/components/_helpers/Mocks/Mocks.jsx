@@ -21,6 +21,7 @@ import SelectMenu from "atoms/SelectMenu";
 import Avatar from "atoms/Avatar";
 import Bar from "layout/Bar";
 import Menu from "blocks/Menu";
+import Panel from "layout/Panel";
 import Template from "layout/Template";
 import Picker, { ColorSwatch } from "elements/Picker";
 import Field, { FieldGroup } from "atoms/Field";
@@ -86,7 +87,7 @@ function MockHeaderGlobal({ menuClick }) {
       right={{
         content: (
           <Grid columns="max-content max-content" gap="4xl" align="center">
-            <Button icon="help_circle"  variant="neutral" isRound isPlain onClick={doNothing} />
+            <Button size="lg" isRound icon="help_circle" variant="neutral" isPlain />
             <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
           </Grid>
         ),
@@ -103,39 +104,26 @@ MockHeaderGlobal.defaultProps = {
 };
 
 function MockHeader({ percentage }) {
-  const testData = [{
-    id: "a",
-    label: "Action",
-    onClick: () => { },
-  }, {
-    id: "b",
-    label: "Action",
-    onClick: () => { },
-  }, {
-    id: "c",
-    label: "Action",
-    commands: [
-      { id: "c0", label: "Action", onClick: () => { } },
-      { id: "c1", label: "Action" }],
-  }];
   return (
     <Card
       id="Card_Header"
-  
+      padding="0"
+
     >
-      <CardSection variant="light" padding="0">
+      <CardSection variant="light" padding="1x">
         <Bar
           contentAlign="center"
-          padding="2x"
+          padding="0"
           left={{
             content: (
               <Grid columns="1" gap="xs">
-            <Text text="Project" size="sm"/>
-            <Title weight="bold" size="lg" text="22902 Trabuco Road, Mission Viejo, CA 92691 • Shopping Center • 1402-20-12345" weight="bold" /></Grid>),
+                <Text text="Project" size="xs" />
+                <Title size="xl" text="22902 Trabuco Road, Mission Viejo, CA 92691 • Shopping Center • 1402-20-12345" weight="bold" />
+              </Grid>),
             align: "left",
           }}
           right={{
-            content: <ProgressIndicator percentage={percentage}/>,
+            content: <ProgressIndicator percentage={percentage} />,
             width: "fit-content",
             align: "left",
           }}
@@ -145,10 +133,10 @@ function MockHeader({ percentage }) {
   );
 }
 MockHeader.propTypes = {
-  // stuff
+  percentage: PropTypes.number,
 };
 MockHeader.defaultProps = {
-  // stuff
+  percentage: 0,
 };
 
 function MockFooter() {
@@ -159,7 +147,7 @@ function MockFooter() {
       left={{
         content: (
           <Grid columns="auto 1fr">
-            <Link text="1" onClick={() => { }} />
+            <Icon icon="database" size="xs" />
             <Text text="Last Updated: May 23, 2020 • Source: CRMLS" />
           </Grid>
         ),
@@ -208,8 +196,8 @@ function MockWorkflow({ data, title }) {
                 type: "icon", icon: "check", variant: "success",
               }}
             />
-            <Divider/>
-            <ListSection >
+            <Divider />
+            <ListSection>
               <ListItem
                 title="Assessment"
                 disabled
@@ -269,7 +257,7 @@ function MockTable() {
 
   const tableData = [
     {
-      Name: <Link text="477 Madison Avenue" />,
+      Name: <Link text="477 Madison Avenue" href="www.google.com" />,
       Address: "477 Madison Avenue",
       City: "New York",
       State: "NY",
@@ -283,7 +271,7 @@ function MockTable() {
       Acres: "2",
     },
     {
-      Name: <Link text="23 E. 21 St." />,
+      Name: <Link text="23 E. 21 St." href="www.google.com" />,
       Address: "23 E. 21St. #2",
       City: "New York",
       State: "NY",
@@ -297,7 +285,7 @@ function MockTable() {
       Acres: "0.5",
     },
     {
-      Name: <Link text="11 W. 20 St." />,
+      Name: <Link text="11 W. 20 St." href="www.google.com" />,
       Address: "11 W 20 St. #4R",
       City: "New York",
       State: "NY",
@@ -315,19 +303,19 @@ function MockTable() {
   const iconNames = [
     {
       icon: "edit",
-      onClick: true,
+      onClick: () => { },
       // icon: "check",
       // variant: "success",
     },
     {
       icon: "delete",
-      onClick: true,
+      onClick: () => { },
       // icon: "close",
       // variant: "alert",
     },
     {
       icon: "options",
-      onClick: true,
+      onClick: () => { },
     },
   ];
   const [highlightedCell, setHighlightCell] = useState(null);
@@ -375,8 +363,8 @@ function MockTable() {
             right={{
               content: (
                 <IconBlock>
-                  <Icon icon="share" onClick />
-                  <Icon icon="delete" onClick />
+                  <Icon icon="share" />
+                  <Icon icon="delete" />
                   <Menu
                     data={[
                       { id: "a", label: "Action" },
@@ -384,7 +372,6 @@ function MockTable() {
                       { id: "c", label: "Action" },
                     ]}
                     position="bottomLeft"
-                    onClick
                   />
                 </IconBlock>
               ),
@@ -499,15 +486,17 @@ MockData.defaultProps = {
 
 function MockCardGrid() {
   return (
-    <CardGrid>
-      <Card id="MockCard_1" />
-      <Card id="MockCard_2" />
-      <Card id="MockCard_3" />
-      <Card id="MockCard_4" />
-      <Card id="MockCard_5" />
-      <Card id="MockCard_6" />
-      <Card id="MockCard_7" />
-    </CardGrid>
+    <Panel>
+      <CardGrid>
+        <Card id="MockCard_1" />
+        <Card id="MockCard_2" />
+        <Card id="MockCard_3" />
+        <Card id="MockCard_4" />
+        <Card id="MockCard_5" />
+        <Card id="MockCard_6" />
+        <Card id="MockCard_7" />
+      </CardGrid>
+    </Panel>
   );
 }
 MockCardGrid.propTypes = {
@@ -712,60 +701,75 @@ MockForm.defaultProps = {
 };
 
 function MockDetails({
-  image, title, data, footer,
+  image, title, data, footer, offcanvas,
 }) {
   return (
-    <Template>
-      <Image src={image || StaticMap} width="100%" />
-      {data ? <FieldGroup id={title} title={title} data={data} />
-        : (
-          <FieldGroup id="Physical Characteristics" >
-            <Field
-              id="No. of Buildings"
-              label="Project Owner"
-              value="Steve Davidson"
+    <Panel padding="0" offcanvas={offcanvas}>
+      <Template>
+        <Image src={image || StaticMap} alt="mockImage" />
+        {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
+          : (
+            <Bar
+              padding="2x"
+              center={(
+                <FieldGroup id="Physical Characteristics">
+                  <Field
+                    align="edge"
+                    id="No. of Buildings"
+                    label="Project Owner"
+                    value="Steve Davidson"
+                  />
+                  <Field
+                    align="edge"
+                    id="GBA"
+                    label="Project Due"
+                    value="06/25/2020"
+                  />
+                  <Field
+                    align="edge"
+                    id="No. of Stories"
+                    label="Project Status"
+                    value="Open"
+                  />
+                  <Field
+                    align="edge"
+                    id="No. of Units"
+                    label="Project Created"
+                    value="6/14/2020 8:00 am PT"
+                  />
+                  <Field
+                    align="edge"
+                    id="Year Built"
+                    label="Project Edited"
+                    value="6/16/2020 12:15 pm PT"
+                  />
+                  <Field
+                    align="edge"
+                    id="Year Built"
+                    label="N1 ID"
+                    value="1804"
+                  />
+                </FieldGroup>
+              )}
             />
-            <Field
-              id="GBA"
-              label="Project Due"
-              value="06/25/2020"
-            />
-            <Field
-              id="No. of Stories"
-              label="Project Status"
-              value="Open"
-            />
-            <Field
-              id="No. of Units"
-              label="Project Created"
-              value="6/14/2020 8:00 am PT"
-            />
-            <Field
-              id="Year Built"
-              label="Project Edited"
-              value="6/16/2020 12:15 pm PT"
-            />
-            <Field
-              id="Year Built"
-              label="Project Edited"
-              value={<Link text="1804"/>}
-            />
-          </FieldGroup>
-        )}
-      {footer}
-    </Template>
+          )}
+        {footer}
+      </Template>
+    </Panel>
   );
 }
 MockDetails.propTypes = {
   data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   footer: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  offcanvas: PropTypes.string,
   title: PropTypes.string,
 };
 MockDetails.defaultProps = {
   data: null,
   footer: null,
   image: null,
+  offcanvas: null,
   title: null,
 };
 
@@ -805,7 +809,9 @@ function MockTabs({ data }) {
   ];
   return (
     <Bar left={
-    <Tabs data={data || tabButtons} />}/>
+      <Tabs data={data || tabButtons} />
+    }
+    />
   );
 }
 MockTabs.propTypes = {

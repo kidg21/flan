@@ -7,12 +7,12 @@ exports[` 1`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 jpOlOk"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 coiTMo"
     id="Template A_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -30,12 +30,12 @@ exports[` 2`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kQlhXX"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gcGecX"
     id="Template B_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -43,7 +43,7 @@ exports[` 2`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -61,12 +61,12 @@ exports[` 3`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gssTGa"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gykPSC"
     id="Template B_02"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -74,7 +74,7 @@ exports[` 3`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -92,12 +92,12 @@ exports[` 4`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 jtjAs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kACcHs"
     id="Template C_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -105,7 +105,7 @@ exports[` 4`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -113,7 +113,7 @@ exports[` 4`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -131,12 +131,12 @@ exports[` 5`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gykKiS"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 jynZxK"
     id="Template C_02"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -144,7 +144,7 @@ exports[` 5`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -152,7 +152,7 @@ exports[` 5`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -170,12 +170,12 @@ exports[` 6`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 bRIIjG"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gBFoEG"
     id="Template D_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -183,7 +183,7 @@ exports[` 6`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -191,7 +191,7 @@ exports[` 6`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -199,7 +199,7 @@ exports[` 6`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -217,12 +217,12 @@ exports[` 7`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 lkqGVR"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 hFuFRp"
     id="Template E_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -230,7 +230,7 @@ exports[` 7`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -238,7 +238,7 @@ exports[` 7`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -246,7 +246,7 @@ exports[` 7`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -254,7 +254,7 @@ exports[` 7`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 eBTnga"
+      className="Page__Region-mddda5-2 bSMYtw"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -272,12 +272,12 @@ exports[` 8`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 hjIlFP"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 exrEtT"
     id="Template E_02"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -285,7 +285,7 @@ exports[` 8`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -293,7 +293,7 @@ exports[` 8`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -301,7 +301,7 @@ exports[` 8`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -309,7 +309,7 @@ exports[` 8`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 eBTnga"
+      className="Page__Region-mddda5-2 bSMYtw"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -327,12 +327,12 @@ exports[` 9`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kMlXSd"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 HdklZ"
     id="Template E_03"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -340,7 +340,7 @@ exports[` 9`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 bKYkCy"
+      className="Page__Region-mddda5-2 kGGQoA"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -348,7 +348,7 @@ exports[` 9`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 IeWoW"
+      className="Page__Region-mddda5-2 iStaWs"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -356,7 +356,7 @@ exports[` 9`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 gsfVjK"
+      className="Page__Region-mddda5-2 iaroUA"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -364,7 +364,7 @@ exports[` 9`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 eBTnga"
+      className="Page__Region-mddda5-2 bSMYtw"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -385,299 +385,48 @@ exports[` 10`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kYDMEx"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 bVajWt"
     id="Template Regions"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 xBJWy"
+      className="Page__Region-mddda5-2 cYtqec"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
       <form
-        className="Search__SearchContainer-sey9om-0 gehspl"
+        className="Search__SearchContainer-sey9om-0 bVywlp"
         id="Search_E3"
+        onSubmit={[Function]}
       >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__NewTextInput-sey9om-1 cmTSiR"
-          id="Search_E3-search-bar_container"
-          rows={null}
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+          height={null}
+          id={null}
+          overflow={null}
+          width={null}
         >
-          <input
-            autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eawNkz"
-            cols=""
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
             disabled={false}
-            id="Search_E3-search-bar"
-            list={null}
-            name="Search_E3-search-bar"
-            onBlur={null}
-            onChange={[Function]}
-            onFocus={null}
-            onKeyPress={[Function]}
-            pattern={null}
-            placeholder="Search Location"
-            rows=""
-            type="search"
-          />
-        </section>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 jPqmOm Search__SearchButton-sey9om-2 cnBOie"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={[Function]}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
-            id={null}
-            rows={null}
+            htmlFor={null}
+            id="Search_E3-search-button"
+            name="Search_E3-search-button"
+            onClick={[Function]}
+            tabIndex="1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="search"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
               id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </section>
-        </button>
-      </form>
-    </section>
-    <section
-      className="Page__Region-mddda5-2 bKYkCy"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 iZCLpE"
-        disabled={false}
-        htmlFor={null}
-        id={null}
-        name={null}
-        onClick={null}
-        tabIndex="1"
-        type="button"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
-          id={null}
-          rows="max-content 1fr"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="circle"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
-            id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
-            htmlFor={null}
-            letterSpacing="0.4px"
-          >
-            Button
-          </label>
-        </section>
-      </button>
-    </section>
-    <section
-      className="Page__Region-mddda5-2 IeWoW"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 iZCLpE"
-        disabled={false}
-        htmlFor={null}
-        id={null}
-        name={null}
-        onClick={null}
-        tabIndex="1"
-        type="button"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
-          id={null}
-          rows="max-content 1fr"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="circle"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
-            id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
-            htmlFor={null}
-            letterSpacing="0.4px"
-          >
-            Button
-          </label>
-        </section>
-      </button>
-    </section>
-    <section
-      className="Page__Region-mddda5-2 gsfVjK"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 iZCLpE"
-        disabled={false}
-        htmlFor={null}
-        id={null}
-        name={null}
-        onClick={null}
-        tabIndex="1"
-        type="button"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
-          id={null}
-          rows="max-content 1fr"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-            color={null}
-            data-icon="circle"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
-            id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
-            htmlFor={null}
-            letterSpacing="0.4px"
-          >
-            Button
-          </label>
-        </section>
-      </button>
-    </section>
-    <section
-      className="Page__Region-mddda5-2 eBTnga"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    >
-      <div
-        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
-        href={null}
-        id="storyshots_58"
-        media=""
-        onClick={null}
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
-          id="standard"
-          rows={null}
-        >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
-            htmlFor={null}
-            letterSpacing="0.4px"
-          >
-            Color Palette
-          </label>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
-            id={null}
-            rows={null}
-          >
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
-              color="#EBEAEC"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
-              color="#D9ECEC"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 bdCBXP"
-              color="#80959D"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
+              rows={null}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                 color={null}
-                data-icon="check"
+                data-icon="search"
                 data-prefix="far"
                 focusable="false"
                 fontSize="inherit"
@@ -688,50 +437,304 @@ exports[` 10`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
+                  d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
                   fill="currentColor"
                   style={Object {}}
                 />
               </svg>
-            </button>
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
-              color="#63B1CD"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
-              color="#06BFAE"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
-              color="#095593"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
-              color="#F3822B"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
-              color="#FFBF00"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
+            </section>
+          </button>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+            id="Search_E3-search-bar_container"
+            rows={null}
+          >
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+              cols=""
+              disabled={false}
+              id="Search_E3-search-bar"
+              list={null}
+              name="Search_E3-search-bar"
+              onBlur={null}
+              onChange={[Function]}
+              onFocus={null}
+              onKeyPress={null}
+              onKeyUp={[Function]}
+              pattern={null}
+              placeholder="Search Location"
+              rows=""
+              type="search"
+              value=""
             />
           </section>
+        </div>
+      </form>
+    </section>
+    <section
+      className="Page__Region-mddda5-2 kGGQoA"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        disabled={false}
+        htmlFor={null}
+        id={null}
+        name={null}
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+          id={null}
+          rows="max-content 1fr"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            color={null}
+            data-icon="circle"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Button
+          </label>
         </section>
-      </div>
+      </button>
+    </section>
+    <section
+      className="Page__Region-mddda5-2 iStaWs"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        disabled={false}
+        htmlFor={null}
+        id={null}
+        name={null}
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+          id={null}
+          rows="max-content 1fr"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            color={null}
+            data-icon="circle"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Button
+          </label>
+        </section>
+      </button>
+    </section>
+    <section
+      className="Page__Region-mddda5-2 iaroUA"
+      id="D"
+      placeholder="D"
+      tabIndex="0"
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        disabled={false}
+        htmlFor={null}
+        id={null}
+        name={null}
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+          id={null}
+          rows="max-content 1fr"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            color={null}
+            data-icon="circle"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Button
+          </label>
+        </section>
+      </button>
+    </section>
+    <section
+      className="Page__Region-mddda5-2 bSMYtw"
+      id="E"
+      placeholder="E"
+      tabIndex="0"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
+        id="standard"
+        rows={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          fontSize="0.875rem"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing=".5px"
+        >
+          Color Palette
+        </label>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+          id={null}
+          rows={null}
+        >
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+            color="#EBEAEC"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+            color="#D9ECEC"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 bdCBXP"
+            color="#80959D"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="check"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+            color="#63B1CD"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+            color="#06BFAE"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+            color="#095593"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+            color="#F3822B"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+            color="#FFBF00"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+        </section>
+      </section>
     </section>
   </section>
   <div
@@ -755,85 +758,85 @@ exports[` 11`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
     id={null}
     rows={null}
   >
     <h4
-      className="Typography__TitleText-sc-19auepv-2 hiLzNo"
-      fontSize="1.25em"
-      fontWeight={500}
+      className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+      fontSize="1.35rem"
+      fontWeight="400"
       letterSpacing="0px"
     >
       My Latest Musings
     </h4>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 fSxzat"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
+      fontSize="1rem"
       fontWeight={300}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       Totally Worth The Read...Enjoy!
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
-      fontSize="0.75em"
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz"
+      fontSize="0.875rem"
       fontWeight={600}
       id={null}
-      letterSpacing="0.4px"
+      letterSpacing="0.25px"
     >
       Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
     </p>
     <h5
-      className="Typography__TitleText-sc-19auepv-2 PRpBC"
-      fontSize="1.15em"
-      fontWeight={400}
-      letterSpacing="0px"
+      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+      fontSize="1.15rem"
+      fontWeight="500"
+      letterSpacing="0.4px"
     >
       Section 1
     </h5>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <h5
-      className="Typography__TitleText-sc-19auepv-2 PRpBC"
-      fontSize="1.15em"
-      fontWeight={400}
-      letterSpacing="0px"
+      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+      fontSize="1.15rem"
+      fontWeight="500"
+      letterSpacing="0.4px"
     >
       Section 2
     </h5>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
@@ -851,36 +854,36 @@ exports[` 12`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gXFggi"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
     id="Knobs"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 fWRsgb"
+      className="Page__Region-mddda5-2 gBizQl"
       id="A"
       placeholder="A"
       tabIndex="0"
     />
     <section
-      className="Page__Region-mddda5-2 jBDheA"
+      className="Page__Region-mddda5-2 jKxaMO"
       id="B"
       placeholder="B"
       tabIndex="0"
     />
     <section
-      className="Page__Region-mddda5-2 bwcLlp"
+      className="Page__Region-mddda5-2 laJKur"
       id="C"
       placeholder="C"
       tabIndex="0"
     />
     <section
-      className="Page__Region-mddda5-2 elnoBa"
+      className="Page__Region-mddda5-2 gHZDSM"
       id="D"
       placeholder="D"
       tabIndex="0"
     />
     <section
-      className="Page__Region-mddda5-2 hviCgL"
+      className="Page__Region-mddda5-2 hZzJQV"
       id="E"
       placeholder="E"
       tabIndex="0"

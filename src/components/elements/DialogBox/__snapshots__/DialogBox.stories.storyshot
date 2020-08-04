@@ -2,15 +2,15 @@
 
 exports[` 1`] = `
 <div
-  className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
   href={null}
-  id="storyshots_181"
+  id="storyshots_197"
   media=""
   onClick={null}
 >
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-    id="storyshots_181-Header"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+    id="storyshots_197-Header"
     onClick={null}
   >
     <div
@@ -21,50 +21,44 @@ exports[` 1`] = `
       <div
         className="Bar__Slot-icfo76-1 RjiBe"
       >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-          id={null}
-          rows={null}
+        <h4
+          className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+          fontSize="1.35rem"
+          fontWeight="400"
+          letterSpacing="0px"
         >
-          <h5
-            className="Typography__TitleText-sc-19auepv-2 dSpuln"
-            fontSize="1.15em"
-            fontWeight={500}
-            letterSpacing="0px"
-          >
-            Clear and Specific Title
-          </h5>
-        </section>
+          Clear and Specific Title
+        </h4>
       </div>
     </div>
   </section>
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-    id="storyshots_181-Body"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+    id="storyshots_197-Body"
     onClick={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-      fontSize="0.879em"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
       fontWeight={400}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.5px"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </section>
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
     id={null}
     onClick={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
       id={null}
       rows={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+        className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
         disabled={false}
         htmlFor={null}
         id="Negative"
@@ -74,23 +68,23 @@ exports[` 1`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Negative
           </label>
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+        className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
         disabled={false}
         htmlFor={null}
         id="Affirmative"
@@ -100,16 +94,16 @@ exports[` 1`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-            fontSize="0.879em"
-            fontWeight={600}
+            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            fontSize="1rem"
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing=".5px"
           >
             Affirmative
           </label>
@@ -159,15 +153,15 @@ exports[` 2`] = `
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_182"
+        id="storyshots_198"
         media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_182-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_198-Header"
           onClick={null}
         >
           <div
@@ -178,50 +172,44 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-                id={null}
-                rows={null}
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                  fontSize="1.15em"
-                  fontWeight={500}
-                  letterSpacing="0px"
-                >
-                  Are you sure?
-                </h5>
-              </section>
+                Are you sure?
+              </h4>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_182-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_198-Body"
           onClick={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             Are you sure you want to delete all of your user data? You will never be able to get it back.
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
           id={null}
           onClick={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -231,23 +219,23 @@ exports[` 2`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   No
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -257,16 +245,16 @@ exports[` 2`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Yes
                 </label>
@@ -310,15 +298,15 @@ exports[` 2`] = `
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_183"
+        id="storyshots_199"
         media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_183-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_199-Header"
           onClick={null}
         >
           <div
@@ -329,50 +317,44 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-                id={null}
-                rows={null}
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                  fontSize="1.15em"
-                  fontWeight={500}
-                  letterSpacing="0px"
-                >
-                  Reset Settings?
-                </h5>
-              </section>
+                Reset Settings?
+              </h4>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_183-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_199-Body"
           onClick={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             This will reset your account to it's default fasctory settings removing all current user preferences.
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
           id={null}
           onClick={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -382,23 +364,23 @@ exports[` 2`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Accept
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -408,16 +390,16 @@ exports[` 2`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Cancel
                 </label>
@@ -461,15 +443,15 @@ exports[` 2`] = `
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_184"
+        id="storyshots_200"
         media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_184-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_200-Header"
           onClick={null}
         >
           <div
@@ -480,50 +462,44 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-                id={null}
-                rows={null}
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                  fontSize="1.15em"
-                  fontWeight={500}
-                  letterSpacing="0px"
-                >
-                  Reset Settings?
-                </h5>
-              </section>
+                Reset Settings?
+              </h4>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_184-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_200-Body"
           onClick={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             This will reset your account to it's default fasctory settings removing all current user preferences.
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
           id={null}
           onClick={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -533,23 +509,23 @@ exports[` 2`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Cancel
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -559,16 +535,16 @@ exports[` 2`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Accept
                 </label>
@@ -617,15 +593,15 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_185"
+        id="storyshots_201"
         media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_185-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_201-Header"
           onClick={null}
         >
           <div
@@ -636,50 +612,44 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-                id={null}
-                rows={null}
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                  fontSize="1.15em"
-                  fontWeight={500}
-                  letterSpacing="0px"
-                >
-                  Reset Settings?
-                </h5>
-              </section>
+                Reset Settings?
+              </h4>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_185-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_201-Body"
           onClick={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             This will reset your account to it's default fasctory settings removing all current user preferences.
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
           id={null}
           onClick={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gXSFaO DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 ijaYPf DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -689,23 +659,23 @@ Array [
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   No
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 KwDuT DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 jSJvUK DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -715,16 +685,16 @@ Array [
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Agree
                 </label>
@@ -768,15 +738,15 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_186"
+        id="storyshots_202"
         media=""
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_186-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_202-Header"
           onClick={null}
         >
           <div
@@ -787,50 +757,44 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-                id={null}
-                rows={null}
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 dSpuln"
-                  fontSize="1.15em"
-                  fontWeight={500}
-                  letterSpacing="0px"
-                >
-                  Reset Settings?
-                </h5>
-              </section>
+                Reset Settings?
+              </h4>
             </div>
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-          id="storyshots_186-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_202-Body"
           onClick={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-            fontSize="0.879em"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
             fontWeight={400}
             id={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.5px"
           >
             This will reset your account to it's default fasctory settings removing all current user preferences.
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
           id={null}
           onClick={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -840,23 +804,23 @@ Array [
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   No
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 KwDuT DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 jSJvUK DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -866,16 +830,16 @@ Array [
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-                  fontSize="0.879em"
-                  fontWeight={600}
+                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  fontSize="1rem"
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0.4px"
+                  letterSpacing=".5px"
                 >
                   Agree
                 </label>
@@ -891,20 +855,20 @@ Array [
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 bIzuts"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 cvDlTr"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_187"
+    id="storyshots_203"
     media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_187-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_203-Header"
       onClick={null}
     >
       <div
@@ -915,50 +879,44 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-            id={null}
-            rows={null}
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
-              letterSpacing="0px"
-            >
-              Default Dialog
-            </h5>
-          </section>
+            Default Dialog
+          </h4>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_187-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_203-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id={null}
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 ellgwy DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -968,23 +926,23 @@ exports[` 4`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Negative
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 iwwIFV DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -994,16 +952,16 @@ exports[` 4`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Affirmative
             </label>
@@ -1013,15 +971,15 @@ exports[` 4`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_188"
+    id="storyshots_204"
     media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_188-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_204-Header"
       onClick={null}
     >
       <div
@@ -1032,50 +990,44 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-            id={null}
-            rows={null}
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
-              letterSpacing="0px"
-            >
-              Successful Dialog
-            </h5>
-          </section>
+            Successful Dialog
+          </h4>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_188-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_204-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id={null}
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 iIqFDu DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 gcEfQr DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -1085,23 +1037,23 @@ exports[` 4`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Negative
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 KwDuT DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 jSJvUK DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -1111,16 +1063,16 @@ exports[` 4`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Affirmative
             </label>
@@ -1130,15 +1082,15 @@ exports[` 4`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_189"
+    id="storyshots_205"
     media=""
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_189-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_205-Header"
       onClick={null}
     >
       <div
@@ -1149,50 +1101,44 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
-            id={null}
-            rows={null}
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 dSpuln"
-              fontSize="1.15em"
-              fontWeight={500}
-              letterSpacing="0px"
-            >
-              Error Dialog
-            </h5>
-          </section>
+            Error Dialog
+          </h4>
         </div>
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kXhiBO"
-      id="storyshots_189-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_205-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iHWhme"
-        fontSize="0.879em"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
         fontWeight={400}
         id={null}
-        letterSpacing="0.2px"
+        letterSpacing="0.5px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 jxjdqo"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id={null}
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 gQulqd"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 gXSFaO DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 ijaYPf DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -1202,23 +1148,23 @@ exports[` 4`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Negative
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 cIUSTF DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 gujtSI DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -1228,16 +1174,16 @@ exports[` 4`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
-              fontSize="0.879em"
-              fontWeight={600}
+              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              fontSize="1rem"
+              fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing=".5px"
             >
               Affirmative
             </label>
