@@ -362,6 +362,7 @@ function List({
                   isSelected={item.isSelected}
                   key={itemKey}
                   onClick={item.onClick}
+                  onClickItem={item.onClickItem} 
                   post={item.post}
                   pre={item.pre}
                   title={item.title}

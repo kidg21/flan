@@ -998,17 +998,11 @@ storiesOf("Templates/Modules/Create", module)
             />
             <Bar
               padding="2x"
-              center={<Command label="Manage my Profile" icon="edit" />}
+              center={<Command label="Manage my Profile" icon="edit"  />}
             />
             <Bar
               padding="2x"
               center={<Button label="Sign Out" icon="sign_out" isSolid />}
-            />
-            <Bar
-              paddin="0"
-              center={
-                <Text size="sm" text="Privacy Policy  •  Terms of Service" />
-}
             />
           </Grid>
         </Card>

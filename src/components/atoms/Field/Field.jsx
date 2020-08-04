@@ -14,19 +14,11 @@ const FieldItem = styled(Grid)`
   align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
-    return props.fieldColumns || "7rem 1fr";
+    return props.fieldColumns;
   }};
   grid-gap: ${(props) => {
     return props.fieldGap || "";
   }};
-`;
-
-const FieldGrid = styled(Grid)`
-  grid-column-gap: 2rem;
-  overflow: auto;
-  &:not(:last-of-type) {
-    margin-bottom: 1.75rem;
-  }
 `;
 
 const GroupTitle = styled(Text)`
@@ -61,6 +53,20 @@ const FieldValue = styled(Text)`
       content: "- - -";
     }
   }
+`;
+
+const FieldGrid = styled(Grid)`
+  grid-column-gap: 2rem;
+  overflow: auto;
+  &:not(:last-of-type) {
+    margin-bottom: 1.75rem;
+  }
+`;
+
+const Section = styled.section`
+  display: grid;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
 `;
 
 function Field({
@@ -104,7 +110,6 @@ function Field({
       className={className}
       fieldColumns={fieldColumns}
       fieldGap={fieldGap}
-      
       id={id}
     >
       <FieldLabel size="lg" text={label} />
@@ -144,15 +149,12 @@ function FieldGroup({
   if (_columns > 0 && columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
-  if (align === "edge") {
-    setColumns = `repeat(1, minmax(0, 1fr))`;
-  }
+
   return (
     <FieldGrid
       className={className}
       columns={setColumns}
       gap={gap}
-      isDense={isDense}
       id={id}
     >
       {title ? <GroupTitle size="sm" text={title} /> : null}
@@ -172,8 +174,39 @@ function FieldGroup({
           );
         })}
     </FieldGrid>
+
   );
 }
+
+function FieldSection({ children, title, columns }) {
+  let setColumns;
+  const _columns = parseInt(columns, 10);
+  if (_columns > 0 && columns < 4) {
+    setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
+  } else {
+    setColumns = columns;
+  }
+  return (
+    <Section>
+      {title ? <GroupTitle size="sm" text={title} /> : null}
+      <FieldGrid
+        columns={setColumns}
+      >
+        {children}
+      </FieldGrid>
+    </Section>
+  );
+}
+FieldSection.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+  columns: PropTypes.oneOf(["1", "2", "3"]),
+};
+FieldSection.defaultProps = {
+  children: null,
+  title: null,
+  columns: "1",
+};
 
 FieldGroup.propTypes = {
   align: PropTypes.oneOf(["vertical", "edge"]),
@@ -215,4 +248,4 @@ FieldGroup.defaultProps = {
   title: null,
 };
 
-export { Field as default, FieldGroup };
+export { Field as default, FieldGroup, FieldSection };
