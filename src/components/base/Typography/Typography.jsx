@@ -13,7 +13,7 @@ const StyledLabel = styled.label`
   user-select: none;
   text-transform: ${(props) => { return props.textTransform; }};
   font-size: ${(props) => { return props.fontSize; }};
-  cursor: pointer;
+  cursor: ${(props) => { return props.cursor; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
   &:after {
@@ -255,6 +255,7 @@ Title.defaultProps = {
 function Label({
   children,
   className,
+  cursor,
   htmlFor,
   isRequired,
   weight,
@@ -278,6 +279,7 @@ function Label({
   return (
     <StyledLabel
       className={className}
+      cursor={cursor}
       fontSize={fontSize}
       fontWeight={fontWeight}
       textTransform={textTransform}
@@ -293,6 +295,7 @@ function Label({
 Label.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  cursor: PropTypes.string,
   htmlFor: PropTypes.string,
   isUppercase: PropTypes.bool,
   isRequired: PropTypes.bool,
@@ -303,6 +306,7 @@ Label.propTypes = {
 Label.defaultProps = {
   children: null,
   className: null,
+  cursor: "pointer",
   isUppercase: false,
   htmlFor: null,
   isRequired: false,
