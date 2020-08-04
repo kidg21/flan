@@ -123,32 +123,29 @@ function Tag({
   }
 
   let inner = iconType || labelType;
+
   if (icon && label) {
+    iconType = (
+      <TagIconContainer
+        iconPosition={iconPosition}
+        iconSeparator={iconSeparator}
+        badgeTextColor={badgeTextColor}
+        onClick={onClickIcon}
+      >
+        { iconType }
+      </TagIconContainer>
+    );
     if (iconPosition === "right") {
       inner = (
         <React.Fragment>
           { labelType }
-          <TagIconContainer
-            iconPosition={iconPosition}
-            iconSeparator={iconSeparator}
-            badgeTextColor={badgeTextColor}
-            onClick={onClickIcon}
-          >
-            { iconType }
-          </TagIconContainer>
+          { iconType }
         </React.Fragment>
       );
     } else {
       inner = (
         <React.Fragment>
-          <TagIconContainer
-            iconPosition={iconPosition}
-            iconSeparator={iconSeparator}
-            badgeTextColor={badgeTextColor}
-            onClick={onClickIcon}
-          >
-            { iconType }
-          </TagIconContainer>
+          { iconType }
           { labelType }
         </React.Fragment>
       );

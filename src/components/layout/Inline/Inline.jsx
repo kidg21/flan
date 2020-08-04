@@ -4,6 +4,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import Flex from "layout/Flex";
 
+const justiftyHash = {
+  center: "center",
+  right: "flex-end",
+  left: "flex-start",
+};
+
+const alignHash = {
+  top: "flex-start",
+  bottom: "flex-end",
+  center: "center",
+};
+
 function Inline({
   children,
   spacingX,
@@ -11,34 +23,8 @@ function Inline({
   contentAlign,
   contentJustify,
 }) {
-  let justifyContent;
-  let alignItems;
-
-  switch (contentJustify) {
-    case "center":
-      justifyContent = "center";
-      break;
-    case "right":
-      justifyContent = "flex-end";
-      break;
-    case "left":
-    default:
-      justifyContent = "flex-start";
-      break;
-  }
-
-  switch (contentAlign) {
-    case "top":
-      alignItems = "flex-start";
-      break;
-    case "bottom":
-      alignItems = "flex-end";
-      break;
-    case "center":
-    default:
-      alignItems = "center";
-      break;
-  }
+  const justifyContent = justiftyHash[contentJustify && contentJustify.toLowerCase()] || "flex-start";
+  const alignItems = alignHash[contentAlign && contentAlign.toLowerCase()] || "center";
 
   return (
     <Flex
