@@ -4,38 +4,19 @@ import React, { useState } from "react";
 import { FullScreen } from "helpers/Display";
 import Panel from "layout/Panel";
 import Icon from "atoms/Icon";
-import Loader from "atoms/Loader";
-import Button, { ButtonGroup } from "atoms/Button";
+import Button from "atoms/Button";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
-import Container from "atoms/Container";
-import Command from "atoms/Command";
 import Template from "layout/Template";
 import Tag from "atoms/Tag";
-import Tabs, { TabItem } from "blocks/Tabs";
 import List, { ListItem } from "blocks/List";
-import Grid from "layout/Grid";
-import Form, { FormSection } from "layout/Form";
-import Text, { Title, Link } from "base/Typography";
-import SelectMenu from "atoms/SelectMenu";
+import Form from "layout/Form";
+import { Title, Link } from "base/Typography";
 import Table from "blocks/Table";
 import TextInput from "atoms/TextInput";
-import Media from "atoms/Media";
-import Card, { CardSection, CardGrid } from "elements/Card";
-import Modal from "layout/Modal";
-import ParcelMap from "images/maps/map-parcel.png";
-import ReportTemp from "images/rural.jpg";
 import Menu from "blocks/Menu";
 import {
-  MockData,
-  MockDetails,
-  MockFooter,
-  MockForm,
-  MockHeader,
   MockHeaderGlobal,
-  MockMenu,
-  MockTabs,
-  MockWorkflow,
 } from "helpers/Mocks";
 
 // Only columns specified here will be displayed
@@ -189,7 +170,6 @@ const data = [
   },
 ];
 
-
 storiesOf("Templates|Applications/Jobs Portal", module)
   .addDecorator(FullScreen)
   .add(
@@ -202,13 +182,21 @@ storiesOf("Templates|Applications/Jobs Portal", module)
         const [highlightedCell, setHighlightCell] = useState(null);
         const [selectedCell, setSelectedCell] = useState(null);
         for (let i = 0; i < data.length; i++) {
-          data[i].options = <Menu  closeOnClickAway isFlex position="bottomLeft"
-            data={[
-              { id: "save", label: "Verify Site", icon: "export" },
-              { id: "filter", label: "Research", icon: "export" },
-              { id: "share", label: "Report Writing", icon: "export" },
-              { id: "delete", label: "Delete", icon: "delete" },
-            ]}><Icon icon="more" /></Menu>;
+          data[i].options = (
+            <Menu
+              closeOnClickAway
+              isFlex
+              position="bottomLeft"
+              data={[
+                { id: "save", label: "Verify Site", icon: "export" },
+                { id: "filter", label: "Research", icon: "export" },
+                { id: "share", label: "Report Writing", icon: "export" },
+                { id: "delete", label: "Delete", icon: "delete" },
+              ]}
+            >
+              <Icon icon="more" />
+            </Menu>
+          );
         }
 
         const onCellClick = (e, { rowIndex }) => {
@@ -307,13 +295,21 @@ storiesOf("Templates|Applications/Jobs Portal", module)
         const [highlightedCell, setHighlightCell] = useState(null);
         const [selectedCell, setSelectedCell] = useState(null);
         for (let i = 0; i < data.length; i++) {
-          data[i].options = <Menu isFlex closeOnClickAway position="bottomLeft"
-            data={[
-              { id: "save", label: "Verify Site", icon: "export" },
-              { id: "filter", label: "Research", icon: "export" },
-              { id: "share", label: "Report Writing", icon: "export" },
-              { id: "delete", label: "Delete", icon: "delete" },
-            ]}><Icon icon="more" /></Menu>;
+          data[i].options = (
+            <Menu
+              isFlex
+              closeOnClickAway
+              position="bottomLeft"
+              data={[
+                { id: "save", label: "Verify Site", icon: "export" },
+                { id: "filter", label: "Research", icon: "export" },
+                { id: "share", label: "Report Writing", icon: "export" },
+                { id: "delete", label: "Delete", icon: "delete" },
+              ]}
+            >
+              <Icon icon="more" />
+            </Menu>
+          );
         }
 
         const onCellClick = (e, { rowIndex }) => {
@@ -374,7 +370,6 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           id: "A",
                           content: (
                             <Panel header={<Bar padding="2x" contentAlign="center" left={<Title size="xl" text="RFPs" />} right={<Button icon="plus" label="Create" />} />}>
-
 
                               <Bar padding="1x" left={{ content: (<TextInput type="search" placeholder="Search RFPs" />), width: "fit-content" }} />
 

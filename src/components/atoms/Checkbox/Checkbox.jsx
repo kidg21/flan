@@ -18,13 +18,17 @@ const CheckboxWrapper = styled(Grid)`
 
 const CheckboxContainer = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 0.75rem;
   grid-template-areas: ${(props) => {
-    return props.alignInput || "";
+    return props.gridAreas || "";
+  }};
+  grid-template-columns: ${(props) => {
+    return props.gridColumns || "auto 1fr";
+  }};
+  grid-gap: ${(props) => {
+    return props.gridGap || "0.75rem";
   }};
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary ;
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   line-height: initial;
   &[disabled],
@@ -55,8 +59,8 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   &:checked {
     background-color: ${(props) => {
     return (
-      props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.selected
+      props.theme.palette[props.fillColorChecked]
+      || props.theme.palette.selected
     );
   }};
     border-color: ${(props) => {
@@ -74,7 +78,6 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     color: white;
   }
   }
-
   &:focus {
     outline-color: ${(props) => {
     return (
@@ -101,16 +104,21 @@ function Checkbox({
   onChange,
   onFocus,
 }) {
-  let inputTextColor;
-  let fillColor;
   let borderColor;
-  let outlineColor;
-  let fillColorChecked;
   let borderColorChecked;
-  let alignInput;
+  let fillColor;
+  let fillColorChecked;
+  let gridAreas;
+  let gridColumns;
+  let gridGap;
+  let inputTextColor;
+  let outlineColor;
   let tabIndex;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (!label) {
+    gridColumns = "1fr";
+    gridGap = "0";
+  }
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     borderColor = "neutral80";
     fillColor = "neutral40";
@@ -128,16 +136,19 @@ function Checkbox({
 
   switch (align) {
     case "right":
-      alignInput = "'label input'";
+      gridAreas = "'label input'";
       break;
+    case "left":
     default:
-      alignInput = "'input label'";
+      gridAreas = "'input label'";
       break;
   }
   return (
     <CheckboxContainer
-      alignInput={alignInput}
+      gridAreas={gridAreas}
       disabled={isDisabled}
+      gridColumns={gridColumns}
+      gridGap={gridGap}
       inputTextColor={inputTextColor}
     >
       <CheckboxInput
@@ -173,8 +184,7 @@ function CheckboxGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
@@ -195,8 +205,8 @@ function CheckboxGroup({
       ) : null}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       <InputGroup columns={columns}>
-        {children ||
-          data.map((item) => {
+        {children
+          || data.map((item) => {
             return (
               <Checkbox
                 align={align}
@@ -220,7 +230,7 @@ function CheckboxGroup({
 }
 
 Checkbox.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
@@ -232,7 +242,7 @@ Checkbox.propTypes = {
 };
 
 Checkbox.defaultProps = {
-  align: null,
+  align: "left",
   checked: null,
   disabled: false,
   error: null,
@@ -244,7 +254,7 @@ Checkbox.defaultProps = {
 };
 
 CheckboxGroup.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
   children: PropTypes.node,
   columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
   data: PropTypes.arrayOf(PropTypes.shape({
@@ -266,7 +276,7 @@ CheckboxGroup.propTypes = {
 };
 
 CheckboxGroup.defaultProps = {
-  align: null,
+  align: "left",
   children: null,
   columns: null,
   data: [],

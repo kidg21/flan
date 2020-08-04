@@ -7,11 +7,11 @@ import { PlaceholderText } from "helpers/Skeleton";
 const StyledCardWrapper = styled.div`
   position: relative;
   display: flex;
-  cursor: ${(props) => {
-    return props.onClick ? "pointer" : "";
-  }};
   flex-direction: column;
   flex: none;
+  color: ${(props) => {
+    return props.cardColor ? props.theme.text[props.cardColor] : props.theme.text.primary;
+  }};
   background-color: ${(props) => {
     return props.cardBackground
       ? props.theme.background[props.cardBackground]
@@ -20,12 +20,15 @@ const StyledCardWrapper = styled.div`
   padding: ${(props) => {
     return props.cardPadding || "";
   }};
-  color: ${(props) => {
-    return props.cardColor ? props.theme.text[props.cardColor] : props.theme.text.primary;
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
   }};
-  border-radius: 4px;
+  overflow: hidden;
   box-shadow: ${(props) => {
     return props.theme.shadows[props.cardShadow] || "";
+  }};
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
   }};
   a {
   color: ${(props) => {

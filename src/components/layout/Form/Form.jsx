@@ -6,6 +6,12 @@ import { PlaceholderText } from "helpers/Skeleton";
 import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
 
+const Section = styled.section`
+  display: grid;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+`;
+
 const FormWrapper = styled.form`
   color: ${(props) => {
     return props.theme.text.primary;
@@ -15,10 +21,13 @@ const FormWrapper = styled.form`
   }};
   height: 100%;
   padding: 1rem 1rem 1.5rem;
+  ${Section}:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 const Header = styled(Grid)`
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 `;
 
 const TitleSection = styled(Title)`
@@ -27,12 +36,6 @@ grid-column: 1/-1;
 letter-spacing: 2px;
 font-size: 12px;
 font-weight: 400;
-`;
-
-const Section = styled.section`
-  display: grid;
-  grid-gap: 1rem;
-  margin-bottom: 1rem;
 `;
 
 const Inputs = styled(Grid)`
@@ -47,7 +50,6 @@ const Inputs = styled(Grid)`
     }
   }
 `;
-
 
 function FormSection({ children, title, columns }) {
   let setColumns;
@@ -101,9 +103,9 @@ function Form({
     <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <Header columns="1">
-          {title ? <Title size="lg"  text={title} /> : null}
+          {title ? <Title size="lg" text={title} /> : null}
           {subtitle ? <Text text={subtitle} /> : null}
-          {description ? <Text size="sm"  text={description} /> : null}
+          {description ? <Text size="sm" text={description} /> : null}
         </Header>
       ) : null}
       <Inputs setColumns={setColumns}>

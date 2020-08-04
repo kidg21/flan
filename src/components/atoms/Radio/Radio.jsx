@@ -17,10 +17,14 @@ const RadioWrapper = styled(Grid)`
 
 const RadioContainer = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 0.75rem;
   grid-template-areas: ${(props) => {
-    return props.alignInput || "";
+    return props.gridAreas || "";
+  }};
+  grid-template-columns: ${(props) => {
+    return props.gridColumns || "auto 1fr";
+  }};
+  grid-gap: ${(props) => {
+    return props.gridGap || "0.75rem";
   }};
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
@@ -59,7 +63,6 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   }};
   &:before {
     margin: 0 -0.1em 0em 0;
-
     width: 0.89em;
     height: 0.89em;
     border-radius: 100%;
@@ -96,12 +99,18 @@ function Radio({
   onFocus,
   value,
 }) {
-  let inputTextColor;
   let fillColor;
-  let outlineColor;
   let fillColorChecked;
-  let alignInput;
+  let gridAreas;
+  let gridColumns;
+  let gridGap;
+  let inputTextColor;
+  let outlineColor;
   let tabIndex;
+  if (!label) {
+    gridColumns = "1fr";
+    gridGap = "0";
+  }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     fillColor = "neutral40";
@@ -117,17 +126,19 @@ function Radio({
   }
   switch (align) {
     case "right":
-      alignInput = "'label input'";
+      gridAreas = "'label input'";
       break;
     case "left":
     default:
-      alignInput = "'input label'";
+      gridAreas = "'input label'";
       break;
   }
   return (
     <RadioContainer
-      alignInput={alignInput}
+      gridAreas={gridAreas}
       disabled={isDisabled}
+      gridColumns={gridColumns}
+      gridGap={gridGap}
       inputTextColor={inputTextColor}
     >
       <RadioInput
@@ -173,6 +184,7 @@ function RadioGroup({
 
   return (
     <RadioWrapper
+      align={align}
       disabled={isDisabled}
       columns="1"
       inputTextColor={inputTextColor}
@@ -219,11 +231,11 @@ Radio.propTypes = {
   onFocus: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
-  value: PropTypes.any,
+  value: PropTypes.string,
 };
 
 Radio.defaultProps = {
-  align: null,
+  align: "left",
   checked: null,
   disabled: false,
   error: false,
@@ -249,7 +261,7 @@ RadioGroup.propTypes = {
     onBlur: PropTypes.func,
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
-    value: PropTypes.any,
+    value: PropTypes.string,
   })),
   disabled: PropTypes.bool,
   error: PropTypes.string,
@@ -261,7 +273,7 @@ RadioGroup.propTypes = {
 };
 
 RadioGroup.defaultProps = {
-  align: null,
+  align: "left",
   children: null,
   columns: null,
   data: [],

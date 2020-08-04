@@ -124,11 +124,11 @@ const CardGridWrapper = styled(Grid)`
 function ExpandingSection({
   children, description, icon, id, label, onClick, open, title,
 }) {
-  let rotation;
+  let iconContent;
   if (open) {
-    rotation = 180;
+    iconContent = "minus";
   } else {
-    rotation = 0;
+    iconContent = "plus";
   }
   return (
     <Expander
@@ -154,7 +154,7 @@ function ExpandingSection({
               align: "left",
             }}
             right={children ? {
-              content: <Icon icon="down" size="lg" rotation={rotation} />,
+              content: <Icon icon={iconContent} />,
               width: "max-content",
             } : null}
           />
@@ -291,8 +291,8 @@ function Card({
 
   if (onClick) {
     centerContent = (
-      <LinkedWrapper >
-        <React.Fragment >
+      <LinkedWrapper>
+        <React.Fragment>
           {title ? <Title size="xl" text={title} /> : null}
           {description ? (<Text text={description} />
           ) : null}
@@ -301,8 +301,8 @@ function Card({
     );
   } else {
     centerContent = (
-      <React.Fragment >
-        {title ? <Title size="xl" text={title}  /> : null}
+      <React.Fragment>
+        {title ? <Title size="xl" text={title} /> : null}
         {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>

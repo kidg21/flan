@@ -53,7 +53,7 @@ export { default as DialogBox } from "./elements/DialogBox";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
-export { default as Picker, ColorSwatch } from "./elements/Picker";
+export { default as Picker, ColorSwatch, ImageSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as ProgressIndicator } from "./elements/ProgressIndicator";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
@@ -82,3 +82,10 @@ export {
   darkTheme,
 } from "./base/Variables/Variables.jsx";
 export { ThemeProvider } from "styled-components";
+
+// Image dependencies
+export { PrintNone } from "images/dialogs/image-none.gif";
+export { PrintFull } from "images/dialogs/image-full.gif";
+export { PrintHalf } from "images/dialogs/image-half.gif";
+export { PrintQuarter } from "images/dialogs/image-quarter.gif";
+export { PrintLegend } from "images/dialogs/image-legend.gif";

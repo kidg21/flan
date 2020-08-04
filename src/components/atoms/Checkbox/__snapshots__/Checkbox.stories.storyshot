@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+  className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
   disabled={false}
 >
   <input
@@ -33,7 +33,7 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
     disabled={false}
   >
     <input
@@ -56,7 +56,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
     disabled={false}
   >
     <input
@@ -79,7 +79,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gxdWlF"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 kDRkeN"
     disabled={false}
   >
     <input
@@ -102,7 +102,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 loOzdz"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 cQLJfv"
     disabled={true}
   >
     <input
@@ -135,7 +135,7 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
     disabled={false}
   >
     <input
@@ -158,7 +158,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gfzKQc"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 kGGlpk"
     disabled={false}
   >
     <input
@@ -186,7 +186,7 @@ exports[` 3`] = `
 exports[` 4`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-0 fMolQ"
+  className="Form__FormWrapper-v2wrel-1 jozDvZ"
   id={null}
   method={null}
   onSubmit={null}
@@ -197,10 +197,10 @@ exports[` 4`] = `
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-3 wHYQL"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-2 dnSjhm"
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
         fontSize="1.2rem"
         fontWeight="400"
         letterSpacing="1px"
@@ -223,7 +223,7 @@ exports[` 4`] = `
             rows={null}
           >
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
               disabled={false}
             >
               <input
@@ -246,7 +246,7 @@ exports[` 4`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
               disabled={false}
             >
               <input
@@ -269,7 +269,7 @@ exports[` 4`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
               disabled={false}
             >
               <input
@@ -292,7 +292,7 @@ exports[` 4`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
               disabled={false}
             >
               <input

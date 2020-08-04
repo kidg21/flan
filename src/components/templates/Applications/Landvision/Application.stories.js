@@ -215,7 +215,6 @@ storiesOf("Templates|Applications/Research", module)
                         <Template
                           id="Details"
                           template="A_01"
-
                           A={{
                             id: "A",
                             content: (
@@ -322,63 +321,64 @@ storiesOf("Templates|Applications/Research", module)
                         <Template
                           id="Details"
                           template="B_06"
-
                           A={{
                             id: "A",
-                            content: <Panel
-                              padding="0"
-                              footer={(
-                                <Bar
-                                  padding="0"
-                                  contentAlign="bottom"
-                                  left={{
+                            content: (
+                              <Panel
+                                padding="0"
+                                footer={(
+                                  <Bar
+                                    padding="0"
+                                    contentAlign="bottom"
+                                    left={{
+                                      content: (
+                                        <Icon icon="database" size="xs" onClick />),
+                                      width: "fit-content",
+                                    }}
+                                    center={{
+                                      content: (<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020" />),
+                                      align: "left",
+                                    }}
+                                  />
+                                )}
+                              >
+                                <Template
+                                  template="E_01"
+                                  isOverlay
+                                  A={{
+                                    id: "A",
                                     content: (
-                                      <Icon icon="database" size="xs" onClick />),
-                                    width: "fit-content",
-                                  }}
-                                  center={{
-                                    content: (<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020" />),
-                                    align: "left",
+                                      <Card padding="1x">
+                                        <Bar
+                                          padding="0"
+
+                                          contentAlign="center"
+                                          left={{
+                                            content: (
+                                              <Text text=".  Select Parcels on Map to Define Site" />
+                                            ),
+                                            width: "fit-content",
+                                          }}
+                                          center={{
+                                            content: (
+                                              <ButtonGroup columns="5">
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="draw" label="Draw" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" />
+                                                <Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type" />
+                                                <Button label="Reset" icon="sync" alignCenter size="sm" isPlain variant="neutral" />
+                                              </ButtonGroup>
+                                            ),
+
+                                          }}
+                                        />
+                                      </Card>
+                                    ),
                                   }}
                                 />
-                              )}
-                            >
-                              <Template
-                                template="E_01"
-                                isOverlay
-                                A={{
-                                  id: "A",
-                                  content: (
-                                    <Card padding="1x">
-                                      <Bar
-                                        padding="0"
-
-                                        contentAlign="center"
-                                        left={{
-                                          content: (
-                                            <Text text=".  Select Parcels on Map to Define Site" />
-                                          ),
-                                          width: "fit-content",
-                                        }}
-                                        center={{
-                                          content: (
-                                            <ButtonGroup columns="5">
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="draw" label="Draw" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" />
-                                              <Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type" />
-                                              <Button label="Reset" icon="sync" alignCenter size="sm" isPlain variant="neutral" />
-                                            </ButtonGroup>
-                                          ),
-
-                                        }}
-                                      />
-                                    </Card>
-                                  ),
-                                }}
-                              />
-                              <MapBox map="satellite" />
-                            </Panel>,
+                                <MapBox map="satellite" />
+                              </Panel>
+                            ),
                           }}
                           B={{
                             id: "B",
@@ -396,7 +396,6 @@ storiesOf("Templates|Applications/Research", module)
                                 )}
                               >
                                 <Form>
-
                                   <Card
                                     padding="0"
                                     body={(
@@ -416,32 +415,32 @@ storiesOf("Templates|Applications/Research", module)
                                           padding="0"
                                           contentAlign="bottom"
                                           left={{
-                                            content: (<FieldGroup
-                                              id="Group1"
-                                              isDense
-                                            >
-                                              <Field
-                                                id="Field 1"
-                                                label="Address"
-                                                value="42 Wallaby Way, Sydney, Australia"
-                                              />
-                                              <Field
-                                                id="Field 1"
-                                                label="Owner"
-                                                value="Forrest Gump"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Last Sale"
-                                                value="10/23/86"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Doc #"
-                                                value="837489274927"
-                                              />
-                                            </FieldGroup>
-
+                                            content: (
+                                              <FieldGroup
+                                                id="Group1"
+                                                isDense
+                                              >
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Address"
+                                                  value="42 Wallaby Way, Sydney, Australia"
+                                                />
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Owner"
+                                                  value="Forrest Gump"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Last Sale"
+                                                  value="10/23/86"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Doc #"
+                                                  value="837489274927"
+                                                />
+                                              </FieldGroup>
                                             ),
                                             align: "left",
                                           }}
@@ -476,32 +475,32 @@ storiesOf("Templates|Applications/Research", module)
                                           padding="0"
                                           contentAlign="bottom"
                                           left={{
-                                            content: (<FieldGroup
-                                              id="Group1"
-                                              isDense
-                                            >
-                                              <Field
-                                                id="Field 1"
-                                                label="Address"
-                                                value="42 Wallaby Way, Sydney, Australia"
-                                              />
-                                              <Field
-                                                id="Field 1"
-                                                label="Owner"
-                                                value="Forrest Gump"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Last Sale"
-                                                value="10/23/86"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Doc #"
-                                                value="837489274927"
-                                              />
-                                            </FieldGroup>
-
+                                            content: (
+                                              <FieldGroup
+                                                id="Group1"
+                                                isDense
+                                              >
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Address"
+                                                  value="42 Wallaby Way, Sydney, Australia"
+                                                />
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Owner"
+                                                  value="Forrest Gump"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Last Sale"
+                                                  value="10/23/86"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Doc #"
+                                                  value="837489274927"
+                                                />
+                                              </FieldGroup>
                                             ),
                                             align: "left",
                                           }}
@@ -535,32 +534,32 @@ storiesOf("Templates|Applications/Research", module)
                                           padding="0"
                                           contentAlign="bottom"
                                           left={{
-                                            content: (<FieldGroup
-                                              id="Group1"
-                                              isDense
-                                            >
-                                              <Field
-                                                id="Field 1"
-                                                label="Address"
-                                                value="42 Wallaby Way, Sydney, Australia"
-                                              />
-                                              <Field
-                                                id="Field 1"
-                                                label="Owner"
-                                                value="Forrest Gump"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Last Sale"
-                                                value="10/23/86"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Doc #"
-                                                value="837489274927"
-                                              />
-                                            </FieldGroup>
-
+                                            content: (
+                                              <FieldGroup
+                                                id="Group1"
+                                                isDense
+                                              >
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Address"
+                                                  value="42 Wallaby Way, Sydney, Australia"
+                                                />
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Owner"
+                                                  value="Forrest Gump"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Last Sale"
+                                                  value="10/23/86"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Doc #"
+                                                  value="837489274927"
+                                                />
+                                              </FieldGroup>
                                             ),
                                             align: "left",
                                           }}
@@ -594,32 +593,32 @@ storiesOf("Templates|Applications/Research", module)
                                           padding="0"
                                           contentAlign="bottom"
                                           left={{
-                                            content: (<FieldGroup
-                                              id="Group1"
-                                              isDense
-                                            >
-                                              <Field
-                                                id="Field 1"
-                                                label="Address"
-                                                value="42 Wallaby Way, Sydney, Australia"
-                                              />
-                                              <Field
-                                                id="Field 1"
-                                                label="Owner"
-                                                value="Forrest Gump"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Last Sale"
-                                                value="10/23/86"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Doc #"
-                                                value="837489274927"
-                                              />
-                                            </FieldGroup>
-
+                                            content: (
+                                              <FieldGroup
+                                                id="Group1"
+                                                isDense
+                                              >
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Address"
+                                                  value="42 Wallaby Way, Sydney, Australia"
+                                                />
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Owner"
+                                                  value="Forrest Gump"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Last Sale"
+                                                  value="10/23/86"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Doc #"
+                                                  value="837489274927"
+                                                />
+                                              </FieldGroup>
                                             ),
                                             align: "left",
                                           }}
@@ -653,32 +652,32 @@ storiesOf("Templates|Applications/Research", module)
                                           padding="0"
                                           contentAlign="bottom"
                                           left={{
-                                            content: (<FieldGroup
-                                              id="Group1"
-                                              isDense
-                                            >
-                                              <Field
-                                                id="Field 1"
-                                                label="Address"
-                                                value="42 Wallaby Way, Sydney, Australia"
-                                              />
-                                              <Field
-                                                id="Field 1"
-                                                label="Owner"
-                                                value="Forrest Gump"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Last Sale"
-                                                value="10/23/86"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Doc #"
-                                                value="837489274927"
-                                              />
-                                            </FieldGroup>
-
+                                            content: (
+                                              <FieldGroup
+                                                id="Group1"
+                                                isDense
+                                              >
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Address"
+                                                  value="42 Wallaby Way, Sydney, Australia"
+                                                />
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Owner"
+                                                  value="Forrest Gump"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Last Sale"
+                                                  value="10/23/86"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Doc #"
+                                                  value="837489274927"
+                                                />
+                                              </FieldGroup>
                                             ),
                                             align: "left",
                                           }}
@@ -712,32 +711,32 @@ storiesOf("Templates|Applications/Research", module)
                                           padding="0"
                                           contentAlign="bottom"
                                           left={{
-                                            content: (<FieldGroup
-                                              id="Group1"
-                                              isDense
-                                            >
-                                              <Field
-                                                id="Field 1"
-                                                label="Address"
-                                                value="42 Wallaby Way, Sydney, Australia"
-                                              />
-                                              <Field
-                                                id="Field 1"
-                                                label="Owner"
-                                                value="Forrest Gump"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Last Sale"
-                                                value="10/23/86"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Doc #"
-                                                value="837489274927"
-                                              />
-                                            </FieldGroup>
-
+                                            content: (
+                                              <FieldGroup
+                                                id="Group1"
+                                                isDense
+                                              >
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Address"
+                                                  value="42 Wallaby Way, Sydney, Australia"
+                                                />
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Owner"
+                                                  value="Forrest Gump"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Last Sale"
+                                                  value="10/23/86"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Doc #"
+                                                  value="837489274927"
+                                                />
+                                              </FieldGroup>
                                             ),
                                             align: "left",
                                           }}
@@ -771,32 +770,32 @@ storiesOf("Templates|Applications/Research", module)
                                           padding="0"
                                           contentAlign="bottom"
                                           left={{
-                                            content: (<FieldGroup
-                                              id="Group1"
-                                              isDense
-                                            >
-                                              <Field
-                                                id="Field 1"
-                                                label="Address"
-                                                value="42 Wallaby Way, Sydney, Australia"
-                                              />
-                                              <Field
-                                                id="Field 1"
-                                                label="Owner"
-                                                value="Forrest Gump"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Last Sale"
-                                                value="10/23/86"
-                                              />
-                                              <Field
-                                                id="Field 3"
-                                                label="Doc #"
-                                                value="837489274927"
-                                              />
-                                            </FieldGroup>
-
+                                            content: (
+                                              <FieldGroup
+                                                id="Group1"
+                                                isDense
+                                              >
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Address"
+                                                  value="42 Wallaby Way, Sydney, Australia"
+                                                />
+                                                <Field
+                                                  id="Field 1"
+                                                  label="Owner"
+                                                  value="Forrest Gump"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Last Sale"
+                                                  value="10/23/86"
+                                                />
+                                                <Field
+                                                  id="Field 3"
+                                                  label="Doc #"
+                                                  value="837489274927"
+                                                />
+                                              </FieldGroup>
                                             ),
                                             align: "left",
                                           }}
@@ -927,65 +926,66 @@ storiesOf("Templates|Applications/Research", module)
                           template="B_06"
                           A={{
                             id: "A",
-                            content: <Panel
-                              header={(
-                                <Bar
-                                  left={{
-                                    content: (
-                                      <Tabs>
-                                        <TabItem label="Parcel 1" isSelected />
-                                        <TabItem label="Parcel 2" />
-                                      </Tabs>
+                            content: (
+                              <Panel
+                                header={(
+                                  <Bar
+                                    left={{
+                                      content: (
+                                        <Tabs>
+                                          <TabItem label="Parcel 1" isSelected />
+                                          <TabItem label="Parcel 2" />
+                                        </Tabs>
 
-                                    ),
-                                    width: "fit-content",
-                                  }}
-                                />
-                              )}
-                              padding="0"
-                              footer={(
+                                      ),
+                                      width: "fit-content",
+                                    }}
+                                  />
+                                )}
+                                padding="0"
+                                footer={(
+                                  <Bar
+                                    padding="0"
+                                    contentAlign="bottom"
+                                    left={{
+                                      content: (
+                                        <Icon icon="database" size="xs" onClick />),
+                                      width: "fit-content",
+                                    }}
+                                    center={{
+                                      content: (<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020" />),
+                                      align: "left",
+                                    }}
+                                  />
+                                )}
+                              >
+
+                                <Form>
+                                  <Field align="edge" label="Direct Parcel Link:" value={<Link text="808-23093" size="lg" />} />
+                                  <TextInput label="Assessment Year(s)" value="2019" />
+                                  <TextInput label="Land Assessment" value="$6,155,006" />
+                                  <TextInput label="Improvement Assessment" value="$3,890,864" />
+                                  <TextInput label="Other Assessment" />
+                                  <TextInput label="Total Assessment" value="$10,045,870" />
+                                  <TextInput label="Total Taxes" value="$101,680" />
+                                </Form>
                                 <Bar
-                                  padding="0"
                                   contentAlign="bottom"
                                   left={{
                                     content: (
-                                      <Icon icon="database" size="xs" onClick />),
-                                    width: "fit-content",
+                                      <Button label="Attachments" />),
                                   }}
-                                  center={{
-                                    content: (<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020" />),
-                                    align: "left",
+
+                                  right={{
+                                    content: (
+                                      <ButtonGroup columns="2">
+                                        <Button label="Save" isSolid />
+                                        <Button label="Save & Next" isSolid />
+                                      </ButtonGroup>),
                                   }}
                                 />
-                              )}
-                            >
-
-                              <Form>
-                                <Field align="edge" label="Direct Parcel Link:" value={<Link text="808-23093" size="lg" />} />
-                                <TextInput label="Assessment Year(s)" value="2019" />
-                                <TextInput label="Land Assessment" value="$6,155,006" />
-                                <TextInput label="Improvement Assessment" value="$3,890,864" />
-                                <TextInput label="Other Assessment" />
-                                <TextInput label="Total Assessment" value="$10,045,870" />
-                                <TextInput label="Total Taxes" value="$101,680" />
-                              </Form>
-                              <Bar
-                                contentAlign="bottom"
-                                left={{
-                                  content: (
-                                    <Button label="Attachments" />),
-                                }}
-
-                                right={{
-                                  content: (
-                                    <ButtonGroup columns="2">
-                                      <Button label="Save" isSolid />
-                                      <Button label="Save & Next" isSolid />
-                                    </ButtonGroup>),
-                                }}
-                              />
-
-                            </Panel>,
+                              </Panel>
+                            ),
                           }}
                           B={{
                             id: "B",
@@ -1066,60 +1066,62 @@ storiesOf("Templates|Applications/Research", module)
                           template="B_01"
                           A={{
                             id: "A",
-                            content: <Panel
-                              padding="0"
-                              footer={(
-                                <Bar
-                                  padding="0"
-                                  contentAlign="bottom"
-                                  left={{
+                            content: (
+                              <Panel
+                                padding="0"
+                                footer={(
+                                  <Bar
+                                    padding="0"
+                                    contentAlign="bottom"
+                                    left={{
+                                      content: (
+                                        <Icon icon="database" size="xs" onClick />),
+                                      width: "fit-content",
+                                    }}
+                                    center={{
+                                      content: (<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020" />),
+                                      align: "left",
+                                    }}
+                                  />
+                                )}
+                              >
+                                <Template
+                                  template="E_01"
+                                  isOverlay
+                                  A={{
+                                    id: "A",
                                     content: (
-                                      <Icon icon="database" size="xs" onClick />),
-                                    width: "fit-content",
-                                  }}
-                                  center={{
-                                    content: (<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020" />),
-                                    align: "left",
+                                      <Card padding="1x">
+                                        <Bar
+                                          padding="0"
+
+                                          contentAlign="center"
+                                          left={{
+                                            content: (
+                                              <Text text=".   Fulfillment Complete" />
+                                            ),
+                                            width: "fit-content",
+                                          }}
+                                          center={{
+                                            content: (
+                                              <ButtonGroup columns="5">
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="draw" label="Draw" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" />
+                                                <Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="photos" label="Map Capture" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type" />
+                                              </ButtonGroup>
+                                            ),
+
+                                          }}
+                                        />
+                                      </Card>
+                                    ),
                                   }}
                                 />
-                              )}
-                            >
-                              <Template
-                                template="E_01"
-                                isOverlay
-                                A={{
-                                  id: "A",
-                                  content: (
-                                    <Card padding="1x">
-                                      <Bar
-                                        padding="0"
-
-                                        contentAlign="center"
-                                        left={{
-                                          content: (
-                                            <Text text=".   Fulfillment Complete" />
-                                          ),
-                                          width: "fit-content",
-                                        }}
-                                        center={{
-                                          content: (
-                                            <ButtonGroup columns="5">
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="draw" label="Draw" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" />
-                                              <Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="photos" label="Map Capture" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type" />
-                                            </ButtonGroup>
-                                          ),
-
-                                        }}
-                                      />
-                                    </Card>
-                                  ),
-                                }}
-                              />
-                              <MapBox map="satellite" />
-                            </Panel>,
+                                <MapBox map="satellite" />
+                              </Panel>
+                            ),
                           }}
                           B={{
                             id: "B",
@@ -1165,13 +1167,11 @@ storiesOf("Templates|Applications/Research", module)
                                   <TextInput label="Zoned Density" value="0.75" />
                                   <TextInput label="Zoning Summary" value="This zone is intended for small-scale business" />
                                   <TextInput label="Maximum Site Coverage" value="50%" />
-
                                 </Form>
                               </Panel>
                             ),
                           }}
                         />
-
                       ),
                     }}
                   />
@@ -1241,74 +1241,76 @@ storiesOf("Templates|Applications/Research", module)
                           template="B_01"
                           A={{
                             id: "A",
-                            content: <Panel
-                              header={(
-                                <Bar
-                                  padding="1x"
-                                  left={{
+                            content: (
+                              <Panel
+                                header={(
+                                  <Bar
+                                    padding="1x"
+                                    left={{
+                                      content: (
+                                        <Tabs>
+                                          <TabItem label="Subject Map" />
+                                          <TabItem label="Flood" isSelected />
+                                          <TabItem label="Wetlands" />
+                                          <TabItem label="Traffic & Transit" />
+                                          <TabItem label="Market Boundaries" />
+                                          <TabItem label="Schools" />
+                                          <TabItem label="Other" />
+                                        </Tabs>),
+                                      width: "fit-content",
+                                    }}
+                                  />
+                                )}
+                                padding="0"
+                                footer={(
+                                  <Bar
+                                    padding="0"
+                                    contentAlign="bottom"
+                                    left={{
+                                      content: (
+                                        <Icon icon="database" size="xs" onClick />),
+                                      width: "fit-content",
+                                    }}
+                                    center={{
+                                      content: (<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020" />),
+                                      align: "left",
+                                    }}
+                                  />
+                                )}
+                              >
+                                <Template
+                                  template="E_01"
+                                  isOverlay
+                                  A={{
+                                    id: "A",
                                     content: (
-                                      <Tabs>
-                                        <TabItem label="Subject Map" />
-                                        <TabItem label="Flood" isSelected />
-                                        <TabItem label="Wetlands" />
-                                        <TabItem label="Traffic & Transit" />
-                                        <TabItem label="Market Boundaries" />
-                                        <TabItem label="Schools" />
-                                        <TabItem label="Other" />
-                                      </Tabs>),
-                                    width: "fit-content",
+                                      <Card padding="1x">
+                                        <Bar
+                                          padding="0"
+
+                                          contentAlign="center"
+                                          left={{
+                                            content: (
+                                              <ButtonGroup columns="7">
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="draw" label="Draw" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="measure" label="Measure" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" />
+                                                <Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="photos" label="Map Capture" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type" />
+                                                <Button alignCenter variant="neutral" size="sm" isPlain icon="sync" label="Reset" />
+                                              </ButtonGroup>
+                                            ),
+
+                                          }}
+                                        />
+                                      </Card>
+                                    ),
                                   }}
                                 />
-                              )}
-                              padding="0"
-                              footer={(
-                                <Bar
-                                  padding="0"
-                                  contentAlign="bottom"
-                                  left={{
-                                    content: (
-                                      <Icon icon="database" size="xs" onClick />),
-                                    width: "fit-content",
-                                  }}
-                                  center={{
-                                    content: (<Text size="sm" text="Data Source: EASI, Last Updated: 01/01/2020" />),
-                                    align: "left",
-                                  }}
-                                />
-                              )}
-                            >
-                              <Template
-                                template="E_01"
-                                isOverlay
-                                A={{
-                                  id: "A",
-                                  content: (
-                                    <Card padding="1x">
-                                      <Bar
-                                        padding="0"
-
-                                        contentAlign="center"
-                                        left={{
-                                          content: (
-                                            <ButtonGroup columns="7">
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="draw" label="Draw" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="measure" label="Measure" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="layers" label="Layers" />
-                                              <Button variant="neutral" alignCenter size="sm" isPlain icon="list" label="Legend" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="photos" label="Map Capture" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="map" label="Map Type" />
-                                              <Button alignCenter variant="neutral" size="sm" isPlain icon="sync" label="Reset" />
-                                            </ButtonGroup>
-                                          ),
-
-                                        }}
-                                      />
-                                    </Card>
-                                  ),
-                                }}
-                              />
-                              <MapBox map="satellite" />
-                            </Panel>,
+                                <MapBox map="satellite" />
+                              </Panel>
+                            ),
                           }}
                           B={{
                             id: "B",
@@ -1484,7 +1486,6 @@ storiesOf("Templates|Applications/Research", module)
                   <Template
                     id="Maps"
                     template="B_02"
-
                     A={{
                       id: "A",
                       content: (
