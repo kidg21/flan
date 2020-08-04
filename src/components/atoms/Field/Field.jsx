@@ -28,6 +28,7 @@ const GroupTitle = styled(Text)`
   text-transform: uppercase;
   grid-column: 1/-1;
   letter-spacing: 2px;
+  margin-bottom: 0.5rem;
   font-weight: 400;
 `;
 
@@ -59,7 +60,7 @@ const FieldGrid = styled(Grid)`
   grid-column-gap: 2rem;
   overflow: auto;
   &:not(:last-of-type) {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
   }
 `;
 
