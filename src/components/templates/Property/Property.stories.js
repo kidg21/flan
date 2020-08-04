@@ -267,10 +267,10 @@ storiesOf("Templates|Applications/Research/Property", module)
                             header={(
                               <Bar
                                 contentAlign="center"
-                                padding="1x"
+                                padding="2x"
                                 left={<Text size="lg" text="22902 Trabuco Rd., Mission Viejo CA" />}
                                 right={{
-                                  content: (<Menu />),
+                                  content: (<Icon icon="export" onClick />),
                                   width: "fit-content",
                                 }}
                               />
