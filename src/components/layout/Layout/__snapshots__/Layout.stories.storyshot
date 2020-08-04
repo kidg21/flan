@@ -296,16 +296,1080 @@ exports[` 5`] = `
         </a>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 hVtzoz"
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 fXpBjx"
+          id={null}
+          label="Toggle"
+          onClick={[Function]}
+          title="Toggle"
         >
-          Header
-        </h6>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-angle-right fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            color={null}
+            data-icon="angle-right"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 192 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Toggle
+          </label>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 cRfdzk"
+      height={null}
+      id={null}
+      overflow={null}
+      width="10rem"
+    >
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+        id={null}
+      >
+        <li
+          className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Research
+          </p>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Projects
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Properties
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                History
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Data
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bgGIuF Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+      height="20rem"
+      id={null}
+      overflow={null}
+      width="100%"
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+        height={null}
+        id={null}
+        overflow={null}
+        width={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bHNVdZ"
+          id="Details"
+          rows={null}
+        >
+          <section
+            className="Template__Region-sc-1i4nzbu-0 GaHDh"
+            id="A"
+            placeholder="A"
+            tabIndex="0"
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </section>
+          <section
+            className="Template__Region-sc-1i4nzbu-0 dLRjEu"
+            id="B"
+            placeholder="B"
+            tabIndex="0"
+          >
+            <div
+              className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+              height="100%"
+              id={null}
+              width="100%"
+            >
+              <section
+                className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                id={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 crWWGQ"
+                  id={null}
+                  rows={null}
+                >
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_1"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_2"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_3"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_4"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_5"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_6"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_7"
+                    media=""
+                    onClick={null}
+                  />
+                </section>
+              </section>
+            </div>
+          </section>
+        </section>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eYakgY Layout__RegionBottom-sc-19tlhp4-7 iyLmm"
+        height="20rem"
+        id={null}
+        overflow={null}
+        width={null}
+      >
+        <div
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          href={null}
+          id="storyshots_50"
+          media=""
+          onClick={null}
+        >
+          <section
+            className="Card__CardSectionWrapper-sc-1g3s676-1 dHyiDr"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 izXrkl"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 eufPAN"
+              >
+                <h6
+                  className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+                  fontSize="1.2rem"
+                  fontWeight="400"
+                  letterSpacing="1px"
+                >
+                  Results | 3
+                </h6>
+              </div>
+              <div
+                className="Bar__Slot-icfo76-1 FsWNF"
+              >
+                <div
+                  className="IconBlock__Block-nokc92-0 UCGVw"
+                  id={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="share"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="trash-alt"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <div
+                    className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                    id="menu-popper-storyshots_51"
+                  >
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
+                      disabled={false}
+                      htmlFor={null}
+                      id="menu-icon-storyshots_51"
+                      name="menu-icon-storyshots_51"
+                      onClick={[Function]}
+                      tabIndex="1"
+                      type="button"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                        id={null}
+                        rows={null}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="ellipsis-v"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 128 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </section>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+        >
+          <div
+            style={
+              Object {
+                "height": 0,
+                "overflow": "visible",
+                "width": 0,
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "height": 100,
+                  "overflow": "visible",
+                  "width": 200,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": 40,
+                    "position": "relative",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly={true}
+                  className="ReactVirtualized__Grid"
+                  onScroll={[Function]}
+                  role="grid"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "boxSizing": "border-box",
+                      "direction": "ltr",
+                      "height": 40,
+                      "left": 0,
+                      "overflowX": "hidden",
+                      "overflowY": "hidden",
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 200,
+                      "willChange": "transform",
+                    }
+                  }
+                  tabIndex={null}
+                >
+                  <div
+                    className="ReactVirtualized__Grid__innerScrollContainer"
+                    role="rowgroup"
+                    style={
+                      Object {
+                        "height": 40,
+                        "maxHeight": 40,
+                        "maxWidth": 1560,
+                        "overflow": "hidden",
+                        "pointerEvents": "",
+                        "position": "relative",
+                        "width": 1560,
+                      }
+                    }
+                  >
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 bDTUkP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 gCCOlW"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Select All
+                          </label>
+                        </div>
+                      </section>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      Name
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "height": 60,
+                    "overflow": "visible",
+                    "position": "relative",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly={true}
+                  className="ReactVirtualized__Grid"
+                  onScroll={[Function]}
+                  role="grid"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "boxSizing": "border-box",
+                      "direction": "ltr",
+                      "height": 60,
+                      "left": 0,
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "position": "absolute",
+                      "width": 200,
+                      "willChange": "transform",
+                    }
+                  }
+                  tabIndex={0}
+                >
+                  <div
+                    className="ReactVirtualized__Grid__innerScrollContainer"
+                    role="rowgroup"
+                    style={
+                      Object {
+                        "height": 120,
+                        "maxHeight": 120,
+                        "maxWidth": 1560,
+                        "overflow": "hidden",
+                        "pointerEvents": "",
+                        "position": "relative",
+                        "width": 1560,
+                      }
+                    }
+                  >
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href="www.google.com"
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        477 Madison Avenue
+                      </a>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href="www.google.com"
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        23 E. 21 St.
+                      </a>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href="www.google.com"
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        11 W. 20 St.
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 ciGVI Layout__RegionRight-sc-19tlhp4-8 fxLqlc"
+      height={null}
+      id={null}
+      overflow={null}
+      width="24rem"
+    >
+      <div
+        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+        height="100%"
+        id={null}
+        width="100%"
+      >
+        <section
+          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+          id={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+            id={null}
+            rows={null}
+          >
+            <img
+              alt="mockImage"
+              className="Image__ImageWrapper-sc-18abvff-0 driND"
+              onClick={null}
+              src=""
+              title="mockImage"
+              width={null}
+            />
+            <div
+              className="Bar__BarLayout-icfo76-2 jEWtiX"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 dLaZFL"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 keXRjE"
+                  id="Physical Characteristics"
+                  rows={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Buildings"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Owner
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      Steve Davidson
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="GBA"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Due
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      06/25/2020
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Stories"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Status
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      Open
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Units"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Created
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      6/14/2020 8:00 am PT
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="Year Built"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Edited
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      6/16/2020 12:15 pm PT
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="Year Built"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      N1 ID
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      1804
+                    </p>
+                  </section>
+                </section>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 6`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  height={null}
+  id={null}
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
+    height={null}
+    id="Header"
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+          id={null}
+          label="Toggle"
+          onClick={[Function]}
+          title="Toggle"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-angle-left fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            color={null}
+            data-icon="angle-left"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 192 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Toggle
+          </label>
+        </a>
       </div>
       <div
         className="Bar__Slot-icfo76-1 kZQbjh"
@@ -509,14 +1573,287 @@ exports[` 5`] = `
         overflow={null}
         width={null}
       >
-        <div
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        />
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bHNVdZ"
+          id="Details"
+          rows={null}
+        >
+          <section
+            className="Template__Region-sc-1i4nzbu-0 GaHDh"
+            id="A"
+            placeholder="A"
+            tabIndex="0"
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </section>
+          <section
+            className="Template__Region-sc-1i4nzbu-0 dLRjEu"
+            id="B"
+            placeholder="B"
+            tabIndex="0"
+          >
+            <div
+              className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+              height="100%"
+              id={null}
+              width="100%"
+            >
+              <section
+                className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                id={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 crWWGQ"
+                  id={null}
+                  rows={null}
+                >
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_1"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_2"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_3"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_4"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_5"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_6"
+                    media=""
+                    onClick={null}
+                  />
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="MockCard_7"
+                    media=""
+                    onClick={null}
+                  />
+                </section>
+              </section>
+            </div>
+            <div
+              className="Panel__PanelWrapper-sc-48epke-0 gteKfZ"
+              height="100%"
+              id={null}
+              width="100%"
+            >
+              <section
+                className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                id={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+                  id={null}
+                  rows={null}
+                >
+                  <img
+                    alt="mockImage"
+                    className="Image__ImageWrapper-sc-18abvff-0 driND"
+                    onClick={null}
+                    src=""
+                    title="mockImage"
+                    width={null}
+                  />
+                  <div
+                    className="Bar__BarLayout-icfo76-2 jEWtiX"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 dLaZFL"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 keXRjE"
+                        id="Physical Characteristics"
+                        rows={null}
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                          id="No. of Buildings"
+                          rows={null}
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                            fontSize="1rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Project Owner
+                          </label>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                            fontSize="1rem"
+                            fontWeight={500}
+                            id={null}
+                            letterSpacing="0.5px"
+                          >
+                            Steve Davidson
+                          </p>
+                        </section>
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                          id="GBA"
+                          rows={null}
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                            fontSize="1rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Project Due
+                          </label>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                            fontSize="1rem"
+                            fontWeight={500}
+                            id={null}
+                            letterSpacing="0.5px"
+                          >
+                            06/25/2020
+                          </p>
+                        </section>
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                          id="No. of Stories"
+                          rows={null}
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                            fontSize="1rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Project Status
+                          </label>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                            fontSize="1rem"
+                            fontWeight={500}
+                            id={null}
+                            letterSpacing="0.5px"
+                          >
+                            Open
+                          </p>
+                        </section>
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                          id="No. of Units"
+                          rows={null}
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                            fontSize="1rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Project Created
+                          </label>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                            fontSize="1rem"
+                            fontWeight={500}
+                            id={null}
+                            letterSpacing="0.5px"
+                          >
+                            6/14/2020 8:00 am PT
+                          </p>
+                        </section>
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                          id="Year Built"
+                          rows={null}
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                            fontSize="1rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Project Edited
+                          </label>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                            fontSize="1rem"
+                            fontWeight={500}
+                            id={null}
+                            letterSpacing="0.5px"
+                          >
+                            6/16/2020 12:15 pm PT
+                          </p>
+                        </section>
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                          id="Year Built"
+                          rows={null}
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                            fontSize="1rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            N1 ID
+                          </label>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                            fontSize="1rem"
+                            fontWeight={500}
+                            id={null}
+                            letterSpacing="0.5px"
+                          >
+                            1804
+                          </p>
+                        </section>
+                      </section>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </div>
+          </section>
+        </section>
       </div>
       <div
         className="Flex__FlexWrapper-sc-7b3s7m-0 eYakgY Layout__RegionBottom-sc-19tlhp4-7 iyLmm"
@@ -526,9 +1863,9 @@ exports[` 5`] = `
         width={null}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_50"
+          id="storyshots_52"
           media=""
           onClick={null}
         >
@@ -603,20 +1940,20 @@ exports[` 5`] = `
                   </svg>
                   <div
                     className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-                    id="menu-popper-storyshots_51"
+                    id="menu-popper-storyshots_53"
                   >
                     <button
                       className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
                       disabled={false}
                       htmlFor={null}
-                      id="menu-icon-storyshots_51"
-                      name="menu-icon-storyshots_51"
+                      id="menu-icon-storyshots_53"
+                      name="menu-icon-storyshots_53"
                       onClick={[Function]}
                       tabIndex="1"
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                         id={null}
                         rows={null}
                       >
@@ -737,7 +2074,7 @@ exports[` 5`] = `
                         rows={null}
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                           disabled={false}
                         >
                           <input
@@ -844,7 +2181,7 @@ exports[` 5`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                         disabled={false}
                       >
                         <input
@@ -911,7 +2248,7 @@ exports[` 5`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                         disabled={false}
                       >
                         <input
@@ -978,7 +2315,7 @@ exports[` 5`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                         disabled={false}
                       >
                         <input
@@ -1037,275 +2374,11 @@ exports[` 5`] = `
         </div>
       </div>
     </div>
-    <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 ciGVI Layout__RegionRight-sc-19tlhp4-8 fxLqlc"
-      height={null}
-      id={null}
-      overflow={null}
-      width="24rem"
-    >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
-        id={null}
-        rows={null}
-      >
-        <div
-          className="Bar__BarLayout-icfo76-2 fliBOc"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-icfo76-1 dLaZFL"
-          >
-            <img
-              alt="mockImage"
-              className="Image__ImageWrapper-sc-18abvff-0 bmySjT"
-              onClick={null}
-              src=""
-              title="mockImage"
-              width="80%"
-            />
-          </div>
-        </div>
-        <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-icfo76-1 dLaZFL"
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 keXRjE"
-              id="Physical Characteristics"
-              rows={null}
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="No. of Buildings"
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Owner
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Steve Davidson
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="GBA"
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Due
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  06/25/2020
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="No. of Stories"
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Status
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Open
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="No. of Units"
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Created
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  6/14/2020 8:00 am PT
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="Year Built"
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Edited
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  6/16/2020 12:15 pm PT
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="Year Built"
-                rows={null}
-              >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  N1 ID
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  1804
-                </p>
-              </section>
-            </section>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-  <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Footer-sc-19tlhp4-2 gICPir"
-    height={null}
-    id="Footer"
-    overflow={null}
-    width={null}
-  >
-    <div
-      className="Bar__BarLayout-icfo76-2 eIFIfS"
-      id={null}
-      onClick={null}
-    >
-      <div
-        className="Bar__Slot-icfo76-1 fNcQEg"
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
-        >
-          Footer
-        </h6>
-      </div>
-      <div
-        className="Bar__Slot-icfo76-1 hVtzoz"
-      >
-        <a
-          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
-          id={null}
-          label="Toggle"
-          onClick={[Function]}
-          title="Toggle"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
-            color={null}
-            data-icon="angle-down"
-            data-prefix="far"
-            focusable="false"
-            fontSize="inherit"
-            id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 320 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
-            fontSize="0.875rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing=".5px"
-          >
-            Toggle
-          </label>
-        </a>
-      </div>
-      <div
-        className="Bar__Slot-icfo76-1 kZQbjh"
-      >
-        <div />
-      </div>
-    </div>
   </div>
 </div>
 `;
 
-exports[` 6`] = `
+exports[` 7`] = `
 <div
   className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
   height={null}
@@ -1597,9 +2670,9 @@ exports[` 6`] = `
         width={null}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_52"
+          id="storyshots_54"
           media=""
           onClick={null}
         >
@@ -1674,20 +2747,20 @@ exports[` 6`] = `
                   </svg>
                   <div
                     className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-                    id="menu-popper-storyshots_53"
+                    id="menu-popper-storyshots_55"
                   >
                     <button
                       className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
                       disabled={false}
                       htmlFor={null}
-                      id="menu-icon-storyshots_53"
-                      name="menu-icon-storyshots_53"
+                      id="menu-icon-storyshots_55"
+                      name="menu-icon-storyshots_55"
                       onClick={[Function]}
                       tabIndex="1"
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                         id={null}
                         rows={null}
                       >
@@ -1808,7 +2881,7 @@ exports[` 6`] = `
                         rows={null}
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                           disabled={false}
                         >
                           <input
@@ -1915,7 +2988,7 @@ exports[` 6`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                         disabled={false}
                       >
                         <input
@@ -1982,7 +3055,7 @@ exports[` 6`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                         disabled={false}
                       >
                         <input
@@ -2049,7 +3122,7 @@ exports[` 6`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bUGjPM"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
                         disabled={false}
                       >
                         <input
@@ -2115,190 +3188,1265 @@ exports[` 6`] = `
       overflow={null}
       width="24rem"
     >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+      <div
+        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+        height="100%"
         id={null}
-        rows={null}
+        width="100%"
       >
-        <div
-          className="Bar__BarLayout-icfo76-2 fliBOc"
+        <section
+          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
           id={null}
-          onClick={null}
         >
-          <div
-            className="Bar__Slot-icfo76-1 dLaZFL"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+            id={null}
+            rows={null}
           >
             <img
               alt="mockImage"
-              className="Image__ImageWrapper-sc-18abvff-0 bmySjT"
+              className="Image__ImageWrapper-sc-18abvff-0 driND"
               onClick={null}
               src=""
               title="mockImage"
-              width="80%"
+              width={null}
             />
-          </div>
-        </div>
-        <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+            <div
+              className="Bar__BarLayout-icfo76-2 jEWtiX"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 dLaZFL"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 keXRjE"
+                  id="Physical Characteristics"
+                  rows={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Buildings"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Owner
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      Steve Davidson
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="GBA"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Due
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      06/25/2020
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Stories"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Status
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      Open
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Units"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Created
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      6/14/2020 8:00 am PT
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="Year Built"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Edited
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      6/16/2020 12:15 pm PT
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="Year Built"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      N1 ID
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      1804
+                    </p>
+                  </section>
+                </section>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Footer-sc-19tlhp4-2 gICPir"
+    height={null}
+    id="Footer"
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          Footer
+        </h6>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 hVtzoz"
+      >
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+          id={null}
+          label="Toggle"
+          onClick={[Function]}
+          title="Toggle"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            color={null}
+            data-icon="angle-down"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Toggle
+          </label>
+        </a>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 kZQbjh"
+      >
+        <div />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 8`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  height={null}
+  id={null}
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
+    height={null}
+    id="Header"
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+          id={null}
+          label="Toggle"
+          onClick={[Function]}
+          title="Toggle"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-angle-left fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            color={null}
+            data-icon="angle-left"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 192 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Toggle
+          </label>
+        </a>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 hVtzoz"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          Header
+        </h6>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 kZQbjh"
+      >
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 fXpBjx"
+          id={null}
+          label="Toggle"
+          onClick={[Function]}
+          title="Toggle"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-angle-right fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            color={null}
+            data-icon="angle-right"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 192 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Toggle
+          </label>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 cRfdzk"
+      height={null}
+      id={null}
+      overflow={null}
+      width="10rem"
+    >
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+        id={null}
+      >
+        <li
+          className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Research
+          </p>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+          disabled={false}
+          href={null}
           id={null}
           onClick={null}
+          tabIndex="0"
         >
           <div
-            className="Bar__Slot-icfo76-1 dLaZFL"
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 keXRjE"
-              id="Physical Characteristics"
-              rows={null}
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="No. of Buildings"
-                rows={null}
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Owner
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Steve Davidson
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="GBA"
-                rows={null}
+                Projects
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Due
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  06/25/2020
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="No. of Stories"
-                rows={null}
+                Properties
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Status
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Open
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="No. of Units"
-                rows={null}
+                History
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  Project Created
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  6/14/2020 8:00 am PT
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="Year Built"
-                rows={null}
+                Data
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bgGIuF Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+      height="20rem"
+      id={null}
+      overflow={null}
+      width="100%"
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+        height={null}
+        id={null}
+        overflow={null}
+        width={null}
+      >
+        <div
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eYakgY Layout__RegionBottom-sc-19tlhp4-7 iyLmm"
+        height="20rem"
+        id={null}
+        overflow={null}
+        width={null}
+      >
+        <div
+          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          href={null}
+          id="storyshots_56"
+          media=""
+          onClick={null}
+        >
+          <section
+            className="Card__CardSectionWrapper-sc-1g3s676-1 dHyiDr"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 izXrkl"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 eufPAN"
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <h6
+                  className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+                  fontSize="1.2rem"
+                  fontWeight="400"
+                  letterSpacing="1px"
                 >
-                  Project Edited
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  6/16/2020 12:15 pm PT
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
-                id="Year Built"
-                rows={null}
+                  Results | 3
+                </h6>
+              </div>
+              <div
+                className="Bar__Slot-icfo76-1 FsWNF"
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
-                >
-                  N1 ID
-                </label>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
-                  fontSize="1rem"
-                  fontWeight={500}
+                <div
+                  className="IconBlock__Block-nokc92-0 UCGVw"
                   id={null}
-                  letterSpacing="0.5px"
                 >
-                  1804
-                </p>
-              </section>
-            </section>
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-share fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="share"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M561.938 190.06L385.94 14.107C355.79-16.043 304 5.327 304 48.047v80.703C166.04 132.9 0 159.68 0 330.05c0 73.75 38.02 134.719 97.63 173.949 37.12 24.43 85.84-10.9 72.19-54.46C145.47 371.859 157.41 330.2 304 321.66v78.28c0 42.64 51.73 64.15 81.94 33.94l175.997-175.94c18.751-18.74 18.751-49.14.001-67.88zM352 400V272.09c-164.521 1.79-277.44 33.821-227.98 191.61C88 440 48 397.01 48 330.05c0-142.242 160.819-153.39 304-154.02V48l176 176-176 176z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-trash-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="trash-alt"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <div
+                    className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                    id="menu-popper-storyshots_57"
+                  >
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
+                      disabled={false}
+                      htmlFor={null}
+                      id="menu-icon-storyshots_57"
+                      name="menu-icon-storyshots_57"
+                      onClick={[Function]}
+                      tabIndex="1"
+                      type="button"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                        id={null}
+                        rows={null}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="ellipsis-v"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 128 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </section>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+        >
+          <div
+            style={
+              Object {
+                "height": 0,
+                "overflow": "visible",
+                "width": 0,
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "height": 100,
+                  "overflow": "visible",
+                  "width": 200,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": 40,
+                    "position": "relative",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly={true}
+                  className="ReactVirtualized__Grid"
+                  onScroll={[Function]}
+                  role="grid"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "boxSizing": "border-box",
+                      "direction": "ltr",
+                      "height": 40,
+                      "left": 0,
+                      "overflowX": "hidden",
+                      "overflowY": "hidden",
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 200,
+                      "willChange": "transform",
+                    }
+                  }
+                  tabIndex={null}
+                >
+                  <div
+                    className="ReactVirtualized__Grid__innerScrollContainer"
+                    role="rowgroup"
+                    style={
+                      Object {
+                        "height": 40,
+                        "maxHeight": 40,
+                        "maxWidth": 1560,
+                        "overflow": "hidden",
+                        "pointerEvents": "",
+                        "position": "relative",
+                        "width": 1560,
+                      }
+                    }
+                  >
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 bDTUkP"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 gCCOlW"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Select All
+                          </label>
+                        </div>
+                      </section>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      Name
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "height": 60,
+                    "overflow": "visible",
+                    "position": "relative",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly={true}
+                  className="ReactVirtualized__Grid"
+                  onScroll={[Function]}
+                  role="grid"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "boxSizing": "border-box",
+                      "direction": "ltr",
+                      "height": 60,
+                      "left": 0,
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "position": "absolute",
+                      "width": 200,
+                      "willChange": "transform",
+                    }
+                  }
+                  tabIndex={0}
+                >
+                  <div
+                    className="ReactVirtualized__Grid__innerScrollContainer"
+                    role="rowgroup"
+                    style={
+                      Object {
+                        "height": 120,
+                        "maxHeight": 120,
+                        "maxWidth": 1560,
+                        "overflow": "hidden",
+                        "pointerEvents": "",
+                        "position": "relative",
+                        "width": 1560,
+                      }
+                    }
+                  >
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href="www.google.com"
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        477 Madison Avenue
+                      </a>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href="www.google.com"
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        23 E. 21 St.
+                      </a>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <div
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                        disabled={false}
+                      >
+                        <input
+                          checked={null}
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                          id={null}
+                          onBlur={null}
+                          onChange={null}
+                          onFocus={null}
+                          type="checkbox"
+                        />
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          fontSize="0.875rem"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing=".5px"
+                        >
+                          Select
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                      onClick={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 180,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": 180,
+                        }
+                      }
+                    >
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href="www.google.com"
+                        letterSpacing="0px"
+                        onClick={null}
+                        target={null}
+                      >
+                        11 W. 20 St.
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 ciGVI Layout__RegionRight-sc-19tlhp4-8 fxLqlc"
+      height={null}
+      id={null}
+      overflow={null}
+      width="24rem"
+    >
+      <div
+        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+        height="100%"
+        id={null}
+        width="100%"
+      >
+        <section
+          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+          id={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+            id={null}
+            rows={null}
+          >
+            <img
+              alt="mockImage"
+              className="Image__ImageWrapper-sc-18abvff-0 driND"
+              onClick={null}
+              src=""
+              title="mockImage"
+              width={null}
+            />
+            <div
+              className="Bar__BarLayout-icfo76-2 jEWtiX"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 dLaZFL"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldGrid-sc-11od8ug-1 keXRjE"
+                  id="Physical Characteristics"
+                  rows={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Buildings"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Owner
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      Steve Davidson
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="GBA"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Due
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      06/25/2020
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Stories"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Status
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      Open
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="No. of Units"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Created
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      6/14/2020 8:00 am PT
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="Year Built"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Project Edited
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      6/16/2020 12:15 pm PT
+                    </p>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                    id="Year Built"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI Field__FieldLabel-sc-11od8ug-3 fFfgEj"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      N1 ID
+                    </label>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                      fontSize="1rem"
+                      fontWeight={500}
+                      id={null}
+                      letterSpacing="0.5px"
+                    >
+                      1804
+                    </p>
+                  </section>
+                </section>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
     </div>
   </div>
   <div

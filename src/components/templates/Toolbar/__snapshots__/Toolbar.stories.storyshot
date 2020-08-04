@@ -1,0 +1,1062 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 iLMccq"
+    id="Template Regions"
+    rows={null}
+  >
+    <section
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        href={null}
+        id="storyshots_145"
+        media=""
+        onClick={null}
+      >
+        <div
+          className="Bar__BarLayout-icfo76-2 fliBOc"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 fNcQEg"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+              id={null}
+              rows={null}
+            >
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                  id={null}
+                  rows="max-content 1fr"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-pencil fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="pencil"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M491.609 73.625l-53.861-53.839c-26.378-26.379-69.076-26.383-95.46-.001L24.91 335.089.329 484.085c-2.675 16.215 11.368 30.261 27.587 27.587l148.995-24.582 315.326-317.378c26.33-26.331 26.581-68.879-.628-96.087zM120.644 302l170.259-169.155 88.251 88.251L210 391.355V350h-48v-48h-41.356zM82.132 458.132l-28.263-28.263 12.14-73.587L84.409 338H126v48h48v41.59l-18.282 18.401-73.586 12.141zm378.985-319.533l-.051.051-.051.051-48.03 48.344-88.03-88.03 48.344-48.03.05-.05.05-.05c9.147-9.146 23.978-9.259 33.236-.001l53.854 53.854c9.878 9.877 9.939 24.549.628 33.861z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Draw
+                  </label>
+                </section>
+              </button>
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                  id={null}
+                  rows="max-content 1fr"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-ruler-triangle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="ruler-triangle"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M501.65 452.08L59.91 10.35C52.76 3.2 43.97 0 35.35 0 17.31 0 0 14.01 0 35.17V476.9C0 496.29 15.71 512 35.1 512h441.73c31.27 0 46.93-37.8 24.82-59.92zM48 464V66.32l63.08 63.08-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31 45.26 45.25-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31 45.25 45.25-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31 45.25 45.26-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31L445.68 464H48zm80-80h124.54L128 259.46V384z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Measure
+                  </label>
+                </section>
+              </button>
+              <div
+                className="Popper__NonPortalWrapper-sc-1t9125t-1 fePbDW"
+                id="storyshots_146"
+              >
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+                  disabled={false}
+                  htmlFor={null}
+                  id="button-anchor"
+                  name="button-anchor"
+                  onClick={null}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                    id={null}
+                    rows="max-content 1fr"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-map fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                      color={null}
+                      data-icon="map"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Map Type
+                    </label>
+                  </section>
+                </button>
+                <div
+                  className="Popper__PopperWrapper-sc-1t9125t-2 ieZvdA"
+                  id="popper-wrapperstoryshots_146"
+                >
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 fhKuTn Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="storyshots_147"
+                    media=""
+                    onClick={null}
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Radio__RadioWrapper-sc-3ox61a-0 kzzMRw"
+                      id={null}
+                      rows={null}
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Radio__InputGroup-sc-3ox61a-3 dyYMNc"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 bFDhxp"
+                            id="radio-1"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="radio"
+                            value="1"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor="radio-1"
+                            letterSpacing=".5px"
+                          >
+                            Roads
+                          </label>
+                        </div>
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 bFDhxp"
+                            id="radio-2"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="radio"
+                            value="2"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor="radio-2"
+                            letterSpacing=".5px"
+                          >
+                            Aerial
+                          </label>
+                        </div>
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 bMQSTk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 bFDhxp"
+                            id="radio-3"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="radio"
+                            value="3"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor="radio-3"
+                            letterSpacing=".5px"
+                          >
+                            Aerial with Labels
+                          </label>
+                        </div>
+                      </section>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="Popper__NonPortalWrapper-sc-1t9125t-1 fePbDW"
+                id="storyshots_148"
+              >
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+                  disabled={false}
+                  htmlFor={null}
+                  id="button-anchor"
+                  name="button-anchor"
+                  onClick={null}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                    id={null}
+                    rows="max-content 1fr"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-layer-group fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                      color={null}
+                      data-icon="layer-group"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M512 256.01c0-12.86-7.53-24.42-19.12-29.44l-79.69-34.58 79.66-34.57c11.62-5.03 19.16-16.59 19.16-29.44s-7.53-24.41-19.12-29.42L274.66 3.89c-11.84-5.17-25.44-5.19-37.28-.02L19.16 98.55C7.53 103.58 0 115.14 0 127.99s7.53 24.41 19.12 29.42l79.7 34.58-79.67 34.57C7.53 231.58 0 243.15 0 256.01c0 12.84 7.53 24.41 19.12 29.42L98.81 320l-79.65 34.56C7.53 359.59 0 371.15 0 384.01c0 12.84 7.53 24.41 19.12 29.42l218.28 94.69a46.488 46.488 0 0 0 18.59 3.88c6.34-.02 12.69-1.3 18.59-3.86l218.25-94.69c11.62-5.03 19.16-16.59 19.16-29.44 0-12.86-7.53-24.42-19.12-29.44L413.19 320l79.65-34.56c11.63-5.03 19.16-16.59 19.16-29.43zM255.47 47.89l.03.02h-.06l.03-.02zm.53.23l184.16 79.89-183.63 80.09-184.62-80.11L256 48.12zm184.19 335.92l-183.66 80.07L71.91 384l87.21-37.84 78.29 33.96A46.488 46.488 0 0 0 256 384c6.34-.02 12.69-1.3 18.59-3.86l78.29-33.97 87.31 37.87zM256.53 336.1L71.91 255.99l87.22-37.84 78.28 33.96a46.488 46.488 0 0 0 18.59 3.88c6.34-.02 12.69-1.3 18.59-3.86l78.29-33.97 87.31 37.88-183.66 80.06z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Layers
+                    </label>
+                  </section>
+                </button>
+                <div
+                  className="Popper__PopperWrapper-sc-1t9125t-2 ieZvdA"
+                  id="popper-wrapperstoryshots_148"
+                >
+                  <div
+                    className="CardWrapper__StyledCardWrapper-meln7c-0 fhKuTn Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                    href={null}
+                    id="storyshots_149"
+                    media=""
+                    onClick={null}
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+                      id={null}
+                      rows={null}
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            id="Checkbox-1"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor="Checkbox-1"
+                            letterSpacing=".5px"
+                          >
+                            Demographics
+                          </label>
+                        </div>
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            id="Checkbox-2"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor="Checkbox-2"
+                            letterSpacing=".5px"
+                          >
+                            Household Income
+                          </label>
+                        </div>
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            id="Checkbox-3"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor="Checkbox-3"
+                            letterSpacing=".5px"
+                          >
+                            Population Density
+                          </label>
+                        </div>
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            id="Checkbox-4"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor="Checkbox-4"
+                            letterSpacing=".5px"
+                          >
+                            Household Age
+                          </label>
+                        </div>
+                      </section>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+                disabled={false}
+                htmlFor={null}
+                id="button-anchor"
+                name="button-anchor"
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                  id={null}
+                  rows="max-content 1fr"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-list-ul fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="list-ul"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M48 368a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 24H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Legend
+                  </label>
+                </section>
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 iLMccq"
+    id="Template Regions"
+    rows={null}
+  >
+    <section
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        href={null}
+        id="storyshots_150"
+        media=""
+        onClick={null}
+      >
+        <div
+          className="Bar__BarLayout-icfo76-2 fliBOc"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 fNcQEg"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+              id={null}
+              rows={null}
+            >
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                  id={null}
+                  rows="max-content 1fr"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-pencil fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="pencil"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M491.609 73.625l-53.861-53.839c-26.378-26.379-69.076-26.383-95.46-.001L24.91 335.089.329 484.085c-2.675 16.215 11.368 30.261 27.587 27.587l148.995-24.582 315.326-317.378c26.33-26.331 26.581-68.879-.628-96.087zM120.644 302l170.259-169.155 88.251 88.251L210 391.355V350h-48v-48h-41.356zM82.132 458.132l-28.263-28.263 12.14-73.587L84.409 338H126v48h48v41.59l-18.282 18.401-73.586 12.141zm378.985-319.533l-.051.051-.051.051-48.03 48.344-88.03-88.03 48.344-48.03.05-.05.05-.05c9.147-9.146 23.978-9.259 33.236-.001l53.854 53.854c9.878 9.877 9.939 24.549.628 33.861z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Draw
+                  </label>
+                </section>
+              </button>
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                  id={null}
+                  rows="max-content 1fr"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-ruler-triangle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="ruler-triangle"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M501.65 452.08L59.91 10.35C52.76 3.2 43.97 0 35.35 0 17.31 0 0 14.01 0 35.17V476.9C0 496.29 15.71 512 35.1 512h441.73c31.27 0 46.93-37.8 24.82-59.92zM48 464V66.32l63.08 63.08-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31 45.26 45.25-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31 45.25 45.25-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31 45.25 45.26-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31L445.68 464H48zm80-80h124.54L128 259.46V384z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Measure
+                  </label>
+                </section>
+              </button>
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+                disabled={false}
+                htmlFor={null}
+                id="button-anchor"
+                name="button-anchor"
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                  id={null}
+                  rows="max-content 1fr"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-map fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="map"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Map Type
+                  </label>
+                </section>
+              </button>
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+                disabled={false}
+                htmlFor={null}
+                id="button-anchor"
+                name="button-anchor"
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                  id={null}
+                  rows="max-content 1fr"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-layer-group fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="layer-group"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M512 256.01c0-12.86-7.53-24.42-19.12-29.44l-79.69-34.58 79.66-34.57c11.62-5.03 19.16-16.59 19.16-29.44s-7.53-24.41-19.12-29.42L274.66 3.89c-11.84-5.17-25.44-5.19-37.28-.02L19.16 98.55C7.53 103.58 0 115.14 0 127.99s7.53 24.41 19.12 29.42l79.7 34.58-79.67 34.57C7.53 231.58 0 243.15 0 256.01c0 12.84 7.53 24.41 19.12 29.42L98.81 320l-79.65 34.56C7.53 359.59 0 371.15 0 384.01c0 12.84 7.53 24.41 19.12 29.42l218.28 94.69a46.488 46.488 0 0 0 18.59 3.88c6.34-.02 12.69-1.3 18.59-3.86l218.25-94.69c11.62-5.03 19.16-16.59 19.16-29.44 0-12.86-7.53-24.42-19.12-29.44L413.19 320l79.65-34.56c11.63-5.03 19.16-16.59 19.16-29.43zM255.47 47.89l.03.02h-.06l.03-.02zm.53.23l184.16 79.89-183.63 80.09-184.62-80.11L256 48.12zm184.19 335.92l-183.66 80.07L71.91 384l87.21-37.84 78.29 33.96A46.488 46.488 0 0 0 256 384c6.34-.02 12.69-1.3 18.59-3.86l78.29-33.97 87.31 37.87zM256.53 336.1L71.91 255.99l87.22-37.84 78.28 33.96a46.488 46.488 0 0 0 18.59 3.88c6.34-.02 12.69-1.3 18.59-3.86l78.29-33.97 87.31 37.88-183.66 80.06z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Layers
+                  </label>
+                </section>
+              </button>
+              <div
+                className="Popper__NonPortalWrapper-sc-1t9125t-1 fePbDW"
+                id="popper-standard"
+              >
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+                  disabled={false}
+                  htmlFor={null}
+                  id={null}
+                  name={null}
+                  onClick={null}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                    id={null}
+                    rows="max-content 1fr"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-list-ul fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                      color={null}
+                      data-icon="list-ul"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M48 368a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 24H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Legend
+                    </label>
+                  </section>
+                </button>
+                <div
+                  className="Popper__PopperWrapper-sc-1t9125t-2 ieZvdA"
+                  id="popper-wrapperpopper-standard"
+                >
+                  <div
+                    className="Container__Wrapper-sc-1i4fzzd-0 diASIX"
+                    height="20rem"
+                    width={null}
+                  >
+                    <div
+                      className="Container__BoxContainer-sc-1i4fzzd-1 huwKDN"
+                      height="100%"
+                      id={null}
+                    >
+                      <div
+                        className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                        href={null}
+                        id="storyshots_151"
+                        media=""
+                        onClick={null}
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 crWWGQ"
+                          id={null}
+                          rows={null}
+                        >
+                          <div
+                            className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                            href={null}
+                            id="storyshots_152"
+                            media=""
+                            onClick={null}
+                          >
+                            <section
+                              className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                              id="storyshots_152-Header"
+                              onClick={null}
+                            >
+                              <div
+                                className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+                                id={null}
+                                onClick={[Function]}
+                              >
+                                <div
+                                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                                  id={null}
+                                  onClick={null}
+                                >
+                                  <div
+                                    className="Bar__Slot-icfo76-1 fIRUJx"
+                                  >
+                                    <p
+                                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                      fontSize="1rem"
+                                      fontWeight={400}
+                                      id={null}
+                                      letterSpacing="0.5px"
+                                    >
+                                      Legend 1
+                                    </p>
+                                  </div>
+                                  <div
+                                    className="Bar__Slot-icfo76-1 cxljst"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                      color={null}
+                                      data-icon="plus"
+                                      data-prefix="far"
+                                      focusable="false"
+                                      fontSize="inherit"
+                                      id={null}
+                                      role="img"
+                                      style={Object {}}
+                                      viewBox="0 0 384 512"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                        fill="currentColor"
+                                        style={Object {}}
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+                                open={false}
+                              >
+                                <section
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kkruHX"
+                                  id={null}
+                                  onClick={null}
+                                >
+                                  <img
+                                    className="Image__ImageWrapper-sc-18abvff-0 driND"
+                                    onClick={null}
+                                    src=""
+                                    width={null}
+                                  />
+                                </section>
+                              </div>
+                            </section>
+                          </div>
+                          <div
+                            className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                            href={null}
+                            id="storyshots_153"
+                            media=""
+                            onClick={null}
+                          >
+                            <section
+                              className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                              id="storyshots_153-Header"
+                              onClick={null}
+                            >
+                              <div
+                                className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+                                id={null}
+                                onClick={[Function]}
+                              >
+                                <div
+                                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                                  id={null}
+                                  onClick={null}
+                                >
+                                  <div
+                                    className="Bar__Slot-icfo76-1 fIRUJx"
+                                  >
+                                    <p
+                                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                      fontSize="1rem"
+                                      fontWeight={400}
+                                      id={null}
+                                      letterSpacing="0.5px"
+                                    >
+                                      Legend 2
+                                    </p>
+                                  </div>
+                                  <div
+                                    className="Bar__Slot-icfo76-1 cxljst"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                      color={null}
+                                      data-icon="plus"
+                                      data-prefix="far"
+                                      focusable="false"
+                                      fontSize="inherit"
+                                      id={null}
+                                      role="img"
+                                      style={Object {}}
+                                      viewBox="0 0 384 512"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                        fill="currentColor"
+                                        style={Object {}}
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+                                open={false}
+                              >
+                                <section
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kkruHX"
+                                  id={null}
+                                  onClick={null}
+                                >
+                                  <img
+                                    className="Image__ImageWrapper-sc-18abvff-0 driND"
+                                    onClick={null}
+                                    src=""
+                                    width={null}
+                                  />
+                                </section>
+                              </div>
+                            </section>
+                          </div>
+                          <div
+                            className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                            href={null}
+                            id="storyshots_154"
+                            media=""
+                            onClick={null}
+                          >
+                            <section
+                              className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                              id="storyshots_154-Header"
+                              onClick={null}
+                            >
+                              <div
+                                className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+                                id={null}
+                                onClick={[Function]}
+                              >
+                                <div
+                                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                                  id={null}
+                                  onClick={null}
+                                >
+                                  <div
+                                    className="Bar__Slot-icfo76-1 fIRUJx"
+                                  >
+                                    <p
+                                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                      fontSize="1rem"
+                                      fontWeight={400}
+                                      id={null}
+                                      letterSpacing="0.5px"
+                                    >
+                                      Legend 3
+                                    </p>
+                                  </div>
+                                  <div
+                                    className="Bar__Slot-icfo76-1 cxljst"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                      color={null}
+                                      data-icon="plus"
+                                      data-prefix="far"
+                                      focusable="false"
+                                      fontSize="inherit"
+                                      id={null}
+                                      role="img"
+                                      style={Object {}}
+                                      viewBox="0 0 384 512"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                        fill="currentColor"
+                                        style={Object {}}
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+                                open={false}
+                              >
+                                <section
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kkruHX"
+                                  id={null}
+                                  onClick={null}
+                                >
+                                  <img
+                                    className="Image__ImageWrapper-sc-18abvff-0 driND"
+                                    onClick={null}
+                                    src=""
+                                    width={null}
+                                  />
+                                </section>
+                              </div>
+                            </section>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+`;
