@@ -20,7 +20,7 @@ const SearchContainer = styled.form`
   "A"
   "B";
   grid-template-rows: auto 1fr;
-  grid-row-gap: "0.25rem";
+  grid-row-gap: 0.25rem;
   position: relative;
   padding: 0 0.5rem;
 `;
