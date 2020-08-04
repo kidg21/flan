@@ -126,31 +126,31 @@ storiesOf("Templates/Modules/Toolbar", module)
                           <CardGrid>
                             <Card
                               description="Legend 1"
-                            >
-                              <CardSection variant="modal">
+                              more={{ content: (
+                              <CardSection variant="disabled">
                                 <Image
                                   src={LegendValue1}
                                 />
-                              </CardSection>
-                            </Card>
+                                </CardSection>) }}
+                              />
                             <Card
                               description="Legend 2"
-                            >
-                              <CardSection>
+                              more={{ content: (
+                              <CardSection variant="disabled">
                                 <Image
                                   src={LegendValue2}
                                 />
-                              </CardSection>
-                            </Card>
+                                </CardSection>) }}
+                              />
                             <Card
                               description="Legend 3"
-                            >
-                              <CardSection variant="modal">
+                              more={{ content: (
+                              <CardSection variant="disabled">
                                 <Image
                                   src={LegendValue3}
                                 />
-                              </CardSection>
-                            </Card>
+                                </CardSection>) }}
+                              />
                           </CardGrid>
                         </Card>
                       </Container>
