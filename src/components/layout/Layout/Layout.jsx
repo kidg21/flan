@@ -14,6 +14,7 @@ const WrapperOuter = styled(Flex)`
 
 const Header = styled(Flex)`
   flex: none;
+  overflow: visible;
   box-shadow: ${(props) => {
     return props.hasShadow ? props.theme.shadows.outlineShadow : "";
   }};
