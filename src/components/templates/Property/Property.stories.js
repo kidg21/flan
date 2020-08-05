@@ -21,24 +21,15 @@ import Form, { FormSection } from "layout/Form";
 import Image from "atoms/Image";
 import Divider from "atoms/Divider";
 import MapBox from "layout/Map";
-import TextInput from "atoms/TextInput";
-import Media from "atoms/Media";
 import Field, { FieldGroup, FieldSection } from "atoms/Field";
-import Text, { Title, Link } from "base/Typography";
-import Card, { CardSection, CardGrid } from "elements/Card";
-import Modal from "layout/Modal";
+import { Title } from "base/Typography";
+import Card, { CardSection } from "elements/Card";
 import ParcelMap from "images/maps/map-thumb.png";
-import ReportTemp from "images/rural.jpg";
 import {
-  MockData,
-  MockDetails,
-  MockFooter,
-  MockForm,
   MockHeader,
   MockHeaderGlobal,
   MockMenu,
   MockTabs,
-  MockWorkflow,
 } from "helpers/Mocks";
 
 function doNothing() {
@@ -98,7 +89,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                         />
                       </CardSection>
                     </Card>
-)}
+                  )}
                 >
                   <Panel
                     padding="0"
@@ -119,7 +110,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                           width: "fit-content",
                         }}
                       />
-                )}
+                    )}
                   >
                     <Template
                       id="Assessment"
@@ -226,7 +217,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                           width: "fit-content",
                         }}
                       />
-                )}
+                    )}
                   >
                     <Template
                       id="Main Content"
@@ -271,18 +262,18 @@ storiesOf("Templates|Applications/Research/Property", module)
                                 padding="2x"
                                 left={<Title size="lg" weight="medium" text="22902 Trabuco Rd., Mission Viejo CA" />}
                                 right={{
-                                  content: (<Icon icon="export" onClick />),
+                                  content: (<Icon icon="export" onClick={doNothing} />),
                                   width: "fit-content",
                                 }}
                               />
-                          )}
+                            )}
                           >
                             <Grid columns="1" gap="lg">
                               <Bar
                                 padding="0"
                                 center={
                                   <Image width="20rem" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" />
-}
+                                }
                               />
                               <FieldSection>
                                 <FieldGroup columns="1" title="Property">
@@ -452,7 +443,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                               padding="0"
                               center={
                                 <Image src={ParcelMap} width="20rem" alt="mockImage" />
-}
+                              }
                             />
                             <Bar center={<Command label="View Map" />} />
                             <FieldGroup columns="1" id="Physical Characteristics" title="Physical Characteristics">
