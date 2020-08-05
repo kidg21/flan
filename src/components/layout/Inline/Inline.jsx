@@ -25,6 +25,7 @@ function Inline({
 }) {
   const justifyContent = justiftyHash[contentJustify && contentJustify.toLowerCase()] || "flex-start";
   const alignItems = alignHash[contentAlign && contentAlign.toLowerCase()] || "center";
+  const spacingHalfY = spacingY ? `calc(${spacingY} / 2)` : "0";
 
   return (
     <Flex
@@ -37,7 +38,7 @@ function Inline({
         ? children.map((child) => {
           return (
             <div
-              style={{ margin: `calc(${spacingY} / 2) ${spacingX} calc(${spacingY} / 2) 0` }}
+              style={{ margin: `${spacingHalfY} ${spacingX} ${spacingHalfY} 0` }}
             >
               {child}
             </div>
@@ -50,8 +51,8 @@ function Inline({
 
 Inline.propTypes = {
   children: PropTypes.node,
-  spacingX: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
-  spacingY: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+  spacingX: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  spacingY: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   contentJustify: PropTypes.oneOf(["left", "center", "right"]),
   contentAlign: PropTypes.oneOf(["top", "center", "bottom"]),
 };
