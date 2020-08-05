@@ -718,22 +718,6 @@ storiesOf("Templates|Applications/Research", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-        const tabsAssessment = [
-          {
-            id: "Parcel 1",
-            label: "Parcel 1",
-            isSelected: activeSingleTab === "tab1",
-            onClick: () => { setActiveSingleTab("tab1"); },
-          },
-          {
-            id: "Parcel 2",
-            label: "Parcel 2",
-            isSelected: activeSingleTab === "tab2",
-            onClick: () => { setActiveSingleTab("tab2"); },
-          },
-        ];
-
         const fieldData = [
           {
             label: "Tax Authority Link",
@@ -870,7 +854,7 @@ storiesOf("Templates|Applications/Research", module)
                                 />
                               </Panel>
                             ),
-                                }}
+                          }}
                           B={{
                             id: "B",
                             content: (
@@ -1051,10 +1035,6 @@ storiesOf("Templates|Applications/Research", module)
                                   <TextInput label="Zoned Density" value="0.75" />
                                   <TextInput label="Zoning Summary" value="This zone is intended for small-scale business" />
                                   <TextInput label="Maximum Site Coverage" value="50%" />
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
                                 </Form>
                               </Panel>
                             ),
@@ -1077,8 +1057,6 @@ storiesOf("Templates|Applications/Research", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
 
         return (
           <Layout
@@ -1245,60 +1223,6 @@ storiesOf("Templates|Applications/Research", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [sectionState, setSectionState] = useState(true);
-
-        // const reportSections = [
-        //   {
-        //     id: "Define Site",
-        //     label: "Define Site",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Data Extraction",
-        //     label: "Data Extraction",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Assessment Data",
-        //     label: "Assessment Data",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Zoning",
-        //     label: "Zoning",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Demographics",
-        //     label: "Demographics",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Maps",
-        //     label: "Maps",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Appendices",
-        //     label: "Appendices",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        // ];
 
         const buttonLabelOne = (
           "Create Report"

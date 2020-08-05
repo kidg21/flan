@@ -268,7 +268,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                               <Bar
                                 contentAlign="center"
                                 padding="2x"
-                                left={<Text size="lg" text="22902 Trabuco Rd., Mission Viejo CA" />}
+                                left={<Title size="lg" weight="medium" text="22902 Trabuco Rd., Mission Viejo CA" />}
                                 right={{
                                   content: (<Icon icon="export" onClick />),
                                   width: "fit-content",

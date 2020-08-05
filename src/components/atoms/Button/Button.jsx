@@ -132,18 +132,16 @@ function ButtonGroup({
 ButtonGroup.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
-  gap: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([
-      "0",
-      "xs",
-      "sm",
-      "lg",
-      "xl",
-      "2xl",
-      "3xl",
-      "4xl",
-    ]),
+  gap: PropTypes.oneOf([
+    "",
+    "0",
+    "xs",
+    "sm",
+    "lg",
+    "xl",
+    "2xl",
+    "3xl",
+    "4xl",
   ]),
   columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   className: PropTypes.string,
@@ -189,7 +187,6 @@ function Button({
   label,
   onClick,
   isPlain,
-  isFolder,
   isRound,
   isSolid,
   type,
@@ -264,10 +261,6 @@ function Button({
   if (hasUnderline) {
     borderWidth = "0 0 2px 0";
     borderRadius = "0px";
-    borderStyle = "solid";
-  } else if (isFolder) {
-    borderWidth = "1px 1px 1px 1px";
-    borderRadius = "5px 5px 0px 0px";
     borderStyle = "solid";
   } else if (isPlain) {
     borderWidth = "0px";
@@ -373,7 +366,6 @@ Button.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   isPlain: PropTypes.bool,
-  isFolder: PropTypes.bool,
   isRound: PropTypes.bool,
   isSolid: PropTypes.bool,
   size: PropTypes.oneOf(["sm", "lg", "xl", ""]),
@@ -392,7 +384,6 @@ Button.defaultProps = {
   hasUnderline: null,
   htmlFor: null,
   icon: null,
-  isFolder: false,
   id: null,
   isPlain: null,
   isRound: null,

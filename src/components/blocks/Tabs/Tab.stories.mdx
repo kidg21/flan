@@ -92,9 +92,9 @@ Tabs should **not** be used to display multiples of the same type. Avoid using t
         padding="2x"
         left={{
           content: (<Tabs>
-        <TabItem label="Building 1" isSelected/>
-        <TabItem label="Building 2" />
-        <TabItem label="Building 3" />
+        <TabItem isFolder label="Building 1" isSelected/>
+        <TabItem isFolder label="Building 2" />
+        <TabItem isFolder label="Building 3" />
       </Tabs>),
           align: "left",
         }}
@@ -156,10 +156,10 @@ Tabs should **not** be used to display multiples of the same type. Avoid using t
         <TabItem label="Returned" count="1" />
       </Tabs>
       <Tabs>
-        <TabItem hasFolder label="Not Started" isSelected/>
-        <TabItem hasFolder label="In Progress" />
-        <TabItem hasFolder label="Completed" />
-        <TabItem hasFolder label="Returned" />
+        <TabItem isFolder label="Not Started" isSelected/>
+        <TabItem isFolder label="In Progress" />
+        <TabItem isFolder label="Completed" />
+        <TabItem isFolder label="Returned" />
       </Tabs>
       </Grid>
   </Story>

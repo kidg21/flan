@@ -142,7 +142,7 @@ Field.defaultProps = {
 };
 
 function FieldGroup({
-  align, children, className, columns, data, gap, id, title, isDense,
+  align, children, className, columns, data, gap, id, title,
 }) {
   // 1-3 colums
   let setColumns;
@@ -201,7 +201,7 @@ function FieldSection({ children, title, columns }) {
 FieldSection.propTypes = {
   children: PropTypes.node,
   title: PropTypes.string,
-  columns: PropTypes.oneOf(["1", "2", "3"]),
+  columns: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 FieldSection.defaultProps = {
   children: null,

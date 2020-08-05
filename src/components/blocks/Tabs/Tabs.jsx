@@ -14,7 +14,12 @@ const TabButton = styled(Button)`
   border-radius: ${(props) => {
     return props.isUnderline ? "0px" : null;
   }};
-  margin: 0 -1px -1px 0;
+  background-color: ${(props) => {
+    return props.setBackground;
+  }};
+  margin: ${(props) => {
+    return props.setMargin;
+  }}; 
   border-color: ${(props) => {
     return props.isUnderline || "";
   }};
@@ -38,34 +43,46 @@ const TabsWrapper = styled.section`
 `;
 
 function TabItem({
-  alignCenter, count, disabled, htmlFor, icon, id, hasFolder, isSelected, label, float, onClick,
+  alignCenter, count, disabled, htmlFor, icon, id, isFolder, isSelected, label, float, onClick,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   // context from tab component
   const tabsContext = useContext(TabsContext);
   const _alignCenter = typeof alignCenter === "boolean" ? alignCenter : tabsContext.alignCenter;
 
-  let isFolder;
   let isSolid;
   let isPlain;
+  let setBackground;
   let isUnderline;
+  let setMargin;
 
-  if (hasFolder) {
-    isFolder = "true";
+  if (isFolder) {
+    setMargin = "0 0.5rem 0.5rem 0";
   } else {
     isPlain = "true";
+    setMargin = "0 -1px -1px 0";
   }
 
-  if (hasFolder && isSelected) isSolid = "true";
-  if (!hasFolder && isSelected) isUnderline = "true";
+  if (isFolder) {
+    if (isSelected) {
+      isSolid = "true";
+    } else {
+      isPlain = "true";
+      setBackground = "hsl(200, 19%, 95%)";
+    }
+  }
+
+  if (!isFolder && isSelected) isUnderline = "true";
 
   return (
     <React.Fragment>
       <TabButton
         count={count}
+        setMargin={setMargin}
         disabled={isDisabled}
         htmlFor={htmlFor}
         icon={icon}
+        setBackground={setBackground}
         id={id}
         isSelected={isSelected}
         label={label}
@@ -145,7 +162,7 @@ TabItem.propTypes = {
   htmlFor: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
-  hasFolder: PropTypes.bool,
+  isFolder: PropTypes.bool,
   isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -157,7 +174,7 @@ TabItem.defaultProps = {
   disabled: null,
   htmlFor: null,
   icon: null,
-  hasFolder: false,
+  isFolder: false,
   id: null,
   isSelected: false,
   label: null,
