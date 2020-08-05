@@ -212,7 +212,8 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 fwqfhW Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+            className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+            cursor="pointer"
             fontSize="0.875rem"
             fontWeight={600}
             htmlFor={null}
@@ -240,7 +241,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
@@ -253,7 +255,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
@@ -307,7 +310,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
@@ -320,7 +324,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}

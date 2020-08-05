@@ -15,7 +15,8 @@ exports[` 1`] = `
     type="checkbox"
   />
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+    cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
     htmlFor="Checkbox"
@@ -46,7 +47,8 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Checked"
@@ -69,7 +71,8 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Unchecked"
@@ -92,7 +95,8 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Error"
@@ -116,7 +120,8 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Disabled"
@@ -148,7 +153,8 @@ exports[` 3`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Left Aligned"
@@ -171,7 +177,8 @@ exports[` 3`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor="Right Aligned"
@@ -236,7 +243,8 @@ exports[` 4`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor="Checkbox-1"
@@ -259,7 +267,8 @@ exports[` 4`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor="Checkbox-2"
@@ -282,7 +291,8 @@ exports[` 4`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor="Checkbox-3"
@@ -305,7 +315,8 @@ exports[` 4`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor="Checkbox-4"

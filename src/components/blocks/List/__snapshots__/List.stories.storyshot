@@ -1447,9 +1447,11 @@ exports[` 5`] = `
             className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="Label"
+            onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+              cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
@@ -1503,9 +1505,11 @@ exports[` 5`] = `
             className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="6"
+            onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+              cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
@@ -1559,9 +1563,11 @@ exports[` 5`] = `
             className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="NEW!"
+            onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+              cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
@@ -1615,9 +1621,11 @@ exports[` 5`] = `
             className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="9"
+            onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+              className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+              cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}

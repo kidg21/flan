@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <form
-  className="Search__SearchContainer-sey9om-0 bVywlp"
+  className="Search__SearchContainer-sey9om-0 fgqUHM"
   id="Search_Standard"
   onSubmit={[Function]}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 HCzde Search__SearchInput-sey9om-1 ftjKE"
     height={null}
     id={null}
     overflow={null}
@@ -88,12 +88,12 @@ exports[` 2`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 bVywlp"
+    className="Search__SearchContainer-sey9om-0 fgqUHM"
     id="Suggestions"
     onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 HCzde Search__SearchInput-sey9om-1 ftjKE"
       height={null}
       id={null}
       overflow={null}
@@ -303,12 +303,12 @@ exports[` 3`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 bVywlp"
+    className="Search__SearchContainer-sey9om-0 fgqUHM"
     id="Suggestions_More"
     onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 HCzde Search__SearchInput-sey9om-1 ftjKE"
       height={null}
       id={null}
       overflow={null}
@@ -803,9 +803,11 @@ exports[` 3`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
                   id={null}
                   label="14"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -833,12 +835,12 @@ exports[` 4`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 bVywlp"
+    className="Search__SearchContainer-sey9om-0 fgqUHM"
     id="Search_Offline"
     onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 HCzde Search__SearchInput-sey9om-1 ftjKE"
       height={null}
       id={null}
       overflow={null}
@@ -981,12 +983,12 @@ exports[` 5`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 bVywlp"
+    className="Search__SearchContainer-sey9om-0 fgqUHM"
     id="Search_BadConnection"
     onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 HCzde Search__SearchInput-sey9om-1 ftjKE"
       height={null}
       id={null}
       overflow={null}
