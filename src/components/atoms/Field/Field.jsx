@@ -71,7 +71,7 @@ const Section = styled.section`
 `;
 
 function Field({
-  align, className, disabled, id, label, onChange, onClick, value,
+  align, className, disabled, id, label, onChange, onClick, isDense, value,
 }) {
   let fieldColumns;
   let fieldGap;
@@ -85,10 +85,10 @@ function Field({
       fieldColumns = "1fr 1fr";
       valueAlign = "right";
       break;
-    case "tight":
-      fieldColumns = "7rem 1fr";
-      break;
     default:
+      if (isDense) {
+        fieldColumns = "7rem 1fr";
+      }
       break;
   }
 
@@ -127,6 +127,7 @@ Field.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
+  isDense: PropTypes.bool,
   label: PropTypes.string.isRequired,
   /** Not currently being used but staying put for the next iteration. */
   onChange: PropTypes.func,
@@ -138,6 +139,7 @@ Field.defaultProps = {
   align: null,
   className: null,
   disabled: false,
+  isDense: false,
   id: null,
   onChange: null,
   onClick: null,

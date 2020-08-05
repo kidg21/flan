@@ -307,25 +307,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -372,25 +372,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -436,25 +436,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -500,25 +500,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -564,25 +564,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -628,25 +628,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
-                                                  align="tight"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
-                                                  align="tight"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -692,21 +692,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
