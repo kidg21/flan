@@ -85,6 +85,9 @@ function Field({
       fieldColumns = "1fr 1fr";
       valueAlign = "right";
       break;
+    case "tight":
+      fieldColumns = "7rem 1fr";
+      break;
     default:
       break;
   }
@@ -120,7 +123,7 @@ function Field({
 }
 
 Field.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge"]),
+  align: PropTypes.oneOf(["vertical", "edge", "tight"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
@@ -163,7 +166,7 @@ function FieldGroup({
         || data.map((item, index) => {
           return (
             <Field
-              align={align}
+              align={item.align}
               disabled={item.disabled}
               key={item.id || item.label || index}
               id={item.id}
@@ -209,7 +212,7 @@ FieldSection.defaultProps = {
 };
 
 FieldGroup.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge"]),
+  align: PropTypes.oneOf(["vertical", "edge", "tight"]),
   children: PropTypes.node,
   /** Defines the widths of grid columns
    *

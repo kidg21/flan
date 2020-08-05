@@ -307,21 +307,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -368,21 +372,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -428,21 +436,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -488,21 +500,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -548,21 +564,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -608,21 +628,25 @@ storiesOf("Templates|Applications/Research", module)
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  align="tight"
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  align="tight"
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
