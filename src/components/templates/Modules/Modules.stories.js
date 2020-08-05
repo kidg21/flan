@@ -12,7 +12,6 @@ import Accordion from "atoms/Accordion";
 import Icon from "atoms/Icon";
 import Divider from "atoms/Divider";
 import Bar from "layout/Bar";
-import Image from "atoms/Image";
 import Command from "atoms/Command";
 import Popper from "layout/Popper";
 import Grid from "layout/Grid";

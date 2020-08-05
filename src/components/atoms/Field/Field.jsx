@@ -147,7 +147,7 @@ function FieldGroup({
   // 1-3 colums
   let setColumns;
   const _columns = parseInt(columns, 10);
-  if (_columns > 0 && columns < 4) {
+  if (_columns > 0 && _columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
 
@@ -175,14 +175,13 @@ function FieldGroup({
           );
         })}
     </FieldGrid>
-
   );
 }
 
 function FieldSection({ children, title, columns }) {
   let setColumns;
   const _columns = parseInt(columns, 10);
-  if (_columns > 0 && columns < 4) {
+  if (_columns > 0 && _columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   } else {
     setColumns = columns;
@@ -217,23 +216,20 @@ FieldGroup.propTypes = {
    * Options: 1-3
    */
   className: PropTypes.string,
-  gap: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([
-      "0",
-      "xs",
-      "sm",
-      "lg",
-      "xl",
-      "2xl",
-      "3xl",
-      "4xl",
-    ]),
+  gap: PropTypes.oneOf([
+    "",
+    "0",
+    "xs",
+    "sm",
+    "lg",
+    "xl",
+    "2xl",
+    "3xl",
+    "4xl",
   ]),
   columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
   data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
   id: PropTypes.string,
-  isDense: PropTypes.bool,
   title: PropTypes.string,
 };
 
@@ -245,7 +241,6 @@ FieldGroup.defaultProps = {
   columns: null,
   data: [],
   id: null,
-  isDense: false,
   title: null,
 };
 

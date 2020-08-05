@@ -48,48 +48,24 @@ function TabItem({
   const tabsContext = useContext(TabsContext);
   const _alignCenter = typeof alignCenter === "boolean" ? alignCenter : tabsContext.alignCenter;
 
-  let isSolid;
-  let isPlain;
-  let setBackground;
-  let isUnderline;
-  let setMargin;
-
-  if (isFolder) {
-    setMargin = "0 0.5rem 0.5rem 0";
-  } else {
-    isPlain = "true";
-    setMargin = "0 -1px -1px 0";
-  }
-
-  if (isFolder) {
-    if (isSelected) {
-      isSolid = "true";
-    } else {
-      isPlain = "true";
-      setBackground = colors.white20;
-    }
-  }
-
-  if (!isFolder && isSelected) isUnderline = "true";
-
   return (
     <React.Fragment>
       <TabButton
         count={count}
-        setMargin={setMargin}
+        setMargin={isFolder ? "0 0.5rem 0.5rem 0" : "0 -1px -1px 0"}
+        setBackground={isFolder && !isSelected ? colors.white20 : null}
+        isPlain={!isFolder || !isSelected}
+        isUnderline={!isFolder && isSelected}
+        isFolder={isFolder}
+        isSolid={isFolder && isSelected}
         disabled={isDisabled}
         htmlFor={htmlFor}
         icon={icon}
-        setBackground={setBackground}
         id={id}
         isSelected={isSelected}
         label={label}
         onClick={onClick}
         variant={isSelected ? "" : "neutral"}
-        isPlain={isPlain}
-        isUnderline={isUnderline}
-        isFolder={isFolder}
-        isSolid={isSolid}
         alignCenter={_alignCenter}
         float={float}
       />
