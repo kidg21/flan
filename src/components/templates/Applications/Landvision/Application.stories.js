@@ -302,7 +302,8 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
@@ -362,7 +363,8 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
@@ -421,7 +423,8 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
@@ -480,7 +483,8 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
@@ -539,7 +543,8 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
@@ -598,7 +603,8 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
@@ -657,7 +663,8 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
@@ -694,7 +701,6 @@ storiesOf("Templates|Applications/Research", module)
                                       </Grid>
                                     )}
                                   />
-
                                 </Form>
                               </Panel>
                             ),

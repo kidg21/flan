@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
-import Text, { Title, Label, Link } from "base/Typography";
+import Text, { Label, Link } from "base/Typography";
 
 const FieldItem = styled(Grid)`
   text-align: left;
@@ -14,7 +14,7 @@ const FieldItem = styled(Grid)`
   align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
-    return props.fieldColumns;
+    return props.fieldColumns || "";
   }};
   grid-gap: ${(props) => {
     return props.fieldGap || "";
