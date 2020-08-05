@@ -10,9 +10,11 @@ exports[` 1`] = `
     className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
     id={null}
     label="Tag"
+    onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+      cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
@@ -62,9 +64,11 @@ Array [
         className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Brief Label"
+        onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
           htmlFor={null}
@@ -111,9 +115,11 @@ Array [
         className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
+        onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
           htmlFor={null}
@@ -137,9 +143,11 @@ exports[` 3`] = `
     className="Tag__TagContainer-sc-128kb3h-0 cTlzw"
     id={null}
     label="Info"
+    onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+      cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
@@ -152,9 +160,11 @@ exports[` 3`] = `
     className="Tag__TagContainer-sc-128kb3h-0 kKdtCs"
     id={null}
     label="Warning"
+    onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+      cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
@@ -167,9 +177,11 @@ exports[` 3`] = `
     className="Tag__TagContainer-sc-128kb3h-0 fXnXWY"
     id={null}
     label="Success"
+    onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+      cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
@@ -182,9 +194,11 @@ exports[` 3`] = `
     className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
     id={null}
     label="Alert"
+    onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+      cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
@@ -192,6 +206,297 @@ exports[` 3`] = `
     >
       Alert
     </label>
+  </div>
+</section>
+`;
+
+exports[` 4`] = `
+<div
+  className="Tag__TagContainer-sc-128kb3h-0 fMJIuC"
+  id={null}
+  label={null}
+  onClick={null}
+>
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 CCPOD"
+    color="neutral20"
+    data-icon="times"
+    data-prefix="far"
+    focusable="false"
+    fontSize="0.875em"
+    id={null}
+    role="img"
+    style={Object {}}
+    viewBox="0 0 320 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+      fill="currentColor"
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;
+
+exports[` 5`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Tag__TagContainer-sc-128kb3h-0 euvBPY"
+    id={null}
+    label="Icon on Left"
+    onClick={null}
+  >
+    <div
+      className="Tag__TagIconContainer-sc-128kb3h-1 SepOE"
+      onClick={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        color="neutral20"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="0.75em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 eyrhIB"
+      cursor="inherit"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      Icon on Left
+    </label>
+  </div>
+  <div
+    className="Tag__TagContainer-sc-128kb3h-0 dzXtuY"
+    id={null}
+    label="Icon on Left"
+    onClick={null}
+  >
+    <div
+      className="Tag__TagIconContainer-sc-128kb3h-1 fNXIFp"
+      onClick={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        color="neutral20"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="0.75em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 eyrhIB"
+      cursor="inherit"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      Icon on Left
+    </label>
+  </div>
+  <div
+    className="Tag__TagContainer-sc-128kb3h-0 dzXtuY"
+    id={null}
+    label="Icon on Left"
+    onClick={null}
+  >
+    <div
+      className="Tag__TagIconContainer-sc-128kb3h-1 hHXxQ"
+      onClick={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        color="neutral20"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="0.75em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 eyrhIB"
+      cursor="inherit"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      Icon on Left
+    </label>
+  </div>
+  <div
+    className="Tag__TagContainer-sc-128kb3h-0 eKCPnc"
+    id={null}
+    label="Icon on Right"
+    onClick={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 eyrhIB"
+      cursor="inherit"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      Icon on Right
+    </label>
+    <div
+      className="Tag__TagIconContainer-sc-128kb3h-1 fmppFs"
+      onClick={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        color="neutral20"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="0.75em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="Tag__TagContainer-sc-128kb3h-0 dzXtuY"
+    id={null}
+    label="Icon on Right"
+    onClick={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 eyrhIB"
+      cursor="inherit"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      Icon on Right
+    </label>
+    <div
+      className="Tag__TagIconContainer-sc-128kb3h-1 lnYrQi"
+      onClick={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        color="neutral20"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="0.75em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="Tag__TagContainer-sc-128kb3h-0 dzXtuY"
+    id={null}
+    label="Icon on Right"
+    onClick={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 eyrhIB"
+      cursor="inherit"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+    >
+      Icon on Right
+    </label>
+    <div
+      className="Tag__TagIconContainer-sc-128kb3h-1 hlDqML"
+      onClick={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        color="neutral20"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="0.75em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
   </div>
 </section>
 `;

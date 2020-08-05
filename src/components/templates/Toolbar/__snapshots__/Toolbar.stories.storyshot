@@ -76,7 +76,8 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                    cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -122,7 +123,8 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                    cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -172,7 +174,8 @@ exports[` 1`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                      cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
                       htmlFor={null}
@@ -219,7 +222,8 @@ exports[` 1`] = `
                             value="1"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="radio-1"
@@ -244,7 +248,8 @@ exports[` 1`] = `
                             value="2"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="radio-2"
@@ -269,7 +274,8 @@ exports[` 1`] = `
                             value="3"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="radio-3"
@@ -323,7 +329,8 @@ exports[` 1`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                      cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
                       htmlFor={null}
@@ -368,7 +375,8 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="Checkbox-1"
@@ -391,7 +399,8 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="Checkbox-2"
@@ -414,7 +423,8 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="Checkbox-3"
@@ -437,7 +447,8 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="Checkbox-4"
@@ -487,7 +498,8 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                    cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -582,7 +594,8 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                    cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -628,7 +641,8 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                    cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -674,7 +688,8 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                    cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -720,7 +735,8 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                    cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -770,7 +786,8 @@ exports[` 2`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                      cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
                       htmlFor={null}

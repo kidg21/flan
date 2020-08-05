@@ -421,9 +421,11 @@ exports[` 2`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 cTlzw"
                   id={null}
                   label="Info"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -467,9 +469,11 @@ exports[` 2`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 kKdtCs"
                   id={null}
                   label="Warning"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -513,9 +517,11 @@ exports[` 2`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 fXnXWY"
                   id={null}
                   label="Success"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -559,9 +565,11 @@ exports[` 2`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
                   id={null}
                   label="Alert"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
