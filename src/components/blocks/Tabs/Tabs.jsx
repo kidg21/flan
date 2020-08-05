@@ -3,6 +3,7 @@ import React, { useContext, useMemo } from "react";
 import { DisabledContext } from "States";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { colors } from "Variables";
 import Button from "atoms/Button";
 
 const TabsContext = React.createContext({});
@@ -65,7 +66,7 @@ function TabItem({
       isSolid = "true";
     } else {
       isPlain = "true";
-      setBackground = "hsl(200, 19%, 95%)";
+      setBackground = colors.white20;
     }
   }
 
