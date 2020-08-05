@@ -20,9 +20,6 @@ const TabButton = styled(Button)`
   margin: ${(props) => {
     return props.setMargin;
   }}; 
-  border-color: ${(props) => {
-    return props.isUnderline || "";
-  }};
   ${(props) => {
     if (props.float) {
       return `float: ${props.float};`;
