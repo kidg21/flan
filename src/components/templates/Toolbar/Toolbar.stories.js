@@ -122,12 +122,11 @@ storiesOf("Templates/Modules/Toolbar", module)
                       visible
                     >
                       <Container padding="0" hasBorder height="20rem">
-                        <Card>
                           <CardGrid>
                             <Card
                               description="Legend 1"
                               more={{ content: (
-                              <CardSection variant="disabled">
+                              <CardSection >
                                 <Image
                                   src={LegendValue1}
                                 />
@@ -136,7 +135,7 @@ storiesOf("Templates/Modules/Toolbar", module)
                             <Card
                               description="Legend 2"
                               more={{ content: (
-                              <CardSection variant="disabled">
+                              <CardSection >
                                 <Image
                                   src={LegendValue2}
                                 />
@@ -145,14 +144,13 @@ storiesOf("Templates/Modules/Toolbar", module)
                             <Card
                               description="Legend 3"
                               more={{ content: (
-                              <CardSection variant="disabled">
+                              <CardSection >
                                 <Image
                                   src={LegendValue3}
                                 />
                                 </CardSection>) }}
                               />
                           </CardGrid>
-                        </Card>
                       </Container>
                     </Popper>
                   </ButtonGroup>
