@@ -27,6 +27,21 @@ exports[` 1`] = `
         media=""
         onClick={null}
       >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_145-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
         <div
           className="Bar__BarLayout-icfo76-2 fliBOc"
           id={null}
@@ -197,6 +212,21 @@ exports[` 1`] = `
                     onClick={null}
                   >
                     <section
+                      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                      id="storyshots_147-Body"
+                      onClick={null}
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        
+                      </p>
+                    </section>
+                    <section
                       className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Radio__RadioWrapper-sc-3ox61a-0 kzzMRw"
                       id={null}
                       rows={null}
@@ -351,6 +381,21 @@ exports[` 1`] = `
                     media=""
                     onClick={null}
                   >
+                    <section
+                      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                      id="storyshots_149-Body"
+                      onClick={null}
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        
+                      </p>
+                    </section>
                     <section
                       className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
                       id={null}
@@ -545,6 +590,21 @@ exports[` 2`] = `
         media=""
         onClick={null}
       >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_150-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
         <div
           className="Bar__BarLayout-icfo76-2 fliBOc"
           id={null}
@@ -819,6 +879,21 @@ exports[` 2`] = `
                         onClick={null}
                       >
                         <section
+                          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                          id="storyshots_151-Body"
+                          onClick={null}
+                        >
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                            fontSize="1rem"
+                            fontWeight={400}
+                            id={null}
+                            letterSpacing="0.5px"
+                          >
+                            
+                          </p>
+                        </section>
+                        <section
                           className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 crWWGQ"
                           id={null}
                           rows={null}
@@ -902,6 +977,21 @@ exports[` 2`] = `
                                 </section>
                               </div>
                             </section>
+                            <section
+                              className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                              id="storyshots_152-Body"
+                              onClick={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                
+                              </p>
+                            </section>
                           </div>
                           <div
                             className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
@@ -982,6 +1072,21 @@ exports[` 2`] = `
                                 </section>
                               </div>
                             </section>
+                            <section
+                              className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                              id="storyshots_153-Body"
+                              onClick={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                
+                              </p>
+                            </section>
                           </div>
                           <div
                             className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
@@ -1061,6 +1166,21 @@ exports[` 2`] = `
                                   />
                                 </section>
                               </div>
+                            </section>
+                            <section
+                              className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                              id="storyshots_154-Body"
+                              onClick={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                
+                              </p>
                             </section>
                           </div>
                         </section>

@@ -85,7 +85,9 @@ exports[` 1`] = `
       fontWeight={500}
       id={null}
       letterSpacing="0.5px"
-    />
+    >
+      
+    </p>
   </section>
 </section>
 `;
