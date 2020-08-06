@@ -2,14 +2,14 @@
 
 exports[` 1`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
     height={null}
     id="Header"
     overflow={null}
@@ -31,7 +31,8 @@ exports[` 1`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+            cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
             htmlFor={null}
@@ -94,7 +95,7 @@ exports[` 1`] = `
             onClick={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 dEYqai"
               fontSize="1rem"
               fontWeight={500}
               id={null}
@@ -108,14 +109,14 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
       height={null}
       id="Left"
       overflow={null}
@@ -324,14 +325,14 @@ exports[` 1`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fhwwVx Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dAojLi Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
       height="20rem"
       id={null}
       overflow={null}
       width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
         height={null}
         id="Main"
         overflow={null}
@@ -374,7 +375,7 @@ exports[` 1`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 ciGVI Layout__RegionRight-sc-19tlhp4-8 fkttIO"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jYTfur Layout__RegionRight-sc-19tlhp4-8 fkttIO"
       height={null}
       id="Right"
       overflow={null}
@@ -411,7 +412,8 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                  cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
                   htmlFor={null}
@@ -437,7 +439,8 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                  cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
                   htmlFor={null}
@@ -465,56 +468,48 @@ exports[` 1`] = `
                 id="storyshots_138-Body"
                 onClick={null}
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                  fontSize="1rem"
-                  fontWeight={400}
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
                   id={null}
-                  letterSpacing="0.5px"
+                  rows={null}
                 >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                    fontSize="1rem"
+                    fontWeight={600}
                     id={null}
-                    rows={null}
+                    letterSpacing="0.5px"
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
-                      fontSize="1rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Lollipop Factory
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      145 Lollipop Way, Lollipop LA 34209
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      APN # 1239832947
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Owner Name
-                    </p>
-                  </section>
-                </p>
+                    Lollipop Factory
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    145 Lollipop Way, Lollipop LA 34209
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    APN # 1239832947
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    Owner Name
+                  </p>
+                </section>
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
@@ -537,7 +532,8 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                        cursor="pointer"
                         fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
@@ -562,56 +558,48 @@ exports[` 1`] = `
                 id="storyshots_139-Body"
                 onClick={null}
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                  fontSize="1rem"
-                  fontWeight={400}
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
                   id={null}
-                  letterSpacing="0.5px"
+                  rows={null}
                 >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                    fontSize="1rem"
+                    fontWeight={600}
                     id={null}
-                    rows={null}
+                    letterSpacing="0.5px"
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
-                      fontSize="1rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Lollipop Factory
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      145 Lollipop Way, Lollipop LA 34209
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      APN # 1239832947
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Owner Name
-                    </p>
-                  </section>
-                </p>
+                    Lollipop Factory
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    145 Lollipop Way, Lollipop LA 34209
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    APN # 1239832947
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    Owner Name
+                  </p>
+                </section>
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
@@ -634,7 +622,8 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                        cursor="pointer"
                         fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
@@ -659,56 +648,48 @@ exports[` 1`] = `
                 id="storyshots_140-Body"
                 onClick={null}
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                  fontSize="1rem"
-                  fontWeight={400}
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
                   id={null}
-                  letterSpacing="0.5px"
+                  rows={null}
                 >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                    fontSize="1rem"
+                    fontWeight={600}
                     id={null}
-                    rows={null}
+                    letterSpacing="0.5px"
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
-                      fontSize="1rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Lollipop Factory
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      145 Lollipop Way, Lollipop LA 34209
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      APN # 1239832947
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Owner Name
-                    </p>
-                  </section>
-                </p>
+                    Lollipop Factory
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    145 Lollipop Way, Lollipop LA 34209
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    APN # 1239832947
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    Owner Name
+                  </p>
+                </section>
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
@@ -731,7 +712,8 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                        cursor="pointer"
                         fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
@@ -756,56 +738,48 @@ exports[` 1`] = `
                 id="storyshots_141-Body"
                 onClick={null}
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                  fontSize="1rem"
-                  fontWeight={400}
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
                   id={null}
-                  letterSpacing="0.5px"
+                  rows={null}
                 >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL"
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                    fontSize="1rem"
+                    fontWeight={600}
                     id={null}
-                    rows={null}
+                    letterSpacing="0.5px"
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
-                      fontSize="1rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Lollipop Factory
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      145 Lollipop Way, Lollipop LA 34209
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      APN # 1239832947
-                    </p>
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      Owner Name
-                    </p>
-                  </section>
-                </p>
+                    Lollipop Factory
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    145 Lollipop Way, Lollipop LA 34209
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    APN # 1239832947
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    Owner Name
+                  </p>
+                </section>
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
@@ -828,7 +802,8 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                        className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                        cursor="pointer"
                         fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
@@ -851,14 +826,14 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 dMEzok Layout__Header-sc-19tlhp4-1 hCkpGY"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
     height={null}
     id="Header"
     overflow={null}
@@ -880,7 +855,8 @@ exports[` 2`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+            className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+            cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
             htmlFor={null}
@@ -943,7 +919,7 @@ exports[` 2`] = `
             onClick={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 gPtIFR"
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 dEYqai"
               fontSize="1rem"
               fontWeight={500}
               id={null}
@@ -957,14 +933,14 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 kQNswX Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
       height={null}
       id="Left"
       overflow={null}
@@ -1173,14 +1149,14 @@ exports[` 2`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fhwwVx Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 dAojLi Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
       height="20rem"
       id={null}
       overflow={null}
       width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
         height={null}
         id="Main"
         overflow={null}
@@ -1223,7 +1199,7 @@ exports[` 2`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 ciGVI Layout__RegionRight-sc-19tlhp4-8 fkttIO"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jYTfur Layout__RegionRight-sc-19tlhp4-8 fkttIO"
       height={null}
       id="Right"
       overflow={null}

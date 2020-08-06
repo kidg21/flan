@@ -2269,6 +2269,21 @@ exports[` 7`] = `
     media=""
     onClick={null}
   >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="story-card-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        
+      </p>
+    </section>
     <div
       className="Bar__BarLayout-icfo76-2 jEWtiX"
       id="story-bar-title"
@@ -3362,7 +3377,8 @@ exports[` 9`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -3547,7 +3563,8 @@ exports[` 10`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -4179,7 +4196,8 @@ exports[` 13`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -4209,7 +4227,8 @@ exports[` 13`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -4367,7 +4386,8 @@ exports[` 13`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -4521,7 +4541,8 @@ exports[` 13`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}

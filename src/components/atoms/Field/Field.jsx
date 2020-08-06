@@ -89,10 +89,11 @@ function Field({
   let field = (
     <FieldValue
       onChange={onChange}
-      text={value}
       weight="medium"
       valueAlign={valueAlign}
-    />
+    >
+      {value}
+    </FieldValue>
   );
 
   if (onClick) {
@@ -108,7 +109,6 @@ function Field({
       className={className}
       fieldColumns={fieldColumns}
       fieldGap={fieldGap}
-      
       id={id}
     >
       <FieldLabel size="lg" text={label} />
@@ -126,7 +126,7 @@ Field.propTypes = {
   /** Not currently being used but staying put for the next iteration. */
   onChange: PropTypes.func,
   onClick: PropTypes.func,
-  value: PropTypes.string,
+  value: PropTypes.node,
 };
 
 Field.defaultProps = {
