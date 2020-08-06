@@ -29,6 +29,21 @@ Array [
         media=""
         onClick={null}
       >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_58-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
         <div
           className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
@@ -171,6 +186,21 @@ Array [
               </p>
             </div>
           </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_59-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
         </section>
       </div>
     </span>
@@ -426,6 +456,21 @@ Array [
               </p>
             </div>
           </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_61-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
         </section>
       </div>
     </span>
