@@ -184,7 +184,6 @@ function RadioGroup({
 
   return (
     <RadioWrapper
-      align={align}
       disabled={isDisabled}
       columns="1"
       inputTextColor={inputTextColor}

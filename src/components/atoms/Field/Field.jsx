@@ -89,7 +89,7 @@ function Field({
   let field = (
     <FieldValue
       onChange={onChange}
-      text={value}
+      text={typeof value !== "undefined" ? value.toString() : value}
       weight="medium"
       valueAlign={valueAlign}
     />
@@ -108,7 +108,6 @@ function Field({
       className={className}
       fieldColumns={fieldColumns}
       fieldGap={fieldGap}
-      
       id={id}
     >
       <FieldLabel size="lg" text={label} />
@@ -126,7 +125,15 @@ Field.propTypes = {
   /** Not currently being used but staying put for the next iteration. */
   onChange: PropTypes.func,
   onClick: PropTypes.func,
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.bool,
+    PropTypes.instanceOf(Date),
+    PropTypes.shape({
+      toString: PropTypes.func,
+    }),
+  ]),
 };
 
 Field.defaultProps = {

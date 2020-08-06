@@ -194,7 +194,6 @@ function CheckboxGroup({
 
   return (
     <CheckboxWrapper
-      align={align}
       columns="1"
       disabled={isDisabled}
       id={id}
