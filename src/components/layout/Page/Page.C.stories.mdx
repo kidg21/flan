@@ -1,0 +1,55 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ContainerLarge } from "helpers/Display";
+import Page from "layout/Page";
+
+<Meta
+  title="layout/Page/Template Library/C Templates"
+  component={Page}
+  decorators={[ContainerLarge]}
+/>
+
+# "C" Templates
+
+#### Use when needing to control the layout of 3 content elements.
+
+<Preview withToolbar>
+  <Story name="C_01">
+    <Page
+      id="Template C_01"
+      template="C_01"
+      A={{
+        id: "A",
+        content: "",
+      }}
+      B={{
+        id: "B",
+        content: "",
+      }}
+      C={{
+        id: "C",
+        content: "",
+      }}
+    />
+  </Story>
+</Preview>
+
+<Preview withToolbar>
+  <Story name="C_02">
+    <Page
+      id="Template C_02"
+      template="C_02"
+      A={{
+        id: "A",
+        content: "",
+      }}
+      B={{
+        id: "B",
+        content: "",
+      }}
+      C={{
+        id: "C",
+        content: "",
+      }}
+    />
+  </Story>
+</Preview>
