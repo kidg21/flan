@@ -47,17 +47,18 @@ function TabItem({
   // context from tab component
   const tabsContext = useContext(TabsContext);
   const _alignCenter = typeof alignCenter === "boolean" ? alignCenter : tabsContext.alignCenter;
+  const _isFolder = typeof isFolder === "boolean" ? isFolder : tabsContext.isFolder;
 
   return (
     <React.Fragment>
       <TabButton
         count={count}
-        setMargin={isFolder ? "0 0.5rem 0.5rem 0" : "0 -1px -1px 0"}
-        setBackground={isFolder && !isSelected ? colors.white20 : null}
-        isPlain={!isFolder || !isSelected}
-        isUnderline={!isFolder && isSelected}
-        isFolder={isFolder}
-        isSolid={isFolder && isSelected}
+        setMargin={_isFolder ? "0 0.5rem 0.5rem 0" : "0 -1px -1px 0"}
+        setBackground={_isFolder && !isSelected ? colors.white20 : null}
+        isPlain={!_isFolder || !isSelected}
+        isUnderline={!_isFolder && isSelected}
+        isFolder={_isFolder}
+        isSolid={_isFolder && isSelected}
         disabled={isDisabled}
         htmlFor={htmlFor}
         icon={icon}
@@ -74,7 +75,7 @@ function TabItem({
 }
 
 function Tabs({
-  alignCenter, children, data, disabled, id, truncateItems, isVertical,
+  alignCenter, children, data, disabled, id, truncateItems, isVertical, isFolder,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let setColumns;
@@ -89,8 +90,9 @@ function Tabs({
   const tabsValue = useMemo(() => {
     return {
       alignCenter: !!alignCenter,
+      isFolder: !!isFolder,
     };
-  }, [alignCenter]);
+  }, [alignCenter, isFolder]);
 
   return (
     <DisabledContext.Provider value={disabled}>
@@ -136,7 +138,6 @@ TabItem.propTypes = {
   htmlFor: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
-  isFolder: PropTypes.bool,
   isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -148,7 +149,6 @@ TabItem.defaultProps = {
   disabled: null,
   htmlFor: null,
   icon: null,
-  isFolder: false,
   id: null,
   isSelected: false,
   label: null,
@@ -163,6 +163,7 @@ Tabs.propTypes = {
   disabled: PropTypes.bool,
   id: PropTypes.string,
   isVertical: PropTypes.bool,
+  isFolder: PropTypes.bool,
   truncateItems: PropTypes.bool,
 };
 Tabs.defaultProps = {
@@ -171,6 +172,7 @@ Tabs.defaultProps = {
   data: null,
   disabled: false,
   id: null,
+  isFolder: false,
   isVertical: false,
   truncateItems: true,
 };
