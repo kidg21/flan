@@ -332,7 +332,7 @@ storiesOf("Templates|Applications/Research", module)
                                     contentAlign="bottom"
                                     left={{
                                       content: (
-                                        <Icon icon="database" size="xs" onClick />),
+                                        <Icon icon="database" size="xs" onClick={() => { }} />),
                                       width: "fit-content",
                                     }}
                                     center={{
@@ -854,7 +854,7 @@ storiesOf("Templates|Applications/Research", module)
           {
             label: "Tax Authority Link",
             value: <Link size="lg" text="Orange County Tax Authority" />,
-            onClick: true,
+            onClick: () => { },
           },
           {
             label: "Site Land Assessment",
@@ -949,7 +949,7 @@ storiesOf("Templates|Applications/Research", module)
                                     contentAlign="bottom"
                                     left={{
                                       content: (
-                                        <Icon icon="database" size="xs" onClick />),
+                                        <Icon icon="database" size="xs" onClick={() => { }} />),
                                       width: "fit-content",
                                     }}
                                     center={{
@@ -1075,7 +1075,7 @@ storiesOf("Templates|Applications/Research", module)
                                     contentAlign="bottom"
                                     left={{
                                       content: (
-                                        <Icon icon="database" size="xs" onClick />),
+                                        <Icon icon="database" size="xs" onClick={() => { }} />),
                                       width: "fit-content",
                                     }}
                                     center={{
@@ -1268,7 +1268,7 @@ storiesOf("Templates|Applications/Research", module)
                                     contentAlign="bottom"
                                     left={{
                                       content: (
-                                        <Icon icon="database" size="xs" onClick />),
+                                        <Icon icon="database" size="xs" onClick={() => { }} />),
                                       width: "fit-content",
                                     }}
                                     center={{
