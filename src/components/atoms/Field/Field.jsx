@@ -71,7 +71,7 @@ const Section = styled.section`
 `;
 
 function Field({
-  align, className, disabled, id, label, onChange, onClick, isDense, value,
+  align, className, disabled, id, label, onChange, onClick, value,
 }) {
   let fieldColumns;
   let fieldGap;
@@ -86,11 +86,9 @@ function Field({
       valueAlign = "right";
       break;
     default:
-      if (isDense) {
-        fieldColumns = "7rem 1fr";
-      }
       break;
   }
+
 
   let field = (
     <FieldValue
@@ -127,7 +125,6 @@ Field.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
-  isDense: PropTypes.bool,
   label: PropTypes.string.isRequired,
   /** Not currently being used but staying put for the next iteration. */
   onChange: PropTypes.func,
@@ -139,7 +136,6 @@ Field.defaultProps = {
   align: null,
   className: null,
   disabled: false,
-  isDense: false,
   id: null,
   onChange: null,
   onClick: null,
@@ -147,7 +143,7 @@ Field.defaultProps = {
 };
 
 function FieldGroup({
-  align, children, className, columns, data, gap, id, title,
+  align, children, className, columns, data, gap, id, title, isDense,
 }) {
   // 1-3 colums
   let setColumns;
@@ -174,6 +170,7 @@ function FieldGroup({
               id={item.id}
               label={item.label}
               onChange={item.onChange}
+              isDense={isDense}
               onClick={item.onClick}
               value={item.value}
             />
@@ -233,6 +230,7 @@ FieldGroup.propTypes = {
     "4xl",
   ]),
   columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
+  isDense: PropTypes.bool,
   data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
   id: PropTypes.string,
   title: PropTypes.string,
@@ -244,6 +242,7 @@ FieldGroup.defaultProps = {
   className: null,
   gap: null,
   columns: null,
+  isDense: false,
   data: [],
   id: null,
   title: null,
