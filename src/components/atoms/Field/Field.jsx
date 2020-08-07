@@ -164,7 +164,7 @@ function FieldGroup({
         || data.map((item, index) => {
           return (
             <Field
-              align={item.align}
+              align={item.align || align}
               disabled={item.disabled}
               key={item.id || item.label || index}
               id={item.id}
