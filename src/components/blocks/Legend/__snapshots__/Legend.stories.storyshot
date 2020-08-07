@@ -2,12 +2,27 @@
 
 exports[` 1`] = `
 <div
-  className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
   href={null}
   id="Legend_Standard_Card"
   media=""
   onClick={null}
 >
+  <section
+    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+    id="Legend_Standard_Card-Body"
+    onClick={null}
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+      fontSize="1rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.5px"
+    >
+      
+    </p>
+  </section>
   <div
     className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
     id="Legend_Standard"
@@ -160,12 +175,27 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="Legend_Icon_Card"
     media=""
     onClick={null}
   >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="Legend_Icon_Card-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        
+      </p>
+    </section>
     <div
       className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
       id="Legend_Icon"
@@ -386,12 +416,27 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="Legend_Tag_Card"
     media=""
     onClick={null}
   >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="Legend_Tag_Card-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        
+      </p>
+    </section>
     <div
       className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
       id="Legend_Tag"
@@ -421,9 +466,11 @@ exports[` 2`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 cTlzw"
                   id={null}
                   label="Info"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -467,9 +514,11 @@ exports[` 2`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 kKdtCs"
                   id={null}
                   label="Warning"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -513,9 +562,11 @@ exports[` 2`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 fXnXWY"
                   id={null}
                   label="Success"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -559,9 +610,11 @@ exports[` 2`] = `
                   className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
                   id={null}
                   label="Alert"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}

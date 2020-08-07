@@ -23,12 +23,27 @@ Array [
       id="Modal_Standard-animation"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 ktzDkK Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 ePEMDN Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
         href={null}
         id="storyshots_58"
         media=""
         onClick={null}
       >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_58-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
         <div
           className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
@@ -103,7 +118,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+        cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}
@@ -140,7 +156,7 @@ Array [
       onClick={null}
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 cYTQus Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 kCyvOL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
         id="storyshots_59"
         media=""
@@ -171,6 +187,21 @@ Array [
             </div>
           </div>
         </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_59-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
       </div>
     </span>
   </div>,
@@ -190,7 +221,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+        cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}
@@ -226,7 +258,7 @@ Array [
       id="Modal_Dialog-animation"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
         id="storyshots_60"
         media=""
@@ -297,7 +329,8 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                  cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
                   htmlFor={null}
@@ -323,7 +356,8 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                  cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
                   htmlFor={null}
@@ -354,7 +388,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+        cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}
@@ -391,7 +426,7 @@ Array [
       onClick={null}
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 cYTQus Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 kCyvOL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
         id="storyshots_61"
         media=""
@@ -422,6 +457,21 @@ Array [
             </div>
           </div>
         </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_61-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
       </div>
     </span>
   </div>,
@@ -441,7 +491,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+        cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}
@@ -493,7 +544,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+        className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+        cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}

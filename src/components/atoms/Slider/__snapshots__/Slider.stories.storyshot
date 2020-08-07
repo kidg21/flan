@@ -36,14 +36,15 @@ exports[` 2`] = `
     <section
       className="Form__Section-v2wrel-0 XxWIM"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
       >
         Standard
-      </h6>
+      </p>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
@@ -71,14 +72,15 @@ exports[` 2`] = `
     <section
       className="Form__Section-v2wrel-0 XxWIM"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
       >
         Error
-      </h6>
+      </p>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
@@ -106,14 +108,15 @@ exports[` 2`] = `
     <section
       className="Form__Section-v2wrel-0 XxWIM"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
       >
         Disabled
-      </h6>
+      </p>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
@@ -158,14 +161,15 @@ exports[` 3`] = `
     <section
       className="Form__Section-v2wrel-0 XxWIM"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
       >
         Standard
-      </h6>
+      </p>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
@@ -193,14 +197,15 @@ exports[` 3`] = `
     <section
       className="Form__Section-v2wrel-0 XxWIM"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
       >
         With Label
-      </h6>
+      </p>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
@@ -212,7 +217,8 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 fwqfhW Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+            className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+            cursor="pointer"
             fontSize="0.875rem"
             fontWeight={600}
             htmlFor={null}
@@ -240,7 +246,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
@@ -253,7 +260,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
@@ -269,14 +277,15 @@ exports[` 3`] = `
     <section
       className="Form__Section-v2wrel-0 XxWIM"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
       >
         With Range
-      </h6>
+      </p>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
         id={null}
@@ -307,7 +316,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}
@@ -320,7 +330,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
                 htmlFor={null}

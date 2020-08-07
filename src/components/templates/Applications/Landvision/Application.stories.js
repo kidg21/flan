@@ -18,7 +18,6 @@ import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
 import Form, { FormSection } from "layout/Form";
 import Divider from "atoms/Divider";
-import MapBox from "layout/Map";
 import TextInput from "atoms/TextInput";
 import Media from "atoms/Media";
 import Field, { FieldGroup } from "atoms/Field";
@@ -216,7 +215,7 @@ storiesOf("Templates|Applications/Research", module)
                                     contentAlign="bottom"
                                     left={{
                                       content: (
-                                        <Icon icon="database" size="xs" onClick />),
+                                        <Icon icon="database" size="xs" onClick={() => { }} />),
                                       width: "fit-content",
                                     }}
                                     center={{
@@ -756,7 +755,7 @@ storiesOf("Templates|Applications/Research", module)
           {
             label: "Tax Authority Link",
             value: <Link size="lg" text="Orange County Tax Authority" />,
-            onClick: true,
+            onClick: () => { },
           },
           {
             label: "Site Land Assessment",
@@ -851,7 +850,7 @@ storiesOf("Templates|Applications/Research", module)
                                     contentAlign="bottom"
                                     left={{
                                       content: (
-                                        <Icon icon="database" size="xs" onClick />),
+                                        <Icon icon="database" size="xs" onClick={() => { }} />),
                                       width: "fit-content",
                                     }}
                                     center={{
@@ -863,7 +862,7 @@ storiesOf("Templates|Applications/Research", module)
                               >
 
                                 <Form>
-                                  <Field align="edge" label="Direct Parcel Link:" value={<Link text="808-23093" size="lg" />} />
+                                  <Field align="edge" label="Direct Parcel Link:" value="808-23093" onClick={() => { }} />
                                   <TextInput label="Assessment Year(s)" value="2019" />
                                   <TextInput label="Land Assessment" value="$6,155,006" />
                                   <TextInput label="Improvement Assessment" value="$3,890,864" />
@@ -977,7 +976,7 @@ storiesOf("Templates|Applications/Research", module)
                                     contentAlign="bottom"
                                     left={{
                                       content: (
-                                        <Icon icon="database" size="xs" onClick />),
+                                        <Icon icon="database" size="xs" onClick={() => { }} />),
                                       width: "fit-content",
                                     }}
                                     center={{
@@ -1061,7 +1060,7 @@ storiesOf("Templates|Applications/Research", module)
                               >
                                 <Form>
                                   <FormSection>
-                                    <Field align="edge" label="Zoning Authority" value={<Link size="lg" text="City of Mission Viejo" />} />
+                                    <Field align="edge" label="Zoning Authority" value="City of Mission Viejo" onClick={() => { }} />
                                   </FormSection>
                                   <TextInput label="Zoning District" value="Commercial" />
                                   <TextInput label="Zoning" value="CN" />
@@ -1168,7 +1167,7 @@ storiesOf("Templates|Applications/Research", module)
                                     contentAlign="bottom"
                                     left={{
                                       content: (
-                                        <Icon icon="database" size="xs" onClick />),
+                                        <Icon icon="database" size="xs" onClick={() => { }} />),
                                       width: "fit-content",
                                     }}
                                     center={{

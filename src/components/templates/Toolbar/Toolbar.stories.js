@@ -122,35 +122,44 @@ storiesOf("Templates/Modules/Toolbar", module)
                       visible
                     >
                       <Container padding="0" hasBorder height="20rem">
-                          <CardGrid>
-                            <Card
-                              description="Legend 1"
-                              more={{ content: (
-                              <CardSection >
-                                <Image
-                                  src={LegendValue1}
-                                />
-                                </CardSection>) }}
-                              />
-                            <Card
-                              description="Legend 2"
-                              more={{ content: (
-                              <CardSection >
-                                <Image
-                                  src={LegendValue2}
-                                />
-                                </CardSection>) }}
-                              />
-                            <Card
-                              description="Legend 3"
-                              more={{ content: (
-                              <CardSection >
-                                <Image
-                                  src={LegendValue3}
-                                />
-                                </CardSection>) }}
-                              />
-                          </CardGrid>
+                        <CardGrid>
+                          <Card
+                            description="Legend 1"
+                            more={{
+                              content: (
+                                <CardSection>
+                                  <Image
+                                    src={LegendValue1}
+                                    alt="Legend 1"
+                                  />
+                                </CardSection>),
+                            }}
+                          />
+                          <Card
+                            description="Legend 2"
+                            more={{
+                              content: (
+                                <CardSection>
+                                  <Image
+                                    src={LegendValue2}
+                                    alt="Legend 2"
+                                  />
+                                </CardSection>),
+                            }}
+                          />
+                          <Card
+                            description="Legend 3"
+                            more={{
+                              content: (
+                                <CardSection>
+                                  <Image
+                                    src={LegendValue3}
+                                    alt="Legend 3"
+                                  />
+                                </CardSection>),
+                            }}
+                          />
+                        </CardGrid>
                       </Container>
                     </Popper>
                   </ButtonGroup>

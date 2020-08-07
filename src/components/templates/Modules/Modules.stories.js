@@ -19,8 +19,8 @@ import Card, { CardSection, CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
 import Menu from "blocks/Menu";
 import DialogBox from "elements/DialogBox";
+import Image from "atoms/Image";
 import Template from "layout/Template";
-import Field from "atoms/Field";
 import InputBlock from "blocks/InputBlock";
 import Tabs from "blocks/Tabs";
 import Form, { FormSection } from "layout/Form";
@@ -227,13 +227,13 @@ storiesOf("Templates/Modules/Maps", module)
               // Set the 'columns' value to the # of Buttons
               <CardGrid columns="3">
                 <Card shadow="2x">
-                  <Image src={MapStreets} width="75" onClick={() => { }} />
+                  <Image src={MapStreets} alt="Map Streets" width="75" onClick={() => { }} />
                 </Card>
                 <Card shadow="2x">
-                  <Image src={MapSatellite} width="75" onClick={() => { }} />
+                  <Image src={MapSatellite} alt="Map Satellite" width="75" onClick={() => { }} />
                 </Card>
                 <Card shadow="2x">
-                  <Image src={MapHybrid} width="75" onClick={() => { }} />
+                  <Image src={MapHybrid} alt="Map Hybrid" width="75" onClick={() => { }} />
                 </Card>
               </CardGrid>
             ),

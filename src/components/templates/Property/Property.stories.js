@@ -20,7 +20,6 @@ import Grid from "layout/Grid";
 import Form, { FormSection } from "layout/Form";
 import Image from "atoms/Image";
 import Divider from "atoms/Divider";
-import MapBox from "layout/Map";
 import Field, { FieldGroup, FieldSection } from "atoms/Field";
 import { Title } from "base/Typography";
 import Card, { CardSection } from "elements/Card";

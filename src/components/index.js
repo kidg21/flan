@@ -85,8 +85,8 @@ export {
 export { ThemeProvider } from "styled-components";
 
 // Image dependencies
-export { PrintNone } from "images/dialogs/image-none.gif";
-export { PrintFull } from "images/dialogs/image-full.gif";
-export { PrintHalf } from "images/dialogs/image-half.gif";
-export { PrintQuarter } from "images/dialogs/image-quarter.gif";
-export { PrintLegend } from "images/dialogs/image-legend.gif";
+export { default as PrintNone } from "images/dialogs/image-none.gif";
+export { default as PrintFull } from "images/dialogs/image-full.gif";
+export { default as PrintHalf } from "images/dialogs/image-half.gif";
+export { default as PrintQuarter } from "images/dialogs/image-quarter.gif";
+export { default as PrintLegend } from "images/dialogs/image-legend.gif";

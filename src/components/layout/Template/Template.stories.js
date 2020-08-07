@@ -1,13 +1,11 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { FullScreen } from "helpers/Display";
+import { FullScreen, ContainerLarge } from "helpers/Display";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import Card from "elements/Card";
 import Template from "layout/Template";
-import Text, { Title } from "base/Typography";
-import SearchBar from "blocks/Search";
 import {
   MockButtons,
   MockCardGrid,
@@ -30,7 +28,7 @@ export default {
     docs: { page: null },
   },
   includeStories: ["Knobs"],
-  decorators: [FullScreen, withKnobs],
+  decorators: [ContainerLarge, withKnobs],
 };
 
 // Knob Values

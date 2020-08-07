@@ -1,0 +1,150 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Center, Container, ContainerLarge } from "helpers/Display";
+import Flex from "layout/Flex";
+import Button from "atoms/Button";
+import Text, { Title } from "base/Typography";
+import SearchBar from "blocks/Search";
+import Template from "layout/Template";
+import {
+  MockButtons,
+  MockCardGrid,
+  MockData,
+  MockDetails,
+  MockFooter,
+  MockForm,
+  MockHeader,
+  MockMenu,
+  MockPalette,
+  MockTable,
+  MockTabs,
+  MockWorkflow,
+} from "helpers/Mocks";
+
+<Meta
+  title="layout/Template"
+  component={Template}
+/>
+
+# Template
+
+#### Used to layout 1 or more content elements within a space.
+<br/>
+
+### "Default" Templates
+
+#### The default Template stacks content vertically within a single-column grid.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Template
+      id="Standard"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text="A" />
+          </Center>
+        ),
+      }}
+      B={{
+        id: "B",
+        content: (
+          <Center>
+            <Title text="B" />
+          </Center>
+        ),
+      }}
+      C={{
+        id: "C",
+        content: (
+          <Center>
+            <Title text="C" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>
+
+### "Configured" Templates
+
+#### A Template can be configured to meet multiple layout needs through its 'template' prop.  Choose a template from the Template Library that will support the number of components being displayed.
+<br/>
+
+##### A Templates = 1 component, B Templates = 2 components, C = 3, D = 4, E = 5
+
+##### Template format: [A-E]_[index] (ex. template="C_02")
+
+<Preview withToolbar>
+  <Story name="Configured" decorators={[Container]}>
+    <Template
+      id="Configured"
+      template="C_02"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text="A" />
+          </Center>
+        ),
+      }}
+      B={{
+        id: "B",
+        content: (
+          <Center>
+            <Title text="B" />
+          </Center>
+        ),
+      }}
+      C={{
+        id: "C",
+        content: (
+          <Center>
+            <Title text="C" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>
+
+### "Overlay" Templates
+
+#### Use when needing to position a template atop content through the use of an 'isOverlay' boolean prop.  Using this prop allows for the repurposing of all available Templates.
+
+<Preview withToolbar>
+  <Story name="Template Overlay" decorators={[ContainerLarge]}>
+    <React.Fragment>
+      <Template
+        id="Template Overlay"
+        template="E_03"
+        hasBorders
+        isOverlay
+        A={{
+          id: "A",
+          content: <SearchBar id="Search_E3" placeholder="Search Location" />,
+        }}
+        B={{
+          id: "B",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        C={{
+          id: "C",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        D={{
+          id: "D",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        E={{
+          id: "E",
+          content: <MockPalette />,
+        }}
+      />
+      <Mapbox />
+    </React.Fragment>
+  </Story>
+</Preview>
+
