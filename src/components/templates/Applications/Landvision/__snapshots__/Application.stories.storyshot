@@ -435,7 +435,7 @@ exports[` 1`] = `
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -1796,7 +1796,7 @@ exports[` 2`] = `
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -2190,7 +2190,7 @@ exports[` 2`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kDSiUC Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kPqYDF Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_69"
                                 media=""
@@ -2503,7 +2503,7 @@ exports[` 2`] = `
                                 className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
                                 disabled={null}
                                 href={null}
-                                onClick={true}
+                                onClick={[Function]}
                               >
                                 <svg
                                   aria-hidden="true"
@@ -2627,7 +2627,7 @@ exports[` 2`] = `
                               rows={null}
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_70"
                                 media=""
@@ -2834,7 +2834,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_71"
                                 media=""
@@ -3041,7 +3041,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_72"
                                 media=""
@@ -3248,7 +3248,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_73"
                                 media=""
@@ -3455,7 +3455,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_74"
                                 media=""
@@ -3662,7 +3662,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_75"
                                 media=""
@@ -3869,7 +3869,7 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_76"
                                 media=""
@@ -4569,7 +4569,7 @@ exports[` 3`] = `
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -5077,26 +5077,26 @@ exports[` 3`] = `
                                 >
                                   Direct Parcel Link:
                                 </label>
-                                <p
-                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                                <a
+                                  className="Typography__LinkText-sc-19auepv-1 kZPEOL"
+                                  disabled={false}
                                   fontSize="1rem"
                                   fontWeight={500}
-                                  id={null}
-                                  letterSpacing="0.5px"
+                                  href={null}
+                                  letterSpacing="0.2px"
+                                  onClick={[Function]}
+                                  target={null}
                                 >
-                                  <a
-                                    className="Typography__LinkText-sc-19auepv-1 kZPEOL"
-                                    disabled={false}
+                                  <p
+                                    className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
                                     fontSize="1rem"
                                     fontWeight={500}
-                                    href={null}
-                                    letterSpacing="0.2px"
-                                    onClick={null}
-                                    target={null}
+                                    id={null}
+                                    letterSpacing="0.5px"
                                   >
                                     808-23093
-                                  </a>
-                                </p>
+                                  </p>
+                                </a>
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
@@ -5427,7 +5427,7 @@ exports[` 3`] = `
                                 className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
                                 disabled={null}
                                 href={null}
-                                onClick={true}
+                                onClick={[Function]}
                               >
                                 <svg
                                   aria-hidden="true"
@@ -5540,7 +5540,7 @@ exports[` 3`] = `
                                       fontWeight={500}
                                       href={null}
                                       letterSpacing="0.2px"
-                                      onClick={true}
+                                      onClick={[Function]}
                                       target={null}
                                     >
                                       <p
@@ -6144,7 +6144,7 @@ exports[` 4`] = `
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -6610,7 +6610,7 @@ exports[` 4`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kDSiUC Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kPqYDF Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_83"
                                 media=""
@@ -6923,7 +6923,7 @@ exports[` 4`] = `
                                 className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
                                 disabled={null}
                                 href={null}
-                                onClick={true}
+                                onClick={[Function]}
                               >
                                 <svg
                                   aria-hidden="true"
@@ -7121,26 +7121,26 @@ exports[` 4`] = `
                                     >
                                       Zoning Authority
                                     </label>
-                                    <p
-                                      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
+                                    <a
+                                      className="Typography__LinkText-sc-19auepv-1 kZPEOL"
+                                      disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
-                                      id={null}
-                                      letterSpacing="0.5px"
+                                      href={null}
+                                      letterSpacing="0.2px"
+                                      onClick={[Function]}
+                                      target={null}
                                     >
-                                      <a
-                                        className="Typography__LinkText-sc-19auepv-1 kZPEOL"
-                                        disabled={false}
+                                      <p
+                                        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-4 eczWUg"
                                         fontSize="1rem"
                                         fontWeight={500}
-                                        href={null}
-                                        letterSpacing="0.2px"
-                                        onClick={null}
-                                        target={null}
+                                        id={null}
+                                        letterSpacing="0.5px"
                                       >
                                         City of Mission Viejo
-                                      </a>
-                                    </p>
+                                      </p>
+                                    </a>
                                   </section>
                                 </section>
                               </section>
@@ -7910,7 +7910,7 @@ exports[` 5`] = `
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -8610,7 +8610,7 @@ exports[` 5`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kDSiUC Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kPqYDF Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_90"
                                 media=""
@@ -9004,7 +9004,7 @@ exports[` 5`] = `
                                 className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
                                 disabled={null}
                                 href={null}
-                                onClick={true}
+                                onClick={[Function]}
                               >
                                 <svg
                                   aria-hidden="true"
@@ -9818,7 +9818,7 @@ exports[` 6`] = `
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -10529,7 +10529,7 @@ exports[` 6`] = `
                               id="Modal_Text-animation"
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_96"
                                 media=""
@@ -11177,7 +11177,7 @@ exports[` 7`] = `
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""

@@ -8,15 +8,15 @@ exports[` 1`] = `
 >
   <div />
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_184"
+    id="storyshots_183"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={[Function]}
   >
     <section
       className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_184-Media"
+      id="storyshots_183-Media"
       onClick={null}
     >
       <img
@@ -30,7 +30,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_184-Header"
+      id="storyshots_183-Header"
       onClick={null}
     >
       <div
@@ -97,7 +97,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_184-Body"
+      id="storyshots_183-Body"
       onClick={null}
     >
       <p
@@ -112,7 +112,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
-      id="storyshots_184-Footer"
+      id="storyshots_183-Footer"
       onClick={null}
     >
       <div
@@ -171,14 +171,14 @@ exports[` 1`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_184-Menu"
+            id="menu-popper-storyshots_183-Menu"
           >
             <button
               className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_184-Menu"
-              name="menu-icon-storyshots_184-Menu"
+              id="menu-icon-storyshots_183-Menu"
+              name="menu-icon-storyshots_183-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -226,12 +226,68 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_184"
+    media=""
+    onClick={null}
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_184-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        
+      </p>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_185"
     media=""
     onClick={null}
   >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_185-Header"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 RjiBe"
+        >
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
+          >
+            Card Title
+          </h4>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Card Description
+          </p>
+        </div>
+      </div>
+    </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id="storyshots_185-Body"
@@ -249,7 +305,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_186"
     media=""
@@ -300,12 +356,12 @@ exports[` 2`] = `
         id={null}
         letterSpacing="0.5px"
       >
-        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_187"
     media=""
@@ -314,62 +370,6 @@ exports[` 2`] = `
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id="storyshots_187-Header"
-      onClick={null}
-    >
-      <div
-        className="Bar__BarLayout-icfo76-2 eUVQsH"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 RjiBe"
-        >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
-          >
-            Card Title
-          </h4>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-            fontSize="1rem"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0.5px"
-          >
-            Card Description
-          </p>
-        </div>
-      </div>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_187-Body"
-      onClick={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-        fontSize="1rem"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.5px"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
-  </div>
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-    href={null}
-    id="storyshots_188"
-    media=""
-    onClick={null}
-  >
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_188-Header"
       onClick={null}
     >
       <div
@@ -412,7 +412,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_188-Body"
+      id="storyshots_187-Body"
       onClick={null}
     >
       <p
@@ -427,15 +427,15 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_189"
+    id="storyshots_188"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_189-Header"
+      id="storyshots_188-Header"
       onClick={null}
     >
       <div
@@ -489,7 +489,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_189-Body"
+      id="storyshots_188-Body"
       onClick={null}
     >
       <p
@@ -504,15 +504,15 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_190"
+    id="storyshots_189"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_190-Header"
+      id="storyshots_189-Header"
       onClick={null}
     >
       <div
@@ -540,6 +540,131 @@ exports[` 2`] = `
           >
             Card Description
           </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_189-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_189-Footer"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 bHddGh"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 hTtmaE"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs"
+            id={null}
+            rows={null}
+          >
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+              id={null}
+              label="Command One"
+              onClick={[Function]}
+              title="Command One"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Command One
+              </label>
+            </a>
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+              id={null}
+              label="Command Two"
+              onClick={[Function]}
+              title="Command Two"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Command Two
+              </label>
+            </a>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 ecRRXN"
+        >
+          <span>
+             
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_190"
+    media=""
+    onClick={[Function]}
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_190-Header"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 RjiBe"
+        >
+          <a
+            className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
+          >
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
+              letterSpacing="0px"
+            >
+              Card Title
+            </h4>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Card Description
+            </p>
+          </a>
         </div>
       </div>
     </section>
@@ -617,35 +742,99 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 ecRRXN"
         >
-          <span>
-             
-          </span>
+          <div
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+            id="menu-popper-storyshots_190-Menu"
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
+              disabled={false}
+              htmlFor={null}
+              id="menu-icon-storyshots_190-Menu"
+              name="menu-icon-storyshots_190-Menu"
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  color={null}
+                  data-icon="ellipsis-v"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 128 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+          </div>
         </div>
       </div>
     </section>
   </div>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cCcBKL Card__CardGridWrapper-sc-1g3s676-4 dKngjY"
+  id={null}
+  rows={null}
+>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_191"
-    media=""
+    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={[Function]}
   >
+    <section
+      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
+      id="storyshots_191-Media"
+      onClick={null}
+    >
+      <img
+        alt="Media Description"
+        className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
+        onClick={null}
+        src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        title="Media Description"
+        width="100%"
+      />
+    </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id="storyshots_191-Header"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 eUVQsH"
+        className="Expander__HeaderWrapper-sc-147204-0 insQpf"
         id={null}
-        onClick={null}
+        onClick={[Function]}
       >
         <div
-          className="Bar__Slot-icfo76-1 RjiBe"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
+          id={null}
+          onClick={null}
         >
-          <a
-            className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
+          <div
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <h4
               className="Typography__TitleText-sc-19auepv-2 dDJKKW"
@@ -664,8 +853,64 @@ exports[` 2`] = `
             >
               Card Description
             </p>
-          </a>
+          </div>
+          <div
+            className="Bar__Slot-icfo76-1 cxljst"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="plus"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
         </div>
+      </div>
+      <div
+        className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+        open={false}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Button
+            </label>
+          </section>
+        </button>
       </div>
     </section>
     <section
@@ -788,20 +1033,11 @@ exports[` 2`] = `
       </div>
     </section>
   </div>
-</section>
-`;
-
-exports[` 3`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cCcBKL Card__CardGridWrapper-sc-1g3s676-4 dKngjY"
-  id={null}
-  rows={null}
->
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_192"
-    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+    media="https://player.vimeo.com/video/798022"
     onClick={[Function]}
   >
     <section
@@ -809,12 +1045,14 @@ exports[` 3`] = `
       id="storyshots_192-Media"
       onClick={null}
     >
-      <img
-        alt="Media Description"
-        className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
-        onClick={null}
-        src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-        title="Media Description"
+      <iframe
+        allow="fullscreen"
+        allowFullScreen={true}
+        className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
+        frameBorder="0"
+        height="100vh"
+        src="https://player.vimeo.com/video/798022"
+        title="iframe"
         width="100%"
       />
     </section>
@@ -1034,10 +1272,10 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_193"
-    media="https://player.vimeo.com/video/798022"
+    media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
     onClick={[Function]}
   >
     <section
@@ -1045,16 +1283,18 @@ exports[` 3`] = `
       id="storyshots_193-Media"
       onClick={null}
     >
-      <iframe
-        allow="fullscreen"
-        allowFullScreen={true}
-        className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
-        frameBorder="0"
-        height="100vh"
-        src="https://player.vimeo.com/video/798022"
-        title="iframe"
+      <video
+        className="Media__Video-sc-1ofqnpx-3 imikFd"
+        controls={true}
+        title="video/mp4"
         width="100%"
-      />
+      >
+        <source
+          src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video element.
+      </video>
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1272,10 +1512,10 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_194"
-    media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+    media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
     onClick={[Function]}
   >
     <section
@@ -1283,18 +1523,16 @@ exports[` 3`] = `
       id="storyshots_194-Media"
       onClick={null}
     >
-      <video
-        className="Media__Video-sc-1ofqnpx-3 imikFd"
-        controls={true}
-        title="video/mp4"
+      <iframe
+        allow="fullscreen"
+        allowFullScreen={true}
+        className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
+        frameBorder="0"
+        height="100vh"
+        src="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+        title="iframe"
         width="100%"
-      >
-        <source
-          src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video element.
-      </video>
+      />
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1512,10 +1750,10 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_195"
-    media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+    media="https://www.w3schools.com/html/horse.mp3"
     onClick={[Function]}
   >
     <section
@@ -1523,16 +1761,17 @@ exports[` 3`] = `
       id="storyshots_195-Media"
       onClick={null}
     >
-      <iframe
-        allow="fullscreen"
-        allowFullScreen={true}
-        className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
-        frameBorder="0"
-        height="100vh"
-        src="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
-        title="iframe"
-        width="100%"
-      />
+      <audio
+        className="Media__Audio-sc-1ofqnpx-2 hTgoaP"
+        controls={true}
+        title="audio/mpeg"
+      >
+        <source
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1713,245 +1952,6 @@ exports[` 3`] = `
               htmlFor={null}
               id="menu-icon-storyshots_195-Menu"
               name="menu-icon-storyshots_195-Menu"
-              onClick={[Function]}
-              tabIndex="1"
-              type="button"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
-                id={null}
-                rows={null}
-              >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                  color={null}
-                  data-icon="ellipsis-v"
-                  data-prefix="far"
-                  focusable="false"
-                  fontSize="inherit"
-                  id={null}
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 128 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </section>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-    href={null}
-    id="storyshots_196"
-    media="https://www.w3schools.com/html/horse.mp3"
-    onClick={[Function]}
-  >
-    <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_196-Media"
-      onClick={null}
-    >
-      <audio
-        className="Media__Audio-sc-1ofqnpx-2 hTgoaP"
-        controls={true}
-        title="audio/mpeg"
-      >
-        <source
-          src="https://www.w3schools.com/html/horse.mp3"
-          type="audio/mpeg"
-        />
-        Your browser does not support the audio element.
-      </audio>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_196-Header"
-      onClick={null}
-    >
-      <div
-        className="Expander__HeaderWrapper-sc-147204-0 insQpf"
-        id={null}
-        onClick={[Function]}
-      >
-        <div
-          className="Bar__BarLayout-icfo76-2 eUVQsH"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-icfo76-1 fIRUJx"
-          >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
-            >
-              Card Title
-            </h4>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-              fontSize="1rem"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.5px"
-            >
-              Card Description
-            </p>
-          </div>
-          <div
-            className="Bar__Slot-icfo76-1 cxljst"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="plus"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div
-        className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-        open={false}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Button
-            </label>
-          </section>
-        </button>
-      </div>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_196-Body"
-      onClick={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-        fontSize="1rem"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.5px"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
-      id="storyshots_196-Footer"
-      onClick={null}
-    >
-      <div
-        className="Bar__BarLayout-icfo76-2 bHddGh"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 hTtmaE"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs"
-            id={null}
-            rows={null}
-          >
-            <a
-              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
-              id={null}
-              label="Command One"
-              onClick={[Function]}
-              title="Command One"
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Command One
-              </label>
-            </a>
-            <a
-              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
-              id={null}
-              label="Command Two"
-              onClick={[Function]}
-              title="Command Two"
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Command Two
-              </label>
-            </a>
-          </section>
-        </div>
-        <div
-          className="Bar__Slot-icfo76-1 ecRRXN"
-        >
-          <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_196-Menu"
-          >
-            <button
-              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
-              disabled={false}
-              htmlFor={null}
-              id="menu-icon-storyshots_196-Menu"
-              name="menu-icon-storyshots_196-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"

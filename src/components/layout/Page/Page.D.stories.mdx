@@ -1,0 +1,38 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ContainerLarge } from "helpers/Display";
+import Page from "layout/Page";
+
+<Meta
+  title="layout/Page/Template Library/D Templates"
+  component={Page}
+  decorators={[ContainerLarge]}
+/>
+
+# "D" Templates
+
+#### Use when needing to control the layout of 4 content elements.
+
+<Preview withToolbar>
+  <Story name="D_01">
+    <Page
+      id="Template D_01"
+      template="D_01"
+      A={{
+        id: "A",
+        content: "",
+      }}
+      B={{
+        id: "B",
+        content: "",
+      }}
+      C={{
+        id: "C",
+        content: "",
+      }}
+      D={{
+        id: "D",
+        content: "",
+      }}
+    />
+  </Story>
+</Preview>

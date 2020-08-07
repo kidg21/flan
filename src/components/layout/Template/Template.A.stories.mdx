@@ -1,0 +1,33 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Center, ContainerLarge } from "helpers/Display";
+import Text, { Title } from "base/Typography";
+import Flex from "layout/Flex";
+import Template from "layout/Template";
+
+<Meta
+  title="layout/Template/Template Library/A Templates"
+  component={Template}
+  decorators={[ContainerLarge]}
+/>
+
+# "A" Templates
+
+#### Use when only needing to control the layout of a single content element.
+
+<Preview withToolbar>
+  <Story name="A_01">
+    <Template
+      id="Template A_01"
+      template="A_01"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text="A" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>
