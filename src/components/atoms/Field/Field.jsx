@@ -143,7 +143,7 @@ Field.defaultProps = {
 };
 
 function FieldGroup({
-  align, children, className, columns, data, gap, id, title, isDense,
+  align, children, className, columns, data, gap, id, title,
 }) {
   // 1-3 colums
   let setColumns;
@@ -170,7 +170,6 @@ function FieldGroup({
               id={item.id}
               label={item.label}
               onChange={item.onChange}
-              isDense={isDense}
               onClick={item.onClick}
               value={item.value}
             />
@@ -230,7 +229,6 @@ FieldGroup.propTypes = {
     "4xl",
   ]),
   columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
-  isDense: PropTypes.bool,
   data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
   id: PropTypes.string,
   title: PropTypes.string,
@@ -242,7 +240,6 @@ FieldGroup.defaultProps = {
   className: null,
   gap: null,
   columns: null,
-  isDense: false,
   data: [],
   id: null,
   title: null,
