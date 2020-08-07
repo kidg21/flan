@@ -1,235 +1,237 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<div
-  style={
-    Object {
-      "height": "400px",
-    }
-  }
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
+  id={null}
+  rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
-    id="Knobs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 edIvSY"
+    id="Template D_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
       id="A"
       placeholder="A"
       tabIndex="0"
-    />
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        href={null}
+        id="storyshots_69"
+        media=""
+        onClick={null}
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 vAqIG"
+          id="storyshots_69-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
+              >
+                A
+              </h4>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_69-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
+      </div>
+    </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
       id="B"
       placeholder="B"
       tabIndex="0"
-    />
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        href={null}
+        id="storyshots_70"
+        media=""
+        onClick={null}
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 vAqIG"
+          id="storyshots_70-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
+              >
+                B
+              </h4>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_70-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
+      </div>
+    </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      className="Template__Region-sc-1i4nzbu-0 fsevAL"
       id="C"
       placeholder="C"
       tabIndex="0"
-    />
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        href={null}
+        id="storyshots_71"
+        media=""
+        onClick={null}
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 vAqIG"
+          id="storyshots_71-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
+              >
+                C
+              </h4>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_71-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
+      </div>
+    </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      className="Template__Region-sc-1i4nzbu-0 eGelAc"
       id="D"
       placeholder="D"
       tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    />
-  </section>
-</div>
-`;
-
-exports[` 2`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
-  id="Standard"
-  rows={null}
->
-  <section
-    className="Template__Region-sc-1i4nzbu-0 fYgNFs"
-    id="A"
-    placeholder="A"
-    tabIndex="0"
-  >
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        href={null}
+        id="storyshots_72"
+        media=""
+        onClick={null}
       >
-        A
-      </h6>
-    </div>
-  </section>
-  <section
-    className="Template__Region-sc-1i4nzbu-0 fYgNFs"
-    id="B"
-    placeholder="B"
-    tabIndex="0"
-  >
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
-      >
-        B
-      </h6>
-    </div>
-  </section>
-  <section
-    className="Template__Region-sc-1i4nzbu-0 fYgNFs"
-    id="C"
-    placeholder="C"
-    tabIndex="0"
-  >
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
-      >
-        C
-      </h6>
-    </div>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 vAqIG"
+          id="storyshots_72-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                fontSize="1.35rem"
+                fontWeight="400"
+                letterSpacing="0px"
+              >
+                D
+              </h4>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          id="storyshots_72-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            
+          </p>
+        </section>
+      </div>
+    </section>
   </section>
 </section>
 `;
 
-exports[` 3`] = `
-<div
-  style={
-    Object {
-      "height": "250px",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gOFRUq"
-    id="Configured"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 iqqVeV"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "display": "flex",
-            "height": "100%",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
-        >
-          A
-        </h6>
-      </div>
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 jsvHdG"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "display": "flex",
-            "height": "100%",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
-        >
-          B
-        </h6>
-      </div>
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dTQPLz"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "display": "flex",
-            "height": "100%",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
-        >
-          C
-        </h6>
-      </div>
-    </section>
-  </section>
-</div>
-`;
-
-exports[` 4`] = `
+exports[` 2`] = `
 <div
   style={
     Object {
@@ -594,13 +596,235 @@ exports[` 4`] = `
       </section>
     </section>
   </section>
-  <div
-    style={
-      Object {
-        "height": "100%",
-        "width": "100%",
+  <div />
+</div>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+  id="Standard"
+  rows={null}
+>
+  <section
+    className="Template__Region-sc-1i4nzbu-0 fYgNFs"
+    id="A"
+    placeholder="A"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
       }
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        A
+      </h6>
+    </div>
+  </section>
+  <section
+    className="Template__Region-sc-1i4nzbu-0 fYgNFs"
+    id="B"
+    placeholder="B"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        B
+      </h6>
+    </div>
+  </section>
+  <section
+    className="Template__Region-sc-1i4nzbu-0 fYgNFs"
+    id="C"
+    placeholder="C"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        C
+      </h6>
+    </div>
+  </section>
+</section>
+`;
+
+exports[` 4`] = `
+<div
+  style={
+    Object {
+      "height": "250px",
     }
-  />
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gOFRUq"
+    id="Configured"
+    rows={null}
+  >
+    <section
+      className="Template__Region-sc-1i4nzbu-0 iqqVeV"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          A
+        </h6>
+      </div>
+    </section>
+    <section
+      className="Template__Region-sc-1i4nzbu-0 jsvHdG"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          B
+        </h6>
+      </div>
+    </section>
+    <section
+      className="Template__Region-sc-1i4nzbu-0 dTQPLz"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          C
+        </h6>
+      </div>
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 5`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+    id="Knobs"
+    rows={null}
+  >
+    <section
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      id="D"
+      placeholder="D"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
+      id="E"
+      placeholder="E"
+      tabIndex="0"
+    />
+  </section>
 </div>
 `;

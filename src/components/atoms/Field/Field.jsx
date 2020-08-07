@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
-import Text, { Title, Label, Link } from "base/Typography";
+import Text, { Label, Link } from "base/Typography";
 
 const FieldItem = styled(Grid)`
   text-align: left;
@@ -14,33 +14,22 @@ const FieldItem = styled(Grid)`
   align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
-    return props.fieldColumns || "7rem 1fr";
+    return props.fieldColumns || "";
   }};
   grid-gap: ${(props) => {
     return props.fieldGap || "";
   }};
 `;
 
-const FieldGrid = styled(Grid)`
-  grid-template-columns: ${(props) => {
-    return props.columns || "repeat(auto-fill, minmax(20rem, 1fr))";
-  }};
-  grid-row-gap: ${(props) => {
-    return props.isDense ? "0rem" : "";
-  }};
-  grid-column-gap: 2rem;
-  overflow: auto;
-  &:not(:last-of-type) {
-    margin-bottom: 1.75rem;
-  }
-`;
-
-const GroupTitle = styled(Title)`
+const GroupTitle = styled(Text)`
   color: ${(props) => {
     return props.theme.text.secondary;
   }};
+  text-transform: uppercase;
   grid-column: 1/-1;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
 `;
 
 const FieldLabel = styled(Label)`
@@ -67,6 +56,20 @@ const FieldValue = styled(Text)`
   }
 `;
 
+const FieldGrid = styled(Grid)`
+  grid-column-gap: 2rem;
+  overflow: auto;
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+`;
+
+const Section = styled.section`
+  display: grid;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+`;
+
 function Field({
   align, className, disabled, id, label, onChange, onClick, value,
 }) {
@@ -85,6 +88,7 @@ function Field({
     default:
       break;
   }
+
 
   let field = (
     <FieldValue
@@ -118,7 +122,7 @@ function Field({
 }
 
 Field.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge"]),
+  align: PropTypes.oneOf(["vertical", "edge", "tight"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
@@ -140,30 +144,28 @@ Field.defaultProps = {
 };
 
 function FieldGroup({
-  align, children, className, columns, data, id, title, isDense,
+  align, children, className, columns, data, gap, id, title,
 }) {
   // 1-3 colums
   let setColumns;
   const _columns = parseInt(columns, 10);
-  if (_columns > 0 && columns < 4) {
+  if (_columns > 0 && _columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
-  if (align === "edge") {
-    setColumns = `repeat(1, minmax(0, 1fr))`;
-  }
+
   return (
     <FieldGrid
       className={className}
       columns={setColumns}
-      isDense={isDense}
+      gap={gap}
       id={id}
     >
-      {title ? <GroupTitle text={title} size="lg" /> : null}
+      {title ? <GroupTitle size="sm" text={title} /> : null}
       {children
         || data.map((item, index) => {
           return (
             <Field
-              align={align}
+              align={item.align || align}
               disabled={item.disabled}
               key={item.id || item.label || index}
               id={item.id}
@@ -178,18 +180,58 @@ function FieldGroup({
   );
 }
 
+function FieldSection({ children, title, columns }) {
+  let setColumns;
+  const _columns = parseInt(columns, 10);
+  if (_columns > 0 && _columns < 4) {
+    setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
+  } else {
+    setColumns = columns;
+  }
+  return (
+    <Section>
+      {title ? <GroupTitle size="sm" text={title} /> : null}
+      <FieldGrid
+        columns={setColumns}
+      >
+        {children}
+      </FieldGrid>
+    </Section>
+  );
+}
+FieldSection.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+  columns: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+};
+FieldSection.defaultProps = {
+  children: null,
+  title: null,
+  columns: "1",
+};
+
 FieldGroup.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge"]),
+  align: PropTypes.oneOf(["vertical", "edge", "tight"]),
   children: PropTypes.node,
   /** Defines the widths of grid columns
    *
    * Options: 1-3
    */
   className: PropTypes.string,
+  gap: PropTypes.oneOf([
+    "",
+    "0",
+    "xs",
+    "sm",
+    "lg",
+    "xl",
+    "2xl",
+    "3xl",
+    "4xl",
+  ]),
   columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
   data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
   id: PropTypes.string,
-  isDense: PropTypes.bool,
   title: PropTypes.string,
 };
 
@@ -197,11 +239,11 @@ FieldGroup.defaultProps = {
   align: null,
   children: null,
   className: null,
+  gap: null,
   columns: null,
   data: [],
   id: null,
-  isDense: false,
   title: null,
 };
 
-export { Field as default, FieldGroup };
+export { Field as default, FieldGroup, FieldSection };
