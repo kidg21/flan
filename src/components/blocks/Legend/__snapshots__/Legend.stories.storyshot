@@ -8,21 +8,6 @@ exports[` 1`] = `
   media=""
   onClick={null}
 >
-  <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-    id="Legend_Standard_Card-Body"
-    onClick={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      
-    </p>
-  </section>
   <div
     className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
     id="Legend_Standard"
@@ -181,21 +166,6 @@ exports[` 2`] = `
     media=""
     onClick={null}
   >
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="Legend_Icon_Card-Body"
-      onClick={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-        fontSize="1rem"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.5px"
-      >
-        
-      </p>
-    </section>
     <div
       className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
       id="Legend_Icon"
@@ -422,21 +392,6 @@ exports[` 2`] = `
     media=""
     onClick={null}
   >
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="Legend_Tag_Card-Body"
-      onClick={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-        fontSize="1rem"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.5px"
-      >
-        
-      </p>
-    </section>
     <div
       className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
       id="Legend_Tag"
