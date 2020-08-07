@@ -78,7 +78,7 @@ import {
 ##### Template format: [A-E]_[index] (ex. template="C_02")
 
 <Preview withToolbar>
-  <Story name="Configured" parameters={{ decorators: [Container] }}>
+  <Story name="Configured" decorators={[Container]}>
     <Template
       id="Configured"
       template="C_02"
@@ -116,7 +116,7 @@ import {
 #### Use when needing to position a template atop content through the use of an 'isOverlay' boolean prop.  Using this prop allows for the repurposing of all available Templates.
 
 <Preview withToolbar>
-  <Story name="Template Overlay" parameters={{ decorators: [ContainerLarge] }}>
+  <Story name="Template Overlay" decorators={[ContainerLarge]}>
     <React.Fragment>
       <Template
         id="Template Overlay"
