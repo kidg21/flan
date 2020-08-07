@@ -1,0 +1,67 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Center, ContainerLarge } from "helpers/Display";
+import Text, { Title } from "base/Typography";
+import Flex from "layout/Flex";
+import Template from "layout/Template";
+
+<Meta
+  title="layout/Template/Template Library/B Templates"
+  component={Template}
+  decorators={[ContainerLarge]}
+/>
+
+# "B" Templates
+
+#### Use when needing to control the layout of 2 content elements.
+
+<Preview withToolbar>
+  <Story name="B_01">
+    <Template
+      id="Template B_01"
+      template="B_01"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text=" A" />
+          </Center>
+        ),
+      }}
+      B={{
+        id: "B",
+        content: (
+          <Center>
+            <Title text=" B" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>
+
+<Preview withToolbar>
+  <Story name="B_02">
+    <Template
+      id="Template B_02"
+      template="B_02"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text="A" />
+          </Center>
+        ),
+      }}
+      B={{
+        id: "B",
+        content: (
+          <Center>
+            <Title text="B" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>

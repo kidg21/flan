@@ -1,392 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 coiTMo"
-    id="Template A_01"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
+    id="Knobs"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 cYtqec"
+      className="Page__Region-mddda5-2 gBizQl"
       id="A"
       placeholder="A"
       tabIndex="0"
-    >
-      
-    </section>
+    />
+    <section
+      className="Page__Region-mddda5-2 jKxaMO"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    />
+    <section
+      className="Page__Region-mddda5-2 laJKur"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    />
+    <section
+      className="Page__Region-mddda5-2 gHZDSM"
+      id="D"
+      placeholder="D"
+      tabIndex="0"
+    />
+    <section
+      className="Page__Region-mddda5-2 hZzJQV"
+      id="E"
+      placeholder="E"
+      tabIndex="0"
+    />
   </section>
-</section>
+</div>
 `;
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
+  id="Standard"
+  rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gcGecX"
-    id="Template B_01"
-    rows={null}
+    className="Page__Region-mddda5-2 gBizQl"
+    id="A"
+    placeholder="A"
+    tabIndex="0"
   >
-    <section
-      className="Page__Region-mddda5-2 cYtqec"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 kGGQoA"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
+    
+  </section>
+  <section
+    className="Page__Region-mddda5-2 jKxaMO"
+    id="B"
+    placeholder="B"
+    tabIndex="0"
+  >
+    
+  </section>
+  <section
+    className="Page__Region-mddda5-2 laJKur"
+    id="C"
+    placeholder="C"
+    tabIndex="0"
+  >
+    
   </section>
 </section>
 `;
 
 exports[` 3`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gykPSC"
-    id="Template B_02"
-    rows={null}
-  >
-    <section
-      className="Page__Region-mddda5-2 cYtqec"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 kGGQoA"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 4`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 kACcHs"
-    id="Template C_01"
-    rows={null}
-  >
-    <section
-      className="Page__Region-mddda5-2 cYtqec"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 kGGQoA"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iStaWs"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 5`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 jynZxK"
-    id="Template C_02"
-    rows={null}
-  >
-    <section
-      className="Page__Region-mddda5-2 cYtqec"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 kGGQoA"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iStaWs"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 6`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 gBFoEG"
-    id="Template D_01"
-    rows={null}
-  >
-    <section
-      className="Page__Region-mddda5-2 cYtqec"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 kGGQoA"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iStaWs"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iaroUA"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 7`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 hFuFRp"
-    id="Template E_01"
-    rows={null}
-  >
-    <section
-      className="Page__Region-mddda5-2 cYtqec"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 kGGQoA"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iStaWs"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iaroUA"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 bSMYtw"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    >
-      
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 8`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 exrEtT"
-    id="Template E_02"
-    rows={null}
-  >
-    <section
-      className="Page__Region-mddda5-2 cYtqec"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 kGGQoA"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iStaWs"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iaroUA"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 bSMYtw"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    >
-      
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 9`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 HdklZ"
-    id="Template E_03"
-    rows={null}
-  >
-    <section
-      className="Page__Region-mddda5-2 cYtqec"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 kGGQoA"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iStaWs"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 iaroUA"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      
-    </section>
-    <section
-      className="Page__Region-mddda5-2 bSMYtw"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    >
-      
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 10`] = `
 <div
   style={
     Object {
-      "height": "100vh",
-      "width": "100%",
+      "height": "250px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 eXZOwJ"
+    id="Configured"
+    rows={null}
+  >
+    <section
+      className="Page__Region-mddda5-2 iFaILE"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 ilkIeY"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 dtKCsA"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    >
+      
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 4`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
     }
   }
 >
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 bVajWt"
-    id="Template Regions"
+    id="Template Overlay"
     rows={null}
   >
     <section
@@ -749,149 +494,5 @@ exports[` 10`] = `
       }
     }
   />
-</div>
-`;
-
-exports[` 11`] = `
-<div
-  style={
-    Object {
-      "height": "100vh",
-      "width": "100%",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
-    id={null}
-    rows={null}
-  >
-    <h4
-      className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-      fontSize="1.35rem"
-      fontWeight="400"
-      letterSpacing="0px"
-    >
-      My Latest Musings
-    </h4>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-      fontSize="1rem"
-      fontWeight={300}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      Totally Worth The Read...Enjoy!
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 fEVysz"
-      fontSize="0.875rem"
-      fontWeight={600}
-      id={null}
-      letterSpacing="0.25px"
-    >
-      Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
-    </p>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-      fontSize="1.15rem"
-      fontWeight="500"
-      letterSpacing="0.4px"
-    >
-      Section 1
-    </h5>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-      fontSize="1.15rem"
-      fontWeight="500"
-      letterSpacing="0.4px"
-    >
-      Section 2
-    </h5>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-  </section>
-</div>
-`;
-
-exports[` 12`] = `
-<div
-  style={
-    Object {
-      "height": "100vh",
-      "width": "100%",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 frjUVa"
-    id="Knobs"
-    rows={null}
-  >
-    <section
-      className="Page__Region-mddda5-2 gBizQl"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    />
-    <section
-      className="Page__Region-mddda5-2 jKxaMO"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    />
-    <section
-      className="Page__Region-mddda5-2 laJKur"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    />
-    <section
-      className="Page__Region-mddda5-2 gHZDSM"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    />
-    <section
-      className="Page__Region-mddda5-2 hZzJQV"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    />
-  </section>
 </div>
 `;

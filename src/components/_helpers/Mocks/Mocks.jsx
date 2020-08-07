@@ -133,7 +133,7 @@ function MockHeader({ percentage }) {
   );
 }
 MockHeader.propTypes = {
-  percentage: PropTypes.number,
+  percentage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 MockHeader.defaultProps = {
   percentage: 0,
