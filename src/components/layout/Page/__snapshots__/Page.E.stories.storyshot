@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 cLqeXm"
+    id="Template E_01"
+    rows={null}
+  >
+    <section
+      className="Page__Region-mddda5-2 iFaILE"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 ilkIeY"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 dtKCsA"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 khvctM"
+      id="D"
+      placeholder="D"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 fpSXCc"
+      id="E"
+      placeholder="E"
+      tabIndex="0"
+    >
+      
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 furRro"
+    id="Template E_02"
+    rows={null}
+  >
+    <section
+      className="Page__Region-mddda5-2 iFaILE"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 ilkIeY"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 dtKCsA"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 khvctM"
+      id="D"
+      placeholder="D"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 fpSXCc"
+      id="E"
+      placeholder="E"
+      tabIndex="0"
+    >
+      
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 igNIRy"
+    id="Template E_03"
+    rows={null}
+  >
+    <section
+      className="Page__Region-mddda5-2 iFaILE"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 ilkIeY"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 dtKCsA"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 khvctM"
+      id="D"
+      placeholder="D"
+      tabIndex="0"
+    >
+      
+    </section>
+    <section
+      className="Page__Region-mddda5-2 fpSXCc"
+      id="E"
+      placeholder="E"
+      tabIndex="0"
+    >
+      
+    </section>
+  </section>
+</div>
+`;
