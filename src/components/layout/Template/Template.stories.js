@@ -3,7 +3,9 @@
 import React from "react";
 import { FullScreen, ContainerLarge } from "helpers/Display";
 import Button from "atoms/Button";
+import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
+import Search from "blocks/Search";
 import Card from "elements/Card";
 import Template from "layout/Template";
 import {
@@ -50,7 +52,6 @@ const index = [
   "",
   <MockHeader />,
   <MockFooter />,
-  <Mapbox />,
   <MockMenu />,
   <MockWorkflow />,
   <MockDetails />,
@@ -365,7 +366,7 @@ storiesOf("Layout/Template", module)
           isOverlay
           A={{
             id: "A",
-            content: <SearchBar id="Search_E3" placeholder="Search Location" />,
+            content: <Search id="Search_E3" placeholder="Search Location" />,
           }}
           B={{
             id: "B",

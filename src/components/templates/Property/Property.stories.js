@@ -13,7 +13,7 @@ import Layout from "layout/Layout";
 import Command from "atoms/Command";
 import Template from "layout/Template";
 import Tabs, { TabItem } from "blocks/Tabs";
-import SearchBar from "blocks/Search";
+import Search from "blocks/Search";
 import Menu from "blocks/Menu";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
@@ -98,7 +98,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                         contentAlign="center"
                         left={{
                           content: (
-                            <SearchBar />),
+                            <Search />),
                         }}
                         center={{
                           content: (<Title text="309 results" size="lg" />),
@@ -134,7 +134,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                         ),
                       }}
                     />
-                    <MapBox />
+                    <Mapbox />
                   </Panel>
                 </Panel>),
             }}
@@ -205,7 +205,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                         contentAlign="center"
                         left={{
                           content: (
-                            <SearchBar />),
+                            <Search />),
                         }}
                         center={{
                           content: (<Title text="309 results" size="lg" />),
@@ -248,7 +248,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                                 ),
                               }}
                             />
-                            <MapBox />
+                            <Mapbox />
                           </Panel>),
                       }}
                       B={{
