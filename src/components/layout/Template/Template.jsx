@@ -11,8 +11,8 @@ const Region = styled.section`
     return props.gridArea || "";
   }};
   height: inherit;
-  border-right: ${(props) => {
-    return props.hasBorder ? "1px solid" : "";
+  border-left: ${(props) => {
+    return props.setBorder || "";
   }};
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
@@ -90,14 +90,12 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
-    hasBorder: true,
   },
   B_02: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthXS} 1fr`,
-    hasBorder: true,
   },
   B_03: {
     setTemplate: [
@@ -105,14 +103,12 @@ const templateHash = {
       "\"B\"",
     ].join("\n"),
     setRows: "auto 1fr",
-    hasBorder: true,
   },
   B_04: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthMD} 1fr`,
-    hasBorder: true,
   },
   B_05: {
     setTemplate: [
@@ -121,14 +117,12 @@ const templateHash = {
     ].join("\n"),
     setColumns: "auto 1fr 12rem",
     setRows: "1fr 1rem",
-    hasBorder: true,
   },
   B_06: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthXL}`,
-    hasBorder: true,
   },
   B_07: {
     setTemplate: [
@@ -219,7 +213,7 @@ const templateHash = {
 };
 
 function Template({
-  A, B, C, D, E, children, classname, hasCards, hasShadows, id, isOverlay, template,
+  A, B, C, D, E, children, classname, hasCards, hasShadows, id, isOverlay, template, isBorder,
 }) {
   let backgroundColor;
   let pointerEvents;
@@ -231,12 +225,12 @@ function Template({
   let setPosition;
   let setRowGap;
   let setRows;
-  let hasBorder;
+  let setBorder;
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
     ({
-      setTemplate, setColumns, setRows, hasBorder,
+      setTemplate, setColumns, setRows,
     } = templateHash[template.toUpperCase()]);
     setHeight = "100%";
     setPadding = "0";
@@ -263,6 +257,9 @@ function Template({
     setPadding = "0.5rem";
     setPosition = "absolute";
     zIndex = "999";
+  }
+  if (isBorder) {
+    setBorder = "1px solid";
   }
 
   return (
@@ -291,7 +288,6 @@ function Template({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
-              hasBorder={hasBorder}
               overflow={A.overflow}
             >
               {A.content}
@@ -304,6 +300,7 @@ function Template({
               gridArea={template ? "B" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              setBorder={setBorder}
               overflow={B.overflow}
             >
               {B.content}
@@ -328,6 +325,7 @@ function Template({
               gridArea={template ? "D" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              setBorder={setBorder}
               overflow={D.overflow}
             >
               {D.content}
@@ -380,6 +378,7 @@ Template.propTypes = {
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
+  isBorder: PropTypes.bool,
   hasCards: PropTypes.bool,
   hasShadows: PropTypes.bool,
   template: PropTypes.string,
@@ -394,6 +393,7 @@ Template.defaultProps = {
   E: null,
   id: null,
   isOverlay: false,
+  isBorder: false,
   hasCards: false,
   hasShadows: false,
   template: null,

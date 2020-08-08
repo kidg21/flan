@@ -136,10 +136,10 @@ storiesOf("Layout/Template/Template Library/A Templates", module)
         <Template
           id="Template A_01"
           template="A_01"
-          hasBorders
+          hasCards
           A={{
             id: "A",
-            content: <Card title="A"/>,
+            content: "A",
           }}
         />
       </Grid>
@@ -153,14 +153,14 @@ storiesOf("Layout/Template/Template Library/B Templates", module)
         <Template
           id="Template B_01"
           template="B_01"
-          hasBorders
+          hasCards
           A={{
             id: "A",
-            content: <Card padding="2x" variant="alt" title="A"/>,
+            content: "A",
           }}
           B={{
             id: "B",
-            content: <Card padding="2x" variant="alt" title="B"/>,
+            content: "B",
           }}
         />
       </Grid>
@@ -172,7 +172,7 @@ storiesOf("Layout/Template/Template Library/B Templates", module)
         <Template
           id="Template B_02"
           template="B_02"
-          hasBorders
+          hasCards
           A={{
             id: "A",
             content: "A",
@@ -193,7 +193,7 @@ storiesOf("Layout/Template/Template Library/C Templates", module)
         <Template
           id="Template C_01"
           template="C_01"
-          hasBorders
+          hasCards
           A={{
             id: "A",
             content: "A",
@@ -216,7 +216,7 @@ storiesOf("Layout/Template/Template Library/C Templates", module)
         <Template
           id="Template C_02"
           template="C_02"
-          hasBorders
+          hasCards
           A={{
             id: "A",
             content: "A",
@@ -241,7 +241,7 @@ storiesOf("Layout/Template/Template Library/D Templates", module)
         <Template
           id="Template D_01"
           template="D_01"
-          hasBorders
+          hasCards
           A={{
             id: "A",
             content: "A",
@@ -268,22 +268,22 @@ storiesOf("Layout/Template/Template Library/D Templates", module)
         <Template
           id="Template D_02"
           template="D_02"
-          hasBorders
+          hasCards
           A={{
             id: "A",
-            content: <Card padding="2x" variant="alt" title="A"/>,
+            content: "A",
           }}
           B={{
             id: "B",
-            content: <Card padding="2x" variant="alt" title="B"/>,
+            content: "B",
           }}
           C={{
             id: "C",
-            content: <Card padding="2x" variant="alt" title="C"/>,
+            content: "C",
           }}
           D={{
             id: "D",
-            content: <Card padding="2x" variant="alt" title="D"/>,
+            content: "D",
           }}
         />
       </Grid>
@@ -297,26 +297,26 @@ storiesOf("Layout/Template/Template Library/E Templates", module)
         <Template
           id="Template E_01"
           template="E_01"
-          hasBorders
+          hasCards
           A={{
             id: "A",
-            content: <Card padding="2x" variant="alt" title="A"/>,
+            content: "A",
           }}
           B={{
             id: "B",
-            content: <Card padding="2x" variant="alt" title="B"/>,
+            content: "B",
           }}
           C={{
             id: "C",
-            content: <Card padding="2x" variant="alt" title="C"/>,
+            content: "C",
           }}
           D={{
             id: "D",
-            content: <Card padding="2x" variant="alt" title="D"/>,
+            content: "D",
           }}
           E={{
             id: "E",
-            content: <Card padding="2x" variant="alt" title="E"/>,
+            content: "E",
           }}
         />
       </Grid>
@@ -328,26 +328,26 @@ storiesOf("Layout/Template/Template Library/E Templates", module)
         <Template
           id="Template E_02"
           template="E_02"
-          hasBorders
+          hasCards
           A={{
             id: "A",
-            content: <Card padding="2x" variant="alt" title="A"/>,
+            content: "A",
           }}
           B={{
             id: "B",
-            content: <Card padding="2x" variant="alt" title="B"/>,
+            content: "B",
           }}
           C={{
             id: "C",
-            content: <Card padding="2x" variant="alt" title="C"/>,
+            content: "C",
           }}
           D={{
             id: "D",
-            content: <Card padding="2x" variant="alt" title="D"/>,
+            content: "D",
           }}
           E={{
             id: "E",
-            content: <Card padding="2x" variant="alt" title="E"/>,
+            content: "E",
           }}
         />
       </Grid>
