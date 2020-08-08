@@ -23,7 +23,6 @@ const StyledCardWrapper = styled.div`
   border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
-  overflow: hidden;
   box-shadow: ${(props) => {
     return props.theme.shadows[props.cardShadow] || "";
   }};

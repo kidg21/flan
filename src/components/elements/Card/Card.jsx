@@ -240,9 +240,9 @@ CardSection.propTypes = {
   footer: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert", "light"]),
 };
 CardSection.defaultProps = {
   children: null,
@@ -400,6 +400,7 @@ function Card({
     }
   }
 
+  const bodyContent = typeof body === "string" ? <Text>{body}</Text> : body;
   return (
     <StyledCardWrapper
       className={className}
@@ -413,9 +414,9 @@ function Card({
     >
       {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
-      {body ? (
+      {bodyContent ? (
         <CardSection id={`${uId}-Body`}>
-          <Text>{body}</Text>
+          {bodyContent}
         </CardSection>
       ) : null}
       {children}
@@ -448,14 +449,14 @@ Card.propTypes = {
     onToggle: PropTypes.func,
   }),
   onClick: PropTypes.func,
-  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   shadow: PropTypes.oneOf(["0", "2x"]),
   title: PropTypes.string,
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
   badgeLabel: "",
-  body: "",
+  body: null,
   children: null,
   className: null,
   commands: null,

@@ -10,6 +10,7 @@ import Text from "base/Typography";
 
 const AvatarText = styled(Text)`
   color: inherit;
+  user-select: none;
   font-size: ${(props) => {
     return props.fontSize || "inherit";
   }};

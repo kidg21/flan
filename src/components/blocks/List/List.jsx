@@ -167,7 +167,6 @@ function getRightContent(post, disabled, onClick) {
   return rightContent;
 }
 
-
 function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
   if (pre && pre.type) {
@@ -307,7 +306,7 @@ ListItem.propTypes = {
   onClick: PropTypes.func,
   onClickItem: PropTypes.func,
   title: PropTypes.string.isRequired,
-  post: PropTypes.oneOfType(PropTypes.shape({
+  post: PropTypes.oneOfType([PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
     checked: PropTypes.bool,
@@ -315,8 +314,8 @@ ListItem.propTypes = {
     onClick: PropTypes.func,
     size: PropTypes.string,
     variant: PropTypes.string,
-  }), PropTypes.node),
-  pre: PropTypes.oneOfType(PropTypes.shape({
+  }), PropTypes.node]),
+  pre: PropTypes.oneOfType([PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
     checked: PropTypes.bool,
@@ -324,7 +323,7 @@ ListItem.propTypes = {
     onClick: PropTypes.func,
     size: PropTypes.string,
     variant: PropTypes.string,
-  }), PropTypes.node),
+  }), PropTypes.node]),
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
@@ -395,6 +394,7 @@ function List({
                   isSelected={item.isSelected}
                   key={itemKey}
                   onClick={item.onClick}
+                  onClickItem={item.onClickItem} 
                   post={item.post}
                   pre={item.pre}
                   title={item.title}

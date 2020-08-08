@@ -15,7 +15,7 @@ const centerStyles = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh",
+  height: "100%",
 };
 const Center = ({ children }) => {
   return (<div style={centerStyles}>{children}</div>);

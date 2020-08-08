@@ -130,6 +130,12 @@ const templateHash = {
     setColumns: `1fr ${widthXL}`,
     hasBorder: true,
   },
+  B_07: {
+    setTemplate: [
+      "\"A B\"",
+    ].join("\n"),
+    setColumns: `1fr ${widthLG}`,
+  },
   C_01: {
     setTemplate: [
       "\"A A A\"",
@@ -200,14 +206,15 @@ const templateHash = {
   },
   E_03: {
     setTemplate: [
-      "\". . . A A\"",
-      "\". . . . .\"",
-      "\". . . . .\"",
-      "\". . . . B\"",
+      "\"A A . . E\"",
+      "\". . . . E\"",
+      "\"B . . . .\"",
+      "\"C . . . .\"",
+      "\"D . . . .\"",
       "\". . . . .\"",
     ].join("\n"),
-    setColumns: "40% 1fr 1fr auto auto",
-    setRows: "auto auto 1fr auto 1rem",
+    setColumns: "auto 2fr 1fr 1fr auto",
+    setRows: "max-content max-content max-content max-content max-content 1fr",
   },
 };
 
