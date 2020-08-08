@@ -88,17 +88,6 @@ Tabs should **not** be used to display multiples of the same type. Avoid using t
           align: "left",
         }}
       />
-      <Bar
-        padding="2x"
-        left={{
-          content: (<Tabs>
-        <TabItem label="Building 1" isSelected/>
-        <TabItem label="Building 2" />
-        <TabItem label="Building 3" />
-      </Tabs>),
-          align: "left",
-        }}
-      />
     </React.Fragment>
   </Story>
 </Preview>
@@ -154,6 +143,12 @@ Tabs should **not** be used to display multiples of the same type. Avoid using t
         <TabItem label="In Progress" count="87" />
         <TabItem label="Completed" count="2" />
         <TabItem label="Returned" count="1" />
+      </Tabs>
+      <Tabs isFolder>
+        <TabItem  label="Not Started" isSelected/>
+        <TabItem  label="In Progress" />
+        <TabItem  label="Completed" />
+        <TabItem label="Returned" />
       </Tabs>
       </Grid>
   </Story>

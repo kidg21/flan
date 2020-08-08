@@ -19,7 +19,7 @@ export { default as Checkbox, CheckboxGroup } from "./atoms/Checkbox";
 export { default as Command } from "./atoms/Command";
 export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
-export { default as Field, FieldGroup } from "./atoms/Field";
+export { default as Field, FieldGroup, FieldSection } from "./atoms/Field";
 export { default as Icon } from "./atoms/Icon";
 export { default as Image } from "./atoms/Image";
 export { default as Loader } from "./atoms/Loader";
