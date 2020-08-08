@@ -276,13 +276,13 @@ storiesOf("Templates|Applications/Research/Property", module)
                               />
                               <FieldSection>
                                 <FieldGroup columns="1" title="Property">
-                                  <Field label="Parcel No." value="808-221-12" onClick />
-                                  <Field label="Land User" value="Commercial Shopping Center" />
-                                  <Field label="Building Area" value="25,344 SF" />
-                                  <Field label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
-                                  <Field label="Building/Lot" value="0.15" />
-                                  <Field label="No. of Units" value="" />
-                                  <Field label="Year Built" value="1978" />
+                                  <Field align="trial" label="Parcel No." value="808-221-12" onClick />
+                                  <Field align="trial" label="Land User" value="Commercial Shopping Center" />
+                                  <Field align="trial" label="Building Area" value="25,344 SF" />
+                                  <Field align="trial" label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
+                                  <Field align="trial" label="Building/Lot" value="0.15" />
+                                  <Field align="trial" label="No. of Units" value="" />
+                                  <Field align="trial" label="Year Built" value="1978" />
                                 </FieldGroup>
                                 <FieldGroup columns="1" title="Owners">
                                   <Field label="Owners" value="SCF-Los Alisos LLC" onClick />
