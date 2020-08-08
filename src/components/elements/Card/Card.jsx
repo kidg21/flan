@@ -456,7 +456,7 @@ Card.propTypes = {
 };
 Card.defaultProps = {
   badgeLabel: "",
-  body: "",
+  body: null,
   children: null,
   className: null,
   commands: null,
