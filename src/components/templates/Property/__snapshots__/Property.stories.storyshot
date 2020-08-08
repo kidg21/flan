@@ -442,21 +442,6 @@ exports[` 1`] = `
                 onClick={null}
               >
                 <section
-                  className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                  id="Card_Header-Body"
-                  onClick={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    
-                  </p>
-                </section>
-                <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
                   id={null}
                   onClick={null}
