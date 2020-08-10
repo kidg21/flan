@@ -232,7 +232,6 @@ storiesOf("Templates|Applications/Research/Property", module)
                               A={{
                                 id: "A",
                                 content: (
-                                  <Container width="4rem">
                                     <Card padding="2x">
                                       <ButtonGroup gap="3xl" columns="1">
                                         <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
@@ -241,10 +240,17 @@ storiesOf("Templates|Applications/Research/Property", module)
                                         <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
                                         <Button label="View" icon="map" isPlain size="sm" alignCenter />
                                         <Button label="Reset" icon="sync" isPlain size="sm" alignCenter />
+                                        <Menu  isFlex visible
+        data={[
+          { id: "save", label: "Save" },
+          { id: "filter", label: "Filter" },
+          { id: "share", label: "Share" },
+          { id: "delete", label: "Delete" },
+        ]}>
                                         <Button label="More" icon="more" isPlain size="sm" alignCenter />
+                                        </Menu>
                                       </ButtonGroup>
                                     </Card>
-                                  </Container>
                                 ),
                               }}
                             />
