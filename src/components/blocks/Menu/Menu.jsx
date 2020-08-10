@@ -237,7 +237,6 @@ Menu.defaultProps = {
   id: "",
   isFlex: false,
   onClose: null,
-  /** close menu when clicking outside of pop-out */
   closeOnClickAway: true,
   usePortal: false,
   position: "bottomRight",
@@ -340,8 +339,10 @@ const _Menu = (props) => {
     ? <StatefulMenu {...props} id={uId} /> : <Menu {...props} id={uId} />;
 };
 
+// _Menu proptype info will be displayed in storybook props table
 _Menu.defaultProps = {
   children: null,
+  closeOnClickAway: true,
   data: [],
   initVisible: false,
   id: "",
@@ -357,6 +358,8 @@ _Menu.defaultProps = {
 _Menu.propTypes = {
   /** custom anchor element */
   children: PropTypes.node,
+  /** close menu popper when clicking outside of it */
+  closeOnClickAway: PropTypes.bool,
   /** list of item objects in menu */
   data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
   /** menu id */
