@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 import { useState, useLayoutEffect } from "react";
 
 // support multiple zIndex arrays
