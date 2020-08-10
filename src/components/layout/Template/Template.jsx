@@ -27,6 +27,7 @@ const Region = styled.section`
   ${(props) => {
     // when it is overlay, we want the region (parent) to have no pointer-events
     // and the children to restore thier events
+    // allows for transparent space inbetween to work
     return !props.isOverlay ? "pointer-events: initial;" : ">* { pointer-events: auto; };";
   }}
 `;

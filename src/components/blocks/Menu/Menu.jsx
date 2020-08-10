@@ -284,7 +284,7 @@ const StatefulMenu = ({
   }, [onClose]);
 
   // default Menu button with onClick
-  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); //(<Button icon="options" onClick={toggleVisible} isPlain isRound />);
+  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible });
   if (anchor.length > 0) {
     if (anchor[0].type === React.Fragment) {
       // wraps click in div around both children
@@ -383,6 +383,7 @@ _Menu.propTypes = {
   visible: PropTypes.bool,
   /** width of the menu */
   width: PropTypes.string,
+  /** static zIndex */
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 

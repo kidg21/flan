@@ -5,14 +5,21 @@ function isOutsideRef(ref, target) {
   return ref && ref.current && !ref.current.contains(target);
 }
 
-const useOnClickOutside = (handler, enabled, ref, portalRef) => {
-  const _enabled = enabled && handler;
+/**
+ * Custom hook to notify when user clicks outside of a component
+ * @param {function} callback handler
+ * @param {boolean} enabled to enable event listener
+ * @param {object} ref primary React ref
+ * @param {object} portalRef (optional) secondary React ref since portal elements need a separate ref
+ */
+const useOnClickOutside = (callback, enabled, ref, portalRef) => {
+  const _enabled = enabled && callback;
   const listener = useCallback((evt) => {
-    // notify handler when event is outside of ref & outside of portal ref (if there is one)
+    // notify callback when event is outside of ref & outside of portal ref (if there is one)
     if (isOutsideRef(ref, evt.target) && (!portalRef || isOutsideRef(portalRef, evt.target))) {
-      handler(evt);
+      callback(evt);
     }
-  }, [ref, handler, portalRef]);
+  }, [ref, callback, portalRef]);
 
   useEffect(() => {
     if (_enabled) {

@@ -84,16 +84,29 @@ const Container = React.forwardRef(({
   hasBorder, children, className, visible, height, id, innerPadding, maxHeight, padding, width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "0";
-  // inner padding so that scroll bar is to the edge, copies card padding
+  // inner padding so that scroll bar is to the edge, copies card wrapper padding
   let _innerPadding = "";
   const containerPadding = innerPadding ? parseInt(innerPadding, 10) : 0;
-  if (containerPadding > 0 && containerPadding < 5) {
+  if (containerPadding >= 0 && containerPadding < 5) {
     _innerPadding = `${0.25 * containerPadding}em`;
   }
 
   return (
-    <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
-      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} hasBorder={hasBorder} ref={ref} innerPadding={_innerPadding}>
+    <Wrapper
+      setPadding={setPadding}
+      height={height}
+      width={width}
+      visible={visible}
+      className={className}
+    >
+      <BoxContainer
+        id={id}
+        height={height ? "100%" : ""}
+        maxHeight={maxHeight}
+        hasBorder={hasBorder}
+        ref={ref}
+        innerPadding={_innerPadding}
+      >
         {children}
       </BoxContainer>
     </Wrapper>

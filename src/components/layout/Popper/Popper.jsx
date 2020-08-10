@@ -5,7 +5,12 @@ import React, {
 } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { useId, useInterval, useOnClickOutside, useZIndex } from "utils/hooks";
+import {
+  useId,
+  useInterval,
+  useOnClickOutside,
+  useZIndex,
+} from "utils/hooks";
 import Portal from "utils/Portal";
 import { formatPixelValue } from "utils/format";
 
@@ -72,7 +77,10 @@ const PortalPopper = ({
   const _anchorRef = anchorRef || defaultAnchorRef;
   const popperRef = useRef();
   const [anchorBounds, setAnchorBounds] = useState({});
+  // need to pass in 2 refs, one for the anchor (button) element & one for pieces in the portal
   useOnClickOutside(onClose, (visible && closeOnClickAway), _anchorRef, popperRef);
+
+  // initial location of the anchor to open the popper
   useLayoutEffect(() => {
     if (visible && _anchorRef && _anchorRef.current) {
       // measure/get position of the anchor element
@@ -80,6 +88,8 @@ const PortalPopper = ({
     }
   }, [_anchorRef, _anchorRef.current, visible]);
 
+  // track location of the anchor to update the position of the popper
+  // enable tracking when visible & isTracking param is true
   useInterval(() => {
     if (_anchorRef && _anchorRef.current) {
       // measure/get position of the anchor element
@@ -98,6 +108,7 @@ const PortalPopper = ({
         }
       }
       if (!isEqual) {
+        // anchor moved, update popper location
         setAnchorBounds(currAnchorBounds);
       }
     }
@@ -196,16 +207,13 @@ const NonPortalPopper = ({
     <NonPortalWrapper id={id} isFlex={isFlex} ref={popperRef}>
       {anchor}
       {visible ? (
-        <React.Fragment>
-          <PopperWrapper
-            id={`popper-wrapper${id}`}
-            zIndex={zIndex}
-            {...positionStyle}
-          >
-            {children}
-          </PopperWrapper>
-          {/* {onClose && closeOnClickAway ? <PopperBG onClick={onClose} /> : null} */}
-        </React.Fragment>
+        <PopperWrapper
+          id={`popper-wrapper${id}`}
+          zIndex={zIndex}
+          {...positionStyle}
+        >
+          {children}
+        </PopperWrapper>
       ) : null}
     </NonPortalWrapper>
   );
@@ -302,7 +310,7 @@ Popper.propTypes = {
   trackingInterval: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   /** open/close state of popper */
   visible: PropTypes.bool,
-  /** to specify zIndex of pop-out wrapper, defaults to 500 */
+  /** to specify static zIndex of pop-out wrapper, defaults to 500 */
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 PortalPopper.propTypes = Popper.propTypes;
