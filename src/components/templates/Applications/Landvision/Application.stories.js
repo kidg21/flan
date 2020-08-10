@@ -12,7 +12,7 @@ import Container from "atoms/Container";
 import Command from "atoms/Command";
 import Template from "layout/Template";
 import Menu from "blocks/Menu";
-import SearchBar from "blocks/Search";
+import Search from "blocks/Search";
 import Tabs, { TabItem } from "blocks/Tabs";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
@@ -259,7 +259,7 @@ storiesOf("Templates|Applications/Research", module)
                                     ),
                                   }}
                                 />
-                                <MapBox map="satellite" />
+                                <Mapbox map="satellite" />
                               </Panel>
                             ),
                           }}
@@ -1020,7 +1020,7 @@ storiesOf("Templates|Applications/Research", module)
                                     ),
                                   }}
                                 />
-                                <MapBox map="satellite" />
+                                <Mapbox map="satellite" />
                               </Panel>
                             ),
                           }}
@@ -1207,7 +1207,7 @@ storiesOf("Templates|Applications/Research", module)
                                     ),
                                   }}
                                 />
-                                <MapBox map="satellite" />
+                                <Mapbox map="satellite" />
                               </Panel>
                             ),
                           }}

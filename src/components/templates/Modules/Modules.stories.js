@@ -21,6 +21,7 @@ import Menu from "blocks/Menu";
 import DialogBox from "elements/DialogBox";
 import Image from "atoms/Image";
 import Template from "layout/Template";
+import Search from "blocks/Search";
 import InputBlock from "blocks/InputBlock";
 import Tabs from "blocks/Tabs";
 import Form, { FormSection } from "layout/Form";
