@@ -213,7 +213,7 @@ const templateHash = {
 };
 
 function Template({
-  A, B, C, D, E, children, classname, hasCards, hasShadows, id, isOverlay, template, isBorder,
+  A, B, C, D, E, children, classname, hasCards, hasShadows, id, isOverlay, template, hasBorder,
 }) {
   let backgroundColor;
   let pointerEvents;
@@ -258,7 +258,7 @@ function Template({
     setPosition = "absolute";
     zIndex = "999";
   }
-  if (isBorder) {
+  if (hasBorder) {
     setBorder = "1px solid";
   }
 
@@ -378,7 +378,7 @@ Template.propTypes = {
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
-  isBorder: PropTypes.bool,
+  hasBorder: PropTypes.bool,
   hasCards: PropTypes.bool,
   hasShadows: PropTypes.bool,
   template: PropTypes.string,
@@ -393,7 +393,7 @@ Template.defaultProps = {
   E: null,
   id: null,
   isOverlay: false,
-  isBorder: false,
+  hasBorder: false,
   hasCards: false,
   hasShadows: false,
   template: null,
