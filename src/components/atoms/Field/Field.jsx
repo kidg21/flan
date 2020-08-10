@@ -91,7 +91,7 @@ function Field({
 
   switch (spacing) {
     case "1x":
-      fieldColumns = "1fr 2fr";
+      fieldColumns = "auto 1fr";
       break;
     case "2x":
       fieldColumns = "1fr 1fr";
