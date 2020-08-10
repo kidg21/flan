@@ -5,6 +5,7 @@ import { FullScreen } from "helpers/Display";
 import Panel from "layout/Panel";
 import Icon from "atoms/Icon";
 import Button from "atoms/Button";
+import Search from "blocks/Search";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
 import Template from "layout/Template";
