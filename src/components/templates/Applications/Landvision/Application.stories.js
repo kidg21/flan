@@ -8,14 +8,16 @@ import Loader from "atoms/Loader";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
 import Layout from "layout/Layout";
+import Container from "atoms/Container";
 import Command from "atoms/Command";
 import Template from "layout/Template";
+import Menu from "blocks/Menu";
+import SearchBar from "blocks/Search";
 import Tabs, { TabItem } from "blocks/Tabs";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
 import Form, { FormSection } from "layout/Form";
 import Divider from "atoms/Divider";
-import MapBox from "layout/Map";
 import TextInput from "atoms/TextInput";
 import Media from "atoms/Media";
 import Field, { FieldGroup } from "atoms/Field";
@@ -39,125 +41,6 @@ import {
 function doNothing() {
   // do nothing
 }
-
-// storiesOf("Templates|Applications/Appraisal/Project Details", module)
-//   .addDecorator(FullScreen)
-//   .add(
-//     "Overview",
-//     () => {
-//       return React.createElement(() => {
-//         const [leftOpen, setLeftOpen] = useState(true);
-//         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-//         const menuDetails = [
-//           {
-//             id: "Overview",
-//             title: "Overview",
-//             isSelected: true,
-//           },
-//           {
-//             id: "Define Site",
-//             title: "Define Site",
-//           },
-//           {
-//             id: "Assessment",
-//             title: "Assessment",
-//             disabled: true,
-//           },
-//           {
-//             id: "Transactions",
-//             title: "Transactions",
-//             disabled: true,
-//           },
-//           {
-//             id: "Zoning",
-//             title: "Zoning",
-//             disabled: true,
-//           },
-//           {
-//             id: "Maps",
-//             title: "Maps",
-//             disabled: true,
-//           },
-//           {
-//             id: "Review",
-//             title: "Review",
-//             disabled: true,
-//           },
-//           {
-//             id: "Export",
-//             title: "Export",
-//             disabled: true,
-//           },
-//         ];
-
-//         return (
-//           <Layout
-//             header={{
-//               id: "Header",
-//               content: <MockHeaderGlobal menuClick={toggleLeft} />,
-//             }}
-//             left={{
-//               id: "Left",
-//               content: <MockMenu />,
-//               visible: leftOpen,
-//             }}
-//             main={{
-//               id: "Main",
-//               content: (
-//                 <Panel
-//                   padding="0"
-//                   header={
-//                     <MockHeader />
-//                   }
-//                 >
-//                   <Template
-//                     id="Overview"
-//                     template="C_02"
-
-//                     A={{
-//                       id: "A",
-//                       content: (
-//                         <MockWorkflow
-//                           title="Project Menu"
-//                           data={menuDetails}
-//                         />
-//                       ),
-//                     }}
-//                     B={{
-//                       id: "B",
-//                       content: <MockTabs />,
-//                     }}
-//                     C={{
-//                       id: "C",
-//                       content: (
-//                         <Template
-//                           id="Details"
-//                           template="B_01"
-//                           A={{
-//                             id: "A",
-//                             content: <MockData />,
-//                           }}
-//                           B={{
-//                             id: "B",
-//                             content: (
-//                               <MockDetails
-//                                 footer={<Button label="View on Map" fullWidth />}
-//                               />
-//                             ),
-//                           }}
-//                         />
-//                       ),
-//                     }}
-//                   />
-//                 </Panel>
-//               ),
-//             }}
-//           />
-//         );
-//       });
-//     },
-//   );
 
 storiesOf("Templates|Applications/Research", module)
   .addDecorator(FullScreen)
@@ -418,25 +301,30 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -478,25 +366,30 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -537,25 +430,30 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -596,25 +494,30 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -655,25 +558,30 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -714,25 +622,30 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -773,25 +686,30 @@ storiesOf("Templates|Applications/Research", module)
                                             content: (
                                               <FieldGroup
                                                 id="Group1"
-                                                isDense
+                                                columns="1"
+                                                gap="xs"
                                               >
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
                                                   id="Field 1"
+                                                  isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
                                                   id="Field 3"
+                                                  isDense
                                                   label="Doc #"
                                                   value="837489274927"
                                                 />
@@ -810,7 +728,6 @@ storiesOf("Templates|Applications/Research", module)
                                       </Grid>
                                     )}
                                   />
-
                                 </Form>
                               </Panel>
                             ),
@@ -833,22 +750,6 @@ storiesOf("Templates|Applications/Research", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-        const tabsAssessment = [
-          {
-            id: "Parcel 1",
-            label: "Parcel 1",
-            isSelected: activeSingleTab === "tab1",
-            onClick: () => { setActiveSingleTab("tab1"); },
-          },
-          {
-            id: "Parcel 2",
-            label: "Parcel 2",
-            isSelected: activeSingleTab === "tab2",
-            onClick: () => { setActiveSingleTab("tab2"); },
-          },
-        ];
 
         const fieldData = [
           {
@@ -1190,8 +1091,6 @@ storiesOf("Templates|Applications/Research", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
         return (
           <Layout
             header={{
@@ -1357,60 +1256,6 @@ storiesOf("Templates|Applications/Research", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [sectionState, setSectionState] = useState(true);
-
-        // const reportSections = [
-        //   {
-        //     id: "Define Site",
-        //     label: "Define Site",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Data Extraction",
-        //     label: "Data Extraction",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Assessment Data",
-        //     label: "Assessment Data",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Zoning",
-        //     label: "Zoning",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Demographics",
-        //     label: "Demographics",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Maps",
-        //     label: "Maps",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        //   {
-        //     id: "Appendices",
-        //     label: "Appendices",
-        //     value: "Review",
-        //     onClick: () => { },
-        //     disabled: sectionState,
-        //   },
-        // ];
 
         const buttonLabelOne = (
           "Create Report"

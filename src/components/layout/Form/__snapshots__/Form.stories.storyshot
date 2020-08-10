@@ -56,14 +56,15 @@ exports[` 1`] = `
       <section
         className="Form__Section-v2wrel-0 XxWIM"
       >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+          fontSize="0.875rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.25px"
         >
           Group 1
-        </h6>
+        </p>
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
@@ -160,14 +161,15 @@ exports[` 1`] = `
       <section
         className="Form__Section-v2wrel-0 XxWIM"
       >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+          fontSize="0.875rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.25px"
         >
           Group 2
-        </h6>
+        </p>
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}
@@ -495,14 +497,15 @@ exports[` 1`] = `
       <section
         className="Form__Section-v2wrel-0 XxWIM"
       >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+          fontSize="0.875rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.25px"
         >
           Group 3
-        </h6>
+        </p>
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
           id={null}

@@ -134,6 +134,12 @@ const templateHash = {
     setColumns: `1fr ${widthXL}`,
     hasBorder: true,
   },
+  B_07: {
+    setTemplate: [
+      "\"A B\"",
+    ].join("\n"),
+    setColumns: `1fr ${widthLG}`,
+  },
   C_01: {
     setTemplate: [
       "\"A A A\"",

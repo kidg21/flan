@@ -21,6 +21,9 @@ const Wrapper = styled.div`
 const BoxContainer = styled.div`
   overflow-y: auto;
   overflow-x: auto;
+  background-color: ${(props) => {
+    return props.theme.background.default;
+  }};
   max-height: ${(props) => {
     return props.maxHeight || "";
   }};
