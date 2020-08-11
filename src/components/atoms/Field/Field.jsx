@@ -37,6 +37,9 @@ const FieldLabel = styled(Label)`
   color: ${(props) => {
     return props.theme.text[props.labelColor] || "inherit";
   }};
+  width: ${(props) => {
+    return props.labelWidth;
+  }};
   cursor: initial;
   user-select: initial;
 `;
@@ -47,6 +50,9 @@ const FieldValue = styled(Text)`
   }};
   color: ${(props) => {
     return props.theme.text[props.valueColor] || "inherit";
+  }};
+  width: ${(props) => {
+    return props.valuelWidth;
   }};
   /* Default Value - displays when a Field's value is empty */
   &:empty {
@@ -71,11 +77,20 @@ const Section = styled.section`
 `;
 
 function Field({
-  align, className, disabled, id, label, onChange, onClick, value, spacing,
+  align, className, disabled, id, label, onChange, onClick, value, labelWidth, valueWidth,
 }) {
   let fieldColumns;
   let fieldGap;
   let valueAlign;
+
+  let labelSpacing = parseInt(labelWidth, 10);
+  if (isNaN(labelSpacing)) labelSpacing = "auto";
+  else labelSpacing += "fr";
+
+  let valueSpacing = parseInt(valueWidth, 10);
+  if (isNaN(valueSpacing)) valueSpacing = "auto";
+  else valueSpacing += "fr";
+
   switch (align) {
     case "vertical":
       fieldColumns = "repeat(1, minmax(0, 1fr))";
@@ -86,17 +101,7 @@ function Field({
       valueAlign = "right";
       break;
     default:
-      break;
-  }
-
-  switch (spacing) {
-    case "1x":
-      fieldColumns = "auto 1fr";
-      break;
-    case "2x":
-      fieldColumns = "1fr 1fr";
-      break;
-    default:
+      fieldColumns = `${labelSpacing} ${valueSpacing}`;
       break;
   }
 
@@ -134,7 +139,8 @@ function Field({
 
 Field.propTypes = {
   align: PropTypes.oneOf(["vertical", "edge", "tight"]),
-  spacing: PropTypes.oneOf(["1x", "2x"]),
+  labelWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
+  valueWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
@@ -147,7 +153,8 @@ Field.propTypes = {
 
 Field.defaultProps = {
   align: null,
-  spacing: null,
+  labelWidth: "1x",
+  valueWidth: "1x",
   className: null,
   disabled: false,
   id: null,

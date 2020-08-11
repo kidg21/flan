@@ -75,21 +75,23 @@ import fieldData from "atoms/Field/Field.data.js";
   <Story name="Spacing">
     <Grid columns="2">
       <FieldGroup
-      align="trial"
         id="Group 1"
-        title="Spacing (Default 2x)"
+        title="Auto"
       >
         <Field
+          labelWidth="auto"
           id="Field 1"
           label="Field 1"
           value="Value"
         />
         <Field
+          labelWidth="auto"
           id="Field 2"
           label="Field 2"
           value="Value Goes Here"
         />
         <Field
+          labelWidth="auto"
           id="Field 3"
           label="Field 3"
           value="Go"
@@ -97,22 +99,68 @@ import fieldData from "atoms/Field/Field.data.js";
       </FieldGroup>
        <FieldGroup
         id="Group 1"
-        title="Spacing 1x"
+        title="1x (Default)"
       >
         <Field
-        spacing="1x"
+          labelWidth="1x"
           id="Field 1"
           label="Field 1"
           value="Value"
         />
         <Field
-        spacing="1x"
+          labelWidth="1x"
           id="Field 2"
           label="Field 2"
           value="Value Goes Here"
         />
         <Field
-        spacing="1x"
+          labelWidth="1x"
+          id="Field 3"
+          label="Field 3"
+          value="Go"
+        />
+      </FieldGroup>
+       <FieldGroup
+        id="Group 1"
+        title="2x"
+      >
+        <Field
+          labelWidth="2x"
+          id="Field 1"
+          label="Field 1"
+          value="Value"
+        />
+        <Field
+          labelWidth="2x"
+          id="Field 2"
+          label="Field 2"
+          value="Value Goes Here"
+        />
+        <Field
+          labelWidth="2x"
+          id="Field 3"
+          label="Field 3"
+          value="Go"
+        />
+      </FieldGroup>
+       <FieldGroup
+        id="Group 1"
+        title="3x"
+      >
+        <Field
+          labelWidth="3x"
+          id="Field 1"
+          label="Field 1"
+          value="Value"
+        />
+        <Field
+          labelWidth="3x"
+          id="Field 2"
+          label="Field 2"
+          value="Value Goes Here"
+        />
+        <Field
+          labelWidth="3x"
           id="Field 3"
           label="Field 3"
           value="Go"

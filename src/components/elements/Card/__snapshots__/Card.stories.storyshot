@@ -231,23 +231,7 @@ exports[` 2`] = `
     id="storyshots_169"
     media=""
     onClick={null}
-  >
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_169-Body"
-      onClick={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-        fontSize="1rem"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.5px"
-      >
-        
-      </p>
-    </section>
-  </div>
+  />
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
@@ -287,21 +271,6 @@ exports[` 2`] = `
           </p>
         </div>
       </div>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_170-Body"
-      onClick={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-        fontSize="1rem"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.5px"
-      >
-        
-      </p>
     </section>
   </div>
   <div

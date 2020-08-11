@@ -12,6 +12,7 @@ import Container from "atoms/Container";
 import Command from "atoms/Command";
 import Template from "layout/Template";
 import Menu from "blocks/Menu";
+import Search from "blocks/Search";
 import Tabs, { TabItem } from "blocks/Tabs";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
