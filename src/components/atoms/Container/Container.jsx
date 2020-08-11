@@ -33,9 +33,6 @@ const BoxContainer = styled.div`
   width: ${(props) => {
     return props.width || "";
   }};
-  padding: ${(props) => {
-    return props.innerPadding || "";
-  }};
   border: ${(props) => {
     return props.hasBorder ? "1px solid" : "";
   }};
@@ -81,32 +78,12 @@ const paddingHash = {
 };
 
 const Container = React.forwardRef(({
-  hasBorder, children, className, visible, height, id, innerPadding, maxHeight, padding, width,
+  hasBorder, children, className, visible, height, id, maxHeight, padding, width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "0";
-  // inner padding so that scroll bar is to the edge, copies card wrapper padding
-  let _innerPadding = "";
-  const containerPadding = innerPadding ? parseInt(innerPadding, 10) : 0;
-  if (containerPadding >= 0 && containerPadding < 5) {
-    _innerPadding = `${0.25 * containerPadding}em`;
-  }
-
   return (
-    <Wrapper
-      setPadding={setPadding}
-      height={height}
-      width={width}
-      visible={visible}
-      className={className}
-    >
-      <BoxContainer
-        id={id}
-        height={height ? "100%" : ""}
-        maxHeight={maxHeight}
-        hasBorder={hasBorder}
-        ref={ref}
-        innerPadding={_innerPadding}
-      >
+    <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
+      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} hasBorder={hasBorder} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -120,9 +97,8 @@ Container.propTypes = {
   className: PropTypes.string,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
-  innerPadding: PropTypes.oneOf(["", "0", "1x", "2x", "3x", "4x"]),
   maxHeight: PropTypes.string,
-  padding: PropTypes.oneOf(["", "0", "1x", "2x", "3x"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
@@ -133,7 +109,6 @@ Container.defaultProps = {
   className: null,
   height: null,
   id: null,
-  innerPadding: null,
   maxHeight: null,
   padding: null,
   width: null,

@@ -242,7 +242,7 @@ CardSection.propTypes = {
   id: PropTypes.string,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  variant: PropTypes.oneOf(["", "disabled", "info", "success", "warning", "alert", "light"]),
+  variant: PropTypes.oneOf(["", "info", "success", "warning", "alert", "light"]),
 };
 CardSection.defaultProps = {
   children: null,

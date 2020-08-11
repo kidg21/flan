@@ -15,7 +15,7 @@ const useZIndex = (id, staticZIndex, initZIndex = 0, enabled) => {
   const [currZIndex, setCurrZIndex] = useState("");
   const _staticZIndex = parseInt(staticZIndex, 10);
   // didn't pass in static zIndex, assign zIndex
-  const useZIndexManagement = isNaN(_staticZIndex) && _staticZIndex !== "";
+  const useZIndexManagement = isNaN(_staticZIndex);
   // create indexArr of new id in index hash
   if (useZIndexManagement && !indexHash[id]) {
     indexHash[id] = [];
