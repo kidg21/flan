@@ -15,7 +15,8 @@
     "update-storyshots": "jest \"-u\" storyshots.test.js",
     "test-coverage": "nyc npm run test",
     "push-coverage": "codacy-coverage --token ca0a1dcce45a40e8bd8fe18863b5c017",
-    "testWithCoverage": "npm run test-coverage | npm run push-coverage"
+    "testWithCoverage": "npm run test-coverage | npm run push-coverage",
+    "prepublishOnly": "npm run build"
   },
   "nyc": {
     "extension": [
