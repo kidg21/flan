@@ -7,7 +7,8 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+    cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
     htmlFor={null}
@@ -138,7 +139,8 @@ exports[` 2`] = `
     Text XS
   </p>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+    className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+    cursor="pointer"
     fontSize="0.75em"
     fontWeight={400}
     htmlFor={null}
@@ -147,7 +149,8 @@ exports[` 2`] = `
     Label XS
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+    className="Typography__StyledLabel-sc-19auepv-0 gskrvt"
+    cursor="pointer"
     fontSize="0.8rem"
     fontWeight={400}
     htmlFor={null}
@@ -156,7 +159,8 @@ exports[` 2`] = `
     Label SM
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+    cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
     htmlFor={null}
@@ -165,7 +169,8 @@ exports[` 2`] = `
     Label Regular
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+    cursor="pointer"
     fontSize="1rem"
     fontWeight={400}
     htmlFor={null}
@@ -299,7 +304,8 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 kqrMZT"
+      className="Typography__StyledLabel-sc-19auepv-0 hFVBVU"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={300}
       htmlFor={null}
@@ -308,7 +314,8 @@ exports[` 3`] = `
       Light Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
       htmlFor={null}
@@ -317,7 +324,8 @@ exports[` 3`] = `
       Regular Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
+      className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+      cursor="pointer"
       fontSize="0.875rem"
       fontWeight={600}
       htmlFor={null}

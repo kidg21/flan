@@ -31,7 +31,7 @@ Click on the 'Search' icon to show Results
 
 <Story
   name="Interaction"
-  parameters={{ decorators: [Container] }}
+  decorators={[Container]}
 >
   {stories.Interaction()}
 </Story>
@@ -47,7 +47,7 @@ The Search component is a set of expandable panels for showing and hiding conten
 <Preview>
   <Story
     name="Suggestions"
-    parameters={{ decorators: [Container] }}
+    decorators={[Container]}
   >
     <Search
       id="Suggestions"
@@ -73,7 +73,7 @@ The Search component is a set of expandable panels for showing and hiding conten
 <Preview>
   <Story
     name="Suggestions ( max )"
-    parameters={{ decorators: [ContainerLarge] }}
+    decorators={[Container]}
   >
     <Search
       id="Suggestions_More"
@@ -143,13 +143,13 @@ The Search component is a set of expandable panels for showing and hiding conten
 ### Errors
 
 <Preview>
-  <Story name="Offline" parameters={{ decorators: [ContainerSmall] }}>
+  <Story name="Offline" decorators={[ContainerSmall]}>
     <Search id="Search_Offline" placeholder="Search Location" error="offline" />
   </Story>
 </Preview>
 
 <Preview>
-  <Story name="Connection" parameters={{ decorators: [ContainerSmall] }}>
+  <Story name="Connection" decorators={[ContainerSmall]}>
     <Search id="Search_BadConnection" placeholder="Search Location" error="connection" />
   </Story>
 </Preview>

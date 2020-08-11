@@ -6,7 +6,7 @@ import Bar from "layout/Bar";
 import Card, { CardGrid } from "elements/Card";
 import Panel from "layout/Panel";
 import Title from "base/Typography";
-import SearchBar from "blocks/Search";
+import Search from "blocks/Search";
 
 storiesOf("Layout|Panel", module)
   .addDecorator(FullScreen)

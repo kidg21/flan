@@ -61,7 +61,8 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -107,7 +108,8 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -153,7 +155,8 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -199,7 +202,8 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -245,7 +249,8 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -269,7 +274,7 @@ exports[` 1`] = `
         rows={null}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Map Legend"
           media=""
@@ -329,7 +334,8 @@ exports[` 1`] = `
                   title="Close"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -343,7 +349,7 @@ exports[` 1`] = `
           </section>
         </div>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Data Layers"
           media=""
@@ -403,7 +409,8 @@ exports[` 1`] = `
                   title="Close"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -422,7 +429,8 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+            className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+            cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
             htmlFor={null}
@@ -515,7 +523,7 @@ exports[` 1`] = `
           </section>
         </section>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Drawing Tools"
           media=""
@@ -575,7 +583,8 @@ exports[` 1`] = `
                   title="Close"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -602,44 +611,50 @@ exports[` 1`] = `
         rows={null}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cYTQus Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kCyvOL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_101"
+          id="storyshots_84"
           media=""
           onClick={null}
         >
           <img
+            alt="Map Streets"
             className="Image__ImageWrapper-sc-18abvff-0 bPzCqv"
             onClick={[Function]}
             src=""
+            title="Map Streets"
             width="75"
           />
         </div>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cYTQus Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kCyvOL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_102"
+          id="storyshots_85"
           media=""
           onClick={null}
         >
           <img
+            alt="Map Satellite"
             className="Image__ImageWrapper-sc-18abvff-0 bPzCqv"
             onClick={[Function]}
             src=""
+            title="Map Satellite"
             width="75"
           />
         </div>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 cYTQus Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kCyvOL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_103"
+          id="storyshots_86"
           media=""
           onClick={null}
         >
           <img
+            alt="Map Hybrid"
             className="Image__ImageWrapper-sc-18abvff-0 bPzCqv"
             onClick={[Function]}
             src=""
+            title="Map Hybrid"
             width="75"
           />
         </div>
@@ -698,14 +713,14 @@ exports[` 2`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_104"
+            id="menu-popper-storyshots_87"
           >
             <button
               className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_104"
-              name="menu-icon-storyshots_104"
+              id="menu-icon-storyshots_87"
+              name="menu-icon-storyshots_87"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -755,19 +770,19 @@ exports[` 2`] = `
         open={true}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_105"
+          id="storyshots_88"
           media=""
           onClick={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_106"
+            id="storyshots_89"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_106-table"
+              id="storyshots_89-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
@@ -1093,19 +1108,19 @@ exports[` 2`] = `
         open={false}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_107"
+          id="storyshots_90"
           media=""
           onClick={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_108"
+            id="storyshots_91"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_108-table"
+              id="storyshots_91-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
@@ -1431,19 +1446,19 @@ exports[` 2`] = `
         open={false}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_109"
+          id="storyshots_92"
           media=""
           onClick={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_110"
+            id="storyshots_93"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_110-table"
+              id="storyshots_93-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
@@ -1769,19 +1784,19 @@ exports[` 2`] = `
         open={false}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_111"
+          id="storyshots_94"
           media=""
           onClick={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id="storyshots_112"
+            id="storyshots_95"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 bECvSG"
-              id="storyshots_112-table"
+              id="storyshots_95-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5 kHKUyy"
@@ -2112,28 +2127,28 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jzXgvp Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 iSaTnl Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 ljtwSq Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
         height="20rem"
         id={null}
         overflow={null}
         width="100%"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 eIlLKd Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
           height={null}
           id={null}
           overflow={null}
@@ -2219,7 +2234,7 @@ exports[` 3`] = `
                 id={null}
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
+                  className="Button__StyledButton-sc-1v7sls2-0 cdjJof Tabs__TabButton-sc-1aqycph-0 dlQYYB"
                   disabled={false}
                   htmlFor={null}
                   id="Records"
@@ -2234,7 +2249,8 @@ exports[` 3`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                      cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
                       htmlFor={null}
@@ -2246,9 +2262,11 @@ exports[` 3`] = `
                       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
                       id={null}
                       label="2"
+                      onClick={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                        cursor="default"
                         fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
@@ -2260,7 +2278,7 @@ exports[` 3`] = `
                   </section>
                 </button>
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+                  className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
                   disabled={false}
                   htmlFor={null}
                   id="Attachments"
@@ -2275,7 +2293,8 @@ exports[` 3`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                      cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
                       htmlFor={null}
@@ -2287,9 +2306,11 @@ exports[` 3`] = `
                       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
                       id={null}
                       label="3"
+                      onClick={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+                        cursor="default"
                         fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
@@ -2312,7 +2333,7 @@ exports[` 3`] = `
                 rows={null}
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                   href={null}
                   id="1"
                   media=""
@@ -2376,7 +2397,8 @@ exports[` 3`] = `
                           title="View/Edit"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor={null}
@@ -2390,7 +2412,7 @@ exports[` 3`] = `
                   </section>
                 </div>
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 effjcg Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                   href={null}
                   id="2"
                   media=""
@@ -2454,7 +2476,8 @@ exports[` 3`] = `
                           title="View/Edit"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 dzdXfA Command__CommandName-sc-13akgtp-1 euPYCY"
+                            className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                            cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor={null}
@@ -2481,7 +2504,7 @@ exports[` 3`] = `
               id="Menu 2_header"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Menu_2_Header"
                 media=""
@@ -2552,7 +2575,8 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                          cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
@@ -2595,7 +2619,8 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                          cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
@@ -2638,7 +2663,8 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                          className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                          cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
@@ -2691,7 +2717,8 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+                          className="Typography__StyledLabel-sc-19auepv-0 gskrvt"
+                          cursor="pointer"
                           fontSize="0.8rem"
                           fontWeight={400}
                           htmlFor={null}
@@ -2727,7 +2754,8 @@ exports[` 3`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="box-1"
@@ -2751,7 +2779,8 @@ exports[` 3`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="box-2"
@@ -2774,7 +2803,8 @@ exports[` 3`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="box-3"
@@ -2797,7 +2827,8 @@ exports[` 3`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="box-4"
@@ -2832,7 +2863,8 @@ exports[` 3`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="box_long"
@@ -2855,7 +2887,8 @@ exports[` 3`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="box_long2"
@@ -2872,7 +2905,8 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                          className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                          cursor="pointer"
                           fontSize="0.75em"
                           fontWeight={400}
                           htmlFor={null}
@@ -3010,7 +3044,8 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 goVvHa"
+                          className="Typography__StyledLabel-sc-19auepv-0 gskrvt"
+                          cursor="pointer"
                           fontSize="0.8rem"
                           fontWeight={400}
                           htmlFor={null}
@@ -3048,7 +3083,8 @@ exports[` 3`] = `
                               value="1"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio-1"
@@ -3074,7 +3110,8 @@ exports[` 3`] = `
                               value="2"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio-2"
@@ -3099,7 +3136,8 @@ exports[` 3`] = `
                               value="3"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio-3"
@@ -3124,7 +3162,8 @@ exports[` 3`] = `
                               value="4"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio-4"
@@ -3161,7 +3200,8 @@ exports[` 3`] = `
                               value="5"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio_long"
@@ -3186,7 +3226,8 @@ exports[` 3`] = `
                               value="6"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                              cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio_long2"
@@ -3207,7 +3248,7 @@ exports[` 3`] = `
               id="Menu 2_footer"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 jiAJLX Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Menu_2_Footer"
                 media=""
@@ -3239,7 +3280,8 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                          className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                          cursor="pointer"
                           fontSize="1rem"
                           fontWeight={400}
                           htmlFor={null}
@@ -3265,7 +3307,8 @@ exports[` 3`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+                          className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                          cursor="pointer"
                           fontSize="1rem"
                           fontWeight={400}
                           htmlFor={null}
@@ -3296,15 +3339,15 @@ exports[` 4`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_113"
+    id="storyshots_96"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_113-Header"
+      id="storyshots_96-Header"
       onClick={null}
     >
       <div
@@ -3348,11 +3391,12 @@ exports[` 4`] = `
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_114_container"
+              id="storyshots_97_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -3365,9 +3409,9 @@ exports[` 4`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_114"
+                id="storyshots_97"
                 list={null}
-                name="storyshots_114"
+                name="storyshots_97"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -3382,11 +3426,12 @@ exports[` 4`] = `
             </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_115_container"
+              id="storyshots_98_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -3399,9 +3444,9 @@ exports[` 4`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_115"
+                id="storyshots_98"
                 list={null}
-                name="storyshots_115"
+                name="storyshots_98"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -3421,14 +3466,15 @@ exports[` 4`] = `
         <section
           className="Form__Section-v2wrel-0 XxWIM"
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+            fontSize="0.875rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.25px"
           >
             Property Info
-          </h6>
+          </p>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
             id={null}
@@ -3436,11 +3482,12 @@ exports[` 4`] = `
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_116_container"
+              id="storyshots_99_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -3453,9 +3500,9 @@ exports[` 4`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_116"
+                id="storyshots_99"
                 list={null}
-                name="storyshots_116"
+                name="storyshots_99"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -3469,11 +3516,12 @@ exports[` 4`] = `
             </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_117_container"
+              id="storyshots_100_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -3486,9 +3534,9 @@ exports[` 4`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_117"
+                id="storyshots_100"
                 list={null}
-                name="storyshots_117"
+                name="storyshots_100"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -3506,7 +3554,8 @@ exports[` 4`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
@@ -3621,11 +3670,12 @@ exports[` 4`] = `
             </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_118_container"
+              id="storyshots_101_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -3638,9 +3688,9 @@ exports[` 4`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_118"
+                id="storyshots_101"
                 list={null}
-                name="storyshots_118"
+                name="storyshots_101"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -3658,7 +3708,8 @@ exports[` 4`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
@@ -3775,7 +3826,8 @@ exports[` 4`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
@@ -3916,7 +3968,8 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -3942,7 +3995,8 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -3967,9 +4021,9 @@ exports[` 5`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_119"
+    id="storyshots_102"
     media=""
     onClick={null}
   >
@@ -4030,7 +4084,8 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -4105,7 +4160,8 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -4168,7 +4224,8 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -4209,7 +4266,8 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -4235,7 +4293,8 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -4260,15 +4319,15 @@ exports[` 6`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_120"
+    id="storyshots_103"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_120-Header"
+      id="storyshots_103-Header"
       onClick={null}
     >
       <div
@@ -4296,7 +4355,7 @@ exports[` 6`] = `
       id={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
+        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Tabs__TabButton-sc-1aqycph-0 dlQYYB"
         disabled={false}
         htmlFor={null}
         id="RFPs"
@@ -4311,7 +4370,8 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -4322,7 +4382,7 @@ exports[` 6`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="Bid"
@@ -4337,7 +4397,8 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -4348,7 +4409,7 @@ exports[` 6`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="Complete"
@@ -4363,7 +4424,8 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -4396,11 +4458,12 @@ exports[` 6`] = `
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_121_container"
+              id="storyshots_104_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -4413,9 +4476,9 @@ exports[` 6`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_121"
+                id="storyshots_104"
                 list={null}
-                name="storyshots_121"
+                name="storyshots_104"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -4430,11 +4493,12 @@ exports[` 6`] = `
             </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_122_container"
+              id="storyshots_105_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -4447,9 +4511,9 @@ exports[` 6`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_122"
+                id="storyshots_105"
                 list={null}
-                name="storyshots_122"
+                name="storyshots_105"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -4469,14 +4533,15 @@ exports[` 6`] = `
         <section
           className="Form__Section-v2wrel-0 XxWIM"
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+            fontSize="0.875rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.25px"
           >
             Property Info
-          </h6>
+          </p>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
             id={null}
@@ -4484,11 +4549,12 @@ exports[` 6`] = `
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_123_container"
+              id="storyshots_106_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -4501,9 +4567,9 @@ exports[` 6`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_123"
+                id="storyshots_106"
                 list={null}
-                name="storyshots_123"
+                name="storyshots_106"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -4517,11 +4583,12 @@ exports[` 6`] = `
             </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_124_container"
+              id="storyshots_107_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -4534,9 +4601,9 @@ exports[` 6`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_124"
+                id="storyshots_107"
                 list={null}
-                name="storyshots_124"
+                name="storyshots_107"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -4554,7 +4621,8 @@ exports[` 6`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
@@ -4669,11 +4737,12 @@ exports[` 6`] = `
             </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_125_container"
+              id="storyshots_108_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
@@ -4686,9 +4755,9 @@ exports[` 6`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_125"
+                id="storyshots_108"
                 list={null}
-                name="storyshots_125"
+                name="storyshots_108"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -4706,7 +4775,8 @@ exports[` 6`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
@@ -4823,7 +4893,8 @@ exports[` 6`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
@@ -4964,7 +5035,8 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -4990,7 +5062,8 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -5015,15 +5088,15 @@ exports[` 7`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_126"
+    id="storyshots_109"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_126-Header"
+      id="storyshots_109-Header"
       onClick={null}
     >
       <div
@@ -5051,7 +5124,7 @@ exports[` 7`] = `
       id={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="RFPs"
@@ -5066,7 +5139,8 @@ exports[` 7`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -5077,7 +5151,7 @@ exports[` 7`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
+        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Tabs__TabButton-sc-1aqycph-0 dlQYYB"
         disabled={false}
         htmlFor={null}
         id="Bid"
@@ -5092,7 +5166,8 @@ exports[` 7`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -5103,7 +5178,7 @@ exports[` 7`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="Complete"
@@ -5118,7 +5193,8 @@ exports[` 7`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -5150,14 +5226,15 @@ exports[` 7`] = `
             <section
               className="Form__Section-v2wrel-0 XxWIM"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-                fontSize="1.2rem"
-                fontWeight="400"
-                letterSpacing="1px"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+                fontSize="0.875rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.25px"
               >
                 Client Details
-              </h6>
+              </p>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
                 id={null}
@@ -5165,11 +5242,12 @@ exports[` 7`] = `
               >
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_127_container"
+                  id="storyshots_110_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5182,9 +5260,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_127"
+                    id="storyshots_110"
                     list={null}
-                    name="storyshots_127"
+                    name="storyshots_110"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5199,11 +5277,12 @@ exports[` 7`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_128_container"
+                  id="storyshots_111_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5216,9 +5295,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_128"
+                    id="storyshots_111"
                     list={null}
-                    name="storyshots_128"
+                    name="storyshots_111"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5232,11 +5311,12 @@ exports[` 7`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_129_container"
+                  id="storyshots_112_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5249,9 +5329,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_129"
+                    id="storyshots_112"
                     list={null}
-                    name="storyshots_129"
+                    name="storyshots_112"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5265,11 +5345,12 @@ exports[` 7`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_130_container"
+                  id="storyshots_113_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5282,9 +5363,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_130"
+                    id="storyshots_113"
                     list={null}
-                    name="storyshots_130"
+                    name="storyshots_113"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5312,7 +5393,8 @@ exports[` 7`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                    className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                    cursor="pointer"
                     fontSize="0.75em"
                     fontWeight={400}
                     htmlFor={null}
@@ -5427,11 +5509,12 @@ exports[` 7`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_131_container"
+                  id="storyshots_114_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5444,9 +5527,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_131"
+                    id="storyshots_114"
                     list={null}
-                    name="storyshots_131"
+                    name="storyshots_114"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5465,14 +5548,15 @@ exports[` 7`] = `
             <section
               className="Form__Section-v2wrel-0 XxWIM"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 iYDwFP Form__TitleSection-v2wrel-3 jMNcoX"
-                fontSize="1.2rem"
-                fontWeight="400"
-                letterSpacing="1px"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+                fontSize="0.875rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.25px"
               >
                 Bid Details
-              </h6>
+              </p>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
                 id={null}
@@ -5480,11 +5564,12 @@ exports[` 7`] = `
               >
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_132_container"
+                  id="storyshots_115_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5497,9 +5582,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_132"
+                    id="storyshots_115"
                     list={null}
-                    name="storyshots_132"
+                    name="storyshots_115"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5518,7 +5603,8 @@ exports[` 7`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eKrCzl"
+                    className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+                    cursor="pointer"
                     fontSize="0.75em"
                     fontWeight={400}
                     htmlFor={null}
@@ -5669,11 +5755,12 @@ exports[` 7`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_133_container"
+                  id="storyshots_116_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5686,9 +5773,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_133"
+                    id="storyshots_116"
                     list={null}
-                    name="storyshots_133"
+                    name="storyshots_116"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5702,11 +5789,12 @@ exports[` 7`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_134_container"
+                  id="storyshots_117_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5719,9 +5807,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_134"
+                    id="storyshots_117"
                     list={null}
-                    name="storyshots_134"
+                    name="storyshots_117"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5735,11 +5823,12 @@ exports[` 7`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_135_container"
+                  id="storyshots_118_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                    cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
@@ -5752,9 +5841,9 @@ exports[` 7`] = `
                     className="TextInput__Input-sc-1fep8p8-2 iqyrro"
                     cols=""
                     disabled={false}
-                    id="storyshots_135"
+                    id="storyshots_118"
                     list={null}
-                    name="storyshots_135"
+                    name="storyshots_118"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -5798,7 +5887,8 @@ exports[` 7`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -5824,7 +5914,8 @@ exports[` 7`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -5849,15 +5940,15 @@ exports[` 8`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 iFfkoU Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_136"
+    id="storyshots_119"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_136-Header"
+      id="storyshots_119-Header"
       onClick={null}
     >
       <div
@@ -5885,7 +5976,7 @@ exports[` 8`] = `
       id={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="RFPs"
@@ -5900,7 +5991,8 @@ exports[` 8`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -5911,7 +6003,7 @@ exports[` 8`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 kUuvAb"
+        className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="Bid"
@@ -5926,7 +6018,8 @@ exports[` 8`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -5937,7 +6030,7 @@ exports[` 8`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 ljVVQ Tabs__TabButton-sc-1aqycph-0 jkuVpT"
+        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Tabs__TabButton-sc-1aqycph-0 dlQYYB"
         disabled={false}
         htmlFor={null}
         id="Complete"
@@ -5952,7 +6045,8 @@ exports[` 8`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
@@ -6020,7 +6114,8 @@ exports[` 8`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -6058,7 +6153,8 @@ exports[` 8`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -6084,7 +6180,8 @@ exports[` 8`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
               htmlFor={null}
@@ -6096,6 +6193,237 @@ exports[` 8`] = `
         </button>
       </section>
     </section>
+  </div>
+</div>
+`;
+
+exports[` 9`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Popper__NonPortalWrapper-sc-1t9125t-1 fePbDW"
+    id="storyshots_120"
+  >
+    <div
+      className="Avatar__TagContainer-sc-1vuf9om-2 jAjgCj"
+      id={null}
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 dEYqai"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        JD
+      </p>
+    </div>
+    <div
+      className="Popper__PopperWrapper-sc-1t9125t-2 ieZvdA"
+      id="popper-wrapperstoryshots_120"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        href={null}
+        id="storyshots_121"
+        media=""
+        onClick={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ"
+          id={null}
+          rows={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 koRqOO"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 dLaZFL"
+            >
+              <div
+                className="Avatar__TagContainer-sc-1vuf9om-2 kmEojp"
+                id={null}
+                onClick={null}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 bswATt"
+                  fontSize="1rem"
+                  fontWeight={500}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  JD
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="Bar__BarLayout-icfo76-2 jGhkbe"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 dLaZFL"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+                  fontSize="1.15rem"
+                  fontWeight="500"
+                  letterSpacing="0.4px"
+                >
+                  Jane Doe
+                </h5>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  janedoe@gmail.com
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Organization
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Job Title
+                </p>
+              </section>
+            </div>
+          </div>
+          <div
+            className="Bar__BarLayout-icfo76-2 jEWtiX"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 dLaZFL"
+            >
+              <a
+                className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                id={null}
+                label="Manage my Profile"
+                onClick={null}
+                title="Manage my Profile"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+                  color={null}
+                  data-icon="edit"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Manage my Profile
+                </label>
+              </a>
+            </div>
+          </div>
+          <div
+            className="Bar__BarLayout-icfo76-2 jEWtiX"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 dLaZFL"
+            >
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                  id={null}
+                  rows={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-sign-out fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="sign-out"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M96 64h84c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H96c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h84c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H96c-53 0-96-43-96-96V160c0-53 43-96 96-96zm231.1 19.5l-19.6 19.6c-4.8 4.8-4.7 12.5.2 17.1L420.8 230H172c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h248.8L307.7 391.7c-4.8 4.7-4.9 12.4-.2 17.1l19.6 19.6c4.7 4.7 12.3 4.7 17 0l164.4-164c4.7-4.7 4.7-12.3 0-17l-164.4-164c-4.7-4.6-12.3-4.6-17 .1z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Sign Out
+                  </label>
+                </section>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </div>
 </div>
 `;

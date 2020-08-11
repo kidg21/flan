@@ -1,25 +1,30 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "hooks";
 import { FullScreen, Padding } from "helpers/Display";
 import Panel from "layout/Panel";
+import Avatar from "atoms/Avatar";
 import Text, { Title, Link } from "base/Typography";
 import Button, { ButtonGroup } from "atoms/Button";
 import Accordion from "atoms/Accordion";
 import Icon from "atoms/Icon";
 import Divider from "atoms/Divider";
 import Bar from "layout/Bar";
+import Command from "atoms/Command";
+import Popper from "layout/Popper";
 import Grid from "layout/Grid";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
 import Menu from "blocks/Menu";
 import DialogBox from "elements/DialogBox";
+import Image from "atoms/Image";
 import Template from "layout/Template";
+import Search from "blocks/Search";
 import InputBlock from "blocks/InputBlock";
 import Tabs from "blocks/Tabs";
 import Form, { FormSection } from "layout/Form";
-import Image from "atoms/Image";
 import TextInput from "atoms/TextInput";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
@@ -223,13 +228,13 @@ storiesOf("Templates/Modules/Maps", module)
               // Set the 'columns' value to the # of Buttons
               <CardGrid columns="3">
                 <Card shadow="2x">
-                  <Image src={MapStreets} width="75" onClick={() => { }} />
+                  <Image src={MapStreets} alt="Map Streets" width="75" onClick={() => { }} />
                 </Card>
                 <Card shadow="2x">
-                  <Image src={MapSatellite} width="75" onClick={() => { }} />
+                  <Image src={MapSatellite} alt="Map Satellite" width="75" onClick={() => { }} />
                 </Card>
                 <Card shadow="2x">
-                  <Image src={MapHybrid} width="75" onClick={() => { }} />
+                  <Image src={MapHybrid} alt="Map Hybrid" width="75" onClick={() => { }} />
                 </Card>
               </CardGrid>
             ),
@@ -894,5 +899,50 @@ storiesOf("Templates/Modules/Create", module)
         <Bar center={<Button label="View RFP" variant="success" />} />
 
       </DialogBox>
+    );
+  })
+  .add("Account Info", () => {
+    return (
+      <Popper
+        visible
+        isFlex
+        position="bottomRight"
+        anchor={<Avatar label="JD" variant="neutral" />}
+      >
+        <Card padding="2x">
+          <Grid columns="1" gap="lg">
+            <Bar
+              padding="1x"
+              center={{
+                content: (
+                  <Avatar label="JD" size="xl" />
+                ),
+              }}
+            />
+            <Bar
+              padding="0"
+              center={{
+                content: (
+                  <Grid columns="1" gap="xs">
+                    <Title text="Jane Doe" size="lg" />
+                    <Text text="janedoe@gmail.com" />
+                    <Text text="Organization" />
+                    <Text text="Job Title" />
+
+                  </Grid>
+                ),
+              }}
+            />
+            <Bar
+              padding="2x"
+              center={<Command label="Manage my Profile" icon="edit"  />}
+            />
+            <Bar
+              padding="2x"
+              center={<Button label="Sign Out" icon="sign_out" isSolid />}
+            />
+          </Grid>
+        </Card>
+      </Popper>
     );
   });

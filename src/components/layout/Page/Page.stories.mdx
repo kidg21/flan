@@ -1,0 +1,123 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Container, ContainerLarge } from "helpers/Display";
+import Page from "layout/Page";
+import Button from "atoms/Button";
+import Text, { Title } from "base/Typography";
+import Search from "blocks/Search";
+import {
+  MockButtons,
+  MockCardGrid,
+  MockData,
+  MockDetails,
+  MockFooter,
+  MockForm,
+  MockHeader,
+  MockMenu,
+  MockPalette,
+  MockTable,
+  MockTabs,
+  MockWorkflow,
+} from "helpers/Mocks";
+
+<Meta
+  title="layout/Page"
+  component={Page}
+/>
+
+# Page
+
+#### Used to layout 1 or more content elements within a space.
+<br/>
+
+### "Default" Pages
+
+#### The default Page stacks content vertically within a single-column grid.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Page
+      id="Standard"
+      A={{
+        id: "A",
+        content: "",
+      }}
+      B={{
+        id: "B",
+        content: "",
+      }}
+      C={{
+        id: "C",
+        content: "",
+      }}
+    />
+  </Story>
+</Preview>
+
+### "Configured" Pages
+
+#### A Page can be configured to meet multiple layout needs through its 'template' prop.  Choose a template from the Template Library that will support the number of components being displayed.
+<br/>
+
+##### A Templates = 1 component, B Templates = 2 components, C = 3, D = 4, E = 5
+
+##### Template format: [A-E]_[index] (ex. template="C_02")
+
+<Preview withToolbar>
+  <Story name="Configured" decorators={[Container]}>
+    <Page
+      id="Configured"
+      template="C_02"
+      A={{
+        id: "A",
+        content: "",
+      }}
+      B={{
+        id: "B",
+        content: "",
+      }}
+      C={{
+        id: "C",
+        content: "",
+      }}
+    />
+  </Story>
+</Preview>
+
+### "Overlay" Pages
+
+#### Use when needing to position a template atop content through the use of an 'isOverlay' boolean prop.  Using this prop allows for the repurposing of all available Templates.
+
+<Preview withToolbar>
+  <Story name="Template Overlay" decorators={[ContainerLarge]}>
+    <React.Fragment>
+      <Page
+        id="Template Overlay"
+        template="E_03"
+        hasBorders
+        isOverlay
+        A={{
+          id: "A",
+          content: <Search id="Search_E3" placeholder="Search Location" />,
+        }}
+        B={{
+          id: "B",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        C={{
+          id: "C",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        D={{
+          id: "D",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        E={{
+          id: "E",
+          content: <MockPalette />,
+        }}
+      />
+      <Mapbox />
+    </React.Fragment>
+  </Story>
+</Preview>
+

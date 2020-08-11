@@ -1,0 +1,1296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 izXrkl"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 gzlDXA"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 sWSdM"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 llxHeE"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  color={null}
+                  data-icon="bars"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+            <img
+              alt="Lightbox Logo"
+              className="Image__ImageWrapper-sc-18abvff-0 dLVSBY"
+              onClick={[Function]}
+              src=""
+              title="Lightbox Logo"
+              width="8vw"
+            />
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hHFvYO"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  JOBS PORTAL
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cdjJof"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  RESEARCH
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  BI
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bILKca"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  REPORT WRITING
+                </label>
+              </section>
+            </button>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 fiTHpV"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dzakr"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 jZXJFj"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
+                  color={null}
+                  data-icon="question-circle"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="1.5em"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+            <div
+              className="Avatar__TagContainer-sc-1vuf9om-2 hPqJxg"
+              id={null}
+              onClick={[Function]}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 buvBot"
+                fontSize="1rem"
+                fontWeight={500}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                AB
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        height={null}
+        id="Left"
+        overflow={null}
+        width="10rem"
+      >
+        <ul
+          className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+          id={null}
+        >
+          <li
+            className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-3 hgyKoE"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Research
+            </p>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Projects
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Properties
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  History
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  Data
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gOpGBf Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        height="20rem"
+        id={null}
+        overflow={null}
+        width="calc(100% - 10rem)"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          height={null}
+          id="Main"
+          overflow={null}
+          width={null}
+        >
+          <div
+            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            height="100%"
+            id={null}
+            width="100%"
+          >
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              id={null}
+            >
+              <div
+                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                href={null}
+                id="Card_Header"
+                media=""
+                onClick={null}
+              >
+                <section
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 eufPAN"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                        id={null}
+                        rows={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+                          fontSize="0.75rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.4px"
+                        >
+                          Project
+                        </p>
+                        <h4
+                          className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                          fontSize="1.35rem"
+                          fontWeight="400"
+                          letterSpacing="0px"
+                        >
+                          22902 Trabuco Road, Mission Viejo, CA 92691 • Shopping Center • 1402-20-12345
+                        </h4>
+                      </section>
+                    </div>
+                    <div
+                      className="Bar__Slot-icfo76-1 OxwHl"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cIDgbj ProgressIndicator__ProgressSection-sc-1kcvu29-0 CibKn"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="ProgressIndicator__Container-sc-1kcvu29-2 dOobnp"
+                        >
+                          <div
+                            className="ProgressIndicator__BarItem-sc-1kcvu29-1 iFSIRC"
+                            id={null}
+                            style={
+                              Object {
+                                "width": "0%",
+                              }
+                            }
+                          />
+                        </div>
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          0%
+                        </p>
+                      </section>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+              id={null}
+            >
+              <div
+                className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                height="100%"
+                id={null}
+                width="100%"
+              >
+                <section
+                  className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                  id={null}
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 fliBOc"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 fNcQEg"
+                    >
+                      <section
+                        className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+                        disabled={false}
+                        id={null}
+                      >
+                        <button
+                          className="Button__StyledButton-sc-1v7sls2-0 cdjJof Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+                          disabled={false}
+                          htmlFor={null}
+                          id="Tab 1"
+                          name="Tab 1"
+                          onClick={[Function]}
+                          tabIndex="1"
+                          type="button"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              Overview
+                            </label>
+                          </section>
+                        </button>
+                        <button
+                          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                          disabled={false}
+                          htmlFor={null}
+                          id="Tab 2"
+                          name="Tab 2"
+                          onClick={[Function]}
+                          tabIndex="1"
+                          type="button"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              Zoning
+                            </label>
+                          </section>
+                        </button>
+                        <button
+                          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                          disabled={false}
+                          htmlFor={null}
+                          id="Tab 3"
+                          name="Tab 3"
+                          onClick={[Function]}
+                          tabIndex="1"
+                          type="button"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              Transactions
+                            </label>
+                          </section>
+                        </button>
+                        <button
+                          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                          disabled={false}
+                          htmlFor={null}
+                          id="Tab 4"
+                          name="Tab 4"
+                          onClick={[Function]}
+                          tabIndex="1"
+                          type="button"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              Assessment & Tax
+                            </label>
+                          </section>
+                        </button>
+                        <button
+                          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                          disabled={false}
+                          htmlFor={null}
+                          id="Tab 5"
+                          name="Tab 5"
+                          onClick={[Function]}
+                          tabIndex="1"
+                          type="button"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              Tenants
+                            </label>
+                          </section>
+                        </button>
+                      </section>
+                    </div>
+                  </div>
+                </section>
+                <section
+                  className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                  id={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bHNVdZ"
+                    id="overview"
+                    rows={null}
+                  >
+                    <section
+                      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+                      id="A"
+                      placeholder="A"
+                      tabIndex="0"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+                        id={null}
+                        rows={null}
+                      >
+                        <section
+                          className="Field__Section-sc-11od8ug-5 lhsVoJ"
+                        >
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            id={null}
+                            letterSpacing="0.25px"
+                          >
+                            General Information
+                          </p>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+                            id={null}
+                            rows={null}
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+                              id={null}
+                              rows={null}
+                            >
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Property Name"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Property Name
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  22902 Trabuco Rd
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Property Type"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Property Type
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  Shopping Center
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Lat / Long"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Lat / Long
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  33.629211 / -117.663988
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Street Address"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Street Address
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  22902 Trabuco Road
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="City, State Zip"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  City, State Zip
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  Mission Viejo, CA 92691
+                                </p>
+                              </section>
+                            </section>
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+                              id={null}
+                              rows={null}
+                            >
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Census Tract"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Census Tract
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Census Block"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Census Block
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="County"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  County
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  Orange
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="CBSA"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  CBSA
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  Los Angeles-Long Beach-Anaheim
+                                </p>
+                              </section>
+                            </section>
+                          </section>
+                        </section>
+                        <section
+                          className="Field__Section-sc-11od8ug-5 lhsVoJ"
+                        >
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+                            id={null}
+                            rows={null}
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+                              id="Site Characteristics"
+                              rows={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+                                fontSize="0.875rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.25px"
+                              >
+                                Site Characteristics
+                              </p>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Land SF"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Land SF
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  171,143
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Acres"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Acres
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  3.93000
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Land Use"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Land Use
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  Shopping Center
+                                </p>
+                              </section>
+                              <section
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                                id="Street Address"
+                                rows={null}
+                              >
+                                <label
+                                  className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                                  cursor="pointer"
+                                  fontSize="1rem"
+                                  fontWeight={400}
+                                  htmlFor={null}
+                                  letterSpacing=".5px"
+                                >
+                                  Street Address
+                                </label>
+                                <p
+                                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                  fontSize="1rem"
+                                  fontWeight={500}
+                                  id={null}
+                                  letterSpacing="0.5px"
+                                >
+                                  22902 Trabuco Road
+                                </p>
+                              </section>
+                            </section>
+                            <div />
+                          </section>
+                        </section>
+                      </section>
+                    </section>
+                    <section
+                      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
+                      id="B"
+                      placeholder="B"
+                      tabIndex="0"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Bar__BarLayout-icfo76-2 jGhkbe"
+                          id={null}
+                          onClick={null}
+                        >
+                          <div
+                            className="Bar__Slot-icfo76-1 dLaZFL"
+                          >
+                            <img
+                              alt="mockImage"
+                              className="Image__ImageWrapper-sc-18abvff-0 lnCoxO"
+                              onClick={null}
+                              src=""
+                              title="mockImage"
+                              width="20rem"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          className="Bar__BarLayout-icfo76-2 fliBOc"
+                          id={null}
+                          onClick={null}
+                        >
+                          <div
+                            className="Bar__Slot-icfo76-1 dLaZFL"
+                          >
+                            <a
+                              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+                              id={null}
+                              label="View Map"
+                              onClick={null}
+                              title="View Map"
+                            >
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                                cursor="pointer"
+                                fontSize="0.875rem"
+                                fontWeight={400}
+                                htmlFor={null}
+                                letterSpacing=".5px"
+                              >
+                                View Map
+                              </label>
+                            </a>
+                          </div>
+                        </div>
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+                          id="Physical Characteristics"
+                          rows={null}
+                        >
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            id={null}
+                            letterSpacing="0.25px"
+                          >
+                            Physical Characteristics
+                          </p>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                            id="No. of Buildings"
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              No. of Buildings
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              fontSize="1rem"
+                              fontWeight={500}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              3
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                            id="GBA"
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              GBA
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              fontSize="1rem"
+                              fontWeight={500}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              25,344
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                            id="No. of Stories"
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              No. of Stories
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              fontSize="1rem"
+                              fontWeight={500}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              1
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                            id="No. of Units"
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              No. of Units
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              fontSize="1rem"
+                              fontWeight={500}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              4
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+                            id="Year Built"
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                              cursor="pointer"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              Year Built
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              fontSize="1rem"
+                              fontWeight={500}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              1978
+                            </p>
+                          </section>
+                        </section>
+                      </section>
+                    </section>
+                  </section>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

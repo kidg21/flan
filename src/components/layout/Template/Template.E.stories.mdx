@@ -1,0 +1,115 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Center, ContainerLarge } from "helpers/Display";
+import Text, { Title } from "base/Typography";
+import Flex from "layout/Flex";
+import Template from "layout/Template";
+
+<Meta
+  title="layout/Template/Template Library/E Templates"
+  component={Template}
+  decorators={[ContainerLarge]}
+/>
+
+# "E" Templates
+
+#### Use when needing to control the layout of 5 content elements.
+
+<Preview withToolbar>
+  <Story name="E_01">
+    <Template
+      id="Template E_01"
+      template="E_01"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text="A" />
+          </Center>
+        ),
+      }}
+      B={{
+        id: "B",
+        content: (
+          <Center>
+            <Title text="B" />
+          </Center>
+        ),
+      }}
+      C={{
+        id: "C",
+        content: (
+          <Center>
+            <Title text="C" />
+          </Center>
+        ),
+      }}
+      D={{
+        id: "D",
+        content: (
+          <Center>
+            <Title text="D" />
+          </Center>
+        ),
+      }}
+      E={{
+        id: "E",
+        content: (
+          <Center>
+            <Title text="E" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>
+
+<Preview withToolbar>
+  <Story name="E_02">
+    <Template
+      id="Template E_02"
+      template="E_02"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text="A" />
+          </Center>
+        ),
+      }}
+      B={{
+        id: "B",
+        content: (
+          <Center>
+            <Title text="B" />
+          </Center>
+        ),
+      }}
+      C={{
+        id: "C",
+        content: (
+          <Center>
+            <Title text="C" />
+          </Center>
+        ),
+      }}
+      D={{
+        id: "D",
+        content: (
+          <Center>
+            <Title text="D" />
+          </Center>
+        ),
+      }}
+      E={{
+        id: "E",
+        content: (
+          <Center>
+            <Title text="E" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>
