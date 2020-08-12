@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import styled, { css } from "styled-components";
+import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Icon from "atoms/Icon";
@@ -54,6 +55,15 @@ const ImageContainer = styled.a`
   grid-gap: 0.75rem;
   justify-items: center;
   cursor: pointer;
+   ${(props) => {
+    return props.disabled
+      && css`
+      cursor: ${() => { return props.disabled ? "not-allowed" : "pointer"; }};
+      pointer-events: none;
+      user-select: none;
+      opacity: 0.5;
+     `;
+  }}
 `;
 
 const ImageWrapper = styled.div`
@@ -127,10 +137,13 @@ ColorSwatch.defaultProps = {
 };
 
 function ImageSwatch({
-  isSelected, label, onClick, src, width,
+  alt, disabled, isSelected, label, onClick, src, width,
 }) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
   return (
     <ImageContainer
+      disabled={isDisabled}
       onClick={onClick}
     >
       <ImageWrapper
@@ -144,6 +157,7 @@ function ImageSwatch({
         ) : null}
         <Image
           src={src}
+          alt={alt}
           width={width}
         />
       </ImageWrapper>
@@ -155,6 +169,8 @@ function ImageSwatch({
 }
 
 ImageSwatch.propTypes = {
+  alt: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
   isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -162,6 +178,7 @@ ImageSwatch.propTypes = {
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 ImageSwatch.defaultProps = {
+  disabled: false,
   isSelected: false,
   label: null,
   onClick: null,
