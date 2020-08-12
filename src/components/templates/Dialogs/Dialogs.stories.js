@@ -22,7 +22,7 @@ function doNothing() {
 storiesOf("Templates/Modules/Dialogs", module)
   .addDecorator(Padding)
   .addDecorator(CenterDecorator)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Print Options", () => {
     return React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("option1");

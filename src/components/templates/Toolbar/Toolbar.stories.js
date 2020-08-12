@@ -18,7 +18,7 @@ import LegendValue3 from "images/maps/legendvalue3.png";
 
 storiesOf("Templates/Modules/Toolbar", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Map Tools", () => {
     return (
       <React.Fragment>

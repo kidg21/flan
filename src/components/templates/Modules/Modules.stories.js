@@ -196,7 +196,7 @@ const options = [
 
 storiesOf("Templates/Modules/Maps", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Map Tools", () => {
     return (
       <React.Fragment>
@@ -247,7 +247,7 @@ storiesOf("Templates/Modules/Maps", module)
 
 storiesOf("Templates/Modules/Panels", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Layers Panel", () => {
     return (
       <Panel
@@ -573,7 +573,7 @@ storiesOf("Templates/Modules/Panels", module)
 
 storiesOf("Templates/Modules/Create", module)
   .addDecorator(Padding)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Create Job", () => {
     return (
       <DialogBox
@@ -935,7 +935,7 @@ storiesOf("Templates/Modules/Create", module)
             />
             <Bar
               padding="2x"
-              center={<Command label="Manage my Profile" icon="edit"  />}
+              center={<Command label="Manage my Profile" icon="edit" />}
             />
             <Bar
               padding="2x"
