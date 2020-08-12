@@ -40,7 +40,7 @@ Image.propTypes = {
   isRound: PropTypes.bool,
   className: PropTypes.string,
   onClick: PropTypes.func,
-  src: PropTypes.string,
+  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {

@@ -443,7 +443,7 @@ Card.propTypes = {
   isInverse: PropTypes.bool,
   label: PropTypes.string,
   mediaDesc: PropTypes.string,
-  media: PropTypes.string,
+  media: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   more: PropTypes.shape({
     content: PropTypes.node,
     onToggle: PropTypes.func,

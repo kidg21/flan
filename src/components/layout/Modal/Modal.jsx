@@ -319,7 +319,7 @@ Modal.propTypes = {
   ariaLabelledBy: PropTypes.string,
   children: PropTypes.node,
   id: PropTypes.string,
-  media: PropTypes.string,
+  media: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   hasBackdrop: PropTypes.bool,
   onAnimationStart: PropTypes.func,
   onAnimationEnd: PropTypes.func,
