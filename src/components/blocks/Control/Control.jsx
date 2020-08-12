@@ -17,10 +17,10 @@ const ControlWrapper = styled.section`
   ${SegmentButton}{
     border-radius: 0 0 0 0;
   };
-  ${SegmentButton}:first-child {
+  ${SegmentButton}:first-of-type {
     border-radius: 2rem 0 0 2rem;
   };
-  ${SegmentButton}:last-child {
+  ${SegmentButton}:last-of-type {
     border-radius: 0 2rem 2rem 0;
   };
 `;
@@ -28,8 +28,7 @@ const ControlWrapper = styled.section`
 function ControlItem({
   disabled, icon, id, isSelected, label, onClick,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
     <Fragment>
@@ -48,8 +47,7 @@ function ControlItem({
 function Control({
   children, data, disabled, id,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
     <DisabledContext.Provider value={isDisabled}>
@@ -57,8 +55,8 @@ function Control({
         id={id}
         disabled={isDisabled}
       >
-        {children ||
-          data.map((item) => {
+        {children
+          || data.map((item) => {
             return (
               <ControlItem
                 disabled={item.disabled || isDisabled}

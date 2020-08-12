@@ -26,12 +26,12 @@ const ListWrapper = styled.ul`
   }};
   height: inherit;
   overflow: auto;
-  li:not(:last-child) {
+  li:not(:last-of-type) {
     border-bottom: ${(props) => {
     return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
   }};
   }
-  li:last-child {
+  li:last-of-type {
     margin-bottom: 0.5rem;
   }
 `;
@@ -394,7 +394,7 @@ function List({
                   isSelected={item.isSelected}
                   key={itemKey}
                   onClick={item.onClick}
-                  onClickItem={item.onClickItem} 
+                  onClickItem={item.onClickItem}
                   post={item.post}
                   pre={item.pre}
                   title={item.title}

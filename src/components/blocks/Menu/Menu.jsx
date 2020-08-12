@@ -58,7 +58,7 @@ const ListItemWrapper = styled(ListItem)`
 const NestedItem = styled.div`
   position: relative;
   background-color: inherit;
-  > li:last-child {
+  > li:last-of-type {
     margin-bottom: 1px;
   }
 `;
@@ -285,7 +285,7 @@ const StatefulMenu = ({
   }, [onClose]);
 
   // default Menu button with onClick
-  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); //(<Button icon="options" onClick={toggleVisible} isPlain isRound />);
+  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); // (<Button icon="options" onClick={toggleVisible} isPlain isRound />);
   if (anchor.length > 0) {
     if (anchor[0].type === React.Fragment) {
       // wraps click in div around both children
