@@ -149,12 +149,11 @@ function getRightContent(post, disabled, onClick) {
             icon={post.icon}
             size={post.size}
             variant={post.variant}
-            onClick={post.onClick}
+            onClick={post.onClick || onClick}
             fixedWidth
           />
         ),
         width: "max-content",
-        onClick: post.onClick || onClick,
       };
     }
   } else if (post) {
