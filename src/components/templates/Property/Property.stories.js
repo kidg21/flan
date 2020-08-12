@@ -271,24 +271,24 @@ storiesOf("Templates|Applications/Research/Property", module)
                               <Bar
                                 padding="0"
                                 center={
-                                  <Image width="20rem" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" />
+                                  <Image width="20rem" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" alt="Property Image" />
                                 }
                               />
                               <FieldSection>
                                 <FieldGroup columns="1" title="Property">
-                                  <Field label="Parcel No." value="808-221-12" onClick />
+                                  <Field label="Parcel No." value="808-221-12" onClick={() => { }} />
                                   <Field label="Land User" value="Commercial Shopping Center" />
                                   <Field label="Building Area" value="25,344 SF" />
-                                  <Field label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
+                                  <Field label="Lot Area" value="171,143 SF (3.93 Acres)" onClick={() => { }} />
                                   <Field label="Building/Lot" value="0.15" />
                                   <Field label="No. of Units" value="" />
                                   <Field label="Year Built" value="1978" />
                                 </FieldGroup>
                                 <FieldGroup columns="1" title="Owners">
-                                  <Field label="Owners" value="SCF-Los Alisos LLC" onClick />
+                                  <Field label="Owners" value="SCF-Los Alisos LLC" onClick={() => { }} />
                                   <Field label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
-                                  <Field label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick />
-                                  <Field label="Last Sale" value="10/2/15 for $11,500,000" onClick />
+                                  <Field label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick={() => { }} />
+                                  <Field label="Last Sale" value="10/2/15 for $11,500,000" onClick={() => { }} />
                                   <Field label="Total Assd Value" value="$10,045,870" />
 
                                 </FieldGroup>

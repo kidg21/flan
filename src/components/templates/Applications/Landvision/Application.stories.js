@@ -754,7 +754,7 @@ storiesOf("Templates|Applications/Research", module)
         const fieldData = [
           {
             label: "Tax Authority Link",
-            value: <Link size="lg" text="Orange County Tax Authority" />,
+            value: "Orange County Tax Authority",
             onClick: () => { },
           },
           {
@@ -770,7 +770,7 @@ storiesOf("Templates|Applications/Research", module)
             value: "$0",
           },
           {
-            label: "Site Total Assessment",
+            label: "Site Assessment Total",
             value: "$12,045,498",
           },
           {
