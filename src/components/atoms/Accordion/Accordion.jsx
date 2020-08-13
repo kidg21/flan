@@ -7,7 +7,7 @@ import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";
 
 function Accordion({
-  children, description, id, onClick, open, title,
+  children, description, id, onClick, open, title, header,
 }) {
   let expanded = open;
   let setExpanded = onClick;
@@ -38,10 +38,13 @@ function Accordion({
             contentAlign="center"
             left={{
               content: (
-                <React.Fragment>
-                  {title ? <Title text={title} /> : null}
-                  {description ? <Text text={description} /> : null}
-                </React.Fragment>
+                header
+                || (
+                  <React.Fragment>
+                    {title ? <Title text={title} /> : null}
+                    {description ? <Text text={description} /> : null}
+                  </React.Fragment>
+                )
               ),
               align: "left",
             }}

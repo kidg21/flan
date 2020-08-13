@@ -69,7 +69,7 @@ function Expander({
 
 AccordionFunction.propTypes = {
   children: PropTypes.node,
-  header: PropTypes.node.isRequired,
+  header: PropTypes.node,
   id: PropTypes.string,
   onClick: PropTypes.func,
   open: PropTypes.bool,
@@ -77,6 +77,7 @@ AccordionFunction.propTypes = {
 
 AccordionFunction.defaultProps = {
   children: null,
+  header: null,
   id: "",
   onClick: () => { },
   open: true,
