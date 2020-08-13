@@ -147,25 +147,6 @@ storiesOf("Templates/Modules/Dialogs", module)
 )}
               post={{ type: "icon", icon: "close" }}
             />
-            <ListItem
-              title={(
-                <FormSection columns="2">
-                  <TextInput label="Username" placeholder="i.e. JDoe" isRequired />
-                  <TextInput label="Email" />
-                </FormSection>
-)}
-              post={{ type: "icon", icon: "close" }}
-            />
-            <ListItem
-              title={(
-                <FormSection columns="2">
-                  <TextInput label="Username" placeholder="i.e. JDoe" isRequired />
-                  <TextInput label="Email" />
-                </FormSection>
-)}
-              post={{ type: "icon", icon: "close" }}
-            />
-           
           </List>
           <Bar left={<Command label="Add User" icon="plus" isSolid />} />
         </DialogBox>
@@ -201,6 +182,29 @@ storiesOf("Templates/Modules/Dialogs", module)
                   <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
                 </List>
               </Container>
+              <Bar left={<Command label="Add File" icon="plus" />}/>
+              <Bar right={<Button label="Done" isSolid />}/>
+            </DialogBox>
+      );
+    });
+  })
+  .add("Upload Dialog", () => {
+    return React.createElement(() => {
+      const [activeSingleTab, setActiveSingleTab] = useState("option1");
+      const [legend, setLegend] = useState(false);
+      function toggleLegend() {
+        if (legend) {
+          setLegend(false);
+        } else {
+          setLegend(true);
+        }
+      }
+      return (
+          <DialogBox
+          title="Upload "
+         
+        >
+            
               <Bar left={<Command label="Add File" icon="plus" />}/>
               <Bar right={<Button label="Done" isSolid />}/>
             </DialogBox>
