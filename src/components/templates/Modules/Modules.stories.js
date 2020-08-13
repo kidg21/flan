@@ -248,78 +248,78 @@ storiesOf("Templates/Modules/Maps", module)
 storiesOf("Templates/Modules/Panels", module)
   .addDecorator(FullScreen)
   .addDecorator(withA11y)
-  .add("Layers Panel", () => {
-    return (
-      <Panel
-        header={(
-          <Bar
-            contentAlign="center"
-            padding="2x"
-            left={{
-              content: (
-                <Title text="Layers Panel" weight="bold" />
-              ),
-            }}
-            right={{
-              content: (
-                <Menu
-                  data={[
-                    { id: "a", label: "Action" },
-                    { id: "c", label: "Action" },
-                    { id: "b", label: "Action" },
-                  ]}
-                  position="bottomLeft"
-                />
-              ),
-              width: "min-content",
-            }}
-          />
-        )}
-      >
-        <Accordion
-          open
-          header={(
-            <Checkbox
-              label="Layer One"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Two"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Three"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Four"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-      </Panel>
-    );
-  })
+  // .add("Layers Panel", () => {
+  //   return (
+  //     <Panel
+  //       header={(
+  //         <Bar
+  //           contentAlign="center"
+  //           padding="2x"
+  //           left={{
+  //             content: (
+  //               <Title text="Layers Panel" weight="bold" />
+  //             ),
+  //           }}
+  //           right={{
+  //             content: (
+  //               <Menu
+  //                 data={[
+  //                   { id: "a", label: "Action" },
+  //                   { id: "c", label: "Action" },
+  //                   { id: "b", label: "Action" },
+  //                 ]}
+  //                 position="bottomLeft"
+  //               />
+  //             ),
+  //             width: "min-content",
+  //           }}
+  //         />
+  //       )}
+  //     >
+  //       <Accordion
+  //         open
+  //         header={(
+  //           <Checkbox
+  //             label="Layer One"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Two"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Three"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Four"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //     </Panel>
+  //   );
+  // })
   .add(
     "View/Edit Record",
     () => {
