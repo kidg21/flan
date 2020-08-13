@@ -43,7 +43,7 @@ const Cell = styled.td`
     return props.theme.palette[props.cellBorderColor] || "";
   }};
 
-  &:first-child {
+  &:first-of-type {
     font-weight: ${(props) => {
     return props.fontWeight || "";
   }};

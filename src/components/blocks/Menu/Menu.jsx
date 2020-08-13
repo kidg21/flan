@@ -38,11 +38,11 @@ const ListWrapper = styled(List)`
 `;
 
 const StyledCardWrapper = styled(CardWrapper)`
-  > :first-child {
+  > :first-of-type {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
   };
-  > :last-child {
+  > :last-of-type {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
   };
