@@ -127,7 +127,7 @@ ColorSwatch.defaultProps = {
 };
 
 function ImageSwatch({
-  isSelected, label, onClick, src, width,
+  alt, isSelected, label, onClick, src, width,
 }) {
   return (
     <ImageContainer
@@ -145,6 +145,7 @@ function ImageSwatch({
         <Image
           src={src}
           width={width}
+          alt={alt}
         />
       </ImageWrapper>
       {label ? (
@@ -155,6 +156,7 @@ function ImageSwatch({
 }
 
 ImageSwatch.propTypes = {
+  alt: PropTypes.string,
   isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -162,6 +164,7 @@ ImageSwatch.propTypes = {
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 ImageSwatch.defaultProps = {
+  alt: "",
   isSelected: false,
   label: null,
   onClick: null,
