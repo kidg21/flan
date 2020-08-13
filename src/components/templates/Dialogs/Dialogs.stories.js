@@ -7,6 +7,7 @@ import {
 } from "helpers/Display";
 import Bar from "layout/Bar";
 import Icon from "atoms/Icon";
+import FileImport from "blocks/FileImport";
 import Text, { Title, Link } from "base/Typography";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
@@ -137,18 +138,12 @@ storiesOf("Templates/Modules/Dialogs", module)
             },
           ]}
         >
-          <List>
-            <ListItem
-              title={(
+          <Form>
                 <FormSection columns="2">
                   <TextInput label="Username" placeholder="i.e. JDoe" isRequired />
                   <TextInput label="Email" />
                 </FormSection>
-)}
-              post={{ type: "icon", icon: "close" }}
-            />
-          </List>
-          <Bar left={<Command label="Add User" icon="plus" isSolid />} />
+                </Form>
         </DialogBox>
       );
     });
@@ -171,7 +166,7 @@ storiesOf("Templates/Modules/Dialogs", module)
          
         >
               <Container padding="1x" hasBorder maxHeight="25rem" width="30rem">
-                <List >
+                <List isDivided>
       <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
                   <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
                   <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
@@ -201,12 +196,25 @@ storiesOf("Templates/Modules/Dialogs", module)
       }
       return (
           <DialogBox
-          title="Upload "
+          title="Add File"
+          buttons={[
+            {
+              id: "Cancel",
+              label: "Cancel",
+              onClick: doNothing,
+            },
+            {
+              id: "Complete",
+              label: "Upload",
+              onClick: doNothing,
+            },
+          ]}
          
         >
-            
-              <Bar left={<Command label="Add File" icon="plus" />}/>
-              <Bar right={<Button label="Done" isSolid />}/>
+          <Form>
+              <FileImport id="FileImport_Standard" />
+              <TextInput label="Rename"/>
+              </Form>
             </DialogBox>
       );
     });
