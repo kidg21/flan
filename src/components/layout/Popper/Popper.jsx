@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable security/detect-object-injection */
 import React, {
@@ -35,7 +36,7 @@ const NonPortalWrapper = styled.div`
 `;
 
 const PopperWrapper = styled.div`
-  position ${(props) => {
+  position: ${(props) => {
     return props.usePortal ? "fixed" : "absolute";
   }};
   z-index: ${(props) => {
