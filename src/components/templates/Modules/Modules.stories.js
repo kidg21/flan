@@ -405,12 +405,14 @@ storiesOf("Templates/Modules/Panels", module)
                 label="Text Input"
                 value="I'm the info that came with the app..."
                 helpText="The one that your parents gave you"
+                onChange={() => { }}
               />
               <TextInput
                 id="lastName"
                 label="Text Input"
                 value="I don't like myself, please change me."
                 helpText="The one that comes after.."
+                onChange={() => { }}
               />
               <TextInput
                 id="lastName"
@@ -418,6 +420,7 @@ storiesOf("Templates/Modules/Panels", module)
                 value="I'm pretty much a run-on sentence because someone didn't think that I was worth bringing in a copywriter for..."
                 helpText="The one that comes after.."
                 type="textarea"
+                onChange={() => { }}
               />
             </FormSection>
             <FormSection title="">
@@ -596,6 +599,7 @@ storiesOf("Templates/Modules/Create", module)
 
               label="Job Number"
               value="19-12341234"
+              onChange={() => { }}
             />
             <TextInput
 
@@ -713,6 +717,7 @@ storiesOf("Templates/Modules/Create", module)
 
               label="RFP Number"
               value="19-12341234"
+              onChange={() => { }}
             />
             <TextInput
 
@@ -779,6 +784,7 @@ storiesOf("Templates/Modules/Create", module)
 
                   label="Client Name"
                   value=""
+                  onChange={() => { }}
                 />
                 <TextInput
 
@@ -849,6 +855,7 @@ storiesOf("Templates/Modules/Create", module)
 
                   label="Scope of Work"
                   value=""
+                  onChange={() => { }}
                 />
                 <InputBlock
                   label="Bid Amount"
