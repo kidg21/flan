@@ -39,7 +39,7 @@ function Inline({
           return (
             <div
               key={child.key ? `${child.key}-wrapper` : null}
-              style={{ margin: `${spacingHalfY} ${spacingX} ${spacingHalfY} 0` }}
+              style={{ margin: `${spacingHalfY} ${spacingX} ${spacingHalfY} 0`, paddingLeft: "1rem" }}
             >
               {child}
             </div>

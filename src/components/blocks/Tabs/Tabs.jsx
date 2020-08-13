@@ -53,7 +53,7 @@ function TabItem({
     <React.Fragment>
       <TabButton
         count={count}
-        setMargin={_isFolder ? "0 0.5rem 0.5rem 0" : "0 -1px -1px 0"}
+        setMargin={_isFolder ? "0 0.5rem 0 0" : "0 -1px -1px 0"}
         setBackground={_isFolder && !isSelected ? colors.white20 : null}
         isPlain={!_isFolder || !isSelected}
         isUnderline={!_isFolder && isSelected}

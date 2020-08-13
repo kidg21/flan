@@ -833,7 +833,7 @@ storiesOf("Templates|Applications/Research", module)
                                   <Bar
                                     left={{
                                       content: (
-                                        <Tabs>
+                                        <Tabs isFolder > 
                                           <TabItem label="Parcel 1" isSelected />
                                           <TabItem label="Parcel 2" />
                                         </Tabs>
@@ -1044,7 +1044,7 @@ storiesOf("Templates|Applications/Research", module)
                                   <Bar
                                     left={{
                                       content: (
-                                        <Tabs>
+                                        <Tabs isFolder >
                                           <TabItem label="Zone 1" isSelected />
                                           <TabItem label="Zone 2" />
                                         </Tabs>),
@@ -1053,7 +1053,7 @@ storiesOf("Templates|Applications/Research", module)
                                     right={{
                                       content: (
                                         <Button label="Request Correction" />),
-                                      width: "fit-content",
+                                      width: "min-content",
                                     }}
                                   />
                                 )}
