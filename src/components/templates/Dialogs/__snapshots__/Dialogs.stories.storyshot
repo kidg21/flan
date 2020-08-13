@@ -85,9 +85,11 @@ exports[` 1`] = `
                     />
                   </svg>
                   <img
+                    alt=""
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title=""
                     width="75"
                   />
                 </div>
@@ -110,9 +112,11 @@ exports[` 1`] = `
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
+                    alt=""
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title=""
                     width="75"
                   />
                 </div>
@@ -135,9 +139,11 @@ exports[` 1`] = `
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
+                    alt=""
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title=""
                     width="75"
                   />
                 </div>
@@ -160,9 +166,11 @@ exports[` 1`] = `
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
+                    alt=""
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title=""
                     width="75"
                   />
                 </div>
@@ -188,9 +196,11 @@ exports[` 1`] = `
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
+                    alt=""
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title=""
                     width="75"
                   />
                 </div>
