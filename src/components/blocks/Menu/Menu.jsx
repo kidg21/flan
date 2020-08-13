@@ -237,7 +237,6 @@ Menu.defaultProps = {
   id: "",
   isFlex: false,
   onClose: null,
-  /** close menu when clicking outside of pop-out */
   closeOnClickAway: true,
   usePortal: false,
   position: "bottomRight",
@@ -285,7 +284,7 @@ const StatefulMenu = ({
   }, [onClose]);
 
   // default Menu button with onClick
-  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); // (<Button icon="options" onClick={toggleVisible} isPlain isRound />);
+  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible });
   if (anchor.length > 0) {
     if (anchor[0].type === React.Fragment) {
       // wraps click in div around both children
@@ -340,8 +339,10 @@ const _Menu = (props) => {
     ? <StatefulMenu {...props} id={uId} /> : <Menu {...props} id={uId} />;
 };
 
+// _Menu proptype info will be displayed in storybook props table
 _Menu.defaultProps = {
   children: null,
+  closeOnClickAway: true,
   data: [],
   initVisible: false,
   id: "",
@@ -357,6 +358,8 @@ _Menu.defaultProps = {
 _Menu.propTypes = {
   /** custom anchor element */
   children: PropTypes.node,
+  /** close menu popper when clicking outside of it */
+  closeOnClickAway: PropTypes.bool,
   /** list of item objects in menu */
   data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
   /** menu id */
@@ -380,6 +383,7 @@ _Menu.propTypes = {
   visible: PropTypes.bool,
   /** width of the menu */
   width: PropTypes.string,
+  /** static zIndex */
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 

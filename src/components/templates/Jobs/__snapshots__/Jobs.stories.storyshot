@@ -402,7 +402,7 @@ exports[` 1`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 GaHDh"
+              className="Template__Region-sc-1i4nzbu-0 drSWwJ"
               id="A"
               placeholder="A"
               tabIndex="0"
@@ -581,7 +581,7 @@ exports[` 1`] = `
               </ul>
             </section>
             <section
-              className="Template__Region-sc-1i4nzbu-0 dLRjEu"
+              className="Template__Region-sc-1i4nzbu-0 gwfupW"
               id="B"
               placeholder="B"
               tabIndex="0"
@@ -592,7 +592,7 @@ exports[` 1`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+                  className="Template__Region-sc-1i4nzbu-0 bJWfrB"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -691,7 +691,7 @@ exports[` 1`] = `
                         >
                           <section
                             className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                            id="storyshots_81_container"
+                            id="storyshots_102_container"
                             rows={null}
                           >
                             <input
@@ -699,9 +699,9 @@ exports[` 1`] = `
                               className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                               cols=""
                               disabled={null}
-                              id="storyshots_81"
+                              id="storyshots_102"
                               list={null}
-                              name="storyshots_81"
+                              name="storyshots_102"
                               onBlur={null}
                               onChange={null}
                               onFocus={null}
@@ -1840,7 +1840,7 @@ exports[` 2`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 GaHDh"
+              className="Template__Region-sc-1i4nzbu-0 drSWwJ"
               id="A"
               placeholder="A"
               tabIndex="0"
@@ -2019,7 +2019,7 @@ exports[` 2`] = `
               </ul>
             </section>
             <section
-              className="Template__Region-sc-1i4nzbu-0 dLRjEu"
+              className="Template__Region-sc-1i4nzbu-0 gwfupW"
               id="B"
               placeholder="B"
               tabIndex="0"
@@ -2030,7 +2030,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+                  className="Template__Region-sc-1i4nzbu-0 bJWfrB"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -2129,7 +2129,7 @@ exports[` 2`] = `
                         >
                           <section
                             className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                            id="storyshots_82_container"
+                            id="storyshots_103_container"
                             rows={null}
                           >
                             <input
@@ -2137,9 +2137,9 @@ exports[` 2`] = `
                               className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                               cols=""
                               disabled={null}
-                              id="storyshots_82"
+                              id="storyshots_103"
                               list={null}
-                              name="storyshots_82"
+                              name="storyshots_103"
                               onBlur={null}
                               onChange={null}
                               onFocus={null}
@@ -3306,7 +3306,7 @@ exports[` 3`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+              className="Template__Region-sc-1i4nzbu-0 bJWfrB"
               id="A"
               placeholder="A"
               tabIndex="0"
@@ -3417,7 +3417,7 @@ exports[` 3`] = `
                         >
                           <section
                             className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                            id="storyshots_83_container"
+                            id="storyshots_104_container"
                             rows={null}
                           >
                             <input
@@ -3425,9 +3425,9 @@ exports[` 3`] = `
                               className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                               cols=""
                               disabled={null}
-                              id="storyshots_83"
+                              id="storyshots_104"
                               list={null}
-                              name="storyshots_83"
+                              name="storyshots_104"
                               onBlur={null}
                               onChange={null}
                               onFocus={null}

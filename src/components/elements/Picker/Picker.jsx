@@ -159,6 +159,7 @@ function ImageSwatch({
           src={src}
           alt={alt}
           width={width}
+          alt={alt}
         />
       </ImageWrapper>
       {label ? (

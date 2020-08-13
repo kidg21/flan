@@ -23,8 +23,13 @@ const Region = styled.section`
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
-  pointer-events: initial;
   outline: none;
+  ${(props) => {
+    // when it is overlay, we want the region (parent) to have no pointer-events
+    // and the children to restore thier events
+    // allows for transparent space inbetween to work
+    return !props.isOverlay ? "pointer-events: initial;" : ">* { pointer-events: auto; };";
+  }}
 `;
 
 const TemplateWrapper = styled(Grid)`
@@ -293,6 +298,7 @@ function Template({
               tabIndex="0"
               hasBorder={hasBorder}
               overflow={A.overflow}
+              isOverlay={isOverlay}
             >
               {A.content}
             </Region>
@@ -305,6 +311,7 @@ function Template({
               regionShadow={regionShadow}
               tabIndex="0"
               overflow={B.overflow}
+              isOverlay={isOverlay}
             >
               {B.content}
             </Region>
@@ -317,6 +324,7 @@ function Template({
               regionShadow={regionShadow}
               tabIndex="0"
               overflow={C.overflow}
+              isOverlay={isOverlay}
             >
               {C.content}
             </Region>
@@ -329,6 +337,7 @@ function Template({
               regionShadow={regionShadow}
               tabIndex="0"
               overflow={D.overflow}
+              isOverlay={isOverlay}
             >
               {D.content}
             </Region>
@@ -341,6 +350,7 @@ function Template({
               regionShadow={regionShadow}
               tabIndex="0"
               overflow={E.overflow}
+              isOverlay={isOverlay}
             >
               {E.content}
             </Region>
