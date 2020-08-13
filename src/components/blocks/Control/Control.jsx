@@ -6,7 +6,10 @@ import { DisabledContext } from "States";
 import Button from "atoms/Button";
 
 const SegmentButton = styled(Button)`
-  margin: ${(props) => { return props.margin || "0 -1px -1px 0"; }};
+  width: inherit;
+  &:not(:last-of-type) {
+    margin: ${(props) => { return props.margin || "0 -1px -1px 0"; }};
+  };
 `;
 
 const ControlWrapper = styled.section`
