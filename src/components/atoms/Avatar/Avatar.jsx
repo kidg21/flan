@@ -94,6 +94,7 @@ function Avatar({
     media = null;
   }
 
+  let title = alt;
   if (media) {
     iconType = (
       <AvatarImage
@@ -103,12 +104,12 @@ function Avatar({
         width={avatarSize}
       />
     );
+    title = undefined;
   } else if (icon && typeof icon === "string") {
     iconType = <Icon icon={icon} size={size} />;
   } else {
     labelType = <AvatarText weight="medium" fontSize={fontSize} text={label && label.substring(0, 2)} />;
   }
-
 
   return (
     <TagContainer
@@ -117,6 +118,7 @@ function Avatar({
       id={id}
       onClick={onClick}
       textColor={textColor}
+      title={title}
     >
       {iconType || labelType}
     </TagContainer>
