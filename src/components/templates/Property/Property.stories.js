@@ -20,6 +20,7 @@ import Menu from "blocks/Menu";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
 import Form, { FormSection } from "layout/Form";
+import Checkbox from "atoms/Checkbox";
 import Image from "atoms/Image";
 import Divider from "atoms/Divider";
 import Field, { FieldGroup, FieldSection } from "atoms/Field";
@@ -73,13 +74,13 @@ storiesOf("Templates|Applications/Research/Property", module)
                       id="Card_Header"
                       padding="0"
                     >
-                      <CardSection variant="light" padding="1x">
+                      <CardSection variant="light" padding="0">
                         <Bar
                           contentAlign="center"
-                          padding="0"
+                          padding="1x"
                           left={{
                             content: (
-                              <Title size="xl" text="Properties" weight="bold" />),
+                              <Title  text="Properties" />),
                             align: "left",
                           }}
                           right={{
@@ -101,6 +102,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                         left={{
                           content: (
                             <Search />),
+                            width: "30rem",
                         }}
                         center={{
                           content: (<Title text="309 results" size="lg" />),
@@ -200,8 +202,11 @@ storiesOf("Templates|Applications/Research/Property", module)
         <Tag label="Shopping Center" brand="brand1" icon="close"/>
         <Tag label="California" brand="brand1" icon="close"/>
         <Tag label="Expensize " brand="brand1" icon="close"/>
-        <Tag label="Big" brand="brand1" icon="close"/>
+        <Tag label="EX: Boundary 1" brand="brand1" icon="close"/>
+        <Tag label="IN: Boundary 3" brand="brand1" icon="close"/>
         <Tag label="Add More" icon="plus" />
+        <Button label="Inclusion" size="sm" />
+        <Button label="Exclusion" size="sm" />
       </Inline>
                               
                       </React.Fragment>),
