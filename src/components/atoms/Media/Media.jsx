@@ -107,7 +107,7 @@ function Media({
 Media.propTypes = {
   className: PropTypes.string,
   id: PropTypes.string,
-  media: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  media: PropTypes.string,
   mediaDesc: PropTypes.string,
   onClick: PropTypes.func,
 };
@@ -115,7 +115,7 @@ Media.propTypes = {
 Media.defaultProps = {
   className: null,
   id: null,
-  media: null,
+  media: "",
   mediaDesc: null,
   onClick: null,
 };
