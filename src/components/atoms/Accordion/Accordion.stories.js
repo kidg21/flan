@@ -66,8 +66,6 @@ export const Selection = () => {
           id="checkbox-id"
         />
       )}
-      title="Accordion Title"
-      description="This is a description"
       open={open}
     >
       <Text text="hi" />
