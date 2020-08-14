@@ -144,7 +144,7 @@ Avatar.propTypes = {
 };
 
 Avatar.defaultProps = {
-  alt: null,
+  alt: undefined,
   icon: null,
   id: null,
   label: null,
