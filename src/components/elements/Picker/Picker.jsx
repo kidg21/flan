@@ -175,7 +175,7 @@ ImageSwatch.propTypes = {
   isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  src: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 ImageSwatch.defaultProps = {
@@ -183,7 +183,7 @@ ImageSwatch.defaultProps = {
   isSelected: false,
   label: null,
   onClick: null,
-  src: null,
+  src: "",
   width: null,
 };
 
