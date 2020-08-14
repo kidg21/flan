@@ -55,8 +55,6 @@ export const Selection = () => {
   }
   return (
     <Accordion
-      title="Accordion Title"
-      open={open}
       header={(
         <Checkbox
           onClick={(e, evt) => {
@@ -68,6 +66,9 @@ export const Selection = () => {
           id="checkbox-id"
         />
       )}
+      title="Accordion Title"
+      description="This is a description"
+      open={open}
     >
       <Text text="hi" />
     </Accordion>

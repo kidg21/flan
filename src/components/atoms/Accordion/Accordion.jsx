@@ -1,10 +1,15 @@
 /* eslint-disable linebreak-style */
 import React, { useState } from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import Bar from "layout/Bar";
 import Icon from "atoms/Icon";
 import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";
+
+const ExpanderWrapper = styled(Expander)`
+  padding: 0 0.5rem;
+`;
 
 function Accordion({
   children, description, id, onClick, open, title, header,
@@ -25,45 +30,44 @@ function Accordion({
   }
 
   return (
-    <Expander
+    <ExpanderWrapper
       id={id}
       onClick={(e) => {
         toggleDropdown(e);
       }}
       open={expanded}
-      header={
-        title || description ? (
-          <Bar
-            padding="1x"
-            contentAlign="center"
-            left={{
-              content: (
-                header
-                || (
-                  <React.Fragment>
-                    {title ? <Title text={title} /> : null}
-                    {description ? <Text text={description} /> : null}
-                  </React.Fragment>
-                )
-              ),
-              align: "left",
-            }}
-            right={children ? {
-              content: <Icon icon={iconContent} />,
-              width: "max-content",
-            } : null}
-          />
-        ) : null
-      }
+      header={(
+        <Bar
+          padding="1x"
+          contentAlign="top"
+          left={{
+            content: (
+              header
+              || (
+                <React.Fragment>
+                  {title ? <Title text={title} /> : null}
+                  {description ? <Text text={description} /> : null}
+                </React.Fragment>
+              )
+            ),
+            align: "left",
+          }}
+          right={children ? {
+            content: <Icon icon={iconContent} />,
+            width: "max-content",
+          } : null}
+        />
+      )}
     >
       {children}
-    </Expander>
+    </ExpanderWrapper>
   );
 }
 
 Accordion.propTypes = {
   children: PropTypes.node,
   description: PropTypes.string,
+  header: PropTypes.node,
   id: PropTypes.string,
   onClick: PropTypes.func,
   open: PropTypes.bool,
@@ -72,6 +76,7 @@ Accordion.propTypes = {
 Accordion.defaultProps = {
   children: null,
   description: null,
+  header: null,
   id: null,
   onClick: null,
   open: false,
