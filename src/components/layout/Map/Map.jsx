@@ -39,7 +39,7 @@ const styleHash = {
 };
 
 function Mapbox({
-  center, id, map,
+  center, id, map, zoom,
 }) {
   const selectedStyle = styleHash[map && map.toLowerCase()] || styleHash.custom;
   const { style } = selectedStyle;
@@ -50,6 +50,7 @@ function Mapbox({
       containerStyle={container}
       id={id}
       style={style}
+      zoom={zoom}
     />
   );
 }
@@ -59,11 +60,13 @@ Mapbox.propTypes = {
   id: PropTypes.string,
   /** Options: 'streets', 'outdoors', 'light', 'dark', 'satellite', 'satellite-streets', 'custom' */
   map: PropTypes.oneOf(["streets", "outdoors", "light", "dark", "satellite", "satellite-streets", "custom"]),
+  zoom: PropTypes.integer,
 };
 Mapbox.defaultProps = {
   center: [-74.006, 40.7128],
   id: null,
   map: "custom",
+  zoom: [9],
 };
 
 export default Mapbox;
