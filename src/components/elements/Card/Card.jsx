@@ -50,7 +50,9 @@ const CardSectionWrapper = styled.section`
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};
-  a {
+  a,
+  + a,
+  a > * {
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
   }};
