@@ -64,6 +64,11 @@ const TemplateWrapper = styled(Grid)`
   pointer-events: ${(props) => {
     return props.pointerEvents || "";
   }};
+  ${Region} {
+    > * {
+      border-radius: 0; /* Squares of corners or direct child containers.  Eliminates 'inset shadow' of rounded containers when Regions have borders or shadows */
+    }
+  }
 `;
 
 const widthXS = "12rem";
@@ -117,10 +122,11 @@ const templateHash = {
   B_05: {
     setTemplate: [
       "\"A . B\"",
+      "\". . B\"",
       "\". . .\"",
     ].join("\n"),
-    setColumns: "auto 1fr 12rem",
-    setRows: "1fr 1rem",
+    setColumns: `4rem 1fr ${widthMD}`,
+    setRows: "auto 1fr 1rem",
     hasBorder: true,
   },
   B_06: {
@@ -260,7 +266,7 @@ function Template({
   if (isOverlay) {
     backgroundColor = "none";
     pointerEvents = "none";
-    setPadding = "0.5rem";
+    setPadding = "1rem";
     setPosition = "absolute";
     zIndex = "999";
   }

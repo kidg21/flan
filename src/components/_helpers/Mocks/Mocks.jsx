@@ -5,6 +5,7 @@ import Grid from "layout/Grid";
 import Text, { Title, Link } from "base/Typography";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
+import Command from "atoms/Command";
 import IconBlock from "blocks/IconBlock";
 import ProgressIndicator from "elements/ProgressIndicator";
 import Divider from "atoms/Divider";
@@ -23,10 +24,14 @@ import Bar from "layout/Bar";
 import Menu from "blocks/Menu";
 import Panel from "layout/Panel";
 import Template from "layout/Template";
+import Inline from "layout/Inline";
 import Picker, { ColorSwatch } from "elements/Picker";
-import Field, { FieldGroup } from "atoms/Field";
+import Field, { FieldSection, FieldGroup } from "atoms/Field";
+import Banner from "blocks/Banner";
+import MediaBlock from "blocks/MediaBlock";
 import LightBoxLogo from "images/LightBoxLogo.png";
 import StaticMap from "images/maps/mission-viejo.png";
+import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 
 function MockPalette() {
   return (
@@ -67,29 +72,29 @@ function MockHeaderGlobal({ menuClick }) {
               isPlain
               onClick={menuClick}
             />
-            <Image src={LightBoxLogo} alt="Lightbox Logo" width="8vw" onClick={doNothing} />
+            <Image src={LightBoxLogo} alt="Lightbox Logo" width="8vw" onClick={() => { }} />
           </Grid>
         ),
-        width: "12%",
+        width: "max-content",
       }}
       center={{
         content: (
           <ButtonGroup columns="4">
             <Button label="JOBS PORTAL" isPlain variant="neutral" />
-            <Button label="RESEARCH" isPlain />
+            <Button label="RESEARCH" disabled hasUnderline />
             <Button label="BI" isPlain variant="neutral" />
             <Button label="REPORT WRITING" isPlain variant="neutral" />
           </ButtonGroup>
         ),
-        align: "left",
+        // align: "left",
         width: "fit-content",
       }}
       right={{
         content: (
-          <Grid columns="max-content max-content" gap="4xl" align="center">
+          <Inline spacingX="" spacingY="">
             <Button size="lg" isRound icon="help_circle" variant="neutral" isPlain />
             <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
-          </Grid>
+          </Inline>
         ),
         width: "fit-content",
       }}
@@ -163,21 +168,28 @@ MockFooter.defaultProps = {
   // stuff
 };
 
-function MockMenu() {
+function MockMenu({ data, title }) {
   return (
-    <List title="Research" isInteractive isInverse>
-      <ListItem title="Projects" isSelected />
-      <ListItem title="Properties" />
-      <ListItem title="History" />
-      <ListItem title="Data" />
-    </List>
+    <React.Fragment>
+      {data ? <List title={title} isInteractive isInverse data={data} />
+        : (
+          <List title={title} isInteractive isInverse>
+            <ListItem title="Projects" isSelected />
+            <ListItem title="Properties" />
+            <ListItem title="History" />
+            <ListItem title="Data" />
+          </List>
+        )}
+    </React.Fragment>
   );
 }
 MockMenu.propTypes = {
-  // stuff
+  data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  title: PropTypes.string,
 };
 MockMenu.defaultProps = {
-  // stuff
+  data: null,
+  title: null,
 };
 
 function MockWorkflow({ data, title }) {
@@ -196,7 +208,6 @@ function MockWorkflow({ data, title }) {
                 type: "icon", icon: "check", variant: "success",
               }}
             />
-            <Divider />
             <ListSection>
               <ListItem
                 title="Assessment"
@@ -704,12 +715,88 @@ function MockDetails({
   image, title, data, footer, offcanvas,
 }) {
   return (
-    <Panel padding="0" offcanvas={offcanvas}>
+    <Panel
+      header={(
+        <React.Fragment>
+          <Card>
+            <CardSection isInverse>
+              <Bar
+                contentAlign="center"
+                padding="0"
+                left={(
+                  <Text text="Property Summary" />
+                )}
+                right={{
+                  content: (
+                    <Icon icon="close" onClick={() => { }} />
+                  ),
+                  width: "4rem",
+                }}
+              />
+            </CardSection>
+          </Card>
+          <Card
+            commands={[
+              {
+                icon: "Report",
+                id: "Details",
+                label: "Details",
+                onClick: () => { },
+              },
+              {
+                icon: "Location",
+                id: "Location",
+                label: "Location",
+                onClick: () => { },
+              },
+            ]}
+          >
+            <MediaBlock
+              media={
+                <Image src={image || ModernExterior1} alt="mockImage" />
+              }
+              title="22902 Trabuco Rd"
+              description="Mission Viejo, CA"
+            />
+          </Card>
+        </React.Fragment>
+      )}
+      padding="0"
+      offcanvas={offcanvas}
+    >
       <Template>
-        <Image src={image || StaticMap} alt="mockImage" />
+        {/* <MediaBlock
+          align="vertical"
+          media={<Image src={image || StaticMap} alt="mockImage" />}
+          body={(
+            <React.Fragment>
+              <Title size="lg" weight="bold" text="22902 Trabuco Rd" />
+              <Text weight="light" text="Mission Viejo CA" />
+            </React.Fragment>
+          )}
+        /> */}
+        {/* <Image src={image || StaticMap} alt="mockImage" /> */}
         {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
           : (
-            <Bar
+            <FieldSection>
+              <FieldGroup title="Property Information" gap="sm" columns="1">
+                <Field align="edge" label="Parcel No." value="808-221-12" onClick />
+                <Field align="edge" label="Land User" value="Commercial Shopping Center" />
+                <Field align="edge" label="Building Area" value="25,344 SF" />
+                <Field align="edge" label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
+                <Field align="edge" label="Building/Lot" value="0.15" />
+                <Field align="edge" label="No. of Units" value="" />
+                <Field align="edge" label="Year Built" value="1978" />
+              </FieldGroup>
+              <FieldGroup title="Owner Information" gap="sm" columns="1">
+                <Field align="edge" label="Owners" value="SCF-Los Alisos LLC" onClick />
+                <Field align="edge" label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
+                <Field align="edge" label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick />
+                <Field align="edge" label="Last Sale" value="10/2/15 for $11,500,000" onClick />
+                <Field align="edge" label="Total Assd Value" value="$10,045,870" />
+              </FieldGroup>
+            </FieldSection>
+            /* <Bar
               padding="2x"
               center={(
                 <FieldGroup id="Physical Characteristics">
@@ -751,7 +838,7 @@ function MockDetails({
                   />
                 </FieldGroup>
               )}
-            />
+            /> */
           )}
         {footer}
       </Template>
