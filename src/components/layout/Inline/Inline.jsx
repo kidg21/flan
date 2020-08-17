@@ -2,7 +2,24 @@
 /* eslint-disable security/detect-object-injection */
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import Flex from "layout/Flex";
+
+const InlineWrapper = styled(Flex)`
+  flex-direction: row;
+  flex-wrap: wrap;
+`;
+
+const InlineItem = styled.div`
+  margin: ${(props) => {
+    return props.inlineMargin || "";
+  }};
+  &:not(:first-of-type) {
+    padding: ${(props) => {
+    return props.inlinePadding || "0 0 0 1rem";
+  }};
+  }
+`;
 
 const justiftyHash = {
   center: "center",
@@ -26,27 +43,28 @@ function Inline({
   const justifyContent = justiftyHash[contentJustify && contentJustify.toLowerCase()] || "flex-start";
   const alignItems = alignHash[contentAlign && contentAlign.toLowerCase()] || "center";
   const spacingHalfY = spacingY ? `calc(${spacingY} / 2)` : "0";
+  const inlineMargin = `${spacingHalfY} ${spacingX} ${spacingHalfY} 0`;
+  let inlinePadding;
 
   return (
-    <Flex
-      flexDirection="row"
-      flexWrap="wrap"
+    <InlineWrapper
       justifyContent={justifyContent}
       alignItems={alignItems}
     >
-      { children.length > 0
+      {children.length > 0
         ? children.map((child) => {
           return (
-            <div
+            <InlineItem
               key={child.key ? `${child.key}-wrapper` : null}
-              style={{ margin: `${spacingHalfY} ${spacingX} ${spacingHalfY} 0`, paddingLeft: "1rem" }}
+              inlineMargin={inlineMargin}
+              inlinePadding={inlinePadding}
             >
               {child}
-            </div>
+            </InlineItem>
           );
         })
-        : null }
-    </Flex>
+        : null}
+    </InlineWrapper>
   );
 }
 
