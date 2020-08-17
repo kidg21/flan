@@ -7,9 +7,6 @@ import { PlaceholderText } from "helpers/Skeleton";
 
 const FlexWrapper = styled.div`
   display: flex;
-  color: ${(props) => {
-    return props.theme.text.primary;
-  }};
   flex-direction: ${(props) => {
     return props.flexDirection || "column";
   }};
@@ -54,9 +51,6 @@ const FlexWrapper = styled.div`
   }};
   z-index: ${(props) => {
     return props.zIndex || "0";
-  }};
-  background-color: ${(props) => {
-    return props.theme.background.default;
   }};
   transform: ${(props) => {
     return props.displayState || "";
@@ -196,6 +190,5 @@ Flex.defaultProps = {
   width: null,
   zIndex: null,
 };
-
 
 export default Flex;
