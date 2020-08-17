@@ -20,7 +20,7 @@ const SearchContainer = styled.form`
   "A"
   "B";
   grid-template-rows: auto 1fr;
-  grid-row-gap: 0.25rem;
+  grid-row-gap: 0;
   position: relative;
   padding: 0 0.5rem;
 `;
@@ -36,8 +36,6 @@ const SearchInput = styled(Flex)`
   border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
-  /* The padding gives the buttons space so they don't overlap the rounded corners of the container */
-  padding: 2px;
   /* Necessary for the Menu List isn't cropped */
   overflow: visible;
 `;
@@ -51,6 +49,8 @@ const SearchTextInput = styled(TextInput)`
 
 const SearchButton = styled(Button)`
   flex: none;
+  margin: 1px;
+
 `;
 
 const DropContainer = styled(Container)`

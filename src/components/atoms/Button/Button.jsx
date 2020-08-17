@@ -160,7 +160,7 @@ const sizeHash = {
     label: "xs",
     icon: "sm",
     height: "fit-content",
-    padding: "0.25em 0.25em",
+    padding: "0.25em 0.5em",
   },
   lg: {
     label: "lg",
@@ -317,7 +317,7 @@ function Button({
       rows={alignCenter ? "max-content 1fr" : null}
     >
       {icon ? <Icon icon={icon} size={iconSize} /> : null}
-      {label ? <Label size={labelSize} text={label} /> : null}
+      {label ? <Label size={labelSize} text={label} weight="bold" /> : null}
       {count && !isDisabled ? <Tag label={count.toString()} /> : null}
     </LabelWrapper>
   );

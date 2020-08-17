@@ -23,13 +23,12 @@ const FieldItem = styled(Grid)`
 
 const GroupTitle = styled(Text)`
   color: ${(props) => {
-    return props.theme.text.secondary;
+    return props.theme.background.alt;
   }};
   text-transform: uppercase;
   grid-column: 1/-1;
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
-  font-weight: 400;
 `;
 
 const FieldLabel = styled(Label)`
@@ -89,11 +88,10 @@ function Field({
       break;
   }
 
-
   let field = (
     <FieldValue
       onChange={onChange}
-      weight="medium"
+      weight="bold"
       valueAlign={valueAlign}
     >
       {value}
@@ -115,7 +113,7 @@ function Field({
       fieldGap={fieldGap}
       id={id}
     >
-      <FieldLabel size="lg" text={label} />
+      <FieldLabel text={label} size="lg" />
       {field}
     </FieldItem>
   );
@@ -152,7 +150,6 @@ function FieldGroup({
   if (_columns > 0 && _columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
-
   return (
     <FieldGrid
       className={className}
@@ -160,7 +157,7 @@ function FieldGroup({
       gap={gap}
       id={id}
     >
-      {title ? <GroupTitle size="sm" text={title} /> : null}
+      {title ? <GroupTitle text={title} size="sm" weight="bold" /> : null}
       {children
         || data.map((item, index) => {
           return (

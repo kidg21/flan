@@ -128,10 +128,16 @@ const PanelSection = styled(PanelBody)`
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
+    box-shadow: ${(props) => {
+    return props.theme.shadows.outerShadow;
+  }};
   }
   &:last-of-type {
     border-top: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
+  }};
+    box-shadow: ${(props) => {
+    return props.theme.shadows.outerShadow;
   }};
   }
 `;

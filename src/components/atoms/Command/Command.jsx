@@ -46,8 +46,8 @@ const CommandContainer = styled.a`
 
 const CommandName = styled(Label)`
   grid-area: name;
-  font-size: inherit;
   font-weight: 500;
+  line-height: normal;
   color: inherit;
   text-transform: capitalize;
   overflow: hidden;
@@ -65,7 +65,7 @@ const CommandName = styled(Label)`
   transition: all 0.25s ease-in-out;
 
   ${(props) => {
-    if(props.hidden){
+    if (props.hidden) {
       return `
         position: absolute;
         overflow: hidden;
@@ -87,7 +87,7 @@ const CommandName = styled(Label)`
                 clip: auto;
             }
         }
-      `
+      `;
     }
   }}
 `;
@@ -149,7 +149,6 @@ function Command({
   let commandColor;
   let commandSize = "";
 
-
   switch (align) {
     case "center":
       alignCommand = "auto";
@@ -163,8 +162,7 @@ function Command({
       break;
   }
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {
