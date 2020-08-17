@@ -213,7 +213,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                       content: <MockDetails />,
                     }}
                   />
-                  <Mapbox />
+                  <Mapbox map="satellite" center={[-117.6582, 33.5969]} zoom={[17]} />
                 </Panel>
               ),
             }}

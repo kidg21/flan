@@ -752,9 +752,7 @@ function MockDetails({
             ]}
           >
             <MediaBlock
-              media={
-                <Image src={image || ModernExterior1} alt="mockImage" />
-              }
+              media={image || StaticMap}
               title="22902 Trabuco Rd"
               description="Mission Viejo, CA"
             />
