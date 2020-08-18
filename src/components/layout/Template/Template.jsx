@@ -20,11 +20,15 @@ const Region = styled.section`
   overflow: ${(props) => {
     return props.overflow || "auto";
   }};
+  opacity: ${(props) => {
+    return props.opacity || "1";
+  }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
   pointer-events: initial;
   outline: none;
+  transition: all 0.15s ease-in-out;
 `;
 
 const TemplateWrapper = styled(Grid)`
@@ -252,7 +256,7 @@ function Template({
     setHeight = "auto";
     setPadding = "1rem";
     setColumnGap = "1rem";
-    setRowGap = "1rem";
+    setRowGap = "1.25rem";
   }
   if (hasCards || hasShadows) {
     setPadding = "1rem";
@@ -298,6 +302,7 @@ function Template({
               regionShadow={regionShadow}
               tabIndex="0"
               hasBorder={hasBorder}
+              opacity={A.opacity}
               overflow={A.overflow}
             >
               {A.content}
@@ -310,6 +315,7 @@ function Template({
               gridArea={template ? "B" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              opacity={B.opacity}
               overflow={B.overflow}
             >
               {B.content}
@@ -322,6 +328,7 @@ function Template({
               gridArea={template ? "C" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              opacity={C.opacity}
               overflow={C.overflow}
             >
               {C.content}
@@ -334,6 +341,7 @@ function Template({
               gridArea={template ? "D" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              opacity={D.opacity}
               overflow={D.overflow}
             >
               {D.content}
@@ -346,6 +354,7 @@ function Template({
               gridArea={template ? "E" : null}
               regionShadow={regionShadow}
               tabIndex="0"
+              opacity={E.opacity}
               overflow={E.overflow}
             >
               {E.content}
@@ -360,16 +369,19 @@ Template.propTypes = {
   A: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   B: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   C: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   children: PropTypes.node,
@@ -377,11 +389,13 @@ Template.propTypes = {
   D: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   E: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
+    opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   id: PropTypes.string,
