@@ -58,9 +58,9 @@ const FieldValue = styled(Text)`
 const FieldGrid = styled(Grid)`
   grid-column-gap: 2rem;
   overflow: auto;
-  &:not(:last-of-type) {
-    margin-bottom: 1rem;
-  }
+  /* &:not(:last-of-type) { */
+    /* margin-bottom: 0.5rem; */
+  /* } */
 `;
 
 const Section = styled.section`
