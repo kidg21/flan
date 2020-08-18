@@ -8,6 +8,9 @@ import Flex from "layout/Flex";
 const InlineWrapper = styled(Flex)`
   flex-direction: row;
   flex-wrap: wrap;
+  line-height: 0; /* improves vertical alignment of inline Icons */
+  overflow: visible;
+  z-index: inherit;
 `;
 
 const InlineItem = styled.div`
