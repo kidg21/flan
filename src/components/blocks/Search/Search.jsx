@@ -42,6 +42,9 @@ const SearchInput = styled(Flex)`
 
 const SearchTextInput = styled(TextInput)`
   flex: auto;
+  input {
+    height: 2rem;
+  }
   > * {
     border: none;
   }
@@ -49,8 +52,8 @@ const SearchTextInput = styled(TextInput)`
 
 const SearchButton = styled(Button)`
   flex: none;
+  height: inherit;
   margin: 1px;
-
 `;
 
 const DropContainer = styled(Container)`
