@@ -12,7 +12,7 @@ const Region = styled.section`
   }};
   height: inherit;
   border-left: ${(props) => {
-    return props.setBorder || "";
+    return props.hasBorder ? "1px solid" : "";
   }};
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
@@ -218,7 +218,7 @@ const templateHash = {
 };
 
 function Template({
-  A, B, C, D, E, children, classname, hasCards, hasShadows, id, isOverlay, template, hasBorder,
+  A, B, C, D, E, children, classname, hasCards, hasShadows, id, isOverlay, template,
 }) {
   let backgroundColor;
   let pointerEvents;
@@ -230,7 +230,6 @@ function Template({
   let setPosition;
   let setRowGap;
   let setRows;
-  let setBorder;
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
@@ -263,9 +262,7 @@ function Template({
     setPosition = "absolute";
     zIndex = "999";
   }
-  if (hasBorder) {
-    setBorder = "1px solid";
-  }
+
 
   return (
     <TemplateWrapper
@@ -293,6 +290,7 @@ function Template({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              hasBorder={A.hasBorder}
               overflow={A.overflow}
               isOverlay={isOverlay}
             >
@@ -306,7 +304,7 @@ function Template({
               gridArea={template ? "B" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
-              setBorder={setBorder}
+              hasBorder={B.hasBorder}
               overflow={B.overflow}
               isOverlay={isOverlay}
             >
@@ -320,6 +318,7 @@ function Template({
               gridArea={template ? "C" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              hasBorder={C.hasBorder}
               overflow={C.overflow}
               isOverlay={isOverlay}
             >
@@ -333,7 +332,7 @@ function Template({
               gridArea={template ? "D" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
-              setBorder={setBorder}
+              hasBorder={D.hasBorder}
               overflow={D.overflow}
               isOverlay={isOverlay}
             >
@@ -347,6 +346,7 @@ function Template({
               gridArea={template ? "E" : null}
               regionShadow={regionShadow}
               tabIndex="0"
+              hasBorder={E.hasBorder}
               overflow={E.overflow}
               isOverlay={isOverlay}
             >
@@ -363,16 +363,19 @@ Template.propTypes = {
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   B: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   C: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   children: PropTypes.node,
   classname: PropTypes.string,
@@ -380,15 +383,16 @@ Template.propTypes = {
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   E: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
-  hasBorder: PropTypes.bool,
   hasCards: PropTypes.bool,
   hasShadows: PropTypes.bool,
   template: PropTypes.string,
@@ -403,7 +407,6 @@ Template.defaultProps = {
   E: null,
   id: null,
   isOverlay: false,
-  hasBorder: false,
   hasCards: false,
   hasShadows: false,
   template: null,
