@@ -16,7 +16,7 @@ const PanelWrapper = styled.div`
   width: ${(props) => { return props.width; }};
   height: ${(props) => { return props.height; }};
   max-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   transform: ${(props) => {
     return props.isOffCanvas || "";
   }};
@@ -128,17 +128,20 @@ const PanelSection = styled(PanelBody)`
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
-    box-shadow: ${(props) => {
+    /* box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
-  }};
+  }}; */
   }
   &:last-of-type {
     border-top: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
-    box-shadow: ${(props) => {
+    /* box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
-  }};
+  }}; */
+  }
+  > * {
+    border-radius: 0; /* Squares of corners or direct child containers.  Eliminates 'inset shadow' of rounded containers when children have borders or shadows */
   }
 `;
 
