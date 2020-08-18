@@ -54,6 +54,24 @@ storiesOf("Templates|Applications/Research/Property", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
+        const [rightOpen, setRightOpen] = useState(false);
+        const toggleRight = () => { setRightOpen(!rightOpen); };
+
+        const [detailsMap, setDetailsMap] = useState("");
+        const [fade, setFade] = useState("1");
+        const toggleDetailsMap = () => {
+          if (detailsMap === "right") {
+            setDetailsMap("");
+            setFade("1");
+          } else {
+            setDetailsMap("right");
+            setFade("0");
+          }
+        };
+
+        const [bottomMax, setBottomMax] = useState(false);
+        const toggleBottomMax = () => { setBottomMax(!bottomMax); };
+
         const menuMain = [
           {
             id: "Projects",
@@ -72,47 +90,20 @@ storiesOf("Templates|Applications/Research/Property", module)
             id: "Data",
             title: "Data",
           },
-        ];
-
-        const menuWorkflow = [
           {
-            id: "Project Details",
-            title: "Project Details",
-            isSelected: true,
+            id: "Toggle Details",
+            title: "Toggle Details",
+            onClick: toggleDetailsMap,
           },
           {
-            id: "Define Site",
-            title: "Define Site",
+            id: "Toggle Right",
+            title: "Toggle Right",
+            onClick: toggleRight,
           },
           {
-            id: "Assessment",
-            title: "Assessment",
-            disabled: true,
-          },
-          {
-            id: "Zoning",
-            title: "Zoning",
-            disabled: true,
-          },
-          {
-            id: "Demographics",
-            title: "Demographics",
-            disabled: true,
-          },
-          {
-            id: "Maps",
-            title: "Maps",
-            disabled: true,
-          },
-          {
-            id: "Report",
-            title: "Report",
-            disabled: true,
-          },
-          {
-            id: "Export",
-            title: "Export",
-            disabled: true,
+            id: "Toggle Bottom",
+            title: "Toggle Bottom",
+            onClick: toggleBottomMax,
           },
         ];
 
@@ -161,7 +152,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                       </CardSection>
                       <CardSection padding="0" isInverse>
                         <Bar
-                          contentAlign="center"
+                          contentAlign="top"
                           left={{
                             content: (
                               <Inline spacingX="" spacingY="">
@@ -179,7 +170,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                                 <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
                                 <Tag label="Expensive " brand="brand1" icon="close" onClickIcon={() => { }} />
                                 <Tag label="EX: Boundary 1" brand="brand1" icon="close" onClickIcon={() => { }} />
-                                <Tag label="IN: Boundary 3" brand="brand1" icon="close" onClickIcon={() => { }} />
+                                {/* <Tag label="IN: Boundary 3" brand="brand1" icon="close" onClickIcon={() => { }} /> */}
                               </Inline>
                             ),
                             align: "left",
@@ -198,7 +189,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                       id: "A",
                       content: (
                         <Card padding="2x">
-                          <ButtonGroup gap="xl" columns="1">
+                          <ButtonGroup gap="lg" columns="1">
                             <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
                             <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
                             <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
@@ -210,17 +201,29 @@ storiesOf("Templates|Applications/Research/Property", module)
                     }}
                     B={{
                       id: "B",
-                      content: <MockDetails />,
+                      content: <MockDetails offcanvas2={detailsMap} />,
+                      opacity: fade,
+                      overflow: "hidden",
                     }}
                   />
                   <Mapbox map="satellite" center={[-117.6582, 33.5969]} zoom={[17]} />
                 </Panel>
               ),
             }}
+            right={{
+              id: "Summary Panel",
+              content: (
+                <MockDetails />
+              ),
+              visible: rightOpen,
+            }}
             bottom={{
               id: "Results List",
-              content: <MockTable />,
-              visible: false,
+              content: (
+                <MockTable />
+              ),
+              max: bottomMax,
+              // visible: false,
             }}
           />
         );

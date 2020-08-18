@@ -11,10 +11,11 @@ import ProgressIndicator from "elements/ProgressIndicator";
 import Divider from "atoms/Divider";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListSection, ListItem } from "blocks/List";
-import Tabs from "blocks/Tabs";
+import Tabs, { TabItem } from "blocks/Tabs";
 import Table from "blocks/Table";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
+import Tag from "atoms/Tag";
 import Button, { ButtonGroup } from "atoms/Button";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
@@ -81,7 +82,7 @@ function MockHeaderGlobal({ menuClick }) {
         content: (
           <ButtonGroup columns="4">
             <Button label="JOBS PORTAL" isPlain variant="neutral" />
-            <Button label="RESEARCH" disabled hasUnderline />
+            <Button label="RESEARCH" disabled2 variant2="info" hasUnderline />
             <Button label="BI" isPlain variant="neutral" />
             <Button label="REPORT WRITING" isPlain variant="neutral" />
           </ButtonGroup>
@@ -248,9 +249,10 @@ MockWorkflow.defaultProps = {
   title: null,
 };
 
-function MockTable() {
+function MockTable({ header, table }) {
   const tableHeaders = [
     { id: "checkbox", label: <Grid columns="auto 1fr"><Checkbox label="Select All" /></Grid> },
+    { id: "actions", label: "Actions" },
     { id: "Name", label: "Name", sortable: true },
     { id: "Address", label: "Address", sortable: false },
     { id: "City", label: "City", sortable: false },
@@ -263,7 +265,6 @@ function MockTable() {
     { id: "Year_Built", label: "Year Built", sortable: false },
     { id: "Land_SF", label: "Land(sf)", sortable: false },
     { id: "Acres", label: "Acres", sortable: false },
-    { id: "actions", label: "Actions" },
   ];
 
   const tableData = [
@@ -309,26 +310,106 @@ function MockTable() {
       Land_SF: "78",
       Acres: "0.5",
     },
+    {
+      Name: <Link text="477 Madison Avenue" href="www.google.com" />,
+      Address: "477 Madison Avenue",
+      City: "New York",
+      State: "NY",
+      Zip: "10022",
+      Property_Type: "Office",
+      GBA: "262,287",
+      Rentable_Area: "262,287",
+      Units: "68",
+      Year_Built: "1987",
+      Land_SF: "2938",
+      Acres: "2",
+    },
+    {
+      Name: <Link text="23 E. 21 St." href="www.google.com" />,
+      Address: "23 E. 21St. #2",
+      City: "New York",
+      State: "NY",
+      Zip: "10010",
+      Property_Type: "Office",
+      GBA: "3,230",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="11 W. 20 St." href="www.google.com" />,
+      Address: "11 W 20 St. #4R",
+      City: "New York",
+      State: "NY",
+      Zip: "10011",
+      Property_Type: "Office",
+      GBA: "2,650",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="477 Madison Avenue" href="www.google.com" />,
+      Address: "477 Madison Avenue",
+      City: "New York",
+      State: "NY",
+      Zip: "10022",
+      Property_Type: "Office",
+      GBA: "262,287",
+      Rentable_Area: "262,287",
+      Units: "68",
+      Year_Built: "1987",
+      Land_SF: "2938",
+      Acres: "2",
+    },
+    {
+      Name: <Link text="23 E. 21 St." href="www.google.com" />,
+      Address: "23 E. 21St. #2",
+      City: "New York",
+      State: "NY",
+      Zip: "10010",
+      Property_Type: "Office",
+      GBA: "3,230",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="11 W. 20 St." href="www.google.com" />,
+      Address: "11 W 20 St. #4R",
+      City: "New York",
+      State: "NY",
+      Zip: "10011",
+      Property_Type: "Office",
+      GBA: "2,650",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="477 Madison Avenue" href="www.google.com" />,
+      Address: "477 Madison Avenue",
+      City: "New York",
+      State: "NY",
+      Zip: "10022",
+      Property_Type: "Office",
+      GBA: "262,287",
+      Rentable_Area: "262,287",
+      Units: "68",
+      Year_Built: "1987",
+      Land_SF: "2938",
+      Acres: "2",
+    },
   ];
 
-  const iconNames = [
-    {
-      icon: "edit",
-      onClick: () => { },
-      // icon: "check",
-      // variant: "success",
-    },
-    {
-      icon: "delete",
-      onClick: () => { },
-      // icon: "close",
-      // variant: "alert",
-    },
-    {
-      icon: "options",
-      onClick: () => { },
-    },
-  ];
   const [highlightedCell, setHighlightCell] = useState(null);
   const [selectedCell, setSelectedCell] = useState(null);
   for (let i = 0; i < tableData.length; i++) {
@@ -341,13 +422,15 @@ function MockTable() {
     );
   }
   for (let i = 0; i < tableData.length; i++) {
-    tableData[i].actions = React.createElement(
-      IconBlock,
-      {
-        data: iconNames,
-      },
-      null,
-    );
+    tableData[i].actions = React.createElement(() => {
+      return (
+        <Inline>
+          <Command icon="options" label="Options" labelVisible={false} />
+          <Command icon="edit" label="Edit" labelVisible={false} />
+          <Command icon="delete" label="Delete" labelVisible={false} />
+        </Inline>
+      );
+    });
   }
 
   const onCellClick = (e, { rowIndex }) => {
@@ -363,54 +446,68 @@ function MockTable() {
   };
   return (
     <React.Fragment>
-      <Card>
-        <CardSection padding="0">
-          <Bar
-            contentAlign="center"
-            left={{
-              content: <Title size="" text="Results | 3" weight="bold" />,
-              align: "left",
-            }}
-            right={{
-              content: (
-                <IconBlock>
-                  <Icon icon="share" />
-                  <Icon icon="delete" />
-                  <Menu
-                    data={[
-                      { id: "a", label: "Action" },
-                      { id: "b", label: "Action" },
-                      { id: "c", label: "Action" },
-                    ]}
-                    position="bottomLeft"
-                  />
-                </IconBlock>
-              ),
-              width: "10rem",
-            }}
-          />
-        </CardSection>
-      </Card>
-      <Table
-        id="MockTable"
-        headers={tableHeaders}
-        rows={tableData}
-        listId="Data Table"
-        onCellClick={onCellClick}
-        onHeaderClick={onHeaderClick}
-        onCellMouseOver={onCellMouseOver}
-        highlightedCell={highlightedCell}
-        selectedCell={selectedCell}
-        columnWidth={180}
-      />
+      {header ? (
+        <Card>
+          <CardSection isInverse>
+            <Bar
+              contentAlign="center"
+              padding="0"
+              left={{
+                content: (
+                  <Inline>
+                    <Menu
+                      data={[
+                        { id: "a", label: "Action" },
+                        { id: "b", label: "Action" },
+                        { id: "c", label: "Action" },
+                      ]}
+                      position="bottomRight"
+                    >
+                      <Icon icon="options" onClick={() => { }} />
+                    </Menu>
+                    <Text text="Active List" />
+                    <Tag label="3" />
+                  </Inline>
+                ),
+              }}
+              right={{
+                content: (
+                  <Inline spacingX="0.5rem">
+                    <Icon icon="share" onClick={() => { }} />
+                    <Icon icon="delete" onClick={() => { }} />
+                    <Icon icon="maximize" onClick={() => { }} />
+                    <Icon icon="down" onClick={() => { }} />
+                  </Inline>
+                ),
+              }}
+            />
+          </CardSection>
+        </Card>
+      ) : null}
+      {table ? (
+        <Table
+          id="MockTable"
+          headers={tableHeaders}
+          rows={tableData}
+          listId="Data Table"
+          onCellClick={onCellClick}
+          onHeaderClick={onHeaderClick}
+          onCellMouseOver={onCellMouseOver}
+          highlightedCell={highlightedCell}
+          selectedCell={selectedCell}
+          columnWidth={160}
+        />
+      ) : null}
     </React.Fragment>
   );
 }
 MockTable.propTypes = {
-  // stuff
+  header: PropTypes.boolean,
+  table: PropTypes.boolean,
 };
 MockTable.defaultProps = {
-  // stuff
+  header: true,
+  table: true,
 };
 
 function MockData() {
@@ -724,7 +821,7 @@ function MockDetails({
                 contentAlign="center"
                 padding="0"
                 left={(
-                  <Text text="Property Summary" />
+                  <Title text="Property Summary" />
                 )}
                 right={{
                   content: (
@@ -735,7 +832,7 @@ function MockDetails({
               />
             </CardSection>
           </Card>
-          <Card
+          {/* <Card
             commands={[
               {
                 icon: "Report",
@@ -750,30 +847,44 @@ function MockDetails({
                 onClick: () => { },
               },
             ]}
-          >
-            <MediaBlock
-              media={image || StaticMap}
-              title="22902 Trabuco Rd"
-              description="Mission Viejo, CA"
-            />
-          </Card>
+          /> */}
         </React.Fragment>
       )}
       padding="0"
       offcanvas={offcanvas}
     >
       <Template>
-        {/* <MediaBlock
-          align="vertical"
-          media={<Image src={image || StaticMap} alt="mockImage" />}
-          body={(
-            <React.Fragment>
-              <Title size="lg" weight="bold" text="22902 Trabuco Rd" />
-              <Text weight="light" text="Mission Viejo CA" />
-            </React.Fragment>
-          )}
-        /> */}
-        {/* <Image src={image || StaticMap} alt="mockImage" /> */}
+        {/* <Card
+          commands={[
+            {
+              icon: "Report",
+              id: "Details",
+              label: "Details",
+              onClick: () => { },
+            },
+            {
+              icon: "Location",
+              id: "Location",
+              label: "Location",
+              onClick: () => { },
+            },
+          ]}
+        > */}
+        <MediaBlock
+          media={image || StaticMap}
+          title="22902 Trabuco Rd"
+          description="Mission Viejo, CA"
+        >
+          <Inline spacingX="1rem">
+            <Command icon="report" label="Details" />
+            <Command icon="location" label="Location" />
+          </Inline>
+        </MediaBlock>
+        {/* </Card> */}
+        {/* <Inline spacingX="1rem">
+          <Command icon="report" label="Details" />
+          <Command icon="location" label="Location" />
+        </Inline> */}
         {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
           : (
             <FieldSection>
@@ -794,49 +905,6 @@ function MockDetails({
                 <Field align="edge" label="Total Assd Value" value="$10,045,870" />
               </FieldGroup>
             </FieldSection>
-            /* <Bar
-              padding="2x"
-              center={(
-                <FieldGroup id="Physical Characteristics">
-                  <Field
-                    align="edge"
-                    id="No. of Buildings"
-                    label="Project Owner"
-                    value="Steve Davidson"
-                  />
-                  <Field
-                    align="edge"
-                    id="GBA"
-                    label="Project Due"
-                    value="06/25/2020"
-                  />
-                  <Field
-                    align="edge"
-                    id="No. of Stories"
-                    label="Project Status"
-                    value="Open"
-                  />
-                  <Field
-                    align="edge"
-                    id="No. of Units"
-                    label="Project Created"
-                    value="6/14/2020 8:00 am PT"
-                  />
-                  <Field
-                    align="edge"
-                    id="Year Built"
-                    label="Project Edited"
-                    value="6/16/2020 12:15 pm PT"
-                  />
-                  <Field
-                    align="edge"
-                    id="Year Built"
-                    label="N1 ID"
-                    value="1804"
-                  />
-                </FieldGroup>
-              )}
-            /> */
           )}
         {footer}
       </Template>
