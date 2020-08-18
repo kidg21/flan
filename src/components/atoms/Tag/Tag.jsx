@@ -132,21 +132,21 @@ function Tag({
         badgeTextColor={badgeTextColor}
         onClick={onClickIcon}
       >
-        { iconType }
+        {iconType}
       </TagIconContainer>
     );
     if (iconPosition === "right") {
       inner = (
         <React.Fragment>
-          { labelType }
-          { iconType }
+          {labelType}
+          {iconType}
         </React.Fragment>
       );
     } else {
       inner = (
         <React.Fragment>
-          { iconType }
-          { labelType }
+          {iconType}
+          {labelType}
         </React.Fragment>
       );
     }
