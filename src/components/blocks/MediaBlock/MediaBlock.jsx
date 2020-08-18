@@ -8,10 +8,11 @@ import Grid from "layout/Grid";
 
 const Block = styled(Grid)`
   grid-template-columns: ${(props) => {
-    return props.gridColumns || "3fr 1fr";
+    return props.gridColumns || "2fr 1fr";
   }};
   padding: ${(props) => {
-    return props.blockPadding || "0.5rem 0.5rem 0.25rem";
+    return props.blockPadding || "";
+    /* return props.blockPadding || "0.5rem 0.5rem 0.25rem"; */
   }};
   grid-template-areas: ${(props) => {
     return props.gridTemplate || "'body media'";
@@ -43,7 +44,8 @@ const MediaElement = styled(Media)`
 const Body = styled(Grid)`
   grid-area: body;
   padding: ${(props) => {
-    return props.padding || "0 0 0 0.5rem";
+    return props.padding || "";
+    /* return props.padding || "0 0 0 0.5rem"; */
   }};
   overflow: hidden;
   display: ${(props) => {
@@ -151,13 +153,15 @@ function MediaBlock({
         />
       ) : null}
       <Body
-        gap="xs"
+        gap=""
         padding={padding}
         displayInline={displayInline}
       >
-        {title ? <Title text={title} size="lg" weight="bold" /> : null}
-        {description ? (<Text text={description} weight="" />
-        ) : null}
+        <Grid gap="xs">
+          {title ? <Title text={title} size="lg" weight="bold" /> : null}
+          {description ? (<Text text={description} weight="" />
+          ) : null}
+        </Grid>
         {children}
       </Body>
     </Block>
