@@ -11,7 +11,7 @@ const Region = styled.section`
     return props.gridArea || "";
   }};
   height: inherit;
-  border-right: ${(props) => {
+  border-left: ${(props) => {
     return props.hasBorder ? "1px solid" : "";
   }};
   border-color: ${(props) => {
@@ -26,9 +26,14 @@ const Region = styled.section`
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
-  pointer-events: initial;
   outline: none;
   transition: all 0.15s ease-in-out;
+  ${(props) => {
+    // when it is overlay, we want the region (parent) to have no pointer-events
+    // and the children to restore thier events
+    // allows for transparent space inbetween to work
+    return !props.isOverlay ? "pointer-events: initial;" : ">* { pointer-events: auto; };";
+  }}
 `;
 
 const TemplateWrapper = styled(Grid)`
@@ -99,14 +104,12 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
-    hasBorder: true,
   },
   B_02: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthXS} 1fr`,
-    hasBorder: true,
   },
   B_03: {
     setTemplate: [
@@ -114,14 +117,12 @@ const templateHash = {
       "\"B\"",
     ].join("\n"),
     setRows: "auto 1fr",
-    hasBorder: true,
   },
   B_04: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthMD} 1fr`,
-    hasBorder: true,
   },
   B_05: {
     setTemplate: [
@@ -138,7 +139,6 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthXL}`,
-    hasBorder: true,
   },
   B_07: {
     setTemplate: [
@@ -241,12 +241,11 @@ function Template({
   let setPosition;
   let setRowGap;
   let setRows;
-  let hasBorder;
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
     ({
-      setTemplate, setColumns, setRows, hasBorder,
+      setTemplate, setColumns, setRows,
     } = templateHash[template.toUpperCase()]);
     setHeight = "100%";
     setPadding = "0";
@@ -280,7 +279,6 @@ function Template({
       backgroundColor={backgroundColor}
       classname={classname}
       id={id}
-
       pointerEvents={pointerEvents}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
@@ -296,66 +294,75 @@ function Template({
         <React.Fragment>
           {A ? (
             <Region
-              id={A.id || "A"}
-              placeholder="A"
               gridArea={template ? "A" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
-              hasBorder={hasBorder}
+              hasBorder={A.hasBorder}
+              id={A.id || "A"}
+              isOverlay={isOverlay}
               opacity={A.opacity}
               overflow={A.overflow}
+              placeholder="A"
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {A.content}
             </Region>
           ) : null}
           {B ? (
             <Region
-              id={B.id || "B"}
-              placeholder="B"
               gridArea={template ? "B" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
+              hasBorder={B.hasBorder}
+              id={B.id || "B"}
+              isOverlay={isOverlay}
               opacity={B.opacity}
               overflow={B.overflow}
+              placeholder="B"
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {B.content}
             </Region>
           ) : null}
           {C ? (
             <Region
-              id={C.id || "C"}
-              placeholder="C"
               gridArea={template ? "C" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
+              hasBorder={C.hasBorder}
+              id={C.id || "C"}
+              isOverlay={isOverlay}
               opacity={C.opacity}
               overflow={C.overflow}
+              placeholder="C"
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {C.content}
             </Region>
           ) : null}
           {D ? (
             <Region
-              id={D.id || "D"}
-              placeholder="D"
               gridArea={template ? "D" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
+              hasBorder={D.hasBorder}
+              id={D.id || "D"}
+              isOverlay={isOverlay}
               opacity={D.opacity}
               overflow={D.overflow}
+              placeholder="D"
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {D.content}
             </Region>
           ) : null}
           {E ? (
             <Region
-              id={E.id || "E"}
-              placeholder="E"
               gridArea={template ? "E" : null}
-              regionShadow={regionShadow}
-              tabIndex="0"
+              hasBorder={E.hasBorder}
+              id={E.id || "E"}
+              isOverlay={isOverlay}
               opacity={E.opacity}
               overflow={E.overflow}
+              placeholder="E"
+              regionShadow={regionShadow}
+              tabIndex="0"
             >
               {E.content}
             </Region>
@@ -367,34 +374,39 @@ function Template({
 }
 Template.propTypes = {
   A: PropTypes.shape({
-    id: PropTypes.string,
     content: PropTypes.node,
+    hasBorder: PropTypes.bool,
+    id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   B: PropTypes.shape({
-    id: PropTypes.string,
     content: PropTypes.node,
+    hasBorder: PropTypes.bool,
+    id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   C: PropTypes.shape({
-    id: PropTypes.string,
     content: PropTypes.node,
+    hasBorder: PropTypes.bool,
+    id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   children: PropTypes.node,
   classname: PropTypes.string,
   D: PropTypes.shape({
-    id: PropTypes.string,
     content: PropTypes.node,
+    hasBorder: PropTypes.bool,
+    id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),
   E: PropTypes.shape({
-    id: PropTypes.string,
     content: PropTypes.node,
+    hasBorder: PropTypes.bool,
+    id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
   }),

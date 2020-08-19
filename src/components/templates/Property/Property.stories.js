@@ -5,7 +5,6 @@ import { useState } from "hooks";
 import { FullScreen } from "helpers/Display";
 import Panel from "layout/Panel";
 import Icon from "atoms/Icon";
-import Loader from "atoms/Loader";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
 import Container from "atoms/Container";
@@ -13,7 +12,6 @@ import Layout from "layout/Layout";
 import Inline from "layout/Inline";
 import Command from "atoms/Command";
 import Template from "layout/Template";
-import Tabs, { TabItem } from "blocks/Tabs";
 import Search from "blocks/Search";
 import Tag from "atoms/Tag";
 import Menu from "blocks/Menu";
@@ -22,7 +20,6 @@ import Grid from "layout/Grid";
 import Form, { FormSection } from "layout/Form";
 import Checkbox from "atoms/Checkbox";
 import Image from "atoms/Image";
-import Divider from "atoms/Divider";
 import Field, { FieldGroup, FieldSection } from "atoms/Field";
 import Text, { Title, Label, Link } from "base/Typography";
 import Card, { CardSection } from "elements/Card";
@@ -302,8 +299,6 @@ storiesOf("Templates|Applications/Research/Property", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
         return (
           <Layout
             header={{
@@ -312,11 +307,12 @@ storiesOf("Templates|Applications/Research/Property", module)
             }}
             left={{
               id: "Left",
-              content: (<List title="Research" isInteractive isInverse>
-                <ListItem title="Dashboard" />
-                <ListItem title="Projects" />
-                <ListItem title="Properties" isSelected />
-              </List>),
+              content: (
+                <List title="Research" isInteractive isInverse>
+                  <ListItem title="Dashboard" />
+                  <ListItem title="Projects" />
+                  <ListItem title="Properties" isSelected />
+                </List>),
               visible: leftOpen,
             }}
             main={{
@@ -409,8 +405,6 @@ storiesOf("Templates|Applications/Research/Property", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
 
         return (
           <Layout

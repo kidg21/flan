@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
+import Bar from "layout/Bar";
 import Button from "atoms/Button";
 import Card, { CardSection } from "elements/Card";
 
@@ -56,12 +57,17 @@ function DialogBox({
       );
     } else if (buttons.length === 1) {
       buttonElements = (
-        <SecondaryButton
-          disabled={buttons[0].disabled}
-          id={buttons[0].id}
-          label={buttons[0].label}
-          onClick={buttons[0].onClick}
-          variant={buttons[0].variant}
+        <Bar
+          padding="0"
+          right={(
+            <SecondaryButton
+              disabled={buttons[0].disabled}
+              id={buttons[0].id}
+              label={buttons[0].label}
+              onClick={buttons[0].onClick}
+              variant={buttons[0].variant}
+            />
+          )}
         />
       );
     } else {
