@@ -52,7 +52,7 @@ const FieldValue = styled(Text)`
     return props.theme.text[props.valueColor] || "inherit";
   }};
   width: ${(props) => {
-    return props.valuelWidth;
+    return props.valueWidth;
   }};
   /* Default Value - displays when a Field's value is empty */
   &:empty {

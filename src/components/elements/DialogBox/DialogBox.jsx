@@ -67,7 +67,7 @@ function DialogBox({
               onClick={buttons[0].onClick}
               variant={buttons[0].variant}
             />
-      )}
+          )}
         />
       );
     } else {
