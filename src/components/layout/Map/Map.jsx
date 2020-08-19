@@ -39,7 +39,7 @@ const styleHash = {
 };
 
 function Mapbox({
-  center, id, map, zoom,
+  center, id, map, zoom, mapClick,
 }) {
   const selectedStyle = styleHash[map && map.toLowerCase()] || styleHash.custom;
   const { style } = selectedStyle;
@@ -51,6 +51,7 @@ function Mapbox({
       id={id}
       style={style}
       zoom={zoom}
+      onClick={mapClick} // for prototyping
     />
   );
 }
@@ -60,12 +61,14 @@ Mapbox.propTypes = {
   id: PropTypes.string,
   /** Options: 'streets', 'outdoors', 'light', 'dark', 'satellite', 'satellite-streets', 'custom' */
   map: PropTypes.oneOf(["streets", "outdoors", "light", "dark", "satellite", "satellite-streets", "custom"]),
+  mapClick: PropTypes.func, // for prototyping
   zoom: PropTypes.integer,
 };
 Mapbox.defaultProps = {
   center: [-74.006, 40.7128],
   id: null,
   map: "custom",
+  mapClick: null,
   zoom: [9],
 };
 
