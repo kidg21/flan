@@ -10,13 +10,13 @@ exports[` 1`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_193"
+    id="storyshots_195"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={[Function]}
   >
     <section
       className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_193-Media"
+      id="storyshots_195-Media"
       onClick={null}
     >
       <img
@@ -30,7 +30,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_193-Header"
+      id="storyshots_195-Header"
       onClick={null}
     >
       <div
@@ -97,7 +97,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_193-Body"
+      id="storyshots_195-Body"
       onClick={null}
     >
       <p
@@ -112,7 +112,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
-      id="storyshots_193-Footer"
+      id="storyshots_195-Footer"
       onClick={null}
     >
       <div
@@ -136,7 +136,7 @@ exports[` 1`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -154,7 +154,7 @@ exports[` 1`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -171,14 +171,14 @@ exports[` 1`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_193-Menu"
+            id="menu-popper-storyshots_195-Menu"
           >
             <button
               className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
               disabled={false}
               htmlFor={null}
-              id="menu-icon-storyshots_193-Menu"
-              name="menu-icon-storyshots_193-Menu"
+              id="menu-icon-storyshots_195-Menu"
+              name="menu-icon-storyshots_195-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
@@ -228,20 +228,20 @@ exports[` 2`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_194"
+    id="storyshots_196"
     media=""
     onClick={null}
   />
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_195"
+    id="storyshots_197"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_195-Header"
+      id="storyshots_197-Header"
       onClick={null}
     >
       <div
@@ -276,13 +276,13 @@ exports[` 2`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_196"
+    id="storyshots_198"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_196-Header"
+      id="storyshots_198-Header"
       onClick={null}
     >
       <div
@@ -315,7 +315,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_196-Body"
+      id="storyshots_198-Body"
       onClick={null}
     >
       <p
@@ -332,13 +332,13 @@ exports[` 2`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_197"
+    id="storyshots_199"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_197-Header"
+      id="storyshots_199-Header"
       onClick={null}
     >
       <div
@@ -381,7 +381,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_197-Body"
+      id="storyshots_199-Body"
       onClick={null}
     >
       <p
@@ -398,13 +398,13 @@ exports[` 2`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_198"
+    id="storyshots_200"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_198-Header"
+      id="storyshots_200-Header"
       onClick={null}
     >
       <div
@@ -458,7 +458,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_198-Body"
+      id="storyshots_200-Body"
       onClick={null}
     >
       <p
@@ -475,13 +475,13 @@ exports[` 2`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_199"
+    id="storyshots_201"
     media=""
     onClick={null}
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_199-Header"
+      id="storyshots_201-Header"
       onClick={null}
     >
       <div
@@ -510,376 +510,6 @@ exports[` 2`] = `
             Card Description
           </p>
         </div>
-      </div>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_199-Body"
-      onClick={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-        fontSize="1rem"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.5px"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
-      id="storyshots_199-Footer"
-      onClick={null}
-    >
-      <div
-        className="Bar__BarLayout-icfo76-2 bHddGh"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 hTtmaE"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs"
-            id={null}
-            rows={null}
-          >
-            <a
-              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
-              id={null}
-              label="Command One"
-              onClick={[Function]}
-              title="Command One"
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Command One
-              </label>
-            </a>
-            <a
-              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
-              id={null}
-              label="Command Two"
-              onClick={[Function]}
-              title="Command Two"
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Command Two
-              </label>
-            </a>
-          </section>
-        </div>
-        <div
-          className="Bar__Slot-icfo76-1 ecRRXN"
-        >
-          <span>
-             
-          </span>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-    href={null}
-    id="storyshots_200"
-    media=""
-    onClick={[Function]}
-  >
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_200-Header"
-      onClick={null}
-    >
-      <div
-        className="Bar__BarLayout-icfo76-2 eUVQsH"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 RjiBe"
-        >
-          <a
-            className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
-          >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
-            >
-              Card Title
-            </h4>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-              fontSize="1rem"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.5px"
-            >
-              Card Description
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_200-Body"
-      onClick={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-        fontSize="1rem"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0.5px"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
-      id="storyshots_200-Footer"
-      onClick={null}
-    >
-      <div
-        className="Bar__BarLayout-icfo76-2 bHddGh"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 hTtmaE"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs"
-            id={null}
-            rows={null}
-          >
-            <a
-              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
-              id={null}
-              label="Command One"
-              onClick={[Function]}
-              title="Command One"
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Command One
-              </label>
-            </a>
-            <a
-              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
-              id={null}
-              label="Command Two"
-              onClick={[Function]}
-              title="Command Two"
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Command Two
-              </label>
-            </a>
-          </section>
-        </div>
-        <div
-          className="Bar__Slot-icfo76-1 ecRRXN"
-        >
-          <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_200-Menu"
-          >
-            <button
-              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
-              disabled={false}
-              htmlFor={null}
-              id="menu-icon-storyshots_200-Menu"
-              name="menu-icon-storyshots_200-Menu"
-              onClick={[Function]}
-              tabIndex="1"
-              type="button"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
-                id={null}
-                rows={null}
-              >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                  color={null}
-                  data-icon="ellipsis-v"
-                  data-prefix="far"
-                  focusable="false"
-                  fontSize="inherit"
-                  id={null}
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 128 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </section>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</section>
-`;
-
-exports[` 3`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cCcBKL Card__CardGridWrapper-sc-1g3s676-4 dKngjY"
-  id={null}
-  rows={null}
->
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-    href={null}
-    id="storyshots_201"
-    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-    onClick={[Function]}
-  >
-    <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_201-Media"
-      onClick={null}
-    >
-      <img
-        alt="Media Description"
-        className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
-        onClick={null}
-        src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-        title="Media Description"
-        width="100%"
-      />
-    </section>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_201-Header"
-      onClick={null}
-    >
-      <div
-        className="Expander__HeaderWrapper-sc-147204-0 insQpf"
-        id={null}
-        onClick={[Function]}
-      >
-        <div
-          className="Bar__BarLayout-icfo76-2 eUVQsH"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-icfo76-1 fIRUJx"
-          >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
-            >
-              Card Title
-            </h4>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-              fontSize="1rem"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0.5px"
-            >
-              Card Description
-            </p>
-          </div>
-          <div
-            className="Bar__Slot-icfo76-1 cxljst"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="plus"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div
-        className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-        open={false}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Button
-            </label>
-          </section>
-        </button>
       </div>
     </section>
     <section
@@ -923,7 +553,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -941,7 +571,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -956,48 +586,9 @@ exports[` 3`] = `
         <div
           className="Bar__Slot-icfo76-1 ecRRXN"
         >
-          <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
-            id="menu-popper-storyshots_201-Menu"
-          >
-            <button
-              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
-              disabled={false}
-              htmlFor={null}
-              id="menu-icon-storyshots_201-Menu"
-              name="menu-icon-storyshots_201-Menu"
-              onClick={[Function]}
-              tabIndex="1"
-              type="button"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
-                id={null}
-                rows={null}
-              >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                  color={null}
-                  data-icon="ellipsis-v"
-                  data-prefix="far"
-                  focusable="false"
-                  fontSize="inherit"
-                  id={null}
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 128 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </section>
-            </button>
-          </div>
+          <span>
+             
+          </span>
         </div>
       </div>
     </section>
@@ -1006,42 +597,24 @@ exports[` 3`] = `
     className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_202"
-    media="https://player.vimeo.com/video/798022"
+    media=""
     onClick={[Function]}
   >
-    <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
-      id="storyshots_202-Media"
-      onClick={null}
-    >
-      <iframe
-        allow="fullscreen"
-        allowFullScreen={true}
-        className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
-        frameBorder="0"
-        height="100vh"
-        src="https://player.vimeo.com/video/798022"
-        title="iframe"
-        width="100%"
-      />
-    </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
       id="storyshots_202-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
-        onClick={[Function]}
+        onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 eUVQsH"
-          id={null}
-          onClick={null}
+          className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <div
-            className="Bar__Slot-icfo76-1 fIRUJx"
+          <a
+            className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
           >
             <h4
               className="Typography__TitleText-sc-19auepv-2 dDJKKW"
@@ -1060,64 +633,8 @@ exports[` 3`] = `
             >
               Card Description
             </p>
-          </div>
-          <div
-            className="Bar__Slot-icfo76-1 cxljst"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-              color={null}
-              data-icon="plus"
-              data-prefix="far"
-              focusable="false"
-              fontSize="inherit"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </div>
+          </a>
         </div>
-      </div>
-      <div
-        className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-        open={false}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Button
-            </label>
-          </section>
-        </button>
       </div>
     </section>
     <section
@@ -1161,7 +678,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1179,7 +696,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1240,11 +757,20 @@ exports[` 3`] = `
       </div>
     </section>
   </div>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cCcBKL Card__CardGridWrapper-sc-1g3s676-4 dKngjY"
+  id={null}
+  rows={null}
+>
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_203"
-    media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={[Function]}
   >
     <section
@@ -1252,18 +778,14 @@ exports[` 3`] = `
       id="storyshots_203-Media"
       onClick={null}
     >
-      <video
-        className="Media__Video-sc-1ofqnpx-3 imikFd"
-        controls={true}
-        title="video/mp4"
+      <img
+        alt="Media Description"
+        className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
+        onClick={null}
+        src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        title="Media Description"
         width="100%"
-      >
-        <source
-          src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video element.
-      </video>
+      />
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1347,7 +869,7 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              className="Typography__StyledLabel-sc-19auepv-0 hGcCeY"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1401,7 +923,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1419,7 +941,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1484,7 +1006,7 @@ exports[` 3`] = `
     className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_204"
-    media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+    media="https://player.vimeo.com/video/798022"
     onClick={[Function]}
   >
     <section
@@ -1498,7 +1020,7 @@ exports[` 3`] = `
         className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
         frameBorder="0"
         height="100vh"
-        src="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+        src="https://player.vimeo.com/video/798022"
         title="iframe"
         width="100%"
       />
@@ -1585,7 +1107,7 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              className="Typography__StyledLabel-sc-19auepv-0 hGcCeY"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1639,7 +1161,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1657,7 +1179,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1722,7 +1244,7 @@ exports[` 3`] = `
     className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_205"
-    media="https://www.w3schools.com/html/horse.mp3"
+    media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
     onClick={[Function]}
   >
     <section
@@ -1730,17 +1252,18 @@ exports[` 3`] = `
       id="storyshots_205-Media"
       onClick={null}
     >
-      <audio
-        className="Media__Audio-sc-1ofqnpx-2 hTgoaP"
+      <video
+        className="Media__Video-sc-1ofqnpx-3 imikFd"
         controls={true}
-        title="audio/mpeg"
+        title="video/mp4"
+        width="100%"
       >
         <source
-          src="https://www.w3schools.com/html/horse.mp3"
-          type="audio/mpeg"
+          src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+          type="video/mp4"
         />
-        Your browser does not support the audio element.
-      </audio>
+        Your browser does not support the video element.
+      </video>
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1824,7 +1347,7 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              className="Typography__StyledLabel-sc-19auepv-0 hGcCeY"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1878,7 +1401,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1896,7 +1419,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX Command__CommandName-sc-13akgtp-1 euPYCY"
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1921,6 +1444,483 @@ exports[` 3`] = `
               htmlFor={null}
               id="menu-icon-storyshots_205-Menu"
               name="menu-icon-storyshots_205-Menu"
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  color={null}
+                  data-icon="ellipsis-v"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 128 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_206"
+    media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+    onClick={[Function]}
+  >
+    <section
+      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
+      id="storyshots_206-Media"
+      onClick={null}
+    >
+      <iframe
+        allow="fullscreen"
+        allowFullScreen={true}
+        className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
+        frameBorder="0"
+        height="100vh"
+        src="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+        title="iframe"
+        width="100%"
+      />
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_206-Header"
+      onClick={null}
+    >
+      <div
+        className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+        id={null}
+        onClick={[Function]}
+      >
+        <div
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 fIRUJx"
+          >
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
+              letterSpacing="0px"
+            >
+              Card Title
+            </h4>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Card Description
+            </p>
+          </div>
+          <div
+            className="Bar__Slot-icfo76-1 cxljst"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="plus"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+        open={false}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hGcCeY"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Button
+            </label>
+          </section>
+        </button>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_206-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_206-Footer"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 bHddGh"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 hTtmaE"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs"
+            id={null}
+            rows={null}
+          >
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+              id={null}
+              label="Command One"
+              onClick={[Function]}
+              title="Command One"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Command One
+              </label>
+            </a>
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+              id={null}
+              label="Command Two"
+              onClick={[Function]}
+              title="Command Two"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Command Two
+              </label>
+            </a>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 ecRRXN"
+        >
+          <div
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+            id="menu-popper-storyshots_206-Menu"
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
+              disabled={false}
+              htmlFor={null}
+              id="menu-icon-storyshots_206-Menu"
+              name="menu-icon-storyshots_206-Menu"
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                id={null}
+                rows={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  color={null}
+                  data-icon="ellipsis-v"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="inherit"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 128 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </section>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_207"
+    media="https://www.w3schools.com/html/horse.mp3"
+    onClick={[Function]}
+  >
+    <section
+      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 bYuQMc"
+      id="storyshots_207-Media"
+      onClick={null}
+    >
+      <audio
+        className="Media__Audio-sc-1ofqnpx-2 hTgoaP"
+        controls={true}
+        title="audio/mpeg"
+      >
+        <source
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_207-Header"
+      onClick={null}
+    >
+      <div
+        className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+        id={null}
+        onClick={[Function]}
+      >
+        <div
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 fIRUJx"
+          >
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+              fontSize="1.35rem"
+              fontWeight="400"
+              letterSpacing="0px"
+            >
+              Card Title
+            </h4>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              Card Description
+            </p>
+          </div>
+          <div
+            className="Bar__Slot-icfo76-1 cxljst"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="plus"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+        open={false}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 eoSMUW"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hGcCeY"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Button
+            </label>
+          </section>
+        </button>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      id="storyshots_207-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+      id="storyshots_207-Footer"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 bHddGh"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 hTtmaE"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs"
+            id={null}
+            rows={null}
+          >
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+              id={null}
+              label="Command One"
+              onClick={[Function]}
+              title="Command One"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Command One
+              </label>
+            </a>
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+              id={null}
+              label="Command Two"
+              onClick={[Function]}
+              title="Command Two"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ Command__CommandName-sc-13akgtp-1 euPYCY"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Command Two
+              </label>
+            </a>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 ecRRXN"
+        >
+          <div
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+            id="menu-popper-storyshots_207-Menu"
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
+              disabled={false}
+              htmlFor={null}
+              id="menu-icon-storyshots_207-Menu"
+              name="menu-icon-storyshots_207-Menu"
               onClick={[Function]}
               tabIndex="1"
               type="button"
