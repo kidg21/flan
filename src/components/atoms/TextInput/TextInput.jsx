@@ -100,6 +100,7 @@ function TextInput({
   id,
   isRequired,
   label,
+  labelVisible,
   onBlur,
   onChange,
   onFocus,
@@ -194,7 +195,7 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label  isRequired={isRequired} text={label} />
+        <Label isRequired={isRequired} text={label} visible={labelVisible} />
       ) : null}
       <Input
         as={as}
@@ -247,6 +248,7 @@ TextInput.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  labelVisible: PropTypes.bool,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
@@ -291,6 +293,7 @@ TextInput.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
+  labelVisible: true,
   onBlur: null,
   onChange: null,
   onFocus: null,
