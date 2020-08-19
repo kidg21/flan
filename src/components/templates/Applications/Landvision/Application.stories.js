@@ -759,7 +759,7 @@ storiesOf("Templates|Applications/Research", module)
         const fieldData = [
           {
             label: "Tax Authority Link",
-            value: <Link size="lg" text="Orange County Tax Authority" />,
+            value: "Orange County Tax Authority",
             onClick: () => { },
           },
           {
@@ -775,7 +775,7 @@ storiesOf("Templates|Applications/Research", module)
             value: "$0",
           },
           {
-            label: "Site Total Assessment",
+            label: "Site Assessment Total",
             value: "$12,045,498",
           },
           {
@@ -865,15 +865,14 @@ storiesOf("Templates|Applications/Research", module)
                                   />
                                 )}
                               >
-
                                 <Form>
                                   <Field align="edge" label="Direct Parcel Link:" value="808-23093" onClick={() => { }} />
-                                  <TextInput label="Assessment Year(s)" value="2019" />
-                                  <TextInput label="Land Assessment" value="$6,155,006" />
-                                  <TextInput label="Improvement Assessment" value="$3,890,864" />
-                                  <TextInput label="Other Assessment" />
-                                  <TextInput label="Total Assessment" value="$10,045,870" />
-                                  <TextInput label="Total Taxes" value="$101,680" />
+                                  <TextInput label="Assessment Year(s)" value="2019" onChange={() => { }} />
+                                  <TextInput label="Land Assessment" value="$6,155,006" onChange={() => { }} />
+                                  <TextInput label="Improvement Assessment" value="$3,890,864" onChange={() => { }} />
+                                  <TextInput label="Other Assessment" onChange={() => { }} />
+                                  <TextInput label="Total Assessment" value="$10,045,870" onChange={() => { }} />
+                                  <TextInput label="Total Taxes" value="$101,680" onChange={() => { }} />
                                 </Form>
                                 <Bar
                                   contentAlign="bottom"
@@ -960,13 +959,11 @@ storiesOf("Templates|Applications/Research", module)
                           <ListItem title="Review" />
                           <ListItem title="Export" />
                         </List>
-
                       ),
                     }}
                     B={{
                       id: "B",
                       content: (
-
                         <Template
                           id="Details"
                           template="B_01"
@@ -1067,12 +1064,12 @@ storiesOf("Templates|Applications/Research", module)
                                   <FormSection>
                                     <Field align="edge" label="Zoning Authority" value="City of Mission Viejo" onClick={() => { }} />
                                   </FormSection>
-                                  <TextInput label="Zoning District" value="Commercial" />
-                                  <TextInput label="Zoning" value="CN" />
-                                  <TextInput label="Zoning Type" value="Commercial Neighborhood" />
-                                  <TextInput label="Zoned Density" value="0.75" />
-                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business" />
-                                  <TextInput label="Maximum Site Coverage" value="50%" />
+                                  <TextInput label="Zoning District" value="Commercial" onChange={() => { }} />
+                                  <TextInput label="Zoning" value="CN" onChange={() => { }} />
+                                  <TextInput label="Zoning Type" value="Commercial Neighborhood" onChange={() => { }} />
+                                  <TextInput label="Zoned Density" value="0.75" onChange={() => { }} />
+                                  <TextInput label="Zoning Summary" value="This zone is intended for small-scale business" onChange={() => { }} />
+                                  <TextInput label="Maximum Site Coverage" value="50%" onChange={() => { }} />
                                 </Form>
                               </Panel>
                             ),
@@ -1134,7 +1131,6 @@ storiesOf("Templates|Applications/Research", module)
                           <ListItem title="Review" />
                           <ListItem title="Export" />
                         </List>
-
                       ),
                     }}
                     B={{
@@ -1234,11 +1230,11 @@ storiesOf("Templates|Applications/Research", module)
                                 )}
                               >
                                 <Form title="FEMA Flood">
-                                  <TextInput label="Flood Zone" value="X" />
-                                  <TextInput label="In 100-yr Zone" value="No" />
-                                  <TextInput label="DFIRM ID" value="06037C" />
-                                  <TextInput label="Flood Panel" value="06037C1617G" />
-                                  <TextInput label="Effective Date" value="12/21/2018" />
+                                  <TextInput label="Flood Zone" value="X" onChange={() => { }} />
+                                  <TextInput label="In 100-yr Zone" value="No" onChange={() => { }} />
+                                  <TextInput label="DFIRM ID" value="06037C" onChange={() => { }} />
+                                  <TextInput label="Flood Panel" value="06037C1617G" onChange={() => { }} />
+                                  <TextInput label="Effective Date" value="12/21/2018" onChange={() => { }} />
                                 </Form>
                               </Panel>
                             ),

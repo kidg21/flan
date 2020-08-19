@@ -115,7 +115,7 @@ Media.propTypes = {
 Media.defaultProps = {
   className: null,
   id: null,
-  media: null,
+  media: "",
   mediaDesc: null,
   onClick: null,
 };

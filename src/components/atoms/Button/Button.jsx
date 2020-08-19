@@ -282,14 +282,16 @@ function Button({
   const selectedSize = size && sizeHash[size.toLowerCase()];
   const labelSize = selectedSize ? selectedSize.label : "lg";
   const iconSize = selectedSize ? selectedSize.icon : "inherit";
-  const setHeight = selectedSize ? selectedSize.height : "2.4rem";
-  const setPadding = selectedSize ? selectedSize.padding : "0em 0.75em";
+  let setHeight = selectedSize ? selectedSize.height : "2.4rem";
+  let setPadding = selectedSize ? selectedSize.padding : "0 0.75em";
 
   let gridGap = null;
   let justifyItems = null;
   if (alignCenter) {
     gridGap = "0.25rem";
     justifyItems = "center";
+    setHeight = "auto";
+    setPadding = "0.25em 0.75em";
   } else if (icon && !label) {
     gridGap = "0";
   }

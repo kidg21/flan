@@ -30,7 +30,7 @@ exports[` 1`] = `
         id="popper-anchor"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 juxZuP"
+          className="Button__StyledButton-sc-1v7sls2-0 xAWPj"
           disabled={false}
           htmlFor={null}
           id="button-anchor"
@@ -77,7 +77,7 @@ exports[` 1`] = `
           </section>
         </button>
         <div
-          className="Popper__PopperWrapper-sc-1t9125t-2 kkShyg"
+          className="Popper__PopperWrapper-sc-1t9125t-2 bkNvxq"
           id="popper-wrapperpopper-anchor"
         >
           <div
@@ -90,13 +90,13 @@ exports[` 1`] = `
             <div
               className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
               href={null}
-              id="storyshots_237"
+              id="storyshots_228"
               media=""
               onClick={null}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                id="storyshots_237-Header"
+                id="storyshots_228-Header"
                 onClick={null}
               >
                 <div
@@ -168,7 +168,7 @@ exports[` 2`] = `
         id="popper-content"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+          className="Button__StyledButton-sc-1v7sls2-0 haErFD"
           disabled={false}
           htmlFor={null}
           id="button-anchor"
@@ -195,7 +195,7 @@ exports[` 2`] = `
           </section>
         </button>
         <div
-          className="Popper__PopperWrapper-sc-1t9125t-2 kkShyg"
+          className="Popper__PopperWrapper-sc-1t9125t-2 bkNvxq"
           id="popper-wrapperpopper-content"
         >
           <div
@@ -206,7 +206,7 @@ exports[` 2`] = `
             }
           >
             <ul
-              className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+              className="List__ListWrapper-sc-43f2zq-0 OakPD"
               id="content-list"
             >
               <li
@@ -332,7 +332,7 @@ exports[` 3`] = `
       className="Popper__AnchorWrapper-sc-1t9125t-0 byAKbr"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
+        className="Button__StyledButton-sc-1v7sls2-0 jDBAUA"
         disabled={false}
         htmlFor={null}
         id="button"
@@ -394,7 +394,7 @@ exports[` 4`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+          className="Button__StyledButton-sc-1v7sls2-0 haErFD"
           disabled={false}
           htmlFor={null}
           id="button-normal"
@@ -425,7 +425,7 @@ exports[` 4`] = `
           id="popper-flex"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 dhrQhU"
+            className="Button__StyledButton-sc-1v7sls2-0 jDBAUA"
             disabled={false}
             htmlFor={null}
             id="button-flex"
@@ -452,7 +452,7 @@ exports[` 4`] = `
             </section>
           </button>
           <div
-            className="Popper__PopperWrapper-sc-1t9125t-2 kkShyg"
+            className="Popper__PopperWrapper-sc-1t9125t-2 bkNvxq"
             id="popper-wrapperpopper-flex"
           >
             <div
@@ -513,7 +513,7 @@ exports[` 4`] = `
           id="popper-not-flex"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+            className="Button__StyledButton-sc-1v7sls2-0 haErFD"
             disabled={false}
             htmlFor={null}
             id="button-not-flex"
@@ -540,7 +540,7 @@ exports[` 4`] = `
             </section>
           </button>
           <div
-            className="Popper__PopperWrapper-sc-1t9125t-2 iUSeCh"
+            className="Popper__PopperWrapper-sc-1t9125t-2 fBUUfj"
             id="popper-wrapperpopper-not-flex"
           >
             <div
@@ -597,7 +597,7 @@ exports[` 4`] = `
           </div>
         </div>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+          className="Button__StyledButton-sc-1v7sls2-0 haErFD"
           disabled={false}
           htmlFor={null}
           id="button-normal-2"

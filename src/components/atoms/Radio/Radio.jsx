@@ -244,7 +244,7 @@ Radio.defaultProps = {
   onBlur: null,
   onChange: null,
   onFocus: null,
-  value: null,
+  value: undefined,
 };
 
 RadioGroup.propTypes = {

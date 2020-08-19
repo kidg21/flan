@@ -11,14 +11,14 @@ import {
   array as arrayReal,
 } from "@storybook/addon-knobs";
 import { action as actionReal } from "@storybook/addon-actions";
-import { checkA11y as checkA11yReal } from "@storybook/addon-a11y";
+import { withA11y as withA11yReal } from "@storybook/addon-a11y";
 import { specs as specsReal, describe as describeReal, it as itReal, before as beforeReal, beforeEach as beforeEachReal, after as afterReal, afterEach as afterEachReal } from "storybook-addon-specifications";
 import MapboxReal from "layout/Map";
 
 export const storiesOf = storiesOfReal;
 export const withInfo = withInfoReal;
 export const withKnobs = withKnobsReal;
-export const checkA11y = checkA11yReal;
+export const withA11y = withA11yReal;
 export const action = actionReal;
 export const text = textReal;
 export const boolean = booleanReal;
