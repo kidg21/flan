@@ -1,14 +1,150 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 hwYDiz"
-    id="Template D_02"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+    id="Knobs"
+    rows={null}
+  >
+    <section
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
+      id="D"
+      placeholder="D"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
+      id="E"
+      placeholder="E"
+      tabIndex="0"
+    />
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
+  id="Standard"
+  rows={null}
+>
+  <section
+    className="Template__Region-sc-1i4nzbu-0 dLltPr"
+    id="A"
+    placeholder="A"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        A
+      </h6>
+    </div>
+  </section>
+  <section
+    className="Template__Region-sc-1i4nzbu-0 dLltPr"
+    id="B"
+    placeholder="B"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        B
+      </h6>
+    </div>
+  </section>
+  <section
+    className="Template__Region-sc-1i4nzbu-0 dLltPr"
+    id="C"
+    placeholder="C"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        C
+      </h6>
+    </div>
+  </section>
+</section>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "height": "250px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gOFRUq"
+    id="Configured"
     rows={null}
   >
     <section
@@ -17,7 +153,25 @@ exports[` 1`] = `
       placeholder="A"
       tabIndex="0"
     >
-      A
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          A
+        </h6>
+      </div>
     </section>
     <section
       className="Template__Region-sc-1i4nzbu-0 irxojJ"
@@ -25,7 +179,25 @@ exports[` 1`] = `
       placeholder="B"
       tabIndex="0"
     >
-      B
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          B
+        </h6>
+      </div>
     </section>
     <section
       className="Template__Region-sc-1i4nzbu-0 bhMvtk"
@@ -33,21 +205,31 @@ exports[` 1`] = `
       placeholder="C"
       tabIndex="0"
     >
-      C
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 fKBfHn"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      D
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          C
+        </h6>
+      </div>
     </section>
   </section>
-</section>
+</div>
 `;
 
-exports[` 2`] = `
+exports[` 4`] = `
 <div
   style={
     Object {
@@ -79,7 +261,7 @@ exports[` 2`] = `
           width={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+            className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
             disabled={false}
             htmlFor={null}
             id="Search_E3-search-button"
@@ -150,7 +332,7 @@ exports[` 2`] = `
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        className="Button__StyledButton-sc-1v7sls2-0 dHessD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -204,7 +386,7 @@ exports[` 2`] = `
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        className="Button__StyledButton-sc-1v7sls2-0 dHessD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -258,7 +440,7 @@ exports[` 2`] = `
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        className="Button__StyledButton-sc-1v7sls2-0 dHessD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -413,330 +595,5 @@ exports[` 2`] = `
     </section>
   </section>
   <div />
-</div>
-`;
-
-exports[` 3`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
-  id="Standard"
-  rows={null}
->
-  <section
-    className="Template__Region-sc-1i4nzbu-0 dLltPr"
-    id="A"
-    placeholder="A"
-    tabIndex="0"
-  >
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
-      >
-        A
-      </h6>
-    </div>
-  </section>
-  <section
-    className="Template__Region-sc-1i4nzbu-0 dLltPr"
-    id="B"
-    placeholder="B"
-    tabIndex="0"
-  >
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
-      >
-        B
-      </h6>
-    </div>
-  </section>
-  <section
-    className="Template__Region-sc-1i4nzbu-0 dLltPr"
-    id="C"
-    placeholder="C"
-    tabIndex="0"
-  >
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-        fontSize="1.2rem"
-        fontWeight="400"
-        letterSpacing="1px"
-      >
-        C
-      </h6>
-    </div>
-  </section>
-</section>
-`;
-
-exports[` 4`] = `
-<div
-  style={
-    Object {
-      "height": "250px",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gOFRUq"
-    id="Configured"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dMkICK"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "display": "flex",
-            "height": "100%",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
-        >
-          A
-        </h6>
-      </div>
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 irxojJ"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "display": "flex",
-            "height": "100%",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
-        >
-          B
-        </h6>
-      </div>
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 bhMvtk"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "display": "flex",
-            "height": "100%",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
-        >
-          C
-        </h6>
-      </div>
-    </section>
-  </section>
-</div>
-`;
-
-exports[` 5`] = `
-<div
-  style={
-    Object {
-      "height": "100vh",
-      "width": "100%",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
-    id={null}
-    rows={null}
-  >
-    <h4
-      className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-      fontSize="1.35rem"
-      fontWeight="400"
-      letterSpacing="0px"
-    >
-      My Latest Musings
-    </h4>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-      fontSize="1rem"
-      fontWeight={300}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      Totally Worth The Read...Enjoy!
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 fEVysz"
-      fontSize="0.875rem"
-      fontWeight={600}
-      id={null}
-      letterSpacing="0.25px"
-    >
-      Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
-    </p>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-      fontSize="1.15rem"
-      fontWeight="500"
-      letterSpacing="0.4px"
-    >
-      Section 1
-    </h5>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-      fontSize="1.15rem"
-      fontWeight="500"
-      letterSpacing="0.4px"
-    >
-      Section 2
-    </h5>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-  </section>
-</div>
-`;
-
-exports[` 6`] = `
-<div
-  style={
-    Object {
-      "height": "400px",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
-    id="Knobs"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 frbLdz"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 frbLdz"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 frbLdz"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 frbLdz"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 frbLdz"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    />
-  </section>
 </div>
 `;

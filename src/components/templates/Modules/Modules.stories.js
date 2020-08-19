@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { useState } from "hooks";
-import { FullScreen, Padding, CenterDecorator, } from "helpers/Display";
+import { FullScreen, Padding, CenterDecorator } from "helpers/Display";
 import Panel from "layout/Panel";
 import Avatar from "atoms/Avatar";
 import Text, { Title, Link } from "base/Typography";
@@ -27,7 +27,7 @@ import Template from "layout/Template";
 import Search from "blocks/Search";
 import InputBlock from "blocks/InputBlock";
 import Modal from "layout/Modal";
-import Tabs, {TabItem} from "blocks/Tabs";
+import Tabs, { TabItem } from "blocks/Tabs";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
@@ -200,7 +200,7 @@ const options = [
 
 storiesOf("Templates/Modules/Maps", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Map Tools", () => {
     return (
       <React.Fragment>
@@ -251,79 +251,79 @@ storiesOf("Templates/Modules/Maps", module)
 
 storiesOf("Templates/Modules/Panels", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
-  .add("Layers Panel", () => {
-    return (
-      <Panel
-        header={(
-          <Bar
-            contentAlign="center"
-            padding="2x"
-            left={{
-              content: (
-                <Title text="Layers Panel" weight="bold" />
-              ),
-            }}
-            right={{
-              content: (
-                <Menu
-                  data={[
-                    { id: "a", label: "Action" },
-                    { id: "c", label: "Action" },
-                    { id: "b", label: "Action" },
-                  ]}
-                  position="bottomLeft"
-                />
-              ),
-              width: "min-content",
-            }}
-          />
-        )}
-      >
-        <Accordion
-          open
-          header={(
-            <Checkbox
-              label="Layer One"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Two"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Three"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Four"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-      </Panel>
-    );
-  })
+  .addDecorator(withA11y)
+  // .add("Layers Panel", () => {
+  //   return (
+  //     <Panel
+  //       header={(
+  //         <Bar
+  //           contentAlign="center"
+  //           padding="2x"
+  //           left={{
+  //             content: (
+  //               <Title text="Layers Panel" weight="bold" />
+  //             ),
+  //           }}
+  //           right={{
+  //             content: (
+  //               <Menu
+  //                 data={[
+  //                   { id: "a", label: "Action" },
+  //                   { id: "c", label: "Action" },
+  //                   { id: "b", label: "Action" },
+  //                 ]}
+  //                 position="bottomLeft"
+  //               />
+  //             ),
+  //             width: "min-content",
+  //           }}
+  //         />
+  //       )}
+  //     >
+  //       <Accordion
+  //         open
+  //         header={(
+  //           <Checkbox
+  //             label="Layer One"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Two"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Three"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Four"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //     </Panel>
+  //   );
+  // })
   .add(
     "View/Edit Record",
     () => {
@@ -409,12 +409,14 @@ storiesOf("Templates/Modules/Panels", module)
                 label="Text Input"
                 value="I'm the info that came with the app..."
                 helpText="The one that your parents gave you"
+                onChange={() => { }}
               />
               <TextInput
                 id="lastName"
                 label="Text Input"
                 value="I don't like myself, please change me."
                 helpText="The one that comes after.."
+                onChange={() => { }}
               />
               <TextInput
                 id="lastName"
@@ -422,6 +424,7 @@ storiesOf("Templates/Modules/Panels", module)
                 value="I'm pretty much a run-on sentence because someone didn't think that I was worth bringing in a copywriter for..."
                 helpText="The one that comes after.."
                 type="textarea"
+                onChange={() => { }}
               />
             </FormSection>
             <FormSection title="">
@@ -576,8 +579,8 @@ storiesOf("Templates/Modules/Panels", module)
   );
 
 storiesOf("Templates/Modules/Create", module)
-.addDecorator(FullScreen)
-  .addDecorator(checkA11y)
+  .addDecorator(Padding)
+  .addDecorator(withA11y)
   .add("Create Job", () => {
     return (
       <DialogBox
@@ -600,6 +603,7 @@ storiesOf("Templates/Modules/Create", module)
 
               label="Job Number"
               value="19-12341234"
+              onChange={() => { }}
             />
             <TextInput
 
@@ -717,6 +721,7 @@ storiesOf("Templates/Modules/Create", module)
 
               label="RFP Number"
               value="19-12341234"
+              onChange={() => { }}
             />
             <TextInput
 
@@ -783,6 +788,7 @@ storiesOf("Templates/Modules/Create", module)
 
                   label="Client Name"
                   value=""
+                  onChange={() => { }}
                 />
                 <TextInput
 
@@ -853,6 +859,7 @@ storiesOf("Templates/Modules/Create", module)
 
                   label="Scope of Work"
                   value=""
+                  onChange={() => { }}
                 />
                 <InputBlock
                   label="Bid Amount"
@@ -939,7 +946,7 @@ storiesOf("Templates/Modules/Create", module)
             />
             <Bar
               padding="2x"
-              center={<Command label="Manage my Profile" icon="edit"  />}
+              center={<Command label="Manage my Profile" icon="edit" />}
             />
             <Bar
               padding="2x"
@@ -954,107 +961,117 @@ storiesOf("Templates/Modules/Create", module)
     return (
       <React.Fragment>
         <Modal visible>
-      <DialogBox 
-      buttons={[
-        {
-          id: "Cancel",
-          label: "Cancel",
-          
-        },
-        {
-          id: "Save",
-          label: "Save",
-        
-        },
-      ]}>
-        <Bar left={
-           <Grid columns="2">
-             <Grid columns="1" gap="xs">
-             <Text text="Job" size="xs"/>
-             <Title size="lg" text="20930-30308-39043"/>
-             </Grid>
-             <SelectMenu 
-            options={[{
-              value: "submitted",
-              label: <Tag label="Submitted" brand="jobs"/>
-              }, {
-              value: "In Progress",
-              label: <Tag label="In Progress" brand="brand1"/>
-              }, {
-              value: "Completed",
-              label: <Tag label="Completed" brand="research"/>
-              }, ]}/>
-             </Grid>}/>
-        <Form>
-          <FormSection title="Job Details">
-            <Field align="edge" label="Job Number" value="398-0293-9808"/>
-            <Field align="edge" label="Job Name" value="My LightBox Job"/>
-            </FormSection>
-            <FormSection title="Property Details">
-            <Field align="edge" label="Address" value="418 Sycamore Ln."/>
-            <Field align="edge" label="City" value="Savannah"/>
-            <Field align="edge" label="State" value="GA"/>
-            <Field align="edge" label="Zip" value="31522"/>
-            <Field align="edge" label="Property Type" value="Residential"/>
-            <Field align="edge" label="Property Sub-Type" value="Single Family"/>
-          </FormSection>
-        </Form>
-      </DialogBox>
-      </Modal>
-      <Layout main={{content:(<Text text="Main layout"/>)}}/>
+          <DialogBox
+            buttons={[
+              {
+                id: "Cancel",
+                label: "Cancel",
+
+              },
+              {
+                id: "Save",
+                label: "Save",
+
+              },
+            ]}
+          >
+            <Bar left={(
+              <Grid columns="2">
+                <Grid columns="1" gap="xs">
+                  <Text text="Job" size="xs" />
+                  <Title size="lg" text="20930-30308-39043" />
+                </Grid>
+                <SelectMenu
+                  options={[{
+                    value: "submitted",
+                    label: <Tag label="Submitted" brand="jobs" />,
+                  }, {
+                    value: "In Progress",
+                    label: <Tag label="In Progress" brand="brand1" />,
+                  }, {
+                    value: "Completed",
+                    label: <Tag label="Completed" brand="research" />,
+                  }]}
+                />
+              </Grid>
+            )}
+            />
+            <Form>
+              <FormSection title="Job Details">
+                <Field align="edge" label="Job Number" value="398-0293-9808" />
+                <Field align="edge" label="Job Name" value="My LightBox Job" />
+              </FormSection>
+              <FormSection title="Property Details">
+                <Field align="edge" label="Address" value="418 Sycamore Ln." />
+                <Field align="edge" label="City" value="Savannah" />
+                <Field align="edge" label="State" value="GA" />
+                <Field align="edge" label="Zip" value="31522" />
+                <Field align="edge" label="Property Type" value="Residential" />
+                <Field align="edge" label="Property Sub-Type" value="Single Family" />
+              </FormSection>
+            </Form>
+          </DialogBox>
+        </Modal>
+        <Layout main={{ content: (<Text text="Main layout" />) }} />
       </React.Fragment>
     );
   })
   .add("RFP Details", () => {
     return (
-      <DialogBox 
-      buttons={[
-        {
-          id: "Cancel",
-          label: "Cancel",
-          
-        },
-        {
-          id: "Save",
-          label: "Save",
-        
-        },
-      ]}>
-         <Bar left={
-           <Grid columns="2">
-             <Grid columns="1" gap="xs">
-             <Text text="RFP" size="xs"/>
-             <Title size="lg" text="20930-30308-39043"/>
-             </Grid>
-             <SelectMenu 
-            options={[{
-              value: "submitted",
-              label: <Tag label="Submitted" brand="jobs"/>
+      <DialogBox
+        buttons={[
+          {
+            id: "Cancel",
+            label: "Cancel",
+
+          },
+          {
+            id: "Save",
+            label: "Save",
+
+          },
+        ]}
+      >
+        <Bar left={(
+          <Grid columns="2">
+            <Grid columns="1" gap="xs">
+              <Text text="RFP" size="xs" />
+              <Title size="lg" text="20930-30308-39043" />
+            </Grid>
+            <SelectMenu
+              options={[{
+                value: "submitted",
+                label: <Tag label="Submitted" brand="jobs" />,
               }, {
-              value: "In Progress",
-              label: <Tag label="In Progress" brand="brand1"/>
+                value: "In Progress",
+                label: <Tag label="In Progress" brand="brand1" />,
               }, {
-              value: "Completed",
-              label: <Tag label="Completed" brand="research"/>
-              }, ]}/>
-             </Grid>}/>
-      <Bar left={
-      <Tabs>
-        <TabItem label="RFP" isSelected/>
-        <TabItem label="Bid" />
-      </Tabs>}/>
+                value: "Completed",
+                label: <Tag label="Completed" brand="research" />,
+              }]}
+            />
+          </Grid>
+        )}
+        />
+        <Bar left={(
+          <Tabs>
+            <TabItem label="RFP" isSelected />
+            <TabItem label="Bid" />
+          </Tabs>
+        )}
+        />
         <Form>
           <FormSection title="Job Details">
-            <Field align="edge" label="Job Number" value="398-0293-9808"/>
-            <Field align="edge" label="Job Name" value="My LightBox Job"/>
-            </FormSection>
-            <FormSection title="Property Details">
-            <Field align="edge" label="Address" value="418 Sycamore Ln."/>
-            <Field align="edge" label="City" value="Savannah"/>
-            <Field align="edge" label="State" value="GA"/>
-            <Field align="edge" label="Zip" value="31522"/>
-            <Field align="edge" label="Property Type" value="Residential"/>
-            <Field align="edge" label="Property Sub-Type" value="Single Family"/>
+            <Field align="edge" label="Job Number" value="398-0293-9808" />
+            <Field align="edge" label="Job Name" value="My LightBox Job" />
+          </FormSection>
+          <FormSection title="Property Details">
+            <Field align="edge" label="Address" value="418 Sycamore Ln." />
+            <Field align="edge" label="City" value="Savannah" />
+            <Field align="edge" label="State" value="GA" />
+            <Field align="edge" label="Zip" value="31522" />
+            <Field align="edge" label="Property Type" value="Residential" />
+            <Field align="edge" label="Property Sub-Type" value="Single Family" />
           </FormSection>
         </Form>
       </DialogBox>
@@ -1062,59 +1079,65 @@ storiesOf("Templates/Modules/Create", module)
   })
   .add("RFP Bid Details", () => {
     return (
-      <DialogBox 
-      buttons={[
-        {
-          id: "Cancel",
-          label: "Cancel",
-          
-        },
-        {
-          id: "Save",
-          label: "Save",
-        
-        },
-      ]}>
-         <Bar left={
-           <Grid columns="2">
-             <Grid columns="1" gap="xs">
-             <Text text="RFP" size="xs"/>
-             <Title size="lg" text="20930-30308-39043"/>
-             </Grid>
-             <SelectMenu 
-            options={[{
-              value: "submitted",
-              label: <Tag label="Submitted" brand="jobs"/>
+      <DialogBox
+        buttons={[
+          {
+            id: "Cancel",
+            label: "Cancel",
+
+          },
+          {
+            id: "Save",
+            label: "Save",
+
+          },
+        ]}
+      >
+        <Bar left={(
+          <Grid columns="2">
+            <Grid columns="1" gap="xs">
+              <Text text="RFP" size="xs" />
+              <Title size="lg" text="20930-30308-39043" />
+            </Grid>
+            <SelectMenu
+              options={[{
+                value: "submitted",
+                label: <Tag label="Submitted" brand="jobs" />,
               }, {
-              value: "In Progress",
-              label: <Tag label="In Progress" brand="brand1"/>
+                value: "In Progress",
+                label: <Tag label="In Progress" brand="brand1" />,
               }, {
-              value: "Completed",
-              label: <Tag label="Completed" brand="research"/>
-              }, ]}/>
-             </Grid>}/>
-      <Bar left={
-      <Tabs>
-        <TabItem label="RFP" />
-        <TabItem label="Bid" isSelected />
-      </Tabs>}/>
+                value: "Completed",
+                label: <Tag label="Completed" brand="research" />,
+              }]}
+            />
+          </Grid>
+        )}
+        />
+        <Bar left={(
+          <Tabs>
+            <TabItem label="RFP" />
+            <TabItem label="Bid" isSelected />
+          </Tabs>
+        )}
+        />
         <Form>
           <FormSection title="Client Details">
-            <Field align="edge" label="Client Name" value="398-0293-9808"/>
-            <Field align="edge" label="Client Company" value="My LightBox Job"/>
-            <Field align="edge" label="Address" value="418 Sycamore Ln."/>
-            <Field align="edge" label="City" value="Savannah"/>
-            <Field align="edge" label="State" value="GA"/>
-            <Field align="edge" label="Zip" value="31522"/>
-            
-            </FormSection>
-            <FormSection title="Bid Details">
-            <Field align="edge" label="Scope of Work" value="Value"/>
-            <Field align="edge" label="Bid Amount" value="$Value"/>
-            <Field align="edge" label="Turn Around Time" value="Value"/>
-            <Field align="edge" label="Expected Response Date" value="Value"/>
-            <Field align="edge" label="Additional Notes" value="All my notes."/>
-            </FormSection>
+            <Field align="edge" label="Client Name" value="398-0293-9808" />
+            <Field align="edge" label="Client Company" value="My LightBox Job" />
+            <Field align="edge" label="Address" value="418 Sycamore Ln." />
+            <Field align="edge" label="City" value="Savannah" />
+            <Field align="edge" label="State" value="GA" />
+            <Field align="edge" label="Zip" value="31522" />
+
+          </FormSection>
+          <FormSection title="Bid Details">
+            <Field align="edge" label="Scope of Work" value="Value" />
+            <Field align="edge" label="Bid Amount" value="$Value" />
+            <Field align="edge" label="Turn Around Time" value="Value" />
+            <Field align="edge" label="Expected Response Date" value="Value" />
+            <Field align="edge" label="Additional Notes" value="All my notes." />
+          </FormSection>
         </Form>
       </DialogBox>
     );

@@ -6,7 +6,7 @@ exports[` 1`] = `
   id={null}
   rows={null}
 >
-  <div
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
     id={null}
     label="Tag"
@@ -22,7 +22,7 @@ exports[` 1`] = `
     >
       Tag
     </label>
-  </div>
+  </span>
 </section>
 `;
 
@@ -60,7 +60,7 @@ Array [
     <div
       className="Bar__Slot-icfo76-1 yvaBx"
     >
-      <div
+      <span
         className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Brief Label"
@@ -76,7 +76,7 @@ Array [
         >
           Brief Label
         </label>
-      </div>
+      </span>
     </div>
   </div>,
   <div
@@ -111,7 +111,7 @@ Array [
     <div
       className="Bar__Slot-icfo76-1 yvaBx"
     >
-      <div
+      <span
         className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
@@ -127,7 +127,7 @@ Array [
         >
           Tag with a long label because you cannot be concise with your words.
         </label>
-      </div>
+      </span>
     </div>
   </div>,
 ]
@@ -139,7 +139,7 @@ exports[` 3`] = `
   id={null}
   rows={null}
 >
-  <div
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 cTlzw"
     id={null}
     label="Info"
@@ -155,8 +155,8 @@ exports[` 3`] = `
     >
       Info
     </label>
-  </div>
-  <div
+  </span>
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 kKdtCs"
     id={null}
     label="Warning"
@@ -172,8 +172,8 @@ exports[` 3`] = `
     >
       Warning
     </label>
-  </div>
-  <div
+  </span>
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 fXnXWY"
     id={null}
     label="Success"
@@ -189,8 +189,8 @@ exports[` 3`] = `
     >
       Success
     </label>
-  </div>
-  <div
+  </span>
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
     id={null}
     label="Alert"
@@ -206,12 +206,12 @@ exports[` 3`] = `
     >
       Alert
     </label>
-  </div>
+  </span>
 </section>
 `;
 
 exports[` 4`] = `
-<div
+<span
   className="Tag__TagContainer-sc-128kb3h-0 fMJIuC"
   id={null}
   label={null}
@@ -237,7 +237,7 @@ exports[` 4`] = `
       style={Object {}}
     />
   </svg>
-</div>
+</span>
 `;
 
 exports[` 5`] = `
@@ -246,7 +246,7 @@ exports[` 5`] = `
   id={null}
   rows={null}
 >
-  <div
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 eKCPnc"
     id={null}
     label="Icon on Left"
@@ -287,8 +287,8 @@ exports[` 5`] = `
         />
       </svg>
     </div>
-  </div>
-  <div
+  </span>
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 dzXtuY"
     id={null}
     label="Icon on Left"
@@ -329,8 +329,8 @@ exports[` 5`] = `
         />
       </svg>
     </div>
-  </div>
-  <div
+  </span>
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 dzXtuY"
     id={null}
     label="Icon on Left"
@@ -371,8 +371,8 @@ exports[` 5`] = `
         />
       </svg>
     </div>
-  </div>
-  <div
+  </span>
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 euvBPY"
     id={null}
     label="Icon on Right"
@@ -413,8 +413,8 @@ exports[` 5`] = `
     >
       Icon on Right
     </label>
-  </div>
-  <div
+  </span>
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 dzXtuY"
     id={null}
     label="Icon on Right"
@@ -455,8 +455,8 @@ exports[` 5`] = `
     >
       Icon on Right
     </label>
-  </div>
-  <div
+  </span>
+  <span
     className="Tag__TagContainer-sc-128kb3h-0 dzXtuY"
     id={null}
     label="Icon on Right"
@@ -497,6 +497,6 @@ exports[` 5`] = `
     >
       Icon on Right
     </label>
-  </div>
+  </span>
 </section>
 `;

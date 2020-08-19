@@ -6,7 +6,7 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 
-const TagContainer = styled.div`
+const TagContainer = styled.span`
   justify-content: center;
   display: flex;
   align-items: center;

@@ -10,7 +10,7 @@ import Search from "blocks/Search";
 
 storiesOf("Layout|Panel", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Panel", () => {
     return <Panel />;
   })

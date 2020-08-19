@@ -38,10 +38,11 @@ const alignHash = {
 
 function Inline({
   children,
-  spacingX,
-  spacingY,
   contentAlign,
   contentJustify,
+  id,
+  spacingX,
+  spacingY,
 }) {
   const justifyContent = justiftyHash[contentJustify && contentJustify.toLowerCase()] || "flex-start";
   const alignItems = alignHash[contentAlign && contentAlign.toLowerCase()] || "center";
@@ -51,8 +52,9 @@ function Inline({
 
   return (
     <InlineWrapper
-      justifyContent={justifyContent}
       alignItems={alignItems}
+      id={id}
+      justifyContent={justifyContent}
     >
       {children.length > 0
         ? children.map((child) => {
@@ -73,18 +75,20 @@ function Inline({
 
 Inline.propTypes = {
   children: PropTypes.node,
+  contentAlign: PropTypes.oneOf(["top", "center", "bottom"]),
+  contentJustify: PropTypes.oneOf(["left", "center", "right"]),
+  id: PropTypes.string,
   spacingX: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   spacingY: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  contentJustify: PropTypes.oneOf(["left", "center", "right"]),
-  contentAlign: PropTypes.oneOf(["top", "center", "bottom"]),
 };
 
 Inline.defaultProps = {
   children: null,
+  contentAlign: "center",
+  contentJustify: "left",
+  id: null,
   spacingX: 0,
   spacingY: 0,
-  contentJustify: "left",
-  contentAlign: "center",
 };
 
 export default Inline;

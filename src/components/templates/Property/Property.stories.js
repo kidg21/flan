@@ -406,6 +406,8 @@ storiesOf("Templates|Applications/Research/Property", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+
         return (
           <Layout
             header={{
@@ -457,7 +459,6 @@ storiesOf("Templates|Applications/Research/Property", module)
                           <Button label="Inclusion" size="sm" />
                           <Button label="Exclusion" size="sm" />
                         </Inline>
-
                       </React.Fragment>),
                   }}
                   main={{
@@ -515,10 +516,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                                 />
                               )}
                             >
-                              {/* <Grid columns="1" gap="sm"> */}
-
                               <Image width="100%" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" />
-                              {/* <Form> */}
                               <FieldSection>
                                 <FieldGroup gap="sm" columns="1">
                                   <Field align="edge" label="Parcel No." value="808-221-12" onClick />
@@ -538,9 +536,6 @@ storiesOf("Templates|Applications/Research/Property", module)
 
                                 </FieldGroup>
                               </FieldSection>
-                              {/* </Form> */}
-                              {/* </Grid> */}
-
                             </Panel>
                           ),
                         }}

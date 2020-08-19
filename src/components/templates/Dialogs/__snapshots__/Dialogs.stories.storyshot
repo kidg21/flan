@@ -58,7 +58,8 @@ exports[` 1`] = `
               rows={null}
             >
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
@@ -85,11 +86,11 @@ exports[` 1`] = `
                     />
                   </svg>
                   <img
-                    alt=""
+                    alt="None"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
-                    title=""
+                    title="None"
                     width="75"
                   />
                 </div>
@@ -105,18 +106,19 @@ exports[` 1`] = `
                 </label>
               </a>
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
-                    alt=""
+                    alt="Full"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
-                    title=""
+                    title="Full"
                     width="75"
                   />
                 </div>
@@ -132,18 +134,19 @@ exports[` 1`] = `
                 </label>
               </a>
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
-                    alt=""
+                    alt="Half"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
-                    title=""
+                    title="Half"
                     width="75"
                   />
                 </div>
@@ -159,18 +162,19 @@ exports[` 1`] = `
                 </label>
               </a>
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
-                    alt=""
+                    alt="Quarter"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
-                    title=""
+                    title="Quarter"
                     width="75"
                   />
                 </div>
@@ -189,18 +193,19 @@ exports[` 1`] = `
                 className="Divider__Line-sc-1k80dpa-0 egkMGQ"
               />
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
-                    alt=""
+                    alt="Legend"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
-                    title=""
+                    title="Legend"
                     width="75"
                   />
                 </div>
@@ -230,7 +235,7 @@ exports[` 1`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+            className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
             disabled={false}
             htmlFor={null}
             id="Cancel"
@@ -257,7 +262,7 @@ exports[` 1`] = `
             </section>
           </button>
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+            className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
             disabled={false}
             htmlFor={null}
             id="Save Map Image"

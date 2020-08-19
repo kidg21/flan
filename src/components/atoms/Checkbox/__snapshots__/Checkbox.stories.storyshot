@@ -42,7 +42,7 @@ exports[` 2`] = `
       className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
       id="Checked"
       onBlur={null}
-      onChange={null}
+      onChange={[Function]}
       onFocus={null}
       type="checkbox"
     />

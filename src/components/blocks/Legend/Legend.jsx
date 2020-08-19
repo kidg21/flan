@@ -43,7 +43,7 @@ const Cell = styled.td`
     return props.theme.palette[props.cellBorderColor] || "";
   }};
 
-  &:first-child {
+  &:first-of-type {
     font-weight: ${(props) => {
     return props.fontWeight || "";
   }};
@@ -58,12 +58,12 @@ const Cell = styled.td`
 
 const Row = styled.tr`
   margin: 0.5rem;
-  ${Cell}:first-child {
+  ${Cell}:first-of-type {
       color: ${(props) => {
     return props.theme.text.secondary;
   }};
   }
-  ${Cell}:last-child {
+  ${Cell}:last-of-type {
         color: ${(props) => {
     return props.theme.text.primary;
   }};
