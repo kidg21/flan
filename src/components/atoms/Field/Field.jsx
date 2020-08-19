@@ -37,9 +37,6 @@ const FieldLabel = styled(Label)`
   color: ${(props) => {
     return props.theme.text[props.labelColor] || "inherit";
   }};
-  width: ${(props) => {
-    return props.labelWidth;
-  }};
   cursor: initial;
   user-select: initial;
 `;
@@ -50,9 +47,6 @@ const FieldValue = styled(Text)`
   }};
   color: ${(props) => {
     return props.theme.text[props.valueColor] || "inherit";
-  }};
-  width: ${(props) => {
-    return props.valueWidth;
   }};
   /* Default Value - displays when a Field's value is empty */
   &:empty {
