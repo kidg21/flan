@@ -24,8 +24,10 @@ import Checkbox from "atoms/Checkbox";
 import Image from "atoms/Image";
 import Divider from "atoms/Divider";
 import Field, { FieldGroup, FieldSection } from "atoms/Field";
-import Text, { Title, Link } from "base/Typography";
+import Text, { Title, Label, Link } from "base/Typography";
 import Card, { CardSection } from "elements/Card";
+import SelectMenu from "atoms/SelectMenu";
+import Switch from "atoms/Switch";
 import ParcelMap from "images/maps/map-thumb.png";
 import {
   MockHeader,
@@ -55,22 +57,38 @@ storiesOf("Templates|Applications/Research/Property", module)
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
         const [rightOpen, setRightOpen] = useState(false);
+        const openRight = () => { setRightOpen(true); };
+        const closeRight = () => { setRightOpen(false); };
         const toggleRight = () => { setRightOpen(!rightOpen); };
 
-        const [detailsMap, setDetailsMap] = useState("");
-        const [fade, setFade] = useState("1");
-        const toggleDetailsMap = () => {
-          if (detailsMap === "right") {
-            setDetailsMap("");
-            setFade("1");
-          } else {
-            setDetailsMap("right");
+        const [fade, setFade] = useState("0");
+        const openOverlay = () => { setFade("1"); };
+        const closeOverlay = () => { setFade("0"); };
+        const toggleOverlay = () => {
+          if (fade === "1") {
             setFade("0");
+          } else {
+            setFade("1");
           }
         };
 
+        const [filterArea, setFilterArea] = useState("Current View");
+        const filterCurrent = () => { setFilterArea("Current View"); };
+        const filterCircle = () => { setFilterArea("Circle 1"); };
+        const filterShape = () => { setFilterArea("Shape 2"); };
+
         const [bottomMax, setBottomMax] = useState(false);
         const toggleBottomMax = () => { setBottomMax(!bottomMax); };
+        const [bottomState, setBottomState] = useState(false);
+        const openBottom = () => { setBottomState(true); };
+        const closeBottom = () => {
+          setBottomState(false);
+          setBottomMax(false);
+        };
+        const toggleBottom = () => {
+          setBottomState(!bottomState);
+          setBottomMax(false);
+        };
 
         const menuMain = [
           {
@@ -91,9 +109,9 @@ storiesOf("Templates|Applications/Research/Property", module)
             title: "Data",
           },
           {
-            id: "Toggle Details",
-            title: "Toggle Details",
-            onClick: toggleDetailsMap,
+            id: "Toggle Overlay",
+            title: "Toggle Overlay",
+            onClick: toggleOverlay,
           },
           {
             id: "Toggle Right",
@@ -103,8 +121,23 @@ storiesOf("Templates|Applications/Research/Property", module)
           {
             id: "Toggle Bottom",
             title: "Toggle Bottom",
-            onClick: toggleBottomMax,
+            onClick: toggleBottom,
           },
+        ];
+
+        let toggleIcon;
+
+        if (bottomMax === true) {
+          toggleIcon = 180;
+        } else {
+          toggleIcon = null;
+        }
+
+        const actionsTable = [
+          <Icon icon="share" onClick={() => { }} />,
+          <Icon icon="delete" onClick={() => { }} />,
+          <Icon icon="up" rotation={toggleIcon} onClick={toggleBottomMax} />,
+          <Icon icon="close" onClick={closeBottom} />,
         ];
 
         return (
@@ -141,24 +174,36 @@ storiesOf("Templates|Applications/Research/Property", module)
                           }}
                           center={{
                             content: (
-                              <Inline spacingX="1rem" spacingY="0.5rem">
-                                <Command command="filter" />
-                                <Command icon="draw" label="Limit Search" />
-                              </Inline>
+                              // <Button label="View 309 Results" onClick={openBottom} isSolid variant="" size="sm" />
+                              <Link text="View 309 Results" size="xl" weight="bold" onClick={openBottom} />
                             ),
                             align: "left",
+                          }}
+                          right={{
+                            content: (
+                              <Menu
+                                data={[
+                                  { id: "a", label: "Action" },
+                                  { id: "b", label: "Action" },
+                                  { id: "c", label: "Action" },
+                                ]}
+                                position="bottomLeft"
+                              />
+                            ),
+                            width: "max-content",
                           }}
                         />
                       </CardSection>
                       <CardSection padding="0" isInverse>
                         <Bar
-                          contentAlign="top"
                           left={{
                             content: (
-                              <Inline spacingX="" spacingY="">
-                                <Button icon="list" label="View" size="sm" />
+                              <Command id="filter" command="filter" />
+                              /* <Button icon="filter" label="Filter" size="sm" /> */
+                              /* <Inline spacingX="" spacingY="">
+                                <Button icon="list" label="View" size="sm" onClick={openBottom} />
                                 <Title text="309 results for:" size="lg" />
-                              </Inline>
+                              </Inline> */
                             ),
                             width: "max-content",
                           }}
@@ -170,10 +215,29 @@ storiesOf("Templates|Applications/Research/Property", module)
                                 <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
                                 <Tag label="Expensive " brand="brand1" icon="close" onClickIcon={() => { }} />
                                 <Tag label="EX: Boundary 1" brand="brand1" icon="close" onClickIcon={() => { }} />
-                                {/* <Tag label="IN: Boundary 3" brand="brand1" icon="close" onClickIcon={() => { }} /> */}
+                                <Tag label="IN: Boundary 3" brand="brand1" icon="close" onClickIcon={() => { }} />
                               </Inline>
                             ),
                             align: "left",
+                          }}
+                          right={{
+                            content: (
+                              <Inline spacingX="0.5rem" spacingY="0">
+                                <Label text="Filter Area:" />
+                                <Menu
+                                  data={[
+                                    { id: "view", label: "Current View", onClick: filterCurrent },
+                                    { id: "circle-1", label: "Circle 1", onClick: filterCircle },
+                                    { id: "shape-2", label: "Shape 2", onClick: filterShape },
+                                    { id: "create", label: "Create Area" },
+                                  ]}
+                                  position="bottomLeft"
+                                >
+                                  <Link text={filterArea} size="lg" weight="bold" />
+                                </Menu>
+                              </Inline>
+                            ),
+                            width: "max-content",
                           }}
                         />
                       </CardSection>
@@ -201,29 +265,29 @@ storiesOf("Templates|Applications/Research/Property", module)
                     }}
                     B={{
                       id: "B",
-                      content: <MockDetails offcanvas2={detailsMap} />,
+                      content: <MockDetails actionClose={closeOverlay} />,
                       opacity: fade,
                       overflow: "hidden",
                     }}
                   />
-                  <Mapbox map="satellite" center={[-117.6582, 33.5969]} zoom={[17]} />
+                  <Mapbox map="satellite" center={[-117.6582, 33.5969]} zoom={[17]} mapClick={openOverlay} />
                 </Panel>
               ),
             }}
             right={{
               id: "Summary Panel",
               content: (
-                <MockDetails />
+                <MockDetails actionClose={closeRight} />
               ),
               visible: rightOpen,
             }}
             bottom={{
               id: "Results List",
               content: (
-                <MockTable />
+                <MockTable actionsTable={actionsTable} />
               ),
               max: bottomMax,
-              // visible: false,
+              visible: bottomState,
             }}
           />
         );

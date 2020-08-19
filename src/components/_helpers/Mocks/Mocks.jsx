@@ -249,7 +249,7 @@ MockWorkflow.defaultProps = {
   title: null,
 };
 
-function MockTable({ header, table }) {
+function MockTable({ header, table, actionsTable }) {
   const tableHeaders = [
     { id: "checkbox", label: <Grid columns="auto 1fr"><Checkbox label="Select All" /></Grid> },
     { id: "actions", label: "Actions" },
@@ -448,40 +448,75 @@ function MockTable({ header, table }) {
     <React.Fragment>
       {header ? (
         <Card>
-          <CardSection isInverse>
-            <Bar
-              contentAlign="center"
-              padding="0"
-              left={{
-                content: (
-                  <Inline>
-                    <Menu
-                      data={[
-                        { id: "a", label: "Action" },
-                        { id: "b", label: "Action" },
-                        { id: "c", label: "Action" },
-                      ]}
-                      position="bottomRight"
-                    >
-                      <Icon icon="options" onClick={() => { }} />
-                    </Menu>
-                    <Text text="Active List" />
-                    <Tag label="3" />
-                  </Inline>
-                ),
-              }}
-              right={{
-                content: (
-                  <Inline spacingX="0.5rem">
-                    <Icon icon="share" onClick={() => { }} />
-                    <Icon icon="delete" onClick={() => { }} />
-                    <Icon icon="maximize" onClick={() => { }} />
-                    <Icon icon="down" onClick={() => { }} />
-                  </Inline>
-                ),
-              }}
-            />
-          </CardSection>
+          {actionsTable
+            ? (
+              <CardSection isInverse>
+                <Bar
+                  contentAlign="center"
+                  padding="0"
+                  left={{
+                    content: (
+                      <Inline>
+                        <Menu
+                          data={[
+                            { id: "a", label: "Action" },
+                            { id: "b", label: "Action" },
+                            { id: "c", label: "Action" },
+                          ]}
+                          position="bottomRight"
+                        >
+                          <Icon icon="options" onClick={() => { }} />
+                        </Menu>
+                        <Text text="Active List" />
+                        <Tag label="3" />
+                      </Inline>
+                    ),
+                  }}
+                  right={{
+                    content: (
+                      <Inline spacingX="0.5rem">
+                        {actionsTable}
+                      </Inline>
+                    ),
+                  }}
+                />
+              </CardSection>
+            ) : (
+              <CardSection isInverse>
+                <Bar
+                  contentAlign="center"
+                  padding="0"
+                  left={{
+                    content: (
+                      <Inline>
+                        <Menu
+                          data={[
+                            { id: "a", label: "Action" },
+                            { id: "b", label: "Action" },
+                            { id: "c", label: "Action" },
+                          ]}
+                          position="bottomRight"
+                        >
+                          <Icon icon="options" onClick={() => { }} />
+                        </Menu>
+                        <Text text="Active List" />
+                        <Tag label="3" />
+                      </Inline>
+                    ),
+                  }}
+                  right={{
+                    content: (
+                      <Inline spacingX="0.5rem">
+                        <Icon icon="share" onClick={() => { }} />
+                        <Icon icon="delete" onClick={() => { }} />
+                        <Icon icon="maximize" onClick={() => { }} />
+                        <Icon icon="down" onClick={() => { }} />
+                      </Inline>
+                    ),
+                  }}
+                />
+              </CardSection>
+            )}
         </Card>
       ) : null}
       {table ? (
@@ -502,10 +537,12 @@ function MockTable({ header, table }) {
   );
 }
 MockTable.propTypes = {
+  actionsTable: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   header: PropTypes.boolean,
   table: PropTypes.boolean,
 };
 MockTable.defaultProps = {
+  actionsTable: null,
   header: true,
   table: true,
 };
@@ -809,7 +846,7 @@ MockForm.defaultProps = {
 };
 
 function MockDetails({
-  image, title, data, footer, offcanvas,
+  actionClose, image, title, data, footer, offcanvas,
 }) {
   return (
     <Panel
@@ -825,66 +862,29 @@ function MockDetails({
                 )}
                 right={{
                   content: (
-                    <Icon icon="close" onClick={() => { }} />
+                    <Icon icon="close" onClick={actionClose} />
                   ),
                   width: "4rem",
                 }}
               />
             </CardSection>
           </Card>
-          {/* <Card
-            commands={[
-              {
-                icon: "Report",
-                id: "Details",
-                label: "Details",
-                onClick: () => { },
-              },
-              {
-                icon: "Location",
-                id: "Location",
-                label: "Location",
-                onClick: () => { },
-              },
-            ]}
-          /> */}
         </React.Fragment>
       )}
       padding="0"
       offcanvas={offcanvas}
     >
       <Template>
-        {/* <Card
-          commands={[
-            {
-              icon: "Report",
-              id: "Details",
-              label: "Details",
-              onClick: () => { },
-            },
-            {
-              icon: "Location",
-              id: "Location",
-              label: "Location",
-              onClick: () => { },
-            },
-          ]}
-        > */}
         <MediaBlock
           media={image || StaticMap}
           title="22902 Trabuco Rd"
           description="Mission Viejo, CA"
         >
           <Inline spacingX="1rem">
-            <Command icon="report" label="Details" />
             <Command icon="location" label="Location" />
+            <Command icon="export" label="Details" />
           </Inline>
         </MediaBlock>
-        {/* </Card> */}
-        {/* <Inline spacingX="1rem">
-          <Command icon="report" label="Details" />
-          <Command icon="location" label="Location" />
-        </Inline> */}
         {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
           : (
             <FieldSection>
@@ -912,6 +912,7 @@ function MockDetails({
   );
 }
 MockDetails.propTypes = {
+  actionClose: PropTypes.func,
   data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   footer: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
@@ -919,6 +920,7 @@ MockDetails.propTypes = {
   title: PropTypes.string,
 };
 MockDetails.defaultProps = {
+  actionClose: null,
   data: null,
   footer: null,
   image: null,
