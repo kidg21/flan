@@ -14,7 +14,7 @@ exports[` 1`] = `
     width={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+      className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
       disabled={false}
       htmlFor={null}
       id="Search_Standard-search-button"
@@ -100,7 +100,7 @@ exports[` 2`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
         disabled={false}
         htmlFor={null}
         id="Suggestions-search-button"
@@ -173,7 +173,7 @@ exports[` 2`] = `
         id="Suggestions-results-container"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+          className="List__ListWrapper-sc-43f2zq-0 eDrpci"
           id={null}
         >
           <li
@@ -315,7 +315,7 @@ exports[` 3`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
         disabled={false}
         htmlFor={null}
         id="Suggestions_More-search-button"
@@ -388,7 +388,7 @@ exports[` 3`] = `
         id="Suggestions_More-results-container"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+          className="List__ListWrapper-sc-43f2zq-0 eDrpci"
           id={null}
         >
           <li
@@ -799,7 +799,7 @@ exports[` 3`] = `
               <div
                 className="Bar__Slot-icfo76-1 cxljst"
               >
-                <div
+                <span
                   className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
                   id={null}
                   label="14"
@@ -815,7 +815,7 @@ exports[` 3`] = `
                   >
                     14
                   </label>
-                </div>
+                </span>
               </div>
             </div>
           </li>
@@ -847,7 +847,7 @@ exports[` 4`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
         disabled={false}
         htmlFor={null}
         id="Search_Offline-search-button"
@@ -995,7 +995,7 @@ exports[` 5`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
         disabled={false}
         htmlFor={null}
         id="Search_BadConnection-search-button"

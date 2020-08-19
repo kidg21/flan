@@ -14,7 +14,6 @@ exports[` 1`] = `
     onChange={null}
     onFocus={null}
     type="radio"
-    value={null}
   />
   <label
     className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
@@ -76,7 +75,6 @@ Array [
           onChange={null}
           onFocus={null}
           type="radio"
-          value={null}
         />
         <label
           className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
@@ -136,7 +134,6 @@ Array [
           onChange={null}
           onFocus={null}
           type="radio"
-          value={null}
         />
         <label
           className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
@@ -170,10 +167,9 @@ exports[` 3`] = `
       id="Selected"
       name="states"
       onBlur={null}
-      onChange={null}
+      onChange={[Function]}
       onFocus={null}
       type="radio"
-      value={null}
     />
     <label
       className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
@@ -199,7 +195,6 @@ exports[` 3`] = `
       onChange={null}
       onFocus={null}
       type="radio"
-      value={null}
     />
     <label
       className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
@@ -226,7 +221,6 @@ exports[` 3`] = `
       onFocus={null}
       tabIndex="-1"
       type="radio"
-      value={null}
     />
     <label
       className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
@@ -261,7 +255,6 @@ exports[` 4`] = `
       onChange={null}
       onFocus={null}
       type="radio"
-      value={null}
     />
     <label
       className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
@@ -287,7 +280,6 @@ exports[` 4`] = `
       onChange={null}
       onFocus={null}
       type="radio"
-      value={null}
     />
     <label
       className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
