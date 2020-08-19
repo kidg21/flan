@@ -17,9 +17,9 @@ const InlineItem = styled.div`
   margin: ${(props) => {
     return props.inlineMargin || "";
   }};
-  &:not(:first-of-type) {
+  &:not(:last-of-type) {
     padding: ${(props) => {
-    return props.inlinePadding || "0 0 0 1rem";
+    return props.inlinePadding || "0 0.5rem 0 0";
   }};
   }
 `;
