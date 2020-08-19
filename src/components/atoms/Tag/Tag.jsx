@@ -39,7 +39,7 @@ const TagIconContainer = styled.div`
   ${(props) => {
     if (props.iconSeparator === "radial") {
       return `
-        border: 1px solid ${props.theme.text[props.badgeTextColor]};
+        background-color: ${props.theme.background.modal};
         border-radius: 50%;
         height: 1.2em;
         width: 1.2em;
@@ -190,7 +190,7 @@ Tag.defaultProps = {
   className: null,
   hasBackground: true,
   icon: null,
-  iconPosition: "left",
+  iconPosition: "right",
   iconSeparator: "radial",
   id: null,
   label: null,

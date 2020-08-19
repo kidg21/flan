@@ -47,7 +47,6 @@ const index = [
   "",
   <MockHeader />,
   <MockFooter />,
-  <Mapbox />,
   <MockMenu />,
   <MockWorkflow />,
   <MockDetails />,

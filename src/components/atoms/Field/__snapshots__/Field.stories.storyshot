@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 ddVdGA"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
   id="Field"
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+    className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
     cursor="pointer"
     fontSize="1rem"
     fontWeight={400}
@@ -35,12 +35,12 @@ exports[` 2`] = `
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 ddVdGA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
     id="Default"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -60,12 +60,12 @@ exports[` 2`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fWfYAC"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fAPoMC"
     id="Vertical"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -85,12 +85,12 @@ exports[` 2`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 eYRCaQ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
     id="Edge"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -119,12 +119,12 @@ exports[` 3`] = `
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 ddVdGA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
     id="Standard Value"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -144,12 +144,12 @@ exports[` 3`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 ddVdGA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
     id="Linked Value"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 ePEGIf Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -178,6 +178,375 @@ exports[` 3`] = `
         Linked Value
       </p>
     </a>
+  </section>
+</section>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    id="Group 1"
+    rows={null}
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      fontSize="0.875rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.25px"
+    >
+      Auto
+    </p>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fwAAvS"
+      id="Field 1"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 1
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fwAAvS"
+      id="Field 2"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 2
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Value Goes Here
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fwAAvS"
+      id="Field 3"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 3
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Go
+      </p>
+    </section>
+  </section>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    id="Group 1"
+    rows={null}
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      fontSize="0.875rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.25px"
+    >
+      1x (Default)
+    </p>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      id="Field 1"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 1
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      id="Field 2"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 2
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Value Goes Here
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      id="Field 3"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 3
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Go
+      </p>
+    </section>
+  </section>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    id="Group 1"
+    rows={null}
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      fontSize="0.875rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.25px"
+    >
+      2x
+    </p>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 jJKQmj"
+      id="Field 1"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 1
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 jJKQmj"
+      id="Field 2"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 2
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Value Goes Here
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 jJKQmj"
+      id="Field 3"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 3
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Go
+      </p>
+    </section>
+  </section>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    id="Group 1"
+    rows={null}
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      fontSize="0.875rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.25px"
+    >
+      3x
+    </p>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 gSTnwq"
+      id="Field 1"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 1
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 gSTnwq"
+      id="Field 2"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 2
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Value Goes Here
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 gSTnwq"
+      id="Field 3"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hGcCeY Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Field 3
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        fontSize="1rem"
+        fontWeight={500}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Go
+      </p>
+    </section>
   </section>
 </section>
 `;

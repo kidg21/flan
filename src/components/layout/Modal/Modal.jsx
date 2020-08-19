@@ -189,10 +189,68 @@ function Modal({
   text,
   visible,
 }) {
+  const uId = useId(id);
+
+  // Hide container when fade is complete
+  // internal state to know when content is fully visible or fully hidden
+  // animation takes time!
+  const [state, setState] = useState({
+    action: visible ? "open" : "close",
+    visible: visible,
+    modalAnimationInProgess: false,
+  });
+
+  useEffect(() => {
+    if (!animationDuration) {
+      setState({ visible });
+    } else if (state.visible !== visible) {
+      // init animation
+      setState((oldState) => {
+        return {
+          ...oldState,
+          action: visible ? "open" : "close",
+        };
+      });
+    }
+  }, [state.visible, visible]);
+
+  // use to be notified when content is fully visible or fully hidden
+  const endAnimation = useCallback((e) => {
+    // if hasBackdrop, the ModalBG animation bubbles up
+    // causing 2 onAnimationEnd events to fire
+    // id matches the ContentWrapper or Image which is animationId
+    if (e.target.id === `${uId}-${animationId}`) {
+      // animation completed, update internal visible state
+      setState((oldState) => {
+        return {
+          ...oldState,
+          visible: visible,
+          modalAnimationInProgess: false,
+        };
+      });
+      if (onAnimationEnd) onAnimationEnd(e);
+    }
+  }, [onAnimationEnd, visible]);
+
+  const startAnimation = useCallback((e) => {
+    // if hasBackdrop, the ModalBG animation bubbles up
+    // causing 2 onAnimationEnd events to fire
+    // id matches the ContentWrapper or Image which is animationId
+    if (e.target.id === `${uId}-${animationId}`) {
+      if (onAnimationStart) onAnimationStart(e);
+      setState((oldState) => {
+        return {
+          ...oldState,
+          modalAnimationInProgess: true,
+        };
+      });
+    }
+  }, [onAnimationStart]);
+
   let modalContent;
   let justifyContent;
-  const pointerEvents = hasBackdrop ? "auto" : "none";
-  const uId = useId(id);
+  // don't want to have any click events fired when the modal is in transition
+  const pointerEvents = hasBackdrop && !state.modalAnimationInProgess ? "auto" : "none";
 
   if (text && !media) {
     modalContent = (
@@ -229,54 +287,6 @@ function Modal({
     default:
       break;
   }
-
-  // Hide container when fade is complete
-  // internal state to know when content is fully visible or fully hidden
-  // animation takes time!
-  const [state, setState] = useState({
-    action: visible ? "open" : "close",
-    visible: visible,
-  });
-
-  useEffect(() => {
-    if (!animationDuration) {
-      setState({ visible });
-    } else if (state.visible !== visible) {
-      // init animation
-      setState((oldState) => {
-        return {
-          ...oldState,
-          action: visible ? "open" : "close",
-        };
-      });
-    }
-  }, [state.visible, visible]);
-
-  // use to be notified when content is fully visible or fully hidden
-  const endAnimation = useCallback((e) => {
-    // if hasBackdrop, the ModalBG animation bubbles up
-    // causing 2 onAnimationEnd events to fire
-    // id matches the ContentWrapper or Image which is animationId
-    if (e.target.id === `${uId}-${animationId}`) {
-      // animation completed, update internal visible state
-      setState((oldState) => {
-        return {
-          ...oldState,
-          visible,
-        };
-      });
-      if (onAnimationEnd) onAnimationEnd(e);
-    }
-  }, [onAnimationEnd, visible]);
-
-  const startAnimation = useCallback((e) => {
-    // if hasBackdrop, the ModalBG animation bubbles up
-    // causing 2 onAnimationEnd events to fire
-    // id matches the ContentWrapper or Image which is animationId
-    if (e.target.id === `${uId}-${animationId}`) {
-      if (onAnimationStart) onAnimationStart(e);
-    }
-  }, [onAnimationStart]);
 
   return (
     <React.Fragment>
