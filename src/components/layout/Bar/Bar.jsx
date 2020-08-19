@@ -137,7 +137,7 @@ function Bar({
 }) {
   const slotPadding = getPadding(left, right, center);
   const barPadding = padding ? paddingHash[padding.toLowerCase()] : "0.5em 1em";
-  const alignContent = alignHash[contentAlign && contentAlign.toLowerCase()] || "flex-start";
+  const alignContent = alignHash[contentAlign && contentAlign.toLowerCase()] || "baseline";
 
   let leftAlign = {};
   if (left && left.align) leftAlign = slotAlignHash[left.align];
