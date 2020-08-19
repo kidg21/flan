@@ -7,6 +7,8 @@ import { Lighten, Darken } from "Variables";
 
 const StyledLabel = styled.label`
   color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   line-height: ${(props) => { return props.lineHeight; }};

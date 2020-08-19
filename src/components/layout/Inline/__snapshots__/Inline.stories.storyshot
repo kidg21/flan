@@ -22,7 +22,7 @@ exports[` 1`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -47,7 +47,7 @@ exports[` 1`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -72,7 +72,7 @@ exports[` 1`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -97,7 +97,7 @@ exports[` 1`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -140,7 +140,7 @@ exports[` 2`] = `
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -165,7 +165,7 @@ exports[` 2`] = `
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -190,7 +190,7 @@ exports[` 2`] = `
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -215,7 +215,7 @@ exports[` 2`] = `
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -252,7 +252,7 @@ exports[` 3`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -277,7 +277,7 @@ exports[` 3`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -302,7 +302,7 @@ exports[` 3`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -327,7 +327,7 @@ exports[` 3`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -363,7 +363,7 @@ exports[` 4`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -388,7 +388,7 @@ exports[` 4`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -413,7 +413,7 @@ exports[` 4`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -438,7 +438,7 @@ exports[` 4`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -474,191 +474,7 @@ exports[` 5`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
-        cursor="default"
-        fontSize="0.875rem"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing=".5px"
-      >
-        Tag 1
-      </label>
-    </div>
-  </div>
-  <div
-    style={
-      Object {
-        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
-      }
-    }
-  >
-    <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-      href={null}
-      id="storyshots_224"
-      media=""
-      onClick={null}
-    >
-      <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-        id={null}
-        onClick={null}
-      >
-        <div
-          style={
-            Object {
-              "width": "10em",
-            }
-          }
-        >
-          Different size in content
-        </div>
-      </section>
-    </div>
-  </div>
-  <div
-    style={
-      Object {
-        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
-      }
-    }
-  >
-    <div
-      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
-      id={null}
-      label="Tag 33333333333"
-      onClick={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
-        cursor="default"
-        fontSize="0.875rem"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing=".5px"
-      >
-        Tag 33333333333
-      </label>
-    </div>
-  </div>
-</div>
-`;
-
-exports[` 6`] = `
-<div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 dMntJL"
-  height={null}
-  id={null}
-  overflow={null}
-  width={null}
->
-  <div
-    style={
-      Object {
-        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
-      }
-    }
-  >
-    <div
-      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
-      id={null}
-      label="Tag 1"
-      onClick={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
-        cursor="default"
-        fontSize="0.875rem"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing=".5px"
-      >
-        Tag 1
-      </label>
-    </div>
-  </div>
-  <div
-    style={
-      Object {
-        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
-      }
-    }
-  >
-    <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-      href={null}
-      id="storyshots_225"
-      media=""
-      onClick={null}
-    >
-      <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-        id={null}
-        onClick={null}
-      >
-        <div
-          style={
-            Object {
-              "width": "10em",
-            }
-          }
-        >
-          Different size in content
-        </div>
-      </section>
-    </div>
-  </div>
-  <div
-    style={
-      Object {
-        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
-      }
-    }
-  >
-    <div
-      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
-      id={null}
-      label="Tag 33333333333"
-      onClick={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
-        cursor="default"
-        fontSize="0.875rem"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing=".5px"
-      >
-        Tag 33333333333
-      </label>
-    </div>
-  </div>
-</div>
-`;
-
-exports[` 7`] = `
-<div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 hGpRWo"
-  height={null}
-  id={null}
-  overflow={null}
-  width={null}
->
-  <div
-    style={
-      Object {
-        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
-      }
-    }
-  >
-    <div
-      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
-      id={null}
-      label="Tag 1"
-      onClick={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -714,7 +530,191 @@ exports[` 7`] = `
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Tag 33333333333
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 6`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 dMntJL"
+  height={null}
+  id={null}
+  overflow={null}
+  width={null}
+>
+  <div
+    style={
+      Object {
+        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
+      }
+    }
+  >
+    <div
+      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+      id={null}
+      label="Tag 1"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Tag 1
+      </label>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
+      }
+    }
+  >
+    <div
+      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      href={null}
+      id="storyshots_227"
+      media=""
+      onClick={null}
+    >
+      <section
+        className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+        id={null}
+        onClick={null}
+      >
+        <div
+          style={
+            Object {
+              "width": "10em",
+            }
+          }
+        >
+          Different size in content
+        </div>
+      </section>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
+      }
+    }
+  >
+    <div
+      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+      id={null}
+      label="Tag 33333333333"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Tag 33333333333
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 7`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 hGpRWo"
+  height={null}
+  id={null}
+  overflow={null}
+  width={null}
+>
+  <div
+    style={
+      Object {
+        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
+      }
+    }
+  >
+    <div
+      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+      id={null}
+      label="Tag 1"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+      >
+        Tag 1
+      </label>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
+      }
+    }
+  >
+    <div
+      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      href={null}
+      id="storyshots_228"
+      media=""
+      onClick={null}
+    >
+      <section
+        className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+        id={null}
+        onClick={null}
+      >
+        <div
+          style={
+            Object {
+              "width": "10em",
+            }
+          }
+        >
+          Different size in content
+        </div>
+      </section>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "margin": "calc(0.3em / 2) 0.4em calc(0.3em / 2) 0",
+      }
+    }
+  >
+    <div
+      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+      id={null}
+      label="Tag 33333333333"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}

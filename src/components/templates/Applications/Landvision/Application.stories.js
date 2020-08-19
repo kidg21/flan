@@ -305,24 +305,28 @@ storiesOf("Templates|Applications/Research", module)
                                                 gap="xs"
                                               >
                                                 <Field
+                                                  spacing="1x"
                                                   id="Field 1"
                                                   isDense
                                                   label="Address"
                                                   value="42 Wallaby Way, Sydney, Australia"
                                                 />
                                                 <Field
+                                                  spacing="1x"
                                                   id="Field 1"
                                                   isDense
                                                   label="Owner"
                                                   value="Forrest Gump"
                                                 />
                                                 <Field
+                                                  spacing="1x"
                                                   id="Field 3"
                                                   isDense
                                                   label="Last Sale"
                                                   value="10/23/86"
                                                 />
                                                 <Field
+                                                  spacing="1x"
                                                   id="Field 3"
                                                   isDense
                                                   label="Doc #"
@@ -368,6 +372,7 @@ storiesOf("Templates|Applications/Research", module)
                                                 id="Group1"
                                                 columns="1"
                                                 gap="xs"
+                                                align="vertical"
                                               >
                                                 <Field
                                                   id="Field 1"

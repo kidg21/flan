@@ -11,7 +11,7 @@ const Region = styled.section`
     return props.gridArea || "";
   }};
   height: inherit;
-  border-right: ${(props) => {
+  border-left: ${(props) => {
     return props.hasBorder ? "1px solid" : "";
   }};
   border-color: ${(props) => {
@@ -95,14 +95,12 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
-    hasBorder: true,
   },
   B_02: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthXS} 1fr`,
-    hasBorder: true,
   },
   B_03: {
     setTemplate: [
@@ -110,14 +108,12 @@ const templateHash = {
       "\"B\"",
     ].join("\n"),
     setRows: "auto 1fr",
-    hasBorder: true,
   },
   B_04: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthMD} 1fr`,
-    hasBorder: true,
   },
   B_05: {
     setTemplate: [
@@ -126,14 +122,12 @@ const templateHash = {
     ].join("\n"),
     setColumns: "auto 1fr 12rem",
     setRows: "1fr 1rem",
-    hasBorder: true,
   },
   B_06: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthXL}`,
-    hasBorder: true,
   },
   B_07: {
     setTemplate: [
@@ -236,12 +230,11 @@ function Template({
   let setPosition;
   let setRowGap;
   let setRows;
-  let hasBorder;
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
     ({
-      setTemplate, setColumns, setRows, hasBorder,
+      setTemplate, setColumns, setRows,
     } = templateHash[template.toUpperCase()]);
     setHeight = "100%";
     setPadding = "0";
@@ -270,6 +263,7 @@ function Template({
     zIndex = "999";
   }
 
+
   return (
     <TemplateWrapper
       backgroundColor={backgroundColor}
@@ -296,7 +290,7 @@ function Template({
               gridArea={template ? "A" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
-              hasBorder={hasBorder}
+              hasBorder={A.hasBorder}
               overflow={A.overflow}
               isOverlay={isOverlay}
             >
@@ -310,6 +304,7 @@ function Template({
               gridArea={template ? "B" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              hasBorder={B.hasBorder}
               overflow={B.overflow}
               isOverlay={isOverlay}
             >
@@ -323,6 +318,7 @@ function Template({
               gridArea={template ? "C" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              hasBorder={C.hasBorder}
               overflow={C.overflow}
               isOverlay={isOverlay}
             >
@@ -336,6 +332,7 @@ function Template({
               gridArea={template ? "D" : ""}
               regionShadow={regionShadow}
               tabIndex="0"
+              hasBorder={D.hasBorder}
               overflow={D.overflow}
               isOverlay={isOverlay}
             >
@@ -349,6 +346,7 @@ function Template({
               gridArea={template ? "E" : null}
               regionShadow={regionShadow}
               tabIndex="0"
+              hasBorder={E.hasBorder}
               overflow={E.overflow}
               isOverlay={isOverlay}
             >
@@ -365,16 +363,19 @@ Template.propTypes = {
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   B: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   C: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   children: PropTypes.node,
   classname: PropTypes.string,
@@ -382,11 +383,13 @@ Template.propTypes = {
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   E: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.node,
     overflow: PropTypes.string,
+    hasBorder: PropTypes.bool,
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,

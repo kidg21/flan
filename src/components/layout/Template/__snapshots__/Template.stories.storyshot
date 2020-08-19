@@ -7,165 +7,41 @@ exports[` 1`] = `
   rows="100vh"
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 edIvSY"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 hwYDiz"
     id="Template D_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 bJWfrB"
+      className="Template__Region-sc-1i4nzbu-0 dMkICK"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
-      <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-        href={null}
-        id="storyshots_69"
-        media=""
-        onClick={null}
-      >
-        <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 vAqIG"
-          id="storyshots_69-Header"
-          onClick={null}
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
-              >
-                A
-              </h4>
-            </div>
-          </div>
-        </section>
-      </div>
+      A
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gwfupW"
+      className="Template__Region-sc-1i4nzbu-0 irxojJ"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
-      <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-        href={null}
-        id="storyshots_70"
-        media=""
-        onClick={null}
-      >
-        <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 vAqIG"
-          id="storyshots_70-Header"
-          onClick={null}
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
-              >
-                B
-              </h4>
-            </div>
-          </div>
-        </section>
-      </div>
+      B
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 otwtH"
+      className="Template__Region-sc-1i4nzbu-0 bhMvtk"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
-      <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-        href={null}
-        id="storyshots_71"
-        media=""
-        onClick={null}
-      >
-        <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 vAqIG"
-          id="storyshots_71-Header"
-          onClick={null}
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
-              >
-                C
-              </h4>
-            </div>
-          </div>
-        </section>
-      </div>
+      C
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jwdgUc"
+      className="Template__Region-sc-1i4nzbu-0 fKBfHn"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
-      <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-        href={null}
-        id="storyshots_72"
-        media=""
-        onClick={null}
-      >
-        <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 vAqIG"
-          id="storyshots_72-Header"
-          onClick={null}
-        >
-          <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-icfo76-1 RjiBe"
-            >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
-              >
-                D
-              </h4>
-            </div>
-          </div>
-        </section>
-      </div>
+      D
     </section>
   </section>
 </section>
@@ -185,7 +61,7 @@ exports[` 2`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dMuudl"
+      className="Template__Region-sc-1i4nzbu-0 lgnUmm"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -268,7 +144,7 @@ exports[` 2`] = `
       </form>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 iBxqlO"
+      className="Template__Region-sc-1i4nzbu-0 jTYGNt"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -309,7 +185,7 @@ exports[` 2`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            className="Typography__StyledLabel-sc-19auepv-0 hGcCeY"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -322,7 +198,7 @@ exports[` 2`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 JuXTX"
+      className="Template__Region-sc-1i4nzbu-0 eZpuCU"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -363,7 +239,7 @@ exports[` 2`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            className="Typography__StyledLabel-sc-19auepv-0 hGcCeY"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -376,7 +252,7 @@ exports[` 2`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jKnNNg"
+      className="Template__Region-sc-1i4nzbu-0 iIOrYb"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -417,7 +293,7 @@ exports[` 2`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+            className="Typography__StyledLabel-sc-19auepv-0 hGcCeY"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -430,7 +306,7 @@ exports[` 2`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 bSlvvp"
+      className="Template__Region-sc-1i4nzbu-0 dOffNC"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -441,7 +317,7 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+          className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
           cursor="pointer"
           fontSize="0.875rem"
           fontWeight={400}
@@ -547,7 +423,7 @@ exports[` 3`] = `
   rows={null}
 >
   <section
-    className="Template__Region-sc-1i4nzbu-0 ohpMM"
+    className="Template__Region-sc-1i4nzbu-0 dLltPr"
     id="A"
     placeholder="A"
     tabIndex="0"
@@ -573,7 +449,7 @@ exports[` 3`] = `
     </div>
   </section>
   <section
-    className="Template__Region-sc-1i4nzbu-0 ohpMM"
+    className="Template__Region-sc-1i4nzbu-0 dLltPr"
     id="B"
     placeholder="B"
     tabIndex="0"
@@ -599,7 +475,7 @@ exports[` 3`] = `
     </div>
   </section>
   <section
-    className="Template__Region-sc-1i4nzbu-0 ohpMM"
+    className="Template__Region-sc-1i4nzbu-0 dLltPr"
     id="C"
     placeholder="C"
     tabIndex="0"
@@ -641,7 +517,7 @@ exports[` 4`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 kErLSp"
+      className="Template__Region-sc-1i4nzbu-0 dMkICK"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -667,7 +543,7 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 klFOHy"
+      className="Template__Region-sc-1i4nzbu-0 irxojJ"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -693,7 +569,7 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dPAFpr"
+      className="Template__Region-sc-1i4nzbu-0 bhMvtk"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -832,31 +708,31 @@ exports[` 6`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 iZhCUM"
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
       id="A"
       placeholder="A"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 iZhCUM"
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
       id="B"
       placeholder="B"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 iZhCUM"
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
       id="C"
       placeholder="C"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 iZhCUM"
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
       id="D"
       placeholder="D"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 iZhCUM"
+      className="Template__Region-sc-1i4nzbu-0 frbLdz"
       id="E"
       placeholder="E"
       tabIndex="0"
