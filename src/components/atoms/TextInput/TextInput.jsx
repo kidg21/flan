@@ -187,10 +187,9 @@ function TextInput({
     messageColor = "alert";
   }
 
-  
   if (type === "date") {
     max = "2999-12-31";
-    min="019-01-01";
+    min = "1019-01-01";
   }
 
 
