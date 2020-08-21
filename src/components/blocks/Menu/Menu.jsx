@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Popper from "layout/Popper";
 import Button from "atoms/Button";
+import Divider from "atoms/Divider";
 import List, { ListItem } from "blocks/List";
 import getGuid from "utils/getGuid";
 import { useId } from "utils/hooks";
@@ -140,15 +141,31 @@ const MenuList = ({
             </NestedItem>
           );
         }
+
+        const isPre = !item.iconAlign || item.iconAlign.toLowerCase() === "left";
         return (
-          <ListItem
-            key={itemId}
-            id={`item-${itemId}`}
-            title={item.label}
-            onClickItem={onClick}
-            pre={{ type: "icon", icon: item.icon }}
-            disabled={item.disabled}
-          />
+          <React.Fragment>
+            <ListItem
+              key={itemId}
+              id={`item-${itemId}`}
+              title={item.label}
+              onClickItem={onClick}
+              pre={isPre ? {
+                type: "icon",
+                icon: item.icon,
+                onClick: item.onIconClick,
+                ...item.iconParams,
+              } : undefined}
+              post={!isPre ? {
+                type: "icon",
+                icon: item.icon,
+                onClick: item.onIconClick,
+                ...item.iconParams,
+              } : undefined}
+              disabled={item.disabled}
+            />
+            {item.hasDivider && index < data.length - 1 ? <Divider /> : null}
+          </React.Fragment>
         );
       });
     }
@@ -169,10 +186,14 @@ const MenuList = ({
 
 const itemShape = {
   disabled: PropTypes.bool,
+  hasDivider: PropTypes.bool,
   icon: PropTypes.string,
+  iconAlign: PropTypes.string,
+  iconParams: PropTypes.objectOf(PropTypes.any),
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
+  onIconClick: PropTypes.func,
 };
 
 MenuList.defaultProps = {
