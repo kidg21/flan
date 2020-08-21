@@ -47,7 +47,7 @@ Image.defaultProps = {
   isRound: false,
   className: null,
   onClick: null,
-  src: null,
+  src: "",
   width: null,
 };
 

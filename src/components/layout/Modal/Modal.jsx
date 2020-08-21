@@ -346,7 +346,7 @@ Modal.defaultProps = {
   ariaLabelledBy: null,
   children: null,
   id: "",
-  media: null,
+  media: "",
   hasBackdrop: true,
   onAnimationStart: null,
   onAnimationEnd: null,

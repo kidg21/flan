@@ -109,7 +109,7 @@
 
 // storiesOf("Elements|Card", module)
 //   .addDecorator(Padding)
-//   .addDecorator(checkA11y)
+//   .addDecorator(withA11y)
 //   .addDecorator(withKnobs)
 //   .add("Standard (configured)", () => {
 //     return (

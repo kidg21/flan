@@ -18,7 +18,7 @@ import LegendValue3 from "images/maps/legendvalue3.png";
 
 storiesOf("Templates/Modules/Toolbar", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Map Tools", () => {
     return (
       <React.Fragment>
@@ -143,6 +143,66 @@ storiesOf("Templates/Modules/Toolbar", module)
                                   <Image
                                     src={LegendValue2}
                                     alt="Legend 2"
+                                  />
+                                </CardSection>),
+                            }}
+                          />
+                          <Card
+                            description="Legend 3"
+                            more={{
+                              content: (
+                                <CardSection>
+                                  <Image
+                                    src={LegendValue3}
+                                    alt="Legend 3"
+                                  />
+                                </CardSection>),
+                            }}
+                          />
+                          <Card
+                            description="Legend 3"
+                            more={{
+                              content: (
+                                <CardSection>
+                                  <Image
+                                    src={LegendValue3}
+                                    alt="Legend 3"
+                                  />
+                                </CardSection>),
+                            }}
+                          />
+                          <Card
+                            description="Legend 3"
+                            more={{
+                              content: (
+                                <CardSection>
+                                  <Image
+                                    src={LegendValue3}
+                                    alt="Legend 3"
+                                  />
+                                </CardSection>),
+                            }}
+                          />
+                          <Card
+                            description="Legend 3"
+                            more={{
+                              content: (
+                                <CardSection>
+                                  <Image
+                                    src={LegendValue3}
+                                    alt="Legend 3"
+                                  />
+                                </CardSection>),
+                            }}
+                          />
+                          <Card
+                            description="Legend 3"
+                            more={{
+                              content: (
+                                <CardSection>
+                                  <Image
+                                    src={LegendValue3}
+                                    alt="Legend 3"
                                   />
                                 </CardSection>),
                             }}

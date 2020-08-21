@@ -28,14 +28,15 @@ export const Actions = () => {
   }
   return (
     <Accordion
+      title="Accordion Title"
       onClick={(e) => {
         toggleDropdown(e);
       }}
       open={open}
-      header={{ title: "Accordion Title" }}
     >
       <Text text="hi" />
-    </Accordion>);
+    </Accordion>
+  );
 };
 Actions.story = {
   parameters: {
@@ -54,20 +55,22 @@ export const Selection = () => {
   }
   return (
     <Accordion
-      onClick={(e, evt) => {
-        if (evt.target.id !== "checkbox-id") {
-          toggleDropdown(e);
-        }
-      }}
-      open={open}
-      header={
+      header={(
         <Checkbox
+          onClick={(e, evt) => {
+            if (evt.target.id !== "checkbox-id") {
+              toggleDropdown(e);
+            }
+          }}
           label="Label 1"
           id="checkbox-id"
-        />}
+        />
+      )}
+      open={open}
     >
       <Text text="hi" />
-    </Accordion>);
+    </Accordion>
+  );
 };
 Selection.story = {
   parameters: {
@@ -152,4 +155,3 @@ Selection.story = {
 //       );
 //     });
 //   });
-

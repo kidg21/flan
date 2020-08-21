@@ -53,8 +53,7 @@ function Calendar({
   };
 
   const uId = useId(id);
-  const inputTypes =
-    type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
+  const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
@@ -137,7 +136,7 @@ Calendar.defaultProps = {
     onBlur: null,
     onChange: null,
     onFocus: null,
-    value: null,
+    value: undefined,
   },
   disabled: null,
   error: null,
@@ -155,10 +154,10 @@ Calendar.defaultProps = {
     onBlur: null,
     onChange: null,
     onFocus: null,
-    value: null,
+    value: undefined,
   },
   type: "date",
-  value: null,
+  value: undefined,
   warning: null,
 };
 

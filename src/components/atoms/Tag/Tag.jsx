@@ -6,7 +6,7 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 
-const TagContainer = styled.div`
+const TagContainer = styled.span`
   justify-content: center;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@ const TagIconContainer = styled.div`
   ${(props) => {
     if (props.iconSeparator === "radial") {
       return `
-        border: 1px solid ${props.theme.text[props.badgeTextColor]};
+        background-color: ${props.theme.background.modal};
         border-radius: 50%;
         height: 1.2em;
         width: 1.2em;
@@ -130,23 +130,28 @@ function Tag({
         iconPosition={iconPosition}
         iconSeparator={iconSeparator}
         badgeTextColor={badgeTextColor}
-        onClick={onClickIcon}
+        onClick={(e) => {
+          if (typeof onClickIcon === "function") {
+            onClickIcon(e);
+            e.stopPropagation();
+          }
+        }}
       >
-        { iconType }
+        {iconType}
       </TagIconContainer>
     );
     if (iconPosition === "right") {
       inner = (
         <React.Fragment>
-          { labelType }
-          { iconType }
+          {labelType}
+          {iconType}
         </React.Fragment>
       );
     } else {
       inner = (
         <React.Fragment>
-          { iconType }
-          { labelType }
+          {iconType}
+          {labelType}
         </React.Fragment>
       );
     }
@@ -190,7 +195,7 @@ Tag.defaultProps = {
   className: null,
   hasBackground: true,
   icon: null,
-  iconPosition: "left",
+  iconPosition: "right",
   iconSeparator: "radial",
   id: null,
   label: null,

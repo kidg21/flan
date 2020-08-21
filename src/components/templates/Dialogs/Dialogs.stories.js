@@ -22,7 +22,7 @@ function doNothing() {
 storiesOf("Templates/Modules/Dialogs", module)
   .addDecorator(Padding)
   .addDecorator(CenterDecorator)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Print Options", () => {
     return React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("option1");
@@ -57,6 +57,7 @@ storiesOf("Templates/Modules/Dialogs", module)
             >
               <ImageSwatch
                 src={PrintNone}
+                alt="None"
                 width="75"
                 label="None"
                 isSelected={activeSingleTab === "option1"}
@@ -64,6 +65,7 @@ storiesOf("Templates/Modules/Dialogs", module)
               />
               <ImageSwatch
                 src={PrintFull}
+                alt="Full"
                 width="75"
                 label="Full"
                 isSelected={activeSingleTab === "option2"}
@@ -71,6 +73,7 @@ storiesOf("Templates/Modules/Dialogs", module)
               />
               <ImageSwatch
                 src={PrintHalf}
+                alt="Half"
                 width="75"
                 label="Half"
                 isSelected={activeSingleTab === "option3"}
@@ -78,6 +81,7 @@ storiesOf("Templates/Modules/Dialogs", module)
               />
               <ImageSwatch
                 src={PrintQuarter}
+                alt="Quarter"
                 width="75"
                 label="Quarter"
                 isSelected={activeSingleTab === "option4"}
@@ -86,6 +90,7 @@ storiesOf("Templates/Modules/Dialogs", module)
               <Divider isVertical />
               <ImageSwatch
                 src={PrintLegend}
+                alt="Legend"
                 width="75"
                 label="Legend"
                 isSelected={legend}

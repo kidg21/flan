@@ -11,7 +11,7 @@ const FieldItem = styled(Grid)`
   color: ${(props) => {
     return props.theme.text.secondary;
   }};
-  align-items: baseline;
+  align-items: top;
   width: 100%;
   grid-template-columns: ${(props) => {
     return props.fieldColumns || "";
@@ -71,11 +71,20 @@ const Section = styled.section`
 `;
 
 function Field({
-  align, className, disabled, id, label, onChange, onClick, value,
+  align, className, disabled, id, label, onChange, onClick, value, labelWidth, valueWidth,
 }) {
   let fieldColumns;
   let fieldGap;
   let valueAlign;
+
+  let labelSpacing = parseInt(labelWidth, 10);
+  if (isNaN(labelSpacing)) labelSpacing = "auto";
+  else labelSpacing += "fr";
+
+  let valueSpacing = parseInt(valueWidth, 10);
+  if (isNaN(valueSpacing)) valueSpacing = "auto";
+  else valueSpacing += "fr";
+
   switch (align) {
     case "vertical":
       fieldColumns = "repeat(1, minmax(0, 1fr))";
@@ -86,6 +95,7 @@ function Field({
       valueAlign = "right";
       break;
     default:
+      fieldColumns = `${labelSpacing} ${valueSpacing}`;
       break;
   }
 
@@ -123,6 +133,8 @@ function Field({
 
 Field.propTypes = {
   align: PropTypes.oneOf(["vertical", "edge", "tight"]),
+  labelWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
+  valueWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
@@ -135,6 +147,8 @@ Field.propTypes = {
 
 Field.defaultProps = {
   align: null,
+  labelWidth: "1x",
+  valueWidth: "1x",
   className: null,
   disabled: false,
   id: null,
@@ -240,7 +254,7 @@ FieldGroup.defaultProps = {
   children: null,
   className: null,
   gap: null,
-  columns: null,
+  columns: 1,
   data: [],
   id: null,
   title: null,
