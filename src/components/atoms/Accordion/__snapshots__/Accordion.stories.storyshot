@@ -104,6 +104,7 @@ exports[` 2`] = `
             id="checkbox-id"
             onBlur={null}
             onChange={null}
+            onClick={[Function]}
             onFocus={null}
             type="checkbox"
           />

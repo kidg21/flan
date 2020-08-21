@@ -11,6 +11,7 @@ exports[` 1`] = `
     id="Checkbox"
     onBlur={null}
     onChange={null}
+    onClick={[Function]}
     onFocus={null}
     type="checkbox"
   />
@@ -43,6 +44,7 @@ exports[` 2`] = `
       id="Checked"
       onBlur={null}
       onChange={[Function]}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
@@ -67,6 +69,7 @@ exports[` 2`] = `
       id="Unchecked"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
@@ -91,6 +94,7 @@ exports[` 2`] = `
       id="Error"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
@@ -115,6 +119,7 @@ exports[` 2`] = `
       id="Disabled"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       tabIndex="-1"
       type="checkbox"
@@ -149,6 +154,7 @@ exports[` 3`] = `
       id="Left Aligned"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
@@ -173,6 +179,7 @@ exports[` 3`] = `
       id="Right Aligned"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
@@ -240,6 +247,7 @@ exports[` 4`] = `
                 id="Checkbox-1"
                 onBlur={null}
                 onChange={null}
+                onClick={[Function]}
                 onFocus={null}
                 type="checkbox"
               />
@@ -264,6 +272,7 @@ exports[` 4`] = `
                 id="Checkbox-2"
                 onBlur={null}
                 onChange={null}
+                onClick={[Function]}
                 onFocus={null}
                 type="checkbox"
               />
@@ -288,6 +297,7 @@ exports[` 4`] = `
                 id="Checkbox-3"
                 onBlur={null}
                 onChange={null}
+                onClick={[Function]}
                 onFocus={null}
                 type="checkbox"
               />
@@ -312,6 +322,7 @@ exports[` 4`] = `
                 id="Checkbox-4"
                 onBlur={null}
                 onChange={null}
+                onClick={[Function]}
                 onFocus={null}
                 type="checkbox"
               />

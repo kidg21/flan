@@ -371,6 +371,7 @@ exports[` 1`] = `
                             id="Checkbox-1"
                             onBlur={null}
                             onChange={null}
+                            onClick={[Function]}
                             onFocus={null}
                             type="checkbox"
                           />
@@ -395,6 +396,7 @@ exports[` 1`] = `
                             id="Checkbox-2"
                             onBlur={null}
                             onChange={null}
+                            onClick={[Function]}
                             onFocus={null}
                             type="checkbox"
                           />
@@ -419,6 +421,7 @@ exports[` 1`] = `
                             id="Checkbox-3"
                             onBlur={null}
                             onChange={null}
+                            onClick={[Function]}
                             onFocus={null}
                             type="checkbox"
                           />
@@ -443,6 +446,7 @@ exports[` 1`] = `
                             id="Checkbox-4"
                             onBlur={null}
                             onChange={null}
+                            onClick={[Function]}
                             onFocus={null}
                             type="checkbox"
                           />
@@ -807,7 +811,7 @@ exports[` 2`] = `
                     width={null}
                   >
                     <div
-                      className="Container__BoxContainer-sc-1i4fzzd-1 ixLVrn"
+                      className="Container__BoxContainer-sc-1i4fzzd-1 gJfzMo"
                       height="100%"
                       id={null}
                     >
