@@ -36,7 +36,7 @@ const NonPortalWrapper = styled.div`
 `;
 
 const PopperWrapper = styled.div`
-  position: ${(props) => {
+  position ${(props) => {
     return props.usePortal ? "fixed" : "absolute";
   }};
   z-index: ${(props) => {
@@ -131,7 +131,7 @@ const PortalPopper = ({
       case "leftup":
         resultStyle.top = anchorBounds.bottom;
         resultStyle.left = anchorBounds.left;
-        resultStyle.transform = flipY;
+        resultStyle.transform = flipXY;
         break;
       case "rightup":
         resultStyle.top = anchorBounds.bottom;
@@ -188,7 +188,25 @@ const PortalPopper = ({
   );
 };
 
+// non portal position styles
 const absolutePositionStyle = {
+  leftup: {
+    top: "100%",
+    transform: flipXY,
+  },
+  leftdown: {
+    top: "0",
+    transform: flipX,
+  },
+  rightup: {
+    top: "100%",
+    left: "100%",
+    transform: flipY,
+  },
+  rightdown: {
+    top: "0",
+    left: "100%",
+  },
   topleft: {
     top: "0",
     left: "100%",
