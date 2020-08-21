@@ -241,7 +241,7 @@ function Icon({
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
-  else if (onClick || href) color = "link";
+  else if (!color && (onClick || href)) color = "link";
 
   // FontAwesomeIcon only allows values of 90, 180, or 270
   let _rotation = typeof rotation === "number" ? Math.round(rotation / 90) % 4 : null;

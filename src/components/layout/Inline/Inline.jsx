@@ -38,14 +38,14 @@ function Inline({
     >
       {children.length > 0
         ? children.map((child, index) => {
-          return (
+          return child ? (
             <div
               key={child.key || index}
               style={{ margin: `${spacingHalfY} ${spacingX} ${spacingHalfY} 0` }}
             >
               {child}
             </div>
-          );
+          ) : null;
         })
         : null}
     </Flex>
