@@ -1305,6 +1305,7 @@ exports[` 2`] = `
                               id="box-1"
                               onBlur={null}
                               onChange={null}
+                              onClick={[Function]}
                               onFocus={null}
                               type="checkbox"
                             />
@@ -1329,6 +1330,7 @@ exports[` 2`] = `
                               id="box-2"
                               onBlur={null}
                               onChange={null}
+                              onClick={[Function]}
                               onFocus={null}
                               tabIndex="-1"
                               type="checkbox"
@@ -1354,6 +1356,7 @@ exports[` 2`] = `
                               id="box-3"
                               onBlur={null}
                               onChange={null}
+                              onClick={[Function]}
                               onFocus={null}
                               type="checkbox"
                             />
@@ -1378,6 +1381,7 @@ exports[` 2`] = `
                               id="box-4"
                               onBlur={null}
                               onChange={null}
+                              onClick={[Function]}
                               onFocus={null}
                               type="checkbox"
                             />
@@ -1414,6 +1418,7 @@ exports[` 2`] = `
                               id="box_long"
                               onBlur={null}
                               onChange={null}
+                              onClick={[Function]}
                               onFocus={null}
                               type="checkbox"
                             />
@@ -1438,6 +1443,7 @@ exports[` 2`] = `
                               id="box_long2"
                               onBlur={null}
                               onChange={null}
+                              onClick={[Function]}
                               onFocus={null}
                               type="checkbox"
                             />
