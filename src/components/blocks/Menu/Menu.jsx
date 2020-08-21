@@ -381,8 +381,13 @@ _Menu.propTypes = {
   position: PropTypes.oneOf([
     "bottomLeft",
     "bottomRight",
+    "leftDown",
+    "leftUp",
+    "rightDown",
+    "rightUp",
     "topLeft",
     "topRight",
+    "",
   ]),
   /** open/close state of menu */
   visible: PropTypes.bool,
