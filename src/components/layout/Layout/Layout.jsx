@@ -201,7 +201,7 @@ function Layout({
   if (screenMedium.matches || screenLarge.matches) {
     leftWidth = "10rem";
     rightWidth = "24rem";
-    bottomHeight = "16rem";
+    bottomHeight = "21rem";
     zIndex = "1";
   } else {
     leftWidth = "100%";

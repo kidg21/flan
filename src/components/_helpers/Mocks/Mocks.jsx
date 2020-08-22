@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
-import Text, { Title, Link } from "base/Typography";
+import Text, { Title, Label, Link } from "base/Typography";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
 import Command from "atoms/Command";
@@ -29,9 +29,11 @@ import Inline from "layout/Inline";
 import Picker, { ColorSwatch } from "elements/Picker";
 import Field, { FieldSection, FieldGroup } from "atoms/Field";
 import Banner from "blocks/Banner";
+import Accordion from "atoms/Accordion";
+import Expander from "utils/Expander";
 import MediaBlock from "blocks/MediaBlock";
 import LightBoxLogo from "images/LightBoxLogo.png";
-import StaticMap from "images/maps/mission-viejo.png";
+import StaticMap from "images/maps/map-ortho.png";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 
 function MockPalette() {
@@ -251,8 +253,16 @@ MockWorkflow.defaultProps = {
 
 function MockTable({ header, table, actionsTable }) {
   const tableHeaders = [
-    { id: "checkbox", label: <Grid columns="auto 1fr"><Checkbox label="Select All" /></Grid> },
-    { id: "actions", label: "Actions" },
+    {
+      id: "checkbox",
+      label: (
+        <Grid
+          columns2="auto 1fr"
+        >
+          <Checkbox label2="Select All" />
+        </Grid>
+      ),
+    },
     { id: "Name", label: "Name", sortable: true },
     { id: "Address", label: "Address", sortable: false },
     { id: "City", label: "City", sortable: false },
@@ -265,6 +275,7 @@ function MockTable({ header, table, actionsTable }) {
     { id: "Year_Built", label: "Year Built", sortable: false },
     { id: "Land_SF", label: "Land(sf)", sortable: false },
     { id: "Acres", label: "Acres", sortable: false },
+    { id: "actions", label: "Actions" },
   ];
 
   const tableData = [
@@ -415,9 +426,9 @@ function MockTable({ header, table, actionsTable }) {
   for (let i = 0; i < tableData.length; i++) {
     tableData[i].checkbox = React.createElement(
       Checkbox,
-      {
-        label: "Select",
-      },
+      // {
+      //   label: "Select",
+      // },
       null,
     );
   }
@@ -457,24 +468,14 @@ function MockTable({ header, table, actionsTable }) {
                   left={{
                     content: (
                       <Inline>
-                        <Menu
-                          data={[
-                            { id: "a", label: "Action" },
-                            { id: "b", label: "Action" },
-                            { id: "c", label: "Action" },
-                          ]}
-                          position="bottomRight"
-                        >
-                          <Icon icon="options" onClick={() => { }} />
-                        </Menu>
                         <Text text="Active List" />
-                        <Tag label="3" />
+                        <Tag label="309" />
                       </Inline>
                     ),
                   }}
                   right={{
                     content: (
-                      <Inline spacingX="0.5rem">
+                      <Inline spacingX="1rem">
                         {actionsTable}
                       </Inline>
                     ),
@@ -846,36 +847,27 @@ MockForm.defaultProps = {
 };
 
 function MockDetails({
-  actionClose, image, title, data, footer, offcanvas,
+  actionClose, image, fieldGroupTitle, fieldData, footer, offcanvas, recordTitle,
 }) {
   return (
     <Panel
-      header={(
+      header={recordTitle ? (
         <React.Fragment>
           <Card>
             <CardSection isInverse>
-              <Bar
-                contentAlign="center"
-                padding="0"
-                left={(
-                  <Title text="Property Summary" />
-                )}
-                right={{
-                  content: (
-                    <Icon icon="close" onClick={actionClose} />
-                  ),
-                  width: "4rem",
-                }}
-              />
+              <Grid columns="1fr auto" gap="1rem">
+                <Label text={recordTitle || "22902 Trabuco Rd, Mission Viejo, CA 92691"} size="lg" />
+                <Icon icon="close" onClick={actionClose} />
+              </Grid>
             </CardSection>
           </Card>
         </React.Fragment>
-      )}
+      ) : null}
       padding="0"
       offcanvas={offcanvas}
     >
       <Template>
-        <MediaBlock
+        {/* <MediaBlock
           media={image || StaticMap}
           title="22902 Trabuco Rd"
           description="Mission Viejo, CA"
@@ -884,8 +876,8 @@ function MockDetails({
             <Command icon="location" label="Location" />
             <Command icon="export" label="Details" />
           </Inline>
-        </MediaBlock>
-        {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
+        </MediaBlock> */}
+        {fieldData ? <FieldGroup align="edge" id={fieldGroupTitle} title={fieldGroupTitle} data={fieldData} />
           : (
             <FieldSection>
               <FieldGroup title="Property Information" gap="sm" columns="1">
@@ -913,19 +905,21 @@ function MockDetails({
 }
 MockDetails.propTypes = {
   actionClose: PropTypes.func,
-  data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  fieldData: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   footer: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   offcanvas: PropTypes.string,
-  title: PropTypes.string,
+  fieldGroupTitle: PropTypes.string,
+  recordTitle: PropTypes.string,
 };
 MockDetails.defaultProps = {
   actionClose: null,
-  data: null,
+  fieldData: null,
   footer: null,
   image: null,
   offcanvas: null,
-  title: null,
+  fieldGroupTitle: null,
+  recordTitle: null,
 };
 
 function MockTabs({ data }) {
