@@ -9,6 +9,7 @@ const StyledLabel = styled.label`
   color: inherit;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   margin: 0;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   line-height: ${(props) => { return props.lineHeight; }};
@@ -173,7 +174,6 @@ const weightHash = {
 function Text({
   children, className, id, size, text, weight,
 }) {
-
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
@@ -265,11 +265,10 @@ function Label({
   text,
   isUppercase,
 }) {
-
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
-  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", };
+  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   let textTransform;
