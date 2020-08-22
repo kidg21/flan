@@ -28,7 +28,7 @@ const TagContainer = styled.span`
   }};
   line-height: normal;
   border-radius: ${(props) => {
-    return props.borderRadius || props.theme.borders.radiusMax;
+    return props.borderRadius || "4px";
   }};
 `;
 
@@ -40,7 +40,7 @@ const TagIconContainer = styled.div`
     if (props.iconSeparator === "radial") {
       return `
         background-color: ${props.theme.background.modal};
-        border-radius: 50%;
+        border-radius: 4px;
         height: 1.2em;
         width: 1.2em;
         margin-${props.iconPosition === "right" ? "right" : "left"}: 0.2em;
