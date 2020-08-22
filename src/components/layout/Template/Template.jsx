@@ -17,6 +17,9 @@ const Region = styled.section`
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
   }};
+  padding: ${(props) => {
+    return props.padding || "";
+  }};
   overflow: ${(props) => {
     return props.overflow || "auto";
   }};
@@ -73,11 +76,6 @@ const TemplateWrapper = styled(Grid)`
   pointer-events: ${(props) => {
     return props.pointerEvents || "";
   }};
-  ${Region} {
-    > * {
-      border-radius: 0; /* Squares of corners or direct child containers.  Eliminates 'inset shadow' of rounded containers when Regions have borders or shadows */
-    }
-  }
 `;
 
 const widthXS = "12rem";
@@ -130,7 +128,7 @@ const templateHash = {
       "\". . B\"",
       "\". . .\"",
     ].join("\n"),
-    setColumns: `4rem 1fr ${widthMD}`,
+    setColumns: `5rem 1fr ${widthLG}`,
     setRows: "auto 1fr 1rem",
     hasBorder: true,
   },
@@ -300,8 +298,9 @@ function Template({
               isOverlay={isOverlay}
               opacity={A.opacity}
               overflow={A.overflow}
+              padding={A.padding}
               placeholder="A"
-              regionShadow={regionShadow}
+              regionShadow={A.padding ? null : regionShadow}
               tabIndex="0"
             >
               {A.content}
@@ -315,8 +314,9 @@ function Template({
               isOverlay={isOverlay}
               opacity={B.opacity}
               overflow={B.overflow}
+              padding={B.padding}
               placeholder="B"
-              regionShadow={regionShadow}
+              regionShadow={B.padding ? null : regionShadow}
               tabIndex="0"
             >
               {B.content}
@@ -330,8 +330,9 @@ function Template({
               isOverlay={isOverlay}
               opacity={C.opacity}
               overflow={C.overflow}
+              padding={C.padding}
               placeholder="C"
-              regionShadow={regionShadow}
+              regionShadow={C.padding ? null : regionShadow}
               tabIndex="0"
             >
               {C.content}
@@ -345,8 +346,9 @@ function Template({
               isOverlay={isOverlay}
               opacity={D.opacity}
               overflow={D.overflow}
+              padding={D.padding}
               placeholder="D"
-              regionShadow={regionShadow}
+              regionShadow={D.padding ? null : regionShadow}
               tabIndex="0"
             >
               {D.content}
@@ -360,8 +362,9 @@ function Template({
               isOverlay={isOverlay}
               opacity={E.opacity}
               overflow={E.overflow}
+              padding={E.padding}
               placeholder="E"
-              regionShadow={regionShadow}
+              regionShadow={E.padding ? null : regionShadow}
               tabIndex="0"
             >
               {E.content}
@@ -379,6 +382,7 @@ Template.propTypes = {
     id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
+    padding: PropTypes.string,
   }),
   B: PropTypes.shape({
     content: PropTypes.node,
@@ -386,6 +390,7 @@ Template.propTypes = {
     id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
+    padding: PropTypes.string,
   }),
   C: PropTypes.shape({
     content: PropTypes.node,
@@ -393,6 +398,7 @@ Template.propTypes = {
     id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
+    padding: PropTypes.string,
   }),
   children: PropTypes.node,
   classname: PropTypes.string,
@@ -402,6 +408,7 @@ Template.propTypes = {
     id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
+    padding: PropTypes.string,
   }),
   E: PropTypes.shape({
     content: PropTypes.node,
@@ -409,6 +416,7 @@ Template.propTypes = {
     id: PropTypes.string,
     opacity: PropTypes.string,
     overflow: PropTypes.string,
+    padding: PropTypes.string,
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
