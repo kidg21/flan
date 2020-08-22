@@ -14,10 +14,10 @@ const InlineWrapper = styled(Flex)`
 `;
 
 const InlineItem = styled.div`
-  margin: ${(props) => {
+  &:not(:last-of-type) {
+    margin: ${(props) => {
     return props.inlineMargin || "";
   }};
-  &:not(:last-of-type) {
     padding: ${(props) => {
     return props.inlinePadding || "0 0.5rem 0 0";
   }};
@@ -61,8 +61,8 @@ function Inline({
           return (
             <InlineItem
               key={child.key ? `${child.key}-wrapper` : null}
-              inlineMargin={inlineMargin}
-              inlinePadding={inlinePadding}
+              inlineMargin={child ? inlineMargin : ""}
+              inlinePadding={child ? inlinePadding : "0"}
             >
               {child}
             </InlineItem>
