@@ -122,6 +122,8 @@ function TextInput({
   let messageColor;
   let inputResize;
   let placeholderColor;
+  let max;
+  let min;
   let inputSelectColor;
   let inputHeight;
   if (type === "textarea") {
@@ -185,6 +187,12 @@ function TextInput({
     messageColor = "alert";
   }
 
+  if (type === "date") {
+    max = "2999-12-31";
+    min = "1019-01-01";
+  }
+
+
   return (
     <TextInputContainer
       className={className}
@@ -212,6 +220,8 @@ function TextInput({
         list={autoCompleteDataListId}
         name={uId} // input attribute
         onBlur={onBlur}
+        max={max}
+        min={min}
         onChange={onChange}
         onFocus={onFocus}
         onKeyUp={onKeyUp}
