@@ -65,7 +65,7 @@ const CommandName = styled(Label)`
   transition: all 0.25s ease-in-out;
 
   ${(props) => {
-    if(props.hidden){
+    if (props.hidden) {
       return `
         position: absolute;
         overflow: hidden;
@@ -87,7 +87,7 @@ const CommandName = styled(Label)`
                 clip: auto;
             }
         }
-      `
+      `;
     }
   }}
 `;
