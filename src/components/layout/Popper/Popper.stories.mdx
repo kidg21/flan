@@ -1,7 +1,7 @@
 import { useState } from "hooks";
 import { Meta, Story, Preview, Props, Source } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
-import { textMock, BoxMock } from "layout/Popper/Popper.stories.js";
+import { textMock, BoxMock, lessTextMock } from "layout/Popper/Popper.stories.js";
 import { Padding, CenterDecorator, Container, CenterDisplayGrid, DisplayGrid } from "helpers/Display";
 import Popper from "layout/Popper";
 import Card from "elements/Card";
@@ -50,10 +50,10 @@ import List, { ListItem } from "blocks/List";
 
 `Popper` supports different positions in relation to the anchor element. Make sure
 to position `Popper` properly so it doesn't get cut off. Supported positions include:
-`bottomRight` (default), `topRight`, `bottomLeft`, `topLeft`.
+`bottomRight` (default), `topRight`, `bottomLeft`, `topLeft`, `leftUp`, `rightUp`, `leftDown`, `rightDown`.
 
 <Preview>
-  <Story name="Position" decorators={[CenterDecorator, Container, Padding]}>
+  <Story name="Top-Bottom Positions" decorators={[CenterDecorator, Container, Padding]}>
     <Grid columns="4">
       <Popper
         id="popper-position-bottomRight"
@@ -71,7 +71,7 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
         </BoxMock>
       </Popper>
@@ -91,7 +91,7 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
         </BoxMock>
       </Popper>
@@ -111,7 +111,7 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
         </BoxMock>
       </Popper>
@@ -131,7 +131,94 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+    </Grid>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Left-Right Positions" decorators={[CenterDecorator, Container, Padding, CenterDisplayGrid]}>
+    <Grid columns="2">
+      <Popper
+        id="popper-position-leftUp"
+        anchor={(
+          <Button
+            id="popper-button-leftUp"
+            label="Left Up"
+            isSolid
+          />
+        )}
+        visible
+        position="leftUp"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-rightUp"
+        anchor={(
+          <Button
+            id="popper-button-rightUp"
+            label="Right Up"
+            isSolid
+          />
+        )}
+        visible
+        position="rightUp"
+     >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-leftDown"
+        anchor={(
+          <Button
+            id="popper-button-leftDown"
+            label="Left Down"
+            isSolid
+          />
+        )}
+        visible
+        position="leftDown"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-rightDown"
+        anchor={(
+          <Button
+            id="popper-button-rightDown"
+            label="Right Down"
+            isSolid
+          />
+        )}
+        visible
+        position="rightDown"
+      >
+       <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
           />
         </BoxMock>
       </Popper>
@@ -205,9 +292,9 @@ The anchor element refers to the component the popper will open around. Use the
 For cases when `Popper` needs to break out of the DOM hierarchy, use the `usePortal` prop. It places
 the `children` content in a `React.Portal`.
 
-> By default, the popper will close on scroll to avoid the pop-out position to be out of sync
-> with its anchor. In the future, we may support updating the location of the pop-out as the
-> anchor position moves.
+> By default, the popper will close on window scroll. We did this to avoid the pop-out position from getting out of sync
+> with its anchor. Additional logic has been added to help track the anchor when a portal popper is open.
+> Check out `isTracking` (defaulted to `true`) & `trackingInterval` (defaulted to `500`ms).
 
 <Preview>
   <Story name="Portal" decorators={[Padding, DisplayGrid]}>
@@ -246,7 +333,7 @@ the `children` content in a `React.Portal`.
 Use `isFlex` prop when the anchor element needs to be a flex component.
 
 <Preview>
-  <Story name="Flex" decorators={[CenterDecorator, Container, Padding]}>
+  <Story name="Flex" decorators={[Container, Padding]}>
     <ButtonGroup columns={4}>
       <Button id="button-normal" label="Normal Button" />
       <Popper

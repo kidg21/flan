@@ -36,7 +36,7 @@ const NonPortalWrapper = styled.div`
 `;
 
 const PopperWrapper = styled.div`
-  position: ${(props) => {
+  position ${(props) => {
     return props.usePortal ? "fixed" : "absolute";
   }};
   z-index: ${(props) => {
@@ -119,6 +119,25 @@ const PortalPopper = ({
     const resultStyle = {};
     // portal, position is based on anchorRef's position/measurements
     switch (position.toLowerCase()) {
+      case "leftdown":
+        resultStyle.top = anchorBounds.top;
+        resultStyle.left = anchorBounds.left;
+        resultStyle.transform = flipX;
+        break;
+      case "rightdown":
+        resultStyle.top = anchorBounds.top;
+        resultStyle.left = anchorBounds.right;
+        break;
+      case "leftup":
+        resultStyle.top = anchorBounds.bottom;
+        resultStyle.left = anchorBounds.left;
+        resultStyle.transform = flipXY;
+        break;
+      case "rightup":
+        resultStyle.top = anchorBounds.bottom;
+        resultStyle.left = anchorBounds.right;
+        resultStyle.transform = flipY;
+        break;
       case "topleft":
         resultStyle.top = anchorBounds.top;
         resultStyle.left = anchorBounds.right;
@@ -169,7 +188,25 @@ const PortalPopper = ({
   );
 };
 
+// non portal position styles
 const absolutePositionStyle = {
+  leftup: {
+    top: "100%",
+    transform: flipXY,
+  },
+  leftdown: {
+    top: "0",
+    transform: flipX,
+  },
+  rightup: {
+    top: "100%",
+    left: "100%",
+    transform: flipY,
+  },
+  rightdown: {
+    top: "0",
+    left: "100%",
+  },
   topleft: {
     top: "0",
     left: "100%",
@@ -301,10 +338,14 @@ Popper.propTypes = {
   usePortal: PropTypes.bool,
   /** open position relative to anchor element */
   position: PropTypes.oneOf([
-    "topLeft",
-    "topRight",
     "bottomLeft",
     "bottomRight",
+    "leftDown",
+    "leftUp",
+    "rightDown",
+    "rightUp",
+    "topLeft",
+    "topRight",
     "",
   ]),
   /** interval time in ms for portal popper to track location */

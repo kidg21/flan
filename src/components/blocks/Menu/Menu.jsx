@@ -277,8 +277,13 @@ Menu.propTypes = {
   position: PropTypes.oneOf([
     "bottomLeft",
     "bottomRight",
+    "leftDown",
+    "leftUp",
+    "rightDown",
+    "rightUp",
     "topLeft",
     "topRight",
+    "",
   ]),
   visible: PropTypes.bool,
   width: PropTypes.string,
@@ -397,8 +402,13 @@ _Menu.propTypes = {
   position: PropTypes.oneOf([
     "bottomLeft",
     "bottomRight",
+    "leftDown",
+    "leftUp",
+    "rightDown",
+    "rightUp",
     "topLeft",
     "topRight",
+    "",
   ]),
   /** open/close state of menu */
   visible: PropTypes.bool,

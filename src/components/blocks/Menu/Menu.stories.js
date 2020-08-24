@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import Menu from "blocks/Menu";
-import { Padding, CenterDecorator, Container } from "helpers/Display";
+import { Padding, CenterDecorator, Container, CenterDisplayGrid } from "helpers/Display";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
@@ -77,7 +77,7 @@ const nestedMock = [{
   onClick: action("Delete Clicked"),
 }];
 
-export const PortalPositions = () => {
+export const TopBottomPortalPositions = () => {
   return (
     <Grid columns={4}>
       <Menu
@@ -86,6 +86,7 @@ export const PortalPositions = () => {
         usePortal
         data={dataMock}
         position="bottomRight"
+        closeOnClickAway={false}
       >
         <Button id="button-bottomRight" icon="options" isSolid />
       </Menu>
@@ -95,6 +96,7 @@ export const PortalPositions = () => {
         usePortal
         data={dataMock}
         position="topRight"
+        closeOnClickAway={false}
       >
         <Button id="button-topRight" icon="options" isSolid />
       </Menu>
@@ -104,6 +106,7 @@ export const PortalPositions = () => {
         usePortal
         data={dataMock}
         position="bottomLeft"
+        closeOnClickAway={false}
       >
         <Button id="button-bottomLeft" icon="options" isSolid />
       </Menu>
@@ -113,11 +116,62 @@ export const PortalPositions = () => {
         usePortal
         data={dataMock}
         position="topLeft"
+        closeOnClickAway={false}
       >
         <Button id="button-topLeft" icon="options" isSolid />
       </Menu>
     </Grid>
   );
+};
+
+export const LeftRightPortalPositions = () => {
+  return (
+    <Grid columns={2}>
+      <Menu
+        id="menu-portal-position-leftUp"
+        initVisible
+        usePortal
+        data={dataMock}
+        position="leftUp"
+        closeOnClickAway={false}
+      >
+        <Button id="button-leftUp" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-rightUp"
+        initVisible
+        usePortal
+        data={dataMock}
+        position="rightUp"
+        closeOnClickAway={false}
+      >
+        <Button id="button-rightUp" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-leftDown"
+        initVisible
+        usePortal
+        data={dataMock}
+        position="leftDown"
+        closeOnClickAway={false}
+      >
+        <Button id="button-leftDown" icon="options" isSolid />
+      </Menu>
+      <Menu
+        id="menu-portal-position-rightDown"
+        initVisible
+        usePortal
+        data={dataMock}
+        position="rightDown"
+        closeOnClickAway={false}
+      >
+        <Button id="button-rightDown" icon="options" isSolid />
+      </Menu>
+    </Grid>
+  );
+};
+LeftRightPortalPositions.story = {
+  decorators: [CenterDisplayGrid],
 };
 
 export const FlexPositons = () => {
