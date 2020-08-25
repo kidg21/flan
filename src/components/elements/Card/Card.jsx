@@ -482,7 +482,7 @@ Card.defaultProps = {
   more: null,
   onClick: null,
   padding: "0",
-  placeholder: "Card",
+  placeholder: "{ Card }",
   shadow: null,
   title: "",
   variant: null,
