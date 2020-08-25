@@ -33,6 +33,9 @@ const BoxContainer = styled.div`
   width: ${(props) => {
     return props.width || "";
   }};
+  padding: ${(props) => {
+    return props.padding || "";
+  }};
   border: ${(props) => {
     return props.hasBorder ? "1px solid" : "";
   }};
@@ -77,13 +80,45 @@ const paddingHash = {
   "3x": "3rem",
 };
 
+const boxPaddingHash = {
+  "0": "0",
+  "1x": "0.5rem",
+  "2x": "1rem",
+  "3x": "1.5rem",
+};
+
 const Container = React.forwardRef(({
-  hasBorder, children, className, visible, height, id, maxHeight, padding, width,
+  boxPadding,
+  children,
+  className,
+  hasBorder,
+  height,
+  id,
+  maxHeight,
+  onClick,
+  padding,
+  visible,
+  width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "0";
+  const borderPadding = boxPadding ? boxPaddingHash[boxPadding.toLowerCase()] : "0";
   return (
-    <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
-      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} hasBorder={hasBorder} ref={ref}>
+    <Wrapper
+      setPadding={setPadding}
+      height={height}
+      width={width}
+      visible={visible}
+      className={className}
+    >
+      <BoxContainer
+        id={id}
+        height={height ? "100%" : ""}
+        padding={borderPadding}
+        maxHeight={maxHeight}
+        hasBorder={hasBorder}
+        onClick={onClick}
+        ref={ref}
+      >
         {children}
       </BoxContainer>
     </Wrapper>
@@ -91,26 +126,30 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
-  hasBorder: PropTypes.bool,
-  visible: PropTypes.bool,
+  boxPadding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   children: PropTypes.node,
   className: PropTypes.string,
+  hasBorder: PropTypes.bool,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
   maxHeight: PropTypes.string,
+  onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
+  visible: PropTypes.bool,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Container.defaultProps = {
-  hasBorder: false,
-  visible: true,
+  boxPadding: "0",
   children: null,
   className: null,
+  hasBorder: false,
   height: null,
   id: null,
   maxHeight: null,
-  padding: null,
+  onClick: undefined,
+  padding: "0",
+  visible: true,
   width: null,
 };
 

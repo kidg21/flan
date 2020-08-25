@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
+import ReactDOM from "react-dom";
 
 // copied from ss-storemanager
 
@@ -33,7 +33,7 @@ const Portal = ({ id, rootId = "", children }) => {
     }
   }, [id]);
 
-  return portalDiv ? createPortal(children, portalDiv) : null;
+  return portalDiv ? ReactDOM.createPortal(children, portalDiv) : null;
 };
 
 export default Portal;

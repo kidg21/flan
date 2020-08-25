@@ -61,7 +61,7 @@ If you are using icon and icons try to make sure that all of the Menu Items have
     <Card id="story-card">
       <Bar
         id="story-bar-title"
-        padding="2x" 
+        padding="2x"
         left={(<Title id="story-title" size="xl" weight="bold" text="Malibu, CA"/>)}
         right={(
           <Menu
@@ -95,11 +95,11 @@ If you are using icon and icons try to make sure that all of the Menu Items have
       />
       <Bar
         id="story-bar-text"
-        padding="2x" 
+        padding="2x"
         left={(
           <Text
             id="story-text"
-            size="lg" 
+            size="lg"
             text={textMock}
           />
         )}
@@ -112,20 +112,21 @@ Each item entry in a menu is configured by the `data` prop.
 
 | Property Key | Type     | Description |
 |-----------|----------|-------------|
-| id        | string   | id of the item, must be unique 
+| id        | string   | id of the item, must be unique
 | label     | string   | text to display
 | onClick   | function | callback when user clicks ite
-| icon      | string   | optional icon added to the beginning of the entry, see Libraries/Iconography for supported icons 
-| disabled  | boolean  | disabling an item, prevents user from clicking item 
-| data      | array    | nested submenu 
+| icon      | string   | optional icon added to the beginning of the entry, see Libraries/Iconography for supported icons
+| disabled  | boolean  | disabling an item, prevents user from clicking item
+| data      | array    | nested submenu
 
 ### Positions
 
 `Menu` uses `Popper` to open a `MenuList` and position it relative to its anchor element. Make sure to position
-the menu properly so it doesn't get cut off. Supported positions include: `bottomRight` (default), `topRight`, `bottomLeft`, `topLeft`.
+the menu properly so it doesn't get cut off. Supported positions include: `bottomRight` (default), `topRight`, `bottomLeft`, `topLeft`,
+`leftUp`, `rightUp`, `leftDown`, `rightDown`.
 
 <Preview>
-  <Story name="Position" decorators={[CenterDecorator, Container, Padding]}>
+  <Story name="Top-Bottom Positions" decorators={[CenterDecorator, Container, Padding]}>
     <Grid columns={4}>
       <Menu
         id="menu-position-bottomRight"
@@ -203,9 +204,88 @@ the menu properly so it doesn't get cut off. Supported positions include: `botto
   </Story>
 </Preview>
 
+<Preview>
+  <Story name="Left-Right Positions" decorators={[CenterDecorator, Container, Padding, CenterDisplayGrid]}>
+    <Grid columns={2}>
+      <Menu
+        id="menu-position-leftUp"
+        visible
+        data={[{
+          label: "Save",
+          id: "save",
+        }, {
+          label: "Filter",
+          id: "filter",
+        }, {
+          label: "Share",
+          id: "share",
+        }, {
+          label: "Delete",
+          id: "delete",
+        }]}
+        position="leftUp"
+      />
+      <Menu
+        visible
+        id="menu-position-rightUp"
+        data={[{
+          label: "Save",
+          id: "save",
+        }, {
+          label: "Filter",
+          id: "filter",
+        }, {
+          label: "Share",
+          id: "share",
+        }, {
+          label: "Delete",
+          id: "delete",
+        }]}
+        position="rightUp"
+      />
+      <Menu
+        visible
+        id="menu-position-leftDown"
+        data={[{
+          label: "Save",
+          id: "save",
+        }, {
+          label: "Filter",
+          id: "filter",
+        }, {
+          label: "Share",
+          id: "share",
+        }, {
+          label: "Delete",
+          id: "delete",
+        }]}
+        position="leftDown"
+      />
+      <Menu
+        visible
+        id="menu-position-rightDown"
+        data={[{
+          label: "Save",
+          id: "save",
+        }, {
+          label: "Filter",
+          id: "filter",
+        }, {
+          label: "Share",
+          id: "share",
+        }, {
+          label: "Delete",
+          id: "delete",
+        }]}
+        position="rightDown"
+      />
+    </Grid>
+  </Story>
+</Preview>
+
 ### Anchor
 
-The anchor element refers to the component the menu will open around. The default 
+The anchor element refers to the component the menu will open around. The default
 anchor element is `<Button icon="options" isPlain isRound />`. If you want to change the anchor's
 style (i.e. Button is not round, or icon should be menu) or use a different component (`<Icon/>`),
 you can specify it as a child of `Menu`.
@@ -339,11 +419,6 @@ sure submenus don't get cut off and become inaccessible to users.
 
 For cases when `Menu` needs to break out of the DOM hierarchy, use the `usePortal` prop. It places the
 menu list container in a `React.Portal`.
-
-> Currently, we only calculate the screen positon of the pop out
-> every time it gets opened. If a user scrolls, the position will get out of sync with its anchor.
-> So by default, we close the `Menu` when scrolling. In the future, we may support updating the
-> location of the pop out as the anchor element moves. Development would stem from `Popper` component.
 
 <Preview>
   <Story name="Portal" decorators={[Padding]}>

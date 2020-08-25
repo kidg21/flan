@@ -104,11 +104,12 @@ exports[` 2`] = `
             id="checkbox-id"
             onBlur={null}
             onChange={null}
+            onClick={[Function]}
             onFocus={null}
             type="checkbox"
           />
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 hgjjkQ"
+            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}

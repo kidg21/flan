@@ -2,6 +2,7 @@ import initStoryshots, { multiSnapshotWithOptions } from "@storybook/addon-story
 import { screen } from "Variables";
 import * as hooks from "hooks";
 import * as getGuid from "utils/getGuid";
+import ReactDOM from "react-dom";
 // import { imageSnapshot } from "@storybook/addon-storyshots-puppeteer";
 
 if (!window) global.window = global;
@@ -30,6 +31,11 @@ let count = 1;
 getGuid.default = () => {
   return `storyshots_${count++}`;
 };
+
+// resolves - TypeError: parentInstance.children.indexOf is not a function
+ReactDOM.createPortal = ((element) => {
+  return element;
+});
 
 initStoryshots({
   suite: "Storyshots",

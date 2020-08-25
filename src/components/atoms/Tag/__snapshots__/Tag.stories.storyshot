@@ -13,7 +13,7 @@ exports[` 1`] = `
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+      className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -67,7 +67,7 @@ Array [
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+          className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -118,7 +118,7 @@ Array [
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+          className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -146,7 +146,7 @@ exports[` 3`] = `
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+      className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -163,7 +163,7 @@ exports[` 3`] = `
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+      className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -180,7 +180,7 @@ exports[` 3`] = `
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+      className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -197,7 +197,7 @@ exports[` 3`] = `
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+      className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -253,7 +253,7 @@ exports[` 5`] = `
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jShaZa"
+      className="Typography__StyledLabel-sc-19auepv-0 eWpcxX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -263,8 +263,8 @@ exports[` 5`] = `
       Icon on Left
     </label>
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 dpghEj"
-      onClick={null}
+      className="Tag__TagIconContainer-sc-128kb3h-1 bLTKNJ"
+      onClick={[Function]}
     >
       <svg
         aria-hidden="true"
@@ -295,7 +295,7 @@ exports[` 5`] = `
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jShaZa"
+      className="Typography__StyledLabel-sc-19auepv-0 eWpcxX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -305,8 +305,8 @@ exports[` 5`] = `
       Icon on Left
     </label>
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 lnYrQi"
-      onClick={null}
+      className="Tag__TagIconContainer-sc-128kb3h-1 fXpulc"
+      onClick={[Function]}
     >
       <svg
         aria-hidden="true"
@@ -337,7 +337,7 @@ exports[` 5`] = `
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jShaZa"
+      className="Typography__StyledLabel-sc-19auepv-0 eWpcxX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -347,8 +347,8 @@ exports[` 5`] = `
       Icon on Left
     </label>
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 hlDqML"
-      onClick={null}
+      className="Tag__TagIconContainer-sc-128kb3h-1 dBnGxx"
+      onClick={[Function]}
     >
       <svg
         aria-hidden="true"
@@ -379,8 +379,8 @@ exports[` 5`] = `
     onClick={null}
   >
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 belesj"
-      onClick={null}
+      className="Tag__TagIconContainer-sc-128kb3h-1 kQsvbR"
+      onClick={[Function]}
     >
       <svg
         aria-hidden="true"
@@ -404,7 +404,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jShaZa"
+      className="Typography__StyledLabel-sc-19auepv-0 eWpcxX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -421,8 +421,8 @@ exports[` 5`] = `
     onClick={null}
   >
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 fNXIFp"
-      onClick={null}
+      className="Tag__TagIconContainer-sc-128kb3h-1 lfQbpj"
+      onClick={[Function]}
     >
       <svg
         aria-hidden="true"
@@ -446,7 +446,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jShaZa"
+      className="Typography__StyledLabel-sc-19auepv-0 eWpcxX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -463,8 +463,8 @@ exports[` 5`] = `
     onClick={null}
   >
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 hHXxQ"
-      onClick={null}
+      className="Tag__TagIconContainer-sc-128kb3h-1 dQMkwG"
+      onClick={[Function]}
     >
       <svg
         aria-hidden="true"
@@ -488,7 +488,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 jShaZa"
+      className="Typography__StyledLabel-sc-19auepv-0 eWpcxX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}

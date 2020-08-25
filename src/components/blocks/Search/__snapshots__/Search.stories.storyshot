@@ -168,7 +168,7 @@ exports[` 2`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 kibySR"
+        className="Container__BoxContainer-sc-1i4fzzd-1 dWkCSS"
         height=""
         id="Suggestions-results-container"
       >
@@ -383,7 +383,7 @@ exports[` 3`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 kibySR"
+        className="Container__BoxContainer-sc-1i4fzzd-1 dWkCSS"
         height=""
         id="Suggestions_More-results-container"
       >
@@ -806,7 +806,7 @@ exports[` 3`] = `
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 bfvBPo"
+                    className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -915,7 +915,7 @@ exports[` 4`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 kibySR"
+        className="Container__BoxContainer-sc-1i4fzzd-1 dWkCSS"
         height=""
         id="Search_Offline-results-container"
       >
@@ -1063,7 +1063,7 @@ exports[` 5`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 kibySR"
+        className="Container__BoxContainer-sc-1i4fzzd-1 dWkCSS"
         height=""
         id="Search_BadConnection-results-container"
       >

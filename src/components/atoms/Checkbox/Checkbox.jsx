@@ -133,6 +133,7 @@ function Checkbox({
   onBlur,
   onChange,
   onFocus,
+  stopPropagation,
 }) {
   let borderColor;
   let borderColorChecked;
@@ -194,6 +195,11 @@ function Checkbox({
         id={id}
         onBlur={onBlur}
         onChange={onChange}
+        onClick={(e) => {
+          if (stopPropagation) {
+            e.stopPropagation();
+          }
+        }}
         onFocus={onFocus}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
@@ -273,6 +279,7 @@ Checkbox.propTypes = {
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  stopPropagation: PropTypes.bool,
 };
 
 Checkbox.defaultProps = {
@@ -286,6 +293,7 @@ Checkbox.defaultProps = {
   onBlur: null,
   onChange: null,
   onFocus: null,
+  stopPropagation: false,
 };
 
 CheckboxGroup.propTypes = {

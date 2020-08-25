@@ -131,7 +131,12 @@ function Tag({
         iconPosition={iconPosition}
         iconSeparator={iconSeparator}
         badgeTextColor={badgeTextColor}
-        onClick={onClickIcon}
+        onClick={(e) => {
+          if (typeof onClickIcon === "function") {
+            onClickIcon(e);
+            e.stopPropagation();
+          }
+        }}
       >
         {iconType}
       </TagIconContainer>

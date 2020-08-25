@@ -100,6 +100,7 @@ function TextInput({
   id,
   isRequired,
   label,
+  labelVisible,
   onBlur,
   onChange,
   onFocus,
@@ -122,6 +123,8 @@ function TextInput({
   let messageColor;
   let inputResize;
   let placeholderColor;
+  let max;
+  let min;
   let inputSelectColor;
   let inputHeight;
   if (type === "textarea") {
@@ -185,6 +188,12 @@ function TextInput({
     messageColor = "alert";
   }
 
+  if (type === "date") {
+    max = "2999-12-31";
+    min = "1019-01-01";
+  }
+
+
   return (
     <TextInputContainer
       className={className}
@@ -194,7 +203,7 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label  isRequired={isRequired} text={label} />
+        <Label isRequired={isRequired} text={label} visible={labelVisible} />
       ) : null}
       <Input
         as={as}
@@ -212,6 +221,8 @@ function TextInput({
         list={autoCompleteDataListId}
         name={uId} // input attribute
         onBlur={onBlur}
+        max={max}
+        min={min}
         onChange={onChange}
         onFocus={onFocus}
         onKeyUp={onKeyUp}
@@ -247,6 +258,7 @@ TextInput.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  labelVisible: PropTypes.bool,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
@@ -291,6 +303,7 @@ TextInput.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
+  labelVisible: true,
   onBlur: null,
   onChange: null,
   onFocus: null,
