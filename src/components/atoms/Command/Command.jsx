@@ -2,7 +2,7 @@
 /* eslint-disable security/detect-object-injection */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
@@ -65,8 +65,8 @@ const CommandName = styled(Label)`
   transition: all 0.25s ease-in-out;
 
   ${(props) => {
-    if (props.hidden) {
-      return `
+    return props.hidden
+      && css`
         position: absolute;
         overflow: hidden;
         height: 1px;
@@ -76,19 +76,17 @@ const CommandName = styled(Label)`
         margin: -1px;
         clip: rect(1px, 1px, 1px, 1px);
         *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-
         &.focusable {
-            &:active, &:focus {
-                position: static;
-                overflow: visible;
-                height: auto;
-                width: auto;
-                margin: 0;
-                clip: auto;
-            }
+          &:active, &:focus {
+            position: static;
+            overflow: visible;
+            height: auto;
+            width: auto;
+            margin: 0;
+            clip: auto;
+          }
         }
-      `;
-    }
+    `;
   }}
 `;
 
