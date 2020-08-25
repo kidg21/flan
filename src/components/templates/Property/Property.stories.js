@@ -153,6 +153,9 @@ storiesOf("Templates|Applications/Research/Property", module)
           <Icon icon="close" onClick={closeBottom} />,
         ];
 
+        const [addInclusions, setInclusions] = useState(true);
+        const toggleInclusions = () => { setInclusions(!addInclusions); };
+
         return (
           <Layout
             header={{
@@ -225,35 +228,62 @@ storiesOf("Templates|Applications/Research/Property", module)
                       </CardSection>
                       <CardSection padding="0">
                         <Bar
+                          contentAlign="center"
                           left={{
                             content: (
-                              <Grid columns="2" gap="lg">
-                                <Command id="filter" command="filter" />
-                                <Menu
-                                  data={[
-                                    { id: "circle-1", label: <Checkbox label="Circle 1" checked={circle1} />, onClick: toggleCircle1 },
-                                    { id: "shape-2", label: <Checkbox label="Shape 2" checked={shape2} />, onClick: toggleShape2 },
-                                    { id: "create", label: <Command icon="plus" label="Add Shape" /> },
-                                  ]}
-                                  position="bottomRight"
-                                >
-                                  <Command id="include" command="include" />
-                                </Menu>
-                              </Grid>
+                              <Button id="filter" icon="filter" label="Filter" isPlain />
                             ),
                             width: "max-content",
                           }}
                           center={{
                             content: (
-                              <Inline spacingX="0" spacingY="0.5rem">
-                                <Tag label="'Entered Search Phrase'" variant="success" brand2="brand4" icon="close" onClickIcon={() => { }} />
-                                <Tag label="Shopping Center" brand="brand1" icon="close" onClickIcon={() => { }} />
-                                <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
-                                <Tag label="Expensive " brand="brand1" icon="close" onClickIcon={() => { }} />
-                                <Tag label="EX: Boundary 1" brand="brand1" icon="close" onClickIcon={() => { }} />
-                                {circle1 ? <Tag label="Circle 1" variant="info" icon="close" onClickIcon={closeCircle1} /> : ""}
-                                {shape2 ? <Tag label="Shape 2" variant="info" icon="close" onClickIcon={closeShape2} /> : ""}
-                              </Inline>
+                              <Grid columns="auto 1fr" gap="4xl" align="center">
+                                <Inline>
+                                  <Menu
+                                    data={[
+                                      {
+                                        id: "circle-1",
+                                        label: <Checkbox label="Circle 1" checked />,
+                                        post: "close",
+                                        onChange: () => { },
+                                      },
+                                      {
+                                        id: "shape-2",
+                                        label: <Checkbox label="Shape 2" checked />,
+                                        post: "close",
+                                        onChange: () => { },
+                                      },
+                                      { id: "create", label: <Command icon="plus" label="Add Region" /> },
+                                    ]}
+                                    position="bottomRight"
+                                  >
+                                    <Button
+                                      id="regions_list"
+                                      icon="circle"
+                                      label="Regions"
+                                      count="2"
+                                      isPlain
+                                      disabled={!addInclusions}
+                                    />
+                                  </Menu>
+                                  <Checkbox
+                                    id="include"
+                                    label="Include"
+                                    labelVisible={false}
+                                    onChange={toggleInclusions}
+                                    checked={addInclusions}
+                                  />
+                                </Inline>
+                                <Inline spacingX="0" spacingY="0.5rem">
+                                  {/* <Tag label="'Entered Search Phrase'" variant="success" brand2="brand4" icon="close" onClickIcon={() => { }} /> */}
+                                  <Tag label="Shopping Center" brand="brand1" icon="close" onClickIcon={() => { }} />
+                                  <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
+                                  <Tag label="Expensive " brand="brand1" icon="close" onClickIcon={() => { }} />
+                                  <Tag label="EX: Boundary 1" brand="brand1" icon="close" onClickIcon={() => { }} />
+                                  {circle1 ? <Tag label="Circle 1" variant="info" icon="close" onClickIcon={closeCircle1} /> : ""}
+                                  {shape2 ? <Tag label="Shape 2" variant="info" icon="close" onClickIcon={closeShape2} /> : ""}
+                                </Inline>
+                              </Grid>
                             ),
                             align: "left",
                           }}
