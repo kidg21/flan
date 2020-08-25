@@ -126,6 +126,7 @@ const MenuList = ({
                 title={item.label}
                 onClickItem={onClick}
                 pre={{ type: "icon", icon: item.icon }}
+                post={{ type: "icon", icon: item.post }}
                 disabled={item.disabled}
               />
               {activeItem === item.id ? (
@@ -147,6 +148,7 @@ const MenuList = ({
             title={item.label}
             onClickItem={onClick}
             pre={{ type: "icon", icon: item.icon }}
+            post={{ type: "icon", icon: item.post }}
             disabled={item.disabled}
           />
         );
