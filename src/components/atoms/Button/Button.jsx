@@ -105,6 +105,12 @@ const LabelWrapper = styled(Grid)`
   }
 `;
 
+const Count = styled(Tag)`
+  background-color: ${(props) => {
+    return props.disabled ? props.theme.palette.disabled : "";
+  }};
+`;
+
 const GroupWrapper = styled(Grid)`
   ${StyledButton} {
     width: auto;
@@ -320,7 +326,7 @@ function Button({
     >
       {icon ? <Icon icon={icon} size={iconSize} /> : null}
       {label ? <Label size={labelSize} text={label} weight="bold" /> : null}
-      {count && !isDisabled ? <Tag label={count.toString()} /> : null}
+      {count ? <Count label={count.toString()} disabled={disabled} /> : null}
     </LabelWrapper>
   );
 
