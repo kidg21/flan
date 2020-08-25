@@ -56,7 +56,7 @@ const StyledButton = styled.button`
   border-bottom-color: ${(props) => {
     return props.theme.palette[props.underlineColor];
   }};
-  transition: all 0.15s ease;
+  transition: all 0.25s ease;
   & > * {
     margin: 0;
   }
