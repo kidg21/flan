@@ -38,10 +38,7 @@ const StyledCardWrapper = styled.div`
   &:empty {
     &:before {
       ${PlaceholderText}
-      color: ${(props) => {
-    return props.theme.text.primary;
-  }};
-      content: "Card";
+      content: "${(props) => { return props.placeholder || ""; }}";
       padding: 2rem;
     }
   }
@@ -56,6 +53,7 @@ const CardWrapper = ({
   media,
   onClick,
   padding,
+  placeholder,
   shadow,
 }) => {
   const uId = useId(id);
@@ -98,6 +96,7 @@ const CardWrapper = ({
       isInverse={isInverse}
       media={media}
       shadow={shadow}
+      placeholder={placeholder}
     >
       {children}
     </StyledCardWrapper>
