@@ -340,7 +340,7 @@ function Layout({
           </RegionCenter>
           {bottom ? (
             <RegionBottom
-              height={bottom.max ? "100%" : bottomHeight}
+              height={bottom.height ? "100%" : bottomHeight}
               id={bottom.id}
               open={bottomOpen}
               zIndex={zIndex}
@@ -376,7 +376,7 @@ Layout.propTypes = {
   bottom: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
-    max: PropTypes.bool,
+    height: PropTypes.bool,
     visible: PropTypes.bool,
   }),
   footer: PropTypes.shape({
