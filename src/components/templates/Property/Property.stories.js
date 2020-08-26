@@ -50,7 +50,7 @@ storiesOf("Templates|Applications/Research/Property", module)
   .addDecorator(FullScreen)
 
   .add(
-    "View Ratios",
+    "Main",
     () => {
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
@@ -62,7 +62,7 @@ storiesOf("Templates|Applications/Research/Property", module)
         // const toggleRight = () => { setRightOpen(!rightOpen); };
 
         const [stateSummary, setSummary] = useState("");
-        const [fade, setFade] = useState("0");
+        const [fade, setFade] = useState("1");
         const openSummary = () => { setFade("1"); };
         const closeSummary = () => { setFade("0"); };
         const toggleSummary = () => {
@@ -243,15 +243,13 @@ storiesOf("Templates|Applications/Research/Property", module)
                                     data={[
                                       {
                                         id: "circle-1",
-                                        label: <Checkbox label="Circle 1" checked />,
-                                        post: "close",
-                                        onChange: () => { },
+                                        label: <Checkbox label="Circle 1" checked={circle1} />,
+                                        onClick: toggleCircle1,
                                       },
                                       {
                                         id: "shape-2",
-                                        label: <Checkbox label="Shape 2" checked />,
-                                        post: "close",
-                                        onChange: () => { },
+                                        label: <Checkbox label="Shape 2" checked={shape2} />,
+                                        onClick: toggleShape2,
                                       },
                                       { id: "create", label: <Command icon="plus" label="Add Region" /> },
                                     ]}
@@ -280,8 +278,8 @@ storiesOf("Templates|Applications/Research/Property", module)
                                   <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
                                   <Tag label="Expensive " brand="brand1" icon="close" onClickIcon={() => { }} />
                                   <Tag label="EX: Boundary 1" brand="brand1" icon="close" onClickIcon={() => { }} />
-                                  {circle1 ? <Tag label="Circle 1" variant="info" icon="close" onClickIcon={closeCircle1} /> : ""}
-                                  {shape2 ? <Tag label="Shape 2" variant="info" icon="close" onClickIcon={closeShape2} /> : ""}
+                                  {/* {circle1 ? <Tag label="Circle 1" variant="info" icon="close" onClickIcon={closeCircle1} /> : ""} */}
+                                  {/* {shape2 ? <Tag label="Shape 2" variant="info" icon="close" onClickIcon={closeShape2} /> : ""} */}
                                 </Inline>
                               </Grid>
                             ),
@@ -328,68 +326,13 @@ storiesOf("Templates|Applications/Research/Property", module)
                           </ButtonGroup>
                         </Card>
                       ),
-                      padding: "0.25rem",
+                      padding: "0.5rem",
                     }}
                     B={{
-                      id: "B",
                       content: (
-                        <Expander
-                          onClick={toggleDetails}
-                          open={open}
-                          header={(
-                            <Card shadow="2x">
-                              <CardSection isInverse>
-                                <Bar
-                                  padding="0"
-                                  contentAlign="center"
-                                  center={{
-                                    content: (
-                                      <Label text="22902 Trabuco Rd, Mission Viejo, CA 92691" size="lg" />
-                                    ),
-                                    align: "left",
-                                  }}
-                                  right={{
-                                    content: (
-                                      <Inline spacingX="1rem">
-                                        <Icon icon={iconContent} />
-                                        <Icon icon="close" onClick={closeSummary} />
-                                      </Inline>
-                                    ),
-                                    width: "max-content",
-                                  }}
-                                />
-                              </CardSection>
-                            </Card>
-                          )}
-                        >
-                          <Panel>
-                            <Template>
-                              <FieldSection>
-                                <FieldGroup title="Property Information" gap="sm" columns="1">
-                                  <Field align="edge" label="Parcel No." value="808-221-12" onClick />
-                                  <Field align="edge" label="Land User" value="Commercial Shopping Center" />
-                                  <Field align="edge" label="Building Area" value="25,344 SF" />
-                                  <Field align="edge" label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
-                                  <Field align="edge" label="Building/Lot" value="0.15" />
-                                  <Field align="edge" label="No. of Units" value="" />
-                                  <Field align="edge" label="Year Built" value="1978" />
-                                </FieldGroup>
-                                <FieldGroup title="Owner Information" gap="sm" columns="1">
-                                  <Field align="edge" label="Owners" value="SCF-Los Alisos LLC" onClick />
-                                  <Field align="edge" label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
-                                  <Field align="edge" label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick />
-                                  <Field align="edge" label="Last Sale" value="10/2/15 for $11,500,000" onClick />
-                                  <Field align="edge" label="Total Assd Value" value="$10,045,870" />
-                                </FieldGroup>
-                              </FieldSection>
-                            </Template>
-                          </Panel>
-                          {/* <MockDetails recordTitle="22902 Trabuco Rd, Mission Viejo, CA 92691" actionClose={closeSummary} offcanvas={stateSummary} /> */}
-                        </Expander>
+                        <MockDetails recordTitle="22902 Trabuco Rd, Mission Viejo, CA 92691" actionClose={closeSummary} offcanvas={stateSummary} />
                       ),
-                      padding: "0.25rem",
                       opacity: fade,
-                      overflow: "hidden",
                     }}
                   />
                   <Mapbox
@@ -413,7 +356,7 @@ storiesOf("Templates|Applications/Research/Property", module)
               content: (
                 <MockTable actionsTable={actionsTable} />
               ),
-              max: bottomMax,
+              height: bottomMax,
               visible: bottomState,
             }}
           />
