@@ -62,7 +62,7 @@ Mapbox.propTypes = {
   /** Options: 'streets', 'outdoors', 'light', 'dark', 'satellite', 'satellite-streets', 'custom' */
   map: PropTypes.oneOf(["streets", "outdoors", "light", "dark", "satellite", "satellite-streets", "custom"]),
   mapClick: PropTypes.func, // for prototyping
-  zoom: PropTypes.integer,
+  zoom: PropTypes.node,
 };
 Mapbox.defaultProps = {
   center: [-74.006, 40.7128],
