@@ -127,8 +127,6 @@ const MenuList = ({
                 id={`nested-item-${itemId}`}
                 title={item.label}
                 onClickItem={onClick}
-                pre={{ type: "icon", icon: item.icon }}
-                post={{ type: "icon", icon: item.post }}
                 disabled={item.disabled}
               />
               {activeItem === item.id ? (
