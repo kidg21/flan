@@ -16,7 +16,6 @@ const PanelWrapper = styled.div`
   width: ${(props) => { return props.width; }};
   height: ${(props) => { return props.height; }};
   max-height: 100vh;
-  /* overflow: hidden; */
   transform: ${(props) => {
     return props.isOffCanvas || "";
   }};
