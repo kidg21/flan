@@ -387,9 +387,13 @@ function Card({
         <Bar
           padding="0"
           contentAlign="bottom"
-          left={(
-            <Command {...command} />
-          )}
+          left={{
+            content: (
+              <Grid columns="1">
+                {commands.map((command) => { return <Command {...command} />; })}
+              </Grid>
+            ),
+          }}
         />
       );
     }
