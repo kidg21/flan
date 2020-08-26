@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "hooks";
 import {
   Padding, CenterDecorator,
 } from "helpers/Display";
@@ -12,8 +13,8 @@ import FileImport from "blocks/FileImport";
 import Text, { Title, Link } from "base/Typography";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
-import Radio, {RadioGroup} from "atoms/Radio";
-import Tabs, {TabItem} from "blocks/Tabs";
+import Radio, { RadioGroup } from "atoms/Radio";
+import Tabs, { TabItem } from "blocks/Tabs";
 import Container from "atoms/Container";
 import List, { ListItem } from "blocks/List";
 import TextInput from "atoms/TextInput";
@@ -21,7 +22,7 @@ import Divider from "atoms/Divider";
 import Card from "elements/Card";
 import Layout from "layout/Layout";
 import Modal from "layout/Modal";
-import Checkbox, {CheckboxGroup} from "atoms/Checkbox";
+import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import Panel from "layout/Panel";
 import DialogBox from "elements/DialogBox";
 import Grid from "layout/Grid";
@@ -148,11 +149,11 @@ storiesOf("Templates/Modules/Dialogs", module)
           ]}
         >
           <Form>
-                <FormSection columns="2">
-                  <TextInput label="Username" placeholder="i.e. JDoe" isRequired />
-                  <TextInput label="Email" />
-                </FormSection>
-                </Form>
+            <FormSection columns="2">
+              <TextInput label="Username" placeholder="i.e. JDoe" isRequired />
+              <TextInput label="Email" />
+            </FormSection>
+          </Form>
         </DialogBox>
       );
     });
@@ -170,25 +171,24 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Attachments "
-         
         >
-              <Container padding="1x" hasBorder maxHeight="25rem" width="30rem">
-                <List isDivided>
-      <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
-                  <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
-                  <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
-                  <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
-                  <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
-                  <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
-                  <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
-                  <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
-                </List>
-              </Container>
-              <Bar left={<Command label="Add File" icon="plus" />}/>
-              <Bar right={<Button label="Done" isSolid />}/>
-            </DialogBox>
+          <Container padding="1x" hasBorder maxHeight="25rem" width="30rem">
+            <List isDivided>
+              <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
+              <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
+              <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
+              <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
+              <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
+              <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
+              <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
+              <ListItem title="filename.jpg" description="10/10/10 by tchung" post={{ type: "icon", icon: "close" }} />
+            </List>
+          </Container>
+          <Bar left={<Command label="Add File" icon="plus" />} />
+          <Bar right={<Button label="Done" isSolid />} />
+        </DialogBox>
       );
     });
   })
@@ -204,7 +204,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Add File"
           buttons={[
             {
@@ -218,13 +218,12 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
           <Form>
-              <FileImport id="FileImport_Standard" />
-              <TextInput label="Rename"/>
-              </Form>
-            </DialogBox>
+            <FileImport id="FileImport_Standard" />
+            <TextInput label="Rename" />
+          </Form>
+        </DialogBox>
       );
     });
   })
@@ -240,7 +239,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Filters"
           buttons={[
             {
@@ -254,49 +253,46 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
-    
           <Tabs>
-            <TabItem label="Property Type" isSelected/>
+            <TabItem label="Property Type" isSelected />
             <TabItem label="Building" />
             <TabItem label="Lot" />
-            <TabItem label="Ownership"/>
-            <TabItem label="Sales"/>
-            <TabItem label="Value"/>
+            <TabItem label="Ownership" />
+            <TabItem label="Sales" />
+            <TabItem label="Value" />
           </Tabs>
-          <Divider/>
+          <Divider />
           <Form>
-          <FormSection title="Residential Type" >
-              <CheckboxGroup columns="2" >
-              <Checkbox label="Multifamily"/>
-              <Checkbox label="Duplex, Triplex, Quadraplex"/>
-              <Checkbox label="Single Family"/>
-              <Checkbox label="Condominium, PUD"/>
-              <Checkbox label="Vacant Residential"/>
-              <Checkbox label="Mobile/Manufactured"/>
-              <Checkbox label="Misc. Residential"/>
-              </CheckboxGroup>
-  
-            </FormSection>
-            <FormSection title="Commercial Type" >
+            <FormSection title="Residential Type">
               <CheckboxGroup columns="2">
-              <Checkbox label="Industrial"/>
-              <Checkbox label="Office"/>
-              <Checkbox label="Retail"/>
-              <Checkbox label="Entertainment & Recreation"/>
-              <Checkbox label="Hotel/Motel"/>
-              <Checkbox label="Health Care"/>
-              <Checkbox label="Misc. Commercial"/>
-              <Checkbox label="Agricultural"/>
-              <Checkbox label="Vacant Land"/>
-              <Checkbox label="Governmental, Public"/>
-              <Checkbox label="Schools"/>
-              <Checkbox label="Religious"/>
-              </CheckboxGroup> 
+                <Checkbox label="Multifamily" />
+                <Checkbox label="Duplex, Triplex, Quadraplex" />
+                <Checkbox label="Single Family" />
+                <Checkbox label="Condominium, PUD" />
+                <Checkbox label="Vacant Residential" />
+                <Checkbox label="Mobile/Manufactured" />
+                <Checkbox label="Misc. Residential" />
+              </CheckboxGroup>
             </FormSection>
-              </Form>
-            </DialogBox>
+            <FormSection title="Commercial Type">
+              <CheckboxGroup columns="2">
+                <Checkbox label="Industrial" />
+                <Checkbox label="Office" />
+                <Checkbox label="Retail" />
+                <Checkbox label="Entertainment & Recreation" />
+                <Checkbox label="Hotel/Motel" />
+                <Checkbox label="Health Care" />
+                <Checkbox label="Misc. Commercial" />
+                <Checkbox label="Agricultural" />
+                <Checkbox label="Vacant Land" />
+                <Checkbox label="Governmental, Public" />
+                <Checkbox label="Schools" />
+                <Checkbox label="Religious" />
+              </CheckboxGroup>
+            </FormSection>
+          </Form>
+        </DialogBox>
       );
     });
   })
@@ -312,7 +308,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Filters"
           buttons={[
             {
@@ -326,53 +322,51 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
-    
           <Tabs>
             <TabItem label="Property Type" />
-            <TabItem label="Building" isSelected/>
+            <TabItem label="Building" isSelected />
             <TabItem label="Lot" />
-            <TabItem label="Ownership"/>
-            <TabItem label="Sales"/>
-            <TabItem label="Value"/>
+            <TabItem label="Ownership" />
+            <TabItem label="Sales" />
+            <TabItem label="Value" />
           </Tabs>
-          <Divider/>
+          <Divider />
           <Form>
-          <FormSection columns="1"  >
-          <DataRange
-      id="default"
-      label="Year Built"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-     <DataRange
-      id="default"
-      label="Number of Units"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-     <DataRange
-      id="default"
-      label="Building Size (ft2)"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
+            <FormSection columns="1">
+              <DataRange
+                id="default"
+                label="Year Built"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Number of Units"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Building Size (ft2)"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
             </FormSection>
-              </Form>
-            </DialogBox>
+          </Form>
+        </DialogBox>
       );
     });
   })
@@ -388,7 +382,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Filters"
           buttons={[
             {
@@ -402,83 +396,82 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
           <Tabs>
             <TabItem label="Property Type" />
             <TabItem label="Building" />
             <TabItem label="Lot" isSelected />
-            <TabItem label="Owners"/>
-            <TabItem label="Sales"/>
-            <TabItem label="Value"/>
+            <TabItem label="Owners" />
+            <TabItem label="Sales" />
+            <TabItem label="Value" />
           </Tabs>
-          <Divider/>
+          <Divider />
           <Form>
-    
-    <FormSection columns="1"  >
-     <DataRange
-      id="default"
-      label="Lot Size (Acre)"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-     <DataRange
-      id="default"
-      label="Lot Size (ft2)"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-     <DataRange
-      id="default"
-      label="Aggregate Acreage"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-     <DataRange
-      id="default"
-      label="Aggregate Lot Count"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-     <DataRange
-      id="default"
-      label="Aggregated Lot Width Median"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
+            <FormSection columns="1">
+              <DataRange
+                id="default"
+                label="Lot Size (Acre)"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Lot Size (ft2)"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Aggregate Acreage"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Aggregate Lot Count"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Aggregated Lot Width Median"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
             </FormSection>
             <FormSection columns="1" title="Zoning">
-          <TextInput 
-          label="Zoning (Assessor)"/>
-          <FormSection  title="Opportunity Zone" >
-     <RadioGroup title="Opportunity Zone">
-       <Radio label="Yes"/>
-       <Radio label="No"/>
-     </RadioGroup>
-     </FormSection>
-    </FormSection>
-              </Form>
-            </DialogBox>
+              <TextInput
+                label="Zoning (Assessor)"
+              />
+              <FormSection title="Opportunity Zone">
+                <RadioGroup title="Opportunity Zone">
+                  <Radio label="Yes" />
+                  <Radio label="No" />
+                </RadioGroup>
+              </FormSection>
+            </FormSection>
+          </Form>
+        </DialogBox>
       );
     });
   })
@@ -494,7 +487,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Filters"
           buttons={[
             {
@@ -508,46 +501,45 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
           <Tabs>
             <TabItem label="Property Type" />
             <TabItem label="Building" />
-            <TabItem label="Lot"  />
-            <TabItem label="Owners" isSelected/>
-            <TabItem label="Sales"/>
-            <TabItem label="Value"/>
+            <TabItem label="Lot" />
+            <TabItem label="Owners" isSelected />
+            <TabItem label="Sales" />
+            <TabItem label="Value" />
           </Tabs>
-          <Divider/>
+          <Divider />
           <Form>
-    <FormSection columns="1">
-    <FormSection  title="Owner Details" columns="2">
-      <TextInput label="First Owner Name"/>
-      <TextInput label="Second Owner Name"/>
-      <TextInput label="Address"/>
-      <TextInput label="City"/>
-      <TextInput label="State"/>
-      <TextInput label="Zip"/>
-    </FormSection>
-    <FormSection  title="Ownership Status" >
-      <CheckboxGroup columns="2">
-        <Checkbox label="Also known as (A/K/A)"/>
-        <Checkbox label="Company/Corporation"/>
-        <Checkbox label="Community Property"/>
-        <Checkbox label="Contract Owner"/>
-        <Checkbox label="Doing Business As (DBA)"/>
-        <Checkbox label="ET AL (And Others)"/>
-        <Checkbox label="Also known as (A/K/A)"/>
-        <Checkbox label="Company/Corporation"/>
-        <Checkbox label="Community Property"/>
-        <Checkbox label="Contract Owner"/>
-        <Checkbox label="Doing Business As (DBA)"/>
-        <Checkbox label="ET AL (And Others)"/>
-      </CheckboxGroup>
-    </FormSection>
-    </FormSection>
-              </Form>
-            </DialogBox>
+            <FormSection columns="1">
+              <FormSection title="Owner Details" columns="2">
+                <TextInput label="First Owner Name" />
+                <TextInput label="Second Owner Name" />
+                <TextInput label="Address" />
+                <TextInput label="City" />
+                <TextInput label="State" />
+                <TextInput label="Zip" />
+              </FormSection>
+              <FormSection title="Ownership Status">
+                <CheckboxGroup columns="2">
+                  <Checkbox label="Also known as (A/K/A)" />
+                  <Checkbox label="Company/Corporation" />
+                  <Checkbox label="Community Property" />
+                  <Checkbox label="Contract Owner" />
+                  <Checkbox label="Doing Business As (DBA)" />
+                  <Checkbox label="ET AL (And Others)" />
+                  <Checkbox label="Also known as (A/K/A)" />
+                  <Checkbox label="Company/Corporation" />
+                  <Checkbox label="Community Property" />
+                  <Checkbox label="Contract Owner" />
+                  <Checkbox label="Doing Business As (DBA)" />
+                  <Checkbox label="ET AL (And Others)" />
+                </CheckboxGroup>
+              </FormSection>
+            </FormSection>
+          </Form>
+        </DialogBox>
       );
     });
   })
@@ -563,7 +555,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Filters"
           buttons={[
             {
@@ -577,49 +569,47 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
           <Tabs>
             <TabItem label="Property Type" />
             <TabItem label="Building" />
-            <TabItem label="Lot"  />
+            <TabItem label="Lot" />
             <TabItem label="Owners" />
-            <TabItem label="Sales" isSelected/>
-            <TabItem label="Value"/>
+            <TabItem label="Sales" isSelected />
+            <TabItem label="Value" />
           </Tabs>
-          <Divider/>
+          <Divider />
           <Form>
-    
-    <FormSection >
-    <DataRange
-      id="default"
-      label="Last Sale Price"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-    <TextInput label="Seller Name"/>
-    <FormSection title="Last Sale Date">
-      <RadioGroup>
-        <Radio label="Last 3 months"/>
-        <Radio label="Last 6 months"/>
-        <Radio label="Last 12 months"/>
-        <Radio label="Custom"/>
-      </RadioGroup>
-    </FormSection>
-    <FormSection title="Last Sale Deed Type">
-    <CheckboxGroup>
-      <Checkbox label="Grand Deed/Deed of Trust"/>
-      <Checkbox label="Warranty Deed/Deed of Trust"/>
-      <Checkbox label="Land Contract"/>
-    </CheckboxGroup>
-    </FormSection>
-    </FormSection>
-              </Form>
-            </DialogBox>
+            <FormSection>
+              <DataRange
+                id="default"
+                label="Last Sale Price"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <TextInput label="Seller Name" />
+              <FormSection title="Last Sale Date">
+                <RadioGroup>
+                  <Radio label="Last 3 months" />
+                  <Radio label="Last 6 months" />
+                  <Radio label="Last 12 months" />
+                  <Radio label="Custom" />
+                </RadioGroup>
+              </FormSection>
+              <FormSection title="Last Sale Deed Type">
+                <CheckboxGroup>
+                  <Checkbox label="Grand Deed/Deed of Trust" />
+                  <Checkbox label="Warranty Deed/Deed of Trust" />
+                  <Checkbox label="Land Contract" />
+                </CheckboxGroup>
+              </FormSection>
+            </FormSection>
+          </Form>
+        </DialogBox>
       );
     });
   })
@@ -635,7 +625,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Filters"
           buttons={[
             {
@@ -649,63 +639,61 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
           <Tabs>
             <TabItem label="Property Type" />
             <TabItem label="Building" />
-            <TabItem label="Lot"  />
+            <TabItem label="Lot" />
             <TabItem label="Owners" />
-            <TabItem label="Sales"/>
-            <TabItem label="Price" isSelected/>
+            <TabItem label="Sales" />
+            <TabItem label="Price" isSelected />
           </Tabs>
-          <Divider/>
+          <Divider />
           <Form>
-    
-    <FormSection >
-    <DataRange
-      id="default"
-      label="Assessed Value"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-    <DataRange
-      id="default"
-      label="Improvement Pct."
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-    <DataRange
-      id="default"
-      label="Assessed Land Value"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-    <DataRange
-      id="default"
-      label="Assessed Improvement Value"
-      min={{
-        label: "Min",
-      }}
-      max={{
-        label: "Max",
-      }}
-    />
-    </FormSection>
-              </Form>
-            </DialogBox>
+            <FormSection>
+              <DataRange
+                id="default"
+                label="Assessed Value"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Improvement Pct."
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Assessed Land Value"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+              <DataRange
+                id="default"
+                label="Assessed Improvement Value"
+                min={{
+                  label: "Min",
+                }}
+                max={{
+                  label: "Max",
+                }}
+              />
+            </FormSection>
+          </Form>
+        </DialogBox>
       );
     });
   })
@@ -721,7 +709,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Filters"
           buttons={[
             {
@@ -735,32 +723,39 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
           <Tabs>
             <TabItem label="Property Type" />
             <TabItem label="Building" />
-            <TabItem label="Lot"  />
+            <TabItem label="Lot" />
             <TabItem label="Owners" />
-            <TabItem label="Sales"/>
-            <TabItem label="Location" isSelected/>
+            <TabItem label="Sales" />
+            <TabItem label="Location" isSelected />
           </Tabs>
-          <Divider/>
+          <Divider />
           <Form>
-    
-    <FormSection >
-      <TextInput label="Address"/>
-      <TextInput label="City"/>
-      <TextInput label="State"/>
-      <TextInput label="Zip"/>
-      <FormSection title="Boundaries">
-        <Bar  left={
-        <Text text="Boundary 1"/>} right={<FormSection columns="2"><Icon icon="edit" onClick /><Icon icon="close" onClick/></FormSection>}/>
-      <Button label="Add a Boundary" icon="plus" isSolid />
-      </FormSection>
-  </FormSection>
-              </Form>
-            </DialogBox>
+            <FormSection>
+              <TextInput label="Address" />
+              <TextInput label="City" />
+              <TextInput label="State" />
+              <TextInput label="Zip" />
+              <FormSection title="Boundaries">
+                <Bar
+                  left={
+                    <Text text="Boundary 1" />
+                  }
+                  right={(
+                    <FormSection columns="2">
+                      <Icon icon="edit" onClick />
+                      <Icon icon="close" onClick />
+                    </FormSection>
+                  )}
+                />
+                <Button label="Add a Boundary" icon="plus" isSolid />
+              </FormSection>
+            </FormSection>
+          </Form>
+        </DialogBox>
       );
     });
   })
@@ -776,7 +771,7 @@ storiesOf("Templates/Modules/Dialogs", module)
         }
       }
       return (
-          <DialogBox
+        <DialogBox
           title="Draw Boundary"
           buttons={[
             {
@@ -790,27 +785,24 @@ storiesOf("Templates/Modules/Dialogs", module)
               onClick: doNothing,
             },
           ]}
-         
         >
           <Form>
-          
-          
-    <FormSection title="Geometry Type">
-      <RadioGroup columns="3">
-        <Radio label="Polygon"/>
-        <Radio label="Circle"/>
-        <Radio label="Line"/>
-      </RadioGroup>
-  </FormSection>
-  <FormSection title="Boundary Type" >
-      <RadioGroup columns="2">
-        <Radio label="Inclusion"/>
-        <Radio label="Exclusion"/>
-      </RadioGroup>
-  </FormSection>
-  <TextInput label="Boundary Name"/>
-              </Form>
-            </DialogBox>
+            <FormSection title="Geometry Type">
+              <RadioGroup columns="3">
+                <Radio label="Polygon" />
+                <Radio label="Circle" />
+                <Radio label="Line" />
+              </RadioGroup>
+            </FormSection>
+            <FormSection title="Boundary Type">
+              <RadioGroup columns="2">
+                <Radio label="Inclusion" />
+                <Radio label="Exclusion" />
+              </RadioGroup>
+            </FormSection>
+            <TextInput label="Boundary Name" />
+          </Form>
+        </DialogBox>
       );
     });
   });
