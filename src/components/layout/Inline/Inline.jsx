@@ -8,7 +8,6 @@ import Flex from "layout/Flex";
 const InlineWrapper = styled(Flex)`
   flex-direction: row;
   flex-wrap: wrap;
-  line-height: 0; /* improves vertical alignment of inline Icons */
   overflow: visible;
   z-index: inherit;
 `;
@@ -60,7 +59,7 @@ function Inline({
         ? children.map((child) => {
           return (
             <InlineItem
-              key={child.key ? `${child.key}-wrapper` : null}
+              key={child && child.key ? `${child.key}-wrapper` : null}
               inlineMargin={child ? inlineMargin : ""}
               inlinePadding={child ? inlinePadding : "0"}
             >
