@@ -24,7 +24,7 @@ const TagContainer = styled.span`
   }};
   text-align: center;
   padding: ${(props) => {
-    return props.badgePadding || "0.2em .5em";
+    return props.badgePadding || "0.2em 0.5em";
   }};
   line-height: normal;
   border-radius: ${(props) => {
