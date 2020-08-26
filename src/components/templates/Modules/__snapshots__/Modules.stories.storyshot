@@ -269,16 +269,17 @@ exports[` 1`] = `
       tabIndex="0"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 hEzdOn Card__CardGridWrapper-sc-1g3s676-4 cvDlTr"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hEzdOn Card__CardGridWrapper-sc-1g3s676-4 fjqpFS"
         id={null}
         rows={null}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Map Legend"
           media=""
           onClick={null}
+          placeholder="{ Card }"
         >
           <section
             className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -349,11 +350,12 @@ exports[` 1`] = `
           </section>
         </div>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Data Layers"
           media=""
           onClick={null}
+          placeholder="{ Card }"
         >
           <section
             className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -523,11 +525,12 @@ exports[` 1`] = `
           </section>
         </section>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="Drawing Tools"
           media=""
           onClick={null}
+          placeholder="{ Card }"
         >
           <section
             className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -606,16 +609,17 @@ exports[` 1`] = `
       tabIndex="0"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 iDqIwp"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 esiFza Card__CardGridWrapper-sc-1g3s676-4 eqPtJE"
         id={null}
         rows={null}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 kCyvOL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 GlKcQ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_101"
           media=""
           onClick={null}
+          placeholder="{ Card }"
         >
           <img
             alt="Map Streets"
@@ -627,11 +631,12 @@ exports[` 1`] = `
           />
         </div>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 kCyvOL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 GlKcQ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_102"
           media=""
           onClick={null}
+          placeholder="{ Card }"
         >
           <img
             alt="Map Satellite"
@@ -643,11 +648,12 @@ exports[` 1`] = `
           />
         </div>
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 kCyvOL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 GlKcQ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
           id="storyshots_103"
           media=""
           onClick={null}
+          placeholder="{ Card }"
         >
           <img
             alt="Map Hybrid"
@@ -682,41 +688,41 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 ljtwSq Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 beRpUg Layout__WrapperMain-sc-19tlhp4-5 jBholC"
         height="20rem"
         id={null}
         overflow={null}
         width="100%"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id={null}
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
             height="100%"
             id="Menu 1"
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id="Menu 1_header"
             >
               <div
@@ -879,20 +885,21 @@ exports[` 2`] = `
               </section>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY"
               id="Menu 1_body"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 crWWGQ"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 gngWwp"
                 id={null}
                 rows={null}
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fRiVWE Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                   href={null}
                   id="1"
                   media=""
                   onClick={[Function]}
+                  placeholder="{ Card }"
                 >
                   <section
                     className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -967,11 +974,12 @@ exports[` 2`] = `
                   </section>
                 </div>
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 lfcxej Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 fRiVWE Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                   href={null}
                   id="2"
                   media=""
                   onClick={[Function]}
+                  placeholder="{ Card }"
                 >
                   <section
                     className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1049,21 +1057,22 @@ exports[` 2`] = `
             </section>
           </div>
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 gteKfZ"
+            className="Panel__PanelWrapper-sc-48epke-0 dsBUhn"
             height="100%"
             id="Menu 2"
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id="Menu 2_header"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Menu_2_Header"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1101,7 +1110,7 @@ exports[` 2`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY"
               id="Menu 2_body"
             >
               <form
@@ -1112,7 +1121,7 @@ exports[` 2`] = `
                 onSubmit={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                   id={null}
                   rows={null}
                 >
@@ -1120,7 +1129,7 @@ exports[` 2`] = `
                     className="Form__Section-v2wrel-0 XxWIM"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                       id={null}
                       rows={null}
                     >
@@ -1262,7 +1271,7 @@ exports[` 2`] = `
                     className="Form__Section-v2wrel-0 XxWIM"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                       id={null}
                       rows={null}
                     >
@@ -1595,7 +1604,7 @@ exports[` 2`] = `
                     className="Form__Section-v2wrel-0 XxWIM"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                       id={null}
                       rows={null}
                     >
@@ -1805,15 +1814,16 @@ exports[` 2`] = `
               </form>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id="Menu 2_footer"
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Menu_2_Footer"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1900,11 +1910,12 @@ exports[` 3`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
     id="storyshots_104"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1938,7 +1949,7 @@ exports[` 3`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -1946,7 +1957,7 @@ exports[` 3`] = `
           className="Form__Section-v2wrel-0 XxWIM"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
             id={null}
             rows={null}
           >
@@ -2037,7 +2048,7 @@ exports[` 3`] = `
             Property Info
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 fMWYWI"
             id={null}
             rows={null}
           >
@@ -2582,11 +2593,12 @@ exports[` 4`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
     id="storyshots_110"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <div
       className="Bar__BarLayout-icfo76-2 jEWtiX"
@@ -2880,11 +2892,12 @@ exports[` 5`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
     id="storyshots_111"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -3005,7 +3018,7 @@ exports[` 5`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -3013,7 +3026,7 @@ exports[` 5`] = `
           className="Form__Section-v2wrel-0 XxWIM"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
             id={null}
             rows={null}
           >
@@ -3104,7 +3117,7 @@ exports[` 5`] = `
             Property Info
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 fMWYWI"
             id={null}
             rows={null}
           >
@@ -3649,11 +3662,12 @@ exports[` 6`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
     id="storyshots_117"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -3774,7 +3788,7 @@ exports[` 6`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -3797,7 +3811,7 @@ exports[` 6`] = `
                 Client Details
               </p>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                 id={null}
                 rows={null}
               >
@@ -3944,7 +3958,7 @@ exports[` 6`] = `
               className="Form__Section-v2wrel-0 XxWIM"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 hnFFgK"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 fMWYWI"
                 id={null}
                 rows={null}
               >
@@ -4119,7 +4133,7 @@ exports[` 6`] = `
                 Bid Details
               </p>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                 id={null}
                 rows={null}
               >
@@ -4503,11 +4517,12 @@ exports[` 7`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
     id="storyshots_127"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -4792,11 +4807,12 @@ exports[` 8`] = `
       id="popper-wrapperstoryshots_128"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
         id="storyshots_129"
         media=""
         onClick={null}
+        placeholder="{ Card }"
       >
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ"

@@ -459,7 +459,7 @@ Card.propTypes = {
   }),
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
-  /** place holder text when card is empty */
+  /** placeholder text when card is empty */
   placeholder: PropTypes.string,
   shadow: PropTypes.oneOf(["0", "2x"]),
   title: PropTypes.string,
@@ -570,7 +570,7 @@ CardGrid.propTypes = {
   ]),
   id: PropTypes.string,
   isInverse: PropTypes.bool,
-  /** place holder text when card grid is empty */
+  /** placeholder text when card grid is empty */
   placeholder: PropTypes.string,
   /** Defines the heights of grid rows
    *
