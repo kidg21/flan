@@ -65,7 +65,7 @@ const TemplateWrapper = styled(Grid)`
     return props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.backgroundColor || props.theme.background.default;
+    return props.backgroundColor || "";
   }};
   padding: ${(props) => {
     return props.setPadding || "";
@@ -96,6 +96,14 @@ const templateHash = {
     ].join("\n"),
     setColumns: "1fr auto 1fr",
     setRows: "auto",
+  },
+  A_03: {
+    setTemplate: [
+      "\"A .\"",
+      "\". .\"",
+    ].join("\n"),
+    setColumns: `auto 1fr`,
+    setRows: "auto 1fr",
   },
   B_01: {
     setTemplate: [
@@ -130,7 +138,6 @@ const templateHash = {
     ].join("\n"),
     setColumns: `5rem 1fr ${widthLG}`,
     setRows: "auto 1fr 1rem",
-    hasBorder: true,
   },
   B_06: {
     setTemplate: [
@@ -375,49 +382,24 @@ function Template({
     </TemplateWrapper>
   );
 }
+
+const sectionShape = {
+  content: PropTypes.node,
+  hasBorder: PropTypes.bool,
+  id: PropTypes.string,
+  opacity: PropTypes.string,
+  overflow: PropTypes.string,
+  padding: PropTypes.string,
+};
+
 Template.propTypes = {
-  A: PropTypes.shape({
-    content: PropTypes.node,
-    hasBorder: PropTypes.bool,
-    id: PropTypes.string,
-    opacity: PropTypes.string,
-    overflow: PropTypes.string,
-    padding: PropTypes.string,
-  }),
-  B: PropTypes.shape({
-    content: PropTypes.node,
-    hasBorder: PropTypes.bool,
-    id: PropTypes.string,
-    opacity: PropTypes.string,
-    overflow: PropTypes.string,
-    padding: PropTypes.string,
-  }),
-  C: PropTypes.shape({
-    content: PropTypes.node,
-    hasBorder: PropTypes.bool,
-    id: PropTypes.string,
-    opacity: PropTypes.string,
-    overflow: PropTypes.string,
-    padding: PropTypes.string,
-  }),
+  A: PropTypes.shape(sectionShape),
+  B: PropTypes.shape(sectionShape),
+  C: PropTypes.shape(sectionShape),
   children: PropTypes.node,
   classname: PropTypes.string,
-  D: PropTypes.shape({
-    content: PropTypes.node,
-    hasBorder: PropTypes.bool,
-    id: PropTypes.string,
-    opacity: PropTypes.string,
-    overflow: PropTypes.string,
-    padding: PropTypes.string,
-  }),
-  E: PropTypes.shape({
-    content: PropTypes.node,
-    hasBorder: PropTypes.bool,
-    id: PropTypes.string,
-    opacity: PropTypes.string,
-    overflow: PropTypes.string,
-    padding: PropTypes.string,
-  }),
+  D: PropTypes.shape(sectionShape),
+  E: PropTypes.shape(sectionShape),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
   hasCards: PropTypes.bool,
