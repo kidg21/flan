@@ -368,32 +368,15 @@ function Card({
           contentAlign="bottom"
           left={{
             content: (
-              <Grid columns="repeat(auto-fill,minmax(5rem,1fr))">
-                <Command
-                  command={commands[0].command}
-                  disabled={commands[0].disabled}
-                  icon={commands[0].icon}
-                  id={commands[0].id}
-                  label={commands[0].label}
-                  labelVisible={commands[0].labelVisible}
-                  onClick={commands[0].onClick}
-                />
-                <Command
-                  command={commands[1].command}
-                  disabled={commands[1].disabled}
-                  icon={commands[1].icon}
-                  id={commands[1].id}
-                  label={commands[1].label}
-                  labelVisible={commands[1].labelVisible}
-                  onClick={commands[1].onClick}
-                />
+              <Grid columns="repeat(auto-fill,minmax(6rem,1fr))">
+                {commands.slice(0, 2).map((command) => { return <Command {...command} />; })}
               </Grid>
             ),
             width: "90%",
           }}
           right={{
             // More than 2 Commands sends overflow to Menu
-            content: commands.length > 2 ? <Menu id={`${uId}-Menu`} data={commands.slice(2)} position="topLeft" /> : <Spacer />,
+            content: commands.length > 2 ? <Menu id={`${uId}-Menu`} data={commands.slice(2)} position="topLeft"><Icon icon="options" /></Menu> : <Spacer />,
             width: "10%",
           }}
         />
@@ -405,15 +388,7 @@ function Card({
           padding="0"
           contentAlign="bottom"
           left={(
-            <Command
-              command={commands[0].command}
-              disabled={commands[0].disabled}
-              icon={commands[0].icon}
-              id={commands[0].id}
-              label={commands[0].label}
-              labelVisible={commands[0].labelVisible}
-              onClick={commands[0].onClick}
-            />
+            <Command {...command} />
           )}
         />
       );
