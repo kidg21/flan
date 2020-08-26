@@ -84,12 +84,11 @@ function MockHeaderGlobal({ menuClick }) {
         content: (
           <ButtonGroup columns="4">
             <Button label="JOBS PORTAL" isPlain variant="neutral" />
-            <Button label="RESEARCH" disabled2 variant2="info" hasUnderline />
+            <Button label="RESEARCH" hasUnderline />
             <Button label="BI" isPlain variant="neutral" />
             <Button label="REPORT WRITING" isPlain variant="neutral" />
           </ButtonGroup>
         ),
-        // align: "left",
         width: "fit-content",
       }}
       right={{
@@ -256,11 +255,7 @@ function MockTable({ header, table, actionsTable }) {
     {
       id: "checkbox",
       label: (
-        <Grid
-          columns2="auto 1fr"
-        >
-          <Checkbox label2="Select All" />
-        </Grid>
+        <Checkbox label="Select All" labelVisible={false} />
       ),
     },
     { id: "Name", label: "Name", sortable: true },
@@ -462,60 +457,40 @@ function MockTable({ header, table, actionsTable }) {
           {actionsTable
             ? (
               <CardSection isInverse>
-                <Bar
-                  contentAlign="center"
-                  padding="0"
-                  left={{
-                    content: (
-                      <Inline>
-                        <Text text="Active List" />
-                        <Tag label="309" />
-                      </Inline>
-                    ),
-                  }}
-                  right={{
-                    content: (
-                      <Inline spacingX="1rem">
-                        {actionsTable}
-                      </Inline>
-                    ),
-                  }}
-                />
+                <Grid columns="1fr auto" gap="1rem">
+                  <Inline>
+                    <Label text="Active List" />
+                    <Label text="" size="sm" />
+                    <Label text="309" size="sm" />
+                  </Inline>
+                  <Inline spacingX="1rem">
+                    {actionsTable}
+                  </Inline>
+                </Grid>
               </CardSection>
             ) : (
               <CardSection isInverse>
-                <Bar
-                  contentAlign="center"
-                  padding="0"
-                  left={{
-                    content: (
-                      <Inline>
-                        <Menu
-                          data={[
-                            { id: "a", label: "Action" },
-                            { id: "b", label: "Action" },
-                            { id: "c", label: "Action" },
-                          ]}
-                          position="bottomRight"
-                        >
-                          <Icon icon="options" onClick={() => { }} />
-                        </Menu>
-                        <Text text="Active List" />
-                        <Tag label="3" />
-                      </Inline>
-                    ),
-                  }}
-                  right={{
-                    content: (
-                      <Inline spacingX="0.5rem">
-                        <Icon icon="share" onClick={() => { }} />
-                        <Icon icon="delete" onClick={() => { }} />
-                        <Icon icon="maximize" onClick={() => { }} />
-                        <Icon icon="down" onClick={() => { }} />
-                      </Inline>
-                    ),
-                  }}
-                />
+                <Grid columns="1fr auto" gap="1rem">
+                  <Inline>
+                    <Label text="Active List" />
+                    <Label text="|" size="sm" />
+                    <Label text="309" size="sm" />
+                  </Inline>
+                  <Inline>
+                    <Menu
+                      data={[
+                        { id: "a", label: "Action" },
+                        { id: "b", label: "Action" },
+                        { id: "c", label: "Action" },
+                      ]}
+                      position="bottomRight"
+                    >
+                      <Icon icon="options" onClick={() => { }} />
+                    </Menu>
+                    <Icon icon="down" onClick={() => { }} />
+                    <Icon icon="close" onClick={() => { }} />
+                  </Inline>
+                </Grid>
               </CardSection>
             )}
         </Card>
