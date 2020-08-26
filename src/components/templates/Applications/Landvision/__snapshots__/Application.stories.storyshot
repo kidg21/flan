@@ -10,14 +10,14 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kmwxDp Layout__Header-sc-19tlhp4-1 jTFBEx"
       height={null}
       id="Header"
       overflow={null}
@@ -266,14 +266,14 @@ exports[` 1`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 vSUQq Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
         height={null}
         id="Left"
         overflow={null}
@@ -411,35 +411,36 @@ exports[` 1`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gOpGBf Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gogltd Layout__WrapperMain-sc-19tlhp4-5 jBholC"
         height="20rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id="Main"
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
             height="100%"
             id={null}
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
@@ -515,7 +516,7 @@ exports[` 1`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+              className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
               id={null}
             >
               <section
@@ -793,13 +794,13 @@ exports[` 1`] = `
                       tabIndex="0"
                     >
                       <div
-                        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                        className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                         height="100%"
                         id={null}
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -863,7 +864,7 @@ exports[` 1`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                          className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                           id={null}
                         >
                           <section
@@ -878,13 +879,13 @@ exports[` 1`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                                className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                                 height="100%"
                                 id={null}
                                 width="100%"
                               >
                                 <section
-                                  className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                                  className="Panel__SectionWrapper-sc-48epke-1 ldHKQY"
                                   id={null}
                                 >
                                   <div
@@ -903,7 +904,7 @@ exports[` 1`] = `
                                         onSubmit={null}
                                       >
                                         <section
-                                          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                                          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                                           id={null}
                                           rows={null}
                                         >
@@ -911,7 +912,7 @@ exports[` 1`] = `
                                             className="Form__Section-v2wrel-0 XxWIM"
                                           >
                                             <section
-                                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                                               id={null}
                                               rows={null}
                                             >
@@ -996,7 +997,7 @@ exports[` 1`] = `
                                             className="Form__Section-v2wrel-0 XxWIM"
                                           >
                                             <section
-                                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                                               id={null}
                                               rows={null}
                                             >
@@ -1031,7 +1032,7 @@ exports[` 1`] = `
                                             className="Form__Section-v2wrel-0 XxWIM"
                                           >
                                             <section
-                                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                                               id={null}
                                               rows={null}
                                             >
@@ -1138,13 +1139,13 @@ exports[` 1`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                                className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                                 height="100%"
                                 id={null}
                                 width="100%"
                               >
                                 <section
-                                  className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                                  className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                                   id={null}
                                 >
                                   <section
@@ -1356,14 +1357,14 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kmwxDp Layout__Header-sc-19tlhp4-1 jTFBEx"
       height={null}
       id="Header"
       overflow={null}
@@ -1612,14 +1613,14 @@ exports[` 2`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 vSUQq Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
         height={null}
         id="Left"
         overflow={null}
@@ -1757,35 +1758,36 @@ exports[` 2`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gOpGBf Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gogltd Layout__WrapperMain-sc-19tlhp4-5 jBholC"
         height="20rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id="Main"
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
             height="100%"
             id={null}
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
@@ -1861,7 +1863,7 @@ exports[` 2`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+              className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
               id={null}
             >
               <section
@@ -2139,13 +2141,13 @@ exports[` 2`] = `
                       tabIndex="0"
                     >
                       <div
-                        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                        className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                         height="100%"
                         id={null}
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                          className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                           id={null}
                         >
                           <section
@@ -2160,11 +2162,12 @@ exports[` 2`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kPqYDF Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 wPpTq Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_69"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <div
                                   className="Bar__BarLayout-icfo76-2 eUVQsH"
@@ -2443,7 +2446,7 @@ exports[` 2`] = `
                           />
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -2506,13 +2509,13 @@ exports[` 2`] = `
                       tabIndex="0"
                     >
                       <div
-                        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                        className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                         height="100%"
                         id={null}
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -2566,7 +2569,7 @@ exports[` 2`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                          className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                           id={null}
                         >
                           <form
@@ -2577,16 +2580,17 @@ exports[` 2`] = `
                             onSubmit={null}
                           >
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                               id={null}
                               rows={null}
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_70"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -2789,11 +2793,12 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_71"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -2996,11 +3001,12 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_72"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -3203,11 +3209,12 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_73"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -3410,11 +3417,12 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_74"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -3617,11 +3625,12 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_75"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -3824,11 +3833,12 @@ exports[` 2`] = `
                                 </section>
                               </div>
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_76"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -4034,7 +4044,7 @@ exports[` 2`] = `
                           </form>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -4099,14 +4109,14 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kmwxDp Layout__Header-sc-19tlhp4-1 jTFBEx"
       height={null}
       id="Header"
       overflow={null}
@@ -4355,14 +4365,14 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 vSUQq Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
         height={null}
         id="Left"
         overflow={null}
@@ -4500,35 +4510,36 @@ exports[` 3`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gOpGBf Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gogltd Layout__WrapperMain-sc-19tlhp4-5 jBholC"
         height="20rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id="Main"
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
             height="100%"
             id={null}
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
@@ -4604,7 +4615,7 @@ exports[` 3`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+              className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
               id={null}
             >
               <section
@@ -4906,13 +4917,13 @@ exports[` 3`] = `
                       tabIndex="0"
                     >
                       <div
-                        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                        className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                         height="100%"
                         id={null}
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -4987,7 +4998,7 @@ exports[` 3`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                          className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                           id={null}
                         >
                           <form
@@ -4998,7 +5009,7 @@ exports[` 3`] = `
                             onSubmit={null}
                           >
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                               id={null}
                               rows={null}
                             >
@@ -5352,7 +5363,7 @@ exports[` 3`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -5423,13 +5434,13 @@ exports[` 3`] = `
                           className="Bar__Slot-icfo76-1 fNcQEg"
                         >
                           <div
-                            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                             height="100%"
                             id={null}
                             width="100%"
                           >
                             <section
-                              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                              className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                               id={null}
                             >
                               <section
@@ -5649,14 +5660,14 @@ exports[` 4`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kmwxDp Layout__Header-sc-19tlhp4-1 jTFBEx"
       height={null}
       id="Header"
       overflow={null}
@@ -5905,14 +5916,14 @@ exports[` 4`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 vSUQq Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
         height={null}
         id="Left"
         overflow={null}
@@ -6050,35 +6061,36 @@ exports[` 4`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gOpGBf Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gogltd Layout__WrapperMain-sc-19tlhp4-5 jBholC"
         height="20rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id="Main"
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
             height="100%"
             id={null}
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
@@ -6154,7 +6166,7 @@ exports[` 4`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+              className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
               id={null}
             >
               <section
@@ -6504,13 +6516,13 @@ exports[` 4`] = `
                       tabIndex="0"
                     >
                       <div
-                        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                        className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                         height="100%"
                         id={null}
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                          className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                           id={null}
                         >
                           <section
@@ -6525,11 +6537,12 @@ exports[` 4`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kPqYDF Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 wPpTq Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_83"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <div
                                   className="Bar__BarLayout-icfo76-2 eUVQsH"
@@ -6808,7 +6821,7 @@ exports[` 4`] = `
                           />
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -6871,13 +6884,13 @@ exports[` 4`] = `
                       tabIndex="0"
                     >
                       <div
-                        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                        className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                         height="100%"
                         id={null}
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -6983,7 +6996,7 @@ exports[` 4`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                          className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                           id={null}
                         >
                           <form
@@ -6994,7 +7007,7 @@ exports[` 4`] = `
                             onSubmit={null}
                           >
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                               id={null}
                               rows={null}
                             >
@@ -7002,7 +7015,7 @@ exports[` 4`] = `
                                 className="Form__Section-v2wrel-0 XxWIM"
                               >
                                 <section
-                                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                                   id={null}
                                   rows={null}
                                 >
@@ -7258,7 +7271,7 @@ exports[` 4`] = `
                           </form>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -7385,14 +7398,14 @@ exports[` 5`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kmwxDp Layout__Header-sc-19tlhp4-1 jTFBEx"
       height={null}
       id="Header"
       overflow={null}
@@ -7641,14 +7654,14 @@ exports[` 5`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 vSUQq Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
         height={null}
         id="Left"
         overflow={null}
@@ -7786,35 +7799,36 @@ exports[` 5`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gOpGBf Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gogltd Layout__WrapperMain-sc-19tlhp4-5 jBholC"
         height="20rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id="Main"
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
             height="100%"
             id={null}
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
@@ -7890,7 +7904,7 @@ exports[` 5`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+              className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
               id={null}
             >
               <section
@@ -8264,13 +8278,13 @@ exports[` 5`] = `
                       tabIndex="0"
                     >
                       <div
-                        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                        className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                         height="100%"
                         id={null}
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -8480,7 +8494,7 @@ exports[` 5`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                          className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                           id={null}
                         >
                           <section
@@ -8495,11 +8509,12 @@ exports[` 5`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kPqYDF Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 wPpTq Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_90"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <div
                                   className="Bar__BarLayout-icfo76-2 eUVQsH"
@@ -8859,7 +8874,7 @@ exports[` 5`] = `
                           />
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -8922,13 +8937,13 @@ exports[` 5`] = `
                       tabIndex="0"
                     >
                       <div
-                        className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                        className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                         height="100%"
                         id={null}
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+                          className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
                           id={null}
                         >
                           <form
@@ -8953,7 +8968,7 @@ exports[` 5`] = `
                               </h5>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                               id={null}
                               rows={null}
                             >
@@ -9136,7 +9151,7 @@ exports[` 5`] = `
                           </form>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                          className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                           id={null}
                         >
                           <div
@@ -9263,14 +9278,14 @@ exports[` 6`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kmwxDp Layout__Header-sc-19tlhp4-1 jTFBEx"
       height={null}
       id="Header"
       overflow={null}
@@ -9519,14 +9534,14 @@ exports[` 6`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 vSUQq Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
         height={null}
         id="Left"
         overflow={null}
@@ -9664,35 +9679,36 @@ exports[` 6`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gOpGBf Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gogltd Layout__WrapperMain-sc-19tlhp4-5 jBholC"
         height="20rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id="Main"
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
             height="100%"
             id={null}
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
@@ -9768,7 +9784,7 @@ exports[` 6`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+              className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
               id={null}
             >
               <section
@@ -10155,13 +10171,13 @@ exports[` 6`] = `
                   tabIndex="0"
                 >
                   <div
-                    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                    className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                     height="100%"
                     id={null}
                     width="100%"
                   >
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                      className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                       id={null}
                     >
                       <div
@@ -10184,7 +10200,7 @@ exports[` 6`] = `
                       </div>
                     </section>
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                      className="Panel__SectionWrapper-sc-48epke-1 ldHKQY"
                       id={null}
                     >
                       <section
@@ -10206,7 +10222,7 @@ exports[` 6`] = `
                             onSubmit={null}
                           >
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
                               id={null}
                               rows={null}
                             >
@@ -10367,7 +10383,7 @@ exports[` 6`] = `
                             action="close"
                             aria-describedby={null}
                             aria-labelledby={null}
-                            className="Modal__ModalContainer-sc-15cll21-2 kPCdTa"
+                            className="Modal__ModalContainer-sc-15cll21-2 iJzcoc"
                             id="Modal_Text"
                             onAnimationEnd={[Function]}
                             onAnimationStart={[Function]}
@@ -10384,11 +10400,12 @@ exports[` 6`] = `
                               id="Modal_Text-animation"
                             >
                               <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                                 href={null}
                                 id="storyshots_96"
                                 media=""
                                 onClick={null}
+                                placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -10498,7 +10515,7 @@ exports[` 6`] = `
                       </section>
                     </section>
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                      className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                       id={null}
                     >
                       <div
@@ -10592,14 +10609,14 @@ exports[` 7`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 eDIgOT Layout__Header-sc-19tlhp4-1 lgCYsj"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kmwxDp Layout__Header-sc-19tlhp4-1 jTFBEx"
       height={null}
       id="Header"
       overflow={null}
@@ -10848,14 +10865,14 @@ exports[` 7`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fcSrfy Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 dmnuqw Layout__RegionLeft-sc-19tlhp4-4 kLquVr"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 vSUQq Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
         height={null}
         id="Left"
         overflow={null}
@@ -10993,35 +11010,36 @@ exports[` 7`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gOpGBf Layout__WrapperMain-sc-19tlhp4-5 hRxOjc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gogltd Layout__WrapperMain-sc-19tlhp4-5 jBholC"
         height="20rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 brOArO Layout__RegionCenter-sc-19tlhp4-6 jQKfmR"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id="Main"
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
             height="100%"
             id={null}
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                 href={null}
                 id="Card_Header"
                 media=""
                 onClick={null}
+                placeholder="{ Card }"
               >
                 <section
                   className="Card__CardSectionWrapper-sc-1g3s676-1 bMfctF"
@@ -11097,7 +11115,7 @@ exports[` 7`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 kMucXq"
+              className="Panel__SectionWrapper-sc-48epke-1 kSbVAY"
               id={null}
             >
               <section
@@ -11508,13 +11526,13 @@ exports[` 7`] = `
                   tabIndex="0"
                 >
                   <div
-                    className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+                    className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
                     height="100%"
                     id={null}
                     width="100%"
                   >
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+                      className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
                       id={null}
                     >
                       <div
@@ -11537,7 +11555,7 @@ exports[` 7`] = `
                       </div>
                     </section>
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+                      className="Panel__SectionWrapper-sc-48epke-1 ldHKQY"
                       id={null}
                     >
                       <section
