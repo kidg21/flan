@@ -326,7 +326,7 @@ function Button({
     >
       {icon ? <Icon icon={icon} size={iconSize} /> : null}
       {label ? <Label size={labelSize} text={label} weight="bold" /> : null}
-      {count ? <Count label={count.toString()} disabled={disabled} /> : null}
+      {count ? <Count label={count.toString()} disabled={isDisabled} /> : null}
     </LabelWrapper>
   );
 
