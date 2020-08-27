@@ -151,6 +151,15 @@ const templateHash = {
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
   },
+  B_08: {
+    setTemplate: [
+      "\"A . B\"",
+      "\". . B\"",
+      "\". . .\"",
+    ].join("\n"),
+    setColumns: `auto 1fr ${widthLG}`,
+    setRows: "auto 1fr 1rem",
+  },
   C_01: {
     setTemplate: [
       "\"A A A\"",
