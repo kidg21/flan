@@ -118,7 +118,7 @@ const CardGridWrapper = styled(Grid)`
   &:empty {
     &:before {
       ${PlaceholderText}
-      content: "{ CardGrid }";
+      content: "${(props) => { return props.placeholder || ""; }}";
     }
   }
 `;
@@ -281,6 +281,7 @@ function Card({
   more,
   onClick,
   padding,
+  placeholder,
   shadow,
   title,
   variant,
@@ -410,6 +411,7 @@ function Card({
       onClick={onClick}
       padding={padding}
       shadow={shadow}
+      placeholder={placeholder}
     >
       {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
@@ -460,6 +462,8 @@ Card.propTypes = {
   }),
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
+  /** placeholder text when card is empty */
+  placeholder: PropTypes.string,
   shadow: PropTypes.oneOf(["0", "2x"]),
   title: PropTypes.string,
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
@@ -481,13 +485,14 @@ Card.defaultProps = {
   more: null,
   onClick: null,
   padding: "0",
+  placeholder: "{ Card }",
   shadow: null,
   title: "",
   variant: null,
 };
 
 function CardGrid({
-  children, className, columns, data, gap, id, isInverse, rows,
+  children, className, columns, data, gap, id, isInverse, placeholder, rows,
 }) {
   return (
     <CardGridWrapper
@@ -496,6 +501,7 @@ function CardGrid({
       gap={gap || "lg"}
       id={id}
       rows={rows}
+      placeholder={placeholder}
     >
       {children
         || data.map((item) => {
@@ -567,6 +573,8 @@ CardGrid.propTypes = {
   ]),
   id: PropTypes.string,
   isInverse: PropTypes.bool,
+  /** placeholder text when card grid is empty */
+  placeholder: PropTypes.string,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
@@ -581,6 +589,7 @@ CardGrid.defaultProps = {
   gap: null,
   id: null,
   isInverse: false,
+  placeholder: "{ CardGrid }",
   rows: null,
 };
 

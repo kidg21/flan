@@ -70,7 +70,18 @@ const Section = styled.section`
 `;
 
 function Field({
-  align, className, disabled, id, label, onChange, onClick, value, labelWidth, valueWidth,
+  align,
+  className,
+  disabled,
+  href,
+  id,
+  label,
+  onChange,
+  onClick,
+  target,
+  value,
+  labelWidth,
+  valueWidth,
 }) {
   let fieldColumns;
   let fieldGap;
@@ -108,9 +119,9 @@ function Field({
     </FieldValue>
   );
 
-  if (onClick) {
+  if (href || onClick) {
     field = (
-      <Link disabled={disabled} size="lg" onClick={onClick}>
+      <Link disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick}>
         {field}
       </Link>
     );
@@ -135,11 +146,13 @@ Field.propTypes = {
   valueWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
+  href: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
   /** Not currently being used but staying put for the next iteration. */
   onChange: PropTypes.func,
   onClick: PropTypes.func,
+  target: PropTypes.string,
   value: PropTypes.node,
 };
 
@@ -149,9 +162,11 @@ Field.defaultProps = {
   valueWidth: "1x",
   className: null,
   disabled: false,
+  href: undefined,
   id: null,
   onChange: null,
   onClick: null,
+  target: "_blank",
   value: null,
 };
 

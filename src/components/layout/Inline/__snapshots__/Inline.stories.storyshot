@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 kDMJeG"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 dDCaZY"
   height={null}
   id="Standard"
   overflow={null}
@@ -120,7 +120,7 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 kDMJeG"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 dDCaZY"
     height={null}
     id="Spacing Content"
     overflow={null}
@@ -232,7 +232,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 hqMSnT"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 ihKjAh"
   height={null}
   id="Center Justify"
   overflow={null}
@@ -343,7 +343,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 dSJtgN"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 htOzOr"
   height={null}
   id="Right Justify"
   overflow={null}
@@ -454,7 +454,7 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 kDMJeG"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 dDCaZY"
   height={null}
   id="Center (Default) Align"
   overflow={null}
@@ -493,11 +493,12 @@ exports[` 5`] = `
     }
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_217"
       media=""
       onClick={null}
+      placeholder="{ Card }"
     >
       <section
         className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -546,7 +547,7 @@ exports[` 5`] = `
 
 exports[` 6`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 dMntJL"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 hRxRtZ"
   height={null}
   id="Top Align"
   overflow={null}
@@ -585,11 +586,12 @@ exports[` 6`] = `
     }
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_218"
       media=""
       onClick={null}
+      placeholder="{ Card }"
     >
       <section
         className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -638,7 +640,7 @@ exports[` 6`] = `
 
 exports[` 7`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 hGpRWo"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 fpNHjS"
   height={null}
   id="Bottom Align"
   overflow={null}
@@ -677,11 +679,12 @@ exports[` 7`] = `
     }
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_219"
       media=""
       onClick={null}
+      placeholder="{ Card }"
     >
       <section
         className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
