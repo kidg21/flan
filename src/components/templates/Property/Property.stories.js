@@ -5,21 +5,17 @@ import { useState } from "hooks";
 import { FullScreen } from "helpers/Display";
 import Panel from "layout/Panel";
 import Icon from "atoms/Icon";
-import Loader from "atoms/Loader";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
 import Container from "atoms/Container";
 import Layout from "layout/Layout";
 import Command from "atoms/Command";
 import Template from "layout/Template";
-import Tabs, { TabItem } from "blocks/Tabs";
 import Search from "blocks/Search";
 import Menu from "blocks/Menu";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
-import Form, { FormSection } from "layout/Form";
 import Image from "atoms/Image";
-import Divider from "atoms/Divider";
 import Field, { FieldGroup, FieldSection } from "atoms/Field";
 import { Title } from "base/Typography";
 import Card, { CardSection } from "elements/Card";
@@ -44,8 +40,6 @@ storiesOf("Templates|Applications/Research/Property", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
         return (
           <Layout
             header={{
@@ -54,11 +48,12 @@ storiesOf("Templates|Applications/Research/Property", module)
             }}
             left={{
               id: "Left",
-              content: (<List title="Research" isInteractive isInverse>
-                <ListItem title="Dashboard" />
-                <ListItem title="Projects" />
-                <ListItem title="Properties" isSelected />
-              </List>),
+              content: (
+                <List title="Research" isInteractive isInverse>
+                  <ListItem title="Dashboard" />
+                  <ListItem title="Projects" />
+                  <ListItem title="Properties" isSelected />
+                </List>),
               visible: leftOpen,
             }}
             main={{
@@ -150,8 +145,6 @@ storiesOf("Templates|Applications/Research/Property", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
         return (
           <Layout
             header={{
@@ -232,19 +225,28 @@ storiesOf("Templates|Applications/Research/Property", module)
                               A={{
                                 id: "A",
                                 content: (
-                                  <Container width="4rem">
-                                    <Card padding="2x">
-                                      <ButtonGroup gap="3xl" columns="1">
-                                        <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
-                                        <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
-                                        <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
-                                        <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
-                                        <Button label="View" icon="map" isPlain size="sm" alignCenter />
-                                        <Button label="Reset" icon="sync" isPlain size="sm" alignCenter />
+                                  <Card padding="2x">
+                                    <ButtonGroup gap="3xl" columns="1">
+                                      <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
+                                      <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
+                                      <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
+                                      <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
+                                      <Button label="View" icon="map" isPlain size="sm" alignCenter />
+                                      <Button label="Reset" icon="sync" isPlain size="sm" alignCenter />
+                                      <Menu
+                                        isFlex
+                                        visible
+                                        data={[
+                                          { id: "save", label: "Save" },
+                                          { id: "filter", label: "Filter" },
+                                          { id: "share", label: "Share" },
+                                          { id: "delete", label: "Delete" },
+                                        ]}
+                                      >
                                         <Button label="More" icon="more" isPlain size="sm" alignCenter />
-                                      </ButtonGroup>
-                                    </Card>
-                                  </Container>
+                                      </Menu>
+                                    </ButtonGroup>
+                                  </Card>
                                 ),
                               }}
                             />
@@ -271,24 +273,24 @@ storiesOf("Templates|Applications/Research/Property", module)
                               <Bar
                                 padding="0"
                                 center={
-                                  <Image width="20rem" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" />
+                                  <Image width="20rem" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" alt="Property Image" />
                                 }
                               />
                               <FieldSection>
                                 <FieldGroup columns="1" title="Property">
-                                  <Field label="Parcel No." value="808-221-12" onClick />
+                                  <Field label="Parcel No." value="808-221-12" onClick={() => { }} />
                                   <Field label="Land User" value="Commercial Shopping Center" />
                                   <Field label="Building Area" value="25,344 SF" />
-                                  <Field label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
+                                  <Field label="Lot Area" value="171,143 SF (3.93 Acres)" onClick={() => { }} />
                                   <Field label="Building/Lot" value="0.15" />
                                   <Field label="No. of Units" value="" />
                                   <Field label="Year Built" value="1978" />
                                 </FieldGroup>
                                 <FieldGroup columns="1" title="Owners">
-                                  <Field label="Owners" value="SCF-Los Alisos LLC" onClick />
+                                  <Field label="Owners" value="SCF-Los Alisos LLC" onClick={() => { }} />
                                   <Field label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
-                                  <Field label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick />
-                                  <Field label="Last Sale" value="10/2/15 for $11,500,000" onClick />
+                                  <Field label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick={() => { }} />
+                                  <Field label="Last Sale" value="10/2/15 for $11,500,000" onClick={() => { }} />
                                   <Field label="Total Assd Value" value="$10,045,870" />
 
                                 </FieldGroup>

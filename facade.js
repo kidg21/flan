@@ -34,10 +34,10 @@ function decorator(getStory) {
   return getStory();
 }
 export const withKnobs = decorator;
-export const checkA11y = decorator;
+export const withA11y = decorator;
 
 export const action = function action(/* value */) {
-  return () => {};
+  return () => { };
 };
 
 function inputSelector(name, value) {

@@ -7,6 +7,8 @@ import { Lighten, Darken } from "Variables";
 
 const StyledLabel = styled.label`
   color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   line-height: ${(props) => { return props.lineHeight; }};
@@ -29,6 +31,32 @@ const StyledLabel = styled.label`
     vertical-align: middle;
     padding-left: 0.25em;
   }
+  ${(props) => {
+    if (!props.visible) {
+      return `
+        position: absolute;
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+
+        &.focusable {
+            &:active, &:focus {
+                position: static;
+                overflow: visible;
+                height: auto;
+                width: auto;
+                margin: 0;
+                clip: auto;
+            }
+        }
+      `;
+    }
+  }}
 `;
 
 const LinkText = styled.a`
@@ -262,6 +290,7 @@ function Label({
   size,
   text,
   isUppercase,
+  visible,
 }) {
 
   let fontWeight = parseInt(weight, 10);
@@ -286,6 +315,7 @@ function Label({
       htmlFor={htmlFor}
       isRequired={isRequired}
       letterSpacing={letterSpacing}
+      visible={visible}
     >
       {text || children}
     </StyledLabel>
@@ -301,6 +331,7 @@ Label.propTypes = {
   isRequired: PropTypes.bool,
   size: PropTypes.oneOf(["xs", "sm", "lg", "xl", ""]),
   text: PropTypes.node,
+  visible: PropTypes.bool,
   weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Label.defaultProps = {
@@ -312,6 +343,7 @@ Label.defaultProps = {
   isRequired: false,
   size: "",
   text: null,
+  visible: true,
   weight: null,
 };
 

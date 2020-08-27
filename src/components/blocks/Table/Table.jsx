@@ -76,9 +76,9 @@ export const CellWrapper = styled.div`
   [class^="Menu"],
   [class^="Command"] {
     color: ${(props) => {
-    if (props.isSelected) {
+    /* if (props.isSelected) {
       return props.theme.text.inverse;
-    }
+    } */
     return "";
   }};
   }

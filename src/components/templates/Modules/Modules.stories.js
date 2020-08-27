@@ -196,7 +196,7 @@ const options = [
 
 storiesOf("Templates/Modules/Maps", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Map Tools", () => {
     return (
       <React.Fragment>
@@ -247,79 +247,79 @@ storiesOf("Templates/Modules/Maps", module)
 
 storiesOf("Templates/Modules/Panels", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
-  .add("Layers Panel", () => {
-    return (
-      <Panel
-        header={(
-          <Bar
-            contentAlign="center"
-            padding="2x"
-            left={{
-              content: (
-                <Title text="Layers Panel" weight="bold" />
-              ),
-            }}
-            right={{
-              content: (
-                <Menu
-                  data={[
-                    { id: "a", label: "Action" },
-                    { id: "c", label: "Action" },
-                    { id: "b", label: "Action" },
-                  ]}
-                  position="bottomLeft"
-                />
-              ),
-              width: "min-content",
-            }}
-          />
-        )}
-      >
-        <Accordion
-          open
-          header={(
-            <Checkbox
-              label="Layer One"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Two"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Three"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-        <Accordion
-          header={(
-            <Checkbox
-              label="Layer Four"
-              id="checkbox-id"
-            />
-          )}
-        >
-          <Card><Legend data={mapOptions} /></Card>
-        </Accordion>
-      </Panel>
-    );
-  })
+  .addDecorator(withA11y)
+  // .add("Layers Panel", () => {
+  //   return (
+  //     <Panel
+  //       header={(
+  //         <Bar
+  //           contentAlign="center"
+  //           padding="2x"
+  //           left={{
+  //             content: (
+  //               <Title text="Layers Panel" weight="bold" />
+  //             ),
+  //           }}
+  //           right={{
+  //             content: (
+  //               <Menu
+  //                 data={[
+  //                   { id: "a", label: "Action" },
+  //                   { id: "c", label: "Action" },
+  //                   { id: "b", label: "Action" },
+  //                 ]}
+  //                 position="bottomLeft"
+  //               />
+  //             ),
+  //             width: "min-content",
+  //           }}
+  //         />
+  //       )}
+  //     >
+  //       <Accordion
+  //         open
+  //         header={(
+  //           <Checkbox
+  //             label="Layer One"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Two"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Three"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //       <Accordion
+  //         header={(
+  //           <Checkbox
+  //             label="Layer Four"
+  //             id="checkbox-id"
+  //           />
+  //         )}
+  //       >
+  //         <Card><Legend data={mapOptions} /></Card>
+  //       </Accordion>
+  //     </Panel>
+  //   );
+  // })
   .add(
     "View/Edit Record",
     () => {
@@ -405,12 +405,14 @@ storiesOf("Templates/Modules/Panels", module)
                 label="Text Input"
                 value="I'm the info that came with the app..."
                 helpText="The one that your parents gave you"
+                onChange={() => { }}
               />
               <TextInput
                 id="lastName"
                 label="Text Input"
                 value="I don't like myself, please change me."
                 helpText="The one that comes after.."
+                onChange={() => { }}
               />
               <TextInput
                 id="lastName"
@@ -418,6 +420,7 @@ storiesOf("Templates/Modules/Panels", module)
                 value="I'm pretty much a run-on sentence because someone didn't think that I was worth bringing in a copywriter for..."
                 helpText="The one that comes after.."
                 type="textarea"
+                onChange={() => { }}
               />
             </FormSection>
             <FormSection title="">
@@ -573,7 +576,7 @@ storiesOf("Templates/Modules/Panels", module)
 
 storiesOf("Templates/Modules/Create", module)
   .addDecorator(Padding)
-  .addDecorator(checkA11y)
+  .addDecorator(withA11y)
   .add("Create Job", () => {
     return (
       <DialogBox
@@ -596,6 +599,7 @@ storiesOf("Templates/Modules/Create", module)
 
               label="Job Number"
               value="19-12341234"
+              onChange={() => { }}
             />
             <TextInput
 
@@ -713,6 +717,7 @@ storiesOf("Templates/Modules/Create", module)
 
               label="RFP Number"
               value="19-12341234"
+              onChange={() => { }}
             />
             <TextInput
 
@@ -779,6 +784,7 @@ storiesOf("Templates/Modules/Create", module)
 
                   label="Client Name"
                   value=""
+                  onChange={() => { }}
                 />
                 <TextInput
 
@@ -849,6 +855,7 @@ storiesOf("Templates/Modules/Create", module)
 
                   label="Scope of Work"
                   value=""
+                  onChange={() => { }}
                 />
                 <InputBlock
                   label="Bid Amount"
@@ -935,7 +942,7 @@ storiesOf("Templates/Modules/Create", module)
             />
             <Bar
               padding="2x"
-              center={<Command label="Manage my Profile" icon="edit"  />}
+              center={<Command label="Manage my Profile" icon="edit" />}
             />
             <Bar
               padding="2x"

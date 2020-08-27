@@ -19,11 +19,12 @@ exports[` 1`] = `
     }
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 bCsQSH Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
       href={null}
-      id="storyshots_80"
+      id="storyshots_97"
       media=""
       onClick={null}
+      placeholder="{ Card }"
     >
       <form
         action={null}
@@ -33,7 +34,7 @@ exports[` 1`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
           id={null}
           rows={null}
         >
@@ -43,7 +44,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -58,7 +59,8 @@ exports[` 1`] = `
               rows={null}
             >
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
@@ -85,14 +87,16 @@ exports[` 1`] = `
                     />
                   </svg>
                   <img
+                    alt="None"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title="None"
                     width="75"
                   />
                 </div>
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -103,21 +107,24 @@ exports[` 1`] = `
                 </label>
               </a>
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
+                    alt="Full"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title="Full"
                     width="75"
                   />
                 </div>
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -128,21 +135,24 @@ exports[` 1`] = `
                 </label>
               </a>
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
+                    alt="Half"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title="Half"
                     width="75"
                   />
                 </div>
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -153,21 +163,24 @@ exports[` 1`] = `
                 </label>
               </a>
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
+                    alt="Quarter"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title="Quarter"
                     width="75"
                   />
                 </div>
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -181,21 +194,24 @@ exports[` 1`] = `
                 className="Divider__Line-sc-1k80dpa-0 egkMGQ"
               />
               <a
-                className="Picker__ImageContainer-sc-1xwpkqn-2 gKacog"
+                className="Picker__ImageContainer-sc-1xwpkqn-2 glfyRt"
+                disabled={false}
                 onClick={[Function]}
               >
                 <div
                   className="Picker__ImageWrapper-sc-1xwpkqn-3 cjdIhZ"
                 >
                   <img
+                    alt="Legend"
                     className="Image__ImageWrapper-sc-18abvff-0 fPjIBY"
                     onClick={null}
                     src=""
+                    title="Legend"
                     width="75"
                   />
                 </div>
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -220,7 +236,7 @@ exports[` 1`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 duxIaX DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+            className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
             disabled={false}
             htmlFor={null}
             id="Cancel"
@@ -235,7 +251,7 @@ exports[` 1`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -247,7 +263,7 @@ exports[` 1`] = `
             </section>
           </button>
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 dhrQhU DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+            className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
             disabled={false}
             htmlFor={null}
             id="Save Map Image"
@@ -262,7 +278,7 @@ exports[` 1`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+                className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}

@@ -2,13 +2,13 @@
 
 exports[` 1`] = `
 <div
-  className="Panel__PanelWrapper-sc-48epke-0 bdKrFx"
+  className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
   height="100%"
   id={null}
   width="100%"
 >
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 irgvti Panel__PanelSection-sc-48epke-2 BZwGc"
+    className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
     id={null}
   >
     <div
@@ -36,7 +36,7 @@ exports[` 1`] = `
           id="menu-popper-Details_Header-Menu"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hCtQDx"
+            className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
             disabled={false}
             htmlFor={null}
             id="menu-icon-Details_Header-Menu"
@@ -77,7 +77,7 @@ exports[` 1`] = `
     </div>
   </section>
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 irgvti"
+    className="Panel__SectionWrapper-sc-48epke-1 ldHKQY"
     id={null}
   >
     <section
@@ -91,7 +91,7 @@ exports[` 1`] = `
         id={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 cdjJof Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+          className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Tabs__TabButton-sc-1aqycph-0 dlQYYB"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -106,7 +106,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -118,7 +118,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+          className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -133,7 +133,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -145,7 +145,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+          className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -160,7 +160,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -172,7 +172,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+          className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -187,7 +187,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -199,7 +199,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bILKca Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+          className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -214,7 +214,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ePEGIf"
+              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -238,10 +238,10 @@ exports[` 1`] = `
             className="Legend__Body-sc-70hm4b-5 kHKUyy"
           >
             <tr
-              className="Legend__Row-sc-70hm4b-4 kNHlAf"
+              className="Legend__Row-sc-70hm4b-4 ihLGMf"
             >
               <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
@@ -255,7 +255,7 @@ exports[` 1`] = `
                 </p>
               </td>
               <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
@@ -270,10 +270,10 @@ exports[` 1`] = `
               </td>
             </tr>
             <tr
-              className="Legend__Row-sc-70hm4b-4 kNHlAf"
+              className="Legend__Row-sc-70hm4b-4 ihLGMf"
             >
               <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
@@ -287,7 +287,7 @@ exports[` 1`] = `
                 </p>
               </td>
               <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
@@ -302,10 +302,10 @@ exports[` 1`] = `
               </td>
             </tr>
             <tr
-              className="Legend__Row-sc-70hm4b-4 kNHlAf"
+              className="Legend__Row-sc-70hm4b-4 ihLGMf"
             >
               <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
@@ -319,7 +319,7 @@ exports[` 1`] = `
                 </p>
               </td>
               <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
@@ -334,10 +334,10 @@ exports[` 1`] = `
               </td>
             </tr>
             <tr
-              className="Legend__Row-sc-70hm4b-4 kNHlAf"
+              className="Legend__Row-sc-70hm4b-4 ihLGMf"
             >
               <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
@@ -351,7 +351,7 @@ exports[` 1`] = `
                 </p>
               </td>
               <td
-                className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p

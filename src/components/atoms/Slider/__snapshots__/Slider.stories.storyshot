@@ -29,7 +29,7 @@ exports[` 2`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
     id={null}
     rows={null}
   >
@@ -46,7 +46,7 @@ exports[` 2`] = `
         Standard
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -82,7 +82,7 @@ exports[` 2`] = `
         Error
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -118,7 +118,7 @@ exports[` 2`] = `
         Disabled
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -154,7 +154,7 @@ exports[` 3`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
     id={null}
     rows={null}
   >
@@ -171,7 +171,7 @@ exports[` 3`] = `
         Standard
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -207,7 +207,7 @@ exports[` 3`] = `
         With Label
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -217,7 +217,7 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+            className="Typography__StyledLabel-sc-19auepv-0 QFFFL Slider__SliderLabel-sc-1hp9era-1 bMyAub"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={600}
@@ -246,7 +246,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                className="Typography__StyledLabel-sc-19auepv-0 QFFFL"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -260,7 +260,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                className="Typography__StyledLabel-sc-19auepv-0 QFFFL"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -287,7 +287,7 @@ exports[` 3`] = `
         With Range
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -316,7 +316,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                className="Typography__StyledLabel-sc-19auepv-0 QFFFL"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -330,7 +330,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gPFLBJ"
+                className="Typography__StyledLabel-sc-19auepv-0 QFFFL"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}

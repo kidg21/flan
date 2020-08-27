@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Popper from "layout/Popper";
 import Button from "atoms/Button";
+import Divider from "atoms/Divider";
 import List, { ListItem } from "blocks/List";
 import getGuid from "utils/getGuid";
 import { useId } from "utils/hooks";
@@ -38,11 +39,11 @@ const ListWrapper = styled(List)`
 `;
 
 const StyledCardWrapper = styled(CardWrapper)`
-  > :first-child {
+  > :first-of-type {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
   };
-  > :last-child {
+  > :last-of-type {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
   };
@@ -58,7 +59,7 @@ const ListItemWrapper = styled(ListItem)`
 const NestedItem = styled.div`
   position: relative;
   background-color: inherit;
-  > li:last-child {
+  > li:last-of-type {
     margin-bottom: 1px;
   }
 `;
@@ -140,15 +141,31 @@ const MenuList = ({
             </NestedItem>
           );
         }
+
+        const isPre = !item.iconAlign || item.iconAlign.toLowerCase() === "left";
         return (
-          <ListItem
-            key={itemId}
-            id={`item-${itemId}`}
-            title={item.label}
-            onClickItem={onClick}
-            pre={{ type: "icon", icon: item.icon }}
-            disabled={item.disabled}
-          />
+          <React.Fragment>
+            <ListItem
+              key={itemId}
+              id={`item-${itemId}`}
+              title={item.label}
+              onClickItem={onClick}
+              pre={isPre ? {
+                type: "icon",
+                icon: item.icon,
+                onClick: item.onIconClick,
+                ...item.iconParams,
+              } : undefined}
+              post={!isPre ? {
+                type: "icon",
+                icon: item.icon,
+                onClick: item.onIconClick,
+                ...item.iconParams,
+              } : undefined}
+              disabled={item.disabled}
+            />
+            {item.hasDivider && index < data.length - 1 ? <Divider /> : null}
+          </React.Fragment>
         );
       });
     }
@@ -169,10 +186,14 @@ const MenuList = ({
 
 const itemShape = {
   disabled: PropTypes.bool,
+  hasDivider: PropTypes.bool,
   icon: PropTypes.string,
+  iconAlign: PropTypes.string,
+  iconParams: PropTypes.objectOf(PropTypes.any),
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
+  onIconClick: PropTypes.func,
 };
 
 MenuList.defaultProps = {
@@ -237,7 +258,6 @@ Menu.defaultProps = {
   id: "",
   isFlex: false,
   onClose: null,
-  /** close menu when clicking outside of pop-out */
   closeOnClickAway: true,
   usePortal: false,
   position: "bottomRight",
@@ -257,8 +277,13 @@ Menu.propTypes = {
   position: PropTypes.oneOf([
     "bottomLeft",
     "bottomRight",
+    "leftDown",
+    "leftUp",
+    "rightDown",
+    "rightUp",
     "topLeft",
     "topRight",
+    "",
   ]),
   visible: PropTypes.bool,
   width: PropTypes.string,
@@ -285,7 +310,7 @@ const StatefulMenu = ({
   }, [onClose]);
 
   // default Menu button with onClick
-  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible }); //(<Button icon="options" onClick={toggleVisible} isPlain isRound />);
+  let anchorElement = React.cloneElement(defaultAnchor, { id: `menu-icon-${id}`, onClick: toggleVisible });
   if (anchor.length > 0) {
     if (anchor[0].type === React.Fragment) {
       // wraps click in div around both children
@@ -340,8 +365,10 @@ const _Menu = (props) => {
     ? <StatefulMenu {...props} id={uId} /> : <Menu {...props} id={uId} />;
 };
 
+// _Menu proptype info will be displayed in storybook props table
 _Menu.defaultProps = {
   children: null,
+  closeOnClickAway: true,
   data: [],
   initVisible: false,
   id: "",
@@ -357,6 +384,8 @@ _Menu.defaultProps = {
 _Menu.propTypes = {
   /** custom anchor element */
   children: PropTypes.node,
+  /** close menu popper when clicking outside of it */
+  closeOnClickAway: PropTypes.bool,
   /** list of item objects in menu */
   data: PropTypes.arrayOf(PropTypes.shape(itemShape)),
   /** menu id */
@@ -373,13 +402,19 @@ _Menu.propTypes = {
   position: PropTypes.oneOf([
     "bottomLeft",
     "bottomRight",
+    "leftDown",
+    "leftUp",
+    "rightDown",
+    "rightUp",
     "topLeft",
     "topRight",
+    "",
   ]),
   /** open/close state of menu */
   visible: PropTypes.bool,
   /** width of the menu */
   width: PropTypes.string,
+  /** static zIndex */
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 

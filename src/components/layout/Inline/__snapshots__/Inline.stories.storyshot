@@ -2,9 +2,9 @@
 
 exports[` 1`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 kDMJeG"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 dDCaZY"
   height={null}
-  id={null}
+  id="Standard"
   overflow={null}
   width={null}
 >
@@ -15,14 +15,14 @@ exports[` 1`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 1"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -31,7 +31,7 @@ exports[` 1`] = `
       >
         Tag 1
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -40,14 +40,14 @@ exports[` 1`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 222222"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -56,7 +56,7 @@ exports[` 1`] = `
       >
         Tag 222222
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -65,14 +65,14 @@ exports[` 1`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 33333333333"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -81,7 +81,7 @@ exports[` 1`] = `
       >
         Tag 33333333333
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -90,14 +90,14 @@ exports[` 1`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 444444444444444444"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -106,7 +106,7 @@ exports[` 1`] = `
       >
         Tag 444444444444444444
       </label>
-    </div>
+    </span>
   </div>
 </div>
 `;
@@ -120,9 +120,9 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 kDMJeG"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 dDCaZY"
     height={null}
-    id={null}
+    id="Spacing Content"
     overflow={null}
     width={null}
   >
@@ -133,14 +133,14 @@ exports[` 2`] = `
         }
       }
     >
-      <div
+      <span
         className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Tag 1"
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -149,7 +149,7 @@ exports[` 2`] = `
         >
           Tag 1
         </label>
-      </div>
+      </span>
     </div>
     <div
       style={
@@ -158,14 +158,14 @@ exports[` 2`] = `
         }
       }
     >
-      <div
+      <span
         className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Tag 222222"
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -174,7 +174,7 @@ exports[` 2`] = `
         >
           Tag 222222
         </label>
-      </div>
+      </span>
     </div>
     <div
       style={
@@ -183,14 +183,14 @@ exports[` 2`] = `
         }
       }
     >
-      <div
+      <span
         className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Tag 33333333333"
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -199,7 +199,7 @@ exports[` 2`] = `
         >
           Tag 33333333333
         </label>
-      </div>
+      </span>
     </div>
     <div
       style={
@@ -208,14 +208,14 @@ exports[` 2`] = `
         }
       }
     >
-      <div
+      <span
         className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
         id={null}
         label="Tag 444444444444444444"
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+          className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -224,7 +224,7 @@ exports[` 2`] = `
         >
           Tag 444444444444444444
         </label>
-      </div>
+      </span>
     </div>
   </div>
 </div>
@@ -232,9 +232,9 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 hqMSnT"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 ihKjAh"
   height={null}
-  id={null}
+  id="Center Justify"
   overflow={null}
   width={null}
 >
@@ -245,14 +245,14 @@ exports[` 3`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 1"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -261,7 +261,7 @@ exports[` 3`] = `
       >
         Tag 1
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -270,14 +270,14 @@ exports[` 3`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 222222"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -286,7 +286,7 @@ exports[` 3`] = `
       >
         Tag 222222
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -295,14 +295,14 @@ exports[` 3`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 33333333333"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -311,7 +311,7 @@ exports[` 3`] = `
       >
         Tag 33333333333
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -320,14 +320,14 @@ exports[` 3`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 444444444444444444"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -336,16 +336,16 @@ exports[` 3`] = `
       >
         Tag 444444444444444444
       </label>
-    </div>
+    </span>
   </div>
 </div>
 `;
 
 exports[` 4`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 dSJtgN"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 htOzOr"
   height={null}
-  id={null}
+  id="Right Justify"
   overflow={null}
   width={null}
 >
@@ -356,14 +356,14 @@ exports[` 4`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 1"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -372,7 +372,7 @@ exports[` 4`] = `
       >
         Tag 1
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -381,14 +381,14 @@ exports[` 4`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 222222"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -397,7 +397,7 @@ exports[` 4`] = `
       >
         Tag 222222
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -406,14 +406,14 @@ exports[` 4`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 33333333333"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -422,7 +422,7 @@ exports[` 4`] = `
       >
         Tag 33333333333
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -431,14 +431,14 @@ exports[` 4`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 444444444444444444"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -447,16 +447,16 @@ exports[` 4`] = `
       >
         Tag 444444444444444444
       </label>
-    </div>
+    </span>
   </div>
 </div>
 `;
 
 exports[` 5`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 kDMJeG"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 dDCaZY"
   height={null}
-  id={null}
+  id="Center (Default) Align"
   overflow={null}
   width={null}
 >
@@ -467,14 +467,14 @@ exports[` 5`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 1"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -483,7 +483,7 @@ exports[` 5`] = `
       >
         Tag 1
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -493,11 +493,12 @@ exports[` 5`] = `
     }
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
-      id="storyshots_199"
+      id="storyshots_217"
       media=""
       onClick={null}
+      placeholder="{ Card }"
     >
       <section
         className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -523,14 +524,14 @@ exports[` 5`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 33333333333"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -539,16 +540,16 @@ exports[` 5`] = `
       >
         Tag 33333333333
       </label>
-    </div>
+    </span>
   </div>
 </div>
 `;
 
 exports[` 6`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 dMntJL"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 hRxRtZ"
   height={null}
-  id={null}
+  id="Top Align"
   overflow={null}
   width={null}
 >
@@ -559,14 +560,14 @@ exports[` 6`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 1"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -575,7 +576,7 @@ exports[` 6`] = `
       >
         Tag 1
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -585,11 +586,12 @@ exports[` 6`] = `
     }
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
-      id="storyshots_200"
+      id="storyshots_218"
       media=""
       onClick={null}
+      placeholder="{ Card }"
     >
       <section
         className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -615,14 +617,14 @@ exports[` 6`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 33333333333"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -631,16 +633,16 @@ exports[` 6`] = `
       >
         Tag 33333333333
       </label>
-    </div>
+    </span>
   </div>
 </div>
 `;
 
 exports[` 7`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 hGpRWo"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 fpNHjS"
   height={null}
-  id={null}
+  id="Bottom Align"
   overflow={null}
   width={null}
 >
@@ -651,14 +653,14 @@ exports[` 7`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 1"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -667,7 +669,7 @@ exports[` 7`] = `
       >
         Tag 1
       </label>
-    </div>
+    </span>
   </div>
   <div
     style={
@@ -677,11 +679,12 @@ exports[` 7`] = `
     }
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
-      id="storyshots_201"
+      id="storyshots_219"
       media=""
       onClick={null}
+      placeholder="{ Card }"
     >
       <section
         className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -707,14 +710,14 @@ exports[` 7`] = `
       }
     }
   >
-    <div
+    <span
       className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
       id={null}
       label="Tag 33333333333"
       onClick={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
         cursor="default"
         fontSize="0.875rem"
         fontWeight={400}
@@ -723,7 +726,7 @@ exports[` 7`] = `
       >
         Tag 33333333333
       </label>
-    </div>
+    </span>
   </div>
 </div>
 `;

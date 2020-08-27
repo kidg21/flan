@@ -12,9 +12,52 @@ exports[` 1`] = `
     className="Expander__HeaderWrapper-sc-147204-0 insQpf"
     id={null}
     onClick={[Function]}
-  />
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 koRqOO"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 eufPAN"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          Accordion Title
+        </h6>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 cxljst"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+          color={null}
+          data-icon="plus"
+          data-prefix="far"
+          focusable="false"
+          fontSize="inherit"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 384 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh Accordion__ExpanderWrapper-sc-1ejc22p-0 iSiUpQ"
     open={false}
   >
     <p
@@ -42,9 +85,69 @@ exports[` 2`] = `
     className="Expander__HeaderWrapper-sc-147204-0 insQpf"
     id={null}
     onClick={[Function]}
-  />
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 koRqOO"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 eufPAN"
+      >
+        <div
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+          disabled={false}
+        >
+          <input
+            checked={null}
+            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+            id="checkbox-id"
+            onBlur={null}
+            onChange={null}
+            onClick={[Function]}
+            onFocus={null}
+            type="checkbox"
+          />
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor="checkbox-id"
+            letterSpacing=".5px"
+          >
+            Label 1
+          </label>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 cxljst"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+          color={null}
+          data-icon="plus"
+          data-prefix="far"
+          focusable="false"
+          fontSize="inherit"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 384 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh Accordion__ExpanderWrapper-sc-1ejc22p-0 iSiUpQ"
     open={false}
   >
     <p
@@ -68,7 +171,7 @@ Array [
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 kZmRXv"
+      className="Bar__BarLayout-icfo76-2 koRqOO"
       id={null}
       onClick={null}
     >
@@ -120,7 +223,7 @@ Array [
     </div>
   </div>,
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh Accordion__ExpanderWrapper-sc-1ejc22p-0 iSiUpQ"
     open={false}
   >
     <p
@@ -144,7 +247,7 @@ Array [
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 kZmRXv"
+      className="Bar__BarLayout-icfo76-2 koRqOO"
       id={null}
       onClick={null}
     >
@@ -196,7 +299,7 @@ Array [
     </div>
   </div>,
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh Accordion__ExpanderWrapper-sc-1ejc22p-0 iSiUpQ"
     open={false}
   >
     <p

@@ -49,7 +49,7 @@ exports[` 1`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
       id={null}
       rows={null}
     >
@@ -66,7 +66,7 @@ exports[` 1`] = `
           Group 1
         </p>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
           id={null}
           rows={null}
         >
@@ -76,7 +76,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -119,7 +119,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -171,7 +171,7 @@ exports[` 1`] = `
           Group 2
         </p>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
           id={null}
           rows={null}
         >
@@ -181,7 +181,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gskrvt"
+              className="Typography__StyledLabel-sc-19auepv-0 eTPjnv"
               cursor="pointer"
               fontSize="0.8rem"
               fontWeight={400}
@@ -214,11 +214,12 @@ exports[` 1`] = `
                   id="box-1"
                   onBlur={null}
                   onChange={null}
+                  onClick={[Function]}
                   onFocus={null}
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -238,12 +239,13 @@ exports[` 1`] = `
                   id="box-2"
                   onBlur={null}
                   onChange={null}
+                  onClick={[Function]}
                   onFocus={null}
                   tabIndex="-1"
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -263,11 +265,12 @@ exports[` 1`] = `
                   id="box-3"
                   onBlur={null}
                   onChange={null}
+                  onClick={[Function]}
                   onFocus={null}
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -287,11 +290,12 @@ exports[` 1`] = `
                   id="box-4"
                   onBlur={null}
                   onChange={null}
+                  onClick={[Function]}
                   onFocus={null}
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -323,11 +327,12 @@ exports[` 1`] = `
                   id="box_long"
                   onBlur={null}
                   onChange={null}
+                  onClick={[Function]}
                   onFocus={null}
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -347,11 +352,12 @@ exports[` 1`] = `
                   id="box_long2"
                   onBlur={null}
                   onChange={null}
+                  onClick={[Function]}
                   onFocus={null}
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -369,7 +375,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 ktEyxq"
+              className="Typography__StyledLabel-sc-19auepv-0 daWsys"
               cursor="pointer"
               fontSize="0.75em"
               fontWeight={400}
@@ -507,7 +513,7 @@ exports[` 1`] = `
           Group 3
         </p>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
           id={null}
           rows={null}
         >
@@ -517,7 +523,7 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gskrvt"
+              className="Typography__StyledLabel-sc-19auepv-0 eTPjnv"
               cursor="pointer"
               fontSize="0.8rem"
               fontWeight={400}
@@ -556,7 +562,7 @@ exports[` 1`] = `
                   value="1"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -583,7 +589,7 @@ exports[` 1`] = `
                   value="2"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -609,7 +615,7 @@ exports[` 1`] = `
                   value="3"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -635,7 +641,7 @@ exports[` 1`] = `
                   value="4"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -673,7 +679,7 @@ exports[` 1`] = `
                   value="5"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -699,7 +705,7 @@ exports[` 1`] = `
                   value="6"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}

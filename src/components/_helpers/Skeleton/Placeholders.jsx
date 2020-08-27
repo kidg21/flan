@@ -8,7 +8,6 @@ const PlaceholderText = css`
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: Nunito;
   font-size: 1em;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   color: ${(props) => {

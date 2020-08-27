@@ -11,11 +11,12 @@ exports[` 1`] = `
     id="Checkbox"
     onBlur={null}
     onChange={null}
+    onClick={[Function]}
     onFocus={null}
     type="checkbox"
   />
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -42,12 +43,13 @@ exports[` 2`] = `
       className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
       id="Checked"
       onBlur={null}
-      onChange={null}
+      onChange={[Function]}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -67,11 +69,12 @@ exports[` 2`] = `
       id="Unchecked"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -91,11 +94,12 @@ exports[` 2`] = `
       id="Error"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -115,12 +119,13 @@ exports[` 2`] = `
       id="Disabled"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       tabIndex="-1"
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -149,11 +154,12 @@ exports[` 3`] = `
       id="Left Aligned"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -173,11 +179,12 @@ exports[` 3`] = `
       id="Right Aligned"
       onBlur={null}
       onChange={null}
+      onClick={[Function]}
       onFocus={null}
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -199,7 +206,7 @@ exports[` 4`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
     id={null}
     rows={null}
   >
@@ -216,7 +223,7 @@ exports[` 4`] = `
         Checkbox Group (2 Columns)
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 kAjljR"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
         id={null}
         rows={null}
       >
@@ -240,11 +247,12 @@ exports[` 4`] = `
                 id="Checkbox-1"
                 onBlur={null}
                 onChange={null}
+                onClick={[Function]}
                 onFocus={null}
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -264,11 +272,12 @@ exports[` 4`] = `
                 id="Checkbox-2"
                 onBlur={null}
                 onChange={null}
+                onClick={[Function]}
                 onFocus={null}
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -288,11 +297,12 @@ exports[` 4`] = `
                 id="Checkbox-3"
                 onBlur={null}
                 onChange={null}
+                onClick={[Function]}
                 onFocus={null}
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -312,11 +322,12 @@ exports[` 4`] = `
                 id="Checkbox-4"
                 onBlur={null}
                 onChange={null}
+                onClick={[Function]}
                 onFocus={null}
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 klyodX"
+                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}

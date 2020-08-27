@@ -7,11 +7,12 @@ exports[` 1`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_139"
+    id="storyshots_157"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -22,14 +23,14 @@ exports[` 1`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="1"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -38,7 +39,7 @@ exports[` 1`] = `
           >
             1
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -61,11 +62,12 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_140"
+    id="storyshots_158"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -76,14 +78,14 @@ exports[` 2`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="1"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -92,7 +94,7 @@ exports[` 2`] = `
           >
             1
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -106,11 +108,12 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_141"
+    id="storyshots_159"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -121,14 +124,14 @@ exports[` 2`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="21"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -137,7 +140,7 @@ exports[` 2`] = `
           >
             21
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -151,11 +154,12 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_142"
+    id="storyshots_160"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -166,14 +170,14 @@ exports[` 2`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="321"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -182,7 +186,7 @@ exports[` 2`] = `
           >
             321
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -196,11 +200,12 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_143"
+    id="storyshots_161"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -211,14 +216,14 @@ exports[` 2`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="4321"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -227,7 +232,7 @@ exports[` 2`] = `
           >
             4321
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -250,11 +255,12 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_144"
+    id="storyshots_162"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -265,14 +271,14 @@ exports[` 3`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="9+"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -281,7 +287,7 @@ exports[` 3`] = `
           >
             9+
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -295,11 +301,12 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_145"
+    id="storyshots_163"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -310,14 +317,14 @@ exports[` 3`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="99+"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -326,7 +333,7 @@ exports[` 3`] = `
           >
             99+
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -340,11 +347,12 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_146"
+    id="storyshots_164"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -355,14 +363,14 @@ exports[` 3`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="999+"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -371,7 +379,7 @@ exports[` 3`] = `
           >
             999+
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -385,11 +393,12 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_147"
+    id="storyshots_165"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -400,14 +409,14 @@ exports[` 3`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="9999+"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -416,7 +425,7 @@ exports[` 3`] = `
           >
             9999+
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -439,11 +448,12 @@ exports[` 4`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_148"
+    id="storyshots_166"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -454,14 +464,14 @@ exports[` 4`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cTlzw"
           id={null}
           label="Info"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -470,7 +480,7 @@ exports[` 4`] = `
           >
             Info
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -484,11 +494,12 @@ exports[` 4`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_149"
+    id="storyshots_167"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -499,14 +510,14 @@ exports[` 4`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 fXnXWY"
           id={null}
           label="Success"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -515,7 +526,7 @@ exports[` 4`] = `
           >
             Success
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -529,11 +540,12 @@ exports[` 4`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_150"
+    id="storyshots_168"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -544,14 +556,14 @@ exports[` 4`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 kKdtCs"
           id={null}
           label="Warning"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -560,7 +572,7 @@ exports[` 4`] = `
           >
             Warning
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -574,11 +586,12 @@ exports[` 4`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_151"
+    id="storyshots_169"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -589,14 +602,14 @@ exports[` 4`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="Alert"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -605,7 +618,7 @@ exports[` 4`] = `
           >
             Alert
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -628,11 +641,12 @@ exports[` 5`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_152"
+    id="storyshots_170"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -643,7 +657,7 @@ exports[` 5`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 krLcFf"
           id={null}
           label={null}
@@ -669,7 +683,7 @@ exports[` 5`] = `
               style={Object {}}
             />
           </svg>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -683,11 +697,12 @@ exports[` 5`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_153"
+    id="storyshots_171"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -698,7 +713,7 @@ exports[` 5`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 gzqBQr"
           id={null}
           label={null}
@@ -724,7 +739,7 @@ exports[` 5`] = `
               style={Object {}}
             />
           </svg>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -738,11 +753,12 @@ exports[` 5`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_154"
+    id="storyshots_172"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -753,7 +769,7 @@ exports[` 5`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 ducmHL"
           id={null}
           label={null}
@@ -779,7 +795,7 @@ exports[` 5`] = `
               style={Object {}}
             />
           </svg>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -793,11 +809,12 @@ exports[` 5`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_155"
+    id="storyshots_173"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -808,7 +825,7 @@ exports[` 5`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 hrlIDK"
           id={null}
           label={null}
@@ -834,7 +851,7 @@ exports[` 5`] = `
               style={Object {}}
             />
           </svg>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -857,11 +874,12 @@ exports[` 6`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_156"
+    id="storyshots_174"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -872,14 +890,14 @@ exports[` 6`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iYhgcQ"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="1"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -888,7 +906,7 @@ exports[` 6`] = `
           >
             1
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -902,11 +920,12 @@ exports[` 6`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_157"
+    id="storyshots_175"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -917,14 +936,14 @@ exports[` 6`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 fLaBfc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="1"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -933,7 +952,7 @@ exports[` 6`] = `
           >
             1
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -947,11 +966,12 @@ exports[` 6`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_158"
+    id="storyshots_176"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -962,14 +982,14 @@ exports[` 6`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 iCQKJc"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="1"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -978,7 +998,7 @@ exports[` 6`] = `
           >
             1
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"
@@ -992,11 +1012,12 @@ exports[` 6`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 kAnULo Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
-    id="storyshots_159"
+    id="storyshots_177"
     media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
@@ -1007,14 +1028,14 @@ exports[` 6`] = `
         className="Badge__BadgeContainer-sc-1rnxbq0-0 cpakTw"
         id={null}
       >
-        <div
+        <span
           className="Tag__TagContainer-sc-128kb3h-0 cFDLHF"
           id={null}
           label="1"
           onClick={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+            className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
             cursor="default"
             fontSize="0.875rem"
             fontWeight={400}
@@ -1023,7 +1044,7 @@ exports[` 6`] = `
           >
             1
           </label>
-        </div>
+        </span>
       </div>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dBAreK"

@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable complexity */
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useCallback } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { useId } from "utils/hooks";
@@ -116,7 +116,7 @@ const CardGridWrapper = styled(Grid)`
   &:empty {
     &:before {
       ${PlaceholderText}
-      content: "{ CardGrid }";
+      content: "${(props) => { return props.placeholder || ""; }}";
     }
   }
 `;
@@ -242,7 +242,7 @@ CardSection.propTypes = {
   id: PropTypes.string,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  variant: PropTypes.oneOf(["info", "success", "warning", "alert", "light"]),
+  variant: PropTypes.oneOf(["", "info", "success", "warning", "alert", "light"]),
 };
 CardSection.defaultProps = {
   children: null,
@@ -272,20 +272,17 @@ function Card({
   more,
   onClick,
   padding,
+  placeholder,
   shadow,
   title,
   variant,
 }) {
   const uId = useId(id);
   const disableTransition = useContext(DisableTransitionContext);
-  const [open, setOpen] = useState(false);
-  function toggleDropdown() {
-    if (open) {
-      setOpen(false);
-    } else {
-      setOpen(true);
-    }
-  }
+  const [open, setOpen] = useState(more && more.initVisible);
+  const toggleDropdown = useCallback(() => {
+    setOpen((show) => { return !show; });
+  }, []);
 
   let centerContent;
 
@@ -312,6 +309,8 @@ function Card({
   let headerSection;
   if (title || description) {
     if (more && more.content) {
+      // controlled by parent component, passes in more.visible
+      const isControlled = more && typeof more.visible === "boolean";
       headerSection = (
         <CardSection id={`${uId}-Header`} variant={variant} disableTransition={disableTransition}>
           <ExpandingSection
@@ -319,10 +318,11 @@ function Card({
             icon={icon}
             label={label}
             onClick={(e) => {
-              toggleDropdown(e);
-              if (more.onToggle) more.onToggle(e);
+              if (!isControlled) toggleDropdown(e);
+              if (more.onToggle) more.onToggle(e); // deprecated, use onClick
+              if (more.onClick) more.onClick(e);
             }}
-            open={open}
+            open={isControlled ? more.visible : open}
             title={title}
           >
             {more.content}
@@ -411,6 +411,7 @@ function Card({
       onClick={onClick}
       padding={padding}
       shadow={shadow}
+      placeholder={placeholder}
     >
       {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
@@ -445,11 +446,21 @@ Card.propTypes = {
   mediaDesc: PropTypes.string,
   media: PropTypes.string,
   more: PropTypes.shape({
+    /** content to render */
     content: PropTypes.node,
+    /** initialize open/close state of (uncontrolled) more */
+    initVisible: PropTypes.bool,
+    /** callback when clicking header/expanding section to open */
+    onClick: PropTypes.func,
+    /** deprecated, use onClick */
     onToggle: PropTypes.func,
+    /** expand card & show (controlled) more */
+    visible: PropTypes.bool,
   }),
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
+  /** placeholder text when card is empty */
+  placeholder: PropTypes.string,
   shadow: PropTypes.oneOf(["0", "2x"]),
   title: PropTypes.string,
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
@@ -471,13 +482,14 @@ Card.defaultProps = {
   more: null,
   onClick: null,
   padding: "0",
+  placeholder: "{ Card }",
   shadow: null,
   title: "",
   variant: null,
 };
 
 function CardGrid({
-  children, className, columns, data, gap, id, isInverse, rows,
+  children, className, columns, data, gap, id, isInverse, placeholder, rows,
 }) {
   return (
     <CardGridWrapper
@@ -486,6 +498,7 @@ function CardGrid({
       gap={gap || "lg"}
       id={id}
       rows={rows}
+      placeholder={placeholder}
     >
       {children
         || data.map((item) => {
@@ -557,6 +570,8 @@ CardGrid.propTypes = {
   ]),
   id: PropTypes.string,
   isInverse: PropTypes.bool,
+  /** placeholder text when card grid is empty */
+  placeholder: PropTypes.string,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
@@ -571,6 +586,7 @@ CardGrid.defaultProps = {
   gap: null,
   id: null,
   isInverse: false,
+  placeholder: "{ CardGrid }",
   rows: null,
 };
 

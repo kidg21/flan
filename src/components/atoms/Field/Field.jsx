@@ -11,7 +11,7 @@ const FieldItem = styled(Grid)`
   color: ${(props) => {
     return props.theme.text.secondary;
   }};
-  align-items: baseline;
+  align-items: top;
   width: 100%;
   grid-template-columns: ${(props) => {
     return props.fieldColumns || "";
@@ -71,11 +71,31 @@ const Section = styled.section`
 `;
 
 function Field({
-  align, className, disabled, id, label, onChange, onClick, value,
+  align,
+  className,
+  disabled,
+  href,
+  id,
+  label,
+  onChange,
+  onClick,
+  target,
+  value,
+  labelWidth,
+  valueWidth,
 }) {
   let fieldColumns;
   let fieldGap;
   let valueAlign;
+
+  let labelSpacing = parseInt(labelWidth, 10);
+  if (isNaN(labelSpacing)) labelSpacing = "auto";
+  else labelSpacing += "fr";
+
+  let valueSpacing = parseInt(valueWidth, 10);
+  if (isNaN(valueSpacing)) valueSpacing = "auto";
+  else valueSpacing += "fr";
+
   switch (align) {
     case "vertical":
       fieldColumns = "repeat(1, minmax(0, 1fr))";
@@ -86,9 +106,9 @@ function Field({
       valueAlign = "right";
       break;
     default:
+      fieldColumns = `${labelSpacing} ${valueSpacing}`;
       break;
   }
-
 
   let field = (
     <FieldValue
@@ -100,9 +120,9 @@ function Field({
     </FieldValue>
   );
 
-  if (onClick) {
+  if (href || onClick) {
     field = (
-      <Link disabled={disabled} size="lg" onClick={onClick}>
+      <Link disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick}>
         {field}
       </Link>
     );
@@ -123,23 +143,31 @@ function Field({
 
 Field.propTypes = {
   align: PropTypes.oneOf(["vertical", "edge", "tight"]),
+  labelWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
+  valueWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
+  href: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
   /** Not currently being used but staying put for the next iteration. */
   onChange: PropTypes.func,
   onClick: PropTypes.func,
+  target: PropTypes.string,
   value: PropTypes.node,
 };
 
 Field.defaultProps = {
   align: null,
+  labelWidth: "1x",
+  valueWidth: "1x",
   className: null,
   disabled: false,
+  href: undefined,
   id: null,
   onChange: null,
   onClick: null,
+  target: "_blank",
   value: null,
 };
 
@@ -240,7 +268,7 @@ FieldGroup.defaultProps = {
   children: null,
   className: null,
   gap: null,
-  columns: null,
+  columns: 1,
   data: [],
   id: null,
   title: null,

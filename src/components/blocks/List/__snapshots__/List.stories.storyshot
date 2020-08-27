@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <ul
-  className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+  className="List__ListWrapper-sc-43f2zq-0 eDrpci"
   id={null}
 >
   <li
@@ -107,7 +107,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <ul
-  className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+  className="List__ListWrapper-sc-43f2zq-0 eDrpci"
   id={null}
 >
   <li
@@ -240,7 +240,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <ul
-  className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+  className="List__ListWrapper-sc-43f2zq-0 eDrpci"
   id={null}
 >
   <li
@@ -364,7 +364,7 @@ exports[` 4`] = `
   rows={null}
 >
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+    className="List__ListWrapper-sc-43f2zq-0 eDrpci"
     id={null}
   >
     <li
@@ -493,7 +493,7 @@ exports[` 4`] = `
     </li>
   </ul>
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+    className="List__ListWrapper-sc-43f2zq-0 OakPD"
     id={null}
   >
     <li
@@ -622,7 +622,7 @@ exports[` 4`] = `
     </li>
   </ul>
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 DEwqS"
+    className="List__ListWrapper-sc-43f2zq-0 lfDoce"
     id={null}
   >
     <li
@@ -751,7 +751,7 @@ exports[` 4`] = `
     </li>
   </ul>
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 hEDtIn"
+    className="List__ListWrapper-sc-43f2zq-0 jVRQfb"
     id={null}
   >
     <li
@@ -880,7 +880,7 @@ exports[` 4`] = `
     </li>
   </ul>
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+    className="List__ListWrapper-sc-43f2zq-0 eDrpci"
     id={null}
   >
     <li
@@ -1009,7 +1009,7 @@ exports[` 4`] = `
     </li>
   </ul>
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 ikbOwz"
+    className="List__ListWrapper-sc-43f2zq-0 OakPD"
     id={null}
   >
     <li
@@ -1147,7 +1147,7 @@ exports[` 5`] = `
   rows={null}
 >
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+    className="List__ListWrapper-sc-43f2zq-0 eDrpci"
     id={null}
   >
     <li
@@ -1389,7 +1389,7 @@ exports[` 5`] = `
     </li>
   </ul>
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+    className="List__ListWrapper-sc-43f2zq-0 eDrpci"
     id={null}
   >
     <li
@@ -1443,14 +1443,14 @@ exports[` 5`] = `
         <div
           className="Bar__Slot-icfo76-1 cxljst"
         >
-          <div
+          <span
             className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="Label"
             onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+              className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
               cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1459,7 +1459,7 @@ exports[` 5`] = `
             >
               Label
             </label>
-          </div>
+          </span>
         </div>
       </div>
     </li>
@@ -1501,14 +1501,14 @@ exports[` 5`] = `
         <div
           className="Bar__Slot-icfo76-1 cxljst"
         >
-          <div
+          <span
             className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="6"
             onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+              className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
               cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1517,7 +1517,7 @@ exports[` 5`] = `
             >
               6
             </label>
-          </div>
+          </span>
         </div>
       </div>
     </li>
@@ -1559,14 +1559,14 @@ exports[` 5`] = `
         <div
           className="Bar__Slot-icfo76-1 cxljst"
         >
-          <div
+          <span
             className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="NEW!"
             onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+              className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
               cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1575,7 +1575,7 @@ exports[` 5`] = `
             >
               NEW!
             </label>
-          </div>
+          </span>
         </div>
       </div>
     </li>
@@ -1617,14 +1617,14 @@ exports[` 5`] = `
         <div
           className="Bar__Slot-icfo76-1 cxljst"
         >
-          <div
+          <span
             className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
             id={null}
             label="9"
             onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bKanOn"
+              className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
               cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1633,13 +1633,13 @@ exports[` 5`] = `
             >
               9
             </label>
-          </div>
+          </span>
         </div>
       </div>
     </li>
   </ul>
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+    className="List__ListWrapper-sc-43f2zq-0 eDrpci"
     id={null}
   >
     <li
@@ -1816,36 +1816,31 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <a
-            className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+            className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+            disabled={null}
+            href={null}
             onClick={[Function]}
           >
-            <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
-              disabled={null}
-              href={null}
-              onClick={[Function]}
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-home-alt fa-w-18 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              color="link"
+              data-icon="home-alt"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-home-alt fa-w-18 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
-                color="link"
-                data-icon="home-alt"
-                data-prefix="fas"
-                focusable="false"
-                fontSize="inherit"
-                id={null}
-                role="img"
+              <path
+                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                fill="currentColor"
                 style={Object {}}
-                viewBox="0 0 576 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </a>
+              />
+            </svg>
           </a>
         </div>
       </div>
@@ -1889,36 +1884,31 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <a
-            className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+            className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+            disabled={null}
+            href={null}
             onClick={[Function]}
           >
-            <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
-              disabled={null}
-              href={null}
-              onClick={[Function]}
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-bookmark fa-w-12 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              color="link"
+              data-icon="bookmark"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-bookmark fa-w-12 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
-                color="link"
-                data-icon="bookmark"
-                data-prefix="far"
-                focusable="false"
-                fontSize="inherit"
-                id={null}
-                role="img"
+              <path
+                d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm0 428.43l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.314 0 6 2.683 6 5.996V428.43z"
+                fill="currentColor"
                 style={Object {}}
-                viewBox="0 0 384 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm0 428.43l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.314 0 6 2.683 6 5.996V428.43z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </a>
+              />
+            </svg>
           </a>
         </div>
       </div>
@@ -1934,7 +1924,7 @@ exports[` 6`] = `
   rows={null}
 >
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+    className="List__ListWrapper-sc-43f2zq-0 eDrpci"
     id={null}
   >
     <li
@@ -1998,6 +1988,7 @@ exports[` 6`] = `
               id={null}
               onBlur={null}
               onChange={null}
+              onClick={[Function]}
               onFocus={null}
               type="checkbox"
             />
@@ -2053,6 +2044,7 @@ exports[` 6`] = `
               id={null}
               onBlur={null}
               onChange={null}
+              onClick={[Function]}
               onFocus={null}
               type="checkbox"
             />
@@ -2108,6 +2100,7 @@ exports[` 6`] = `
               id={null}
               onBlur={null}
               onChange={null}
+              onClick={[Function]}
               onFocus={null}
               type="checkbox"
             />
@@ -2163,6 +2156,7 @@ exports[` 6`] = `
               id={null}
               onBlur={null}
               onChange={null}
+              onClick={[Function]}
               onFocus={null}
               type="checkbox"
             />
@@ -2172,7 +2166,7 @@ exports[` 6`] = `
     </li>
   </ul>
   <ul
-    className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+    className="List__ListWrapper-sc-43f2zq-0 eDrpci"
     id={null}
   >
     <li

@@ -243,7 +243,7 @@ module.exports = {
     storiesOf: true,
     withInfo: true,
     withKnobs: true,
-    checkA11y: true,
+    withA11y: true,
     text: true,
     boolean: true,
     object: true,
