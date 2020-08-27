@@ -73,6 +73,18 @@ storiesOf("Templates|Applications/Research/Property", module)
           }
         };
 
+        const [regionsActive, setRegions] = useState(true); // Enable/Disable Regions Button
+        const [menuRegionsActive, setRegionsMenu] = useState(false); // Toggle Regions Menu
+        const toggleInclusions = () => {
+          setRegions(!regionsActive);
+          if (regionsActive === true) {
+            setRegionsMenu(false);
+          }
+        };
+        const toggleRegions = () => {
+          setRegionsMenu(!menuRegionsActive);
+        };
+
         const [circle1, setCircle1] = useState(false);
         const toggleCircle1 = () => { setCircle1(!circle1); };
         const closeCircle1 = () => { setCircle1(false); };
@@ -152,9 +164,6 @@ storiesOf("Templates|Applications/Research/Property", module)
           <Icon icon="up" rotation={toggleIcon} onClick={toggleBottomMax} />,
           <Icon icon="close" onClick={closeBottom} />,
         ];
-
-        const [addInclusions, setInclusions] = useState(true);
-        const toggleInclusions = () => { setInclusions(!addInclusions); };
 
         return (
           <Layout
@@ -238,41 +247,118 @@ storiesOf("Templates|Applications/Research/Property", module)
                           center={{
                             content: (
                               <Grid columns="auto 1fr" gap="4xl" align="center">
-                                <Inline>
-                                  <Menu
-                                    data={[
-                                      {
-                                        id: "circle-1",
-                                        label: <Checkbox label="Circle 1" checked={circle1} />,
-                                        onClick: toggleCircle1,
-                                      },
-                                      {
-                                        id: "shape-2",
-                                        label: <Checkbox label="Shape 2" checked={shape2} />,
-                                        onClick: toggleShape2,
-                                      },
-                                      { id: "create", label: <Command icon="plus" label="Add Region" /> },
-                                    ]}
-                                    position="bottomRight"
-                                  >
-                                    <Button
-                                      id="regions_list"
-                                      icon="circle"
-                                      label="Regions"
-                                      count="2"
-                                      isPlain
-                                      disabled={!addInclusions}
-                                    />
-                                  </Menu>
+                                <Inline spacingX="0" spacingY="0.5rem">
                                   <Checkbox
                                     id="include"
                                     label="Include"
                                     labelVisible={false}
                                     onChange={toggleInclusions}
-                                    checked={addInclusions}
+                                    checked={regionsActive}
                                   />
-                                </Inline>
-                                <Inline spacingX="0" spacingY="0.5rem">
+                                  <Popper
+                                    usePortal
+                                    isFlex
+                                    visible={menuRegionsActive}
+                                    anchor={(
+                                      <Button
+                                        id="regions_list"
+                                        label="Regions"
+                                        count="2"
+                                        isPlain
+                                        onClick={toggleRegions}
+                                        disabled={!regionsActive}
+                                      />
+                                    )}
+                                  >
+                                    <Card
+                                      padding="2x"
+                                      shadow="2x"
+                                      commands={[
+                                        {
+                                          id: "Command One",
+                                          icon: "plus",
+                                          label: "Create Region",
+                                        },
+                                      ]}
+                                    >
+                                      <Container maxHeight="16rem">
+                                        <List isInteractive>
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Circle 01", onChange: toggleCircle1,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Shape 02", onClick: toggleShape2,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Circle 02", onChange: toggleCircle1,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Shape 04", onClick: toggleShape2,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Circle 03", onChange: toggleCircle1,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Shape 06", onClick: toggleShape2,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Circle 04", onChange: toggleCircle1,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Shape 08", onClick: toggleShape2,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Circle 05", onChange: toggleCircle1,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Shape 10", onClick: toggleShape2,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Circle 06", onChange: toggleCircle1,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                          <ListItem
+                                            pre={{
+                                              type: "checkbox", label: "Shape 12", onClick: toggleShape2,
+                                            }}
+                                            post={{ type: "icon", icon: "close" }}
+                                          />
+                                        </List>
+                                      </Container>
+                                    </Card>
+                                  </Popper>
                                   {/* <Tag label="'Entered Search Phrase'" variant="success" brand2="brand4" icon="close" onClickIcon={() => { }} /> */}
                                   <Tag label="Shopping Center" brand="brand1" icon="close" onClickIcon={() => { }} />
                                   <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
@@ -313,14 +399,16 @@ storiesOf("Templates|Applications/Research/Property", module)
                                 <Button label="More" icon="more" isPlain size="sm" alignCenter onClick={toggleToolMore} />
                               )}
                             >
-                              <Card padding="2x" shadow="2x">
-                                <ButtonGroup columns="1">
-                                  <Button label="Measure" icon="measure" isPlain size="sm" onClick={toggleToolMore} />
-                                  <Button label="Draw" icon="draw" isPlain size="sm" onClick={toggleToolMore} />
-                                  <Button label="Layers" icon="layers" isPlain size="sm" onClick={toggleToolMore} />
-                                  <Button label="Legend" icon="list" isPlain size="sm" onClick={toggleToolMore} />
-                                  <Button label="View" icon="map" isPlain size="sm" onClick={toggleToolMore} />
-                                </ButtonGroup>
+                              <Card padding="4x" shadow="2x">
+                                <Container maxHeight="12rem">
+                                  <Grid columns="1" gap="lg">
+                                    <Command label="Measure" icon="measure" isPlain size="sm" onClick={toggleToolMore} />
+                                    <Command label="Draw" icon="draw" isPlain size="sm" onClick={toggleToolMore} />
+                                    <Command label="Layers" icon="layers" isPlain size="sm" onClick={toggleToolMore} />
+                                    <Command label="Legend" icon="list" isPlain size="sm" onClick={toggleToolMore} />
+                                    <Command label="View" icon="map" isPlain size="sm" onClick={toggleToolMore} />
+                                  </Grid>
+                                </Container>
                               </Card>
                             </Popper>
                           </ButtonGroup>
