@@ -18,33 +18,20 @@ import Tag from "atoms/Tag";
 import Menu from "blocks/Menu";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
-import Form, { FormSection } from "layout/Form";
 import Checkbox from "atoms/Checkbox";
 import Image from "atoms/Image";
 import Field, { FieldGroup, FieldSection } from "atoms/Field";
-import Text, { Title, Label, Link } from "base/Typography";
-import CardWrapper from "elements/Card/CardWrapper.jsx";
+import Text, { Title } from "base/Typography";
 import Card, { CardSection } from "elements/Card";
-import Expander from "utils/Expander";
-import SelectMenu from "atoms/SelectMenu";
-import Switch from "atoms/Switch";
 import ParcelMap from "images/maps/map-thumb.png";
 import {
   MockHeader,
   MockHeaderGlobal,
   MockMenu,
   MockTabs,
-  MockData,
   MockDetails,
-  MockFooter,
-  MockForm,
-  MockWorkflow,
   MockTable,
 } from "helpers/Mocks";
-
-function doNothing() {
-  // do nothing
-}
 
 storiesOf("Templates|Applications/Research/Property", module)
   .addDecorator(FullScreen)
@@ -61,17 +48,17 @@ storiesOf("Templates|Applications/Research/Property", module)
         // const closeRight = () => { setRightOpen(false); };
         // const toggleRight = () => { setRightOpen(!rightOpen); };
 
-        const [stateSummary, setSummary] = useState("");
+        // const [stateSummary, setSummary] = useState("");
         const [fade, setFade] = useState("1");
         const openSummary = () => { setFade("1"); };
         const closeSummary = () => { setFade("0"); };
-        const toggleSummary = () => {
-          if (fade === "1") {
-            setFade("0");
-          } else {
-            setFade("1");
-          }
-        };
+        // const toggleSummary = () => {
+        //   if (fade === "1") {
+        //     setFade("0");
+        //   } else {
+        //     setFade("1");
+        //   }
+        // };
 
         const [regionsActive, setRegions] = useState(true); // Enable/Disable Regions Button
         const [menuRegionsActive, setRegionsMenu] = useState(false); // Toggle Regions Menu
@@ -85,20 +72,15 @@ storiesOf("Templates|Applications/Research/Property", module)
           setRegionsMenu(!menuRegionsActive);
         };
 
-        const [circle1, setCircle1] = useState(false);
-        const toggleCircle1 = () => { setCircle1(!circle1); };
-        const closeCircle1 = () => { setCircle1(false); };
-        const [shape2, setShape2] = useState(false);
-        const toggleShape2 = () => { setShape2(!shape2); };
-        const closeShape2 = () => { setShape2(false); };
+        const [region01, setRegion01] = useState(true);
+        const toggleRegion01 = () => { setRegion01(!region01); };
+        // const closeRegion01 = () => { setRegion01(false); };
+        const [region02, setRegion02] = useState(true);
+        const toggleRegion02 = () => { setRegion02(!region02); };
+        // const closeRegion02 = () => { setRegion02(false); };
 
         const [toolMore, setToolMore] = useState(false);
         const toggleToolMore = () => { setToolMore(!toolMore); };
-
-        // const [filterArea, setFilterArea] = useState("Current View");
-        // const filterCurrent = () => { setFilterArea("Current View"); };
-        // const filterCircle = () => { setFilterArea("Circle 1"); };
-        // const filterShape = () => { setFilterArea("Shape 2"); };
 
         const [bottomMax, setBottomMax] = useState(false);
         const toggleBottomMax = () => { setBottomMax(!bottomMax); };
@@ -108,10 +90,10 @@ storiesOf("Templates|Applications/Research/Property", module)
           setBottomState(false);
           setBottomMax(false);
         };
-        const toggleBottom = () => {
-          setBottomState(!bottomState);
-          setBottomMax(false);
-        };
+        // const toggleBottom = () => {
+        //   setBottomState(!bottomState);
+        //   setBottomMax(false);
+        // };
 
         const menuMain = [
           {
@@ -133,14 +115,15 @@ storiesOf("Templates|Applications/Research/Property", module)
           },
         ];
 
-        const [open, setOpen] = useState(false);
-        const toggleDetails = () => { setOpen(!open); };
-        let iconContent;
-        if (open) {
-          iconContent = "minus";
-        } else {
-          iconContent = "plus";
-        }
+        /** keeping around for Summary 'toggle' interaction */
+        // const [open, setOpen] = useState(false);
+        // const toggleDetails = () => { setOpen(!open); };
+        // let iconContent;
+        // if (open) {
+        //   iconContent = "minus";
+        // } else {
+        //   iconContent = "plus";
+        // }
 
         let toggleIcon;
 
@@ -285,73 +268,13 @@ storiesOf("Templates|Applications/Research/Property", module)
                                         <List isInteractive>
                                           <ListItem
                                             pre={{
-                                              type: "checkbox", label: "Circle 01", onChange: toggleCircle1,
+                                              type: "checkbox", label: "Region 01", checked: region01, onClick: toggleRegion01,
                                             }}
                                             post={{ type: "icon", icon: "close" }}
                                           />
                                           <ListItem
                                             pre={{
-                                              type: "checkbox", label: "Shape 02", onClick: toggleShape2,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Circle 02", onChange: toggleCircle1,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Shape 04", onClick: toggleShape2,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Circle 03", onChange: toggleCircle1,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Shape 06", onClick: toggleShape2,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Circle 04", onChange: toggleCircle1,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Shape 08", onClick: toggleShape2,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Circle 05", onChange: toggleCircle1,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Shape 10", onClick: toggleShape2,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Circle 06", onChange: toggleCircle1,
-                                            }}
-                                            post={{ type: "icon", icon: "close" }}
-                                          />
-                                          <ListItem
-                                            pre={{
-                                              type: "checkbox", label: "Shape 12", onClick: toggleShape2,
+                                              type: "checkbox", label: "Region 02", checked: region02, onClick: toggleRegion02,
                                             }}
                                             post={{ type: "icon", icon: "close" }}
                                           />
@@ -359,13 +282,12 @@ storiesOf("Templates|Applications/Research/Property", module)
                                       </Container>
                                     </Card>
                                   </Popper>
-                                  {/* <Tag label="'Entered Search Phrase'" variant="success" brand2="brand4" icon="close" onClickIcon={() => { }} /> */}
                                   <Tag label="Shopping Center" brand="brand1" icon="close" onClickIcon={() => { }} />
                                   <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
                                   <Tag label="Expensive " brand="brand1" icon="close" onClickIcon={() => { }} />
                                   <Tag label="EX: Boundary 1" brand="brand1" icon="close" onClickIcon={() => { }} />
-                                  {/* {circle1 ? <Tag label="Circle 1" variant="info" icon="close" onClickIcon={closeCircle1} /> : ""} */}
-                                  {/* {shape2 ? <Tag label="Shape 2" variant="info" icon="close" onClickIcon={closeShape2} /> : ""} */}
+                                  {/* {region01 ? <Tag label="Region 01" variant="info" icon="close" onClickIcon={closeRegion01} /> : ""} */}
+                                  {/* {region02 ? <Tag label="Region 02" variant="info" icon="close" onClickIcon={closeRegion02} /> : ""} */}
                                 </Inline>
                               </Grid>
                             ),
@@ -385,7 +307,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                       id: "A",
                       content: (
                         <Card padding="2x" shadow="2x">
-                          <ButtonGroup gap="lg" columns="1">
+                          <ButtonGroup columns="1">
                             <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
                             <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
                             <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
@@ -418,13 +340,17 @@ storiesOf("Templates|Applications/Research/Property", module)
                     }}
                     B={{
                       content: (
-                        <MockDetails recordTitle="22902 Trabuco Rd, Mission Viejo, CA 92691" actionClose={closeSummary} offcanvas={stateSummary} />
+                        <MockDetails
+                          recordTitle="22902 Trabuco Rd, Mission Viejo, CA 92691"
+                          actionClose={closeSummary}
+                        // offcanvas={stateSummary} // keeping for toggle interaction
+                        />
                       ),
                       opacity: fade,
                     }}
                   />
                   <Mapbox
-                    map2="satellite"
+                    // map="satellite"
                     center={[-117.6582, 33.5969]}
                     zoom={[17]}
                     mapClick={openSummary}
@@ -432,6 +358,7 @@ storiesOf("Templates|Applications/Research/Property", module)
                 </Panel>
               ),
             }}
+            /** Option: Summary in 'right' region of Layout */
             // right={{
             //   id: "Summary Panel",
             //   content: (
@@ -444,7 +371,7 @@ storiesOf("Templates|Applications/Research/Property", module)
               content: (
                 <MockTable actionsTable={actionsTable} />
               ),
-              height: bottomMax,
+              fullHeight: bottomMax,
               visible: bottomState,
             }}
           />
@@ -454,265 +381,7 @@ storiesOf("Templates|Applications/Research/Property", module)
   )
 
   .add(
-    "Property Main",
-    () => {
-      return React.createElement(() => {
-        const [leftOpen, setLeftOpen] = useState(true);
-        const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        return (
-          <Layout
-            header={{
-              id: "Header",
-              content: <MockHeaderGlobal menuClick={toggleLeft} />,
-            }}
-            left={{
-              id: "Left",
-              content: (
-                <List title="Research" isInteractive isInverse>
-                  <ListItem title="Dashboard" />
-                  <ListItem title="Projects" />
-                  <ListItem title="Properties" isSelected />
-                </List>),
-              visible: leftOpen,
-            }}
-            main={{
-              id: "Main",
-              content: (
-                <Panel
-                  padding="0"
-                  header={(
-                    <Card
-                      id="Card_Header"
-                      padding="0"
-                    >
-                      <CardSection variant="light" padding="0">
-                        <Bar
-                          contentAlign="center"
-                          padding="1x"
-                          left={{
-                            content: (
-                              <Title text="Properties" />),
-                            align: "left",
-                          }}
-                          right={{
-                            content: (
-                              <Button icon="options" isRound isPlain variant="neutral" />
-                            ),
-                          }}
-                        />
-                      </CardSection>
-                    </Card>
-                  )}
-                >
-                  <Panel
-                    padding="0"
-                    header={(
-                      <Bar
-                        padding="1x"
-                        contentAlign="center"
-                        left={{
-                          content: (
-                            <Search />),
-                          width: "30rem",
-                        }}
-                        center={{
-                          content: (<Title text="309 results" size="lg" />),
-                          align: "right",
-                        }}
-                        right={{
-                          content: (<Button label="View Results" isSolid />),
-                          width: "fit-content",
-                        }}
-                      />
-                    )}
-                  >
-                    <Template
-                      id="Assessment"
-                      isOverlay
-                      template="D_02"
-                      A={{
-                        id: "A",
-                        content: (
-                          <Container width="4rem">
-                            <Card padding="2x">
-                              <ButtonGroup gap="3xl" columns="1">
-                                <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
-                                <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
-                                <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
-                                <Button label="More" icon="more" isPlain size="sm" alignCenter />
-                              </ButtonGroup>
-                            </Card>
-                          </Container>
-                        ),
-                      }}
-                    />
-                    <Mapbox />
-                  </Panel>
-                </Panel>),
-            }}
-            bottom={{
-              id: "Bottom",
-              content: (<Title text="Table goes here" />),
-            }}
-          />
-        );
-      });
-    },
-  )
-  .add(
-    "Property Details",
-    () => {
-      return React.createElement(() => {
-        const [leftOpen, setLeftOpen] = useState(true);
-        const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-
-        return (
-          <Layout
-            header={{
-              id: "Header",
-              content: <MockHeaderGlobal menuClick={toggleLeft} />,
-            }}
-            left={{
-              id: "Left",
-              content: (
-                <List title="Research" isInteractive isInverse>
-                  <ListItem title="Dashboard" />
-                  <ListItem title="Projects" />
-                  <ListItem title="Properties" isSelected />
-                </List>),
-              visible: leftOpen,
-            }}
-            main={{
-              id: "Main",
-              content: (
-                <Layout
-                  header={{
-                    content: (
-                      <React.Fragment>
-                        <Bar
-                          padding="1x"
-                          contentAlign="center"
-                          left={{
-                            content: (
-                              <Search />),
-                            width: "30rem",
-                          }}
-                          center={{
-                            content: (<Title text="309 results" size="lg" />),
-                            align: "right",
-                          }}
-                          right={{
-                            content: (<Button label="View Results" isSolid />),
-                            width: "fit-content",
-                          }}
-                        />
-                        <Inline spacingX="0.2em" spacingY="0.3em">
-                          <Text text="Filters :" weight="medium" />
-                          <Tag label="Shopping Center" brand="brand1" icon="close" />
-                          <Tag label="California" brand="brand1" icon="close" />
-                          <Tag label="Expensize " brand="brand1" icon="close" />
-                          <Tag label="EX: Boundary 1" brand="brand1" icon="close" />
-                          <Tag label="IN: Boundary 3" brand="brand1" icon="close" />
-                          <Tag label="Add More" icon="plus" />
-                          <Button label="Inclusion" size="sm" />
-                          <Button label="Exclusion" size="sm" />
-                        </Inline>
-                      </React.Fragment>),
-                  }}
-                  main={{
-                    id: "Map",
-                    content: (
-                      <Layout
-                        main={{
-                          id: "A",
-                          content: (
-                            <Panel padding="0">
-                              <Template
-                                id="Assessment"
-                                isOverlay
-                                template="D_02"
-                                A={{
-                                  id: "A",
-                                  content: (
-                                    <Container width="4rem">
-                                      <Card padding="2x">
-                                        <ButtonGroup gap="3xl" columns="1">
-                                          <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
-                                          <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
-                                          <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
-                                          <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
-                                          <Button label="View" icon="map" isPlain size="sm" alignCenter />
-                                          <Button label="Reset" icon="sync" isPlain size="sm" alignCenter />
-                                          <Button label="More" icon="more" isPlain size="sm" alignCenter />
-                                        </ButtonGroup>
-                                      </Card>
-                                    </Container>
-                                  ),
-                                }}
-                              />
-                              <Mapbox />
-                            </Panel>),
-                        }}
-                        right={{
-                          content: (
-                            <Panel
-                              padding="0"
-                              header={(
-                                <Bar
-                                  contentAlign="center"
-                                  padding="2x"
-                                  left={(
-                                    <React.Fragment>
-                                      <Title size="2xl" weight="medium" text="22902 Trabuco Rd.," />
-                                      <Text text="Mission Viejo CA" />
-                                    </React.Fragment>
-                                  )}
-                                  right={{
-                                    content: (<Icon icon="export" onClick={doNothing} />),
-                                    width: "fit-content",
-                                  }}
-                                />
-                              )}
-                            >
-                              <Image width="100%" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" />
-                              <FieldSection>
-                                <FieldGroup gap="sm" columns="1">
-                                  <Field align="edge" label="Parcel No." value="808-221-12" onClick />
-                                  <Field align="edge" label="Land User" value="Commercial Shopping Center" />
-                                  <Field align="edge" label="Building Area" value="25,344 SF" />
-                                  <Field align="edge" label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
-                                  <Field align="edge" label="Building/Lot" value="0.15" />
-                                  <Field align="edge" label="No. of Units" value="" />
-                                  <Field align="edge" label="Year Built" value="1978" />
-                                </FieldGroup>
-                                <FieldGroup gap="sm" columns="1" title="Owners">
-                                  <Field align="edge" label="Owners" value="SCF-Los Alisos LLC" onClick />
-                                  <Field align="edge" label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
-                                  <Field align="edge" label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick />
-                                  <Field align="edge" label="Last Sale" value="10/2/15 for $11,500,000" onClick />
-                                  <Field align="edge" label="Total Assd Value" value="$10,045,870" />
-
-                                </FieldGroup>
-                              </FieldSection>
-                            </Panel>
-                          ),
-                        }}
-                      />
-                    ),
-                  }}
-                />
-              ),
-            }}
-          />
-        );
-      });
-    },
-  )
-  .add(
-    "Property Overview",
+    "Overview",
     () => {
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
