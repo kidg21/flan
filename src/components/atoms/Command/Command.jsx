@@ -26,6 +26,7 @@ const CommandContainer = styled.a`
   font-size: ${(props) => {
     return props.commandSize || "";
   }};
+  line-height: inherit;
   color: ${(props) => {
     return props.theme.text[props.commandColor] || props.theme.text.link;
   }};
@@ -47,7 +48,7 @@ const CommandContainer = styled.a`
 const CommandName = styled(Label)`
   grid-area: name;
   font-weight: 500;
-  line-height: normal;
+  font-size: inherit;
   color: inherit;
   text-transform: capitalize;
   overflow: hidden;
