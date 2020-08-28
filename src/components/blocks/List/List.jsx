@@ -304,7 +304,7 @@ ListItem.propTypes = {
   isSelected: PropTypes.bool,
   onClick: PropTypes.func,
   onClickItem: PropTypes.func,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   post: PropTypes.oneOfType([PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
@@ -336,6 +336,7 @@ ListItem.defaultProps = {
   isSelected: false,
   onClick: null,
   onClickItem: null,
+  title: null,
   post: null,
   pre: null,
   tabIndex: "0",
