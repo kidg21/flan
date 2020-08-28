@@ -18,7 +18,10 @@ const Region = styled.section`
     return props.theme.palette.neutral40;
   }};
   overflow: ${(props) => {
-    return props.overflow || "auto";
+    // default overflow to hidden for overlay templates
+    // scroll doesn't work since pointer-events are disabled
+    const defaultOverflow = props.isOverlay ? "hidden" : "auto";
+    return props.overflow || defaultOverflow;
   }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
