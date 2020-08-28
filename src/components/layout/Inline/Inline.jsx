@@ -56,10 +56,11 @@ function Inline({
       justifyContent={justifyContent}
     >
       {children.length > 0
-        ? children.map((child) => {
+        ? children.map((child, index) => {
+          const itemKey = index;
           return (
             <InlineItem
-              key={child && child.key ? `${child.key}-wrapper` : null}
+              key={child ? `${itemKey}-wrapper` : null}
               inlineMargin={child ? inlineMargin : ""}
               inlinePadding={child ? inlinePadding : "0"}
             >
