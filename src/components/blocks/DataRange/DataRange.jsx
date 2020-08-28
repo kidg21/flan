@@ -146,7 +146,7 @@ const selectType = PropTypes.shape({
   label: PropTypes.string,
   onChange: PropTypes.func,
   options: PropTypes.map,
-  selected: PropTypes.string,
+  selected: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.any), PropTypes.any]),
 });
 
 const textType = PropTypes.shape({
