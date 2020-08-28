@@ -19,6 +19,7 @@ storiesOf("Layout|Layout/", module)
     () => {
       return (
         <Layout
+          classname="chromatic-ignore"
           main={{ id: "Main", content: "" }}
         />
       );
@@ -29,6 +30,7 @@ storiesOf("Layout|Layout/", module)
     () => {
       return (
         <Layout
+          classname="chromatic-ignore"
           left={{ id: "Left", content: "" }}
           main={{ id: "Main", content: "" }}
           right={{ id: "Right", content: "" }}
@@ -41,6 +43,7 @@ storiesOf("Layout|Layout/", module)
     () => {
       return (
         <Layout
+          classname="chromatic-ignore"
           left={{ id: "Left", content: "" }}
           main={{ id: "Main", content: "" }}
           right={{ id: "Right", content: "" }}
@@ -54,6 +57,7 @@ storiesOf("Layout|Layout/", module)
     () => {
       return (
         <Layout
+          classname="chromatic-ignore"
           header={{ id: "Header", content: "" }}
           left={{ id: "Left", content: "" }}
           main={{ id: "Main", content: "" }}
@@ -76,6 +80,7 @@ storiesOf("Layout|Layout/", module)
         const toggleBottom = () => { setBottomOpen(!bottomOpen); };
         return (
           <Layout
+            classname="chromatic-ignore"
             header={{
               id: "Header",
               content: (
@@ -157,6 +162,7 @@ storiesOf("Layout|Layout/", module)
         };
         return (
           <Layout
+            classname="chromatic-ignore"
             header={{
               id: "Header",
               content: (
@@ -231,6 +237,7 @@ storiesOf("Layout|Layout/", module)
         const toggleBottom = () => { setBottomOpen(!bottomOpen); };
         return (
           <Layout
+            classname="chromatic-ignore"
             header={{
               id: "Header",
               content: (
@@ -332,6 +339,7 @@ storiesOf("Layout|Layout/", module)
 
         return (
           <Layout
+            classname="chromatic-ignore"
             header={{
               id: "Header",
               content: (
