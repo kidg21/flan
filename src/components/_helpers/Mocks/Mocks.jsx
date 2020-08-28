@@ -83,19 +83,19 @@ function MockHeaderGlobal({ menuClick }) {
       center={{
         content: (
           <ButtonGroup columns="4">
-            <Button label="JOBS PORTAL" isPlain variant="neutral" />
-            <Button label="RESEARCH" hasUnderline />
-            <Button label="BI" isPlain variant="neutral" />
-            <Button label="REPORT WRITING" isPlain variant="neutral" />
+            <Button label="JOBS PORTAL" isPlain />
+            <Button label="RESEARCH" disabled />
+            <Button label="BI" isPlain />
+            <Button label="REPORT WRITING" isPlain />
           </ButtonGroup>
         ),
         width: "fit-content",
       }}
       right={{
         content: (
-          <Inline spacingX="" spacingY="">
-            <Button size="lg" isRound icon="help_circle" variant="neutral" isPlain />
-            <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
+          <Inline>
+            <Button id="help" size="lg" isRound icon="help_circle" variant="neutral" isPlain />
+            <Avatar id="profile" label="AB" size="sm" variant="neutral" onClick={doNothing} />
           </Inline>
         ),
         width: "fit-content",
@@ -250,7 +250,7 @@ MockWorkflow.defaultProps = {
   title: null,
 };
 
-function MockTable({ header, table, actionsTable }) {
+function MockTable({ actionsTable }) {
   const tableHeaders = [
     {
       id: "checkbox",
@@ -452,75 +452,67 @@ function MockTable({ header, table, actionsTable }) {
   };
   return (
     <React.Fragment>
-      {header ? (
-        <Card>
-          {actionsTable
-            ? (
-              <CardSection isInverse>
-                <Grid columns="1fr auto" gap="1rem">
-                  <Inline>
-                    <Label text="Active List" />
-                    <Label text="" size="sm" />
-                    <Label text="309" size="sm" />
-                  </Inline>
-                  <Inline spacingX="1rem">
-                    {actionsTable}
-                  </Inline>
-                </Grid>
-              </CardSection>
-            ) : (
-              <CardSection isInverse>
-                <Grid columns="1fr auto" gap="1rem">
-                  <Inline>
-                    <Label text="Active List" />
-                    <Label text="|" size="sm" />
-                    <Label text="309" size="sm" />
-                  </Inline>
-                  <Inline>
-                    <Menu
-                      data={[
-                        { id: "a", label: "Action" },
-                        { id: "b", label: "Action" },
-                        { id: "c", label: "Action" },
-                      ]}
-                      position="bottomRight"
-                    >
-                      <Icon icon="options" onClick={() => { }} />
-                    </Menu>
-                    <Icon icon="down" onClick={() => { }} />
-                    <Icon icon="close" onClick={() => { }} />
-                  </Inline>
-                </Grid>
-              </CardSection>
-            )}
-        </Card>
-      ) : null}
-      {table ? (
-        <Table
-          id="MockTable"
-          headers={tableHeaders}
-          rows={tableData}
-          listId="Data Table"
-          onCellClick={onCellClick}
-          onHeaderClick={onHeaderClick}
-          onCellMouseOver={onCellMouseOver}
-          highlightedCell={highlightedCell}
-          selectedCell={selectedCell}
-          columnWidth={160}
-        />
-      ) : null}
+      <Card>
+        {actionsTable
+          ? (
+            <CardSection isInverse>
+              <Grid columns="1fr auto" gap="1rem">
+                <Inline>
+                  <Label text="Active List" />
+                  <Label text="" size="sm" />
+                  <Label text="309" size="sm" />
+                </Inline>
+                <Inline spacingX="1rem">
+                  {actionsTable}
+                </Inline>
+              </Grid>
+            </CardSection>
+          ) : (
+            <CardSection isInverse>
+              <Grid columns="1fr auto" gap="1rem">
+                <Inline>
+                  <Label text="Active List" />
+                  <Label text="|" size="sm" />
+                  <Label text="309" size="sm" />
+                </Inline>
+                <Inline>
+                  <Menu
+                    data={[
+                      { id: "a", label: "Action" },
+                      { id: "b", label: "Action" },
+                      { id: "c", label: "Action" },
+                    ]}
+                    position="bottomRight"
+                  >
+                    <Icon icon="options" onClick={() => { }} />
+                  </Menu>
+                  <Icon icon="down" onClick={() => { }} />
+                  <Icon icon="close" onClick={() => { }} />
+                </Inline>
+              </Grid>
+            </CardSection>
+          )}
+      </Card>
+      <Table
+        id="MockTable"
+        headers={tableHeaders}
+        rows={tableData}
+        listId="Data Table"
+        onCellClick={onCellClick}
+        onHeaderClick={onHeaderClick}
+        onCellMouseOver={onCellMouseOver}
+        highlightedCell={highlightedCell}
+        selectedCell={selectedCell}
+        columnWidth={160}
+      />
     </React.Fragment>
   );
 }
 MockTable.propTypes = {
   actionsTable: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  header: PropTypes.boolean,
-  table: PropTypes.boolean,
 };
 MockTable.defaultProps = {
   actionsTable: null,
-  header: true,
-  table: true,
 };
 
 function MockData() {
@@ -856,19 +848,19 @@ function MockDetails({
           : (
             <FieldSection>
               <FieldGroup title="Property Information" gap="sm" columns="1">
-                <Field align="edge" label="Parcel No." value="808-221-12" onClick />
+                <Field align="edge" label="Parcel No." value="808-221-12" onClick={() => { }} />
                 <Field align="edge" label="Land User" value="Commercial Shopping Center" />
                 <Field align="edge" label="Building Area" value="25,344 SF" />
-                <Field align="edge" label="Lot Area" value="171,143 SF (3.93 Acres)" onClick />
+                <Field align="edge" label="Lot Area" value="171,143 SF (3.93 Acres)" onClick={() => { }} />
                 <Field align="edge" label="Building/Lot" value="0.15" />
                 <Field align="edge" label="No. of Units" value="" />
                 <Field align="edge" label="Year Built" value="1978" />
               </FieldGroup>
               <FieldGroup title="Owner Information" gap="sm" columns="1">
-                <Field align="edge" label="Owners" value="SCF-Los Alisos LLC" onClick />
+                <Field align="edge" label="Owners" value="SCF-Los Alisos LLC" onClick={() => { }} />
                 <Field align="edge" label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
-                <Field align="edge" label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick />
-                <Field align="edge" label="Last Sale" value="10/2/15 for $11,500,000" onClick />
+                <Field align="edge" label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick={() => { }} />
+                <Field align="edge" label="Last Sale" value="10/2/15 for $11,500,000" onClick={() => { }} />
                 <Field align="edge" label="Total Assd Value" value="$10,045,870" />
               </FieldGroup>
             </FieldSection>

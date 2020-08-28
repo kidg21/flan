@@ -746,8 +746,8 @@ storiesOf("Templates/Modules/Dialogs", module)
                   }
                   right={(
                     <FormSection columns="2">
-                      <Icon icon="edit" onClick />
-                      <Icon icon="close" onClick />
+                      <Icon icon="edit" onClick={() => { }} />
+                      <Icon icon="close" onClick={() => { }} />
                     </FormSection>
                   )}
                 />
