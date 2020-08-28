@@ -99,7 +99,7 @@ function DataRange({
             label={min.label}
             onChangeState={onChangeMin}
             options={min.options}
-            selectOptions={min.value}
+            selectOptions={min.selected}
           />
         ) : (
             <TextInput
