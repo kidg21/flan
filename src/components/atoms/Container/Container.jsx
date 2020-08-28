@@ -27,6 +27,9 @@ const BoxContainer = styled.div`
   max-height: ${(props) => {
     return props.maxHeight || "";
   }};
+  max-width: ${(props) => {
+    return props.maxWidth || "";
+  }};
   height: ${(props) => {
     return props.height || "";
   }};
@@ -96,6 +99,7 @@ const Container = React.forwardRef(({
   height,
   id,
   maxHeight,
+  maxWidth,
   onClick,
   padding,
   visible,
@@ -117,6 +121,7 @@ const Container = React.forwardRef(({
         height={height ? "100%" : ""}
         id={id}
         maxHeight={maxHeight}
+        maxWidth={maxWidth}
         onClick={onClick}
         padding={borderPadding}
         ref={ref}
@@ -136,6 +141,7 @@ Container.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
   maxHeight: PropTypes.string,
+  maxWidth: PropTypes.string,
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   visible: PropTypes.bool,
@@ -151,6 +157,7 @@ Container.defaultProps = {
   height: null,
   id: null,
   maxHeight: null,
+  maxWidth: null,
   onClick: undefined,
   padding: "0",
   visible: true,

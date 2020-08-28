@@ -93,14 +93,15 @@ export const interaction = {
 
 // need to have hex key to work with old draw tools
 export const drawPalette = {
-  "#EBEAEC": colors.grey,
-  "#D9ECEC": colors.seafoam,
-  "#80959D": colors.whirlpool,
-  "#63B1CD": colors.aqua,
-  "#06BFAE": colors.teal,
-  "#095593": colors.royal,
-  "#F3822B": colors.orange,
+  "#E4423A": colors.red60,
+  "#FF8000": colors.orange60,
   "#FFBF00": colors.yellow,
+  "#14A939": colors.green60,
+  "#2F98EE": colors.blue60,
+  "#5E00EB": colors.purple60,
+  "#FFFFFF": colors.white60,
+  "#8F8F94": colors.grey50,
+  "#201F1D": colors.grey100,
 };
 
 export const shadows = {

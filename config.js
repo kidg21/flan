@@ -15,6 +15,7 @@ global.document = (new JSDOM("<!doctype html><html><body></body></html>", {
 })).window.document;
 global.window = document.defaultView;
 global.navigator = global.window.navigator;
+global.Element = null;
 
 // Pick up all Storybook methods and make them global
 Object.assign(global, facade);

@@ -32,15 +32,16 @@ const Swatch = styled.button`
   color: ${(props) => {
     return props.theme.palette.inverse;
   }};
-  border: 0px solid ${(props) => {
-    return props.theme.palette.inverse;
+  border: ${(props) => {
+    // darken opacity of border to show for lighter colors (esp. white)
+    return props.hasBorder ? `1px solid rgba(0,0,0,0.3)` : `0px solid ${props.theme.palette.inverse}`;
   }};
   cursor: pointer;
   border-radius: ${(props) => {
     return props.borderRadius;
   }};
   background-color: ${(props) => {
-    return props.theme.swatches[props.color];
+    return props.theme.swatches[props.color] || "";
   }};
   &:hover {
     ${Darken};
@@ -99,7 +100,7 @@ const IconSelected = styled(Icon)`
 `;
 
 function ColorSwatch({
-  color, isSelected, onClick, square,
+  color, hasBorder, isSelected, onClick, square,
 }) {
   let borderRadius;
   const width = "1.5rem";
@@ -112,6 +113,7 @@ function ColorSwatch({
   }
   return (
     <Swatch
+      hasBorder={hasBorder}
       borderRadius={borderRadius}
       color={color}
       height={height}
@@ -124,13 +126,20 @@ function ColorSwatch({
 }
 
 ColorSwatch.propTypes = {
+  /** color name, see theme.swatches */
   color: PropTypes.string,
+  /** to outline swatch, making lighter color easier to see */
+  hasBorder: PropTypes.bool,
+  /** selected swatch */
   isSelected: PropTypes.bool,
+  /** onClick callback function */
   onClick: PropTypes.func,
+  /** square shaped swatch */
   square: PropTypes.bool,
 };
 ColorSwatch.defaultProps = {
   color: null,
+  hasBorder: false,
   isSelected: false,
   onClick: null,
   square: false,
@@ -159,7 +168,6 @@ function ImageSwatch({
           src={src}
           alt={alt}
           width={width}
-          alt={alt}
         />
       </ImageWrapper>
       {label ? (

@@ -21,7 +21,10 @@ const Region = styled.section`
     return props.padding || "";
   }};
   overflow: ${(props) => {
-    return props.overflow || "auto";
+    // default overflow to hidden for overlay templates
+    // scroll doesn't work since pointer-events are disabled
+    const defaultOverflow = props.isOverlay ? "hidden" : "auto";
+    return props.overflow || defaultOverflow;
   }};
   opacity: ${(props) => {
     return props.opacity || "1";
