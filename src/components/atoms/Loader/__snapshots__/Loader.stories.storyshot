@@ -2,21 +2,25 @@
 
 exports[` 1`] = `
 <div
-  className="Loader__Chase-codnj1-1 fESJsW"
-  id={null}
+  className="Loader__LoaderWrapper-codnj1-0 kdewRx"
 >
   <div
-    className="Loader__Dot-codnj1-2 bPraOZ"
-  />
-  <div
-    className="Loader__Dot-codnj1-2 bPraOZ"
-  />
-  <div
-    className="Loader__Dot-codnj1-2 bPraOZ"
-  />
-  <div
-    className="Loader__Dot-codnj1-2 bPraOZ"
-  />
+    className="Loader__Chase-codnj1-2 BJiRV"
+    id={null}
+  >
+    <div
+      className="Loader__Dot-codnj1-3 fTKJWI"
+    />
+    <div
+      className="Loader__Dot-codnj1-3 fTKJWI"
+    />
+    <div
+      className="Loader__Dot-codnj1-3 fTKJWI"
+    />
+    <div
+      className="Loader__Dot-codnj1-3 fTKJWI"
+    />
+  </div>
 </div>
 `;
 
@@ -27,25 +31,29 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="Loader__Fill-codnj1-0 eDLtwO"
+    className="Loader__Fill-codnj1-1 hdRbSr"
     id={null}
   />
   <div
-    className="Loader__Chase-codnj1-1 fESJsW"
-    id={null}
+    className="Loader__LoaderWrapper-codnj1-0 kdewRx"
   >
     <div
-      className="Loader__Dot-codnj1-2 bPraOZ"
-    />
-    <div
-      className="Loader__Dot-codnj1-2 bPraOZ"
-    />
-    <div
-      className="Loader__Dot-codnj1-2 bPraOZ"
-    />
-    <div
-      className="Loader__Dot-codnj1-2 bPraOZ"
-    />
+      className="Loader__Chase-codnj1-2 BJiRV"
+      id={null}
+    >
+      <div
+        className="Loader__Dot-codnj1-3 fTKJWI"
+      />
+      <div
+        className="Loader__Dot-codnj1-3 fTKJWI"
+      />
+      <div
+        className="Loader__Dot-codnj1-3 fTKJWI"
+      />
+      <div
+        className="Loader__Dot-codnj1-3 fTKJWI"
+      />
+    </div>
   </div>
 </section>
 `;

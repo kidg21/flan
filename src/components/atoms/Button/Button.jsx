@@ -189,6 +189,7 @@ function Button({
   isPlain,
   isRound,
   isSolid,
+  labelWeight,
   type,
   size,
   variant,
@@ -319,7 +320,7 @@ function Button({
       rows={alignCenter ? "max-content 1fr" : null}
     >
       {icon ? <Icon icon={icon} size={iconSize} /> : null}
-      {label ? <Label size={labelSize} text={label} /> : null}
+      {label ? <Label size={labelSize} weight={labelWeight} text={label} /> : null}
       {count && !isDisabled ? <Tag label={count.toString()} /> : null}
     </LabelWrapper>
   );
@@ -370,6 +371,7 @@ Button.propTypes = {
   isPlain: PropTypes.bool,
   isRound: PropTypes.bool,
   isSolid: PropTypes.bool,
+  labelWeight: PropTypes.string,
   size: PropTypes.oneOf(["sm", "lg", "xl", ""]),
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -390,6 +392,7 @@ Button.defaultProps = {
   isPlain: null,
   isRound: null,
   isSolid: null,
+  labelWeight: null,
   size: "",
   label: null,
   onClick: null,
