@@ -369,7 +369,7 @@ function Card({
           contentAlign="bottom"
           left={{
             content: (
-              <Grid columns="repeat(auto-fill,minmax(6rem,1fr))">
+              <Grid columns="1">
                 {commands.slice(0, 2).map((command) => { return <Command {...command} />; })}
               </Grid>
             ),
