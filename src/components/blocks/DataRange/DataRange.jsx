@@ -66,7 +66,7 @@ function DataRange({
           selectOptions={select.selected}
         />),
     },
-    barAlignment = "bottom";
+      barAlignment = "bottom";
   } else {
     centerContent = {
       content: (
@@ -74,7 +74,7 @@ function DataRange({
       ),
       width: "min-content",
     },
-    barAlignment = "center";
+      barAlignment = "center";
   }
 
   return (
@@ -91,49 +91,47 @@ function DataRange({
       <Bar
         padding="0"
         contentAlign={barAlignment}
-        left={
-          min.options ? (
-            <SelectMenu
-              disabled={min.disabled || isDisabled}
-              error={!!error}
-              id={`${uId}_left`}
-              label={min.label}
-              onChangeState={onChangeMin}
-              options={min.options}
-              selectOptions={min.value}
-            />)
-            :
-            (<TextInput
+        left={min.options ? (
+          <SelectMenu
+            disabled={min.disabled || isDisabled}
+            error={!!error}
+            id={`${uId}_left`}
+            label={min.label}
+            onChangeState={onChangeMin}
+            options={min.options}
+            selectOptions={min.value}
+          />
+        ) : (
+            <TextInput
               disabled={min.disabled || isDisabled}
               error={!!error}
               id={`${uId}_left`}
               label={min.label}
               onChange={onChangeMin}
               value={min.value}
-            />)
-        }
+            />
+          )}
         center={centerContent}
-        right={
-          max.options ? (
-            <SelectMenu
-              disabled={max.disabled || isDisabled}
-              error={!!error}
-              id={`${uId}_right`}
-              label={max.label}
-              onChangeState={max.onChange}
-              options={max.options}
-              selectOptions={max.selected}
-            />)
-            :
-            (<TextInput
+        right={max.options ? (
+          <SelectMenu
+            disabled={max.disabled || isDisabled}
+            error={!!error}
+            id={`${uId}_right`}
+            label={max.label}
+            onChangeState={max.onChange}
+            options={max.options}
+            selectOptions={max.selected}
+          />
+        ) : (
+            <TextInput
               disabled={max.disabled || isDisabled}
               error={!!error}
               id={`${uId}_right`}
               label={max.label}
               onChange={onChangeMax}
               value={max.value}
-            />)
-        }
+            />
+          )}
       />
       {helpText ? <Text size="xs" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
@@ -148,7 +146,7 @@ const selectType = PropTypes.shape({
   label: PropTypes.string,
   onChange: PropTypes.func,
   options: PropTypes.map,
-  selected: PropTypes.arrayOf(PropTypes.object),
+  selected: PropTypes.string,
 });
 
 const textType = PropTypes.shape({
