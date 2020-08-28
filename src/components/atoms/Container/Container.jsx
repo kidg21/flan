@@ -43,7 +43,7 @@ const BoxContainer = styled.div`
     return props.theme.palette.neutral40;
   }};
   border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
+    return props.borderRadius || props.theme.borders.radiusMin;
   }};
   ::-webkit-scrollbar {
     width: 0.5em;
@@ -88,6 +88,7 @@ const boxPaddingHash = {
 };
 
 const Container = React.forwardRef(({
+  borderRadius,
   boxPadding,
   children,
   className,
@@ -104,19 +105,20 @@ const Container = React.forwardRef(({
   const borderPadding = boxPadding ? boxPaddingHash[boxPadding.toLowerCase()] : "0";
   return (
     <Wrapper
-      setPadding={setPadding}
-      height={height}
-      width={width}
-      visible={visible}
       className={className}
+      height={height}
+      setPadding={setPadding}
+      visible={visible}
+      width={width}
     >
       <BoxContainer
-        id={id}
-        height={height ? "100%" : ""}
-        padding={borderPadding}
-        maxHeight={maxHeight}
+        borderRadius={borderRadius}
         hasBorder={hasBorder}
+        height={height ? "100%" : ""}
+        id={id}
+        maxHeight={maxHeight}
         onClick={onClick}
+        padding={borderPadding}
         ref={ref}
       >
         {children}
@@ -126,6 +128,7 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
+  borderRadius: PropTypes.string,
   boxPadding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   children: PropTypes.node,
   className: PropTypes.string,
@@ -140,6 +143,7 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
+  borderRadius: null,
   boxPadding: "0",
   children: null,
   className: null,
