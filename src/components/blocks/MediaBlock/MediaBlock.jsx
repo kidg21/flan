@@ -5,20 +5,44 @@ import PropTypes from "prop-types";
 import Media from "atoms/Media";
 import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
+import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 
 const Block = styled(Grid)`
   grid-template-columns: ${(props) => {
-    return props.gridColumns || "2fr 1fr";
+    /* return props.gridColumns || "2fr 1fr"; */
+    return props.gridColumns || `1fr minmax(0, ${props.mediaHeight || "6rem"})`;
+  }};
+  grid-template-rows: ${(props) => {
+    return props.gridRows || "auto 1fr";
+  }};
+  grid-template-areas: ${(props) => {
+    return props.gridTemplate
+      || "'body media' '. media'";
+  }};
+  align-items: ${(props) => {
+    return props.alignItems || "";
   }};
   padding: ${(props) => {
     return props.blockPadding || "";
     /* return props.blockPadding || "0.5rem 0.5rem 0.25rem"; */
   }};
-  grid-template-areas: ${(props) => {
-    return props.gridTemplate || "'body media'";
+`;
+
+const MediaBox = styled.section`
+  grid-area: media;
+  background-image: ${(props) => {
+    return `url("${props.background}")` || "";
   }};
-  align-items: ${(props) => {
-    return props.alignItems || "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 6rem;
+  height: 6rem;
+  border: ${(props) => {
+    return `1px solid ${props.theme.palette.neutral60}`;
+  }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
   }};
 `;
 
@@ -32,8 +56,13 @@ const MediaElement = styled(Media)`
   height: auto;
   padding: 0;
   border: ${(props) => {
-    return `1px solid ${props.theme.palette.neutral60}`;
+    return "1px solid transparent";
+    /* return `1px solid ${props.theme.palette.neutral60}`; */
   }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+  overflow: hidden;
   & > * {
     border-radius: ${(props) => {
     return props.isRound ? "100%" : null;
@@ -79,6 +108,7 @@ const Body = styled(Grid)`
 
 function MediaBlock({
   align,
+  background,
   children,
   className,
   description,
@@ -152,12 +182,21 @@ function MediaBlock({
           mediaDesc={title}
         />
       ) : null}
+      {background ? (
+        <MediaBox
+          background={background}
+          justify={justify}
+          isRound={isRound}
+          title={title}
+        />
+      ) : null}
       <Body
+        columns="1"
         gap=""
         padding={padding}
         displayInline={displayInline}
       >
-        <Grid gap="xs">
+        <Grid columns="1" gap="xs">
           {title ? <Title text={title} size="lg" weight="bold" /> : null}
           {description ? (<Text text={description} weight="" />
           ) : null}
