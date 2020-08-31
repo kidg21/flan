@@ -10452,21 +10452,25 @@ exports[` 6`] = `
                                     Please wait 5 seconds while we build your report...
                                   </p>
                                   <div
-                                    className="Loader__Chase-codnj1-1 fESJsW"
-                                    id={null}
+                                    className="Loader__LoaderWrapper-codnj1-0 kdewRx"
                                   >
                                     <div
-                                      className="Loader__Dot-codnj1-2 bPraOZ"
-                                    />
-                                    <div
-                                      className="Loader__Dot-codnj1-2 bPraOZ"
-                                    />
-                                    <div
-                                      className="Loader__Dot-codnj1-2 bPraOZ"
-                                    />
-                                    <div
-                                      className="Loader__Dot-codnj1-2 bPraOZ"
-                                    />
+                                      className="Loader__Chase-codnj1-2 BJiRV"
+                                      id={null}
+                                    >
+                                      <div
+                                        className="Loader__Dot-codnj1-3 fTKJWI"
+                                      />
+                                      <div
+                                        className="Loader__Dot-codnj1-3 fTKJWI"
+                                      />
+                                      <div
+                                        className="Loader__Dot-codnj1-3 fTKJWI"
+                                      />
+                                      <div
+                                        className="Loader__Dot-codnj1-3 fTKJWI"
+                                      />
+                                    </div>
                                   </div>
                                 </section>
                               </div>
