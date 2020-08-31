@@ -15,7 +15,7 @@ const PanelWrapper = styled.div`
   justify-content: flex-start;
   width: ${(props) => { return props.width; }};
   height: ${(props) => { return props.height; }};
-  max-height: ${(props) => { return props.maxHieght; }};
+  max-height: ${(props) => { return props.maxHeight; }};
   max-width: ${(props) => { return props.maxWidth; }};
   transform: ${(props) => {
     return props.isOffCanvas || "";
