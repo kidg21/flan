@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable security/detect-object-injection */
 import React, {
@@ -177,7 +178,7 @@ const MenuList = ({
 
   return (
     <ListWrapper id={id} isInteractive isNested={_isNested} width={width} {...positionStyle}>
-      <StyledCardWrapper id={`cardwrapper-${id}`} shadow="2x">
+      <StyledCardWrapper id={`cardwrapper-${id}`} padding="1x" shadow="2x">
         {listItems}
       </StyledCardWrapper>
     </ListWrapper>

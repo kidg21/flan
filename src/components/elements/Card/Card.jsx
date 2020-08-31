@@ -50,7 +50,9 @@ const CardSectionWrapper = styled.section`
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};
-  + a {
+  a,
+  + a,
+  a > * {
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
   }};
@@ -78,7 +80,7 @@ const StyledCardWrapper = styled(CardWrapper)``;
 
 const CardGridWrapper = styled(Grid)`
   grid-template-columns: ${(props) => {
-    return props.columns || "repeat(auto-fill, minmax(14rem, 1fr))";
+    return props.columns || "repeat(auto-fill, minmax(20rem, 1fr))";
   }};
   padding: 1rem;
   ${StyledCardWrapper} {
@@ -188,11 +190,16 @@ ExpandingSection.defaultProps = {
 };
 
 function CardSection({
-  children, className, footer, header, id, onClick, padding, variant,
+  children, className, footer, header, id, isInverse, onClick, padding, variant,
 }) {
   let sectionColor;
   let sectionColorHover;
   let sectionBackground;
+  if (isInverse) {
+    sectionBackground = "alt";
+    sectionColor = "inverse";
+    sectionColorHover = "neutral100";
+  }
   if (variant) {
     sectionColor = "inverse";
     sectionColorHover = "inverseHover";
@@ -240,6 +247,7 @@ CardSection.propTypes = {
   footer: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
+  isInverse: PropTypes.bool,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
   variant: PropTypes.oneOf(["", "info", "success", "warning", "alert", "light"]),
@@ -250,6 +258,7 @@ CardSection.defaultProps = {
   footer: null,
   header: null,
   id: null,
+  isInverse: false,
   padding: null,
   onClick: null,
   variant: null,
@@ -360,24 +369,15 @@ function Card({
           contentAlign="bottom"
           left={{
             content: (
-              <Grid>
-                <Command
-                  label={commands[0].label}
-                  onClick={commands[0].onClick}
-                  disabled={commands[0].disabled}
-                />
-                <Command
-                  label={commands[1].label}
-                  onClick={commands[1].onClick}
-                  disabled={commands[1].disabled}
-                />
+              <Grid columns="1">
+                {commands.slice(0, 2).map((command) => { return <Command {...command} />; })}
               </Grid>
             ),
             width: "90%",
           }}
           right={{
             // More than 2 Commands sends overflow to Menu
-            content: commands.length > 2 ? <Menu id={`${uId}-Menu`} data={commands.slice(2)} position="topLeft" /> : <Spacer />,
+            content: commands.length > 2 ? <Menu id={`${uId}-Menu`} data={commands.slice(2)} position="topLeft"><Icon icon="options" /></Menu> : <Spacer />,
             width: "10%",
           }}
         />
@@ -388,13 +388,13 @@ function Card({
         <Bar
           padding="0"
           contentAlign="bottom"
-          left={(
-            <Command
-              label={commands[0].label}
-              onClick={commands[0].onClick}
-              disabled={commands[0].disabled}
-            />
-          )}
+          left={{
+            content: (
+              <Grid columns="1">
+                {commands.map((command) => { return <Command {...command} />; })}
+              </Grid>
+            ),
+          }}
         />
       );
     }
@@ -433,10 +433,13 @@ Card.propTypes = {
   className: PropTypes.string,
   href: PropTypes.node,
   commands: PropTypes.arrayOf(PropTypes.shape({
+    command: PropTypes.string,
+    disabled: PropTypes.bool,
+    icon: PropTypes.string,
     id: PropTypes.string,
     label: PropTypes.string,
+    labelVisible: PropTypes.bool,
     onClick: PropTypes.func,
-    disabled: PropTypes.bool,
   })),
   description: PropTypes.string,
   icon: PropTypes.string,

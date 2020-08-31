@@ -14,6 +14,9 @@ import styled from "styled-components";
 export const MultiGridWrapper = styled.div`
   width: 100%;
   height: 100%;
+  background-color: ${(props) => {
+    return props.theme.background.default;
+  }};
   border: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
   }};
@@ -24,7 +27,7 @@ export const MultiGridWrapper = styled.div`
     }
     ::-webkit-scrollbar-track {
       background-color: ${(props) => {
-    return props.theme.palette.disabled;
+    return props.theme.palette.neutral40;
   }};
     border: 1px solid ${(props) => {
     return props.theme.palette.neutral60;
@@ -32,7 +35,7 @@ export const MultiGridWrapper = styled.div`
     }
     ::-webkit-scrollbar-thumb {
       background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
     border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
@@ -54,7 +57,7 @@ export const CellWrapper = styled.div`
   color: ${(props) => {
     if (props.isHeader) {
       return props.theme.text.primary;
-    } 
+    }
     return props.theme.text.primary;
   }};
   font-weight: ${(props) => {
@@ -73,16 +76,6 @@ export const CellWrapper = styled.div`
     }
     return props.theme.background.default;
   }};
-  [class^="Menu"],
-  [class^="Command"] {
-    color: ${(props) => {
-    /* if (props.isSelected) {
-      return props.theme.text.inverse;
-    } */
-    return "";
-  }};
-  }
-
   &:after {
     content: "↓";
     position: absolute;
@@ -437,7 +430,7 @@ Table.defaultProps = {
   highlightedCell: null,
   loadRows: null,
   minColWidth: 120,
-  minRowHeight: 40,
+  minRowHeight: 20,
   onCellClick: null,
   onCellMouseOut: null,
   onCellMouseOver: null,

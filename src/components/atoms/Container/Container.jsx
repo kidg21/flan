@@ -59,7 +59,7 @@ const BoxContainer = styled.div`
   }
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
     border-radius: 20px;
   }
@@ -70,7 +70,7 @@ const BoxContainer = styled.div`
 }
   ::-webkit-scrollbar-thumb:horizontal{
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
   border-radius: 20px;
 }
@@ -91,6 +91,7 @@ const boxPaddingHash = {
 };
 
 const Container = React.forwardRef(({
+  borderRadius,
   boxPadding,
   children,
   className,
@@ -98,7 +99,6 @@ const Container = React.forwardRef(({
   height,
   id,
   maxHeight,
-  borderRadius,
   maxWidth,
   onClick,
   padding,
@@ -109,21 +109,21 @@ const Container = React.forwardRef(({
   const borderPadding = boxPadding ? boxPaddingHash[boxPadding.toLowerCase()] : "0";
   return (
     <Wrapper
-      setPadding={setPadding}
-      height={height}
-      borderRadius={borderRadius}
-      width={width}
-      visible={visible}
       className={className}
+      height={height}
+      setPadding={setPadding}
+      visible={visible}
+      width={width}
     >
       <BoxContainer
-        id={id}
+        borderRadius={borderRadius}
+        hasBorder={hasBorder}
         height={height ? "100%" : ""}
-        padding={borderPadding}
+        id={id}
         maxHeight={maxHeight}
         maxWidth={maxWidth}
-        hasBorder={hasBorder}
         onClick={onClick}
+        padding={borderPadding}
         ref={ref}
       >
         {children}
@@ -133,9 +133,9 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
+  borderRadius: PropTypes.string,
   boxPadding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   children: PropTypes.node,
-  borderRadius: PropTypes.string,
   className: PropTypes.string,
   hasBorder: PropTypes.bool,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -149,11 +149,11 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
+  borderRadius: null,
   boxPadding: "0",
   children: null,
   className: null,
   hasBorder: false,
-  borderRadius: null,
   height: null,
   id: null,
   maxHeight: null,

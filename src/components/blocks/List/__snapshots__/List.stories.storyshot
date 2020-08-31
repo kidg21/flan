@@ -1444,13 +1444,13 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <span
-            className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+            className="Tag__TagContainer-sc-128kb3h-0 jVuXoC"
             id={null}
             label="Label"
             onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
+              className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
               cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1502,13 +1502,13 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <span
-            className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+            className="Tag__TagContainer-sc-128kb3h-0 jVuXoC"
             id={null}
             label="6"
             onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
+              className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
               cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1560,13 +1560,13 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <span
-            className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+            className="Tag__TagContainer-sc-128kb3h-0 jVuXoC"
             id={null}
             label="NEW!"
             onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
+              className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
               cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1618,13 +1618,13 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <span
-            className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+            className="Tag__TagContainer-sc-128kb3h-0 jVuXoC"
             id={null}
             label="9"
             onClick={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
+              className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
               cursor="default"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1816,7 +1816,7 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <a
-            className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+            className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
             disabled={null}
             href={null}
             onClick={[Function]}
@@ -1884,7 +1884,7 @@ exports[` 5`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <a
-            className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+            className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
             disabled={null}
             href={null}
             onClick={[Function]}
@@ -1979,18 +1979,26 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 lmjTDl"
+            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
             disabled={false}
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
               id={null}
               onBlur={null}
               onChange={null}
               onClick={[Function]}
               onFocus={null}
               type="checkbox"
+            />
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
             />
           </div>
         </div>
@@ -2035,18 +2043,26 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 lmjTDl"
+            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
             disabled={false}
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
               id={null}
               onBlur={null}
               onChange={null}
               onClick={[Function]}
               onFocus={null}
               type="checkbox"
+            />
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
             />
           </div>
         </div>
@@ -2091,18 +2107,26 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 lmjTDl"
+            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
             disabled={false}
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
               id={null}
               onBlur={null}
               onChange={null}
               onClick={[Function]}
               onFocus={null}
               type="checkbox"
+            />
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
             />
           </div>
         </div>
@@ -2147,18 +2171,26 @@ exports[` 6`] = `
           className="Bar__Slot-icfo76-1 cxljst"
         >
           <div
-            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 lmjTDl"
+            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
             disabled={false}
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
               id={null}
               onBlur={null}
               onChange={null}
               onClick={[Function]}
               onFocus={null}
               type="checkbox"
+            />
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
             />
           </div>
         </div>

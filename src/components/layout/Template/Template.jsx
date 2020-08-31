@@ -17,16 +17,23 @@ const Region = styled.section`
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
   }};
+  padding: ${(props) => {
+    return props.padding || "";
+  }};
   overflow: ${(props) => {
     // default overflow to hidden for overlay templates
     // scroll doesn't work since pointer-events are disabled
     const defaultOverflow = props.isOverlay ? "hidden" : "auto";
     return props.overflow || defaultOverflow;
   }};
+  opacity: ${(props) => {
+    return props.opacity || "1";
+  }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
   outline: none;
+  transition: all 0.15s ease-in-out;
   ${(props) => {
     // when it is overlay, we want the region (parent) to have no pointer-events
     // and the children to restore thier events
@@ -61,7 +68,7 @@ const TemplateWrapper = styled(Grid)`
     return props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.backgroundColor || props.theme.background.default;
+    return props.backgroundColor || "";
   }};
   padding: ${(props) => {
     return props.setPadding || "";
@@ -93,6 +100,14 @@ const templateHash = {
     setColumns: "1fr auto 1fr",
     setRows: "auto",
   },
+  A_03: {
+    setTemplate: [
+      "\"A .\"",
+      "\". .\"",
+    ].join("\n"),
+    setColumns: `auto 1fr`,
+    setRows: "auto 1fr",
+  },
   B_01: {
     setTemplate: [
       "\"A B\"",
@@ -121,10 +136,11 @@ const templateHash = {
   B_05: {
     setTemplate: [
       "\"A . B\"",
+      "\". . B\"",
       "\". . .\"",
     ].join("\n"),
-    setColumns: "auto 1fr 12rem",
-    setRows: "1fr 1rem",
+    setColumns: `5rem 1fr ${widthLG}`,
+    setRows: "auto 1fr 1rem",
   },
   B_06: {
     setTemplate: [
@@ -137,6 +153,15 @@ const templateHash = {
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
+  },
+  B_08: {
+    setTemplate: [
+      "\"A . B\"",
+      "\". . B\"",
+      "\". . .\"",
+    ].join("\n"),
+    setColumns: `auto 1fr ${widthLG}`,
+    setRows: "auto 1fr 1rem",
   },
   C_01: {
     setTemplate: [
@@ -247,7 +272,7 @@ function Template({
     setHeight = "auto";
     setPadding = "1rem";
     setColumnGap = "1rem";
-    setRowGap = "1rem";
+    setRowGap = "1.25rem";
   }
   if (hasCards || hasShadows) {
     setPadding = "1rem";
@@ -261,18 +286,16 @@ function Template({
   if (isOverlay) {
     backgroundColor = "none";
     pointerEvents = "none";
-    setPadding = "0.5rem";
+    setPadding = "1rem";
     setPosition = "absolute";
     zIndex = "999";
   }
-
 
   return (
     <TemplateWrapper
       backgroundColor={backgroundColor}
       classname={classname}
       id={id}
-
       pointerEvents={pointerEvents}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
@@ -288,70 +311,80 @@ function Template({
         <React.Fragment>
           {A ? (
             <Region
-              id={A.id || "A"}
-              placeholder="A"
               gridArea={template ? "A" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
               hasBorder={A.hasBorder}
-              overflow={A.overflow}
+              id={A.id || "A"}
               isOverlay={isOverlay}
+              opacity={A.opacity}
+              overflow={A.overflow}
+              padding={A.padding}
+              placeholder="A"
+              regionShadow={A.padding ? null : regionShadow}
+              tabIndex="0"
             >
               {A.content}
             </Region>
           ) : null}
           {B ? (
             <Region
-              id={B.id || "B"}
-              placeholder="B"
               gridArea={template ? "B" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
               hasBorder={B.hasBorder}
-              overflow={B.overflow}
+              id={B.id || "B"}
               isOverlay={isOverlay}
+              opacity={B.opacity}
+              overflow={B.overflow}
+              padding={B.padding}
+              placeholder="B"
+              regionShadow={B.padding ? null : regionShadow}
+              tabIndex="0"
             >
               {B.content}
             </Region>
           ) : null}
           {C ? (
             <Region
-              id={C.id || "C"}
-              placeholder="C"
               gridArea={template ? "C" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
               hasBorder={C.hasBorder}
-              overflow={C.overflow}
+              id={C.id || "C"}
               isOverlay={isOverlay}
+              opacity={C.opacity}
+              overflow={C.overflow}
+              padding={C.padding}
+              placeholder="C"
+              regionShadow={C.padding ? null : regionShadow}
+              tabIndex="0"
             >
               {C.content}
             </Region>
           ) : null}
           {D ? (
             <Region
-              id={D.id || "D"}
-              placeholder="D"
               gridArea={template ? "D" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
               hasBorder={D.hasBorder}
-              overflow={D.overflow}
+              id={D.id || "D"}
               isOverlay={isOverlay}
+              opacity={D.opacity}
+              overflow={D.overflow}
+              padding={D.padding}
+              placeholder="D"
+              regionShadow={D.padding ? null : regionShadow}
+              tabIndex="0"
             >
               {D.content}
             </Region>
           ) : null}
           {E ? (
             <Region
-              id={E.id || "E"}
-              placeholder="E"
               gridArea={template ? "E" : null}
-              regionShadow={regionShadow}
-              tabIndex="0"
               hasBorder={E.hasBorder}
-              overflow={E.overflow}
+              id={E.id || "E"}
               isOverlay={isOverlay}
+              opacity={E.opacity}
+              overflow={E.overflow}
+              padding={E.padding}
+              placeholder="E"
+              regionShadow={E.padding ? null : regionShadow}
+              tabIndex="0"
             >
               {E.content}
             </Region>
@@ -361,39 +394,24 @@ function Template({
     </TemplateWrapper>
   );
 }
+
+const sectionShape = {
+  content: PropTypes.node,
+  hasBorder: PropTypes.bool,
+  id: PropTypes.string,
+  opacity: PropTypes.string,
+  overflow: PropTypes.string,
+  padding: PropTypes.string,
+};
+
 Template.propTypes = {
-  A: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-    hasBorder: PropTypes.bool,
-  }),
-  B: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-    hasBorder: PropTypes.bool,
-  }),
-  C: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-    hasBorder: PropTypes.bool,
-  }),
+  A: PropTypes.shape(sectionShape),
+  B: PropTypes.shape(sectionShape),
+  C: PropTypes.shape(sectionShape),
   children: PropTypes.node,
   classname: PropTypes.string,
-  D: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-    hasBorder: PropTypes.bool,
-  }),
-  E: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-    hasBorder: PropTypes.bool,
-  }),
+  D: PropTypes.shape(sectionShape),
+  E: PropTypes.shape(sectionShape),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
   hasCards: PropTypes.bool,

@@ -56,7 +56,7 @@ const StyledButton = styled.button`
   border-bottom-color: ${(props) => {
     return props.theme.palette[props.underlineColor];
   }};
-  transition: all 0.15s ease;
+  transition: all 0.25s ease;
   & > * {
     margin: 0;
   }
@@ -103,6 +103,12 @@ const LabelWrapper = styled(Grid)`
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+`;
+
+const Count = styled(Tag)`
+  background-color: ${(props) => {
+    return props.disabled ? props.theme.palette.disabled : "";
+  }};
 `;
 
 const GroupWrapper = styled(Grid)`
@@ -160,7 +166,7 @@ const sizeHash = {
     label: "xs",
     icon: "sm",
     height: "fit-content",
-    padding: "0.25em 0.25em",
+    padding: "0.25em 0.5em",
   },
   lg: {
     label: "lg",
@@ -320,8 +326,8 @@ function Button({
       rows={alignCenter ? "max-content 1fr" : null}
     >
       {icon ? <Icon icon={icon} size={iconSize} /> : null}
-      {label ? <Label size={labelSize} weight={labelWeight} text={label} /> : null}
-      {count && !isDisabled ? <Tag label={count.toString()} /> : null}
+      {label ? <Label size={labelSize} text={label} weight={labelWeight} /> : null}
+      {count ? <Count label={count.toString()} disabled={isDisabled} /> : null}
     </LabelWrapper>
   );
 

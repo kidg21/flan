@@ -10,23 +10,23 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 cZEutg"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 ZRieO"
     id="Template Regions"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 hjFIIr"
+      className="Template__Region-sc-1i4nzbu-0 eHriLz"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Button__GroupWrapper-sc-1v7sls2-3 kvzTEM"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dHessD"
+          className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -61,7 +61,7 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -73,7 +73,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dHessD"
+          className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -108,7 +108,7 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -120,7 +120,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dHessD"
+          className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -155,7 +155,7 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -167,7 +167,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dHessD"
+          className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -202,7 +202,7 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -214,7 +214,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dHessD"
+          className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -249,7 +249,7 @@ exports[` 1`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -263,7 +263,7 @@ exports[` 1`] = `
       </section>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 hOtYCQ"
+      className="Template__Region-sc-1i4nzbu-0 iLIhls"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -282,7 +282,7 @@ exports[` 1`] = `
           placeholder="{ Card }"
         >
           <section
-            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
             id="Map Legend-Header"
             onClick={null}
           >
@@ -315,7 +315,7 @@ exports[` 1`] = `
             </div>
           </section>
           <section
-            className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+            className="Card__CardSectionWrapper-sc-1g3s676-1 hVWcog"
             id="Map Legend-Footer"
             onClick={null}
           >
@@ -327,24 +327,30 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 fNcQEg"
               >
-                <a
-                  className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
                   id={null}
-                  label="Close"
-                  onClick={[Function]}
-                  title="Close"
+                  rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <a
+                    className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
+                    id="Close Map Legend"
+                    label="Close"
+                    onClick={[Function]}
+                    title="Close"
                   >
-                    Close
-                  </label>
-                </a>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Close
+                    </label>
+                  </a>
+                </section>
               </div>
             </div>
           </section>
@@ -358,7 +364,7 @@ exports[` 1`] = `
           placeholder="{ Card }"
         >
           <section
-            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
             id="Data Layers-Header"
             onClick={null}
           >
@@ -391,7 +397,7 @@ exports[` 1`] = `
             </div>
           </section>
           <section
-            className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+            className="Card__CardSectionWrapper-sc-1g3s676-1 hVWcog"
             id="Data Layers-Footer"
             onClick={null}
           >
@@ -403,24 +409,30 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 fNcQEg"
               >
-                <a
-                  className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
                   id={null}
-                  label="Close"
-                  onClick={[Function]}
-                  title="Close"
+                  rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <a
+                    className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
+                    id="Close Map Legend"
+                    label="Close"
+                    onClick={[Function]}
+                    title="Close"
                   >
-                    Close
-                  </label>
-                </a>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Close
+                    </label>
+                  </a>
+                </section>
               </div>
             </div>
           </section>
@@ -431,7 +443,7 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+            className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
@@ -533,7 +545,7 @@ exports[` 1`] = `
           placeholder="{ Card }"
         >
           <section
-            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
             id="Drawing Tools-Header"
             onClick={null}
           >
@@ -566,7 +578,7 @@ exports[` 1`] = `
             </div>
           </section>
           <section
-            className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+            className="Card__CardSectionWrapper-sc-1g3s676-1 hVWcog"
             id="Drawing Tools-Footer"
             onClick={null}
           >
@@ -578,24 +590,30 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 fNcQEg"
               >
-                <a
-                  className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
                   id={null}
-                  label="Close"
-                  onClick={[Function]}
-                  title="Close"
+                  rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <a
+                    className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
+                    id="Close Map Legend"
+                    label="Close"
+                    onClick={[Function]}
+                    title="Close"
                   >
-                    Close
-                  </label>
-                </a>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Close
+                    </label>
+                  </a>
+                </section>
               </div>
             </div>
           </section>
@@ -603,7 +621,7 @@ exports[` 1`] = `
       </section>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gHbRVF"
+      className="Template__Region-sc-1i4nzbu-0 cNJUoN"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -616,7 +634,7 @@ exports[` 1`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 GlKcQ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_101"
+          id="storyshots_128"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -633,7 +651,7 @@ exports[` 1`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 GlKcQ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_102"
+          id="storyshots_129"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -650,7 +668,7 @@ exports[` 1`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 GlKcQ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
           href={null}
-          id="storyshots_103"
+          id="storyshots_130"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -688,41 +706,41 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 bcpwfv Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 llPqgk Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bcpwfv Layout__Body-sc-19tlhp4-3 iPUXIc"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 beRpUg Layout__WrapperMain-sc-19tlhp4-5 jBholC"
-        height="20rem"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eqURbq Layout__WrapperMain-sc-19tlhp4-5 jBholC"
+        height="21rem"
         id={null}
         overflow={null}
         width="100%"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 iStqAk Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 gtAlCj Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
           height={null}
           id={null}
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 cOBVjz"
+            className="Panel__PanelWrapper-sc-48epke-0 foHdIY"
             height="100%"
             id="Menu 1"
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ixXAyA Panel__PanelSection-sc-48epke-2 iiaelC"
               id="Menu 1_header"
             >
               <div
@@ -750,7 +768,7 @@ exports[` 2`] = `
                     id="menu-popper-Menu_1_Actions"
                   >
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                      className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                       disabled={false}
                       htmlFor={null}
                       id="menu-icon-Menu_1_Actions"
@@ -795,7 +813,7 @@ exports[` 2`] = `
                 id={null}
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+                  className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Tabs__TabButton-sc-1aqycph-0 dlQYYB"
                   disabled={false}
                   htmlFor={null}
                   id="Records"
@@ -810,7 +828,7 @@ exports[` 2`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -820,13 +838,13 @@ exports[` 2`] = `
                       Records
                     </label>
                     <span
-                      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+                      className="Tag__TagContainer-sc-128kb3h-0 jVuXoC Button__Count-sc-1v7sls2-2 iMQOwf"
                       id={null}
                       label="2"
                       onClick={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
+                        className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
                         cursor="default"
                         fontSize="0.875rem"
                         fontWeight={400}
@@ -839,7 +857,7 @@ exports[` 2`] = `
                   </section>
                 </button>
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                  className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
                   disabled={false}
                   htmlFor={null}
                   id="Attachments"
@@ -854,7 +872,7 @@ exports[` 2`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -864,13 +882,13 @@ exports[` 2`] = `
                       Attachments
                     </label>
                     <span
-                      className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+                      className="Tag__TagContainer-sc-128kb3h-0 jVuXoC Button__Count-sc-1v7sls2-2 iMQOwf"
                       id={null}
                       label="3"
                       onClick={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
+                        className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
                         cursor="default"
                         fontSize="0.875rem"
                         fontWeight={400}
@@ -885,11 +903,11 @@ exports[` 2`] = `
               </section>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY"
+              className="Panel__SectionWrapper-sc-48epke-1 ixXAyA"
               id="Menu 1_body"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 gngWwp"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 lbElki"
                 id={null}
                 rows={null}
               >
@@ -902,7 +920,7 @@ exports[` 2`] = `
                   placeholder="{ Card }"
                 >
                   <section
-                    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                    className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                     id="1-Header"
                     onClick={null}
                   >
@@ -939,7 +957,7 @@ exports[` 2`] = `
                     </div>
                   </section>
                   <section
-                    className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+                    className="Card__CardSectionWrapper-sc-1g3s676-1 hVWcog"
                     id="1-Footer"
                     onClick={null}
                   >
@@ -951,24 +969,30 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 fNcQEg"
                       >
-                        <a
-                          className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
                           id={null}
-                          label="View/Edit"
-                          onClick={null}
-                          title="View/Edit"
+                          rows={null}
                         >
-                          <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
-                            cursor="pointer"
-                            fontSize="0.875rem"
-                            fontWeight={400}
-                            htmlFor={null}
-                            letterSpacing=".5px"
+                          <a
+                            className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
+                            id="View 1"
+                            label="View/Edit"
+                            onClick={null}
+                            title="View/Edit"
                           >
-                            View/Edit
-                          </label>
-                        </a>
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              View/Edit
+                            </label>
+                          </a>
+                        </section>
                       </div>
                     </div>
                   </section>
@@ -982,7 +1006,7 @@ exports[` 2`] = `
                   placeholder="{ Card }"
                 >
                   <section
-                    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                    className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                     id="2-Header"
                     onClick={null}
                   >
@@ -1019,7 +1043,7 @@ exports[` 2`] = `
                     </div>
                   </section>
                   <section
-                    className="Card__CardSectionWrapper-sc-1g3s676-1 idnFTw"
+                    className="Card__CardSectionWrapper-sc-1g3s676-1 hVWcog"
                     id="2-Footer"
                     onClick={null}
                   >
@@ -1031,24 +1055,30 @@ exports[` 2`] = `
                       <div
                         className="Bar__Slot-icfo76-1 fNcQEg"
                       >
-                        <a
-                          className="Command__CommandContainer-sc-13akgtp-0 kDINXo"
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
                           id={null}
-                          label="View/Edit"
-                          onClick={null}
-                          title="View/Edit"
+                          rows={null}
                         >
-                          <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
-                            cursor="pointer"
-                            fontSize="0.875rem"
-                            fontWeight={400}
-                            htmlFor={null}
-                            letterSpacing=".5px"
+                          <a
+                            className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
+                            id="View 2"
+                            label="View/Edit"
+                            onClick={null}
+                            title="View/Edit"
                           >
-                            View/Edit
-                          </label>
-                        </a>
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                            >
+                              View/Edit
+                            </label>
+                          </a>
+                        </section>
                       </div>
                     </div>
                   </section>
@@ -1057,13 +1087,13 @@ exports[` 2`] = `
             </section>
           </div>
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 dsBUhn"
+            className="Panel__PanelWrapper-sc-48epke-0 idwPaE"
             height="100%"
             id="Menu 2"
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ixXAyA Panel__PanelSection-sc-48epke-2 iiaelC"
               id="Menu 2_header"
             >
               <div
@@ -1075,7 +1105,7 @@ exports[` 2`] = `
                 placeholder="{ Card }"
               >
                 <section
-                  className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                   id="Menu_2_Header-Header"
                   onClick={null}
                 >
@@ -1110,7 +1140,7 @@ exports[` 2`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY"
+              className="Panel__SectionWrapper-sc-48epke-1 ixXAyA"
               id="Menu 2_body"
             >
               <form
@@ -1139,7 +1169,7 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -1183,7 +1213,7 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -1227,7 +1257,7 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -1281,7 +1311,7 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eTPjnv"
+                          className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
                           cursor="pointer"
                           fontSize="0.8rem"
                           fontWeight={400}
@@ -1300,17 +1330,17 @@ exports[` 2`] = `
                           Hang in there, buddy, I'm here to help!
                         </p>
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Checkbox__InputGroup-sc-1gwp7am-4 fZyrGZ"
                           id={null}
                           rows={null}
                         >
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                             disabled={false}
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                               id="box-1"
                               onBlur={null}
                               onChange={null}
@@ -1319,7 +1349,7 @@ exports[` 2`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1330,12 +1360,12 @@ exports[` 2`] = `
                             </label>
                           </div>
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 cQLJfv"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 PHGUG"
                             disabled={true}
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 fpvwYH"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-3 kaIWYG"
                               id="box-2"
                               onBlur={null}
                               onChange={null}
@@ -1345,7 +1375,7 @@ exports[` 2`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1356,12 +1386,12 @@ exports[` 2`] = `
                             </label>
                           </div>
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                             disabled={false}
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                               id="box-3"
                               onBlur={null}
                               onChange={null}
@@ -1370,7 +1400,7 @@ exports[` 2`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1381,12 +1411,12 @@ exports[` 2`] = `
                             </label>
                           </div>
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                             disabled={false}
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                               id="box-4"
                               onBlur={null}
                               onChange={null}
@@ -1395,7 +1425,7 @@ exports[` 2`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1413,17 +1443,17 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__InputGroup-sc-1gwp7am-4 fZyrGZ"
                           id={null}
                           rows={null}
                         >
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                             disabled={false}
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                               id="box_long"
                               onBlur={null}
                               onChange={null}
@@ -1432,7 +1462,7 @@ exports[` 2`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1443,12 +1473,12 @@ exports[` 2`] = `
                             </label>
                           </div>
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                             disabled={false}
                           >
                             <input
                               checked={null}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                               id="box_long2"
                               onBlur={null}
                               onChange={null}
@@ -1457,7 +1487,7 @@ exports[` 2`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1475,7 +1505,7 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 daWsys"
+                          className="Typography__StyledLabel-sc-19auepv-0 henUne"
                           cursor="pointer"
                           fontSize="0.75em"
                           fontWeight={400}
@@ -1519,7 +1549,7 @@ exports[` 2`] = `
                                     autoComplete="off"
                                     autoCorrect="off"
                                     disabled={false}
-                                    id="react-select-15-input"
+                                    id="react-select-16-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
                                     onFocus={[Function]}
@@ -1614,7 +1644,7 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eTPjnv"
+                          className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
                           cursor="pointer"
                           fontSize="0.8rem"
                           fontWeight={400}
@@ -1653,7 +1683,7 @@ exports[` 2`] = `
                               value="1"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1680,7 +1710,7 @@ exports[` 2`] = `
                               value="2"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1706,7 +1736,7 @@ exports[` 2`] = `
                               value="3"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1732,7 +1762,7 @@ exports[` 2`] = `
                               value="4"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1770,7 +1800,7 @@ exports[` 2`] = `
                               value="5"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1796,7 +1826,7 @@ exports[` 2`] = `
                               value="6"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1814,7 +1844,7 @@ exports[` 2`] = `
               </form>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 ldHKQY Panel__PanelSection-sc-48epke-2 BZwGc"
+              className="Panel__SectionWrapper-sc-48epke-1 ixXAyA Panel__PanelSection-sc-48epke-2 iiaelC"
               id="Menu 2_footer"
             >
               <div
@@ -1826,17 +1856,17 @@ exports[` 2`] = `
                 placeholder="{ Card }"
               >
                 <section
-                  className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                   id={null}
                   onClick={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Button__GroupWrapper-sc-1v7sls2-3 kvzTEM"
                     id={null}
                     rows={null}
                   >
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                      className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -1851,7 +1881,7 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                          className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                           cursor="pointer"
                           fontSize="1rem"
                           fontWeight={400}
@@ -1863,7 +1893,7 @@ exports[` 2`] = `
                       </section>
                     </button>
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 bGuANy"
+                      className="Button__StyledButton-sc-1v7sls2-0 jLbFrd"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -1878,7 +1908,7 @@ exports[` 2`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                          className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                           cursor="pointer"
                           fontSize="1rem"
                           fontWeight={400}
@@ -1912,14 +1942,14 @@ exports[` 3`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_104"
+    id="storyshots_131"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_104-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_131-Header"
       onClick={null}
     >
       <div
@@ -1963,11 +1993,11 @@ exports[` 3`] = `
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_105_container"
+              id="storyshots_132_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1981,9 +2011,9 @@ exports[` 3`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_105"
+                id="storyshots_132"
                 list={null}
-                name="storyshots_105"
+                name="storyshots_132"
                 onBlur={null}
                 onChange={[Function]}
                 onFocus={null}
@@ -1998,11 +2028,11 @@ exports[` 3`] = `
             </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_106_container"
+              id="storyshots_133_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -2016,9 +2046,9 @@ exports[` 3`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_106"
+                id="storyshots_133"
                 list={null}
-                name="storyshots_106"
+                name="storyshots_133"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -2054,11 +2084,11 @@ exports[` 3`] = `
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_107_container"
+              id="storyshots_134_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -2072,9 +2102,9 @@ exports[` 3`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_107"
+                id="storyshots_134"
                 list={null}
-                name="storyshots_107"
+                name="storyshots_134"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -2088,11 +2118,11 @@ exports[` 3`] = `
             </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_108_container"
+              id="storyshots_135_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -2106,9 +2136,9 @@ exports[` 3`] = `
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_108"
+                id="storyshots_135"
                 list={null}
-                name="storyshots_108"
+                name="storyshots_135"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -2126,7 +2156,7 @@ exports[` 3`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 daWsys"
+                className="Typography__StyledLabel-sc-19auepv-0 henUne"
                 cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
@@ -2153,158 +2183,6 @@ exports[` 3`] = `
                     >
                       
                     </div>
-                    <div
-                      className="css-b8ldur-Input"
-                    >
-                      <div
-                        className=""
-                        style={
-                          Object {
-                            "display": "inline-block",
-                          }
-                        }
-                      >
-                        <input
-                          aria-autocomplete="list"
-                          autoCapitalize="none"
-                          autoComplete="off"
-                          autoCorrect="off"
-                          disabled={false}
-                          id="react-select-16-input"
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          onFocus={[Function]}
-                          spellCheck="false"
-                          style={
-                            Object {
-                              "background": 0,
-                              "border": 0,
-                              "boxSizing": "content-box",
-                              "color": "inherit",
-                              "fontSize": "inherit",
-                              "label": "input",
-                              "opacity": 1,
-                              "outline": 0,
-                              "padding": 0,
-                              "width": "1px",
-                            }
-                          }
-                          tabIndex="0"
-                          type="text"
-                          value=""
-                        />
-                        <div
-                          style={
-                            Object {
-                              "height": 0,
-                              "left": 0,
-                              "overflow": "scroll",
-                              "position": "absolute",
-                              "top": 0,
-                              "visibility": "hidden",
-                              "whiteSpace": "pre",
-                            }
-                          }
-                        >
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className=" css-1hb7zxy-IndicatorsContainer"
-                  >
-                    <span
-                      className=" css-rci3ok-indicatorSeparator"
-                    />
-                    <div
-                      aria-hidden="true"
-                      className=" css-1jw44s5-indicatorContainer"
-                      onMouseDown={[Function]}
-                      onTouchEnd={[Function]}
-                    >
-                      <svg
-                        aria-hidden="true"
-                        className="css-6q0nyr-Svg"
-                        focusable="false"
-                        height={20}
-                        viewBox="0 0 20 20"
-                        width={20}
-                      >
-                        <path
-                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_109_container"
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Zip
-              </label>
-              <input
-                autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                cols=""
-                disabled={false}
-                id="storyshots_109"
-                list={null}
-                name="storyshots_109"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                onKeyPress={null}
-                onKeyUp={null}
-                pattern={null}
-                placeholder={null}
-                rows=""
-                type="text"
-              />
-            </section>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
-              id={null}
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 daWsys"
-                cursor="pointer"
-                fontSize="0.75em"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing="0.4px"
-              >
-                Property Type
-              </label>
-              <div
-                className=" css-3p29ga-container"
-                id={null}
-                onKeyDown={[Function]}
-              >
-                <div
-                  className=" css-14ku2k9-control"
-                  onMouseDown={[Function]}
-                  onTouchEnd={[Function]}
-                >
-                  <div
-                    className=" css-g1d714-ValueContainer"
-                  >
-                    <div
-                      className=" css-1m79im8-placeholder"
-                    />
                     <div
                       className="css-b8ldur-Input"
                     >
@@ -2393,19 +2271,53 @@ exports[` 3`] = `
               </div>
             </section>
             <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_136_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Zip
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_136"
+                list={null}
+                name="storyshots_136"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 daWsys"
+                className="Typography__StyledLabel-sc-19auepv-0 henUne"
                 cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing="0.4px"
               >
-                Property Sub-Type
+                Property Type
               </label>
               <div
                 className=" css-3p29ga-container"
@@ -2510,699 +2422,20 @@ exports[` 3`] = `
                 </div>
               </div>
             </section>
-          </section>
-        </section>
-      </section>
-    </form>
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id={null}
-      onClick={null}
-    >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
-        id={null}
-        rows={null}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
-          disabled={false}
-          htmlFor={null}
-          id="Cangel"
-          name="Cangel"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Cancel
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
-          disabled={false}
-          htmlFor={null}
-          id="Create"
-          name="Create"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Create
-            </label>
-          </section>
-        </button>
-      </section>
-    </section>
-  </div>
-</div>
-`;
-
-exports[` 4`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
-    href={null}
-    id="storyshots_110"
-    media=""
-    onClick={null}
-    placeholder="{ Card }"
-  >
-    <div
-      className="Bar__BarLayout-icfo76-2 jEWtiX"
-      id={null}
-      onClick={null}
-    >
-      <div
-        className="Bar__Slot-icfo76-1 dLaZFL"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-          id={null}
-          rows={null}
-        >
-          <h3
-            className="Typography__TitleText-sc-19auepv-2 gzJfws"
-            fontSize="1.5rem"
-            fontWeight="400"
-            letterSpacing="0.25px"
-          >
-            Job Successfully Created!
-          </h3>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-            fontSize="1rem"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0.5px"
-          >
-            You can choose to begin work on your job or create another job
-          </p>
-        </section>
-      </div>
-    </div>
-    <div
-      className="Bar__BarLayout-icfo76-2 fliBOc"
-      id={null}
-      onClick={null}
-    >
-      <div
-        className="Bar__Slot-icfo76-1 dLaZFL"
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 cMBdVf"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              View Job
-            </label>
-          </section>
-        </button>
-      </div>
-    </div>
-    <hr
-      className="Divider__Line-sc-1k80dpa-0 hYpRQN"
-    />
-    <div
-      className="Bar__BarLayout-icfo76-2 cnmtbQ"
-      id={null}
-      onClick={null}
-    >
-      <div
-        className="Bar__Slot-icfo76-1 fNcQEg"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-          id={null}
-          rows={null}
-        >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 enVeME"
-            fontSize="1.1rem"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0.8px"
-          >
-            Add the following data and services to your job:
-          </p>
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
-          >
-            Add Research
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-            fontSize="1rem"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0.5px"
-          >
-            Complete research for your job. Define and discover data for your property including Assessment Data, Demographics, and Zoning.
-          </p>
-        </section>
-      </div>
-      <div
-        className="Bar__Slot-icfo76-1 kZQbjh"
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 haErFD"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Start Research
-            </label>
-          </section>
-        </button>
-      </div>
-    </div>
-    <div
-      className="Bar__BarLayout-icfo76-2 cnmtbQ"
-      id={null}
-      onClick={null}
-    >
-      <div
-        className="Bar__Slot-icfo76-1 fNcQEg"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-          id={null}
-          rows={null}
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
-          >
-            Add Report Writing
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-            fontSize="1rem"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0.5px"
-          >
-            You can use Project360 or Narrative1 to author your reports. You can select your scope of work and templates here with the Report Writing tools.
-          </p>
-        </section>
-      </div>
-      <div
-        className="Bar__Slot-icfo76-1 kZQbjh"
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 haErFD"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Start Report
-            </label>
-          </section>
-        </button>
-      </div>
-    </div>
-    <hr
-      className="Divider__Line-sc-1k80dpa-0 hYpRQN"
-    />
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id={null}
-      onClick={null}
-    >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
-        id={null}
-        rows={null}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
-          disabled={false}
-          htmlFor={null}
-          id="Done"
-          name="Done"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Done
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
-          disabled={false}
-          htmlFor={null}
-          id="Create"
-          name="Create"
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-            >
-              Create Another
-            </label>
-          </section>
-        </button>
-      </section>
-    </section>
-  </div>
-</div>
-`;
-
-exports[` 5`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
-    href={null}
-    id="storyshots_111"
-    media=""
-    onClick={null}
-    placeholder="{ Card }"
-  >
-    <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_111-Header"
-      onClick={null}
-    >
-      <div
-        className="Bar__BarLayout-icfo76-2 eUVQsH"
-        id={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__Slot-icfo76-1 RjiBe"
-        >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
-          >
-            Create RFP
-          </h4>
-        </div>
-      </div>
-    </section>
-    <section
-      className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
-      disabled={false}
-      id={null}
-    >
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Tabs__TabButton-sc-1aqycph-0 dlQYYB"
-        disabled={false}
-        htmlFor={null}
-        id="RFPs"
-        name="RFPs"
-        onClick={null}
-        tabIndex="1"
-        type="button"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-          id={null}
-          rows={null}
-        >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-            cursor="pointer"
-            fontSize="1rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing=".5px"
-          >
-            RFP Details
-          </label>
-        </section>
-      </button>
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
-        disabled={false}
-        htmlFor={null}
-        id="Bid"
-        name="Bid"
-        onClick={null}
-        tabIndex="1"
-        type="button"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-          id={null}
-          rows={null}
-        >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-            cursor="pointer"
-            fontSize="1rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing=".5px"
-          >
-            Bid Details
-          </label>
-        </section>
-      </button>
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
-        disabled={false}
-        htmlFor={null}
-        id="Complete"
-        name="Complete"
-        onClick={null}
-        tabIndex="1"
-        type="button"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-          id={null}
-          rows={null}
-        >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-            cursor="pointer"
-            fontSize="1rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing=".5px"
-          >
-            Completion
-          </label>
-        </section>
-      </button>
-    </section>
-    <form
-      action={null}
-      className="Form__FormWrapper-v2wrel-1 jozDvZ"
-      id={null}
-      method={null}
-      onSubmit={null}
-    >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
-        id={null}
-        rows={null}
-      >
-        <section
-          className="Form__Section-v2wrel-0 XxWIM"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
-            id={null}
-            rows={null}
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_112_container"
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                RFP Number
-              </label>
-              <input
-                autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                cols=""
-                disabled={false}
-                id="storyshots_112"
-                list={null}
-                name="storyshots_112"
-                onBlur={null}
-                onChange={[Function]}
-                onFocus={null}
-                onKeyPress={null}
-                onKeyUp={null}
-                pattern={null}
-                placeholder={null}
-                rows=""
-                type="text"
-                value="19-12341234"
-              />
-            </section>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_113_container"
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                RFP Name
-              </label>
-              <input
-                autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                cols=""
-                disabled={false}
-                id="storyshots_113"
-                list={null}
-                name="storyshots_113"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                onKeyPress={null}
-                onKeyUp={null}
-                pattern={null}
-                placeholder="New LightBox Project"
-                rows=""
-                type="text"
-              />
-            </section>
-          </section>
-        </section>
-        <hr
-          className="Divider__Line-sc-1k80dpa-0 hYpRQN"
-        />
-        <section
-          className="Form__Section-v2wrel-0 XxWIM"
-        >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
-            fontSize="0.875rem"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0.25px"
-          >
-            Property Info
-          </p>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 fMWYWI"
-            id={null}
-            rows={null}
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_114_container"
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                Address
-              </label>
-              <input
-                autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                cols=""
-                disabled={false}
-                id="storyshots_114"
-                list={null}
-                name="storyshots_114"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                onKeyPress={null}
-                onKeyUp={null}
-                pattern={null}
-                placeholder={null}
-                rows=""
-                type="text"
-              />
-            </section>
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_115_container"
-              rows={null}
-            >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
-              >
-                City
-              </label>
-              <input
-                autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
-                cols=""
-                disabled={false}
-                id="storyshots_115"
-                list={null}
-                name="storyshots_115"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                onKeyPress={null}
-                onKeyUp={null}
-                pattern={null}
-                placeholder={null}
-                rows=""
-                type="text"
-              />
-            </section>
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 daWsys"
+                className="Typography__StyledLabel-sc-19auepv-0 henUne"
                 cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing="0.4px"
               >
-                State
+                Property Sub-Type
               </label>
               <div
                 className=" css-3p29ga-container"
@@ -3219,9 +2452,7 @@ exports[` 5`] = `
                   >
                     <div
                       className=" css-1m79im8-placeholder"
-                    >
-                      
-                    </div>
+                    />
                     <div
                       className="css-b8ldur-Input"
                     >
@@ -3309,29 +2540,674 @@ exports[` 5`] = `
                 </div>
               </div>
             </section>
+          </section>
+        </section>
+      </section>
+    </form>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          disabled={false}
+          htmlFor={null}
+          id="Cangel"
+          name="Cangel"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Cancel
+            </label>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          disabled={false}
+          htmlFor={null}
+          id="Create"
+          name="Create"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Create
+            </label>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 4`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    href={null}
+    id="storyshots_137"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 eolhhe"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 dLaZFL"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+          id={null}
+          rows={null}
+        >
+          <h3
+            className="Typography__TitleText-sc-19auepv-2 gzJfws"
+            fontSize="1.5rem"
+            fontWeight="400"
+            letterSpacing="0.25px"
+          >
+            Job Successfully Created!
+          </h3>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            You can choose to begin work on your job or create another job
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      className="Bar__BarLayout-icfo76-2 kTXCTV"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 dLaZFL"
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 hFkXno"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              View Job
+            </label>
+          </section>
+        </button>
+      </div>
+    </div>
+    <hr
+      className="Divider__Line-sc-1k80dpa-0 hYpRQN"
+    />
+    <div
+      className="Bar__BarLayout-icfo76-2 cnmtbQ"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+          id={null}
+          rows={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 enVeME"
+            fontSize="1.1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.8px"
+          >
+            Add the following data and services to your job:
+          </p>
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
+          >
+            Add Research
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Complete research for your job. Define and discover data for your property including Assessment Data, Demographics, and Zoning.
+          </p>
+        </section>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 kZQbjh"
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Start Research
+            </label>
+          </section>
+        </button>
+      </div>
+    </div>
+    <div
+      className="Bar__BarLayout-icfo76-2 cnmtbQ"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+          id={null}
+          rows={null}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+            fontSize="1.2rem"
+            fontWeight="400"
+            letterSpacing="1px"
+          >
+            Add Report Writing
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            You can use Project360 or Narrative1 to author your reports. You can select your scope of work and templates here with the Report Writing tools.
+          </p>
+        </section>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 kZQbjh"
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Start Report
+            </label>
+          </section>
+        </button>
+      </div>
+    </div>
+    <hr
+      className="Divider__Line-sc-1k80dpa-0 hYpRQN"
+    />
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          disabled={false}
+          htmlFor={null}
+          id="Done"
+          name="Done"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Done
+            </label>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          disabled={false}
+          htmlFor={null}
+          id="Create"
+          name="Create"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Create Another
+            </label>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 5`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    href={null}
+    id="storyshots_138"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_138-Header"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 RjiBe"
+        >
+          <h4
+            className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+            fontSize="1.35rem"
+            fontWeight="400"
+            letterSpacing="0px"
+          >
+            Create RFP
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+      disabled={false}
+      id={null}
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+        disabled={false}
+        htmlFor={null}
+        id="RFPs"
+        name="RFPs"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+            cursor="pointer"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            RFP Details
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+        disabled={false}
+        htmlFor={null}
+        id="Bid"
+        name="Bid"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+            cursor="pointer"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Bid Details
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+        disabled={false}
+        htmlFor={null}
+        id="Complete"
+        name="Complete"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+            cursor="pointer"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+          >
+            Completion
+          </label>
+        </section>
+      </button>
+    </section>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-1 jozDvZ"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+            id={null}
+            rows={null}
+          >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-              id="storyshots_116_container"
+              id="storyshots_139_container"
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
               >
-                Zip
+                RFP Number
               </label>
               <input
                 autoComplete="off"
                 className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                 cols=""
                 disabled={false}
-                id="storyshots_116"
+                id="storyshots_139"
                 list={null}
-                name="storyshots_116"
+                name="storyshots_139"
+                onBlur={null}
+                onChange={[Function]}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+                value="19-12341234"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_140_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                RFP Name
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_140"
+                list={null}
+                name="storyshots_140"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder="New LightBox Project"
+                rows=""
+                type="text"
+              />
+            </section>
+          </section>
+        </section>
+        <hr
+          className="Divider__Line-sc-1k80dpa-0 hYpRQN"
+        />
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+            fontSize="0.875rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.25px"
+          >
+            Property Info
+          </p>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 fMWYWI"
+            id={null}
+            rows={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_141_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Address
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_141"
+                list={null}
+                name="storyshots_141"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_142_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                City
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_142"
+                list={null}
+                name="storyshots_142"
                 onBlur={null}
                 onChange={null}
                 onFocus={null}
@@ -3349,14 +3225,14 @@ exports[` 5`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 daWsys"
+                className="Typography__StyledLabel-sc-19auepv-0 henUne"
                 cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing="0.4px"
               >
-                Property Type
+                State
               </label>
               <div
                 className=" css-3p29ga-container"
@@ -3373,7 +3249,9 @@ exports[` 5`] = `
                   >
                     <div
                       className=" css-1m79im8-placeholder"
-                    />
+                    >
+                      
+                    </div>
                     <div
                       className="css-b8ldur-Input"
                     >
@@ -3462,19 +3340,53 @@ exports[` 5`] = `
               </div>
             </section>
             <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="storyshots_143_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Zip
+              </label>
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                cols=""
+                disabled={false}
+                id="storyshots_143"
+                list={null}
+                name="storyshots_143"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                onKeyUp={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                type="text"
+              />
+            </section>
+            <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 daWsys"
+                className="Typography__StyledLabel-sc-19auepv-0 henUne"
                 cursor="pointer"
                 fontSize="0.75em"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing="0.4px"
               >
-                Property Sub-Type
+                Property Type
               </label>
               <div
                 className=" css-3p29ga-container"
@@ -3579,12 +3491,130 @@ exports[` 5`] = `
                 </div>
               </div>
             </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                cursor="pointer"
+                fontSize="0.75em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.4px"
+              >
+                Property Sub-Type
+              </label>
+              <div
+                className=" css-3p29ga-container"
+                id={null}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-14ku2k9-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <div
+                    className=" css-g1d714-ValueContainer"
+                  >
+                    <div
+                      className=" css-1m79im8-placeholder"
+                    />
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-22-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </section>
         </section>
       </section>
     </form>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
       id={null}
       onClick={null}
     >
@@ -3594,7 +3624,7 @@ exports[` 5`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Cancel"
@@ -3609,7 +3639,7 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -3621,7 +3651,7 @@ exports[` 5`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Next"
@@ -3636,7 +3666,7 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -3664,14 +3694,14 @@ exports[` 6`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_117"
+    id="storyshots_144"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_117-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_144-Header"
       onClick={null}
     >
       <div
@@ -3699,7 +3729,7 @@ exports[` 6`] = `
       id={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+        className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="RFPs"
@@ -3714,7 +3744,7 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -3726,7 +3756,7 @@ exports[` 6`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+        className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Tabs__TabButton-sc-1aqycph-0 dlQYYB"
         disabled={false}
         htmlFor={null}
         id="Bid"
@@ -3741,7 +3771,7 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -3753,7 +3783,7 @@ exports[` 6`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+        className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="Complete"
@@ -3768,7 +3798,7 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -3817,11 +3847,11 @@ exports[` 6`] = `
               >
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_118_container"
+                  id="storyshots_145_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3835,9 +3865,9 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_118"
+                    id="storyshots_145"
                     list={null}
-                    name="storyshots_118"
+                    name="storyshots_145"
                     onBlur={null}
                     onChange={[Function]}
                     onFocus={null}
@@ -3852,11 +3882,11 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_119_container"
+                  id="storyshots_146_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3870,9 +3900,9 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_119"
+                    id="storyshots_146"
                     list={null}
-                    name="storyshots_119"
+                    name="storyshots_146"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -3886,11 +3916,11 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_120_container"
+                  id="storyshots_147_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3904,9 +3934,9 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_120"
+                    id="storyshots_147"
                     list={null}
-                    name="storyshots_120"
+                    name="storyshots_147"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -3920,11 +3950,11 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_121_container"
+                  id="storyshots_148_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3938,9 +3968,9 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_121"
+                    id="storyshots_148"
                     list={null}
-                    name="storyshots_121"
+                    name="storyshots_148"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -3968,7 +3998,7 @@ exports[` 6`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 daWsys"
+                    className="Typography__StyledLabel-sc-19auepv-0 henUne"
                     cursor="pointer"
                     fontSize="0.75em"
                     fontWeight={400}
@@ -4012,7 +4042,7 @@ exports[` 6`] = `
                               autoComplete="off"
                               autoCorrect="off"
                               disabled={false}
-                              id="react-select-22-input"
+                              id="react-select-23-input"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onFocus={[Function]}
@@ -4084,11 +4114,11 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_122_container"
+                  id="storyshots_149_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4102,9 +4132,9 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_122"
+                    id="storyshots_149"
                     list={null}
-                    name="storyshots_122"
+                    name="storyshots_149"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -4139,11 +4169,11 @@ exports[` 6`] = `
               >
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_123_container"
+                  id="storyshots_150_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4157,9 +4187,9 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_123"
+                    id="storyshots_150"
                     list={null}
-                    name="storyshots_123"
+                    name="storyshots_150"
                     onBlur={null}
                     onChange={[Function]}
                     onFocus={null}
@@ -4178,7 +4208,7 @@ exports[` 6`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 daWsys"
+                    className="Typography__StyledLabel-sc-19auepv-0 henUne"
                     cursor="pointer"
                     fontSize="0.75em"
                     fontWeight={400}
@@ -4256,7 +4286,7 @@ exports[` 6`] = `
                                   autoComplete="off"
                                   autoCorrect="off"
                                   disabled={false}
-                                  id="react-select-23-input"
+                                  id="react-select-24-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -4330,11 +4360,11 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_124_container"
+                  id="storyshots_151_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4348,9 +4378,9 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_124"
+                    id="storyshots_151"
                     list={null}
-                    name="storyshots_124"
+                    name="storyshots_151"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -4364,11 +4394,11 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_125_container"
+                  id="storyshots_152_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4382,11 +4412,11 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 cIeabP"
                     cols=""
                     disabled={false}
-                    id="storyshots_125"
+                    id="storyshots_152"
                     list={null}
                     max="2999-12-31"
                     min="1019-01-01"
-                    name="storyshots_125"
+                    name="storyshots_152"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -4400,11 +4430,11 @@ exports[` 6`] = `
                 </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                  id="storyshots_126_container"
+                  id="storyshots_153_container"
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4418,9 +4448,9 @@ exports[` 6`] = `
                     className="TextInput__Input-sc-1fep8p8-2 iqyrro"
                     cols=""
                     disabled={false}
-                    id="storyshots_126"
+                    id="storyshots_153"
                     list={null}
-                    name="storyshots_126"
+                    name="storyshots_153"
                     onBlur={null}
                     onChange={null}
                     onFocus={null}
@@ -4439,7 +4469,7 @@ exports[` 6`] = `
       </section>
     </form>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
       id={null}
       onClick={null}
     >
@@ -4449,7 +4479,7 @@ exports[` 6`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Cancel"
@@ -4464,7 +4494,7 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4476,7 +4506,7 @@ exports[` 6`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Complete"
@@ -4491,7 +4521,7 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4519,14 +4549,14 @@ exports[` 7`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_127"
+    id="storyshots_154"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_127-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_154-Header"
       onClick={null}
     >
       <div
@@ -4554,7 +4584,7 @@ exports[` 7`] = `
       id={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+        className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="RFPs"
@@ -4569,7 +4599,7 @@ exports[` 7`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -4581,7 +4611,7 @@ exports[` 7`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 gyEXoy Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+        className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
         disabled={false}
         htmlFor={null}
         id="Bid"
@@ -4596,7 +4626,7 @@ exports[` 7`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -4608,7 +4638,7 @@ exports[` 7`] = `
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+        className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Tabs__TabButton-sc-1aqycph-0 dlQYYB"
         disabled={false}
         htmlFor={null}
         id="Complete"
@@ -4623,7 +4653,7 @@ exports[` 7`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -4636,7 +4666,7 @@ exports[` 7`] = `
       </button>
     </section>
     <div
-      className="Bar__BarLayout-icfo76-2 jEWtiX"
+      className="Bar__BarLayout-icfo76-2 eolhhe"
       id={null}
       onClick={null}
     >
@@ -4669,7 +4699,7 @@ exports[` 7`] = `
       </div>
     </div>
     <div
-      className="Bar__BarLayout-icfo76-2 fliBOc"
+      className="Bar__BarLayout-icfo76-2 kTXCTV"
       id={null}
       onClick={null}
     >
@@ -4677,7 +4707,7 @@ exports[` 7`] = `
         className="Bar__Slot-icfo76-1 dLaZFL"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 cMBdVf"
+          className="Button__StyledButton-sc-1v7sls2-0 hFkXno"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -4692,7 +4722,7 @@ exports[` 7`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4706,7 +4736,7 @@ exports[` 7`] = `
       </div>
     </div>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
       id={null}
       onClick={null}
     >
@@ -4716,7 +4746,7 @@ exports[` 7`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Done"
@@ -4731,7 +4761,7 @@ exports[` 7`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4743,7 +4773,7 @@ exports[` 7`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Create"
@@ -4758,7 +4788,7 @@ exports[` 7`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4785,7 +4815,7 @@ exports[` 8`] = `
 >
   <div
     className="Popper__NonPortalWrapper-sc-1t9125t-1 fePbDW"
-    id="storyshots_128"
+    id="storyshots_155"
   >
     <div
       className="Avatar__TagContainer-sc-1vuf9om-2 jAjgCj"
@@ -4804,12 +4834,12 @@ exports[` 8`] = `
     </div>
     <div
       className="Popper__PopperWrapper-sc-1t9125t-2 MRJgP"
-      id="popper-wrapperstoryshots_128"
+      id="popper-wrapperstoryshots_155"
     >
       <div
         className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
-        id="storyshots_129"
+        id="storyshots_156"
         media=""
         onClick={null}
         placeholder="{ Card }"
@@ -4820,7 +4850,7 @@ exports[` 8`] = `
           rows={null}
         >
           <div
-            className="Bar__BarLayout-icfo76-2 koRqOO"
+            className="Bar__BarLayout-icfo76-2 lhYWkb"
             id={null}
             onClick={null}
           >
@@ -4845,7 +4875,7 @@ exports[` 8`] = `
             </div>
           </div>
           <div
-            className="Bar__BarLayout-icfo76-2 jGhkbe"
+            className="Bar__BarLayout-icfo76-2 wJZwX"
             id={null}
             onClick={null}
           >
@@ -4896,7 +4926,7 @@ exports[` 8`] = `
             </div>
           </div>
           <div
-            className="Bar__BarLayout-icfo76-2 jEWtiX"
+            className="Bar__BarLayout-icfo76-2 eolhhe"
             id={null}
             onClick={null}
           >
@@ -4904,7 +4934,7 @@ exports[` 8`] = `
               className="Bar__Slot-icfo76-1 dLaZFL"
             >
               <a
-                className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                 id={null}
                 label="Manage my Profile"
                 onClick={null}
@@ -4931,7 +4961,7 @@ exports[` 8`] = `
                   />
                 </svg>
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -4944,7 +4974,7 @@ exports[` 8`] = `
             </div>
           </div>
           <div
-            className="Bar__BarLayout-icfo76-2 jEWtiX"
+            className="Bar__BarLayout-icfo76-2 eolhhe"
             id={null}
             onClick={null}
           >
@@ -4952,7 +4982,7 @@ exports[` 8`] = `
               className="Bar__Slot-icfo76-1 dLaZFL"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 jDBAUA"
+                className="Button__StyledButton-sc-1v7sls2-0 dNUhCr"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -4987,7 +5017,7 @@ exports[` 8`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -5003,6 +5033,1739 @@ exports[` 8`] = `
         </section>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[` 9`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    action="open"
+    aria-describedby={null}
+    aria-labelledby={null}
+    className="Modal__ModalContainer-sc-15cll21-2 cpUbSj"
+    id="storyshots_157"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
+    pointerEvents="auto"
+  >
+    <div
+      action="open"
+      className="Modal__ModalBG-sc-15cll21-3 kYqLIf"
+      id="modal-bg-storyshots_157"
+      onClick={null}
+    />
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 gYRiOy"
+      id="storyshots_157-animation"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        href={null}
+        id="storyshots_158"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <div
+          className="Bar__BarLayout-icfo76-2 kTXCTV"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 fNcQEg"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+              id={null}
+              rows={null}
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                id={null}
+                rows={null}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+                  fontSize="0.75rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.4px"
+                >
+                  Job
+                </p>
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+                  fontSize="1.15rem"
+                  fontWeight="500"
+                  letterSpacing="0.4px"
+                >
+                  20930-30308-39043
+                </h5>
+              </section>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                id={null}
+                rows={null}
+              >
+                <div
+                  className=" css-3p29ga-container"
+                  id={null}
+                  onKeyDown={[Function]}
+                >
+                  <div
+                    className=" css-14ku2k9-control"
+                    onMouseDown={[Function]}
+                    onTouchEnd={[Function]}
+                  >
+                    <div
+                      className=" css-g1d714-ValueContainer"
+                    >
+                      <div
+                        className=" css-1m79im8-placeholder"
+                      />
+                      <div
+                        className="css-b8ldur-Input"
+                      >
+                        <div
+                          className=""
+                          style={
+                            Object {
+                              "display": "inline-block",
+                            }
+                          }
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoCapitalize="none"
+                            autoComplete="off"
+                            autoCorrect="off"
+                            disabled={null}
+                            id="react-select-25-input"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            spellCheck="false"
+                            style={
+                              Object {
+                                "background": 0,
+                                "border": 0,
+                                "boxSizing": "content-box",
+                                "color": "inherit",
+                                "fontSize": "inherit",
+                                "label": "input",
+                                "opacity": 1,
+                                "outline": 0,
+                                "padding": 0,
+                                "width": "1px",
+                              }
+                            }
+                            tabIndex="0"
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            style={
+                              Object {
+                                "height": 0,
+                                "left": 0,
+                                "overflow": "scroll",
+                                "position": "absolute",
+                                "top": 0,
+                                "visibility": "hidden",
+                                "whiteSpace": "pre",
+                              }
+                            }
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className=" css-1hb7zxy-IndicatorsContainer"
+                    >
+                      <span
+                        className=" css-rci3ok-indicatorSeparator"
+                      />
+                      <div
+                        aria-hidden="true"
+                        className=" css-1jw44s5-indicatorContainer"
+                        onMouseDown={[Function]}
+                        onTouchEnd={[Function]}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="css-6q0nyr-Svg"
+                          focusable="false"
+                          height={20}
+                          viewBox="0 0 20 20"
+                          width={20}
+                        >
+                          <path
+                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+        <form
+          action={null}
+          className="Form__FormWrapper-v2wrel-1 jozDvZ"
+          id={null}
+          method={null}
+          onSubmit={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+            id={null}
+            rows={null}
+          >
+            <section
+              className="Form__Section-v2wrel-0 XxWIM"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+                fontSize="0.875rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.25px"
+              >
+                Job Details
+              </p>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+                id={null}
+                rows={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Job Number
+                  </label>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                    fontSize="1rem"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    398-0293-9808
+                  </p>
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Job Name
+                  </label>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                    fontSize="1rem"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    My LightBox Job
+                  </p>
+                </section>
+              </section>
+            </section>
+            <section
+              className="Form__Section-v2wrel-0 XxWIM"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+                fontSize="0.875rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.25px"
+              >
+                Property Details
+              </p>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+                id={null}
+                rows={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Address
+                  </label>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                    fontSize="1rem"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    418 Sycamore Ln.
+                  </p>
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    City
+                  </label>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                    fontSize="1rem"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    Savannah
+                  </p>
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    State
+                  </label>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                    fontSize="1rem"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    GA
+                  </p>
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Zip
+                  </label>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                    fontSize="1rem"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    31522
+                  </p>
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Property Type
+                  </label>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                    fontSize="1rem"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    Residential
+                  </p>
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                    cursor="pointer"
+                    fontSize="1rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Property Sub-Type
+                  </label>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                    fontSize="1rem"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.5px"
+                  >
+                    Single Family
+                  </p>
+                </section>
+              </section>
+            </section>
+          </section>
+        </form>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+              disabled={false}
+              htmlFor={null}
+              id="Cancel"
+              name="Cancel"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Cancel
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+              disabled={false}
+              htmlFor={null}
+              id="Save"
+              name="Save"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Save
+                </label>
+              </section>
+            </button>
+          </section>
+        </section>
+      </div>
+    </span>
+  </div>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 bcpwfv Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bcpwfv Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eqURbq Layout__WrapperMain-sc-19tlhp4-5 jBholC"
+        height="21rem"
+        id={null}
+        overflow={null}
+        width="100%"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 gtAlCj Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
+          height={null}
+          id={null}
+          overflow={null}
+          width={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Main layout
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 10`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    href={null}
+    id="storyshots_159"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 kTXCTV"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.4px"
+            >
+              RFP
+            </p>
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
+            >
+              20930-30308-39043
+            </h5>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+            id={null}
+            rows={null}
+          >
+            <div
+              className=" css-3p29ga-container"
+              id={null}
+              onKeyDown={[Function]}
+            >
+              <div
+                className=" css-14ku2k9-control"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <div
+                  className=" css-g1d714-ValueContainer"
+                >
+                  <div
+                    className=" css-1m79im8-placeholder"
+                  />
+                  <div
+                    className="css-b8ldur-Input"
+                  >
+                    <div
+                      className=""
+                      style={
+                        Object {
+                          "display": "inline-block",
+                        }
+                      }
+                    >
+                      <input
+                        aria-autocomplete="list"
+                        autoCapitalize="none"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        disabled={null}
+                        id="react-select-26-input"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        spellCheck="false"
+                        style={
+                          Object {
+                            "background": 0,
+                            "border": 0,
+                            "boxSizing": "content-box",
+                            "color": "inherit",
+                            "fontSize": "inherit",
+                            "label": "input",
+                            "opacity": 1,
+                            "outline": 0,
+                            "padding": 0,
+                            "width": "1px",
+                          }
+                        }
+                        tabIndex="0"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "left": 0,
+                            "overflow": "scroll",
+                            "position": "absolute",
+                            "top": 0,
+                            "visibility": "hidden",
+                            "whiteSpace": "pre",
+                          }
+                        }
+                      >
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className=" css-1hb7zxy-IndicatorsContainer"
+                >
+                  <span
+                    className=" css-rci3ok-indicatorSeparator"
+                  />
+                  <div
+                    aria-hidden="true"
+                    className=" css-1jw44s5-indicatorContainer"
+                    onMouseDown={[Function]}
+                    onTouchEnd={[Function]}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="css-6q0nyr-Svg"
+                      focusable="false"
+                      height={20}
+                      viewBox="0 0 20 20"
+                      width={20}
+                    >
+                      <path
+                        d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+    <div
+      className="Bar__BarLayout-icfo76-2 kTXCTV"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <section
+          className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+          disabled={false}
+          id={null}
+        >
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                RFP
+              </label>
+            </section>
+          </button>
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Bid
+              </label>
+            </section>
+          </button>
+        </section>
+      </div>
+    </div>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-1 jozDvZ"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+            fontSize="0.875rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.25px"
+          >
+            Job Details
+          </p>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+            id={null}
+            rows={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Job Number
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                398-0293-9808
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Job Name
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                My LightBox Job
+              </p>
+            </section>
+          </section>
+        </section>
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+            fontSize="0.875rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.25px"
+          >
+            Property Details
+          </p>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+            id={null}
+            rows={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Address
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                418 Sycamore Ln.
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                City
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Savannah
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                State
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                GA
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Zip
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                31522
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Property Type
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Residential
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Property Sub-Type
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Single Family
+              </p>
+            </section>
+          </section>
+        </section>
+      </section>
+    </form>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          disabled={false}
+          htmlFor={null}
+          id="Cancel"
+          name="Cancel"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Cancel
+            </label>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          disabled={false}
+          htmlFor={null}
+          id="Save"
+          name="Save"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Save
+            </label>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 11`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+    href={null}
+    id="storyshots_160"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 kTXCTV"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+              fontSize="0.75rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.4px"
+            >
+              RFP
+            </p>
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
+            >
+              20930-30308-39043
+            </h5>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+            id={null}
+            rows={null}
+          >
+            <div
+              className=" css-3p29ga-container"
+              id={null}
+              onKeyDown={[Function]}
+            >
+              <div
+                className=" css-14ku2k9-control"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <div
+                  className=" css-g1d714-ValueContainer"
+                >
+                  <div
+                    className=" css-1m79im8-placeholder"
+                  />
+                  <div
+                    className="css-b8ldur-Input"
+                  >
+                    <div
+                      className=""
+                      style={
+                        Object {
+                          "display": "inline-block",
+                        }
+                      }
+                    >
+                      <input
+                        aria-autocomplete="list"
+                        autoCapitalize="none"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        disabled={null}
+                        id="react-select-27-input"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        spellCheck="false"
+                        style={
+                          Object {
+                            "background": 0,
+                            "border": 0,
+                            "boxSizing": "content-box",
+                            "color": "inherit",
+                            "fontSize": "inherit",
+                            "label": "input",
+                            "opacity": 1,
+                            "outline": 0,
+                            "padding": 0,
+                            "width": "1px",
+                          }
+                        }
+                        tabIndex="0"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "left": 0,
+                            "overflow": "scroll",
+                            "position": "absolute",
+                            "top": 0,
+                            "visibility": "hidden",
+                            "whiteSpace": "pre",
+                          }
+                        }
+                      >
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className=" css-1hb7zxy-IndicatorsContainer"
+                >
+                  <span
+                    className=" css-rci3ok-indicatorSeparator"
+                  />
+                  <div
+                    aria-hidden="true"
+                    className=" css-1jw44s5-indicatorContainer"
+                    onMouseDown={[Function]}
+                    onTouchEnd={[Function]}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="css-6q0nyr-Svg"
+                      focusable="false"
+                      height={20}
+                      viewBox="0 0 20 20"
+                      width={20}
+                    >
+                      <path
+                        d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+    <div
+      className="Bar__BarLayout-icfo76-2 kTXCTV"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <section
+          className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+          disabled={false}
+          id={null}
+        >
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                RFP
+              </label>
+            </section>
+          </button>
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Bid
+              </label>
+            </section>
+          </button>
+        </section>
+      </div>
+    </div>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-1 jozDvZ"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+            fontSize="0.875rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.25px"
+          >
+            Client Details
+          </p>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+            id={null}
+            rows={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Client Name
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                398-0293-9808
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Client Company
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                My LightBox Job
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Address
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                418 Sycamore Ln.
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                City
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Savannah
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                State
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                GA
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Zip
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                31522
+              </p>
+            </section>
+          </section>
+        </section>
+        <section
+          className="Form__Section-v2wrel-0 XxWIM"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
+            fontSize="0.875rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.25px"
+          >
+            Bid Details
+          </p>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+            id={null}
+            rows={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Scope of Work
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Value
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Bid Amount
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                $Value
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Turn Around Time
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Value
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Expected Response Date
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                Value
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+                cursor="pointer"
+                fontSize="1rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Additional Notes
+              </label>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                fontSize="1rem"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                All my notes.
+              </p>
+            </section>
+          </section>
+        </section>
+      </section>
+    </form>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 eqBQIV"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          disabled={false}
+          htmlFor={null}
+          id="Cancel"
+          name="Cancel"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Cancel
+            </label>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          disabled={false}
+          htmlFor={null}
+          id="Save"
+          name="Save"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+            >
+              Save
+            </label>
+          </section>
+        </button>
+      </section>
+    </section>
   </div>
 </div>
 `;
