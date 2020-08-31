@@ -59,7 +59,7 @@ const BoxContainer = styled.div`
   }
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
     border-radius: 20px;
   }
@@ -70,7 +70,7 @@ const BoxContainer = styled.div`
 }
   ::-webkit-scrollbar-thumb:horizontal{
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
   border-radius: 20px;
 }

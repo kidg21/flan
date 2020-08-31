@@ -57,7 +57,7 @@ const SectionWrapper = styled.section`
   }
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
     border-radius: 20px;
   }
@@ -68,7 +68,7 @@ const SectionWrapper = styled.section`
 }
   ::-webkit-scrollbar-thumb:horizontal{
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
   border-radius: 20px;
 }
