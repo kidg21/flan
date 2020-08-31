@@ -1,291 +1,856 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<div
-  className="MediaBlock__Block-k78dm4-0 jXgttR"
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
   id={null}
-  onClick={null}
+  rows={null}
 >
-  <section
-    className="MediaBlock__Media-k78dm4-1 hczdui"
-  >
-    <img
-      alt="This is alt text for this image"
-      className="Image__ImageWrapper-sc-18abvff-0 driND"
-      onClick={null}
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-      title="This is alt text for this image"
-      width={null}
-    />
-  </section>
-  <section
-    className="MediaBlock__Body-k78dm4-2 koHCVu"
+  <div />
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 khqazx Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_213"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
       id={null}
       rows={null}
     >
-      <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-        fontSize="1.15rem"
-        fontWeight="500"
-        letterSpacing="0.4px"
-      >
-        Media Block
-      </h5>
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-        fontSize="1rem"
-        fontWeight={300}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
         id={null}
-        letterSpacing="0.5px"
+        rows={null}
       >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
-      </p>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
     </section>
-  </section>
-</div>
+  </div>
+  <div />
+</section>
 `;
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 lbElki"
   id={null}
   rows={null}
 >
   <div
-    className="MediaBlock__Block-k78dm4-0 jXgttR"
-    id={null}
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_214"
+    media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
-      className="MediaBlock__Media-k78dm4-1 hczdui"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
     >
-      <img
-        alt="This is alt text for this image"
-        className="Image__ImageWrapper-sc-18abvff-0 driND"
-        onClick={null}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-        title="This is alt text for this image"
-        width={null}
-      />
-    </section>
-    <section
-      className="MediaBlock__Body-k78dm4-2 koHCVu"
-    >
-      <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-        fontSize="1.15rem"
-        fontWeight="500"
-        letterSpacing="0.4px"
-      >
-        Media Block
-      </h5>
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-        fontSize="1rem"
-        fontWeight={300}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
         id={null}
-        letterSpacing="0.5px"
+        rows={null}
       >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-      </p>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
     </section>
   </div>
   <div
-    className="MediaBlock__Block-k78dm4-0 leeaQp"
-    id={null}
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_215"
+    media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
-      className="MediaBlock__Media-k78dm4-1 gWkqHj"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
     >
-      <img
-        alt="This is alt text for this image"
-        className="Image__ImageWrapper-sc-18abvff-0 driND"
-        onClick={null}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-        title="This is alt text for this image"
-        width={null}
-      />
-    </section>
-    <section
-      className="MediaBlock__Body-k78dm4-2 dVIBIi"
-    >
-      <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-        fontSize="1.15rem"
-        fontWeight="500"
-        letterSpacing="0.4px"
-      >
-        Media Block (isReversed)
-      </h5>
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-        fontSize="1rem"
-        fontWeight={300}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
         id={null}
-        letterSpacing="0.5px"
+        rows={null}
       >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-      </p>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
     </section>
   </div>
   <div
-    className="MediaBlock__Block-k78dm4-0 hUlOgy"
-    id={null}
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_216"
+    media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
-      className="MediaBlock__Media-k78dm4-1 hczdui"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
     >
-      <img
-        alt="This is alt text for this image"
-        className="Image__ImageWrapper-sc-18abvff-0 driND"
-        onClick={null}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-        title="This is alt text for this image"
-        width={null}
-      />
-    </section>
-    <section
-      className="MediaBlock__Body-k78dm4-2 iaXsTF"
-    >
-      <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-        fontSize="1.15rem"
-        fontWeight="500"
-        letterSpacing="0.4px"
-      >
-        Media Block - Vertical
-      </h5>
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-        fontSize="1rem"
-        fontWeight={300}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
         id={null}
-        letterSpacing="0.5px"
+        rows={null}
       >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-      </p>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
     </section>
   </div>
   <div
-    className="MediaBlock__Block-k78dm4-0 cSHxjm"
-    id={null}
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_217"
+    media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
-      className="MediaBlock__Media-k78dm4-1 hczdui"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
     >
-      <img
-        alt="This is alt text for this image"
-        className="Image__ImageWrapper-sc-18abvff-0 driND"
-        onClick={null}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-        title="This is alt text for this image"
-        width={null}
-      />
-    </section>
-    <section
-      className="MediaBlock__Body-k78dm4-2 hPQEFx"
-    >
-      <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-        fontSize="1.15rem"
-        fontWeight="500"
-        letterSpacing="0.4px"
-      >
-        Media Block - Vertical (isReversed)
-      </h5>
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-        fontSize="1rem"
-        fontWeight={300}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
         id={null}
-        letterSpacing="0.5px"
+        rows={null}
       >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-      </p>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
     </section>
   </div>
   <div
-    className="MediaBlock__Block-k78dm4-0 bhJHKl"
-    id={null}
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_218"
+    media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
-      className="MediaBlock__Media-k78dm4-1 hczdui"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
     >
-      <img
-        alt="This is alt text for this image"
-        className="Image__ImageWrapper-sc-18abvff-0 driND"
-        onClick={null}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-        title="This is alt text for this image"
-        width={null}
-      />
-    </section>
-    <section
-      className="MediaBlock__Body-k78dm4-2 cdLTVU"
-    >
-      <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-        fontSize="1.15rem"
-        fontWeight="500"
-        letterSpacing="0.4px"
-      >
-        Media Block - Inline
-      </h5>
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-        fontSize="1rem"
-        fontWeight={300}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
         id={null}
-        letterSpacing="0.5px"
+        rows={null}
       >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-      </p>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
     </section>
   </div>
   <div
-    className="MediaBlock__Block-k78dm4-0 htiHXN"
-    id={null}
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_219"
+    media=""
     onClick={null}
+    placeholder="{ Card }"
   >
     <section
-      className="MediaBlock__Media-k78dm4-1 hczdui"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
     >
-      <img
-        alt="This is alt text for this image"
-        className="Image__ImageWrapper-sc-18abvff-0 driND"
-        onClick={null}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-        title="This is alt text for this image"
-        width={null}
-      />
-    </section>
-    <section
-      className="MediaBlock__Body-k78dm4-2 hePDVU"
-    >
-      <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-        fontSize="1.15rem"
-        fontWeight="500"
-        letterSpacing="0.4px"
-      >
-        Media Block - Inline (isReversed)
-      </h5>
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-        fontSize="1rem"
-        fontWeight={300}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
         id={null}
-        letterSpacing="0.5px"
+        rows={null}
       >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-      </p>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_220"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_221"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_222"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_223"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_224"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_225"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_226"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_227"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_228"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_229"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_230"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+    href={null}
+    id="storyshots_231"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs MediaBlock__Block-k78dm4-0 jlFpPn"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV MediaBlock__Body-k78dm4-3 jPoSaQ"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+          id={null}
+          rows={null}
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Media Block
+          </h5>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            In life you need colors. We'll put a happy little sky in here.
+          </p>
+        </section>
+      </section>
     </section>
   </div>
 </section>

@@ -4,14 +4,14 @@ exports[` 1`] = `
 <div
   className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
   href={null}
-  id="storyshots_199"
+  id="storyshots_253"
   media=""
   onClick={null}
   placeholder="{ Card }"
 >
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-    id="storyshots_199-Header"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+    id="storyshots_253-Header"
     onClick={null}
   >
     <div
@@ -28,14 +28,14 @@ exports[` 1`] = `
           fontWeight="400"
           letterSpacing="0px"
         >
-          Clear and Specific Title
+          RFP Accepted - Job Added
         </h4>
       </div>
     </div>
   </section>
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-    id="storyshots_199-Body"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+    id="storyshots_253-Body"
     onClick={null}
   >
     <p
@@ -45,11 +45,11 @@ exports[` 1`] = `
       id={null}
       letterSpacing="0.5px"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Accepting an RFP converts an RFP to a live Job. Your new Job has been created and will appear on the Job board.
     </p>
   </section>
   <section
-    className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+    className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
     id={null}
     onClick={null}
   >
@@ -59,11 +59,11 @@ exports[` 1`] = `
       rows={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+        className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
         disabled={false}
         htmlFor={null}
-        id="Negative"
-        name="Negative"
+        id="Done"
+        name="Done"
         onClick={null}
         tabIndex="1"
         type="button"
@@ -74,23 +74,23 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
           >
-            Negative
+            Done
           </label>
         </section>
       </button>
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+        className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
         disabled={false}
         htmlFor={null}
-        id="Affirmative"
-        name="Affirmative"
+        id="View Job"
+        name="View Job"
         onClick={null}
         tabIndex="1"
         type="button"
@@ -101,14 +101,14 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
           >
-            Affirmative
+            View Job
           </label>
         </section>
       </button>
@@ -158,14 +158,14 @@ exports[` 2`] = `
       <div
         className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_200"
+        id="storyshots_254"
         media=""
         onClick={null}
         placeholder="{ Card }"
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_200-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_254-Header"
           onClick={null}
         >
           <div
@@ -188,8 +188,8 @@ exports[` 2`] = `
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_200-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_254-Body"
           onClick={null}
         >
           <p
@@ -203,7 +203,7 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
           id={null}
           onClick={null}
         >
@@ -213,7 +213,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+              className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -228,7 +228,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -240,7 +240,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+              className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -255,7 +255,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -306,14 +306,14 @@ exports[` 2`] = `
       <div
         className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_201"
+        id="storyshots_255"
         media=""
         onClick={null}
         placeholder="{ Card }"
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_201-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_255-Header"
           onClick={null}
         >
           <div
@@ -336,8 +336,8 @@ exports[` 2`] = `
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_201-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_255-Body"
           onClick={null}
         >
           <p
@@ -351,7 +351,7 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
           id={null}
           onClick={null}
         >
@@ -361,7 +361,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+              className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -376,7 +376,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -388,7 +388,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+              className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -403,7 +403,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -454,14 +454,14 @@ exports[` 2`] = `
       <div
         className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_202"
+        id="storyshots_256"
         media=""
         onClick={null}
         placeholder="{ Card }"
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_202-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_256-Header"
           onClick={null}
         >
           <div
@@ -484,8 +484,8 @@ exports[` 2`] = `
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_202-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_256-Body"
           onClick={null}
         >
           <p
@@ -499,7 +499,7 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
           id={null}
           onClick={null}
         >
@@ -509,7 +509,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+              className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -524,7 +524,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -536,7 +536,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+              className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -551,7 +551,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -607,14 +607,14 @@ Array [
       <div
         className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_203"
+        id="storyshots_257"
         media=""
         onClick={null}
         placeholder="{ Card }"
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_203-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_257-Header"
           onClick={null}
         >
           <div
@@ -637,8 +637,8 @@ Array [
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_203-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_257-Body"
           onClick={null}
         >
           <p
@@ -652,7 +652,7 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
           id={null}
           onClick={null}
         >
@@ -662,7 +662,7 @@ Array [
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 idaBGH DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+              className="Button__StyledButton-sc-1v7sls2-0 gvRZHo DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -677,7 +677,7 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -689,7 +689,7 @@ Array [
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bGuANy DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+              className="Button__StyledButton-sc-1v7sls2-0 jLbFrd DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -704,7 +704,7 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -755,14 +755,14 @@ Array [
       <div
         className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
-        id="storyshots_204"
+        id="storyshots_258"
         media=""
         onClick={null}
         placeholder="{ Card }"
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_204-Header"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_258-Header"
           onClick={null}
         >
           <div
@@ -785,8 +785,8 @@ Array [
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-          id="storyshots_204-Body"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+          id="storyshots_258-Body"
           onClick={null}
         >
           <p
@@ -800,7 +800,7 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
           id={null}
           onClick={null}
         >
@@ -810,7 +810,7 @@ Array [
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+              className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
               disabled={false}
               htmlFor={null}
               id="Negative"
@@ -825,7 +825,7 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -837,7 +837,7 @@ Array [
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bGuANy DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+              className="Button__StyledButton-sc-1v7sls2-0 jLbFrd DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
               disabled={false}
               htmlFor={null}
               id="Affirmative"
@@ -852,7 +852,7 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -880,14 +880,14 @@ exports[` 4`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_205"
+    id="storyshots_259"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_205-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_259-Header"
       onClick={null}
     >
       <div
@@ -910,8 +910,8 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_205-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_259-Body"
       onClick={null}
     >
       <p
@@ -925,7 +925,7 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
       id={null}
       onClick={null}
     >
@@ -935,7 +935,7 @@ exports[` 4`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 haErFD DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          className="Button__StyledButton-sc-1v7sls2-0 datRVE DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -950,7 +950,7 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -962,7 +962,7 @@ exports[` 4`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jDBAUA DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -977,7 +977,7 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -994,14 +994,14 @@ exports[` 4`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_206"
+    id="storyshots_260"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_206-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_260-Header"
       onClick={null}
     >
       <div
@@ -1024,8 +1024,8 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_206-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_260-Body"
       onClick={null}
     >
       <p
@@ -1039,7 +1039,7 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
       id={null}
       onClick={null}
     >
@@ -1049,7 +1049,7 @@ exports[` 4`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 cMBdVf DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          className="Button__StyledButton-sc-1v7sls2-0 hFkXno DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -1064,7 +1064,7 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1076,7 +1076,7 @@ exports[` 4`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bGuANy DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          className="Button__StyledButton-sc-1v7sls2-0 jLbFrd DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -1091,7 +1091,7 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1108,14 +1108,14 @@ exports[` 4`] = `
   <div
     className="CardWrapper__StyledCardWrapper-meln7c-0 cOnPqM Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg DialogBox__DialogCard-iv0dnf-1 eLwRLb"
     href={null}
-    id="storyshots_207"
+    id="storyshots_261"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_207-Header"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_261-Header"
       onClick={null}
     >
       <div
@@ -1138,8 +1138,8 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-      id="storyshots_207-Body"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+      id="storyshots_261-Body"
       onClick={null}
     >
       <p
@@ -1153,7 +1153,7 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
       id={null}
       onClick={null}
     >
@@ -1163,7 +1163,7 @@ exports[` 4`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 idaBGH DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
+          className="Button__StyledButton-sc-1v7sls2-0 gvRZHo DialogBox__PrimaryButton-iv0dnf-2 gPmOvG"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -1178,7 +1178,7 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1190,7 +1190,7 @@ exports[` 4`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bjatIs DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
+          className="Button__StyledButton-sc-1v7sls2-0 etVXFn DialogBox__SecondaryButton-iv0dnf-3 kgceYZ"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -1205,7 +1205,7 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}

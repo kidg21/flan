@@ -10,7 +10,7 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+    className="Table__MultiGridWrapper-gz0dbt-0 cnvzAw"
   >
     <div
       style={
@@ -33,7 +33,7 @@ exports[` 1`] = `
         <div
           style={
             Object {
-              "height": 40,
+              "height": 20,
               "position": "relative",
               "width": 200,
             }
@@ -50,7 +50,7 @@ exports[` 1`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 40,
+                "height": 20,
                 "left": 0,
                 "overflowX": "hidden",
                 "overflowY": "hidden",
@@ -67,8 +67,8 @@ exports[` 1`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 40,
-                  "maxHeight": 40,
+                  "height": 20,
+                  "maxHeight": 20,
                   "maxWidth": 1860,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -78,13 +78,13 @@ exports[` 1`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                className="Table__CellWrapper-gz0dbt-1 dBxFqo"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -95,13 +95,13 @@ exports[` 1`] = `
                 Acreage
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                className="Table__CellWrapper-gz0dbt-1 dBxFqo"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -117,7 +117,7 @@ exports[` 1`] = `
         <div
           style={
             Object {
-              "height": 60,
+              "height": 80,
               "overflow": "visible",
               "position": "relative",
               "width": 200,
@@ -135,7 +135,7 @@ exports[` 1`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 60,
+                "height": 80,
                 "left": 0,
                 "overflowX": "auto",
                 "overflowY": "auto",
@@ -151,8 +151,8 @@ exports[` 1`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 510,
-                  "maxHeight": 510,
+                  "height": 260,
+                  "maxHeight": 260,
                   "maxWidth": 1860,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -162,13 +162,13 @@ exports[` 1`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -179,13 +179,13 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -196,16 +196,16 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -213,16 +213,16 @@ exports[` 1`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -230,16 +230,16 @@ exports[` 1`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -247,16 +247,16 @@ exports[` 1`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -264,16 +264,16 @@ exports[` 1`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -281,16 +281,16 @@ exports[` 1`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -298,13 +298,149 @@ exports[` 1`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 80,
+                    "width": 180,
+                  }
+                }
+              >
+                0.12
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 80,
+                    "width": 180,
+                  }
+                }
+              >
+                0.12
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 100,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 100,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 120,
+                    "width": 180,
+                  }
+                }
+              >
+                0.94
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 120,
+                    "width": 180,
+                  }
+                }
+              >
+                0.94
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 140,
+                    "width": 180,
+                  }
+                }
+              >
+                0.07
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 140,
+                    "width": 180,
+                  }
+                }
+              >
+                0.684631
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 160,
@@ -315,13 +451,13 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 160,
@@ -332,13 +468,47 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 180,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 180,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 200,
@@ -346,16 +516,16 @@ exports[` 1`] = `
                   }
                 }
               >
-                1.11
+                0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 200,
@@ -363,53 +533,19 @@ exports[` 1`] = `
                   }
                 }
               >
-                1.11
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 240,
-                    "width": 180,
-                  }
-                }
-              >
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 240,
-                    "width": 180,
-                  }
-                }
-              >
-                0.94
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 220,
                     "width": 180,
                   }
                 }
@@ -417,16 +553,16 @@ exports[` 1`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 220,
                     "width": 180,
                   }
                 }
@@ -434,16 +570,16 @@ exports[` 1`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 240,
                     "width": 180,
                   }
                 }
@@ -451,123 +587,21 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 240,
                     "width": 180,
                   }
                 }
               >
                 0.12
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 360,
-                    "width": 180,
-                  }
-                }
-              >
-                1.11
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 360,
-                    "width": 180,
-                  }
-                }
-              >
-                1.11
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 400,
-                    "width": 180,
-                  }
-                }
-              >
-                0.94
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 400,
-                    "width": 180,
-                  }
-                }
-              >
-                0.94
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 440,
-                    "width": 180,
-                  }
-                }
-              >
-                0.07
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 440,
-                    "width": 180,
-                  }
-                }
-              >
-                0.684631
               </div>
             </div>
           </div>
@@ -588,7 +622,7 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+    className="Table__MultiGridWrapper-gz0dbt-0 cnvzAw"
   >
     <div
       style={
@@ -611,7 +645,7 @@ exports[` 2`] = `
         <div
           style={
             Object {
-              "height": 40,
+              "height": 20,
               "position": "relative",
               "width": 200,
             }
@@ -628,7 +662,7 @@ exports[` 2`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 40,
+                "height": 20,
                 "left": 0,
                 "overflowX": "hidden",
                 "overflowY": "hidden",
@@ -645,8 +679,8 @@ exports[` 2`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 40,
-                  "maxHeight": 40,
+                  "height": 20,
+                  "maxHeight": 20,
                   "maxWidth": 1860,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -656,13 +690,13 @@ exports[` 2`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                className="Table__CellWrapper-gz0dbt-1 dBxFqo"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -673,13 +707,13 @@ exports[` 2`] = `
                 Acreage
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                className="Table__CellWrapper-gz0dbt-1 dBxFqo"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -695,7 +729,7 @@ exports[` 2`] = `
         <div
           style={
             Object {
-              "height": 60,
+              "height": 80,
               "overflow": "visible",
               "position": "relative",
               "width": 200,
@@ -713,7 +747,7 @@ exports[` 2`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 60,
+                "height": 80,
                 "left": 0,
                 "overflowX": "auto",
                 "overflowY": "auto",
@@ -729,8 +763,8 @@ exports[` 2`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 510,
-                  "maxHeight": 510,
+                  "height": 260,
+                  "maxHeight": 260,
                   "maxWidth": 1860,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -740,13 +774,13 @@ exports[` 2`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -757,13 +791,13 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -774,16 +808,16 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -791,16 +825,16 @@ exports[` 2`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -808,16 +842,16 @@ exports[` 2`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -825,16 +859,16 @@ exports[` 2`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -842,16 +876,16 @@ exports[` 2`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -859,16 +893,16 @@ exports[` 2`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -876,13 +910,149 @@ exports[` 2`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 80,
+                    "width": 180,
+                  }
+                }
+              >
+                0.12
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 80,
+                    "width": 180,
+                  }
+                }
+              >
+                0.12
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 100,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 100,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 120,
+                    "width": 180,
+                  }
+                }
+              >
+                0.94
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 120,
+                    "width": 180,
+                  }
+                }
+              >
+                0.94
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 140,
+                    "width": 180,
+                  }
+                }
+              >
+                0.07
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 140,
+                    "width": 180,
+                  }
+                }
+              >
+                0.684631
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 160,
@@ -893,13 +1063,13 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 160,
@@ -910,13 +1080,47 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 180,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 180,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 200,
@@ -924,16 +1128,16 @@ exports[` 2`] = `
                   }
                 }
               >
-                1.11
+                0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 200,
@@ -941,53 +1145,19 @@ exports[` 2`] = `
                   }
                 }
               >
-                1.11
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 240,
-                    "width": 180,
-                  }
-                }
-              >
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 240,
-                    "width": 180,
-                  }
-                }
-              >
-                0.94
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 220,
                     "width": 180,
                   }
                 }
@@ -995,16 +1165,16 @@ exports[` 2`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 220,
                     "width": 180,
                   }
                 }
@@ -1012,16 +1182,16 @@ exports[` 2`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 240,
                     "width": 180,
                   }
                 }
@@ -1029,123 +1199,21 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 240,
                     "width": 180,
                   }
                 }
               >
                 0.12
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 360,
-                    "width": 180,
-                  }
-                }
-              >
-                1.11
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 360,
-                    "width": 180,
-                  }
-                }
-              >
-                1.11
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 400,
-                    "width": 180,
-                  }
-                }
-              >
-                0.94
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 400,
-                    "width": 180,
-                  }
-                }
-              >
-                0.94
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 440,
-                    "width": 180,
-                  }
-                }
-              >
-                0.07
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 440,
-                    "width": 180,
-                  }
-                }
-              >
-                0.684631
               </div>
             </div>
           </div>
@@ -1166,7 +1234,7 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+    className="Table__MultiGridWrapper-gz0dbt-0 cnvzAw"
   >
     <div
       style={
@@ -1189,7 +1257,7 @@ exports[` 3`] = `
         <div
           style={
             Object {
-              "height": 40,
+              "height": 20,
               "position": "relative",
               "width": 200,
             }
@@ -1206,7 +1274,7 @@ exports[` 3`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 40,
+                "height": 20,
                 "left": 0,
                 "overflowX": "hidden",
                 "overflowY": "hidden",
@@ -1223,8 +1291,8 @@ exports[` 3`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 40,
-                  "maxHeight": 40,
+                  "height": 20,
+                  "maxHeight": 20,
                   "maxWidth": 1960,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -1234,13 +1302,13 @@ exports[` 3`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 bDTUkP"
+                className="Table__CellWrapper-gz0dbt-1 jiNPMS"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -1251,13 +1319,13 @@ exports[` 3`] = `
                 Actions
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                className="Table__CellWrapper-gz0dbt-1 dBxFqo"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -1273,7 +1341,7 @@ exports[` 3`] = `
         <div
           style={
             Object {
-              "height": 60,
+              "height": 80,
               "overflow": "visible",
               "position": "relative",
               "width": 200,
@@ -1291,7 +1359,7 @@ exports[` 3`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 60,
+                "height": 80,
                 "left": 0,
                 "overflowX": "auto",
                 "overflowY": "auto",
@@ -1307,8 +1375,8 @@ exports[` 3`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 510,
-                  "maxHeight": 510,
+                  "height": 260,
+                  "maxHeight": 260,
                   "maxWidth": 1960,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -1318,13 +1386,13 @@ exports[` 3`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -1337,7 +1405,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_0"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_0"
@@ -1376,13 +1444,13 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -1393,16 +1461,16 @@ exports[` 3`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -1412,7 +1480,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_1"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_1"
@@ -1451,16 +1519,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -1468,16 +1536,16 @@ exports[` 3`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -1487,7 +1555,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_2"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_2"
@@ -1526,16 +1594,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -1543,16 +1611,16 @@ exports[` 3`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -1562,7 +1630,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_3"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_3"
@@ -1601,16 +1669,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -1618,16 +1686,16 @@ exports[` 3`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 160,
+                    "top": 80,
                     "width": 180,
                   }
                 }
@@ -1637,7 +1705,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_4"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_4"
@@ -1676,16 +1744,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 160,
+                    "top": 80,
                     "width": 180,
                   }
                 }
@@ -1693,16 +1761,16 @@ exports[` 3`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 200,
+                    "top": 100,
                     "width": 180,
                   }
                 }
@@ -1712,7 +1780,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_5"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_5"
@@ -1751,16 +1819,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 200,
+                    "top": 100,
                     "width": 180,
                   }
                 }
@@ -1768,16 +1836,16 @@ exports[` 3`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 240,
+                    "top": 120,
                     "width": 180,
                   }
                 }
@@ -1787,7 +1855,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_6"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_6"
@@ -1826,16 +1894,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 240,
+                    "top": 120,
                     "width": 180,
                   }
                 }
@@ -1843,16 +1911,16 @@ exports[` 3`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 140,
                     "width": 180,
                   }
                 }
@@ -1862,7 +1930,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_7"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_7"
@@ -1901,16 +1969,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 140,
                     "width": 180,
                   }
                 }
@@ -1918,16 +1986,16 @@ exports[` 3`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 160,
                     "width": 180,
                   }
                 }
@@ -1937,7 +2005,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_8"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_8"
@@ -1976,16 +2044,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 160,
                     "width": 180,
                   }
                 }
@@ -1993,16 +2061,16 @@ exports[` 3`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 360,
+                    "top": 180,
                     "width": 180,
                   }
                 }
@@ -2012,7 +2080,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_9"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_9"
@@ -2051,16 +2119,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 360,
+                    "top": 180,
                     "width": 180,
                   }
                 }
@@ -2068,16 +2136,16 @@ exports[` 3`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 400,
+                    "top": 200,
                     "width": 180,
                   }
                 }
@@ -2087,7 +2155,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_10"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_10"
@@ -2126,16 +2194,16 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 400,
+                    "top": 200,
                     "width": 180,
                   }
                 }
@@ -2143,16 +2211,16 @@ exports[` 3`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 440,
+                    "top": 220,
                     "width": 180,
                   }
                 }
@@ -2162,7 +2230,7 @@ exports[` 3`] = `
                   id="menu-popper-Menu_Row_11"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 bGgRIB"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_11"
@@ -2201,21 +2269,96 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 440,
+                    "top": 220,
                     "width": 180,
                   }
                 }
               >
                 0.07
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 240,
+                    "width": 180,
+                  }
+                }
+              >
+                <div
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                  id="menu-popper-Menu_Row_12"
+                >
+                  <button
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
+                    disabled={false}
+                    htmlFor={null}
+                    id="menu-icon-Menu_Row_12"
+                    name="menu-icon-Menu_Row_12"
+                    onClick={[Function]}
+                    tabIndex="1"
+                    type="button"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                      id={null}
+                      rows={null}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="ellipsis-v"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 128 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </section>
+                  </button>
+                </div>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 240,
+                    "width": 180,
+                  }
+                }
+              >
+                0.12
               </div>
             </div>
           </div>
@@ -2236,7 +2379,7 @@ exports[` 4`] = `
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+    className="Table__MultiGridWrapper-gz0dbt-0 cnvzAw"
   >
     <div
       style={
@@ -2259,7 +2402,7 @@ exports[` 4`] = `
         <div
           style={
             Object {
-              "height": 40,
+              "height": 20,
               "position": "relative",
               "width": 200,
             }
@@ -2276,7 +2419,7 @@ exports[` 4`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 40,
+                "height": 20,
                 "left": 0,
                 "overflowX": "hidden",
                 "overflowY": "hidden",
@@ -2293,8 +2436,8 @@ exports[` 4`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 40,
-                  "maxHeight": 40,
+                  "height": 20,
+                  "maxHeight": 20,
                   "maxWidth": 1960,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -2304,13 +2447,13 @@ exports[` 4`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 bDTUkP"
+                className="Table__CellWrapper-gz0dbt-1 jiNPMS"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -2321,13 +2464,13 @@ exports[` 4`] = `
                 Actions
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                className="Table__CellWrapper-gz0dbt-1 dBxFqo"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -2343,7 +2486,7 @@ exports[` 4`] = `
         <div
           style={
             Object {
-              "height": 60,
+              "height": 80,
               "overflow": "visible",
               "position": "relative",
               "width": 200,
@@ -2361,7 +2504,7 @@ exports[` 4`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 60,
+                "height": 80,
                 "left": 0,
                 "overflowX": "auto",
                 "overflowY": "auto",
@@ -2377,8 +2520,8 @@ exports[` 4`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 510,
-                  "maxHeight": 510,
+                  "height": 260,
+                  "maxHeight": 260,
                   "maxWidth": 1960,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -2388,13 +2531,13 @@ exports[` 4`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -2403,7 +2546,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2418,7 +2561,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2431,13 +2574,13 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -2448,22 +2591,22 @@ exports[` 4`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2478,7 +2621,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2491,16 +2634,16 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -2508,22 +2651,22 @@ exports[` 4`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2538,7 +2681,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2551,16 +2694,16 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -2568,22 +2711,22 @@ exports[` 4`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2598,7 +2741,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2611,16 +2754,16 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -2628,13 +2771,253 @@ exports[` 4`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 80,
+                    "width": 180,
+                  }
+                }
+              >
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+                  disabled={false}
+                  htmlFor={null}
+                  id={null}
+                  name={null}
+                  onClick={null}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                    id={null}
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                      cursor="pointer"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Click Me!
+                    </label>
+                  </section>
+                </button>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 80,
+                    "width": 180,
+                  }
+                }
+              >
+                0.12
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 100,
+                    "width": 180,
+                  }
+                }
+              >
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+                  disabled={false}
+                  htmlFor={null}
+                  id={null}
+                  name={null}
+                  onClick={null}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                    id={null}
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                      cursor="pointer"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Click Me!
+                    </label>
+                  </section>
+                </button>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 100,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 120,
+                    "width": 180,
+                  }
+                }
+              >
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+                  disabled={false}
+                  htmlFor={null}
+                  id={null}
+                  name={null}
+                  onClick={null}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                    id={null}
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                      cursor="pointer"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Click Me!
+                    </label>
+                  </section>
+                </button>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 120,
+                    "width": 180,
+                  }
+                }
+              >
+                0.94
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 140,
+                    "width": 180,
+                  }
+                }
+              >
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+                  disabled={false}
+                  htmlFor={null}
+                  id={null}
+                  name={null}
+                  onClick={null}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                    id={null}
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                      cursor="pointer"
+                      fontSize="1rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Click Me!
+                    </label>
+                  </section>
+                </button>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 140,
+                    "width": 180,
+                  }
+                }
+              >
+                0.07
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 160,
@@ -2643,7 +3026,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2658,7 +3041,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2671,13 +3054,13 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 160,
@@ -2688,22 +3071,22 @@ exports[` 4`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 200,
+                    "top": 180,
                     "width": 180,
                   }
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2718,7 +3101,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2731,16 +3114,16 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 200,
+                    "top": 180,
                     "width": 180,
                   }
                 }
@@ -2748,22 +3131,22 @@ exports[` 4`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 240,
+                    "top": 200,
                     "width": 180,
                   }
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2778,7 +3161,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2791,16 +3174,16 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 240,
+                    "top": 200,
                     "width": 180,
                   }
                 }
@@ -2808,22 +3191,22 @@ exports[` 4`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 220,
                     "width": 180,
                   }
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2838,7 +3221,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2851,16 +3234,16 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 220,
                     "width": 180,
                   }
                 }
@@ -2868,22 +3251,22 @@ exports[` 4`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 240,
                     "width": 180,
                   }
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2898,7 +3281,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2911,201 +3294,21 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 240,
                     "width": 180,
                   }
                 }
               >
                 0.12
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 360,
-                    "width": 180,
-                  }
-                }
-              >
-                <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
-                  disabled={false}
-                  htmlFor={null}
-                  id={null}
-                  name={null}
-                  onClick={null}
-                  tabIndex="1"
-                  type="button"
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-                    id={null}
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-                      cursor="pointer"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Click Me!
-                    </label>
-                  </section>
-                </button>
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 360,
-                    "width": 180,
-                  }
-                }
-              >
-                1.11
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 400,
-                    "width": 180,
-                  }
-                }
-              >
-                <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
-                  disabled={false}
-                  htmlFor={null}
-                  id={null}
-                  name={null}
-                  onClick={null}
-                  tabIndex="1"
-                  type="button"
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-                    id={null}
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-                      cursor="pointer"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Click Me!
-                    </label>
-                  </section>
-                </button>
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 400,
-                    "width": 180,
-                  }
-                }
-              >
-                0.94
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 440,
-                    "width": 180,
-                  }
-                }
-              >
-                <button
-                  className="Button__StyledButton-sc-1v7sls2-0 haErFD"
-                  disabled={false}
-                  htmlFor={null}
-                  id={null}
-                  name={null}
-                  onClick={null}
-                  tabIndex="1"
-                  type="button"
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
-                    id={null}
-                    rows={null}
-                  >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
-                      cursor="pointer"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
-                    >
-                      Click Me!
-                    </label>
-                  </section>
-                </button>
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 440,
-                    "width": 180,
-                  }
-                }
-              >
-                0.07
               </div>
             </div>
           </div>
@@ -3126,7 +3329,7 @@ exports[` 5`] = `
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+    className="Table__MultiGridWrapper-gz0dbt-0 cnvzAw"
   >
     <div
       style={
@@ -3149,7 +3352,7 @@ exports[` 5`] = `
         <div
           style={
             Object {
-              "height": 40,
+              "height": 20,
               "position": "relative",
               "width": 200,
             }
@@ -3166,7 +3369,7 @@ exports[` 5`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 40,
+                "height": 20,
                 "left": 0,
                 "overflowX": "hidden",
                 "overflowY": "hidden",
@@ -3183,8 +3386,8 @@ exports[` 5`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 40,
-                  "maxHeight": 40,
+                  "height": 20,
+                  "maxHeight": 20,
                   "maxWidth": 1960,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -3194,13 +3397,13 @@ exports[` 5`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 bDTUkP"
+                className="Table__CellWrapper-gz0dbt-1 jiNPMS"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -3211,13 +3414,13 @@ exports[` 5`] = `
                 Actions
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                className="Table__CellWrapper-gz0dbt-1 dBxFqo"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -3233,7 +3436,7 @@ exports[` 5`] = `
         <div
           style={
             Object {
-              "height": 60,
+              "height": 80,
               "overflow": "visible",
               "position": "relative",
               "width": 200,
@@ -3251,7 +3454,7 @@ exports[` 5`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 60,
+                "height": 80,
                 "left": 0,
                 "overflowX": "auto",
                 "overflowY": "auto",
@@ -3267,8 +3470,8 @@ exports[` 5`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 510,
-                  "maxHeight": 510,
+                  "height": 260,
+                  "maxHeight": 260,
                   "maxWidth": 1960,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -3278,13 +3481,13 @@ exports[` 5`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -3293,7 +3496,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3320,7 +3523,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3332,13 +3535,13 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -3349,22 +3552,22 @@ exports[` 5`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3391,7 +3594,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3403,16 +3606,16 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -3420,22 +3623,22 @@ exports[` 5`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3462,7 +3665,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3474,16 +3677,16 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -3491,22 +3694,22 @@ exports[` 5`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3533,7 +3736,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3545,16 +3748,16 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -3562,13 +3765,297 @@ exports[` 5`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 80,
+                    "width": 180,
+                  }
+                }
+              >
+                <a
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
+                  id={null}
+                  label="Command"
+                  onClick={null}
+                  title="Edit"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+                    color={null}
+                    data-icon="edit"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Edit
+                  </label>
+                </a>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 80,
+                    "width": 180,
+                  }
+                }
+              >
+                0.12
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 100,
+                    "width": 180,
+                  }
+                }
+              >
+                <a
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
+                  id={null}
+                  label="Command"
+                  onClick={null}
+                  title="Edit"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+                    color={null}
+                    data-icon="edit"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Edit
+                  </label>
+                </a>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 100,
+                    "width": 180,
+                  }
+                }
+              >
+                1.11
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 120,
+                    "width": 180,
+                  }
+                }
+              >
+                <a
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
+                  id={null}
+                  label="Command"
+                  onClick={null}
+                  title="Edit"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+                    color={null}
+                    data-icon="edit"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Edit
+                  </label>
+                </a>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 120,
+                    "width": 180,
+                  }
+                }
+              >
+                0.94
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 140,
+                    "width": 180,
+                  }
+                }
+              >
+                <a
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
+                  id={null}
+                  label="Command"
+                  onClick={null}
+                  title="Edit"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+                    color={null}
+                    data-icon="edit"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Edit
+                  </label>
+                </a>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 140,
+                    "width": 180,
+                  }
+                }
+              >
+                0.07
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 160,
@@ -3577,7 +4064,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3604,7 +4091,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3616,13 +4103,13 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 160,
@@ -3633,22 +4120,22 @@ exports[` 5`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 200,
+                    "top": 180,
                     "width": 180,
                   }
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3675,7 +4162,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3687,16 +4174,16 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 200,
+                    "top": 180,
                     "width": 180,
                   }
                 }
@@ -3704,22 +4191,22 @@ exports[` 5`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 240,
+                    "top": 200,
                     "width": 180,
                   }
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3746,7 +4233,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3758,16 +4245,16 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 240,
+                    "top": 200,
                     "width": 180,
                   }
                 }
@@ -3775,22 +4262,22 @@ exports[` 5`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 220,
                     "width": 180,
                   }
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3817,7 +4304,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3829,16 +4316,16 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 220,
                     "width": 180,
                   }
                 }
@@ -3846,22 +4333,22 @@ exports[` 5`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 240,
                     "width": 180,
                   }
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3888,7 +4375,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3900,234 +4387,21 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 240,
                     "width": 180,
                   }
                 }
               >
                 0.12
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 360,
-                    "width": 180,
-                  }
-                }
-              >
-                <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
-                  id={null}
-                  label="Command"
-                  onClick={null}
-                  title="Edit"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
-                    color={null}
-                    data-icon="edit"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="inherit"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 576 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    Edit
-                  </label>
-                </a>
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 360,
-                    "width": 180,
-                  }
-                }
-              >
-                1.11
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 400,
-                    "width": 180,
-                  }
-                }
-              >
-                <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
-                  id={null}
-                  label="Command"
-                  onClick={null}
-                  title="Edit"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
-                    color={null}
-                    data-icon="edit"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="inherit"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 576 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    Edit
-                  </label>
-                </a>
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 400,
-                    "width": 180,
-                  }
-                }
-              >
-                0.94
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 0,
-                    "position": "absolute",
-                    "top": 440,
-                    "width": 180,
-                  }
-                }
-              >
-                <a
-                  className="Command__CommandContainer-sc-13akgtp-0 bLxpTh"
-                  id={null}
-                  label="Command"
-                  onClick={null}
-                  title="Edit"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
-                    color={null}
-                    data-icon="edit"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="inherit"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 576 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB Command__CommandName-sc-13akgtp-1 euPYCY"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
-                  >
-                    Edit
-                  </label>
-                </a>
-              </div>
-              <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
-                onClick={[Function]}
-                onMouseOut={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "height": 40,
-                    "left": 180,
-                    "position": "absolute",
-                    "top": 440,
-                    "width": 180,
-                  }
-                }
-              >
-                0.07
               </div>
             </div>
           </div>
@@ -4148,7 +4422,7 @@ exports[` 6`] = `
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 hRiyKQ"
+    className="Table__MultiGridWrapper-gz0dbt-0 cnvzAw"
   >
     <div
       style={
@@ -4171,7 +4445,7 @@ exports[` 6`] = `
         <div
           style={
             Object {
-              "height": 40,
+              "height": 20,
               "position": "relative",
               "width": 200,
             }
@@ -4188,7 +4462,7 @@ exports[` 6`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 40,
+                "height": 20,
                 "left": 0,
                 "overflowX": "hidden",
                 "overflowY": "hidden",
@@ -4205,8 +4479,8 @@ exports[` 6`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 40,
-                  "maxHeight": 40,
+                  "height": 20,
+                  "maxHeight": 20,
                   "maxWidth": 1960,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -4216,13 +4490,13 @@ exports[` 6`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 bDTUkP"
+                className="Table__CellWrapper-gz0dbt-1 jiNPMS"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -4233,13 +4507,13 @@ exports[` 6`] = `
                 Actions
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 iDgyul"
+                className="Table__CellWrapper-gz0dbt-1 dBxFqo"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -4255,7 +4529,7 @@ exports[` 6`] = `
         <div
           style={
             Object {
-              "height": 60,
+              "height": 80,
               "overflow": "visible",
               "position": "relative",
               "width": 200,
@@ -4273,7 +4547,7 @@ exports[` 6`] = `
                 "WebkitOverflowScrolling": "touch",
                 "boxSizing": "border-box",
                 "direction": "ltr",
-                "height": 60,
+                "height": 80,
                 "left": 0,
                 "overflowX": "auto",
                 "overflowY": "auto",
@@ -4289,8 +4563,8 @@ exports[` 6`] = `
               role="rowgroup"
               style={
                 Object {
-                  "height": 510,
-                  "maxHeight": 510,
+                  "height": 260,
+                  "maxHeight": 260,
                   "maxWidth": 1960,
                   "overflow": "hidden",
                   "pointerEvents": "",
@@ -4300,13 +4574,13 @@ exports[` 6`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
@@ -4426,13 +4700,13 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
                     "top": 0,
@@ -4443,16 +4717,16 @@ exports[` 6`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -4569,16 +4843,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 40,
+                    "top": 20,
                     "width": 180,
                   }
                 }
@@ -4586,16 +4860,16 @@ exports[` 6`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -4712,16 +4986,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 80,
+                    "top": 40,
                     "width": 180,
                   }
                 }
@@ -4729,16 +5003,16 @@ exports[` 6`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -4855,16 +5129,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 120,
+                    "top": 60,
                     "width": 180,
                   }
                 }
@@ -4872,16 +5146,16 @@ exports[` 6`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 160,
+                    "top": 80,
                     "width": 180,
                   }
                 }
@@ -4998,16 +5272,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 160,
+                    "top": 80,
                     "width": 180,
                   }
                 }
@@ -5015,16 +5289,16 @@ exports[` 6`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 200,
+                    "top": 100,
                     "width": 180,
                   }
                 }
@@ -5141,16 +5415,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 200,
+                    "top": 100,
                     "width": 180,
                   }
                 }
@@ -5158,16 +5432,16 @@ exports[` 6`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 240,
+                    "top": 120,
                     "width": 180,
                   }
                 }
@@ -5284,16 +5558,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 240,
+                    "top": 120,
                     "width": 180,
                   }
                 }
@@ -5301,16 +5575,16 @@ exports[` 6`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 140,
                     "width": 180,
                   }
                 }
@@ -5427,16 +5701,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 280,
+                    "top": 140,
                     "width": 180,
                   }
                 }
@@ -5444,16 +5718,16 @@ exports[` 6`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 160,
                     "width": 180,
                   }
                 }
@@ -5570,16 +5844,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 320,
+                    "top": 160,
                     "width": 180,
                   }
                 }
@@ -5587,16 +5861,16 @@ exports[` 6`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 360,
+                    "top": 180,
                     "width": 180,
                   }
                 }
@@ -5713,16 +5987,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 360,
+                    "top": 180,
                     "width": 180,
                   }
                 }
@@ -5730,16 +6004,16 @@ exports[` 6`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 400,
+                    "top": 200,
                     "width": 180,
                   }
                 }
@@ -5856,16 +6130,16 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 400,
+                    "top": 200,
                     "width": 180,
                   }
                 }
@@ -5873,16 +6147,16 @@ exports[` 6`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 0,
                     "position": "absolute",
-                    "top": 440,
+                    "top": 220,
                     "width": 180,
                   }
                 }
@@ -5999,21 +6273,164 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 cfXlUO"
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 style={
                   Object {
-                    "height": 40,
+                    "height": 20,
                     "left": 180,
                     "position": "absolute",
-                    "top": 440,
+                    "top": 220,
                     "width": 180,
                   }
                 }
               >
                 0.07
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 240,
+                    "width": 180,
+                  }
+                }
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                  id={null}
+                  rows={null}
+                >
+                  <div
+                    className=" css-3p29ga-container"
+                    id={null}
+                    onKeyDown={[Function]}
+                  >
+                    <div
+                      className=" css-14ku2k9-control"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <div
+                        className=" css-g1d714-ValueContainer"
+                      >
+                        <div
+                          className=" css-1m79im8-placeholder"
+                        >
+                          Choose...
+                        </div>
+                        <div
+                          className="css-b8ldur-Input"
+                        >
+                          <div
+                            className=""
+                            style={
+                              Object {
+                                "display": "inline-block",
+                              }
+                            }
+                          >
+                            <input
+                              aria-autocomplete="list"
+                              autoCapitalize="none"
+                              autoComplete="off"
+                              autoCorrect="off"
+                              disabled={false}
+                              id="react-select-14-input"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              onFocus={[Function]}
+                              spellCheck="false"
+                              style={
+                                Object {
+                                  "background": 0,
+                                  "border": 0,
+                                  "boxSizing": "content-box",
+                                  "color": "inherit",
+                                  "fontSize": "inherit",
+                                  "label": "input",
+                                  "opacity": 1,
+                                  "outline": 0,
+                                  "padding": 0,
+                                  "width": "1px",
+                                }
+                              }
+                              tabIndex="0"
+                              type="text"
+                              value=""
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "height": 0,
+                                  "left": 0,
+                                  "overflow": "scroll",
+                                  "position": "absolute",
+                                  "top": 0,
+                                  "visibility": "hidden",
+                                  "whiteSpace": "pre",
+                                }
+                              }
+                            >
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className=" css-1hb7zxy-IndicatorsContainer"
+                      >
+                        <span
+                          className=" css-rci3ok-indicatorSeparator"
+                        />
+                        <div
+                          aria-hidden="true"
+                          className=" css-1jw44s5-indicatorContainer"
+                          onMouseDown={[Function]}
+                          onTouchEnd={[Function]}
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className="css-6q0nyr-Svg"
+                            focusable="false"
+                            height={20}
+                            viewBox="0 0 20 20"
+                            width={20}
+                          >
+                            <path
+                              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                className="Table__CellWrapper-gz0dbt-1 cNIFHr"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "height": 20,
+                    "left": 180,
+                    "position": "absolute",
+                    "top": 240,
+                    "width": 180,
+                  }
+                }
+              >
+                0.12
               </div>
             </div>
           </div>

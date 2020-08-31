@@ -217,7 +217,7 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 QFFFL Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+            className="Typography__StyledLabel-sc-19auepv-0 vJXPx Slider__SliderLabel-sc-1hp9era-1 bMyAub"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={600}
@@ -238,7 +238,7 @@ exports[` 3`] = `
             value={1}
           />
           <div
-            className="Bar__BarLayout-icfo76-2 jGhkbe"
+            className="Bar__BarLayout-icfo76-2 wJZwX"
             id={null}
             onClick={null}
           >
@@ -246,7 +246,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 QFFFL"
+                className="Typography__StyledLabel-sc-19auepv-0 vJXPx"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -260,7 +260,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 QFFFL"
+                className="Typography__StyledLabel-sc-19auepv-0 vJXPx"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -308,7 +308,7 @@ exports[` 3`] = `
             value={15}
           />
           <div
-            className="Bar__BarLayout-icfo76-2 jGhkbe"
+            className="Bar__BarLayout-icfo76-2 wJZwX"
             id={null}
             onClick={null}
           >
@@ -316,7 +316,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 QFFFL"
+                className="Typography__StyledLabel-sc-19auepv-0 vJXPx"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -330,7 +330,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 QFFFL"
+                className="Typography__StyledLabel-sc-19auepv-0 vJXPx"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}

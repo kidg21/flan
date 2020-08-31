@@ -95,12 +95,12 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 eufPAN"
       >
         <div
-          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
           disabled={false}
         >
           <input
             checked={null}
-            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+            className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
             id="checkbox-id"
             onBlur={null}
             onChange={null}
@@ -109,7 +109,7 @@ exports[` 2`] = `
             type="checkbox"
           />
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+            className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
