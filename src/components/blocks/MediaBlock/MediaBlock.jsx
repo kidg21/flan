@@ -16,7 +16,7 @@ const Block = styled(Grid)`
   }};
   grid-template-areas: ${(props) => {
     return props.gridTemplate
-      || "'body media''body .'";
+      || "'body media'";
   }};
   grid-gap: ${(props) => {
     return props.gridGap || "1rem";
@@ -123,7 +123,7 @@ function MediaBlock({
 
   if (media) {
     if (mediaReverse) {
-      gridTemplate = "'media body''. body'";
+      gridTemplate = "'media body'";
       gridColumns = "minmax(0,6rem) 1fr";
     } else {
       gridColumns = "1fr minmax(0,6rem)";
