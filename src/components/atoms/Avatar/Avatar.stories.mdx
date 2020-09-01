@@ -4,6 +4,12 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Avatar from "atoms/Avatar";
+import Woman from "images/people/pic-2.jpg";
+import Boy from "images/people/pic-6.jpg";
+import Girl from "images/people/red-haired-girl.png";
+import Man from "images/people/indiana_jones-150x150.jpg";
+import Placeholder from "images/placeholders/placeholder-user.png";
+import Spiderman from "images/people/spiderman.jpg";
 
 <Meta title="Atoms|Avatar" component={Avatar} />
 
@@ -79,12 +85,13 @@ An Avatar can come in many sizes based on the need and UI region. Inherently the
 
 <Preview>
   <Story name="Image">
-    <Grid columns="5">
-      <Avatar icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE" alt="kitten"/>
-      <Avatar icon="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" alt="skyline"/>
-      <Avatar icon="http://localhost:9009/static/media/modern exterior 1.31bf3931.jpg" alt="building"/>
-      <Avatar icon="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" alt="skyline"/>
-      <Avatar icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE" alt="kitten"/>
+    <Grid columns="6">
+      <Avatar icon={Placeholder} alt="Placeholder" size="lg"/>
+      <Avatar icon={Woman} alt="Woman" size="lg"/>
+      <Avatar icon={Man} alt="Man" size="lg"/>
+      <Avatar icon={Girl} alt="Girl" size="lg"/>
+      <Avatar icon={Boy} alt="Boy" size="lg"/>
+      <Avatar icon={Spiderman} alt="Spiderman" size="lg"/>
      </Grid>
   </Story>
 </Preview>

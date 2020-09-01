@@ -16,6 +16,7 @@ import Table from "blocks/Table";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Tag from "atoms/Tag";
+import Container from "atoms/Container";
 import Button, { ButtonGroup } from "atoms/Button";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
@@ -35,6 +36,7 @@ import MediaBlock from "blocks/MediaBlock";
 import LightBoxLogo from "images/LightBoxLogo.png";
 import StaticMap from "images/maps/map-ortho.png";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
+import Popper from "layout/Popper";
 
 function MockPalette() {
   return (
@@ -94,7 +96,29 @@ function MockHeaderGlobal({ menuClick }) {
       right={{
         content: (
           <Inline>
-            <Button id="help" size="lg" isRound icon="help_circle" variant="neutral" isPlain />
+            <Menu
+              id="Help Menu"
+              data={[{
+                label: "Support Center",
+                id: "Support Center",
+              }, {
+                label: "Contact Support",
+                id: "Contact Support",
+              }, {
+                label: "About the Product",
+                id: "About the Product",
+              }]}
+              position="bottomLeft"
+            >
+              <Button
+                id="help"
+                icon="help_circle"
+                size="lg"
+                variant="neutral"
+                isRound
+                isPlain
+              />
+            </Menu>
             <Avatar id="profile" label="AB" size="sm" variant="neutral" onClick={doNothing} />
           </Inline>
         ),
