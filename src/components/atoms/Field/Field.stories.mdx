@@ -45,24 +45,24 @@ import fieldData from "atoms/Field/Field.data.js";
         value="Field Value"
         align="edge"
       />
-    </FieldGroup>
-  </Story>
-</Preview>
-
-### Interaction
-
-<Preview>
-  <Story name="Interaction">
-    <FieldGroup columns={2} >
       <Field
-        id="Standard Value"
-        label="Field Name"
-        value="Standard Value"
+        id="Default"
+        label="Inline Field (Default)"
+        value="Linked Value"
+        onClick={() => {}}
       />
       <Field
-        id="Linked Value"
-        label="Field Name"
+        id="Vertical"
+        label="Vertically Aligned Field"
         value="Linked Value"
+        align="vertical"
+        onClick={() => {}}
+      />
+      <Field
+        id="Edge"
+        label="Edge Aligned Field"
+        value="Linked Value"
+        align="edge"
         onClick={() => {}}
       />
     </FieldGroup>
@@ -82,7 +82,8 @@ import fieldData from "atoms/Field/Field.data.js";
           labelWidth="auto"
           id="Field 1"
           label="Field 1"
-          value="Value"
+          value="Linked Value"
+          onClick={() => {}}
         />
         <Field
           labelWidth="auto"
@@ -105,7 +106,8 @@ import fieldData from "atoms/Field/Field.data.js";
           labelWidth="1x"
           id="Field 1"
           label="Field 1"
-          value="Value"
+          value="Linked Value"
+          onClick={() => {}}
         />
         <Field
           labelWidth="1x"
@@ -128,7 +130,8 @@ import fieldData from "atoms/Field/Field.data.js";
           labelWidth="2x"
           id="Field 1"
           label="Field 1"
-          value="Value"
+          value="Linked Value"
+          onClick={() => {}}
         />
         <Field
           labelWidth="2x"
@@ -151,7 +154,8 @@ import fieldData from "atoms/Field/Field.data.js";
           labelWidth="3x"
           id="Field 1"
           label="Field 1"
-          value="Value"
+          value="Linked Value"
+          onClick={() => {}}
         />
         <Field
           labelWidth="3x"

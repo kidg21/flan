@@ -58,14 +58,19 @@ const FieldValue = styled(Text)`
 const LinkedField = styled(Link)`
   margin: initial;
   padding: initial;
+  width: max-content;
+  justify-self: ${(props) => {
+    return props.justifyLink || "";
+  }};
+  /* justify-self: flex-end; */
 `;
 
 const FieldGrid = styled(Grid)`
   grid-column-gap: 2rem;
   overflow: auto;
-  /* &:not(:last-of-type) { */
-    /* margin-bottom: 0.5rem; */
-  /* } */
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
 `;
 
 const Section = styled.section`
@@ -91,6 +96,7 @@ function Field({
   let fieldColumns;
   let fieldGap;
   let valueAlign;
+  let justifyLink;
 
   let labelSpacing = parseInt(labelWidth, 10);
   if (isNaN(labelSpacing)) labelSpacing = "auto";
@@ -108,6 +114,7 @@ function Field({
     case "edge":
       fieldColumns = "1fr 1fr";
       valueAlign = "right";
+      justifyLink = "flex-end";
       break;
     default:
       fieldColumns = `${labelSpacing} ${valueSpacing}`;
@@ -126,7 +133,7 @@ function Field({
 
   if (href || onClick) {
     field = (
-      <LinkedField disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick}>
+      <LinkedField disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick} justifyLink={justifyLink}>
         {field}
       </LinkedField>
     );
