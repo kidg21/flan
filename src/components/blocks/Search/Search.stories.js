@@ -29,7 +29,6 @@ export const Interaction = () => {
     <Search
       id="Interaction"
       placeholder="Search Location"
-      error2
       results={stateResults ? results : null}
       onSearch={toggleResults}
     />
