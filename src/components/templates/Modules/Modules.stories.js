@@ -198,57 +198,6 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-storiesOf("Templates/Modules/Maps", module)
-  .addDecorator(FullScreen)
-  .addDecorator(withA11y)
-  .add("Map Tools", () => {
-    return (
-      <React.Fragment>
-        <Template
-          id="Template Regions"
-          // template="B_05"
-          template="C_04"
-          isOverlay
-          A={{
-            id: "A",
-            content: (
-              // Set the 'columns' value to the # of Buttons
-              <ButtonGroup columns="1">
-                <Button label="Layers" icon="layers" alignCenter />
-                <Button label="Map" icon="map" alignCenter />
-                <Button label="Draw" icon="draw" alignCenter />
-                <Button label="List" icon="list" alignCenter />
-                <Button label="Legend" icon="legend" alignCenter />
-              </ButtonGroup>
-            ),
-          }}
-          B={{
-            id: "B",
-            content: <MockMapPalettes />,
-          }}
-          C={{
-            id: "C",
-            content: (
-              // Set the 'columns' value to the # of Buttons
-              <CardGrid columns="3">
-                <Card shadow="2x">
-                  <Image src={MapStreets} alt="Map Streets" width="75" onClick={() => { }} />
-                </Card>
-                <Card shadow="2x">
-                  <Image src={MapSatellite} alt="Map Satellite" width="75" onClick={() => { }} />
-                </Card>
-                <Card shadow="2x">
-                  <Image src={MapHybrid} alt="Map Hybrid" width="75" onClick={() => { }} />
-                </Card>
-              </CardGrid>
-            ),
-          }}
-        />
-        <Mapbox />
-      </React.Fragment>
-    );
-  });
-
 storiesOf("Templates/Modules/Panels", module)
   .addDecorator(FullScreen)
   .addDecorator(withA11y)

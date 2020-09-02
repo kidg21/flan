@@ -1,0 +1,357 @@
+import { useState } from "hooks";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { FullScreen } from "helpers/Display";
+import Panel from "layout/Panel";
+import Icon from "atoms/Icon";
+import Button, { ButtonGroup } from "atoms/Button";
+import Bar from "layout/Bar";
+import Container from "atoms/Container";
+import Layout from "layout/Layout";
+import Inline from "layout/Inline";
+import Command from "atoms/Command";
+import Template from "layout/Template";
+import Popper from "layout/Popper";
+import Search from "blocks/Search";
+import Tag from "atoms/Tag";
+import Menu from "blocks/Menu";
+import List, { ListItem } from "blocks/List";
+import Grid from "layout/Grid";
+import Checkbox from "atoms/Checkbox";
+import Image from "atoms/Image";
+import Field, { FieldGroup, FieldSection } from "atoms/Field";
+import Text, { Title } from "base/Typography";
+import Card, { CardSection } from "elements/Card";
+import ParcelMap from "images/maps/map-thumb.png";
+import {
+  MockHeader,
+  MockHeaderGlobal,
+  MockMenu,
+  MockTabs,
+  MockDetails,
+  MockTable,
+} from "helpers/Mocks";
+import { action } from "@storybook/addon-actions";
+import { textMock, BoxMock, lessTextMock } from "layout/Popper/Popper.stories.js";
+import { Padding, CenterDecorator, CenterDisplayGrid, DisplayGrid } from "helpers/Display";
+import Mapbox from "layout/Map"
+
+<Meta
+  title="Templates|Applications/Research/Property"
+/>
+
+# Properties - Main
+
+<Preview withToolbar>
+  <Story name="Main" parameters={{ chromatic: { disable: true } }}>
+    {() => {
+      /** Toggle Layout-Left */
+      const [leftOpen, setLeftOpen] = useState(true);
+      const toggleLeft = () => { setLeftOpen(!leftOpen); };
+      /** Open/Close Summary Panel */
+      const [fade, setFade] = useState("1");
+      const openSummary = () => { setFade("1"); };
+      const closeSummary = () => { setFade("0"); };
+      /** Geometry (Regions) Filter */
+      const [regionsActive, setRegions] = useState(true);
+      const [menuRegionsActive, setRegionsMenu] = useState(false);
+      /** Enable/Disable Regions Button */
+      const toggleInclusions = () => {
+        setRegions(!regionsActive);
+        if (regionsActive === true) {
+          setRegionsMenu(false);
+        }
+      };
+      /** Toggle Regions Menu */
+      const toggleRegions = () => {
+        setRegionsMenu(!menuRegionsActive);
+      };
+      /** Region 1 */
+      const [region01, setRegion01] = useState(true);
+      const toggleRegion01 = () => { setRegion01(!region01); };
+      /** Region 2 */
+      const [region02, setRegion02] = useState(true);
+      const toggleRegion02 = () => { setRegion02(!region02); };
+      /** 'More' Tool Button */
+      const [toolMore, setToolMore] = useState(false);
+      const toggleToolMore = () => { setToolMore(!toolMore); };
+      /** Layout-Bottom / Min-Max Toggle */
+      const [bottomMax, setBottomMax] = useState(false);
+      const toggleBottomMax = () => { setBottomMax(!bottomMax); };
+      /** Rotate Min-Max Icon */
+      let toggleIcon;
+      if (bottomMax === true) {
+        toggleIcon = 180;
+      } else {
+        toggleIcon = null;
+      }
+      /** Layout-Bottom / Open-Close */
+      const [bottomState, setBottomState] = useState(false);
+      const openBottom = () => { setBottomState(true); };
+      const closeBottom = () => {
+        setBottomState(false);
+        setBottomMax(false);
+      };
+      /** Main Menu */
+      const menuMain = [
+        {
+          id: "Projects",
+          title: "Projects",
+        },
+        {
+          id: "Properties",
+          title: "Properties",
+          isSelected: true,
+        },
+        {
+          id: "History",
+          title: "History",
+        },
+        {
+          id: "Data",
+          title: "Data",
+        },
+      ];
+      /** Keeping around for Summary 'toggle' interaction */
+      /** const [open, setOpen] = useState(false);
+      const toggleDetails = () => { setOpen(!open); };
+      let iconContent;
+      if (open) {
+        iconContent = "minus";
+      } else {
+        iconContent = "plus";
+      } */
+      /** Configure Table's Action Menu */
+      const actionsTable = [
+        <Menu
+          data={[
+            { id: "a", label: "Action" },
+            { id: "b", label: "Action" },
+            { id: "c", label: "Action" },
+          ]}
+          position="bottomLeft"
+        >
+          <Icon icon="options" />
+        </Menu>,
+        <Icon icon="up" rotation={toggleIcon} onClick={toggleBottomMax} />,
+        <Icon icon="close" onClick={closeBottom} />,
+      ];
+      return (
+        <Layout
+          header={{
+            id: "Header",
+            content: <MockHeaderGlobal menuClick={toggleLeft} />,
+          }}
+          left={{
+            id: "Left",
+            content: (
+              <MockMenu
+                title="Research"
+                data={menuMain}
+              />
+            ),
+            visible: leftOpen,
+          }}
+          main={{
+            id: "Main",
+            content: (
+              <Panel
+                padding="0"
+                header={(
+                  <Card>
+                    <CardSection padding="0" variant="light">
+                      <Bar
+                        padding="2x"
+                        contentAlign="center"
+                        left={{
+                          content: (
+                            <Text text="Properties" weight="bold" />
+                          ),
+                          width: "max-content",
+                        }}
+                        right={{
+                          content: (
+                            <Menu
+                              data={[
+                                { id: "a", label: "Action" },
+                                { id: "b", label: "Action" },
+                                { id: "c", label: "Action" },
+                              ]}
+                              position="bottomLeft"
+                            >
+                              <Icon icon="options" />
+                            </Menu>
+                          ),
+                          width: "max-content",
+                        }}
+                      />
+                    </CardSection>
+                    <CardSection padding="0" isInverse2>
+                      <Bar
+                        padding="1x"
+                        contentAlign="center"
+                        left={{
+                          content: (
+                            <Search />
+                          ),
+                          width: "30rem",
+                        }}
+                        right={{
+                          content: (
+                            <Inline spacingX="0.5rem">
+                              <Title text="309 Results" size="lg" weight="bold" />
+                              <Button label="View List" isSolid onClick={openBottom} />
+                            </Inline>
+                          ),
+                          width: "max-content",
+                        }}
+                      />
+                    </CardSection>
+                    <CardSection padding="0">
+                      <Bar
+                        contentAlign="center"
+                        left={{
+                          content: (
+                            <Button id="filter" icon="filter" label="Filter" isPlain />
+                          ),
+                          width: "max-content",
+                        }}
+                        center={{
+                          content: (
+                            <Grid columns="auto 1fr" gap="4xl" align="center">
+                              <Inline spacingX="0" spacingY="0.5rem">
+                                <Checkbox
+                                  id="include"
+                                  label="Include"
+                                  labelVisible={false}
+                                  onChange={toggleInclusions}
+                                  checked={regionsActive}
+                                />
+                                <Popper
+                                  usePortal
+                                  isFlex
+                                  visible={menuRegionsActive}
+                                  anchor={(
+                                    <Button
+                                      id="regions_list"
+                                      label="Regions"
+                                      count="2"
+                                      isPlain
+                                      onClick={toggleRegions}
+                                      disabled={!regionsActive}
+                                    />
+                                  )}
+                                >
+                                  <Card
+                                    padding="2x"
+                                    shadow="2x"
+                                    commands={[
+                                      {
+                                        id: "Command One",
+                                        icon: "plus",
+                                        label: "Create Region",
+                                      },
+                                    ]}
+                                  >
+                                    <Container maxHeight="16rem">
+                                      <List isInteractive>
+                                        <ListItem
+                                          pre={{
+                                            type: "checkbox", label: "Region 01", checked: region01, onClick: toggleRegion01,
+                                          }}
+                                          post={{ type: "icon", icon: "close" }}
+                                        />
+                                        <ListItem
+                                          pre={{
+                                            type: "checkbox", label: "Region 02", checked: region02, onClick: toggleRegion02,
+                                          }}
+                                          post={{ type: "icon", icon: "close" }}
+                                        />
+                                      </List>
+                                    </Container>
+                                  </Card>
+                                </Popper>
+                                <Tag label="Shopping Center" brand="brand1" icon="close" onClickIcon={() => { }} />
+                                <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
+                                <Tag label="Expensive " brand="brand1" icon="close" onClickIcon={() => { }} />
+                                <Tag label="EX: Boundary 1" brand="brand1" icon="close" onClickIcon={() => { }} />
+                              </Inline>
+                            </Grid>
+                          ),
+                          align: "left",
+                        }}
+                      />
+                    </CardSection>
+                  </Card>
+                )}
+              >
+                <Template
+                  id="Map Overlay"
+                  template="B_05"
+                  isOverlay
+                  hasShadows
+                  A={{
+                    id: "A",
+                    content: (
+                      <Card padding="2x" shadow="2x">
+                        <ButtonGroup columns="1">
+                          <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
+                          <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
+                          <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
+                          <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
+                          <Button label="View" icon="map" isPlain size="sm" alignCenter />
+                          <Popper
+                            usePortal
+                            isFlex
+                            visible={toolMore}
+                            anchor={(
+                              <Button label="More" icon="more" isPlain size="sm" alignCenter onClick={toggleToolMore} />
+                            )}
+                          >
+                            <Card padding="4x" shadow="2x">
+                              <Container maxHeight="12rem">
+                                <Grid columns="1" gap="lg">
+                                  <Command label="Measure" icon="measure" isPlain size="sm" onClick={toggleToolMore} />
+                                  <Command label="Draw" icon="draw" isPlain size="sm" onClick={toggleToolMore} />
+                                  <Command label="Layers" icon="layers" isPlain size="sm" onClick={toggleToolMore} />
+                                  <Command label="Legend" icon="list" isPlain size="sm" onClick={toggleToolMore} />
+                                  <Command label="View" icon="map" isPlain size="sm" onClick={toggleToolMore} />
+                                </Grid>
+                              </Container>
+                            </Card>
+                          </Popper>
+                        </ButtonGroup>
+                      </Card>
+                    ),
+                    padding: "0.5rem",
+                  }}
+                  B={{
+                    content: (
+                      <MockDetails
+                        recordTitle="22902 Trabuco Rd, Mission Viejo, CA 92691"
+                        actionClose={closeSummary}
+                      />
+                    ),
+                    opacity: fade,
+                  }}
+                />
+                <Mapbox
+                  center={[-117.6582, 33.5969]}
+                  zoom={[17]}
+                  mapClick={openSummary}
+                />
+              </Panel>
+            ),
+          }}
+          bottom={{
+            id: "Results List",
+            content: (
+              <MockTable actionsTable={actionsTable} />
+            ),
+            fullHeight: bottomMax,
+            visible: bottomState,
+          }}
+        />
+      );
+    }}
+  </Story>
+</Preview>

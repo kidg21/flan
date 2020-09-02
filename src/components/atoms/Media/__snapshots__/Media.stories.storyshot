@@ -11,12 +11,14 @@ exports[` 1`] = `
     id="Image"
     onClick={null}
   >
-    <img
-      alt="image/jpeg"
-      className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
-      onClick={null}
-      src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-      title="image/jpeg"
+    <iframe
+      allow="fullscreen"
+      allowFullScreen={true}
+      className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
+      frameBorder="0"
+      height="100vh"
+      src=""
+      title="iframe"
       width="100%"
     />
   </section>
