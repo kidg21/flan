@@ -55,6 +55,11 @@ const FieldValue = styled(Text)`
   }
 `;
 
+const LinkedField = styled(Link)`
+  margin: initial;
+  padding: initial;
+`;
+
 const FieldGrid = styled(Grid)`
   grid-column-gap: 2rem;
   overflow: auto;
@@ -121,9 +126,9 @@ function Field({
 
   if (href || onClick) {
     field = (
-      <Link disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick}>
+      <LinkedField disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick}>
         {field}
-      </Link>
+      </LinkedField>
     );
   }
 
