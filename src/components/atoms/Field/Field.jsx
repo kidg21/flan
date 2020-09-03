@@ -69,6 +69,7 @@ const LinkedField = styled(Link)`
 
 const FieldGrid = styled(Grid)`
   grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
   overflow: auto;
   &:not(:last-of-type) {
     margin-bottom: 1rem;
@@ -92,21 +93,18 @@ function Field({
   onClick,
   target,
   value,
-  labelWidth,
-  valueWidth,
+  gap,
 }) {
   let fieldColumns;
   let fieldGap;
   let valueAlign;
   let justifyLink;
 
-  let labelSpacing = parseInt(labelWidth, 10);
-  if (isNaN(labelSpacing)) labelSpacing = "minmax(auto, 10rem)";
+  let labelSpacing = parseInt(gap, 10) / 3;
+  if (isNaN(labelSpacing)) labelSpacing = "minmax(auto, 8rem)";
   else labelSpacing += "fr";
 
-  let valueSpacing = parseInt(valueWidth, 10) * 3;
-  if (isNaN(valueSpacing)) valueSpacing = "1fr";
-  else valueSpacing += "fr";
+  const valueSpacing = "1fr";
 
   switch (align) {
     case "vertical":
@@ -157,8 +155,7 @@ function Field({
 
 Field.propTypes = {
   align: PropTypes.oneOf(["vertical", "edge"]),
-  labelWidth: PropTypes.oneOf(["2x", "3x", "4x"]),
-  valueWidth: PropTypes.oneOf(["2x", "3x", "4x"]),
+  gap: PropTypes.oneOf(["2x", "3x", "4x"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.string,
@@ -173,8 +170,7 @@ Field.propTypes = {
 
 Field.defaultProps = {
   align: null,
-  labelWidth: "1x",
-  valueWidth: "1x",
+  gap: null,
   className: null,
   disabled: false,
   href: undefined,

@@ -1,6 +1,6 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
-import { Padding } from "helpers/Display";
+import { Padding, CenterDecorator, CenterDisplayGrid, Container } from "helpers/Display";
 import Grid from "layout/Grid";
 import Field, { FieldGroup } from "atoms/Field";
 import fieldData from "atoms/Field/Field.data.js";
@@ -27,45 +27,78 @@ import fieldData from "atoms/Field/Field.data.js";
 
 <Preview>
   <Story name="Alignment">
-    <FieldGroup columns={3} >
-      <Field
+    <Grid columns="3" gap="4xl">
+      <FieldGroup
         id="Default"
-        label="Inline Field (Default)"
-        value="Field Value"
-      />
-      <Field
-        id="Vertical"
-        label="Vertically Aligned Field"
-        value="Field Value"
-        align="vertical"
-      />
-      <Field
-        id="Edge"
-        label="Edge Aligned Field"
-        value="Field Value"
-        align="edge"
-      />
-      <Field
+        title="Default"
+        columns="1"
+      >
+        <Field
+          id="Field 1"
+          label="Field Name"
+          value="Linked Value"
+          onClick={() => {}}
+        />
+        <Field
+          id="Field 2"
+          label="Long Field Name"
+          value="Value Goes Here"
+        />
+        <Field
+          id="Field 3"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+        />
+      </FieldGroup>
+      <FieldGroup
         id="Default"
-        label="Inline Field (Default)"
-        value="Linked Value"
-        onClick={() => {}}
-      />
-      <Field
-        id="Vertical"
-        label="Vertically Aligned Field"
-        value="Linked Value"
-        align="vertical"
-        onClick={() => {}}
-      />
-      <Field
-        id="Edge"
-        label="Edge Aligned Field"
-        value="Linked Value"
-        align="edge"
-        onClick={() => {}}
-      />
-    </FieldGroup>
+        title="Edge-Aligned"
+      >
+        <Field
+          id="Field 1"
+          label="Field Name"
+          value="Linked Value"
+          align="edge"
+          onClick={() => {}}
+        />
+        <Field
+          id="Field 2"
+          label="Long Field Name"
+          value="Value Goes Here"
+          align="edge"
+        />
+        <Field
+          id="Field 3"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+          align="edge"
+        />
+      </FieldGroup>
+      <FieldGroup
+        id="Default"
+        title="Vertical-Aligned"
+      >
+        <Field
+          id="Field 1"
+          label="Field Name"
+          value="Linked Value"
+          align="vertical"
+          onClick={() => {}}
+        />
+        <Field
+          id="Field 2"
+          label="Long Field Name"
+          value="Value Goes Here"
+          align="vertical"
+        />
+        <Field
+          id="Field 3"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+          align="vertical"
+        />
+      </FieldGroup>
+    </Grid>
   </Story>
 </Preview>
 
@@ -101,23 +134,23 @@ import fieldData from "atoms/Field/Field.data.js";
         title="2x"
       >
         <Field
-          labelWidth="2x"
           id="Field 1"
           label="Field Name"
           value="Linked Value"
+          gap="2x"
           onClick={() => {}}
         />
         <Field
-          labelWidth="2x"
           id="Field 2"
           label="Long Field Name"
           value="Value Goes Here"
+          gap="2x"
         />
         <Field
-          labelWidth="2x"
           id="Field 3"
           label="Extra Long Field Name"
           value="And A Really Extra Long Field Value Can Go Here"
+          gap="2x"
         />
       </FieldGroup>
       <FieldGroup
@@ -125,23 +158,23 @@ import fieldData from "atoms/Field/Field.data.js";
         title="3x"
       >
         <Field
-          labelWidth="3x"
           id="Field 1"
           label="Field Name"
           value="Linked Value"
+          gap="3x"
           onClick={() => {}}
         />
         <Field
-          labelWidth="3x"
           id="Field 2"
           label="Long Field Name"
           value="Value Goes Here"
+          gap="3x"
         />
         <Field
-          labelWidth="3x"
           id="Field 3"
           label="Extra Long Field Name"
           value="And A Really Extra Long Field Value Can Go Here"
+          gap="3x"
         />
       </FieldGroup>
       <FieldGroup
@@ -149,23 +182,23 @@ import fieldData from "atoms/Field/Field.data.js";
         title="4x"
       >
         <Field
-          labelWidth="4x"
           id="Field 1"
           label="Field Name"
           value="Linked Value"
+          gap="4x"
           onClick={() => {}}
         />
         <Field
-          labelWidth="4x"
           id="Field 2"
           label="Long Field Name"
           value="Value Goes Here"
+          gap="4x"
         />
         <Field
-          labelWidth="4x"
           id="Field 3"
           label="Extra Long Field Name"
           value="And A Really Extra Long Field Value Can Go Here"
+          gap="4x"
         />
       </FieldGroup>
       <FieldGroup
@@ -197,25 +230,25 @@ import fieldData from "atoms/Field/Field.data.js";
         title="2x (edge-aligned)"
       >
         <Field
-          labelWidth="2x"
           id="Field 1"
           label="Field Name"
           value="Linked Value"
+          gap="2x"
           align="edge"
           onClick={() => {}}
         />
         <Field
-          labelWidth="2x"
           id="Field 2"
           label="Long Field Name"
           value="Value Goes Here"
+          gap="2x"
           align="edge"
         />
         <Field
-          labelWidth="2x"
           id="Field 3"
           label="Extra Long Field Name"
           value="And A Really Extra Long Field Value Can Go Here"
+          gap="2x"
           align="edge"
         />
       </FieldGroup>
@@ -224,25 +257,25 @@ import fieldData from "atoms/Field/Field.data.js";
         title="3x (edge-aligned)"
       >
         <Field
-          labelWidth="3x"
           id="Field 1"
           label="Field Name"
           value="Linked Value"
+          gap="3x"
           align="edge"
           onClick={() => {}}
         />
         <Field
-          labelWidth="3x"
           id="Field 2"
           label="Long Field Name"
           value="Value Goes Here"
+          gap="3x"
           align="edge"
         />
         <Field
-          labelWidth="3x"
           id="Field 3"
           label="Extra Long Field Name"
           value="And A Really Extra Long Field Value Can Go Here"
+          gap="3x"
           align="edge"
         />
       </FieldGroup>
@@ -251,25 +284,25 @@ import fieldData from "atoms/Field/Field.data.js";
         title="4x (edge-aligned)"
       >
         <Field
-          labelWidth="4x"
           id="Field 1"
           label="Field Name"
           value="Linked Value"
+          gap="4x"
           align="edge"
           onClick={() => {}}
         />
         <Field
-          labelWidth="4x"
           id="Field 2"
           label="Long Field Name"
           value="Value Goes Here"
+          gap="4x"
           align="edge"
         />
         <Field
-          labelWidth="4x"
           id="Field 3"
           label="Extra Long Field Name"
           value="And A Really Extra Long Field Value Can Go Here"
+          gap="4x"
           align="edge"
         />
       </FieldGroup>
