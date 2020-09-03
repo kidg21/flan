@@ -19,6 +19,7 @@ const FieldItem = styled(Grid)`
   grid-gap: ${(props) => {
     return props.fieldGap || "";
   }};
+  line-height: normal;
 `;
 
 const GroupTitle = styled(Text)`
@@ -36,6 +37,7 @@ const FieldLabel = styled(Label)`
   color: ${(props) => {
     return props.theme.text[props.labelColor] || "inherit";
   }};
+  white-space: normal;
   cursor: initial;
   user-select: initial;
 `;
@@ -99,11 +101,11 @@ function Field({
   let justifyLink;
 
   let labelSpacing = parseInt(labelWidth, 10);
-  if (isNaN(labelSpacing)) labelSpacing = "auto";
+  if (isNaN(labelSpacing)) labelSpacing = "minmax(auto, 10rem)";
   else labelSpacing += "fr";
 
-  let valueSpacing = parseInt(valueWidth, 10);
-  if (isNaN(valueSpacing)) valueSpacing = "auto";
+  let valueSpacing = parseInt(valueWidth, 10) * 3;
+  if (isNaN(valueSpacing)) valueSpacing = "1fr";
   else valueSpacing += "fr";
 
   switch (align) {
@@ -112,12 +114,13 @@ function Field({
       fieldGap = "0.25rem";
       break;
     case "edge":
-      fieldColumns = "1fr 1fr";
+      fieldColumns = `${labelSpacing} ${valueSpacing}`;
       valueAlign = "right";
       justifyLink = "flex-end";
       break;
     default:
       fieldColumns = `${labelSpacing} ${valueSpacing}`;
+      fieldGap = "1.5rem";
       break;
   }
 
@@ -153,9 +156,9 @@ function Field({
 }
 
 Field.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge", "tight"]),
-  labelWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
-  valueWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
+  align: PropTypes.oneOf(["vertical", "edge"]),
+  labelWidth: PropTypes.oneOf(["2x", "3x", "4x"]),
+  valueWidth: PropTypes.oneOf(["2x", "3x", "4x"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.string,
@@ -249,7 +252,7 @@ FieldSection.defaultProps = {
 };
 
 FieldGroup.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge", "tight"]),
+  align: PropTypes.oneOf(["vertical", "edge"]),
   children: PropTypes.node,
   /** Defines the widths of grid columns
    *

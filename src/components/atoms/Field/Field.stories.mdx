@@ -73,101 +73,204 @@ import fieldData from "atoms/Field/Field.data.js";
 
 <Preview withToolbar>
   <Story name="Spacing">
-    <Grid columns="2">
+    <Grid columns="2" gap="xl">
       <FieldGroup
-        id="Group 1"
-        title="Auto"
+        id="Default"
+        title="Default"
+        columns="1"
       >
         <Field
-          labelWidth="auto"
           id="Field 1"
-          label="Field 1"
+          label="Field Name"
           value="Linked Value"
           onClick={() => {}}
         />
         <Field
-          labelWidth="auto"
           id="Field 2"
-          label="Field 2"
+          label="Long Field Name"
           value="Value Goes Here"
         />
         <Field
-          labelWidth="auto"
           id="Field 3"
-          label="Field 3"
-          value="Go"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
         />
       </FieldGroup>
-       <FieldGroup
-        id="Group 1"
-        title="1x (Default)"
-      >
-        <Field
-          labelWidth="1x"
-          id="Field 1"
-          label="Field 1"
-          value="Linked Value"
-          onClick={() => {}}
-        />
-        <Field
-          labelWidth="1x"
-          id="Field 2"
-          label="Field 2"
-          value="Value Goes Here"
-        />
-        <Field
-          labelWidth="1x"
-          id="Field 3"
-          label="Field 3"
-          value="Go"
-        />
-      </FieldGroup>
-       <FieldGroup
-        id="Group 1"
+      <FieldGroup
+        id="2x"
         title="2x"
       >
         <Field
           labelWidth="2x"
           id="Field 1"
-          label="Field 1"
+          label="Field Name"
           value="Linked Value"
           onClick={() => {}}
         />
         <Field
           labelWidth="2x"
           id="Field 2"
-          label="Field 2"
+          label="Long Field Name"
           value="Value Goes Here"
         />
         <Field
           labelWidth="2x"
           id="Field 3"
-          label="Field 3"
-          value="Go"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
         />
       </FieldGroup>
-       <FieldGroup
-        id="Group 1"
+      <FieldGroup
+        id="3x"
         title="3x"
       >
         <Field
           labelWidth="3x"
           id="Field 1"
-          label="Field 1"
+          label="Field Name"
           value="Linked Value"
           onClick={() => {}}
         />
         <Field
           labelWidth="3x"
           id="Field 2"
-          label="Field 2"
+          label="Long Field Name"
           value="Value Goes Here"
         />
         <Field
           labelWidth="3x"
           id="Field 3"
-          label="Field 3"
-          value="Go"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+        />
+      </FieldGroup>
+      <FieldGroup
+        id="4x"
+        title="4x"
+      >
+        <Field
+          labelWidth="4x"
+          id="Field 1"
+          label="Field Name"
+          value="Linked Value"
+          onClick={() => {}}
+        />
+        <Field
+          labelWidth="4x"
+          id="Field 2"
+          label="Long Field Name"
+          value="Value Goes Here"
+        />
+        <Field
+          labelWidth="4x"
+          id="Field 3"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+        />
+      </FieldGroup>
+      <FieldGroup
+        id="Default"
+        title="Default (edge-aligned)"
+      >
+        <Field
+          id="Field 1"
+          label="Field Name"
+          value="Linked Value"
+          align="edge"
+          onClick={() => {}}
+        />
+        <Field
+          id="Field 2"
+          label="Long Field Name"
+          value="Value Goes Here"
+          align="edge"
+        />
+        <Field
+          id="Field 3"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+          align="edge"
+        />
+      </FieldGroup>
+      <FieldGroup
+        id="2x"
+        title="2x (edge-aligned)"
+      >
+        <Field
+          labelWidth="2x"
+          id="Field 1"
+          label="Field Name"
+          value="Linked Value"
+          align="edge"
+          onClick={() => {}}
+        />
+        <Field
+          labelWidth="2x"
+          id="Field 2"
+          label="Long Field Name"
+          value="Value Goes Here"
+          align="edge"
+        />
+        <Field
+          labelWidth="2x"
+          id="Field 3"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+          align="edge"
+        />
+      </FieldGroup>
+      <FieldGroup
+        id="3x"
+        title="3x (edge-aligned)"
+      >
+        <Field
+          labelWidth="3x"
+          id="Field 1"
+          label="Field Name"
+          value="Linked Value"
+          align="edge"
+          onClick={() => {}}
+        />
+        <Field
+          labelWidth="3x"
+          id="Field 2"
+          label="Long Field Name"
+          value="Value Goes Here"
+          align="edge"
+        />
+        <Field
+          labelWidth="3x"
+          id="Field 3"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+          align="edge"
+        />
+      </FieldGroup>
+      <FieldGroup
+        id="4x"
+        title="4x (edge-aligned)"
+      >
+        <Field
+          labelWidth="4x"
+          id="Field 1"
+          label="Field Name"
+          value="Linked Value"
+          align="edge"
+          onClick={() => {}}
+        />
+        <Field
+          labelWidth="4x"
+          id="Field 2"
+          label="Long Field Name"
+          value="Value Goes Here"
+          align="edge"
+        />
+        <Field
+          labelWidth="4x"
+          id="Field 3"
+          label="Extra Long Field Name"
+          value="And A Really Extra Long Field Value Can Go Here"
+          align="edge"
         />
       </FieldGroup>
     </Grid>
