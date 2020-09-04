@@ -2,6 +2,9 @@
 /* eslint-disable security/detect-object-injection */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Text from "base/Typography";
+import Inline from "layout/Inline";
+import Icon from "atoms/Icon";
 import {
   MultiGrid,
   AutoSizer,
@@ -50,18 +53,17 @@ export const MultiGridWrapper = styled.div`
   }
 `;
 
+
 export const CellWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 0.5em 1em;
+  cursor: ${(props) => { return props.isHeader ? "pointer" : ""; }};
   color: ${(props) => {
     if (props.isHeader) {
       return props.theme.text.primary;
     }
     return props.theme.text.primary;
-  }};
-  font-weight: ${(props) => {
-    return props.isHeader ? "500" : "400";
   }};
   font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
   border-bottom: ${(props) => {
@@ -76,14 +78,7 @@ export const CellWrapper = styled.div`
     }
     return props.theme.background.default;
   }};
-  &:after {
-    content: "↓";
-    position: absolute;
-    right: 10%;
-    display: ${(props) => {
-    return props.isSortable ? "" : "none";
-  }};
-  }
+
 `;
 
 function _containedInRowCol(cellRowCol, row, col) {
@@ -179,6 +174,8 @@ class Table extends Component {
       highlightedCell,
       onHeaderClick,
       onCellClick,
+      sortColumnId,
+      sortDirection,
       onCellMouseOut,
       onCellMouseOver,
       onHeaderMouseOver,
@@ -215,11 +212,14 @@ class Table extends Component {
       cellData = headers[columnIndex].label || "";
       if (headers[columnIndex].sortable) {
         cellProps.isSortable = true;
+        if (headers[columnIndex].sortable) {
+          cellProps.isSortable = true;
+        }
       }
-      // if (headers[columnIndex].id === sortColumnId) {
-      //   const arrow = sortDirection ? "up" : "down";
-      //   cellData = (<React.Fragment>{cellData}<Icon icon={arrow} /></React.Fragment>);
-      // }
+      if (headers[columnIndex].id === sortColumnId) {
+        const arrow = sortDirection ? "up" : "down";
+        cellData = (<Inline spacingX="0.5rem">{cellData}<Icon icon={arrow} /></Inline>);
+      }
     } else if (row) {
       // regular cell from a row that's ready to render
       cellData = row[headers[columnIndex].id];
