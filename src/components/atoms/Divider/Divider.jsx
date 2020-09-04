@@ -18,23 +18,22 @@ const Line = styled.hr`
         height: 100%;
         margin: 0 1rem;
         border-top: none;
-        border-right:  ${() => {
-          return `1px solid ${props.theme.palette.neutral20
-            }`;
-        }};
+        border-right:  ${() => { return `1px solid ${props.theme.palette.neutral20}`; }};
      `;
   }}
 `;
 
-function Divider({ isVertical }) {
-  return <Line isVertical={isVertical} />;
+function Divider({ className, isVertical }) {
+  return <Line className={className} isVertical={isVertical} />;
 }
 
 Divider.propTypes = {
+  className: PropTypes.string,
   isVertical: PropTypes.bool,
 };
 
 Divider.defaultProps = {
+  className: null,
   isVertical: false,
 };
 export default Divider;

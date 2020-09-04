@@ -10,7 +10,8 @@ import Radio from "atoms/Radio";
 import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text from "base/Typography";
+import Divider from "atoms/Divider";
+import Text, { Label } from "base/Typography";
 import { InteractiveContext, DisabledContext, PaddingContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -89,34 +90,53 @@ const ListTitle = styled(Text)`
 
 const SectionWrapper = styled.li`
   color: inherit;
-  padding: 1rem 1rem 0.5rem;
+  padding: ${(props) => {
+    return props.sectionPadding || "";
+  }};
 `;
 
-const Section = styled(Text)`
+const Section = styled(Label)`
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  white-space: initial;
+`;
+
+const SectionDivider = styled(Divider)`
+  margin: 0;
+  border-color: inherit;
+  opacity: 0.3;
 `;
 
 function ListSection({
-  title,
   children,
+  hasDivider,
+  title,
 }) {
   return (
     <React.Fragment>
-      <SectionWrapper>
-        <Section text={title} />
-      </SectionWrapper>
+      {title ? (
+        <SectionWrapper sectionPadding="0.75rem 1rem 0.5rem">
+          <Section text={title} weight="regular" size="sm" />
+        </SectionWrapper>
+      ) : (<SectionWrapper sectionPadding="0.25rem 1rem 0" />)}
       {children}
+      {hasDivider ? (
+        <SectionWrapper sectionPadding="0.25rem 0.75rem 0.25rem">
+          <SectionDivider />
+        </SectionWrapper>
+      ) : null}
     </React.Fragment>
   );
 }
 
 ListSection.propTypes = {
   children: PropTypes.node,
+  hasDivider: PropTypes.bool,
   title: PropTypes.string,
 };
 ListSection.defaultProps = {
   children: null,
+  hasDivider: false,
   title: null,
 };
 

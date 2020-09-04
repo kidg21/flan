@@ -27,6 +27,7 @@ import {
   MockHeader,
   MockHeaderGlobal,
   MockMenu,
+  MockWorkflow,
 } from "helpers/Mocks";
 
 export default {
@@ -48,6 +49,22 @@ export const Overview = () => {
     const [leftOpen, setLeftOpen] = useState(true);
     const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
+    const dataMenu = [
+      {
+        title: "Projects",
+        isSelected: true,
+      },
+      {
+        title: "Properties",
+      },
+      {
+        title: "History",
+      },
+      {
+        title: "Data",
+      },
+    ];
+
     return (
       <Layout
         header={{
@@ -56,7 +73,7 @@ export const Overview = () => {
         }}
         left={{
           id: "Left",
-          content: <MockMenu />,
+          content: <MockMenu title="Research" data={dataMenu} />,
           visible: leftOpen,
         }}
         main={{
@@ -75,18 +92,7 @@ export const Overview = () => {
                 A={{
                   id: "A",
                   content: (
-                    <List title="Project Menu" isInteractive isLight>
-                      <ListItem title="Overview" isSelected />
-                      <ListItem title="Define Site" />
-                      <Divider />
-                      <ListItem title="Assessment" disabled />
-                      <ListItem title="Transactions" disabled />
-                      <ListItem title="Zoning" disabled />
-                      <ListItem title="Maps" disabled />
-                      <ListItem title="Review" disabled />
-                      <ListItem title="Export" disabled />
-                    </List>
-
+                    <MockWorkflow />
                   ),
                 }}
                 B={{
