@@ -176,6 +176,14 @@ const labelSizeHash = {
 };
 
 const linkSizeHash = {
+  "xs": {
+    fontSize: "0.75em",
+    letterSpacing: "0px",
+  },
+  "sm": {
+    fontSize: "0.8rem",
+    letterSpacing: "0px",
+  },
   "lg": {
     fontSize: "1rem",
     letterSpacing: "0.2px",
