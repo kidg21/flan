@@ -385,7 +385,7 @@ Link.propTypes = {
   disabled: PropTypes.bool,
   href: PropTypes.string,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["lg", "xl", "2xl", ""]),
+  size: PropTypes.oneOf(["xs", "sm", "lg", "xl", "2xl", ""]),
   target: PropTypes.string,
   text: PropTypes.string,
   weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
