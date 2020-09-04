@@ -17,6 +17,9 @@ const Region = styled.section`
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
   }};
+  margin: ${(props) => {
+    return props.margin || "";
+  }};
   padding: ${(props) => {
     return props.padding || "";
   }};
@@ -315,6 +318,7 @@ function Template({
               hasBorder={A.hasBorder}
               id={A.id || "A"}
               isOverlay={isOverlay}
+              margin={A.margin}
               opacity={A.opacity}
               overflow={A.overflow}
               padding={A.padding}
@@ -331,6 +335,7 @@ function Template({
               hasBorder={B.hasBorder}
               id={B.id || "B"}
               isOverlay={isOverlay}
+              margin={B.margin}
               opacity={B.opacity}
               overflow={B.overflow}
               padding={B.padding}
@@ -347,6 +352,7 @@ function Template({
               hasBorder={C.hasBorder}
               id={C.id || "C"}
               isOverlay={isOverlay}
+              margin={C.margin}
               opacity={C.opacity}
               overflow={C.overflow}
               padding={C.padding}
@@ -363,6 +369,7 @@ function Template({
               hasBorder={D.hasBorder}
               id={D.id || "D"}
               isOverlay={isOverlay}
+              margin={D.margin}
               opacity={D.opacity}
               overflow={D.overflow}
               padding={D.padding}
@@ -379,6 +386,7 @@ function Template({
               hasBorder={E.hasBorder}
               id={E.id || "E"}
               isOverlay={isOverlay}
+              margin={E.margin}
               opacity={E.opacity}
               overflow={E.overflow}
               padding={E.padding}
@@ -402,6 +410,7 @@ const sectionShape = {
   opacity: PropTypes.string,
   overflow: PropTypes.string,
   padding: PropTypes.string,
+  margin: PropTypes.string,
 };
 
 Template.propTypes = {

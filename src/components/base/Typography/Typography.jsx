@@ -176,6 +176,14 @@ const labelSizeHash = {
 };
 
 const linkSizeHash = {
+  "xs": {
+    fontSize: "0.75em",
+    letterSpacing: "0px",
+  },
+  "sm": {
+    fontSize: "0.8rem",
+    letterSpacing: "0px",
+  },
   "lg": {
     fontSize: "1rem",
     letterSpacing: "0.2px",
@@ -377,7 +385,7 @@ Link.propTypes = {
   disabled: PropTypes.bool,
   href: PropTypes.string,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["lg", "xl", "2xl", ""]),
+  size: PropTypes.oneOf(["xs", "sm", "lg", "xl", "2xl", ""]),
   target: PropTypes.string,
   text: PropTypes.string,
   weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
