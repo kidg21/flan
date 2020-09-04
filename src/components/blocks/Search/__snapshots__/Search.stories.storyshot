@@ -2,19 +2,19 @@
 
 exports[` 1`] = `
 <form
-  className="Search__SearchContainer-sey9om-0 fgqUHM"
+  className="Search__SearchContainer-sey9om-0 iDrhT"
   id="Search_Standard"
   onSubmit={[Function]}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fKdMyE Search__SearchInput-sey9om-1 ftjKE"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 bDGwnH Search__SearchInput-sey9om-1 kOYYsS"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
+      className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Search__SearchButton-sey9om-3 dEHLVj"
       disabled={false}
       htmlFor={null}
       id="Search_Standard-search-button"
@@ -51,7 +51,7 @@ exports[` 1`] = `
       </section>
     </button>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 iYjJFw"
       id="Search_Standard-search-bar_container"
       rows={null}
     >
@@ -88,19 +88,19 @@ exports[` 2`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 fgqUHM"
+    className="Search__SearchContainer-sey9om-0 iDrhT"
     id="Suggestions"
     onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fKdMyE Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bDGwnH Search__SearchInput-sey9om-1 kOYYsS"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Search__SearchButton-sey9om-3 dEHLVj"
         disabled={false}
         htmlFor={null}
         id="Suggestions-search-button"
@@ -137,7 +137,7 @@ exports[` 2`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 iYjJFw"
         id="Suggestions-search-bar_container"
         rows={null}
       >
@@ -168,7 +168,7 @@ exports[` 2`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 dWkCSS"
+        className="Container__BoxContainer-sc-1i4fzzd-1 bVfnkP"
         height=""
         id="Suggestions-results-container"
       >
@@ -303,19 +303,19 @@ exports[` 3`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 fgqUHM"
+    className="Search__SearchContainer-sey9om-0 iDrhT"
     id="Suggestions_More"
     onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fKdMyE Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bDGwnH Search__SearchInput-sey9om-1 kOYYsS"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Search__SearchButton-sey9om-3 dEHLVj"
         disabled={false}
         htmlFor={null}
         id="Suggestions_More-search-button"
@@ -352,7 +352,7 @@ exports[` 3`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 iYjJFw"
         id="Suggestions_More-search-bar_container"
         rows={null}
       >
@@ -383,7 +383,7 @@ exports[` 3`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 dWkCSS"
+        className="Container__BoxContainer-sc-1i4fzzd-1 bVfnkP"
         height=""
         id="Suggestions_More-results-container"
       >
@@ -800,13 +800,13 @@ exports[` 3`] = `
                 className="Bar__Slot-icfo76-1 cxljst"
               >
                 <span
-                  className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+                  className="Tag__TagContainer-sc-128kb3h-0 jVuXoC"
                   id={null}
                   label="14"
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eXOMIR"
+                    className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -835,19 +835,19 @@ exports[` 4`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 fgqUHM"
+    className="Search__SearchContainer-sey9om-0 iDrhT"
     id="Search_Offline"
     onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fKdMyE Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bDGwnH Search__SearchInput-sey9om-1 kOYYsS"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Search__SearchButton-sey9om-3 dEHLVj"
         disabled={false}
         htmlFor={null}
         id="Search_Offline-search-button"
@@ -884,7 +884,7 @@ exports[` 4`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 iYjJFw"
         id="Search_Offline-search-bar_container"
         rows={null}
       >
@@ -915,12 +915,12 @@ exports[` 4`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 dWkCSS"
+        className="Container__BoxContainer-sc-1i4fzzd-1 bVfnkP"
         height=""
         id="Search_Offline-results-container"
       >
         <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          className="Bar__BarLayout-icfo76-2 eolhhe"
           id={null}
           onClick={null}
         >
@@ -950,7 +950,7 @@ exports[` 4`] = `
           </div>
         </div>
         <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          className="Bar__BarLayout-icfo76-2 eolhhe"
           id={null}
           onClick={null}
         >
@@ -983,19 +983,19 @@ exports[` 5`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 fgqUHM"
+    className="Search__SearchContainer-sey9om-0 iDrhT"
     id="Search_BadConnection"
     onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fKdMyE Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bDGwnH Search__SearchInput-sey9om-1 kOYYsS"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Search__SearchButton-sey9om-3 dEHLVj"
         disabled={false}
         htmlFor={null}
         id="Search_BadConnection-search-button"
@@ -1032,7 +1032,7 @@ exports[` 5`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 iYjJFw"
         id="Search_BadConnection-search-bar_container"
         rows={null}
       >
@@ -1063,12 +1063,12 @@ exports[` 5`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 dWkCSS"
+        className="Container__BoxContainer-sc-1i4fzzd-1 bVfnkP"
         height=""
         id="Search_BadConnection-results-container"
       >
         <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          className="Bar__BarLayout-icfo76-2 eolhhe"
           id={null}
           onClick={null}
         >
@@ -1098,7 +1098,7 @@ exports[` 5`] = `
           </div>
         </div>
         <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          className="Bar__BarLayout-icfo76-2 eolhhe"
           id={null}
           onClick={null}
         >

@@ -3,16 +3,19 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { useState } from "hooks";
-import { FullScreen, Padding } from "helpers/Display";
+import { FullScreen, Padding, CenterDecorator } from "helpers/Display";
 import Panel from "layout/Panel";
 import Avatar from "atoms/Avatar";
 import Text, { Title, Link } from "base/Typography";
 import Button, { ButtonGroup } from "atoms/Button";
 import Accordion from "atoms/Accordion";
 import Icon from "atoms/Icon";
+import Container from "atoms/Container";
 import Divider from "atoms/Divider";
+import Tag from "atoms/Tag";
 import Bar from "layout/Bar";
 import Command from "atoms/Command";
+import Field, { FieldGroup } from "atoms/Field";
 import Popper from "layout/Popper";
 import Grid from "layout/Grid";
 import Card, { CardSection, CardGrid } from "elements/Card";
@@ -23,7 +26,8 @@ import Image from "atoms/Image";
 import Template from "layout/Template";
 import Search from "blocks/Search";
 import InputBlock from "blocks/InputBlock";
-import Tabs from "blocks/Tabs";
+import Modal from "layout/Modal";
+import Tabs, { TabItem } from "blocks/Tabs";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
@@ -193,57 +197,6 @@ const options = [
   { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
   { value: "cookie dough", label: "Cookie Dough" },
 ];
-
-storiesOf("Templates/Modules/Maps", module)
-  .addDecorator(FullScreen)
-  .addDecorator(withA11y)
-  .add("Map Tools", () => {
-    return (
-      <React.Fragment>
-        <Template
-          id="Template Regions"
-          // template="B_05"
-          template="C_04"
-          isOverlay
-          A={{
-            id: "A",
-            content: (
-              // Set the 'columns' value to the # of Buttons
-              <ButtonGroup columns="1">
-                <Button label="Layers" icon="layers" alignCenter />
-                <Button label="Map" icon="map" alignCenter />
-                <Button label="Draw" icon="draw" alignCenter />
-                <Button label="List" icon="list" alignCenter />
-                <Button label="Legend" icon="legend" alignCenter />
-              </ButtonGroup>
-            ),
-          }}
-          B={{
-            id: "B",
-            content: <MockMapPalettes />,
-          }}
-          C={{
-            id: "C",
-            content: (
-              // Set the 'columns' value to the # of Buttons
-              <CardGrid columns="3">
-                <Card shadow="2x">
-                  <Image src={MapStreets} alt="Map Streets" width="75" onClick={() => { }} />
-                </Card>
-                <Card shadow="2x">
-                  <Image src={MapSatellite} alt="Map Satellite" width="75" onClick={() => { }} />
-                </Card>
-                <Card shadow="2x">
-                  <Image src={MapHybrid} alt="Map Hybrid" width="75" onClick={() => { }} />
-                </Card>
-              </CardGrid>
-            ),
-          }}
-        />
-        <Mapbox />
-      </React.Fragment>
-    );
-  });
 
 storiesOf("Templates/Modules/Panels", module)
   .addDecorator(FullScreen)
@@ -951,5 +904,190 @@ storiesOf("Templates/Modules/Create", module)
           </Grid>
         </Card>
       </Popper>
+    );
+  })
+  .add("Job Details", () => {
+    return (
+      <React.Fragment>
+        <Modal visible>
+          <DialogBox
+            buttons={[
+              {
+                id: "Cancel",
+                label: "Cancel",
+
+              },
+              {
+                id: "Save",
+                label: "Save",
+
+              },
+            ]}
+          >
+            <Bar left={(
+              <Grid columns="2">
+                <Grid columns="1" gap="xs">
+                  <Text text="Job" size="xs" />
+                  <Title size="lg" text="20930-30308-39043" />
+                </Grid>
+                <SelectMenu
+                  options={[{
+                    value: "submitted",
+                    label: <Tag label="Submitted" brand="jobs" />,
+                  }, {
+                    value: "In Progress",
+                    label: <Tag label="In Progress" brand="brand1" />,
+                  }, {
+                    value: "Completed",
+                    label: <Tag label="Completed" brand="research" />,
+                  }]}
+                />
+              </Grid>
+            )}
+            />
+            <Form>
+              <FormSection title="Job Details">
+                <Field align="edge" label="Job Number" value="398-0293-9808" />
+                <Field align="edge" label="Job Name" value="My LightBox Job" />
+              </FormSection>
+              <FormSection title="Property Details">
+                <Field align="edge" label="Address" value="418 Sycamore Ln." />
+                <Field align="edge" label="City" value="Savannah" />
+                <Field align="edge" label="State" value="GA" />
+                <Field align="edge" label="Zip" value="31522" />
+                <Field align="edge" label="Property Type" value="Residential" />
+                <Field align="edge" label="Property Sub-Type" value="Single Family" />
+              </FormSection>
+            </Form>
+          </DialogBox>
+        </Modal>
+        <Layout main={{ content: (<Text text="Main layout" />) }} />
+      </React.Fragment>
+    );
+  })
+  .add("RFP Details", () => {
+    return (
+      <DialogBox
+        buttons={[
+          {
+            id: "Cancel",
+            label: "Cancel",
+
+          },
+          {
+            id: "Save",
+            label: "Save",
+
+          },
+        ]}
+      >
+        <Bar left={(
+          <Grid columns="2">
+            <Grid columns="1" gap="xs">
+              <Text text="RFP" size="xs" />
+              <Title size="lg" text="20930-30308-39043" />
+            </Grid>
+            <SelectMenu
+              options={[{
+                value: "submitted",
+                label: <Tag label="Submitted" brand="jobs" />,
+              }, {
+                value: "In Progress",
+                label: <Tag label="In Progress" brand="brand1" />,
+              }, {
+                value: "Completed",
+                label: <Tag label="Completed" brand="research" />,
+              }]}
+            />
+          </Grid>
+        )}
+        />
+        <Bar left={(
+          <Tabs>
+            <TabItem label="RFP" isSelected />
+            <TabItem label="Bid" />
+          </Tabs>
+        )}
+        />
+        <Form>
+          <FormSection title="Job Details">
+            <Field align="edge" label="Job Number" value="398-0293-9808" />
+            <Field align="edge" label="Job Name" value="My LightBox Job" />
+          </FormSection>
+          <FormSection title="Property Details">
+            <Field align="edge" label="Address" value="418 Sycamore Ln." />
+            <Field align="edge" label="City" value="Savannah" />
+            <Field align="edge" label="State" value="GA" />
+            <Field align="edge" label="Zip" value="31522" />
+            <Field align="edge" label="Property Type" value="Residential" />
+            <Field align="edge" label="Property Sub-Type" value="Single Family" />
+          </FormSection>
+        </Form>
+      </DialogBox>
+    );
+  })
+  .add("RFP Bid Details", () => {
+    return (
+      <DialogBox
+        buttons={[
+          {
+            id: "Cancel",
+            label: "Cancel",
+
+          },
+          {
+            id: "Save",
+            label: "Save",
+
+          },
+        ]}
+      >
+        <Bar left={(
+          <Grid columns="2">
+            <Grid columns="1" gap="xs">
+              <Text text="RFP" size="xs" />
+              <Title size="lg" text="20930-30308-39043" />
+            </Grid>
+            <SelectMenu
+              options={[{
+                value: "submitted",
+                label: <Tag label="Submitted" brand="jobs" />,
+              }, {
+                value: "In Progress",
+                label: <Tag label="In Progress" brand="brand1" />,
+              }, {
+                value: "Completed",
+                label: <Tag label="Completed" brand="research" />,
+              }]}
+            />
+          </Grid>
+        )}
+        />
+        <Bar left={(
+          <Tabs>
+            <TabItem label="RFP" />
+            <TabItem label="Bid" isSelected />
+          </Tabs>
+        )}
+        />
+        <Form>
+          <FormSection title="Client Details">
+            <Field align="edge" label="Client Name" value="398-0293-9808" />
+            <Field align="edge" label="Client Company" value="My LightBox Job" />
+            <Field align="edge" label="Address" value="418 Sycamore Ln." />
+            <Field align="edge" label="City" value="Savannah" />
+            <Field align="edge" label="State" value="GA" />
+            <Field align="edge" label="Zip" value="31522" />
+
+          </FormSection>
+          <FormSection title="Bid Details">
+            <Field align="edge" label="Scope of Work" value="Value" />
+            <Field align="edge" label="Bid Amount" value="$Value" />
+            <Field align="edge" label="Turn Around Time" value="Value" />
+            <Field align="edge" label="Expected Response Date" value="Value" />
+            <Field align="edge" label="Additional Notes" value="All my notes." />
+          </FormSection>
+        </Form>
+      </DialogBox>
     );
   });

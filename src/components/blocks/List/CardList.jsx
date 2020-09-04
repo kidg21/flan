@@ -47,7 +47,7 @@ export const GridWrapper = styled.div`
     }
     ::-webkit-scrollbar-track {
       background-color: ${(props) => {
-    return props.theme.palette.disabled;
+    return props.theme.palette.neutral40;
   }};
     border: 1px solid ${(props) => {
     return props.theme.palette.neutral60;
@@ -55,7 +55,7 @@ export const GridWrapper = styled.div`
     }
     ::-webkit-scrollbar-thumb {
       background-color: ${(props) => {
-    return props.theme.palette.link;
+    return props.theme.palette.neutral80;
   }};
     border-radius: ${(props) => {
     return props.theme.borders.radiusMin;

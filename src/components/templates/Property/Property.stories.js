@@ -9,15 +9,19 @@ import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
 import Container from "atoms/Container";
 import Layout from "layout/Layout";
+import Inline from "layout/Inline";
 import Command from "atoms/Command";
 import Template from "layout/Template";
+import Popper from "layout/Popper";
 import Search from "blocks/Search";
+import Tag from "atoms/Tag";
 import Menu from "blocks/Menu";
 import List, { ListItem } from "blocks/List";
 import Grid from "layout/Grid";
+import Checkbox from "atoms/Checkbox";
 import Image from "atoms/Image";
 import Field, { FieldGroup, FieldSection } from "atoms/Field";
-import { Title } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Card, { CardSection } from "elements/Card";
 import ParcelMap from "images/maps/map-thumb.png";
 import {
@@ -25,291 +29,359 @@ import {
   MockHeaderGlobal,
   MockMenu,
   MockTabs,
+  MockDetails,
+  MockTable,
 } from "helpers/Mocks";
-
-function doNothing() {
-  // do nothing
-}
 
 storiesOf("Templates|Applications/Research/Property", module)
   .addDecorator(FullScreen)
+
+  // .add(
+  //   "Main",
+  //   () => {
+  //     return React.createElement(() => {
+  //       const [leftOpen, setLeftOpen] = useState(true);
+  //       const toggleLeft = () => { setLeftOpen(!leftOpen); };
+
+  //       // const [rightOpen, setRightOpen] = useState(false);
+  //       // const openRight = () => { setRightOpen(true); };
+  //       // const closeRight = () => { setRightOpen(false); };
+  //       // const toggleRight = () => { setRightOpen(!rightOpen); };
+
+  //       // const [stateSummary, setSummary] = useState("");
+  //       const [fade, setFade] = useState("1");
+  //       const openSummary = () => { setFade("1"); };
+  //       const closeSummary = () => { setFade("0"); };
+  //       // const toggleSummary = () => {
+  //       //   if (fade === "1") {
+  //       //     setFade("0");
+  //       //   } else {
+  //       //     setFade("1");
+  //       //   }
+  //       // };
+
+  //       const [regionsActive, setRegions] = useState(true); // Enable/Disable Regions Button
+  //       const [menuRegionsActive, setRegionsMenu] = useState(false); // Toggle Regions Menu
+  //       const toggleInclusions = () => {
+  //         setRegions(!regionsActive);
+  //         if (regionsActive === true) {
+  //           setRegionsMenu(false);
+  //         }
+  //       };
+  //       const toggleRegions = () => {
+  //         setRegionsMenu(!menuRegionsActive);
+  //       };
+
+  //       const [region01, setRegion01] = useState(true);
+  //       const toggleRegion01 = () => { setRegion01(!region01); };
+  //       // const closeRegion01 = () => { setRegion01(false); };
+  //       const [region02, setRegion02] = useState(true);
+  //       const toggleRegion02 = () => { setRegion02(!region02); };
+  //       // const closeRegion02 = () => { setRegion02(false); };
+
+  //       const [toolMore, setToolMore] = useState(false);
+  //       const toggleToolMore = () => { setToolMore(!toolMore); };
+
+  //       const [bottomMax, setBottomMax] = useState(false);
+  //       const toggleBottomMax = () => { setBottomMax(!bottomMax); };
+  //       const [bottomState, setBottomState] = useState(false);
+  //       const openBottom = () => { setBottomState(true); };
+  //       const closeBottom = () => {
+  //         setBottomState(false);
+  //         setBottomMax(false);
+  //       };
+  //       // const toggleBottom = () => {
+  //       //   setBottomState(!bottomState);
+  //       //   setBottomMax(false);
+  //       // };
+
+  //       const menuMain = [
+  //         {
+  //           id: "Projects",
+  //           title: "Projects",
+  //         },
+  //         {
+  //           id: "Properties",
+  //           title: "Properties",
+  //           isSelected: true,
+  //         },
+  //         {
+  //           id: "History",
+  //           title: "History",
+  //         },
+  //         {
+  //           id: "Data",
+  //           title: "Data",
+  //         },
+  //       ];
+
+  //       /** keeping around for Summary 'toggle' interaction */
+  //       const [open, setOpen] = useState(false);
+  //       const toggleDetails = () => { setOpen(!open); };
+  //       let iconContent;
+  //       if (open) {
+  //         iconContent = "minus";
+  //       } else {
+  //         iconContent = "plus";
+  //       }
+
+  //       let toggleIcon;
+
+  //       if (bottomMax === true) {
+  //         toggleIcon = 180;
+  //       } else {
+  //         toggleIcon = null;
+  //       }
+
+  //       const actionsTable = [
+  //         <Menu
+  //           data={[
+  //             { id: "a", label: "Action" },
+  //             { id: "b", label: "Action" },
+  //             { id: "c", label: "Action" },
+  //           ]}
+  //           position="bottomLeft"
+  //         >
+  //           <Icon icon="options" />
+  //         </Menu>,
+  //         <Icon icon="up" rotation={toggleIcon} onClick={toggleBottomMax} />,
+  //         <Icon icon="close" onClick={closeBottom} />,
+  //       ];
+
+  //       return (
+  //         <Layout
+  //           header={{
+  //             id: "Header",
+  //             content: <MockHeaderGlobal menuClick={toggleLeft} />,
+  //           }}
+  //           left={{
+  //             id: "Left",
+  //             content: (
+  //               <MockMenu
+  //                 title="Research"
+  //                 data={menuMain}
+  //               />
+  //             ),
+  //             visible: leftOpen,
+  //           }}
+  //           main={{
+  //             id: "Main",
+  //             content: (
+  //               <Panel
+  //                 padding="0"
+  //                 header={(
+  //                   <Card>
+  //                     <CardSection padding="0" variant="light">
+  //                       <Bar
+  //                         padding="2x"
+  //                         contentAlign="center"
+  //                         left={{
+  //                           content: (
+  //                             <Text text="Properties" weight="bold" />
+  //                           ),
+  //                           width: "max-content",
+  //                         }}
+  //                         right={{
+  //                           content: (
+  //                             <Menu
+  //                               data={[
+  //                                 { id: "a", label: "Action" },
+  //                                 { id: "b", label: "Action" },
+  //                                 { id: "c", label: "Action" },
+  //                               ]}
+  //                               position="bottomLeft"
+  //                             >
+  //                               <Icon icon="options" />
+  //                             </Menu>
+  //                           ),
+  //                           width: "max-content",
+  //                         }}
+  //                       />
+  //                     </CardSection>
+  //                     <CardSection padding="0" isInverse2>
+  //                       <Bar
+  //                         padding="1x"
+  //                         contentAlign="center"
+  //                         left={{
+  //                           content: (
+  //                             <Search />),
+  //                           width: "30rem",
+  //                         }}
+  //                         right={{
+  //                           content: (
+  //                             <Inline spacingX="0.5rem">
+  //                               <Title text="309 Results" size="lg" weight="bold" />
+  //                               <Button label="View List" isSolid onClick={openBottom} />
+  //                             </Inline>
+  //                           ),
+  //                           width: "max-content",
+  //                         }}
+  //                       />
+  //                     </CardSection>
+  //                     <CardSection padding="0">
+  //                       <Bar
+  //                         contentAlign="center"
+  //                         left={{
+  //                           content: (
+  //                             <Button id="filter" icon="filter" label="Filter" isPlain />
+  //                           ),
+  //                           width: "max-content",
+  //                         }}
+  //                         center={{
+  //                           content: (
+  //                             <Grid columns="auto 1fr" gap="4xl" align="center">
+  //                               <Inline spacingX="0" spacingY="0.5rem">
+  //                                 <Checkbox
+  //                                   id="include"
+  //                                   label="Include"
+  //                                   labelVisible={false}
+  //                                   onChange={toggleInclusions}
+  //                                   checked={regionsActive}
+  //                                 />
+  //                                 <Popper
+  //                                   usePortal
+  //                                   isFlex
+  //                                   visible={menuRegionsActive}
+  //                                   anchor={(
+  //                                     <Button
+  //                                       id="regions_list"
+  //                                       label="Regions"
+  //                                       count="2"
+  //                                       isPlain
+  //                                       onClick={toggleRegions}
+  //                                       disabled={!regionsActive}
+  //                                     />
+  //                                   )}
+  //                                 >
+  //                                   <Card
+  //                                     padding="2x"
+  //                                     shadow="2x"
+  //                                     commands={[
+  //                                       {
+  //                                         id: "Command One",
+  //                                         icon: "plus",
+  //                                         label: "Create Region",
+  //                                       },
+  //                                     ]}
+  //                                   >
+  //                                     <Container maxHeight="16rem">
+  //                                       <List isInteractive>
+  //                                         <ListItem
+  //                                           pre={{
+  //                                             type: "checkbox", label: "Region 01", checked: region01, onClick: toggleRegion01,
+  //                                           }}
+  //                                           post={{ type: "icon", icon: "close" }}
+  //                                         />
+  //                                         <ListItem
+  //                                           pre={{
+  //                                             type: "checkbox", label: "Region 02", checked: region02, onClick: toggleRegion02,
+  //                                           }}
+  //                                           post={{ type: "icon", icon: "close" }}
+  //                                         />
+  //                                       </List>
+  //                                     </Container>
+  //                                   </Card>
+  //                                 </Popper>
+  //                                 <Tag label="Shopping Center" brand="brand1" icon="close" onClickIcon={() => { }} />
+  //                                 <Tag label="California" brand="brand1" icon="close" onClickIcon={() => { }} />
+  //                                 <Tag label="Expensive " brand="brand1" icon="close" onClickIcon={() => { }} />
+  //                                 <Tag label="EX: Boundary 1" brand="brand1" icon="close" onClickIcon={() => { }} />
+  //                                 {/* {region01 ? <Tag label="Region 01" variant="info" icon="close" onClickIcon={closeRegion01} /> : ""} */}
+  //                                 {/* {region02 ? <Tag label="Region 02" variant="info" icon="close" onClickIcon={closeRegion02} /> : ""} */}
+  //                               </Inline>
+  //                             </Grid>
+  //                           ),
+  //                           align: "left",
+  //                         }}
+  //                       />
+  //                     </CardSection>
+  //                   </Card>
+  //                 )}
+  //               >
+  //                 <Template
+  //                   id="Map Overlay"
+  //                   template="B_05"
+  //                   isOverlay
+  //                   hasShadows
+  //                   A={{
+  //                     id: "A",
+  //                     content: (
+  //                       <Card padding="2x" shadow="2x">
+  //                         <ButtonGroup columns="1">
+  //                           <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
+  //                           <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
+  //                           <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
+  //                           <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
+  //                           <Button label="View" icon="map" isPlain size="sm" alignCenter />
+  //                           <Popper
+  //                             usePortal
+  //                             isFlex
+  //                             visible={toolMore}
+  //                             anchor={(
+  //                               <Button label="More" icon="more" isPlain size="sm" alignCenter onClick={toggleToolMore} />
+  //                             )}
+  //                           >
+  //                             <Card padding="4x" shadow="2x">
+  //                               <Container maxHeight="12rem">
+  //                                 <Grid columns="1" gap="lg">
+  //                                   <Command label="Measure" icon="measure" isPlain size="sm" onClick={toggleToolMore} />
+  //                                   <Command label="Draw" icon="draw" isPlain size="sm" onClick={toggleToolMore} />
+  //                                   <Command label="Layers" icon="layers" isPlain size="sm" onClick={toggleToolMore} />
+  //                                   <Command label="Legend" icon="list" isPlain size="sm" onClick={toggleToolMore} />
+  //                                   <Command label="View" icon="map" isPlain size="sm" onClick={toggleToolMore} />
+  //                                 </Grid>
+  //                               </Container>
+  //                             </Card>
+  //                           </Popper>
+  //                         </ButtonGroup>
+  //                       </Card>
+  //                     ),
+  //                     padding: "0.5rem",
+  //                   }}
+  //                   B={{
+  //                     content: (
+  //                       <MockDetails
+  //                         recordTitle="22902 Trabuco Rd, Mission Viejo, CA 92691"
+  //                         actionClose={closeSummary}
+  //                       // offcanvas={stateSummary} // keeping for toggle interaction
+  //                       />
+  //                     ),
+  //                     opacity: fade,
+  //                   }}
+  //                 />
+  //                 <Mapbox
+  //                   // map="satellite"
+  //                   center={[-117.6582, 33.5969]}
+  //                   zoom={[17]}
+  //                   mapClick={openSummary}
+  //                 />
+  //               </Panel>
+  //             ),
+  //           }}
+  //           /** Option: Summary in 'right' region of Layout */
+  //           // right={{
+  //           //   id: "Summary Panel",
+  //           //   content: (
+  //           //     <MockDetails actionClose={closeRight} />
+  //           //   ),
+  //           //   visible: rightOpen,
+  //           // }}
+  //           bottom={{
+  //             id: "Results List",
+  //             content: (
+  //               <MockTable actionsTable={actionsTable} />
+  //             ),
+  //             fullHeight: bottomMax,
+  //             visible: bottomState,
+  //           }}
+  //         />
+  //       );
+  //     });
+  //   },
+  // )
+
   .add(
-    "Property Main",
-    () => {
-      return React.createElement(() => {
-        const [leftOpen, setLeftOpen] = useState(true);
-        const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        return (
-          <Layout
-            header={{
-              id: "Header",
-              content: <MockHeaderGlobal menuClick={toggleLeft} />,
-            }}
-            left={{
-              id: "Left",
-              content: (
-                <List title="Research" isInteractive isInverse>
-                  <ListItem title="Dashboard" />
-                  <ListItem title="Projects" />
-                  <ListItem title="Properties" isSelected />
-                </List>),
-              visible: leftOpen,
-            }}
-            main={{
-              id: "Main",
-              content: (
-                <Panel
-                  padding="0"
-                  header={(
-                    <Card
-                      id="Card_Header"
-                      padding="0"
-                    >
-                      <CardSection variant="light" padding="1x">
-                        <Bar
-                          contentAlign="center"
-                          padding="0"
-                          left={{
-                            content: (
-                              <Title size="xl" text="Properties" weight="bold" />),
-                            align: "left",
-                          }}
-                          right={{
-                            content: (
-                              <Button icon="options" isRound isPlain variant="neutral" />
-                            ),
-                          }}
-                        />
-                      </CardSection>
-                    </Card>
-                  )}
-                >
-                  <Panel
-                    padding="0"
-                    header={(
-                      <Bar
-                        padding="1x"
-                        contentAlign="center"
-                        left={{
-                          content: (
-                            <Search />),
-                        }}
-                        center={{
-                          content: (<Title text="309 results" size="lg" />),
-                          align: "right",
-                        }}
-                        right={{
-                          content: (<Button label="View Results" isSolid />),
-                          width: "fit-content",
-                        }}
-                      />
-                    )}
-                  >
-                    <Template
-                      id="Assessment"
-                      isOverlay
-                      template="D_02"
-                      A={{
-                        id: "A",
-                        content: (
-                          <Container width="4rem">
-                            <Card padding="2x">
-                              <ButtonGroup gap="3xl" columns="1">
-                                <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
-                                <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
-                                <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
-                                <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
-                                <Button label="View" icon="map" isPlain size="sm" alignCenter />
-                                <Button label="Reset" icon="sync" isPlain size="sm" alignCenter />
-                                <Button label="More" icon="more" isPlain size="sm" alignCenter />
-                              </ButtonGroup>
-                            </Card>
-                          </Container>
-                        ),
-                      }}
-                    />
-                    <Mapbox />
-                  </Panel>
-                </Panel>),
-            }}
-          />
-        );
-      });
-    },
-  )
-  .add(
-    "Property Details",
-    () => {
-      return React.createElement(() => {
-        const [leftOpen, setLeftOpen] = useState(true);
-        const toggleLeft = () => { setLeftOpen(!leftOpen); };
-
-        return (
-          <Layout
-            header={{
-              id: "Header",
-              content: <MockHeaderGlobal menuClick={toggleLeft} />,
-            }}
-            left={{
-              id: "Left",
-              content: (
-                <List title="Research" isInteractive isInverse>
-                  <ListItem title="Dashboard" />
-                  <ListItem title="Projects" />
-                  <ListItem title="Properties" isSelected />
-                </List>),
-              visible: leftOpen,
-            }}
-            main={{
-              id: "Main",
-              content: (
-                <Panel
-                  padding="0"
-                  header={(
-                    <Card
-                      id="Card_Header"
-                      padding="0"
-                    >
-                      <CardSection variant="light" padding="1x">
-                        <Bar
-                          contentAlign="center"
-                          padding="0"
-                          left={{
-                            content: (
-                              <Title size="xl" text="Properties" weight="bold" />),
-                            align: "left",
-                          }}
-                          right={{
-                            content: (
-                              <Button icon="options" isRound isPlain variant="neutral" />
-                            ),
-                          }}
-                        />
-                      </CardSection>
-                    </Card>
-                  )}
-                >
-                  <Panel
-                    padding="0"
-                    header={(
-                      <Bar
-                        padding="1x"
-                        contentAlign="center"
-                        left={{
-                          content: (
-                            <Search />),
-                        }}
-                        center={{
-                          content: (<Title text="309 results" size="lg" />),
-                          align: "right",
-                        }}
-                        right={{
-                          content: (<Button label="View Results" isSolid />),
-                          width: "fit-content",
-                        }}
-                      />
-                    )}
-                  >
-                    <Template
-                      id="Main Content"
-                      template="B_01"
-                      A={{
-                        id: "A",
-                        content: (
-                          <Panel padding="0">
-                            <Template
-                              id="Assessment"
-                              isOverlay
-                              template="D_02"
-                              A={{
-                                id: "A",
-                                content: (
-                                  <Card padding="2x">
-                                    <ButtonGroup gap="3xl" columns="1">
-                                      <Button label="Measure" icon="measure" isPlain size="sm" alignCenter />
-                                      <Button label="Draw" icon="draw" isPlain size="sm" alignCenter />
-                                      <Button label="Layers" icon="layers" isPlain size="sm" alignCenter />
-                                      <Button label="Legend" icon="list" isPlain size="sm" alignCenter />
-                                      <Button label="View" icon="map" isPlain size="sm" alignCenter />
-                                      <Button label="Reset" icon="sync" isPlain size="sm" alignCenter />
-                                      <Menu
-                                        isFlex
-                                        visible
-                                        data={[
-                                          { id: "save", label: "Save" },
-                                          { id: "filter", label: "Filter" },
-                                          { id: "share", label: "Share" },
-                                          { id: "delete", label: "Delete" },
-                                        ]}
-                                      >
-                                        <Button label="More" icon="more" isPlain size="sm" alignCenter />
-                                      </Menu>
-                                    </ButtonGroup>
-                                  </Card>
-                                ),
-                              }}
-                            />
-                            <Mapbox />
-                          </Panel>),
-                      }}
-                      B={{
-                        id: "B",
-                        content: (
-                          <Panel
-                            header={(
-                              <Bar
-                                contentAlign="center"
-                                padding="2x"
-                                left={<Title size="lg" weight="medium" text="22902 Trabuco Rd., Mission Viejo CA" />}
-                                right={{
-                                  content: (<Icon icon="export" onClick={doNothing} />),
-                                  width: "fit-content",
-                                }}
-                              />
-                            )}
-                          >
-                            <Grid columns="1" gap="lg">
-                              <Bar
-                                padding="0"
-                                center={
-                                  <Image width="20rem" src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" alt="Property Image" />
-                                }
-                              />
-                              <FieldSection>
-                                <FieldGroup columns="1" title="Property">
-                                  <Field label="Parcel No." value="808-221-12" onClick={() => { }} />
-                                  <Field label="Land User" value="Commercial Shopping Center" />
-                                  <Field label="Building Area" value="25,344 SF" />
-                                  <Field label="Lot Area" value="171,143 SF (3.93 Acres)" onClick={() => { }} />
-                                  <Field label="Building/Lot" value="0.15" />
-                                  <Field label="No. of Units" value="" />
-                                  <Field label="Year Built" value="1978" />
-                                </FieldGroup>
-                                <FieldGroup columns="1" title="Owners">
-                                  <Field label="Owners" value="SCF-Los Alisos LLC" onClick={() => { }} />
-                                  <Field label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
-                                  <Field label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick={() => { }} />
-                                  <Field label="Last Sale" value="10/2/15 for $11,500,000" onClick={() => { }} />
-                                  <Field label="Total Assd Value" value="$10,045,870" />
-
-                                </FieldGroup>
-                              </FieldSection>
-                            </Grid>
-
-                          </Panel>),
-                      }}
-                    />
-                  </Panel>
-                </Panel>),
-            }}
-          />
-        );
-      });
-    },
-  )
-  .add(
-    "Property Overview",
+    "Overview",
     () => {
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);

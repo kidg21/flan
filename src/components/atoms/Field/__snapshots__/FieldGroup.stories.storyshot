@@ -2,26 +2,26 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
   id="Group 1"
   rows={null}
 >
   <p
-    className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+    className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
     fontSize="0.875rem"
-    fontWeight={400}
+    fontWeight={600}
     id={null}
     letterSpacing="0.25px"
   >
     This is the first group
   </p>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
     id="Field 1"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -31,9 +31,9 @@ exports[` 1`] = `
       Field 1
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+      className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
       fontSize="1rem"
-      fontWeight={500}
+      fontWeight={600}
       id={null}
       letterSpacing="0.5px"
     >
@@ -41,12 +41,12 @@ exports[` 1`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
     id="Field 2"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -56,9 +56,9 @@ exports[` 1`] = `
       Field 2
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+      className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
       fontSize="1rem"
-      fontWeight={500}
+      fontWeight={600}
       id={null}
       letterSpacing="0.5px"
     >
@@ -66,12 +66,12 @@ exports[` 1`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
     id="Field 3"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -81,9 +81,9 @@ exports[` 1`] = `
       Field 3
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+      className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
       fontSize="1rem"
-      fontWeight={500}
+      fontWeight={600}
       id={null}
       letterSpacing="0.5px"
     >
@@ -95,26 +95,26 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
   id={null}
   rows={null}
 >
   <p
-    className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+    className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
     fontSize="0.875rem"
-    fontWeight={400}
+    fontWeight={600}
     id={null}
     letterSpacing="0.25px"
   >
     Fields via Array
   </p>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
     id="Field 1"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -124,9 +124,9 @@ exports[` 2`] = `
       Field 1
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+      className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
       fontSize="1rem"
-      fontWeight={500}
+      fontWeight={600}
       id={null}
       letterSpacing="0.5px"
     >
@@ -134,12 +134,12 @@ exports[` 2`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
     id="Field 2"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -149,9 +149,9 @@ exports[` 2`] = `
       Field 2
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+      className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
       fontSize="1rem"
-      fontWeight={500}
+      fontWeight={600}
       id={null}
       letterSpacing="0.5px"
     >
@@ -159,12 +159,12 @@ exports[` 2`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
     id="Field 3"
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+      className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
       cursor="pointer"
       fontSize="1rem"
       fontWeight={400}
@@ -174,9 +174,9 @@ exports[` 2`] = `
       Field 3
     </label>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+      className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
       fontSize="1rem"
-      fontWeight={500}
+      fontWeight={600}
       id={null}
       letterSpacing="0.5px"
     >
@@ -193,26 +193,26 @@ exports[` 3`] = `
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
     id={null}
     rows={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
       fontSize="0.875rem"
-      fontWeight={400}
+      fontWeight={600}
       id={null}
       letterSpacing="0.25px"
     >
       Inline Fields (Default)
     </p>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 1"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -222,9 +222,9 @@ exports[` 3`] = `
         Field 1
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -232,12 +232,12 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 2"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -247,9 +247,9 @@ exports[` 3`] = `
         Field 2
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -257,12 +257,12 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 3"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -272,9 +272,9 @@ exports[` 3`] = `
         Field 3
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -283,26 +283,26 @@ exports[` 3`] = `
     </section>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
     id={null}
     rows={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
       fontSize="0.875rem"
-      fontWeight={400}
+      fontWeight={600}
       id={null}
       letterSpacing="0.25px"
     >
       Vertically Aligned Fields
     </p>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fAPoMC"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 EtesY"
       id="Field 1"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -312,9 +312,9 @@ exports[` 3`] = `
         Field 1
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -322,12 +322,12 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fAPoMC"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 EtesY"
       id="Field 2"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -337,9 +337,9 @@ exports[` 3`] = `
         Field 2
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -347,12 +347,12 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 fAPoMC"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 EtesY"
       id="Field 3"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -362,9 +362,9 @@ exports[` 3`] = `
         Field 3
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -373,26 +373,26 @@ exports[` 3`] = `
     </section>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
     id={null}
     rows={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
       fontSize="0.875rem"
-      fontWeight={400}
+      fontWeight={600}
       id={null}
       letterSpacing="0.25px"
     >
       Edge Aligned Fields
     </p>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
       id="Field 1"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -402,9 +402,9 @@ exports[` 3`] = `
         Field 1
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -412,12 +412,12 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
       id="Field 2"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -427,9 +427,9 @@ exports[` 3`] = `
         Field 2
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -437,12 +437,12 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
       id="Field 3"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -452,9 +452,9 @@ exports[` 3`] = `
         Field 3
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 jYKsXf"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -472,26 +472,26 @@ exports[` 4`] = `
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Field__FieldGrid-sc-11od8ug-5 bfavrm"
     id={null}
     rows={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
       fontSize="0.875rem"
-      fontWeight={400}
+      fontWeight={600}
       id={null}
       letterSpacing="0.25px"
     >
       Field Group Gap XS
     </p>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 1"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -501,9 +501,9 @@ exports[` 4`] = `
         Field 1
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -511,12 +511,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 2"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -526,9 +526,9 @@ exports[` 4`] = `
         Field 2
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -536,12 +536,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 3"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -551,9 +551,9 @@ exports[` 4`] = `
         Field 3
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -562,26 +562,26 @@ exports[` 4`] = `
     </section>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
     id={null}
     rows={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
       fontSize="0.875rem"
-      fontWeight={400}
+      fontWeight={600}
       id={null}
       letterSpacing="0.25px"
     >
       Field Group Gap Default
     </p>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 1"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -591,9 +591,9 @@ exports[` 4`] = `
         Field 1
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -601,12 +601,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 2"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -616,9 +616,9 @@ exports[` 4`] = `
         Field 2
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -626,12 +626,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 3"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -641,9 +641,9 @@ exports[` 4`] = `
         Field 3
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -652,26 +652,26 @@ exports[` 4`] = `
     </section>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 liKUbB Field__FieldGrid-sc-11od8ug-4 dSaJhd"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 liKUbB Field__FieldGrid-sc-11od8ug-5 bfavrm"
     id={null}
     rows={null}
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 eJkuie"
+      className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
       fontSize="0.875rem"
-      fontWeight={400}
+      fontWeight={600}
       id={null}
       letterSpacing="0.25px"
     >
       Field Group Gap XL
     </p>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 1"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -681,9 +681,9 @@ exports[` 4`] = `
         Field 1
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -691,12 +691,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 2"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -706,9 +706,9 @@ exports[` 4`] = `
         Field 2
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >
@@ -716,12 +716,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 YEdAI"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 leWDhJ"
       id="Field 3"
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 cDhEJN Field__FieldLabel-sc-11od8ug-2 kIQpiW"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -731,9 +731,9 @@ exports[` 4`] = `
         Field 3
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iOVbHb Field__FieldValue-sc-11od8ug-3 kJpFNa"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 kJpFNa"
         fontSize="1rem"
-        fontWeight={500}
+        fontWeight={600}
         id={null}
         letterSpacing="0.5px"
       >

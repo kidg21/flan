@@ -19,17 +19,17 @@ const FieldItem = styled(Grid)`
   grid-gap: ${(props) => {
     return props.fieldGap || "";
   }};
+  line-height: normal;
 `;
 
 const GroupTitle = styled(Text)`
   color: ${(props) => {
-    return props.theme.text.secondary;
+    return props.theme.background.alt;
   }};
   text-transform: uppercase;
   grid-column: 1/-1;
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
-  font-weight: 400;
 `;
 
 const FieldLabel = styled(Label)`
@@ -37,6 +37,7 @@ const FieldLabel = styled(Label)`
   color: ${(props) => {
     return props.theme.text[props.labelColor] || "inherit";
   }};
+  white-space: normal;
   cursor: initial;
   user-select: initial;
 `;
@@ -56,8 +57,19 @@ const FieldValue = styled(Text)`
   }
 `;
 
+const LinkedField = styled(Link)`
+  margin: initial;
+  padding: initial;
+  width: max-content;
+  justify-self: ${(props) => {
+    return props.justifyLink || "";
+  }};
+  /* justify-self: flex-end; */
+`;
+
 const FieldGrid = styled(Grid)`
   grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
   overflow: auto;
   &:not(:last-of-type) {
     margin-bottom: 1rem;
@@ -81,20 +93,18 @@ function Field({
   onClick,
   target,
   value,
-  labelWidth,
-  valueWidth,
+  gap,
 }) {
   let fieldColumns;
   let fieldGap;
   let valueAlign;
+  let justifyLink;
 
-  let labelSpacing = parseInt(labelWidth, 10);
-  if (isNaN(labelSpacing)) labelSpacing = "auto";
+  let labelSpacing = parseInt(gap, 10) / 3;
+  if (isNaN(labelSpacing)) labelSpacing = "minmax(auto, 8rem)";
   else labelSpacing += "fr";
 
-  let valueSpacing = parseInt(valueWidth, 10);
-  if (isNaN(valueSpacing)) valueSpacing = "auto";
-  else valueSpacing += "fr";
+  const valueSpacing = "1fr";
 
   switch (align) {
     case "vertical":
@@ -102,18 +112,20 @@ function Field({
       fieldGap = "0.25rem";
       break;
     case "edge":
-      fieldColumns = "1fr 1fr";
+      fieldColumns = `${labelSpacing} ${valueSpacing}`;
       valueAlign = "right";
+      justifyLink = "flex-end";
       break;
     default:
       fieldColumns = `${labelSpacing} ${valueSpacing}`;
+      fieldGap = "1.5rem";
       break;
   }
 
   let field = (
     <FieldValue
       onChange={onChange}
-      weight="medium"
+      weight="bold"
       valueAlign={valueAlign}
     >
       {value}
@@ -122,9 +134,9 @@ function Field({
 
   if (href || onClick) {
     field = (
-      <Link disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick}>
+      <LinkedField disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick} justifyLink={justifyLink}>
         {field}
-      </Link>
+      </LinkedField>
     );
   }
 
@@ -135,16 +147,15 @@ function Field({
       fieldGap={fieldGap}
       id={id}
     >
-      <FieldLabel size="lg" text={label} />
+      <FieldLabel text={label} size="lg" />
       {field}
     </FieldItem>
   );
 }
 
 Field.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge", "tight"]),
-  labelWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
-  valueWidth: PropTypes.oneOf(["auto", "1x", "2x", "3x", "4x"]),
+  align: PropTypes.oneOf(["vertical", "edge"]),
+  gap: PropTypes.oneOf(["2x", "3x", "4x"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.string,
@@ -159,8 +170,7 @@ Field.propTypes = {
 
 Field.defaultProps = {
   align: null,
-  labelWidth: "1x",
-  valueWidth: "1x",
+  gap: null,
   className: null,
   disabled: false,
   href: undefined,
@@ -180,7 +190,6 @@ function FieldGroup({
   if (_columns > 0 && _columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
-
   return (
     <FieldGrid
       className={className}
@@ -188,7 +197,7 @@ function FieldGroup({
       gap={gap}
       id={id}
     >
-      {title ? <GroupTitle size="sm" text={title} /> : null}
+      {title ? <GroupTitle text={title} size="sm" weight="bold" /> : null}
       {children
         || data.map((item, index) => {
           return (
@@ -239,7 +248,7 @@ FieldSection.defaultProps = {
 };
 
 FieldGroup.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge", "tight"]),
+  align: PropTypes.oneOf(["vertical", "edge"]),
   children: PropTypes.node,
   /** Defines the widths of grid columns
    *

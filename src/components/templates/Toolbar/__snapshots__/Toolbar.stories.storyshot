@@ -10,12 +10,12 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 iLMccq"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 hGLyJM"
     id="Template Regions"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 lgnUmm"
+      className="Template__Region-sc-1i4nzbu-0 eHriLz"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -23,13 +23,13 @@ exports[` 1`] = `
       <div
         className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
-        id="storyshots_143"
+        id="storyshots_139"
         media=""
         onClick={null}
         placeholder="{ Card }"
       >
         <div
-          className="Bar__BarLayout-icfo76-2 fliBOc"
+          className="Bar__BarLayout-icfo76-2 kTXCTV"
           id={null}
           onClick={null}
         >
@@ -37,12 +37,12 @@ exports[` 1`] = `
             className="Bar__Slot-icfo76-1 fNcQEg"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ Button__GroupWrapper-sc-1v7sls2-3 kvzTEM"
               id={null}
               rows={null}
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 fuzALv"
+                className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -77,7 +77,7 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -89,7 +89,7 @@ exports[` 1`] = `
                 </section>
               </button>
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 fuzALv"
+                className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -124,7 +124,7 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -137,10 +137,10 @@ exports[` 1`] = `
               </button>
               <div
                 className="Popper__NonPortalWrapper-sc-1t9125t-1 fePbDW"
-                id="storyshots_144"
+                id="storyshots_140"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 lkjAge"
+                  className="Button__StyledButton-sc-1v7sls2-0 kRiDZt"
                   disabled={false}
                   htmlFor={null}
                   id="button-anchor"
@@ -175,7 +175,7 @@ exports[` 1`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -188,12 +188,12 @@ exports[` 1`] = `
                 </button>
                 <div
                   className="Popper__PopperWrapper-sc-1t9125t-2 MRJgP"
-                  id="popper-wrapperstoryshots_144"
+                  id="popper-wrapperstoryshots_140"
                 >
                   <div
                     className="CardWrapper__StyledCardWrapper-meln7c-0 hjVPpL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                     href={null}
-                    id="storyshots_145"
+                    id="storyshots_141"
                     media=""
                     onClick={null}
                     placeholder="{ Card }"
@@ -224,7 +224,7 @@ exports[` 1`] = `
                             value="1"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                            className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -250,7 +250,7 @@ exports[` 1`] = `
                             value="2"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                            className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -276,7 +276,7 @@ exports[` 1`] = `
                             value="3"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                            className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -293,10 +293,10 @@ exports[` 1`] = `
               </div>
               <div
                 className="Popper__NonPortalWrapper-sc-1t9125t-1 fePbDW"
-                id="storyshots_146"
+                id="storyshots_142"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 lkjAge"
+                  className="Button__StyledButton-sc-1v7sls2-0 kRiDZt"
                   disabled={false}
                   htmlFor={null}
                   id="button-anchor"
@@ -331,7 +331,7 @@ exports[` 1`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -344,12 +344,12 @@ exports[` 1`] = `
                 </button>
                 <div
                   className="Popper__PopperWrapper-sc-1t9125t-2 jlodWa"
-                  id="popper-wrapperstoryshots_146"
+                  id="popper-wrapperstoryshots_142"
                 >
                   <div
                     className="CardWrapper__StyledCardWrapper-meln7c-0 hjVPpL Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                     href={null}
-                    id="storyshots_147"
+                    id="storyshots_143"
                     media=""
                     onClick={null}
                     placeholder="{ Card }"
@@ -360,17 +360,17 @@ exports[` 1`] = `
                       rows={null}
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__InputGroup-sc-1gwp7am-4 fZyrGZ"
                         id={null}
                         rows={null}
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                           disabled={false}
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                             id="Checkbox-1"
                             onBlur={null}
                             onChange={null}
@@ -379,7 +379,7 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                            className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -390,12 +390,12 @@ exports[` 1`] = `
                           </label>
                         </div>
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                           disabled={false}
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                             id="Checkbox-2"
                             onBlur={null}
                             onChange={null}
@@ -404,7 +404,7 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                            className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -415,12 +415,12 @@ exports[` 1`] = `
                           </label>
                         </div>
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                           disabled={false}
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                             id="Checkbox-3"
                             onBlur={null}
                             onChange={null}
@@ -429,7 +429,7 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                            className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -440,12 +440,12 @@ exports[` 1`] = `
                           </label>
                         </div>
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 bdzMJk"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eudftl"
                           disabled={false}
                         >
                           <input
                             checked={null}
-                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 hgVGlx"
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
                             id="Checkbox-4"
                             onBlur={null}
                             onChange={null}
@@ -454,7 +454,7 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+                            className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -470,7 +470,7 @@ exports[` 1`] = `
                 </div>
               </div>
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 lkjAge"
+                className="Button__StyledButton-sc-1v7sls2-0 kRiDZt"
                 disabled={false}
                 htmlFor={null}
                 id="button-anchor"
@@ -505,7 +505,7 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -535,12 +535,12 @@ exports[` 2`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 iLMccq"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 hGLyJM"
     id="Template Regions"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 lgnUmm"
+      className="Template__Region-sc-1i4nzbu-0 eHriLz"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -548,13 +548,13 @@ exports[` 2`] = `
       <div
         className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
         href={null}
-        id="storyshots_148"
+        id="storyshots_144"
         media=""
         onClick={null}
         placeholder="{ Card }"
       >
         <div
-          className="Bar__BarLayout-icfo76-2 fliBOc"
+          className="Bar__BarLayout-icfo76-2 kTXCTV"
           id={null}
           onClick={null}
         >
@@ -562,12 +562,12 @@ exports[` 2`] = `
             className="Bar__Slot-icfo76-1 fNcQEg"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ Button__GroupWrapper-sc-1v7sls2-2 jpfPZd"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ Button__GroupWrapper-sc-1v7sls2-3 kvzTEM"
               id={null}
               rows={null}
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 fuzALv"
+                className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -602,7 +602,7 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -614,7 +614,7 @@ exports[` 2`] = `
                 </section>
               </button>
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 fuzALv"
+                className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -649,7 +649,7 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -661,7 +661,7 @@ exports[` 2`] = `
                 </section>
               </button>
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 lkjAge"
+                className="Button__StyledButton-sc-1v7sls2-0 kRiDZt"
                 disabled={false}
                 htmlFor={null}
                 id="button-anchor"
@@ -696,7 +696,7 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -708,7 +708,7 @@ exports[` 2`] = `
                 </section>
               </button>
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 lkjAge"
+                className="Button__StyledButton-sc-1v7sls2-0 kRiDZt"
                 disabled={false}
                 htmlFor={null}
                 id="button-anchor"
@@ -743,7 +743,7 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -759,7 +759,7 @@ exports[` 2`] = `
                 id="popper-standard"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 fuzALv"
+                  className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -794,7 +794,7 @@ exports[` 2`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -815,26 +815,26 @@ exports[` 2`] = `
                     width={null}
                   >
                     <div
-                      className="Container__BoxContainer-sc-1i4fzzd-1 gJfzMo"
+                      className="Container__BoxContainer-sc-1i4fzzd-1 hegAal"
                       height="100%"
                       id={null}
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 gngWwp"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 lbElki"
                         id={null}
                         rows={null}
                       >
                         <div
                           className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                           href={null}
-                          id="storyshots_149"
+                          id="storyshots_145"
                           media=""
                           onClick={null}
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                            id="storyshots_149-Header"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                            id="storyshots_145-Header"
                             onClick={null}
                           >
                             <div
@@ -891,7 +891,7 @@ exports[` 2`] = `
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                                 id={null}
                                 onClick={null}
                               >
@@ -910,14 +910,14 @@ exports[` 2`] = `
                         <div
                           className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                           href={null}
-                          id="storyshots_150"
+                          id="storyshots_146"
                           media=""
                           onClick={null}
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                            id="storyshots_150-Header"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                            id="storyshots_146-Header"
                             onClick={null}
                           >
                             <div
@@ -974,7 +974,7 @@ exports[` 2`] = `
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                                 id={null}
                                 onClick={null}
                               >
@@ -993,13 +993,345 @@ exports[` 2`] = `
                         <div
                           className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                           href={null}
+                          id="storyshots_147"
+                          media=""
+                          onClick={null}
+                          placeholder="{ Card }"
+                        >
+                          <section
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                            id="storyshots_147-Header"
+                            onClick={null}
+                          >
+                            <div
+                              className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+                              id={null}
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="Bar__BarLayout-icfo76-2 eUVQsH"
+                                id={null}
+                                onClick={null}
+                              >
+                                <div
+                                  className="Bar__Slot-icfo76-1 fIRUJx"
+                                >
+                                  <p
+                                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                    fontSize="1rem"
+                                    fontWeight={400}
+                                    id={null}
+                                    letterSpacing="0.5px"
+                                  >
+                                    Legend 3
+                                  </p>
+                                </div>
+                                <div
+                                  className="Bar__Slot-icfo76-1 cxljst"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                    color={null}
+                                    data-icon="plus"
+                                    data-prefix="far"
+                                    focusable="false"
+                                    fontSize="inherit"
+                                    id={null}
+                                    role="img"
+                                    style={Object {}}
+                                    viewBox="0 0 384 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                      fill="currentColor"
+                                      style={Object {}}
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+                              open={false}
+                            >
+                              <section
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                                id={null}
+                                onClick={null}
+                              >
+                                <img
+                                  alt="Legend 3"
+                                  className="Image__ImageWrapper-sc-18abvff-0 driND"
+                                  onClick={null}
+                                  src=""
+                                  title="Legend 3"
+                                  width={null}
+                                />
+                              </section>
+                            </div>
+                          </section>
+                        </div>
+                        <div
+                          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                          href={null}
+                          id="storyshots_148"
+                          media=""
+                          onClick={null}
+                          placeholder="{ Card }"
+                        >
+                          <section
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                            id="storyshots_148-Header"
+                            onClick={null}
+                          >
+                            <div
+                              className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+                              id={null}
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="Bar__BarLayout-icfo76-2 eUVQsH"
+                                id={null}
+                                onClick={null}
+                              >
+                                <div
+                                  className="Bar__Slot-icfo76-1 fIRUJx"
+                                >
+                                  <p
+                                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                    fontSize="1rem"
+                                    fontWeight={400}
+                                    id={null}
+                                    letterSpacing="0.5px"
+                                  >
+                                    Legend 3
+                                  </p>
+                                </div>
+                                <div
+                                  className="Bar__Slot-icfo76-1 cxljst"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                    color={null}
+                                    data-icon="plus"
+                                    data-prefix="far"
+                                    focusable="false"
+                                    fontSize="inherit"
+                                    id={null}
+                                    role="img"
+                                    style={Object {}}
+                                    viewBox="0 0 384 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                      fill="currentColor"
+                                      style={Object {}}
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+                              open={false}
+                            >
+                              <section
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                                id={null}
+                                onClick={null}
+                              >
+                                <img
+                                  alt="Legend 3"
+                                  className="Image__ImageWrapper-sc-18abvff-0 driND"
+                                  onClick={null}
+                                  src=""
+                                  title="Legend 3"
+                                  width={null}
+                                />
+                              </section>
+                            </div>
+                          </section>
+                        </div>
+                        <div
+                          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                          href={null}
+                          id="storyshots_149"
+                          media=""
+                          onClick={null}
+                          placeholder="{ Card }"
+                        >
+                          <section
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                            id="storyshots_149-Header"
+                            onClick={null}
+                          >
+                            <div
+                              className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+                              id={null}
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="Bar__BarLayout-icfo76-2 eUVQsH"
+                                id={null}
+                                onClick={null}
+                              >
+                                <div
+                                  className="Bar__Slot-icfo76-1 fIRUJx"
+                                >
+                                  <p
+                                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                    fontSize="1rem"
+                                    fontWeight={400}
+                                    id={null}
+                                    letterSpacing="0.5px"
+                                  >
+                                    Legend 3
+                                  </p>
+                                </div>
+                                <div
+                                  className="Bar__Slot-icfo76-1 cxljst"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                    color={null}
+                                    data-icon="plus"
+                                    data-prefix="far"
+                                    focusable="false"
+                                    fontSize="inherit"
+                                    id={null}
+                                    role="img"
+                                    style={Object {}}
+                                    viewBox="0 0 384 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                      fill="currentColor"
+                                      style={Object {}}
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+                              open={false}
+                            >
+                              <section
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                                id={null}
+                                onClick={null}
+                              >
+                                <img
+                                  alt="Legend 3"
+                                  className="Image__ImageWrapper-sc-18abvff-0 driND"
+                                  onClick={null}
+                                  src=""
+                                  title="Legend 3"
+                                  width={null}
+                                />
+                              </section>
+                            </div>
+                          </section>
+                        </div>
+                        <div
+                          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                          href={null}
+                          id="storyshots_150"
+                          media=""
+                          onClick={null}
+                          placeholder="{ Card }"
+                        >
+                          <section
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                            id="storyshots_150-Header"
+                            onClick={null}
+                          >
+                            <div
+                              className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+                              id={null}
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="Bar__BarLayout-icfo76-2 eUVQsH"
+                                id={null}
+                                onClick={null}
+                              >
+                                <div
+                                  className="Bar__Slot-icfo76-1 fIRUJx"
+                                >
+                                  <p
+                                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                                    fontSize="1rem"
+                                    fontWeight={400}
+                                    id={null}
+                                    letterSpacing="0.5px"
+                                  >
+                                    Legend 3
+                                  </p>
+                                </div>
+                                <div
+                                  className="Bar__Slot-icfo76-1 cxljst"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                                    color={null}
+                                    data-icon="plus"
+                                    data-prefix="far"
+                                    focusable="false"
+                                    fontSize="inherit"
+                                    id={null}
+                                    role="img"
+                                    style={Object {}}
+                                    viewBox="0 0 384 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                      fill="currentColor"
+                                      style={Object {}}
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+                              open={false}
+                            >
+                              <section
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
+                                id={null}
+                                onClick={null}
+                              >
+                                <img
+                                  alt="Legend 3"
+                                  className="Image__ImageWrapper-sc-18abvff-0 driND"
+                                  onClick={null}
+                                  src=""
+                                  title="Legend 3"
+                                  width={null}
+                                />
+                              </section>
+                            </div>
+                          </section>
+                        </div>
+                        <div
+                          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                          href={null}
                           id="storyshots_151"
                           media=""
                           onClick={null}
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                             id="storyshots_151-Header"
                             onClick={null}
                           >
@@ -1057,7 +1389,7 @@ exports[` 2`] = `
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                                 id={null}
                                 onClick={null}
                               >
@@ -1082,7 +1414,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                             id="storyshots_152-Header"
                             onClick={null}
                           >
@@ -1140,339 +1472,7 @@ exports[` 2`] = `
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                                id={null}
-                                onClick={null}
-                              >
-                                <img
-                                  alt="Legend 3"
-                                  className="Image__ImageWrapper-sc-18abvff-0 driND"
-                                  onClick={null}
-                                  src=""
-                                  title="Legend 3"
-                                  width={null}
-                                />
-                              </section>
-                            </div>
-                          </section>
-                        </div>
-                        <div
-                          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-                          href={null}
-                          id="storyshots_153"
-                          media=""
-                          onClick={null}
-                          placeholder="{ Card }"
-                        >
-                          <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                            id="storyshots_153-Header"
-                            onClick={null}
-                          >
-                            <div
-                              className="Expander__HeaderWrapper-sc-147204-0 insQpf"
-                              id={null}
-                              onClick={[Function]}
-                            >
-                              <div
-                                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                                id={null}
-                                onClick={null}
-                              >
-                                <div
-                                  className="Bar__Slot-icfo76-1 fIRUJx"
-                                >
-                                  <p
-                                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                                    fontSize="1rem"
-                                    fontWeight={400}
-                                    id={null}
-                                    letterSpacing="0.5px"
-                                  >
-                                    Legend 3
-                                  </p>
-                                </div>
-                                <div
-                                  className="Bar__Slot-icfo76-1 cxljst"
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                                    color={null}
-                                    data-icon="plus"
-                                    data-prefix="far"
-                                    focusable="false"
-                                    fontSize="inherit"
-                                    id={null}
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 384 512"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-                              open={false}
-                            >
-                              <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                                id={null}
-                                onClick={null}
-                              >
-                                <img
-                                  alt="Legend 3"
-                                  className="Image__ImageWrapper-sc-18abvff-0 driND"
-                                  onClick={null}
-                                  src=""
-                                  title="Legend 3"
-                                  width={null}
-                                />
-                              </section>
-                            </div>
-                          </section>
-                        </div>
-                        <div
-                          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-                          href={null}
-                          id="storyshots_154"
-                          media=""
-                          onClick={null}
-                          placeholder="{ Card }"
-                        >
-                          <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                            id="storyshots_154-Header"
-                            onClick={null}
-                          >
-                            <div
-                              className="Expander__HeaderWrapper-sc-147204-0 insQpf"
-                              id={null}
-                              onClick={[Function]}
-                            >
-                              <div
-                                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                                id={null}
-                                onClick={null}
-                              >
-                                <div
-                                  className="Bar__Slot-icfo76-1 fIRUJx"
-                                >
-                                  <p
-                                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                                    fontSize="1rem"
-                                    fontWeight={400}
-                                    id={null}
-                                    letterSpacing="0.5px"
-                                  >
-                                    Legend 3
-                                  </p>
-                                </div>
-                                <div
-                                  className="Bar__Slot-icfo76-1 cxljst"
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                                    color={null}
-                                    data-icon="plus"
-                                    data-prefix="far"
-                                    focusable="false"
-                                    fontSize="inherit"
-                                    id={null}
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 384 512"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-                              open={false}
-                            >
-                              <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                                id={null}
-                                onClick={null}
-                              >
-                                <img
-                                  alt="Legend 3"
-                                  className="Image__ImageWrapper-sc-18abvff-0 driND"
-                                  onClick={null}
-                                  src=""
-                                  title="Legend 3"
-                                  width={null}
-                                />
-                              </section>
-                            </div>
-                          </section>
-                        </div>
-                        <div
-                          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-                          href={null}
-                          id="storyshots_155"
-                          media=""
-                          onClick={null}
-                          placeholder="{ Card }"
-                        >
-                          <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                            id="storyshots_155-Header"
-                            onClick={null}
-                          >
-                            <div
-                              className="Expander__HeaderWrapper-sc-147204-0 insQpf"
-                              id={null}
-                              onClick={[Function]}
-                            >
-                              <div
-                                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                                id={null}
-                                onClick={null}
-                              >
-                                <div
-                                  className="Bar__Slot-icfo76-1 fIRUJx"
-                                >
-                                  <p
-                                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                                    fontSize="1rem"
-                                    fontWeight={400}
-                                    id={null}
-                                    letterSpacing="0.5px"
-                                  >
-                                    Legend 3
-                                  </p>
-                                </div>
-                                <div
-                                  className="Bar__Slot-icfo76-1 cxljst"
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                                    color={null}
-                                    data-icon="plus"
-                                    data-prefix="far"
-                                    focusable="false"
-                                    fontSize="inherit"
-                                    id={null}
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 384 512"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-                              open={false}
-                            >
-                              <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                                id={null}
-                                onClick={null}
-                              >
-                                <img
-                                  alt="Legend 3"
-                                  className="Image__ImageWrapper-sc-18abvff-0 driND"
-                                  onClick={null}
-                                  src=""
-                                  title="Legend 3"
-                                  width={null}
-                                />
-                              </section>
-                            </div>
-                          </section>
-                        </div>
-                        <div
-                          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-                          href={null}
-                          id="storyshots_156"
-                          media=""
-                          onClick={null}
-                          placeholder="{ Card }"
-                        >
-                          <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
-                            id="storyshots_156-Header"
-                            onClick={null}
-                          >
-                            <div
-                              className="Expander__HeaderWrapper-sc-147204-0 insQpf"
-                              id={null}
-                              onClick={[Function]}
-                            >
-                              <div
-                                className="Bar__BarLayout-icfo76-2 eUVQsH"
-                                id={null}
-                                onClick={null}
-                              >
-                                <div
-                                  className="Bar__Slot-icfo76-1 fIRUJx"
-                                >
-                                  <p
-                                    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-                                    fontSize="1rem"
-                                    fontWeight={400}
-                                    id={null}
-                                    letterSpacing="0.5px"
-                                  >
-                                    Legend 3
-                                  </p>
-                                </div>
-                                <div
-                                  className="Bar__Slot-icfo76-1 cxljst"
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                                    color={null}
-                                    data-icon="plus"
-                                    data-prefix="far"
-                                    focusable="false"
-                                    fontSize="inherit"
-                                    id={null}
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 384 512"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
-                              open={false}
-                            >
-                              <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 ixRIWF"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 kgBfBF"
                                 id={null}
                                 onClick={null}
                               >

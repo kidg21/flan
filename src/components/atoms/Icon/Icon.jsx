@@ -11,6 +11,9 @@ import Badge from "atoms/Badge";
 const LinkedIcon = styled.a`
   color: ${(props) => { return props.theme.text.link; }};
   width: max-content;
+  /* margin/padding 'trick' increases touch target of linked Icon */
+  margin: -0.5em;
+  padding: 0.5em;
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";

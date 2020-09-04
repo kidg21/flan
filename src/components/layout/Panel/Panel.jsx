@@ -15,8 +15,8 @@ const PanelWrapper = styled.div`
   justify-content: flex-start;
   width: ${(props) => { return props.width; }};
   height: ${(props) => { return props.height; }};
-  max-height: 100vh;
-  overflow: hidden;
+  max-height: ${(props) => { return props.maxHeight; }};
+  max-width: ${(props) => { return props.maxWidth; }};
   transform: ${(props) => {
     return props.isOffCanvas || "";
   }};
@@ -58,7 +58,7 @@ const SectionWrapper = styled.section`
   }
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
     border-radius: 20px;
   }
@@ -69,7 +69,7 @@ const SectionWrapper = styled.section`
 }
   ::-webkit-scrollbar-thumb:horizontal{
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
   border-radius: 20px;
 }
@@ -128,16 +128,25 @@ const PanelSection = styled(PanelBody)`
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
+    /* box-shadow: ${(props) => {
+    return props.theme.shadows.outerShadow;
+  }}; */
   }
   &:last-of-type {
     border-top: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
+    /* box-shadow: ${(props) => {
+    return props.theme.shadows.outerShadow;
+  }}; */
+  }
+  > * {
+    border-radius: 0; /* Squares of corners or direct child containers.  Eliminates 'inset shadow' of rounded containers when children have borders or shadows */
   }
 `;
 
 function Panel({
-  children, classname, footer, header, height, id, offcanvas, padding, width,
+  children, classname, footer, header, height, id, maxHeight, maxWidth, offcanvas, padding, width,
 }) {
   let isOffCanvas;
   switch (offcanvas) {
@@ -162,6 +171,8 @@ function Panel({
       classname={classname}
       height={height}
       id={id}
+      maxHeight={maxHeight}
+      maxWidth={maxWidth}
       isOffCanvas={isOffCanvas}
       width={width}
     >
@@ -179,6 +190,8 @@ Panel.propTypes = {
   header: PropTypes.node,
   height: PropTypes.string,
   id: PropTypes.string,
+  maxHeight: PropTypes.string,
+  maxWidth: PropTypes.string,
   offcanvas: PropTypes.string,
   padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   width: PropTypes.string,
@@ -190,6 +203,8 @@ Panel.defaultProps = {
   header: null,
   height: "100%",
   id: null,
+  maxHeight: "100vh",
+  maxWidth: "100vw",
   offcanvas: null,
   padding: null,
   width: "100%",

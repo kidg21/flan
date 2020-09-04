@@ -7,7 +7,7 @@
     "storybook": "start-storybook -p 9009 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o ../share/nginx/html",
     "build-storybook-docs": "build-storybook -s public --docs",
-    "chromatic": "npx chromatic --project-token nyh4fifw53",
+    "chromatic": "npx chromatic --project-token nyh4fifw53 --exit-zero-on-changes",
     "compileFontAwesome": "webpack --config ./webpackConfigs/fontAwesome.config.js",
     "testBuild": "webpack --config ./webpackConfigs/testBuild.config.js",
     "build": "webpack",

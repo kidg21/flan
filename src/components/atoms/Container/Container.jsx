@@ -27,6 +27,9 @@ const BoxContainer = styled.div`
   max-height: ${(props) => {
     return props.maxHeight || "";
   }};
+  max-width: ${(props) => {
+    return props.maxWidth || "";
+  }};
   height: ${(props) => {
     return props.height || "";
   }};
@@ -43,7 +46,7 @@ const BoxContainer = styled.div`
     return props.theme.palette.neutral40;
   }};
   border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
+    return props.borderRadius || props.theme.borders.radiusMin;
   }};
   ::-webkit-scrollbar {
     width: 0.5em;
@@ -56,7 +59,7 @@ const BoxContainer = styled.div`
   }
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
     border-radius: 20px;
   }
@@ -67,7 +70,7 @@ const BoxContainer = styled.div`
 }
   ::-webkit-scrollbar-thumb:horizontal{
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
   border-radius: 20px;
 }
@@ -88,6 +91,7 @@ const boxPaddingHash = {
 };
 
 const Container = React.forwardRef(({
+  borderRadius,
   boxPadding,
   children,
   className,
@@ -95,6 +99,7 @@ const Container = React.forwardRef(({
   height,
   id,
   maxHeight,
+  maxWidth,
   onClick,
   padding,
   visible,
@@ -104,19 +109,21 @@ const Container = React.forwardRef(({
   const borderPadding = boxPadding ? boxPaddingHash[boxPadding.toLowerCase()] : "0";
   return (
     <Wrapper
-      setPadding={setPadding}
-      height={height}
-      width={width}
-      visible={visible}
       className={className}
+      height={height}
+      setPadding={setPadding}
+      visible={visible}
+      width={width}
     >
       <BoxContainer
-        id={id}
-        height={height ? "100%" : ""}
-        padding={borderPadding}
-        maxHeight={maxHeight}
+        borderRadius={borderRadius}
         hasBorder={hasBorder}
+        height={height ? "100%" : ""}
+        id={id}
+        maxHeight={maxHeight}
+        maxWidth={maxWidth}
         onClick={onClick}
+        padding={borderPadding}
         ref={ref}
       >
         {children}
@@ -126,6 +133,7 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
+  borderRadius: PropTypes.string,
   boxPadding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   children: PropTypes.node,
   className: PropTypes.string,
@@ -133,6 +141,7 @@ Container.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
   maxHeight: PropTypes.string,
+  maxWidth: PropTypes.string,
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   visible: PropTypes.bool,
@@ -140,6 +149,7 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
+  borderRadius: null,
   boxPadding: "0",
   children: null,
   className: null,
@@ -147,6 +157,7 @@ Container.defaultProps = {
   height: null,
   id: null,
   maxHeight: null,
+  maxWidth: null,
   onClick: undefined,
   padding: "0",
   visible: true,

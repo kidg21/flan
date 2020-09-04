@@ -14,7 +14,7 @@ exports[` 1`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+      className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -29,21 +29,21 @@ exports[` 1`] = `
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        className="Picker__Swatch-sc-1xwpkqn-1 hnJJQO"
         color="#E4423A"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        className="Picker__Swatch-sc-1xwpkqn-1 htBgRq"
         color="#14A939"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gDZVAV"
+        className="Picker__Swatch-sc-1xwpkqn-1 eZTecI"
         color="#2F98EE"
         height="1.5rem"
         onClick={[Function]}
@@ -61,7 +61,7 @@ exports[` 2`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -76,28 +76,28 @@ exports[` 2`] = `
     rows={null}
   >
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+      className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
       color="#EBEAEC"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
     />
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+      className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
       color="#D9ECEC"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
     />
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+      className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
       color="#63B1CD"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
     />
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+      className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
       color="#06BFAE"
       height="1.5rem"
       onClick={null}
@@ -125,21 +125,21 @@ exports[` 2`] = `
       </svg>
     </button>
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+      className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
       color="#095593"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
     />
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+      className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
       color="#F3822B"
       height="1.5rem"
       onClick={null}
       width="1.5rem"
     />
     <button
-      className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+      className="Picker__Swatch-sc-1xwpkqn-1 eMtyuu"
       color="#FFBF00"
       height="1.5rem"
       onClick={null}
@@ -161,7 +161,7 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+      className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -176,28 +176,28 @@ exports[` 3`] = `
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+        className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
         color="#EBEAEC"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+        className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
         color="#D9ECEC"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+        className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
         color="#63B1CD"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+        className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
         color="#06BFAE"
         height="1.5rem"
         onClick={null}
@@ -225,21 +225,21 @@ exports[` 3`] = `
         </svg>
       </button>
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+        className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
         color="#095593"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+        className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
         color="#F3822B"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+        className="Picker__Swatch-sc-1xwpkqn-1 eMtyuu"
         color="#FFBF00"
         height="1.5rem"
         onClick={null}
@@ -253,7 +253,7 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+      className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -268,28 +268,28 @@ exports[` 3`] = `
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gwUUeE"
+        className="Picker__Swatch-sc-1xwpkqn-1 lcoURZ"
         color="#EBEAEC"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 cmnzPh"
+        className="Picker__Swatch-sc-1xwpkqn-1 lcoURZ"
         color="#D9ECEC"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 fMEfEK"
+        className="Picker__Swatch-sc-1xwpkqn-1 lcoURZ"
         color="#63B1CD"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 cNrdeh"
+        className="Picker__Swatch-sc-1xwpkqn-1 lcoURZ"
         color="#06BFAE"
         height="1.5rem"
         onClick={null}
@@ -317,21 +317,21 @@ exports[` 3`] = `
         </svg>
       </button>
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 euToNG"
+        className="Picker__Swatch-sc-1xwpkqn-1 lcoURZ"
         color="#095593"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 bNTzWT"
+        className="Picker__Swatch-sc-1xwpkqn-1 lcoURZ"
         color="#F3822B"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 jhNIOm"
+        className="Picker__Swatch-sc-1xwpkqn-1 kosiBW"
         color="#FFBF00"
         height="1.5rem"
         onClick={null}

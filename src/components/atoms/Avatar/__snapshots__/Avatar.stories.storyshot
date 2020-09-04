@@ -301,78 +301,92 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cnHVVq"
   id={null}
   rows={null}
 >
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 jVyJit"
     id={null}
     onClick={null}
+    title="Placeholder"
   >
-    <img
-      alt="kitten"
-      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
-      onClick={null}
-      src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"}
-      title="kitten"
-      width="2.2rem"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 kQHZKf"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     />
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 jVyJit"
     id={null}
     onClick={null}
+    title="Woman"
   >
-    <img
-      alt="skyline"
-      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
-      onClick={null}
-      src={"https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"}
-      title="skyline"
-      width="2.2rem"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 kQHZKf"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     />
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 jVyJit"
     id={null}
     onClick={null}
+    title="Man"
   >
-    <img
-      alt="building"
-      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
-      onClick={null}
-      src={"http://localhost:9009/static/media/modern%20exterior%201.31bf3931.jpg"}
-      title="building"
-      width="2.2rem"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 kQHZKf"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     />
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 jVyJit"
     id={null}
     onClick={null}
+    title="Girl"
   >
-    <img
-      alt="skyline"
-      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
-      onClick={null}
-      src={"https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"}
-      title="skyline"
-      width="2.2rem"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 kQHZKf"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     />
   </div>
   <div
-    className="Avatar__TagContainer-sc-1vuf9om-2 hPvQeZ"
+    className="Avatar__TagContainer-sc-1vuf9om-2 jVyJit"
     id={null}
     onClick={null}
+    title="Boy"
   >
-    <img
-      alt="kitten"
-      className="Image__ImageWrapper-sc-18abvff-0 doGha Avatar__AvatarImage-sc-1vuf9om-1 dfuPkY"
-      onClick={null}
-      src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"}
-      title="kitten"
-      width="2.2rem"
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 kQHZKf"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
+    />
+  </div>
+  <div
+    className="Avatar__TagContainer-sc-1vuf9om-2 jVyJit"
+    id={null}
+    onClick={null}
+    title="Spiderman"
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 kQHZKf"
+      fontSize="1rem"
+      fontWeight={500}
+      id={null}
+      letterSpacing="0.5px"
     />
   </div>
 </section>

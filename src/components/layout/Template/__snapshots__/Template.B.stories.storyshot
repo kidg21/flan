@@ -9,12 +9,12 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fNNIKu"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fhtQXU"
     id="Template B_01"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dMkICK"
+      className="Template__Region-sc-1i4nzbu-0 dTdDpu"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -40,7 +40,7 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 irxojJ"
+      className="Template__Region-sc-1i4nzbu-0 gkcTUR"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -78,12 +78,12 @@ exports[` 2`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 xkxja"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 euWBgA"
     id="Template B_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dMkICK"
+      className="Template__Region-sc-1i4nzbu-0 dTdDpu"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -109,7 +109,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 irxojJ"
+      className="Template__Region-sc-1i4nzbu-0 gkcTUR"
       id="B"
       placeholder="B"
       tabIndex="0"

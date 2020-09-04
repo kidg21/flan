@@ -141,19 +141,19 @@ exports[` 4`] = `
       tabIndex="0"
     >
       <form
-        className="Search__SearchContainer-sey9om-0 fgqUHM"
+        className="Search__SearchContainer-sey9om-0 iDrhT"
         id="Search_E3"
         onSubmit={[Function]}
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 fKdMyE Search__SearchInput-sey9om-1 ftjKE"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 bDGwnH Search__SearchInput-sey9om-1 kOYYsS"
           height={null}
           id={null}
           overflow={null}
           width={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 jFlcBj Search__SearchButton-sey9om-3 htUUHK"
+            className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Search__SearchButton-sey9om-3 dEHLVj"
             disabled={false}
             htmlFor={null}
             id="Search_E3-search-button"
@@ -190,7 +190,7 @@ exports[` 4`] = `
             </section>
           </button>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 iYjJFw"
             id="Search_E3-search-bar_container"
             rows={null}
           >
@@ -224,7 +224,7 @@ exports[` 4`] = `
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 dHessD"
+        className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -259,7 +259,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -278,7 +278,7 @@ exports[` 4`] = `
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 dHessD"
+        className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -313,7 +313,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -332,7 +332,7 @@ exports[` 4`] = `
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 dHessD"
+        className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -367,7 +367,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cDhEJN"
+            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -391,7 +391,7 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 cYhPgB"
+          className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
           cursor="pointer"
           fontSize="0.875rem"
           fontWeight={400}
@@ -406,21 +406,21 @@ exports[` 4`] = `
           rows={null}
         >
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
             color="#EBEAEC"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
             color="#D9ECEC"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 bdCBXP"
+            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
             color="#80959D"
             height="1.5rem"
             onClick={null}
@@ -448,35 +448,35 @@ exports[` 4`] = `
             </svg>
           </button>
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
             color="#63B1CD"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
             color="#06BFAE"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
             color="#095593"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
             color="#F3822B"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+            className="Picker__Swatch-sc-1xwpkqn-1 eMtyuu"
             color="#FFBF00"
             height="1.5rem"
             onClick={null}

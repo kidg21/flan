@@ -18,6 +18,12 @@ const BadgeContainer = styled.div`
   }};
 `;
 
+const StyledBadge = styled(Tag)`
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMax;
+  }};
+`;
+
 function Badge({
   hasBackground, icon, id, label, position, variant,
 }) {
@@ -54,7 +60,7 @@ function Badge({
       id={id}
       setTransform={setTransform}
     >
-      <Tag hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} />
+      <StyledBadge hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} />
     </BadgeContainer>
   );
 }

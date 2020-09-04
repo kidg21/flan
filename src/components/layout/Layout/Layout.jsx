@@ -201,7 +201,7 @@ function Layout({
   if (screenMedium.matches || screenLarge.matches) {
     leftWidth = "10rem";
     rightWidth = "24rem";
-    bottomHeight = "20rem";
+    bottomHeight = "21rem";
     zIndex = "1";
   } else {
     leftWidth = "100%";
@@ -340,7 +340,7 @@ function Layout({
           </RegionCenter>
           {bottom ? (
             <RegionBottom
-              height={bottomHeight}
+              height={bottom.fullHeight ? "100%" : bottomHeight}
               id={bottom.id}
               open={bottomOpen}
               zIndex={zIndex}
@@ -375,6 +375,7 @@ function Layout({
 Layout.propTypes = {
   bottom: PropTypes.shape({
     content: PropTypes.node.isRequired,
+    fullHeight: PropTypes.bool,
     id: PropTypes.string,
     visible: PropTypes.bool,
   }),

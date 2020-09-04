@@ -1,0 +1,70 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ScreenLarge } from "helpers/Display";
+import Layout from "layout/Layout";
+
+<Meta
+  title="layout/Layout"
+  component={Layout}
+  decorators={[ScreenLarge]}
+/>
+
+# Layout
+
+#### The Layout component handles the primary application layout.  It contains a default set of configurable regions in which to place application content.
+<br/>
+
+### Configurations
+
+#### The default Layout presents only the 'main' or primary canvas.
+
+<Preview>
+  <Story name="Main Section Only">
+    <Layout
+      main={{ id: "Main", content: "" }}
+    />
+  </Story>
+</Preview>
+
+#### With Left and Right Sections.
+
+<Preview>
+  <Story name="With Left and Right Sections">
+    <Layout
+      left={{ id: "Left", content: "" }}
+      main={{ id: "Main", content: "" }}
+      right={{ id: "Right", content: "" }}
+    />
+  </Story>
+</Preview>
+
+#### Added A Bottom Section.
+
+<Preview>
+  <Story name="Added A Bottom Section">
+    <Layout
+      left={{ id: "Left", content: "" }}
+      main={{ id: "Main", content: "" }}
+      right={{ id: "Right", content: "" }}
+      bottom={{ id: "Bottom", content: "" }}
+    />
+  </Story>
+</Preview>
+
+#### With A Fixed Header And Footer.
+
+<Preview>
+  <Story name="With A Fixed Header And Footer">
+    <Layout
+      header={{ id: "Header", content: "" }}
+      left={{ id: "Left", content: "" }}
+      main={{ id: "Main", content: "" }}
+      right={{ id: "Right", content: "" }}
+      bottom={{ id: "Bottom", content: "" }}
+      footer={{ id: "Footer", content: "" }}
+    />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Layout} />

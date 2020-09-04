@@ -2,7 +2,7 @@
 /* eslint-disable security/detect-object-injection */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
@@ -26,6 +26,7 @@ const CommandContainer = styled.a`
   font-size: ${(props) => {
     return props.commandSize || "";
   }};
+  line-height: inherit;
   color: ${(props) => {
     return props.theme.text[props.commandColor] || props.theme.text.link;
   }};
@@ -46,8 +47,8 @@ const CommandContainer = styled.a`
 
 const CommandName = styled(Label)`
   grid-area: name;
-  font-size: inherit;
   font-weight: 500;
+  font-size: inherit;
   color: inherit;
   text-transform: capitalize;
   overflow: hidden;
@@ -65,8 +66,8 @@ const CommandName = styled(Label)`
   transition: all 0.25s ease-in-out;
 
   ${(props) => {
-    if (props.hidden) {
-      return `
+    return props.hidden
+      && css`
         position: absolute;
         overflow: hidden;
         height: 1px;
@@ -76,19 +77,17 @@ const CommandName = styled(Label)`
         margin: -1px;
         clip: rect(1px, 1px, 1px, 1px);
         *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-
         &.focusable {
-            &:active, &:focus {
-                position: static;
-                overflow: visible;
-                height: auto;
-                width: auto;
-                margin: 0;
-                clip: auto;
-            }
+          &:active, &:focus {
+            position: static;
+            overflow: visible;
+            height: auto;
+            width: auto;
+            margin: 0;
+            clip: auto;
+          }
         }
-      `;
-    }
+    `;
   }}
 `;
 
@@ -149,7 +148,6 @@ function Command({
   let commandColor;
   let commandSize = "";
 
-
   switch (align) {
     case "center":
       alignCommand = "auto";
@@ -163,8 +161,7 @@ function Command({
       break;
   }
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {

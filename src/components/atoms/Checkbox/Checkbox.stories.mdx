@@ -73,6 +73,16 @@ A Checkbox may appear to the left or right of it's corresponding label. A Checkb
   </Story>
 </Preview>
 
+### Invisible Labels
+
+In some cases, the presentation may call for a Checkbox where only the input should show in a standard browser viewing experience. Set the 'labelVisible' property to 'false' in this case. Using a Checkbox with 'labelVisible' property of 'false' will include a Label in a manner visible to assistive technologies.
+
+<Preview>
+  <Story name="Invisible Labels">
+    <Checkbox id="Checkbox" label="Checkbox" labelVisible={false} />
+  </Story>
+</Preview>
+
 ### Group
 
 <Preview>
