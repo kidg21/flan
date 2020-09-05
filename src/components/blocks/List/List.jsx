@@ -14,29 +14,6 @@ import Divider from "atoms/Divider";
 import Text, { Label } from "base/Typography";
 import { InteractiveContext, DisabledContext, PaddingContext } from "States";
 
-const ListWrapper = styled.ul`
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  list-style: none;
-  color: ${(props) => {
-    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.secondary;
-  }};
-  background-color: ${(props) => {
-    return props.theme.background[props.listBackground] || props.theme.background.default;
-  }};
-  height: inherit;
-  overflow: auto;
-  li:not(:last-of-type) {
-    border-bottom: ${(props) => {
-    return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
-  }};
-  }
-  li:last-of-type {
-    margin-bottom: 0.5rem;
-  }
-`;
-
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${(props) => {
@@ -88,13 +65,6 @@ const ListTitle = styled(Text)`
   font-weight: 400;
 `;
 
-const SectionWrapper = styled.li`
-  color: inherit;
-  padding: ${(props) => {
-    return props.sectionPadding || "";
-  }};
-`;
-
 const Section = styled(Label)`
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -107,6 +77,44 @@ const SectionDivider = styled(Divider)`
   opacity: 0.3;
 `;
 
+const SectionWrapper = styled.li`
+  color: inherit;
+   padding: ${(props) => {
+    return props.sectionPadding || "";
+  }};
+  &:last-of-type {
+    ${SectionDivider} {
+      display: none;
+    }
+  }
+  li:last-of-type {
+    margin-bottom: 5rem;
+  }
+`;
+
+const ListWrapper = styled.ul`
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  list-style: none;
+  color: ${(props) => {
+    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.secondary;
+  }};
+  background-color: ${(props) => {
+    return props.theme.background[props.listBackground] || props.theme.background.default;
+  }};
+  height: inherit;
+  overflow: auto;
+  ${ListItemWrapper}:not(:last-of-type) {
+    border-bottom: ${(props) => {
+    return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
+  }};
+  }
+  ${ListItemWrapper}:last-of-type {
+    margin-bottom: 0.5rem;
+  }
+`;
+
 function ListSection({
   children,
   hasDivider,
@@ -115,13 +123,13 @@ function ListSection({
   return (
     <React.Fragment>
       {title ? (
-        <SectionWrapper sectionPadding="0.75rem 1rem 0.5rem">
+        <SectionWrapper sectionPadding="0.75rem 1rem">
           <Section text={title} weight="regular" size="sm" />
         </SectionWrapper>
-      ) : (<SectionWrapper sectionPadding="0.25rem 1rem 0" />)}
+      ) : (<SectionWrapper sectionPadding="0.25rem 1rem" />)}
       {children}
       {hasDivider ? (
-        <SectionWrapper sectionPadding="0.25rem 0.75rem 0.25rem">
+        <SectionWrapper sectionPadding="0.5rem 0.75rem 0.5rem">
           <SectionDivider />
         </SectionWrapper>
       ) : null}

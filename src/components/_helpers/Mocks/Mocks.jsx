@@ -199,7 +199,7 @@ function MockMenu({ data, title }) {
     <React.Fragment>
       {data ? <List title={title} isInteractive isInverse data={data} />
         : (
-          <List title={title} isInteractive isInverse>
+          <List title={title || "List Title"} isInteractive isInverse>
             <ListSection title="List Section 1" hasDivider>
               <ListItem title="List Item 1" />
               <ListItem title="List Item 2" />
