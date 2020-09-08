@@ -486,6 +486,13 @@ exports[` 4`] = `
       </section>
     </section>
   </section>
-  <div />
+  <div
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  />
 </div>
 `;

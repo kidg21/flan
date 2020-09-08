@@ -311,30 +311,22 @@ export const DefineSite = () => {
                                             gap="xs"
                                           >
                                             <Field
-                                              spacing="1x"
                                               id="Field 1"
-                                              isDense
                                               label="Address"
                                               value="42 Wallaby Way, Sydney, Australia"
                                             />
                                             <Field
-                                              spacing="1x"
                                               id="Field 1"
-                                              isDense
                                               label="Owner"
                                               value="Forrest Gump"
                                             />
                                             <Field
-                                              spacing="1x"
                                               id="Field 3"
-                                              isDense
                                               label="Last Sale"
                                               value="10/23/86"
                                             />
                                             <Field
-                                              spacing="1x"
                                               id="Field 3"
-                                              isDense
                                               label="Doc #"
                                               value="837489274927"
                                             />
@@ -382,25 +374,21 @@ export const DefineSite = () => {
                                           >
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Address"
                                               value="42 Wallaby Way, Sydney, Australia"
                                             />
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Owner"
                                               value="Forrest Gump"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Last Sale"
                                               value="10/23/86"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Doc #"
                                               value="837489274927"
                                             />
@@ -446,25 +434,21 @@ export const DefineSite = () => {
                                           >
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Address"
                                               value="42 Wallaby Way, Sydney, Australia"
                                             />
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Owner"
                                               value="Forrest Gump"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Last Sale"
                                               value="10/23/86"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Doc #"
                                               value="837489274927"
                                             />
@@ -510,25 +494,21 @@ export const DefineSite = () => {
                                           >
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Address"
                                               value="42 Wallaby Way, Sydney, Australia"
                                             />
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Owner"
                                               value="Forrest Gump"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Last Sale"
                                               value="10/23/86"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Doc #"
                                               value="837489274927"
                                             />
@@ -574,25 +554,21 @@ export const DefineSite = () => {
                                           >
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Address"
                                               value="42 Wallaby Way, Sydney, Australia"
                                             />
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Owner"
                                               value="Forrest Gump"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Last Sale"
                                               value="10/23/86"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Doc #"
                                               value="837489274927"
                                             />
@@ -638,25 +614,21 @@ export const DefineSite = () => {
                                           >
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Address"
                                               value="42 Wallaby Way, Sydney, Australia"
                                             />
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Owner"
                                               value="Forrest Gump"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Last Sale"
                                               value="10/23/86"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Doc #"
                                               value="837489274927"
                                             />
@@ -702,25 +674,21 @@ export const DefineSite = () => {
                                           >
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Address"
                                               value="42 Wallaby Way, Sydney, Australia"
                                             />
                                             <Field
                                               id="Field 1"
-                                              isDense
                                               label="Owner"
                                               value="Forrest Gump"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Last Sale"
                                               value="10/23/86"
                                             />
                                             <Field
                                               id="Field 3"
-                                              isDense
                                               label="Doc #"
                                               value="837489274927"
                                             />

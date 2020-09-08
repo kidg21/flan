@@ -177,7 +177,7 @@ function MediaBlock({
       >
         <Grid columns="1" gap="xs">
           {title ? <Title text={title} size="lg" weight="bold" /> : null}
-          {description ? (<Text text={description} weight="" />
+          {description ? (<Text text={description} />
           ) : null}
         </Grid>
       </Body>
