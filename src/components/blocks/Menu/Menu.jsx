@@ -179,7 +179,7 @@ const MenuList = ({
 
   return (
     <ListWrapper id={id} isInteractive isNested={_isNested} width={width} {...positionStyle}>
-      <StyledCardWrapper key={`cardwrapper-${id}`} id={`cardwrapper-${id}`} padding="1x" shadow="2x">
+      <StyledCardWrapper id={`cardwrapper-${id}`} padding="1x" shadow="2x">
         {listItems}
       </StyledCardWrapper>
     </ListWrapper>
