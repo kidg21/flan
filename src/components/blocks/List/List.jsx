@@ -110,9 +110,10 @@ const ListWrapper = styled.ul`
     return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
   }};
   }
-  ${ListItemWrapper}:last-of-type {
+  /** TODO: Will add back once Menu's nesting structure is fixed */
+  /* ${ListItemWrapper}:last-of-type {
     margin-bottom: 0.5rem;
-  }
+  } */
 `;
 
 function ListSection({
