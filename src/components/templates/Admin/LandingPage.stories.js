@@ -19,6 +19,7 @@ import Inline from "layout/Inline";
 import Avatar from "atoms/Avatar";
 import Template from "layout/Template";
 import Chicago from "images/chicago.png";
+import Logo from "images/LightBox.Logo_white.png";
 
 storiesOf("Templates|Landing Page", module)
   .add(
@@ -85,52 +86,54 @@ storiesOf("Templates|Landing Page", module)
                           template="A_01"
                           A={{
                             id: "A",
-                            content: (<Flex justifyContent="center" flexDirection="columns" alignItems="center" ><Title size="4xl" text="Welcome to Your App Suite"/></Flex>),
+                            content: (<Flex justifyContent="center" flex="auto" flexDirection="columns" alignItems="center" height="100%" width="100%" >
+                              <Image src={Logo} alt="Logo" width="20%"/>
+                            </Flex>),
                           }}
                         />
-                        <Image src={Chicago} alt="Chicago" />
+                        <Image src={Chicago} width="100%" alt="Chicago" />
                       </React.Fragment>),
                     }}
                     B={{
                       id: "B",
                       content: (
-                        <Panel>
-                          <Bar
-                            padding="2x"
-                            center={(
-                              <CardGrid columns="4">
-                                <Card body={(
+                        <Flex justifyContent="center" flex="auto" flexDirection="columns" alignItems="center" height="100%" width="100%" >
+                          <Bar center={
+                              <CardGrid columns="8">
+                                <div/>
+                                <div/>
+                                <Card padding="2x" body={(
                                   <Grid columns="1">
                                     <Bar center={<Icon icon="star" size="xl" />} />
-                                    <Bar center={<Text text="JOBS" />} />
+                                    <Bar padding="0" center={<Text text="JOBS" />} />
                                   </Grid>
                                   )}
                                 />
-                                <Card body={(
+                                <Card padding="2x" body={(
                                   <Grid columns="1">
                                     <Bar center={<Icon icon="star" size="xl" />} />
-                                    <Bar center={<Text text="RESEARCH" />} />
+                                    <Bar padding="0" center={<Text text="RESEARCH" />} />
                                   </Grid>
                                   )}
                                 />
-                                <Card body={(
+                                <Card padding="2x" body={(
                                   <Grid columns="1">
                                     <Bar center={<Icon icon="star" size="xl" />} />
-                                    <Bar center={<Text text="REPORT WRITER" />} />
+                                    <Bar padding="0" center={<Text text="REPORT WRITER" />} />
                                   </Grid>
                                   )}
                                 />
-                                <Card body={(
+                                <Card padding="2x" body={(
                                   <Grid columns="1">
                                     <Bar center={<Icon icon="star" size="xl" />} />
-                                    <Bar center={<Text text="INSIGHTS" />} />
+                                    <Bar padding="0" center={<Text text="INSIGHTS" />} />
                                   </Grid>
                                   )}
                                 />
-                              </CardGrid>
-                      )}
-                          />
-                        </Panel>),
+                                   <div/>
+                                <div/>
+                              </CardGrid>}/>
+                         </Flex>),
 
                     }}
                   />

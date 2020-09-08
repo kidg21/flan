@@ -212,13 +212,7 @@ class Table extends Component {
       cellData = headers[columnIndex].label || "";
       if (headers[columnIndex].sortable) {
         cellProps.isSortable = true;
-        if (headers[columnIndex].sortable) {
-          cellProps.isSortable = true;
-        }
-      }
-      if (headers[columnIndex].id === sortColumnId) {
-        const arrow = sortDirection ? "up" : "down";
-        cellData = (<Inline spacingX="0.5rem">{cellData}<Icon icon={arrow} /></Inline>);
+        cellData = (<Inline spacingX="0.5rem">{cellData}<Icon icon="down" /></Inline>);
       }
     } else if (row) {
       // regular cell from a row that's ready to render
