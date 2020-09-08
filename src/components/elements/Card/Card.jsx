@@ -391,7 +391,7 @@ function Card({
           left={{
             content: (
               <Grid columns="1">
-                {commands.slice(0).map((command) => { return <Command {...command} />; })}
+                {commands.map((command) => { return <Command {...command} />; })}
               </Grid>
             ),
           }}

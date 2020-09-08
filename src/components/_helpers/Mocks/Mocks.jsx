@@ -290,7 +290,7 @@ MockWorkflow.defaultProps = {
   title: null,
 };
 
-function MockTable({ actionsTable, actionID }) {
+function MockTable({ actionsTable }) {
   const tableHeaders = [
     {
       id: "checkbox",
@@ -502,7 +502,7 @@ function MockTable({ actionsTable, actionID }) {
                   <Label text="" size="sm" />
                   <Label text="309" size="sm" />
                 </Inline>
-                <Inline key={actionID} spacingX="1rem">
+                <Inline spacingX="1rem">
                   {actionsTable}
                 </Inline>
               </Grid>
@@ -549,11 +549,9 @@ function MockTable({ actionsTable, actionID }) {
   );
 }
 MockTable.propTypes = {
-  actionID: PropTypes.string,
   actionsTable: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 MockTable.defaultProps = {
-  actionID: null,
   actionsTable: null,
 };
 
