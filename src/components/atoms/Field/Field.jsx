@@ -63,6 +63,7 @@ const FieldValue = styled(Text)`
 `;
 
 const LinkedField = styled(Link)`
+  font-size: 1em;
   margin: initial;
   padding: initial;
   width: max-content;
@@ -155,7 +156,7 @@ function Field({
       onChange={onChange}
       weight="bold"
       valueAlign={valueAlign}
-      size={size}
+    // size={size}
     >
       {value}
     </FieldValue>
@@ -163,7 +164,14 @@ function Field({
 
   if (href || onClick) {
     field = (
-      <LinkedField disabled={disabled} size={size} href={href} target={href ? target : undefined} onClick={onClick} justifyLink={justifyLink}>
+      <LinkedField
+        disabled={disabled}
+        // size={size}
+        href={href}
+        target={href ? target : undefined}
+        onClick={onClick}
+        justifyLink={justifyLink}
+      >
         {field}
       </LinkedField>
     );
@@ -177,7 +185,10 @@ function Field({
       id={id}
       fieldSize={fieldSize}
     >
-      <FieldLabel text={label} size={size} />
+      <FieldLabel
+        text={label}
+      // size={size}
+      />
       {field}
     </FieldItem>
   );

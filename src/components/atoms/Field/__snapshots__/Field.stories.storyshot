@@ -263,21 +263,21 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx Field__FieldLabel-sc-11od8ug-2 eIDdGV"
+        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
         cursor="pointer"
-        fontSize="0.8rem"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing="1px"
+        letterSpacing=".5px"
       >
         Small Field
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__FieldValue-sc-11od8ug-3 hCPlyV"
-        fontSize="0.875rem"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 hCPlyV"
+        fontSize="1rem"
         fontWeight={600}
         id={null}
-        letterSpacing="0.25px"
+        letterSpacing="0.5px"
       >
         Field Value
       </p>
@@ -313,9 +313,9 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 eIDdGV"
+        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
         cursor="pointer"
-        fontSize="1rem"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
@@ -323,11 +323,11 @@ exports[` 4`] = `
         Large Field
       </label>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iQnXIC Field__FieldValue-sc-11od8ug-3 hCPlyV"
-        fontSize="1.1rem"
+        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 hCPlyV"
+        fontSize="1rem"
         fontWeight={600}
         id={null}
-        letterSpacing="0.8px"
+        letterSpacing="0.5px"
       >
         Field Value
       </p>
@@ -338,12 +338,12 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 bcBDkt Field__FieldLabel-sc-11od8ug-2 eIDdGV"
+        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
         cursor="pointer"
-        fontSize="1.2rem"
+        fontSize="0.875rem"
         fontWeight={400}
         htmlFor={null}
-        letterSpacing=".25px"
+        letterSpacing=".5px"
       >
         XL Field
       </label>
