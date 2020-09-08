@@ -10,31 +10,9 @@ import Radio from "atoms/Radio";
 import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text from "base/Typography";
+import Divider from "atoms/Divider";
+import Text, { Label } from "base/Typography";
 import { InteractiveContext, DisabledContext, PaddingContext } from "States";
-
-const ListWrapper = styled.ul`
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  list-style: none;
-  color: ${(props) => {
-    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.secondary;
-  }};
-  background-color: ${(props) => {
-    return props.theme.background[props.listBackground] || props.theme.background.default;
-  }};
-  height: inherit;
-  overflow: auto;
-  li:not(:last-of-type) {
-    border-bottom: ${(props) => {
-    return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
-  }};
-  }
-  li:last-of-type {
-    margin-bottom: 0.5rem;
-  }
-`;
 
 const ListItemWrapper = styled.li`
   position: relative;
@@ -87,36 +65,87 @@ const ListTitle = styled(Text)`
   font-weight: 400;
 `;
 
-const SectionWrapper = styled.li`
-  color: inherit;
-  padding: 1rem 1rem 0.5rem;
+const Section = styled(Label)`
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: initial;
 `;
 
-const Section = styled(Text)`
-  text-transform: uppercase;
-  letter-spacing: 2px;
+const SectionDivider = styled(Divider)`
+  margin: 0;
+  border-color: inherit;
+  opacity: 0.3;
+`;
+
+const SectionWrapper = styled.li`
+  color: inherit;
+   padding: ${(props) => {
+    return props.sectionPadding || "";
+  }};
+  &:last-of-type {
+    ${SectionDivider} {
+      display: none;
+    }
+  }
+  li:last-of-type {
+    margin-bottom: 5rem;
+  }
+`;
+
+const ListWrapper = styled.ul`
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  list-style: none;
+  color: ${(props) => {
+    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.secondary;
+  }};
+  background-color: ${(props) => {
+    return props.theme.background[props.listBackground] || props.theme.background.default;
+  }};
+  height: inherit;
+  overflow: auto;
+  ${ListItemWrapper}:not(:last-of-type) {
+    border-bottom: ${(props) => {
+    return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
+  }};
+  }
+  /** TODO: Will add back once Menu's nesting structure is fixed */
+  /* ${ListItemWrapper}:last-of-type {
+    margin-bottom: 0.5rem;
+  } */
 `;
 
 function ListSection({
-  title,
   children,
+  hasDivider,
+  title,
 }) {
   return (
     <React.Fragment>
-      <SectionWrapper>
-        <Section text={title} />
-      </SectionWrapper>
+      {title ? (
+        <SectionWrapper sectionPadding="0.75rem 1rem">
+          <Section text={title} weight="regular" size="sm" />
+        </SectionWrapper>
+      ) : (<SectionWrapper sectionPadding="0.25rem 1rem" />)}
       {children}
+      {hasDivider ? (
+        <SectionWrapper sectionPadding="0.5rem 0.75rem 0.5rem">
+          <SectionDivider />
+        </SectionWrapper>
+      ) : null}
     </React.Fragment>
   );
 }
 
 ListSection.propTypes = {
   children: PropTypes.node,
+  hasDivider: PropTypes.bool,
   title: PropTypes.string,
 };
 ListSection.defaultProps = {
   children: null,
+  hasDivider: false,
   title: null,
 };
 

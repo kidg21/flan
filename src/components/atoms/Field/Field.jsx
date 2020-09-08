@@ -7,11 +7,14 @@ import Grid from "layout/Grid";
 import Text, { Label, Link } from "base/Typography";
 
 const FieldItem = styled(Grid)`
+  font-size: ${(props) => {
+    return props.fieldSize || "";
+  }};
   text-align: left;
   color: ${(props) => {
     return props.theme.text.secondary;
   }};
-  align-items: top;
+  align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
     return props.fieldColumns || "";
@@ -33,6 +36,7 @@ const GroupTitle = styled(Text)`
 `;
 
 const FieldLabel = styled(Label)`
+  font-size: 1em;
   text-align: inherit;
   color: ${(props) => {
     return props.theme.text[props.labelColor] || "inherit";
@@ -43,6 +47,7 @@ const FieldLabel = styled(Label)`
 `;
 
 const FieldValue = styled(Text)`
+  font-size: 1em;
   text-align: ${(props) => {
     return props.valueAlign || "inherit";
   }};
@@ -64,12 +69,15 @@ const LinkedField = styled(Link)`
   justify-self: ${(props) => {
     return props.justifyLink || "";
   }};
-  /* justify-self: flex-end; */
 `;
 
 const FieldGrid = styled(Grid)`
-  grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: ${(props) => {
+    return props.gap || "";
+  }};
+  grid-row-gap: ${(props) => {
+    return props.isDense ? "0.5rem" : "1rem";
+  }};
   overflow: auto;
   &:not(:last-of-type) {
     margin-bottom: 1rem;
@@ -86,22 +94,42 @@ function Field({
   align,
   className,
   disabled,
+  spacing,
   href,
   id,
   label,
   onChange,
   onClick,
+  size,
   target,
   value,
-  gap,
 }) {
   let fieldColumns;
   let fieldGap;
   let valueAlign;
   let justifyLink;
+  let fieldSize = "";
 
-  let labelSpacing = parseInt(gap, 10) / 3;
-  if (isNaN(labelSpacing)) labelSpacing = "minmax(auto, 8rem)";
+  switch (size) {
+    case "sm":
+      fieldSize = ".8rem";
+      break;
+    case "lg":
+      fieldSize = "1.2rem";
+      break;
+    case "xl":
+      fieldSize = "1.35rem";
+      break;
+    case "2xl":
+      fieldSize = "1.5rem";
+      break;
+    default:
+      fieldSize = "1rem";
+      break;
+  }
+
+  let labelSpacing = parseInt(spacing, 10) / 3;
+  if (isNaN(labelSpacing)) labelSpacing = "minmax(auto, 7rem)";
   else labelSpacing += "fr";
 
   const valueSpacing = "1fr";
@@ -127,6 +155,7 @@ function Field({
       onChange={onChange}
       weight="bold"
       valueAlign={valueAlign}
+      size={size}
     >
       {value}
     </FieldValue>
@@ -134,7 +163,7 @@ function Field({
 
   if (href || onClick) {
     field = (
-      <LinkedField disabled={disabled} size="lg" href={href} target={href ? target : undefined} onClick={onClick} justifyLink={justifyLink}>
+      <LinkedField disabled={disabled} size={size} href={href} target={href ? target : undefined} onClick={onClick} justifyLink={justifyLink}>
         {field}
       </LinkedField>
     );
@@ -146,16 +175,15 @@ function Field({
       fieldColumns={fieldColumns}
       fieldGap={fieldGap}
       id={id}
+      fieldSize={fieldSize}
     >
-      <FieldLabel text={label} size="lg" />
+      <FieldLabel text={label} size={size} />
       {field}
     </FieldItem>
   );
 }
-
 Field.propTypes = {
   align: PropTypes.oneOf(["vertical", "edge"]),
-  gap: PropTypes.oneOf(["2x", "3x", "4x"]),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.string,
@@ -164,25 +192,27 @@ Field.propTypes = {
   /** Not currently being used but staying put for the next iteration. */
   onChange: PropTypes.func,
   onClick: PropTypes.func,
+  size: PropTypes.oneOf(["sm", "lg", "xl", "2xl"]),
+  spacing: PropTypes.oneOf(["2x", "3x", "4x"]),
   target: PropTypes.string,
   value: PropTypes.node,
 };
-
 Field.defaultProps = {
   align: null,
-  gap: null,
   className: null,
   disabled: false,
   href: undefined,
   id: null,
   onChange: null,
   onClick: null,
+  size: null,
+  spacing: null,
   target: "_blank",
   value: null,
 };
 
 function FieldGroup({
-  align, children, className, columns, data, gap, id, title,
+  align, children, className, columns, data, id, isDense, size, spacing, title,
 }) {
   // 1-3 colums
   let setColumns;
@@ -194,8 +224,8 @@ function FieldGroup({
     <FieldGrid
       className={className}
       columns={setColumns}
-      gap={gap}
       id={id}
+      isDense={isDense}
     >
       {title ? <GroupTitle text={title} size="sm" weight="bold" /> : null}
       {children
@@ -203,12 +233,14 @@ function FieldGroup({
           return (
             <Field
               align={item.align || align}
+              spacing={item.spacing || spacing}
               disabled={item.disabled}
               key={item.id || item.label || index}
               id={item.id}
               label={item.label}
               onChange={item.onChange}
               onClick={item.onClick}
+              size={item.size || size}
               value={item.value}
             />
           );
@@ -216,8 +248,42 @@ function FieldGroup({
     </FieldGrid>
   );
 }
+FieldGroup.propTypes = {
+  align: PropTypes.oneOf(["vertical", "edge"]),
+  children: PropTypes.node,
+  className: PropTypes.string,
+  /** Defines the widths of grid columns
+   *
+   * Options: 1-3
+   */
+  columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
+  data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
+  id: PropTypes.string,
+  isDense: PropTypes.bool,
+  size: PropTypes.oneOf(["sm", "lg", "xl", "2xl"]),
+  spacing: PropTypes.oneOf([
+    "2x",
+    "3x",
+    "4x",
+  ]),
+  title: PropTypes.string,
+};
+FieldGroup.defaultProps = {
+  align: null,
+  children: null,
+  className: null,
+  columns: 1,
+  data: [],
+  id: null,
+  isDense: false,
+  size: null,
+  spacing: null,
+  title: null,
+};
 
-function FieldSection({ children, title, columns }) {
+function FieldSection({
+  children, columns, gap, title,
+}) {
   let setColumns;
   const _columns = parseInt(columns, 10);
   if (_columns > 0 && _columns < 4) {
@@ -225,11 +291,29 @@ function FieldSection({ children, title, columns }) {
   } else {
     setColumns = columns;
   }
+  const baseGap = 0.5;
+  let setGap;
+  switch (gap) {
+    case "sm":
+      setGap = `${baseGap * 2}rem`;
+      break;
+    default:
+      setGap = `${baseGap * 4}rem`;
+      break;
+    case "lg":
+      setGap = `${baseGap * 6}rem`;
+      break;
+    case "xl":
+      setGap = `${baseGap * 8}rem`;
+      break;
+  }
+
   return (
     <Section>
       {title ? <GroupTitle size="sm" text={title} /> : null}
       <FieldGrid
         columns={setColumns}
+        gap={setGap}
       >
         {children}
       </FieldGrid>
@@ -238,48 +322,21 @@ function FieldSection({ children, title, columns }) {
 }
 FieldSection.propTypes = {
   children: PropTypes.node,
-  title: PropTypes.string,
   columns: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  gap: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([
+      "sm",
+      "lg",
+      "xl",
+    ]),
+  ]),
+  title: PropTypes.string,
 };
 FieldSection.defaultProps = {
   children: null,
-  title: null,
-  columns: "1",
-};
-
-FieldGroup.propTypes = {
-  align: PropTypes.oneOf(["vertical", "edge"]),
-  children: PropTypes.node,
-  /** Defines the widths of grid columns
-   *
-   * Options: 1-3
-   */
-  className: PropTypes.string,
-  gap: PropTypes.oneOf([
-    "",
-    "0",
-    "xs",
-    "sm",
-    "lg",
-    "xl",
-    "2xl",
-    "3xl",
-    "4xl",
-  ]),
-  columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
-  data: PropTypes.arrayOf(PropTypes.shape(Field.propTypes)),
-  id: PropTypes.string,
-  title: PropTypes.string,
-};
-
-FieldGroup.defaultProps = {
-  align: null,
-  children: null,
-  className: null,
   gap: null,
-  columns: 1,
-  data: [],
-  id: null,
+  columns: "1",
   title: null,
 };
 

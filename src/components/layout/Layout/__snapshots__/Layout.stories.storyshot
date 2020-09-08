@@ -31,11 +31,38 @@ exports[` 1`] = `
         width="10rem"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 OakPD"
+          className="List__ListWrapper-sc-43f2zq-6 fqctdI"
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            className="List__ListTitleWrapper-sc-43f2zq-1 dWCNV"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-2 cjLGMF"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              List Title
+            </p>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 1
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -57,13 +84,13 @@ exports[` 1`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Projects
+                  List Item 1
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -85,13 +112,13 @@ exports[` 1`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Properties
+                  List Item 2
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -113,13 +140,13 @@ exports[` 1`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  History
+                  List Item 3
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -141,7 +168,273 @@ exports[` 1`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Data
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 2
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 3
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
                 </p>
               </div>
             </div>
@@ -280,12 +573,12 @@ exports[` 1`] = `
                 className="Field__Section-sc-11od8ug-6 gqQdMG"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 lexBWe"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                     id={null}
                     rows={null}
                   >
@@ -299,14 +592,14 @@ exports[` 1`] = `
                       Property Information
                     </p>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -314,17 +607,17 @@ exports[` 1`] = `
                         Parcel No.
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -335,14 +628,14 @@ exports[` 1`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -350,7 +643,7 @@ exports[` 1`] = `
                         Land User
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -360,14 +653,14 @@ exports[` 1`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -375,7 +668,7 @@ exports[` 1`] = `
                         Building Area
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -385,14 +678,14 @@ exports[` 1`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -400,17 +693,17 @@ exports[` 1`] = `
                         Lot Area
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -421,14 +714,14 @@ exports[` 1`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -436,7 +729,7 @@ exports[` 1`] = `
                         Building/Lot
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -446,14 +739,14 @@ exports[` 1`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -461,7 +754,7 @@ exports[` 1`] = `
                         No. of Units
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -471,14 +764,14 @@ exports[` 1`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -486,7 +779,7 @@ exports[` 1`] = `
                         Year Built
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -497,7 +790,7 @@ exports[` 1`] = `
                     </section>
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                     id={null}
                     rows={null}
                   >
@@ -511,14 +804,14 @@ exports[` 1`] = `
                       Owner Information
                     </p>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -526,17 +819,17 @@ exports[` 1`] = `
                         Owners
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -547,14 +840,14 @@ exports[` 1`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -562,7 +855,7 @@ exports[` 1`] = `
                         Owner Address
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -572,14 +865,14 @@ exports[` 1`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -587,17 +880,17 @@ exports[` 1`] = `
                         Adjacent Lots
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -608,14 +901,14 @@ exports[` 1`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -623,17 +916,17 @@ exports[` 1`] = `
                         Last Sale
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -644,14 +937,14 @@ exports[` 1`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -659,7 +952,7 @@ exports[` 1`] = `
                         Total Assd Value
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -821,11 +1114,38 @@ exports[` 2`] = `
         width="10rem"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 OakPD"
+          className="List__ListWrapper-sc-43f2zq-6 fqctdI"
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            className="List__ListTitleWrapper-sc-43f2zq-1 dWCNV"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-2 cjLGMF"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              List Title
+            </p>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 1
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -847,13 +1167,13 @@ exports[` 2`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Projects
+                  List Item 1
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -875,13 +1195,13 @@ exports[` 2`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Properties
+                  List Item 2
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -903,13 +1223,13 @@ exports[` 2`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  History
+                  List Item 3
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -931,7 +1251,273 @@ exports[` 2`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Data
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 2
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 3
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
                 </p>
               </div>
             </div>
@@ -2025,12 +2611,12 @@ exports[` 2`] = `
                 className="Field__Section-sc-11od8ug-6 gqQdMG"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 lexBWe"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                     id={null}
                     rows={null}
                   >
@@ -2044,14 +2630,14 @@ exports[` 2`] = `
                       Property Information
                     </p>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2059,17 +2645,17 @@ exports[` 2`] = `
                         Parcel No.
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -2080,14 +2666,14 @@ exports[` 2`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2095,7 +2681,7 @@ exports[` 2`] = `
                         Land User
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -2105,14 +2691,14 @@ exports[` 2`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2120,7 +2706,7 @@ exports[` 2`] = `
                         Building Area
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -2130,14 +2716,14 @@ exports[` 2`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2145,17 +2731,17 @@ exports[` 2`] = `
                         Lot Area
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -2166,14 +2752,14 @@ exports[` 2`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2181,7 +2767,7 @@ exports[` 2`] = `
                         Building/Lot
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -2191,14 +2777,14 @@ exports[` 2`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2206,7 +2792,7 @@ exports[` 2`] = `
                         No. of Units
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -2216,14 +2802,14 @@ exports[` 2`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2231,7 +2817,7 @@ exports[` 2`] = `
                         Year Built
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -2242,7 +2828,7 @@ exports[` 2`] = `
                     </section>
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                     id={null}
                     rows={null}
                   >
@@ -2256,14 +2842,14 @@ exports[` 2`] = `
                       Owner Information
                     </p>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2271,17 +2857,17 @@ exports[` 2`] = `
                         Owners
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -2292,14 +2878,14 @@ exports[` 2`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2307,7 +2893,7 @@ exports[` 2`] = `
                         Owner Address
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -2317,14 +2903,14 @@ exports[` 2`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2332,17 +2918,17 @@ exports[` 2`] = `
                         Adjacent Lots
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -2353,14 +2939,14 @@ exports[` 2`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2368,17 +2954,17 @@ exports[` 2`] = `
                         Last Sale
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -2389,14 +2975,14 @@ exports[` 2`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -2404,7 +2990,7 @@ exports[` 2`] = `
                         Total Assd Value
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -2639,11 +3225,38 @@ exports[` 3`] = `
         width="10rem"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 OakPD"
+          className="List__ListWrapper-sc-43f2zq-6 fqctdI"
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            className="List__ListTitleWrapper-sc-43f2zq-1 dWCNV"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-2 cjLGMF"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              List Title
+            </p>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 1
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -2665,13 +3278,13 @@ exports[` 3`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Projects
+                  List Item 1
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -2693,13 +3306,13 @@ exports[` 3`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Properties
+                  List Item 2
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -2721,13 +3334,13 @@ exports[` 3`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  History
+                  List Item 3
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -2749,7 +3362,273 @@ exports[` 3`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Data
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 2
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 3
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
                 </p>
               </div>
             </div>
@@ -3843,12 +4722,12 @@ exports[` 3`] = `
                 className="Field__Section-sc-11od8ug-6 gqQdMG"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 lexBWe"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                     id={null}
                     rows={null}
                   >
@@ -3862,14 +4741,14 @@ exports[` 3`] = `
                       Property Information
                     </p>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -3877,17 +4756,17 @@ exports[` 3`] = `
                         Parcel No.
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -3898,14 +4777,14 @@ exports[` 3`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -3913,7 +4792,7 @@ exports[` 3`] = `
                         Land User
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -3923,14 +4802,14 @@ exports[` 3`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -3938,7 +4817,7 @@ exports[` 3`] = `
                         Building Area
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -3948,14 +4827,14 @@ exports[` 3`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -3963,17 +4842,17 @@ exports[` 3`] = `
                         Lot Area
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -3984,14 +4863,14 @@ exports[` 3`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -3999,7 +4878,7 @@ exports[` 3`] = `
                         Building/Lot
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4009,14 +4888,14 @@ exports[` 3`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4024,7 +4903,7 @@ exports[` 3`] = `
                         No. of Units
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4034,14 +4913,14 @@ exports[` 3`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4049,7 +4928,7 @@ exports[` 3`] = `
                         Year Built
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4060,7 +4939,7 @@ exports[` 3`] = `
                     </section>
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                     id={null}
                     rows={null}
                   >
@@ -4074,14 +4953,14 @@ exports[` 3`] = `
                       Owner Information
                     </p>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4089,17 +4968,17 @@ exports[` 3`] = `
                         Owners
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -4110,14 +4989,14 @@ exports[` 3`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4125,7 +5004,7 @@ exports[` 3`] = `
                         Owner Address
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4135,14 +5014,14 @@ exports[` 3`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4150,17 +5029,17 @@ exports[` 3`] = `
                         Adjacent Lots
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -4171,14 +5050,14 @@ exports[` 3`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4186,17 +5065,17 @@ exports[` 3`] = `
                         Last Sale
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -4207,14 +5086,14 @@ exports[` 3`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4222,7 +5101,7 @@ exports[` 3`] = `
                         Total Assd Value
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4445,11 +5324,38 @@ exports[` 4`] = `
         width="10rem"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 OakPD"
+          className="List__ListWrapper-sc-43f2zq-6 fqctdI"
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            className="List__ListTitleWrapper-sc-43f2zq-1 dWCNV"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-2 cjLGMF"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              List Title
+            </p>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 1
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -4471,13 +5377,13 @@ exports[` 4`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Projects
+                  List Item 1
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -4499,13 +5405,13 @@ exports[` 4`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Properties
+                  List Item 2
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -4527,13 +5433,13 @@ exports[` 4`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  History
+                  List Item 3
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -4555,7 +5461,273 @@ exports[` 4`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Data
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 2
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 3
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
                 </p>
               </div>
             </div>
@@ -4582,7 +5754,7 @@ exports[` 4`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 kaNHxK"
+              className="Template__Region-sc-1i4nzbu-0 ceOExs"
               id="A"
               placeholder="A"
               tabIndex="0"
@@ -4597,7 +5769,7 @@ exports[` 4`] = `
               />
             </section>
             <section
-              className="Template__Region-sc-1i4nzbu-0 iVaLfp"
+              className="Template__Region-sc-1i4nzbu-0 bFhhFH"
               id="B"
               placeholder="B"
               tabIndex="0"
@@ -4706,12 +5878,12 @@ exports[` 4`] = `
                 className="Field__Section-sc-11od8ug-6 gqQdMG"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 lexBWe"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                     id={null}
                     rows={null}
                   >
@@ -4725,14 +5897,14 @@ exports[` 4`] = `
                       Property Information
                     </p>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4740,17 +5912,17 @@ exports[` 4`] = `
                         Parcel No.
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -4761,14 +5933,14 @@ exports[` 4`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4776,7 +5948,7 @@ exports[` 4`] = `
                         Land User
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4786,14 +5958,14 @@ exports[` 4`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4801,7 +5973,7 @@ exports[` 4`] = `
                         Building Area
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4811,14 +5983,14 @@ exports[` 4`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4826,17 +5998,17 @@ exports[` 4`] = `
                         Lot Area
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -4847,14 +6019,14 @@ exports[` 4`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4862,7 +6034,7 @@ exports[` 4`] = `
                         Building/Lot
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4872,14 +6044,14 @@ exports[` 4`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4887,7 +6059,7 @@ exports[` 4`] = `
                         No. of Units
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4897,14 +6069,14 @@ exports[` 4`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4912,7 +6084,7 @@ exports[` 4`] = `
                         Year Built
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4923,7 +6095,7 @@ exports[` 4`] = `
                     </section>
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                     id={null}
                     rows={null}
                   >
@@ -4937,14 +6109,14 @@ exports[` 4`] = `
                       Owner Information
                     </p>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4952,17 +6124,17 @@ exports[` 4`] = `
                         Owners
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -4973,14 +6145,14 @@ exports[` 4`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -4988,7 +6160,7 @@ exports[` 4`] = `
                         Owner Address
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -4998,14 +6170,14 @@ exports[` 4`] = `
                       </p>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -5013,17 +6185,17 @@ exports[` 4`] = `
                         Adjacent Lots
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -5034,14 +6206,14 @@ exports[` 4`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -5049,17 +6221,17 @@ exports[` 4`] = `
                         Last Sale
                       </label>
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                        className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
                         href={null}
-                        letterSpacing="0.2px"
+                        letterSpacing="0px"
                         onClick={[Function]}
                         target={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                          className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                           fontSize="1rem"
                           fontWeight={600}
                           id={null}
@@ -5070,14 +6242,14 @@ exports[` 4`] = `
                       </a>
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                       id={null}
                       rows={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                        className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                         cursor="pointer"
-                        fontSize="1rem"
+                        fontSize="0.875rem"
                         fontWeight={400}
                         htmlFor={null}
                         letterSpacing=".5px"
@@ -5085,7 +6257,7 @@ exports[` 4`] = `
                         Total Assd Value
                       </label>
                       <p
-                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                        className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                         fontSize="1rem"
                         fontWeight={600}
                         id={null}
@@ -5235,11 +6407,38 @@ exports[` 5`] = `
         width="10rem"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 OakPD"
+          className="List__ListWrapper-sc-43f2zq-6 fqctdI"
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 bivhEj"
+            className="List__ListTitleWrapper-sc-43f2zq-1 dWCNV"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-2 cjLGMF"
+              fontSize="1rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.5px"
+            >
+              List Title
+            </p>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 1
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -5261,13 +6460,13 @@ exports[` 5`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Projects
+                  List Item 1
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -5289,13 +6488,13 @@ exports[` 5`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Properties
+                  List Item 2
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -5317,13 +6516,13 @@ exports[` 5`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  History
+                  List Item 3
                 </p>
               </div>
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
             disabled={false}
             href={null}
             id={null}
@@ -5345,7 +6544,273 @@ exports[` 5`] = `
                   id={null}
                   letterSpacing="0.5px"
                 >
-                  Data
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 2
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+          >
+            <hr
+              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+            />
+          </li>
+          <li
+            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              cursor="pointer"
+              fontSize="0.8rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+            >
+              List Section 3
+            </label>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            disabled={false}
+            href={null}
+            id={null}
+            onClick={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.5px"
+                >
+                  List Item 4
                 </p>
               </div>
             </div>
@@ -5372,7 +6837,7 @@ exports[` 5`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 kaNHxK"
+              className="Template__Region-sc-1i4nzbu-0 ceOExs"
               id="A"
               placeholder="A"
               tabIndex="0"
@@ -5387,7 +6852,7 @@ exports[` 5`] = `
               />
             </section>
             <section
-              className="Template__Region-sc-1i4nzbu-0 iVaLfp"
+              className="Template__Region-sc-1i4nzbu-0 bFhhFH"
               id="B"
               placeholder="B"
               tabIndex="0"
@@ -5485,12 +6950,12 @@ exports[` 5`] = `
                       className="Field__Section-sc-11od8ug-6 gqQdMG"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 lexBWe"
                         id={null}
                         rows={null}
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                           id={null}
                           rows={null}
                         >
@@ -5504,14 +6969,14 @@ exports[` 5`] = `
                             Property Information
                           </p>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5519,17 +6984,17 @@ exports[` 5`] = `
                               Parcel No.
                             </label>
                             <a
-                              className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                              className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                               disabled={false}
                               fontSize="1rem"
                               fontWeight={500}
                               href={null}
-                              letterSpacing="0.2px"
+                              letterSpacing="0px"
                               onClick={[Function]}
                               target={null}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                                 fontSize="1rem"
                                 fontWeight={600}
                                 id={null}
@@ -5540,14 +7005,14 @@ exports[` 5`] = `
                             </a>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5555,7 +7020,7 @@ exports[` 5`] = `
                               Land User
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                               fontSize="1rem"
                               fontWeight={600}
                               id={null}
@@ -5565,14 +7030,14 @@ exports[` 5`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5580,7 +7045,7 @@ exports[` 5`] = `
                               Building Area
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                               fontSize="1rem"
                               fontWeight={600}
                               id={null}
@@ -5590,14 +7055,14 @@ exports[` 5`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5605,17 +7070,17 @@ exports[` 5`] = `
                               Lot Area
                             </label>
                             <a
-                              className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                              className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                               disabled={false}
                               fontSize="1rem"
                               fontWeight={500}
                               href={null}
-                              letterSpacing="0.2px"
+                              letterSpacing="0px"
                               onClick={[Function]}
                               target={null}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                                 fontSize="1rem"
                                 fontWeight={600}
                                 id={null}
@@ -5626,14 +7091,14 @@ exports[` 5`] = `
                             </a>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5641,7 +7106,7 @@ exports[` 5`] = `
                               Building/Lot
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                               fontSize="1rem"
                               fontWeight={600}
                               id={null}
@@ -5651,14 +7116,14 @@ exports[` 5`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5666,7 +7131,7 @@ exports[` 5`] = `
                               No. of Units
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                               fontSize="1rem"
                               fontWeight={600}
                               id={null}
@@ -5676,14 +7141,14 @@ exports[` 5`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5691,7 +7156,7 @@ exports[` 5`] = `
                               Year Built
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                               fontSize="1rem"
                               fontWeight={600}
                               id={null}
@@ -5702,7 +7167,7 @@ exports[` 5`] = `
                           </section>
                         </section>
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Field__FieldGrid-sc-11od8ug-5 bfavrm"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
                           id={null}
                           rows={null}
                         >
@@ -5716,14 +7181,14 @@ exports[` 5`] = `
                             Owner Information
                           </p>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5731,17 +7196,17 @@ exports[` 5`] = `
                               Owners
                             </label>
                             <a
-                              className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                              className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                               disabled={false}
                               fontSize="1rem"
                               fontWeight={500}
                               href={null}
-                              letterSpacing="0.2px"
+                              letterSpacing="0px"
                               onClick={[Function]}
                               target={null}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                                 fontSize="1rem"
                                 fontWeight={600}
                                 id={null}
@@ -5752,14 +7217,14 @@ exports[` 5`] = `
                             </a>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5767,7 +7232,7 @@ exports[` 5`] = `
                               Owner Address
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                               fontSize="1rem"
                               fontWeight={600}
                               id={null}
@@ -5777,14 +7242,14 @@ exports[` 5`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5792,17 +7257,17 @@ exports[` 5`] = `
                               Adjacent Lots
                             </label>
                             <a
-                              className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                              className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                               disabled={false}
                               fontSize="1rem"
                               fontWeight={500}
                               href={null}
-                              letterSpacing="0.2px"
+                              letterSpacing="0px"
                               onClick={[Function]}
                               target={null}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                                 fontSize="1rem"
                                 fontWeight={600}
                                 id={null}
@@ -5813,14 +7278,14 @@ exports[` 5`] = `
                             </a>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5828,17 +7293,17 @@ exports[` 5`] = `
                               Last Sale
                             </label>
                             <a
-                              className="Typography__LinkText-sc-19auepv-1 kZPEOL Field__LinkedField-sc-11od8ug-4 cQVdZa"
+                              className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 cQVdZa"
                               disabled={false}
                               fontSize="1rem"
                               fontWeight={500}
                               href={null}
-                              letterSpacing="0.2px"
+                              letterSpacing="0px"
                               onClick={[Function]}
                               target={null}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                                className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                                 fontSize="1rem"
                                 fontWeight={600}
                                 id={null}
@@ -5849,14 +7314,14 @@ exports[` 5`] = `
                             </a>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 kGHgnR"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 dKtzMM"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT Field__FieldLabel-sc-11od8ug-2 iooFWS"
+                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 eIDdGV"
                               cursor="pointer"
-                              fontSize="1rem"
+                              fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
@@ -5864,7 +7329,7 @@ exports[` 5`] = `
                               Total Assd Value
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 jYKsXf"
+                              className="Typography__Paragraph-sc-19auepv-3 iUBZwE Field__FieldValue-sc-11od8ug-3 bGeOAY"
                               fontSize="1rem"
                               fontWeight={600}
                               id={null}

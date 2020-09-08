@@ -199,11 +199,25 @@ function MockMenu({ data, title }) {
     <React.Fragment>
       {data ? <List title={title} isInteractive isInverse data={data} />
         : (
-          <List title={title} isInteractive isInverse>
-            <ListItem title="Projects" isSelected />
-            <ListItem title="Properties" />
-            <ListItem title="History" />
-            <ListItem title="Data" />
+          <List title={title || "List Title"} isInteractive isInverse>
+            <ListSection title="List Section 1" hasDivider>
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
+            <ListSection title="List Section 2" hasDivider>
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
+            <ListSection title="List Section 3">
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
           </List>
         )}
     </React.Fragment>
@@ -224,16 +238,18 @@ function MockWorkflow({ data, title }) {
       {data ? <List title={title} isInteractive isLight data={data} />
         : (
           <List title={title} isInteractive>
-            <ListItem
-              title="Overview"
-              isSelected
-            />
-            <ListItem
-              title="Define Site"
-              post={{
-                type: "icon", icon: "check", variant: "success",
-              }}
-            />
+            <ListSection hasDivider>
+              <ListItem
+                title="Overview"
+                isSelected
+              />
+              <ListItem
+                title="Define Site"
+                post={{
+                  type: "icon", icon: "check", variant: "success",
+                }}
+              />
+            </ListSection>
             <ListSection>
               <ListItem
                 title="Assessment"

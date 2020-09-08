@@ -12,7 +12,7 @@ import fieldData from "atoms/Field/Field.data.js";
 ### Fields are used to display data in a label/value pairing
 
 <Preview withToolbar>
-  <Story name="Standard">
+  <Story name="Standard" decorators={[CenterDisplayGrid]}>
     <Field
       id="Field"
       label="Field Name"
@@ -26,287 +26,96 @@ import fieldData from "atoms/Field/Field.data.js";
 ### Alignment
 
 <Preview>
-  <Story name="Alignment">
-    <Grid columns="3" gap="4xl">
-      <FieldGroup
+  <Story name="Alignment" decorators={[CenterDisplayGrid]}>
+    <FieldGroup columns="1">
+      <Field
         id="Default"
-        title="Default"
-        columns="1"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-        />
-      </FieldGroup>
-      <FieldGroup
-        id="Default"
-        title="Edge-Aligned"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          align="edge"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          align="edge"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          align="edge"
-        />
-      </FieldGroup>
-      <FieldGroup
-        id="Default"
-        title="Vertical-Aligned"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          align="vertical"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          align="vertical"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          align="vertical"
-        />
-      </FieldGroup>
-    </Grid>
+        label="Default"
+        value="Field Value"
+      />
+      <Field
+        id="Edge-Aligned"
+        label="Edge-Aligned"
+        value="Field Value"
+        align="edge"
+      />
+      <Field
+        id="Vertically-Aligned"
+        label="Vertically-Aligned"
+        value="Field Value"
+        align="vertical"
+      />
+    </FieldGroup>
   </Story>
 </Preview>
 
-## Spacing
+## Label-to-Value Spacing
 
 <Preview withToolbar>
-  <Story name="Spacing">
-    <Grid columns="2" gap="xl">
-      <FieldGroup
+  <Story name="Label-to-Value Spacing" decorators={[CenterDisplayGrid]}>
+    <FieldGroup columns="1">
+      <Field
         id="Default"
-        title="Default"
-        columns="1"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-        />
-      </FieldGroup>
-      <FieldGroup
+        label="Field Label"
+        value="Field Value"
+      />
+      <Field
         id="2x"
-        title="2x"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          gap="2x"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          gap="2x"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          gap="2x"
-        />
-      </FieldGroup>
-      <FieldGroup
+        label="Field Label (2x)"
+        value="Field Value"
+        spacing="2x"
+      />
+      <Field
         id="3x"
-        title="3x"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          gap="3x"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          gap="3x"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          gap="3x"
-        />
-      </FieldGroup>
-      <FieldGroup
+        label="Field Label (3x)"
+        value="Field Value"
+        spacing="3x"
+      />
+      <Field
         id="4x"
-        title="4x"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          gap="4x"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          gap="4x"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          gap="4x"
-        />
-      </FieldGroup>
-      <FieldGroup
+        label="Field Label (4x)"
+        value="Field Value"
+        spacing="4x"
+      />
+    </FieldGroup>
+  </Story>
+</Preview>
+
+## Size
+
+<Preview withToolbar>
+  <Story name="Size" decorators={[CenterDisplayGrid]}>
+    <FieldGroup columns="1">
+      <Field
         id="Default"
-        title="Default (edge-aligned)"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          align="edge"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          align="edge"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          align="edge"
-        />
-      </FieldGroup>
-      <FieldGroup
+        label="Small Field"
+        value="Field Value"
+        size="sm"
+      />
+      <Field
         id="2x"
-        title="2x (edge-aligned)"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          gap="2x"
-          align="edge"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          gap="2x"
-          align="edge"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          gap="2x"
-          align="edge"
-        />
-      </FieldGroup>
-      <FieldGroup
+        label="Default Field"
+        value="Field Value"
+      />
+      <Field
         id="3x"
-        title="3x (edge-aligned)"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          gap="3x"
-          align="edge"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          gap="3x"
-          align="edge"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          gap="3x"
-          align="edge"
-        />
-      </FieldGroup>
-      <FieldGroup
-        id="4x"
-        title="4x (edge-aligned)"
-      >
-        <Field
-          id="Field 1"
-          label="Field Name"
-          value="Linked Value"
-          gap="4x"
-          align="edge"
-          onClick={() => {}}
-        />
-        <Field
-          id="Field 2"
-          label="Long Field Name"
-          value="Value Goes Here"
-          gap="4x"
-          align="edge"
-        />
-        <Field
-          id="Field 3"
-          label="Extra Long Field Name"
-          value="And A Really Extra Long Field Value Can Go Here"
-          gap="4x"
-          align="edge"
-        />
-      </FieldGroup>
-    </Grid>
+        label="Large Field"
+        value="Field Value"
+        size="lg"
+      />
+      <Field
+        id="3x"
+        label="XL Field"
+        value="Field Value"
+        size="xl"
+      />
+      <Field
+        id="3x"
+        label="2XL Field"
+        value="Field Value"
+        size="2xl"
+      />
+    </FieldGroup>
   </Story>
 </Preview>
 
