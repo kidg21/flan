@@ -9,36 +9,36 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fcneQZ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
     id="Knobs"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 jOABeF"
+      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
       id="A"
       placeholder="A"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 jOABeF"
+      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
       id="B"
       placeholder="B"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 jOABeF"
+      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
       id="C"
       placeholder="C"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 jOABeF"
+      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
       id="D"
       placeholder="D"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 jOABeF"
+      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -49,12 +49,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 eoezdg"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 jNQYJj"
   id="Standard"
   rows={null}
 >
   <section
-    className="Template__Region-sc-1i4nzbu-0 cHBoDR"
+    className="Template__Region-sc-1i4nzbu-0 eceUPe"
     id="A"
     placeholder="A"
     tabIndex="0"
@@ -70,7 +70,7 @@ exports[` 2`] = `
       }
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        className="Typography__TitleText-sc-19auepv-2 hytcMk"
         fontSize="1.2rem"
         fontWeight="400"
         letterSpacing="1px"
@@ -80,7 +80,7 @@ exports[` 2`] = `
     </div>
   </section>
   <section
-    className="Template__Region-sc-1i4nzbu-0 cHBoDR"
+    className="Template__Region-sc-1i4nzbu-0 eceUPe"
     id="B"
     placeholder="B"
     tabIndex="0"
@@ -96,7 +96,7 @@ exports[` 2`] = `
       }
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        className="Typography__TitleText-sc-19auepv-2 hytcMk"
         fontSize="1.2rem"
         fontWeight="400"
         letterSpacing="1px"
@@ -106,7 +106,7 @@ exports[` 2`] = `
     </div>
   </section>
   <section
-    className="Template__Region-sc-1i4nzbu-0 cHBoDR"
+    className="Template__Region-sc-1i4nzbu-0 eceUPe"
     id="C"
     placeholder="C"
     tabIndex="0"
@@ -122,7 +122,7 @@ exports[` 2`] = `
       }
     >
       <h6
-        className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+        className="Typography__TitleText-sc-19auepv-2 hytcMk"
         fontSize="1.2rem"
         fontWeight="400"
         letterSpacing="1px"
@@ -143,12 +143,12 @@ exports[` 3`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 eRUJKE"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 eotlbL"
     id="Configured"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 djnXYw"
+      className="Template__Region-sc-1i4nzbu-0 dDsaPL"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -164,7 +164,7 @@ exports[` 3`] = `
         }
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -174,7 +174,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 fqvHpr"
+      className="Template__Region-sc-1i4nzbu-0 bwkryQ"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -190,7 +190,7 @@ exports[` 3`] = `
         }
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -200,7 +200,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dBIRLy"
+      className="Template__Region-sc-1i4nzbu-0 coWHpF"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -216,7 +216,7 @@ exports[` 3`] = `
         }
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -238,30 +238,30 @@ exports[` 4`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 dRYjEZ"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 kSspJG"
     id="Template Overlay"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 teFEB"
+      className="Template__Region-sc-1i4nzbu-0 edvCsS"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
       <form
-        className="Search__SearchContainer-sey9om-0 iDrhT"
+        className="Search__SearchContainer-sey9om-0 dSHoSU"
         id="Search_E3"
         onSubmit={[Function]}
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 bDGwnH Search__SearchInput-sey9om-1 kOYYsS"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
           height={null}
           id={null}
           overflow={null}
           width={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Search__SearchButton-sey9om-3 dEHLVj"
+            className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
             disabled={false}
             htmlFor={null}
             id="Search_E3-search-button"
@@ -271,13 +271,13 @@ exports[` 4`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
               id={null}
               rows={null}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
                 color={null}
                 data-icon="search"
                 data-prefix="far"
@@ -298,13 +298,13 @@ exports[` 4`] = `
             </section>
           </button>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 iYjJFw"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD Search__SearchTextInput-sey9om-2 fHrQmv"
             id="Search_E3-search-bar_container"
             rows={null}
           >
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
               cols=""
               disabled={false}
               id="Search_E3-search-bar"
@@ -326,13 +326,13 @@ exports[` 4`] = `
       </form>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gqHEy"
+      className="Template__Region-sc-1i4nzbu-0 eqjAsV"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
+        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -342,13 +342,13 @@ exports[` 4`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="circle"
             data-prefix="far"
@@ -367,7 +367,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -380,13 +380,13 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dRggoP"
+      className="Template__Region-sc-1i4nzbu-0 FubIE"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
+        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -396,13 +396,13 @@ exports[` 4`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="circle"
             data-prefix="far"
@@ -421,7 +421,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -434,13 +434,13 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 bizoyg"
+      className="Template__Region-sc-1i4nzbu-0 doaTzn"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 kWpChA"
+        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -450,13 +450,13 @@ exports[` 4`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="circle"
             data-prefix="far"
@@ -475,7 +475,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -488,18 +488,18 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 eToNix"
+      className="Template__Region-sc-1i4nzbu-0 kSHenS"
       id="E"
       placeholder="E"
       tabIndex="0"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
         id="standard"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
           cursor="pointer"
           fontSize="0.875rem"
           fontWeight={400}
@@ -509,26 +509,26 @@ exports[` 4`] = `
           Color Palette
         </label>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
           id={null}
           rows={null}
         >
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
             color="#EBEAEC"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
             color="#D9ECEC"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
             color="#80959D"
             height="1.5rem"
             onClick={null}
@@ -536,7 +536,7 @@ exports[` 4`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
               color={null}
               data-icon="check"
               data-prefix="far"
@@ -556,35 +556,35 @@ exports[` 4`] = `
             </svg>
           </button>
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
             color="#63B1CD"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
             color="#06BFAE"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
             color="#095593"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 kkegfJ"
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
             color="#F3822B"
             height="1.5rem"
             onClick={null}
             width="1.5rem"
           />
           <button
-            className="Picker__Swatch-sc-1xwpkqn-1 eMtyuu"
+            className="Picker__Swatch-sc-1xwpkqn-1 jdqheZ"
             color="#FFBF00"
             height="1.5rem"
             onClick={null}

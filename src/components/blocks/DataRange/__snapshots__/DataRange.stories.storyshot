@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 jeAbEq"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
   id="default"
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
+    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
     cursor="pointer"
     fontSize="0.8rem"
     fontWeight={400}
@@ -17,20 +17,20 @@ exports[` 1`] = `
     Data Range (default)
   </label>
   <div
-    className="Bar__BarLayout-icfo76-2 eUVQsH"
+    className="Bar__BarLayout-icfo76-2 AXrfk"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 fNcQEg"
+      className="Bar__Slot-icfo76-1 bxLAtn"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
         id="default_left_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
           cursor="pointer"
           fontSize="0.875rem"
           fontWeight={400}
@@ -41,7 +41,7 @@ exports[` 1`] = `
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+          className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
           cols=""
           disabled={false}
           id="default_left"
@@ -60,10 +60,10 @@ exports[` 1`] = `
       </section>
     </div>
     <div
-      className="Bar__Slot-icfo76-1 hsVbDT"
+      className="Bar__Slot-icfo76-1 jMjgmM"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -73,15 +73,15 @@ exports[` 1`] = `
       </p>
     </div>
     <div
-      className="Bar__Slot-icfo76-1 kZQbjh"
+      className="Bar__Slot-icfo76-1 gFmZhG"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
         id="default_right_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
           cursor="pointer"
           fontSize="0.875rem"
           fontWeight={400}
@@ -92,7 +92,7 @@ exports[` 1`] = `
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+          className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
           cols=""
           disabled={false}
           id="default_right"
@@ -112,7 +112,7 @@ exports[` 1`] = `
     </div>
   </div>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+    className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
     fontSize="0.75rem"
     fontWeight={400}
     id={null}
@@ -126,31 +126,31 @@ exports[` 1`] = `
 exports[` 2`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-1 jozDvZ"
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-0 XxWIM"
+      className="Form__Section-v2wrel-0 AFwsX"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 jeAbEq"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
           id="input"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
             fontSize="0.8rem"
             fontWeight={400}
@@ -160,20 +160,20 @@ exports[` 2`] = `
             Price Range
           </label>
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 fNcQEg"
+              className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
                 id="input_left_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -184,7 +184,7 @@ exports[` 2`] = `
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
                   cols=""
                   disabled={false}
                   id="input_left"
@@ -203,10 +203,10 @@ exports[` 2`] = `
               </section>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 hsVbDT"
+              className="Bar__Slot-icfo76-1 jMjgmM"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -216,15 +216,15 @@ exports[` 2`] = `
               </p>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
+              className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
                 id="input_right_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -235,7 +235,7 @@ exports[` 2`] = `
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
                   cols=""
                   disabled={false}
                   id="input_right"
@@ -255,7 +255,7 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
             fontSize="0.75rem"
             fontWeight={400}
             id={null}
@@ -265,12 +265,12 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 fXSQss"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 jtsNRb"
           id="inputError"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
             fontSize="0.8rem"
             fontWeight={400}
@@ -280,20 +280,20 @@ exports[` 2`] = `
             Price Range (error)
           </label>
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 fNcQEg"
+              className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
                 id="inputError_left_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -304,7 +304,7 @@ exports[` 2`] = `
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
+                  className="TextInput__Input-sc-1fep8p8-2 byokkd"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -323,10 +323,10 @@ exports[` 2`] = `
               </section>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 hsVbDT"
+              className="Bar__Slot-icfo76-1 jMjgmM"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -336,15 +336,15 @@ exports[` 2`] = `
               </p>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
+              className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
                 id="inputError_right_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -355,7 +355,7 @@ exports[` 2`] = `
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
+                  className="TextInput__Input-sc-1fep8p8-2 byokkd"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -375,7 +375,7 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
             fontSize="0.75rem"
             fontWeight={400}
             id={null}
@@ -385,12 +385,12 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 fXSQss"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 jtsNRb"
           id="inputError"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
             fontSize="0.8rem"
             fontWeight={400}
@@ -400,21 +400,21 @@ exports[` 2`] = `
             Price Range (With Error message)
           </label>
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 fNcQEg"
+              className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
                 id="inputError_left_container"
                 rows={null}
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
+                  className="TextInput__Input-sc-1fep8p8-2 byokkd"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -433,10 +433,10 @@ exports[` 2`] = `
               </section>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 hsVbDT"
+              className="Bar__Slot-icfo76-1 jMjgmM"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -446,16 +446,16 @@ exports[` 2`] = `
               </p>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
+              className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
                 id="inputError_right_container"
                 rows={null}
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 gnFKbO"
+                  className="TextInput__Input-sc-1fep8p8-2 byokkd"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -475,7 +475,7 @@ exports[` 2`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
             fontSize="0.75rem"
             fontWeight={400}
             id={null}
@@ -484,7 +484,7 @@ exports[` 2`] = `
             Hang in there, buddy, I'm here to help!
           </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
             fontSize="0.75rem"
             fontWeight={400}
             id={null}
@@ -494,12 +494,12 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 jeAbEq"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
           id="inputDisabled"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
             fontSize="0.8rem"
             fontWeight={400}
@@ -509,20 +509,20 @@ exports[` 2`] = `
             Price Range (disabled)
           </label>
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 fNcQEg"
+              className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ"
                 id="inputDisabled_left_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -533,7 +533,7 @@ exports[` 2`] = `
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 hObFTZ"
+                  className="TextInput__Input-sc-1fep8p8-2 jtiSMy"
                   cols=""
                   disabled={true}
                   id="inputDisabled_left"
@@ -552,10 +552,10 @@ exports[` 2`] = `
               </section>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 hsVbDT"
+              className="Bar__Slot-icfo76-1 jMjgmM"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -565,15 +565,15 @@ exports[` 2`] = `
               </p>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
+              className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ"
                 id="inputDisabled_right_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -584,7 +584,7 @@ exports[` 2`] = `
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 hObFTZ"
+                  className="TextInput__Input-sc-1fep8p8-2 jtiSMy"
                   cols=""
                   disabled={true}
                   id="inputDisabled_right"
@@ -613,31 +613,31 @@ exports[` 2`] = `
 exports[` 3`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-1 jozDvZ"
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-0 XxWIM"
+      className="Form__Section-v2wrel-0 AFwsX"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 jeAbEq"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
           id="input"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
             fontSize="0.8rem"
             fontWeight={400}
@@ -647,20 +647,20 @@ exports[` 3`] = `
             Input Range
           </label>
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 fNcQEg"
+              className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
                 id="input_left_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -671,7 +671,7 @@ exports[` 3`] = `
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
                   cols=""
                   disabled={false}
                   id="input_left"
@@ -690,10 +690,10 @@ exports[` 3`] = `
               </section>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 hsVbDT"
+              className="Bar__Slot-icfo76-1 jMjgmM"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -703,15 +703,15 @@ exports[` 3`] = `
               </p>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
+              className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
                 id="input_right_container"
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -722,7 +722,7 @@ exports[` 3`] = `
                 </label>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
                   cols=""
                   disabled={false}
                   id="input_right"
@@ -742,7 +742,7 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
             fontSize="0.75rem"
             fontWeight={400}
             id={null}
@@ -752,12 +752,12 @@ exports[` 3`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 jeAbEq"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
           id="select"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
             fontSize="0.8rem"
             fontWeight={400}
@@ -767,20 +767,20 @@ exports[` 3`] = `
             Select Range
           </label>
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 fNcQEg"
+              className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                  className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                   cursor="pointer"
                   fontSize="0.75em"
                   fontWeight={400}
@@ -899,10 +899,10 @@ exports[` 3`] = `
               </section>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 hsVbDT"
+              className="Bar__Slot-icfo76-1 jMjgmM"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -912,15 +912,15 @@ exports[` 3`] = `
               </p>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
+              className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                  className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                   cursor="pointer"
                   fontSize="0.75em"
                   fontWeight={400}
@@ -1040,7 +1040,7 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
             fontSize="0.75rem"
             fontWeight={400}
             id={null}
@@ -1050,12 +1050,12 @@ exports[` 3`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ DataRange__RangeContainer-u3cy9q-0 jeAbEq"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
           id="selectOperation"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
             fontSize="0.8rem"
             fontWeight={400}
@@ -1065,20 +1065,20 @@ exports[` 3`] = `
             Select Range with Selector Operator
           </label>
           <div
-            className="Bar__BarLayout-icfo76-2 bHddGh"
+            className="Bar__BarLayout-icfo76-2 cigYlK"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 fNcQEg"
+              className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                  className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                   cursor="pointer"
                   fontSize="0.75em"
                   fontWeight={400}
@@ -1197,10 +1197,10 @@ exports[` 3`] = `
               </section>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 hVtzoz"
+              className="Bar__Slot-icfo76-1 dLQWvs"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
                 id={null}
                 rows={null}
               >
@@ -1314,15 +1314,15 @@ exports[` 3`] = `
               </section>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 kZQbjh"
+              className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 llFPGd"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                  className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                   cursor="pointer"
                   fontSize="0.75em"
                   fontWeight={400}
@@ -1442,7 +1442,7 @@ exports[` 3`] = `
             </div>
           </div>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
             fontSize="0.75rem"
             fontWeight={400}
             id={null}
