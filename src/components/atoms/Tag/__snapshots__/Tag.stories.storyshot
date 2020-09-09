@@ -2,18 +2,18 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb"
   id={null}
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 jVuXoC"
+    className="Tag__TagContainer-sc-128kb3h-0 ehhDnF"
     id={null}
     label="Tag"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
+      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -29,16 +29,16 @@ exports[` 1`] = `
 exports[` 2`] = `
 Array [
   <div
-    className="Bar__BarLayout-icfo76-2 eIFIfS"
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 hCkezQ"
+      className="Bar__Slot-icfo76-1 cyOOXv"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kWRDZo"
+        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 fdqEyn"
         color="success80"
         data-icon="check"
         data-prefix="far"
@@ -58,16 +58,16 @@ Array [
       </svg>
     </div>
     <div
-      className="Bar__Slot-icfo76-1 yvaBx"
+      className="Bar__Slot-icfo76-1 bKkRmK"
     >
       <span
-        className="Tag__TagContainer-sc-128kb3h-0 jVuXoC"
+        className="Tag__TagContainer-sc-128kb3h-0 ehhDnF"
         id={null}
         label="Brief Label"
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
+          className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -80,16 +80,16 @@ Array [
     </div>
   </div>,
   <div
-    className="Bar__BarLayout-icfo76-2 eIFIfS"
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 hCkezQ"
+      className="Bar__Slot-icfo76-1 cyOOXv"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eizlsd"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jGFUDO"
         color="alert80"
         data-icon="times"
         data-prefix="far"
@@ -109,16 +109,16 @@ Array [
       </svg>
     </div>
     <div
-      className="Bar__Slot-icfo76-1 yvaBx"
+      className="Bar__Slot-icfo76-1 bKkRmK"
     >
       <span
-        className="Tag__TagContainer-sc-128kb3h-0 jVuXoC"
+        className="Tag__TagContainer-sc-128kb3h-0 ehhDnF"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
+          className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -135,18 +135,18 @@ Array [
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb"
   id={null}
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 iaKfwX"
+    className="Tag__TagContainer-sc-128kb3h-0 VyFvA"
     id={null}
     label="Info"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
+      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -157,13 +157,13 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 jfVLD"
+    className="Tag__TagContainer-sc-128kb3h-0 grbyTc"
     id={null}
     label="Warning"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
+      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -174,13 +174,13 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 ggCOib"
+    className="Tag__TagContainer-sc-128kb3h-0 eIwpvc"
     id={null}
     label="Success"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
+      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -191,13 +191,13 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 euXFxe"
+    className="Tag__TagContainer-sc-128kb3h-0 fPtoFl"
     id={null}
     label="Alert"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
+      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -212,14 +212,14 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <span
-  className="Tag__TagContainer-sc-128kb3h-0 eEMIrh"
+  className="Tag__TagContainer-sc-128kb3h-0 juYvZG"
   id={null}
   label={null}
   onClick={null}
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 CCPOD"
+    className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 geNtsc"
     color="neutral20"
     data-icon="times"
     data-prefix="far"
@@ -242,18 +242,18 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
   id={null}
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 uloxj"
+    className="Tag__TagContainer-sc-128kb3h-0 gqSuJg"
     id={null}
     label="Icon on Left"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -263,12 +263,12 @@ exports[` 5`] = `
       Icon on Left
     </label>
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 iTwevW"
+      className="Tag__TagIconContainer-sc-128kb3h-1 iiUaZN"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
         color="neutral20"
         data-icon="times"
         data-prefix="far"
@@ -289,13 +289,13 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 coyTyH"
+    className="Tag__TagContainer-sc-128kb3h-0 cHiZFk"
     id={null}
     label="Icon on Left"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -305,12 +305,12 @@ exports[` 5`] = `
       Icon on Left
     </label>
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 fXpulc"
+      className="Tag__TagIconContainer-sc-128kb3h-1 gyOiCz"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
         color="neutral20"
         data-icon="times"
         data-prefix="far"
@@ -331,13 +331,13 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 coyTyH"
+    className="Tag__TagContainer-sc-128kb3h-0 cHiZFk"
     id={null}
     label="Icon on Left"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -347,12 +347,12 @@ exports[` 5`] = `
       Icon on Left
     </label>
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 dBnGxx"
+      className="Tag__TagIconContainer-sc-128kb3h-1 beUluu"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
         color="neutral20"
         data-icon="times"
         data-prefix="far"
@@ -373,18 +373,18 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 kInnhz"
+    className="Tag__TagContainer-sc-128kb3h-0 cIduLE"
     id={null}
     label="Icon on Right"
     onClick={null}
   >
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 dlPExi"
+      className="Tag__TagIconContainer-sc-128kb3h-1 loOPNN"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
         color="neutral20"
         data-icon="times"
         data-prefix="far"
@@ -404,7 +404,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -415,18 +415,18 @@ exports[` 5`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 coyTyH"
+    className="Tag__TagContainer-sc-128kb3h-0 cHiZFk"
     id={null}
     label="Icon on Right"
     onClick={null}
   >
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 lfQbpj"
+      className="Tag__TagIconContainer-sc-128kb3h-1 etEGqY"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
         color="neutral20"
         data-icon="times"
         data-prefix="far"
@@ -446,7 +446,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -457,18 +457,18 @@ exports[` 5`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 coyTyH"
+    className="Tag__TagContainer-sc-128kb3h-0 cHiZFk"
     id={null}
     label="Icon on Right"
     onClick={null}
   >
     <div
-      className="Tag__TagIconContainer-sc-128kb3h-1 dQMkwG"
+      className="Tag__TagIconContainer-sc-128kb3h-1 jpTDVZ"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
         color="neutral20"
         data-icon="times"
         data-prefix="far"
@@ -488,7 +488,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
