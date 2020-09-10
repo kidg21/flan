@@ -88,9 +88,6 @@ const CardGridWrapper = styled(Grid)`
     border-radius: ${(props) => {
     return props.theme.borders.radiusMed;
   }};
-    box-shadow: ${(props) => {
-    return props.theme.shadows.dropShadow;
-  }};
     transition: all 0.25s ease-in-out;
     &:hover {
     box-shadow: ${(props) => {
@@ -299,7 +296,7 @@ function Card({
     centerContent = (
       <LinkedWrapper>
         <React.Fragment>
-          {title ? <Title size="xl" text={title} /> : null}
+          {title ? <Title size="lg" text={title} /> : null}
           {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
@@ -308,7 +305,7 @@ function Card({
   } else {
     centerContent = (
       <React.Fragment>
-        {title ? <Title size="xl" text={title} /> : null}
+        {title ? <Title size="lg" text={title} /> : null}
         {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>

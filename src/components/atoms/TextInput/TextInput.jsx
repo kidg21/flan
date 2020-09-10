@@ -11,7 +11,7 @@ import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
+    return props.theme.text[props.inputTextColor] || props.theme.text.light;
   }};
   width: 100%;
 `;

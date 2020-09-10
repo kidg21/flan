@@ -23,24 +23,31 @@ export const MultiGridWrapper = styled.div`
   overflow: hidden;
   .ReactVirtualized__Grid {
     ::-webkit-scrollbar {
-      height: 0.75em;
+      width: 0.65em;
+      height: 0.65em;
     }
     ::-webkit-scrollbar-track {
-      background-color: ${(props) => {
-    return props.theme.palette.neutral40;
-  }};
-    border: 1px solid ${(props) => {
-    return props.theme.palette.neutral60;
-  }};
+      box-shadow: inset 0.5px 0 0px ${(props) => {
+      return props.theme.palette.neutral40;
+    }};
     }
     ::-webkit-scrollbar-thumb {
       background-color: ${(props) => {
-    return props.theme.palette.neutral80;
-  }};
-    border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
+      return props.theme.palette.neutral80;
+    }};
+      border-radius: 20px;
     }
+    ::-webkit-scrollbar-track:horizontal {
+      box-shadow: inset 0.5px 0 0px ${(props) => {
+      return props.theme.palette.neutral40;
+    }};
+  }
+    ::-webkit-scrollbar-thumb:horizontal{
+      background-color: ${(props) => {
+      return props.theme.palette.neutral80;
+    }};
+    border-radius: 20px;
+  }
     :focus {
       outline: none;
     }
@@ -63,7 +70,10 @@ export const CellWrapper = styled.div`
   font-weight: ${(props) => {
     return props.isHeader ? "500" : "400";
   }};
-  font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
+  cursor: ${(props) => {
+    return props.isHeader ? "pointer" : "";
+  }};
+  font-family: ${(props) => { return props.theme.typography.primary; }};
   border-bottom: ${(props) => {
     return `1px solid ${props.theme.palette.neutral40}`;
   }};

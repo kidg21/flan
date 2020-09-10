@@ -71,6 +71,7 @@ export const colors = {
   grey80: "hsl(240, 2%, 23%)",
   grey90: "hsl(240, 2%, 18%)",
   grey100: "hsl(34, 5%, 12%)", // blackish
+  grey110: "black",
 
   navy: "hsl(207,100%,19.6%)",
   sky: "hsl(197,100%,43.7%)",
@@ -186,6 +187,8 @@ export const DMPTheme = {
     link: colors.blue80,
     primary: colors.grey80,
     secondary: colors.grey60,
+    light: colors.grey50,
+    dark: colors.grey110,
     selected: colors.blue80,
     success: colors.green80,
     warning: colors.orange60,

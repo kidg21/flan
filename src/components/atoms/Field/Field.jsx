@@ -11,9 +11,6 @@ const FieldItem = styled(Grid)`
     return props.fieldSize || "";
   }};
   text-align: left;
-  color: ${(props) => {
-    return props.theme.text.secondary;
-  }};
   align-items: baseline;
   width: 100%;
   grid-template-columns: ${(props) => {
@@ -39,7 +36,7 @@ const FieldLabel = styled(Label)`
   font-size: 1em;
   text-align: inherit;
   color: ${(props) => {
-    return props.theme.text[props.labelColor] || "inherit";
+    return props.theme.text[props.labelColor] || props.theme.text.light;
   }};
   white-space: normal;
   cursor: initial;
@@ -52,7 +49,7 @@ const FieldValue = styled(Text)`
     return props.valueAlign || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.text[props.valueColor] || "inherit";
+    return props.theme.text[props.valueColor] || props.theme.text.dark;
   }};
   /* Default Value - displays when a Field's value is empty */
   &:empty {
@@ -154,7 +151,6 @@ function Field({
   let field = (
     <FieldValue
       onChange={onChange}
-      weight="bold"
       valueAlign={valueAlign}
     // size={size}
     >

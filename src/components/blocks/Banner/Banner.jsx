@@ -8,7 +8,7 @@ import Card from "elements/Card";
 import Bar from "layout/Bar";
 import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
-import Text, { Link, Title } from "base/Typography";
+import Text, { Link } from "base/Typography";
 
 const StyledBanner = styled(Card)`
   border-color: ${(props) => {
@@ -64,7 +64,7 @@ function Banner({
         center={{
           content: (
             <Grid columns="1" gap="xs">
-              <Title text={title} />
+              <Text text={title} />
               {description ? <Text size="sm" text={description} /> : null}
               {link ? (
                 <Link href={href} onClick={onClick} text={link} />
