@@ -85,15 +85,6 @@ export const CellWrapper = styled.div`
   }};
 `;
 
-const HeaderPiece = styled.div`
- border: 1px solid green;
- &:hover {
-   border: 2px solid pink;
- }
- &:active {
-   border: 1px solid purple;
- }
-`;
 
 function _containedInRowCol(cellRowCol, row, col) {
   if (cellRowCol.rowIndex !== null && cellRowCol.rowIndex !== undefined) {

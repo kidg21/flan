@@ -24,8 +24,8 @@ color: ${(props) => {
 
 const LabelWrapper = styled.section`
 color: ${(props) => {
-  return props.theme.text[props.inputTextColor] || props.theme.text.light;
-}};
+    return props.theme.text[props.inputTextColor] || props.theme.text.light;
+  }};
 `;
 
 const Input = styled.input`
@@ -213,12 +213,12 @@ function TextInput({
     >
       {label ? (
         <LabelWrapper
-        inputTextColor={inputTextColor}>
-        <Label isRequired={isRequired} text={label} visible={labelVisible} />
+          inputTextColor={inputTextColor}>
+          <Label isRequired={isRequired} text={label} visible={labelVisible} />
         </LabelWrapper>
       ) : null}
       <Input
-      inputTextColor={inputTextColor}
+        inputTextColor={inputTextColor}
         as={as}
         autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
         cols={columns} // textarea attribute
@@ -251,7 +251,7 @@ function TextInput({
       {autocompleteDataList}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       {children}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs"  text={errorText || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }

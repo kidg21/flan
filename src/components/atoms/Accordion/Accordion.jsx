@@ -8,7 +8,7 @@ import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";
 
 const ContentWrapper = styled.section`
-margin-top: 1rem;
+padding-top: 1rem;
 `;
 
 function Accordion({

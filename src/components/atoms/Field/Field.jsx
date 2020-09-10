@@ -4,7 +4,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
-import Divider from "atoms/Divider";
 import Text, { Label, Link } from "base/Typography";
 
 const FieldItem = styled(Grid)`
@@ -50,7 +49,7 @@ const FieldValue = styled(Text)`
     return props.valueAlign || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.text[props.valueColor] || props.theme.text.dark;
+    return props.theme.text.dark;
   }};
   /* Default Value - displays when a Field's value is empty */
   &:empty {
@@ -63,6 +62,9 @@ const FieldValue = styled(Text)`
 const LinkedField = styled(Link)`
   font-size: 1em;
   margin: initial;
+  color: ${(props) => {
+    return props.theme.text.link;
+  }};
   padding: initial;
   width: max-content;
   justify-self: ${(props) => {
@@ -236,10 +238,7 @@ function FieldGroup({
       isDense={isDense}
     >
       {title ? (
-        <Grid columns="1" gap="0">
           <GroupTitle text={title} size="sm" weight="bold" />
-          <Divider setMargin="0.25rem 0" />
-        </Grid>
       ) : null}
       {children
         || data.map((item, index) => {
