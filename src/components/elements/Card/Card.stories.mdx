@@ -17,8 +17,8 @@ import Card, { CardSection, CardGrid } from "elements/Card";
 
 <Preview withToolbar>
   <Story name="Standard">
-    <Grid columns="3">
-      <div/>
+    <CardGrid columns="3">
+      <div />
       <Card
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
@@ -49,8 +49,8 @@ import Card, { CardSection, CardGrid } from "elements/Card";
           },
         ]}
       />
-      <div/>
-  </Grid>
+      <div />
+    </CardGrid>
   </Story>
 </Preview>
 
@@ -309,6 +309,14 @@ The primary action area of a card is typically the card itself. Often cards are 
   </Story>
 </Preview>
 
-## Props
+## 'Card' Props
 
 <Props of={Card} />
+
+## 'Card Section' Props
+
+<Props of={CardSection} />
+
+## 'Card Grid' Props
+
+<Props of={CardGrid} />
