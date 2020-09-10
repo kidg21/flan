@@ -7,8 +7,8 @@ import Icon from "atoms/Icon";
 import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";
 
-const ExpanderWrapper = styled(Expander)`
-  padding: 0 0.5rem;
+const ContentWrapper = styled.section`
+margin-top: 1rem;
 `;
 
 function Accordion({
@@ -30,7 +30,7 @@ function Accordion({
   }
 
   return (
-    <ExpanderWrapper
+    <Expander
       id={id}
       onClick={(e) => {
         toggleDropdown(e);
@@ -38,8 +38,8 @@ function Accordion({
       open={expanded}
       header={(
         <Bar
-          padding="1x"
-          contentAlign="top"
+          padding="0"
+          contentAlign="center"
           left={{
             content: (
               header
@@ -53,14 +53,16 @@ function Accordion({
             align: "left",
           }}
           right={children ? {
-            content: <Icon icon={iconContent} />,
+            content: <Icon icon={iconContent} size="sm" />,
             width: "max-content",
           } : null}
         />
       )}
     >
-      {children}
-    </ExpanderWrapper>
+      <ContentWrapper>
+        {children}
+      </ContentWrapper>
+    </Expander>
   );
 }
 

@@ -169,7 +169,7 @@ const selectStyles = {
 
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary;
+    return props.theme.text[props.textColor] || props.theme.text.light;
   }};
   width: 100%;
   &:empty {

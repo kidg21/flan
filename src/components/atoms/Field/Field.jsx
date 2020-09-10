@@ -4,6 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
+import Divider from "atoms/Divider";
 import Text, { Label, Link } from "base/Typography";
 
 const FieldItem = styled(Grid)`
@@ -234,7 +235,12 @@ function FieldGroup({
       id={id}
       isDense={isDense}
     >
-      {title ? <GroupTitle text={title} size="sm" weight="bold" /> : null}
+      {title ? (
+        <Grid columns="1" gap="0">
+          <GroupTitle text={title} size="sm" weight="bold" />
+          <Divider setMargin="0.25rem 0" />
+        </Grid>
+      ) : null}
       {children
         || data.map((item, index) => {
           return (

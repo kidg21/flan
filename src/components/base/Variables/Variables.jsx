@@ -65,7 +65,7 @@ export const colors = {
   grey20: "hsl(240, 11%, 91%)",
   grey30: "hsl(240, 6%, 83%)",
   grey40: "hsl(240, 3%, 69%)",
-  grey50: "hsl(240, 2%, 57%)",
+  grey50: "hsl(240, 5%, 52%)",
   grey60: "hsl(240, 1%, 39%)",
   grey70: "hsl(240, 1%, 29%)",
   grey80: "hsl(240, 2%, 23%)",
