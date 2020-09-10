@@ -322,7 +322,7 @@ function SelectMenu({
       isRequired={isRequired}
       textColor={textColor}
     >
-      {label ? <Label size="xs" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label size="sm" isRequired={isRequired} text={label} /> : null}
       {select}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText || warning} /></MessageContainer> : null}
