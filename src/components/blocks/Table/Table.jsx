@@ -40,6 +40,10 @@ export const MultiGridWrapper = styled.div`
     border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+    outline: none;
     }
     :focus {
       outline: none;
