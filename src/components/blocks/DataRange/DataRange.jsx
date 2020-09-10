@@ -61,19 +61,19 @@ function DataRange({
 
   const uId = useId(id);
 
-  let centerContent;
+  let selectContent;
   if (select.options) {
-    <SelectMenu
-      disabled={select.disabled || isDisabled}
-      error={!!error}
-      id={`${uId}_center`}
-      label={select.label}
-      onChangeState={select.onChange}
-      options={select.options}
-      selectOptions={select.selected}
-    />;
-  } else {
-    <Text text="_" />;
+    selectContent = (
+      <SelectMenu
+        disabled={select.disabled || isDisabled}
+        error={!!error}
+        id={`${uId}_center`}
+        label={select.label}
+        onChangeState={select.onChange}
+        options={select.options}
+        selectOptions={select.selected}
+      />
+    );
   }
 
   return (
@@ -87,15 +87,15 @@ function DataRange({
       {label ? (
         <Label size="sm" isRequired={isRequired} text={label} />
       ) : null}
-      <Grid columns="3">
-        {centerContent}
+      <Grid align="center" columns="3">
+        {selectContent}
         {min.options ? (
           <RangeSelectMenu
             disabled={min.disabled || isDisabled}
             error={!!error}
             id={`${uId}_left`}
             setDisplay={min.setDisplay}
-            label={min.label}
+            placeholder={min.label}
             onChangeState={onChangeMin}
             options={min.options}
             selectOptions={min.selected}
@@ -106,7 +106,7 @@ function DataRange({
             error={!!error}
             setDisplay={min.setDisplay}
             id={`${uId}_left`}
-            label={min.label}
+            placeholder={min.label}
             onChange={onChangeMin}
             value={min.value}
           />
@@ -117,7 +117,7 @@ function DataRange({
             disabled={max.disabled || isDisabled}
             error={!!error}
             id={`${uId}_right`}
-            label={max.label}
+            placeholder={max.label}
             setDisplay={max.setDisplay}
             onChangeState={max.onChange}
             options={max.options}
@@ -129,7 +129,7 @@ function DataRange({
             error={!!error}
             setDisplay={max.setDisplay}
             id={`${uId}_right`}
-            label={max.label}
+            placeholder={max.label}
             onChange={onChangeMax}
             value={max.value}
           />
