@@ -6,6 +6,9 @@ import styled from "styled-components";
 import Grid from "layout/Grid";
 
 const Region = styled.section`
+  display: ${(props) => {
+    return props.visible ? "block" : "none";
+  }};
   position: relative;
   grid-area: ${(props) => {
     return props.gridArea || "";
@@ -325,6 +328,7 @@ function Template({
               placeholder="A"
               regionShadow={A.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof A.visible === "boolean" ? A.visible : true}
             >
               {A.content}
             </Region>
@@ -342,6 +346,7 @@ function Template({
               placeholder="B"
               regionShadow={B.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof B.visible === "boolean" ? B.visible : true}
             >
               {B.content}
             </Region>
@@ -359,6 +364,7 @@ function Template({
               placeholder="C"
               regionShadow={C.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof C.visible === "boolean" ? C.visible : true}
             >
               {C.content}
             </Region>
@@ -376,6 +382,7 @@ function Template({
               placeholder="D"
               regionShadow={D.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof D.visible === "boolean" ? D.visible : true}
             >
               {D.content}
             </Region>
@@ -393,6 +400,7 @@ function Template({
               placeholder="E"
               regionShadow={E.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof E.visible === "boolean" ? E.visible : true}
             >
               {E.content}
             </Region>
@@ -411,6 +419,7 @@ const sectionShape = {
   overflow: PropTypes.string,
   padding: PropTypes.string,
   margin: PropTypes.string,
+  visible: PropTypes.bool,
 };
 
 Template.propTypes = {
