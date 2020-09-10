@@ -236,7 +236,9 @@ function FieldGroup({
   if (_columns > 0 && _columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
-  const fieldValue = useMemo(() => {
+
+  // context values/props to pass into child fields
+  const fieldProps = useMemo(() => {
     return {
       align,
       size,
@@ -251,10 +253,8 @@ function FieldGroup({
       id={id}
       isDense={isDense}
     >
-      {title ? (
-          <GroupTitle text={title} size="sm" weight="bold" />
-      ) : null}
-      <FieldContext.Provider value={fieldValue}>
+      {title ? (<GroupTitle text={title} size="sm" weight="bold" />) : null}
+      <FieldContext.Provider value={fieldProps}>
         {children
           || data.map((item, index) => {
             return (
