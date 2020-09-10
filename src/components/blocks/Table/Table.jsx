@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import PropTypes from "prop-types";
 import {
   MultiGrid,
@@ -9,6 +9,9 @@ import {
   CellMeasurerCache,
   InfiniteLoader,
 } from "react-virtualized";
+import Grid from "layout/Grid";
+import Text from "base/Typography";
+import Icon from "atoms/Icon";
 import styled from "styled-components";
 
 export const MultiGridWrapper = styled.div`
@@ -28,24 +31,24 @@ export const MultiGridWrapper = styled.div`
     }
     ::-webkit-scrollbar-track {
       box-shadow: inset 0.5px 0 0px ${(props) => {
-      return props.theme.palette.neutral40;
-    }};
+    return props.theme.palette.neutral40;
+  }};
     }
     ::-webkit-scrollbar-thumb {
       background-color: ${(props) => {
-      return props.theme.palette.neutral80;
-    }};
+    return props.theme.palette.neutral80;
+  }};
       border-radius: 20px;
     }
     ::-webkit-scrollbar-track:horizontal {
       box-shadow: inset 0.5px 0 0px ${(props) => {
-      return props.theme.palette.neutral40;
-    }};
+    return props.theme.palette.neutral40;
+  }};
   }
     ::-webkit-scrollbar-thumb:horizontal{
       background-color: ${(props) => {
-      return props.theme.palette.neutral80;
-    }};
+    return props.theme.palette.neutral80;
+  }};
     border-radius: 20px;
   }
     :focus {
@@ -62,13 +65,7 @@ export const CellWrapper = styled.div`
   align-items: center;
   padding: 0.5em 1em;
   color: ${(props) => {
-    if (props.isHeader) {
-      return props.theme.text.primary;
-    }
     return props.theme.text.primary;
-  }};
-  font-weight: ${(props) => {
-    return props.isHeader ? "500" : "400";
   }};
   cursor: ${(props) => {
     return props.isHeader ? "pointer" : "";
@@ -86,14 +83,16 @@ export const CellWrapper = styled.div`
     }
     return props.theme.background.default;
   }};
-  &:after {
-    content: "↓";
-    position: absolute;
-    right: 10%;
-    display: ${(props) => {
-    return props.isSortable ? "" : "none";
-  }};
-  }
+`;
+
+const HeaderPiece = styled.div`
+ border: 1px solid green;
+ &:hover {
+   border: 2px solid pink;
+ }
+ &:active {
+   border: 1px solid purple;
+ }
 `;
 
 function _containedInRowCol(cellRowCol, row, col) {
@@ -225,6 +224,12 @@ class Table extends Component {
       cellData = headers[columnIndex].label || "";
       if (headers[columnIndex].sortable) {
         cellProps.isSortable = true;
+        cellData = (
+          <Grid columns="auto .5fr" align="center">
+            <Text text={cellData} />
+            <Icon icon="down" size="sm" />
+          </Grid>
+        );
       }
       // if (headers[columnIndex].id === sortColumnId) {
       //   const arrow = sortDirection ? "up" : "down";
@@ -253,6 +258,7 @@ class Table extends Component {
             rowIndex: rowIndex - 1,
             columnIndex: columnIndex,
             row: row,
+            iconContent: "up",
           });
         }
       };
