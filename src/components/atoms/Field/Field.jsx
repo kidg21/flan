@@ -1,10 +1,12 @@
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useMemo, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
 import Text, { Label, Link } from "base/Typography";
+
+const FieldContext = React.createContext({});
 
 const FieldItem = styled(Grid)`
   font-size: ${(props) => {
@@ -110,8 +112,12 @@ function Field({
   let valueAlign;
   let justifyLink;
   let fieldSize = "";
+  const fieldContext = useContext(FieldContext);
+  const _align = typeof align === "string" ? align : fieldContext.align;
+  const _size = typeof size === "string" ? size : fieldContext.size;
+  const _spacing = typeof spacing === "string" ? spacing : fieldContext.spacing;
 
-  switch (size) {
+  switch (_size) {
     case "sm":
       fieldSize = ".8rem";
       break;
@@ -129,13 +135,13 @@ function Field({
       break;
   }
 
-  let labelSpacing = parseInt(spacing, 10) / 3;
+  let labelSpacing = parseInt(_spacing, 10) / 3;
   if (isNaN(labelSpacing)) labelSpacing = "minmax(auto, 7rem)";
   else labelSpacing += "fr";
 
   const valueSpacing = "1fr";
 
-  switch (align) {
+  switch (_align) {
     case "vertical":
       fieldColumns = "repeat(1, minmax(0, 1fr))";
       fieldGap = "0.25rem";
@@ -230,6 +236,14 @@ function FieldGroup({
   if (_columns > 0 && _columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
+  const fieldValue = useMemo(() => {
+    return {
+      align,
+      size,
+      spacing,
+    };
+  }, [align, size, spacing]);
+
   return (
     <FieldGrid
       className={className}
@@ -240,23 +254,25 @@ function FieldGroup({
       {title ? (
           <GroupTitle text={title} size="sm" weight="bold" />
       ) : null}
-      {children
-        || data.map((item, index) => {
-          return (
-            <Field
-              align={item.align || align}
-              spacing={item.spacing || spacing}
-              disabled={item.disabled}
-              key={item.id || item.label || index}
-              id={item.id}
-              label={item.label}
-              onChange={item.onChange}
-              onClick={item.onClick}
-              size={item.size || size}
-              value={item.value}
-            />
-          );
-        })}
+      <FieldContext.Provider value={fieldValue}>
+        {children
+          || data.map((item, index) => {
+            return (
+              <Field
+                align={item.align || align}
+                spacing={item.spacing || spacing}
+                disabled={item.disabled}
+                key={item.id || item.label || index}
+                id={item.id}
+                label={item.label}
+                onChange={item.onChange}
+                onClick={item.onClick}
+                size={item.size || size}
+                value={item.value}
+              />
+            );
+          })}
+      </FieldContext.Provider>
     </FieldGrid>
   );
 }
