@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import PropTypes from "prop-types";
 import {
   MultiGrid,
@@ -9,7 +9,7 @@ import {
   CellMeasurerCache,
   InfiniteLoader,
 } from "react-virtualized";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const MultiGridWrapper = styled.div`
   width: 100%;
@@ -60,7 +60,9 @@ export const CellWrapper = styled.div`
   padding: 0.5em 1em;
   color: ${(props) => {
     if (props.isHeader) {
-      return props.theme.text.primary;
+      return props.theme.text.inverse;
+    }
+    if (props.isSelected) {
     }
     return props.theme.text.primary;
   }};
@@ -72,6 +74,9 @@ export const CellWrapper = styled.div`
     return `1px solid ${props.theme.palette.neutral40}`;
   }};
   background-color: ${(props) => {
+    if (props.isHeader) {
+      return props.theme.palette.brand1;
+    }
     if (props.isHighlighted) {
       return props.theme.palette.neutral20;
     }
@@ -80,13 +85,20 @@ export const CellWrapper = styled.div`
     }
     return props.theme.background.default;
   }};
-  &:after {
-    content: "↓";
-    position: absolute;
-    right: 10%;
-    display: ${(props) => {
-    return props.isSortable ? "" : "none";
+  cursor: ${(props) => {
+    return props.isSortable ? "pointer" : "";
   }};
+  &:hover {
+    &:after {
+      ${(props) => {
+    return props.isSortable
+      && css`
+        content: "↓";
+        position: absolute;
+        right: 10%;
+      `;
+  }}
+    }
   }
 `;
 
@@ -191,11 +203,20 @@ class Table extends Component {
     const row = rows[rowIndex - 1];
     const cellProps = {};
     let cellData = "";
+    // let sortIcon = "↓";
+    // const toggleSortIcon = () => {
+    //   if (sortIcon === "↓") {
+    //     sortIcon = "G";
+    //   } else if (sortIcon === "G") {
+    //     sortIcon = "↓";
+    //   }
+    // };
 
     if (rowIndex === 0) {
       // data column header
       cellProps.onClick = (e) => {
         if (onHeaderClick) onHeaderClick(e, { rowIndex, columnIndex, row });
+        // toggleSortIcon();
       };
       cellProps.onMouseOver = (e) => {
         if (onHeaderMouseOver) {
