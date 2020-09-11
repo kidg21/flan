@@ -61,7 +61,7 @@ const ListTitleWrapper = styled.li`
 const ListTitle = styled(Text)`
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.75rem;
+  font-size: 0.876rem;
   font-weight: 400;
 `;
 

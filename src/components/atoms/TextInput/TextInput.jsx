@@ -11,7 +11,7 @@ import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
   width: 100%;
 `;
@@ -22,8 +22,17 @@ color: ${(props) => {
   }};
 `;
 
+const LabelWrapper = styled.section`
+color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || props.theme.text.light;
+  }};
+`;
+
 const Input = styled.input`
   color: inherit;
+  color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || props.theme.text.dark;
+  }};
   border: 1px solid;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
@@ -203,9 +212,13 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label isRequired={isRequired} text={label} visible={labelVisible} />
+        <LabelWrapper
+          inputTextColor={inputTextColor}>
+          <Label isRequired={isRequired} text={label} visible={labelVisible} />
+        </LabelWrapper>
       ) : null}
       <Input
+        inputTextColor={inputTextColor}
         as={as}
         autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
         cols={columns} // textarea attribute
@@ -238,7 +251,7 @@ function TextInput({
       {autocompleteDataList}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       {children}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs"  text={errorText || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }

@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const Line = styled.hr`
   width: 100%;
   height: 0;
-  margin: 1rem 0;
+  margin: 1rem 0; 
   border-top: 1px solid
     ${(props) => {
     return props.theme.palette.neutral20;
