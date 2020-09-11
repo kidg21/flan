@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_1"
     media=""
@@ -17,15 +17,15 @@ exports[` 1`] = `
     placeholder="{ Card }"
   >
     <div
-      className="Bar__BarLayout-icfo76-2 kShWZi"
+      className="Bar__BarLayout-icfo76-2 kTXCTV"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 bxLAtn"
+        className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -34,10 +34,10 @@ exports[` 1`] = `
         </h6>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 dLQWvs"
+        className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -46,10 +46,10 @@ exports[` 1`] = `
         </h6>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 gFmZhG"
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -71,7 +71,7 @@ exports[` 2`] = `
   }
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_2"
     media=""
@@ -79,15 +79,15 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <div
-      className="Bar__BarLayout-icfo76-2 cVtZJz"
+      className="Bar__BarLayout-icfo76-2 fliBOc"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 bxLAtn"
+        className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -96,10 +96,10 @@ exports[` 2`] = `
         </h6>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 dLQWvs"
+        className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -107,7 +107,7 @@ exports[` 2`] = `
           Towgood, Gary T.
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
           fontSize="1rem"
           fontWeight={400}
           id={null}
@@ -117,10 +117,10 @@ exports[` 2`] = `
         </p>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 gFmZhG"
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -142,12 +142,12 @@ exports[` 3`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 bsfuqx"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jwlPXp Card__CardGridWrapper-sc-1g3s676-4 bgYhPl"
     id={null}
     rows={null}
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_3"
       media=""
@@ -155,22 +155,22 @@ exports[` 3`] = `
       placeholder="{ Card }"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 kShWZi"
+        className="Bar__BarLayout-icfo76-2 kTXCTV"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 bxLAtn"
+          className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+            className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -182,10 +182,10 @@ exports[` 3`] = `
           </a>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 dLQWvs"
+          className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
             fontSize="1.2rem"
             fontWeight="400"
             letterSpacing="1px"
@@ -194,17 +194,17 @@ exports[` 3`] = `
           </h6>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 gFmZhG"
+          className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+            className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -218,7 +218,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_4"
       media=""
@@ -226,22 +226,22 @@ exports[` 3`] = `
       placeholder="{ Card }"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 kShWZi"
+        className="Bar__BarLayout-icfo76-2 kTXCTV"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 bxLAtn"
+          className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 gHzrEv"
+            className="Command__CommandContainer-sc-13akgtp-0 kLpmWQ"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -253,10 +253,10 @@ exports[` 3`] = `
           </a>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 dLQWvs"
+          className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
             fontSize="1.2rem"
             fontWeight="400"
             letterSpacing="1px"
@@ -265,17 +265,17 @@ exports[` 3`] = `
           </h6>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 gFmZhG"
+          className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 gHzrEv"
+            className="Command__CommandContainer-sc-13akgtp-0 kLpmWQ"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -289,7 +289,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_5"
       media=""
@@ -297,22 +297,22 @@ exports[` 3`] = `
       placeholder="{ Card }"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 kShWZi"
+        className="Bar__BarLayout-icfo76-2 kTXCTV"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 bxLAtn"
+          className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 dgUBhT"
+            className="Command__CommandContainer-sc-13akgtp-0 mPNFI"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -324,10 +324,10 @@ exports[` 3`] = `
           </a>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 dLQWvs"
+          className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
             fontSize="1.2rem"
             fontWeight="400"
             letterSpacing="1px"
@@ -335,7 +335,7 @@ exports[` 3`] = `
             Towgood, Gary T.
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -345,17 +345,17 @@ exports[` 3`] = `
           </p>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 gFmZhG"
+          className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <a
-            className="Command__CommandContainer-sc-13akgtp-0 dgUBhT"
+            className="Command__CommandContainer-sc-13akgtp-0 mPNFI"
             id={null}
             label="Command"
             onClick={null}
             title="Command"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -369,7 +369,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_6"
       media=""
@@ -377,20 +377,20 @@ exports[` 3`] = `
       placeholder="{ Card }"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 kShWZi"
+        className="Bar__BarLayout-icfo76-2 kTXCTV"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 bxLAtn"
+          className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <div
-            className="IconBlock__Block-nokc92-0 hchykn"
+            className="IconBlock__Block-nokc92-0 UCGVw"
             id={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="circle"
               data-prefix="fas"
@@ -410,7 +410,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 ePaTWX"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -430,7 +430,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kHopFD"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -453,7 +453,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_7"
       media=""
@@ -461,20 +461,20 @@ exports[` 3`] = `
       placeholder="{ Card }"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 grMosm"
+        className="Bar__BarLayout-icfo76-2 izXrkl"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 bxLAtn"
+          className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <div
-            className="IconBlock__Block-nokc92-0 hchykn"
+            className="IconBlock__Block-nokc92-0 UCGVw"
             id={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="circle"
               data-prefix="fas"
@@ -494,7 +494,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 ePaTWX"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -514,7 +514,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kHopFD"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -535,10 +535,10 @@ exports[` 3`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 dLQWvs"
+          className="Bar__Slot-icfo76-1 hVtzoz"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
             fontSize="1.2rem"
             fontWeight="400"
             letterSpacing="1px"
@@ -547,15 +547,15 @@ exports[` 3`] = `
           </h6>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 gFmZhG"
+          className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <div
-            className="IconBlock__Block-nokc92-0 hchykn"
+            className="IconBlock__Block-nokc92-0 UCGVw"
             id={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="circle"
               data-prefix="fas"
@@ -575,7 +575,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 ePaTWX"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -595,7 +595,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kHopFD"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -618,7 +618,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_8"
       media=""
@@ -626,15 +626,15 @@ exports[` 3`] = `
       placeholder="{ Card }"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 grMosm"
+        className="Bar__BarLayout-icfo76-2 izXrkl"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 bxLAtn"
+          className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
             fontSize="1.2rem"
             fontWeight="400"
             letterSpacing="1px"
@@ -643,15 +643,15 @@ exports[` 3`] = `
           </h6>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 gFmZhG"
+          className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <div
-            className="IconBlock__Block-nokc92-0 hchykn"
+            className="IconBlock__Block-nokc92-0 UCGVw"
             id={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="circle"
               data-prefix="fas"
@@ -671,7 +671,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 ePaTWX"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -691,7 +691,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kHopFD"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -714,7 +714,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_9"
       media=""
@@ -722,20 +722,20 @@ exports[` 3`] = `
       placeholder="{ Card }"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 grMosm"
+        className="Bar__BarLayout-icfo76-2 izXrkl"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 bxLAtn"
+          className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <div
-            className="IconBlock__Block-nokc92-0 hchykn"
+            className="IconBlock__Block-nokc92-0 UCGVw"
             id={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="circle"
               data-prefix="fas"
@@ -755,7 +755,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 ePaTWX"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jaPMjc"
               color="info80"
               data-icon="circle"
               data-prefix="fas"
@@ -775,7 +775,7 @@ exports[` 3`] = `
             </svg>
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kHopFD"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgCjXk"
               color="success80"
               data-icon="circle"
               data-prefix="fas"
@@ -796,10 +796,10 @@ exports[` 3`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 gFmZhG"
+          className="Bar__Slot-icfo76-1 kZQbjh"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
+            className="Typography__TitleText-sc-19auepv-2 iYDwFP"
             fontSize="1.2rem"
             fontWeight="400"
             letterSpacing="1px"

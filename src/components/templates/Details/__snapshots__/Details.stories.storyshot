@@ -2,25 +2,25 @@
 
 exports[` 1`] = `
 <div
-  className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+  className="Panel__PanelWrapper-sc-48epke-0 dGKuDD"
   height="100%"
   id={null}
   width="100%"
 >
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+    className="Panel__SectionWrapper-sc-48epke-1 ixXAyA Panel__PanelSection-sc-48epke-2 iiaelC"
     id={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 cvBNlB"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id="Details_Header"
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 bxLAtn"
+        className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h5
-          className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
           fontSize="1.15rem"
           fontWeight="500"
           letterSpacing="0.4px"
@@ -29,14 +29,14 @@ exports[` 1`] = `
         </h5>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 gFmZhG"
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <div
-          className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+          className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
           id="menu-popper-Details_Header-Menu"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+            className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
             disabled={false}
             htmlFor={null}
             id="menu-icon-Details_Header-Menu"
@@ -46,13 +46,13 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
               id={null}
               rows={null}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                 color={null}
                 data-icon="ellipsis-v"
                 data-prefix="far"
@@ -77,21 +77,21 @@ exports[` 1`] = `
     </div>
   </section>
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 BJRPj"
+    className="Panel__SectionWrapper-sc-48epke-1 ixXAyA"
     id={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fcneQZ"
       id={null}
       rows={null}
     >
       <section
-        className="Tabs__TabsWrapper-sc-1aqycph-1 cKKFgK"
+        className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
         disabled={false}
         id={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hQAiX Tabs__TabButton-sc-1aqycph-0 dPjtNy"
+          className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Tabs__TabButton-sc-1aqycph-0 dlQYYB"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -101,12 +101,12 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -118,7 +118,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
+          className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -128,12 +128,12 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -145,7 +145,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
+          className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -155,12 +155,12 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -172,7 +172,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
+          className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -182,12 +182,12 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -199,7 +199,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
+          className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -209,12 +209,12 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -227,25 +227,25 @@ exports[` 1`] = `
         </button>
       </section>
       <div
-        className="Legend__Wrapper-sc-70hm4b-1 kNIpkt"
+        className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
         id="Details_Legend"
       >
         <table
-          className="Legend__TableContainer-sc-70hm4b-2 daWzDd"
+          className="Legend__TableContainer-sc-70hm4b-2 cIeWfK"
           id="Details_Legend-table"
         >
           <tbody
-            className="Legend__Body-sc-70hm4b-5"
+            className="Legend__Body-sc-70hm4b-5 kHKUyy"
           >
             <tr
-              className="Legend__Row-sc-70hm4b-4 PXMYc"
+              className="Legend__Row-sc-70hm4b-4 TRyIz"
             >
               <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -255,11 +255,11 @@ exports[` 1`] = `
                 </p>
               </td>
               <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -270,14 +270,14 @@ exports[` 1`] = `
               </td>
             </tr>
             <tr
-              className="Legend__Row-sc-70hm4b-4 PXMYc"
+              className="Legend__Row-sc-70hm4b-4 TRyIz"
             >
               <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -287,11 +287,11 @@ exports[` 1`] = `
                 </p>
               </td>
               <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -302,14 +302,14 @@ exports[` 1`] = `
               </td>
             </tr>
             <tr
-              className="Legend__Row-sc-70hm4b-4 PXMYc"
+              className="Legend__Row-sc-70hm4b-4 TRyIz"
             >
               <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -319,11 +319,11 @@ exports[` 1`] = `
                 </p>
               </td>
               <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -334,14 +334,14 @@ exports[` 1`] = `
               </td>
             </tr>
             <tr
-              className="Legend__Row-sc-70hm4b-4 PXMYc"
+              className="Legend__Row-sc-70hm4b-4 TRyIz"
             >
               <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -351,11 +351,11 @@ exports[` 1`] = `
                 </p>
               </td>
               <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
+                className="Legend__Cell-sc-70hm4b-3 geFmdS"
                 fontSize={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}

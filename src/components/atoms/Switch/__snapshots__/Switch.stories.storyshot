@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Switch__SwitchContainer-sc-1bvlvzt-0 klHrXA"
+  className="Switch__SwitchContainer-sc-1bvlvzt-0 byojpT"
   disabled={false}
   id={null}
   label="Switch"
@@ -10,18 +10,18 @@ exports[` 1`] = `
 >
   <div
     checked={false}
-    className="Switch__StyledSwitch-sc-1bvlvzt-1 bGaMGW"
+    className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
     disabled={false}
     onChange={null}
   >
     <div
       checked={false}
-      className="Switch__Circle-sc-1bvlvzt-2 eLZNxo"
+      className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
       disabled={false}
     />
   </div>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+    className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
     cursor="pointer"
     fontSize="0.8rem"
     fontWeight={400}
@@ -35,12 +35,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
   id={null}
   rows={null}
 >
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 klHrXA"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 byojpT"
     disabled={false}
     id={null}
     label="Selected"
@@ -48,18 +48,18 @@ exports[` 2`] = `
   >
     <div
       checked={true}
-      className="Switch__StyledSwitch-sc-1bvlvzt-1 ipYhZK"
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 bmZUEp"
       disabled={false}
       onChange={null}
     >
       <div
         checked={true}
-        className="Switch__Circle-sc-1bvlvzt-2 dujSma"
+        className="Switch__Circle-sc-1bvlvzt-2 eFFeTd"
         disabled={false}
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -70,7 +70,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 klHrXA"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 byojpT"
     disabled={false}
     id={null}
     label="Unselected"
@@ -78,18 +78,18 @@ exports[` 2`] = `
   >
     <div
       checked={false}
-      className="Switch__StyledSwitch-sc-1bvlvzt-1 bGaMGW"
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
       disabled={false}
       onChange={null}
     >
       <div
         checked={false}
-        className="Switch__Circle-sc-1bvlvzt-2 eLZNxo"
+        className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
         disabled={false}
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -100,7 +100,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 kkHuBv"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 QCDYo"
     disabled={true}
     id={null}
     label="Disabled"
@@ -108,18 +108,18 @@ exports[` 2`] = `
   >
     <div
       checked={false}
-      className="Switch__StyledSwitch-sc-1bvlvzt-1 fOejSn"
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 bhSCQ"
       disabled={true}
       onChange={null}
     >
       <div
         checked={false}
-        className="Switch__Circle-sc-1bvlvzt-2 cBKXXb"
+        className="Switch__Circle-sc-1bvlvzt-2 fPUgbE"
         disabled={true}
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -134,12 +134,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
   id={null}
   rows={null}
 >
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 klHrXA"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 byojpT"
     disabled={false}
     id={null}
     label="Left Aligned"
@@ -147,18 +147,18 @@ exports[` 3`] = `
   >
     <div
       checked={false}
-      className="Switch__StyledSwitch-sc-1bvlvzt-1 bGaMGW"
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
       disabled={false}
       onChange={null}
     >
       <div
         checked={false}
-        className="Switch__Circle-sc-1bvlvzt-2 eLZNxo"
+        className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
         disabled={false}
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -169,7 +169,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 ileWAw"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 gZOOnL"
     disabled={false}
     id={null}
     label="Right Aligned"
@@ -177,18 +177,18 @@ exports[` 3`] = `
   >
     <div
       checked={false}
-      className="Switch__StyledSwitch-sc-1bvlvzt-1 bGaMGW"
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
       disabled={false}
       onChange={null}
     >
       <div
         checked={false}
-        className="Switch__Circle-sc-1bvlvzt-2 eLZNxo"
+        className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
         disabled={false}
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}

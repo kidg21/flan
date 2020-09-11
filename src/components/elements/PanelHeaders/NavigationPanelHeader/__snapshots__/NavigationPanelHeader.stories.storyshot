@@ -9,22 +9,22 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Bar__BarLayout-icfo76-2 cvBNlB"
+    className="Bar__BarLayout-icfo76-2 eIFIfS"
     id="Navigation_Main"
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 gWLVQX"
+      className="Bar__Slot-icfo76-1 bOQKbQ"
     >
       <a
-        className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+        className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
         disabled={null}
         href={null}
         onClick={[Function]}
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-angle-left fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
+          className="svg-inline--fa fa-angle-left fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
           color="link"
           data-icon="angle-left"
           data-prefix="far"
@@ -45,10 +45,10 @@ exports[` 1`] = `
       </a>
     </div>
     <div
-      className="Bar__Slot-icfo76-1 kmFilB"
+      className="Bar__Slot-icfo76-1 bOWYHS"
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
         fontSize="1.15rem"
         fontWeight="500"
         letterSpacing="0.4px"
@@ -57,14 +57,14 @@ exports[` 1`] = `
       </h5>
     </div>
     <div
-      className="Bar__Slot-icfo76-1 gFmZhG"
+      className="Bar__Slot-icfo76-1 kZQbjh"
     >
       <div
-        className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+        className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
         id="menu-popper-Navigation_Main-Menu"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+          className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
           disabled={false}
           htmlFor={null}
           id="menu-icon-Navigation_Main-Menu"
@@ -74,13 +74,13 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
             id={null}
             rows={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="ellipsis-v"
               data-prefix="far"

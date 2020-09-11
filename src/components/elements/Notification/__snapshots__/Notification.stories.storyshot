@@ -11,14 +11,14 @@ exports[` 1`] = `
   <div
     aria-describedby={null}
     aria-labelledby={null}
-    className="Notification__NotificationContainer-sc-1wz6254-1 hKFDLC"
+    className="Notification__NotificationContainer-sc-1wz6254-1 fnnLTZ"
     id={null}
     onAnimationEnd={null}
     onAnimationStart={null}
     onClick={null}
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 hTChzH Card__StyledCardWrapper-sc-1g3s676-3 Notification__ContentWrapper-sc-1wz6254-0"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 GlKcQ Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
       href={null}
       id="storyshots_223"
       media=""
@@ -26,7 +26,7 @@ exports[` 1`] = `
       placeholder="{ Card }"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
         href={null}
         id="storyshots_224"
         media=""
@@ -34,40 +34,41 @@ exports[` 1`] = `
         placeholder="{ Card }"
       >
         <div
-          className="Bar__BarLayout-icfo76-2 AXrfk"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 jNHudO"
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
               id={null}
               rows={null}
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 hytcMk"
-                fontSize="1.2rem"
-                fontWeight="400"
-                letterSpacing="1px"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
               >
                 This is a Standard notification.
-              </h6>
+              </p>
             </section>
           </div>
           <div
-            className="Bar__Slot-icfo76-1 jyMGGC"
+            className="Bar__Slot-icfo76-1 cxljst"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl Banner__Close-sc-6825al-1 juiNFl"
+                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu Banner__Close-sc-6825al-1 cgOoTm"
                 color="link"
                 data-icon="times"
                 data-prefix="far"
@@ -92,7 +93,7 @@ exports[` 1`] = `
     </div>
   </div>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+    className="Button__StyledButton-sc-1v7sls2-0 datRVE"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -102,12 +103,12 @@ exports[` 1`] = `
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+        className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -123,7 +124,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
   href={null}
   id="storyshots_225"
   media=""
@@ -131,21 +132,21 @@ exports[` 2`] = `
   placeholder="{ Card }"
 >
   <div
-    className="Bar__BarLayout-icfo76-2 AXrfk"
+    className="Bar__BarLayout-icfo76-2 eUVQsH"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 gdiuzv"
+      className="Bar__Slot-icfo76-1 boCGaE"
     >
       <div
-        className="Avatar__TagContainer-sc-1vuf9om-2 hbUPJX"
+        className="Avatar__TagContainer-sc-1vuf9om-2 kjDGQc"
         id={null}
         onClick={null}
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+          className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
           color={null}
           data-icon="check"
           data-prefix="far"
@@ -166,29 +167,30 @@ exports[` 2`] = `
       </div>
     </div>
     <div
-      className="Bar__Slot-icfo76-1 kmFilB"
+      className="Bar__Slot-icfo76-1 bOWYHS"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
         id={null}
         rows={null}
       >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 hytcMk"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          fontSize="1rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.5px"
         >
           Your payment method has been updated.
-        </h6>
+        </p>
       </section>
     </div>
     <div
-      className="Bar__Slot-icfo76-1 jyMGGC"
+      className="Bar__Slot-icfo76-1 cxljst"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Banner__Close-sc-6825al-1 juiNFl"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Banner__Close-sc-6825al-1 cgOoTm"
         color={null}
         data-icon="times"
         data-prefix="far"
@@ -213,12 +215,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 hlCUCV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 cHcHPd"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
     id="storyshots_226"
     media=""
@@ -226,21 +228,21 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <div
-      className="Bar__BarLayout-icfo76-2 AXrfk"
+      className="Bar__BarLayout-icfo76-2 eUVQsH"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 gdiuzv"
+        className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 endJKL"
+          className="Avatar__TagContainer-sc-1vuf9om-2 iOFdSY"
           id={null}
           onClick={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+            className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="info"
             data-prefix="fas"
@@ -261,29 +263,30 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 kmFilB"
+        className="Bar__Slot-icfo76-1 bOWYHS"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             The latest version of LandVision is available for update.
-          </h6>
+          </p>
         </section>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 jyMGGC"
+        className="Bar__Slot-icfo76-1 cxljst"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Banner__Close-sc-6825al-1 juiNFl"
+          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Banner__Close-sc-6825al-1 cgOoTm"
           color={null}
           data-icon="times"
           data-prefix="far"
@@ -305,7 +308,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
     id="storyshots_227"
     media=""
@@ -313,21 +316,21 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <div
-      className="Bar__BarLayout-icfo76-2 AXrfk"
+      className="Bar__BarLayout-icfo76-2 eUVQsH"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 gdiuzv"
+        className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 hbUPJX"
+          className="Avatar__TagContainer-sc-1vuf9om-2 kjDGQc"
           id={null}
           onClick={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+            className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="check"
             data-prefix="far"
@@ -348,29 +351,30 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 kmFilB"
+        className="Bar__Slot-icfo76-1 bOWYHS"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             Project has successfully been added to the list.
-          </h6>
+          </p>
         </section>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 jyMGGC"
+        className="Bar__Slot-icfo76-1 cxljst"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Banner__Close-sc-6825al-1 juiNFl"
+          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Banner__Close-sc-6825al-1 cgOoTm"
           color={null}
           data-icon="times"
           data-prefix="far"
@@ -392,7 +396,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
     id="storyshots_228"
     media=""
@@ -400,21 +404,21 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <div
-      className="Bar__BarLayout-icfo76-2 AXrfk"
+      className="Bar__BarLayout-icfo76-2 eUVQsH"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 gdiuzv"
+        className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 eSPFbP"
+          className="Avatar__TagContainer-sc-1vuf9om-2 cMrzfM"
           id={null}
           onClick={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+            className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="exclamation"
             data-prefix="fas"
@@ -435,29 +439,30 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 kmFilB"
+        className="Bar__Slot-icfo76-1 bOWYHS"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             No results returned. Query is too big and needs to be filtered.
-          </h6>
+          </p>
         </section>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 jyMGGC"
+        className="Bar__Slot-icfo76-1 cxljst"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Banner__Close-sc-6825al-1 juiNFl"
+          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Banner__Close-sc-6825al-1 cgOoTm"
           color={null}
           data-icon="times"
           data-prefix="far"
@@ -479,7 +484,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
     id="storyshots_229"
     media=""
@@ -487,21 +492,21 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <div
-      className="Bar__BarLayout-icfo76-2 AXrfk"
+      className="Bar__BarLayout-icfo76-2 eUVQsH"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 gdiuzv"
+        className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 laCJqS"
+          className="Avatar__TagContainer-sc-1vuf9om-2 cNGXUJ"
           id={null}
           onClick={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="times"
             data-prefix="far"
@@ -522,29 +527,30 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 kmFilB"
+        className="Bar__Slot-icfo76-1 bOWYHS"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             Payment did not go through successfully.
-          </h6>
+          </p>
         </section>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 jyMGGC"
+        className="Bar__Slot-icfo76-1 cxljst"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Banner__Close-sc-6825al-1 juiNFl"
+          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Banner__Close-sc-6825al-1 cgOoTm"
           color={null}
           data-icon="times"
           data-prefix="far"
@@ -570,12 +576,12 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 hlCUCV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 cHcHPd"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
     id="storyshots_230"
     media=""
@@ -583,21 +589,21 @@ exports[` 4`] = `
     placeholder="{ Card }"
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gFQRVY"
+      className="Bar__BarLayout-icfo76-2 wJZwX"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 gdiuzv"
+        className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 endJKL"
+          className="Avatar__TagContainer-sc-1vuf9om-2 iOFdSY"
           id={null}
           onClick={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+            className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="info"
             data-prefix="fas"
@@ -618,23 +624,24 @@ exports[` 4`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 kmFilB"
+        className="Bar__Slot-icfo76-1 bOWYHS"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             This service is not available with your plan.
-          </h6>
+          </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
             fontSize="0.875rem"
             fontWeight={400}
             id={null}
@@ -643,7 +650,7 @@ exports[` 4`] = `
             Upgrade to premium to take advantage of this feature.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+            className="Typography__LinkText-sc-19auepv-1 gokaHf"
             disabled={false}
             fontSize="1rem"
             fontWeight={500}
@@ -657,11 +664,11 @@ exports[` 4`] = `
         </section>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 jyMGGC"
+        className="Bar__Slot-icfo76-1 cxljst"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Banner__Close-sc-6825al-1 juiNFl"
+          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Banner__Close-sc-6825al-1 cgOoTm"
           color={null}
           data-icon="times"
           data-prefix="far"
@@ -683,7 +690,7 @@ exports[` 4`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 cNmrXO Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg Banner__StyledBanner-sc-6825al-0 kOVeLH"
     href={null}
     id="storyshots_231"
     media=""
@@ -691,21 +698,21 @@ exports[` 4`] = `
     placeholder="{ Card }"
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gFQRVY"
+      className="Bar__BarLayout-icfo76-2 wJZwX"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 gdiuzv"
+        className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 laCJqS"
+          className="Avatar__TagContainer-sc-1vuf9om-2 cNGXUJ"
           id={null}
           onClick={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="times"
             data-prefix="far"
@@ -726,23 +733,24 @@ exports[` 4`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 kmFilB"
+        className="Bar__Slot-icfo76-1 bOWYHS"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             Payment did not go through successfully.
-          </h6>
+          </p>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
             fontSize="0.875rem"
             fontWeight={400}
             id={null}
@@ -751,7 +759,7 @@ exports[` 4`] = `
             Update payment information in order to complete transaction.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+            className="Typography__LinkText-sc-19auepv-1 gokaHf"
             disabled={false}
             fontSize="1rem"
             fontWeight={500}
@@ -765,11 +773,11 @@ exports[` 4`] = `
         </section>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 jyMGGC"
+        className="Bar__Slot-icfo76-1 cxljst"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Banner__Close-sc-6825al-1 juiNFl"
+          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Banner__Close-sc-6825al-1 cgOoTm"
           color={null}
           data-icon="times"
           data-prefix="far"
