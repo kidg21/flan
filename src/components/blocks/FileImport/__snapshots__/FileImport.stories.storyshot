@@ -2,15 +2,15 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 WobnI"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hfWbVf"
   id="FileImport_Standard"
   rows={null}
 >
   <label
-    className="FileImport__NewLabel-sc-1hxbe60-1 cyFTlZ"
+    className="FileImport__NewLabel-sc-1hxbe60-1 bMnLVm"
   >
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
       fontSize="1rem"
       fontWeight={400}
       id={null}
@@ -19,19 +19,19 @@ exports[` 1`] = `
       Browse File
     </p>
     <input
-      className="FileImport__NewInput-sc-1hxbe60-0 jPFzvE"
+      className="FileImport__NewInput-sc-1hxbe60-0 gxospz"
       onChange={[Function]}
       type="file"
     />
   </label>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
     id="file-textinput-FileImport_Standard_container"
     rows={null}
   >
     <input
       autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+      className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
       cols=""
       disabled={false}
       id="file-textinput-FileImport_Standard"
@@ -53,20 +53,20 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 eiMvGa"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 cHcHPd"
   id={null}
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 WobnI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 hfWbVf"
     id="FileImport_Types"
     rows={null}
   >
     <label
-      className="FileImport__NewLabel-sc-1hxbe60-1 cyFTlZ"
+      className="FileImport__NewLabel-sc-1hxbe60-1 bMnLVm"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -75,19 +75,19 @@ exports[` 2`] = `
         Browse File
       </p>
       <input
-        className="FileImport__NewInput-sc-1hxbe60-0 jPFzvE"
+        className="FileImport__NewInput-sc-1hxbe60-0 gxospz"
         onChange={[Function]}
         type="file"
       />
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
       id="file-textinput-FileImport_Types_container"
       rows={null}
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+        className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
         cols=""
         disabled={false}
         id="file-textinput-FileImport_Types"
