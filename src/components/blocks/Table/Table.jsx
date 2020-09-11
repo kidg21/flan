@@ -93,9 +93,11 @@ export const CellWrapper = styled.div`
       ${(props) => {
     return props.isSortable
       && css`
-        content: "↓";
+        content: "↑";
         position: absolute;
         right: 10%;
+        transform: ${() => { return props.isDescending ? "rotate(-180deg)" : ""; }};
+        transition: all 0.25s ease;
       `;
   }}
     }
@@ -203,20 +205,17 @@ class Table extends Component {
     const row = rows[rowIndex - 1];
     const cellProps = {};
     let cellData = "";
-    // let sortIcon = "↓";
-    // const toggleSortIcon = () => {
-    //   if (sortIcon === "↓") {
-    //     sortIcon = "G";
-    //   } else if (sortIcon === "G") {
-    //     sortIcon = "↓";
-    //   }
-    // };
 
     if (rowIndex === 0) {
       // data column header
+      this.sortState = false;
       cellProps.onClick = (e) => {
-        if (onHeaderClick) onHeaderClick(e, { rowIndex, columnIndex, row });
-        // toggleSortIcon();
+        if (onHeaderClick) {
+          onHeaderClick(e, {
+            rowIndex, columnIndex, row,
+          });
+          this.sortState = !this.sortState;
+        }
       };
       cellProps.onMouseOver = (e) => {
         if (onHeaderMouseOver) {
@@ -300,14 +299,14 @@ class Table extends Component {
           parent={parent}
           rowIndex={rowIndex}
         >
-          <CellWrapper style={style} {...cellProps}>
+          <CellWrapper style={style} isDescending={this.sortState} {...cellProps}>
             {cellData}
           </CellWrapper>
         </CellMeasurer>
       );
     }
     return (
-      <CellWrapper style={style} {...cellProps}>
+      <CellWrapper style={style} isDescending={this.sortState} {...cellProps}>
         {cellData}
       </CellWrapper>
     );
