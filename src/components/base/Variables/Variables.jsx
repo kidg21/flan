@@ -178,6 +178,7 @@ export const DMPTheme = {
     selectedDark: interaction.selectedDark,
     success: colors.green100,
     warning: colors.orange80,
+    neutral: colors.grey20,
   },
   text: {
     alert: colors.red80,
