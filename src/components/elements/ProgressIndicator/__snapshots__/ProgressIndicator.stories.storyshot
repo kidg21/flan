@@ -2,15 +2,15 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 dJfRqA ProgressIndicator__ProgressSection-sc-1kcvu29-0 bczQwI"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cIDgbj ProgressIndicator__ProgressSection-sc-1kcvu29-0 CibKn"
   id={null}
   rows={null}
 >
   <div
-    className="ProgressIndicator__Container-sc-1kcvu29-2 hXjBRO"
+    className="ProgressIndicator__Container-sc-1kcvu29-2 dOobnp"
   >
     <div
-      className="ProgressIndicator__BarItem-sc-1kcvu29-1 dIITpZ"
+      className="ProgressIndicator__BarItem-sc-1kcvu29-1 iFSIRC"
       id={null}
       style={
         Object {
@@ -20,7 +20,7 @@ exports[` 1`] = `
     />
   </div>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+    className="Typography__Paragraph-sc-19auepv-3 dBAreK"
     fontSize="1rem"
     fontWeight={400}
     id={null}
