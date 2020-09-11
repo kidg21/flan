@@ -10,9 +10,6 @@ import {
   CellMeasurerCache,
   InfiniteLoader,
 } from "react-virtualized";
-import Grid from "layout/Grid";
-import Text from "base/Typography";
-import Icon from "atoms/Icon";
 
 export const MultiGridWrapper = styled.div`
   width: 100%;
