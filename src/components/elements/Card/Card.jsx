@@ -250,7 +250,7 @@ CardSection.propTypes = {
   isInverse: PropTypes.bool,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  variant: PropTypes.oneOf(["", ...backgroundColors]),
+  variant: PropTypes.oneOf([""].concat(backgroundColors)),
 };
 CardSection.defaultProps = {
   children: null,
