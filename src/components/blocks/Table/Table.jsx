@@ -108,7 +108,9 @@ export const CellWrapper = styled.div`
       background-color: ${() => { return props.theme.background.light; }};
     `;
   }}
-  &:hover {
+  /* TODO: Get Active Sort /  Ascending/Descending sort order working */
+  /* Hovering over a sortable column displays the sort icon */
+  /* &:hover {
     &:after {
       ${(props) => {
     return props.isSortable
@@ -121,7 +123,7 @@ export const CellWrapper = styled.div`
       `;
   }}
     }
-  }
+  } */
 `;
 
 function _containedInRowCol(cellRowCol, row, col) {
@@ -228,13 +230,11 @@ class Table extends Component {
 
     if (rowIndex === 0) {
       // data column header
-      this.sortState = false;
       cellProps.onClick = (e) => {
         if (onHeaderClick) {
           onHeaderClick(e, {
             rowIndex, columnIndex, row,
           });
-          this.sortState = !this.sortState;
         }
       };
       cellProps.onMouseOver = (e) => {
@@ -259,12 +259,6 @@ class Table extends Component {
       cellData = headers[columnIndex].label || "";
       if (headers[columnIndex].sortable) {
         cellProps.isSortable = true;
-        // cellData = (
-        //   <Grid columns="auto .5fr" align="center">
-        //     <Text text={cellData} />
-        //     <Icon icon="down" size="sm" />
-        //   </Grid>
-        // );
       }
       // if (headers[columnIndex].id === sortColumnId) {
       //   const arrow = sortDirection ? "up" : "down";
@@ -326,14 +320,14 @@ class Table extends Component {
           parent={parent}
           rowIndex={rowIndex}
         >
-          <CellWrapper style={style} isDescending={this.sortState} {...cellProps}>
+          <CellWrapper style={style} {...cellProps}>
             {cellData}
           </CellWrapper>
         </CellMeasurer>
       );
     }
     return (
-      <CellWrapper style={style} isDescending={this.sortState} {...cellProps}>
+      <CellWrapper style={style} {...cellProps}>
         {cellData}
       </CellWrapper>
     );
