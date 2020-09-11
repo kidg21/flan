@@ -178,6 +178,7 @@ export const DMPTheme = {
     selectedDark: interaction.selectedDark,
     success: colors.green100,
     warning: colors.orange80,
+    neutral: colors.grey20,
   },
   text: {
     alert: colors.red80,
@@ -272,6 +273,7 @@ export const darkTheme = {
     selectedDark: interaction.selecteDark,
     success: colors.green60,
     warning: colors.orange60,
+    neutral: colors.grey60,
   },
   text: {
     alert: colors.red20,
@@ -329,6 +331,10 @@ export const darkTheme = {
     warning100: colors.orange20,
   },
 };
+
+export const textColors = Object.keys(DMPTheme.text);
+export const backgroundColors = Object.keys(DMPTheme.background);
+export const paletteColors = Object.keys(DMPTheme.palette);
 
 export const Darken = css`
   filter: brightness(0.90) saturate(1.25) contrast(1.1);

@@ -18,6 +18,7 @@ import Menu from "blocks/Menu";
 import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
+import { backgroundColors } from "Variables";
 import CardWrapper from "./CardWrapper.jsx";
 
 const LinkedWrapper = styled.a`
@@ -247,7 +248,7 @@ CardSection.propTypes = {
   isInverse: PropTypes.bool,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  variant: PropTypes.oneOf(["", "info", "success", "warning", "alert", "light"]),
+  variant: PropTypes.oneOf(["", ...backgroundColors]),
 };
 CardSection.defaultProps = {
   children: null,
