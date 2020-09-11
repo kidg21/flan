@@ -59,35 +59,43 @@ export const CellWrapper = styled.div`
   align-items: center;
   padding: 0.5em 1em;
   color: ${(props) => {
-    if (props.isHeader) {
-      return props.theme.text.inverse;
-    }
-    if (props.isSelected) {
-    }
     return props.theme.text.primary;
   }};
-  font-weight: ${(props) => {
-    return props.isHeader ? "500" : "400";
+  font-family: ${(props) => {
+    return props.theme.typography.secondary;
   }};
-  font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
+  font-weight: 400;
   border-bottom: ${(props) => {
     return `1px solid ${props.theme.palette.neutral40}`;
   }};
   background-color: ${(props) => {
-    if (props.isHeader) {
-      return props.theme.palette.brand1;
-    }
-    if (props.isHighlighted) {
-      return props.theme.palette.neutral20;
-    }
-    if (props.isSelected) {
-      return props.theme.background.light;
-    }
     return props.theme.background.default;
   }};
-  cursor: ${(props) => {
-    return props.isSortable ? "pointer" : "";
-  }};
+  /* Table Headers */
+  ${(props) => {
+    return props.isHeader
+      && css`
+      font-family: ${() => { return props.theme.typography.primary; }};
+      font-weight: 600;
+      color: ${() => { return props.theme.text.secondary; }};
+      font-size: 0.9em;
+      letter-spacing: 1px;
+    `;
+  }}
+  /* Highlighed Rows */
+  ${(props) => {
+    return props.isHighlighted
+      && css`
+      background-color: ${() => { return props.theme.palette.neutral20; }};
+    `;
+  }}
+  /* Selected Rows */
+  ${(props) => {
+    return props.isSelected
+      && css`
+      background-color: ${() => { return props.theme.background.light; }};
+    `;
+  }}
   &:hover {
     &:after {
       ${(props) => {
