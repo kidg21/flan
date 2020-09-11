@@ -59,23 +59,27 @@ exports[` 1`] = `
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="login-email_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Email
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Email
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="login-email"
@@ -93,23 +97,27 @@ exports[` 1`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="login-password_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Password
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Password
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="login-password"
@@ -288,23 +296,27 @@ exports[` 2`] = `
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="registration-email_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Email
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Email
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="registration-email"
@@ -322,23 +334,27 @@ exports[` 2`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="registration-password_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Password
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Password
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="registration-password"
@@ -356,23 +372,27 @@ exports[` 2`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="registration-confirm-password_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Confirm Password
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Confirm Password
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="registration-confirm-password"
@@ -492,23 +512,27 @@ exports[` 3`] = `
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="reset-email_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Email
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Email
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="reset-email"
@@ -751,23 +775,27 @@ exports[` 5`] = `
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="new-email_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Confirm Email
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Confirm Email
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="new-email"
@@ -785,23 +813,27 @@ exports[` 5`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="new-password_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Password
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Password
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="new-password"
@@ -819,23 +851,27 @@ exports[` 5`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="new-confirm_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Confirm Password
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Confirm Password
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="new-confirm"

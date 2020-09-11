@@ -72,14 +72,14 @@ exports[` 1`] = `
         <div
           className="Bar__Slot-icfo76-1 bKkRmK"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Card Title
-          </h4>
+          </h5>
           <p
             className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
             fontSize="1rem"
@@ -208,7 +208,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 cdQuS"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 isVkit"
   id={null}
   rows={null}
 >
@@ -241,14 +241,14 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Card Title
-          </h4>
+          </h5>
           <p
             className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
             fontSize="1rem"
@@ -283,14 +283,14 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Card Title
-          </h4>
+          </h5>
           <p
             className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
             fontSize="1rem"
@@ -359,14 +359,14 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 bKkRmK"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Card Title
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -437,14 +437,14 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 bKkRmK"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Card Title
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -525,14 +525,14 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Card Title
-          </h4>
+          </h5>
           <p
             className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
             fontSize="1rem"
@@ -647,14 +647,14 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Card Title
-          </h4>
+          </h5>
           <p
             className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
             fontSize="1rem"
@@ -782,7 +782,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 cdQuS"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 isVkit"
   id={null}
   rows={null}
 >

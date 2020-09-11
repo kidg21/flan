@@ -211,7 +211,7 @@ exports[` 1`] = `
               id="Menu 1_body"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 bsfuqx"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 cVNHJm"
                 id={null}
                 rows={null}
               >
@@ -239,14 +239,14 @@ exports[` 1`] = `
                         <a
                           className="Card__LinkedWrapper-sc-1g3s676-0 rzMLn"
                         >
-                          <h4
-                            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-                            fontSize="1.35rem"
-                            fontWeight="400"
-                            letterSpacing="0px"
+                          <h5
+                            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                            fontSize="1.15rem"
+                            fontWeight="500"
+                            letterSpacing="0.4px"
                           >
                             Record 1
-                          </h4>
+                          </h5>
                           <p
                             className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                             fontSize="1rem"
@@ -325,14 +325,14 @@ exports[` 1`] = `
                         <a
                           className="Card__LinkedWrapper-sc-1g3s676-0 rzMLn"
                         >
-                          <h4
-                            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-                            fontSize="1.35rem"
-                            fontWeight="400"
-                            letterSpacing="0px"
+                          <h5
+                            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                            fontSize="1.15rem"
+                            fontWeight="500"
+                            letterSpacing="0.4px"
                           >
                             Record 2
-                          </h4>
+                          </h5>
                           <p
                             className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                             fontSize="1rem"
@@ -421,14 +421,14 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 kSFTkF"
                     >
-                      <h4
-                        className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-                        fontSize="1.35rem"
-                        fontWeight="400"
-                        letterSpacing="0px"
+                      <h5
+                        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                        fontSize="1.15rem"
+                        fontWeight="500"
+                        letterSpacing="0.4px"
                       >
                         Record 1
-                      </h4>
+                      </h5>
                       <p
                         className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                         fontSize="1rem"
@@ -468,23 +468,27 @@ exports[` 1`] = `
                       rows={null}
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                         id="firstName_container"
                         rows={null}
                       >
-                        <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                          cursor="pointer"
-                          fontSize="0.875rem"
-                          fontWeight={400}
-                          htmlFor={null}
-                          letterSpacing=".5px"
+                        <section
+                          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                         >
-                          Text Input
-                        </label>
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            cursor="pointer"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Text Input
+                          </label>
+                        </section>
                         <input
                           autoComplete="off"
-                          className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                           cols=""
                           disabled={false}
                           id="firstName"
@@ -512,23 +516,27 @@ exports[` 1`] = `
                         </p>
                       </section>
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                         id="lastName_container"
                         rows={null}
                       >
-                        <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                          cursor="pointer"
-                          fontSize="0.875rem"
-                          fontWeight={400}
-                          htmlFor={null}
-                          letterSpacing=".5px"
+                        <section
+                          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                         >
-                          Text Input
-                        </label>
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            cursor="pointer"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Text Input
+                          </label>
+                        </section>
                         <input
                           autoComplete="off"
-                          className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                           cols=""
                           disabled={false}
                           id="lastName"
@@ -556,23 +564,27 @@ exports[` 1`] = `
                         </p>
                       </section>
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                         id="lastName_container"
                         rows={null}
                       >
-                        <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                          cursor="pointer"
-                          fontSize="0.875rem"
-                          fontWeight={400}
-                          htmlFor={null}
-                          letterSpacing=".5px"
+                        <section
+                          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                         >
-                          Text Area
-                        </label>
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            cursor="pointer"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing=".5px"
+                          >
+                            Text Area
+                          </label>
+                        </section>
                         <textarea
                           autoComplete="off"
-                          className="TextInput__Input-sc-1fep8p8-2 GmNGv"
+                          className="TextInput__Input-sc-1fep8p8-3 iOiNOj"
                           cols=""
                           disabled={false}
                           id="lastName"
@@ -804,17 +816,17 @@ exports[` 1`] = `
                         </section>
                       </section>
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
                         id={null}
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                          className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                           cursor="pointer"
-                          fontSize="0.75em"
+                          fontSize="0.8rem"
                           fontWeight={400}
                           htmlFor={null}
-                          letterSpacing="0.4px"
+                          letterSpacing="1px"
                         >
                           Multi-Select
                         </label>
@@ -832,7 +844,7 @@ exports[` 1`] = `
                               className=" css-g1d714-ValueContainer"
                             >
                               <div
-                                className=" css-1m79im8-placeholder"
+                                className=" css-1yfxegp-placeholder"
                               >
                                 Choose One Or More...
                               </div>
@@ -1264,14 +1276,14 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Create Job
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -1296,23 +1308,27 @@ exports[` 2`] = `
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_93_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                Job Number
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Job Number
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_93"
@@ -1331,23 +1347,27 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_94_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                Job Name
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Job Name
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_94"
@@ -1387,23 +1407,27 @@ exports[` 2`] = `
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_95_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                Address
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Address
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_95"
@@ -1421,23 +1445,27 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_96_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                City
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  City
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_96"
@@ -1455,17 +1483,17 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                 cursor="pointer"
-                fontSize="0.75em"
+                fontSize="0.8rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing="1px"
               >
                 State
               </label>
@@ -1483,7 +1511,7 @@ exports[` 2`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1m79im8-placeholder"
+                      className=" css-1yfxegp-placeholder"
                     >
                       
                     </div>
@@ -1575,23 +1603,27 @@ exports[` 2`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_97_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                Zip
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Zip
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_97"
@@ -1609,17 +1641,17 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                 cursor="pointer"
-                fontSize="0.75em"
+                fontSize="0.8rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing="1px"
               >
                 Property Type
               </label>
@@ -1637,7 +1669,7 @@ exports[` 2`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1m79im8-placeholder"
+                      className=" css-1yfxegp-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -1727,17 +1759,17 @@ exports[` 2`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                 cursor="pointer"
-                fontSize="0.75em"
+                fontSize="0.8rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing="1px"
               >
                 Property Sub-Type
               </label>
@@ -1755,7 +1787,7 @@ exports[` 2`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1m79im8-placeholder"
+                      className=" css-1yfxegp-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -2246,14 +2278,14 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Create RFP
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -2365,23 +2397,27 @@ exports[` 4`] = `
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_100_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                RFP Number
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  RFP Number
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_100"
@@ -2400,23 +2436,27 @@ exports[` 4`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_101_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                RFP Name
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  RFP Name
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_101"
@@ -2456,23 +2496,27 @@ exports[` 4`] = `
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_102_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                Address
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Address
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_102"
@@ -2490,23 +2534,27 @@ exports[` 4`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_103_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                City
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  City
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_103"
@@ -2524,17 +2572,17 @@ exports[` 4`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                 cursor="pointer"
-                fontSize="0.75em"
+                fontSize="0.8rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing="1px"
               >
                 State
               </label>
@@ -2552,7 +2600,7 @@ exports[` 4`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1m79im8-placeholder"
+                      className=" css-1yfxegp-placeholder"
                     >
                       
                     </div>
@@ -2644,23 +2692,27 @@ exports[` 4`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="storyshots_104_container"
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                cursor="pointer"
-                fontSize="0.875rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing=".5px"
+              <section
+                className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
-                Zip
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                >
+                  Zip
+                </label>
+              </section>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="storyshots_104"
@@ -2678,17 +2730,17 @@ exports[` 4`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                 cursor="pointer"
-                fontSize="0.75em"
+                fontSize="0.8rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing="1px"
               >
                 Property Type
               </label>
@@ -2706,7 +2758,7 @@ exports[` 4`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1m79im8-placeholder"
+                      className=" css-1yfxegp-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -2796,17 +2848,17 @@ exports[` 4`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                 cursor="pointer"
-                fontSize="0.75em"
+                fontSize="0.8rem"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0.4px"
+                letterSpacing="1px"
               >
                 Property Sub-Type
               </label>
@@ -2824,7 +2876,7 @@ exports[` 4`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1m79im8-placeholder"
+                      className=" css-1yfxegp-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -3016,14 +3068,14 @@ exports[` 5`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Create RFP
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -3150,23 +3202,27 @@ exports[` 5`] = `
                 rows={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_106_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    Client Name
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Client Name
+                    </label>
+                  </section>
                   <input
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                    className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                     cols=""
                     disabled={false}
                     id="storyshots_106"
@@ -3185,23 +3241,27 @@ exports[` 5`] = `
                   />
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_107_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    Client Company
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Client Company
+                    </label>
+                  </section>
                   <input
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                    className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                     cols=""
                     disabled={false}
                     id="storyshots_107"
@@ -3219,23 +3279,27 @@ exports[` 5`] = `
                   />
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_108_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    Address
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Address
+                    </label>
+                  </section>
                   <input
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                    className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                     cols=""
                     disabled={false}
                     id="storyshots_108"
@@ -3253,23 +3317,27 @@ exports[` 5`] = `
                   />
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_109_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    City
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      City
+                    </label>
+                  </section>
                   <input
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                    className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                     cols=""
                     disabled={false}
                     id="storyshots_109"
@@ -3297,17 +3365,17 @@ exports[` 5`] = `
                 rows={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                     cursor="pointer"
-                    fontSize="0.75em"
+                    fontSize="0.8rem"
                     fontWeight={400}
                     htmlFor={null}
-                    letterSpacing="0.4px"
+                    letterSpacing="1px"
                   >
                     State
                   </label>
@@ -3325,7 +3393,7 @@ exports[` 5`] = `
                         className=" css-g1d714-ValueContainer"
                       >
                         <div
-                          className=" css-1m79im8-placeholder"
+                          className=" css-1yfxegp-placeholder"
                         >
                           
                         </div>
@@ -3417,23 +3485,27 @@ exports[` 5`] = `
                   </div>
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_110_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    Zip
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Zip
+                    </label>
+                  </section>
                   <input
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                    className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                     cols=""
                     disabled={false}
                     id="storyshots_110"
@@ -3472,23 +3544,27 @@ exports[` 5`] = `
                 rows={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_111_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    Scope of Work
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Scope of Work
+                    </label>
+                  </section>
                   <input
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                    className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                     cols=""
                     disabled={false}
                     id="storyshots_111"
@@ -3512,12 +3588,12 @@ exports[` 5`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+                    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
                     cursor="pointer"
-                    fontSize="0.75em"
+                    fontSize="0.8rem"
                     fontWeight={400}
                     htmlFor={null}
-                    letterSpacing="0.4px"
+                    letterSpacing="1px"
                   >
                     Bid Amount
                   </label>
@@ -3527,13 +3603,13 @@ exports[` 5`] = `
                     rows={null}
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                       id="ID 1_container"
                       rows={null}
                     >
                       <input
                         autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                        className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                         cols=""
                         disabled={false}
                         id="ID 1"
@@ -3551,7 +3627,7 @@ exports[` 5`] = `
                       />
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
                       id={null}
                       rows={null}
                     >
@@ -3663,23 +3739,27 @@ exports[` 5`] = `
                   </section>
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_112_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    Turnaround Time
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Turnaround Time
+                    </label>
+                  </section>
                   <input
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                    className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                     cols=""
                     disabled={false}
                     id="storyshots_112"
@@ -3697,23 +3777,27 @@ exports[` 5`] = `
                   />
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_113_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    Expected Delivery Date
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Expected Delivery Date
+                    </label>
+                  </section>
                   <input
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                    className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                     cols=""
                     disabled={false}
                     id="storyshots_113"
@@ -3733,23 +3817,27 @@ exports[` 5`] = `
                   />
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                   id="storyshots_114_container"
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                    cursor="pointer"
-                    fontSize="0.875rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing=".5px"
+                  <section
+                    className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
-                    Additional Notes
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing=".5px"
+                    >
+                      Additional Notes
+                    </label>
+                  </section>
                   <textarea
                     autoComplete="off"
-                    className="TextInput__Input-sc-1fep8p8-2 GmNGv"
+                    className="TextInput__Input-sc-1fep8p8-3 iOiNOj"
                     cols=""
                     disabled={false}
                     id="storyshots_114"
@@ -3871,14 +3959,14 @@ exports[` 6`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Create RFP
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -4122,7 +4210,7 @@ exports[` 7`] = `
     id="storyshots_116"
   >
     <div
-      className="Avatar__TagContainer-sc-1vuf9om-2 enybuo"
+      className="Avatar__TagContainer-sc-1vuf9om-2 jdLgeC"
       id={null}
       onClick={null}
     >
@@ -4414,7 +4502,7 @@ exports[` 8`] = `
                 </h5>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
                 id={null}
                 rows={null}
               >
@@ -4432,7 +4520,7 @@ exports[` 8`] = `
                       className=" css-g1d714-ValueContainer"
                     >
                       <div
-                        className=" css-1m79im8-placeholder"
+                        className=" css-1yfxegp-placeholder"
                       />
                       <div
                         className="css-b8ldur-Input"
@@ -4554,12 +4642,12 @@ exports[` 8`] = `
                 rows={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4569,9 +4657,9 @@ exports[` 8`] = `
                     Job Number
                   </label>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                     fontSize="1rem"
-                    fontWeight={600}
+                    fontWeight={400}
                     id={null}
                     letterSpacing="0.5px"
                   >
@@ -4579,12 +4667,12 @@ exports[` 8`] = `
                   </p>
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4594,9 +4682,9 @@ exports[` 8`] = `
                     Job Name
                   </label>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                     fontSize="1rem"
-                    fontWeight={600}
+                    fontWeight={400}
                     id={null}
                     letterSpacing="0.5px"
                   >
@@ -4623,12 +4711,12 @@ exports[` 8`] = `
                 rows={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4638,9 +4726,9 @@ exports[` 8`] = `
                     Address
                   </label>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                     fontSize="1rem"
-                    fontWeight={600}
+                    fontWeight={400}
                     id={null}
                     letterSpacing="0.5px"
                   >
@@ -4648,12 +4736,12 @@ exports[` 8`] = `
                   </p>
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4663,9 +4751,9 @@ exports[` 8`] = `
                     City
                   </label>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                     fontSize="1rem"
-                    fontWeight={600}
+                    fontWeight={400}
                     id={null}
                     letterSpacing="0.5px"
                   >
@@ -4673,12 +4761,12 @@ exports[` 8`] = `
                   </p>
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4688,9 +4776,9 @@ exports[` 8`] = `
                     State
                   </label>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                     fontSize="1rem"
-                    fontWeight={600}
+                    fontWeight={400}
                     id={null}
                     letterSpacing="0.5px"
                   >
@@ -4698,12 +4786,12 @@ exports[` 8`] = `
                   </p>
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4713,9 +4801,9 @@ exports[` 8`] = `
                     Zip
                   </label>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                     fontSize="1rem"
-                    fontWeight={600}
+                    fontWeight={400}
                     id={null}
                     letterSpacing="0.5px"
                   >
@@ -4723,12 +4811,12 @@ exports[` 8`] = `
                   </p>
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4738,9 +4826,9 @@ exports[` 8`] = `
                     Property Type
                   </label>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                     fontSize="1rem"
-                    fontWeight={600}
+                    fontWeight={400}
                     id={null}
                     letterSpacing="0.5px"
                   >
@@ -4748,12 +4836,12 @@ exports[` 8`] = `
                   </p>
                 </section>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4763,9 +4851,9 @@ exports[` 8`] = `
                     Property Sub-Type
                   </label>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                     fontSize="1rem"
-                    fontWeight={600}
+                    fontWeight={400}
                     id={null}
                     letterSpacing="0.5px"
                   >
@@ -4942,7 +5030,7 @@ exports[` 9`] = `
             </h5>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
             id={null}
             rows={null}
           >
@@ -4960,7 +5048,7 @@ exports[` 9`] = `
                   className=" css-g1d714-ValueContainer"
                 >
                   <div
-                    className=" css-1m79im8-placeholder"
+                    className=" css-1yfxegp-placeholder"
                   />
                   <div
                     className="css-b8ldur-Input"
@@ -5152,12 +5240,12 @@ exports[` 9`] = `
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5167,9 +5255,9 @@ exports[` 9`] = `
                 Job Number
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5177,12 +5265,12 @@ exports[` 9`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5192,9 +5280,9 @@ exports[` 9`] = `
                 Job Name
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5221,12 +5309,12 @@ exports[` 9`] = `
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5236,9 +5324,9 @@ exports[` 9`] = `
                 Address
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5246,12 +5334,12 @@ exports[` 9`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5261,9 +5349,9 @@ exports[` 9`] = `
                 City
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5271,12 +5359,12 @@ exports[` 9`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5286,9 +5374,9 @@ exports[` 9`] = `
                 State
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5296,12 +5384,12 @@ exports[` 9`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5311,9 +5399,9 @@ exports[` 9`] = `
                 Zip
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5321,12 +5409,12 @@ exports[` 9`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5336,9 +5424,9 @@ exports[` 9`] = `
                 Property Type
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5346,12 +5434,12 @@ exports[` 9`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5361,9 +5449,9 @@ exports[` 9`] = `
                 Property Sub-Type
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5497,7 +5585,7 @@ exports[` 10`] = `
             </h5>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
             id={null}
             rows={null}
           >
@@ -5515,7 +5603,7 @@ exports[` 10`] = `
                   className=" css-g1d714-ValueContainer"
                 >
                   <div
-                    className=" css-1m79im8-placeholder"
+                    className=" css-1yfxegp-placeholder"
                   />
                   <div
                     className="css-b8ldur-Input"
@@ -5707,12 +5795,12 @@ exports[` 10`] = `
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5722,9 +5810,9 @@ exports[` 10`] = `
                 Client Name
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5732,12 +5820,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5747,9 +5835,9 @@ exports[` 10`] = `
                 Client Company
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5757,12 +5845,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5772,9 +5860,9 @@ exports[` 10`] = `
                 Address
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5782,12 +5870,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5797,9 +5885,9 @@ exports[` 10`] = `
                 City
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5807,12 +5895,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5822,9 +5910,9 @@ exports[` 10`] = `
                 State
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5832,12 +5920,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5847,9 +5935,9 @@ exports[` 10`] = `
                 Zip
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5876,12 +5964,12 @@ exports[` 10`] = `
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5891,9 +5979,9 @@ exports[` 10`] = `
                 Scope of Work
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5901,12 +5989,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5916,9 +6004,9 @@ exports[` 10`] = `
                 Bid Amount
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5926,12 +6014,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5941,9 +6029,9 @@ exports[` 10`] = `
                 Turn Around Time
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5951,12 +6039,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5966,9 +6054,9 @@ exports[` 10`] = `
                 Expected Response Date
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >
@@ -5976,12 +6064,12 @@ exports[` 10`] = `
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5991,9 +6079,9 @@ exports[` 10`] = `
                 Additional Notes
               </label>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                 fontSize="1rem"
-                fontWeight={600}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0.5px"
               >

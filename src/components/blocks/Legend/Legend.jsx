@@ -19,9 +19,6 @@ const Wrapper = styled.div`
 
 const TableContainer = styled.table`
   width: 100%;
-  color: ${(props) => {
-    return props.theme.text.primary;
-  }};
   table-layout: fixed;
   border-collapse: collapse;
   &:empty {
@@ -60,12 +57,12 @@ const Row = styled.tr`
   margin: 0.5rem;
   ${Cell}:first-of-type {
       color: ${(props) => {
-    return props.theme.text.secondary;
+    return props.theme.text.light;
   }};
   }
   ${Cell}:last-of-type {
         color: ${(props) => {
-    return props.theme.text.primary;
+    return props.theme.text.dark;
   }};
   }
 `;

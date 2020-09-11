@@ -71,23 +71,27 @@ exports[` 1`] = `
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="firstName_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              First Name
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                First Name
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="firstName"
@@ -114,23 +118,27 @@ exports[` 1`] = `
             </p>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="lastName_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Last Name
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Last Name
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="lastName"
@@ -370,17 +378,17 @@ exports[` 1`] = `
             </section>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
               cursor="pointer"
-              fontSize="0.75em"
+              fontSize="0.8rem"
               fontWeight={400}
               htmlFor={null}
-              letterSpacing="0.4px"
+              letterSpacing="1px"
             >
               Multi-Select
             </label>
@@ -398,7 +406,7 @@ exports[` 1`] = `
                   className=" css-g1d714-ValueContainer"
                 >
                   <div
-                    className=" css-1m79im8-placeholder"
+                    className=" css-1yfxegp-placeholder"
                   >
                     Choose One Or More...
                   </div>

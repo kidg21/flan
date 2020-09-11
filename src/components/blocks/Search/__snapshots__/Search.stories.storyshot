@@ -51,13 +51,13 @@ exports[` 1`] = `
       </section>
     </button>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD Search__SearchTextInput-sey9om-2 fHrQmv"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
       id="Search_Standard-search-bar_container"
       rows={null}
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+        className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
         cols=""
         disabled={false}
         id="Search_Standard-search-bar"
@@ -137,13 +137,13 @@ exports[` 2`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD Search__SearchTextInput-sey9om-2 fHrQmv"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
         id="Suggestions-search-bar_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
           cols=""
           disabled={false}
           id="Suggestions-search-bar"
@@ -168,7 +168,7 @@ exports[` 2`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 cRpQiw"
+        className="Container__BoxContainer-sc-1i4fzzd-1 gSzhSs"
         height=""
         id="Suggestions-results-container"
       >
@@ -352,13 +352,13 @@ exports[` 3`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD Search__SearchTextInput-sey9om-2 fHrQmv"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
         id="Suggestions_More-search-bar_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
           cols=""
           disabled={false}
           id="Suggestions_More-search-bar"
@@ -383,7 +383,7 @@ exports[` 3`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 cRpQiw"
+        className="Container__BoxContainer-sc-1i4fzzd-1 gSzhSs"
         height=""
         id="Suggestions_More-results-container"
       >
@@ -884,13 +884,13 @@ exports[` 4`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD Search__SearchTextInput-sey9om-2 fHrQmv"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
         id="Search_Offline-search-bar_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
           cols=""
           disabled={false}
           id="Search_Offline-search-bar"
@@ -915,7 +915,7 @@ exports[` 4`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 cRpQiw"
+        className="Container__BoxContainer-sc-1i4fzzd-1 gSzhSs"
         height=""
         id="Search_Offline-results-container"
       >
@@ -1032,13 +1032,13 @@ exports[` 5`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD Search__SearchTextInput-sey9om-2 fHrQmv"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
         id="Search_BadConnection-search-bar_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
           cols=""
           disabled={false}
           id="Search_BadConnection-search-bar"
@@ -1063,7 +1063,7 @@ exports[` 5`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 cRpQiw"
+        className="Container__BoxContainer-sc-1i4fzzd-1 gSzhSs"
         height=""
         id="Search_BadConnection-results-container"
       >

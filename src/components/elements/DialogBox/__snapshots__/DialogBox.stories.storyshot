@@ -22,14 +22,14 @@ exports[` 1`] = `
       <div
         className="Bar__Slot-icfo76-1 kSFTkF"
       >
-        <h4
-          className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-          fontSize="1.35rem"
-          fontWeight="400"
-          letterSpacing="0px"
+        <h5
+          className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
         >
           RFP Accepted - Job Added
-        </h4>
+        </h5>
       </div>
     </div>
   </section>
@@ -176,14 +176,14 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 kSFTkF"
             >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
               >
                 Are you sure?
-              </h4>
+              </h5>
             </div>
           </div>
         </section>
@@ -324,14 +324,14 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 kSFTkF"
             >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
               >
                 Reset Settings?
-              </h4>
+              </h5>
             </div>
           </div>
         </section>
@@ -472,14 +472,14 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 kSFTkF"
             >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
               >
                 Reset Settings?
-              </h4>
+              </h5>
             </div>
           </div>
         </section>
@@ -625,14 +625,14 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 kSFTkF"
             >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
               >
                 Reset Settings?
-              </h4>
+              </h5>
             </div>
           </div>
         </section>
@@ -773,14 +773,14 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 kSFTkF"
             >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-                fontSize="1.35rem"
-                fontWeight="400"
-                letterSpacing="0px"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
               >
                 Reset Settings?
-              </h4>
+              </h5>
             </div>
           </div>
         </section>
@@ -873,7 +873,7 @@ Array [
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 hlCUCV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 eiMvGa"
   id={null}
   rows={null}
 >
@@ -898,14 +898,14 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Default Dialog
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -1012,14 +1012,14 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Successful Dialog
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -1126,14 +1126,14 @@ exports[` 4`] = `
         <div
           className="Bar__Slot-icfo76-1 kSFTkF"
         >
-          <h4
-            className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-            fontSize="1.35rem"
-            fontWeight="400"
-            letterSpacing="0px"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
           >
             Error Dialog
-          </h4>
+          </h5>
         </div>
       </div>
     </section>

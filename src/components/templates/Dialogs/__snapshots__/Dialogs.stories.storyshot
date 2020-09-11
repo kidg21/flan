@@ -335,14 +335,14 @@ exports[` 2`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Share
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -367,23 +367,27 @@ exports[` 2`] = `
               rows={null}
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                 id="storyshots_63_container"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hjbsSu"
-                  cursor="pointer"
-                  fontSize="0.875rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <section
+                  className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                 >
-                  Username
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hjbsSu"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Username
+                  </label>
+                </section>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                  className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                   cols=""
                   disabled={false}
                   id="storyshots_63"
@@ -401,23 +405,27 @@ exports[` 2`] = `
                 />
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                 id="storyshots_64_container"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                  cursor="pointer"
-                  fontSize="0.875rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <section
+                  className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                 >
-                  Email
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Email
+                  </label>
+                </section>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                  className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                   cols=""
                   disabled={false}
                   id="storyshots_64"
@@ -548,14 +556,14 @@ exports[` 3`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Attachments 
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -1193,14 +1201,14 @@ exports[` 4`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Add File
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -1240,13 +1248,13 @@ exports[` 4`] = `
               />
             </label>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
               id="file-textinput-FileImport_Standard_container"
               rows={null}
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                 cols=""
                 disabled={false}
                 id="file-textinput-FileImport_Standard"
@@ -1265,23 +1273,27 @@ exports[` 4`] = `
             </section>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="storyshots_67_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Rename
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Rename
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="storyshots_67"
@@ -1410,14 +1422,14 @@ exports[` 5`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Filters
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -2253,14 +2265,14 @@ exports[` 6`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Filters
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -2470,101 +2482,60 @@ exports[` 6`] = `
                 >
                   Year Built
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -2581,101 +2552,60 @@ exports[` 6`] = `
                 >
                   Number of Units
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -2692,101 +2622,60 @@ exports[` 6`] = `
                 >
                   Building Size (ft2)
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
             </section>
           </section>
@@ -2902,14 +2791,14 @@ exports[` 7`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Filters
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -3119,101 +3008,60 @@ exports[` 7`] = `
                 >
                   Lot Size (Acre)
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -3230,101 +3078,60 @@ exports[` 7`] = `
                 >
                   Lot Size (ft2)
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -3341,101 +3148,60 @@ exports[` 7`] = `
                 >
                   Aggregate Acreage
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -3452,101 +3218,60 @@ exports[` 7`] = `
                 >
                   Aggregate Lot Count
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -3563,101 +3288,60 @@ exports[` 7`] = `
                 >
                   Aggregated Lot Width Median
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
             </section>
           </section>
@@ -3679,23 +3363,27 @@ exports[` 7`] = `
               rows={null}
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                 id="storyshots_71_container"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                  cursor="pointer"
-                  fontSize="0.875rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <section
+                  className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                 >
-                  Zoning (Assessor)
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Zoning (Assessor)
+                  </label>
+                </section>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                  className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                   cols=""
                   disabled={false}
                   id="storyshots_71"
@@ -3907,14 +3595,14 @@ exports[` 8`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Filters
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -4127,23 +3815,27 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                     id="storyshots_73_container"
                     rows={null}
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                      cursor="pointer"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
+                    <section
+                      className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                     >
-                      First Owner Name
-                    </label>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                      >
+                        First Owner Name
+                      </label>
+                    </section>
                     <input
                       autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                       cols=""
                       disabled={false}
                       id="storyshots_73"
@@ -4161,23 +3853,27 @@ exports[` 8`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                     id="storyshots_74_container"
                     rows={null}
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                      cursor="pointer"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
+                    <section
+                      className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                     >
-                      Second Owner Name
-                    </label>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                      >
+                        Second Owner Name
+                      </label>
+                    </section>
                     <input
                       autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                       cols=""
                       disabled={false}
                       id="storyshots_74"
@@ -4195,23 +3891,27 @@ exports[` 8`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                     id="storyshots_75_container"
                     rows={null}
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                      cursor="pointer"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
+                    <section
+                      className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                     >
-                      Address
-                    </label>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                      >
+                        Address
+                      </label>
+                    </section>
                     <input
                       autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                       cols=""
                       disabled={false}
                       id="storyshots_75"
@@ -4229,23 +3929,27 @@ exports[` 8`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                     id="storyshots_76_container"
                     rows={null}
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                      cursor="pointer"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
+                    <section
+                      className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                     >
-                      City
-                    </label>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                      >
+                        City
+                      </label>
+                    </section>
                     <input
                       autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                       cols=""
                       disabled={false}
                       id="storyshots_76"
@@ -4263,23 +3967,27 @@ exports[` 8`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                     id="storyshots_77_container"
                     rows={null}
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                      cursor="pointer"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
+                    <section
+                      className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                     >
-                      State
-                    </label>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                      >
+                        State
+                      </label>
+                    </section>
                     <input
                       autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                       cols=""
                       disabled={false}
                       id="storyshots_77"
@@ -4297,23 +4005,27 @@ exports[` 8`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                     id="storyshots_78_container"
                     rows={null}
                   >
-                    <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                      cursor="pointer"
-                      fontSize="0.875rem"
-                      fontWeight={400}
-                      htmlFor={null}
-                      letterSpacing=".5px"
+                    <section
+                      className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                     >
-                      Zip
-                    </label>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                      >
+                        Zip
+                      </label>
+                    </section>
                     <input
                       autoComplete="off"
-                      className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                       cols=""
                       disabled={false}
                       id="storyshots_78"
@@ -4777,14 +4489,14 @@ exports[` 9`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Filters
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -4994,120 +4706,83 @@ exports[` 9`] = `
                 >
                   Last Sale Price
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                 id="storyshots_80_container"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                  cursor="pointer"
-                  fontSize="0.875rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <section
+                  className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                 >
-                  Seller Name
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Seller Name
+                  </label>
+                </section>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                  className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                   cols=""
                   disabled={false}
                   id="storyshots_80"
@@ -5475,14 +5150,14 @@ exports[` 10`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Filters
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -5692,101 +5367,60 @@ exports[` 10`] = `
                 >
                   Assessed Value
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -5803,101 +5437,60 @@ exports[` 10`] = `
                 >
                   Improvement Pct.
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -5914,101 +5507,60 @@ exports[` 10`] = `
                 >
                   Assessed Land Value
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
@@ -6025,101 +5577,60 @@ exports[` 10`] = `
                 >
                   Assessed Improvement Value
                 </label>
-                <div
-                  className="Bar__BarLayout-icfo76-2 AXrfk"
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
-                  onClick={null}
+                  rows={null}
                 >
-                  <div
-                    className="Bar__Slot-icfo76-1 bxLAtn"
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_left_container"
+                    rows={null}
                   >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_left_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Min
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_left"
-                        list={null}
-                        name="default_left"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 jMjgmM"
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_left"
+                      list={null}
+                      name="default_left"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Min"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    id="default_right_container"
+                    rows={null}
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                      fontSize="1rem"
-                      fontWeight={400}
-                      id={null}
-                      letterSpacing="0.5px"
-                    >
-                      _
-                    </p>
-                  </div>
-                  <div
-                    className="Bar__Slot-icfo76-1 gFmZhG"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
-                      id="default_right_container"
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                      >
-                        Max
-                      </label>
-                      <input
-                        autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
-                        cols=""
-                        disabled={false}
-                        id="default_right"
-                        list={null}
-                        name="default_right"
-                        onBlur={null}
-                        onChange={[Function]}
-                        onFocus={null}
-                        onKeyPress={null}
-                        onKeyUp={null}
-                        pattern={null}
-                        placeholder={null}
-                        rows=""
-                        type="text"
-                      />
-                    </section>
-                  </div>
-                </div>
+                    <input
+                      autoComplete="off"
+                      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                      cols=""
+                      disabled={false}
+                      id="default_right"
+                      list={null}
+                      name="default_right"
+                      onBlur={null}
+                      onChange={[Function]}
+                      onFocus={null}
+                      onKeyPress={null}
+                      onKeyUp={null}
+                      pattern={null}
+                      placeholder="Max"
+                      rows=""
+                      type="text"
+                    />
+                  </section>
+                </section>
               </section>
             </section>
           </section>
@@ -6235,14 +5746,14 @@ exports[` 11`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Filters
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -6438,23 +5949,27 @@ exports[` 11`] = `
               rows={null}
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                 id="storyshots_83_container"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                  cursor="pointer"
-                  fontSize="0.875rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <section
+                  className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                 >
-                  Address
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Address
+                  </label>
+                </section>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                  className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                   cols=""
                   disabled={false}
                   id="storyshots_83"
@@ -6472,23 +5987,27 @@ exports[` 11`] = `
                 />
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                 id="storyshots_84_container"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                  cursor="pointer"
-                  fontSize="0.875rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <section
+                  className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                 >
-                  City
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    City
+                  </label>
+                </section>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                  className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                   cols=""
                   disabled={false}
                   id="storyshots_84"
@@ -6506,23 +6025,27 @@ exports[` 11`] = `
                 />
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                 id="storyshots_85_container"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                  cursor="pointer"
-                  fontSize="0.875rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <section
+                  className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                 >
-                  State
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    State
+                  </label>
+                </section>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                  className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                   cols=""
                   disabled={false}
                   id="storyshots_85"
@@ -6540,23 +6063,27 @@ exports[` 11`] = `
                 />
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
                 id="storyshots_86_container"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-                  cursor="pointer"
-                  fontSize="0.875rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing=".5px"
+                <section
+                  className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                 >
-                  Zip
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing=".5px"
+                  >
+                    Zip
+                  </label>
+                </section>
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                  className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                   cols=""
                   disabled={false}
                   id="storyshots_86"
@@ -6840,14 +6367,14 @@ exports[` 12`] = `
           <div
             className="Bar__Slot-icfo76-1 kSFTkF"
           >
-            <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
-              fontSize="1.35rem"
-              fontWeight="400"
-              letterSpacing="0px"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+              fontSize="1.15rem"
+              fontWeight="500"
+              letterSpacing="0.4px"
             >
               Draw Boundary
-            </h4>
+            </h5>
           </div>
         </div>
       </section>
@@ -7051,23 +6578,27 @@ exports[` 12`] = `
             </section>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="storyshots_88_container"
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
-              cursor="pointer"
-              fontSize="0.875rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
+            <section
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
-              Boundary Name
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing=".5px"
+              >
+                Boundary Name
+              </label>
+            </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="storyshots_88"

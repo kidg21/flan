@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 import {
   MultiGrid,
   AutoSizer,
@@ -9,7 +10,9 @@ import {
   CellMeasurerCache,
   InfiniteLoader,
 } from "react-virtualized";
-import styled, { css } from "styled-components";
+import Grid from "layout/Grid";
+import Text from "base/Typography";
+import Icon from "atoms/Icon";
 
 export const MultiGridWrapper = styled.div`
   width: 100%;
@@ -23,14 +26,12 @@ export const MultiGridWrapper = styled.div`
   overflow: hidden;
   .ReactVirtualized__Grid {
     ::-webkit-scrollbar {
-      height: 0.75em;
+      width: 0.65em;
+      height: 0.65em;
     }
     ::-webkit-scrollbar-track {
-      background-color: ${(props) => {
+      box-shadow: inset 0.5px 0 0px ${(props) => {
     return props.theme.palette.neutral40;
-  }};
-    border: 1px solid ${(props) => {
-    return props.theme.palette.neutral60;
   }};
     }
     ::-webkit-scrollbar-thumb {
@@ -45,6 +46,17 @@ export const MultiGridWrapper = styled.div`
   }};
     outline: none;
     }
+    ::-webkit-scrollbar-track:horizontal {
+      box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  }
+    ::-webkit-scrollbar-thumb:horizontal{
+      background-color: ${(props) => {
+    return props.theme.palette.neutral80;
+  }};
+    border-radius: 20px;
+  }
     :focus {
       outline: none;
     }
@@ -247,6 +259,12 @@ class Table extends Component {
       cellData = headers[columnIndex].label || "";
       if (headers[columnIndex].sortable) {
         cellProps.isSortable = true;
+        // cellData = (
+        //   <Grid columns="auto .5fr" align="center">
+        //     <Text text={cellData} />
+        //     <Icon icon="down" size="sm" />
+        //   </Grid>
+        // );
       }
       // if (headers[columnIndex].id === sortColumnId) {
       //   const arrow = sortDirection ? "up" : "down";
@@ -275,6 +293,7 @@ class Table extends Component {
             rowIndex: rowIndex - 1,
             columnIndex: columnIndex,
             row: row,
+            iconContent: "up",
           });
         }
       };

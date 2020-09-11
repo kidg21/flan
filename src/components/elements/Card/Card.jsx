@@ -89,9 +89,6 @@ const CardGridWrapper = styled(Grid)`
     border-radius: ${(props) => {
     return props.theme.borders.radiusMed;
   }};
-    box-shadow: ${(props) => {
-    return props.theme.shadows.dropShadow;
-  }};
     transition: all 0.25s ease-in-out;
     &:hover {
     box-shadow: ${(props) => {

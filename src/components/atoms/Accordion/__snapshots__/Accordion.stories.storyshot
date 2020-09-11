@@ -14,7 +14,7 @@ exports[` 1`] = `
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 hHteIx"
+      className="Bar__BarLayout-icfo76-2 AXrfk"
       id={null}
       onClick={null}
     >
@@ -35,12 +35,12 @@ exports[` 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
           color={null}
           data-icon="plus"
           data-prefix="far"
           focusable="false"
-          fontSize="inherit"
+          fontSize="0.875em"
           id={null}
           role="img"
           style={Object {}}
@@ -57,18 +57,22 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq Accordion__ExpanderWrapper-sc-1ejc22p-0 bwkttv"
+    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
     open={false}
   >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
+    <section
+      className="Accordion__ContentWrapper-sc-1ejc22p-0 bwHXev"
     >
-      hi
-    </p>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        hi
+      </p>
+    </section>
   </div>
 </div>
 `;
@@ -87,7 +91,7 @@ exports[` 2`] = `
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 hHteIx"
+      className="Bar__BarLayout-icfo76-2 AXrfk"
       id={null}
       onClick={null}
     >
@@ -125,12 +129,12 @@ exports[` 2`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
           color={null}
           data-icon="plus"
           data-prefix="far"
           focusable="false"
-          fontSize="inherit"
+          fontSize="0.875em"
           id={null}
           role="img"
           style={Object {}}
@@ -147,18 +151,22 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq Accordion__ExpanderWrapper-sc-1ejc22p-0 bwkttv"
+    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
     open={false}
   >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
+    <section
+      className="Accordion__ContentWrapper-sc-1ejc22p-0 bwHXev"
     >
-      hi
-    </p>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        hi
+      </p>
+    </section>
   </div>
 </div>
 `;
@@ -171,7 +179,7 @@ Array [
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 hHteIx"
+      className="Bar__BarLayout-icfo76-2 AXrfk"
       id={null}
       onClick={null}
     >
@@ -201,12 +209,12 @@ Array [
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
           color={null}
           data-icon="plus"
           data-prefix="far"
           focusable="false"
-          fontSize="inherit"
+          fontSize="0.875em"
           id={null}
           role="img"
           style={Object {}}
@@ -223,18 +231,22 @@ Array [
     </div>
   </div>,
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq Accordion__ExpanderWrapper-sc-1ejc22p-0 bwkttv"
+    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
     open={false}
   >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
+    <section
+      className="Accordion__ContentWrapper-sc-1ejc22p-0 bwHXev"
     >
-      This is the body of the accordion. Put whatever you want in here
-    </p>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        This is the body of the accordion. Put whatever you want in here
+      </p>
+    </section>
   </div>,
 ]
 `;
@@ -247,7 +259,7 @@ Array [
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 hHteIx"
+      className="Bar__BarLayout-icfo76-2 AXrfk"
       id={null}
       onClick={null}
     >
@@ -277,12 +289,12 @@ Array [
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
           color={null}
           data-icon="plus"
           data-prefix="far"
           focusable="false"
-          fontSize="inherit"
+          fontSize="0.875em"
           id={null}
           role="img"
           style={Object {}}
@@ -299,18 +311,22 @@ Array [
     </div>
   </div>,
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq Accordion__ExpanderWrapper-sc-1ejc22p-0 bwkttv"
+    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
     open={false}
   >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
+    <section
+      className="Accordion__ContentWrapper-sc-1ejc22p-0 bwHXev"
     >
-      This is the body of the accordion. Put whatever you want in here
-    </p>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        This is the body of the accordion. Put whatever you want in here
+      </p>
+    </section>
   </div>,
 ]
 `;

@@ -46,14 +46,15 @@ exports[` 1`] = `
               id={null}
               rows={null}
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 hytcMk"
-                fontSize="1.2rem"
-                fontWeight="400"
-                letterSpacing="1px"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
               >
                 This is a Standard notification.
-              </h6>
+              </p>
             </section>
           </div>
           <div
@@ -173,14 +174,15 @@ exports[` 2`] = `
         id={null}
         rows={null}
       >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 hytcMk"
-          fontSize="1.2rem"
-          fontWeight="400"
-          letterSpacing="1px"
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+          fontSize="1rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.5px"
         >
           Your payment method has been updated.
-        </h6>
+        </p>
       </section>
     </div>
     <div
@@ -213,7 +215,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 hlCUCV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 eiMvGa"
   id={null}
   rows={null}
 >
@@ -268,14 +270,15 @@ exports[` 3`] = `
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             The latest version of LandVision is available for update.
-          </h6>
+          </p>
         </section>
       </div>
       <div
@@ -355,14 +358,15 @@ exports[` 3`] = `
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             Project has successfully been added to the list.
-          </h6>
+          </p>
         </section>
       </div>
       <div
@@ -442,14 +446,15 @@ exports[` 3`] = `
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             No results returned. Query is too big and needs to be filtered.
-          </h6>
+          </p>
         </section>
       </div>
       <div
@@ -529,14 +534,15 @@ exports[` 3`] = `
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             Payment did not go through successfully.
-          </h6>
+          </p>
         </section>
       </div>
       <div
@@ -570,7 +576,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 hlCUCV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 eiMvGa"
   id={null}
   rows={null}
 >
@@ -625,14 +631,15 @@ exports[` 4`] = `
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             This service is not available with your plan.
-          </h6>
+          </p>
           <p
             className="Typography__Paragraph-sc-19auepv-3 GBuDq"
             fontSize="0.875rem"
@@ -733,14 +740,15 @@ exports[` 4`] = `
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 hytcMk"
-            fontSize="1.2rem"
-            fontWeight="400"
-            letterSpacing="1px"
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
           >
             Payment did not go through successfully.
-          </h6>
+          </p>
           <p
             className="Typography__Paragraph-sc-19auepv-3 GBuDq"
             fontSize="0.875rem"

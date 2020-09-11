@@ -261,7 +261,7 @@ exports[` 1`] = `
               className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
             >
               <div
-                className="Avatar__TagContainer-sc-1vuf9om-2 jWXajH"
+                className="Avatar__TagContainer-sc-1vuf9om-2 jgqvSx"
                 id="profile"
                 onClick={[Function]}
               >
@@ -302,7 +302,7 @@ exports[` 1`] = `
             className="List__ListTitleWrapper-sc-43f2zq-1 duMrda"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIhRyd List__ListTitle-sc-43f2zq-2 fvZiaa"
+              className="Typography__Paragraph-sc-19auepv-3 dIhRyd List__ListTitle-sc-43f2zq-2 ckaevx"
               fontSize="1rem"
               fontWeight={400}
               id={null}
@@ -1019,12 +1019,12 @@ exports[` 1`] = `
                               rows={null}
                             >
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Property Name"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1034,9 +1034,9 @@ exports[` 1`] = `
                                   Property Name
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1044,12 +1044,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Property Type"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1059,9 +1059,9 @@ exports[` 1`] = `
                                   Property Type
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1069,12 +1069,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Lat / Long"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1084,9 +1084,9 @@ exports[` 1`] = `
                                   Lat / Long
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1094,12 +1094,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Street Address"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1109,9 +1109,9 @@ exports[` 1`] = `
                                   Street Address
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1119,12 +1119,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="City, State Zip"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1134,9 +1134,9 @@ exports[` 1`] = `
                                   City, State Zip
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1150,12 +1150,12 @@ exports[` 1`] = `
                               rows={null}
                             >
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Census Tract"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1165,9 +1165,9 @@ exports[` 1`] = `
                                   Census Tract
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1175,12 +1175,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Census Block"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1190,9 +1190,9 @@ exports[` 1`] = `
                                   Census Block
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1200,12 +1200,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="County"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1215,9 +1215,9 @@ exports[` 1`] = `
                                   County
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1225,12 +1225,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="CBSA"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1240,9 +1240,9 @@ exports[` 1`] = `
                                   CBSA
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1275,12 +1275,12 @@ exports[` 1`] = `
                                 Site Characteristics
                               </p>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Land SF"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1290,9 +1290,9 @@ exports[` 1`] = `
                                   Land SF
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1300,12 +1300,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Acres"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1315,9 +1315,9 @@ exports[` 1`] = `
                                   Acres
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1325,12 +1325,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Land Use"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1340,9 +1340,9 @@ exports[` 1`] = `
                                   Land Use
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1350,12 +1350,12 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Street Address"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
@@ -1365,9 +1365,9 @@ exports[` 1`] = `
                                   Street Address
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -1452,12 +1452,12 @@ exports[` 1`] = `
                             Physical Characteristics
                           </p>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Buildings"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1467,9 +1467,9 @@ exports[` 1`] = `
                               No. of Buildings
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
-                              fontWeight={600}
+                              fontWeight={400}
                               id={null}
                               letterSpacing="0.5px"
                             >
@@ -1477,12 +1477,12 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="GBA"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1492,9 +1492,9 @@ exports[` 1`] = `
                               GBA
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
-                              fontWeight={600}
+                              fontWeight={400}
                               id={null}
                               letterSpacing="0.5px"
                             >
@@ -1502,12 +1502,12 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Stories"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1517,9 +1517,9 @@ exports[` 1`] = `
                               No. of Stories
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
-                              fontWeight={600}
+                              fontWeight={400}
                               id={null}
                               letterSpacing="0.5px"
                             >
@@ -1527,12 +1527,12 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Units"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1542,9 +1542,9 @@ exports[` 1`] = `
                               No. of Units
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
-                              fontWeight={600}
+                              fontWeight={400}
                               id={null}
                               letterSpacing="0.5px"
                             >
@@ -1552,12 +1552,12 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="Year Built"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -1567,9 +1567,9 @@ exports[` 1`] = `
                               Year Built
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
-                              fontWeight={600}
+                              fontWeight={400}
                               id={null}
                               letterSpacing="0.5px"
                             >
@@ -1844,7 +1844,7 @@ exports[` 2`] = `
             className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
           >
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 jWXajH"
+              className="Avatar__TagContainer-sc-1vuf9om-2 jgqvSx"
               id="profile"
               onClick={[Function]}
             >
@@ -1885,7 +1885,7 @@ exports[` 2`] = `
           className="List__ListTitleWrapper-sc-43f2zq-1 duMrda"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIhRyd List__ListTitle-sc-43f2zq-2 fvZiaa"
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd List__ListTitle-sc-43f2zq-2 ckaevx"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -2164,13 +2164,13 @@ exports[` 2`] = `
                           </section>
                         </button>
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 jZwgmD Search__SearchTextInput-sey9om-2 fHrQmv"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
                           id="storyshots_124-search-bar_container"
                           rows={null}
                         >
                           <input
                             autoComplete="off"
-                            className="TextInput__Input-sc-1fep8p8-2 eUpuQ"
+                            className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                             cols=""
                             disabled={null}
                             id="storyshots_124-search-bar"
@@ -2601,7 +2601,7 @@ exports[` 2`] = `
             id={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 kMLAWn"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 iCZIJP"
               id="Map Overlay"
               rows={null}
             >
@@ -3021,12 +3021,12 @@ exports[` 2`] = `
                               Property Information
                             </p>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3036,7 +3036,7 @@ exports[` 2`] = `
                                 Parcel No.
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 koVcQW"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3046,9 +3046,9 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -3057,12 +3057,12 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3072,9 +3072,9 @@ exports[` 2`] = `
                                 Land User
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0.5px"
                               >
@@ -3082,12 +3082,12 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3097,9 +3097,9 @@ exports[` 2`] = `
                                 Building Area
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0.5px"
                               >
@@ -3107,12 +3107,12 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3122,7 +3122,7 @@ exports[` 2`] = `
                                 Lot Area
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 koVcQW"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3132,9 +3132,9 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -3143,12 +3143,12 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3158,9 +3158,9 @@ exports[` 2`] = `
                                 Building/Lot
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0.5px"
                               >
@@ -3168,12 +3168,12 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3183,9 +3183,9 @@ exports[` 2`] = `
                                 No. of Units
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0.5px"
                               >
@@ -3193,12 +3193,12 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3208,9 +3208,9 @@ exports[` 2`] = `
                                 Year Built
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0.5px"
                               >
@@ -3233,12 +3233,12 @@ exports[` 2`] = `
                               Owner Information
                             </p>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3248,7 +3248,7 @@ exports[` 2`] = `
                                 Owners
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 koVcQW"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3258,9 +3258,9 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -3269,12 +3269,12 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3284,9 +3284,9 @@ exports[` 2`] = `
                                 Owner Address
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0.5px"
                               >
@@ -3294,12 +3294,12 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3309,7 +3309,7 @@ exports[` 2`] = `
                                 Adjacent Lots
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 koVcQW"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3319,9 +3319,9 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -3330,12 +3330,12 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3345,7 +3345,7 @@ exports[` 2`] = `
                                 Last Sale
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 koVcQW"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3355,9 +3355,9 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
-                                  fontWeight={600}
+                                  fontWeight={400}
                                   id={null}
                                   letterSpacing="0.5px"
                                 >
@@ -3366,12 +3366,12 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kElfJT"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 iHxIey"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
@@ -3381,9 +3381,9 @@ exports[` 2`] = `
                                 Total Assd Value
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 ikAKub Field__FieldValue-sc-11od8ug-3 eUfulr"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
-                                fontWeight={600}
+                                fontWeight={400}
                                 id={null}
                                 letterSpacing="0.5px"
                               >
@@ -3592,7 +3592,7 @@ exports[` 2`] = `
           </section>
         </div>
         <div
-          className="Table__MultiGridWrapper-gz0dbt-0 hjNmUH"
+          className="Table__MultiGridWrapper-gz0dbt-0 gXuTIs"
         >
           <div
             style={
@@ -3660,7 +3660,7 @@ exports[` 2`] = `
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 iEXyzp"
+                      className="Table__CellWrapper-gz0dbt-1 itqXmK"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3701,7 +3701,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 jvEcLf"
+                      className="Table__CellWrapper-gz0dbt-1 itqXmK"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3715,7 +3715,41 @@ exports[` 2`] = `
                         }
                       }
                     >
-                      Name
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
+                        id={null}
+                        rows={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          Name
+                        </p>
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
+                          color={null}
+                          data-icon="angle-down"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="0.875em"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 320 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </section>
                     </div>
                   </div>
                 </div>
@@ -3768,7 +3802,7 @@ exports[` 2`] = `
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3807,7 +3841,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3835,7 +3869,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3874,7 +3908,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3902,7 +3936,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3941,7 +3975,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3969,7 +4003,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4008,7 +4042,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4036,7 +4070,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4075,7 +4109,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4103,7 +4137,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4142,7 +4176,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4170,7 +4204,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4209,7 +4243,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4237,7 +4271,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4276,7 +4310,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4304,7 +4338,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4343,7 +4377,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4371,7 +4405,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4410,7 +4444,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 dvBhJw"
+                      className="Table__CellWrapper-gz0dbt-1 brnbhJ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}

@@ -2,17 +2,17 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
   id={null}
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
     cursor="pointer"
-    fontSize="0.75em"
+    fontSize="0.8rem"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0.4px"
+    letterSpacing="1px"
   >
     Select Label
   </label>
@@ -30,7 +30,7 @@ exports[` 1`] = `
         className=" css-g1d714-ValueContainer"
       >
         <div
-          className=" css-1m79im8-placeholder"
+          className=" css-1yfxegp-placeholder"
         >
           Select
         </div>
@@ -139,17 +139,17 @@ exports[` 2`] = `
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
       cursor="pointer"
-      fontSize="0.75em"
+      fontSize="0.8rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="1px"
     >
       Standard
     </label>
@@ -167,7 +167,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-1m79im8-placeholder"
+            className=" css-1yfxegp-placeholder"
           >
             Select
           </div>
@@ -264,12 +264,12 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
       cursor="pointer"
-      fontSize="0.75em"
+      fontSize="0.8rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="1px"
     >
       Error
     </label>
@@ -287,7 +287,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-1m79im8-placeholder"
+            className=" css-1yfxegp-placeholder"
           >
             Select
           </div>
@@ -397,12 +397,12 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
       cursor="pointer"
-      fontSize="0.75em"
+      fontSize="0.8rem"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0.4px"
+      letterSpacing="1px"
     >
       Disabled
     </label>
@@ -420,7 +420,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-1m79im8-placeholder"
+            className=" css-1yfxegp-placeholder"
           >
             Select
           </div>
@@ -536,17 +536,17 @@ exports[` 3`] = `
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 haskGv"
+            className="Typography__StyledLabel-sc-19auepv-0 dpNrvA"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select ( Required )
           </label>
@@ -564,7 +564,7 @@ exports[` 3`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   You Must Choose...
                 </div>
@@ -665,17 +665,17 @@ exports[` 3`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 haskGv"
+            className="Typography__StyledLabel-sc-19auepv-0 dpNrvA"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select ( Required w/ Clearable )
           </label>
@@ -693,7 +693,7 @@ exports[` 3`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 />
                 <div
                   className="css-b8ldur-Input"
@@ -819,17 +819,17 @@ exports[` 4`] = `
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select ( Standard )
           </label>
@@ -847,7 +847,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   Choose...
                 </div>
@@ -948,17 +948,17 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 haskGv"
+            className="Typography__StyledLabel-sc-19auepv-0 dpNrvA"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select ( Required )
           </label>
@@ -976,7 +976,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   You Must Choose...
                 </div>
@@ -1082,12 +1082,12 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select ( Disabled )
           </label>
@@ -1105,7 +1105,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   You Can't Choose...
                 </div>
@@ -1211,12 +1211,12 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select ( Error )
           </label>
@@ -1234,7 +1234,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1340,12 +1340,12 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select ( Error )
           </label>
@@ -1363,7 +1363,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1477,17 +1477,17 @@ exports[` 4`] = `
           </section>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select
           </label>
@@ -1505,7 +1505,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1619,17 +1619,17 @@ exports[` 4`] = `
           </section>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Single-Select ( Loading )
           </label>
@@ -1647,7 +1647,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   Give Me A Minute...
                 </div>
@@ -1762,17 +1762,17 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ghuPcS"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
             cursor="pointer"
-            fontSize="0.75em"
+            fontSize="0.8rem"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0.4px"
+            letterSpacing="1px"
           >
             Multi-Select
           </label>
@@ -1790,7 +1790,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1m79im8-placeholder"
+                  className=" css-1yfxegp-placeholder"
                 >
                   Choose One Or More...
                 </div>

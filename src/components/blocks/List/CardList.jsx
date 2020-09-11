@@ -37,9 +37,6 @@ import getGuid from "utils/getGuid";
 export const GridWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border: 1px solid ${(props) => {
-    return props.theme.palette.neutral60;
-  }};
   overflow: hidden;
   .ReactVirtualized__Grid {
     ::-webkit-scrollbar {
@@ -47,10 +44,7 @@ export const GridWrapper = styled.div`
     }
     ::-webkit-scrollbar-track {
       background-color: ${(props) => {
-    return props.theme.palette.neutral40;
-  }};
-    border: 1px solid ${(props) => {
-    return props.theme.palette.neutral60;
+    return props.theme.palette.inverse;
   }};
     }
     ::-webkit-scrollbar-thumb {
@@ -76,27 +70,21 @@ export const GridWrapper = styled.div`
 
 export const CellWrapper = styled.div`
   align-items: center;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.5em;
   color: ${(props) => {
     if (props.isSelected && !props.isHeader) return props.theme.text.inverse;
     return props.theme.text.primary;
   }};
-  font-weight: ${(props) => {
-    return props.isHeader ? "600" : "400";
-  }};
   font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
-  border-bottom: ${(props) => {
-    return props.isHeader ? `2px solid ${props.theme.palette.neutral40}` : `1px solid ${props.theme.palette.neutral40}`;
-  }};
   background-color: ${(props) => {
     if (props.isHeader) {
-      return props.theme.background.app;
+      return props.theme.background.default;
     }
     if (props.isHighlighted) {
       return props.theme.palette.neutral20;
     }
     if (props.isSelected) {
-      return props.theme.background.selected;
+      return props.theme.background.light;
     }
     return props.theme.background.default;
   }};
