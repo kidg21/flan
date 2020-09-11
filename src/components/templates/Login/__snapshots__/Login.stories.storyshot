@@ -2,21 +2,21 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 ePQyms"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 ggPykn"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 eIFIfS"
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 geRRsh"
+      className="Bar__Slot-icfo76-1 bbixyy"
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+        className="Image__ImageWrapper-sc-18abvff-0 eAGVXC"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
         title="Lightbox Logo"
@@ -26,18 +26,18 @@ exports[` 1`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-1 jozDvZ"
+    className="Form__FormWrapper-v2wrel-1 dmAkaW"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Form__Header-v2wrel-2 ineQAF"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
         fontSize="1.15rem"
         fontWeight="500"
         letterSpacing="0.4px"
@@ -46,28 +46,28 @@ exports[` 1`] = `
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="login-email_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -79,7 +79,7 @@ exports[` 1`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="login-email"
@@ -97,15 +97,15 @@ exports[` 1`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="login-password_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -117,7 +117,7 @@ exports[` 1`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="login-password"
@@ -137,15 +137,15 @@ exports[` 1`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -155,12 +155,12 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -172,15 +172,15 @@ exports[` 1`] = `
             </section>
           </button>
           <div
-            className="Bar__BarLayout-icfo76-2 kTXCTV"
+            className="Bar__BarLayout-icfo76-2 kShWZi"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 dLaZFL"
+              className="Bar__Slot-icfo76-1 kcJpTc"
             >
               <a
-                className="Typography__LinkText-sc-19auepv-1 bzwZve"
+                className="Typography__LinkText-sc-19auepv-1 ibwmgx"
                 disabled={false}
                 fontSize="1rem"
                 fontWeight={400}
@@ -194,15 +194,15 @@ exports[` 1`] = `
             </div>
           </div>
           <div
-            className="Bar__BarLayout-icfo76-2 kTXCTV"
+            className="Bar__BarLayout-icfo76-2 kShWZi"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 dLaZFL"
+              className="Bar__Slot-icfo76-1 kcJpTc"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 dNUhCr"
+                className="Button__StyledButton-sc-1v7sls2-0 esKlPI"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -212,12 +212,12 @@ exports[` 1`] = `
                 type="button"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -239,21 +239,21 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 ePQyms"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 ggPykn"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 eIFIfS"
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 geRRsh"
+      className="Bar__Slot-icfo76-1 bbixyy"
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+        className="Image__ImageWrapper-sc-18abvff-0 eAGVXC"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
         title="Lightbox Logo"
@@ -263,18 +263,18 @@ exports[` 2`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-1 jozDvZ"
+    className="Form__FormWrapper-v2wrel-1 dmAkaW"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Form__Header-v2wrel-2 ineQAF"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
         fontSize="1.15rem"
         fontWeight="500"
         letterSpacing="0.4px"
@@ -283,28 +283,28 @@ exports[` 2`] = `
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="registration-email_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -316,7 +316,7 @@ exports[` 2`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="registration-email"
@@ -334,15 +334,15 @@ exports[` 2`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="registration-password_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -354,7 +354,7 @@ exports[` 2`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="registration-password"
@@ -372,15 +372,15 @@ exports[` 2`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="registration-confirm-password_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -392,7 +392,7 @@ exports[` 2`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="registration-confirm-password"
@@ -412,15 +412,15 @@ exports[` 2`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -430,12 +430,12 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -455,21 +455,21 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 ePQyms"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 ggPykn"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 eIFIfS"
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 geRRsh"
+      className="Bar__Slot-icfo76-1 bbixyy"
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+        className="Image__ImageWrapper-sc-18abvff-0 eAGVXC"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
         title="Lightbox Logo"
@@ -479,18 +479,18 @@ exports[` 3`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-1 jozDvZ"
+    className="Form__FormWrapper-v2wrel-1 dmAkaW"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Form__Header-v2wrel-2 ineQAF"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
         fontSize="1.15rem"
         fontWeight="500"
         letterSpacing="0.4px"
@@ -499,28 +499,28 @@ exports[` 3`] = `
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="reset-email_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -532,7 +532,7 @@ exports[` 3`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="reset-email"
@@ -552,15 +552,15 @@ exports[` 3`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -570,12 +570,12 @@ exports[` 3`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -587,15 +587,15 @@ exports[` 3`] = `
             </section>
           </button>
           <div
-            className="Bar__BarLayout-icfo76-2 kTXCTV"
+            className="Bar__BarLayout-icfo76-2 kShWZi"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 dLaZFL"
+              className="Bar__Slot-icfo76-1 kcJpTc"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 dNUhCr"
+                className="Button__StyledButton-sc-1v7sls2-0 esKlPI"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -605,12 +605,12 @@ exports[` 3`] = `
                 type="button"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -632,21 +632,21 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 ePQyms"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 ggPykn"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 eIFIfS"
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 geRRsh"
+      className="Bar__Slot-icfo76-1 bbixyy"
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+        className="Image__ImageWrapper-sc-18abvff-0 eAGVXC"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
         title="Lightbox Logo"
@@ -656,18 +656,18 @@ exports[` 4`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-1 jozDvZ"
+    className="Form__FormWrapper-v2wrel-1 dmAkaW"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Form__Header-v2wrel-2 ineQAF"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
         fontSize="1.15rem"
         fontWeight="500"
         letterSpacing="0.4px"
@@ -676,20 +676,20 @@ exports[` 4`] = `
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -698,7 +698,7 @@ exports[` 4`] = `
             If you don't see an email in the next few minutes please select the link to send again.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 gokaHf"
+            className="Typography__LinkText-sc-19auepv-1 bAJIRY"
             disabled={false}
             fontSize="1rem"
             fontWeight={500}
@@ -718,21 +718,21 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 ePQyms"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 ggPykn"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 eIFIfS"
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 geRRsh"
+      className="Bar__Slot-icfo76-1 bbixyy"
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+        className="Image__ImageWrapper-sc-18abvff-0 eAGVXC"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
         title="Lightbox Logo"
@@ -742,18 +742,18 @@ exports[` 5`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-1 jozDvZ"
+    className="Form__FormWrapper-v2wrel-1 dmAkaW"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Form__Header-v2wrel-2 ineQAF"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
         fontSize="1.15rem"
         fontWeight="500"
         letterSpacing="0.4px"
@@ -762,28 +762,28 @@ exports[` 5`] = `
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="new-email_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -795,7 +795,7 @@ exports[` 5`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="new-email"
@@ -813,15 +813,15 @@ exports[` 5`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="new-password_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -833,7 +833,7 @@ exports[` 5`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="new-password"
@@ -851,15 +851,15 @@ exports[` 5`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
             id="new-confirm_container"
             rows={null}
           >
             <section
-              className="TextInput__LabelWrapper-sc-1fep8p8-2 sDZyl"
+              className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -871,7 +871,7 @@ exports[` 5`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="new-confirm"
@@ -891,15 +891,15 @@ exports[` 5`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -909,12 +909,12 @@ exports[` 5`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -934,21 +934,21 @@ exports[` 5`] = `
 
 exports[` 6`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Page__PageWrapper-mddda5-0 ePQyms"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 ggPykn"
   id={null}
   rows={null}
 >
   <div
-    className="Bar__BarLayout-icfo76-2 eIFIfS"
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-icfo76-1 geRRsh"
+      className="Bar__Slot-icfo76-1 bbixyy"
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+        className="Image__ImageWrapper-sc-18abvff-0 eAGVXC"
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
         title="Lightbox Logo"
@@ -958,18 +958,18 @@ exports[` 6`] = `
   </div>
   <form
     action={null}
-    className="Form__FormWrapper-v2wrel-1 jozDvZ"
+    className="Form__FormWrapper-v2wrel-1 dmAkaW"
     id={null}
     method={null}
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-2 hhcTZe"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Form__Header-v2wrel-2 ineQAF"
       id={null}
       rows={null}
     >
       <h5
-        className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
         fontSize="1.15rem"
         fontWeight="500"
         letterSpacing="0.4px"
@@ -978,20 +978,20 @@ exports[` 6`] = `
       </h5>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
       id={null}
       rows={null}
     >
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -1002,15 +1002,15 @@ exports[` 6`] = `
         </section>
       </section>
       <section
-        className="Form__Section-v2wrel-0 XxWIM"
+        className="Form__Section-v2wrel-0 AFwsX"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Form__Inputs-v2wrel-4 YQsMP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1020,12 +1020,12 @@ exports[` 6`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
