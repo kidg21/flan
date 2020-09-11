@@ -299,7 +299,7 @@ function Card({
     centerContent = (
       <LinkedWrapper>
         <React.Fragment>
-          {title ? <Title size="2xl" text={title} /> : null}
+          {title ? <Title size="lg" text={title} /> : null}
           {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
@@ -308,7 +308,7 @@ function Card({
   } else {
     centerContent = (
       <React.Fragment>
-        {title ? <Title size="2xl" text={title} /> : null}
+        {title ? <Title size="lg" text={title} /> : null}
         {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>
