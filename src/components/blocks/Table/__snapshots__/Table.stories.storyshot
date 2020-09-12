@@ -4,13 +4,12 @@ exports[` 1`] = `
 <div
   style={
     Object {
-      "height": "100vh",
-      "width": "100%",
+      "height": "250px",
     }
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 gXuTIs"
+    className="Table__MultiGridWrapper-gz0dbt-0 kyxjse"
   >
     <div
       style={
@@ -78,7 +77,7 @@ exports[` 1`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -92,44 +91,10 @@ exports[` 1`] = `
                   }
                 }
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
-                  id={null}
-                  rows={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    Acreage
-                  </p>
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
-                    color={null}
-                    data-icon="angle-down"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="0.875em"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 320 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
+                Acreage
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -143,41 +108,7 @@ exports[` 1`] = `
                   }
                 }
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
-                  id={null}
-                  rows={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    Aggregate Acreage
-                  </p>
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
-                    color={null}
-                    data-icon="angle-down"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="0.875em"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 320 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
+                Aggregate Acreage
               </div>
             </div>
           </div>
@@ -230,7 +161,7 @@ exports[` 1`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -247,7 +178,7 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -264,7 +195,7 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -281,7 +212,7 @@ exports[` 1`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -298,7 +229,7 @@ exports[` 1`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -315,7 +246,7 @@ exports[` 1`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -332,7 +263,7 @@ exports[` 1`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -349,7 +280,7 @@ exports[` 1`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -366,7 +297,7 @@ exports[` 1`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -383,7 +314,7 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -400,7 +331,7 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -417,7 +348,7 @@ exports[` 1`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -434,7 +365,7 @@ exports[` 1`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -451,7 +382,7 @@ exports[` 1`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -468,7 +399,7 @@ exports[` 1`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -485,7 +416,7 @@ exports[` 1`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -502,7 +433,7 @@ exports[` 1`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -519,7 +450,7 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -536,7 +467,7 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -553,7 +484,7 @@ exports[` 1`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -570,7 +501,7 @@ exports[` 1`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -587,7 +518,7 @@ exports[` 1`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -604,7 +535,7 @@ exports[` 1`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -621,7 +552,7 @@ exports[` 1`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -638,7 +569,7 @@ exports[` 1`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -655,7 +586,7 @@ exports[` 1`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -684,13 +615,12 @@ exports[` 2`] = `
 <div
   style={
     Object {
-      "height": "100vh",
-      "width": "100%",
+      "height": "250px",
     }
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 gXuTIs"
+    className="Table__MultiGridWrapper-gz0dbt-0 kyxjse"
   >
     <div
       style={
@@ -758,7 +688,7 @@ exports[` 2`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -772,44 +702,10 @@ exports[` 2`] = `
                   }
                 }
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
-                  id={null}
-                  rows={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    Acreage
-                  </p>
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
-                    color={null}
-                    data-icon="angle-down"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="0.875em"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 320 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
+                Acreage
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -823,41 +719,7 @@ exports[` 2`] = `
                   }
                 }
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
-                  id={null}
-                  rows={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    Aggregate Acreage
-                  </p>
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
-                    color={null}
-                    data-icon="angle-down"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="0.875em"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 320 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
+                Aggregate Acreage
               </div>
             </div>
           </div>
@@ -910,7 +772,7 @@ exports[` 2`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -927,7 +789,7 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -944,7 +806,7 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -961,7 +823,7 @@ exports[` 2`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -978,7 +840,7 @@ exports[` 2`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -995,7 +857,7 @@ exports[` 2`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1012,7 +874,7 @@ exports[` 2`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1029,7 +891,7 @@ exports[` 2`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1046,7 +908,7 @@ exports[` 2`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1063,7 +925,7 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1080,7 +942,7 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1097,7 +959,7 @@ exports[` 2`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1114,7 +976,7 @@ exports[` 2`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1131,7 +993,7 @@ exports[` 2`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1148,7 +1010,7 @@ exports[` 2`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1165,7 +1027,7 @@ exports[` 2`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1182,7 +1044,7 @@ exports[` 2`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1199,7 +1061,7 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1216,7 +1078,7 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1233,7 +1095,7 @@ exports[` 2`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1250,7 +1112,7 @@ exports[` 2`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1267,7 +1129,7 @@ exports[` 2`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1284,7 +1146,7 @@ exports[` 2`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1301,7 +1163,7 @@ exports[` 2`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1318,7 +1180,7 @@ exports[` 2`] = `
                 0.684631
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1335,7 +1197,7 @@ exports[` 2`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1364,13 +1226,12 @@ exports[` 3`] = `
 <div
   style={
     Object {
-      "height": "100vh",
-      "width": "100%",
+      "height": "250px",
     }
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 gXuTIs"
+    className="Table__MultiGridWrapper-gz0dbt-0 kyxjse"
   >
     <div
       style={
@@ -1438,7 +1299,7 @@ exports[` 3`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1455,7 +1316,7 @@ exports[` 3`] = `
                 Actions
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1469,41 +1330,7 @@ exports[` 3`] = `
                   }
                 }
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
-                  id={null}
-                  rows={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    Acreage
-                  </p>
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
-                    color={null}
-                    data-icon="angle-down"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="0.875em"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 320 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
+                Acreage
               </div>
             </div>
           </div>
@@ -1556,7 +1383,7 @@ exports[` 3`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1571,11 +1398,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_0"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_0"
@@ -1585,13 +1412,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -1614,7 +1441,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1631,7 +1458,7 @@ exports[` 3`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1646,11 +1473,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_1"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_1"
@@ -1660,13 +1487,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -1689,7 +1516,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1706,7 +1533,7 @@ exports[` 3`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1721,11 +1548,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_2"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_2"
@@ -1735,13 +1562,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -1764,7 +1591,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1781,7 +1608,7 @@ exports[` 3`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1796,11 +1623,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_3"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_3"
@@ -1810,13 +1637,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -1839,7 +1666,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1856,7 +1683,7 @@ exports[` 3`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1871,11 +1698,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_4"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_4"
@@ -1885,13 +1712,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -1914,7 +1741,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1931,7 +1758,7 @@ exports[` 3`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -1946,11 +1773,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_5"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_5"
@@ -1960,13 +1787,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -1989,7 +1816,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2006,7 +1833,7 @@ exports[` 3`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2021,11 +1848,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_6"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_6"
@@ -2035,13 +1862,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -2064,7 +1891,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2081,7 +1908,7 @@ exports[` 3`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2096,11 +1923,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_7"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_7"
@@ -2110,13 +1937,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -2139,7 +1966,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2156,7 +1983,7 @@ exports[` 3`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2171,11 +1998,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_8"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_8"
@@ -2185,13 +2012,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -2214,7 +2041,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2231,7 +2058,7 @@ exports[` 3`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2246,11 +2073,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_9"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_9"
@@ -2260,13 +2087,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -2289,7 +2116,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2306,7 +2133,7 @@ exports[` 3`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2321,11 +2148,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_10"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_10"
@@ -2335,13 +2162,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -2364,7 +2191,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2381,7 +2208,7 @@ exports[` 3`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2396,11 +2223,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_11"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_11"
@@ -2410,13 +2237,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -2439,7 +2266,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2456,7 +2283,7 @@ exports[` 3`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2471,11 +2298,11 @@ exports[` 3`] = `
                 }
               >
                 <div
-                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                  className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                   id="menu-popper-Menu_Row_12"
                 >
                   <button
-                    className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                    className="Button__StyledButton-sc-1v7sls2-0 cbESfm"
                     disabled={false}
                     htmlFor={null}
                     id="menu-icon-Menu_Row_12"
@@ -2485,13 +2312,13 @@ exports[` 3`] = `
                     type="button"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                       id={null}
                       rows={null}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                         color={null}
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -2514,7 +2341,7 @@ exports[` 3`] = `
                 </div>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2543,13 +2370,12 @@ exports[` 4`] = `
 <div
   style={
     Object {
-      "height": "100vh",
-      "width": "100%",
+      "height": "250px",
     }
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 gXuTIs"
+    className="Table__MultiGridWrapper-gz0dbt-0 kyxjse"
   >
     <div
       style={
@@ -2617,7 +2443,7 @@ exports[` 4`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2634,7 +2460,7 @@ exports[` 4`] = `
                 Actions
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2648,41 +2474,7 @@ exports[` 4`] = `
                   }
                 }
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
-                  id={null}
-                  rows={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    Acreage
-                  </p>
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
-                    color={null}
-                    data-icon="angle-down"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="0.875em"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 320 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
+                Acreage
               </div>
             </div>
           </div>
@@ -2735,7 +2527,7 @@ exports[` 4`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2750,7 +2542,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2760,12 +2552,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2778,7 +2570,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2795,7 +2587,7 @@ exports[` 4`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2810,7 +2602,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2820,12 +2612,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2838,7 +2630,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2855,7 +2647,7 @@ exports[` 4`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2870,7 +2662,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2880,12 +2672,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2898,7 +2690,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2915,7 +2707,7 @@ exports[` 4`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2930,7 +2722,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -2940,12 +2732,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -2958,7 +2750,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2975,7 +2767,7 @@ exports[` 4`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -2990,7 +2782,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3000,12 +2792,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3018,7 +2810,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3035,7 +2827,7 @@ exports[` 4`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3050,7 +2842,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3060,12 +2852,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3078,7 +2870,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3095,7 +2887,7 @@ exports[` 4`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3110,7 +2902,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3120,12 +2912,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3138,7 +2930,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3155,7 +2947,7 @@ exports[` 4`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3170,7 +2962,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3180,12 +2972,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3198,7 +2990,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3215,7 +3007,7 @@ exports[` 4`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3230,7 +3022,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3240,12 +3032,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3258,7 +3050,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3275,7 +3067,7 @@ exports[` 4`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3290,7 +3082,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3300,12 +3092,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3318,7 +3110,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3335,7 +3127,7 @@ exports[` 4`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3350,7 +3142,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3360,12 +3152,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3378,7 +3170,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3395,7 +3187,7 @@ exports[` 4`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3410,7 +3202,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3420,12 +3212,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3438,7 +3230,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3455,7 +3247,7 @@ exports[` 4`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3470,7 +3262,7 @@ exports[` 4`] = `
                 }
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                  className="Button__StyledButton-sc-1v7sls2-0 datRVE"
                   disabled={false}
                   htmlFor={null}
                   id={null}
@@ -3480,12 +3272,12 @@ exports[` 4`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
                     id={null}
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -3498,7 +3290,7 @@ exports[` 4`] = `
                 </button>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3527,13 +3319,12 @@ exports[` 5`] = `
 <div
   style={
     Object {
-      "height": "100vh",
-      "width": "100%",
+      "height": "250px",
     }
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 gXuTIs"
+    className="Table__MultiGridWrapper-gz0dbt-0 kyxjse"
   >
     <div
       style={
@@ -3601,7 +3392,7 @@ exports[` 5`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3618,7 +3409,7 @@ exports[` 5`] = `
                 Actions
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3632,41 +3423,7 @@ exports[` 5`] = `
                   }
                 }
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
-                  id={null}
-                  rows={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    Acreage
-                  </p>
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
-                    color={null}
-                    data-icon="angle-down"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="0.875em"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 320 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
+                Acreage
               </div>
             </div>
           </div>
@@ -3719,7 +3476,7 @@ exports[` 5`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3734,7 +3491,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3742,7 +3499,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -3761,7 +3518,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3773,7 +3530,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3790,7 +3547,7 @@ exports[` 5`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3805,7 +3562,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3813,7 +3570,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -3832,7 +3589,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3844,7 +3601,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3861,7 +3618,7 @@ exports[` 5`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3876,7 +3633,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3884,7 +3641,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -3903,7 +3660,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3915,7 +3672,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3932,7 +3689,7 @@ exports[` 5`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -3947,7 +3704,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -3955,7 +3712,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -3974,7 +3731,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3986,7 +3743,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4003,7 +3760,7 @@ exports[` 5`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4018,7 +3775,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4026,7 +3783,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4045,7 +3802,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4057,7 +3814,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4074,7 +3831,7 @@ exports[` 5`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4089,7 +3846,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4097,7 +3854,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4116,7 +3873,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4128,7 +3885,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4145,7 +3902,7 @@ exports[` 5`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4160,7 +3917,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4168,7 +3925,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4187,7 +3944,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4199,7 +3956,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4216,7 +3973,7 @@ exports[` 5`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4231,7 +3988,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4239,7 +3996,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4258,7 +4015,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4270,7 +4027,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4287,7 +4044,7 @@ exports[` 5`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4302,7 +4059,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4310,7 +4067,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4329,7 +4086,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4341,7 +4098,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4358,7 +4115,7 @@ exports[` 5`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4373,7 +4130,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4381,7 +4138,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4400,7 +4157,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4412,7 +4169,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4429,7 +4186,7 @@ exports[` 5`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4444,7 +4201,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4452,7 +4209,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4471,7 +4228,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4483,7 +4240,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4500,7 +4257,7 @@ exports[` 5`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4515,7 +4272,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4523,7 +4280,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4542,7 +4299,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4554,7 +4311,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4571,7 +4328,7 @@ exports[` 5`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4586,7 +4343,7 @@ exports[` 5`] = `
                 }
               >
                 <a
-                  className="Command__CommandContainer-sc-13akgtp-0 dkOYeK"
+                  className="Command__CommandContainer-sc-13akgtp-0 kjpMOd"
                   id={null}
                   label="Command"
                   onClick={null}
@@ -4594,7 +4351,7 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 crFXws Command__CommandIcon-sc-13akgtp-2 euwpHb"
+                    className="svg-inline--fa fa-edit fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD Command__CommandIcon-sc-13akgtp-2 kHbmnU"
                     color={null}
                     data-icon="edit"
                     data-prefix="far"
@@ -4613,7 +4370,7 @@ exports[` 5`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4625,7 +4382,7 @@ exports[` 5`] = `
                 </a>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4654,13 +4411,12 @@ exports[` 6`] = `
 <div
   style={
     Object {
-      "height": "100vh",
-      "width": "100%",
+      "height": "250px",
     }
   }
 >
   <div
-    className="Table__MultiGridWrapper-gz0dbt-0 gXuTIs"
+    className="Table__MultiGridWrapper-gz0dbt-0 kyxjse"
   >
     <div
       style={
@@ -4728,7 +4484,7 @@ exports[` 6`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4745,7 +4501,7 @@ exports[` 6`] = `
                 Actions
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 itqXmK"
+                className="Table__CellWrapper-gz0dbt-1 cWIdty"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4759,41 +4515,7 @@ exports[` 6`] = `
                   }
                 }
               >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 lhqhOW"
-                  id={null}
-                  rows={null}
-                >
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                    fontSize="1rem"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0.5px"
-                  >
-                    Acreage
-                  </p>
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
-                    color={null}
-                    data-icon="angle-down"
-                    data-prefix="far"
-                    focusable="false"
-                    fontSize="0.875em"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 320 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
+                Acreage
               </div>
             </div>
           </div>
@@ -4846,7 +4568,7 @@ exports[` 6`] = `
               }
             >
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4861,7 +4583,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -4972,7 +4694,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -4989,7 +4711,7 @@ exports[` 6`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5004,7 +4726,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -5115,7 +4837,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5132,7 +4854,7 @@ exports[` 6`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5147,7 +4869,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -5258,7 +4980,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5275,7 +4997,7 @@ exports[` 6`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5290,7 +5012,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -5401,7 +5123,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5418,7 +5140,7 @@ exports[` 6`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5433,7 +5155,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -5544,7 +5266,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5561,7 +5283,7 @@ exports[` 6`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5576,7 +5298,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -5687,7 +5409,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5704,7 +5426,7 @@ exports[` 6`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5719,7 +5441,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -5830,7 +5552,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5847,7 +5569,7 @@ exports[` 6`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5862,7 +5584,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -5973,7 +5695,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -5990,7 +5712,7 @@ exports[` 6`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6005,7 +5727,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -6116,7 +5838,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6133,7 +5855,7 @@ exports[` 6`] = `
                 0.12
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6148,7 +5870,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -6259,7 +5981,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6276,7 +5998,7 @@ exports[` 6`] = `
                 1.11
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6291,7 +6013,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -6402,7 +6124,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6419,7 +6141,7 @@ exports[` 6`] = `
                 0.94
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6434,7 +6156,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -6545,7 +6267,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6562,7 +6284,7 @@ exports[` 6`] = `
                 0.07
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
@@ -6577,7 +6299,7 @@ exports[` 6`] = `
                 }
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 fyUdw"
                   id={null}
                   rows={null}
                 >
@@ -6688,7 +6410,7 @@ exports[` 6`] = `
                 </section>
               </div>
               <div
-                className="Table__CellWrapper-gz0dbt-1 brnbhJ"
+                className="Table__CellWrapper-gz0dbt-1 loxYND"
                 onClick={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
