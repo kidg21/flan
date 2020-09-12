@@ -64,14 +64,14 @@ const FieldValue = styled(Text)`
 const LinkedField = styled(Link)`
   font-size: 1em;
   margin: initial;
-  color: ${(props) => {
-    return props.theme.text.link;
-  }};
   padding: initial;
   width: max-content;
   justify-self: ${(props) => {
     return props.justifyLink || "";
   }};
+  ${FieldValue} {
+    color: inherit;
+  }
 `;
 
 const FieldGrid = styled(Grid)`
@@ -161,7 +161,6 @@ function Field({
     <FieldValue
       onChange={onChange}
       valueAlign={valueAlign}
-    // size={size}
     >
       {value}
     </FieldValue>
@@ -171,7 +170,6 @@ function Field({
     field = (
       <LinkedField
         disabled={disabled}
-        // size={size}
         href={href}
         target={href ? target : undefined}
         onClick={onClick}
@@ -192,7 +190,6 @@ function Field({
     >
       <FieldLabel
         text={label}
-      // size={size}
       />
       {field}
     </FieldItem>

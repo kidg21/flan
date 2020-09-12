@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
   id="input block"
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+    className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
     cursor="pointer"
     fontSize="0.8rem"
     fontWeight={400}
@@ -17,18 +17,18 @@ exports[` 1`] = `
     Input Block ( Defaults to a standard Text Input )
   </label>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
       id="ID 1_container"
       rows={null}
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+        className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
         cols=""
         disabled={false}
         id="ID 1"
@@ -47,7 +47,7 @@ exports[` 1`] = `
     </section>
   </section>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+    className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
     fontSize="0.75rem"
     fontWeight={400}
     id={null}
@@ -60,17 +60,17 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
   id={null}
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dpNrvA"
+      className="Typography__StyledLabel-sc-19auepv-0 dshPoX"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -80,18 +80,18 @@ exports[` 2`] = `
       Input Block ( Required )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
       id={null}
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 1"
@@ -110,7 +110,7 @@ exports[` 2`] = `
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}
@@ -120,12 +120,12 @@ exports[` 2`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 jmneKy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 honSlJ"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -135,18 +135,18 @@ exports[` 2`] = `
       Input Block ( Error )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
       id={null}
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 emeBGd"
+          className="TextInput__Input-sc-1fep8p8-3 bNNnKe"
           cols=""
           disabled={false}
           id="ID 1"
@@ -165,7 +165,7 @@ exports[` 2`] = `
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}
@@ -174,10 +174,10 @@ exports[` 2`] = `
       Hang in there, buddy, I'm here to help!
     </p>
     <section
-      className="InputBlock__MessageContainer-sc-1bjt58v-2 eDVrgT"
+      className="InputBlock__MessageContainer-sc-1bjt58v-2 cZMFBw"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+        className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
         fontSize="0.75rem"
         fontWeight={400}
         id={null}
@@ -188,12 +188,12 @@ exports[` 2`] = `
     </section>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -203,18 +203,18 @@ exports[` 2`] = `
       Input Block ( Disabled )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
       id={null}
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bUchzY"
+          className="TextInput__Input-sc-1fep8p8-3 keqBxf"
           cols=""
           disabled={true}
           id="ID 1"
@@ -233,7 +233,7 @@ exports[` 2`] = `
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}
@@ -247,17 +247,17 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
   id={null}
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -267,18 +267,18 @@ exports[` 3`] = `
       Input Block ( 2 Inputs )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 fDoUaA"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hzzOOT"
       id={null}
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 1"
@@ -296,13 +296,13 @@ exports[` 3`] = `
         />
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 2_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 2"
@@ -321,7 +321,7 @@ exports[` 3`] = `
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}
@@ -331,12 +331,12 @@ exports[` 3`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -346,18 +346,18 @@ exports[` 3`] = `
       Input Block ( 3 Inputs )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kJGGIZ"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jlwgGm"
       id={null}
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 1"
@@ -375,13 +375,13 @@ exports[` 3`] = `
         />
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 2_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 2"
@@ -399,13 +399,13 @@ exports[` 3`] = `
         />
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 3_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 3"
@@ -424,7 +424,7 @@ exports[` 3`] = `
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}
@@ -434,12 +434,12 @@ exports[` 3`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -449,15 +449,15 @@ exports[` 3`] = `
       Input Block ( Pre-Label )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 hfZkgr"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 dxHTjA"
       id={null}
       rows={null}
     >
       <div
-        className="InputBlock__PrePost-sc-1bjt58v-1 jzcrsP"
+        className="InputBlock__PrePost-sc-1bjt58v-1 dbTcmg"
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+          className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
           cursor="pointer"
           fontSize="0.8rem"
           fontWeight={400}
@@ -468,13 +468,13 @@ exports[` 3`] = `
         </label>
       </div>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 1"
@@ -493,7 +493,7 @@ exports[` 3`] = `
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}
@@ -503,12 +503,12 @@ exports[` 3`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -518,18 +518,18 @@ exports[` 3`] = `
       Input Block ( Post-Label )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 lkDJRD"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 clwYuU"
       id={null}
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 1"
@@ -547,10 +547,10 @@ exports[` 3`] = `
         />
       </section>
       <div
-        className="InputBlock__PrePost-sc-1bjt58v-1 jzcrsP"
+        className="InputBlock__PrePost-sc-1bjt58v-1 dbTcmg"
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+          className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
           cursor="pointer"
           fontSize="0.8rem"
           fontWeight={400}
@@ -562,7 +562,7 @@ exports[` 3`] = `
       </div>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}
@@ -572,12 +572,12 @@ exports[` 3`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -587,16 +587,16 @@ exports[` 3`] = `
       Input Block ( Pre-Icon )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 iupyxu"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 bTrbMp"
       id={null}
       rows={null}
     >
       <div
-        className="InputBlock__PrePost-sc-1bjt58v-1 jzcrsP"
+        className="InputBlock__PrePost-sc-1bjt58v-1 dbTcmg"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-user fa-w-14 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+          className="svg-inline--fa fa-user fa-w-14 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
           color={null}
           data-icon="user"
           data-prefix="far"
@@ -616,13 +616,13 @@ exports[` 3`] = `
         </svg>
       </div>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 1"
@@ -641,7 +641,7 @@ exports[` 3`] = `
       </section>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}
@@ -651,12 +651,12 @@ exports[` 3`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz InputBlock__TextInputContainer-sc-1bjt58v-0 FyZOH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ InputBlock__TextInputContainer-sc-1bjt58v-0 ghuOZk"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+      className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx"
       cursor="pointer"
       fontSize="0.8rem"
       fontWeight={400}
@@ -666,18 +666,18 @@ exports[` 3`] = `
       Input Block ( Post-Icon )
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 WuSSW"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jcztvd"
       id={null}
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="ID 1_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
           cols=""
           disabled={false}
           id="ID 1"
@@ -695,11 +695,11 @@ exports[` 3`] = `
         />
       </section>
       <div
-        className="InputBlock__PrePost-sc-1bjt58v-1 jzcrsP"
+        className="InputBlock__PrePost-sc-1bjt58v-1 dbTcmg"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-user fa-w-14 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+          className="svg-inline--fa fa-user fa-w-14 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
           color={null}
           data-icon="user"
           data-prefix="far"
@@ -720,7 +720,7 @@ exports[` 3`] = `
       </div>
     </section>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+      className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
       fontSize="0.75rem"
       fontWeight={400}
       id={null}

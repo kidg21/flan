@@ -48,9 +48,9 @@ import Mapbox from "layout/Map"
       const [leftOpen, setLeftOpen] = useState(true);
       const toggleLeft = () => { setLeftOpen(!leftOpen); };
       /** Open/Close Summary Panel */
-      const [fade, setFade] = useState("1");
-      const openSummary = () => { setFade("1"); };
-      const closeSummary = () => { setFade("0"); };
+      const [regionVisible, setRegionVisible] = useState(true);
+      const openSummary = () => { setRegionVisible(true) };
+      const closeSummary = () => { setRegionVisible(false) };
       /** Geometry (Regions) Filter */
       const [regionsActive, setRegions] = useState(true);
       const [menuRegionsActive, setRegionsMenu] = useState(false);
@@ -331,7 +331,7 @@ import Mapbox from "layout/Map"
                         actionClose={closeSummary}
                       />
                     ),
-                    opacity: fade,
+                    visible: regionVisible,
                   }}
                 />
                 <Mapbox
