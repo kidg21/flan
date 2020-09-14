@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Button__GroupWrapper-sc-1v7sls2-3 kvzTEM"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Button__GroupWrapper-sc-1v7sls2-3 YHXln"
   id={null}
   rows={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -17,24 +17,25 @@ exports[` 1`] = `
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Button
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -44,24 +45,25 @@ exports[` 1`] = `
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Button
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -71,24 +73,25 @@ exports[` 1`] = `
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Button
       </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 datRVE"
+    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -98,17 +101,18 @@ exports[` 1`] = `
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Button
       </label>
