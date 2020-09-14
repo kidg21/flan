@@ -151,93 +151,93 @@ ListSection.defaultProps = {
 
 function getRightContent(post, disabled, onClick) {
   let rightContent = null;
-  if (post && post.type) {
-    const postType = post.type.toLowerCase();
-    if (postType === "checkbox") {
-      rightContent = {
-        content: <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
-        width: "max-content",
-        onClick: post.onClick || onClick,
-      };
-    } else if (postType === "toggle") {
-      rightContent = {
-        content: <Switch label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
-        width: "max-content",
-        onClick: post.onClick || onClick,
-      };
-    } else if (postType === "label" && post.label) {
-      rightContent = {
-        content: <Tag label={post.label} />,
-        width: "max-content",
-        onClick: post.onClick || onClick,
-      };
-    } else if (postType === "icon" && post.icon) {
-      rightContent = {
-        content: (
-          <Icon
-            icon={post.icon}
-            size={post.size}
-            variant={post.variant}
-            onClick={post.onClick || onClick}
-            fixedWidth
-          />
-        ),
-        width: "max-content",
-      };
+  if (post) {
+    if (post.type && typeof post.type === "string") {
+      const postType = post.type.toLowerCase();
+      if (postType === "checkbox") {
+        rightContent = {
+          content: <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
+          width: "max-content",
+          onClick: post.onClick || onClick,
+        };
+      } else if (postType === "toggle") {
+        rightContent = {
+          content: <Switch label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
+          width: "max-content",
+          onClick: post.onClick || onClick,
+        };
+      } else if (postType === "label" && post.label) {
+        rightContent = {
+          content: <Tag label={post.label} />,
+          width: "max-content",
+          onClick: post.onClick || onClick,
+        };
+      } else if (postType === "icon" && post.icon) {
+        rightContent = {
+          content: (
+            <Icon
+              icon={post.icon}
+              size={post.size}
+              variant={post.variant}
+              onClick={post.onClick || onClick}
+              fixedWidth
+            />
+          ),
+          width: "max-content",
+        };
+      }
+    } else {
+      rightContent = post.content
+        ? { ...post, width: "max-content" }
+        : { content: post, width: "max-content" };
     }
-  } else if (post) {
-    rightContent = {
-      content: post,
-      width: "max-content",
-      onClick: post.OnClick || onClick,
-    };
   }
   return rightContent;
 }
 
 function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
-  if (pre && pre.type) {
-    const preType = pre.type.toLowerCase();
-    if (preType === "checkbox") {
-      leftContent = {
-        content: <Checkbox id={pre.label} label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
-        width: "max-content",
-        onClick: pre.onClick || onClick,
-      };
-    } else if (preType === "radio") {
-      leftContent = {
-        content: <Radio label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
-        width: "max-content",
-        onClick: pre.onClick || onClick,
-      };
-    } else if (preType === "label" && pre.label) {
-      leftContent = {
-        content: <Avatar label={pre.label} disabled={disabled} />,
-        width: "max-content",
-        onClick: pre.onClick || onClick,
-      };
-    } else if (preType === "icon" && pre.icon) {
-      leftContent = {
-        content: (
-          <Icon
-            icon={pre.icon}
-            size={pre.size}
-            variant={pre.variant}
-            onClick={pre.onClick}
-            fixedWidth
-          />
-        ),
-        width: "max-content",
-        onClick: pre.onClick || onClick,
-      };
+  if (pre) {
+    if (pre.type && typeof pre.type === "string") {
+      const preType = pre.type.toLowerCase();
+      if (preType === "checkbox") {
+        leftContent = {
+          content: <Checkbox id={pre.label} label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
+          width: "max-content",
+          onClick: pre.onClick || onClick,
+        };
+      } else if (preType === "radio") {
+        leftContent = {
+          content: <Radio label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
+          width: "max-content",
+          onClick: pre.onClick || onClick,
+        };
+      } else if (preType === "label" && pre.label) {
+        leftContent = {
+          content: <Avatar label={pre.label} disabled={disabled} />,
+          width: "max-content",
+          onClick: pre.onClick || onClick,
+        };
+      } else if (preType === "icon" && pre.icon) {
+        leftContent = {
+          content: (
+            <Icon
+              icon={pre.icon}
+              size={pre.size}
+              variant={pre.variant}
+              onClick={pre.onClick}
+              fixedWidth
+            />
+          ),
+          width: "max-content",
+          onClick: pre.onClick || onClick,
+        };
+      }
+    } else {
+      leftContent = pre.content
+        ? { ...pre, width: "max-content" }
+        : { content: pre, width: "max-content" };
     }
-  } else if (pre) {
-    leftContent = {
-      content: pre,
-      width: "max-content",
-      onClick: pre.OnClick || onClick,
-    };
   }
   return leftContent;
 }
@@ -256,6 +256,7 @@ function ListItem({
   post,
   pre,
   tabIndex,
+  textAlign,
   title,
 }) {
   let selectedColor;
@@ -308,7 +309,7 @@ function ListItem({
           padding={useContext(PaddingContext)}
           center={{
             content: centerContent,
-            align: "left",
+            align: textAlign,
             onClick: typeof onClick === "function" ? handleOnClick : null,
           }}
           contentAlign="center"
@@ -333,25 +334,40 @@ ListItem.propTypes = {
   isSelected: PropTypes.bool,
   onClick: PropTypes.func,
   onClickItem: PropTypes.func,
+  textAlign: PropTypes.oneOf(["left", "right", "center"]),
   title: PropTypes.string,
-  post: PropTypes.oneOfType([PropTypes.shape({
-    type: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    checked: PropTypes.bool,
-    icon: PropTypes.string,
-    onClick: PropTypes.func,
-    size: PropTypes.string,
-    variant: PropTypes.string,
-  }), PropTypes.node]),
-  pre: PropTypes.oneOfType([PropTypes.shape({
-    type: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    checked: PropTypes.bool,
-    icon: PropTypes.string,
-    onClick: PropTypes.func,
-    size: PropTypes.string,
-    variant: PropTypes.string,
-  }), PropTypes.node]),
+  post: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      checked: PropTypes.bool,
+      icon: PropTypes.string,
+      onClick: PropTypes.func,
+      size: PropTypes.string,
+      variant: PropTypes.string,
+    }),
+    PropTypes.shape({
+      content: PropTypes.node,
+      onClick: PropTypes.func,
+    }),
+    PropTypes.node,
+  ]),
+  pre: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      checked: PropTypes.bool,
+      icon: PropTypes.string,
+      onClick: PropTypes.func,
+      size: PropTypes.string,
+      variant: PropTypes.string,
+    }),
+    PropTypes.shape({
+      content: PropTypes.node,
+      onClick: PropTypes.func,
+    }),
+    PropTypes.node,
+  ]),
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
@@ -365,6 +381,7 @@ ListItem.defaultProps = {
   isSelected: false,
   onClick: null,
   onClickItem: null,
+  textAlign: "left",
   title: null,
   post: null,
   pre: null,

@@ -31,6 +31,7 @@ const TagContainer = styled.span`
     return props.borderRadius || "3px";
   }};
   transition: all 0.25s ease;
+  cursor: ${(props) => { return props.onClick ? "pointer" : "inherit"; }}
 `;
 
 const TagIconContainer = styled.div`
@@ -62,8 +63,38 @@ const TagIconContainer = styled.div`
   cursor: ${(props) => { return props.onClick ? "pointer" : "inherit"; }}
 `;
 
+const badgeSizes = {
+  xs: {
+    width: "1.25em",
+    height: "1.25em",
+  },
+  sm: {
+    width: "1.5em",
+    height: "1.5em",
+  },
+  m: {
+    width: "1.8em",
+    height: "1.8em",
+  },
+  lg: {
+    width: "2em",
+    height: "2em",
+  },
+};
+
 function Tag({
-  brand, className, hasBackground, icon, iconPosition, iconSeparator, id, label, variant, onClick, onClickIcon,
+  brand,
+  className,
+  hasBackground,
+  icon,
+  iconPosition,
+  iconSeparator,
+  id,
+  label,
+  onClick,
+  onClickIcon,
+  size,
+  variant,
 }) {
   let badgeColor;
   let badgeHeight;
@@ -95,9 +126,10 @@ function Tag({
       badgeTextColor = "primary";
     }
   } else if (icon) {
-    iconType = <Icon icon={icon} size="sm" variant={hasBackground ? "inverse" : variant} />;
-    badgeWidth = "1.5em";
-    badgeHeight = "1.5em";
+    iconType = <Icon icon={icon} size={size} variant={hasBackground ? "inverse" : variant} />;
+    const badgeSize = badgeSizes[size] || { width: "1.5em", height: "1.5em" };
+    badgeWidth = badgeSize.width;
+    badgeHeight = badgeSize.height;
     badgePadding = ".75em";
     borderRadius = "50%";
   } else if (label) {
@@ -186,9 +218,10 @@ Tag.propTypes = {
   iconSeparator: PropTypes.oneOf(["bar", "radial", "none"]),
   id: PropTypes.string,
   label: PropTypes.string,
-  variant: PropTypes.string,
   onClick: PropTypes.func,
   onClickIcon: PropTypes.func,
+  size: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Tag.defaultProps = {
@@ -200,9 +233,10 @@ Tag.defaultProps = {
   iconSeparator: "radial",
   id: null,
   label: null,
-  variant: null,
   onClick: null,
   onClickIcon: null,
+  size: "sm",
+  variant: null,
 };
 
 export default Tag;
