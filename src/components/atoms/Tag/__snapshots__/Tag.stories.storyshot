@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 ehhDnF"
+    className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
     id={null}
     label="Tag"
     onClick={null}
@@ -62,7 +62,7 @@ Array [
       className="Bar__Slot-icfo76-1 bKkRmK"
     >
       <span
-        className="Tag__TagContainer-sc-128kb3h-0 ehhDnF"
+        className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
         id={null}
         label="Brief Label"
         onClick={null}
@@ -114,7 +114,7 @@ Array [
       className="Bar__Slot-icfo76-1 bKkRmK"
     >
       <span
-        className="Tag__TagContainer-sc-128kb3h-0 ehhDnF"
+        className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
         onClick={null}
@@ -143,7 +143,7 @@ exports[` 3`] = `
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 VyFvA"
+    className="Tag__TagContainer-sc-128kb3h-0 esQupT"
     id={null}
     label="Info"
     onClick={null}
@@ -161,7 +161,7 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 grbyTc"
+    className="Tag__TagContainer-sc-128kb3h-0 jDCRZf"
     id={null}
     label="Warning"
     onClick={null}
@@ -179,7 +179,7 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 eIwpvc"
+    className="Tag__TagContainer-sc-128kb3h-0 buneWb"
     id={null}
     label="Success"
     onClick={null}
@@ -197,7 +197,7 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 fPtoFl"
+    className="Tag__TagContainer-sc-128kb3h-0 gfvkAy"
     id={null}
     label="Alert"
     onClick={null}
@@ -219,7 +219,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <span
-  className="Tag__TagContainer-sc-128kb3h-0 juYvZG"
+  className="Tag__TagContainer-sc-128kb3h-0 eGaUcZ"
   id={null}
   label={null}
   onClick={null}
@@ -254,7 +254,7 @@ exports[` 5`] = `
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 gqSuJg"
+    className="Tag__TagContainer-sc-128kb3h-0 kOZCBz"
     id={null}
     label="Icon on Left"
     onClick={null}
@@ -297,7 +297,7 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 cHiZFk"
+    className="Tag__TagContainer-sc-128kb3h-0 bZmZoP"
     id={null}
     label="Icon on Left"
     onClick={null}
@@ -340,7 +340,7 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 cHiZFk"
+    className="Tag__TagContainer-sc-128kb3h-0 bZmZoP"
     id={null}
     label="Icon on Left"
     onClick={null}
@@ -383,7 +383,7 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 cIduLE"
+    className="Tag__TagContainer-sc-128kb3h-0 gvscuL"
     id={null}
     label="Icon on Right"
     onClick={null}
@@ -426,7 +426,7 @@ exports[` 5`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 cHiZFk"
+    className="Tag__TagContainer-sc-128kb3h-0 bZmZoP"
     id={null}
     label="Icon on Right"
     onClick={null}
@@ -469,7 +469,7 @@ exports[` 5`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 cHiZFk"
+    className="Tag__TagContainer-sc-128kb3h-0 bZmZoP"
     id={null}
     label="Icon on Right"
     onClick={null}
