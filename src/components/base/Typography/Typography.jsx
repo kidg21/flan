@@ -294,6 +294,7 @@ function Label({
   cursor,
   htmlFor,
   isRequired,
+  onClick,
   weight,
   size,
   text,
@@ -323,6 +324,7 @@ function Label({
       isRequired={isRequired}
       letterSpacing={letterSpacing}
       visible={visible}
+      onClick={onClick}
     >
       {text || children}
     </StyledLabel>
@@ -336,6 +338,7 @@ Label.propTypes = {
   htmlFor: PropTypes.string,
   isUppercase: PropTypes.bool,
   isRequired: PropTypes.bool,
+  onClick: PropTypes.func,
   size: PropTypes.oneOf(["xs", "sm", "lg", "xl", ""]),
   text: PropTypes.node,
   visible: PropTypes.bool,
@@ -348,6 +351,7 @@ Label.defaultProps = {
   isUppercase: false,
   htmlFor: null,
   isRequired: false,
+  onClick: null,
   size: "",
   text: null,
   visible: true,

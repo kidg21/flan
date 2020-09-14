@@ -204,7 +204,16 @@ function Checkbox({
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      <CheckboxLabel htmlFor={id} text={label} hidden={!labelVisible} />
+      <CheckboxLabel
+        htmlFor={id}
+        text={label}
+        hidden={!labelVisible}
+        onClick={(e) => {
+          if (stopPropagation) {
+            e.stopPropagation();
+          }
+        }}
+      />
     </CheckboxContainer>
   );
 }
