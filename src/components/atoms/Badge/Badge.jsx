@@ -25,7 +25,7 @@ const StyledBadge = styled(Tag)`
 `;
 
 function Badge({
-  hasBackground, icon, id, label, onClick, position, size, variant,
+  hasBackground, icon, iconSize, id, label, onClick, position, size, variant,
 }) {
   let badgeLeft;
   let badgeBottom;
@@ -60,7 +60,7 @@ function Badge({
       id={id}
       setTransform={setTransform}
     >
-      <StyledBadge hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} size={size} onClick={onClick} />
+      <StyledBadge hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} iconSize={iconSize} size={size} onClick={onClick} />
     </BadgeContainer>
   );
 }
@@ -68,6 +68,7 @@ function Badge({
 Badge.propTypes = {
   hasBackground: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  iconSize: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -85,11 +86,12 @@ Badge.propTypes = {
 Badge.defaultProps = {
   hasBackground: true,
   icon: null,
+  iconSize: undefined,
   id: null,
   label: null,
   onClick: null,
   position: null,
-  size: "",
+  size: undefined,
   variant: null,
 };
 
