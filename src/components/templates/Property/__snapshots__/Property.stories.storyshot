@@ -10,34 +10,34 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 bcpwfv Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 kZsUNm Layout__Header-sc-19tlhp4-1 jTFBEx"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 hKyaRZ Layout__Header-sc-19tlhp4-1 eYGDjK"
       height={null}
       id="Header"
       overflow={null}
       width={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 izXrkl"
+        className="Bar__BarLayout-icfo76-2 grMosm"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 boCGaE"
+          className="Bar__Slot-icfo76-1 gdiuzv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 sWSdM"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hnrPBP"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 bqsRfb"
+              className="Button__StyledButton-sc-1v7sls2-0 gAgcms"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -47,13 +47,13 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                 id={null}
                 rows={null}
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                  className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
                   color={null}
                   data-icon="bars"
                   data-prefix="far"
@@ -75,7 +75,7 @@ exports[` 1`] = `
             </button>
             <img
               alt="Lightbox Logo"
-              className="Image__ImageWrapper-sc-18abvff-0 dLVSBY"
+              className="Image__ImageWrapper-sc-18abvff-0 boIWnv"
               onClick={[Function]}
               src=""
               title="Lightbox Logo"
@@ -84,15 +84,15 @@ exports[` 1`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 fynbkj"
+          className="Bar__Slot-icfo76-1 ivdblQ"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk Button__GroupWrapper-sc-1v7sls2-3 kvzTEM"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb Button__GroupWrapper-sc-1v7sls2-3 YHXln"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 fFaCRk"
+              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -102,24 +102,25 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   JOBS PORTAL
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 NivEY"
+              className="Button__StyledButton-sc-1v7sls2-0 deIksf"
               disabled={true}
               htmlFor={null}
               id={null}
@@ -129,24 +130,25 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   RESEARCH
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 fFaCRk"
+              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -156,24 +158,25 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   BI
                 </label>
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 fFaCRk"
+              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -183,17 +186,18 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   REPORT WRITING
                 </label>
@@ -202,24 +206,24 @@ exports[` 1`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 fiTHpV"
+          className="Bar__Slot-icfo76-1 hrKMOC"
         >
           <div
-            className="Flex__FlexWrapper-sc-7b3s7m-0 jveJdC Inline__InlineWrapper-sc-1lksbyc-0 gxACih"
+            className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
             height={null}
             id={null}
             overflow={null}
             width={null}
           >
             <div
-              className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
+              className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
             >
               <div
-                className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
                 id="menu-popper-Help Menu"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 eJQUnI"
+                  className="Button__StyledButton-sc-1v7sls2-0 WvdJL"
                   disabled={false}
                   htmlFor={null}
                   id="help"
@@ -229,13 +233,13 @@ exports[` 1`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                     id={null}
                     rows={null}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
+                      className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 hAvZIL"
                       color={null}
                       data-icon="question-circle"
                       data-prefix="far"
@@ -258,15 +262,15 @@ exports[` 1`] = `
               </div>
             </div>
             <div
-              className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
+              className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
             >
               <div
-                className="Avatar__TagContainer-sc-1vuf9om-2 hxkuUO"
+                className="Avatar__TagContainer-sc-1vuf9om-2 jgqvSx"
                 id="profile"
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 buvBot"
+                  className="Typography__Paragraph-sc-19auepv-3 jnQhZg Avatar__AvatarText-sc-1vuf9om-0 jWGGAK"
                   fontSize="1rem"
                   fontWeight={500}
                   id={null}
@@ -281,28 +285,28 @@ exports[` 1`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bcpwfv Layout__Body-sc-19tlhp4-3 iPUXIc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__Body-sc-19tlhp4-3 gQQaiT"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 kjLJHF Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 jGlLHq Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
         height={null}
         id="Left"
         overflow={null}
         width="10rem"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-6 fqctdI"
+          className="List__ListWrapper-sc-43f2zq-6 eZwTnL"
           id={null}
         >
           <li
-            className="List__ListTitleWrapper-sc-43f2zq-1 dWCNV"
+            className="List__ListTitleWrapper-sc-43f2zq-1 duMrda"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-2 cYpVBa"
+              className="Typography__Paragraph-sc-19auepv-3 dIhRyd List__ListTitle-sc-43f2zq-2 ckaevx"
               fontSize="1rem"
               fontWeight={400}
               id={null}
@@ -312,21 +316,22 @@ exports[` 1`] = `
             </p>
           </li>
           <li
-            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+            className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.8rem"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 1
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -334,15 +339,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -354,7 +359,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -362,15 +367,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -382,7 +387,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -390,15 +395,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -410,7 +415,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -418,15 +423,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -438,28 +443,29 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+            className="List__SectionWrapper-sc-43f2zq-5 jGYatw"
           >
             <hr
-              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+              className="Divider__Line-sc-1k80dpa-0 dEwRvu List__SectionDivider-sc-43f2zq-4 eUWqCR"
             />
           </li>
           <li
-            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+            className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.8rem"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 2
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -467,15 +473,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -487,7 +493,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -495,15 +501,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -515,7 +521,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -523,15 +529,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -543,7 +549,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -551,15 +557,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -571,28 +577,29 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__SectionWrapper-sc-43f2zq-5 kDvcFz"
+            className="List__SectionWrapper-sc-43f2zq-5 jGYatw"
           >
             <hr
-              className="Divider__Line-sc-1k80dpa-0 hYpRQN List__SectionDivider-sc-43f2zq-4 cNeAOS"
+              className="Divider__Line-sc-1k80dpa-0 dEwRvu List__SectionDivider-sc-43f2zq-4 eUWqCR"
             />
           </li>
           <li
-            className="List__SectionWrapper-sc-43f2zq-5 ksmuds"
+            className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eLuA-dx List__Section-sc-43f2zq-3 cHOwxm"
+              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.8rem"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 3
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -600,15 +607,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -620,7 +627,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -628,15 +635,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -648,7 +655,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -656,15 +663,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -676,7 +683,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -684,15 +691,15 @@ exports[` 1`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -706,31 +713,31 @@ exports[` 1`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 jDLvgT Layout__WrapperMain-sc-19tlhp4-5 jBholC"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 KWOnE Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
         height="21rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 gtAlCj Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 buvzUw Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
           height={null}
           id="Main"
           overflow={null}
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 dGKuDD"
+            className="Panel__PanelWrapper-sc-48epke-0 jNagE"
             height="100%"
             id={null}
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 dWRiAV Panel__PanelSection-sc-48epke-2 iiaelC"
+              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
-                className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
                 href={null}
                 id="Card_Header"
                 media=""
@@ -738,25 +745,25 @@ exports[` 1`] = `
                 placeholder="{ Card }"
               >
                 <section
-                  className="Card__CardSectionWrapper-sc-1g3s676-1 dnhIZt"
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 giCoMG"
                   id={null}
                   onClick={null}
                 >
                   <div
-                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    className="Bar__BarLayout-icfo76-2 AXrfk"
                     id={null}
                     onClick={null}
                   >
                     <div
-                      className="Bar__Slot-icfo76-1 eufPAN"
+                      className="Bar__Slot-icfo76-1 geluxC"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
                         id={null}
                         rows={null}
                       >
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 cmjPUa"
+                          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
                           fontSize="0.75rem"
                           fontWeight={400}
                           id={null}
@@ -765,7 +772,7 @@ exports[` 1`] = `
                           Project
                         </p>
                         <h4
-                          className="Typography__TitleText-sc-19auepv-2 dDJKKW"
+                          className="Typography__TitleText-sc-19auepv-2 ibOjqh"
                           fontSize="1.35rem"
                           fontWeight="400"
                           letterSpacing="0px"
@@ -775,18 +782,18 @@ exports[` 1`] = `
                       </section>
                     </div>
                     <div
-                      className="Bar__Slot-icfo76-1 OxwHl"
+                      className="Bar__Slot-icfo76-1 fdSmju"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 cIDgbj ProgressIndicator__ProgressSection-sc-1kcvu29-0 CibKn"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 dJfRqA ProgressIndicator__ProgressSection-sc-1kcvu29-0 bczQwI"
                         id={null}
                         rows={null}
                       >
                         <div
-                          className="ProgressIndicator__Container-sc-1kcvu29-2 dOobnp"
+                          className="ProgressIndicator__Container-sc-1kcvu29-2 hXjBRO"
                         >
                           <div
-                            className="ProgressIndicator__BarItem-sc-1kcvu29-1 iFSIRC"
+                            className="ProgressIndicator__BarItem-sc-1kcvu29-1 dIITpZ"
                             id={null}
                             style={
                               Object {
@@ -796,7 +803,7 @@ exports[` 1`] = `
                           />
                         </div>
                         <p
-                          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                           fontSize="1rem"
                           fontWeight={400}
                           id={null}
@@ -811,34 +818,34 @@ exports[` 1`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 igGMll"
+              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
               id={null}
             >
               <div
-                className="Panel__PanelWrapper-sc-48epke-0 dGKuDD"
+                className="Panel__PanelWrapper-sc-48epke-0 jNagE"
                 height="100%"
                 id={null}
                 width="100%"
               >
                 <section
-                  className="Panel__SectionWrapper-sc-48epke-1 dWRiAV Panel__PanelSection-sc-48epke-2 iiaelC"
+                  className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                   id={null}
                 >
                   <div
-                    className="Bar__BarLayout-icfo76-2 kTXCTV"
+                    className="Bar__BarLayout-icfo76-2 kShWZi"
                     id={null}
                     onClick={null}
                   >
                     <div
-                      className="Bar__Slot-icfo76-1 fNcQEg"
+                      className="Bar__Slot-icfo76-1 bxLAtn"
                     >
                       <section
-                        className="Tabs__TabsWrapper-sc-1aqycph-1 dkpJcd"
+                        className="Tabs__TabsWrapper-sc-1aqycph-1 cKKFgK"
                         disabled={false}
                         id={null}
                       >
                         <button
-                          className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Tabs__TabButton-sc-1aqycph-0 dlQYYB"
+                          className="Button__StyledButton-sc-1v7sls2-0 hQAiX Tabs__TabButton-sc-1aqycph-0 dPjtNy"
                           disabled={false}
                           htmlFor={null}
                           id="Tab 1"
@@ -848,24 +855,25 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                               cursor="pointer"
                               fontSize="1rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               Overview
                             </label>
                           </section>
                         </button>
                         <button
-                          className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
                           disabled={false}
                           htmlFor={null}
                           id="Tab 2"
@@ -875,24 +883,25 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                               cursor="pointer"
                               fontSize="1rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               Zoning
                             </label>
                           </section>
                         </button>
                         <button
-                          className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
                           disabled={false}
                           htmlFor={null}
                           id="Tab 3"
@@ -902,24 +911,25 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                               cursor="pointer"
                               fontSize="1rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               Transactions
                             </label>
                           </section>
                         </button>
                         <button
-                          className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
                           disabled={false}
                           htmlFor={null}
                           id="Tab 4"
@@ -929,24 +939,25 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                               cursor="pointer"
                               fontSize="1rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               Assessment & Tax
                             </label>
                           </section>
                         </button>
                         <button
-                          className="Button__StyledButton-sc-1v7sls2-0 gfEbhN Tabs__TabButton-sc-1aqycph-0 bZMvyH"
+                          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
                           disabled={false}
                           htmlFor={null}
                           id="Tab 5"
@@ -956,17 +967,18 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                               cursor="pointer"
                               fontSize="1rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               Tenants
                             </label>
@@ -977,30 +989,30 @@ exports[` 1`] = `
                   </div>
                 </section>
                 <section
-                  className="Panel__SectionWrapper-sc-48epke-1 dWRiAV"
+                  className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
                   id={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 JcxBn"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 hCtFKU"
                     id="overview"
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 dZjRmT"
+                      className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fcneQZ"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
                         id={null}
                         rows={null}
                       >
                         <section
-                          className="Field__Section-sc-11od8ug-6 gqQdMG"
+                          className="Field__Section-sc-11od8ug-6 bwzJQN"
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Field__GroupTitle-sc-11od8ug-1 ffFQaW"
+                            className="Typography__Paragraph-sc-19auepv-3 GBuDq Field__GroupTitle-sc-11od8ug-1 fHeAih"
                             fontSize="0.875rem"
                             fontWeight={400}
                             id={null}
@@ -1009,32 +1021,33 @@ exports[` 1`] = `
                             General Information
                           </p>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Field__FieldGrid-sc-11od8ug-5 lexBWe"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 djycdd Field__FieldGrid-sc-11od8ug-5 bLuXxN"
                             id={null}
                             rows={null}
                           >
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                               id={null}
                               rows={null}
                             >
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Property Name"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Property Name
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1044,22 +1057,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Property Type"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Property Type
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1069,22 +1083,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Lat / Long"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Lat / Long
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1094,22 +1109,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Street Address"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Street Address
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1119,22 +1135,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="City, State Zip"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   City, State Zip
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1145,27 +1162,28 @@ exports[` 1`] = `
                               </section>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                               id={null}
                               rows={null}
                             >
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Census Tract"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Census Tract
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1175,22 +1193,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Census Block"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Census Block
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1200,22 +1219,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="County"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   County
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1225,22 +1245,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="CBSA"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   CBSA
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1253,20 +1274,20 @@ exports[` 1`] = `
                           </section>
                         </section>
                         <section
-                          className="Field__Section-sc-11od8ug-6 gqQdMG"
+                          className="Field__Section-sc-11od8ug-6 bwzJQN"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Field__FieldGrid-sc-11od8ug-5 lexBWe"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 djycdd Field__FieldGrid-sc-11od8ug-5 bLuXxN"
                             id={null}
                             rows={null}
                           >
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                               id="Site Characteristics"
                               rows={null}
                             >
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
+                                className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
                                 fontSize="0.875rem"
                                 fontWeight={600}
                                 id={null}
@@ -1275,22 +1296,23 @@ exports[` 1`] = `
                                 Site Characteristics
                               </p>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Land SF"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Land SF
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1300,22 +1322,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Acres"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Acres
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1325,22 +1348,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Land Use"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Land Use
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1350,22 +1374,23 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Street Address"
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                   cursor="pointer"
                                   fontSize="0.875rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Street Address
                                 </label>
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -1381,27 +1406,27 @@ exports[` 1`] = `
                       </section>
                     </section>
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 bjsfVY"
+                      className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                       id="B"
                       placeholder="B"
                       tabIndex="0"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fcneQZ"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
                         id={null}
                         rows={null}
                       >
                         <div
-                          className="Bar__BarLayout-icfo76-2 wJZwX"
+                          className="Bar__BarLayout-icfo76-2 gFQRVY"
                           id={null}
                           onClick={null}
                         >
                           <div
-                            className="Bar__Slot-icfo76-1 dLaZFL"
+                            className="Bar__Slot-icfo76-1 kcJpTc"
                           >
                             <img
                               alt="mockImage"
-                              className="Image__ImageWrapper-sc-18abvff-0 lnCoxO"
+                              className="Image__ImageWrapper-sc-18abvff-0 fSutOZ"
                               onClick={null}
                               src=""
                               title="mockImage"
@@ -1410,27 +1435,28 @@ exports[` 1`] = `
                           </div>
                         </div>
                         <div
-                          className="Bar__BarLayout-icfo76-2 kTXCTV"
+                          className="Bar__BarLayout-icfo76-2 kShWZi"
                           id={null}
                           onClick={null}
                         >
                           <div
-                            className="Bar__Slot-icfo76-1 dLaZFL"
+                            className="Bar__Slot-icfo76-1 kcJpTc"
                           >
                             <a
-                              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
+                              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
                               id={null}
                               label="View Map"
                               onClick={null}
                               title="View Map"
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Command__CommandName-sc-13akgtp-1 kkzjvU"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 View Map
                               </label>
@@ -1438,12 +1464,12 @@ exports[` 1`] = `
                           </div>
                         </div>
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                           id="Physical Characteristics"
                           rows={null}
                         >
                           <p
-                            className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
+                            className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
                             fontSize="0.875rem"
                             fontWeight={600}
                             id={null}
@@ -1452,22 +1478,23 @@ exports[` 1`] = `
                             Physical Characteristics
                           </p>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Buildings"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               No. of Buildings
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
                               fontWeight={400}
                               id={null}
@@ -1477,22 +1504,23 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="GBA"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               GBA
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
                               fontWeight={400}
                               id={null}
@@ -1502,22 +1530,23 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Stories"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               No. of Stories
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
                               fontWeight={400}
                               id={null}
@@ -1527,22 +1556,23 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Units"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               No. of Units
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
                               fontWeight={400}
                               id={null}
@@ -1552,22 +1582,23 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="Year Built"
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               Year Built
                             </label>
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                               fontSize="1rem"
                               fontWeight={400}
                               id={null}
@@ -1593,34 +1624,34 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 bcpwfv Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 kZsUNm Layout__Header-sc-19tlhp4-1 jTFBEx"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 hKyaRZ Layout__Header-sc-19tlhp4-1 eYGDjK"
     height={null}
     id="Header"
     overflow={null}
     width={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 izXrkl"
+      className="Bar__BarLayout-icfo76-2 grMosm"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 boCGaE"
+        className="Bar__Slot-icfo76-1 gdiuzv"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 sWSdM"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hnrPBP"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 bqsRfb"
+            className="Button__StyledButton-sc-1v7sls2-0 gAgcms"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1630,13 +1661,13 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
               id={null}
               rows={null}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
                 color={null}
                 data-icon="bars"
                 data-prefix="far"
@@ -1658,7 +1689,7 @@ exports[` 2`] = `
           </button>
           <img
             alt="Lightbox Logo"
-            className="Image__ImageWrapper-sc-18abvff-0 dLVSBY"
+            className="Image__ImageWrapper-sc-18abvff-0 boIWnv"
             onClick={[Function]}
             src=""
             title="Lightbox Logo"
@@ -1667,15 +1698,15 @@ exports[` 2`] = `
         </section>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 fynbkj"
+        className="Bar__Slot-icfo76-1 ivdblQ"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk Button__GroupWrapper-sc-1v7sls2-3 kvzTEM"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb Button__GroupWrapper-sc-1v7sls2-3 YHXln"
           id={null}
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 fFaCRk"
+            className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1685,24 +1716,25 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 JOBS PORTAL
               </label>
             </section>
           </button>
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 NivEY"
+            className="Button__StyledButton-sc-1v7sls2-0 deIksf"
             disabled={true}
             htmlFor={null}
             id={null}
@@ -1712,24 +1744,25 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 RESEARCH
               </label>
             </section>
           </button>
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 fFaCRk"
+            className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1739,24 +1772,25 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 BI
               </label>
             </section>
           </button>
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 fFaCRk"
+            className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1766,17 +1800,18 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 REPORT WRITING
               </label>
@@ -1785,24 +1820,24 @@ exports[` 2`] = `
         </section>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 fiTHpV"
+        className="Bar__Slot-icfo76-1 hrKMOC"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 jveJdC Inline__InlineWrapper-sc-1lksbyc-0 gxACih"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
           height={null}
           id={null}
           overflow={null}
           width={null}
         >
           <div
-            className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
+            className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
           >
             <div
-              className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+              className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
               id="menu-popper-Help Menu"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 eJQUnI"
+                className="Button__StyledButton-sc-1v7sls2-0 WvdJL"
                 disabled={false}
                 htmlFor={null}
                 id="help"
@@ -1812,13 +1847,13 @@ exports[` 2`] = `
                 type="button"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                   id={null}
                   rows={null}
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
+                    className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 hAvZIL"
                     color={null}
                     data-icon="question-circle"
                     data-prefix="far"
@@ -1841,15 +1876,15 @@ exports[` 2`] = `
             </div>
           </div>
           <div
-            className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
+            className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
           >
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 hxkuUO"
+              className="Avatar__TagContainer-sc-1vuf9om-2 jgqvSx"
               id="profile"
               onClick={[Function]}
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 buvBot"
+                className="Typography__Paragraph-sc-19auepv-3 jnQhZg Avatar__AvatarText-sc-1vuf9om-0 jWGGAK"
                 fontSize="1rem"
                 fontWeight={500}
                 id={null}
@@ -1864,28 +1899,28 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 bcpwfv Layout__Body-sc-19tlhp4-3 iPUXIc"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__Body-sc-19tlhp4-3 gQQaiT"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 kjLJHF Layout__RegionLeft-sc-19tlhp4-4 jbbGBx"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jGlLHq Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
       height={null}
       id="Left"
       overflow={null}
       width="10rem"
     >
       <ul
-        className="List__ListWrapper-sc-43f2zq-6 fqctdI"
+        className="List__ListWrapper-sc-43f2zq-6 eZwTnL"
         id={null}
       >
         <li
-          className="List__ListTitleWrapper-sc-43f2zq-1 dWCNV"
+          className="List__ListTitleWrapper-sc-43f2zq-1 duMrda"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dBAreK List__ListTitle-sc-43f2zq-2 cYpVBa"
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd List__ListTitle-sc-43f2zq-2 ckaevx"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -1895,7 +1930,7 @@ exports[` 2`] = `
           </p>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
           disabled={false}
           href={null}
           id="Projects"
@@ -1903,15 +1938,15 @@ exports[` 2`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 RjiBe"
+              className="Bar__Slot-icfo76-1 kSFTkF"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -1923,7 +1958,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 jxwiYO"
+          className="List__ListItemWrapper-sc-43f2zq-0 YTDNR"
           disabled={false}
           href={null}
           id="Properties"
@@ -1931,15 +1966,15 @@ exports[` 2`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 RjiBe"
+              className="Bar__Slot-icfo76-1 kSFTkF"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -1951,7 +1986,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
           disabled={false}
           href={null}
           id="History"
@@ -1959,15 +1994,15 @@ exports[` 2`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 RjiBe"
+              className="Bar__Slot-icfo76-1 kSFTkF"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -1979,7 +2014,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 jztqKm"
+          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
           disabled={false}
           href={null}
           id="Data"
@@ -1987,15 +2022,15 @@ exports[` 2`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-icfo76-2 eUVQsH"
+            className="Bar__BarLayout-icfo76-2 AXrfk"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 RjiBe"
+              className="Bar__Slot-icfo76-1 kSFTkF"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                 fontSize="1rem"
                 fontWeight={400}
                 id={null}
@@ -2009,31 +2044,31 @@ exports[` 2`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jDLvgT Layout__WrapperMain-sc-19tlhp4-5 jBholC"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 KWOnE Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
       height="21rem"
       id={null}
       overflow={null}
       width="calc(100% - 10rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gtAlCj Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 buvzUw Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
         height={null}
         id="Main"
         overflow={null}
         width={null}
       >
         <div
-          className="Panel__PanelWrapper-sc-48epke-0 dGKuDD"
+          className="Panel__PanelWrapper-sc-48epke-0 jNagE"
           height="100%"
           id={null}
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 dWRiAV Panel__PanelSection-sc-48epke-2 iiaelC"
+            className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
             id={null}
           >
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
               href={null}
               id="storyshots_122"
               media=""
@@ -2041,20 +2076,20 @@ exports[` 2`] = `
               placeholder="{ Card }"
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 lcCuYD"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 gAJuhg"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__BarLayout-icfo76-2 eIFIfS"
+                  className="Bar__BarLayout-icfo76-2 cvBNlB"
                   id={null}
                   onClick={null}
                 >
                   <div
-                    className="Bar__Slot-icfo76-1 boCGaE"
+                    className="Bar__Slot-icfo76-1 gdiuzv"
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 iUBZwE"
+                      className="Typography__Paragraph-sc-19auepv-3 ikAKub"
                       fontSize="1rem"
                       fontWeight={600}
                       id={null}
@@ -2064,21 +2099,21 @@ exports[` 2`] = `
                     </p>
                   </div>
                   <div
-                    className="Bar__Slot-icfo76-1 cxljst"
+                    className="Bar__Slot-icfo76-1 jyMGGC"
                   >
                     <div
-                      className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                      className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
                       id="menu-popper-storyshots_123"
                     >
                       <a
-                        className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
+                        className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
                         disabled={null}
                         href={null}
                         onClick={[Function]}
                       >
                         <svg
                           aria-hidden="true"
-                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
                           color="link"
                           data-icon="ellipsis-v"
                           data-prefix="far"
@@ -2102,32 +2137,32 @@ exports[` 2`] = `
                 </div>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kJsTSH"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 bzbCw"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__BarLayout-icfo76-2 kZmRXv"
+                  className="Bar__BarLayout-icfo76-2 dIfKTQ"
                   id={null}
                   onClick={null}
                 >
                   <div
-                    className="Bar__Slot-icfo76-1 eKZyRI"
+                    className="Bar__Slot-icfo76-1 dIezKj"
                   >
                     <form
-                      className="Search__SearchContainer-sey9om-0 iDrhT"
+                      className="Search__SearchContainer-sey9om-0 dSHoSU"
                       id="storyshots_124"
                       onSubmit={[Function]}
                     >
                       <div
-                        className="Flex__FlexWrapper-sc-7b3s7m-0 bDGwnH Search__SearchInput-sey9om-1 kOYYsS"
+                        className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
                         height={null}
                         id={null}
                         overflow={null}
                         width={null}
                       >
                         <button
-                          className="Button__StyledButton-sc-1v7sls2-0 fFaCRk Search__SearchButton-sey9om-3 dEHLVj"
+                          className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
                           disabled={false}
                           htmlFor={null}
                           id="storyshots_124-search-button"
@@ -2137,13 +2172,13 @@ exports[` 2`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                             id={null}
                             rows={null}
                           >
                             <svg
                               aria-hidden="true"
-                              className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                              className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
                               color={null}
                               data-icon="search"
                               data-prefix="far"
@@ -2164,13 +2199,13 @@ exports[` 2`] = `
                           </section>
                         </button>
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr Search__SearchTextInput-sey9om-2 hMPSlm"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
                           id="storyshots_124-search-bar_container"
                           rows={null}
                         >
                           <input
                             autoComplete="off"
-                            className="TextInput__Input-sc-1fep8p8-3 dkLcTD"
+                            className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                             cols=""
                             disabled={null}
                             id="storyshots_124-search-bar"
@@ -2192,20 +2227,20 @@ exports[` 2`] = `
                     </form>
                   </div>
                   <div
-                    className="Bar__Slot-icfo76-1 cxljst"
+                    className="Bar__Slot-icfo76-1 jyMGGC"
                   >
                     <div
-                      className="Flex__FlexWrapper-sc-7b3s7m-0 jveJdC Inline__InlineWrapper-sc-1lksbyc-0 gxACih"
+                      className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
                       height={null}
                       id={null}
                       overflow={null}
                       width={null}
                     >
                       <div
-                        className="Inline__InlineItem-sc-1lksbyc-1 iuyBBj"
+                        className="Inline__InlineItem-sc-1lksbyc-1 hiCeEQ"
                       >
                         <h5
-                          className="Typography__TitleText-sc-19auepv-2 dTLbTf"
+                          className="Typography__TitleText-sc-19auepv-2 hsjMgw"
                           fontSize="1.15rem"
                           fontWeight="500"
                           letterSpacing="0.4px"
@@ -2214,10 +2249,10 @@ exports[` 2`] = `
                         </h5>
                       </div>
                       <div
-                        className="Inline__InlineItem-sc-1lksbyc-1 iuyBBj"
+                        className="Inline__InlineItem-sc-1lksbyc-1 hiCeEQ"
                       >
                         <button
-                          className="Button__StyledButton-sc-1v7sls2-0 dNUhCr"
+                          className="Button__StyledButton-sc-1v7sls2-0 esKlPI"
                           disabled={false}
                           htmlFor={null}
                           id={null}
@@ -2227,17 +2262,18 @@ exports[` 2`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                               cursor="pointer"
                               fontSize="1rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               View List
                             </label>
@@ -2249,20 +2285,20 @@ exports[` 2`] = `
                 </div>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kJsTSH"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 bzbCw"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__BarLayout-icfo76-2 izXrkl"
+                  className="Bar__BarLayout-icfo76-2 grMosm"
                   id={null}
                   onClick={null}
                 >
                   <div
-                    className="Bar__Slot-icfo76-1 boCGaE"
+                    className="Bar__Slot-icfo76-1 gdiuzv"
                   >
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 fFaCRk"
+                      className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
                       disabled={false}
                       htmlFor={null}
                       id="filter"
@@ -2272,13 +2308,13 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                         id={null}
                         rows={null}
                       >
                         <svg
                           aria-hidden="true"
-                          className="svg-inline--fa fa-filter fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          className="svg-inline--fa fa-filter fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
                           color={null}
                           data-icon="filter"
                           data-prefix="far"
@@ -2297,12 +2333,13 @@ exports[` 2`] = `
                           />
                         </svg>
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                          className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                           cursor="pointer"
                           fontSize="1rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={null}
                         >
                           Filter
                         </label>
@@ -2310,30 +2347,30 @@ exports[` 2`] = `
                     </button>
                   </div>
                   <div
-                    className="Bar__Slot-icfo76-1 yvaBx"
+                    className="Bar__Slot-icfo76-1 bKkRmK"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 eQLiud"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jXxhhi"
                       id={null}
                       rows={null}
                     >
                       <div
-                        className="Flex__FlexWrapper-sc-7b3s7m-0 jveJdC Inline__InlineWrapper-sc-1lksbyc-0 gxACih"
+                        className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
                         height={null}
                         id={null}
                         overflow={null}
                         width={null}
                       >
                         <div
-                          className="Inline__InlineItem-sc-1lksbyc-1 gKFwYS"
+                          className="Inline__InlineItem-sc-1lksbyc-1 fioCid"
                         >
                           <div
-                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                             disabled={false}
                           >
                             <input
                               checked={true}
-                              className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                               id="include"
                               onBlur={null}
                               onChange={[Function]}
@@ -2342,25 +2379,26 @@ exports[` 2`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 kNgtxq"
+                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="include"
                               letterSpacing=".5px"
+                              onClick={[Function]}
                             >
                               Include
                             </label>
                           </div>
                         </div>
                         <div
-                          className="Inline__InlineItem-sc-1lksbyc-1 gKFwYS"
+                          className="Inline__InlineItem-sc-1lksbyc-1 fioCid"
                         >
                           <div
-                            className="Popper__AnchorWrapper-sc-1t9125t-0 jsmisT"
+                            className="Popper__AnchorWrapper-sc-1t9125t-0 kTYJIk"
                           >
                             <button
-                              className="Button__StyledButton-sc-1v7sls2-0 fFaCRk"
+                              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
                               disabled={false}
                               htmlFor={null}
                               id="regions_list"
@@ -2370,33 +2408,35 @@ exports[` 2`] = `
                               type="button"
                             >
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 kKYaBx Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 fRlynG Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                                 id={null}
                                 rows={null}
                               >
                                 <label
-                                  className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                                   cursor="pointer"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Regions
                                 </label>
                                 <span
-                                  className="Tag__TagContainer-sc-128kb3h-0 jVuXoC Button__Count-sc-1v7sls2-2 iMQOwf"
+                                  className="Tag__TagContainer-sc-128kb3h-0 ehhDnF Button__Count-sc-1v7sls2-2 dpLJbM"
                                   id={null}
                                   label="2"
                                   onClick={null}
                                 >
                                   <label
-                                    className="Typography__StyledLabel-sc-19auepv-0 cktxCj"
+                                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
                                     cursor="default"
                                     fontSize="0.875rem"
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     2
                                   </label>
@@ -2406,31 +2446,32 @@ exports[` 2`] = `
                           </div>
                         </div>
                         <div
-                          className="Inline__InlineItem-sc-1lksbyc-1 gKFwYS"
+                          className="Inline__InlineItem-sc-1lksbyc-1 fioCid"
                         >
                           <span
-                            className="Tag__TagContainer-sc-128kb3h-0 kSxqjL"
+                            className="Tag__TagContainer-sc-128kb3h-0 dZlbiE"
                             id={null}
                             label="Shopping Center"
                             onClick={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+                              className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
                               cursor="inherit"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               Shopping Center
                             </label>
                             <div
-                              className="Tag__TagIconContainer-sc-128kb3h-1 iTwevW"
+                              className="Tag__TagIconContainer-sc-128kb3h-1 iiUaZN"
                               onClick={[Function]}
                             >
                               <svg
                                 aria-hidden="true"
-                                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+                                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
                                 color="neutral20"
                                 data-icon="times"
                                 data-prefix="far"
@@ -2452,31 +2493,32 @@ exports[` 2`] = `
                           </span>
                         </div>
                         <div
-                          className="Inline__InlineItem-sc-1lksbyc-1 gKFwYS"
+                          className="Inline__InlineItem-sc-1lksbyc-1 fioCid"
                         >
                           <span
-                            className="Tag__TagContainer-sc-128kb3h-0 kSxqjL"
+                            className="Tag__TagContainer-sc-128kb3h-0 dZlbiE"
                             id={null}
                             label="California"
                             onClick={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+                              className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
                               cursor="inherit"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               California
                             </label>
                             <div
-                              className="Tag__TagIconContainer-sc-128kb3h-1 iTwevW"
+                              className="Tag__TagIconContainer-sc-128kb3h-1 iiUaZN"
                               onClick={[Function]}
                             >
                               <svg
                                 aria-hidden="true"
-                                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+                                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
                                 color="neutral20"
                                 data-icon="times"
                                 data-prefix="far"
@@ -2498,31 +2540,32 @@ exports[` 2`] = `
                           </span>
                         </div>
                         <div
-                          className="Inline__InlineItem-sc-1lksbyc-1 gKFwYS"
+                          className="Inline__InlineItem-sc-1lksbyc-1 fioCid"
                         >
                           <span
-                            className="Tag__TagContainer-sc-128kb3h-0 kSxqjL"
+                            className="Tag__TagContainer-sc-128kb3h-0 dZlbiE"
                             id={null}
                             label="Expensive "
                             onClick={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+                              className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
                               cursor="inherit"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               Expensive 
                             </label>
                             <div
-                              className="Tag__TagIconContainer-sc-128kb3h-1 iTwevW"
+                              className="Tag__TagIconContainer-sc-128kb3h-1 iiUaZN"
                               onClick={[Function]}
                             >
                               <svg
                                 aria-hidden="true"
-                                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+                                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
                                 color="neutral20"
                                 data-icon="times"
                                 data-prefix="far"
@@ -2544,31 +2587,32 @@ exports[` 2`] = `
                           </span>
                         </div>
                         <div
-                          className="Inline__InlineItem-sc-1lksbyc-1 gKFwYS"
+                          className="Inline__InlineItem-sc-1lksbyc-1 fioCid"
                         >
                           <span
-                            className="Tag__TagContainer-sc-128kb3h-0 kSxqjL"
+                            className="Tag__TagContainer-sc-128kb3h-0 dZlbiE"
                             id={null}
                             label="EX: Boundary 1"
                             onClick={null}
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cttnXJ"
+                              className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
                               cursor="inherit"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor={null}
                               letterSpacing=".5px"
+                              onClick={null}
                             >
                               EX: Boundary 1
                             </label>
                             <div
-                              className="Tag__TagIconContainer-sc-128kb3h-1 iTwevW"
+                              className="Tag__TagIconContainer-sc-128kb3h-1 iiUaZN"
                               onClick={[Function]}
                             >
                               <svg
                                 aria-hidden="true"
-                                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eaguTr"
+                                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 OlXE"
                                 color="neutral20"
                                 data-icon="times"
                                 data-prefix="far"
@@ -2597,22 +2641,22 @@ exports[` 2`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 igGMll"
+            className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
             id={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 dKvkTo"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 iCZIJP"
               id="Map Overlay"
               rows={null}
             >
               <section
-                className="Template__Region-sc-1i4nzbu-0 iKKGCX"
+                className="Template__Region-sc-1i4nzbu-0 kZgbGg"
                 id="A"
                 placeholder="A"
                 tabIndex="0"
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 iEBOIj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 hEGFso Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
                   id="storyshots_126"
                   media=""
@@ -2620,12 +2664,12 @@ exports[` 2`] = `
                   placeholder="{ Card }"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Button__GroupWrapper-sc-1v7sls2-3 kvzTEM"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Button__GroupWrapper-sc-1v7sls2-3 YHXln"
                     id={null}
                     rows={null}
                   >
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
+                      className="Button__StyledButton-sc-1v7sls2-0 kJVGtX"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -2635,13 +2679,13 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
                         <svg
                           aria-hidden="true"
-                          className="svg-inline--fa fa-ruler-triangle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+                          className="svg-inline--fa fa-ruler-triangle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
                           color={null}
                           data-icon="ruler-triangle"
                           data-prefix="far"
@@ -2660,19 +2704,20 @@ exports[` 2`] = `
                           />
                         </svg>
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                          className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                           cursor="pointer"
                           fontSize="0.75em"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing="0.4px"
+                          onClick={null}
                         >
                           Measure
                         </label>
                       </section>
                     </button>
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
+                      className="Button__StyledButton-sc-1v7sls2-0 kJVGtX"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -2682,13 +2727,13 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
                         <svg
                           aria-hidden="true"
-                          className="svg-inline--fa fa-pencil fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+                          className="svg-inline--fa fa-pencil fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
                           color={null}
                           data-icon="pencil"
                           data-prefix="far"
@@ -2707,19 +2752,20 @@ exports[` 2`] = `
                           />
                         </svg>
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                          className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                           cursor="pointer"
                           fontSize="0.75em"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing="0.4px"
+                          onClick={null}
                         >
                           Draw
                         </label>
                       </section>
                     </button>
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
+                      className="Button__StyledButton-sc-1v7sls2-0 kJVGtX"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -2729,13 +2775,13 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
                         <svg
                           aria-hidden="true"
-                          className="svg-inline--fa fa-layer-group fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+                          className="svg-inline--fa fa-layer-group fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
                           color={null}
                           data-icon="layer-group"
                           data-prefix="far"
@@ -2754,19 +2800,20 @@ exports[` 2`] = `
                           />
                         </svg>
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                          className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                           cursor="pointer"
                           fontSize="0.75em"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing="0.4px"
+                          onClick={null}
                         >
                           Layers
                         </label>
                       </section>
                     </button>
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
+                      className="Button__StyledButton-sc-1v7sls2-0 kJVGtX"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -2776,13 +2823,13 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
                         <svg
                           aria-hidden="true"
-                          className="svg-inline--fa fa-list-ul fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+                          className="svg-inline--fa fa-list-ul fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
                           color={null}
                           data-icon="list-ul"
                           data-prefix="far"
@@ -2801,19 +2848,20 @@ exports[` 2`] = `
                           />
                         </svg>
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                          className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                           cursor="pointer"
                           fontSize="0.75em"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing="0.4px"
+                          onClick={null}
                         >
                           Legend
                         </label>
                       </section>
                     </button>
                     <button
-                      className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
+                      className="Button__StyledButton-sc-1v7sls2-0 kJVGtX"
                       disabled={false}
                       htmlFor={null}
                       id={null}
@@ -2823,13 +2871,13 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
                         <svg
                           aria-hidden="true"
-                          className="svg-inline--fa fa-map fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+                          className="svg-inline--fa fa-map fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
                           color={null}
                           data-icon="map"
                           data-prefix="far"
@@ -2848,22 +2896,23 @@ exports[` 2`] = `
                           />
                         </svg>
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                          className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                           cursor="pointer"
                           fontSize="0.75em"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing="0.4px"
+                          onClick={null}
                         >
                           View
                         </label>
                       </section>
                     </button>
                     <div
-                      className="Popper__AnchorWrapper-sc-1t9125t-0 jsmisT"
+                      className="Popper__AnchorWrapper-sc-1t9125t-0 kTYJIk"
                     >
                       <button
-                        className="Button__StyledButton-sc-1v7sls2-0 bupbbw"
+                        className="Button__StyledButton-sc-1v7sls2-0 kJVGtX"
                         disabled={false}
                         htmlFor={null}
                         id={null}
@@ -2873,13 +2922,13 @@ exports[` 2`] = `
                         type="button"
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 dAnZOo"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                           id={null}
                           rows="max-content 1fr"
                         >
                           <svg
                             aria-hidden="true"
-                            className="svg-inline--fa fa-ellipsis-h fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+                            className="svg-inline--fa fa-ellipsis-h fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
                             color={null}
                             data-icon="ellipsis-h"
                             data-prefix="far"
@@ -2898,12 +2947,13 @@ exports[` 2`] = `
                             />
                           </svg>
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 henUne"
+                            className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
                             cursor="pointer"
                             fontSize="0.75em"
                             fontWeight={400}
                             htmlFor={null}
                             letterSpacing="0.4px"
+                            onClick={null}
                           >
                             More
                           </label>
@@ -2914,23 +2964,23 @@ exports[` 2`] = `
                 </div>
               </section>
               <section
-                className="Template__Region-sc-1i4nzbu-0 hceyie"
+                className="Template__Region-sc-1i4nzbu-0 jmndeZ"
                 id="B"
                 placeholder="B"
                 tabIndex="0"
               >
                 <div
-                  className="Panel__PanelWrapper-sc-48epke-0 dGKuDD"
+                  className="Panel__PanelWrapper-sc-48epke-0 jNagE"
                   height="100%"
                   id={null}
                   width="100%"
                 >
                   <section
-                    className="Panel__SectionWrapper-sc-48epke-1 dWRiAV Panel__PanelSection-sc-48epke-2 iiaelC"
+                    className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                     id={null}
                   >
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="storyshots_128"
                       media=""
@@ -2938,34 +2988,35 @@ exports[` 2`] = `
                       placeholder="{ Card }"
                     >
                       <section
-                        className="Card__CardSectionWrapper-sc-1g3s676-1 huGJud"
+                        className="Card__CardSectionWrapper-sc-1g3s676-1 fwEbzq"
                         id={null}
                         onClick={null}
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 eYvXbi"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 gHcqEd"
                           id={null}
                           rows={null}
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 elsRJT"
+                            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
                             cursor="pointer"
                             fontSize="1rem"
                             fontWeight={400}
                             htmlFor={null}
                             letterSpacing=".5px"
+                            onClick={null}
                           >
                             22902 Trabuco Rd, Mission Viejo, CA 92691
                           </label>
                           <a
-                            className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
+                            className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
                             disabled={null}
                             href={null}
                             onClick={[Function]}
                           >
                             <svg
                               aria-hidden="true"
-                              className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                              className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
                               color="link"
                               data-icon="times"
                               data-prefix="far"
@@ -2989,29 +3040,29 @@ exports[` 2`] = `
                     </div>
                   </section>
                   <section
-                    className="Panel__SectionWrapper-sc-48epke-1 igGMll"
+                    className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                     id={null}
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 fcneQZ"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
                       id={null}
                       rows={null}
                     >
                       <section
-                        className="Field__Section-sc-11od8ug-6 gqQdMG"
+                        className="Field__Section-sc-11od8ug-6 bwzJQN"
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 lexBWe"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 bLuXxN"
                           id={null}
                           rows={null}
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                             id={null}
                             rows={null}
                           >
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
+                              className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
                               fontSize="0.875rem"
                               fontWeight={600}
                               id={null}
@@ -3020,22 +3071,23 @@ exports[` 2`] = `
                               Property Information
                             </p>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Parcel No.
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 klCNFH"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3045,7 +3097,7 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -3056,22 +3108,23 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Land User
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
                                 fontWeight={400}
                                 id={null}
@@ -3081,22 +3134,23 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Building Area
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
                                 fontWeight={400}
                                 id={null}
@@ -3106,22 +3160,23 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Lot Area
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 klCNFH"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3131,7 +3186,7 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -3142,22 +3197,23 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Building/Lot
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
                                 fontWeight={400}
                                 id={null}
@@ -3167,22 +3223,23 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 No. of Units
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
                                 fontWeight={400}
                                 id={null}
@@ -3192,22 +3249,23 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Year Built
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
                                 fontWeight={400}
                                 id={null}
@@ -3218,12 +3276,12 @@ exports[` 2`] = `
                             </section>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Field__FieldGrid-sc-11od8ug-5 kzIWqC"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                             id={null}
                             rows={null}
                           >
                             <p
-                              className="Typography__Paragraph-sc-19auepv-3 fEVysz Field__GroupTitle-sc-11od8ug-1 ffFQaW"
+                              className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
                               fontSize="0.875rem"
                               fontWeight={600}
                               id={null}
@@ -3232,22 +3290,23 @@ exports[` 2`] = `
                               Owner Information
                             </p>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Owners
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 klCNFH"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3257,7 +3316,7 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -3268,22 +3327,23 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Owner Address
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
                                 fontWeight={400}
                                 id={null}
@@ -3293,22 +3353,23 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Adjacent Lots
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 klCNFH"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3318,7 +3379,7 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -3329,22 +3390,23 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Last Sale
                               </label>
                               <a
-                                className="Typography__LinkText-sc-19auepv-1 gokaHf Field__LinkedField-sc-11od8ug-4 klCNFH"
+                                className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                 disabled={false}
                                 fontSize="1rem"
                                 fontWeight={500}
@@ -3354,7 +3416,7 @@ exports[` 2`] = `
                                 target={null}
                               >
                                 <p
-                                  className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                   fontSize="1rem"
                                   fontWeight={400}
                                   id={null}
@@ -3365,22 +3427,23 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Field__FieldItem-sc-11od8ug-0 cTIowo"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 jDDxND Field__FieldLabel-sc-11od8ug-2 ikKNKi"
+                                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
                                 cursor="pointer"
                                 fontSize="0.875rem"
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Total Assd Value
                               </label>
                               <p
-                                className="Typography__Paragraph-sc-19auepv-3 dBAreK Field__FieldValue-sc-11od8ug-3 gHWRdT"
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
                                 fontSize="1rem"
                                 fontWeight={400}
                                 id={null}
@@ -3409,14 +3472,14 @@ exports[` 2`] = `
         </div>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 jhugGb Layout__RegionBottom-sc-19tlhp4-7 gnmzec"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 llvsRA Layout__RegionBottom-sc-19tlhp4-7 FeTUT"
         height="21rem"
         id="Results List"
         overflow={null}
         width={null}
       >
         <div
-          className="CardWrapper__StyledCardWrapper-meln7c-0 fHwjBj Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
+          className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
           id="storyshots_129"
           media=""
@@ -3424,88 +3487,91 @@ exports[` 2`] = `
           placeholder="{ Card }"
         >
           <section
-            className="Card__CardSectionWrapper-sc-1g3s676-1 huGJud"
+            className="Card__CardSectionWrapper-sc-1g3s676-1 fwEbzq"
             id={null}
             onClick={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 eYvXbi"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 gHcqEd"
               id={null}
               rows={null}
             >
               <div
-                className="Flex__FlexWrapper-sc-7b3s7m-0 jveJdC Inline__InlineWrapper-sc-1lksbyc-0 gxACih"
+                className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
                 height={null}
                 id={null}
                 overflow={null}
                 width={null}
               >
                 <div
-                  className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
+                  className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Active List
                   </label>
                 </div>
                 <div
-                  className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
+                  className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     |
                   </label>
                 </div>
                 <div
-                  className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
+                  className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 jDDxND"
+                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     309
                   </label>
                 </div>
               </div>
               <div
-                className="Flex__FlexWrapper-sc-7b3s7m-0 jveJdC Inline__InlineWrapper-sc-1lksbyc-0 gxACih"
+                className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
                 height={null}
                 id={null}
                 overflow={null}
                 width={null}
               >
                 <div
-                  className="Inline__InlineItem-sc-1lksbyc-1 bZEGjB"
+                  className="Inline__InlineItem-sc-1lksbyc-1 ewhFne"
                 >
                   <div
-                    className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
+                    className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
                     id="menu-popper-storyshots_130"
                   >
                     <a
-                      className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
+                      className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
                       disabled={null}
                       href={null}
                       onClick={[Function]}
                     >
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
                         color="link"
                         data-icon="ellipsis-v"
                         data-prefix="far"
@@ -3527,17 +3593,17 @@ exports[` 2`] = `
                   </div>
                 </div>
                 <div
-                  className="Inline__InlineItem-sc-1lksbyc-1 bZEGjB"
+                  className="Inline__InlineItem-sc-1lksbyc-1 ewhFne"
                 >
                   <a
-                    className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
                     disabled={null}
                     href={null}
                     onClick={[Function]}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
                       color="link"
                       data-icon="angle-up"
                       data-prefix="far"
@@ -3558,17 +3624,17 @@ exports[` 2`] = `
                   </a>
                 </div>
                 <div
-                  className="Inline__InlineItem-sc-1lksbyc-1 bZEGjB"
+                  className="Inline__InlineItem-sc-1lksbyc-1 ewhFne"
                 >
                   <a
-                    className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
                     disabled={null}
                     href={null}
                     onClick={[Function]}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
                       color="link"
                       data-icon="times"
                       data-prefix="far"
@@ -3593,7 +3659,7 @@ exports[` 2`] = `
           </section>
         </div>
         <div
-          className="Table__MultiGridWrapper-gz0dbt-0 kyxjse"
+          className="Table__MultiGridWrapper-gz0dbt-0 eoEiJV"
         >
           <div
             style={
@@ -3661,7 +3727,7 @@ exports[` 2`] = `
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 cWIdty"
+                      className="Table__CellWrapper-gz0dbt-1 kcmASd"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3676,12 +3742,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -3690,19 +3756,20 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 kNgtxq"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         >
                           Select All
                         </label>
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 cWIdty"
+                      className="Table__CellWrapper-gz0dbt-1 kcmASd"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3769,7 +3836,7 @@ exports[` 2`] = `
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3784,12 +3851,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -3798,17 +3865,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3823,7 +3891,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -3836,7 +3904,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3851,12 +3919,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -3865,17 +3933,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3890,7 +3959,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -3903,7 +3972,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3918,12 +3987,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -3932,17 +4001,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3957,7 +4027,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -3970,7 +4040,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3985,12 +4055,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -3999,17 +4069,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4024,7 +4095,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -4037,7 +4108,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4052,12 +4123,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -4066,17 +4137,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4091,7 +4163,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -4104,7 +4176,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4119,12 +4191,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -4133,17 +4205,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4158,7 +4231,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -4171,7 +4244,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4186,12 +4259,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -4200,17 +4273,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4225,7 +4299,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -4238,7 +4312,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4253,12 +4327,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -4267,17 +4341,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4292,7 +4367,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -4305,7 +4380,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4320,12 +4395,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -4334,17 +4409,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4359,7 +4435,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
@@ -4372,7 +4448,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4387,12 +4463,12 @@ exports[` 2`] = `
                       }
                     >
                       <div
-                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 rwHpy"
+                        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
                         disabled={false}
                       >
                         <input
                           checked={null}
-                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+                          className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
                           id={null}
                           onBlur={null}
                           onChange={null}
@@ -4401,17 +4477,18 @@ exports[` 2`] = `
                           type="checkbox"
                         />
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 jDDxND Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={[Function]}
                         />
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 loxYND"
+                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4426,7 +4503,7 @@ exports[` 2`] = `
                       }
                     >
                       <a
-                        className="Typography__LinkText-sc-19auepv-1 gokaHf"
+                        className="Typography__LinkText-sc-19auepv-1 bAJIRY"
                         disabled={false}
                         fontSize="1rem"
                         fontWeight={500}
