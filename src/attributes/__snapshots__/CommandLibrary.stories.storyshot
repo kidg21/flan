@@ -52,6 +52,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Add
         </label>
@@ -105,6 +106,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Address
         </label>
@@ -158,6 +160,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           APN
         </label>
@@ -211,6 +214,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Apply
         </label>
@@ -264,6 +268,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Bookmark
         </label>
@@ -317,6 +322,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Close
         </label>
@@ -370,6 +376,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Copy
         </label>
@@ -423,6 +430,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Contacts
         </label>
@@ -476,6 +484,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Delete
         </label>
@@ -529,6 +538,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Download
         </label>
@@ -582,6 +592,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Edit
         </label>
@@ -635,6 +646,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Exclude
         </label>
@@ -688,6 +700,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Favorites
         </label>
@@ -741,6 +754,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Filter
         </label>
@@ -794,6 +808,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           GPS
         </label>
@@ -847,6 +862,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Help
         </label>
@@ -900,6 +916,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Include
         </label>
@@ -953,6 +970,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Info
         </label>
@@ -1006,6 +1024,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Measure
         </label>
@@ -1059,6 +1078,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Notifications
         </label>
@@ -1112,6 +1132,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Open
         </label>
@@ -1165,6 +1186,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Photos
         </label>
@@ -1218,6 +1240,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Preferences
         </label>
@@ -1271,6 +1294,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Print
         </label>
@@ -1324,6 +1348,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Profile
         </label>
@@ -1377,6 +1402,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Redo
         </label>
@@ -1430,6 +1456,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Reports
         </label>
@@ -1483,6 +1510,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Save
         </label>
@@ -1536,6 +1564,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Search
         </label>
@@ -1589,6 +1618,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Settings
         </label>
@@ -1642,6 +1672,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Share
         </label>
@@ -1695,6 +1726,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Support
         </label>
@@ -1748,6 +1780,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Sync
         </label>
@@ -1801,6 +1834,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Upload
         </label>
@@ -1854,6 +1888,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Undo
         </label>
@@ -1907,6 +1942,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           View
         </label>
@@ -1960,6 +1996,7 @@ exports[` 1`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Zoom Extents
         </label>

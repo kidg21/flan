@@ -299,11 +299,11 @@ function MockTable({ actionsTable }) {
       ),
     },
     { id: "Name", label: "Name", sortable: true },
-    { id: "Address", label: "Address", sortable: false },
-    { id: "City", label: "City", sortable: false },
-    { id: "State", label: "State", sortable: false },
+    { id: "Address", label: "Address", sortable: true },
+    { id: "City", label: "City", sortable: true },
+    { id: "State", label: "State", sortable: true },
     { id: "Zip", label: "Zip", sortable: false },
-    { id: "Property_Type", label: "Property Type", sortable: false },
+    { id: "Property_Type", label: "Property Type", sortable: true },
     { id: "GBA", label: "GBA", sortable: false },
     { id: "Rentable_Area", label: "Rentable Area", sortable: false },
     { id: "Units", label: "Units", sortable: false },
@@ -499,8 +499,8 @@ function MockTable({ actionsTable }) {
               <Grid columns="1fr auto" gap="1rem">
                 <Inline>
                   <Label text="Active List" />
-                  <Label text="" size="sm" />
-                  <Label text="309" size="sm" />
+                  <Label text="|" />
+                  <Label text="309" />
                 </Inline>
                 <Inline spacingX="1rem">
                   {actionsTable}

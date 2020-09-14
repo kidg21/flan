@@ -28,6 +28,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Button
       </label>
@@ -55,6 +56,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Button
       </label>
@@ -82,6 +84,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Button
       </label>
@@ -109,6 +112,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Button
       </label>

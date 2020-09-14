@@ -15,7 +15,7 @@ exports[` 1`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -36,6 +36,7 @@ exports[` 1`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             1
           </label>
@@ -70,7 +71,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -91,6 +92,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             1
           </label>
@@ -116,7 +118,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -137,6 +139,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             21
           </label>
@@ -162,7 +165,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -183,6 +186,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             321
           </label>
@@ -208,7 +212,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -229,6 +233,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             4321
           </label>
@@ -263,7 +268,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -284,6 +289,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             9+
           </label>
@@ -309,7 +315,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -330,6 +336,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             99+
           </label>
@@ -355,7 +362,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -376,6 +383,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             999+
           </label>
@@ -401,7 +409,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -422,6 +430,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             9999+
           </label>
@@ -456,7 +465,7 @@ exports[` 4`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -477,6 +486,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Info
           </label>
@@ -502,7 +512,7 @@ exports[` 4`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -523,6 +533,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Success
           </label>
@@ -548,7 +559,7 @@ exports[` 4`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -569,6 +580,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Warning
           </label>
@@ -594,7 +606,7 @@ exports[` 4`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -615,6 +627,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Alert
           </label>
@@ -649,7 +662,7 @@ exports[` 5`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -705,7 +718,7 @@ exports[` 5`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -761,7 +774,7 @@ exports[` 5`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -817,7 +830,7 @@ exports[` 5`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -882,7 +895,7 @@ exports[` 6`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -903,6 +916,7 @@ exports[` 6`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             1
           </label>
@@ -928,7 +942,7 @@ exports[` 6`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -949,6 +963,7 @@ exports[` 6`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             1
           </label>
@@ -974,7 +989,7 @@ exports[` 6`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -995,6 +1010,7 @@ exports[` 6`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             1
           </label>
@@ -1020,7 +1036,7 @@ exports[` 6`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id={null}
       onClick={null}
     >
@@ -1041,6 +1057,7 @@ exports[` 6`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             1
           </label>

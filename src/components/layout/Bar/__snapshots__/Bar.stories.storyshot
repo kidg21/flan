@@ -142,7 +142,7 @@ exports[` 3`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 cVNHJm"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 fGqHoI"
     id={null}
     rows={null}
   >
@@ -176,6 +176,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Command
             </label>
@@ -210,6 +211,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Command
             </label>
@@ -247,6 +249,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Command
             </label>
@@ -281,6 +284,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Command
             </label>
@@ -318,6 +322,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Command
             </label>
@@ -361,6 +366,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Command
             </label>

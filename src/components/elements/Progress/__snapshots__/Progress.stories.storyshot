@@ -171,6 +171,7 @@ exports[` 1`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Back
           </label>
@@ -202,6 +203,7 @@ exports[` 1`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Next
           </label>

@@ -1456,6 +1456,7 @@ exports[` 5`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Label
             </label>
@@ -1514,6 +1515,7 @@ exports[` 5`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               6
             </label>
@@ -1572,6 +1574,7 @@ exports[` 5`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               NEW!
             </label>
@@ -1630,6 +1633,7 @@ exports[` 5`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               9
             </label>
@@ -1999,6 +2003,7 @@ exports[` 6`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={[Function]}
             />
           </div>
         </div>
@@ -2063,6 +2068,7 @@ exports[` 6`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={[Function]}
             />
           </div>
         </div>
@@ -2127,6 +2133,7 @@ exports[` 6`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={[Function]}
             />
           </div>
         </div>
@@ -2191,6 +2198,7 @@ exports[` 6`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={[Function]}
             />
           </div>
         </div>
@@ -2839,6 +2847,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing="1px"
+        onClick={null}
       >
         Section 1
       </label>
@@ -2927,6 +2936,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing="1px"
+        onClick={null}
       >
         Section 2
       </label>
@@ -3033,6 +3043,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing="1px"
+        onClick={null}
       >
         Section 1
       </label>
@@ -3121,6 +3132,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing="1px"
+        onClick={null}
       >
         Section 2
       </label>
@@ -3599,6 +3611,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing="1px"
+        onClick={null}
       >
         Section 1
       </label>
@@ -3694,6 +3707,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing="1px"
+        onClick={null}
       >
         Section 2
       </label>
@@ -3807,6 +3821,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing="1px"
+        onClick={null}
       >
         Section 1
       </label>
@@ -3902,6 +3917,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing="1px"
+        onClick={null}
       >
         Section 2
       </label>

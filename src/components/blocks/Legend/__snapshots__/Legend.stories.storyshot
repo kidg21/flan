@@ -433,6 +433,7 @@ exports[` 2`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Info
                   </label>
@@ -481,6 +482,7 @@ exports[` 2`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Warning
                   </label>
@@ -529,6 +531,7 @@ exports[` 2`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Success
                   </label>
@@ -577,6 +580,7 @@ exports[` 2`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Alert
                   </label>

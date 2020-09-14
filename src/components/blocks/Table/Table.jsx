@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 import {
   MultiGrid,
   AutoSizer,
@@ -9,10 +10,6 @@ import {
   CellMeasurerCache,
   InfiniteLoader,
 } from "react-virtualized";
-import Grid from "layout/Grid";
-import Text from "base/Typography";
-import Icon from "atoms/Icon";
-import styled from "styled-components";
 
 export const MultiGridWrapper = styled.div`
   width: 100%;
@@ -38,7 +35,13 @@ export const MultiGridWrapper = styled.div`
       background-color: ${(props) => {
     return props.theme.palette.neutral80;
   }};
-      border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+    outline: none;
     }
     ::-webkit-scrollbar-track:horizontal {
       box-shadow: inset 0.5px 0 0px ${(props) => {
@@ -67,24 +70,58 @@ export const CellWrapper = styled.div`
   color: ${(props) => {
     return props.theme.text.primary;
   }};
-  cursor: ${(props) => {
-    return props.isHeader ? "pointer" : "";
+  font-family: ${(props) => {
+    return props.theme.typography.secondary;
   }};
-  font-family: ${(props) => { return props.theme.typography.primary; }};
+  font-weight: 400;
   border-bottom: ${(props) => {
     return `1px solid ${props.theme.palette.neutral40}`;
   }};
   background-color: ${(props) => {
-    if (props.isHighlighted) {
-      return props.theme.palette.neutral20;
-    }
-    if (props.isSelected) {
-      return props.theme.background.light;
-    }
     return props.theme.background.default;
   }};
+  /* Table Headers */
+  ${(props) => {
+    return props.isHeader
+      && css`
+      font-family: ${() => { return props.theme.typography.primary; }};
+      font-weight: 600;
+      color: ${() => { return props.theme.text.secondary; }};
+      font-size: 0.9em;
+      letter-spacing: 1px;
+    `;
+  }}
+  /* Highlighed Rows */
+  ${(props) => {
+    return props.isHighlighted
+      && css`
+      background-color: ${() => { return props.theme.palette.neutral20; }};
+    `;
+  }}
+  /* Selected Rows */
+  ${(props) => {
+    return props.isSelected
+      && css`
+      background-color: ${() => { return props.theme.background.light; }};
+    `;
+  }}
+  /* TODO: Get Active Sort /  Ascending/Descending sort order working */
+  /* Hovering over a sortable column displays the sort icon */
+  /* &:hover {
+    &:after {
+      ${(props) => {
+    return props.isSortable
+      && css`
+        content: "↑";
+        position: absolute;
+        right: 10%;
+        transform: ${() => { return props.isDescending ? "rotate(-180deg)" : ""; }};
+        transition: all 0.25s ease;
+      `;
+  }}
+    }
+  } */
 `;
-
 
 function _containedInRowCol(cellRowCol, row, col) {
   if (cellRowCol.rowIndex !== null && cellRowCol.rowIndex !== undefined) {
@@ -191,7 +228,11 @@ class Table extends Component {
     if (rowIndex === 0) {
       // data column header
       cellProps.onClick = (e) => {
-        if (onHeaderClick) onHeaderClick(e, { rowIndex, columnIndex, row });
+        if (onHeaderClick) {
+          onHeaderClick(e, {
+            rowIndex, columnIndex, row,
+          });
+        }
       };
       cellProps.onMouseOver = (e) => {
         if (onHeaderMouseOver) {
@@ -215,12 +256,6 @@ class Table extends Component {
       cellData = headers[columnIndex].label || "";
       if (headers[columnIndex].sortable) {
         cellProps.isSortable = true;
-        cellData = (
-          <Grid columns="auto .5fr" align="center">
-            <Text text={cellData} />
-            <Icon icon="down" size="sm" />
-          </Grid>
-        );
       }
       // if (headers[columnIndex].id === sortColumnId) {
       //   const arrow = sortDirection ? "up" : "down";

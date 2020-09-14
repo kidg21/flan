@@ -24,6 +24,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 1
       </label>
@@ -45,6 +46,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 222222
       </label>
@@ -66,6 +68,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 33333333333
       </label>
@@ -87,6 +90,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 444444444444444444
       </label>
@@ -126,6 +130,7 @@ exports[` 2`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Tag 1
         </label>
@@ -147,6 +152,7 @@ exports[` 2`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Tag 222222
         </label>
@@ -168,6 +174,7 @@ exports[` 2`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Tag 33333333333
         </label>
@@ -189,6 +196,7 @@ exports[` 2`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Tag 444444444444444444
         </label>
@@ -222,6 +230,7 @@ exports[` 3`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 1
       </label>
@@ -243,6 +252,7 @@ exports[` 3`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 222222
       </label>
@@ -264,6 +274,7 @@ exports[` 3`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 33333333333
       </label>
@@ -285,6 +296,7 @@ exports[` 3`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 444444444444444444
       </label>
@@ -317,6 +329,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 1
       </label>
@@ -338,6 +351,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 222222
       </label>
@@ -359,6 +373,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 33333333333
       </label>
@@ -380,6 +395,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 444444444444444444
       </label>
@@ -412,6 +428,7 @@ exports[` 5`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 1
       </label>
@@ -429,7 +446,7 @@ exports[` 5`] = `
       placeholder="{ Card }"
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
         id={null}
         onClick={null}
       >
@@ -461,6 +478,7 @@ exports[` 5`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 33333333333
       </label>
@@ -493,6 +511,7 @@ exports[` 6`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 1
       </label>
@@ -510,7 +529,7 @@ exports[` 6`] = `
       placeholder="{ Card }"
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
         id={null}
         onClick={null}
       >
@@ -542,6 +561,7 @@ exports[` 6`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 33333333333
       </label>
@@ -574,6 +594,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 1
       </label>
@@ -591,7 +612,7 @@ exports[` 7`] = `
       placeholder="{ Card }"
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
         id={null}
         onClick={null}
       >
@@ -623,6 +644,7 @@ exports[` 7`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Tag 33333333333
       </label>

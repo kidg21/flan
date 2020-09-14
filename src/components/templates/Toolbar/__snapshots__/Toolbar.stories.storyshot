@@ -15,7 +15,7 @@ exports[` 1`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 edvCsS"
+      className="Template__Region-sc-1i4nzbu-0 cKxKnd"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -83,6 +83,7 @@ exports[` 1`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Draw
                   </label>
@@ -130,6 +131,7 @@ exports[` 1`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Measure
                   </label>
@@ -181,6 +183,7 @@ exports[` 1`] = `
                       fontWeight={400}
                       htmlFor={null}
                       letterSpacing=".5px"
+                      onClick={null}
                     >
                       Map Type
                     </label>
@@ -230,6 +233,7 @@ exports[` 1`] = `
                             fontWeight={400}
                             htmlFor="radio-1"
                             letterSpacing=".5px"
+                            onClick={null}
                           >
                             Roads
                           </label>
@@ -256,6 +260,7 @@ exports[` 1`] = `
                             fontWeight={400}
                             htmlFor="radio-2"
                             letterSpacing=".5px"
+                            onClick={null}
                           >
                             Aerial
                           </label>
@@ -282,6 +287,7 @@ exports[` 1`] = `
                             fontWeight={400}
                             htmlFor="radio-3"
                             letterSpacing=".5px"
+                            onClick={null}
                           >
                             Aerial with Labels
                           </label>
@@ -337,6 +343,7 @@ exports[` 1`] = `
                       fontWeight={400}
                       htmlFor={null}
                       letterSpacing=".5px"
+                      onClick={null}
                     >
                       Layers
                     </label>
@@ -385,6 +392,7 @@ exports[` 1`] = `
                             fontWeight={400}
                             htmlFor="Checkbox-1"
                             letterSpacing=".5px"
+                            onClick={[Function]}
                           >
                             Demographics
                           </label>
@@ -410,6 +418,7 @@ exports[` 1`] = `
                             fontWeight={400}
                             htmlFor="Checkbox-2"
                             letterSpacing=".5px"
+                            onClick={[Function]}
                           >
                             Household Income
                           </label>
@@ -435,6 +444,7 @@ exports[` 1`] = `
                             fontWeight={400}
                             htmlFor="Checkbox-3"
                             letterSpacing=".5px"
+                            onClick={[Function]}
                           >
                             Population Density
                           </label>
@@ -460,6 +470,7 @@ exports[` 1`] = `
                             fontWeight={400}
                             htmlFor="Checkbox-4"
                             letterSpacing=".5px"
+                            onClick={[Function]}
                           >
                             Household Age
                           </label>
@@ -511,6 +522,7 @@ exports[` 1`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Legend
                   </label>
@@ -540,7 +552,7 @@ exports[` 2`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 edvCsS"
+      className="Template__Region-sc-1i4nzbu-0 cKxKnd"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -608,6 +620,7 @@ exports[` 2`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Draw
                   </label>
@@ -655,6 +668,7 @@ exports[` 2`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Measure
                   </label>
@@ -702,6 +716,7 @@ exports[` 2`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Map Type
                   </label>
@@ -749,6 +764,7 @@ exports[` 2`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     Layers
                   </label>
@@ -800,6 +816,7 @@ exports[` 2`] = `
                       fontWeight={400}
                       htmlFor={null}
                       letterSpacing=".5px"
+                      onClick={null}
                     >
                       Legend
                     </label>
@@ -815,12 +832,12 @@ exports[` 2`] = `
                     width={null}
                   >
                     <div
-                      className="Container__BoxContainer-sc-1i4fzzd-1 cXaVTO"
+                      className="Container__BoxContainer-sc-1i4fzzd-1 ccfnLl"
                       height="100%"
                       id={null}
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 cVNHJm"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 fGqHoI"
                         id={null}
                         rows={null}
                       >
@@ -833,7 +850,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                             id="storyshots_145-Header"
                             onClick={null}
                           >
@@ -887,11 +904,11 @@ exports[` 2`] = `
                               </div>
                             </div>
                             <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+                              className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                 id={null}
                                 onClick={null}
                               >
@@ -916,7 +933,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                             id="storyshots_146-Header"
                             onClick={null}
                           >
@@ -970,11 +987,11 @@ exports[` 2`] = `
                               </div>
                             </div>
                             <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+                              className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                 id={null}
                                 onClick={null}
                               >
@@ -999,7 +1016,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                             id="storyshots_147-Header"
                             onClick={null}
                           >
@@ -1053,11 +1070,11 @@ exports[` 2`] = `
                               </div>
                             </div>
                             <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+                              className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                 id={null}
                                 onClick={null}
                               >
@@ -1082,7 +1099,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                             id="storyshots_148-Header"
                             onClick={null}
                           >
@@ -1136,11 +1153,11 @@ exports[` 2`] = `
                               </div>
                             </div>
                             <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+                              className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                 id={null}
                                 onClick={null}
                               >
@@ -1165,7 +1182,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                             id="storyshots_149-Header"
                             onClick={null}
                           >
@@ -1219,11 +1236,11 @@ exports[` 2`] = `
                               </div>
                             </div>
                             <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+                              className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                 id={null}
                                 onClick={null}
                               >
@@ -1248,7 +1265,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                             id="storyshots_150-Header"
                             onClick={null}
                           >
@@ -1302,11 +1319,11 @@ exports[` 2`] = `
                               </div>
                             </div>
                             <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+                              className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                 id={null}
                                 onClick={null}
                               >
@@ -1331,7 +1348,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                             id="storyshots_151-Header"
                             onClick={null}
                           >
@@ -1385,11 +1402,11 @@ exports[` 2`] = `
                               </div>
                             </div>
                             <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+                              className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                 id={null}
                                 onClick={null}
                               >
@@ -1414,7 +1431,7 @@ exports[` 2`] = `
                           placeholder="{ Card }"
                         >
                           <section
-                            className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                            className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                             id="storyshots_152-Header"
                             onClick={null}
                           >
@@ -1468,11 +1485,11 @@ exports[` 2`] = `
                               </div>
                             </div>
                             <div
-                              className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+                              className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
                               open={false}
                             >
                               <section
-                                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                 id={null}
                                 onClick={null}
                               >

@@ -2,7 +2,7 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { FullScreen } from "helpers/Display";
+import { Container } from "helpers/Display";
 import Menu from "blocks/Menu";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
@@ -407,7 +407,7 @@ const options = [
 ];
 
 storiesOf("Data Display|Table", module)
-  .addDecorator(FullScreen)
+  .addDecorator(Container)
   .add("Simple", () => {
     return (
       <Table

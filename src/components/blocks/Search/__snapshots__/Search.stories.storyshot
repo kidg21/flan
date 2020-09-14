@@ -168,7 +168,7 @@ exports[` 2`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 gSzhSs"
+        className="Container__BoxContainer-sc-1i4fzzd-1 jhoPUP"
         height=""
         id="Suggestions-results-container"
       >
@@ -383,7 +383,7 @@ exports[` 3`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 gSzhSs"
+        className="Container__BoxContainer-sc-1i4fzzd-1 jhoPUP"
         height=""
         id="Suggestions_More-results-container"
       >
@@ -812,6 +812,7 @@ exports[` 3`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     14
                   </label>
@@ -915,7 +916,7 @@ exports[` 4`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 gSzhSs"
+        className="Container__BoxContainer-sc-1i4fzzd-1 jhoPUP"
         height=""
         id="Search_Offline-results-container"
       >
@@ -1063,7 +1064,7 @@ exports[` 5`] = `
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 gSzhSs"
+        className="Container__BoxContainer-sc-1i4fzzd-1 jhoPUP"
         height=""
         id="Search_BadConnection-results-container"
       >

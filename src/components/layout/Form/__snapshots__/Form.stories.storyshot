@@ -85,6 +85,7 @@ exports[` 1`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 First Name
               </label>
@@ -132,6 +133,7 @@ exports[` 1`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Last Name
               </label>
@@ -195,6 +197,7 @@ exports[` 1`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               Checkbox Group Label
             </label>
@@ -233,6 +236,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="box-1"
                   letterSpacing=".5px"
+                  onClick={[Function]}
                 >
                   Label 1
                 </label>
@@ -259,6 +263,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="box-2"
                   letterSpacing=".5px"
+                  onClick={[Function]}
                 >
                   Label 2 (disabled)
                 </label>
@@ -284,6 +289,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="box-3"
                   letterSpacing=".5px"
+                  onClick={[Function]}
                 >
                   Label 3
                 </label>
@@ -309,6 +315,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="box-4"
                   letterSpacing=".5px"
+                  onClick={[Function]}
                 >
                   Label 4
                 </label>
@@ -346,6 +353,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="box_long"
                   letterSpacing=".5px"
+                  onClick={[Function]}
                 >
                   My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.
                 </label>
@@ -371,6 +379,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="box_long2"
                   letterSpacing=".5px"
+                  onClick={[Function]}
                 >
                   Enough with these long labels already...put it on your blog, Shakespeare.
                 </label>
@@ -389,6 +398,7 @@ exports[` 1`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               Multi-Select
             </label>
@@ -537,6 +547,7 @@ exports[` 1`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               Radio Group Label
             </label>
@@ -576,6 +587,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="radio-1"
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Label 1
                 </label>
@@ -603,6 +615,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="radio-2"
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Label 2 (disabled)
                 </label>
@@ -629,6 +642,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="radio-3"
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Label 3
                 </label>
@@ -655,6 +669,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="radio-4"
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Label 4
                 </label>
@@ -693,6 +708,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="radio_long"
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.
                 </label>
@@ -719,6 +735,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor="radio_long2"
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Enough with these long labels already...put it on your blog, Shakespeare.
                 </label>

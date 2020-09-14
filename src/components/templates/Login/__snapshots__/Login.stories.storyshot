@@ -73,6 +73,7 @@ exports[` 1`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Email
               </label>
@@ -111,6 +112,7 @@ exports[` 1`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Password
               </label>
@@ -166,6 +168,7 @@ exports[` 1`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Login
               </label>
@@ -223,6 +226,7 @@ exports[` 1`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     New User? Go to Register
                   </label>
@@ -310,6 +314,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Email
               </label>
@@ -348,6 +353,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Password
               </label>
@@ -386,6 +392,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Confirm Password
               </label>
@@ -441,6 +448,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Register
               </label>
@@ -526,6 +534,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Email
               </label>
@@ -581,6 +590,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Send
               </label>
@@ -616,6 +626,7 @@ exports[` 3`] = `
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     New User? Go to Register
                   </label>
@@ -789,6 +800,7 @@ exports[` 5`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Confirm Email
               </label>
@@ -827,6 +839,7 @@ exports[` 5`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Password
               </label>
@@ -865,6 +878,7 @@ exports[` 5`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Confirm Password
               </label>
@@ -920,6 +934,7 @@ exports[` 5`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Confirm
               </label>
@@ -1031,6 +1046,7 @@ exports[` 6`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Go to Login
               </label>

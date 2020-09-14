@@ -35,6 +35,7 @@ exports[` 1`] = `
     fontWeight={400}
     htmlFor={null}
     letterSpacing=".5px"
+    onClick={null}
   >
     Print
   </label>
@@ -81,6 +82,7 @@ exports[` 2`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Active
     </label>
@@ -119,6 +121,7 @@ exports[` 2`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Disabled
     </label>
@@ -166,6 +169,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Small
     </label>
@@ -204,6 +208,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Standard
     </label>
@@ -242,6 +247,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Large
     </label>
@@ -289,6 +295,7 @@ exports[` 4`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon-Left
     </label>
@@ -327,6 +334,7 @@ exports[` 4`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon-Top
     </label>
@@ -365,6 +373,7 @@ exports[` 4`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon-Right
     </label>
@@ -412,6 +421,7 @@ exports[` 5`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       This is visible to ATs
     </label>

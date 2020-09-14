@@ -57,7 +57,7 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+    className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
     open={false}
   >
     <section
@@ -119,6 +119,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor="checkbox-id"
             letterSpacing=".5px"
+            onClick={[Function]}
           >
             Label 1
           </label>
@@ -151,7 +152,7 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+    className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
     open={false}
   >
     <section
@@ -231,7 +232,7 @@ Array [
     </div>
   </div>,
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+    className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
     open={false}
   >
     <section
@@ -311,7 +312,7 @@ Array [
     </div>
   </div>,
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+    className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
     open={false}
   >
     <section

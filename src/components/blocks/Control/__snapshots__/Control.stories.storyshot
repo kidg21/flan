@@ -28,6 +28,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Rent
       </label>
@@ -55,6 +56,7 @@ exports[` 1`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Buy
       </label>
@@ -124,6 +126,7 @@ Array [
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Rent
             </label>
@@ -151,6 +154,7 @@ Array [
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Buy
             </label>
@@ -218,6 +222,7 @@ Array [
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Rent
             </label>
@@ -245,6 +250,7 @@ Array [
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Buy
             </label>
@@ -272,6 +278,7 @@ Array [
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Sell
             </label>
@@ -299,6 +306,7 @@ Array [
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Short-term lease
             </label>
@@ -326,6 +334,7 @@ Array [
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Long-term lease
             </label>
@@ -370,6 +379,7 @@ exports[` 3`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Selected option
         </label>
@@ -397,6 +407,7 @@ exports[` 3`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Disabled Option
         </label>
@@ -424,6 +435,7 @@ exports[` 3`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Unselected Option
         </label>
@@ -457,6 +469,7 @@ exports[` 3`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Selected option
         </label>
@@ -484,6 +497,7 @@ exports[` 3`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Disabled Option
         </label>
@@ -511,6 +525,7 @@ exports[` 3`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Unselected Option
         </label>
@@ -553,6 +568,7 @@ exports[` 4`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           List View
         </label>
@@ -580,6 +596,7 @@ exports[` 4`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Map View
         </label>
@@ -633,6 +650,7 @@ exports[` 4`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           List View
         </label>
@@ -680,6 +698,7 @@ exports[` 4`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Map View
         </label>

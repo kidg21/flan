@@ -33,6 +33,7 @@ exports[` 1`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Date Input Label
           </label>
@@ -88,6 +89,7 @@ exports[` 1`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Time Input Label
           </label>
@@ -146,6 +148,7 @@ exports[` 1`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label
             </label>
@@ -195,6 +198,7 @@ exports[` 1`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label
             </label>
@@ -266,6 +270,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Date Input Label
           </label>
@@ -321,6 +326,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Date Input Label (required)
           </label>
@@ -376,6 +382,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Date Input Label
           </label>
@@ -431,6 +438,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Date Input Label
           </label>
@@ -486,6 +494,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Date Input Label
           </label>
@@ -571,6 +580,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Time Input Label
           </label>
@@ -624,6 +634,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Time Input Label (required)
           </label>
@@ -677,6 +688,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Time Input Label
           </label>
@@ -730,6 +742,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Time Input Label
           </label>
@@ -818,6 +831,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label
             </label>
@@ -867,6 +881,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label
             </label>
@@ -926,6 +941,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label (required)
             </label>
@@ -975,6 +991,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label (required)
             </label>
@@ -1034,6 +1051,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label
             </label>
@@ -1083,6 +1101,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label
             </label>
@@ -1142,6 +1161,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label
             </label>
@@ -1204,6 +1224,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Date-Time Input Label
             </label>

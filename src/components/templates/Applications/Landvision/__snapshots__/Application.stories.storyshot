@@ -113,6 +113,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   JOBS PORTAL
                 </label>
@@ -140,6 +141,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   RESEARCH
                 </label>
@@ -167,6 +169,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   BI
                 </label>
@@ -194,6 +197,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   REPORT WRITING
                 </label>
@@ -446,7 +450,7 @@ exports[` 1`] = `
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
@@ -531,7 +535,7 @@ exports[` 1`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
               id={null}
             >
               <section
@@ -540,7 +544,7 @@ exports[` 1`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -813,7 +817,7 @@ exports[` 1`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                  className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -824,7 +828,7 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                      className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -836,7 +840,7 @@ exports[` 1`] = `
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -900,7 +904,7 @@ exports[` 1`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                          className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                           id={null}
                         >
                           <section
@@ -909,7 +913,7 @@ exports[` 1`] = `
                             rows={null}
                           >
                             <section
-                              className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                              className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                               id="A"
                               placeholder="A"
                               tabIndex="0"
@@ -921,7 +925,7 @@ exports[` 1`] = `
                                 width="100%"
                               >
                                 <section
-                                  className="Panel__SectionWrapper-sc-48epke-1 BJRPj"
+                                  className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
                                   id={null}
                                 >
                                   <div
@@ -964,6 +968,7 @@ exports[` 1`] = `
                                                   fontWeight={400}
                                                   htmlFor={null}
                                                   letterSpacing=".5px"
+                                                  onClick={null}
                                                 >
                                                   Project Name
                                                 </label>
@@ -989,6 +994,7 @@ exports[` 1`] = `
                                                   fontWeight={400}
                                                   htmlFor={null}
                                                   letterSpacing=".5px"
+                                                  onClick={null}
                                                 >
                                                   Job Number
                                                 </label>
@@ -1014,6 +1020,7 @@ exports[` 1`] = `
                                                   fontWeight={400}
                                                   htmlFor={null}
                                                   letterSpacing=".5px"
+                                                  onClick={null}
                                                 >
                                                   Property Type
                                                 </label>
@@ -1049,6 +1056,7 @@ exports[` 1`] = `
                                                   fontWeight={400}
                                                   htmlFor={null}
                                                   letterSpacing=".5px"
+                                                  onClick={null}
                                                 >
                                                   Lat/Long
                                                 </label>
@@ -1084,6 +1092,7 @@ exports[` 1`] = `
                                                   fontWeight={400}
                                                   htmlFor={null}
                                                   letterSpacing=".5px"
+                                                  onClick={null}
                                                 >
                                                   Street Address
                                                 </label>
@@ -1109,6 +1118,7 @@ exports[` 1`] = `
                                                   fontWeight={400}
                                                   htmlFor={null}
                                                   letterSpacing=".5px"
+                                                  onClick={null}
                                                 >
                                                   City, State, Zip
                                                 </label>
@@ -1154,6 +1164,7 @@ exports[` 1`] = `
                                                     fontWeight={400}
                                                     htmlFor={null}
                                                     letterSpacing=".5px"
+                                                    onClick={null}
                                                   >
                                                     Start Research
                                                   </label>
@@ -1169,7 +1180,7 @@ exports[` 1`] = `
                               </div>
                             </section>
                             <section
-                              className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                              className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                               id="B"
                               placeholder="B"
                               tabIndex="0"
@@ -1181,7 +1192,7 @@ exports[` 1`] = `
                                 width="100%"
                               >
                                 <section
-                                  className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                                  className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                                   id={null}
                                 >
                                   <section
@@ -1223,11 +1234,12 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Parcel No.
                                             </label>
                                             <a
-                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                               disabled={false}
                                               fontSize="1rem"
                                               fontWeight={500}
@@ -1259,6 +1271,7 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Land User
                                             </label>
@@ -1284,6 +1297,7 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Building Area
                                             </label>
@@ -1309,11 +1323,12 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Lot Area
                                             </label>
                                             <a
-                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                               disabled={false}
                                               fontSize="1rem"
                                               fontWeight={500}
@@ -1345,6 +1360,7 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Building/Lot
                                             </label>
@@ -1370,6 +1386,7 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               No. of Units
                                             </label>
@@ -1395,6 +1412,7 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Year Built
                                             </label>
@@ -1435,11 +1453,12 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owners
                                             </label>
                                             <a
-                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                               disabled={false}
                                               fontSize="1rem"
                                               fontWeight={500}
@@ -1471,6 +1490,7 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owner Address
                                             </label>
@@ -1496,11 +1516,12 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Adjacent Lots
                                             </label>
                                             <a
-                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                               disabled={false}
                                               fontSize="1rem"
                                               fontWeight={500}
@@ -1532,11 +1553,12 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Last Sale
                                             </label>
                                             <a
-                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                               disabled={false}
                                               fontSize="1rem"
                                               fontWeight={500}
@@ -1568,6 +1590,7 @@ exports[` 1`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Total Assd Value
                                             </label>
@@ -1717,6 +1740,7 @@ exports[` 2`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   JOBS PORTAL
                 </label>
@@ -1744,6 +1768,7 @@ exports[` 2`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   RESEARCH
                 </label>
@@ -1771,6 +1796,7 @@ exports[` 2`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   BI
                 </label>
@@ -1798,6 +1824,7 @@ exports[` 2`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   REPORT WRITING
                 </label>
@@ -1925,6 +1952,7 @@ exports[` 2`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 1
             </label>
@@ -2058,6 +2086,7 @@ exports[` 2`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 2
             </label>
@@ -2191,6 +2220,7 @@ exports[` 2`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 3
             </label>
@@ -2330,7 +2360,7 @@ exports[` 2`] = `
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
@@ -2415,7 +2445,7 @@ exports[` 2`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
               id={null}
             >
               <section
@@ -2424,7 +2454,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -2676,7 +2706,7 @@ exports[` 2`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                  className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -2687,7 +2717,7 @@ exports[` 2`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                      className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -2699,7 +2729,7 @@ exports[` 2`] = `
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                          className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                           id={null}
                         >
                           <section
@@ -2708,7 +2738,7 @@ exports[` 2`] = `
                             rows={null}
                           >
                             <section
-                              className="Template__Region-sc-1i4nzbu-0 edvCsS"
+                              className="Template__Region-sc-1i4nzbu-0 cKxKnd"
                               id="A"
                               placeholder="A"
                               tabIndex="0"
@@ -2789,6 +2819,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Draw
                                           </label>
@@ -2836,6 +2867,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Layers
                                           </label>
@@ -2883,6 +2915,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Legend
                                           </label>
@@ -2930,6 +2963,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Map Type
                                           </label>
@@ -2977,6 +3011,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Reset
                                           </label>
@@ -2998,7 +3033,7 @@ exports[` 2`] = `
                           />
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -3055,7 +3090,7 @@ exports[` 2`] = `
                       </div>
                     </section>
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                      className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                       id="B"
                       placeholder="B"
                       tabIndex="0"
@@ -3067,7 +3102,7 @@ exports[` 2`] = `
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -3112,6 +3147,7 @@ exports[` 2`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Show Related Parcels
                                   </label>
@@ -3121,7 +3157,7 @@ exports[` 2`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                          className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                           id={null}
                         >
                           <form
@@ -3145,7 +3181,7 @@ exports[` 2`] = `
                                 placeholder="{ Card }"
                               >
                                 <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                   id="storyshots_249-Body"
                                   onClick={null}
                                 >
@@ -3188,6 +3224,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing=".5px"
+                                            onClick={null}
                                           >
                                             View Details
                                           </label>
@@ -3219,6 +3256,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Address
                                             </label>
@@ -3244,6 +3282,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owner
                                             </label>
@@ -3269,6 +3308,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Last Sale
                                             </label>
@@ -3294,6 +3334,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Doc #
                                             </label>
@@ -3334,6 +3375,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Remove
                                             </label>
@@ -3353,7 +3395,7 @@ exports[` 2`] = `
                                 placeholder="{ Card }"
                               >
                                 <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                   id="storyshots_250-Body"
                                   onClick={null}
                                 >
@@ -3396,6 +3438,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing=".5px"
+                                            onClick={null}
                                           >
                                             View Details
                                           </label>
@@ -3427,6 +3470,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Address
                                             </label>
@@ -3452,6 +3496,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owner
                                             </label>
@@ -3477,6 +3522,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Last Sale
                                             </label>
@@ -3502,6 +3548,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Doc #
                                             </label>
@@ -3542,6 +3589,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Remove
                                             </label>
@@ -3561,7 +3609,7 @@ exports[` 2`] = `
                                 placeholder="{ Card }"
                               >
                                 <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                   id="storyshots_251-Body"
                                   onClick={null}
                                 >
@@ -3604,6 +3652,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing=".5px"
+                                            onClick={null}
                                           >
                                             View Details
                                           </label>
@@ -3635,6 +3684,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Address
                                             </label>
@@ -3660,6 +3710,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owner
                                             </label>
@@ -3685,6 +3736,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Last Sale
                                             </label>
@@ -3710,6 +3762,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Doc #
                                             </label>
@@ -3750,6 +3803,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Remove
                                             </label>
@@ -3769,7 +3823,7 @@ exports[` 2`] = `
                                 placeholder="{ Card }"
                               >
                                 <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                   id="storyshots_252-Body"
                                   onClick={null}
                                 >
@@ -3812,6 +3866,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing=".5px"
+                                            onClick={null}
                                           >
                                             View Details
                                           </label>
@@ -3843,6 +3898,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Address
                                             </label>
@@ -3868,6 +3924,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owner
                                             </label>
@@ -3893,6 +3950,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Last Sale
                                             </label>
@@ -3918,6 +3976,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Doc #
                                             </label>
@@ -3958,6 +4017,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Remove
                                             </label>
@@ -3977,7 +4037,7 @@ exports[` 2`] = `
                                 placeholder="{ Card }"
                               >
                                 <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                   id="storyshots_253-Body"
                                   onClick={null}
                                 >
@@ -4020,6 +4080,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing=".5px"
+                                            onClick={null}
                                           >
                                             View Details
                                           </label>
@@ -4051,6 +4112,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Address
                                             </label>
@@ -4076,6 +4138,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owner
                                             </label>
@@ -4101,6 +4164,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Last Sale
                                             </label>
@@ -4126,6 +4190,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Doc #
                                             </label>
@@ -4166,6 +4231,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Remove
                                             </label>
@@ -4185,7 +4251,7 @@ exports[` 2`] = `
                                 placeholder="{ Card }"
                               >
                                 <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                   id="storyshots_254-Body"
                                   onClick={null}
                                 >
@@ -4228,6 +4294,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing=".5px"
+                                            onClick={null}
                                           >
                                             View Details
                                           </label>
@@ -4259,6 +4326,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Address
                                             </label>
@@ -4284,6 +4352,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owner
                                             </label>
@@ -4309,6 +4378,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Last Sale
                                             </label>
@@ -4334,6 +4404,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Doc #
                                             </label>
@@ -4374,6 +4445,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Remove
                                             </label>
@@ -4393,7 +4465,7 @@ exports[` 2`] = `
                                 placeholder="{ Card }"
                               >
                                 <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                   id="storyshots_255-Body"
                                   onClick={null}
                                 >
@@ -4436,6 +4508,7 @@ exports[` 2`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing=".5px"
+                                            onClick={null}
                                           >
                                             View Details
                                           </label>
@@ -4467,6 +4540,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Address
                                             </label>
@@ -4492,6 +4566,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Owner
                                             </label>
@@ -4517,6 +4592,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Last Sale
                                             </label>
@@ -4542,6 +4618,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Doc #
                                             </label>
@@ -4582,6 +4659,7 @@ exports[` 2`] = `
                                               fontWeight={400}
                                               htmlFor={null}
                                               letterSpacing=".5px"
+                                              onClick={null}
                                             >
                                               Remove
                                             </label>
@@ -4596,7 +4674,7 @@ exports[` 2`] = `
                           </form>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -4629,6 +4707,7 @@ exports[` 2`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Define Site
                                   </label>
@@ -4764,6 +4843,7 @@ exports[` 3`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   JOBS PORTAL
                 </label>
@@ -4791,6 +4871,7 @@ exports[` 3`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   RESEARCH
                 </label>
@@ -4818,6 +4899,7 @@ exports[` 3`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   BI
                 </label>
@@ -4845,6 +4927,7 @@ exports[` 3`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   REPORT WRITING
                 </label>
@@ -4972,6 +5055,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 1
             </label>
@@ -5105,6 +5189,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 2
             </label>
@@ -5238,6 +5323,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 3
             </label>
@@ -5377,7 +5463,7 @@ exports[` 3`] = `
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
@@ -5462,7 +5548,7 @@ exports[` 3`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
               id={null}
             >
               <section
@@ -5471,7 +5557,7 @@ exports[` 3`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -5747,7 +5833,7 @@ exports[` 3`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                  className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -5758,7 +5844,7 @@ exports[` 3`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                      className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -5770,7 +5856,7 @@ exports[` 3`] = `
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -5808,6 +5894,7 @@ exports[` 3`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Parcel 1
                                     </label>
@@ -5835,6 +5922,7 @@ exports[` 3`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Parcel 2
                                     </label>
@@ -5845,7 +5933,7 @@ exports[` 3`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                          className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                           id={null}
                         >
                           <form
@@ -5872,11 +5960,12 @@ exports[` 3`] = `
                                   fontWeight={400}
                                   htmlFor={null}
                                   letterSpacing=".5px"
+                                  onClick={null}
                                 >
                                   Direct Parcel Link:
                                 </label>
                                 <a
-                                  className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                  className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                   disabled={false}
                                   fontSize="1rem"
                                   fontWeight={500}
@@ -5911,6 +6000,7 @@ exports[` 3`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Assessment Year(s)
                                   </label>
@@ -5950,6 +6040,7 @@ exports[` 3`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Land Assessment
                                   </label>
@@ -5989,6 +6080,7 @@ exports[` 3`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Improvement Assessment
                                   </label>
@@ -6028,6 +6120,7 @@ exports[` 3`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Other Assessment
                                   </label>
@@ -6066,6 +6159,7 @@ exports[` 3`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Total Assessment
                                   </label>
@@ -6105,6 +6199,7 @@ exports[` 3`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Total Taxes
                                   </label>
@@ -6161,6 +6256,7 @@ exports[` 3`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Attachments
                                   </label>
@@ -6197,6 +6293,7 @@ exports[` 3`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Save
                                     </label>
@@ -6224,6 +6321,7 @@ exports[` 3`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Save & Next
                                     </label>
@@ -6234,7 +6332,7 @@ exports[` 3`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -6291,7 +6389,7 @@ exports[` 3`] = `
                       </div>
                     </section>
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                      className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                       id="B"
                       placeholder="B"
                       tabIndex="0"
@@ -6311,7 +6409,7 @@ exports[` 3`] = `
                             width="100%"
                           >
                             <section
-                              className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                               id={null}
                             >
                               <section
@@ -6353,11 +6451,12 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Parcel No.
                                         </label>
                                         <a
-                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                           disabled={false}
                                           fontSize="1rem"
                                           fontWeight={500}
@@ -6389,6 +6488,7 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Land User
                                         </label>
@@ -6414,6 +6514,7 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Building Area
                                         </label>
@@ -6439,11 +6540,12 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Lot Area
                                         </label>
                                         <a
-                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                           disabled={false}
                                           fontSize="1rem"
                                           fontWeight={500}
@@ -6475,6 +6577,7 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Building/Lot
                                         </label>
@@ -6500,6 +6603,7 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           No. of Units
                                         </label>
@@ -6525,6 +6629,7 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Year Built
                                         </label>
@@ -6565,11 +6670,12 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Owners
                                         </label>
                                         <a
-                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                           disabled={false}
                                           fontSize="1rem"
                                           fontWeight={500}
@@ -6601,6 +6707,7 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Owner Address
                                         </label>
@@ -6626,11 +6733,12 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Adjacent Lots
                                         </label>
                                         <a
-                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                           disabled={false}
                                           fontSize="1rem"
                                           fontWeight={500}
@@ -6662,11 +6770,12 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Last Sale
                                         </label>
                                         <a
-                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                          className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                           disabled={false}
                                           fontSize="1rem"
                                           fontWeight={500}
@@ -6698,6 +6807,7 @@ exports[` 3`] = `
                                           fontWeight={400}
                                           htmlFor={null}
                                           letterSpacing=".5px"
+                                          onClick={null}
                                         >
                                           Total Assd Value
                                         </label>
@@ -6845,6 +6955,7 @@ exports[` 4`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   JOBS PORTAL
                 </label>
@@ -6872,6 +6983,7 @@ exports[` 4`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   RESEARCH
                 </label>
@@ -6899,6 +7011,7 @@ exports[` 4`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   BI
                 </label>
@@ -6926,6 +7039,7 @@ exports[` 4`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   REPORT WRITING
                 </label>
@@ -7053,6 +7167,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 1
             </label>
@@ -7186,6 +7301,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 2
             </label>
@@ -7319,6 +7435,7 @@ exports[` 4`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 3
             </label>
@@ -7458,7 +7575,7 @@ exports[` 4`] = `
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
@@ -7543,7 +7660,7 @@ exports[` 4`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
               id={null}
             >
               <section
@@ -7552,7 +7669,7 @@ exports[` 4`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -7876,7 +7993,7 @@ exports[` 4`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                  className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -7887,7 +8004,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                      className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -7899,7 +8016,7 @@ exports[` 4`] = `
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                          className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                           id={null}
                         >
                           <section
@@ -7908,7 +8025,7 @@ exports[` 4`] = `
                             rows={null}
                           >
                             <section
-                              className="Template__Region-sc-1i4nzbu-0 edvCsS"
+                              className="Template__Region-sc-1i4nzbu-0 cKxKnd"
                               id="A"
                               placeholder="A"
                               tabIndex="0"
@@ -7989,6 +8106,7 @@ exports[` 4`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Draw
                                           </label>
@@ -8036,6 +8154,7 @@ exports[` 4`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Layers
                                           </label>
@@ -8083,6 +8202,7 @@ exports[` 4`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Legend
                                           </label>
@@ -8130,6 +8250,7 @@ exports[` 4`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Map Capture
                                           </label>
@@ -8177,6 +8298,7 @@ exports[` 4`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Map Type
                                           </label>
@@ -8198,7 +8320,7 @@ exports[` 4`] = `
                           />
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -8255,7 +8377,7 @@ exports[` 4`] = `
                       </div>
                     </section>
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                      className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                       id="B"
                       placeholder="B"
                       tabIndex="0"
@@ -8267,7 +8389,7 @@ exports[` 4`] = `
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -8305,6 +8427,7 @@ exports[` 4`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Zone 1
                                     </label>
@@ -8332,6 +8455,7 @@ exports[` 4`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Zone 2
                                     </label>
@@ -8364,6 +8488,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Request Correction
                                   </label>
@@ -8373,7 +8498,7 @@ exports[` 4`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                          className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                           id={null}
                         >
                           <form
@@ -8408,11 +8533,12 @@ exports[` 4`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Zoning Authority
                                     </label>
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 eCowNA"
+                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -8449,6 +8575,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Zoning District
                                   </label>
@@ -8488,6 +8615,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Zoning
                                   </label>
@@ -8527,6 +8655,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Zoning Type
                                   </label>
@@ -8566,6 +8695,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Zoned Density
                                   </label>
@@ -8605,6 +8735,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Zoning Summary
                                   </label>
@@ -8644,6 +8775,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Maximum Site Coverage
                                   </label>
@@ -8672,7 +8804,7 @@ exports[` 4`] = `
                           </form>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -8705,6 +8837,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Attachments
                                   </label>
@@ -8736,6 +8869,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Save
                                   </label>
@@ -8767,6 +8901,7 @@ exports[` 4`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Save & Next
                                   </label>
@@ -8902,6 +9037,7 @@ exports[` 5`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   JOBS PORTAL
                 </label>
@@ -8929,6 +9065,7 @@ exports[` 5`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   RESEARCH
                 </label>
@@ -8956,6 +9093,7 @@ exports[` 5`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   BI
                 </label>
@@ -8983,6 +9121,7 @@ exports[` 5`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   REPORT WRITING
                 </label>
@@ -9110,6 +9249,7 @@ exports[` 5`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 1
             </label>
@@ -9243,6 +9383,7 @@ exports[` 5`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 2
             </label>
@@ -9376,6 +9517,7 @@ exports[` 5`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 3
             </label>
@@ -9515,7 +9657,7 @@ exports[` 5`] = `
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
@@ -9600,7 +9742,7 @@ exports[` 5`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
               id={null}
             >
               <section
@@ -9609,7 +9751,7 @@ exports[` 5`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -9957,7 +10099,7 @@ exports[` 5`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                  className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -9968,7 +10110,7 @@ exports[` 5`] = `
                     rows={null}
                   >
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                      className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                       id="A"
                       placeholder="A"
                       tabIndex="0"
@@ -9980,7 +10122,7 @@ exports[` 5`] = `
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -10018,6 +10160,7 @@ exports[` 5`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Subject Map
                                     </label>
@@ -10045,6 +10188,7 @@ exports[` 5`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Flood
                                     </label>
@@ -10072,6 +10216,7 @@ exports[` 5`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Wetlands
                                     </label>
@@ -10099,6 +10244,7 @@ exports[` 5`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Traffic & Transit
                                     </label>
@@ -10126,6 +10272,7 @@ exports[` 5`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Market Boundaries
                                     </label>
@@ -10153,6 +10300,7 @@ exports[` 5`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Schools
                                     </label>
@@ -10180,6 +10328,7 @@ exports[` 5`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Other
                                     </label>
@@ -10190,7 +10339,7 @@ exports[` 5`] = `
                           </div>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                          className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                           id={null}
                         >
                           <section
@@ -10199,7 +10348,7 @@ exports[` 5`] = `
                             rows={null}
                           >
                             <section
-                              className="Template__Region-sc-1i4nzbu-0 edvCsS"
+                              className="Template__Region-sc-1i4nzbu-0 cKxKnd"
                               id="A"
                               placeholder="A"
                               tabIndex="0"
@@ -10267,6 +10416,7 @@ exports[` 5`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Draw
                                           </label>
@@ -10314,6 +10464,7 @@ exports[` 5`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Measure
                                           </label>
@@ -10361,6 +10512,7 @@ exports[` 5`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Layers
                                           </label>
@@ -10408,6 +10560,7 @@ exports[` 5`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Legend
                                           </label>
@@ -10455,6 +10608,7 @@ exports[` 5`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Map Capture
                                           </label>
@@ -10502,6 +10656,7 @@ exports[` 5`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Map Type
                                           </label>
@@ -10549,6 +10704,7 @@ exports[` 5`] = `
                                             fontWeight={400}
                                             htmlFor={null}
                                             letterSpacing="0.4px"
+                                            onClick={null}
                                           >
                                             Reset
                                           </label>
@@ -10570,7 +10726,7 @@ exports[` 5`] = `
                           />
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -10627,7 +10783,7 @@ exports[` 5`] = `
                       </div>
                     </section>
                     <section
-                      className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                      className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                       id="B"
                       placeholder="B"
                       tabIndex="0"
@@ -10639,7 +10795,7 @@ exports[` 5`] = `
                         width="100%"
                       >
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+                          className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
                           id={null}
                         >
                           <form
@@ -10683,6 +10839,7 @@ exports[` 5`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Flood Zone
                                   </label>
@@ -10722,6 +10879,7 @@ exports[` 5`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     In 100-yr Zone
                                   </label>
@@ -10761,6 +10919,7 @@ exports[` 5`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     DFIRM ID
                                   </label>
@@ -10800,6 +10959,7 @@ exports[` 5`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Flood Panel
                                   </label>
@@ -10839,6 +10999,7 @@ exports[` 5`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Effective Date
                                   </label>
@@ -10867,7 +11028,7 @@ exports[` 5`] = `
                           </form>
                         </section>
                         <section
-                          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                           id={null}
                         >
                           <div
@@ -10900,6 +11061,7 @@ exports[` 5`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Map Images
                                   </label>
@@ -10931,6 +11093,7 @@ exports[` 5`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Save
                                   </label>
@@ -10962,6 +11125,7 @@ exports[` 5`] = `
                                     fontWeight={400}
                                     htmlFor={null}
                                     letterSpacing=".5px"
+                                    onClick={null}
                                   >
                                     Save & Next
                                   </label>
@@ -11097,6 +11261,7 @@ exports[` 6`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   JOBS PORTAL
                 </label>
@@ -11124,6 +11289,7 @@ exports[` 6`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   RESEARCH
                 </label>
@@ -11151,6 +11317,7 @@ exports[` 6`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   BI
                 </label>
@@ -11178,6 +11345,7 @@ exports[` 6`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   REPORT WRITING
                 </label>
@@ -11305,6 +11473,7 @@ exports[` 6`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 1
             </label>
@@ -11438,6 +11607,7 @@ exports[` 6`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 2
             </label>
@@ -11571,6 +11741,7 @@ exports[` 6`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 3
             </label>
@@ -11710,7 +11881,7 @@ exports[` 6`] = `
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
@@ -11795,7 +11966,7 @@ exports[` 6`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
               id={null}
             >
               <section
@@ -11804,7 +11975,7 @@ exports[` 6`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -12176,7 +12347,7 @@ exports[` 6`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                  className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -12188,7 +12359,7 @@ exports[` 6`] = `
                     width="100%"
                   >
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                       id={null}
                     >
                       <div
@@ -12211,7 +12382,7 @@ exports[` 6`] = `
                       </div>
                     </section>
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 BJRPj"
+                      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
                       id={null}
                     >
                       <section
@@ -12220,7 +12391,7 @@ exports[` 6`] = `
                         rows={null}
                       >
                         <section
-                          className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                          className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                           id="A"
                           placeholder="A"
                           tabIndex="0"
@@ -12385,7 +12556,7 @@ exports[` 6`] = `
                           </form>
                         </section>
                         <section
-                          className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                          className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                           id="B"
                           placeholder="B"
                           tabIndex="0"
@@ -12419,7 +12590,7 @@ exports[` 6`] = `
                                 placeholder="{ Card }"
                               >
                                 <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                                   id={null}
                                   onClick={null}
                                 >
@@ -12530,7 +12701,7 @@ exports[` 6`] = `
                       </section>
                     </section>
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                       id={null}
                     >
                       <div
@@ -12563,6 +12734,7 @@ exports[` 6`] = `
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Attachments
                               </label>
@@ -12594,6 +12766,7 @@ exports[` 6`] = `
                                 fontWeight={400}
                                 htmlFor={null}
                                 letterSpacing=".5px"
+                                onClick={null}
                               >
                                 Complete
                               </label>
@@ -12727,6 +12900,7 @@ exports[` 7`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   JOBS PORTAL
                 </label>
@@ -12754,6 +12928,7 @@ exports[` 7`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   RESEARCH
                 </label>
@@ -12781,6 +12956,7 @@ exports[` 7`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   BI
                 </label>
@@ -12808,6 +12984,7 @@ exports[` 7`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   REPORT WRITING
                 </label>
@@ -12935,6 +13112,7 @@ exports[` 7`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 1
             </label>
@@ -13068,6 +13246,7 @@ exports[` 7`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 2
             </label>
@@ -13201,6 +13380,7 @@ exports[` 7`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
+              onClick={null}
             >
               List Section 3
             </label>
@@ -13340,7 +13520,7 @@ exports[` 7`] = `
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
@@ -13425,7 +13605,7 @@ exports[` 7`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
               id={null}
             >
               <section
@@ -13434,7 +13614,7 @@ exports[` 7`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                   id="A"
                   placeholder="A"
                   tabIndex="0"
@@ -13830,7 +14010,7 @@ exports[` 7`] = `
                   </ul>
                 </section>
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 jWiJvw"
+                  className="Template__Region-sc-1i4nzbu-0 hJeQFT"
                   id="B"
                   placeholder="B"
                   tabIndex="0"
@@ -13842,7 +14022,7 @@ exports[` 7`] = `
                     width="100%"
                   >
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
                       id={null}
                     >
                       <div
@@ -13865,7 +14045,7 @@ exports[` 7`] = `
                       </div>
                     </section>
                     <section
-                      className="Panel__SectionWrapper-sc-48epke-1 BJRPj"
+                      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
                       id={null}
                     >
                       <section
@@ -13874,7 +14054,7 @@ exports[` 7`] = `
                         rows={null}
                       >
                         <section
-                          className="Template__Region-sc-1i4nzbu-0 jwBmDL"
+                          className="Template__Region-sc-1i4nzbu-0 eTnfoY"
                           id="A"
                           placeholder="A"
                           tabIndex="0"
@@ -13971,6 +14151,7 @@ exports[` 7`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       View
                                     </label>
@@ -14033,6 +14214,7 @@ exports[` 7`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Download
                                     </label>
@@ -14095,6 +14277,7 @@ exports[` 7`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Download
                                     </label>
@@ -14132,6 +14315,7 @@ exports[` 7`] = `
                                       fontWeight={400}
                                       htmlFor={null}
                                       letterSpacing=".5px"
+                                      onClick={null}
                                     >
                                       Complete Project and Publish
                                     </label>

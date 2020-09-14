@@ -37,6 +37,7 @@ exports[` 1`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             LightBox
           </label>
@@ -345,7 +346,7 @@ exports[` 1`] = `
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+            className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
             id={null}
           >
             <div
@@ -368,7 +369,7 @@ exports[` 1`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+            className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
             id={null}
           />
         </div>
@@ -388,7 +389,7 @@ exports[` 1`] = `
         width="100%"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 BJRPj"
+          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
           id={null}
         >
           <section
@@ -418,6 +419,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Parcels in Site
                 </label>
@@ -445,6 +447,7 @@ exports[` 1`] = `
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Measurements
                 </label>
@@ -452,7 +455,7 @@ exports[` 1`] = `
             </button>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 eiMvGa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 glclQQ"
             id={null}
             rows={null}
           >
@@ -465,7 +468,7 @@ exports[` 1`] = `
               placeholder="{ Card }"
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                 id="storyshots_132-Body"
                 onClick={null}
               >
@@ -513,7 +516,7 @@ exports[` 1`] = `
                 </section>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
                 id="storyshots_132-Footer"
                 onClick={null}
               >
@@ -544,6 +547,7 @@ exports[` 1`] = `
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={null}
                         >
                           View Details
                         </label>
@@ -562,7 +566,7 @@ exports[` 1`] = `
               placeholder="{ Card }"
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                 id="storyshots_133-Body"
                 onClick={null}
               >
@@ -610,7 +614,7 @@ exports[` 1`] = `
                 </section>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
                 id="storyshots_133-Footer"
                 onClick={null}
               >
@@ -641,6 +645,7 @@ exports[` 1`] = `
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={null}
                         >
                           View Details
                         </label>
@@ -659,7 +664,7 @@ exports[` 1`] = `
               placeholder="{ Card }"
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                 id="storyshots_134-Body"
                 onClick={null}
               >
@@ -707,7 +712,7 @@ exports[` 1`] = `
                 </section>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
                 id="storyshots_134-Footer"
                 onClick={null}
               >
@@ -738,6 +743,7 @@ exports[` 1`] = `
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={null}
                         >
                           View Details
                         </label>
@@ -756,7 +762,7 @@ exports[` 1`] = `
               placeholder="{ Card }"
             >
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
                 id="storyshots_135-Body"
                 onClick={null}
               >
@@ -804,7 +810,7 @@ exports[` 1`] = `
                 </section>
               </section>
               <section
-                className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+                className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
                 id="storyshots_135-Footer"
                 onClick={null}
               >
@@ -835,6 +841,7 @@ exports[` 1`] = `
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing=".5px"
+                          onClick={null}
                         >
                           View Details
                         </label>
@@ -889,6 +896,7 @@ exports[` 2`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             LightBox
           </label>
@@ -1197,7 +1205,7 @@ exports[` 2`] = `
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+            className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
             id={null}
           >
             <div
@@ -1220,7 +1228,7 @@ exports[` 2`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 hNbUsv"
+            className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
             id={null}
           />
         </div>
@@ -1240,7 +1248,7 @@ exports[` 2`] = `
         width="100%"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 BJRPj Panel__PanelSection-sc-48epke-2 bqSVBJ"
+          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
           id={null}
         >
           <div
@@ -1333,7 +1341,7 @@ exports[` 2`] = `
           </div>
         </section>
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 BJRPj"
+          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
           id={null}
         >
           <div

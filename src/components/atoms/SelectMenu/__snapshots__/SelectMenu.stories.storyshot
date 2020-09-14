@@ -13,6 +13,7 @@ exports[` 1`] = `
     fontWeight={400}
     htmlFor={null}
     letterSpacing="1px"
+    onClick={null}
   >
     Select Label
   </label>
@@ -150,6 +151,7 @@ exports[` 2`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Standard
     </label>
@@ -270,6 +272,7 @@ exports[` 2`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Error
     </label>
@@ -403,6 +406,7 @@ exports[` 2`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Disabled
     </label>
@@ -547,6 +551,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select ( Required )
           </label>
@@ -676,6 +681,7 @@ exports[` 3`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select ( Required w/ Clearable )
           </label>
@@ -830,6 +836,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select ( Standard )
           </label>
@@ -959,6 +966,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select ( Required )
           </label>
@@ -1088,6 +1096,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select ( Disabled )
           </label>
@@ -1217,6 +1226,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select ( Error )
           </label>
@@ -1346,6 +1356,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select ( Error )
           </label>
@@ -1488,6 +1499,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select
           </label>
@@ -1630,6 +1642,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Single-Select ( Loading )
           </label>
@@ -1773,6 +1786,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing="1px"
+            onClick={null}
           >
             Multi-Select
           </label>

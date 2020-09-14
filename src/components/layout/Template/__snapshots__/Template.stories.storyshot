@@ -14,31 +14,31 @@ exports[` 1`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
       id="A"
       placeholder="A"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
       id="B"
       placeholder="B"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
       id="C"
       placeholder="C"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
       id="D"
       placeholder="D"
       tabIndex="0"
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 hyhuJm"
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -54,7 +54,7 @@ exports[` 2`] = `
   rows={null}
 >
   <section
-    className="Template__Region-sc-1i4nzbu-0 eceUPe"
+    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
     id="A"
     placeholder="A"
     tabIndex="0"
@@ -80,7 +80,7 @@ exports[` 2`] = `
     </div>
   </section>
   <section
-    className="Template__Region-sc-1i4nzbu-0 eceUPe"
+    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
     id="B"
     placeholder="B"
     tabIndex="0"
@@ -106,7 +106,7 @@ exports[` 2`] = `
     </div>
   </section>
   <section
-    className="Template__Region-sc-1i4nzbu-0 eceUPe"
+    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
     id="C"
     placeholder="C"
     tabIndex="0"
@@ -148,7 +148,7 @@ exports[` 3`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dDsaPL"
+      className="Template__Region-sc-1i4nzbu-0 dBfOAc"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -174,7 +174,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 bwkryQ"
+      className="Template__Region-sc-1i4nzbu-0 jRfqpD"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -200,7 +200,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 coWHpF"
+      className="Template__Region-sc-1i4nzbu-0 fCvwzu"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -243,7 +243,7 @@ exports[` 4`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 edvCsS"
+      className="Template__Region-sc-1i4nzbu-0 cKxKnd"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -326,7 +326,7 @@ exports[` 4`] = `
       </form>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 eqjAsV"
+      className="Template__Region-sc-1i4nzbu-0 fmYhxO"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -373,6 +373,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -380,7 +381,7 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 FubIE"
+      className="Template__Region-sc-1i4nzbu-0 dUBBAT"
       id="C"
       placeholder="C"
       tabIndex="0"
@@ -427,6 +428,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -434,7 +436,7 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 doaTzn"
+      className="Template__Region-sc-1i4nzbu-0 MVbLU"
       id="D"
       placeholder="D"
       tabIndex="0"
@@ -481,6 +483,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -488,7 +491,7 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 kSHenS"
+      className="Template__Region-sc-1i4nzbu-0 kJUfnV"
       id="E"
       placeholder="E"
       tabIndex="0"
@@ -505,6 +508,7 @@ exports[` 4`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Color Palette
         </label>

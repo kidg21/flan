@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hWqXXp Card__CardGridWrapper-sc-1g3s676-4 bPlAcy"
   id={null}
   rows={null}
 >
@@ -16,7 +16,7 @@ exports[` 1`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 dXmkan"
+      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
       id="storyshots_201-Media"
       onClick={null}
     >
@@ -30,7 +30,7 @@ exports[` 1`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_201-Header"
       onClick={null}
     >
@@ -93,7 +93,7 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_201-Body"
       onClick={null}
     >
@@ -108,7 +108,7 @@ exports[` 1`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_201-Footer"
       onClick={null}
     >
@@ -139,6 +139,7 @@ exports[` 1`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -157,6 +158,7 @@ exports[` 1`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command Two
               </label>
@@ -208,7 +210,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 isVkit"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 coOukz"
   id={null}
   rows={null}
 >
@@ -229,7 +231,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_203-Header"
       onClick={null}
     >
@@ -271,7 +273,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_204-Header"
       onClick={null}
     >
@@ -304,7 +306,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_204-Body"
       onClick={null}
     >
@@ -328,7 +330,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_205-Header"
       onClick={null}
     >
@@ -371,7 +373,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_205-Body"
       onClick={null}
     >
@@ -395,7 +397,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_206-Header"
       onClick={null}
     >
@@ -449,7 +451,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_206-Body"
       onClick={null}
     >
@@ -464,7 +466,7 @@ exports[` 2`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_206-Footer"
       onClick={null}
     >
@@ -495,6 +497,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -513,7 +516,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_207-Header"
       onClick={null}
     >
@@ -546,7 +549,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_207-Body"
       onClick={null}
     >
@@ -561,7 +564,7 @@ exports[` 2`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_207-Footer"
       onClick={null}
     >
@@ -592,6 +595,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -610,6 +614,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command Two
               </label>
@@ -635,7 +640,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_208-Header"
       onClick={null}
     >
@@ -668,7 +673,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_208-Body"
       onClick={null}
     >
@@ -683,7 +688,7 @@ exports[` 2`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_208-Footer"
       onClick={null}
     >
@@ -714,6 +719,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -732,6 +738,7 @@ exports[` 2`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command Two
               </label>
@@ -782,7 +789,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 isVkit"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 coOukz"
   id={null}
   rows={null}
 >
@@ -795,7 +802,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 dXmkan"
+      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
       id="storyshots_209-Media"
       onClick={null}
     >
@@ -809,7 +816,7 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_209-Header"
       onClick={null}
     >
@@ -871,7 +878,7 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
         open={false}
       >
         <button
@@ -896,6 +903,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Button
             </label>
@@ -904,7 +912,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_209-Body"
       onClick={null}
     >
@@ -919,7 +927,7 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_209-Footer"
       onClick={null}
     >
@@ -950,6 +958,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -968,6 +977,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command Two
               </label>
@@ -1022,7 +1032,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 dXmkan"
+      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
       id="storyshots_210-Media"
       onClick={null}
     >
@@ -1038,7 +1048,7 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_210-Header"
       onClick={null}
     >
@@ -1100,7 +1110,7 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
         open={false}
       >
         <button
@@ -1125,6 +1135,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Button
             </label>
@@ -1133,7 +1144,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_210-Body"
       onClick={null}
     >
@@ -1148,7 +1159,7 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_210-Footer"
       onClick={null}
     >
@@ -1179,6 +1190,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -1197,6 +1209,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command Two
               </label>
@@ -1251,7 +1264,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 dXmkan"
+      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
       id="storyshots_211-Media"
       onClick={null}
     >
@@ -1269,7 +1282,7 @@ exports[` 3`] = `
       </video>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_211-Header"
       onClick={null}
     >
@@ -1331,7 +1344,7 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
         open={false}
       >
         <button
@@ -1356,6 +1369,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Button
             </label>
@@ -1364,7 +1378,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_211-Body"
       onClick={null}
     >
@@ -1379,7 +1393,7 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_211-Footer"
       onClick={null}
     >
@@ -1410,6 +1424,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -1428,6 +1443,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command Two
               </label>
@@ -1482,7 +1498,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 dXmkan"
+      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
       id="storyshots_212-Media"
       onClick={null}
     >
@@ -1498,7 +1514,7 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_212-Header"
       onClick={null}
     >
@@ -1560,7 +1576,7 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
         open={false}
       >
         <button
@@ -1585,6 +1601,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Button
             </label>
@@ -1593,7 +1610,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_212-Body"
       onClick={null}
     >
@@ -1608,7 +1625,7 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_212-Footer"
       onClick={null}
     >
@@ -1639,6 +1656,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -1657,6 +1675,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command Two
               </label>
@@ -1711,7 +1730,7 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 dXmkan"
+      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
       id="storyshots_213-Media"
       onClick={null}
     >
@@ -1728,7 +1747,7 @@ exports[` 3`] = `
       </audio>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_213-Header"
       onClick={null}
     >
@@ -1790,7 +1809,7 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 eeiuXq"
+        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
         open={false}
       >
         <button
@@ -1815,6 +1834,7 @@ exports[` 3`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Button
             </label>
@@ -1823,7 +1843,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
       id="storyshots_213-Body"
       onClick={null}
     >
@@ -1838,7 +1858,7 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 fbNFCP"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
       id="storyshots_213-Footer"
       onClick={null}
     >
@@ -1869,6 +1889,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command One
               </label>
@@ -1887,6 +1908,7 @@ exports[` 3`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Command Two
               </label>

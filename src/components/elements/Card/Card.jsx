@@ -18,6 +18,7 @@ import Menu from "blocks/Menu";
 import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
+import { backgroundColors } from "Variables";
 import CardWrapper from "./CardWrapper.jsx";
 
 const LinkedWrapper = styled.a`
@@ -36,7 +37,7 @@ const CardSectionWrapper = styled.section`
     return props.theme.background[props.sectionBackground] || "";
   }};
   padding: ${(props) => {
-    return props.sectionPadding || "0.5em 1em";
+    return props.sectionPadding || "0.75em 1em";
   }};
   justify-content: ${(props) => {
     return props.sectionJustify || "";
@@ -67,6 +68,7 @@ const CardSectionWrapper = styled.section`
 const CardMedia = styled(Media)`
   display: inherit;
   align-items: center;
+  margin-bottom: 0.25em;
   * {
     border-radius: ${(props) => {
     return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
@@ -95,7 +97,8 @@ const CardGridWrapper = styled(Grid)`
   }};
     }
     ${CardSectionWrapper}:not(${CardMedia}) {
-      &:first-of-type {
+      /* Keeping this around as it may come back */
+      /* &:first-of-type {
         padding: 0.75em 1em 0.5em;
       }
       &:last-of-type {
@@ -103,7 +106,7 @@ const CardGridWrapper = styled(Grid)`
       }
       &:only-of-type {
         padding: 0.75em 1em;
-      }
+      } */
       &:last-of-type,
       &:only-of-type {
         flex: auto;
@@ -247,7 +250,7 @@ CardSection.propTypes = {
   isInverse: PropTypes.bool,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  variant: PropTypes.oneOf(["", "info", "success", "warning", "alert", "light"]),
+  variant: PropTypes.oneOf([""].concat(backgroundColors)),
 };
 CardSection.defaultProps = {
   children: null,

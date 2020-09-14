@@ -48,8 +48,8 @@ const SectionWrapper = styled.section`
   overflow-x: hidden;
   overflow-y: auto;
   ::-webkit-scrollbar {
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.75em;
+    height: 0.75em;
   }
   ::-webkit-scrollbar-track {
     box-shadow: inset 0.5px 0 0px ${(props) => {
@@ -60,18 +60,30 @@ const SectionWrapper = styled.section`
     background-color: ${(props) => {
     return props.theme.palette.neutral80;
   }};
-    border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+    outline: none;
   }
   ::-webkit-scrollbar-track:horizontal {
     box-shadow: inset 0.5px 0 0px ${(props) => {
     return props.theme.palette.neutral40;
   }};
 }
-  ::-webkit-scrollbar-thumb:horizontal{
+  ::-webkit-scrollbar-thumb:horizontal {
     background-color: ${(props) => {
     return props.theme.palette.neutral80;
   }};
-  border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+  outline: none;
 }
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {

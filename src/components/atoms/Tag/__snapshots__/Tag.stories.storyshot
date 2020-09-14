@@ -19,6 +19,7 @@ exports[` 1`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Tag
     </label>
@@ -73,6 +74,7 @@ Array [
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Brief Label
         </label>
@@ -124,6 +126,7 @@ Array [
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Tag with a long label because you cannot be concise with your words.
         </label>
@@ -152,6 +155,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Info
     </label>
@@ -169,6 +173,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Warning
     </label>
@@ -186,6 +191,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Success
     </label>
@@ -203,6 +209,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Alert
     </label>
@@ -259,6 +266,7 @@ exports[` 5`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon on Left
     </label>
@@ -301,6 +309,7 @@ exports[` 5`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon on Left
     </label>
@@ -343,6 +352,7 @@ exports[` 5`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon on Left
     </label>
@@ -410,6 +420,7 @@ exports[` 5`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon on Right
     </label>
@@ -452,6 +463,7 @@ exports[` 5`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon on Right
     </label>
@@ -494,6 +506,7 @@ exports[` 5`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Icon on Right
     </label>

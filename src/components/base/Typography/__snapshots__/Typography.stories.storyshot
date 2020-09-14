@@ -13,6 +13,7 @@ exports[` 1`] = `
     fontWeight={400}
     htmlFor={null}
     letterSpacing=".5px"
+    onClick={null}
   >
     Label
   </label>
@@ -145,6 +146,7 @@ exports[` 2`] = `
     fontWeight={400}
     htmlFor={null}
     letterSpacing="0.4px"
+    onClick={null}
   >
     Label XS
   </label>
@@ -155,6 +157,7 @@ exports[` 2`] = `
     fontWeight={400}
     htmlFor={null}
     letterSpacing="1px"
+    onClick={null}
   >
     Label SM
   </label>
@@ -165,6 +168,7 @@ exports[` 2`] = `
     fontWeight={400}
     htmlFor={null}
     letterSpacing=".5px"
+    onClick={null}
   >
     Label Regular
   </label>
@@ -175,6 +179,7 @@ exports[` 2`] = `
     fontWeight={400}
     htmlFor={null}
     letterSpacing=".5px"
+    onClick={null}
   >
     Label LG
   </label>
@@ -289,6 +294,7 @@ exports[` 3`] = `
       fontWeight={300}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Light Label
     </label>
@@ -299,6 +305,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Regular Label
     </label>
@@ -309,6 +316,7 @@ exports[` 3`] = `
       fontWeight={500}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       MediumLabel
     </label>
@@ -319,6 +327,7 @@ exports[` 3`] = `
       fontWeight={600}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Bold Label
     </label>

@@ -111,6 +111,7 @@ Array [
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Default Modal
       </label>
@@ -151,7 +152,7 @@ Array [
         placeholder="{ Card }"
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
           id="storyshots_51-Header"
           onClick={null}
         >
@@ -200,6 +201,7 @@ Array [
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Open Modal
       </label>
@@ -239,7 +241,7 @@ Array [
         placeholder="{ Card }"
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
           id="storyshots_52-Header"
           onClick={null}
         >
@@ -263,7 +265,7 @@ Array [
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
           id="storyshots_52-Body"
           onClick={null}
         >
@@ -278,7 +280,7 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
           id={null}
           onClick={null}
         >
@@ -309,6 +311,7 @@ Array [
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Nevermind...
                 </label>
@@ -336,6 +339,7 @@ Array [
                   fontWeight={400}
                   htmlFor={null}
                   letterSpacing=".5px"
+                  onClick={null}
                 >
                   Let's Do It!
                 </label>
@@ -368,6 +372,7 @@ Array [
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Dialog Modal
       </label>
@@ -408,7 +413,7 @@ Array [
         placeholder="{ Card }"
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 kpKGFq"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
           id="storyshots_53-Header"
           onClick={null}
         >
@@ -457,6 +462,7 @@ Array [
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Text Modal
       </label>
@@ -510,6 +516,7 @@ Array [
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Image Modal
       </label>

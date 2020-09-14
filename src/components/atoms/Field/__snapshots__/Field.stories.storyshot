@@ -19,6 +19,7 @@ exports[` 1`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing=".5px"
+      onClick={null}
     >
       Field Name
     </label>
@@ -60,6 +61,7 @@ exports[` 2`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Default
       </label>
@@ -85,6 +87,7 @@ exports[` 2`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Edge-Aligned
       </label>
@@ -110,6 +113,7 @@ exports[` 2`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Vertically-Aligned
       </label>
@@ -152,6 +156,7 @@ exports[` 3`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Field Label
       </label>
@@ -177,6 +182,7 @@ exports[` 3`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Field Label (2x)
       </label>
@@ -202,6 +208,7 @@ exports[` 3`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Field Label (3x)
       </label>
@@ -227,6 +234,7 @@ exports[` 3`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Field Label (4x)
       </label>
@@ -269,6 +277,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Small Field
       </label>
@@ -294,6 +303,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Default Field
       </label>
@@ -319,6 +329,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         Large Field
       </label>
@@ -344,6 +355,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         XL Field
       </label>
@@ -369,6 +381,7 @@ exports[` 4`] = `
         fontWeight={400}
         htmlFor={null}
         letterSpacing=".5px"
+        onClick={null}
       >
         2XL Field
       </label>

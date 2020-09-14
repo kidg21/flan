@@ -223,6 +223,7 @@ exports[` 3`] = `
             fontWeight={600}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             1
           </label>
@@ -252,6 +253,7 @@ exports[` 3`] = `
                 fontWeight={600}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 1
               </label>
@@ -266,6 +268,7 @@ exports[` 3`] = `
                 fontWeight={600}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 20
               </label>
@@ -322,6 +325,7 @@ exports[` 3`] = `
                 fontWeight={600}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 1
               </label>
@@ -336,6 +340,7 @@ exports[` 3`] = `
                 fontWeight={600}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 20
               </label>

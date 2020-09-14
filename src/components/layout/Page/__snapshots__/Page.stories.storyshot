@@ -265,6 +265,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -319,6 +320,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -373,6 +375,7 @@ exports[` 4`] = `
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -397,6 +400,7 @@ exports[` 4`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing=".5px"
+          onClick={null}
         >
           Color Palette
         </label>

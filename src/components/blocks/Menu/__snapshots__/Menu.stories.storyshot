@@ -5801,6 +5801,7 @@ exports[` 11`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Anchor
             </label>
@@ -5987,6 +5988,7 @@ exports[` 12`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Anchor
             </label>
@@ -6608,6 +6610,7 @@ exports[` 15`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Normal Button
             </label>
@@ -6639,6 +6642,7 @@ exports[` 15`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Flex Menu
               </label>
@@ -6798,6 +6802,7 @@ exports[` 15`] = `
                 fontWeight={400}
                 htmlFor={null}
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Normal Menu
               </label>
@@ -6953,6 +6958,7 @@ exports[` 15`] = `
               fontWeight={400}
               htmlFor={null}
               letterSpacing=".5px"
+              onClick={null}
             >
               Normal Button
             </label>

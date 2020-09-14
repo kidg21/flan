@@ -22,6 +22,7 @@ exports[` 1`] = `
     fontWeight={400}
     htmlFor="radio"
     letterSpacing=".5px"
+    onClick={null}
   >
     Radio
   </label>
@@ -83,6 +84,7 @@ Array [
           fontWeight={400}
           htmlFor="brief"
           letterSpacing=".5px"
+          onClick={null}
         >
           Brief Label
         </label>
@@ -142,6 +144,7 @@ Array [
           fontWeight={400}
           htmlFor="long"
           letterSpacing=".5px"
+          onClick={null}
         >
           Radio with a long label because you cannot be concise with your words.
         </label>
@@ -178,6 +181,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor="Selected"
       letterSpacing=".5px"
+      onClick={null}
     >
       Selected
     </label>
@@ -203,6 +207,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor="Unselected"
       letterSpacing=".5px"
+      onClick={null}
     >
       Unselected
     </label>
@@ -229,6 +234,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor="Disabled"
       letterSpacing=".5px"
+      onClick={null}
     >
       Disabled
     </label>
@@ -263,6 +269,7 @@ exports[` 4`] = `
       fontWeight={400}
       htmlFor="Left Aligned"
       letterSpacing=".5px"
+      onClick={null}
     >
       Left Aligned
     </label>
@@ -288,6 +295,7 @@ exports[` 4`] = `
       fontWeight={400}
       htmlFor="Right Aligned"
       letterSpacing=".5px"
+      onClick={null}
     >
       Right Aligned
     </label>
@@ -357,6 +365,7 @@ exports[` 5`] = `
                 fontWeight={400}
                 htmlFor="radio-1"
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Radio 1
               </label>
@@ -383,6 +392,7 @@ exports[` 5`] = `
                 fontWeight={400}
                 htmlFor="radio-2"
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Radio 2
               </label>
@@ -409,6 +419,7 @@ exports[` 5`] = `
                 fontWeight={400}
                 htmlFor="radio-3"
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Radio 3
               </label>
@@ -435,6 +446,7 @@ exports[` 5`] = `
                 fontWeight={400}
                 htmlFor="radio-4"
                 letterSpacing=".5px"
+                onClick={null}
               >
                 Radio 4
               </label>

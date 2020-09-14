@@ -13,6 +13,7 @@ exports[` 1`] = `
     fontWeight={400}
     htmlFor={null}
     letterSpacing="1px"
+    onClick={null}
   >
     Input Block ( Defaults to a standard Text Input )
   </label>
@@ -76,6 +77,7 @@ exports[` 2`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( Required )
     </label>
@@ -131,6 +133,7 @@ exports[` 2`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( Error )
     </label>
@@ -199,6 +202,7 @@ exports[` 2`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( Disabled )
     </label>
@@ -263,6 +267,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( 2 Inputs )
     </label>
@@ -342,6 +347,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( 3 Inputs )
     </label>
@@ -445,6 +451,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( Pre-Label )
     </label>
@@ -463,6 +470,7 @@ exports[` 3`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing="1px"
+          onClick={null}
         >
           prefix
         </label>
@@ -514,6 +522,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( Post-Label )
     </label>
@@ -556,6 +565,7 @@ exports[` 3`] = `
           fontWeight={400}
           htmlFor={null}
           letterSpacing="1px"
+          onClick={null}
         >
           postfix
         </label>
@@ -583,6 +593,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( Pre-Icon )
     </label>
@@ -662,6 +673,7 @@ exports[` 3`] = `
       fontWeight={400}
       htmlFor={null}
       letterSpacing="1px"
+      onClick={null}
     >
       Input Block ( Post-Icon )
     </label>
