@@ -52,7 +52,7 @@ function Accordion({
             align: "left",
             width: "max-content",
           }}
-          center={(children) ? {
+          right={(children) ? {
             content: (
               <Icon
                 icon={iconContent}
