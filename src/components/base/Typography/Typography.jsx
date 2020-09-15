@@ -181,7 +181,7 @@ const linkSizeHash = {
     letterSpacing: "0px",
   },
   "sm": {
-    fontSize: "0.8rem",
+    fontSize: "0.875rem",
     letterSpacing: "0px",
   },
   "lg": {
