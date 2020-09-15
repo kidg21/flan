@@ -318,6 +318,7 @@ function Button({
     ? `${!alignCenter && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}`
     : "1fr";
 
+  const iconParams = typeof icon === "string" ? { icon } : icon;
   const content = (
     <LabelWrapper
       columns={columns}
@@ -325,7 +326,7 @@ function Button({
       justifyItems={justifyItems}
       rows={alignCenter ? "max-content 1fr" : null}
     >
-      {icon ? <Icon icon={icon} size={iconSize} /> : null}
+      {icon ? <Icon {...iconParams} size={iconSize} /> : null}
       {label ? <Label size={labelSize} text={label} weight={labelWeight} /> : null}
       {count ? <Count label={count.toString()} disabled={isDisabled} /> : null}
     </LabelWrapper>
@@ -372,7 +373,10 @@ Button.propTypes = {
   fullWidth: PropTypes.bool,
   hasUnderline: PropTypes.bool,
   htmlFor: PropTypes.node,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape(Icon.propTypes),
+  ]),
   id: PropTypes.string,
   isPlain: PropTypes.bool,
   isRound: PropTypes.bool,
