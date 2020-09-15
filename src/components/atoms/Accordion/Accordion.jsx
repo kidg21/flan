@@ -12,7 +12,7 @@ padding-top: 1rem;
 `;
 
 function Accordion({
-  children, description, id, onClick, open, title, header,
+  iconAlign, children, description, id, onClick, open, title, header,
 }) {
   let expanded = open;
   let setExpanded = onClick;
@@ -28,7 +28,6 @@ function Accordion({
   } else {
     iconContent = "plus";
   }
-
   return (
     <Expander
       id={id}
@@ -51,10 +50,16 @@ function Accordion({
               )
             ),
             align: "left",
-          }}
-          right={children ? {
-            content: <Icon icon={iconContent} size="sm" />,
             width: "max-content",
+          }}
+          right={(children) ? {
+            content: (
+              <Icon
+                icon={iconContent}
+                size="sm"
+              />),
+            width: iconAlign === "right" ? "max-content" : null,
+            align: iconAlign,
           } : null}
         />
       )}
@@ -70,6 +75,7 @@ Accordion.propTypes = {
   children: PropTypes.node,
   description: PropTypes.string,
   header: PropTypes.node,
+  iconAlign: PropTypes.string,
   id: PropTypes.string,
   onClick: PropTypes.func,
   open: PropTypes.bool,
@@ -79,6 +85,7 @@ Accordion.defaultProps = {
   children: null,
   description: null,
   header: null,
+  iconAlign: "right",
   id: null,
   onClick: null,
   open: false,
