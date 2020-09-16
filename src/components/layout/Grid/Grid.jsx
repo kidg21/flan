@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
@@ -18,12 +19,18 @@ const GridWrapper = styled.section`
   align-items: ${(props) => {
     return props.alignItems || "flex-start";
   }};
+  justify-items: ${(props) => {
+    return props.justifyItems || "";
+  }};
+  text-align: ${(props) => {
+    return props.textAlign || "";
+  }};
   width: 100%;
 `;
 GridWrapper.displayName = "Grid";
 
 function Grid({
-  align, children, columns, gap, id, rows, className,
+  align, children, className, columns, gap, id, justify, rows,
 }) {
   // 1-12 colums with custom override
   let setColumns;
@@ -80,6 +87,20 @@ function Grid({
     default:
       break;
   }
+
+  let justifyItems;
+  switch (justify) {
+    case "center":
+      justifyItems = "center";
+      break;
+    case "bottom":
+      justifyItems = "flex-end";
+      break;
+    case "top":
+    default:
+      break;
+  }
+
   return (
     <GridWrapper
       alignItems={alignItems}
@@ -87,7 +108,9 @@ function Grid({
       columns={setColumns}
       gap={setGap}
       id={id}
+      justifyItems={justifyItems}
       rows={setRows}
+      textAlign={justifyItems ? "center" : null}
     >
       {children}
     </GridWrapper>
@@ -96,6 +119,7 @@ function Grid({
 Grid.displayName = "GridWrapper";
 
 Grid.propTypes = {
+  /** Controls the vertical alignment of grid track content */
   align: PropTypes.oneOf(["top", "center", "bottom"]),
   children: PropTypes.node,
   className: PropTypes.string,
@@ -119,6 +143,8 @@ Grid.propTypes = {
     ]),
   ]),
   id: PropTypes.string,
+  /** Controls the horizontal alignment of grid track content */
+  justify: PropTypes.oneOf(["top", "center", "bottom"]),
   /** Defines the heights of grid rows
    *
    * Options: Any standard value accepted by the CSS Grid property, 'grid-template-rows'.
@@ -133,6 +159,7 @@ Grid.defaultProps = {
   columns: null,
   gap: null,
   id: null,
+  justify: null,
   rows: null,
 };
 
