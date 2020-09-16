@@ -166,7 +166,7 @@ function Command({
 
   switch (size) {
     case "sm":
-      commandSize = ".8em";
+      commandSize = ".875rem";
       break;
     case "lg":
       commandSize = "1.2em";
