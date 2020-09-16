@@ -6,11 +6,9 @@ import Placeholder from "images/placeholders/placeholder-photo.png";
 
 const ImageWrapper = styled.img`
   width: ${(props) => {
-    return props.width || "inherit";
+    return props.width || "100%";
   }};
-  max-width: fit-content;
   height: auto;
-  max-height: fit-content;
   border-radius: ${(props) => {
     return props.isRound ? "100%" : "";
   }};
