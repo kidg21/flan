@@ -63,7 +63,7 @@ function FormSection({ children, title, columns }) {
   return (
     <Section>
       {title ? <TitleSection size="sm"  text={title} /> : null}
-      <Inputs setColumns={setColumns}>
+      <Inputs gap="xs" setColumns={setColumns}>
         {children}
       </Inputs>
     </Section>
@@ -109,7 +109,7 @@ function Form({
           {description ? <Text size="sm" text={description} /> : null}
         </Header>
       ) : null}
-      <Inputs setColumns={setColumns}>
+      <Inputs gap="xs" setColumns={setColumns}>
         {children}
       </Inputs>
     </FormWrapper>
