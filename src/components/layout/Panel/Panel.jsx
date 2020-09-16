@@ -39,10 +39,12 @@ const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   flex: auto;
+  align-items: center;
   padding: ${(props) => {
     return props.sectionPadding || "1em 1em";
   }};
   z-index: 0;
+  width: 100%;
   max-height: 100vh;
   /** TODO: Add a boolean prop to support a 'horizontal scrolling' option. */
   overflow-x: hidden;
@@ -136,6 +138,7 @@ const PanelSection = styled(PanelBody)`
   padding: 0;
   overflow: visible;
   z-index: 1;
+  align-items: initial;
   &:first-of-type {
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
