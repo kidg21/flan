@@ -292,7 +292,7 @@ function Template({
   if (isOverlay) {
     backgroundColor = "none";
     pointerEvents = "none";
-    setPadding = "0.25rem";
+    setPadding = "0.5rem";
     setPosition = "absolute";
     zIndex = "999";
   }
