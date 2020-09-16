@@ -22,6 +22,9 @@ const FlexWrapper = styled.div`
   justify-content: ${(props) => {
     return props.justifyContent;
   }};
+  text-align: ${(props) => {
+    return props.textAlign || "";
+  }};
   order: 0;
   position: ${(props) => {
     return props.position || "relative";
@@ -86,6 +89,10 @@ function Flex({
   width,
   zIndex,
 }) {
+  let textAlign;
+  if (!flexDirection && alignItems === "center") {
+    textAlign = "center";
+  }
   return (
     <FlexWrapper
       alignItems={alignItems}
@@ -101,6 +108,7 @@ function Flex({
       flex={flex}
       overflow={overflow}
       position={position}
+      textAlign={textAlign}
       top={top}
       width={width}
       zIndex={zIndex}
@@ -111,7 +119,9 @@ function Flex({
 }
 
 Flex.propTypes = {
+  /** Sets the alignment along the cross axis ('column' = x-axis / 'row' = y-axis) */
   alignItems: PropTypes.string,
+
   /** Sets the bottom edge (in percentage) of a Flex component. */
   bottom: PropTypes.string,
   /** Allows for the nesting of Flex components */
@@ -137,6 +147,7 @@ Flex.propTypes = {
   height: PropTypes.string,
   /** Allows each component to have a unique identifier */
   id: PropTypes.string,
+  /** Sets the alignment along the main axis ('column' = y-axis / 'row' = x-axis) */
   justifyContent: PropTypes.string,
   /** Sets the left edge (in percentage) of a Flex component.
    *
