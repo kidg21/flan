@@ -8,7 +8,10 @@ const ImageWrapper = styled.img`
   width: ${(props) => {
     return props.width || "100%";
   }};
-  height: auto;
+  height: ${(props) => {
+    return props.height || "auto";
+  }};
+  /* height: auto; */
   border-radius: ${(props) => {
     return props.isRound ? "100%" : "";
   }};
@@ -18,11 +21,12 @@ const ImageWrapper = styled.img`
 `;
 
 function Image({
-  alt, isRound, className, onClick, src, width,
+  alt, className, height, isRound, onClick, src, width,
 }) {
   return (
     <ImageWrapper
       alt={alt}
+      height={height}
       isRound={isRound}
       className={className}
       onClick={onClick}
@@ -35,15 +39,17 @@ function Image({
 
 Image.propTypes = {
   alt: PropTypes.string.isRequired,
-  isRound: PropTypes.bool,
   className: PropTypes.string,
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  isRound: PropTypes.bool,
   onClick: PropTypes.func,
   src: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {
-  isRound: false,
   className: null,
+  height: null,
+  isRound: false,
   onClick: null,
   src: "",
   width: null,
