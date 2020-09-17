@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <form
-  className="Search__SearchContainer-sey9om-0 dSHoSU"
+  className="Search__SearchContainer-sey9om-0 iyfwN"
   id="Search_Standard"
   onSubmit={[Function]}
 >
@@ -88,7 +88,7 @@ exports[` 2`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 dSHoSU"
+    className="Search__SearchContainer-sey9om-0 iyfwN"
     id="Suggestions"
     onSubmit={[Function]}
   >
@@ -303,7 +303,7 @@ exports[` 3`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 dSHoSU"
+    className="Search__SearchContainer-sey9om-0 iyfwN"
     id="Suggestions_More"
     onSubmit={[Function]}
   >
@@ -836,7 +836,7 @@ exports[` 4`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 dSHoSU"
+    className="Search__SearchContainer-sey9om-0 iyfwN"
     id="Search_Offline"
     onSubmit={[Function]}
   >
@@ -984,7 +984,7 @@ exports[` 5`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 dSHoSU"
+    className="Search__SearchContainer-sey9om-0 iyfwN"
     id="Search_BadConnection"
     onSubmit={[Function]}
   >

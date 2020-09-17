@@ -215,7 +215,7 @@ exports[` 1`] = `
               id="Menu 1_body"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 fGqHoI"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 kfRhSP"
                 id={null}
                 rows={null}
               >
@@ -461,7 +461,7 @@ exports[` 1`] = `
                 onSubmit={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
                   id={null}
                   rows={null}
                 >
@@ -469,7 +469,7 @@ exports[` 1`] = `
                     className="Form__Section-v2wrel-0 AFwsX"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                       id={null}
                       rows={null}
                     >
@@ -626,7 +626,7 @@ exports[` 1`] = `
                     className="Form__Section-v2wrel-0 AFwsX"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                       id={null}
                       rows={null}
                     >
@@ -636,9 +636,9 @@ exports[` 1`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+                          className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
                           cursor="pointer"
-                          fontSize="0.8rem"
+                          fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing="1px"
@@ -832,21 +832,25 @@ exports[` 1`] = `
                         </section>
                       </section>
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
                         id={null}
                         rows={null}
                       >
-                        <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                          cursor="pointer"
-                          fontSize="0.8rem"
-                          fontWeight={400}
-                          htmlFor={null}
-                          letterSpacing="1px"
-                          onClick={null}
+                        <section
+                          className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
                         >
-                          Multi-Select
-                        </label>
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                            cursor="pointer"
+                            fontSize="0.875rem"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="1px"
+                            onClick={null}
+                          >
+                            Multi-Select
+                          </label>
+                        </section>
                         <div
                           className=" css-3p29ga-container"
                           id={null}
@@ -861,7 +865,7 @@ exports[` 1`] = `
                               className=" css-g1d714-ValueContainer"
                             >
                               <div
-                                className=" css-1yfxegp-placeholder"
+                                className=" css-1rmbrkz-placeholder"
                               >
                                 Choose One Or More...
                               </div>
@@ -967,7 +971,7 @@ exports[` 1`] = `
                     className="Form__Section-v2wrel-0 AFwsX"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                       id={null}
                       rows={null}
                     >
@@ -977,9 +981,9 @@ exports[` 1`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+                          className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
                           cursor="pointer"
-                          fontSize="0.8rem"
+                          fontSize="0.875rem"
                           fontWeight={400}
                           htmlFor={null}
                           letterSpacing="1px"
@@ -1321,7 +1325,7 @@ exports[` 2`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
         id={null}
         rows={null}
       >
@@ -1329,7 +1333,7 @@ exports[` 2`] = `
           className="Form__Section-v2wrel-0 AFwsX"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
             id={null}
             rows={null}
           >
@@ -1430,7 +1434,7 @@ exports[` 2`] = `
             Property Info
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 blvWDr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 gLSEWC"
             id={null}
             rows={null}
           >
@@ -1513,21 +1517,25 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                cursor="pointer"
-                fontSize="0.8rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing="1px"
-                onClick={null}
+              <section
+                className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
-                State
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="1px"
+                  onClick={null}
+                >
+                  State
+                </label>
+              </section>
               <div
                 className=" css-3p29ga-container"
                 id={null}
@@ -1542,7 +1550,7 @@ exports[` 2`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     >
                       
                     </div>
@@ -1673,21 +1681,25 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                cursor="pointer"
-                fontSize="0.8rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing="1px"
-                onClick={null}
+              <section
+                className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
-                Property Type
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="1px"
+                  onClick={null}
+                >
+                  Property Type
+                </label>
+              </section>
               <div
                 className=" css-3p29ga-container"
                 id={null}
@@ -1702,7 +1714,7 @@ exports[` 2`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -1792,21 +1804,25 @@ exports[` 2`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                cursor="pointer"
-                fontSize="0.8rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing="1px"
-                onClick={null}
+              <section
+                className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
-                Property Sub-Type
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="1px"
+                  onClick={null}
+                >
+                  Property Sub-Type
+                </label>
+              </section>
               <div
                 className=" css-3p29ga-container"
                 id={null}
@@ -1821,7 +1837,7 @@ exports[` 2`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -2428,7 +2444,7 @@ exports[` 4`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
         id={null}
         rows={null}
       >
@@ -2436,7 +2452,7 @@ exports[` 4`] = `
           className="Form__Section-v2wrel-0 AFwsX"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
             id={null}
             rows={null}
           >
@@ -2537,7 +2553,7 @@ exports[` 4`] = `
             Property Info
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 blvWDr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 gLSEWC"
             id={null}
             rows={null}
           >
@@ -2620,21 +2636,25 @@ exports[` 4`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                cursor="pointer"
-                fontSize="0.8rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing="1px"
-                onClick={null}
+              <section
+                className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
-                State
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="1px"
+                  onClick={null}
+                >
+                  State
+                </label>
+              </section>
               <div
                 className=" css-3p29ga-container"
                 id={null}
@@ -2649,7 +2669,7 @@ exports[` 4`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     >
                       
                     </div>
@@ -2780,21 +2800,25 @@ exports[` 4`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                cursor="pointer"
-                fontSize="0.8rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing="1px"
-                onClick={null}
+              <section
+                className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
-                Property Type
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="1px"
+                  onClick={null}
+                >
+                  Property Type
+                </label>
+              </section>
               <div
                 className=" css-3p29ga-container"
                 id={null}
@@ -2809,7 +2833,7 @@ exports[` 4`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -2899,21 +2923,25 @@ exports[` 4`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                cursor="pointer"
-                fontSize="0.8rem"
-                fontWeight={400}
-                htmlFor={null}
-                letterSpacing="1px"
-                onClick={null}
+              <section
+                className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
-                Property Sub-Type
-              </label>
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  cursor="pointer"
+                  fontSize="0.875rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="1px"
+                  onClick={null}
+                >
+                  Property Sub-Type
+                </label>
+              </section>
               <div
                 className=" css-3p29ga-container"
                 id={null}
@@ -2928,7 +2956,7 @@ exports[` 4`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -3231,7 +3259,7 @@ exports[` 5`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
         id={null}
         rows={null}
       >
@@ -3254,7 +3282,7 @@ exports[` 5`] = `
                 Client Details
               </p>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                 id={null}
                 rows={null}
               >
@@ -3421,26 +3449,30 @@ exports[` 5`] = `
               className="Form__Section-v2wrel-0 AFwsX"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 blvWDr"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 gLSEWC"
                 id={null}
                 rows={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
                   id={null}
                   rows={null}
                 >
-                  <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                    cursor="pointer"
-                    fontSize="0.8rem"
-                    fontWeight={400}
-                    htmlFor={null}
-                    letterSpacing="1px"
-                    onClick={null}
+                  <section
+                    className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
                   >
-                    State
-                  </label>
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                      cursor="pointer"
+                      fontSize="0.875rem"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing="1px"
+                      onClick={null}
+                    >
+                      State
+                    </label>
+                  </section>
                   <div
                     className=" css-3p29ga-container"
                     id={null}
@@ -3455,7 +3487,7 @@ exports[` 5`] = `
                         className=" css-g1d714-ValueContainer"
                       >
                         <div
-                          className=" css-1yfxegp-placeholder"
+                          className=" css-1rmbrkz-placeholder"
                         >
                           
                         </div>
@@ -3602,7 +3634,7 @@ exports[` 5`] = `
                 Bid Details
               </p>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                 id={null}
                 rows={null}
               >
@@ -3652,9 +3684,9 @@ exports[` 5`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
                     cursor="pointer"
-                    fontSize="0.8rem"
+                    fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing="1px"
@@ -3692,7 +3724,7 @@ exports[` 5`] = `
                       />
                     </section>
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
                       id={null}
                       rows={null}
                     >
@@ -3710,7 +3742,7 @@ exports[` 5`] = `
                             className=" css-g1d714-ValueContainer"
                           >
                             <div
-                              className=" css-10150nb-singleValue"
+                              className=" css-1q0ph8e-singleValue"
                             >
                               USD
                             </div>
@@ -4580,7 +4612,7 @@ exports[` 8`] = `
                 </h5>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
                 id={null}
                 rows={null}
               >
@@ -4598,7 +4630,7 @@ exports[` 8`] = `
                       className=" css-g1d714-ValueContainer"
                     >
                       <div
-                        className=" css-1yfxegp-placeholder"
+                        className=" css-1rmbrkz-placeholder"
                       />
                       <div
                         className="css-b8ldur-Input"
@@ -4698,7 +4730,7 @@ exports[` 8`] = `
           onSubmit={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
             id={null}
             rows={null}
           >
@@ -4715,7 +4747,7 @@ exports[` 8`] = `
                 Job Details
               </p>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                 id={null}
                 rows={null}
               >
@@ -4786,7 +4818,7 @@ exports[` 8`] = `
                 Property Details
               </p>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                 id={null}
                 rows={null}
               >
@@ -5118,7 +5150,7 @@ exports[` 9`] = `
             </h5>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
             id={null}
             rows={null}
           >
@@ -5136,7 +5168,7 @@ exports[` 9`] = `
                   className=" css-g1d714-ValueContainer"
                 >
                   <div
-                    className=" css-1yfxegp-placeholder"
+                    className=" css-1rmbrkz-placeholder"
                   />
                   <div
                     className="css-b8ldur-Input"
@@ -5308,7 +5340,7 @@ exports[` 9`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
         id={null}
         rows={null}
       >
@@ -5325,7 +5357,7 @@ exports[` 9`] = `
             Job Details
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
             id={null}
             rows={null}
           >
@@ -5396,7 +5428,7 @@ exports[` 9`] = `
             Property Details
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
             id={null}
             rows={null}
           >
@@ -5685,7 +5717,7 @@ exports[` 10`] = `
             </h5>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
             id={null}
             rows={null}
           >
@@ -5703,7 +5735,7 @@ exports[` 10`] = `
                   className=" css-g1d714-ValueContainer"
                 >
                   <div
-                    className=" css-1yfxegp-placeholder"
+                    className=" css-1rmbrkz-placeholder"
                   />
                   <div
                     className="css-b8ldur-Input"
@@ -5875,7 +5907,7 @@ exports[` 10`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
         id={null}
         rows={null}
       >
@@ -5892,7 +5924,7 @@ exports[` 10`] = `
             Client Details
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
             id={null}
             rows={null}
           >
@@ -6067,7 +6099,7 @@ exports[` 10`] = `
             Bid Details
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
             id={null}
             rows={null}
           >

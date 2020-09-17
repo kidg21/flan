@@ -34,7 +34,7 @@ exports[` 1`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -362,7 +362,7 @@ exports[` 2`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -370,7 +370,7 @@ exports[` 2`] = `
             className="Form__Section-v2wrel-0 AFwsX"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 blvWDr"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 gLSEWC"
               id={null}
               rows={null}
             >
@@ -1234,7 +1234,7 @@ exports[` 4`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -1635,7 +1635,7 @@ exports[` 5`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -1652,7 +1652,7 @@ exports[` 5`] = `
               Residential Type
             </p>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
@@ -1865,7 +1865,7 @@ exports[` 5`] = `
               Commercial Type
             </p>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
@@ -2505,7 +2505,7 @@ exports[` 6`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -2513,33 +2513,37 @@ exports[` 6`] = `
             className="Form__Section-v2wrel-0 AFwsX"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Year Built
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Year Built
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -2563,7 +2567,7 @@ exports[` 6`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -2589,28 +2593,32 @@ exports[` 6`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Number of Units
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Number of Units
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -2634,7 +2642,7 @@ exports[` 6`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -2660,28 +2668,32 @@ exports[` 6`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Building Size (ft2)
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Building Size (ft2)
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -2705,7 +2717,7 @@ exports[` 6`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -3042,7 +3054,7 @@ exports[` 7`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -3050,33 +3062,37 @@ exports[` 7`] = `
             className="Form__Section-v2wrel-0 AFwsX"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Lot Size (Acre)
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Lot Size (Acre)
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -3100,7 +3116,7 @@ exports[` 7`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -3126,28 +3142,32 @@ exports[` 7`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Lot Size (ft2)
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Lot Size (ft2)
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -3171,7 +3191,7 @@ exports[` 7`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -3197,28 +3217,32 @@ exports[` 7`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Aggregate Acreage
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Aggregate Acreage
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -3242,7 +3266,7 @@ exports[` 7`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -3268,28 +3292,32 @@ exports[` 7`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Aggregate Lot Count
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Aggregate Lot Count
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -3313,7 +3341,7 @@ exports[` 7`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -3339,28 +3367,32 @@ exports[` 7`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Aggregated Lot Width Median
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Aggregated Lot Width Median
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -3384,7 +3416,7 @@ exports[` 7`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -3424,7 +3456,7 @@ exports[` 7`] = `
               Zoning
             </p>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
@@ -3480,7 +3512,7 @@ exports[` 7`] = `
                   Opportunity Zone
                 </p>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                   id={null}
                   rows={null}
                 >
@@ -3862,7 +3894,7 @@ exports[` 8`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -3870,7 +3902,7 @@ exports[` 8`] = `
             className="Form__Section-v2wrel-0 AFwsX"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
@@ -3887,7 +3919,7 @@ exports[` 8`] = `
                   Owner Details
                 </p>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 blvWDr"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 gLSEWC"
                   id={null}
                   rows={null}
                 >
@@ -4140,7 +4172,7 @@ exports[` 8`] = `
                   Ownership Status
                 </p>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                   id={null}
                   rows={null}
                 >
@@ -4782,7 +4814,7 @@ exports[` 9`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -4790,33 +4822,37 @@ exports[` 9`] = `
             className="Form__Section-v2wrel-0 AFwsX"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Last Sale Price
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Last Sale Price
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -4840,7 +4876,7 @@ exports[` 9`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -4917,7 +4953,7 @@ exports[` 9`] = `
                   Last Sale Date
                 </p>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                   id={null}
                   rows={null}
                 >
@@ -5052,7 +5088,7 @@ exports[` 9`] = `
                   Last Sale Deed Type
                 </p>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                   id={null}
                   rows={null}
                 >
@@ -5460,7 +5496,7 @@ exports[` 10`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -5468,33 +5504,37 @@ exports[` 10`] = `
             className="Form__Section-v2wrel-0 AFwsX"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Assessed Value
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Assessed Value
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -5518,7 +5558,7 @@ exports[` 10`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -5544,28 +5584,32 @@ exports[` 10`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Improvement Pct.
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Improvement Pct.
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -5589,7 +5633,7 @@ exports[` 10`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -5615,28 +5659,32 @@ exports[` 10`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Assessed Land Value
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Assessed Land Value
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -5660,7 +5708,7 @@ exports[` 10`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -5686,28 +5734,32 @@ exports[` 10`] = `
                 </section>
               </section>
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
                 id="default"
                 rows={null}
               >
-                <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-                  cursor="pointer"
-                  fontSize="0.8rem"
-                  fontWeight={400}
-                  htmlFor={null}
-                  letterSpacing="1px"
-                  onClick={null}
+                <section
+                  className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
                 >
-                  Assessed Improvement Value
-                </label>
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    cursor="pointer"
+                    fontSize="0.875rem"
+                    fontWeight={400}
+                    htmlFor={null}
+                    letterSpacing="1px"
+                    onClick={null}
+                  >
+                    Assessed Improvement Value
+                  </label>
+                </section>
                 <section
                   className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
                   id={null}
                   rows={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_left_container"
                     rows={null}
                   >
@@ -5731,7 +5783,7 @@ exports[` 10`] = `
                     />
                   </section>
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
                     id="default_right_container"
                     rows={null}
                   >
@@ -6068,7 +6120,7 @@ exports[` 11`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -6076,7 +6128,7 @@ exports[` 11`] = `
             className="Form__Section-v2wrel-0 AFwsX"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
@@ -6249,7 +6301,7 @@ exports[` 11`] = `
                   Boundaries
                 </p>
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
                   id={null}
                   rows={null}
                 >
@@ -6278,7 +6330,7 @@ exports[` 11`] = `
                         className="Form__Section-v2wrel-0 AFwsX"
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 blvWDr"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 gLSEWC"
                           id={null}
                           rows={null}
                         >
@@ -6525,7 +6577,7 @@ exports[` 12`] = `
         onSubmit={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
           id={null}
           rows={null}
         >
@@ -6542,7 +6594,7 @@ exports[` 12`] = `
               Geometry Type
             </p>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >
@@ -6651,7 +6703,7 @@ exports[` 12`] = `
               Boundary Type
             </p>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
               id={null}
               rows={null}
             >

@@ -2,21 +2,25 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
   id={null}
   rows={null}
 >
-  <label
-    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-    cursor="pointer"
-    fontSize="0.8rem"
-    fontWeight={400}
-    htmlFor={null}
-    letterSpacing="1px"
-    onClick={null}
+  <section
+    className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
   >
-    Select Label
-  </label>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+      cursor="pointer"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="1px"
+      onClick={null}
+    >
+      Select Label
+    </label>
+  </section>
   <div
     className=" css-3p29ga-container"
     id={null}
@@ -31,7 +35,7 @@ exports[` 1`] = `
         className=" css-g1d714-ValueContainer"
       >
         <div
-          className=" css-1yfxegp-placeholder"
+          className=" css-1rmbrkz-placeholder"
         >
           Select
         </div>
@@ -140,21 +144,25 @@ exports[` 2`] = `
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
     id={null}
     rows={null}
   >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-      cursor="pointer"
-      fontSize="0.8rem"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="1px"
-      onClick={null}
+    <section
+      className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
     >
-      Standard
-    </label>
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="1px"
+        onClick={null}
+      >
+        Standard
+      </label>
+    </section>
     <div
       className=" css-3p29ga-container"
       id={null}
@@ -169,7 +177,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-1yfxegp-placeholder"
+            className=" css-1rmbrkz-placeholder"
           >
             Select
           </div>
@@ -261,21 +269,25 @@ exports[` 2`] = `
     </div>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hlLWDr"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 dHEZuw"
     id={null}
     rows={null}
   >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-      cursor="pointer"
-      fontSize="0.8rem"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="1px"
-      onClick={null}
+    <section
+      className="SelectMenu__LabelWrapper-sc-12n3hw0-1 cmSmkK"
     >
-      Error
-    </label>
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="1px"
+        onClick={null}
+      >
+        Error
+      </label>
+    </section>
     <div
       className=" css-3p29ga-container"
       id={null}
@@ -290,7 +302,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-1yfxegp-placeholder"
+            className=" css-1rmbrkz-placeholder"
           >
             Select
           </div>
@@ -395,21 +407,25 @@ exports[` 2`] = `
     </section>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 bnByLh"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iJyFkq"
     id={null}
     rows={null}
   >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-      cursor="pointer"
-      fontSize="0.8rem"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="1px"
-      onClick={null}
+    <section
+      className="SelectMenu__LabelWrapper-sc-12n3hw0-1 flSxdM"
     >
-      Disabled
-    </label>
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="1px"
+        onClick={null}
+      >
+        Disabled
+      </label>
+    </section>
     <div
       className=" css-fj9z8l-container"
       id={null}
@@ -424,7 +440,7 @@ exports[` 2`] = `
           className=" css-g1d714-ValueContainer"
         >
           <div
-            className=" css-1yfxegp-placeholder"
+            className=" css-1rmbrkz-placeholder"
           >
             Select
           </div>
@@ -527,7 +543,7 @@ exports[` 3`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
     id={null}
     rows={null}
   >
@@ -535,26 +551,30 @@ exports[` 3`] = `
       className="Form__Section-v2wrel-0 AFwsX"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 dpNrvA"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
           >
-            Single-Select ( Required )
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kxuKhc"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Required )
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -569,7 +589,7 @@ exports[` 3`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   You Must Choose...
                 </div>
@@ -670,21 +690,25 @@ exports[` 3`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 dpNrvA"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
           >
-            Single-Select ( Required w/ Clearable )
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kxuKhc"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Required w/ Clearable )
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -699,7 +723,7 @@ exports[` 3`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 />
                 <div
                   className="css-b8ldur-Input"
@@ -812,7 +836,7 @@ exports[` 4`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
     id={null}
     rows={null}
   >
@@ -820,26 +844,30 @@ exports[` 4`] = `
       className="Form__Section-v2wrel-0 AFwsX"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
           >
-            Single-Select ( Standard )
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Standard )
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -854,7 +882,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   Choose...
                 </div>
@@ -955,21 +983,25 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 dpNrvA"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
           >
-            Single-Select ( Required )
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 kxuKhc"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Required )
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -984,7 +1016,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   You Must Choose...
                 </div>
@@ -1085,21 +1117,25 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 bnByLh"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iJyFkq"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 flSxdM"
           >
-            Single-Select ( Disabled )
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Disabled )
+            </label>
+          </section>
           <div
             className=" css-fj9z8l-container"
             id={null}
@@ -1114,7 +1150,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   You Can't Choose...
                 </div>
@@ -1215,21 +1251,25 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hlLWDr"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 dHEZuw"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 cmSmkK"
           >
-            Single-Select ( Error )
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Error )
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -1244,7 +1284,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1345,21 +1385,25 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 hlLWDr"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 dHEZuw"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 cmSmkK"
           >
-            Single-Select ( Error )
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Error )
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -1374,7 +1418,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1488,21 +1532,25 @@ exports[` 4`] = `
           </section>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
           >
-            Single-Select
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -1517,7 +1565,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   You Chose Poorly...
                 </div>
@@ -1631,21 +1679,25 @@ exports[` 4`] = `
           </section>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
           >
-            Single-Select ( Loading )
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Loading )
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -1660,7 +1712,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   Give Me A Minute...
                 </div>
@@ -1775,21 +1827,25 @@ exports[` 4`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
           id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
           >
-            Multi-Select
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Multi-Select
+            </label>
+          </section>
           <div
             className=" css-3p29ga-container"
             id={null}
@@ -1804,7 +1860,7 @@ exports[` 4`] = `
                 className=" css-g1d714-ValueContainer"
               >
                 <div
-                  className=" css-1yfxegp-placeholder"
+                  className=" css-1rmbrkz-placeholder"
                 >
                   Choose One Or More...
                 </div>
