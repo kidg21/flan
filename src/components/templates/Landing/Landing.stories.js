@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
@@ -118,7 +119,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Card padding2="4x" onClick={() => { }}>
                             <CardSection padding="0">
                               <Flex justifyContent="center">
-                                <Template gap="xl" rows="1fr 1fr">
+                                <Template gap={(width <= breakpoint) ? "xl" : "0"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
                                       src={Asset1}
@@ -137,7 +138,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Card padding2="4x" onClick={() => { }}>
                             <CardSection padding="0">
                               <Flex justifyContent="center">
-                                <Template gap="xl" rows="1fr 1fr">
+                                <Template gap={(width <= breakpoint) ? "xl" : "0"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
                                       src={Asset2}
@@ -156,7 +157,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Card padding2="4x" onClick={() => { }}>
                             <CardSection padding="0">
                               <Flex justifyContent="center">
-                                <Template gap="xl" rows="1fr 1fr">
+                                <Template gap={(width <= breakpoint) ? "xl" : "0"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
                                       src={Asset3}
@@ -175,7 +176,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Card padding2="4x" onClick={() => { }}>
                             <CardSection padding="0">
                               <Flex justifyContent="center">
-                                <Template gap="xl" rows="1fr 1fr">
+                                <Template gap={(width <= breakpoint) ? "xl" : "0"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
                                       src={Asset4}
