@@ -42,7 +42,7 @@ const selectStyles = {
     if (isDisabled) {
       borderColor = colors.grey30;
     } else if (isFocused) {
-      borderColor = `${colors.blue80}!important`;
+      borderColor = `${colors.navy80}!important`;
     } else {
       borderColor = colors.grey30;
     }
@@ -66,8 +66,8 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.body,
-      color: isFocused ? colors.grey50 : colors.grey50,
-      fontSize: "0.90rem",
+      color: isFocused ? colors.black : colors.black,
+      fontSize: "0.875rem",
     };
   },
   // selected option
@@ -76,6 +76,7 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.body,
       opacity: isDisabled ? 0.5 : 1,
+      color: colors.black,
       transition: "opacity 300ms",
       fontSize: "0.90rem",
     };
@@ -149,7 +150,7 @@ const selectStyles = {
   },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
-    let color = colors.grey80;
+    let color = colors.black;
     if (isDisabled) {
       color = colors.grey40;
     } else if (isSelected) {
@@ -167,9 +168,16 @@ const selectStyles = {
   },
 };
 
-const SelectMenuContainer = styled(Grid)`
+
+const LabelWrapper = styled.section`
   color: ${(props) => {
     return props.theme.text[props.textColor] || props.theme.text.light;
+  }};
+  `;
+
+const SelectMenuContainer = styled(Grid)`
+  color: ${(props) => {
+    return props.theme.text[props.textColor] || "inherit";
   }};
   width: 100%;
   &:empty {
@@ -322,7 +330,7 @@ function SelectMenu({
       isRequired={isRequired}
       textColor={textColor}
     >
-      {label ? <Label size="sm" isRequired={isRequired} text={label} /> : null}
+      {label ? <LabelWrapper textColor={textColor}><Label size="sm" isRequired={isRequired} text={label} /></LabelWrapper> : null}
       {select}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText || warning} /></MessageContainer> : null}

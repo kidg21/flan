@@ -11,11 +11,17 @@ import { useId } from "utils/hooks";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || "inherit";
   }};
   &:last-child {
     margin-bottom: 1rem;
   }
+`;
+
+const LabelWrapper = styled.section`
+  color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || props.theme.text.light;
+  }};
 `;
 
 const RangeTextInput = styled(TextInput)`
@@ -85,7 +91,9 @@ function DataRange({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label size="sm" isRequired={isRequired} text={label} />
+        <LabelWrapper inputTextColor={inputTextColor}>
+          <Label size="sm" isRequired={isRequired} text={label} />
+        </LabelWrapper>
       ) : null}
       <Grid align="center" columns="3">
         {selectContent}
@@ -109,6 +117,7 @@ function DataRange({
             placeholder={min.label}
             onChange={onChangeMin}
             value={min.value}
+            type={min.type}
           />
         )}
 
@@ -132,6 +141,7 @@ function DataRange({
             placeholder={max.label}
             onChange={onChangeMax}
             value={max.value}
+            type={max.type}
           />
         )}
       </Grid>
@@ -159,6 +169,7 @@ const textType = PropTypes.shape({
   setDisplay: PropTypes.node,
   onChange: PropTypes.func,
   value: PropTypes.string,
+  type: PropTypes.oneOf([PropTypes.any]),
 });
 
 DataRange.propTypes = {

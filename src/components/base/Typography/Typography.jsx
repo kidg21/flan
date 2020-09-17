@@ -162,7 +162,7 @@ const labelSizeHash = {
     letterSpacing: "0.4px",
   },
   sm: {
-    fontSize: "0.8rem",
+    fontSize: "0.875rem",
     letterSpacing: "1px",
   },
   lg: {
