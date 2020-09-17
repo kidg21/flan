@@ -17,9 +17,7 @@ export const MultiGridWrapper = styled.div`
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
-  border: 1px solid ${(props) => {
-    return props.theme.palette.neutral40;
-  }};
+  border: 1px solid ${(props) => { return props.theme.palette.neutral100; }};
   overflow: hidden;
   .ReactVirtualized__Grid {
     ::-webkit-scrollbar {
@@ -86,7 +84,8 @@ export const CellWrapper = styled.div`
       && css`
       font-family: ${() => { return props.theme.typography.primary; }};
       font-weight: 600;
-      color: ${() => { return props.theme.text.secondary; }};
+      background-color: ${() => { return props.headerDark ? props.theme.palette.brand1 : ""; }};
+      color: ${() => { return props.headerDark ? props.theme.text.inverse : props.theme.text.secondary; }};
       font-size: 0.9em;
       letter-spacing: 1px;
     `;
@@ -211,6 +210,7 @@ class Table extends Component {
   }) {
     const {
       rows,
+      headerDark,
       headers,
       selectedCell,
       highlightedCell,
@@ -317,14 +317,14 @@ class Table extends Component {
           parent={parent}
           rowIndex={rowIndex}
         >
-          <CellWrapper style={style} {...cellProps}>
+          <CellWrapper style={style} headerDark={headerDark} {...cellProps}>
             {cellData}
           </CellWrapper>
         </CellMeasurer>
       );
     }
     return (
-      <CellWrapper style={style} {...cellProps}>
+      <CellWrapper style={style} headerDark={headerDark} {...cellProps}>
         {cellData}
       </CellWrapper>
     );
@@ -443,6 +443,7 @@ Table.propTypes = {
     rowIndex: PropTypes.number,
   }),
   headers: PropTypes.arrayOf(PropTypes.shape).isRequired,
+  headerDark: PropTypes.bool,
   listId: PropTypes.string.isRequired,
   loadRows: PropTypes.func,
   minColWidth: PropTypes.number,
@@ -470,6 +471,7 @@ Table.defaultProps = {
   columnWidth: null,
   focusedRow: null,
   highlightedCell: null,
+  headerDark: false,
   loadRows: null,
   minColWidth: 120,
   minRowHeight: 20,
