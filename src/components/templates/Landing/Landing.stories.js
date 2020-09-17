@@ -1,37 +1,32 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
-import { FullScreen, ContainerLarge } from "helpers/Display";
+import React from "react";
 import Panel from "layout/Panel";
-import Icon from "atoms/Icon";
-import Button, { ButtonGroup } from "atoms/Button";
-import Search from "blocks/Search";
+import Button from "atoms/Button";
 import Bar from "layout/Bar";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Image from "atoms/Image";
-import Container from "atoms/Container";
-import Grid from "layout/Grid";
 import Avatar from "atoms/Avatar";
 import Flex from "layout/Flex";
 import Inline from "layout/Inline";
 import Layout from "layout/Layout";
 import Hero from "images/branding/lightbox/hero_city_01.png";
-import HeroReferemce from "images/Hero.png";
-import Logo from "images/branding/lightbox/LightBoxLogo.png";
+import Logo from "images/branding/lightbox/LightBoxLogo_white.png";
 import Asset1 from "images/Asset1.svg";
 import Asset2 from "images/Asset2.svg";
 import Asset3 from "images/Asset3.svg";
 import Asset4 from "images/Asset4.svg";
 import Template from "layout/Template";
-import Text, { Title, Label } from "base/Typography";
+import Text from "base/Typography";
 import Menu from "blocks/Menu";
 
 storiesOf("Templates|Applications/Jobs Portal", module)
-  // .addDecorator(ContainerLarge)
   .add(
     "Landing Page",
     () => {
       return React.createElement(() => {
+        const width = window.innerWidth;
+        const breakpoint = 414; // iPhone 6 ( just in case )
         return (
           <Layout
             header={{
@@ -71,25 +66,32 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                       width: "fit-content",
                     }}
                   />
+                  <CardSection padding="0" />
                   <CardSection padding="0">
-                    {/* <Image src={HeroReferemce} azlt="HeroReferemce" /> */}
-                  </CardSection>
-                  <CardSection padding="0">
-                    <Template isOverlay>
-                      <div style={{ padding: "1.5rem 0" }} />
-                      <Flex alignItems="center" justifyContent="center">
-                        <Image src={Logo} alt="Lightbox Logo" width="22%" />
-                      </Flex>
-                      <Flex alignItems="center" justifyContent="center">
-                        <h1 style={{
-                          fontFamily: "Roboto, Arial, sans-serif", fontSize: "3.875rem", fontWeight: "300", letterSpacing: "1px", color: "white",
-                        }}
-                        >
-                          Welcome to Your App Suite
-                        </h1>
-                      </Flex>
-                    </Template>
-                    <Image src={Hero} alt="Background" />
+                    <Flex justifyContent="center">
+                      <Template isOverlay gap="lg">
+                        <Flex alignItems="center" justifyContent="center">
+                          <Image
+                            src={Logo}
+                            alt="Lightbox Logo"
+                            width={(width <= breakpoint) ? "35%" : "22%"}
+                          />
+                        </Flex>
+                        <Flex alignItems="center" justifyContent="center">
+                          <h1 style={{ // TODO: Add Typography props for affecting text directly
+                            fontFamily: "Roboto, Arial, sans-serif",
+                            fontSize: `{(${width} <= ${breakpoint}) ? "6vw" : "5vw"}`,
+                            fontWeight: "300",
+                            letterSpacing: "1px",
+                            color: "white",
+                          }}
+                          >
+                            Welcome to Valuation Studio
+                          </h1>
+                        </Flex>
+                      </Template>
+                      <Image src={Hero} alt="Background" />
+                    </Flex>
                   </CardSection>
                 </Card>
               ),
@@ -99,47 +101,95 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                 <Panel
                   padding="0"
                 >
-                  <div style={{
-                    backgroundColor: "#f9f9f9", width: "100vw", height: "100vh", paddingTop: "2rem",
+                  <div style={{ // Adding that light grey background behind the buttons
+                    width: "100vw",
+                    height: "100vh",
+                    backgroundColor: "#f9f9f9",
+                    paddingTop: "2rem",
                   }}
                   >
                     <Flex alignItems="center" justifyContent="center" overflow="auto">
-                      <Flex width="60%" justifyContent="center">
+                      <Flex width={(width <= breakpoint) ? "80%" : "60%"} justifyContent="center">
                         <CardGrid
-                          columns="4"
+                          columns={(width <= breakpoint) ? 2 : 4}
+                          rows={(width <= breakpoint) ? "repeat(2,minmax(36vw,1fr))" : "14vw"}
                           gap="4xl"
                         >
-                          <Card padding="4x" onClick={() => { }}>
-                            <Flex width2="inherit" align="center" justify="center">
-                              <Grid columns="1" rows="5rem auto" align="center" justify="center" gap="2xl">
-                                <Image src={Asset1} alt="Jobs" width="30%" />
-                                <Label text="JOBS" size="sm" />
-                              </Grid>
-                            </Flex>
+                          <Card padding2="4x" onClick={() => { }}>
+                            <CardSection padding="0">
+                              <Flex justifyContent="center">
+                                <Template gap="xl" rows="1fr 1fr">
+                                  <Flex alignItems="center" justifyContent="center">
+                                    <Image
+                                      src={Asset1}
+                                      alt="Jobs"
+                                      width={(width <= breakpoint) ? "8vw" : "4vw"}
+                                      height={(width <= breakpoint) ? "8vw" : "4vw"}
+                                    />
+                                  </Flex>
+                                  <Flex height="100%" alignItems="center" justifyContent="flex-end">
+                                    <Text text="JOBS" size2="sm" weight="medium" />
+                                  </Flex>
+                                </Template>
+                              </Flex>
+                            </CardSection>
                           </Card>
-                          <Card padding="4x" onClick={() => { }}>
-                            <Flex width2="inherit" justify="center">
-                              <Grid columns="1" rows="5rem auto" align="center" justify="center" gap="2xl">
-                                <Image src={Asset2} alt="Research" width="30%" />
-                                <Label text="RESEARCH" size="sm" />
-                              </Grid>
-                            </Flex>
+                          <Card padding2="4x" onClick={() => { }}>
+                            <CardSection padding="0">
+                              <Flex justifyContent="center">
+                                <Template gap="xl" rows="1fr 1fr">
+                                  <Flex alignItems="center" justifyContent="center">
+                                    <Image
+                                      src={Asset2}
+                                      alt="Research"
+                                      width={(width <= breakpoint) ? "8vw" : "4vw"}
+                                      height={(width <= breakpoint) ? "8vw" : "4vw"}
+                                    />
+                                  </Flex>
+                                  <Flex height="100%" alignItems="center" justifyContent="flex-end">
+                                    <Text text="RESEARCH" size2="sm" weight="medium" />
+                                  </Flex>
+                                </Template>
+                              </Flex>
+                            </CardSection>
                           </Card>
-                          <Card padding="4x" onClick={() => { }}>
-                            <Flex width2="inherit" justify="center">
-                              <Grid columns="1" rows="5rem auto" align="center" justify="center" gap="2xl">
-                                <Image src={Asset3} alt="Report Writer" width="30%" />
-                                <Label text="REPORT WRITER" size="sm" />
-                              </Grid>
-                            </Flex>
+                          <Card padding2="4x" onClick={() => { }}>
+                            <CardSection padding="0">
+                              <Flex justifyContent="center">
+                                <Template gap="xl" rows="1fr 1fr">
+                                  <Flex alignItems="center" justifyContent="center">
+                                    <Image
+                                      src={Asset3}
+                                      alt="Report Writer"
+                                      width={(width <= breakpoint) ? "8vw" : "4vw"}
+                                      height={(width <= breakpoint) ? "8vw" : "4vw"}
+                                    />
+                                  </Flex>
+                                  <Flex height="100%" alignItems="center" justifyContent="flex-end">
+                                    <Text text="REPORT WRITER" size2="sm" weight="medium" />
+                                  </Flex>
+                                </Template>
+                              </Flex>
+                            </CardSection>
                           </Card>
-                          <Card padding="4x" onClick={() => { }}>
-                            <Flex width2="100%" justifyContent="center">
-                              <Grid columns="1" rows="5rem auto" align="center" justify="center" gap="2xl">
-                                <Image src={Asset4} alt="Insights" width="30%" />
-                                <Label text="INSIGHTS" size="sm" />
-                              </Grid>
-                            </Flex>
+                          <Card padding2="4x" onClick={() => { }}>
+                            <CardSection padding="0">
+                              <Flex justifyContent="center">
+                                <Template gap="xl" rows="1fr 1fr">
+                                  <Flex alignItems="center" justifyContent="center">
+                                    <Image
+                                      src={Asset4}
+                                      alt="Insights"
+                                      width={(width <= breakpoint) ? "8vw" : "4vw"}
+                                      height={(width <= breakpoint) ? "8vw" : "4vw"}
+                                    />
+                                  </Flex>
+                                  <Flex height="100%" alignItems="center" justifyContent="flex-end">
+                                    <Text text="INSIGHTS" size2="sm" weight="medium" />
+                                  </Flex>
+                                </Template>
+                              </Flex>
+                            </CardSection>
                           </Card>
                         </CardGrid>
                       </Flex>
