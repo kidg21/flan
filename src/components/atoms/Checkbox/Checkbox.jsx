@@ -124,6 +124,7 @@ const InputGroup = styled(Grid)`
 
 function Checkbox({
   align,
+  bold,
   checked,
   disabled,
   error,
@@ -213,6 +214,7 @@ function Checkbox({
             e.stopPropagation();
           }
         }}
+        weight={bold ? "bold" : ""}
       />
     </CheckboxContainer>
   );
@@ -307,6 +309,7 @@ Checkbox.defaultProps = {
 
 CheckboxGroup.propTypes = {
   align: PropTypes.oneOf(["left", "right"]),
+  bold: PropTypes.bool,
   children: PropTypes.node,
   columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
   data: PropTypes.arrayOf(PropTypes.shape({
@@ -329,6 +332,7 @@ CheckboxGroup.propTypes = {
 
 CheckboxGroup.defaultProps = {
   align: "left",
+  bold: false,
   children: null,
   columns: null,
   data: [],

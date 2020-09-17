@@ -31,6 +31,7 @@ const TagContainer = styled.span`
     return props.borderRadius || "3px";
   }};
   transition: all 0.25s ease;
+  cursor: ${(props) => { return props.onClick ? "pointer" : "inherit"; }}
 `;
 
 const TagIconContainer = styled.div`
@@ -62,8 +63,39 @@ const TagIconContainer = styled.div`
   cursor: ${(props) => { return props.onClick ? "pointer" : "inherit"; }}
 `;
 
+const badgeSizes = {
+  xs: {
+    width: "1.25em",
+    height: "1.25em",
+  },
+  sm: {
+    width: "1.5em",
+    height: "1.5em",
+  },
+  m: {
+    width: "1.8em",
+    height: "1.8em",
+  },
+  lg: {
+    width: "2em",
+    height: "2em",
+  },
+};
+
 function Tag({
-  brand, className, hasBackground, icon, iconPosition, iconSeparator, id, label, variant, onClick, onClickIcon,
+  brand,
+  className,
+  hasBackground,
+  icon,
+  iconPosition,
+  iconSeparator,
+  iconSize,
+  id,
+  label,
+  onClick,
+  onClickIcon,
+  size,
+  variant,
 }) {
   let badgeColor;
   let badgeHeight;
@@ -76,7 +108,7 @@ function Tag({
 
   if (icon && label) {
     iconType = <Icon icon={icon} size="xs" variant={hasBackground ? "inverse" : variant} />;
-    labelType = <Label text={label} cursor={onClick ? "pointer" : "inherit"} />;
+    labelType = <Label text={label} size={size} cursor={onClick ? "pointer" : "inherit"} />;
     badgeHeight = "1.5em";
     if (iconSeparator === "radial") {
       if (iconPosition === "right") {
@@ -95,13 +127,14 @@ function Tag({
       badgeTextColor = "primary";
     }
   } else if (icon) {
-    iconType = <Icon icon={icon} size="sm" variant={hasBackground ? "inverse" : variant} />;
-    badgeWidth = "1.5em";
-    badgeHeight = "1.5em";
+    iconType = <Icon icon={icon} size={iconSize} variant={hasBackground ? "inverse" : variant} />;
+    const badgeSize = badgeSizes[iconSize] || { width: "1.5em", height: "1.5em" };
+    badgeWidth = badgeSize.width;
+    badgeHeight = badgeSize.height;
     badgePadding = ".75em";
     borderRadius = "50%";
   } else if (label) {
-    labelType = <Label text={label} cursor={onClick ? "pointer" : "default"} />;
+    labelType = <Label text={label} size={size} cursor={onClick ? "pointer" : "default"} />;
 
     if (hasBackground) {
       badgeTextColor = "inverse";
@@ -184,11 +217,13 @@ Tag.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   iconPosition: PropTypes.oneOf(["left", "right"]),
   iconSeparator: PropTypes.oneOf(["bar", "radial", "none"]),
+  iconSize: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  variant: PropTypes.string,
   onClick: PropTypes.func,
   onClickIcon: PropTypes.func,
+  size: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Tag.defaultProps = {
@@ -198,11 +233,13 @@ Tag.defaultProps = {
   icon: null,
   iconPosition: "right",
   iconSeparator: "radial",
+  iconSize: "sm",
   id: null,
   label: null,
-  variant: null,
   onClick: null,
   onClickIcon: null,
+  size: "",
+  variant: null,
 };
 
 export default Tag;
