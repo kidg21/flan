@@ -24,4 +24,6 @@
   },
   "peacock.color": "#00b3e6",
   "files.eol": "\n",
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnSave": true,
 }

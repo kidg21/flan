@@ -39,7 +39,6 @@ const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   flex: auto;
-  align-items: center;
   padding: ${(props) => {
     return props.sectionPadding || "1em 1em";
   }};
@@ -138,11 +137,11 @@ const PanelSection = styled(PanelBody)`
   padding: 0;
   overflow: visible;
   z-index: 1;
-  align-items: initial;
   &:first-of-type {
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
+    /** Will be coming back to this */
     /* box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
   }}; */
@@ -151,6 +150,7 @@ const PanelSection = styled(PanelBody)`
     border-top: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
+    /** Will be coming back to this */
     /* box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
   }}; */

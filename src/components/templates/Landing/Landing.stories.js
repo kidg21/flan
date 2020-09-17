@@ -81,7 +81,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                         <Flex alignItems="center" justifyContent="center">
                           <h1 style={{ // TODO: Add Typography props for affecting text directly
                             fontFamily: "Roboto, Arial, sans-serif",
-                            fontSize: `{(${width} <= ${breakpoint}) ? "6vw" : "5vw"}`,
+                            fontSize: `${(width <= breakpoint) ? "6vw" : "5vw"}`,
                             fontWeight: "300",
                             letterSpacing: "1px",
                             color: "white",
@@ -103,8 +103,8 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                   padding="0"
                 >
                   <div style={{ // Adding that light grey background behind the buttons
-                    width: "100vw",
-                    height: "100vh",
+                    width: "100%",
+                    height: "100%",
                     backgroundColor: "#f9f9f9",
                     paddingTop: "2rem",
                   }}
@@ -119,7 +119,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Card padding2="4x" onClick={() => { }}>
                             <CardSection padding="0">
                               <Flex justifyContent="center">
-                                <Template gap={(width <= breakpoint) ? "xl" : "0"} rows="1fr 1fr">
+                                <Template gap={(width <= breakpoint) ? "xl" : "sm"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
                                       src={Asset1}
@@ -138,7 +138,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Card padding2="4x" onClick={() => { }}>
                             <CardSection padding="0">
                               <Flex justifyContent="center">
-                                <Template gap={(width <= breakpoint) ? "xl" : "0"} rows="1fr 1fr">
+                                <Template gap={(width <= breakpoint) ? "xl" : "sm"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
                                       src={Asset2}
@@ -157,7 +157,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Card padding2="4x" onClick={() => { }}>
                             <CardSection padding="0">
                               <Flex justifyContent="center">
-                                <Template gap={(width <= breakpoint) ? "xl" : "0"} rows="1fr 1fr">
+                                <Template gap={(width <= breakpoint) ? "xl" : "sm"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
                                       src={Asset3}
@@ -176,7 +176,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                           <Card padding2="4x" onClick={() => { }}>
                             <CardSection padding="0">
                               <Flex justifyContent="center">
-                                <Template gap={(width <= breakpoint) ? "xl" : "0"} rows="1fr 1fr">
+                                <Template gap={(width <= breakpoint) ? "xl" : "sm"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
                                       src={Asset4}
