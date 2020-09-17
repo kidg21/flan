@@ -443,19 +443,7 @@ Template.propTypes = {
   /** Sets the 'gutter' between grid items
    * Overrides the default setting on Templates without a 'template' prop
   */
-  gap: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([
-      "0",
-      "xs",
-      "sm",
-      "lg",
-      "xl",
-      "2xl",
-      "3xl",
-      "4xl",
-    ]),
-  ]),
+  gap: PropTypes.string,
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
   hasCards: PropTypes.bool,
