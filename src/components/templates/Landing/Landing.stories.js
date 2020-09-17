@@ -13,10 +13,10 @@ import Inline from "layout/Inline";
 import Layout from "layout/Layout";
 import Hero from "images/branding/lightbox/hero_city_01.png";
 import Logo from "images/branding/lightbox/LightBoxLogo_white.png";
-import Asset1 from "images/Asset1.svg";
-import Asset2 from "images/Asset2.svg";
-import Asset3 from "images/Asset3.svg";
-import Asset4 from "images/Asset4.svg";
+import Jobs from "images/branding/lightbox/valuation/icon_jobs.svg";
+import Research from "images/branding/lightbox/valuation/icon_research.svg";
+import ReportWriter from "images/branding/lightbox/valuation/icon_report-writer.svg";
+import Insights from "images/branding/lightbox/valuation/icon_insights.svg";
 import Template from "layout/Template";
 import Text from "base/Typography";
 import Menu from "blocks/Menu";
@@ -122,7 +122,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                                 <Template gap={(width <= breakpoint) ? "xl" : "sm"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
-                                      src={Asset1}
+                                      src={Jobs}
                                       alt="Jobs"
                                       width={(width <= breakpoint) ? "8vw" : "4vw"}
                                       height={(width <= breakpoint) ? "8vw" : "4vw"}
@@ -141,7 +141,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                                 <Template gap={(width <= breakpoint) ? "xl" : "sm"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
-                                      src={Asset2}
+                                      src={Research}
                                       alt="Research"
                                       width={(width <= breakpoint) ? "8vw" : "4vw"}
                                       height={(width <= breakpoint) ? "8vw" : "4vw"}
@@ -160,7 +160,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                                 <Template gap={(width <= breakpoint) ? "xl" : "sm"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
-                                      src={Asset3}
+                                      src={ReportWriter}
                                       alt="Report Writer"
                                       width={(width <= breakpoint) ? "8vw" : "4vw"}
                                       height={(width <= breakpoint) ? "8vw" : "4vw"}
@@ -179,7 +179,7 @@ storiesOf("Templates|Applications/Jobs Portal", module)
                                 <Template gap={(width <= breakpoint) ? "xl" : "sm"} rows="1fr 1fr">
                                   <Flex alignItems="center" justifyContent="center">
                                     <Image
-                                      src={Asset4}
+                                      src={Insights}
                                       alt="Insights"
                                       width={(width <= breakpoint) ? "8vw" : "4vw"}
                                       height={(width <= breakpoint) ? "8vw" : "4vw"}
