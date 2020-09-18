@@ -121,7 +121,6 @@ function Flex({
 Flex.propTypes = {
   /** Sets the alignment along the cross axis ('column' = x-axis / 'row' = y-axis) */
   alignItems: PropTypes.string,
-
   /** Sets the bottom edge (in percentage) of a Flex component. */
   bottom: PropTypes.string,
   /** Allows for the nesting of Flex components */

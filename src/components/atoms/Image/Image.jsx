@@ -10,8 +10,7 @@ const ImageWrapper = styled.img`
   }};
   height: ${(props) => {
     return props.height || "auto";
-  }};
-  /* height: auto; */
+}};
   border-radius: ${(props) => {
     return props.isRound ? "100%" : "";
   }};
