@@ -83,10 +83,10 @@ export const CellWrapper = styled.div`
     return props.isHeader
       && css`
       font-family: ${() => { return props.theme.typography.primary; }};
-      font-weight: 600;
       background-color: ${() => { return props.headerDark ? props.theme.palette.brand1 : ""; }};
       color: ${() => { return props.headerDark ? props.theme.text.inverse : props.theme.text.secondary; }};
-      font-size: 0.9em;
+      font-size: 0.875rem;
+      font-weight: ${() => { return props.headerDark ? "400" : "600"; }};
       letter-spacing: 1px;
     `;
   }}
