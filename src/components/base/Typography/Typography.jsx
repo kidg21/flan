@@ -232,7 +232,7 @@ Text.propTypes = {
   className: PropTypes.string,
   id: PropTypes.string,
   size: PropTypes.oneOf(["xs", "sm", "lg", ""]),
-  text: PropTypes.string,
+  text: PropTypes.node,
   weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Text.defaultProps = {

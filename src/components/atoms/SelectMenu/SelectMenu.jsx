@@ -168,12 +168,11 @@ const selectStyles = {
   },
 };
 
-
 const LabelWrapper = styled.section`
   color: ${(props) => {
     return props.theme.text[props.textColor] || props.theme.text.light;
   }};
-  `;
+`;
 
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
