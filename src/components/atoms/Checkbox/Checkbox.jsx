@@ -205,17 +205,23 @@ function Checkbox({
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      <CheckboxLabel
-        htmlFor={id}
-        text={label}
-        hidden={!labelVisible}
-        onClick={(e) => {
-          if (stopPropagation) {
-            e.stopPropagation();
-          }
-        }}
-        weight={bold ? "bold" : ""}
-      />
+      {/* if there's a label, render the CheckboxLabel element */}
+      {
+        label
+        && (
+          <CheckboxLabel
+            htmlFor={id}
+            text={label}
+            hidden={!labelVisible}
+            onClick={(e) => {
+              if (stopPropagation) {
+                e.stopPropagation();
+              }
+            }}
+            weight={bold ? "bold" : ""}
+          />
+        )
+      }
     </CheckboxContainer>
   );
 }
