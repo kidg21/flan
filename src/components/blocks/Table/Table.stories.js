@@ -3,6 +3,9 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { Container } from "helpers/Display";
+import Flex from "layout/Flex";
+import Panel from "layout/Panel";
+import Card, { CardGrid } from "elements/Card";
 import Menu from "blocks/Menu";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
@@ -408,6 +411,7 @@ const options = [
 
 storiesOf("Data Display|Table", module)
   .addDecorator(Container)
+
   .add("Simple", () => {
     return (
       <Table
@@ -633,6 +637,91 @@ storiesOf("Data Display|Table", module)
           selectedCell={selectedCell}
           columnWidth={180}
         />
+      );
+    });
+  })
+
+  .add("Styling", () => {
+    return React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+
+      const onHeaderClick = (e, { columnIndex }) => {
+        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+      };
+
+      const onCellMouseOver = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+
+      return (
+        <Panel>
+          <Flex width="100%">
+            <CardGrid
+              columns="1"
+              rows="repeat(4,minmax(14vw,1fr))"
+              gap="4xl"
+            >
+              <Card shadow="0">
+                <Table
+                  headers={headers.slice(1)}
+                  rows={data}
+                  listId="foo"
+                  onCellClick={onCellClick}
+                  onHeaderClick={onHeaderClick}
+                  onCellMouseOver={onCellMouseOver}
+                  highlightedCell={highlightedCell}
+                  selectedCell={selectedCell}
+                  columnWidth={180}
+                />
+              </Card>
+              <Card shadow="0">
+                <Table
+                  headerDark
+                  headers={headers.slice(1)}
+                  rows={data}
+                  listId="foo"
+                  onCellClick={onCellClick}
+                  onHeaderClick={onHeaderClick}
+                  onCellMouseOver={onCellMouseOver}
+                  highlightedCell={highlightedCell}
+                  selectedCell={selectedCell}
+                  columnWidth={180}
+                />
+              </Card>
+              <Card shadow="2x">
+                <Table
+                  headers={headers.slice(1)}
+                  rows={data}
+                  listId="foo"
+                  onCellClick={onCellClick}
+                  onHeaderClick={onHeaderClick}
+                  onCellMouseOver={onCellMouseOver}
+                  highlightedCell={highlightedCell}
+                  selectedCell={selectedCell}
+                  columnWidth={180}
+                />
+              </Card>
+              <Card shadow="2x">
+                <Table
+                  headerDark
+                  headers={headers.slice(1)}
+                  rows={data}
+                  listId="foo"
+                  onCellClick={onCellClick}
+                  onHeaderClick={onHeaderClick}
+                  onCellMouseOver={onCellMouseOver}
+                  highlightedCell={highlightedCell}
+                  selectedCell={selectedCell}
+                  columnWidth={180}
+                />
+              </Card>
+            </CardGrid>
+          </Flex>
+        </Panel>
       );
     });
   });
