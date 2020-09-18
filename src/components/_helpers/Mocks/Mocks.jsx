@@ -534,6 +534,7 @@ function MockTable({ actionsTable }) {
           )}
       </Card>
       <Table
+        headerDark
         id="MockTable"
         headers={tableHeaders}
         rows={tableData}
