@@ -57,6 +57,7 @@ const ListItemWrapper = styled(ListItem)`
 // highlight behaviors
 // need to get rid of last-child padding
 // for the nested item's entry
+// TODO: structure nested Menus semantically correct (ul > li > ul (nested) > li)
 const NestedItem = styled.div`
   position: relative;
   background-color: inherit;

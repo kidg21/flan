@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import Text from "base/Typography";
 
 const LoaderWrapper = styled.div`
-  position: absolute;
   display: flex;
   flex: auto;
   flex-direction: column;

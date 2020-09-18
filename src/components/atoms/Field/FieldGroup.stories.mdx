@@ -2,85 +2,48 @@ import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Field, { FieldGroup } from "atoms/Field";
+import Field, { FieldGroup, FieldSection } from "atoms/Field";
 import fieldData from "atoms/Field/Field.data.js";
 
 <Meta title="Atoms/Field/Field Group" component={FieldGroup} />
 
 # Field Group
 
-### Fields are...
+### A Field Group is...
 
 <Preview withToolbar>
   <Story name="Standard">
-      <FieldGroup
-        id="Group 1"
-        title="This is the first group"
-        isVertical
-      >
-        <Field
-          id="Field 1"
-          label="Field 1"
-          value="Value Goes Here"
-        />
-        <Field
-          id="Field 2"
-          label="Field 2"
-          value="Value Goes Here"
-        />
-        <Field
-          id="Field 3"
-          label="Field 3"
-          value="Value Goes Here"
-        />
-      </FieldGroup>
-      <FieldGroup
-        id="Group 2"
-        title="This is the second group"
-      >
-        <Field
-          id="Field 1"
-          label="Field 1"
-          value="Value Goes Here"
-        />
-        <Field
-          id="Field 2"
-          label="Field 2"
-          value="Value Goes Here"
-        />
-        <Field
-          id="Field 3"
-          label="Field 3"
-          value="Value Goes Here"
-        />
-      </FieldGroup>
-      <FieldGroup
-        id="Group 3"
-        columns="1"
-        title="This is the third group"
-        isVertical
-      >
-        <Field
-          id="Description"
-          label="Description"
-          value="Hamburger rump buffalo chuck, flank pancetta capicola ground round pork burgdoggen prosciutto frankfurter cow. Chicken alcatra tail, tenderloin kevin turducken flank spare ribs buffalo prosciutto pig jowl tongue. Sirloin ground round short ribs chuck landjaeger. Chicken flank rump jerky corned beef, frankfurter strip steak shoulder spare ribs tri-tip leberkas. Kevin capicola ground round meatloaf, burgdoggen ball tip sirloin shank beef ribs pastrami fatback short loin swine frankfurter. Fatback brisket beef prosciutto. Tenderloin ground round landjaeger tri-tip."
-        />
-        <Field
-          id="Notes"
-          label="Notes"
-          value="Here are some notes that I added because, if I didn't, they'd be lost forever."
-        />
-      </FieldGroup>
+    <FieldGroup
+      id="Group 1"
+      title="This is a field group"
+    >
+      <Field
+        id="Field 1"
+        label="Field Name"
+        value="Linked Value"
+        onClick={() => { }}
+      />
+      <Field
+        id="Field 2"
+        label="Long Field Name"
+        value="Value Goes Here"
+      />
+      <Field
+        id="Field 3"
+        label="Extra Long Field Name"
+        value="And A Really Extra Long Field Value Can Go Here"
+      />
+    </FieldGroup>
   </Story>
 </Preview>
 
 # Examples
 
-### Fields via Array
+### Field Group via Array
 
 <Preview withToolbar>
-  <Story name="Fields via Array">
-    <FieldGroup title="Fields via Array" data={fieldData} />
+  <Story name="Field Group via Array">
+    <FieldGroup title="Fields Group via Array" data={fieldData} />
   </Story>
 </Preview>
 
@@ -88,11 +51,11 @@ import fieldData from "atoms/Field/Field.data.js";
 
 <Preview withToolbar>
   <Story name="Alignment">
-    <Grid columns="1">
-      <FieldGroup title="Inline Fields (Default)" data={fieldData} />
-      <FieldGroup title="Vertically Aligned Fields" data={fieldData} align="vertical" />
-      <FieldGroup title="Edge Aligned Fields" data={fieldData} align="edge" />
-    </Grid>
+    <FieldSection title="Alignment" columns="3" gap="xl">
+      <FieldGroup title="Default" data={fieldData} />
+      <FieldGroup title="Edge-Aligned" data={fieldData} align="edge" />
+      <FieldGroup title="Vertically-Aligned" data={fieldData} align="vertical" />
+    </FieldSection>
   </Story>
 </Preview>
 
@@ -100,14 +63,43 @@ import fieldData from "atoms/Field/Field.data.js";
 
 <Preview withToolbar>
   <Story name="Density">
-    <Grid columns="1">
-      <FieldGroup title="Field Group Gap XS" data={fieldData} gap="xs"/>
-      <FieldGroup title="Field Group Gap Default" data={fieldData} />
-      <FieldGroup title="Field Group Gap XL" data={fieldData} gap="xl" />
-    </Grid>
+    <FieldSection title="Density" columns="2" gap="xl">
+      <FieldGroup title="Default" data={fieldData} />
+      <FieldGroup title="Dense" data={fieldData} isDense />
+    </FieldSection>
   </Story>
 </Preview>
 
+### Label-to-Value Spacing
+
+<Preview withToolbar>
+  <Story name="Label-to-Value Spacing">
+    <FieldSection title="Label-to-Value Spacing" columns="2" gap="xl">
+      <FieldGroup id="Default" title="Default" data={fieldData}/>
+      <FieldGroup id="2x" title="2x" spacing="2x" data={fieldData} />
+      <FieldGroup id="3x" title="3x" spacing="3x" data={fieldData} />
+      <FieldGroup id="4x" title="4x" spacing="4x" data={fieldData} />
+      <FieldGroup id="Default (edge-aligned)" title="Default (edge-aligned)" align="edge" data={fieldData}/>
+      <FieldGroup id="2x (edge-aligned)" title="2x (edge-aligned)" spacing="2x" align="edge" data={fieldData} />
+      <FieldGroup id="3x (edge-aligned)" title="3x (edge-aligned)" spacing="3x" align="edge" data={fieldData} />
+      <FieldGroup id="4x (edge-aligned)" title="4x (edge-aligned)" spacing="4x" align="edge" data={fieldData} />
+    </FieldSection>
+  </Story>
+</Preview>
+
+### Size
+
+<Preview withToolbar>
+  <Story name="Size">
+    <FieldSection title="Size" columns="2" gap="xl">
+      <FieldGroup id="sm" title="sm" size="sm" align="vertical" data={fieldData} />
+      <FieldGroup id="Default" title="Default" align="vertical" data={fieldData}/>
+      <FieldGroup id="lg" title="lg" size="lg" align="vertical" data={fieldData} />
+      <FieldGroup id="xl" title="xl" size="xl" align="vertical" data={fieldData} />
+      <FieldGroup id="2xl" title="2xl" size="2xl" align="vertical" data={fieldData} />
+    </FieldSection>
+  </Story>
+</Preview>
 
 ### Field Group Props
 <Props of={FieldGroup} />

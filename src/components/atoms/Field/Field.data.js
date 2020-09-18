@@ -1,18 +1,19 @@
 const fieldData = [
   {
     id: "Field 1",
-    label: "Field 1",
-    value: "Value Goes Here",
+    label: "Field Name",
+    value: "Linked Value",
+    onClick: () => { },
   },
   {
     id: "Field 2",
-    label: "Field 2",
+    label: "Long Field Name",
     value: "Value Goes Here",
   },
   {
     id: "Field 3",
-    label: "Field 3",
-    value: "Value Goes Here",
+    label: "Extra Long Field Name",
+    value: "And A Really Extra Long Field Value Can Go Here",
   },
 ];
 

@@ -43,7 +43,7 @@ const SearchInput = styled(Flex)`
 const SearchTextInput = styled(TextInput)`
   flex: auto;
   input {
-    height: 2rem;
+    height: 2.4rem;
   }
   > * {
     border: none;
@@ -161,6 +161,7 @@ function Search({
         ? (
           <DropContainer
             padding="0"
+            hasBorder
             id={`${uId}-results-container`}
             maxHeight="22rem"
             zIndex={zIndex}

@@ -24,6 +24,9 @@ const ChildrenWrapper = styled.div`
   opacity: ${(props) => {
     return props.open ? "100%" : "0";
   }};
+  pointer-events: ${(props) => {
+    return props.open ? "auto" : "none";
+  }};
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};

@@ -49,8 +49,8 @@ const BoxContainer = styled.div`
     return props.borderRadius || props.theme.borders.radiusMin;
   }};
   ::-webkit-scrollbar {
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.75em;
+    height: 0.75em;
   }
   ::-webkit-scrollbar-track {
     box-shadow: inset 0.5px 0 0px ${(props) => {
@@ -61,7 +61,13 @@ const BoxContainer = styled.div`
     background-color: ${(props) => {
     return props.theme.palette.neutral80;
   }};
-    border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+    outline: none;
   }
   ::-webkit-scrollbar-track:horizontal {
     box-shadow: inset 0.5px 0 0px ${(props) => {
@@ -72,7 +78,13 @@ const BoxContainer = styled.div`
     background-color: ${(props) => {
     return props.theme.palette.neutral80;
   }};
-  border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+  outline: none;
 }
 `;
 

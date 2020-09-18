@@ -6,6 +6,9 @@ import styled from "styled-components";
 import Grid from "layout/Grid";
 
 const Region = styled.section`
+  display: ${(props) => {
+    return props.visible ? "block" : "none";
+  }};
   position: relative;
   grid-area: ${(props) => {
     return props.gridArea || "";
@@ -16,6 +19,9 @@ const Region = styled.section`
   }};
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
+  }};
+  margin: ${(props) => {
+    return props.margin || "";
   }};
   padding: ${(props) => {
     return props.padding || "";
@@ -163,6 +169,15 @@ const templateHash = {
     setColumns: `auto 1fr ${widthLG}`,
     setRows: "auto 1fr 1rem",
   },
+  B_09: {
+    setTemplate: [
+      "\"A A .\"",
+      "\". . .\"",
+      "\"B B B\"",
+    ].join("\n"),
+    setColumns: "1fr 5fr 2fr",
+    setRows: "auto 1fr auto",
+  },
   C_01: {
     setTemplate: [
       "\"A A A\"",
@@ -286,7 +301,7 @@ function Template({
   if (isOverlay) {
     backgroundColor = "none";
     pointerEvents = "none";
-    setPadding = "1rem";
+    setPadding = "0.25rem";
     setPosition = "absolute";
     zIndex = "999";
   }
@@ -315,12 +330,14 @@ function Template({
               hasBorder={A.hasBorder}
               id={A.id || "A"}
               isOverlay={isOverlay}
+              margin={A.margin}
               opacity={A.opacity}
               overflow={A.overflow}
               padding={A.padding}
               placeholder="A"
               regionShadow={A.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof A.visible === "boolean" ? A.visible : true}
             >
               {A.content}
             </Region>
@@ -331,12 +348,14 @@ function Template({
               hasBorder={B.hasBorder}
               id={B.id || "B"}
               isOverlay={isOverlay}
+              margin={B.margin}
               opacity={B.opacity}
               overflow={B.overflow}
               padding={B.padding}
               placeholder="B"
               regionShadow={B.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof B.visible === "boolean" ? B.visible : true}
             >
               {B.content}
             </Region>
@@ -347,12 +366,14 @@ function Template({
               hasBorder={C.hasBorder}
               id={C.id || "C"}
               isOverlay={isOverlay}
+              margin={C.margin}
               opacity={C.opacity}
               overflow={C.overflow}
               padding={C.padding}
               placeholder="C"
               regionShadow={C.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof C.visible === "boolean" ? C.visible : true}
             >
               {C.content}
             </Region>
@@ -363,12 +384,14 @@ function Template({
               hasBorder={D.hasBorder}
               id={D.id || "D"}
               isOverlay={isOverlay}
+              margin={D.margin}
               opacity={D.opacity}
               overflow={D.overflow}
               padding={D.padding}
               placeholder="D"
               regionShadow={D.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof D.visible === "boolean" ? D.visible : true}
             >
               {D.content}
             </Region>
@@ -379,12 +402,14 @@ function Template({
               hasBorder={E.hasBorder}
               id={E.id || "E"}
               isOverlay={isOverlay}
+              margin={E.margin}
               opacity={E.opacity}
               overflow={E.overflow}
               padding={E.padding}
               placeholder="E"
               regionShadow={E.padding ? null : regionShadow}
               tabIndex="0"
+              visible={typeof E.visible === "boolean" ? E.visible : true}
             >
               {E.content}
             </Region>
@@ -402,6 +427,8 @@ const sectionShape = {
   opacity: PropTypes.string,
   overflow: PropTypes.string,
   padding: PropTypes.string,
+  margin: PropTypes.string,
+  visible: PropTypes.bool,
 };
 
 Template.propTypes = {

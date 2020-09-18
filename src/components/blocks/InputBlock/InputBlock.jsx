@@ -239,7 +239,7 @@ function InputBlock({
         text={text}
       >
         {label ? (
-          <Label size="xs" isRequired={isRequired} text={label} />
+          <Label size="sm" isRequired={isRequired} text={label} />
         ) : null}
 
         {inputContainer}

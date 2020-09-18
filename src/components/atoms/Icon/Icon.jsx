@@ -202,6 +202,9 @@ const sizeHash = {
   "sm": {
     font: "0.875em",
   },
+  "m": {
+    font: "1em",
+  },
   "lg": {
     font: "1.35em",
   },
@@ -345,7 +348,7 @@ Icon.propTypes = {
   /** Options: '90', '180', '270' */
   rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
-   * Options: 'xs', 'sm', 'lg', 'xl', '2xl', '3xl', '4xl'
+   * Options: 'xs', 'sm', 'm', 'lg', 'xl', '2xl', '3xl', '4xl'
    */
   size: PropTypes.string,
   /** Smooth rotation */

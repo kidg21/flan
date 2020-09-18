@@ -199,11 +199,25 @@ function MockMenu({ data, title }) {
     <React.Fragment>
       {data ? <List title={title} isInteractive isInverse data={data} />
         : (
-          <List title={title} isInteractive isInverse>
-            <ListItem title="Projects" isSelected />
-            <ListItem title="Properties" />
-            <ListItem title="History" />
-            <ListItem title="Data" />
+          <List title={title || "List Title"} isInteractive isInverse>
+            <ListSection title="List Section 1" hasDivider>
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
+            <ListSection title="List Section 2" hasDivider>
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
+            <ListSection title="List Section 3">
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
           </List>
         )}
     </React.Fragment>
@@ -224,16 +238,18 @@ function MockWorkflow({ data, title }) {
       {data ? <List title={title} isInteractive isLight data={data} />
         : (
           <List title={title} isInteractive>
-            <ListItem
-              title="Overview"
-              isSelected
-            />
-            <ListItem
-              title="Define Site"
-              post={{
-                type: "icon", icon: "check", variant: "success",
-              }}
-            />
+            <ListSection hasDivider>
+              <ListItem
+                title="Overview"
+                isSelected
+              />
+              <ListItem
+                title="Define Site"
+                post={{
+                  type: "icon", icon: "check", variant: "success",
+                }}
+              />
+            </ListSection>
             <ListSection>
               <ListItem
                 title="Assessment"
@@ -283,11 +299,11 @@ function MockTable({ actionsTable }) {
       ),
     },
     { id: "Name", label: "Name", sortable: true },
-    { id: "Address", label: "Address", sortable: false },
-    { id: "City", label: "City", sortable: false },
-    { id: "State", label: "State", sortable: false },
+    { id: "Address", label: "Address", sortable: true },
+    { id: "City", label: "City", sortable: true },
+    { id: "State", label: "State", sortable: true },
     { id: "Zip", label: "Zip", sortable: false },
-    { id: "Property_Type", label: "Property Type", sortable: false },
+    { id: "Property_Type", label: "Property Type", sortable: true },
     { id: "GBA", label: "GBA", sortable: false },
     { id: "Rentable_Area", label: "Rentable Area", sortable: false },
     { id: "Units", label: "Units", sortable: false },
@@ -483,8 +499,8 @@ function MockTable({ actionsTable }) {
               <Grid columns="1fr auto" gap="1rem">
                 <Inline>
                   <Label text="Active List" />
-                  <Label text="" size="sm" />
-                  <Label text="309" size="sm" />
+                  <Label text="|" />
+                  <Label text="309" />
                 </Inline>
                 <Inline spacingX="1rem">
                   {actionsTable}
@@ -518,6 +534,7 @@ function MockTable({ actionsTable }) {
           )}
       </Card>
       <Table
+        headerDark
         id="MockTable"
         headers={tableHeaders}
         rows={tableData}

@@ -2,6 +2,7 @@
 /* eslint-disable security/detect-object-injection */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 import {
   MultiGrid,
   AutoSizer,
@@ -9,7 +10,6 @@ import {
   CellMeasurerCache,
   InfiniteLoader,
 } from "react-virtualized";
-import styled from "styled-components";
 
 export const MultiGridWrapper = styled.div`
   width: 100%;
@@ -17,20 +17,16 @@ export const MultiGridWrapper = styled.div`
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
-  border: 1px solid ${(props) => {
-    return props.theme.palette.neutral40;
-  }};
+  border: 1px solid ${(props) => { return props.theme.palette.neutral100; }};
   overflow: hidden;
   .ReactVirtualized__Grid {
     ::-webkit-scrollbar {
-      height: 0.75em;
+      width: 0.65em;
+      height: 0.65em;
     }
     ::-webkit-scrollbar-track {
-      background-color: ${(props) => {
+      box-shadow: inset 0.5px 0 0px ${(props) => {
     return props.theme.palette.neutral40;
-  }};
-    border: 1px solid ${(props) => {
-    return props.theme.palette.neutral60;
   }};
     }
     ::-webkit-scrollbar-thumb {
@@ -40,7 +36,22 @@ export const MultiGridWrapper = styled.div`
     border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+    outline: none;
     }
+    ::-webkit-scrollbar-track:horizontal {
+      box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  }
+    ::-webkit-scrollbar-thumb:horizontal{
+      background-color: ${(props) => {
+    return props.theme.palette.neutral80;
+  }};
+    border-radius: 20px;
+  }
     :focus {
       outline: none;
     }
@@ -55,35 +66,60 @@ export const CellWrapper = styled.div`
   align-items: center;
   padding: 0.5em 1em;
   color: ${(props) => {
-    if (props.isHeader) {
-      return props.theme.text.primary;
-    }
     return props.theme.text.primary;
   }};
-  font-weight: ${(props) => {
-    return props.isHeader ? "500" : "400";
+  font-family: ${(props) => {
+    return props.theme.typography.secondary;
   }};
-  font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
+  font-weight: 400;
   border-bottom: ${(props) => {
     return `1px solid ${props.theme.palette.neutral40}`;
   }};
   background-color: ${(props) => {
-    if (props.isHighlighted) {
-      return props.theme.palette.neutral20;
-    }
-    if (props.isSelected) {
-      return props.theme.background.light;
-    }
     return props.theme.background.default;
   }};
-  &:after {
-    content: "↓";
-    position: absolute;
-    right: 10%;
-    display: ${(props) => {
-    return props.isSortable ? "" : "none";
-  }};
-  }
+  /* Table Headers */
+  ${(props) => {
+    return props.isHeader
+      && css`
+      font-family: ${() => { return props.theme.typography.primary; }};
+      background-color: ${() => { return props.headerDark ? props.theme.palette.brand1 : ""; }};
+      color: ${() => { return props.headerDark ? props.theme.text.inverse : props.theme.text.secondary; }};
+      font-size: 0.875rem;
+      font-weight: ${() => { return props.headerDark ? "400" : "600"; }};
+      letter-spacing: 1px;
+    `;
+  }}
+  /* Highlighed Rows */
+  ${(props) => {
+    return props.isHighlighted
+      && css`
+      background-color: ${() => { return props.theme.palette.neutral20; }};
+    `;
+  }}
+  /* Selected Rows */
+  ${(props) => {
+    return props.isSelected
+      && css`
+      background-color: ${() => { return props.theme.background.light; }};
+    `;
+  }}
+  /* TODO: Get Active Sort /  Ascending/Descending sort order working */
+  /* Hovering over a sortable column displays the sort icon */
+  /* &:hover {
+    &:after {
+      ${(props) => {
+    return props.isSortable
+      && css`
+        content: "↑";
+        position: absolute;
+        right: 10%;
+        transform: ${() => { return props.isDescending ? "rotate(-180deg)" : ""; }};
+        transition: all 0.25s ease;
+      `;
+  }}
+    }
+  } */
 `;
 
 function _containedInRowCol(cellRowCol, row, col) {
@@ -174,6 +210,7 @@ class Table extends Component {
   }) {
     const {
       rows,
+      headerDark,
       headers,
       selectedCell,
       highlightedCell,
@@ -191,7 +228,11 @@ class Table extends Component {
     if (rowIndex === 0) {
       // data column header
       cellProps.onClick = (e) => {
-        if (onHeaderClick) onHeaderClick(e, { rowIndex, columnIndex, row });
+        if (onHeaderClick) {
+          onHeaderClick(e, {
+            rowIndex, columnIndex, row,
+          });
+        }
       };
       cellProps.onMouseOver = (e) => {
         if (onHeaderMouseOver) {
@@ -243,6 +284,7 @@ class Table extends Component {
             rowIndex: rowIndex - 1,
             columnIndex: columnIndex,
             row: row,
+            iconContent: "up",
           });
         }
       };
@@ -275,14 +317,14 @@ class Table extends Component {
           parent={parent}
           rowIndex={rowIndex}
         >
-          <CellWrapper style={style} {...cellProps}>
+          <CellWrapper style={style} headerDark={headerDark} {...cellProps}>
             {cellData}
           </CellWrapper>
         </CellMeasurer>
       );
     }
     return (
-      <CellWrapper style={style} {...cellProps}>
+      <CellWrapper style={style} headerDark={headerDark} {...cellProps}>
         {cellData}
       </CellWrapper>
     );
@@ -401,6 +443,7 @@ Table.propTypes = {
     rowIndex: PropTypes.number,
   }),
   headers: PropTypes.arrayOf(PropTypes.shape).isRequired,
+  headerDark: PropTypes.bool,
   listId: PropTypes.string.isRequired,
   loadRows: PropTypes.func,
   minColWidth: PropTypes.number,
@@ -428,6 +471,7 @@ Table.defaultProps = {
   columnWidth: null,
   focusedRow: null,
   highlightedCell: null,
+  headerDark: false,
   loadRows: null,
   minColWidth: 120,
   minRowHeight: 20,

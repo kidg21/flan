@@ -65,12 +65,13 @@ export const colors = {
   grey20: "hsl(240, 11%, 91%)",
   grey30: "hsl(240, 6%, 83%)",
   grey40: "hsl(240, 3%, 69%)",
-  grey50: "hsl(240, 2%, 57%)",
+  grey50: "hsl(240, 5%, 52%)",
   grey60: "hsl(240, 1%, 39%)",
   grey70: "hsl(240, 1%, 29%)",
   grey80: "hsl(240, 2%, 23%)",
   grey90: "hsl(240, 2%, 18%)",
   grey100: "hsl(34, 5%, 12%)", // blackish
+  black: "hsl(0,0%,0%)",
 
   navy: "hsl(207,100%,19.6%)",
   sky: "hsl(197,100%,43.7%)",
@@ -177,6 +178,7 @@ export const DMPTheme = {
     selectedDark: interaction.selectedDark,
     success: colors.green100,
     warning: colors.orange80,
+    neutral: colors.grey20,
   },
   text: {
     alert: colors.red80,
@@ -186,6 +188,8 @@ export const DMPTheme = {
     link: colors.blue80,
     primary: colors.grey80,
     secondary: colors.grey60,
+    light: colors.grey50,
+    dark: colors.black,
     selected: colors.blue80,
     success: colors.green80,
     warning: colors.orange60,
@@ -269,6 +273,7 @@ export const darkTheme = {
     selectedDark: interaction.selecteDark,
     success: colors.green60,
     warning: colors.orange60,
+    neutral: colors.grey60,
   },
   text: {
     alert: colors.red20,
@@ -326,6 +331,10 @@ export const darkTheme = {
     warning100: colors.orange20,
   },
 };
+
+export const textColors = Object.keys(DMPTheme.text);
+export const backgroundColors = Object.keys(DMPTheme.background);
+export const paletteColors = Object.keys(DMPTheme.palette);
 
 export const Darken = css`
   filter: brightness(0.90) saturate(1.25) contrast(1.1);
