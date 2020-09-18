@@ -2746,7 +2746,7 @@ exports[` 2`] = `
                               <div
                                 className="CardWrapper__StyledCardWrapper-meln7c-0 cjtEfV Card__StyledCardWrapper-sc-1g3s676-3"
                                 href={null}
-                                id="storyshots_248"
+                                id="storyshots_252"
                                 media=""
                                 onClick={null}
                                 placeholder="{ Card }"
@@ -3175,862 +3175,6 @@ exports[` 2`] = `
                               <div
                                 className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
                                 href={null}
-                                id="storyshots_249"
-                                media=""
-                                onClick={null}
-                                placeholder="{ Card }"
-                              >
-                                <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                                  id="storyshots_249-Body"
-                                  onClick={null}
-                                >
-                                  <section
-                                    className="Grid__GridWrapper-sc-1ntp7gx-0 cTDntF"
-                                    id={null}
-                                    rows={null}
-                                  >
-                                    <div
-                                      className="Bar__BarLayout-icfo76-2 gFQRVY"
-                                      id={null}
-                                      onClick={null}
-                                    >
-                                      <div
-                                        className="Bar__Slot-icfo76-1 bxLAtn"
-                                      >
-                                        <h6
-                                          className="Typography__TitleText-sc-19auepv-2 hytcMk"
-                                          fontSize="1.2rem"
-                                          fontWeight="400"
-                                          letterSpacing="1px"
-                                        >
-                                          Parcel APN: 93084203492
-                                        </h6>
-                                      </div>
-                                      <div
-                                        className="Bar__Slot-icfo76-1 hrKMOC"
-                                      >
-                                        <a
-                                          className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
-                                          id={null}
-                                          label="View Details"
-                                          onClick={null}
-                                          title="View Details"
-                                        >
-                                          <label
-                                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
-                                            cursor="pointer"
-                                            fontSize="0.875rem"
-                                            fontWeight={400}
-                                            htmlFor={null}
-                                            letterSpacing=".5px"
-                                            onClick={null}
-                                          >
-                                            View Details
-                                          </label>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div
-                                      className="Bar__BarLayout-icfo76-2 cigYlK"
-                                      id={null}
-                                      onClick={null}
-                                    >
-                                      <div
-                                        className="Bar__Slot-icfo76-1 geluxC"
-                                      >
-                                        <section
-                                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                                          id="Group1"
-                                          rows={null}
-                                        >
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 1"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Address
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              42 Wallaby Way, Sydney, Australia
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 1"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Owner
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              Forrest Gump
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 3"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Last Sale
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              10/23/86
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 3"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Doc #
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              837489274927
-                                            </p>
-                                          </section>
-                                        </section>
-                                      </div>
-                                      <div
-                                        className="Bar__Slot-icfo76-1 hrKMOC"
-                                      >
-                                        <button
-                                          className="Button__StyledButton-sc-1v7sls2-0 htaMbr"
-                                          disabled={false}
-                                          htmlFor={null}
-                                          id={null}
-                                          name={null}
-                                          onClick={null}
-                                          tabIndex="1"
-                                          type="button"
-                                        >
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-                                            id={null}
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-                                              cursor="pointer"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Remove
-                                            </label>
-                                          </section>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </section>
-                                </section>
-                              </div>
-                              <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
-                                href={null}
-                                id="storyshots_250"
-                                media=""
-                                onClick={null}
-                                placeholder="{ Card }"
-                              >
-                                <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                                  id="storyshots_250-Body"
-                                  onClick={null}
-                                >
-                                  <section
-                                    className="Grid__GridWrapper-sc-1ntp7gx-0 cTDntF"
-                                    id={null}
-                                    rows={null}
-                                  >
-                                    <div
-                                      className="Bar__BarLayout-icfo76-2 gFQRVY"
-                                      id={null}
-                                      onClick={null}
-                                    >
-                                      <div
-                                        className="Bar__Slot-icfo76-1 bxLAtn"
-                                      >
-                                        <h6
-                                          className="Typography__TitleText-sc-19auepv-2 hytcMk"
-                                          fontSize="1.2rem"
-                                          fontWeight="400"
-                                          letterSpacing="1px"
-                                        >
-                                          Parcel APN: 93084203492
-                                        </h6>
-                                      </div>
-                                      <div
-                                        className="Bar__Slot-icfo76-1 hrKMOC"
-                                      >
-                                        <a
-                                          className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
-                                          id={null}
-                                          label="View Details"
-                                          onClick={null}
-                                          title="View Details"
-                                        >
-                                          <label
-                                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
-                                            cursor="pointer"
-                                            fontSize="0.875rem"
-                                            fontWeight={400}
-                                            htmlFor={null}
-                                            letterSpacing=".5px"
-                                            onClick={null}
-                                          >
-                                            View Details
-                                          </label>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div
-                                      className="Bar__BarLayout-icfo76-2 cigYlK"
-                                      id={null}
-                                      onClick={null}
-                                    >
-                                      <div
-                                        className="Bar__Slot-icfo76-1 geluxC"
-                                      >
-                                        <section
-                                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                                          id="Group1"
-                                          rows={null}
-                                        >
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kpAJjN"
-                                            id="Field 1"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Address
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              42 Wallaby Way, Sydney, Australia
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kpAJjN"
-                                            id="Field 1"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Owner
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              Forrest Gump
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kpAJjN"
-                                            id="Field 3"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Last Sale
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              10/23/86
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kpAJjN"
-                                            id="Field 3"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Doc #
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              837489274927
-                                            </p>
-                                          </section>
-                                        </section>
-                                      </div>
-                                      <div
-                                        className="Bar__Slot-icfo76-1 hrKMOC"
-                                      >
-                                        <button
-                                          className="Button__StyledButton-sc-1v7sls2-0 htaMbr"
-                                          disabled={false}
-                                          htmlFor={null}
-                                          id={null}
-                                          name={null}
-                                          onClick={null}
-                                          tabIndex="1"
-                                          type="button"
-                                        >
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-                                            id={null}
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-                                              cursor="pointer"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Remove
-                                            </label>
-                                          </section>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </section>
-                                </section>
-                              </div>
-                              <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
-                                href={null}
-                                id="storyshots_251"
-                                media=""
-                                onClick={null}
-                                placeholder="{ Card }"
-                              >
-                                <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                                  id="storyshots_251-Body"
-                                  onClick={null}
-                                >
-                                  <section
-                                    className="Grid__GridWrapper-sc-1ntp7gx-0 cTDntF"
-                                    id={null}
-                                    rows={null}
-                                  >
-                                    <div
-                                      className="Bar__BarLayout-icfo76-2 gFQRVY"
-                                      id={null}
-                                      onClick={null}
-                                    >
-                                      <div
-                                        className="Bar__Slot-icfo76-1 bxLAtn"
-                                      >
-                                        <h6
-                                          className="Typography__TitleText-sc-19auepv-2 hytcMk"
-                                          fontSize="1.2rem"
-                                          fontWeight="400"
-                                          letterSpacing="1px"
-                                        >
-                                          Parcel APN: 93084203492
-                                        </h6>
-                                      </div>
-                                      <div
-                                        className="Bar__Slot-icfo76-1 hrKMOC"
-                                      >
-                                        <a
-                                          className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
-                                          id={null}
-                                          label="View Details"
-                                          onClick={null}
-                                          title="View Details"
-                                        >
-                                          <label
-                                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
-                                            cursor="pointer"
-                                            fontSize="0.875rem"
-                                            fontWeight={400}
-                                            htmlFor={null}
-                                            letterSpacing=".5px"
-                                            onClick={null}
-                                          >
-                                            View Details
-                                          </label>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div
-                                      className="Bar__BarLayout-icfo76-2 cigYlK"
-                                      id={null}
-                                      onClick={null}
-                                    >
-                                      <div
-                                        className="Bar__Slot-icfo76-1 geluxC"
-                                      >
-                                        <section
-                                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                                          id="Group1"
-                                          rows={null}
-                                        >
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 1"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Address
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              42 Wallaby Way, Sydney, Australia
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 1"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Owner
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              Forrest Gump
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 3"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Last Sale
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              10/23/86
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 3"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Doc #
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              837489274927
-                                            </p>
-                                          </section>
-                                        </section>
-                                      </div>
-                                      <div
-                                        className="Bar__Slot-icfo76-1 hrKMOC"
-                                      >
-                                        <button
-                                          className="Button__StyledButton-sc-1v7sls2-0 htaMbr"
-                                          disabled={false}
-                                          htmlFor={null}
-                                          id={null}
-                                          name={null}
-                                          onClick={null}
-                                          tabIndex="1"
-                                          type="button"
-                                        >
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-                                            id={null}
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-                                              cursor="pointer"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Remove
-                                            </label>
-                                          </section>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </section>
-                                </section>
-                              </div>
-                              <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
-                                href={null}
-                                id="storyshots_252"
-                                media=""
-                                onClick={null}
-                                placeholder="{ Card }"
-                              >
-                                <section
-                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                                  id="storyshots_252-Body"
-                                  onClick={null}
-                                >
-                                  <section
-                                    className="Grid__GridWrapper-sc-1ntp7gx-0 cTDntF"
-                                    id={null}
-                                    rows={null}
-                                  >
-                                    <div
-                                      className="Bar__BarLayout-icfo76-2 gFQRVY"
-                                      id={null}
-                                      onClick={null}
-                                    >
-                                      <div
-                                        className="Bar__Slot-icfo76-1 bxLAtn"
-                                      >
-                                        <h6
-                                          className="Typography__TitleText-sc-19auepv-2 hytcMk"
-                                          fontSize="1.2rem"
-                                          fontWeight="400"
-                                          letterSpacing="1px"
-                                        >
-                                          Parcel APN: 93084203492
-                                        </h6>
-                                      </div>
-                                      <div
-                                        className="Bar__Slot-icfo76-1 hrKMOC"
-                                      >
-                                        <a
-                                          className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
-                                          id={null}
-                                          label="View Details"
-                                          onClick={null}
-                                          title="View Details"
-                                        >
-                                          <label
-                                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
-                                            cursor="pointer"
-                                            fontSize="0.875rem"
-                                            fontWeight={400}
-                                            htmlFor={null}
-                                            letterSpacing=".5px"
-                                            onClick={null}
-                                          >
-                                            View Details
-                                          </label>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div
-                                      className="Bar__BarLayout-icfo76-2 cigYlK"
-                                      id={null}
-                                      onClick={null}
-                                    >
-                                      <div
-                                        className="Bar__Slot-icfo76-1 geluxC"
-                                      >
-                                        <section
-                                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                                          id="Group1"
-                                          rows={null}
-                                        >
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 1"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Address
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              42 Wallaby Way, Sydney, Australia
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 1"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Owner
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              Forrest Gump
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 3"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Last Sale
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              10/23/86
-                                            </p>
-                                          </section>
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
-                                            id="Field 3"
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                                              cursor="pointer"
-                                              fontSize="0.875rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Doc #
-                                            </label>
-                                            <p
-                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              id={null}
-                                              letterSpacing="0.5px"
-                                            >
-                                              837489274927
-                                            </p>
-                                          </section>
-                                        </section>
-                                      </div>
-                                      <div
-                                        className="Bar__Slot-icfo76-1 hrKMOC"
-                                      >
-                                        <button
-                                          className="Button__StyledButton-sc-1v7sls2-0 htaMbr"
-                                          disabled={false}
-                                          htmlFor={null}
-                                          id={null}
-                                          name={null}
-                                          onClick={null}
-                                          tabIndex="1"
-                                          type="button"
-                                        >
-                                          <section
-                                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-                                            id={null}
-                                            rows={null}
-                                          >
-                                            <label
-                                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-                                              cursor="pointer"
-                                              fontSize="1rem"
-                                              fontWeight={400}
-                                              htmlFor={null}
-                                              letterSpacing=".5px"
-                                              onClick={null}
-                                            >
-                                              Remove
-                                            </label>
-                                          </section>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </section>
-                                </section>
-                              </div>
-                              <div
-                                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
-                                href={null}
                                 id="storyshots_253"
                                 media=""
                                 onClick={null}
@@ -4315,6 +3459,220 @@ exports[` 2`] = `
                                           rows={null}
                                         >
                                           <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kpAJjN"
+                                            id="Field 1"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Address
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              42 Wallaby Way, Sydney, Australia
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kpAJjN"
+                                            id="Field 1"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Owner
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              Forrest Gump
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kpAJjN"
+                                            id="Field 3"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Last Sale
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              10/23/86
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 kpAJjN"
+                                            id="Field 3"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Doc #
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              837489274927
+                                            </p>
+                                          </section>
+                                        </section>
+                                      </div>
+                                      <div
+                                        className="Bar__Slot-icfo76-1 hrKMOC"
+                                      >
+                                        <button
+                                          className="Button__StyledButton-sc-1v7sls2-0 htaMbr"
+                                          disabled={false}
+                                          htmlFor={null}
+                                          id={null}
+                                          name={null}
+                                          onClick={null}
+                                          tabIndex="1"
+                                          type="button"
+                                        >
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                                            id={null}
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                              cursor="pointer"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Remove
+                                            </label>
+                                          </section>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </section>
+                                </section>
+                              </div>
+                              <div
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                                href={null}
+                                id="storyshots_255"
+                                media=""
+                                onClick={null}
+                                placeholder="{ Card }"
+                              >
+                                <section
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+                                  id="storyshots_255-Body"
+                                  onClick={null}
+                                >
+                                  <section
+                                    className="Grid__GridWrapper-sc-1ntp7gx-0 cTDntF"
+                                    id={null}
+                                    rows={null}
+                                  >
+                                    <div
+                                      className="Bar__BarLayout-icfo76-2 gFQRVY"
+                                      id={null}
+                                      onClick={null}
+                                    >
+                                      <div
+                                        className="Bar__Slot-icfo76-1 bxLAtn"
+                                      >
+                                        <h6
+                                          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+                                          fontSize="1.2rem"
+                                          fontWeight="400"
+                                          letterSpacing="1px"
+                                        >
+                                          Parcel APN: 93084203492
+                                        </h6>
+                                      </div>
+                                      <div
+                                        className="Bar__Slot-icfo76-1 hrKMOC"
+                                      >
+                                        <a
+                                          className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+                                          id={null}
+                                          label="View Details"
+                                          onClick={null}
+                                          title="View Details"
+                                        >
+                                          <label
+                                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                                            cursor="pointer"
+                                            fontSize="0.875rem"
+                                            fontWeight={400}
+                                            htmlFor={null}
+                                            letterSpacing=".5px"
+                                            onClick={null}
+                                          >
+                                            View Details
+                                          </label>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div
+                                      className="Bar__BarLayout-icfo76-2 cigYlK"
+                                      id={null}
+                                      onClick={null}
+                                    >
+                                      <div
+                                        className="Bar__Slot-icfo76-1 geluxC"
+                                      >
+                                        <section
+                                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                                          id="Group1"
+                                          rows={null}
+                                        >
+                                          <section
                                             className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
                                             id="Field 1"
                                             rows={null}
@@ -4459,14 +3817,656 @@ exports[` 2`] = `
                               <div
                                 className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
                                 href={null}
-                                id="storyshots_255"
+                                id="storyshots_256"
                                 media=""
                                 onClick={null}
                                 placeholder="{ Card }"
                               >
                                 <section
                                   className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                                  id="storyshots_255-Body"
+                                  id="storyshots_256-Body"
+                                  onClick={null}
+                                >
+                                  <section
+                                    className="Grid__GridWrapper-sc-1ntp7gx-0 cTDntF"
+                                    id={null}
+                                    rows={null}
+                                  >
+                                    <div
+                                      className="Bar__BarLayout-icfo76-2 gFQRVY"
+                                      id={null}
+                                      onClick={null}
+                                    >
+                                      <div
+                                        className="Bar__Slot-icfo76-1 bxLAtn"
+                                      >
+                                        <h6
+                                          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+                                          fontSize="1.2rem"
+                                          fontWeight="400"
+                                          letterSpacing="1px"
+                                        >
+                                          Parcel APN: 93084203492
+                                        </h6>
+                                      </div>
+                                      <div
+                                        className="Bar__Slot-icfo76-1 hrKMOC"
+                                      >
+                                        <a
+                                          className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+                                          id={null}
+                                          label="View Details"
+                                          onClick={null}
+                                          title="View Details"
+                                        >
+                                          <label
+                                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                                            cursor="pointer"
+                                            fontSize="0.875rem"
+                                            fontWeight={400}
+                                            htmlFor={null}
+                                            letterSpacing=".5px"
+                                            onClick={null}
+                                          >
+                                            View Details
+                                          </label>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div
+                                      className="Bar__BarLayout-icfo76-2 cigYlK"
+                                      id={null}
+                                      onClick={null}
+                                    >
+                                      <div
+                                        className="Bar__Slot-icfo76-1 geluxC"
+                                      >
+                                        <section
+                                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                                          id="Group1"
+                                          rows={null}
+                                        >
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 1"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Address
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              42 Wallaby Way, Sydney, Australia
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 1"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Owner
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              Forrest Gump
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 3"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Last Sale
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              10/23/86
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 3"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Doc #
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              837489274927
+                                            </p>
+                                          </section>
+                                        </section>
+                                      </div>
+                                      <div
+                                        className="Bar__Slot-icfo76-1 hrKMOC"
+                                      >
+                                        <button
+                                          className="Button__StyledButton-sc-1v7sls2-0 htaMbr"
+                                          disabled={false}
+                                          htmlFor={null}
+                                          id={null}
+                                          name={null}
+                                          onClick={null}
+                                          tabIndex="1"
+                                          type="button"
+                                        >
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                                            id={null}
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                              cursor="pointer"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Remove
+                                            </label>
+                                          </section>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </section>
+                                </section>
+                              </div>
+                              <div
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                                href={null}
+                                id="storyshots_257"
+                                media=""
+                                onClick={null}
+                                placeholder="{ Card }"
+                              >
+                                <section
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+                                  id="storyshots_257-Body"
+                                  onClick={null}
+                                >
+                                  <section
+                                    className="Grid__GridWrapper-sc-1ntp7gx-0 cTDntF"
+                                    id={null}
+                                    rows={null}
+                                  >
+                                    <div
+                                      className="Bar__BarLayout-icfo76-2 gFQRVY"
+                                      id={null}
+                                      onClick={null}
+                                    >
+                                      <div
+                                        className="Bar__Slot-icfo76-1 bxLAtn"
+                                      >
+                                        <h6
+                                          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+                                          fontSize="1.2rem"
+                                          fontWeight="400"
+                                          letterSpacing="1px"
+                                        >
+                                          Parcel APN: 93084203492
+                                        </h6>
+                                      </div>
+                                      <div
+                                        className="Bar__Slot-icfo76-1 hrKMOC"
+                                      >
+                                        <a
+                                          className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+                                          id={null}
+                                          label="View Details"
+                                          onClick={null}
+                                          title="View Details"
+                                        >
+                                          <label
+                                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                                            cursor="pointer"
+                                            fontSize="0.875rem"
+                                            fontWeight={400}
+                                            htmlFor={null}
+                                            letterSpacing=".5px"
+                                            onClick={null}
+                                          >
+                                            View Details
+                                          </label>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div
+                                      className="Bar__BarLayout-icfo76-2 cigYlK"
+                                      id={null}
+                                      onClick={null}
+                                    >
+                                      <div
+                                        className="Bar__Slot-icfo76-1 geluxC"
+                                      >
+                                        <section
+                                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                                          id="Group1"
+                                          rows={null}
+                                        >
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 1"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Address
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              42 Wallaby Way, Sydney, Australia
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 1"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Owner
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              Forrest Gump
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 3"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Last Sale
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              10/23/86
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 3"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Doc #
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              837489274927
+                                            </p>
+                                          </section>
+                                        </section>
+                                      </div>
+                                      <div
+                                        className="Bar__Slot-icfo76-1 hrKMOC"
+                                      >
+                                        <button
+                                          className="Button__StyledButton-sc-1v7sls2-0 htaMbr"
+                                          disabled={false}
+                                          htmlFor={null}
+                                          id={null}
+                                          name={null}
+                                          onClick={null}
+                                          tabIndex="1"
+                                          type="button"
+                                        >
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                                            id={null}
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                              cursor="pointer"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Remove
+                                            </label>
+                                          </section>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </section>
+                                </section>
+                              </div>
+                              <div
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                                href={null}
+                                id="storyshots_258"
+                                media=""
+                                onClick={null}
+                                placeholder="{ Card }"
+                              >
+                                <section
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+                                  id="storyshots_258-Body"
+                                  onClick={null}
+                                >
+                                  <section
+                                    className="Grid__GridWrapper-sc-1ntp7gx-0 cTDntF"
+                                    id={null}
+                                    rows={null}
+                                  >
+                                    <div
+                                      className="Bar__BarLayout-icfo76-2 gFQRVY"
+                                      id={null}
+                                      onClick={null}
+                                    >
+                                      <div
+                                        className="Bar__Slot-icfo76-1 bxLAtn"
+                                      >
+                                        <h6
+                                          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+                                          fontSize="1.2rem"
+                                          fontWeight="400"
+                                          letterSpacing="1px"
+                                        >
+                                          Parcel APN: 93084203492
+                                        </h6>
+                                      </div>
+                                      <div
+                                        className="Bar__Slot-icfo76-1 hrKMOC"
+                                      >
+                                        <a
+                                          className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+                                          id={null}
+                                          label="View Details"
+                                          onClick={null}
+                                          title="View Details"
+                                        >
+                                          <label
+                                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                                            cursor="pointer"
+                                            fontSize="0.875rem"
+                                            fontWeight={400}
+                                            htmlFor={null}
+                                            letterSpacing=".5px"
+                                            onClick={null}
+                                          >
+                                            View Details
+                                          </label>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div
+                                      className="Bar__BarLayout-icfo76-2 cigYlK"
+                                      id={null}
+                                      onClick={null}
+                                    >
+                                      <div
+                                        className="Bar__Slot-icfo76-1 geluxC"
+                                      >
+                                        <section
+                                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                                          id="Group1"
+                                          rows={null}
+                                        >
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 1"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Address
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              42 Wallaby Way, Sydney, Australia
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 1"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Owner
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              Forrest Gump
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 3"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Last Sale
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              10/23/86
+                                            </p>
+                                          </section>
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 cZnqkz"
+                                            id="Field 3"
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                                              cursor="pointer"
+                                              fontSize="0.875rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Doc #
+                                            </label>
+                                            <p
+                                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              id={null}
+                                              letterSpacing="0.5px"
+                                            >
+                                              837489274927
+                                            </p>
+                                          </section>
+                                        </section>
+                                      </div>
+                                      <div
+                                        className="Bar__Slot-icfo76-1 hrKMOC"
+                                      >
+                                        <button
+                                          className="Button__StyledButton-sc-1v7sls2-0 htaMbr"
+                                          disabled={false}
+                                          htmlFor={null}
+                                          id={null}
+                                          name={null}
+                                          onClick={null}
+                                          tabIndex="1"
+                                          type="button"
+                                        >
+                                          <section
+                                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                                            id={null}
+                                            rows={null}
+                                          >
+                                            <label
+                                              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                              cursor="pointer"
+                                              fontSize="1rem"
+                                              fontWeight={400}
+                                              htmlFor={null}
+                                              letterSpacing=".5px"
+                                              onClick={null}
+                                            >
+                                              Remove
+                                            </label>
+                                          </section>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </section>
+                                </section>
+                              </div>
+                              <div
+                                className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                                href={null}
+                                id="storyshots_259"
+                                media=""
+                                onClick={null}
+                                placeholder="{ Card }"
+                              >
+                                <section
+                                  className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+                                  id="storyshots_259-Body"
                                   onClick={null}
                                 >
                                   <section
@@ -5987,7 +5987,7 @@ exports[` 3`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_256_container"
+                                id="storyshots_260_container"
                                 rows={null}
                               >
                                 <section
@@ -6010,9 +6010,9 @@ exports[` 3`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_256"
+                                  id="storyshots_260"
                                   list={null}
-                                  name="storyshots_256"
+                                  name="storyshots_260"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -6027,7 +6027,7 @@ exports[` 3`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_257_container"
+                                id="storyshots_261_container"
                                 rows={null}
                               >
                                 <section
@@ -6050,9 +6050,9 @@ exports[` 3`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_257"
+                                  id="storyshots_261"
                                   list={null}
-                                  name="storyshots_257"
+                                  name="storyshots_261"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -6067,7 +6067,7 @@ exports[` 3`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_258_container"
+                                id="storyshots_262_container"
                                 rows={null}
                               >
                                 <section
@@ -6090,9 +6090,9 @@ exports[` 3`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_258"
+                                  id="storyshots_262"
                                   list={null}
-                                  name="storyshots_258"
+                                  name="storyshots_262"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -6107,7 +6107,7 @@ exports[` 3`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_259_container"
+                                id="storyshots_263_container"
                                 rows={null}
                               >
                                 <section
@@ -6130,9 +6130,9 @@ exports[` 3`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_259"
+                                  id="storyshots_263"
                                   list={null}
-                                  name="storyshots_259"
+                                  name="storyshots_263"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -6146,7 +6146,7 @@ exports[` 3`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_260_container"
+                                id="storyshots_264_container"
                                 rows={null}
                               >
                                 <section
@@ -6169,9 +6169,9 @@ exports[` 3`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_260"
+                                  id="storyshots_264"
                                   list={null}
-                                  name="storyshots_260"
+                                  name="storyshots_264"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -6186,7 +6186,7 @@ exports[` 3`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_261_container"
+                                id="storyshots_265_container"
                                 rows={null}
                               >
                                 <section
@@ -6209,9 +6209,9 @@ exports[` 3`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_261"
+                                  id="storyshots_265"
                                   list={null}
-                                  name="storyshots_261"
+                                  name="storyshots_265"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -8033,7 +8033,7 @@ exports[` 4`] = `
                               <div
                                 className="CardWrapper__StyledCardWrapper-meln7c-0 cjtEfV Card__StyledCardWrapper-sc-1g3s676-3"
                                 href={null}
-                                id="storyshots_262"
+                                id="storyshots_266"
                                 media=""
                                 onClick={null}
                                 placeholder="{ Card }"
@@ -8562,7 +8562,7 @@ exports[` 4`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_263_container"
+                                id="storyshots_267_container"
                                 rows={null}
                               >
                                 <section
@@ -8585,9 +8585,9 @@ exports[` 4`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_263"
+                                  id="storyshots_267"
                                   list={null}
-                                  name="storyshots_263"
+                                  name="storyshots_267"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -8602,7 +8602,7 @@ exports[` 4`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_264_container"
+                                id="storyshots_268_container"
                                 rows={null}
                               >
                                 <section
@@ -8625,9 +8625,9 @@ exports[` 4`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_264"
+                                  id="storyshots_268"
                                   list={null}
-                                  name="storyshots_264"
+                                  name="storyshots_268"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -8642,7 +8642,7 @@ exports[` 4`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_265_container"
+                                id="storyshots_269_container"
                                 rows={null}
                               >
                                 <section
@@ -8665,9 +8665,9 @@ exports[` 4`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_265"
+                                  id="storyshots_269"
                                   list={null}
-                                  name="storyshots_265"
+                                  name="storyshots_269"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -8682,7 +8682,7 @@ exports[` 4`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_266_container"
+                                id="storyshots_270_container"
                                 rows={null}
                               >
                                 <section
@@ -8705,9 +8705,9 @@ exports[` 4`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_266"
+                                  id="storyshots_270"
                                   list={null}
-                                  name="storyshots_266"
+                                  name="storyshots_270"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -8722,7 +8722,7 @@ exports[` 4`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_267_container"
+                                id="storyshots_271_container"
                                 rows={null}
                               >
                                 <section
@@ -8745,9 +8745,9 @@ exports[` 4`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_267"
+                                  id="storyshots_271"
                                   list={null}
-                                  name="storyshots_267"
+                                  name="storyshots_271"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -8762,7 +8762,7 @@ exports[` 4`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_268_container"
+                                id="storyshots_272_container"
                                 rows={null}
                               >
                                 <section
@@ -8785,9 +8785,9 @@ exports[` 4`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_268"
+                                  id="storyshots_272"
                                   list={null}
-                                  name="storyshots_268"
+                                  name="storyshots_272"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -10356,7 +10356,7 @@ exports[` 5`] = `
                               <div
                                 className="CardWrapper__StyledCardWrapper-meln7c-0 cjtEfV Card__StyledCardWrapper-sc-1g3s676-3"
                                 href={null}
-                                id="storyshots_269"
+                                id="storyshots_273"
                                 media=""
                                 onClick={null}
                                 placeholder="{ Card }"
@@ -10826,7 +10826,7 @@ exports[` 5`] = `
                             >
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_270_container"
+                                id="storyshots_274_container"
                                 rows={null}
                               >
                                 <section
@@ -10849,9 +10849,9 @@ exports[` 5`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_270"
+                                  id="storyshots_274"
                                   list={null}
-                                  name="storyshots_270"
+                                  name="storyshots_274"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -10866,7 +10866,7 @@ exports[` 5`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_271_container"
+                                id="storyshots_275_container"
                                 rows={null}
                               >
                                 <section
@@ -10889,9 +10889,9 @@ exports[` 5`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_271"
+                                  id="storyshots_275"
                                   list={null}
-                                  name="storyshots_271"
+                                  name="storyshots_275"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -10906,7 +10906,7 @@ exports[` 5`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_272_container"
+                                id="storyshots_276_container"
                                 rows={null}
                               >
                                 <section
@@ -10929,9 +10929,9 @@ exports[` 5`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_272"
+                                  id="storyshots_276"
                                   list={null}
-                                  name="storyshots_272"
+                                  name="storyshots_276"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -10946,7 +10946,7 @@ exports[` 5`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_273_container"
+                                id="storyshots_277_container"
                                 rows={null}
                               >
                                 <section
@@ -10969,9 +10969,9 @@ exports[` 5`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_273"
+                                  id="storyshots_277"
                                   list={null}
-                                  name="storyshots_273"
+                                  name="storyshots_277"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -10986,7 +10986,7 @@ exports[` 5`] = `
                               </section>
                               <section
                                 className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
-                                id="storyshots_274_container"
+                                id="storyshots_278_container"
                                 rows={null}
                               >
                                 <section
@@ -11009,9 +11009,9 @@ exports[` 5`] = `
                                   className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                                   cols=""
                                   disabled={false}
-                                  id="storyshots_274"
+                                  id="storyshots_278"
                                   list={null}
-                                  name="storyshots_274"
+                                  name="storyshots_278"
                                   onBlur={null}
                                   onChange={[Function]}
                                   onFocus={null}
@@ -12584,7 +12584,7 @@ exports[` 6`] = `
                               <div
                                 className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
                                 href={null}
-                                id="storyshots_275"
+                                id="storyshots_279"
                                 media=""
                                 onClick={null}
                                 placeholder="{ Card }"
