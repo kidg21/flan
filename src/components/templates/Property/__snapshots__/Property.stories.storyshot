@@ -2070,7 +2070,7 @@ exports[` 2`] = `
             <div
               className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
               href={null}
-              id="storyshots_122"
+              id="storyshots_126"
               media=""
               onClick={null}
               placeholder="{ Card }"
@@ -2103,7 +2103,7 @@ exports[` 2`] = `
                   >
                     <div
                       className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-                      id="menu-popper-storyshots_123"
+                      id="menu-popper-storyshots_127"
                     >
                       <a
                         className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -2151,7 +2151,7 @@ exports[` 2`] = `
                   >
                     <form
                       className="Search__SearchContainer-sey9om-0 dSHoSU"
-                      id="storyshots_124"
+                      id="storyshots_128"
                       onSubmit={[Function]}
                     >
                       <div
@@ -2165,8 +2165,8 @@ exports[` 2`] = `
                           className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
                           disabled={false}
                           htmlFor={null}
-                          id="storyshots_124-search-button"
-                          name="storyshots_124-search-button"
+                          id="storyshots_128-search-button"
+                          name="storyshots_128-search-button"
                           onClick={[Function]}
                           tabIndex="1"
                           type="button"
@@ -2200,7 +2200,7 @@ exports[` 2`] = `
                         </button>
                         <section
                           className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
-                          id="storyshots_124-search-bar_container"
+                          id="storyshots_128-search-bar_container"
                           rows={null}
                         >
                           <input
@@ -2208,9 +2208,9 @@ exports[` 2`] = `
                             className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                             cols=""
                             disabled={null}
-                            id="storyshots_124-search-bar"
+                            id="storyshots_128-search-bar"
                             list={null}
-                            name="storyshots_124-search-bar"
+                            name="storyshots_128-search-bar"
                             onBlur={null}
                             onChange={[Function]}
                             onFocus={null}
@@ -2658,7 +2658,7 @@ exports[` 2`] = `
                 <div
                   className="CardWrapper__StyledCardWrapper-meln7c-0 hEGFso Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
-                  id="storyshots_126"
+                  id="storyshots_130"
                   media=""
                   onClick={null}
                   placeholder="{ Card }"
@@ -2982,7 +2982,7 @@ exports[` 2`] = `
                     <div
                       className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
-                      id="storyshots_128"
+                      id="storyshots_132"
                       media=""
                       onClick={null}
                       placeholder="{ Card }"
@@ -3481,7 +3481,7 @@ exports[` 2`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_129"
+          id="storyshots_133"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -3561,7 +3561,7 @@ exports[` 2`] = `
                 >
                   <div
                     className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-                    id="menu-popper-storyshots_130"
+                    id="menu-popper-storyshots_134"
                   >
                     <a
                       className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -3659,7 +3659,7 @@ exports[` 2`] = `
           </section>
         </div>
         <div
-          className="Table__MultiGridWrapper-gz0dbt-0 eoEiJV"
+          className="Table__MultiGridWrapper-gz0dbt-0 fpaJlf"
         >
           <div
             style={
@@ -3727,7 +3727,7 @@ exports[` 2`] = `
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 kcmASd"
+                      className="Table__CellWrapper-gz0dbt-1 gqOtxk"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3769,7 +3769,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 kcmASd"
+                      className="Table__CellWrapper-gz0dbt-1 gqOtxk"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
