@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hWqXXp Card__CardGridWrapper-sc-1g3s676-4 bPlAcy"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hWqXXp Card__CardGridWrapper-sc-1g3s676-4 dqEhpN"
   id={null}
   rows={null}
 >
@@ -210,7 +210,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 coOukz"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 hOvZsk"
   id={null}
   rows={null}
 >
@@ -789,7 +789,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 coOukz"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 hOvZsk"
   id={null}
   rows={null}
 >
@@ -842,11 +842,11 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-              fontSize="1rem"
+              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              fontSize="0.875rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.5px"
+              letterSpacing="0.25px"
             >
               Card Description
             </p>
@@ -1074,11 +1074,11 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-              fontSize="1rem"
+              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              fontSize="0.875rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.5px"
+              letterSpacing="0.25px"
             >
               Card Description
             </p>
@@ -1308,11 +1308,11 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-              fontSize="1rem"
+              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              fontSize="0.875rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.5px"
+              letterSpacing="0.25px"
             >
               Card Description
             </p>
@@ -1540,11 +1540,11 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-              fontSize="1rem"
+              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              fontSize="0.875rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.5px"
+              letterSpacing="0.25px"
             >
               Card Description
             </p>
@@ -1773,11 +1773,11 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-              fontSize="1rem"
+              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              fontSize="0.875rem"
               fontWeight={400}
               id={null}
-              letterSpacing="0.5px"
+              letterSpacing="0.25px"
             >
               Card Description
             </p>

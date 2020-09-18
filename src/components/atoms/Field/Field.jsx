@@ -119,7 +119,7 @@ function Field({
 
   switch (_size) {
     case "sm":
-      fieldSize = ".8rem";
+      fieldSize = "0.875rem";
       break;
     case "lg":
       fieldSize = "1.2rem";

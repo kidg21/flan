@@ -175,7 +175,7 @@ const templateHash = {
       "\". . .\"",
       "\"B B B\"",
     ].join("\n"),
-    setColumns: "1fr 5fr 2fr",
+    setColumns: "auto 5fr 2fr",
     setRows: "auto 1fr auto",
   },
   C_01: {
