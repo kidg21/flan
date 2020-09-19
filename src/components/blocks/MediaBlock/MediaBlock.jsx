@@ -8,25 +8,22 @@ import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
 
 const Block = styled(Grid)`
-  grid-template-columns: ${(props) => {
-    return props.gridColumns || `1fr minmax(0, ${props.mediaHeight || "6rem"})`;
-  }};
-  grid-template-rows: ${(props) => {
-    return props.gridRows || "";
-  }};
+  grid-template-columns: ${(props) => { return props.gridColumns; }};
   grid-template-areas: ${(props) => {
     return props.gridTemplate
       || "'body media'";
   }};
-  grid-gap: ${(props) => {
-    return props.gridGap || "1rem";
-  }};
+  grid-gap: ${(props) => { return props.gridGap || "1.25rem"; }};
   align-items: ${(props) => {
     return props.alignItems || "";
   }};
   padding: ${(props) => {
     return props.blockPadding || "";
   }};
+`;
+
+const MediaTitle = styled(Title)`
+  line-height: 1;
 `;
 
 const MediaElement = styled(Media)`
@@ -52,11 +49,13 @@ const MediaThumb = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 100%;
-  border: ${(props) => {
-    return `1px solid ${props.theme.palette.neutral60}`;
+  width: ${(props) => {
+    return props.mediaSize;
   }};
+  height: ${(props) => {
+    return props.mediaSize;
+  }};
+  border: ${(props) => { return `1px solid ${props.theme.palette.neutral60}`; }};
   border-radius: ${(props) => {
     return props.mediaRound ? "50%" : "0.25rem";
   }};
@@ -65,8 +64,7 @@ const MediaThumb = styled.section`
 const Body = styled(Grid)`
   grid-area: body;
   padding: ${(props) => {
-    return props.padding || "";
-    /* return props.padding || "0 0 0 0.5rem"; */
+  return props.bodyPadding || "";
   }};
   overflow: hidden;
   display: ${(props) => {
@@ -111,24 +109,23 @@ function MediaBlock({
 }) {
   let alignItems;
   let blockPadding;
+  let bodyPadding;
   let borderRadius;
   let displayInline;
   let gridColumns;
   let gridGap;
-  let gridRows;
   let gridTemplate;
   let justify;
   let mediaSection;
-  let padding;
+  const mediaSize = "6rem";
 
   if (media) {
     if (mediaReverse) {
       gridTemplate = "'media body'";
-      gridColumns = "minmax(0,6rem) 1fr";
+      gridColumns = `minmax(0, ${mediaSize}) 1fr`;
     } else {
-      gridColumns = "1fr minmax(0,6rem)";
+      gridColumns = `1fr minmax(0, ${mediaSize})`;
     }
-    gridRows = "minmax(6rem,0)";
     if (mediaSquare || mediaRound) {
       mediaSection = (
         <MediaThumb
@@ -136,6 +133,7 @@ function MediaBlock({
           justify={justify}
           media={media}
           mediaRound={mediaRound}
+          mediaSize={mediaSize}
           title={title}
         />
       );
@@ -151,7 +149,7 @@ function MediaBlock({
   } else {
     gridTemplate = "'body'";
     gridColumns = "1fr";
-    padding = "0";
+    bodyPadding = "0";
   }
 
   return (
@@ -161,26 +159,26 @@ function MediaBlock({
       className={className}
       gridColumns={gridColumns}
       gridGap={gridGap}
-      gridRows={gridRows}
       gridTemplate={gridTemplate}
       id={id}
       mediaRound={mediaRound}
+      mediaSize={mediaSize}
       mediaSquare={mediaSquare}
       onClick={onClick}
     >
-      {media ? mediaSection : null}
       <Body
+        bodyPadding={bodyPadding}
         columns="1"
-        gap=""
-        padding={padding}
         displayInline={displayInline}
+        gap=""
       >
         <Grid columns="1" gap="xs">
-          {title ? <Title text={title} size="lg" weight="bold" /> : null}
+          {title ? <MediaTitle text={title} size="lg" weight="bold" /> : null}
           {description ? (<Text text={description} />
           ) : null}
         </Grid>
       </Body>
+      {media ? mediaSection : null}
     </Block>
   );
 }
@@ -190,12 +188,12 @@ MediaBlock.propTypes = {
   className: PropTypes.string,
   description: PropTypes.string,
   id: PropTypes.string,
-  mediaReverse: PropTypes.bool,
   /** Used to define the content in the 'media' section */
   media: PropTypes.node,
+  /** Used to 'flip' the Media and Body elements along the x-axis */
+  mediaReverse: PropTypes.bool,
   mediaRound: PropTypes.bool,
   mediaSquare: PropTypes.bool,
-  /** Used to 'flip' the Media and Body elements along the x-axis */
   onClick: PropTypes.func,
   title: PropTypes.string,
 };
@@ -204,8 +202,8 @@ MediaBlock.defaultProps = {
   className: null,
   description: null,
   id: null,
-  mediaReverse: false,
   media: null,
+  mediaReverse: false,
   mediaRound: false,
   mediaSquare: false,
   onClick: null,

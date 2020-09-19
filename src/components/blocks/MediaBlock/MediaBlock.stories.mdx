@@ -14,6 +14,11 @@ import Logo from "images/LightBoxLogo.png";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import ModernExterior2 from "images/residential/modern exterior 2.jpg";
 import ModernExterior3 from "images/residential/modern exterior 3.jpg";
+import Backyard from "images/residential/backyard.jpg";
+import ModernBathroom from "images/residential/modern bathroom.jpg";
+import ModernBedroom from "images/residential/modern bedroom.jpg";
+import OutdoorDeck from "images/residential/outdoor deck.jpg";
+import OutdoorPassthrough from "images/residential/outdoor-passthrough.jpg";
 
 <Meta title="Atoms|Media/Media Block" component={MediaBlock} />
 
@@ -38,6 +43,36 @@ import ModernExterior3 from "images/residential/modern exterior 3.jpg";
 The MediaBlock component is a set of expandable panels for showing and hiding content from the user to make the UI less crowded. The component works well on both mobile and desktop environment and it supports keyboard and screen readers too. The component supports Lumo and Material themes.
 
 # Examples
+
+### Default
+
+<Preview withToolbar>
+  <Story name="Default">
+    <CardGrid>
+      <Card padding="4x">
+        <MediaBlock
+          media={ModernExterior1}
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={OutdoorPassthrough}
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={ModernExterior2}
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+    </CardGrid>
+  </Story>
+</Preview>
 
 ### Types
 
