@@ -96,6 +96,7 @@ function Radio({
   name,
   onBlur,
   onChange,
+  onLabelClick,
   onFocus,
   value,
 }) {
@@ -154,7 +155,13 @@ function Radio({
         tabIndex={tabIndex}
         value={value}
       />
-      {label ? <Label htmlFor={id} text={label} /> : null}
+      {label ? (
+        <Label
+          htmlFor={id}
+          text={label}
+          onClick={onLabelClick}
+        />
+      ) : null}
     </RadioContainer>
   );
 }
@@ -228,6 +235,7 @@ Radio.propTypes = {
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  onLabelClick: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
   value: PropTypes.string,
@@ -245,6 +253,7 @@ Radio.defaultProps = {
   onChange: null,
   onFocus: null,
   value: undefined,
+  onLabelClick: null,
 };
 
 RadioGroup.propTypes = {
