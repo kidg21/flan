@@ -319,9 +319,9 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
-              fontSize="0.8rem"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
@@ -453,9 +453,9 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
-              fontSize="0.8rem"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
@@ -587,9 +587,9 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
-              fontSize="0.8rem"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
@@ -2150,7 +2150,7 @@ exports[` 2`] = `
                     className="Bar__Slot-icfo76-1 dIezKj"
                   >
                     <form
-                      className="Search__SearchContainer-sey9om-0 dSHoSU"
+                      className="Search__SearchContainer-sey9om-0 iyfwN"
                       id="storyshots_128"
                       onSubmit={[Function]}
                     >
@@ -3659,7 +3659,7 @@ exports[` 2`] = `
           </section>
         </div>
         <div
-          className="Table__MultiGridWrapper-gz0dbt-0 fpaJlf"
+          className="Table__MultiGridWrapper-gz0dbt-0 dBfyXQ"
         >
           <div
             style={

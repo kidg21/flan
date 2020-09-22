@@ -49,7 +49,7 @@ exports[` 1`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
       id={null}
       rows={null}
     >
@@ -66,7 +66,7 @@ exports[` 1`] = `
           Group 1
         </p>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
           id={null}
           rows={null}
         >
@@ -181,7 +181,7 @@ exports[` 1`] = `
           Group 2
         </p>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
           id={null}
           rows={null}
         >
@@ -191,9 +191,9 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
               cursor="pointer"
-              fontSize="0.8rem"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"
@@ -387,21 +387,25 @@ exports[` 1`] = `
             </section>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
             id={null}
             rows={null}
           >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-              cursor="pointer"
-              fontSize="0.8rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing="1px"
-              onClick={null}
+            <section
+              className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
             >
-              Multi-Select
-            </label>
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="1px"
+                onClick={null}
+              >
+                Multi-Select
+              </label>
+            </section>
             <div
               className=" css-3p29ga-container"
               id={null}
@@ -416,7 +420,7 @@ exports[` 1`] = `
                   className=" css-g1d714-ValueContainer"
                 >
                   <div
-                    className=" css-1yfxegp-placeholder"
+                    className=" css-1rmbrkz-placeholder"
                   >
                     Choose One Or More...
                   </div>
@@ -531,7 +535,7 @@ exports[` 1`] = `
           Group 3
         </p>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
           id={null}
           rows={null}
         >
@@ -541,9 +545,9 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
               cursor="pointer"
-              fontSize="0.8rem"
+              fontSize="0.875rem"
               fontWeight={400}
               htmlFor={null}
               letterSpacing="1px"

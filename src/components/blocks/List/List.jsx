@@ -335,7 +335,7 @@ ListItem.propTypes = {
   onClick: PropTypes.func,
   onClickItem: PropTypes.func,
   textAlign: PropTypes.oneOf(["left", "right", "center"]),
-  title: PropTypes.string,
+  title: PropTypes.node,
   post: PropTypes.oneOfType([
     PropTypes.shape({
       type: PropTypes.string.isRequired,
