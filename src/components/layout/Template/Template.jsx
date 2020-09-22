@@ -210,6 +210,15 @@ const templateHash = {
     setColumns: "auto auto 1fr 12rem",
     setRows: "1fr auto 2rem",
   },
+  C_05: {
+    setTemplate: [
+      "\"A . . B\"",
+      "\". . . B\"",
+      "\"C C . B\"",
+    ].join("\n"),
+    setColumns: "1fr 2fr 3fr 2fr",
+    setRows: "auto 1fr auto",
+  },
   D_01: {
     setTemplate: [
       "\"A A B\"",
