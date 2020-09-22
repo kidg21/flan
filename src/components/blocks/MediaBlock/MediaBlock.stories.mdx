@@ -9,7 +9,7 @@ import Text, { Title } from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Field, { FieldGroup } from "atoms/Field";
 import MediaBlock from "blocks/MediaBlock";
-import StaticMap from "images/maps/map-ortho.png";
+import StaticMap from "images/maps/map-streets.png";
 import Logo from "images/LightBoxLogo.png";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import ModernExterior2 from "images/residential/modern exterior 2.jpg";
@@ -17,14 +17,18 @@ import ModernExterior3 from "images/residential/modern exterior 3.jpg";
 import Backyard from "images/residential/backyard.jpg";
 import ModernBathroom from "images/residential/modern bathroom.jpg";
 import ModernBedroom from "images/residential/modern bedroom.jpg";
+import ModernStudy from "images/residential/modern study.jpg";
 import OutdoorDeck from "images/residential/outdoor deck.jpg";
 import OutdoorPassthrough from "images/residential/outdoor-passthrough.jpg";
+import IndianaJones from "images/people/indiana_jones.jpg";
+import Kid from "images/people/pic-6.jpg";
+import Spiderman from "images/people/spiderman.jpg";
 
 <Meta title="Atoms|Media/Media Block" component={MediaBlock} />
 
 # Media Block
 
-#### An Media Block allows users to toggle the display of sections of content
+#### A Media Block positions media alongside descriptive content.
 
 <Preview withToolbar>
   <Story name="Standard" decorators={[CenterDisplayGrid]}>
@@ -40,7 +44,7 @@ import OutdoorPassthrough from "images/residential/outdoor-passthrough.jpg";
 
 # Usage
 
-The MediaBlock component is a set of expandable panels for showing and hiding content from the user to make the UI less crowded. The component works well on both mobile and desktop environment and it supports keyboard and screen readers too. The component supports Lumo and Material themes.
+The Media Block supports a Body (Title and Description) and a Media element.  A typical media element would be an image or an icon but any media source can be passed to the `media` prop.
 
 # Examples
 
@@ -52,179 +56,258 @@ The MediaBlock component is a set of expandable panels for showing and hiding co
       <Card padding="4x">
         <MediaBlock
           media={ModernExterior1}
-          title="Media Block"
+          title="Modern Exterior"
           description="In life you need colors. We'll put a happy little sky in here."
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
           media={OutdoorPassthrough}
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+          title="Outdoor Passthrough"
+          description="If we're going to have animals around we all have to be concerned about them and take care of them."
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={ModernExterior2}
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+          media={StaticMap}
+          title="Modern Study"
+          description="Here's another little happy bush Let's put some happy little bushes on the other side now."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={IndianaJones}
+          title="Dr. Henry Walton 'Indiana' Jones, Jr."
+          description="Let's get wild today. See how easy it is to create a little tree right in your world."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={Kid}
+          title="Jimmy 'The Kid'"
+          description="The only thing worse than yellow snow is green snow."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={Spiderman}
+          title="Peter Parker"
+          description="We want to use a lot pressure while using no pressure at all."
         />
       </Card>
     </CardGrid>
   </Story>
 </Preview>
 
-### Types
+### Square Media
 
 <Preview withToolbar>
-  <Story name="Types">
+  <Story name="Square Media">
     <CardGrid>
       <Card padding="4x">
         <MediaBlock
-          media={ModernExterior2}
-          title="Media Block"
+          media={ModernExterior1}
+          title="Modern Exterior"
           description="In life you need colors. We'll put a happy little sky in here."
+          mediaSquare
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={OutdoorPassthrough}
+          title="Outdoor Passthrough"
+          description="If we're going to have animals around we all have to be concerned about them and take care of them."
+          mediaSquare
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
           media={StaticMap}
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+          title="Modern Study"
+          description="Here's another little happy bush Let's put some happy little bushes on the other side now."
+          mediaSquare
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={Logo}
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+          media={IndianaJones}
+          title="Dr. Henry Walton 'Indiana' Jones, Jr."
+          description="Let's get wild today. See how easy it is to create a little tree right in your world."
+          mediaSquare
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={ModernExterior2}
+          media={Kid}
+          title="Jimmy 'The Kid'"
+          description="The only thing worse than yellow snow is green snow."
+          mediaSquare
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={Spiderman}
+          title="Peter Parker"
+          description="We want to use a lot pressure while using no pressure at all."
+          mediaSquare
+        />
+      </Card>
+    </CardGrid>
+  </Story>
+</Preview>
+
+### Reversed Media
+To position the media on the opposite side of the body, apply the `mediaReverse` prop.
+
+<Preview withToolbar>
+  <Story name="Reversed Media">
+    <CardGrid>
+      <Card padding="4x">
+        <MediaBlock
+          media={ModernExterior1}
+          title="Modern Exterior"
+          description="In life you need colors. We'll put a happy little sky in here."
           mediaReverse
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={OutdoorPassthrough}
+          title="Outdoor Passthrough"
+          description="If we're going to have animals around we all have to be concerned about them and take care of them."
+          mediaReverse
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
           media={StaticMap}
+          title="Modern Study"
+          description="Here's another little happy bush Let's put some happy little bushes on the other side now."
           mediaReverse
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={Logo}
+          media={IndianaJones}
+          title="Dr. Henry Walton 'Indiana' Jones, Jr."
+          description="Let's get wild today. See how easy it is to create a little tree right in your world."
           mediaReverse
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={ModernExterior2}
-          mediaSquare
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
-        />
-      </Card>
-      <Card padding="4x">
-        <MediaBlock
-          media={StaticMap}
-          mediaSquare
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
-        />
-      </Card>
-      <Card padding="4x">
-        <MediaBlock
-          media={Logo}
-          mediaSquare
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
-        />
-      </Card>
-      <Card padding="4x">
-        <MediaBlock
-          media={ModernExterior2}
+          media={Kid}
+          title="Jimmy 'The Kid'"
+          description="The only thing worse than yellow snow is green snow."
           mediaReverse
-          mediaSquare
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={StaticMap}
+          media={Spiderman}
+          title="Peter Parker"
+          description="We want to use a lot pressure while using no pressure at all."
           mediaReverse
-          mediaSquare
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+    </CardGrid>
+  </Story>
+</Preview>
+
+### Size
+To ratio of the body-to-media ratio can be set using the `size` prop.  (Values include: `xs`, `sm`, default, `lg`, and `xl`)
+
+<Preview withToolbar>
+  <Story name="Size">
+    <CardGrid columns="">
+      <Card padding="4x">
+        <MediaBlock
+          media={Spiderman}
+          title="Extra Small"
+          description="We want to use a lot pressure while using no pressure at all."
+          size="xs"
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={Logo}
-          mediaReverse
-          mediaSquare
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+          media={Spiderman}
+          title="Small"
+          description="We want to use a lot pressure while using no pressure at all."
+          size="sm"
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={ModernExterior2}
-          mediaRound
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+          media={Spiderman}
+          title="Default"
+          description="We want to use a lot pressure while using no pressure at all."
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={StaticMap}
-          mediaRound
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+          media={Spiderman}
+          title="Large"
+          description="We want to use a lot pressure while using no pressure at all."
+          size="lg"
         />
       </Card>
       <Card padding="4x">
         <MediaBlock
-          media={Logo}
-          mediaRound
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
+          media={Spiderman}
+          title="Extra Large"
+          description="We want to use a lot pressure while using no pressure at all."
+          size="xl"
         />
       </Card>
+    </CardGrid>
+  </Story>
+</Preview>
+
+### Nesting
+
+<Preview withToolbar>
+  <Story name="Nesting">
+    <CardGrid columns="">
       <Card padding="4x">
         <MediaBlock
-          media={ModernExterior2}
-          mediaRound
-          mediaReverse
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
-        />
-      </Card>
-      <Card padding="4x">
-        <MediaBlock
-          media={StaticMap}
-          mediaRound
-          mediaReverse
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
-        />
-      </Card>
-      <Card padding="4x">
-        <MediaBlock
-          media={Logo}
-          mediaRound
-          mediaReverse
-          title="Media Block"
-          description="In life you need colors. We'll put a happy little sky in here."
-        />
+          media={Spiderman}
+          title="Parent Block"
+          description="We want to use a lot pressure while using no pressure at all."
+          size="lg"
+        >
+          <MediaBlock
+            media={Spiderman}
+            title="Child Block"
+            description="We want to use a lot pressure while using no pressure at all."
+          >
+            <MediaBlock
+              media={Spiderman}
+              title="Child Block"
+              description="We want to use a lot pressure while using no pressure at all."
+            />
+            <MediaBlock
+              media={Spiderman}
+              title="Child Block"
+              description="We want to use a lot pressure while using no pressure at all."
+            />
+          </MediaBlock>
+          <MediaBlock
+            media={Spiderman}
+            title="Child Block"
+            description="We want to use a lot pressure while using no pressure at all."
+          >
+            <MediaBlock
+              media={Spiderman}
+              title="Child Block"
+              description="We want to use a lot pressure while using no pressure at all."
+            />
+            <MediaBlock
+              media={Spiderman}
+              title="Child Block"
+              description="We want to use a lot pressure while using no pressure at all."
+            />
+          </MediaBlock>
+        </MediaBlock>
       </Card>
     </CardGrid>
   </Story>

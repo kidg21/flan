@@ -22,10 +22,6 @@ const Block = styled(Grid)`
   }};
 `;
 
-const MediaTitle = styled(Title)`
-  line-height: 1;
-`;
-
 const MediaElement = styled(Media)`
   grid-area: media;
   display: flex;
@@ -55,7 +51,7 @@ const MediaThumb = styled.section`
   height: ${(props) => {
     return props.mediaSize;
   }};
-  border: ${(props) => { return `1px solid ${props.theme.palette.neutral60}`; }};
+  border: ${(props) => { return `1px solid ${props.theme.palette.neutral80}`; }};
   border-radius: ${(props) => {
     return props.mediaRound ? "50%" : "0.25rem";
   }};
@@ -64,7 +60,7 @@ const MediaThumb = styled.section`
 const Body = styled(Grid)`
   grid-area: body;
   padding: ${(props) => {
-  return props.bodyPadding || "";
+    return props.bodyPadding || "";
   }};
   overflow: hidden;
   display: ${(props) => {
@@ -96,7 +92,24 @@ const Body = styled(Grid)`
   }
 `;
 
+const ChildWrapper = styled.section`
+  grid-column: 1/-1;
+  padding-left: 1rem;
+  ${Block} {
+    grid-template-columns: ${(props) => { return props.nestedColumns; }};
+  }
+`;
+
+const MediaTitle = styled(Title)`
+  font-size: inherit;
+`;
+
+const MediaDescription = styled(Text)`
+  font-size: inherit;
+`;
+
 function MediaBlock({
+  children,
   className,
   description,
   id,
@@ -105,6 +118,7 @@ function MediaBlock({
   mediaRound,
   mediaSquare,
   onClick,
+  size,
   title,
 }) {
   let alignItems;
@@ -117,14 +131,37 @@ function MediaBlock({
   let gridTemplate;
   let justify;
   let mediaSection;
-  const mediaSize = "6rem";
 
+  let mediaSize;
+  const _mediaSize = 2;
+  switch (size) {
+    case "xs":
+      mediaSize = `${_mediaSize}`;
+      break;
+    case "sm":
+      mediaSize = `${_mediaSize * 2}`;
+      break;
+    default:
+      mediaSize = `${_mediaSize * 3}`;
+      break;
+    case "lg":
+      mediaSize = `${_mediaSize * 4}`;
+      break;
+    case "xl":
+      mediaSize = `${_mediaSize * 5}`;
+      break;
+  }
+
+  let nestedColumns;
+  const _nestedColumns = `${mediaSize * 0.5}`;
   if (media) {
     if (mediaReverse) {
       gridTemplate = "'media body'";
-      gridColumns = `minmax(0, ${mediaSize}) 1fr`;
+      gridColumns = `minmax(0, ${mediaSize}em) 1fr`;
+      nestedColumns = `minmax(0, ${_nestedColumns}em) 1fr`;
     } else {
-      gridColumns = `1fr minmax(0, ${mediaSize})`;
+      gridColumns = `1fr minmax(0, ${mediaSize}em)`;
+      nestedColumns = `1fr minmax(0, ${_nestedColumns}em)`;
     }
     if (mediaSquare || mediaRound) {
       mediaSection = (
@@ -174,16 +211,20 @@ function MediaBlock({
       >
         <Grid columns="1" gap="xs">
           {title ? <MediaTitle text={title} size="lg" weight="bold" /> : null}
-          {description ? (<Text text={description} />
+          {description ? (<MediaDescription text={description} />
           ) : null}
         </Grid>
       </Body>
       {media ? mediaSection : null}
+      <ChildWrapper nestedColumns={nestedColumns}>
+        {children}
+      </ChildWrapper>
     </Block>
   );
 }
 
 MediaBlock.propTypes = {
+  children: PropTypes.node,
   /** className used for extending styles */
   className: PropTypes.string,
   description: PropTypes.string,
@@ -195,10 +236,20 @@ MediaBlock.propTypes = {
   mediaRound: PropTypes.bool,
   mediaSquare: PropTypes.bool,
   onClick: PropTypes.func,
+  size: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([
+      "xs",
+      "sm",
+      "lg",
+      "xl",
+    ]),
+  ]),
   title: PropTypes.string,
 };
 
 MediaBlock.defaultProps = {
+  children: null,
   className: null,
   description: null,
   id: null,
@@ -207,6 +258,7 @@ MediaBlock.defaultProps = {
   mediaRound: false,
   mediaSquare: false,
   onClick: null,
+  size: null,
   title: null,
 };
 
