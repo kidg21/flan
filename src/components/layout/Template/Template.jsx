@@ -173,9 +173,9 @@ const templateHash = {
     setTemplate: [
       "\"A . .\"",
       "\". . .\"",
-      "\"B B B\"",
+      "\"B B .\"",
     ].join("\n"),
-    setColumns: "auto 5fr 2fr",
+    setColumns: "auto 1fr 2fr",
     setRows: "auto 1fr auto",
   },
   C_01: {
