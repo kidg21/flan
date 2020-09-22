@@ -171,7 +171,7 @@ const templateHash = {
   },
   B_09: {
     setTemplate: [
-      "\"A A .\"",
+      "\"A . .\"",
       "\". . .\"",
       "\"B B B\"",
     ].join("\n"),
