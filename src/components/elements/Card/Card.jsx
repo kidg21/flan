@@ -84,7 +84,9 @@ const CardGridWrapper = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.columns || "repeat(auto-fill, minmax(20rem, 1fr))";
   }};
-  padding: 1rem;
+  padding: ${(props) => {
+    return props.padding;
+  }};
   ${StyledCardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
@@ -150,7 +152,7 @@ function ExpandingSection({
               content: (
                 <React.Fragment>
                   {title ? <Title size="xl" text={title} weight="bold" /> : null}
-                  {description ? <Text text={description} /> : null}
+                  {description ? <Text size="sm" text={description} /> : null}
                 </React.Fragment>
               ),
               align: "left",
@@ -492,12 +494,13 @@ Card.defaultProps = {
 };
 
 function CardGrid({
-  children, className, columns, data, gap, id, isInverse, placeholder, rows,
+  children, className, columns, data, gap, id, isInverse, padding, placeholder, rows,
 }) {
   return (
     <CardGridWrapper
       className={className}
       columns={columns}
+      padding={padding}
       gap={gap || "lg"}
       id={id}
       rows={rows}
@@ -532,6 +535,7 @@ function CardGrid({
 
 CardGrid.propTypes = {
   children: PropTypes.node,
+  padding: PropTypes.string,
   className: PropTypes.string,
   /** Defines the widths of grid columns
    *
@@ -584,6 +588,7 @@ CardGrid.propTypes = {
 CardGrid.defaultProps = {
   children: null,
   className: null,
+  padding: "1rem",
   columns: null,
   data: null,
   gap: null,

@@ -2,28 +2,32 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
   id="default"
   rows={null}
 >
-  <label
-    className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-    cursor="pointer"
-    fontSize="0.8rem"
-    fontWeight={400}
-    htmlFor={null}
-    letterSpacing="1px"
-    onClick={null}
+  <section
+    className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
   >
-    Data Range (default)
-  </label>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+      cursor="pointer"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="1px"
+      onClick={null}
+    >
+      Data Range (default)
+    </label>
+  </section>
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
       id="default_left_container"
       rows={null}
     >
@@ -47,7 +51,7 @@ exports[` 1`] = `
       />
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
       id="default_right_container"
       rows={null}
     >
@@ -92,7 +96,7 @@ exports[` 2`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
     id={null}
     rows={null}
   >
@@ -100,33 +104,37 @@ exports[` 2`] = `
       className="Form__Section-v2wrel-0 AFwsX"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
           id="input"
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
           >
-            Price Range
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Price Range
+            </label>
+          </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
             id={null}
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="input_left_container"
               rows={null}
             >
@@ -150,7 +158,7 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="input_right_container"
               rows={null}
             >
@@ -189,24 +197,28 @@ exports[` 2`] = `
           id="inputError"
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="DataRange__LabelWrapper-u3cy9q-1 jHwPOW"
           >
-            Price Range (error)
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Price Range (error)
+            </label>
+          </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
             id={null}
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="inputError_left_container"
               rows={null}
             >
@@ -230,7 +242,7 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="inputError_right_container"
               rows={null}
             >
@@ -269,24 +281,28 @@ exports[` 2`] = `
           id="inputError"
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="DataRange__LabelWrapper-u3cy9q-1 jHwPOW"
           >
-            Price Range (With Error message)
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Price Range (With Error message)
+            </label>
+          </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
             id={null}
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="inputError_left_container"
               rows={null}
             >
@@ -310,7 +326,7 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="inputError_right_container"
               rows={null}
             >
@@ -354,28 +370,32 @@ exports[` 2`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
           id="inputDisabled"
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
           >
-            Price Range (disabled)
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Price Range (disabled)
+            </label>
+          </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
             id={null}
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="inputDisabled_left_container"
               rows={null}
             >
@@ -399,7 +419,7 @@ exports[` 2`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="inputDisabled_right_container"
               rows={null}
             >
@@ -439,7 +459,7 @@ exports[` 3`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
     id={null}
     rows={null}
   >
@@ -447,33 +467,37 @@ exports[` 3`] = `
       className="Form__Section-v2wrel-0 AFwsX"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 zFdYE"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
           id="input"
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
           >
-            Input Range
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Input Range
+            </label>
+          </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
             id={null}
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="input_left_container"
               rows={null}
             >
@@ -497,7 +521,7 @@ exports[` 3`] = `
               />
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-1 kHzkMS"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM DataRange__RangeTextInput-u3cy9q-2 fwbwRl"
               id="input_right_container"
               rows={null}
             >
@@ -532,28 +556,32 @@ exports[` 3`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
           id="select"
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
           >
-            Select Range
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Select Range
+            </label>
+          </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
             id={null}
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
@@ -571,7 +599,7 @@ exports[` 3`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     >
                       Min
                     </div>
@@ -668,7 +696,7 @@ exports[` 3`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
@@ -686,7 +714,7 @@ exports[` 3`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     >
                       Max
                     </div>
@@ -794,28 +822,32 @@ exports[` 3`] = `
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 garvuV"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz DataRange__RangeContainer-u3cy9q-0 kMmyTg"
           id="selectOperation"
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 eOMvxO"
-            cursor="pointer"
-            fontSize="0.8rem"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="1px"
-            onClick={null}
+          <section
+            className="DataRange__LabelWrapper-u3cy9q-1 jsFXZK"
           >
-            Select Range with Selector Operator
-          </label>
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Select Range with Selector Operator
+            </label>
+          </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 bMbFBJ"
             id={null}
             rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
@@ -833,7 +865,7 @@ exports[` 3`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     />
                     <div
                       className="css-b8ldur-Input"
@@ -928,7 +960,7 @@ exports[` 3`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
@@ -946,7 +978,7 @@ exports[` 3`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     >
                       Min
                     </div>
@@ -1043,7 +1075,7 @@ exports[` 3`] = `
               </div>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-1 ifSMGf"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz SelectMenu__SelectMenuContainer-sc-12n3hw0-2 digHmX"
               id={null}
               rows={null}
             >
@@ -1061,7 +1093,7 @@ exports[` 3`] = `
                     className=" css-g1d714-ValueContainer"
                   >
                     <div
-                      className=" css-1yfxegp-placeholder"
+                      className=" css-1rmbrkz-placeholder"
                     >
                       Max
                     </div>

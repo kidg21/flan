@@ -17,7 +17,7 @@ export const MultiGridWrapper = styled.div`
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
-  border: 1px solid ${(props) => { return props.theme.palette.neutral100; }};
+  border: 1px solid ${(props) => { return props.theme.palette.neutral60; }};
   overflow: hidden;
   .ReactVirtualized__Grid {
     ::-webkit-scrollbar {

@@ -150,7 +150,7 @@ const MenuList = ({
             <ListItem
               key={itemId}
               id={`item-${itemId}`}
-              title={item.label}
+              description={item.label}
               onClickItem={onClick}
               pre={isPre ? {
                 type: "icon",

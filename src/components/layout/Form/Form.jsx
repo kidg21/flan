@@ -40,6 +40,9 @@ letter-spacing: 2px;
 `;
 
 const Inputs = styled(Grid)`
+grid-column-gap: ${(props) => {
+  return props.gap || "";
+}};
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(1, minmax(0, 1fr))";
   }};
@@ -52,7 +55,7 @@ const Inputs = styled(Grid)`
   }
 `;
 
-function FormSection({ children, title, columns }) {
+function FormSection({ children, title, gap, columns }) {
   let setColumns;
   const _columns = parseInt(columns, 10);
   if (_columns > 0 && columns < 4) {
@@ -60,10 +63,28 @@ function FormSection({ children, title, columns }) {
   } else {
     setColumns = columns;
   }
+
+  const baseGap = 0.5;
+  let setGap;
+  switch (gap) {
+    case "sm":
+      setGap = `${baseGap * 2}rem`;
+      break;
+    default:
+      setGap = `${baseGap * 4}rem`;
+      break;
+    case "lg":
+      setGap = `${baseGap * 6}rem`;
+      break;
+    case "xl":
+      setGap = `${baseGap * 8}rem`;
+      break;
+  }
+
   return (
     <Section>
-      {title ? <TitleSection size="sm"  text={title} /> : null}
-      <Inputs setColumns={setColumns}>
+      {title ? <TitleSection size="sm" text={title} /> : null}
+      <Inputs gap={setGap} setColumns={setColumns}>
         {children}
       </Inputs>
     </Section>
@@ -73,11 +94,20 @@ FormSection.propTypes = {
   children: PropTypes.node,
   title: PropTypes.string,
   columns: PropTypes.oneOf(["1", "2", "3"]),
+  gap: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([
+      "sm",
+      "lg",
+      "xl",
+    ]),
+  ]),
 };
 FormSection.defaultProps = {
   children: null,
   title: null,
   columns: "1",
+  gap: null,
 };
 
 function Form({
@@ -109,7 +139,7 @@ function Form({
           {description ? <Text size="sm" text={description} /> : null}
         </Header>
       ) : null}
-      <Inputs setColumns={setColumns}>
+      <Inputs gap="xs" setColumns={setColumns}>
         {children}
       </Inputs>
     </FormWrapper>

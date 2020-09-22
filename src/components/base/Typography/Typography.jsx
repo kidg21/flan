@@ -162,7 +162,7 @@ const labelSizeHash = {
     letterSpacing: "0.4px",
   },
   sm: {
-    fontSize: "0.8rem",
+    fontSize: "0.875rem",
     letterSpacing: "1px",
   },
   lg: {
@@ -181,7 +181,7 @@ const linkSizeHash = {
     letterSpacing: "0px",
   },
   "sm": {
-    fontSize: "0.8rem",
+    fontSize: "0.875rem",
     letterSpacing: "0px",
   },
   "lg": {
@@ -232,7 +232,7 @@ Text.propTypes = {
   className: PropTypes.string,
   id: PropTypes.string,
   size: PropTypes.oneOf(["xs", "sm", "lg", ""]),
-  text: PropTypes.string,
+  text: PropTypes.node,
   weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Text.defaultProps = {
