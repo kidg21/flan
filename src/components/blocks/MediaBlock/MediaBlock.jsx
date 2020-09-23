@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Media from "atoms/Media";
+import Icon from "atoms/Icon";
 import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
 
@@ -37,6 +38,10 @@ const MediaElement = styled(Media)`
   overflow: hidden;
 `;
 
+const MediaIcon = styled(Icon)`
+  font-size: ${(props) => { return `${props.mediaSize}em`; }};
+`;
+
 const MediaThumb = styled.section`
   grid-area: media;
   background-image: ${(props) => {
@@ -45,13 +50,11 @@ const MediaThumb = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: ${(props) => {
-    return props.mediaSize;
-  }};
-  height: ${(props) => {
-    return props.mediaSize;
-  }};
-  border: ${(props) => { return `1px solid ${props.theme.palette.neutral80}`; }};
+  display: flex;
+  justify-content: center;
+  width: ${(props) => { return `${props.mediaSize}em`; }};
+  height: ${(props) => { return `${props.mediaSize}em`; }};
+  border: ${(props) => { return props.icon ? "" : `1px solid ${props.theme.palette.neutral80}`; }};
   border-radius: ${(props) => {
     return props.mediaRound ? "50%" : "0.25rem";
   }};
@@ -98,6 +101,12 @@ const ChildWrapper = styled.section`
   ${Block} {
     grid-template-columns: ${(props) => { return props.nestedColumns; }};
   }
+  > section {
+    padding-bottom: 1.25rem;
+    &:last-of-type {
+      padding-bottom: 0.25rem;
+    }
+  }
 `;
 
 const MediaTitle = styled(Title)`
@@ -112,6 +121,7 @@ function MediaBlock({
   children,
   className,
   description,
+  icon,
   id,
   mediaReverse,
   media,
@@ -154,7 +164,7 @@ function MediaBlock({
 
   let nestedColumns;
   const _nestedColumns = `${mediaSize * 0.5}`;
-  if (media) {
+  if (media || icon) {
     if (mediaReverse) {
       gridTemplate = "'media body'";
       gridColumns = `minmax(0, ${mediaSize}em) 1fr`;
@@ -189,6 +199,22 @@ function MediaBlock({
     bodyPadding = "0";
   }
 
+  if (icon && typeof icon === "string") {
+    mediaSection = (
+      <MediaThumb
+        borderRadius={borderRadius}
+        justify={justify}
+        media={icon}
+        mediaRound={mediaRound}
+        mediaSize={mediaSize}
+        title={title}
+        icon={icon}
+      >
+        <MediaIcon icon={icon} mediaSize={mediaSize} brand="brand1" />
+      </MediaThumb>
+    );
+  }
+
   return (
     <Block
       alignItems={alignItems}
@@ -215,10 +241,12 @@ function MediaBlock({
           ) : null}
         </Grid>
       </Body>
-      {media ? mediaSection : null}
-      <ChildWrapper nestedColumns={nestedColumns}>
-        {children}
-      </ChildWrapper>
+      {media || icon ? mediaSection : null}
+      {children ? (
+        <ChildWrapper nestedColumns={nestedColumns}>
+          {children}
+        </ChildWrapper>
+      ) : null}
     </Block>
   );
 }
