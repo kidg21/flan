@@ -11,6 +11,9 @@ import Badge from "atoms/Badge";
 const LinkedIcon = styled.a`
   color: ${(props) => { return props.theme.text.link; }};
   width: max-content;
+  /* margin/padding 'trick' increases touch target of linked Icon */
+  margin: -0.5em;
+  padding: 0.5em;
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
@@ -199,6 +202,9 @@ const sizeHash = {
   "sm": {
     font: "0.875em",
   },
+  "m": {
+    font: "1em",
+  },
   "lg": {
     font: "1.35em",
   },
@@ -241,7 +247,7 @@ function Icon({
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
-  else if (onClick || href) color = "link";
+  else if (!color && (onClick || href)) color = "link";
 
   // FontAwesomeIcon only allows values of 90, 180, or 270
   let _rotation = typeof rotation === "number" ? Math.round(rotation / 90) % 4 : null;
@@ -342,7 +348,7 @@ Icon.propTypes = {
   /** Options: '90', '180', '270' */
   rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
-   * Options: 'xs', 'sm', 'lg', 'xl', '2xl', '3xl', '4xl'
+   * Options: 'xs', 'sm', 'm', 'lg', 'xl', '2xl', '3xl', '4xl'
    */
   size: PropTypes.string,
   /** Smooth rotation */

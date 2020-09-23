@@ -20,9 +20,9 @@ const SearchContainer = styled.form`
   "A"
   "B";
   grid-template-rows: auto 1fr;
-  grid-row-gap: 0.25rem;
+  grid-row-gap: 0;
   position: relative;
-  padding: 0.5rem 0.5rem 0;
+  padding: 0;
 `;
 
 const SearchInput = styled(Flex)`
@@ -36,14 +36,15 @@ const SearchInput = styled(Flex)`
   border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
-  /* The padding gives the buttons space so they don't overlap the rounded corners of the container */
-  padding: 2px;
   /* Necessary for the Menu List isn't cropped */
   overflow: visible;
 `;
 
 const SearchTextInput = styled(TextInput)`
   flex: auto;
+  input {
+    height: 2.4rem;
+  }
   > * {
     border: none;
   }
@@ -51,6 +52,8 @@ const SearchTextInput = styled(TextInput)`
 
 const SearchButton = styled(Button)`
   flex: none;
+  height: inherit;
+  margin: 1px;
 `;
 
 const DropContainer = styled(Container)`
@@ -72,7 +75,7 @@ function Search({
   error,
   id,
   onChange,
-  onKeyPress,
+  onKeyUp,
   onSearch,
   placeholder,
   results,
@@ -87,6 +90,7 @@ function Search({
   /**
    * Set state to current input value in search box.
    * Pass back input value to onChange function, if provided.
+   * Use of onChange prop means you have to manage your own state.
    * @param {object} e - event object that contains input value.
    */
   const handleOnChange = (e) => {
@@ -94,13 +98,13 @@ function Search({
   };
 
   /**
-   * If "enter" key was pressed, pass back current search value.
-   * @param {object} e - event object that contains key press info.
+   * Pass back input value to onKeyUp function, if provided.
+   * This is alternative to onChange that still lets <Search>
+   * manage its own state.
    */
-  const handleOnKeyPress = (e) => {
-    if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
-      e.preventDefault();
-      onKeyPress(searchVal);
+  const handleOnKeyUp = (e) => {
+    if (typeof onKeyUp === "function") {
+      onKeyUp(e.target.value);
     }
   };
 
@@ -130,7 +134,13 @@ function Search({
   );
 
   return (
-    <SearchContainer id={uId}>
+    <SearchContainer
+      id={uId}
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleOnSearch();
+      }}
+    >
       <SearchInput flexDirection="row">
         <SearchButton
           id={`${uId}-search-button`}
@@ -143,7 +153,7 @@ function Search({
           placeholder={placeholder}
           type="search"
           onChange={handleOnChange}
-          onKeyPress={handleOnKeyPress}
+          onKeyUp={handleOnKeyUp}
           value={searchVal}
         />
       </SearchInput>
@@ -151,6 +161,7 @@ function Search({
         ? (
           <DropContainer
             padding="0"
+            hasBorder
             id={`${uId}-results-container`}
             maxHeight="22rem"
             zIndex={zIndex}
@@ -167,7 +178,7 @@ Search.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
   onChange: PropTypes.func,
-  onKeyPress: PropTypes.func,
+  onKeyUp: PropTypes.func,
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
   results: PropTypes.arrayOf(PropTypes.shape({
@@ -185,7 +196,7 @@ Search.defaultProps = {
   error: "",
   id: null,
   onChange: null,
-  onKeyPress: null,
+  onKeyUp: null,
   onSearch: null,
   placeholder: null,
   results: null,

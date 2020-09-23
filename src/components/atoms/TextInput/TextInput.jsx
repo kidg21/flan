@@ -11,7 +11,7 @@ import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
   width: 100%;
 `;
@@ -22,8 +22,17 @@ color: ${(props) => {
   }};
 `;
 
+const LabelWrapper = styled.section`
+color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || props.theme.text.light;
+  }};
+`;
+
 const Input = styled.input`
   color: inherit;
+  color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || props.theme.text.dark;
+  }};
   border: 1px solid;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
@@ -100,10 +109,12 @@ function TextInput({
   id,
   isRequired,
   label,
+  labelVisible,
   onBlur,
   onChange,
   onFocus,
   onKeyPress,
+  onKeyUp,
   pattern,
   placeholder,
   readonly,
@@ -121,6 +132,8 @@ function TextInput({
   let messageColor;
   let inputResize;
   let placeholderColor;
+  let max;
+  let min;
   let inputSelectColor;
   let inputHeight;
   if (type === "textarea") {
@@ -184,6 +197,12 @@ function TextInput({
     messageColor = "alert";
   }
 
+  if (type === "date") {
+    max = "2999-12-31";
+    min = "1019-01-01";
+  }
+
+
   return (
     <TextInputContainer
       className={className}
@@ -193,9 +212,13 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label  isRequired={isRequired} text={label} />
+        <LabelWrapper
+          inputTextColor={inputTextColor}>
+          <Label isRequired={isRequired} text={label} visible={labelVisible} />
+        </LabelWrapper>
       ) : null}
       <Input
+        inputTextColor={inputTextColor}
         as={as}
         autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
         cols={columns} // textarea attribute
@@ -211,8 +234,11 @@ function TextInput({
         list={autoCompleteDataListId}
         name={uId} // input attribute
         onBlur={onBlur}
+        max={max}
+        min={min}
         onChange={onChange}
         onFocus={onFocus}
+        onKeyUp={onKeyUp}
         onKeyPress={onKeyPress}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
@@ -225,7 +251,7 @@ function TextInput({
       {autocompleteDataList}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       {children}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs"  text={errorText || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }
@@ -245,9 +271,11 @@ TextInput.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  labelVisible: PropTypes.bool,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  onKeyUp: PropTypes.func,
   onKeyPress: PropTypes.func,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
@@ -288,9 +316,11 @@ TextInput.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
+  labelVisible: true,
   onBlur: null,
   onChange: null,
   onFocus: null,
+  onKeyUp: null,
   onKeyPress: null,
   pattern: null,
   placeholder: null,

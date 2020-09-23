@@ -1,6 +1,7 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
-import { Padding } from "helpers/Display";
+import { Padding, CenterDecorator, CenterDisplayGrid, Container } from "helpers/Display";
+import Grid from "layout/Grid";
 import Field, { FieldGroup } from "atoms/Field";
 import fieldData from "atoms/Field/Field.data.js";
 
@@ -11,7 +12,7 @@ import fieldData from "atoms/Field/Field.data.js";
 ### Fields are used to display data in a label/value pairing
 
 <Preview withToolbar>
-  <Story name="Standard">
+  <Story name="Standard" decorators={[CenterDisplayGrid]}>
     <Field
       id="Field"
       label="Field Name"
@@ -25,44 +26,94 @@ import fieldData from "atoms/Field/Field.data.js";
 ### Alignment
 
 <Preview>
-  <Story name="Alignment">
-    <FieldGroup columns={3} >
+  <Story name="Alignment" decorators={[CenterDisplayGrid]}>
+    <FieldGroup columns="1">
       <Field
         id="Default"
-        label="Inline Field (Default)"
+        label="Default"
         value="Field Value"
       />
       <Field
-        id="Vertical"
-        label="Vertically Aligned Field"
-        value="Field Value"
-        align="vertical"
-      />
-      <Field
-        id="Edge"
-        label="Edge Aligned Field"
+        id="Edge-Aligned"
+        label="Edge-Aligned"
         value="Field Value"
         align="edge"
+      />
+      <Field
+        id="Vertically-Aligned"
+        label="Vertically-Aligned"
+        value="Field Value"
+        align="vertical"
       />
     </FieldGroup>
   </Story>
 </Preview>
 
-### Interaction
+## Label-to-Value Spacing
 
-<Preview>
-  <Story name="Interaction">
-    <FieldGroup columns={2} >
+<Preview withToolbar>
+  <Story name="Label-to-Value Spacing" decorators={[CenterDisplayGrid]}>
+    <FieldGroup columns="1">
       <Field
-        id="Standard Value"
-        label="Field Name"
-        value="Standard Value"
+        id="Default"
+        label="Field Label"
+        value="Field Value"
       />
       <Field
-        id="Linked Value"
-        label="Field Name"
-        value="Linked Value"
-        onClick={() => {}}
+        id="2x"
+        label="Field Label (2x)"
+        value="Field Value"
+        spacing="2x"
+      />
+      <Field
+        id="3x"
+        label="Field Label (3x)"
+        value="Field Value"
+        spacing="3x"
+      />
+      <Field
+        id="4x"
+        label="Field Label (4x)"
+        value="Field Value"
+        spacing="4x"
+      />
+    </FieldGroup>
+  </Story>
+</Preview>
+
+## Size
+
+<Preview withToolbar>
+  <Story name="Size" decorators={[CenterDisplayGrid]}>
+    <FieldGroup columns="1">
+      <Field
+        id="Default"
+        label="Small Field"
+        value="Field Value"
+        size="sm"
+      />
+      <Field
+        id="2x"
+        label="Default Field"
+        value="Field Value"
+      />
+      <Field
+        id="3x"
+        label="Large Field"
+        value="Field Value"
+        size="lg"
+      />
+      <Field
+        id="3x"
+        label="XL Field"
+        value="Field Value"
+        size="xl"
+      />
+      <Field
+        id="3x"
+        label="2XL Field"
+        value="Field Value"
+        size="2xl"
       />
     </FieldGroup>
   </Story>

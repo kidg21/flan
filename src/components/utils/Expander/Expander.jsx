@@ -24,13 +24,16 @@ const ChildrenWrapper = styled.div`
   opacity: ${(props) => {
     return props.open ? "100%" : "0";
   }};
+  pointer-events: ${(props) => {
+    return props.open ? "auto" : "none";
+  }};
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};
 `;
 
 const AccordionFunction = ({
-  id, header, children, open, onClick,
+  id, header, children, open, onClick, className,
 }) => {
   const disableTransition = useContext(DisableTransitionContext);
   return (
@@ -38,29 +41,37 @@ const AccordionFunction = ({
       <HeaderWrapper id={id} onClick={onClick}>
         {header}
       </HeaderWrapper>
-      <ChildrenWrapper disableTransition={disableTransition} open={open}>{children}</ChildrenWrapper>
+      <ChildrenWrapper
+        disableTransition={disableTransition}
+        open={open}
+        className={className}
+      >
+        {children}
+      </ChildrenWrapper>
     </Fragment>
   );
 };
 
 function Expander({
-  id,
-  header,
   children,
-  open,
+  className,
+  header,
+  id,
   onClick,
+  open,
 }) {
   let isOpen = open;
   let setIsOpen = onClick;
   if (!setIsOpen) [isOpen, setIsOpen] = useState(isOpen);
   return (
     <AccordionFunction
-      id={id}
+      className={className}
       header={header}
-      open={isOpen}
+      id={id}
       onClick={(e) => {
         setIsOpen(!isOpen, e);
       }}
+      open={isOpen}
     >
       {children}
     </AccordionFunction>
@@ -69,7 +80,8 @@ function Expander({
 
 AccordionFunction.propTypes = {
   children: PropTypes.node,
-  header: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  header: PropTypes.node,
   id: PropTypes.string,
   onClick: PropTypes.func,
   open: PropTypes.bool,
@@ -77,6 +89,8 @@ AccordionFunction.propTypes = {
 
 AccordionFunction.defaultProps = {
   children: null,
+  className: null,
+  header: null,
   id: "",
   onClick: () => { },
   open: true,
@@ -84,6 +98,7 @@ AccordionFunction.defaultProps = {
 
 Expander.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   header: PropTypes.node,
   id: PropTypes.string,
   onClick: PropTypes.func,
@@ -92,6 +107,7 @@ Expander.propTypes = {
 
 Expander.defaultProps = {
   children: null,
+  className: null,
   header: null,
   id: "",
   onClick: null,

@@ -1,9 +1,17 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable security/detect-object-injection */
-import React, { useRef, useState, useLayoutEffect, useMemo, useEffect } from "react";
+import React, {
+  useRef, useState, useLayoutEffect, useMemo, useEffect,
+} from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { useId } from "utils/hooks";
+import {
+  useId,
+  useInterval,
+  useOnClickOutside,
+  useZIndex,
+} from "utils/hooks";
 import Portal from "utils/Portal";
 import { formatPixelValue } from "utils/format";
 
@@ -45,17 +53,7 @@ const PopperWrapper = styled.div`
   transform: ${(props) => {
     return props.transform || "";
   }};
-  // width: max-content;
-`;
-
-const PopperBG = styled.div`
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  top: 0px;
-  left: 0px;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: none;
+  width: max-content;
 `;
 
 const flipX = "translateX(-100%)";
@@ -73,11 +71,17 @@ const PortalPopper = ({
   position,
   visible,
   zIndex,
+  isTracking,
+  trackingInterval,
 }) => {
   const defaultAnchorRef = useRef();
   const _anchorRef = anchorRef || defaultAnchorRef;
-
+  const popperRef = useRef();
   const [anchorBounds, setAnchorBounds] = useState({});
+  // need to pass in 2 refs, one for the anchor (button) element & one for pieces in the portal
+  useOnClickOutside(onClose, (visible && closeOnClickAway), _anchorRef, popperRef);
+
+  // initial location of the anchor to open the popper
   useLayoutEffect(() => {
     if (visible && _anchorRef && _anchorRef.current) {
       // measure/get position of the anchor element
@@ -85,10 +89,55 @@ const PortalPopper = ({
     }
   }, [_anchorRef, _anchorRef.current, visible]);
 
+  // track location of the anchor to update the position of the popper
+  // enable tracking when visible & isTracking param is true
+  useInterval(() => {
+    if (_anchorRef && _anchorRef.current) {
+      // measure/get position of the anchor element
+      const currAnchorBounds = _anchorRef.current.getBoundingClientRect().toJSON();
+      // check to see if current & previous values are equal
+      const currVals = Object.values(currAnchorBounds);
+      const prevVals = Object.values(anchorBounds);
+      let isEqual = false;
+      if (currVals.length === prevVals.length) {
+        isEqual = true;
+        for (let i = 0; i < prevVals.length; i++) {
+          if (prevVals[i] !== currVals[i]) {
+            isEqual = false;
+            break;
+          }
+        }
+      }
+      if (!isEqual) {
+        // anchor moved, update popper location
+        setAnchorBounds(currAnchorBounds);
+      }
+    }
+  }, visible && isTracking, trackingInterval);
+
   const positionStyle = useMemo(() => {
     const resultStyle = {};
     // portal, position is based on anchorRef's position/measurements
     switch (position.toLowerCase()) {
+      case "leftdown":
+        resultStyle.top = anchorBounds.top;
+        resultStyle.left = anchorBounds.left;
+        resultStyle.transform = flipX;
+        break;
+      case "rightdown":
+        resultStyle.top = anchorBounds.top;
+        resultStyle.left = anchorBounds.right;
+        break;
+      case "leftup":
+        resultStyle.top = anchorBounds.bottom;
+        resultStyle.left = anchorBounds.left;
+        resultStyle.transform = flipXY;
+        break;
+      case "rightup":
+        resultStyle.top = anchorBounds.bottom;
+        resultStyle.left = anchorBounds.right;
+        resultStyle.transform = flipY;
+        break;
       case "topleft":
         resultStyle.top = anchorBounds.top;
         resultStyle.left = anchorBounds.right;
@@ -129,17 +178,35 @@ const PortalPopper = ({
             id={`popper-wrapper${id}`}
             zIndex={zIndex}
             {...positionStyle}
+            ref={popperRef}
           >
             {children}
           </PopperWrapper>
-          {onClose && closeOnClickAway ? <PopperBG onClick={onClose} /> : null}
         </Portal>
       ) : null}
     </React.Fragment>
   );
 };
 
+// non portal position styles
 const absolutePositionStyle = {
+  leftup: {
+    top: "100%",
+    transform: flipXY,
+  },
+  leftdown: {
+    top: "0",
+    transform: flipX,
+  },
+  rightup: {
+    top: "100%",
+    left: "100%",
+    transform: flipY,
+  },
+  rightdown: {
+    top: "0",
+    left: "100%",
+  },
   topleft: {
     top: "0",
     left: "100%",
@@ -170,22 +237,21 @@ const NonPortalPopper = ({
   onClose,
   zIndex,
 }) => {
+  const popperRef = useRef();
+  useOnClickOutside(onClose, (visible && closeOnClickAway), popperRef);
   const validPosition = absolutePositionStyle.hasOwnProperty(position.toLowerCase()) ? position : "bottomRight";
   const positionStyle = absolutePositionStyle[validPosition.toLowerCase()];
   return (
-    <NonPortalWrapper id={id} isFlex={isFlex}>
+    <NonPortalWrapper id={id} isFlex={isFlex} ref={popperRef}>
       {anchor}
       {visible ? (
-        <React.Fragment>
-          <PopperWrapper
-            id={`popper-wrapper${id}`}
-            zIndex={zIndex}
-            {...positionStyle}
-          >
-            {children}
-          </PopperWrapper>
-          {onClose && closeOnClickAway ? <PopperBG onClick={onClose} /> : null}
-        </React.Fragment>
+        <PopperWrapper
+          id={`popper-wrapper${id}`}
+          zIndex={zIndex}
+          {...positionStyle}
+        >
+          {children}
+        </PopperWrapper>
       ) : null}
     </NonPortalWrapper>
   );
@@ -202,9 +268,8 @@ const Popper = (props) => {
   } = props;
   const uId = useId(id);
   const scrollListener = useRef();
-
-  let _zIndex = parseInt(zIndex, 10);
-  if (isNaN(_zIndex)) { _zIndex = popperZIndex; }
+  // manages zIndex if static zIndex isn't provided to open on top
+  const _zIndex = useZIndex("popper", zIndex, popperZIndex, visible);
 
   // default portals to closeOnScroll if not specified since they have a fixed position
   // portal poppers don't update their position once they are visible if their anchor moves
@@ -233,15 +298,17 @@ Popper.defaultProps = {
   anchor: null,
   anchorRef: null,
   children: null,
-  closeOnClickAway: undefined,
+  closeOnClickAway: true,
   closeOnScroll: undefined,
   id: "",
   isFlex: false,
+  isTracking: true,
   onClose: null,
-  usePortal: false,
   position: "bottomRight",
+  trackingInterval: 500,
+  usePortal: false,
   visible: false,
-  zIndex: popperZIndex,
+  zIndex: undefined,
 };
 PortalPopper.defaultProps = Popper.defaultProps;
 NonPortalPopper.defaultProps = Popper.defaultProps;
@@ -263,21 +330,29 @@ Popper.propTypes = {
   id: PropTypes.string,
   /** to specify an anchor element to be flex */
   isFlex: PropTypes.bool,
+  /** track location of anchor element to update popper location when using portal */
+  isTracking: PropTypes.bool,
   /** onClose callback when popper closes */
   onClose: PropTypes.func,
   /** places popper content in a portal */
   usePortal: PropTypes.bool,
   /** open position relative to anchor element */
   position: PropTypes.oneOf([
-    "topLeft",
-    "topRight",
     "bottomLeft",
     "bottomRight",
+    "leftDown",
+    "leftUp",
+    "rightDown",
+    "rightUp",
+    "topLeft",
+    "topRight",
     "",
   ]),
-  /** opne/close state of popper */
+  /** interval time in ms for portal popper to track location */
+  trackingInterval: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  /** open/close state of popper */
   visible: PropTypes.bool,
-  /** to specify zIndex of pop-out wrapper, defaults to 500 */
+  /** to specify static zIndex of pop-out wrapper, defaults to 500 */
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 PortalPopper.propTypes = Popper.propTypes;

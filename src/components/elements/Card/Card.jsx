@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable complexity */
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useCallback } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { useId } from "utils/hooks";
@@ -18,6 +18,7 @@ import Menu from "blocks/Menu";
 import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
+import { backgroundColors } from "Variables";
 import CardWrapper from "./CardWrapper.jsx";
 
 const LinkedWrapper = styled.a`
@@ -36,7 +37,7 @@ const CardSectionWrapper = styled.section`
     return props.theme.background[props.sectionBackground] || "";
   }};
   padding: ${(props) => {
-    return props.sectionPadding || "0.5em 1em";
+    return props.sectionPadding || "0.75em 1em";
   }};
   justify-content: ${(props) => {
     return props.sectionJustify || "";
@@ -50,7 +51,9 @@ const CardSectionWrapper = styled.section`
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};
-  + a {
+  a,
+  + a,
+  a > * {
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
   }};
@@ -65,6 +68,7 @@ const CardSectionWrapper = styled.section`
 const CardMedia = styled(Media)`
   display: inherit;
   align-items: center;
+  margin-bottom: 0.25em;
   * {
     border-radius: ${(props) => {
     return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
@@ -78,16 +82,15 @@ const StyledCardWrapper = styled(CardWrapper)``;
 
 const CardGridWrapper = styled(Grid)`
   grid-template-columns: ${(props) => {
-    return props.columns || "repeat(auto-fill, minmax(14rem, 1fr))";
+    return props.columns || "repeat(auto-fill, minmax(20rem, 1fr))";
   }};
-  padding: 1rem;
+  padding: ${(props) => {
+    return props.padding;
+  }};
   ${StyledCardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
     return props.theme.borders.radiusMed;
-  }};
-    box-shadow: ${(props) => {
-    return props.theme.shadows.dropShadow;
   }};
     transition: all 0.25s ease-in-out;
     &:hover {
@@ -96,7 +99,8 @@ const CardGridWrapper = styled(Grid)`
   }};
     }
     ${CardSectionWrapper}:not(${CardMedia}) {
-      &:first-of-type {
+      /* Keeping this around as it may come back */
+      /* &:first-of-type {
         padding: 0.75em 1em 0.5em;
       }
       &:last-of-type {
@@ -104,7 +108,7 @@ const CardGridWrapper = styled(Grid)`
       }
       &:only-of-type {
         padding: 0.75em 1em;
-      }
+      } */
       &:last-of-type,
       &:only-of-type {
         flex: auto;
@@ -116,7 +120,7 @@ const CardGridWrapper = styled(Grid)`
   &:empty {
     &:before {
       ${PlaceholderText}
-      content: "{ CardGrid }";
+      content: "${(props) => { return props.placeholder || ""; }}";
     }
   }
 `;
@@ -124,11 +128,11 @@ const CardGridWrapper = styled(Grid)`
 function ExpandingSection({
   children, description, icon, id, label, onClick, open, title,
 }) {
-  let rotation;
+  let iconContent;
   if (open) {
-    rotation = 180;
+    iconContent = "minus";
   } else {
-    rotation = 0;
+    iconContent = "plus";
   }
   return (
     <Expander
@@ -148,13 +152,13 @@ function ExpandingSection({
               content: (
                 <React.Fragment>
                   {title ? <Title size="xl" text={title} weight="bold" /> : null}
-                  {description ? <Text text={description} /> : null}
+                  {description ? <Text size="sm" text={description} /> : null}
                 </React.Fragment>
               ),
               align: "left",
             }}
             right={children ? {
-              content: <Icon icon="down" size="lg" rotation={rotation} />,
+              content: <Icon icon={iconContent} />,
               width: "max-content",
             } : null}
           />
@@ -188,11 +192,16 @@ ExpandingSection.defaultProps = {
 };
 
 function CardSection({
-  children, className, footer, header, id, onClick, padding, variant,
+  children, className, footer, header, id, isInverse, onClick, padding, variant,
 }) {
   let sectionColor;
   let sectionColorHover;
   let sectionBackground;
+  if (isInverse) {
+    sectionBackground = "alt";
+    sectionColor = "inverse";
+    sectionColorHover = "neutral100";
+  }
   if (variant) {
     sectionColor = "inverse";
     sectionColorHover = "inverseHover";
@@ -240,9 +249,10 @@ CardSection.propTypes = {
   footer: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
+  isInverse: PropTypes.bool,
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  variant: PropTypes.oneOf([""].concat(backgroundColors)),
 };
 CardSection.defaultProps = {
   children: null,
@@ -250,6 +260,7 @@ CardSection.defaultProps = {
   footer: null,
   header: null,
   id: null,
+  isInverse: false,
   padding: null,
   onClick: null,
   variant: null,
@@ -272,28 +283,25 @@ function Card({
   more,
   onClick,
   padding,
+  placeholder,
   shadow,
   title,
   variant,
 }) {
   const uId = useId(id);
   const disableTransition = useContext(DisableTransitionContext);
-  const [open, setOpen] = useState(false);
-  function toggleDropdown() {
-    if (open) {
-      setOpen(false);
-    } else {
-      setOpen(true);
-    }
-  }
+  const [open, setOpen] = useState(more && more.initVisible);
+  const toggleDropdown = useCallback(() => {
+    setOpen((show) => { return !show; });
+  }, []);
 
   let centerContent;
 
   if (onClick) {
     centerContent = (
-      <LinkedWrapper >
-        <React.Fragment >
-          {title ? <Title size="xl" text={title} /> : null}
+      <LinkedWrapper>
+        <React.Fragment>
+          {title ? <Title size="lg" text={title} /> : null}
           {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
@@ -301,8 +309,8 @@ function Card({
     );
   } else {
     centerContent = (
-      <React.Fragment >
-        {title ? <Title size="xl" text={title}  /> : null}
+      <React.Fragment>
+        {title ? <Title size="lg" text={title} /> : null}
         {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>
@@ -312,6 +320,8 @@ function Card({
   let headerSection;
   if (title || description) {
     if (more && more.content) {
+      // controlled by parent component, passes in more.visible
+      const isControlled = more && typeof more.visible === "boolean";
       headerSection = (
         <CardSection id={`${uId}-Header`} variant={variant} disableTransition={disableTransition}>
           <ExpandingSection
@@ -319,10 +329,11 @@ function Card({
             icon={icon}
             label={label}
             onClick={(e) => {
-              toggleDropdown(e);
-              if (more.onToggle) more.onToggle(e);
+              if (!isControlled) toggleDropdown(e);
+              if (more.onToggle) more.onToggle(e); // deprecated, use onClick
+              if (more.onClick) more.onClick(e);
             }}
-            open={open}
+            open={isControlled ? more.visible : open}
             title={title}
           >
             {more.content}
@@ -360,24 +371,15 @@ function Card({
           contentAlign="bottom"
           left={{
             content: (
-              <Grid>
-                <Command
-                  label={commands[0].label}
-                  onClick={commands[0].onClick}
-                  disabled={commands[0].disabled}
-                />
-                <Command
-                  label={commands[1].label}
-                  onClick={commands[1].onClick}
-                  disabled={commands[1].disabled}
-                />
+              <Grid columns="1">
+                {commands.slice(0, 2).map((command) => { return <Command {...command} />; })}
               </Grid>
             ),
             width: "90%",
           }}
           right={{
             // More than 2 Commands sends overflow to Menu
-            content: commands.length > 2 ? <Menu id={`${uId}-Menu`} data={commands.slice(2)} position="topLeft" /> : <Spacer />,
+            content: commands.length > 2 ? <Menu id={`${uId}-Menu`} data={commands.slice(2)} position="topLeft"><Icon icon="options" /></Menu> : <Spacer />,
             width: "10%",
           }}
         />
@@ -388,18 +390,19 @@ function Card({
         <Bar
           padding="0"
           contentAlign="bottom"
-          left={(
-            <Command
-              label={commands[0].label}
-              onClick={commands[0].onClick}
-              disabled={commands[0].disabled}
-            />
-          )}
+          left={{
+            content: (
+              <Grid columns="1">
+                {commands.map((command) => { return <Command {...command} />; })}
+              </Grid>
+            ),
+          }}
         />
       );
     }
   }
 
+  const bodyContent = typeof body === "string" ? <Text>{body}</Text> : body;
   return (
     <StyledCardWrapper
       className={className}
@@ -410,12 +413,13 @@ function Card({
       onClick={onClick}
       padding={padding}
       shadow={shadow}
+      placeholder={placeholder}
     >
       {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
-      {body ? (
+      {bodyContent ? (
         <CardSection id={`${uId}-Body`}>
-          <Text>{body}</Text>
+          {bodyContent}
         </CardSection>
       ) : null}
       {children}
@@ -431,10 +435,13 @@ Card.propTypes = {
   className: PropTypes.string,
   href: PropTypes.node,
   commands: PropTypes.arrayOf(PropTypes.shape({
+    command: PropTypes.string,
+    disabled: PropTypes.bool,
+    icon: PropTypes.string,
     id: PropTypes.string,
     label: PropTypes.string,
+    labelVisible: PropTypes.bool,
     onClick: PropTypes.func,
-    disabled: PropTypes.bool,
   })),
   description: PropTypes.string,
   icon: PropTypes.string,
@@ -444,18 +451,28 @@ Card.propTypes = {
   mediaDesc: PropTypes.string,
   media: PropTypes.string,
   more: PropTypes.shape({
+    /** content to render */
     content: PropTypes.node,
+    /** initialize open/close state of (uncontrolled) more */
+    initVisible: PropTypes.bool,
+    /** callback when clicking header/expanding section to open */
+    onClick: PropTypes.func,
+    /** deprecated, use onClick */
     onToggle: PropTypes.func,
+    /** expand card & show (controlled) more */
+    visible: PropTypes.bool,
   }),
   onClick: PropTypes.func,
-  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
+  /** placeholder text when card is empty */
+  placeholder: PropTypes.string,
   shadow: PropTypes.oneOf(["0", "2x"]),
   title: PropTypes.string,
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
   badgeLabel: "",
-  body: "",
+  body: null,
   children: null,
   className: null,
   commands: null,
@@ -470,21 +487,24 @@ Card.defaultProps = {
   more: null,
   onClick: null,
   padding: "0",
+  placeholder: "{ Card }",
   shadow: null,
   title: "",
   variant: null,
 };
 
 function CardGrid({
-  children, className, columns, data, gap, id, isInverse, rows,
+  children, className, columns, data, gap, id, isInverse, padding, placeholder, rows,
 }) {
   return (
     <CardGridWrapper
       className={className}
       columns={columns}
+      padding={padding}
       gap={gap || "lg"}
       id={id}
       rows={rows}
+      placeholder={placeholder}
     >
       {children
         || data.map((item) => {
@@ -515,6 +535,7 @@ function CardGrid({
 
 CardGrid.propTypes = {
   children: PropTypes.node,
+  padding: PropTypes.string,
   className: PropTypes.string,
   /** Defines the widths of grid columns
    *
@@ -556,6 +577,8 @@ CardGrid.propTypes = {
   ]),
   id: PropTypes.string,
   isInverse: PropTypes.bool,
+  /** placeholder text when card grid is empty */
+  placeholder: PropTypes.string,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
@@ -565,11 +588,13 @@ CardGrid.propTypes = {
 CardGrid.defaultProps = {
   children: null,
   className: null,
+  padding: "1rem",
   columns: null,
   data: null,
   gap: null,
   id: null,
   isInverse: false,
+  placeholder: "{ CardGrid }",
   rows: null,
 };
 

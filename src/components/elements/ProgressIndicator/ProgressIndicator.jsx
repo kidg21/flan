@@ -54,7 +54,7 @@ function ProgressIndicator({
 }
 
 ProgressIndicator.propTypes = {
-  percentage: PropTypes.number,
+  percentage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
 };
 ProgressIndicator.defaultProps = {

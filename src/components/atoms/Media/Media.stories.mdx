@@ -8,6 +8,7 @@ import Bar from "layout/Bar";
 import Media from "atoms/Media";
 import Icon from "atoms/Icon";
 import Page from "layout/Page";
+import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 
 <Meta title="Atoms|Media" component={Media} />
 
@@ -28,7 +29,7 @@ Passing in an image source load the HTML5 video player.
     <Grid columns="3">
         <Media
           id="Image"
-          media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+          media={ModernExterior1}
         />
       </Grid>
   </Story>
@@ -82,7 +83,7 @@ Passing text, files, applications, or other types of content external to the app
 ### Web Site
 
 <Preview withToolbar>
-  <Story name="Web Site" parameters={{ decorators: [FullScreen] }}>
+  <Story name="Web Site" decorators={[FullScreen]} parameters={{ chromatic: { disable: true } }}>
     <Media
       id="Web Site"
       media="https://www.lightboxre.com/"

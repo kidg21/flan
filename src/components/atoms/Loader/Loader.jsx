@@ -2,6 +2,20 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Text from "base/Typography";
+
+const LoaderWrapper = styled.div`
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: ${(props) => {
+    return props.theme.palette.active80;
+  }};
+  width: 100%;
+  height: 100%;
+`;
 
 const Fill = styled.div`
   height: 0.65rem;
@@ -73,7 +87,7 @@ const Dot = styled.div`
   }
 `;
 
-function Loader({ isLine, id }) {
+function Loader({ isLine, id, text }) {
   let content;
   if (isLine) {
     content = (
@@ -81,12 +95,16 @@ function Loader({ isLine, id }) {
     );
   } else {
     content = (
-      <Chase id={id}>
-        <Dot />
-        <Dot />
-        <Dot />
-        <Dot />
-      </Chase>);
+      <LoaderWrapper>
+        <Chase id={id}>
+          <Dot />
+          <Dot />
+          <Dot />
+          <Dot />
+        </Chase>
+        { text ? <Text text={text} /> : null }
+      </LoaderWrapper>
+    );
   }
 
   return content;
@@ -95,12 +113,13 @@ function Loader({ isLine, id }) {
 Loader.propTypes = {
   id: PropTypes.string,
   isLine: PropTypes.bool,
+  text: PropTypes.string,
 };
 
 Loader.defaultProps = {
   id: null,
   isLine: null,
+  text: null,
 };
 
 export default Loader;
-

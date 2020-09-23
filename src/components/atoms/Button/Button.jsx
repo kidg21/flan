@@ -56,7 +56,7 @@ const StyledButton = styled.button`
   border-bottom-color: ${(props) => {
     return props.theme.palette[props.underlineColor];
   }};
-  transition: all 0.15s ease;
+  transition: all 0.25s ease;
   & > * {
     margin: 0;
   }
@@ -98,11 +98,17 @@ const LabelWrapper = styled(Grid)`
   }};
   width: auto;
   > * {
-    line-height: inherit;
+    line-height: initial;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+`;
+
+const Count = styled(Tag)`
+  background-color: ${(props) => {
+    return props.disabled ? props.theme.palette.disabled : "";
+  }};
 `;
 
 const GroupWrapper = styled(Grid)`
@@ -114,16 +120,16 @@ const GroupWrapper = styled(Grid)`
 StyledButton.displayName = "Button";
 
 function ButtonGroup({
-  children, className, columns, id,
+  children, className, columns, gap, id,
 }) {
   // 1-6 colums
   let setColumns;
   const _columns = parseInt(columns, 10);
-  if (_columns > 0 && columns < 8) {
+  if (_columns > 0 && _columns < 8) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   }
   return (
-    <GroupWrapper className={className} columns={setColumns} id={id}>
+    <GroupWrapper className={className} gap={gap} columns={setColumns} id={id}>
       {children}
     </GroupWrapper>
   );
@@ -132,10 +138,17 @@ function ButtonGroup({
 ButtonGroup.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
-  /** Defines the widths of grid columns
-   *
-   * Options: 1-6
-   */
+  gap: PropTypes.oneOf([
+    "",
+    "0",
+    "xs",
+    "sm",
+    "lg",
+    "xl",
+    "2xl",
+    "3xl",
+    "4xl",
+  ]),
   columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   className: PropTypes.string,
 };
@@ -143,6 +156,7 @@ ButtonGroup.propTypes = {
 ButtonGroup.defaultProps = {
   id: null,
   children: null,
+  gap: null,
   columns: null,
   className: null,
 };
@@ -152,7 +166,7 @@ const sizeHash = {
     label: "xs",
     icon: "sm",
     height: "fit-content",
-    padding: "0.25em 0em",
+    padding: "0.25em 0.5em",
   },
   lg: {
     label: "lg",
@@ -181,6 +195,7 @@ function Button({
   isPlain,
   isRound,
   isSolid,
+  labelWeight,
   type,
   size,
   variant,
@@ -274,14 +289,16 @@ function Button({
   const selectedSize = size && sizeHash[size.toLowerCase()];
   const labelSize = selectedSize ? selectedSize.label : "lg";
   const iconSize = selectedSize ? selectedSize.icon : "inherit";
-  const setHeight = selectedSize ? selectedSize.height : "2.4rem";
-  const setPadding = selectedSize ? selectedSize.padding : "0em 0.75em";
+  let setHeight = selectedSize ? selectedSize.height : "2.4rem";
+  let setPadding = selectedSize ? selectedSize.padding : "0 0.75em";
 
   let gridGap = null;
   let justifyItems = null;
   if (alignCenter) {
     gridGap = "0.25rem";
     justifyItems = "center";
+    setHeight = "auto";
+    setPadding = "0.25em 0.75em";
   } else if (icon && !label) {
     gridGap = "0";
   }
@@ -301,6 +318,7 @@ function Button({
     ? `${!alignCenter && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}`
     : "1fr";
 
+  const iconParams = typeof icon === "string" ? { icon } : icon;
   const content = (
     <LabelWrapper
       columns={columns}
@@ -308,9 +326,9 @@ function Button({
       justifyItems={justifyItems}
       rows={alignCenter ? "max-content 1fr" : null}
     >
-      {icon ? <Icon icon={icon} size={iconSize} /> : null}
-      {label ? <Label size={labelSize} text={label} /> : null}
-      {count && !isDisabled ? <Tag label={count.toString()} /> : null}
+      {icon ? <Icon {...iconParams} size={iconSize} /> : null}
+      {label ? <Label size={labelSize} text={label} weight={labelWeight} /> : null}
+      {count ? <Count label={count.toString()} disabled={isDisabled} /> : null}
     </LabelWrapper>
   );
 
@@ -355,11 +373,15 @@ Button.propTypes = {
   fullWidth: PropTypes.bool,
   hasUnderline: PropTypes.bool,
   htmlFor: PropTypes.node,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape(Icon.propTypes),
+  ]),
   id: PropTypes.string,
   isPlain: PropTypes.bool,
   isRound: PropTypes.bool,
   isSolid: PropTypes.bool,
+  labelWeight: PropTypes.string,
   size: PropTypes.oneOf(["sm", "lg", "xl", ""]),
   label: PropTypes.string,
   onClick: PropTypes.func,
@@ -380,6 +402,7 @@ Button.defaultProps = {
   isPlain: null,
   isRound: null,
   isSolid: null,
+  labelWeight: null,
   size: "",
   label: null,
   onClick: null,

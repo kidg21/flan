@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
+import { colors } from "Variables";
 import Text from "base/Typography";
 import Grid from "layout/Grid";
 import Command from "atoms/Command";
@@ -15,7 +16,7 @@ const centerStyles = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh",
+  height: "100%",
 };
 const Center = ({ children }) => {
   return (<div style={centerStyles}>{children}</div>);
@@ -48,6 +49,12 @@ const containerLarge = {
   height: "400px",
 };
 const ContainerLarge = (storyFn) => { return (<div style={containerLarge}>{storyFn()}</div>); };
+
+const screenLarge = {
+  height: "600px",
+  border: `1px solid ${colors.grey30}`,
+};
+const ScreenLarge = (storyFn) => { return (<div style={screenLarge}>{storyFn()}</div>); };
 
 function Spacer() {
   return <span>&nbsp;</span>;
@@ -98,6 +105,7 @@ export {
   ContainerSmall,
   Container,
   ContainerLarge,
+  ScreenLarge,
   Spacer,
   DisplayGrid,
   CommandGrid,

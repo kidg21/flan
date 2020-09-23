@@ -1,7 +1,11 @@
-/* eslint-disable complexity */
-/* eslint-disable linebreak-style */
-/* eslint-disable security/detect-object-injection */
-import React, { useContext, useMemo, useCallback } from "react";
+/* eslint-disable linebreak-style, react/jsx-props-no-spreading, security/detect-object-injection */
+import React, {
+  useContext,
+  useMemo,
+  useCallback,
+  useEffect,
+  useState,
+} from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
@@ -12,7 +16,6 @@ import Creatable from "react-select/creatable";
 import { Skeleton } from "helpers/Skeleton";
 import { DisabledContext } from "States";
 import { withOnChangeState } from "utils/hocs";
-
 
 const MessageContainer = styled.section`
 color: ${(props) => {
@@ -39,7 +42,7 @@ const selectStyles = {
     if (isDisabled) {
       borderColor = colors.grey30;
     } else if (isFocused) {
-      borderColor = `${colors.blue80}!important`;
+      borderColor = `${colors.navy80}!important`;
     } else {
       borderColor = colors.grey30;
     }
@@ -63,8 +66,8 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.body,
-      color: isFocused ? colors.grey50 : colors.grey50,
-      fontSize: "0.90rem",
+      color: isFocused ? colors.black : colors.black,
+      fontSize: "0.875rem",
     };
   },
   // selected option
@@ -73,6 +76,7 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.body,
       opacity: isDisabled ? 0.5 : 1,
+      color: colors.black,
       transition: "opacity 300ms",
       fontSize: "0.90rem",
     };
@@ -146,7 +150,7 @@ const selectStyles = {
   },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
-    let color = colors.grey80;
+    let color = colors.black;
     if (isDisabled) {
       color = colors.grey40;
     } else if (isSelected) {
@@ -164,9 +168,15 @@ const selectStyles = {
   },
 };
 
+const LabelWrapper = styled.section`
+  color: ${(props) => {
+    return props.theme.text[props.textColor] || props.theme.text.light;
+  }};
+`;
+
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary;
+    return props.theme.text[props.textColor] || "inherit";
   }};
   width: 100%;
   &:empty {
@@ -189,6 +199,9 @@ function SelectMenu({
   isRtl,
   isSearchable,
   label,
+  maxMenuHeight,
+  menuPlacement,
+  menuPortalTarget,
   multiSelect,
   onBlur,
   onChange,
@@ -200,6 +213,7 @@ function SelectMenu({
   selectOptions,
   warning,
 }) {
+  const [portalTarget, setPortalTarget] = useState(null);
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let textColor;
   let errorText = "";
@@ -213,6 +227,18 @@ function SelectMenu({
   } else if (warning) {
     messageColor = "alert";
   }
+
+  // places drop down menu part in a portal
+  useEffect(() => {
+    let target = menuPortalTarget;
+    // passed in a string id for the portal target
+    if (typeof menuPortalTarget === "string") {
+      target = document.getElementById(menuPortalTarget);
+    }
+    if (target) {
+      setPortalTarget(target);
+    }
+  }, [menuPortalTarget]);
 
   // get validated selectedOptions in [{ value, label }] format to pass to react-select
   const selectedOptsValue = useMemo(() => {
@@ -280,6 +306,8 @@ function SelectMenu({
     isRtl: isRtl,
     isSearchable: isSearchable,
     name: id,
+    maxMenuHeight: maxMenuHeight,
+    menuPlacement: menuPlacement,
     onBlur: onBlur,
     onChange: changeSelected,
     onCreateOption: onCreateOption,
@@ -288,9 +316,10 @@ function SelectMenu({
     placeholder: placeholder,
     styles: selectStyles,
     value: selectedOptsValue,
+    menuPortalTarget: portalTarget,
   };
-  const select = (isCreatable || onCreateOption) ?
-    <Creatable {...selectProps} /> : <Select {...selectProps} />;
+  const select = (isCreatable || onCreateOption)
+    ? <Creatable {...selectProps} /> : <Select {...selectProps} />;
 
   return (
     <SelectMenuContainer
@@ -300,7 +329,7 @@ function SelectMenu({
       isRequired={isRequired}
       textColor={textColor}
     >
-      {label ? <Label size="xs" isRequired={isRequired} text={label} /> : null}
+      {label ? <LabelWrapper textColor={textColor}><Label size="sm" isRequired={isRequired} text={label} /></LabelWrapper> : null}
       {select}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText || warning} /></MessageContainer> : null}
@@ -320,6 +349,12 @@ const selectMenuPropTypes = {
   isRtl: PropTypes.bool,
   isSearchable: PropTypes.bool,
   label: PropTypes.string,
+  /** maximum height of the menu before scrolling */
+  maxMenuHeight: PropTypes.number,
+  /** placement of the drop down menu in relation to the control */
+  menuPlacement: PropTypes.oneOf(["auto", "bottom", "top"]),
+  /** portal id or html element for menu */
+  menuPortalTarget: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Element)]),
   multiSelect: PropTypes.bool,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
@@ -350,6 +385,9 @@ const selectMenuDefaultProps = {
   isRtl: false,
   isSearchable: true,
   label: null,
+  maxMenuHeight: undefined,
+  menuPlacement: undefined,
+  menuPortalTarget: undefined,
   multiSelect: false,
   onBlur: null,
   onChange: null,
@@ -370,7 +408,8 @@ const StatefulSelectMenu = withOnChangeState(SelectMenu, "selectOptions");
 
 const SelectMenuComp = (props) => {
   // if an onChange is not passed in, the select menu will handle the state changes
-  return props.onChange ? <SelectMenu {...props} /> : <StatefulSelectMenu {...props} />;
+  const { onChange } = props;
+  return onChange ? <SelectMenu {...props} /> : <StatefulSelectMenu {...props} />;
 };
 // populate storybook props table
 SelectMenuComp.defaultProps = selectMenuDefaultProps;

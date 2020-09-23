@@ -3,9 +3,10 @@ import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
+import Radio from "atoms/Radio";
 import Text from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
-import List, { ListItem } from "blocks/List";
+import List, { ListItem, ListSection } from "blocks/List";
 import listData from "blocks/List/List.data.js";
 
 <Meta title="Data Display|List" component={List} />
@@ -105,7 +106,7 @@ Standard lists are used for data display. A list should have a divider when the 
           description="This is the description"
         />
       </List>
-      <List title="With a Divider" isDivided>
+      <List title="With Dividers" isDivided>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -119,7 +120,7 @@ Standard lists are used for data display. A list should have a divider when the 
           description="This is the description"
         />
       </List>
-      <List title="With a Divider (inverse)" isDivided isInverse>
+      <List title="With Dividers (inverse)" isDivided isInverse>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -156,22 +157,22 @@ Standard lists are used for data display. A list should have a divider when the 
         <ListItem
           title="List Item"
           description="This is the description"
-          pre={{ label: "AB" }}
+          pre={{ type: "label", label: "AB" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          pre={{ label: "CD" }}
+          pre={{ type: "label", label: "CD" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          pre={{ label: "EF" }}
+          pre={{ type: "label", label: "EG" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          pre={{ label: "GH" }}
+          pre={{ type: "label", label: "GH" }}
         />
       </List>
       <List title="Post Label">
@@ -270,6 +271,193 @@ Standard lists are used for data display. A list should have a divider when the 
           description="This is the description"
           post={{ type: "toggle" }}
         />
+      </List>
+    </Grid>
+  </Story>
+</Preview>
+
+### List Sections
+
+By default, wrapping List Items in a List Section will provide the grouping with separation from the rest of the content in the List.  List Sections can be configured to display a Title which will display above the List Items in the Section.  List Sections also can be configured to display a Divider which will display below the List Items in the Section.
+
+<Preview>
+  <Story name="List Sections">
+    <Grid columns="2">
+      <List title="Sections (Default)">
+        <ListSection>
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+        </ListSection>
+        <ListSection>
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+        </ListSection>
+      </List>
+      <List title="Default (Inverse)" isInverse>
+        <ListSection>
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+        </ListSection>
+        <ListSection>
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+        </ListSection>
+      </List>
+      <List title="With Titles">
+        <ListSection title="Section 1">
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+        </ListSection>
+        <ListSection title="Section 2">
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+        </ListSection>
+      </List>
+      <List title="With Titles (Inverse)" isInverse>
+        <ListSection title="Section 1">
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+        </ListSection>
+        <ListSection title="Section 2">
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+        </ListSection>
+      </List>
+      <List title="With Dividers">
+        <ListSection hasDivider>
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+        </ListSection>
+        <ListSection hasDivider>
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+        </ListSection>
+      </List>
+      <List title="With Dividers (Inverse)" isInverse>
+        <ListSection hasDivider>
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+        </ListSection>
+        <ListSection hasDivider>
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+        </ListSection>
+      </List>
+      <List title="Sections (Titles & Dividers)">
+        <ListSection title="Section 1" hasDivider>
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+        </ListSection>
+        <ListSection title="Section 2" hasDivider>
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+        </ListSection>
+      </List>
+      <List title="Titles & Dividers (Inverse)" isInverse>
+        <ListSection title="Section 1" hasDivider>
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 1 Item"
+            description="This is the description"
+          />
+        </ListSection>
+        <ListSection title="Section 2" hasDivider>
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+          <ListItem
+            title="Section 2 Item"
+            description="This is the description"
+          />
+        </ListSection>
       </List>
     </Grid>
   </Story>

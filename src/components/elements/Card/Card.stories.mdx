@@ -19,8 +19,8 @@ import Card, { CardSection, CardGrid } from "elements/Card";
 
 <Preview withToolbar>
   <Story name="Standard">
-    <Grid columns="3">
-      <div/>
+    <CardGrid columns="3">
+      <div />
       <Card
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
@@ -32,33 +32,27 @@ import Card, { CardSection, CardGrid } from "elements/Card";
           {
             id: "Command One",
             label: "Command One",
-            onClick: action("Command One Clicked"),
           },
           {
             id: "Command Two",
             label: "Command Two",
-            onClick: action("Command Two Clicked"),
           },
           {
             id: "Command Three",
             label: "Command Three",
-            onClick: action("Command Three Clicked"),
           },
           {
             id: "Command Four",
             label: "Command Four",
-            onClick: action("Command Four Clicked"),
           },
           {
             id: "Command Five",
             label: "Command Five",
-            onClick: action("Command Five Clicked"),
           },
         ]}
-        onClick={action("Primary Action Area Clicked")}
       />
-      <div/>
-  </Grid>
+      <div />
+    </CardGrid>
   </Story>
 </Preview>
 
@@ -109,21 +103,10 @@ The primary action area of a card is typically the card itself. Often cards are 
         title="Card Title"
         icon="star"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      />
-      <Card
-        title="Card Title"
-        description="Card Description"
-        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
           {
             id: "Command One",
             label: "Command One",
-            onClick: action("Command One Clicked"),
-          },
-          {
-            id: "Command Two",
-            label: "Command Two",
-            onClick: action("Command Two Clicked"),
           },
         ]}
       />
@@ -135,30 +118,39 @@ The primary action area of a card is typically the card itself. Often cards are 
           {
             id: "Command One",
             label: "Command One",
-            onClick: action("Command One Clicked"),
           },
           {
             id: "Command Two",
             label: "Command Two",
-            onClick: action("Command Two Clicked"),
+          },
+        ]}
+      />
+      <Card
+        title="Card Title"
+        description="Card Description"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        commands={[
+          {
+            id: "Command One",
+            label: "Command One",
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
           },
           {
             id: "Command Three",
             label: "Command Three",
-            onClick: action("Command Three Clicked"),
           },
           {
             id: "Command Four",
             label: "Command Four",
-            onClick: action("Command Four Clicked"),
           },
           {
             id: "Command Five",
             label: "Command Five",
-            onClick: action("Command Five Clicked"),
           },
         ]}
-        onClick={action("Primary Action Area Clicked")}
       />
     </CardGrid>
   </Story>
@@ -179,30 +171,24 @@ The primary action area of a card is typically the card itself. Often cards are 
           {
             id: "Command One",
             label: "Command One",
-            onClick: action("Command One Clicked"),
           },
           {
             id: "Command Two",
             label: "Command Two",
-            onClick: action("Command Two Clicked"),
           },
           {
             id: "Command Three",
             label: "Command Three",
-            onClick: action("Command Three Clicked"),
           },
           {
             id: "Command Four",
             label: "Command Four",
-            onClick: action("Command Four Clicked"),
           },
           {
             id: "Command Five",
             label: "Command Five",
-            onClick: action("Command Five Clicked"),
           },
         ]}
-        onClick={action("Primary Action Area Clicked")}
         more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
       <Card
@@ -214,30 +200,24 @@ The primary action area of a card is typically the card itself. Often cards are 
           {
             id: "Command One",
             label: "Command One",
-            onClick: action("Command One Clicked"),
           },
           {
             id: "Command Two",
             label: "Command Two",
-            onClick: action("Command Two Clicked"),
           },
           {
             id: "Command Three",
             label: "Command Three",
-            onClick: action("Command Three Clicked"),
           },
           {
             id: "Command Four",
             label: "Command Four",
-            onClick: action("Command Four Clicked"),
           },
           {
             id: "Command Five",
             label: "Command Five",
-            onClick: action("Command Five Clicked"),
           },
         ]}
-        onClick={action("Primary Action Area Clicked")}
         more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
       <Card
@@ -249,30 +229,24 @@ The primary action area of a card is typically the card itself. Often cards are 
           {
             id: "Command One",
             label: "Command One",
-            onClick: action("Command One Clicked"),
           },
           {
             id: "Command Two",
             label: "Command Two",
-            onClick: action("Command Two Clicked"),
           },
           {
             id: "Command Three",
             label: "Command Three",
-            onClick: action("Command Three Clicked"),
           },
           {
             id: "Command Four",
             label: "Command Four",
-            onClick: action("Command Four Clicked"),
           },
           {
             id: "Command Five",
             label: "Command Five",
-            onClick: action("Command Five Clicked"),
           },
         ]}
-        onClick={action("Primary Action Area Clicked")}
         more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
       <Card
@@ -284,30 +258,24 @@ The primary action area of a card is typically the card itself. Often cards are 
           {
             id: "Command One",
             label: "Command One",
-            onClick: action("Command One Clicked"),
           },
           {
             id: "Command Two",
             label: "Command Two",
-            onClick: action("Command Two Clicked"),
           },
           {
             id: "Command Three",
             label: "Command Three",
-            onClick: action("Command Three Clicked"),
           },
           {
             id: "Command Four",
             label: "Command Four",
-            onClick: action("Command Four Clicked"),
           },
           {
             id: "Command Five",
             label: "Command Five",
-            onClick: action("Command Five Clicked"),
           },
         ]}
-        onClick={action("Primary Action Area Clicked")}
         more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
       <Card
@@ -319,37 +287,38 @@ The primary action area of a card is typically the card itself. Often cards are 
           {
             id: "Command One",
             label: "Command One",
-            onClick: action("Command One Clicked"),
           },
           {
             id: "Command Two",
             label: "Command Two",
-            onClick: action("Command Two Clicked"),
           },
           {
             id: "Command Three",
             label: "Command Three",
-            onClick: action("Command Three Clicked"),
           },
           {
             id: "Command Four",
             label: "Command Four",
-            onClick: action("Command Four Clicked"),
           },
           {
             id: "Command Five",
             label: "Command Five",
-            onClick: action("Command Five Clicked"),
           },
         ]}
-        onClick={action("Primary Action Area Clicked")}
         more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
       />
     </CardGrid>
   </Story>
 </Preview>
 
-
-## Props
+## 'Card' Props
 
 <Props of={Card} />
+
+## 'Card Section' Props
+
+<Props of={CardSection} />
+
+## 'Card Grid' Props
+
+<Props of={CardGrid} />

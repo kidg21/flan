@@ -7,13 +7,16 @@ import { Lighten, Darken } from "Variables";
 
 const StyledLabel = styled.label`
   color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin: 0;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   line-height: ${(props) => { return props.lineHeight; }};
   user-select: none;
   text-transform: ${(props) => { return props.textTransform; }};
   font-size: ${(props) => { return props.fontSize; }};
-  cursor: pointer;
+  cursor: ${(props) => { return props.cursor; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
   &:after {
@@ -29,6 +32,32 @@ const StyledLabel = styled.label`
     vertical-align: middle;
     padding-left: 0.25em;
   }
+  ${(props) => {
+    if (!props.visible) {
+      return `
+        position: absolute;
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+
+        &.focusable {
+            &:active, &:focus {
+                position: static;
+                overflow: visible;
+                height: auto;
+                width: auto;
+                margin: 0;
+                clip: auto;
+            }
+        }
+      `;
+    }
+  }}
 `;
 
 const LinkText = styled.a`
@@ -133,7 +162,7 @@ const labelSizeHash = {
     letterSpacing: "0.4px",
   },
   sm: {
-    fontSize: "0.8rem",
+    fontSize: "0.875rem",
     letterSpacing: "1px",
   },
   lg: {
@@ -147,6 +176,14 @@ const labelSizeHash = {
 };
 
 const linkSizeHash = {
+  "xs": {
+    fontSize: "0.75em",
+    letterSpacing: "0px",
+  },
+  "sm": {
+    fontSize: "0.875rem",
+    letterSpacing: "0px",
+  },
   "lg": {
     fontSize: "1rem",
     letterSpacing: "0.2px",
@@ -171,7 +208,6 @@ const weightHash = {
 function Text({
   children, className, id, size, text, weight,
 }) {
-
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
@@ -196,7 +232,7 @@ Text.propTypes = {
   className: PropTypes.string,
   id: PropTypes.string,
   size: PropTypes.oneOf(["xs", "sm", "lg", ""]),
-  text: PropTypes.string,
+  text: PropTypes.node,
   weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Text.defaultProps = {
@@ -255,18 +291,20 @@ Title.defaultProps = {
 function Label({
   children,
   className,
+  cursor,
   htmlFor,
   isRequired,
+  onClick,
   weight,
   size,
   text,
   isUppercase,
+  visible,
 }) {
-
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
-  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px", };
+  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   let textTransform;
@@ -278,12 +316,15 @@ function Label({
   return (
     <StyledLabel
       className={className}
+      cursor={cursor}
       fontSize={fontSize}
       fontWeight={fontWeight}
       textTransform={textTransform}
       htmlFor={htmlFor}
       isRequired={isRequired}
       letterSpacing={letterSpacing}
+      visible={visible}
+      onClick={onClick}
     >
       {text || children}
     </StyledLabel>
@@ -293,21 +334,27 @@ function Label({
 Label.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  cursor: PropTypes.string,
   htmlFor: PropTypes.string,
   isUppercase: PropTypes.bool,
   isRequired: PropTypes.bool,
+  onClick: PropTypes.func,
   size: PropTypes.oneOf(["xs", "sm", "lg", "xl", ""]),
   text: PropTypes.node,
+  visible: PropTypes.bool,
   weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
 };
 Label.defaultProps = {
   children: null,
   className: null,
+  cursor: "pointer",
   isUppercase: false,
   htmlFor: null,
   isRequired: false,
+  onClick: null,
   size: "",
   text: null,
+  visible: true,
   weight: null,
 };
 
@@ -342,7 +389,7 @@ Link.propTypes = {
   disabled: PropTypes.bool,
   href: PropTypes.string,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["lg", "xl", "2xl", ""]),
+  size: PropTypes.oneOf(["xs", "sm", "lg", "xl", "2xl", ""]),
   target: PropTypes.string,
   text: PropTypes.string,
   weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),

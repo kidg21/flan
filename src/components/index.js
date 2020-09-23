@@ -19,7 +19,7 @@ export { default as Checkbox, CheckboxGroup } from "./atoms/Checkbox";
 export { default as Command } from "./atoms/Command";
 export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
-export { default as Field, FieldGroup } from "./atoms/Field";
+export { default as Field, FieldGroup, FieldSection } from "./atoms/Field";
 export { default as Icon } from "./atoms/Icon";
 export { default as Image } from "./atoms/Image";
 export { default as Loader } from "./atoms/Loader";
@@ -53,7 +53,7 @@ export { default as DialogBox } from "./elements/DialogBox";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
-export { default as Picker, ColorSwatch } from "./elements/Picker";
+export { default as Picker, ColorSwatch, ImageSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as ProgressIndicator } from "./elements/ProgressIndicator";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
@@ -65,6 +65,7 @@ export { default as Form, FormSection } from "./layout/Form";
 export { default as Flex } from "./layout/Flex";
 export { default as Template } from "./layout/Template";
 export { default as Grid } from "./layout/Grid";
+export { default as Inline } from "./layout/Inline";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page, PageSection, ContentSection } from "./layout/Page";
@@ -82,3 +83,10 @@ export {
   darkTheme,
 } from "./base/Variables/Variables.jsx";
 export { ThemeProvider } from "styled-components";
+
+// Image dependencies
+export { default as PrintNone } from "images/dialogs/image-none.gif";
+export { default as PrintFull } from "images/dialogs/image-full.gif";
+export { default as PrintHalf } from "images/dialogs/image-half.gif";
+export { default as PrintQuarter } from "images/dialogs/image-quarter.gif";
+export { default as PrintLegend } from "images/dialogs/image-legend.gif";

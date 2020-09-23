@@ -1,21 +1,39 @@
 /* eslint-disable linebreak-style */
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
 
 const Line = styled.hr`
-  height: 0;
   width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-top: 0.25px solid
+  height: 0;
+  margin: 1rem 0; 
+  border-top: 1px solid
     ${(props) => {
-    return props.theme.palette.neutral40;
+    return props.theme.palette.neutral20;
   }};
-  font-size: 0;
+   ${(props) => {
+    return props.isVertical
+      && css`
+        width: 0;
+        height: 100%;
+        margin: 0 1rem;
+        border-top: none;
+        border-right:  ${() => { return `1px solid ${props.theme.palette.neutral20}`; }};
+     `;
+  }}
 `;
 
-function Divider() {
-  return <Line />;
+function Divider({ className, isVertical }) {
+  return <Line className={className} isVertical={isVertical} />;
 }
 
+Divider.propTypes = {
+  className: PropTypes.string,
+  isVertical: PropTypes.bool,
+};
+
+Divider.defaultProps = {
+  className: null,
+  isVertical: false,
+};
 export default Divider;

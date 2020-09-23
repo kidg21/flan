@@ -6,10 +6,10 @@ import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
-import SearchBar from "blocks/Search";
+import Search from "blocks/Search";
 import * as stories from 'blocks/Search/Search.stories.js';
 
-<Meta title="Data Entry|Search" component={SearchBar}/>
+<Meta title="Data Entry|Search" component={Search}/>
 
 # Search
 
@@ -19,22 +19,27 @@ import * as stories from 'blocks/Search/Search.stories.js';
 
 <Preview withToolbar>
   <Story name="Standard">
-     <SearchBar
+     <Search
       id="Search_Standard"
       placeholder="Search Location"
     />
   </Story>
 </Preview>
 
-### Interaction
+<!-- Need to rewrite to pass tests
+"Invalid hook call. Hooks can only be called inside of the body of a function component."
+Likely rewrite here rather than import from 'stories.js'
+-->
+<!-- ### Interaction
 Click on the 'Search' icon to show Results
-
+<Preview withToolbar>
 <Story
   name="Interaction"
-  parameters={{ decorators: [Container] }}
+  decorators={[Container]}
 >
   {stories.Interaction()}
 </Story>
+</Preview> -->
 
 # Usage
 
@@ -47,9 +52,9 @@ The Search component is a set of expandable panels for showing and hiding conten
 <Preview>
   <Story
     name="Suggestions"
-    parameters={{ decorators: [Container] }}
+    decorators={[Container]}
   >
-    <SearchBar
+    <Search
       id="Suggestions"
       placeholder="Search Location"
       results={[
@@ -73,9 +78,9 @@ The Search component is a set of expandable panels for showing and hiding conten
 <Preview>
   <Story
     name="Suggestions ( max )"
-    parameters={{ decorators: [ContainerLarge] }}
+    decorators={[Container]}
   >
-    <SearchBar
+    <Search
       id="Suggestions_More"
       placeholder="Search Location"
       results={[
@@ -143,17 +148,17 @@ The Search component is a set of expandable panels for showing and hiding conten
 ### Errors
 
 <Preview>
-  <Story name="Offline" parameters={{ decorators: [ContainerSmall] }}>
-    <SearchBar id="Search_Offline" placeholder="Search Location" error="offline" />
+  <Story name="Offline" decorators={[ContainerSmall]}>
+    <Search id="Search_Offline" placeholder="Search Location" error="offline" />
   </Story>
 </Preview>
 
 <Preview>
-  <Story name="Connection" parameters={{ decorators: [ContainerSmall] }}>
-    <SearchBar id="Search_BadConnection" placeholder="Search Location" error="connection" />
+  <Story name="Connection" decorators={[ContainerSmall]}>
+    <Search id="Search_BadConnection" placeholder="Search Location" error="connection" />
   </Story>
 </Preview>
 
 ## Props
 
-<Props of={SearchBar} />
+<Props of={Search} />

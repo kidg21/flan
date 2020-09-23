@@ -1,405 +1,267 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 TNHFz"
-    id="Template A_01"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
+    id="Knobs"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
       id="A"
       placeholder="A"
       tabIndex="0"
-    >
-      A
-    </section>
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      id="D"
+      placeholder="D"
+      tabIndex="0"
+    />
+    <section
+      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      id="E"
+      placeholder="E"
+      tabIndex="0"
+    />
   </section>
-</section>
+</div>
 `;
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 jNQYJj"
+  id="Standard"
+  rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bHNVdZ"
-    id="Template B_01"
-    rows={null}
+    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
+    id="A"
+    placeholder="A"
+    tabIndex="0"
   >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 GaHDh"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
     >
-      A
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 hytcMk"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        A
+      </h6>
+    </div>
+  </section>
+  <section
+    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
+    id="B"
+    placeholder="B"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
     >
-      B
-    </section>
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 hytcMk"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        B
+      </h6>
+    </div>
+  </section>
+  <section
+    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
+    id="C"
+    placeholder="C"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 hytcMk"
+        fontSize="1.2rem"
+        fontWeight="400"
+        letterSpacing="1px"
+      >
+        C
+      </h6>
+    </div>
   </section>
 </section>
 `;
 
 exports[` 3`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bDBOMh"
-    id="Template B_02"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 GaHDh"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      A
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      B
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 4`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 kLEkNn"
-    id="Template C_01"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      A
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      B
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 fsevAL"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      C
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 5`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 bkJWlh"
-    id="Template C_02"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      A
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      B
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 fsevAL"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      C
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 6`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 cwxEPh"
-    id="Template D_01"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      A
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      B
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 fsevAL"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      C
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 eGelAc"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      D
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 7`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 edIvSY"
-    id="Template D_02"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      A
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      B
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 fsevAL"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      C
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 eGelAc"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      D
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 8`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 lhhFzu"
-    id="Template E_01"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      A
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      B
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 fsevAL"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      C
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 eGelAc"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      D
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 gmrxwt"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    >
-      E
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 9`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwDkn"
-  id={null}
-  rows="100vh"
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 cEkwws"
-    id="Template E_02"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    >
-      A
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    >
-      B
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 fsevAL"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    >
-      C
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 eGelAc"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    >
-      D
-    </section>
-    <section
-      className="Template__Region-sc-1i4nzbu-0 gmrxwt"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    >
-      E
-    </section>
-  </section>
-</section>
-`;
-
-exports[` 10`] = `
 <div
   style={
     Object {
-      "height": "100vh",
-      "width": "100%",
+      "height": "250px",
     }
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 chPGDT"
-    id="Template Regions"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 eotlbL"
+    id="Configured"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 cWJqIx"
+      className="Template__Region-sc-1i4nzbu-0 dBfOAc"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          A
+        </h6>
+      </div>
+    </section>
+    <section
+      className="Template__Region-sc-1i4nzbu-0 jRfqpD"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          B
+        </h6>
+      </div>
+    </section>
+    <section
+      className="Template__Region-sc-1i4nzbu-0 fCvwzu"
+      id="C"
+      placeholder="C"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          C
+        </h6>
+      </div>
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 4`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 CmKDG"
+    id="Template Overlay"
+    rows={null}
+  >
+    <section
+      className="Template__Region-sc-1i4nzbu-0 cKxKnd"
       id="A"
       placeholder="A"
       tabIndex="0"
     >
       <form
-        className="Search__SearchContainer-sey9om-0 bVywlp"
+        className="Search__SearchContainer-sey9om-0 iyfwN"
         id="Search_E3"
+        onSubmit={[Function]}
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
           height={null}
           id={null}
           overflow={null}
           width={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+            className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
             disabled={false}
             htmlFor={null}
             id="Search_E3-search-button"
@@ -409,13 +271,13 @@ exports[` 10`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
               id={null}
               rows={null}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
                 color={null}
                 data-icon="search"
                 data-prefix="far"
@@ -436,13 +298,13 @@ exports[` 10`] = `
             </section>
           </button>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
             id="Search_E3-search-bar_container"
             rows={null}
           >
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
               cols=""
               disabled={false}
               id="Search_E3-search-bar"
@@ -451,7 +313,8 @@ exports[` 10`] = `
               onBlur={null}
               onChange={[Function]}
               onFocus={null}
-              onKeyPress={[Function]}
+              onKeyPress={null}
+              onKeyUp={[Function]}
               pattern={null}
               placeholder="Search Location"
               rows=""
@@ -463,13 +326,13 @@ exports[` 10`] = `
       </form>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dLRjEu"
+      className="Template__Region-sc-1i4nzbu-0 fmYhxO"
       id="B"
       placeholder="B"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -479,13 +342,13 @@ exports[` 10`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="circle"
             data-prefix="far"
@@ -504,11 +367,13 @@ exports[` 10`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -516,13 +381,13 @@ exports[` 10`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 fsevAL"
+      className="Template__Region-sc-1i4nzbu-0 dUBBAT"
       id="C"
       placeholder="C"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -532,13 +397,13 @@ exports[` 10`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="circle"
             data-prefix="far"
@@ -557,11 +422,13 @@ exports[` 10`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -569,13 +436,13 @@ exports[` 10`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 eGelAc"
+      className="Template__Region-sc-1i4nzbu-0 MVbLU"
       id="D"
       placeholder="D"
       tabIndex="0"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 duxIaX"
+        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -585,13 +452,13 @@ exports[` 10`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="circle"
             data-prefix="far"
@@ -610,11 +477,13 @@ exports[` 10`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 eSOoNI"
+            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
             htmlFor={null}
             letterSpacing=".5px"
+            onClick={null}
           >
             Button
           </label>
@@ -622,117 +491,111 @@ exports[` 10`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gmrxwt"
+      className="Template__Region-sc-1i4nzbu-0 kJUfnV"
       id="E"
       placeholder="E"
       tabIndex="0"
     >
-      <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 cGVoPi Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
-        href={null}
-        id="storyshots_66"
-        media=""
-        onClick={null}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
+        id="standard"
+        rows={null}
       >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+          cursor="pointer"
+          fontSize="0.875rem"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing=".5px"
+          onClick={null}
+        >
+          Color Palette
+        </label>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 eOStD"
-          id="standard"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+          id={null}
           rows={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 fwqfhW"
-            fontSize="0.875rem"
-            fontWeight={600}
-            htmlFor={null}
-            letterSpacing=".5px"
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
+            color="#EBEAEC"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
+            color="#D9ECEC"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
+            color="#80959D"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
           >
-            Color Palette
-          </label>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
-            id={null}
-            rows={null}
-          >
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
-              color="#EBEAEC"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
-              color="#D9ECEC"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 bdCBXP"
-              color="#80959D"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              color={null}
+              data-icon="check"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                color={null}
-                data-icon="check"
-                data-prefix="far"
-                focusable="false"
-                fontSize="inherit"
-                id={null}
-                role="img"
+              <path
+                d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
+                fill="currentColor"
                 style={Object {}}
-                viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </button>
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
-              color="#63B1CD"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
-              color="#06BFAE"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
-              color="#095593"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
-              color="#F3822B"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-            <button
-              className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
-              color="#FFBF00"
-              height="1.5rem"
-              onClick={null}
-              width="1.5rem"
-            />
-          </section>
+              />
+            </svg>
+          </button>
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
+            color="#63B1CD"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
+            color="#06BFAE"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
+            color="#095593"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 cQvxVu"
+            color="#F3822B"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
+          <button
+            className="Picker__Swatch-sc-1xwpkqn-1 jdqheZ"
+            color="#FFBF00"
+            height="1.5rem"
+            onClick={null}
+            width="1.5rem"
+          />
         </section>
-      </div>
+      </section>
     </section>
   </section>
   <div
@@ -743,149 +606,5 @@ exports[` 10`] = `
       }
     }
   />
-</div>
-`;
-
-exports[` 11`] = `
-<div
-  style={
-    Object {
-      "height": "100vh",
-      "width": "100%",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
-    id={null}
-    rows={null}
-  >
-    <h4
-      className="Typography__TitleText-sc-19auepv-2 dDJKKW"
-      fontSize="1.35rem"
-      fontWeight="400"
-      letterSpacing="0px"
-    >
-      My Latest Musings
-    </h4>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eRZNYR"
-      fontSize="1rem"
-      fontWeight={300}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      Totally Worth The Read...Enjoy!
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 fEVysz"
-      fontSize="0.875rem"
-      fontWeight={600}
-      id={null}
-      letterSpacing="0.25px"
-    >
-      Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
-    </p>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-      fontSize="1.15rem"
-      fontWeight="500"
-      letterSpacing="0.4px"
-    >
-      Section 1
-    </h5>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <h5
-      className="Typography__TitleText-sc-19auepv-2 dTLbTf"
-      fontSize="1.15rem"
-      fontWeight="500"
-      letterSpacing="0.4px"
-    >
-      Section 2
-    </h5>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dBAreK"
-      fontSize="1rem"
-      fontWeight={400}
-      id={null}
-      letterSpacing="0.5px"
-    >
-      This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
-    </p>
-  </section>
-</div>
-`;
-
-exports[` 12`] = `
-<div
-  style={
-    Object {
-      "height": "100vh",
-      "width": "100%",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kfrexs Template__TemplateWrapper-sc-1i4nzbu-1 gvtNqe"
-    id="Knobs"
-    rows={null}
-  >
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
-      id="A"
-      placeholder="A"
-      tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
-      id="B"
-      placeholder="B"
-      tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
-      id="C"
-      placeholder="C"
-      tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
-      id="D"
-      placeholder="D"
-      tabIndex="0"
-    />
-    <section
-      className="Template__Region-sc-1i4nzbu-0 dVjuSo"
-      id="E"
-      placeholder="E"
-      tabIndex="0"
-    />
-  </section>
 </div>
 `;

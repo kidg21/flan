@@ -2,18 +2,19 @@
 
 exports[` 1`] = `
 <form
-  className="Search__SearchContainer-sey9om-0 bVywlp"
+  className="Search__SearchContainer-sey9om-0 iyfwN"
   id="Search_Standard"
+  onSubmit={[Function]}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+      className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
       disabled={false}
       htmlFor={null}
       id="Search_Standard-search-button"
@@ -23,13 +24,13 @@ exports[` 1`] = `
       type="button"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
         id={null}
         rows={null}
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
           color={null}
           data-icon="search"
           data-prefix="far"
@@ -50,13 +51,13 @@ exports[` 1`] = `
       </section>
     </button>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
       id="Search_Standard-search-bar_container"
       rows={null}
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+        className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
         cols=""
         disabled={false}
         id="Search_Standard-search-bar"
@@ -65,7 +66,8 @@ exports[` 1`] = `
         onBlur={null}
         onChange={[Function]}
         onFocus={null}
-        onKeyPress={[Function]}
+        onKeyPress={null}
+        onKeyUp={[Function]}
         pattern={null}
         placeholder="Search Location"
         rows=""
@@ -86,18 +88,19 @@ exports[` 2`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 bVywlp"
+    className="Search__SearchContainer-sey9om-0 iyfwN"
     id="Suggestions"
+    onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
         disabled={false}
         htmlFor={null}
         id="Suggestions-search-button"
@@ -107,13 +110,13 @@ exports[` 2`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
           id={null}
           rows={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="search"
             data-prefix="far"
@@ -134,13 +137,13 @@ exports[` 2`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
         id="Suggestions-search-bar_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
           cols=""
           disabled={false}
           id="Suggestions-search-bar"
@@ -149,7 +152,8 @@ exports[` 2`] = `
           onBlur={null}
           onChange={[Function]}
           onFocus={null}
-          onKeyPress={[Function]}
+          onKeyPress={null}
+          onKeyUp={[Function]}
           pattern={null}
           placeholder="Search Location"
           rows=""
@@ -159,21 +163,21 @@ exports[` 2`] = `
       </section>
     </div>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 iqXYVv Search__DropContainer-sey9om-4 gpLFbU"
+      className="Container__Wrapper-sc-1i4fzzd-0 bjJgME Search__DropContainer-sey9om-4 bIKnoD"
       height={null}
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ciTqrT"
+        className="Container__BoxContainer-sc-1i4fzzd-1 jhoPUP"
         height=""
         id="Suggestions-results-container"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+          className="List__ListWrapper-sc-43f2zq-6 czyrHe"
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -181,15 +185,15 @@ exports[` 2`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -198,7 +202,7 @@ exports[` 2`] = `
                   White House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -210,7 +214,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -218,15 +222,15 @@ exports[` 2`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -235,7 +239,7 @@ exports[` 2`] = `
                   Orange House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -247,7 +251,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -255,15 +259,15 @@ exports[` 2`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -272,7 +276,7 @@ exports[` 2`] = `
                   Red House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -294,23 +298,24 @@ exports[` 3`] = `
 <div
   style={
     Object {
-      "height": "400px",
+      "height": "250px",
     }
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 bVywlp"
+    className="Search__SearchContainer-sey9om-0 iyfwN"
     id="Suggestions_More"
+    onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
         disabled={false}
         htmlFor={null}
         id="Suggestions_More-search-button"
@@ -320,13 +325,13 @@ exports[` 3`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
           id={null}
           rows={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="search"
             data-prefix="far"
@@ -347,13 +352,13 @@ exports[` 3`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
         id="Suggestions_More-search-bar_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
           cols=""
           disabled={false}
           id="Suggestions_More-search-bar"
@@ -362,7 +367,8 @@ exports[` 3`] = `
           onBlur={null}
           onChange={[Function]}
           onFocus={null}
-          onKeyPress={[Function]}
+          onKeyPress={null}
+          onKeyUp={[Function]}
           pattern={null}
           placeholder="Search Location"
           rows=""
@@ -372,21 +378,21 @@ exports[` 3`] = `
       </section>
     </div>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 iqXYVv Search__DropContainer-sey9om-4 gpLFbU"
+      className="Container__Wrapper-sc-1i4fzzd-0 bjJgME Search__DropContainer-sey9om-4 bIKnoD"
       height={null}
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ciTqrT"
+        className="Container__BoxContainer-sc-1i4fzzd-1 jhoPUP"
         height=""
         id="Suggestions_More-results-container"
       >
         <ul
-          className="List__ListWrapper-sc-43f2zq-0 jUoCfC"
+          className="List__ListWrapper-sc-43f2zq-6 czyrHe"
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -394,15 +400,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -411,7 +417,7 @@ exports[` 3`] = `
                   White House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -423,7 +429,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -431,15 +437,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -448,7 +454,7 @@ exports[` 3`] = `
                   Orange House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -460,7 +466,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -468,15 +474,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -485,7 +491,7 @@ exports[` 3`] = `
                   Red House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -497,7 +503,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -505,15 +511,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -522,7 +528,7 @@ exports[` 3`] = `
                   Green House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -534,7 +540,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -542,15 +548,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -559,7 +565,7 @@ exports[` 3`] = `
                   Black House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -571,7 +577,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -579,15 +585,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -596,7 +602,7 @@ exports[` 3`] = `
                   Blue House
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -608,7 +614,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -616,15 +622,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -633,7 +639,7 @@ exports[` 3`] = `
                   Address
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -645,7 +651,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -653,15 +659,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -670,7 +676,7 @@ exports[` 3`] = `
                   APN
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -682,7 +688,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -690,15 +696,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -707,7 +713,7 @@ exports[` 3`] = `
                   Owner
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -719,7 +725,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -727,15 +733,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 RjiBe"
+                className="Bar__Slot-icfo76-1 kSFTkF"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -744,7 +750,7 @@ exports[` 3`] = `
                   Address
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -756,7 +762,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 eLkOiD"
+            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
             disabled={false}
             href={null}
             id={null}
@@ -764,15 +770,15 @@ exports[` 3`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              className="Bar__BarLayout-icfo76-2 AXrfk"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-icfo76-1 fIRUJx"
+                className="Bar__Slot-icfo76-1 jNHudO"
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
                   fontSize="1rem"
                   fontWeight={400}
                   id={null}
@@ -781,7 +787,7 @@ exports[` 3`] = `
                   View All
                 </p>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
+                  className="Typography__Paragraph-sc-19auepv-3 GBuDq"
                   fontSize="0.875rem"
                   fontWeight={400}
                   id={null}
@@ -791,23 +797,26 @@ exports[` 3`] = `
                 </p>
               </div>
               <div
-                className="Bar__Slot-icfo76-1 cxljst"
+                className="Bar__Slot-icfo76-1 jyMGGC"
               >
-                <div
-                  className="Tag__TagContainer-sc-128kb3h-0 gqnZqx"
+                <span
+                  className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
                   id={null}
                   label="14"
+                  onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 dzdXfA"
+                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
                     htmlFor={null}
                     letterSpacing=".5px"
+                    onClick={null}
                   >
                     14
                   </label>
-                </div>
+                </span>
               </div>
             </div>
           </li>
@@ -827,18 +836,19 @@ exports[` 4`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 bVywlp"
+    className="Search__SearchContainer-sey9om-0 iyfwN"
     id="Search_Offline"
+    onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
         disabled={false}
         htmlFor={null}
         id="Search_Offline-search-button"
@@ -848,13 +858,13 @@ exports[` 4`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
           id={null}
           rows={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="search"
             data-prefix="far"
@@ -875,13 +885,13 @@ exports[` 4`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
         id="Search_Offline-search-bar_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
           cols=""
           disabled={false}
           id="Search_Offline-search-bar"
@@ -890,7 +900,8 @@ exports[` 4`] = `
           onBlur={null}
           onChange={[Function]}
           onFocus={null}
-          onKeyPress={[Function]}
+          onKeyPress={null}
+          onKeyUp={[Function]}
           pattern={null}
           placeholder="Search Location"
           rows=""
@@ -900,26 +911,26 @@ exports[` 4`] = `
       </section>
     </div>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 iqXYVv Search__DropContainer-sey9om-4 gpLFbU"
+      className="Container__Wrapper-sc-1i4fzzd-0 bjJgME Search__DropContainer-sey9om-4 bIKnoD"
       height={null}
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ciTqrT"
+        className="Container__BoxContainer-sc-1i4fzzd-1 jhoPUP"
         height=""
         id="Search_Offline-results-container"
       >
         <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          className="Bar__BarLayout-icfo76-2 kIycPd"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 dLaZFL"
+            className="Bar__Slot-icfo76-1 kcJpTc"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 duCWGY"
+              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 bsRVUD"
               color={null}
               data-icon="signal-slash"
               data-prefix="far"
@@ -940,15 +951,15 @@ exports[` 4`] = `
           </div>
         </div>
         <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          className="Bar__BarLayout-icfo76-2 kIycPd"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 dLaZFL"
+            className="Bar__Slot-icfo76-1 kcJpTc"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
               fontSize="1rem"
               fontWeight={400}
               id={null}
@@ -973,18 +984,19 @@ exports[` 5`] = `
   }
 >
   <form
-    className="Search__SearchContainer-sey9om-0 bVywlp"
+    className="Search__SearchContainer-sey9om-0 iyfwN"
     id="Search_BadConnection"
+    onSubmit={[Function]}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hVXdwh Search__SearchInput-sey9om-1 ftjKE"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 cdjJof Search__SearchButton-sey9om-3 htUUHK"
+        className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
         disabled={false}
         htmlFor={null}
         id="Search_BadConnection-search-button"
@@ -994,13 +1006,13 @@ exports[` 5`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
           id={null}
           rows={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
             color={null}
             data-icon="search"
             data-prefix="far"
@@ -1021,13 +1033,13 @@ exports[` 5`] = `
         </section>
       </button>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo Search__SearchTextInput-sey9om-2 cNvUXa"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
         id="Search_BadConnection-search-bar_container"
         rows={null}
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 cIeabP"
+          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
           cols=""
           disabled={false}
           id="Search_BadConnection-search-bar"
@@ -1036,7 +1048,8 @@ exports[` 5`] = `
           onBlur={null}
           onChange={[Function]}
           onFocus={null}
-          onKeyPress={[Function]}
+          onKeyPress={null}
+          onKeyUp={[Function]}
           pattern={null}
           placeholder="Search Location"
           rows=""
@@ -1046,26 +1059,26 @@ exports[` 5`] = `
       </section>
     </div>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 iqXYVv Search__DropContainer-sey9om-4 gpLFbU"
+      className="Container__Wrapper-sc-1i4fzzd-0 bjJgME Search__DropContainer-sey9om-4 bIKnoD"
       height={null}
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ciTqrT"
+        className="Container__BoxContainer-sc-1i4fzzd-1 jhoPUP"
         height=""
         id="Search_BadConnection-results-container"
       >
         <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          className="Bar__BarLayout-icfo76-2 kIycPd"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 dLaZFL"
+            className="Bar__Slot-icfo76-1 kcJpTc"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 duCWGY"
+              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 bsRVUD"
               color={null}
               data-icon="signal-slash"
               data-prefix="far"
@@ -1086,15 +1099,15 @@ exports[` 5`] = `
           </div>
         </div>
         <div
-          className="Bar__BarLayout-icfo76-2 jEWtiX"
+          className="Bar__BarLayout-icfo76-2 kIycPd"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 dLaZFL"
+            className="Bar__Slot-icfo76-1 kcJpTc"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+              className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
               fontSize="1rem"
               fontWeight={400}
               id={null}

@@ -6,25 +6,46 @@ import styled from "styled-components";
 import Grid from "layout/Grid";
 
 const Region = styled.section`
+  display: ${(props) => {
+    return props.visible ? "block" : "none";
+  }};
   position: relative;
   grid-area: ${(props) => {
     return props.gridArea || "";
   }};
   height: inherit;
-  border-right: ${(props) => {
+  border-left: ${(props) => {
     return props.hasBorder ? "1px solid" : "";
   }};
   border-color: ${(props) => {
     return props.theme.palette.neutral40;
   }};
+  margin: ${(props) => {
+    return props.margin || "";
+  }};
+  padding: ${(props) => {
+    return props.padding || "";
+  }};
   overflow: ${(props) => {
-    return props.overflow || "auto";
+    // default overflow to hidden for overlay templates
+    // scroll doesn't work since pointer-events are disabled
+    const defaultOverflow = props.isOverlay ? "hidden" : "auto";
+    return props.overflow || defaultOverflow;
+  }};
+  opacity: ${(props) => {
+    return props.opacity || "1";
   }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.regionShadow];
   }};
-  pointer-events: initial;
   outline: none;
+  transition: all 0.15s ease-in-out;
+  ${(props) => {
+    // when it is overlay, we want the region (parent) to have no pointer-events
+    // and the children to restore thier events
+    // allows for transparent space inbetween to work
+    return !props.isOverlay ? "pointer-events: initial;" : ">* { pointer-events: auto; };";
+  }}
 `;
 
 const TemplateWrapper = styled(Grid)`
@@ -53,7 +74,7 @@ const TemplateWrapper = styled(Grid)`
     return props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.backgroundColor || props.theme.background.default;
+    return props.backgroundColor || "";
   }};
   padding: ${(props) => {
     return props.setPadding || "";
@@ -85,19 +106,25 @@ const templateHash = {
     setColumns: "1fr auto 1fr",
     setRows: "auto",
   },
+  A_03: {
+    setTemplate: [
+      "\"A .\"",
+      "\". .\"",
+    ].join("\n"),
+    setColumns: `auto 1fr`,
+    setRows: "auto 1fr",
+  },
   B_01: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthLG}`,
-    hasBorder: true,
   },
   B_02: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthXS} 1fr`,
-    hasBorder: true,
   },
   B_03: {
     setTemplate: [
@@ -105,30 +132,51 @@ const templateHash = {
       "\"B\"",
     ].join("\n"),
     setRows: "auto 1fr",
-    hasBorder: true,
   },
   B_04: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `${widthMD} 1fr`,
-    hasBorder: true,
   },
   B_05: {
     setTemplate: [
       "\"A . B\"",
+      "\". . B\"",
       "\". . .\"",
     ].join("\n"),
-    setColumns: "auto 1fr 12rem",
-    setRows: "1fr 1rem",
-    hasBorder: true,
+    setColumns: `5rem 1fr ${widthLG}`,
+    setRows: "auto 1fr 1rem",
   },
   B_06: {
     setTemplate: [
       "\"A B\"",
     ].join("\n"),
     setColumns: `1fr ${widthXL}`,
-    hasBorder: true,
+  },
+  B_07: {
+    setTemplate: [
+      "\"A B\"",
+    ].join("\n"),
+    setColumns: `1fr ${widthLG}`,
+  },
+  B_08: {
+    setTemplate: [
+      "\"A . B\"",
+      "\". . B\"",
+      "\". . .\"",
+    ].join("\n"),
+    setColumns: `auto 1fr ${widthLG}`,
+    setRows: "auto 1fr 1rem",
+  },
+  B_09: {
+    setTemplate: [
+      "\"A . .\"",
+      "\". . .\"",
+      "\"B B .\"",
+    ].join("\n"),
+    setColumns: "auto 1fr 2fr",
+    setRows: "auto 1fr auto",
   },
   C_01: {
     setTemplate: [
@@ -152,6 +200,24 @@ const templateHash = {
     ].join("\n"),
     setColumns: `${widthXS} ${widthSM} 1fr`,
     setRows: "1fr",
+  },
+  C_04: {
+    setTemplate: [
+      "\"A . . B\"",
+      "\"C C . B\"",
+      "\". . . .\"",
+    ].join("\n"),
+    setColumns: "auto auto 1fr 12rem",
+    setRows: "1fr auto 2rem",
+  },
+  C_05: {
+    setTemplate: [
+      "\"A . . B\"",
+      "\". . . B\"",
+      "\"C C . B\"",
+    ].join("\n"),
+    setColumns: "1fr 2fr 3fr 2fr",
+    setRows: "auto 1fr auto",
   },
   D_01: {
     setTemplate: [
@@ -191,14 +257,15 @@ const templateHash = {
   },
   E_03: {
     setTemplate: [
-      "\". . . A A\"",
-      "\". . . . .\"",
-      "\". . . . .\"",
-      "\". . . . B\"",
+      "\"A A . . E\"",
+      "\". . . . E\"",
+      "\"B . . . .\"",
+      "\"C . . . .\"",
+      "\"D . . . .\"",
       "\". . . . .\"",
     ].join("\n"),
-    setColumns: "40% 1fr 1fr auto auto",
-    setRows: "auto auto 1fr auto 1rem",
+    setColumns: "auto 2fr 1fr 1fr auto",
+    setRows: "max-content max-content max-content max-content max-content 1fr",
   },
 };
 
@@ -215,12 +282,11 @@ function Template({
   let setPosition;
   let setRowGap;
   let setRows;
-  let hasBorder;
   let setTemplate;
   let zIndex;
   if (template && template.toUpperCase() !== "" && templateHash[template.toUpperCase()]) {
     ({
-      setTemplate, setColumns, setRows, hasBorder,
+      setTemplate, setColumns, setRows,
     } = templateHash[template.toUpperCase()]);
     setHeight = "100%";
     setPadding = "0";
@@ -230,7 +296,7 @@ function Template({
     setHeight = "auto";
     setPadding = "1rem";
     setColumnGap = "1rem";
-    setRowGap = "1rem";
+    setRowGap = "1.25rem";
   }
   if (hasCards || hasShadows) {
     setPadding = "1rem";
@@ -244,7 +310,7 @@ function Template({
   if (isOverlay) {
     backgroundColor = "none";
     pointerEvents = "none";
-    setPadding = "0.5rem";
+    setPadding = "0.25rem";
     setPosition = "absolute";
     zIndex = "999";
   }
@@ -254,7 +320,6 @@ function Template({
       backgroundColor={backgroundColor}
       classname={classname}
       id={id}
-
       pointerEvents={pointerEvents}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
@@ -270,61 +335,90 @@ function Template({
         <React.Fragment>
           {A ? (
             <Region
-              id={A.id || "A"}
-              placeholder="A"
               gridArea={template ? "A" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
-              hasBorder={hasBorder}
+              hasBorder={A.hasBorder}
+              id={A.id || "A"}
+              isOverlay={isOverlay}
+              margin={A.margin}
+              opacity={A.opacity}
               overflow={A.overflow}
+              padding={A.padding}
+              placeholder="A"
+              regionShadow={A.padding ? null : regionShadow}
+              tabIndex="0"
+              visible={typeof A.visible === "boolean" ? A.visible : true}
             >
               {A.content}
             </Region>
           ) : null}
           {B ? (
             <Region
-              id={B.id || "B"}
-              placeholder="B"
               gridArea={template ? "B" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
+              hasBorder={B.hasBorder}
+              id={B.id || "B"}
+              isOverlay={isOverlay}
+              margin={B.margin}
+              opacity={B.opacity}
               overflow={B.overflow}
+              padding={B.padding}
+              placeholder="B"
+              regionShadow={B.padding ? null : regionShadow}
+              tabIndex="0"
+              visible={typeof B.visible === "boolean" ? B.visible : true}
             >
               {B.content}
             </Region>
           ) : null}
           {C ? (
             <Region
-              id={C.id || "C"}
-              placeholder="C"
               gridArea={template ? "C" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
+              hasBorder={C.hasBorder}
+              id={C.id || "C"}
+              isOverlay={isOverlay}
+              margin={C.margin}
+              opacity={C.opacity}
               overflow={C.overflow}
+              padding={C.padding}
+              placeholder="C"
+              regionShadow={C.padding ? null : regionShadow}
+              tabIndex="0"
+              visible={typeof C.visible === "boolean" ? C.visible : true}
             >
               {C.content}
             </Region>
           ) : null}
           {D ? (
             <Region
-              id={D.id || "D"}
-              placeholder="D"
               gridArea={template ? "D" : ""}
-              regionShadow={regionShadow}
-              tabIndex="0"
+              hasBorder={D.hasBorder}
+              id={D.id || "D"}
+              isOverlay={isOverlay}
+              margin={D.margin}
+              opacity={D.opacity}
               overflow={D.overflow}
+              padding={D.padding}
+              placeholder="D"
+              regionShadow={D.padding ? null : regionShadow}
+              tabIndex="0"
+              visible={typeof D.visible === "boolean" ? D.visible : true}
             >
               {D.content}
             </Region>
           ) : null}
           {E ? (
             <Region
-              id={E.id || "E"}
-              placeholder="E"
               gridArea={template ? "E" : null}
-              regionShadow={regionShadow}
-              tabIndex="0"
+              hasBorder={E.hasBorder}
+              id={E.id || "E"}
+              isOverlay={isOverlay}
+              margin={E.margin}
+              opacity={E.opacity}
               overflow={E.overflow}
+              padding={E.padding}
+              placeholder="E"
+              regionShadow={E.padding ? null : regionShadow}
+              tabIndex="0"
+              visible={typeof E.visible === "boolean" ? E.visible : true}
             >
               {E.content}
             </Region>
@@ -334,34 +428,26 @@ function Template({
     </TemplateWrapper>
   );
 }
+
+const sectionShape = {
+  content: PropTypes.node,
+  hasBorder: PropTypes.bool,
+  id: PropTypes.string,
+  opacity: PropTypes.string,
+  overflow: PropTypes.string,
+  padding: PropTypes.string,
+  margin: PropTypes.string,
+  visible: PropTypes.bool,
+};
+
 Template.propTypes = {
-  A: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-  }),
-  B: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-  }),
-  C: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-  }),
+  A: PropTypes.shape(sectionShape),
+  B: PropTypes.shape(sectionShape),
+  C: PropTypes.shape(sectionShape),
   children: PropTypes.node,
   classname: PropTypes.string,
-  D: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-  }),
-  E: PropTypes.shape({
-    id: PropTypes.string,
-    content: PropTypes.node,
-    overflow: PropTypes.string,
-  }),
+  D: PropTypes.shape(sectionShape),
+  E: PropTypes.shape(sectionShape),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
   hasCards: PropTypes.bool,

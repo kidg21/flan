@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 jyhKXb"
+    id="Template B_01"
+    rows={null}
+  >
+    <section
+      className="Template__Region-sc-1i4nzbu-0 dBfOAc"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+           A
+        </h6>
+      </div>
+    </section>
+    <section
+      className="Template__Region-sc-1i4nzbu-0 jRfqpD"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+           B
+        </h6>
+      </div>
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 gVApDH"
+    id="Template B_02"
+    rows={null}
+  >
+    <section
+      className="Template__Region-sc-1i4nzbu-0 dBfOAc"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          A
+        </h6>
+      </div>
+    </section>
+    <section
+      className="Template__Region-sc-1i4nzbu-0 jRfqpD"
+      id="B"
+      placeholder="B"
+      tabIndex="0"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
+          fontSize="1.2rem"
+          fontWeight="400"
+          letterSpacing="1px"
+        >
+          B
+        </h6>
+      </div>
+    </section>
+  </section>
+</div>
+`;

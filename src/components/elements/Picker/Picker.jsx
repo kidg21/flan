@@ -1,11 +1,12 @@
 /* eslint-disable linebreak-style */
-import React from "react";
-import styled from "styled-components";
+import React, { useContext } from "react";
+import styled, { css } from "styled-components";
+import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Icon from "atoms/Icon";
+import Image from "atoms/Image";
 import { Label } from "base/Typography";
-import Card from "elements/Card";
 import Grid from "layout/Grid";
 import { useId } from "utils/hooks";
 
@@ -31,15 +32,16 @@ const Swatch = styled.button`
   color: ${(props) => {
     return props.theme.palette.inverse;
   }};
-  border: 0px solid ${(props) => {
-    return props.theme.palette.inverse;
+  border: ${(props) => {
+    // darken opacity of border to show for lighter colors (esp. white)
+    return props.hasBorder ? `1px solid rgba(0,0,0,0.3)` : `0px solid ${props.theme.palette.inverse}`;
   }};
   cursor: pointer;
   border-radius: ${(props) => {
     return props.borderRadius;
   }};
   background-color: ${(props) => {
-    return props.theme.swatches[props.color];
+    return props.theme.swatches[props.color] || "";
   }};
   &:hover {
     ${Darken};
@@ -49,8 +51,56 @@ const Swatch = styled.button`
   }
 `;
 
+const ImageContainer = styled.a`
+  display: grid;
+  grid-gap: 0.75rem;
+  justify-items: center;
+  cursor: pointer;
+   ${(props) => {
+    return props.disabled
+      && css`
+      cursor: ${() => { return props.disabled ? "not-allowed" : "pointer"; }};
+      pointer-events: none;
+      user-select: none;
+      opacity: 0.5;
+     `;
+  }}
+`;
+
+const ImageWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+   ${(props) => {
+    return props.isSelected
+      && css`
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        outline: ${() => { return `2px solid ${props.theme.palette.success60}`; }};
+     `;
+  }}
+  }
+`;
+
+const IconSelected = styled(Icon)`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: ${(props) => {
+    return props.theme.palette.success80;
+  }};
+  stroke: ${(props) => {
+    return props.theme.palette.success20;
+  }};
+  stroke-width: 20;
+`;
+
 function ColorSwatch({
-  color, isSelected, onClick, square,
+  color, hasBorder, isSelected, onClick, square,
 }) {
   let borderRadius;
   const width = "1.5rem";
@@ -63,6 +113,7 @@ function ColorSwatch({
   }
   return (
     <Swatch
+      hasBorder={hasBorder}
       borderRadius={borderRadius}
       color={color}
       height={height}
@@ -75,16 +126,73 @@ function ColorSwatch({
 }
 
 ColorSwatch.propTypes = {
+  /** color name, see theme.swatches */
   color: PropTypes.string,
+  /** to outline swatch, making lighter color easier to see */
+  hasBorder: PropTypes.bool,
+  /** selected swatch */
   isSelected: PropTypes.bool,
+  /** onClick callback function */
   onClick: PropTypes.func,
+  /** square shaped swatch */
   square: PropTypes.bool,
 };
 ColorSwatch.defaultProps = {
   color: null,
+  hasBorder: false,
   isSelected: false,
   onClick: null,
   square: false,
+};
+
+function ImageSwatch({
+  alt, disabled, isSelected, label, onClick, src, width,
+}) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
+  return (
+    <ImageContainer
+      disabled={isDisabled}
+      onClick={onClick}
+    >
+      <ImageWrapper
+        isSelected={isSelected}
+      >
+        {isSelected ? (
+          <IconSelected
+            icon="check"
+            size="4xl"
+          />
+        ) : null}
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+        />
+      </ImageWrapper>
+      {label ? (
+        <Label text={label} />
+      ) : null}
+    </ImageContainer>
+  );
+}
+
+ImageSwatch.propTypes = {
+  alt: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+  isSelected: PropTypes.bool,
+  label: PropTypes.string,
+  onClick: PropTypes.func,
+  src: PropTypes.string,
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+};
+ImageSwatch.defaultProps = {
+  disabled: false,
+  isSelected: false,
+  label: null,
+  onClick: null,
+  src: "",
+  width: null,
 };
 
 function Picker({
@@ -92,20 +200,18 @@ function Picker({
 }) {
   const uId = useId(id);
   return (
-    <Card>
-      <InputContainer
-        className={className}
-        columns="1"
-        id={uId}
-      >
-        {label ? (
-          <Label weight="bold" text={label} />
-        ) : null}
-        <Grid columns={columns}>
-          {children}
-        </Grid>
-      </InputContainer>
-    </Card>
+    <InputContainer
+      className={className}
+      columns="1"
+      id={uId}
+    >
+      {label ? (
+        <Label text={label} />
+      ) : null}
+      <Grid columns={columns}>
+        {children}
+      </Grid>
+    </InputContainer>
   );
 }
 
@@ -124,4 +230,4 @@ Picker.defaultProps = {
   label: null,
 };
 
-export { Picker as default, ColorSwatch };
+export { Picker as default, ColorSwatch, ImageSwatch };

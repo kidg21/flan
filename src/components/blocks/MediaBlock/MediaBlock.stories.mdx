@@ -2,11 +2,18 @@ import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Fragment } from "react";
+import { Padding, CenterDecorator, CenterDisplayGrid, Container } from "helpers/Display";
 import Grid from "layout/Grid";
 import Image from "atoms/Image";
 import Text, { Title } from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
+import Field, { FieldGroup } from "atoms/Field";
 import MediaBlock from "blocks/MediaBlock";
+import StaticMap from "images/maps/map-ortho.png";
+import Logo from "images/LightBoxLogo.png";
+import ModernExterior1 from "images/residential/modern exterior 1.jpg";
+import ModernExterior2 from "images/residential/modern exterior 2.jpg";
+import ModernExterior3 from "images/residential/modern exterior 3.jpg";
 
 <Meta title="Atoms|Media/Media Block" component={MediaBlock} />
 
@@ -15,14 +22,14 @@ import MediaBlock from "blocks/MediaBlock";
 #### An Media Block allows users to toggle the display of sections of content
 
 <Preview withToolbar>
-  <Story name="Standard">
-     <MediaBlock media={<Image
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    alt="This is alt text for this image"
-  />} body={<Grid columns="1">
-    <Title size="lg" weight="bold" text="Media Block" />
-    <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
-  </Grid>} />
+  <Story name="Standard" decorators={[CenterDisplayGrid]}>
+    <Card padding="4x" shadow="2x">
+      <MediaBlock
+        media={ModernExterior2}
+        title="Media Block"
+        description="In life you need colors. We'll put a happy little sky in here."
+      />
+    </Card>
   </Story>
 </Preview>
 
@@ -34,93 +41,159 @@ The MediaBlock component is a set of expandable panels for showing and hiding co
 
 ### Types
 
-<Preview>
+<Preview withToolbar>
   <Story name="Types">
-   <Grid columns="1">
+    <CardGrid>
+      <Card padding="4x">
         <MediaBlock
-          media={<Image
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    alt="This is alt text for this image"
-  />}
-          body={
-            <Fragment>
-              <Title size="lg" weight="bold" text="Media Block" />
-              <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
-            </Fragment>
-          }
+          media={ModernExterior2}
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
         />
+      </Card>
+      <Card padding="4x">
         <MediaBlock
-          media={<Image
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    alt="This is alt text for this image"
-  />}
-          body={
-            <Fragment>
-              <Title size="lg" weight="bold" text="Media Block (isReversed)" />
-              <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
-            </Fragment>
-          }
-          isReversed
+          media={StaticMap}
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
         />
+      </Card>
+      <Card padding="4x">
         <MediaBlock
-          media={<Image
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    alt="This is alt text for this image"
-  />}
-          body={
-            <Fragment>
-              <Title size="lg" weight="bold" text="Media Block - Vertical" />
-              <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
-            </Fragment>
-          }
-          align="vertical"
+          media={Logo}
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
         />
+      </Card>
+      <Card padding="4x">
         <MediaBlock
-          media={<Image
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    alt="This is alt text for this image"
-  />}
-          body={
-            <Fragment>
-              <Title size="lg" weight="bold" text="Media Block - Vertical (isReversed)" />
-              <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
-            </Fragment>
-          }
-          align="vertical"
-          isReversed
+          media={ModernExterior2}
+          mediaReverse
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
         />
+      </Card>
+      <Card padding="4x">
         <MediaBlock
-          media={<Image
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    alt="This is alt text for this image"
-  />}
-          body={
-            <Fragment>
-              <Title size="lg" weight="bold" text="Media Block - Inline" />
-              <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
-            </Fragment>
-          }
-          align="inline"
+          media={StaticMap}
+          mediaReverse
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
         />
+      </Card>
+      <Card padding="4x">
         <MediaBlock
-          media={<Image
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    alt="This is alt text for this image"
-  />}
-          body={
-            <Fragment>
-              <Title size="lg" weight="bold" text="Media Block - Inline (isReversed)" />
-              <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
-            </Fragment>
-          }
-          align="inline"
-          isReversed
+          media={Logo}
+          mediaReverse
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
         />
-      </Grid>
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={ModernExterior2}
+          mediaSquare
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={StaticMap}
+          mediaSquare
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={Logo}
+          mediaSquare
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={ModernExterior2}
+          mediaReverse
+          mediaSquare
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={StaticMap}
+          mediaReverse
+          mediaSquare
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={Logo}
+          mediaReverse
+          mediaSquare
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={ModernExterior2}
+          mediaRound
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={StaticMap}
+          mediaRound
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={Logo}
+          mediaRound
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={ModernExterior2}
+          mediaRound
+          mediaReverse
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={StaticMap}
+          mediaRound
+          mediaReverse
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+      <Card padding="4x">
+        <MediaBlock
+          media={Logo}
+          mediaRound
+          mediaReverse
+          title="Media Block"
+          description="In life you need colors. We'll put a happy little sky in here."
+        />
+      </Card>
+    </CardGrid>
   </Story>
 </Preview>
-
-
 
 ## Props
 

@@ -2,18 +2,21 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
-import Text, { Title, Link } from "base/Typography";
+import Text, { Title, Label, Link } from "base/Typography";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
+import Command from "atoms/Command";
 import IconBlock from "blocks/IconBlock";
 import ProgressIndicator from "elements/ProgressIndicator";
 import Divider from "atoms/Divider";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListSection, ListItem } from "blocks/List";
-import Tabs from "blocks/Tabs";
+import Tabs, { TabItem } from "blocks/Tabs";
 import Table from "blocks/Table";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
+import Tag from "atoms/Tag";
+import Container from "atoms/Container";
 import Button, { ButtonGroup } from "atoms/Button";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
@@ -21,11 +24,19 @@ import SelectMenu from "atoms/SelectMenu";
 import Avatar from "atoms/Avatar";
 import Bar from "layout/Bar";
 import Menu from "blocks/Menu";
+import Panel from "layout/Panel";
 import Template from "layout/Template";
+import Inline from "layout/Inline";
 import Picker, { ColorSwatch } from "elements/Picker";
-import Field, { FieldGroup } from "atoms/Field";
+import Field, { FieldSection, FieldGroup } from "atoms/Field";
+import Banner from "blocks/Banner";
+import Accordion from "atoms/Accordion";
+import Expander from "utils/Expander";
+import MediaBlock from "blocks/MediaBlock";
 import LightBoxLogo from "images/LightBoxLogo.png";
-import StaticMap from "images/maps/mission-viejo.png";
+import StaticMap from "images/maps/map-ortho.png";
+import ModernExterior1 from "images/residential/modern exterior 1.jpg";
+import Popper from "layout/Popper";
 
 function MockPalette() {
   return (
@@ -66,29 +77,50 @@ function MockHeaderGlobal({ menuClick }) {
               isPlain
               onClick={menuClick}
             />
-            <Image src={LightBoxLogo} alt="Lightbox Logo" width="8vw" onClick={doNothing} />
+            <Image src={LightBoxLogo} alt="Lightbox Logo" width="8vw" onClick={() => { }} />
           </Grid>
         ),
-        width: "12%",
+        width: "max-content",
       }}
       center={{
         content: (
           <ButtonGroup columns="4">
-            <Button label="JOBS PORTAL" isPlain variant="neutral" />
-            <Button label="RESEARCH" isPlain />
-            <Button label="BI" isPlain variant="neutral" />
-            <Button label="REPORT WRITING" isPlain variant="neutral" />
+            <Button label="JOBS PORTAL" isPlain />
+            <Button label="RESEARCH" disabled />
+            <Button label="BI" isPlain />
+            <Button label="REPORT WRITING" isPlain />
           </ButtonGroup>
         ),
-        align: "left",
         width: "fit-content",
       }}
       right={{
         content: (
-          <Grid columns="max-content max-content" gap="4xl" align="center">
-            <Button size="lg" isRound icon="help_circle" variant="neutral" isPlain />
-            <Avatar label="AB" size="sm" variant="neutral" onClick={doNothing} />
-          </Grid>
+          <Inline>
+            <Menu
+              id="Help Menu"
+              data={[{
+                label: "Support Center",
+                id: "Support Center",
+              }, {
+                label: "Contact Support",
+                id: "Contact Support",
+              }, {
+                label: "About the Product",
+                id: "About the Product",
+              }]}
+              position="bottomLeft"
+            >
+              <Button
+                id="help"
+                icon="help_circle"
+                size="lg"
+                variant="neutral"
+                isRound
+                isPlain
+              />
+            </Menu>
+            <Avatar id="profile" label="AB" size="sm" variant="neutral" onClick={doNothing} />
+          </Inline>
         ),
         width: "fit-content",
       }}
@@ -132,7 +164,7 @@ function MockHeader({ percentage }) {
   );
 }
 MockHeader.propTypes = {
-  percentage: PropTypes.number,
+  percentage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 MockHeader.defaultProps = {
   percentage: 0,
@@ -162,21 +194,42 @@ MockFooter.defaultProps = {
   // stuff
 };
 
-function MockMenu() {
+function MockMenu({ data, title }) {
   return (
-    <List title="Research" isInteractive isInverse>
-      <ListItem title="Projects" isSelected />
-      <ListItem title="Properties" />
-      <ListItem title="History" />
-      <ListItem title="Data" />
-    </List>
+    <React.Fragment>
+      {data ? <List title={title} isInteractive isInverse data={data} />
+        : (
+          <List title={title || "List Title"} isInteractive isInverse>
+            <ListSection title="List Section 1" hasDivider>
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
+            <ListSection title="List Section 2" hasDivider>
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
+            <ListSection title="List Section 3">
+              <ListItem title="List Item 1" />
+              <ListItem title="List Item 2" />
+              <ListItem title="List Item 3" />
+              <ListItem title="List Item 4" />
+            </ListSection>
+          </List>
+        )}
+    </React.Fragment>
   );
 }
 MockMenu.propTypes = {
-  // stuff
+  data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  title: PropTypes.string,
 };
 MockMenu.defaultProps = {
-  // stuff
+  data: null,
+  title: null,
 };
 
 function MockWorkflow({ data, title }) {
@@ -185,17 +238,18 @@ function MockWorkflow({ data, title }) {
       {data ? <List title={title} isInteractive isLight data={data} />
         : (
           <List title={title} isInteractive>
-            <ListItem
-              title="Overview"
-              isSelected
-            />
-            <ListItem
-              title="Define Site"
-              post={{
-                type: "icon", icon: "check", variant: "success",
-              }}
-            />
-            <Divider />
+            <ListSection hasDivider>
+              <ListItem
+                title="Overview"
+                isSelected
+              />
+              <ListItem
+                title="Define Site"
+                post={{
+                  type: "icon", icon: "check", variant: "success",
+                }}
+              />
+            </ListSection>
             <ListSection>
               <ListItem
                 title="Assessment"
@@ -236,15 +290,20 @@ MockWorkflow.defaultProps = {
   title: null,
 };
 
-function MockTable() {
+function MockTable({ actionsTable }) {
   const tableHeaders = [
-    { id: "checkbox", label: <Grid columns="auto 1fr"><Checkbox label="Select All" /></Grid> },
+    {
+      id: "checkbox",
+      label: (
+        <Checkbox label="Select All" labelVisible={false} />
+      ),
+    },
     { id: "Name", label: "Name", sortable: true },
-    { id: "Address", label: "Address", sortable: false },
-    { id: "City", label: "City", sortable: false },
-    { id: "State", label: "State", sortable: false },
+    { id: "Address", label: "Address", sortable: true },
+    { id: "City", label: "City", sortable: true },
+    { id: "State", label: "State", sortable: true },
     { id: "Zip", label: "Zip", sortable: false },
-    { id: "Property_Type", label: "Property Type", sortable: false },
+    { id: "Property_Type", label: "Property Type", sortable: true },
     { id: "GBA", label: "GBA", sortable: false },
     { id: "Rentable_Area", label: "Rentable Area", sortable: false },
     { id: "Units", label: "Units", sortable: false },
@@ -297,45 +356,127 @@ function MockTable() {
       Land_SF: "78",
       Acres: "0.5",
     },
+    {
+      Name: <Link text="477 Madison Avenue" href="www.google.com" />,
+      Address: "477 Madison Avenue",
+      City: "New York",
+      State: "NY",
+      Zip: "10022",
+      Property_Type: "Office",
+      GBA: "262,287",
+      Rentable_Area: "262,287",
+      Units: "68",
+      Year_Built: "1987",
+      Land_SF: "2938",
+      Acres: "2",
+    },
+    {
+      Name: <Link text="23 E. 21 St." href="www.google.com" />,
+      Address: "23 E. 21St. #2",
+      City: "New York",
+      State: "NY",
+      Zip: "10010",
+      Property_Type: "Office",
+      GBA: "3,230",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="11 W. 20 St." href="www.google.com" />,
+      Address: "11 W 20 St. #4R",
+      City: "New York",
+      State: "NY",
+      Zip: "10011",
+      Property_Type: "Office",
+      GBA: "2,650",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="477 Madison Avenue" href="www.google.com" />,
+      Address: "477 Madison Avenue",
+      City: "New York",
+      State: "NY",
+      Zip: "10022",
+      Property_Type: "Office",
+      GBA: "262,287",
+      Rentable_Area: "262,287",
+      Units: "68",
+      Year_Built: "1987",
+      Land_SF: "2938",
+      Acres: "2",
+    },
+    {
+      Name: <Link text="23 E. 21 St." href="www.google.com" />,
+      Address: "23 E. 21St. #2",
+      City: "New York",
+      State: "NY",
+      Zip: "10010",
+      Property_Type: "Office",
+      GBA: "3,230",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="11 W. 20 St." href="www.google.com" />,
+      Address: "11 W 20 St. #4R",
+      City: "New York",
+      State: "NY",
+      Zip: "10011",
+      Property_Type: "Office",
+      GBA: "2,650",
+      Rentable_Area: "--",
+      Units: "2",
+      Year_Built: "1999",
+      Land_SF: "78",
+      Acres: "0.5",
+    },
+    {
+      Name: <Link text="477 Madison Avenue" href="www.google.com" />,
+      Address: "477 Madison Avenue",
+      City: "New York",
+      State: "NY",
+      Zip: "10022",
+      Property_Type: "Office",
+      GBA: "262,287",
+      Rentable_Area: "262,287",
+      Units: "68",
+      Year_Built: "1987",
+      Land_SF: "2938",
+      Acres: "2",
+    },
   ];
 
-  const iconNames = [
-    {
-      icon: "edit",
-      onClick: () => {},
-      // icon: "check",
-      // variant: "success",
-    },
-    {
-      icon: "delete",
-      onClick: () => {},
-      // icon: "close",
-      // variant: "alert",
-    },
-    {
-      icon: "options",
-      onClick: () => {},
-    },
-  ];
   const [highlightedCell, setHighlightCell] = useState(null);
   const [selectedCell, setSelectedCell] = useState(null);
   for (let i = 0; i < tableData.length; i++) {
     tableData[i].checkbox = React.createElement(
       Checkbox,
-      {
-        label: "Select",
-      },
+      // {
+      //   label: "Select",
+      // },
       null,
     );
   }
   for (let i = 0; i < tableData.length; i++) {
-    tableData[i].actions = React.createElement(
-      IconBlock,
-      {
-        data: iconNames,
-      },
-      null,
-    );
+    tableData[i].actions = React.createElement(() => {
+      return (
+        <Inline>
+          <Command icon="options" label="Options" labelVisible={false} />
+          <Command icon="edit" label="Edit" labelVisible={false} />
+          <Command icon="delete" label="Delete" labelVisible={false} />
+        </Inline>
+      );
+    });
   }
 
   const onCellClick = (e, { rowIndex }) => {
@@ -352,34 +493,48 @@ function MockTable() {
   return (
     <React.Fragment>
       <Card>
-        <CardSection padding="0">
-          <Bar
-            contentAlign="center"
-            left={{
-              content: <Title size="" text="Results | 3" weight="bold" />,
-              align: "left",
-            }}
-            right={{
-              content: (
-                <IconBlock>
-                  <Icon icon="share" />
-                  <Icon icon="delete" />
+        {actionsTable
+          ? (
+            <CardSection isInverse>
+              <Grid columns="1fr auto" gap="1rem">
+                <Inline>
+                  <Label text="Active List" />
+                  <Label text="|" />
+                  <Label text="309" />
+                </Inline>
+                <Inline spacingX="1rem">
+                  {actionsTable}
+                </Inline>
+              </Grid>
+            </CardSection>
+          ) : (
+            <CardSection isInverse>
+              <Grid columns="1fr auto" gap="1rem">
+                <Inline>
+                  <Label text="Active List" />
+                  <Label text="|" size="sm" />
+                  <Label text="309" size="sm" />
+                </Inline>
+                <Inline>
                   <Menu
                     data={[
                       { id: "a", label: "Action" },
                       { id: "b", label: "Action" },
                       { id: "c", label: "Action" },
                     ]}
-                    position="bottomLeft"
-                  />
-                </IconBlock>
-              ),
-              width: "10rem",
-            }}
-          />
-        </CardSection>
+                    position="bottomRight"
+                  >
+                    <Icon icon="options" onClick={() => { }} />
+                  </Menu>
+                  <Icon icon="down" onClick={() => { }} />
+                  <Icon icon="close" onClick={() => { }} />
+                </Inline>
+              </Grid>
+            </CardSection>
+          )}
       </Card>
       <Table
+        headerDark
         id="MockTable"
         headers={tableHeaders}
         rows={tableData}
@@ -389,16 +544,16 @@ function MockTable() {
         onCellMouseOver={onCellMouseOver}
         highlightedCell={highlightedCell}
         selectedCell={selectedCell}
-        columnWidth={180}
+        columnWidth={160}
       />
     </React.Fragment>
   );
 }
 MockTable.propTypes = {
-  // stuff
+  actionsTable: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 MockTable.defaultProps = {
-  // stuff
+  actionsTable: null,
 };
 
 function MockData() {
@@ -485,15 +640,17 @@ MockData.defaultProps = {
 
 function MockCardGrid() {
   return (
-    <CardGrid>
-      <Card id="MockCard_1" />
-      <Card id="MockCard_2" />
-      <Card id="MockCard_3" />
-      <Card id="MockCard_4" />
-      <Card id="MockCard_5" />
-      <Card id="MockCard_6" />
-      <Card id="MockCard_7" />
-    </CardGrid>
+    <Panel>
+      <CardGrid>
+        <Card id="MockCard_1" />
+        <Card id="MockCard_2" />
+        <Card id="MockCard_3" />
+        <Card id="MockCard_4" />
+        <Card id="MockCard_5" />
+        <Card id="MockCard_6" />
+        <Card id="MockCard_7" />
+      </CardGrid>
+    </Panel>
   );
 }
 MockCardGrid.propTypes = {
@@ -698,73 +855,79 @@ MockForm.defaultProps = {
 };
 
 function MockDetails({
-  image, title, data, footer,
+  actionClose, image, fieldGroupTitle, fieldData, footer, offcanvas, recordTitle,
 }) {
   return (
-    <Template>
-
-      <Bar center={<Image src={image || StaticMap} width="80%" alt="mockImage" />} />
-      {data ? <FieldGroup align="edge" id={title} title={title} data={data} />
-        : (
-          <Bar
-            padding="2x"
-            center={(
-              <FieldGroup id="Physical Characteristics">
-                <Field
-                  align="edge"
-                  id="No. of Buildings"
-                  label="Project Owner"
-                  value="Steve Davidson"
-                />
-                <Field
-                  align="edge"
-                  id="GBA"
-                  label="Project Due"
-                  value="06/25/2020"
-                />
-                <Field
-                  align="edge"
-                  id="No. of Stories"
-                  label="Project Status"
-                  value="Open"
-                />
-                <Field
-                  align="edge"
-                  id="No. of Units"
-                  label="Project Created"
-                  value="6/14/2020 8:00 am PT"
-                />
-                <Field
-                  align="edge"
-                  id="Year Built"
-                  label="Project Edited"
-                  value="6/16/2020 12:15 pm PT"
-                />
-                <Field
-                  align="edge"
-                  id="Year Built"
-                  label="N1 ID"
-                  value="1804"
-                />
+    <Panel
+      header={recordTitle ? (
+        <React.Fragment>
+          <Card>
+            <CardSection isInverse>
+              <Grid columns="1fr auto" gap="1rem">
+                <Label text={recordTitle || "22902 Trabuco Rd, Mission Viejo, CA 92691"} size="lg" />
+                <Icon icon="close" onClick={actionClose} />
+              </Grid>
+            </CardSection>
+          </Card>
+        </React.Fragment>
+      ) : null}
+      padding="0"
+      offcanvas={offcanvas}
+    >
+      <Template>
+        {/* <MediaBlock
+          media={image || StaticMap}
+          title="22902 Trabuco Rd"
+          description="Mission Viejo, CA"
+        >
+          <Inline spacingX="1rem">
+            <Command icon="location" label="Location" />
+            <Command icon="export" label="Details" />
+          </Inline>
+        </MediaBlock> */}
+        {fieldData ? <FieldGroup align="edge" id={fieldGroupTitle} title={fieldGroupTitle} data={fieldData} />
+          : (
+            <FieldSection>
+              <FieldGroup title="Property Information" gap="sm" columns="1">
+                <Field align="edge" label="Parcel No." value="808-221-12" onClick={() => { }} />
+                <Field align="edge" label="Land User" value="Commercial Shopping Center" />
+                <Field align="edge" label="Building Area" value="25,344 SF" />
+                <Field align="edge" label="Lot Area" value="171,143 SF (3.93 Acres)" onClick={() => { }} />
+                <Field align="edge" label="Building/Lot" value="0.15" />
+                <Field align="edge" label="No. of Units" value="" />
+                <Field align="edge" label="Year Built" value="1978" />
               </FieldGroup>
+              <FieldGroup title="Owner Information" gap="sm" columns="1">
+                <Field align="edge" label="Owners" value="SCF-Los Alisos LLC" onClick={() => { }} />
+                <Field align="edge" label="Owner Address" value="2 Park Plz Ste 700 Irvine, CA 92614" />
+                <Field align="edge" label="Adjacent Lots" value="2 (4.48 Total Acres)" onClick={() => { }} />
+                <Field align="edge" label="Last Sale" value="10/2/15 for $11,500,000" onClick={() => { }} />
+                <Field align="edge" label="Total Assd Value" value="$10,045,870" />
+              </FieldGroup>
+            </FieldSection>
           )}
-          />
-        )}
-      {footer}
-    </Template>
+        {footer}
+      </Template>
+    </Panel>
   );
 }
 MockDetails.propTypes = {
-  data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  actionClose: PropTypes.func,
+  fieldData: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   footer: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-  title: PropTypes.string,
+  offcanvas: PropTypes.string,
+  fieldGroupTitle: PropTypes.string,
+  recordTitle: PropTypes.string,
 };
 MockDetails.defaultProps = {
-  data: null,
+  actionClose: null,
+  fieldData: null,
   footer: null,
   image: null,
-  title: null,
+  offcanvas: null,
+  fieldGroupTitle: null,
+  recordTitle: null,
 };
 
 function MockTabs({ data }) {
@@ -804,7 +967,7 @@ function MockTabs({ data }) {
   return (
     <Bar left={
       <Tabs data={data || tabButtons} />
-}
+    }
     />
   );
 }

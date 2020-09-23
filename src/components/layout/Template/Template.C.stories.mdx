@@ -1,0 +1,83 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Center, ContainerLarge } from "helpers/Display";
+import Text, { Title } from "base/Typography";
+import Flex from "layout/Flex";
+import Template from "layout/Template";
+
+<Meta
+  title="layout/Template/Template Library/C Templates"
+  component={Template}
+  decorators={[ContainerLarge]}
+/>
+
+# "C" Templates
+
+#### Use when needing to control the layout of 3 content elements.
+
+<Preview withToolbar>
+  <Story name="C_01">
+    <Template
+      id="Template C_01"
+      template="C_01"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text="A" />
+          </Center>
+        ),
+      }}
+      B={{
+        id: "B",
+        content: (
+          <Center>
+            <Title text="B" />
+          </Center>
+        ),
+      }}
+      C={{
+        id: "C",
+        content: (
+          <Center>
+            <Title text="C" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>
+
+<Preview withToolbar>
+  <Story name="C_02">
+    <Template
+      id="Template C_02"
+      template="C_02"
+      hasCards
+      A={{
+        id: "A",
+        content: (
+          <Center>
+            <Title text="A" />
+          </Center>
+        ),
+      }}
+      B={{
+        id: "B",
+        content: (
+          <Center>
+            <Title text="B" />
+          </Center>
+        ),
+      }}
+      C={{
+        id: "C",
+        content: (
+          <Center>
+            <Title text="C" />
+          </Center>
+        ),
+      }}
+    />
+  </Story>
+</Preview>

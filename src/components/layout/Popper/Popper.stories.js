@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { useState, useRef } from "hooks";
@@ -5,7 +6,7 @@ import Popper from "layout/Popper";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import Card from "elements/Card";
-import { Padding, CenterDecorator, Container } from "helpers/Display";
+import { Padding, CenterDecorator, Container, CenterDisplayGrid } from "helpers/Display";
 
 export default {
   title: "Utilities/Popper/Tests", // storyshots - js & mdx file
@@ -22,7 +23,9 @@ export const textMock = `Maize, also known as corn, is a cereal grain first dome
  by indigenous peoples in southern Mexico about 10,000 years ago. Also, popcorn is yummy.
 `;
 
-export const BoxMock = ({ children }) => {
+export const lessTextMock = "Maize, also known as corn. Also, popcorn is yummy.";
+
+const PBoxMock = ({ children }) => {
   return (
     <div style={{ width: "12rem" }}>
       {children}
@@ -30,7 +33,11 @@ export const BoxMock = ({ children }) => {
   );
 }; // absolute width instead of inconsistent grid
 
-export const PortalPostions = () => {
+// need to declare helper react mock before using in other stories for this file
+// since this is not technically a story, otherwise it will flood console with warnings
+export const BoxMock = PBoxMock;
+
+export const TopBottomPortalPositions = () => {
   const [visiblePoppers, setVisiblePoppers] = useState({
     bottomRight: true,
     bottomLeft: true,
@@ -61,14 +68,15 @@ export const PortalPostions = () => {
             return { ...poppers, bottomRight: false };
           });
         }}
+        closeOnClickAway={false}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-portal-position-topRight"
@@ -92,14 +100,15 @@ export const PortalPostions = () => {
             return { ...poppers, topRight: false };
           });
         }}
+        closeOnClickAway={false}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-portal-position-bottomLeft"
@@ -123,14 +132,15 @@ export const PortalPostions = () => {
             return { ...poppers, bottomLeft: false };
           });
         }}
+        closeOnClickAway={false}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-portal-position-topLeft"
@@ -154,17 +164,161 @@ export const PortalPostions = () => {
             return { ...poppers, topLeft: false };
           });
         }}
+        closeOnClickAway={false}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
     </Grid>
   );
+};
+export const LeftRightPortalPositions = () => {
+  const [visiblePoppers, setVisiblePoppers] = useState({
+    leftUp: true,
+    rightUp: true,
+    leftDown: true,
+    rightDown: true,
+  });
+  return (
+    <Grid columns="2">
+      <Popper
+        id="popper-portal-position-leftUp"
+        usePortal
+        anchor={(
+          <Button
+            id="popper-button-leftUp"
+            label="Left Up"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, leftUp: !poppers.leftUp };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.leftUp}
+        position="leftUp"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, leftUp: false };
+          });
+        }}
+        closeOnClickAway={false}
+      >
+        <PBoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </PBoxMock>
+      </Popper>
+      <Popper
+        id="popper-portal-position-rightUp"
+        usePortal
+        anchor={(
+          <Button
+            id="popper-button-rightUp"
+            label="Right Up"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, rightUp: !poppers.rightUp };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.rightUp}
+        position="rightUp"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, rightUp: false };
+          });
+        }}
+        closeOnClickAway={false}
+      >
+        <PBoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </PBoxMock>
+      </Popper>
+      <Popper
+        id="popper-portal-position-leftDown"
+        usePortal
+        anchor={(
+          <Button
+            id="popper-button-leftDown"
+            label="Left Down"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, leftDown: !poppers.leftDown };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.leftDown}
+        position="leftDown"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, leftDown: false };
+          });
+        }}
+        closeOnClickAway={false}
+      >
+        <PBoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </PBoxMock>
+      </Popper>
+      <Popper
+        id="popper-portal-position-rightDown"
+        usePortal
+        anchor={(
+          <Button
+            id="popper-button-rightDown"
+            label="Right Down"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, rightDown: !poppers.rightDown };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.rightDown}
+        position="rightDown"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, rightDown: false };
+          });
+        }}
+        closeOnClickAway={false}
+      >
+        <PBoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </PBoxMock>
+      </Popper>
+    </Grid>
+  );
+};
+LeftRightPortalPositions.story = {
+  decorators: [CenterDisplayGrid],
 };
 
 export const FlexPositions = () => {
@@ -199,13 +353,13 @@ export const FlexPositions = () => {
           });
         }}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-flex-position-topRight"
@@ -230,13 +384,13 @@ export const FlexPositions = () => {
           });
         }}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-flex-position-bottomLeft"
@@ -261,13 +415,13 @@ export const FlexPositions = () => {
           });
         }}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-flex-position-topLeft"
@@ -292,13 +446,13 @@ export const FlexPositions = () => {
           });
         }}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
     </Grid>
   );
@@ -337,13 +491,13 @@ export const PortalFlexPositions = () => {
           });
         }}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-portal-flex-position-topRight"
@@ -369,13 +523,13 @@ export const PortalFlexPositions = () => {
           });
         }}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-portal-flex-position-bottomLeft"
@@ -401,13 +555,13 @@ export const PortalFlexPositions = () => {
           });
         }}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
       <Popper
         id="popper-portal-flex-position-topLeft"
@@ -433,13 +587,13 @@ export const PortalFlexPositions = () => {
           });
         }}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
     </Grid>
   );
@@ -456,13 +610,13 @@ export const AnchorRef = () => {
         visible
         anchorRef={anchorRef}
       >
-        <BoxMock>
+        <PBoxMock>
           <Card
             id="card"
             title="Corn"
-            description={textMock}
+            description={lessTextMock}
           />
-        </BoxMock>
+        </PBoxMock>
       </Popper>
     </Grid>
   );

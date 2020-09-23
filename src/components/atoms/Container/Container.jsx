@@ -21,14 +21,23 @@ const Wrapper = styled.div`
 const BoxContainer = styled.div`
   overflow-y: auto;
   overflow-x: auto;
+  background-color: ${(props) => {
+    return props.theme.background.default;
+  }};
   max-height: ${(props) => {
     return props.maxHeight || "";
+  }};
+  max-width: ${(props) => {
+    return props.maxWidth || "";
   }};
   height: ${(props) => {
     return props.height || "";
   }};
   width: ${(props) => {
     return props.width || "";
+  }};
+  padding: ${(props) => {
+    return props.padding || "";
   }};
   border: ${(props) => {
     return props.hasBorder ? "1px solid" : "";
@@ -37,11 +46,11 @@ const BoxContainer = styled.div`
     return props.theme.palette.neutral40;
   }};
   border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
+    return props.borderRadius || props.theme.borders.radiusMin;
   }};
   ::-webkit-scrollbar {
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.75em;
+    height: 0.75em;
   }
   ::-webkit-scrollbar-track {
     box-shadow: inset 0.5px 0 0px ${(props) => {
@@ -50,9 +59,15 @@ const BoxContainer = styled.div`
   }
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
-    border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+    outline: none;
   }
   ::-webkit-scrollbar-track:horizontal {
     box-shadow: inset 0.5px 0 0px ${(props) => {
@@ -61,9 +76,15 @@ const BoxContainer = styled.div`
 }
   ::-webkit-scrollbar-thumb:horizontal{
     background-color: ${(props) => {
-    return props.theme.palette.action80;
+    return props.theme.palette.neutral80;
   }};
-  border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+  outline: none;
 }
 `;
 
@@ -74,13 +95,49 @@ const paddingHash = {
   "3x": "3rem",
 };
 
+const boxPaddingHash = {
+  "0": "0",
+  "1x": "0.5rem",
+  "2x": "1rem",
+  "3x": "1.5rem",
+};
+
 const Container = React.forwardRef(({
-  hasBorder, children, className, visible, height, id, maxHeight, padding, width,
+  borderRadius,
+  boxPadding,
+  children,
+  className,
+  hasBorder,
+  height,
+  id,
+  maxHeight,
+  maxWidth,
+  onClick,
+  padding,
+  visible,
+  width,
 }, ref) => {
   const setPadding = padding ? paddingHash[padding.toLowerCase()] : "0";
+  const borderPadding = boxPadding ? boxPaddingHash[boxPadding.toLowerCase()] : "0";
   return (
-    <Wrapper setPadding={setPadding} height={height} width={width} visible={visible} className={className}>
-      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} hasBorder={hasBorder} ref={ref}>
+    <Wrapper
+      className={className}
+      height={height}
+      setPadding={setPadding}
+      visible={visible}
+      width={width}
+    >
+      <BoxContainer
+        borderRadius={borderRadius}
+        hasBorder={hasBorder}
+        height={height ? "100%" : ""}
+        id={id}
+        maxHeight={maxHeight}
+        maxWidth={maxWidth}
+        onClick={onClick}
+        padding={borderPadding}
+        ref={ref}
+      >
         {children}
       </BoxContainer>
     </Wrapper>
@@ -88,26 +145,34 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
-  hasBorder: PropTypes.bool,
-  visible: PropTypes.bool,
+  borderRadius: PropTypes.string,
+  boxPadding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   children: PropTypes.node,
   className: PropTypes.string,
+  hasBorder: PropTypes.bool,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   id: PropTypes.string,
   maxHeight: PropTypes.string,
+  maxWidth: PropTypes.string,
+  onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
+  visible: PropTypes.bool,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Container.defaultProps = {
-  hasBorder: false,
-  visible: true,
+  borderRadius: null,
+  boxPadding: "0",
   children: null,
   className: null,
+  hasBorder: false,
   height: null,
   id: null,
   maxHeight: null,
-  padding: null,
+  maxWidth: null,
+  onClick: undefined,
+  padding: "0",
+  visible: true,
   width: null,
 };
 

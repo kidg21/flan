@@ -1,44 +1,72 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Media from "atoms/Media";
+import Text, { Title } from "base/Typography";
+import Grid from "layout/Grid";
 
-const Block = styled.div`
-  display: grid;
+const Block = styled(Grid)`
   grid-template-columns: ${(props) => {
-    return props.gridColumns || "1fr 4fr";
+    return props.gridColumns || `1fr minmax(0, ${props.mediaHeight || "6rem"})`;
   }};
-  padding: ${(props) => {
-    return props.blockPadding || "0";
+  grid-template-rows: ${(props) => {
+    return props.gridRows || "";
   }};
   grid-template-areas: ${(props) => {
-    return props.gridTemplate || "'content body' '. body'";
+    return props.gridTemplate
+      || "'body media'";
+  }};
+  grid-gap: ${(props) => {
+    return props.gridGap || "1rem";
   }};
   align-items: ${(props) => {
     return props.alignItems || "";
   }};
+  padding: ${(props) => {
+    return props.blockPadding || "";
+  }};
 `;
 
-const Media = styled.section`
-  grid-area: content;
+const MediaElement = styled(Media)`
+  grid-area: media;
   display: flex;
   justify-content: ${(props) => {
     return props.justify || "";
   }};
-  padding: 0;
   width: 100%;
   height: auto;
-  & > * {
-    border-radius: ${(props) => {
-    return props.isRound ? "100%" : "3px";
+  padding: 0;
+  border-radius: ${(props) => {
+    return props.borderRadius || "0.25rem";
   }};
-  }
+  overflow: hidden;
 `;
 
-const Body = styled.section`
+const MediaThumb = styled.section`
+  grid-area: media;
+  background-image: ${(props) => {
+    return `url("${props.media}")` || "";
+  }};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border: ${(props) => {
+    return `1px solid ${props.theme.palette.neutral60}`;
+  }};
+  border-radius: ${(props) => {
+    return props.mediaRound ? "50%" : "0.25rem";
+  }};
+`;
+
+const Body = styled(Grid)`
   grid-area: body;
   padding: ${(props) => {
-    return props.padding || "0 0 0 1rem";
+    return props.padding || "";
+    /* return props.padding || "0 0 0 0.5rem"; */
   }};
   overflow: hidden;
   display: ${(props) => {
@@ -71,59 +99,57 @@ const Body = styled.section`
 `;
 
 function MediaBlock({
-  align,
-  body,
-  children,
-  isRound,
   className,
+  description,
   id,
+  mediaReverse,
   media,
+  mediaRound,
+  mediaSquare,
   onClick,
-  isReversed,
+  title,
 }) {
-  let gridTemplate;
-  let gridColumns;
-  let blockPadding;
-  let justify;
-  let padding;
   let alignItems;
+  let blockPadding;
+  let borderRadius;
   let displayInline;
-  switch (align && align.toLowerCase()) {
-    case "vertical":
-      gridColumns = "1fr";
-      if (isReversed) {
-        gridTemplate = " 'body body' 'content content'";
-        padding = "0 0.25rem 1rem";
-      } else {
-        gridTemplate = "'content content' 'body body'";
-        padding = "1rem 0.25rem 0";
-      }
-      break;
-    case "inline":
-      alignItems = "center";
-      if (isReversed) {
-        displayInline = true;
-        gridColumns = "1fr 3rem";
-        gridTemplate = "'body content'";
-        padding = "0 1rem 0 0";
-      } else {
-        displayInline = true;
-        gridColumns = "3rem 1fr";
-        gridTemplate = "'content body'";
-        padding = "0 1rem";
-      }
-      break;
-    default:
-      if (isReversed) {
-        gridTemplate = "'body content' 'body .'";
-        gridColumns = "4fr 1fr";
-        padding = "0 1rem 0 0";
-        justify = "flex-end";
-      }
-      break;
-  }
-  // reset grid if no media element is present
-  if (!media) {
+  let gridColumns;
+  let gridGap;
+  let gridRows;
+  let gridTemplate;
+  let justify;
+  let mediaSection;
+  let padding;
+
+  if (media) {
+    if (mediaReverse) {
+      gridTemplate = "'media body'";
+      gridColumns = "minmax(0,6rem) 1fr";
+    } else {
+      gridColumns = "1fr minmax(0,6rem)";
+    }
+    gridRows = "minmax(6rem,0)";
+    if (mediaSquare || mediaRound) {
+      mediaSection = (
+        <MediaThumb
+          borderRadius={borderRadius}
+          justify={justify}
+          media={media}
+          mediaRound={mediaRound}
+          title={title}
+        />
+      );
+    } else {
+      mediaSection = (
+        <MediaElement
+          justify={justify}
+          media={media}
+          mediaDesc={title}
+        />
+      );
+    }
+  } else {
+    gridTemplate = "'body'";
     gridColumns = "1fr";
     padding = "0";
   }
@@ -134,55 +160,56 @@ function MediaBlock({
       blockPadding={blockPadding}
       className={className}
       gridColumns={gridColumns}
+      gridGap={gridGap}
+      gridRows={gridRows}
       gridTemplate={gridTemplate}
       id={id}
+      mediaRound={mediaRound}
+      mediaSquare={mediaSquare}
       onClick={onClick}
     >
-      {media ? (
-        <Media justify={justify} isRound={isRound}>
-          {media}
-        </Media>
-      ) : null}
-      {body || children ? (
-        <Body padding={padding} displayInline={displayInline}>
-          {body}
-          {children}
-        </Body>
-      ) : null}
+      {media ? mediaSection : null}
+      <Body
+        columns="1"
+        gap=""
+        padding={padding}
+        displayInline={displayInline}
+      >
+        <Grid columns="1" gap="xs">
+          {title ? <Title text={title} size="lg" weight="bold" /> : null}
+          {description ? (<Text text={description} />
+          ) : null}
+        </Grid>
+      </Body>
     </Block>
   );
 }
 
 MediaBlock.propTypes = {
-  /** Sets the vertical alignment of all content
-   * Default: 'top'
-   */
-  align: PropTypes.oneOf(["top", "vertical", "inline"]),
-  /** Used to define the content in the 'body' section */
-  body: PropTypes.node,
-  /** Meant for use in nesting Media Blocks */
-  children: PropTypes.node,
   /** className used for extending styles */
   className: PropTypes.string,
+  description: PropTypes.string,
   id: PropTypes.string,
-  isReversed: PropTypes.bool,
-  isRound: PropTypes.bool,
+  mediaReverse: PropTypes.bool,
   /** Used to define the content in the 'media' section */
   media: PropTypes.node,
+  mediaRound: PropTypes.bool,
+  mediaSquare: PropTypes.bool,
   /** Used to 'flip' the Media and Body elements along the x-axis */
   onClick: PropTypes.func,
+  title: PropTypes.string,
 };
 
 MediaBlock.defaultProps = {
-  align: "top",
-  body: null,
-  children: null,
   className: null,
+  description: null,
   id: null,
-  isReversed: false,
-  isRound: false,
+  mediaReverse: false,
   media: null,
+  mediaRound: false,
+  mediaSquare: false,
   onClick: null,
+  title: null,
 };
 
 export default MediaBlock;

@@ -10,6 +10,7 @@ import Text from "base/Typography";
 
 const AvatarText = styled(Text)`
   color: inherit;
+  user-select: none;
   font-size: ${(props) => {
     return props.fontSize || "inherit";
   }};
@@ -93,6 +94,7 @@ function Avatar({
     media = null;
   }
 
+  let title = alt;
   if (media) {
     iconType = (
       <AvatarImage
@@ -102,12 +104,12 @@ function Avatar({
         width={avatarSize}
       />
     );
+    title = undefined;
   } else if (icon && typeof icon === "string") {
     iconType = <Icon icon={icon} size={size} />;
   } else {
     labelType = <AvatarText weight="medium" fontSize={fontSize} text={label && label.substring(0, 2)} />;
   }
-
 
   return (
     <TagContainer
@@ -116,6 +118,7 @@ function Avatar({
       id={id}
       onClick={onClick}
       textColor={textColor}
+      title={title}
     >
       {iconType || labelType}
     </TagContainer>
@@ -141,7 +144,7 @@ Avatar.propTypes = {
 };
 
 Avatar.defaultProps = {
-  alt: null,
+  alt: undefined,
   icon: null,
   id: null,
   label: null,

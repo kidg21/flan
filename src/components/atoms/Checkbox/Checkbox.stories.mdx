@@ -54,7 +54,7 @@ A Checkbox may appear to the left or right of it's corresponding label. A Checkb
 <Preview>
   <Story name="States">
     <Grid>
-      <Checkbox id="Checked" label="Checked" checked />
+      <Checkbox id="Checked" label="Checked" checked onChange={() => {}} />
       <Checkbox id="Unchecked" label="Unchecked" />
       <Checkbox id="Error" label="Error" error />
       <Checkbox id="Disabled" label="Disabled" disabled />
@@ -70,6 +70,16 @@ A Checkbox may appear to the left or right of it's corresponding label. A Checkb
       <Checkbox id="Left Aligned" label="Left Aligned" />
       <Checkbox id="Right Aligned" label="Right Aligned" align="right" />
     </Grid>
+  </Story>
+</Preview>
+
+### Invisible Labels
+
+In some cases, the presentation may call for a Checkbox where only the input should show in a standard browser viewing experience. Set the 'labelVisible' property to 'false' in this case. Using a Checkbox with 'labelVisible' property of 'false' will include a Label in a manner visible to assistive technologies.
+
+<Preview>
+  <Story name="Invisible Labels">
+    <Checkbox id="Checkbox" label="Checkbox" labelVisible={false} />
   </Story>
 </Preview>
 

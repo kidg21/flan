@@ -18,8 +18,14 @@ const BadgeContainer = styled.div`
   }};
 `;
 
+const StyledBadge = styled(Tag)`
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMax;
+  }};
+`;
+
 function Badge({
-  hasBackground, icon, id, label, position, variant,
+  hasBackground, icon, iconSize, id, label, onClick, position, size, variant,
 }) {
   let badgeLeft;
   let badgeBottom;
@@ -54,7 +60,7 @@ function Badge({
       id={id}
       setTransform={setTransform}
     >
-      <Tag hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} />
+      <StyledBadge hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} iconSize={iconSize} size={size} onClick={onClick} />
     </BadgeContainer>
   );
 }
@@ -62,8 +68,10 @@ function Badge({
 Badge.propTypes = {
   hasBackground: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  iconSize: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
+  onClick: PropTypes.func,
   /** Default position is top-right */
   position: PropTypes.oneOf([
     "topLeft",
@@ -71,15 +79,19 @@ Badge.propTypes = {
     "bottomRight",
     "bottomLeft",
   ]),
-  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  size: PropTypes.string,
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert", "action"]),
 };
 
 Badge.defaultProps = {
   hasBackground: true,
   icon: null,
+  iconSize: undefined,
   id: null,
   label: null,
+  onClick: null,
   position: null,
+  size: undefined,
   variant: null,
 };
 

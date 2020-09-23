@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Text, { Label } from "base/Typography";
@@ -18,13 +18,18 @@ const CheckboxWrapper = styled(Grid)`
 
 const CheckboxContainer = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 0.75rem;
   grid-template-areas: ${(props) => {
-    return props.alignInput || "";
+    return props.gridAreas || "";
   }};
+  grid-template-columns: ${(props) => {
+    return props.gridColumns || "auto 1fr";
+  }};
+  grid-gap: ${(props) => {
+    return props.gridGap || "0.75rem";
+  }};
+  justify-content: flex-start;
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary ;
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   line-height: initial;
   &[disabled],
@@ -33,6 +38,34 @@ const CheckboxContainer = styled.div`
     pointer-events: none;
     user-select: none;
   }
+`;
+
+const CheckboxLabel = styled(Label)`
+  grid-area: label;
+  ${(props) => {
+    return props.hidden
+      && css`
+        position: absolute;
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        &.focusable {
+          &:active, &:focus {
+            position: static;
+            overflow: visible;
+            height: auto;
+            width: auto;
+            margin: 0;
+            clip: auto;
+          }
+        }
+    `;
+  }}
 `;
 
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
@@ -55,8 +88,8 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   &:checked {
     background-color: ${(props) => {
     return (
-      props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.selected
+      props.theme.palette[props.fillColorChecked]
+      || props.theme.palette.selected
     );
   }};
     border-color: ${(props) => {
@@ -74,7 +107,6 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     color: white;
   }
   }
-
   &:focus {
     outline-color: ${(props) => {
     return (
@@ -92,25 +124,30 @@ const InputGroup = styled(Grid)`
 
 function Checkbox({
   align,
+  bold,
   checked,
   disabled,
   error,
   id,
   label,
+  labelVisible,
   onBlur,
   onChange,
   onFocus,
+  stopPropagation,
 }) {
-  let inputTextColor;
-  let fillColor;
   let borderColor;
-  let outlineColor;
-  let fillColorChecked;
   let borderColorChecked;
-  let alignInput;
+  let fillColor;
+  let fillColorChecked;
+  let gridAreas;
+  let gridColumns;
+  let gridGap;
+  let inputTextColor;
+  let outlineColor;
   let tabIndex;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     borderColor = "neutral80";
     fillColor = "neutral40";
@@ -128,16 +165,26 @@ function Checkbox({
 
   switch (align) {
     case "right":
-      alignInput = "'label input'";
+      gridAreas = "'label input'";
       break;
+    case "left":
     default:
-      alignInput = "'input label'";
+      gridAreas = "'input label'";
       break;
   }
+
+  if (!labelVisible || !label) {
+    gridAreas = "";
+    gridColumns = "auto";
+    gridGap = "0";
+  }
+
   return (
     <CheckboxContainer
-      alignInput={alignInput}
+      gridAreas={gridAreas}
       disabled={isDisabled}
+      gridColumns={gridColumns}
+      gridGap={gridGap}
       inputTextColor={inputTextColor}
     >
       <CheckboxInput
@@ -149,11 +196,26 @@ function Checkbox({
         id={id}
         onBlur={onBlur}
         onChange={onChange}
+        onClick={(e) => {
+          if (stopPropagation) {
+            e.stopPropagation();
+          }
+        }}
         onFocus={onFocus}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      {label ? <Label htmlFor={id} text={label} /> : null}
+      <CheckboxLabel
+        htmlFor={id}
+        text={label}
+        hidden={!labelVisible}
+        onClick={(e) => {
+          if (stopPropagation) {
+            e.stopPropagation();
+          }
+        }}
+        weight={bold ? "bold" : ""}
+      />
     </CheckboxContainer>
   );
 }
@@ -173,8 +235,7 @@ function CheckboxGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
@@ -184,7 +245,6 @@ function CheckboxGroup({
 
   return (
     <CheckboxWrapper
-      align={align}
       columns="1"
       disabled={isDisabled}
       id={id}
@@ -195,8 +255,8 @@ function CheckboxGroup({
       ) : null}
       {helpText ? <Text size="xs" text={helpText} /> : null}
       <InputGroup columns={columns}>
-        {children ||
-          data.map((item) => {
+        {children
+          || data.map((item) => {
             return (
               <Checkbox
                 align={align}
@@ -220,31 +280,36 @@ function CheckboxGroup({
 }
 
 Checkbox.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.node,
+  labelVisible: PropTypes.bool,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  stopPropagation: PropTypes.bool,
 };
 
 Checkbox.defaultProps = {
-  align: null,
+  align: "left",
   checked: null,
   disabled: false,
   error: null,
   id: null,
   label: null,
+  labelVisible: true,
   onBlur: null,
   onChange: null,
   onFocus: null,
+  stopPropagation: false,
 };
 
 CheckboxGroup.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
+  bold: PropTypes.bool,
   children: PropTypes.node,
   columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
   data: PropTypes.arrayOf(PropTypes.shape({
@@ -266,7 +331,8 @@ CheckboxGroup.propTypes = {
 };
 
 CheckboxGroup.defaultProps = {
-  align: null,
+  align: "left",
+  bold: false,
   children: null,
   columns: null,
   data: [],
