@@ -38,10 +38,6 @@ const MediaElement = styled(Media)`
   overflow: hidden;
 `;
 
-const MediaIcon = styled(Icon)`
-  font-size: ${(props) => { return `${props.mediaSize}em`; }};
-`;
-
 const MediaThumb = styled.section`
   grid-area: media;
   background-image: ${(props) => {
@@ -52,8 +48,9 @@ const MediaThumb = styled.section`
   background-size: cover;
   display: flex;
   justify-content: center;
-  width: ${(props) => { return `${props.mediaSize}em`; }};
-  height: ${(props) => { return `${props.mediaSize}em`; }};
+  font-size: ${(props) => { return props.icon ? `${props.mediaSize}em` : ""; }};
+  width: ${(props) => { return props.icon ? "100%" : `${props.mediaSize}em`; }};
+  height: ${(props) => { return props.icon ? "100%" : `${props.mediaSize}em`; }};
   border: ${(props) => { return props.icon ? "" : `1px solid ${props.theme.palette.neutral80}`; }};
   border-radius: ${(props) => {
     return props.mediaRound ? "50%" : "0.25rem";
@@ -62,50 +59,16 @@ const MediaThumb = styled.section`
 
 const Body = styled(Grid)`
   grid-area: body;
+  width: inherit;
   padding: ${(props) => {
     return props.bodyPadding || "";
   }};
   overflow: hidden;
-  display: ${(props) => {
-    return props.displayInline ? "none" : "";
-  }};
-  width: inherit;
-  display: ${(props) => {
-    return props.displayInline ? "block" : "";
-  }};
-  white-space: ${(props) => {
-    return props.displayInline ? "nowrap" : "normal";
-  }};
-  margin-bottom: ${(props) => {
-    return props.displayInline ? "0" : "";
-  }};
-  > * {
-  overflow: ${(props) => {
-    return props.displayInline ? "hidden" : "";
-  }};
-  text-overflow: ${(props) => {
-    return props.displayInline ? "ellipsis" : "";
-  }};
-  }
   &:only-child {
     margin-bottom: 0;
   }
   ${Block} {
     padding: 1rem 0 0;
-  }
-`;
-
-const ChildWrapper = styled.section`
-  grid-column: 1/-1;
-  padding-left: 1rem;
-  ${Block} {
-    grid-template-columns: ${(props) => { return props.nestedColumns; }};
-  }
-  > section {
-    padding-bottom: 1.25rem;
-    &:last-of-type {
-      padding-bottom: 0.25rem;
-    }
   }
 `;
 
@@ -115,6 +78,28 @@ const MediaTitle = styled(Title)`
 
 const MediaDescription = styled(Text)`
   font-size: inherit;
+`;
+
+const MediaIcon = styled(Icon)`
+  font-size: inherit;
+`;
+
+const ChildWrapper = styled.section`
+  grid-column: 1/-1;
+  padding-left: 1rem;
+  ${Block} {
+    grid-template-areas: ${(props) => { return props.nestedTemplate; }};
+    grid-template-columns: ${(props) => { return props.nestedColumns; }};
+  }
+  > section {
+    ${MediaIcon} {
+      font-size: 0.5em;
+    }
+    padding-bottom: 1.25rem;
+    &:last-of-type {
+      padding-bottom: 0.25rem;
+    }
+  }
 `;
 
 function MediaBlock({
@@ -160,20 +145,38 @@ function MediaBlock({
     case "xl":
       mediaSize = `${_mediaSize * 5}`;
       break;
+    case "2xl":
+      mediaSize = `${_mediaSize * 6}`;
+      break;
   }
 
+  let nestedTemplate;
   let nestedColumns;
   const _nestedColumns = `${mediaSize * 0.5}`;
+  const iconSize = `${mediaSize * 0.5}`;
+  const nestedIcons = `${iconSize * 0.5}`;
   if (media || icon) {
     if (mediaReverse) {
       gridTemplate = "'media body'";
       gridColumns = `minmax(0, ${mediaSize}em) 1fr`;
+      nestedTemplate = "'media body'";
       nestedColumns = `minmax(0, ${_nestedColumns}em) 1fr`;
+      if (icon && typeof icon === "string") {
+        gridColumns = `minmax(0, ${iconSize}em) 1fr`;
+        nestedTemplate = "'media body'";
+        nestedColumns = `minmax(0, ${nestedIcons}em) 1fr`;
+      }
     } else {
       gridColumns = `1fr minmax(0, ${mediaSize}em)`;
+      nestedTemplate = "'body media'";
       nestedColumns = `1fr minmax(0, ${_nestedColumns}em)`;
+      if (icon && typeof icon === "string") {
+        gridColumns = `1fr minmax(0, ${iconSize}em)`;
+        nestedTemplate = "'body media'";
+        nestedColumns = `1fr minmax(0, ${nestedIcons}em)`;
+      }
     }
-    if (mediaSquare || mediaRound) {
+    if ((mediaSquare || mediaRound) && !icon) {
       mediaSection = (
         <MediaThumb
           borderRadius={borderRadius}
@@ -183,6 +186,17 @@ function MediaBlock({
           mediaSize={mediaSize}
           title={title}
         />
+      );
+    } else if (icon && typeof icon === "string") {
+      mediaSection = (
+        <MediaThumb
+          icon={icon}
+          justify={justify}
+          mediaSize={iconSize}
+          title={title}
+        >
+          <MediaIcon icon={icon} iconSize={iconSize} brand="brand1" />
+        </MediaThumb>
       );
     } else {
       mediaSection = (
@@ -197,22 +211,6 @@ function MediaBlock({
     gridTemplate = "'body'";
     gridColumns = "1fr";
     bodyPadding = "0";
-  }
-
-  if (icon && typeof icon === "string") {
-    mediaSection = (
-      <MediaThumb
-        borderRadius={borderRadius}
-        justify={justify}
-        media={icon}
-        mediaRound={mediaRound}
-        mediaSize={mediaSize}
-        title={title}
-        icon={icon}
-      >
-        <MediaIcon icon={icon} mediaSize={mediaSize} brand="brand1" />
-      </MediaThumb>
-    );
   }
 
   return (
@@ -243,7 +241,7 @@ function MediaBlock({
       </Body>
       {media || icon ? mediaSection : null}
       {children ? (
-        <ChildWrapper nestedColumns={nestedColumns}>
+        <ChildWrapper nestedTemplate={nestedTemplate} nestedColumns={nestedColumns}>
           {children}
         </ChildWrapper>
       ) : null}
@@ -256,6 +254,8 @@ MediaBlock.propTypes = {
   /** className used for extending styles */
   className: PropTypes.string,
   description: PropTypes.string,
+  /** Enter the name of the icon as the prop value. (ex. icon="circle" */
+  icon: PropTypes.string,
   id: PropTypes.string,
   /** Used to define the content in the 'media' section */
   media: PropTypes.node,
@@ -271,6 +271,7 @@ MediaBlock.propTypes = {
       "sm",
       "lg",
       "xl",
+      "2xl",
     ]),
   ]),
   title: PropTypes.string,
@@ -280,6 +281,7 @@ MediaBlock.defaultProps = {
   children: null,
   className: null,
   description: null,
+  icon: null,
   id: null,
   media: null,
   mediaReverse: false,
