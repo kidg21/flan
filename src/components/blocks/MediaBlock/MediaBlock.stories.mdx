@@ -44,7 +44,7 @@ import Hulk from "images/people/hulk.jpg";
 
 # Usage
 
-The Media Block supports a Body (Title and Description) and a Media element.  A typical media element would be an image or an icon but any media source can be passed to the `media` prop.
+The Media Block supports a Body (`title` and `description` props) and a Media element (`media` or `icon` prop).
 
 # Examples
 
@@ -275,7 +275,7 @@ To position the media on the opposite side of the body, apply the `mediaReverse`
 </Preview>
 
 ### Size
-To ratio of the body-to-media ratio can be set using the `size` prop.  (Values include: `xs`, `sm`, default, `lg`, `xl`, and `2xl`)
+The body-to-media ratio can be set using the `size` prop.  (Values include: `xs`, `sm`, default, `lg`, `xl`, and `2xl`)
 
 <Preview withToolbar>
   <Story name="Size">
@@ -384,7 +384,7 @@ To use an icon instead of an image, pass a value to the `icon` prop instead of t
 </Preview>
 
 ### Nesting
-Media Blocks can be nested for use in cases where a hierarchical display is required. Such as a user form or discussion thread.
+Media Blocks can be nested for use in cases where a hierarchical display is required. Such as a user forum or discussion thread.
 
 <Preview withToolbar>
   <Story name="Nesting">
@@ -474,7 +474,7 @@ Media Blocks can be nested for use in cases where a hierarchical display is requ
 </Preview>
 
 ### Knobs
-To configure this component, go to the `Canvas` tab and navigate to the `Knobs` option on the `Addons` panel.
+To configure this component, go to the `Canvas` tab and navigate to the `Knobs` option in the `Addons` panel.
 
 <Preview withToolbar>
   <Story name="Knobs" decorators={[DisplayCard, CenterDisplayGrid]}>
