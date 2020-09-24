@@ -532,7 +532,6 @@ storiesOf("Templates/Modules/Panels", module)
 
 storiesOf("Templates/Modules", module)
   .addDecorator(FullScreen)
-  .addDecorator(checkA11y)
   .add("Layers Panel", () => {
     return (
       <Panel

@@ -4,7 +4,9 @@ import {
   useTable, useRowSelect, usePagination, useSortBy,
 } from "react-table";
 import styled from "styled-components";
+import Icon from "atoms/Icon";
 import Grid from "layout/Grid";
+import Inline from "layout/Inline";
 
 const NewTable = styled.table`
 border-collapse: collapse;
@@ -151,10 +153,10 @@ function ReactTable({ columns, data }) {
                       <NewHeaderCell
                         {...column.getHeaderProps(column.getSortByToggleProps())}
                       >
+                        <Inline>
                         {column.render("Header")}
-                        <span>
-                          {column.isSorted ? (column.isSortedDesc ? "  ▼" : "  ▲") : ""}
-                        </span>
+                        <Icon icon={column.isSorted ? (column.isSortedDesc ? "down" : "up") : ""} />
+                        </Inline>
                       </NewHeaderCell>
                     );
                   })}
