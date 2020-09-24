@@ -11,6 +11,7 @@ import Inline from "layout/Inline";
 const NewTable = styled.table`
 border-collapse: collapse;
 text-align: left;
+overflow-x: auto;
 font-family: ${(props) => { return props.theme.typography.primary; }};
 `;
 
@@ -49,11 +50,11 @@ font-weight: 500;
 
 const NewRow = styled.tr`
 border: 1px solid;
+overflow-y: auto;
 border-color: ${(props) => {
-    return (props.theme.palette.neutral60
-    );
-  }};
-
+  return (props.theme.palette.neutral60
+  );
+}};
 `;
 
 const IndeterminateCheckbox = React.forwardRef(
@@ -83,19 +84,10 @@ function ReactTable({ columns, data }) {
     // which has only the rows for the active page
 
     // The rest of these things are super handy, too ;)
-    canPreviousPage,
-    canNextPage,
-    pageOptions,
-    pageCount,
-    gotoPage,
-    nextPage,
+    // No pagination necessary, scrolling used.
     rows,
-    previousPage,
-    setPageSize,
     selectedFlatRows,
     state: {
-      pageIndex,
-      pageSize,
       sortBy,
       groupBy,
       expanded,
@@ -138,7 +130,7 @@ function ReactTable({ columns, data }) {
   );
 
   const totalRecords = data.length;
-  const recordInfo = `${totalRecords} Results`;
+  const recordInfo = `${totalRecords} Results`; /**Use recordInfo to capture the number of rows/items in a list */
 
   return (
     <React.Fragment>

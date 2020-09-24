@@ -46,7 +46,7 @@ storiesOf("Data Display|ReactTable", module)
               col3: "Los Angeles",
               col4: "CA",
               col5: "10023",
-              col6: "Senior Housing",
+              col6: "Senior Hougfdfdfdhjh dsdfghjasdfghjwer tyuisdfghjas dfghjrtyuerty dtdfghghj iuuydtrdtrd fyftf sing",
               col7: "6/19/2020",
               col8: <Tag label="Completed" type="success" />,
             },
