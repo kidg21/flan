@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { colors } from "Variables";
 import Text from "base/Typography";
 import Grid from "layout/Grid";
-import Card from "elements/Card";
+import CardWrapper from "elements/Card/CardWrapper.jsx";
 import Command from "atoms/Command";
 
 const fullscreen = {
@@ -62,7 +62,7 @@ function Spacer() {
 }
 
 const DisplayCard = (storyFn) => {
-  return (<Card padding="4x">{storyFn()}</Card>);
+  return (<CardWrapper padding="4x">{storyFn()}</CardWrapper>);
 };
 
 const DisplayGrid = (storyFn) => {
