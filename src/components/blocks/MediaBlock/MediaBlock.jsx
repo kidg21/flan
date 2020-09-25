@@ -9,12 +9,13 @@ import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
 
 const Block = styled(Grid)`
-  grid-template-columns: ${(props) => { return props.gridColumns; }};
-  grid-template-areas: ${(props) => {
-    return props.gridTemplate
-      || "'body media'";
+  grid-template-columns: ${(props) => {
+    return props.gridColumns;
   }};
-  grid-gap: ${(props) => { return props.gridGap || "1.25rem"; }};
+  grid-template-areas: ${(props) => { return props.gridTemplate || ""; }};
+  grid-gap: ${(props) => {
+    return props.gridGap || "1.25rem";
+  }};
   align-items: ${(props) => {
     return props.alignItems || "";
   }};
@@ -48,13 +49,13 @@ const MediaThumb = styled.section`
   background-size: cover;
   display: flex;
   justify-content: center;
+  border-radius: ${(props) => {
+    return props.mediaRound ? "50%" : "0.25rem";
+  }};
   font-size: ${(props) => { return props.icon ? `${props.mediaSize}em` : ""; }};
   width: ${(props) => { return props.icon ? "100%" : `${props.mediaSize}em`; }};
   height: ${(props) => { return props.icon ? "100%" : `${props.mediaSize}em`; }};
   border: ${(props) => { return props.icon ? "" : `1px solid ${props.theme.palette.neutral80}`; }};
-  border-radius: ${(props) => {
-    return props.mediaRound ? "50%" : "0.25rem";
-  }};
 `;
 
 const Body = styled(Grid)`
@@ -121,9 +122,7 @@ function MediaBlock({
   let bodyPadding;
   let borderRadius;
   let displayInline;
-  let gridColumns;
   let gridGap;
-  let gridTemplate;
   let justify;
   let mediaSection;
 
@@ -150,32 +149,24 @@ function MediaBlock({
       break;
   }
 
-  let nestedTemplate;
-  let nestedColumns;
   const _nestedColumns = `${mediaSize * 0.5}`;
   const iconSize = `${mediaSize * 0.5}`;
   const nestedIcons = `${iconSize * 0.5}`;
+
+  let gridTemplate = "'body media'";
+  let nestedTemplate = gridTemplate;
+  let gridColumns = ["1fr", `minmax(0, ${icon && typeof icon === "string" ? iconSize : mediaSize}em)`];
+  let nestedColumns = ["1fr", `minmax(0, ${icon && typeof icon === "string" ? nestedIcons : _nestedColumns}em)`];
+
   if (media || icon) {
     if (mediaReverse) {
       gridTemplate = "'media body'";
-      gridColumns = `minmax(0, ${mediaSize}em) 1fr`;
-      nestedTemplate = "'media body'";
-      nestedColumns = `minmax(0, ${_nestedColumns}em) 1fr`;
-      if (icon && typeof icon === "string") {
-        gridColumns = `minmax(0, ${iconSize}em) 1fr`;
-        nestedTemplate = "'media body'";
-        nestedColumns = `minmax(0, ${nestedIcons}em) 1fr`;
-      }
-    } else {
-      gridColumns = `1fr minmax(0, ${mediaSize}em)`;
-      nestedTemplate = "'body media'";
-      nestedColumns = `1fr minmax(0, ${_nestedColumns}em)`;
-      if (icon && typeof icon === "string") {
-        gridColumns = `1fr minmax(0, ${iconSize}em)`;
-        nestedTemplate = "'body media'";
-        nestedColumns = `1fr minmax(0, ${nestedIcons}em)`;
-      }
+      gridColumns.reverse();
+      nestedTemplate = gridTemplate;
+      nestedColumns.reverse();
     }
+    gridColumns = gridColumns.join(" ");
+    nestedColumns = nestedColumns.join(" ");
     if ((mediaSquare || mediaRound) && !icon) {
       mediaSection = (
         <MediaThumb
