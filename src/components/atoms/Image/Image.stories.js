@@ -2,7 +2,7 @@
 // /* eslint-disable react/jsx-filename-extension */
 // import React from "react";
 // import { Padding } from "helpers/Display";
-// import LightBoxIcon from "images/LightBoxIconLogo.png";
+// import LightBoxIcon from "images/branding/lightbox/LightBoxIconLogo.png";
 // import Grid from "layout/Grid";
 // import { Title } from "base/Typography";
 // import Image from "atoms/Image";
@@ -11,7 +11,6 @@
 //   src: LightBoxIcon,
 //   alt: "logo",
 // };
-
 
 // storiesOf("Atoms|Image", module)
 

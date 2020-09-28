@@ -43,6 +43,7 @@ const SectionWrapper = styled.section`
     return props.sectionPadding || "1em 1em";
   }};
   z-index: 0;
+  width: 100%;
   max-height: 100vh;
   /** TODO: Add a boolean prop to support a 'horizontal scrolling' option. */
   overflow-x: hidden;
@@ -140,6 +141,7 @@ const PanelSection = styled(PanelBody)`
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
+    /** Will be coming back to this */
     /* box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
   }}; */
@@ -148,6 +150,7 @@ const PanelSection = styled(PanelBody)`
     border-top: 1px solid ${(props) => {
     return props.theme.palette.neutral20;
   }};
+    /** Will be coming back to this */
     /* box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
   }}; */

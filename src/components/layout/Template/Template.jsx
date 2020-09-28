@@ -270,7 +270,7 @@ const templateHash = {
 };
 
 function Template({
-  A, B, C, D, E, children, classname, hasCards, hasShadows, id, isOverlay, template,
+  A, B, C, D, E, children, classname, gap, hasCards, hasShadows, id, isOverlay, rows, template,
 }) {
   let backgroundColor;
   let pointerEvents;
@@ -295,8 +295,8 @@ function Template({
   } else {
     setHeight = "auto";
     setPadding = "1rem";
-    setColumnGap = "1rem";
-    setRowGap = "1.25rem";
+    setColumnGap = gap || "1rem";
+    setRowGap = gap || "1.25rem";
   }
   if (hasCards || hasShadows) {
     setPadding = "1rem";
@@ -310,7 +310,7 @@ function Template({
   if (isOverlay) {
     backgroundColor = "none";
     pointerEvents = "none";
-    setPadding = "0.25rem";
+    setPadding = "0.5rem";
     setPosition = "absolute";
     zIndex = "999";
   }
@@ -319,6 +319,7 @@ function Template({
     <TemplateWrapper
       backgroundColor={backgroundColor}
       classname={classname}
+      gap={gap}
       id={id}
       pointerEvents={pointerEvents}
       setColumnGap={setColumnGap}
@@ -327,7 +328,7 @@ function Template({
       setPadding={setPadding}
       setPosition={setPosition}
       setRowGap={setRowGap}
-      setRows={setRows}
+      setRows={rows || setRows}
       setTemplate={setTemplate}
       zIndex={zIndex}
     >
@@ -448,10 +449,19 @@ Template.propTypes = {
   classname: PropTypes.string,
   D: PropTypes.shape(sectionShape),
   E: PropTypes.shape(sectionShape),
+  /** Sets the 'gutter' between grid items
+   * Overrides the default setting on Templates without a 'template' prop
+  */
+  gap: PropTypes.string,
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
   hasCards: PropTypes.bool,
   hasShadows: PropTypes.bool,
+  /** Defines the heights of grid rows
+   *
+   * Options: Any standard value accepted by the CSS Grid property, 'grid-template-rows'.
+   */
+  rows: PropTypes.string,
   template: PropTypes.string,
 };
 Template.defaultProps = {
@@ -462,10 +472,12 @@ Template.defaultProps = {
   classname: null,
   D: null,
   E: null,
+  gap: null,
   id: null,
   isOverlay: false,
   hasCards: false,
   hasShadows: false,
+  rows: null,
   template: null,
 };
 

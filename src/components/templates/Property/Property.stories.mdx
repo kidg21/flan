@@ -124,9 +124,9 @@ import Mapbox from "layout/Map"
       const actionsTable = [
         <Menu
           data={[
-            { id: "a", label: "Action" },
-            { id: "b", label: "Action" },
-            { id: "c", label: "Action" },
+            { id: "Open", label: "Open" },
+            { id: "Save", label: "Save" },
+            { id: "Refresh", label: "Refresh" },
           ]}
           position="bottomLeft"
         >
@@ -322,7 +322,7 @@ import Mapbox from "layout/Map"
                         </ButtonGroup>
                       </Card>
                     ),
-                    padding: "0.5rem",
+                    padding: "0.25rem",
                   }}
                   B={{
                     content: (
@@ -331,6 +331,7 @@ import Mapbox from "layout/Map"
                         actionClose={closeSummary}
                       />
                     ),
+                    margin: "0.25rem",
                     visible: regionVisible,
                   }}
                 />
