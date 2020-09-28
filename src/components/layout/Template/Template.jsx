@@ -319,7 +319,7 @@ function Template({
       setPadding={setPadding}
       setPosition={setPosition}
       setRowGap={setRowGap}
-      setRows={setRows || rows}
+      setRows={rows || setRows}
       setTemplate={setTemplate}
       zIndex={zIndex}
     >
