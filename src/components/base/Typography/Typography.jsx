@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Lighten, Darken } from "Variables";
 
 const StyledLabel = styled.label`
-  color: inherit;
+  color: ${(props) => { return props.theme.text[props.color] ? props.theme.text[props.color] : "inherit"; }};
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -291,6 +291,7 @@ Title.defaultProps = {
 function Label({
   children,
   className,
+  color,
   cursor,
   htmlFor,
   isRequired,
@@ -316,6 +317,7 @@ function Label({
   return (
     <StyledLabel
       className={className}
+      color={color}
       cursor={cursor}
       fontSize={fontSize}
       fontWeight={fontWeight}
@@ -334,6 +336,7 @@ function Label({
 Label.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  color: PropTypes.string,
   cursor: PropTypes.string,
   htmlFor: PropTypes.string,
   isUppercase: PropTypes.bool,
@@ -347,6 +350,7 @@ Label.propTypes = {
 Label.defaultProps = {
   children: null,
   className: null,
+  color: null,
   cursor: "pointer",
   isUppercase: false,
   htmlFor: null,
