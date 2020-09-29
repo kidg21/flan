@@ -10,14 +10,14 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 hKyaRZ Layout__Header-sc-19tlhp4-1 eYGDjK"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cdAbBX Layout__Header-sc-19tlhp4-1 eYGDjK"
       height={null}
       id="Header"
       overflow={null}
@@ -32,7 +32,7 @@ exports[` 1`] = `
           className="Bar__Slot-icfo76-1 gdiuzv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 hnrPBP"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cSEkvY"
             id={null}
             rows={null}
           >
@@ -47,7 +47,7 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                 id={null}
                 rows={null}
               >
@@ -75,7 +75,8 @@ exports[` 1`] = `
             </button>
             <img
               alt="Lightbox Logo"
-              className="Image__ImageWrapper-sc-18abvff-0 boIWnv"
+              className="Image__ImageWrapper-sc-18abvff-0 gdOhd"
+              height={null}
               onClick={[Function]}
               src=""
               title="Lightbox Logo"
@@ -87,7 +88,7 @@ exports[` 1`] = `
           className="Bar__Slot-icfo76-1 ivdblQ"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb Button__GroupWrapper-sc-1v7sls2-3 YHXln"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eVaBUs Button__GroupWrapper-sc-1v7sls2-3 YHXln"
             id={null}
             rows={null}
           >
@@ -102,7 +103,7 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
@@ -130,7 +131,7 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
@@ -158,7 +159,7 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
@@ -186,7 +187,7 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
@@ -209,7 +210,7 @@ exports[` 1`] = `
           className="Bar__Slot-icfo76-1 hrKMOC"
         >
           <div
-            className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+            className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
             height={null}
             id={null}
             overflow={null}
@@ -233,7 +234,7 @@ exports[` 1`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                     id={null}
                     rows={null}
                   >
@@ -285,14 +286,14 @@ exports[` 1`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__Body-sc-19tlhp4-3 gQQaiT"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__Body-sc-19tlhp4-3 gQQaiT"
       height={null}
       id={null}
       overflow={null}
       width={null}
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 jGlLHq Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 kDGGig Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
         height={null}
         id="Left"
         overflow={null}
@@ -713,14 +714,14 @@ exports[` 1`] = `
         </ul>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 KWOnE Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 oOfyG Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
         height="21rem"
         id={null}
         overflow={null}
         width="calc(100% - 10rem)"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 buvzUw Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 gdFvxq Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
           height={null}
           id="Main"
           overflow={null}
@@ -733,7 +734,7 @@ exports[` 1`] = `
             width="100%"
           >
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+              className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
               id={null}
             >
               <div
@@ -758,7 +759,7 @@ exports[` 1`] = `
                       className="Bar__Slot-icfo76-1 geluxC"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs"
                         id={null}
                         rows={null}
                       >
@@ -785,7 +786,7 @@ exports[` 1`] = `
                       className="Bar__Slot-icfo76-1 fdSmju"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 dJfRqA ProgressIndicator__ProgressSection-sc-1kcvu29-0 bczQwI"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cqOtKP ProgressIndicator__ProgressSection-sc-1kcvu29-0 bczQwI"
                         id={null}
                         rows={null}
                       >
@@ -818,7 +819,7 @@ exports[` 1`] = `
               </div>
             </section>
             <section
-              className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
+              className="Panel__SectionWrapper-sc-48epke-1 kPZqiJ"
               id={null}
             >
               <div
@@ -828,7 +829,7 @@ exports[` 1`] = `
                 width="100%"
               >
                 <section
-                  className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                  className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
                   id={null}
                 >
                   <div
@@ -855,7 +856,7 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
@@ -883,7 +884,7 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
@@ -911,7 +912,7 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
@@ -939,7 +940,7 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
@@ -967,7 +968,7 @@ exports[` 1`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
@@ -989,11 +990,11 @@ exports[` 1`] = `
                   </div>
                 </section>
                 <section
-                  className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+                  className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
                   id={null}
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 hCtFKU"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 hCtFKU"
                     id="overview"
                     rows={null}
                   >
@@ -1004,7 +1005,7 @@ exports[` 1`] = `
                       tabIndex="0"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
                         id={null}
                         rows={null}
                       >
@@ -1021,17 +1022,17 @@ exports[` 1`] = `
                             General Information
                           </p>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 djycdd Field__FieldGrid-sc-11od8ug-5 bLuXxN"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS Field__FieldGrid-sc-11od8ug-5 bLuXxN"
                             id={null}
                             rows={null}
                           >
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                               id={null}
                               rows={null}
                             >
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Property Name"
                                 rows={null}
                               >
@@ -1057,7 +1058,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Property Type"
                                 rows={null}
                               >
@@ -1083,7 +1084,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Lat / Long"
                                 rows={null}
                               >
@@ -1109,7 +1110,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Street Address"
                                 rows={null}
                               >
@@ -1135,7 +1136,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="City, State Zip"
                                 rows={null}
                               >
@@ -1162,12 +1163,12 @@ exports[` 1`] = `
                               </section>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                               id={null}
                               rows={null}
                             >
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Census Tract"
                                 rows={null}
                               >
@@ -1193,7 +1194,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Census Block"
                                 rows={null}
                               >
@@ -1219,7 +1220,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="County"
                                 rows={null}
                               >
@@ -1245,7 +1246,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="CBSA"
                                 rows={null}
                               >
@@ -1277,12 +1278,12 @@ exports[` 1`] = `
                           className="Field__Section-sc-11od8ug-6 bwzJQN"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 djycdd Field__FieldGrid-sc-11od8ug-5 bLuXxN"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS Field__FieldGrid-sc-11od8ug-5 bLuXxN"
                             id={null}
                             rows={null}
                           >
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                               id="Site Characteristics"
                               rows={null}
                             >
@@ -1296,7 +1297,7 @@ exports[` 1`] = `
                                 Site Characteristics
                               </p>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Land SF"
                                 rows={null}
                               >
@@ -1322,7 +1323,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Acres"
                                 rows={null}
                               >
@@ -1348,7 +1349,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Land Use"
                                 rows={null}
                               >
@@ -1374,7 +1375,7 @@ exports[` 1`] = `
                                 </p>
                               </section>
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                                 id="Street Address"
                                 rows={null}
                               >
@@ -1412,7 +1413,7 @@ exports[` 1`] = `
                       tabIndex="0"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
                         id={null}
                         rows={null}
                       >
@@ -1426,7 +1427,8 @@ exports[` 1`] = `
                           >
                             <img
                               alt="mockImage"
-                              className="Image__ImageWrapper-sc-18abvff-0 fSutOZ"
+                              className="Image__ImageWrapper-sc-18abvff-0 kaRXuv"
+                              height={null}
                               onClick={null}
                               src=""
                               title="mockImage"
@@ -1464,7 +1466,7 @@ exports[` 1`] = `
                           </div>
                         </div>
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                           id="Physical Characteristics"
                           rows={null}
                         >
@@ -1478,7 +1480,7 @@ exports[` 1`] = `
                             Physical Characteristics
                           </p>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Buildings"
                             rows={null}
                           >
@@ -1504,7 +1506,7 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="GBA"
                             rows={null}
                           >
@@ -1530,7 +1532,7 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Stories"
                             rows={null}
                           >
@@ -1556,7 +1558,7 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="No. of Units"
                             rows={null}
                           >
@@ -1582,7 +1584,7 @@ exports[` 1`] = `
                             </p>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                             id="Year Built"
                             rows={null}
                           >
@@ -1624,14 +1626,14 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 hKyaRZ Layout__Header-sc-19tlhp4-1 eYGDjK"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 cdAbBX Layout__Header-sc-19tlhp4-1 eYGDjK"
     height={null}
     id="Header"
     overflow={null}
@@ -1646,7 +1648,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 gdiuzv"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 hnrPBP"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 cSEkvY"
           id={null}
           rows={null}
         >
@@ -1661,7 +1663,7 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
               id={null}
               rows={null}
             >
@@ -1689,7 +1691,8 @@ exports[` 2`] = `
           </button>
           <img
             alt="Lightbox Logo"
-            className="Image__ImageWrapper-sc-18abvff-0 boIWnv"
+            className="Image__ImageWrapper-sc-18abvff-0 gdOhd"
+            height={null}
             onClick={[Function]}
             src=""
             title="Lightbox Logo"
@@ -1701,7 +1704,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 ivdblQ"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb Button__GroupWrapper-sc-1v7sls2-3 YHXln"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eVaBUs Button__GroupWrapper-sc-1v7sls2-3 YHXln"
           id={null}
           rows={null}
         >
@@ -1716,7 +1719,7 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
@@ -1744,7 +1747,7 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
@@ -1772,7 +1775,7 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
@@ -1800,7 +1803,7 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
               id={null}
               rows={null}
             >
@@ -1823,7 +1826,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 hrKMOC"
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
           height={null}
           id={null}
           overflow={null}
@@ -1847,7 +1850,7 @@ exports[` 2`] = `
                 type="button"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                   id={null}
                   rows={null}
                 >
@@ -1899,14 +1902,14 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__Body-sc-19tlhp4-3 gQQaiT"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__Body-sc-19tlhp4-3 gQQaiT"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jGlLHq Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kDGGig Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
       height={null}
       id="Left"
       overflow={null}
@@ -2044,14 +2047,14 @@ exports[` 2`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 KWOnE Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 oOfyG Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
       height="21rem"
       id={null}
       overflow={null}
       width="calc(100% - 10rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 buvzUw Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gdFvxq Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
         height={null}
         id="Main"
         overflow={null}
@@ -2064,13 +2067,13 @@ exports[` 2`] = `
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+            className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
             id={null}
           >
             <div
               className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
               href={null}
-              id="storyshots_126"
+              id="storyshots_131"
               media=""
               onClick={null}
               placeholder="{ Card }"
@@ -2103,7 +2106,7 @@ exports[` 2`] = `
                   >
                     <div
                       className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-                      id="menu-popper-storyshots_127"
+                      id="menu-popper-storyshots_132"
                     >
                       <a
                         className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -2151,11 +2154,11 @@ exports[` 2`] = `
                   >
                     <form
                       className="Search__SearchContainer-sey9om-0 iyfwN"
-                      id="storyshots_128"
+                      id="storyshots_133"
                       onSubmit={[Function]}
                     >
                       <div
-                        className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
+                        className="Flex__FlexWrapper-sc-7b3s7m-0 jIlEOG Search__SearchInput-sey9om-1 Yqkxx"
                         height={null}
                         id={null}
                         overflow={null}
@@ -2165,14 +2168,14 @@ exports[` 2`] = `
                           className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
                           disabled={false}
                           htmlFor={null}
-                          id="storyshots_128-search-button"
-                          name="storyshots_128-search-button"
+                          id="storyshots_133-search-button"
+                          name="storyshots_133-search-button"
                           onClick={[Function]}
                           tabIndex="1"
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                             id={null}
                             rows={null}
                           >
@@ -2199,8 +2202,8 @@ exports[` 2`] = `
                           </section>
                         </button>
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
-                          id="storyshots_128-search-bar_container"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
+                          id="storyshots_133-search-bar_container"
                           rows={null}
                         >
                           <input
@@ -2208,9 +2211,9 @@ exports[` 2`] = `
                             className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
                             cols=""
                             disabled={null}
-                            id="storyshots_128-search-bar"
+                            id="storyshots_133-search-bar"
                             list={null}
-                            name="storyshots_128-search-bar"
+                            name="storyshots_133-search-bar"
                             onBlur={null}
                             onChange={[Function]}
                             onFocus={null}
@@ -2230,7 +2233,7 @@ exports[` 2`] = `
                     className="Bar__Slot-icfo76-1 jyMGGC"
                   >
                     <div
-                      className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+                      className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
                       height={null}
                       id={null}
                       overflow={null}
@@ -2262,7 +2265,7 @@ exports[` 2`] = `
                           type="button"
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                             id={null}
                             rows={null}
                           >
@@ -2308,7 +2311,7 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                         id={null}
                         rows={null}
                       >
@@ -2350,12 +2353,12 @@ exports[` 2`] = `
                     className="Bar__Slot-icfo76-1 bKkRmK"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jXxhhi"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 cANTjJ"
                       id={null}
                       rows={null}
                     >
                       <div
-                        className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+                        className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
                         height={null}
                         id={null}
                         overflow={null}
@@ -2408,7 +2411,7 @@ exports[` 2`] = `
                               type="button"
                             >
                               <section
-                                className="Grid__GridWrapper-sc-1ntp7gx-0 fRlynG Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                                className="Grid__GridWrapper-sc-1ntp7gx-0 dafUdR Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                                 id={null}
                                 rows={null}
                               >
@@ -2641,16 +2644,16 @@ exports[` 2`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
+            className="Panel__SectionWrapper-sc-48epke-1 kPZqiJ"
             id={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 iCZIJP"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 gniRfd"
               id="Map Overlay"
               rows={null}
             >
               <section
-                className="Template__Region-sc-1i4nzbu-0 kZgbGg"
+                className="Template__Region-sc-1i4nzbu-0 dCwbnW"
                 id="A"
                 placeholder="A"
                 tabIndex="0"
@@ -2658,13 +2661,13 @@ exports[` 2`] = `
                 <div
                   className="CardWrapper__StyledCardWrapper-meln7c-0 hEGFso Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
-                  id="storyshots_130"
+                  id="storyshots_135"
                   media=""
                   onClick={null}
                   placeholder="{ Card }"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Button__GroupWrapper-sc-1v7sls2-3 YHXln"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Button__GroupWrapper-sc-1v7sls2-3 YHXln"
                     id={null}
                     rows={null}
                   >
@@ -2679,7 +2682,7 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
@@ -2727,7 +2730,7 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
@@ -2775,7 +2778,7 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
@@ -2823,7 +2826,7 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
@@ -2871,7 +2874,7 @@ exports[` 2`] = `
                       type="button"
                     >
                       <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                         id={null}
                         rows="max-content 1fr"
                       >
@@ -2922,7 +2925,7 @@ exports[` 2`] = `
                         type="button"
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
                           id={null}
                           rows="max-content 1fr"
                         >
@@ -2964,7 +2967,7 @@ exports[` 2`] = `
                 </div>
               </section>
               <section
-                className="Template__Region-sc-1i4nzbu-0 jmndeZ"
+                className="Template__Region-sc-1i4nzbu-0 escenm"
                 id="B"
                 placeholder="B"
                 tabIndex="0"
@@ -2976,13 +2979,13 @@ exports[` 2`] = `
                   width="100%"
                 >
                   <section
-                    className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+                    className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
                     id={null}
                   >
                     <div
                       className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
-                      id="storyshots_132"
+                      id="storyshots_137"
                       media=""
                       onClick={null}
                       placeholder="{ Card }"
@@ -2993,7 +2996,7 @@ exports[` 2`] = `
                         onClick={null}
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 gHcqEd"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 bTTmsq"
                           id={null}
                           rows={null}
                         >
@@ -3040,11 +3043,11 @@ exports[` 2`] = `
                     </div>
                   </section>
                   <section
-                    className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
+                    className="Panel__SectionWrapper-sc-48epke-1 kPZqiJ"
                     id={null}
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
                       id={null}
                       rows={null}
                     >
@@ -3052,12 +3055,12 @@ exports[` 2`] = `
                         className="Field__Section-sc-11od8ug-6 bwzJQN"
                       >
                         <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 bLuXxN"
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
                           id={null}
                           rows={null}
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                             id={null}
                             rows={null}
                           >
@@ -3071,7 +3074,7 @@ exports[` 2`] = `
                               Property Information
                             </p>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3108,7 +3111,7 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3134,7 +3137,7 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3160,7 +3163,7 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3197,7 +3200,7 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3223,7 +3226,7 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3249,7 +3252,7 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3276,7 +3279,7 @@ exports[` 2`] = `
                             </section>
                           </section>
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
                             id={null}
                             rows={null}
                           >
@@ -3290,7 +3293,7 @@ exports[` 2`] = `
                               Owner Information
                             </p>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3327,7 +3330,7 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3353,7 +3356,7 @@ exports[` 2`] = `
                               </p>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3390,7 +3393,7 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3427,7 +3430,7 @@ exports[` 2`] = `
                               </a>
                             </section>
                             <section
-                              className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
                               id={null}
                               rows={null}
                             >
@@ -3472,7 +3475,7 @@ exports[` 2`] = `
         </div>
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 llvsRA Layout__RegionBottom-sc-19tlhp4-7 FeTUT"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 ehqxPa Layout__RegionBottom-sc-19tlhp4-7 FeTUT"
         height="21rem"
         id="Results List"
         overflow={null}
@@ -3481,7 +3484,7 @@ exports[` 2`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_133"
+          id="storyshots_138"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -3492,12 +3495,12 @@ exports[` 2`] = `
             onClick={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 gHcqEd"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 bTTmsq"
               id={null}
               rows={null}
             >
               <div
-                className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+                className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
                 height={null}
                 id={null}
                 overflow={null}
@@ -3550,7 +3553,7 @@ exports[` 2`] = `
                 </div>
               </div>
               <div
-                className="Flex__FlexWrapper-sc-7b3s7m-0 WsBfR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+                className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
                 height={null}
                 id={null}
                 overflow={null}
@@ -3561,7 +3564,7 @@ exports[` 2`] = `
                 >
                   <div
                     className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-                    id="menu-popper-storyshots_134"
+                    id="menu-popper-storyshots_139"
                   >
                     <a
                       className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"

@@ -16,7 +16,7 @@ exports[` 1`] = `
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
       id={null}
     />
   </div>
@@ -39,7 +39,7 @@ exports[` 2`] = `
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
       id={null}
     >
       <div
@@ -63,7 +63,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
       id={null}
     />
   </div>
@@ -86,11 +86,11 @@ exports[` 3`] = `
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
       id={null}
     >
       <div
@@ -133,7 +133,7 @@ exports[` 4`] = `
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
       id={null}
     >
       <div
@@ -157,11 +157,11 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
       id={null}
     >
       <div
@@ -204,7 +204,7 @@ exports[` 5`] = `
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
       id="Panel_header"
     >
       <div
@@ -228,11 +228,11 @@ exports[` 5`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
       id="Panel_body"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 kfRhSP"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cbhuTd Card__CardGridWrapper-sc-1g3s676-4 kfRhSP"
         id={null}
         rows={null}
       >
@@ -295,7 +295,7 @@ exports[` 5`] = `
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
       id="Panel_footer"
     >
       <div
@@ -338,7 +338,7 @@ exports[` 6`] = `
     width="100%"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
       id="Panel_header"
     >
       <div
@@ -362,18 +362,18 @@ exports[` 6`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
       id="Panel_body"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 cnsfcm Card__CardGridWrapper-sc-1g3s676-4 kfRhSP"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cbhuTd Card__CardGridWrapper-sc-1g3s676-4 kfRhSP"
         id={null}
         rows={null}
       >
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_243"
+          id="storyshots_269"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -381,7 +381,7 @@ exports[` 6`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_244"
+          id="storyshots_270"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -389,7 +389,7 @@ exports[` 6`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_245"
+          id="storyshots_271"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -397,7 +397,7 @@ exports[` 6`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_246"
+          id="storyshots_272"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -405,7 +405,7 @@ exports[` 6`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_247"
+          id="storyshots_273"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -413,7 +413,7 @@ exports[` 6`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_248"
+          id="storyshots_274"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -421,7 +421,7 @@ exports[` 6`] = `
         <div
           className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
           href={null}
-          id="storyshots_249"
+          id="storyshots_275"
           media=""
           onClick={null}
           placeholder="{ Card }"
@@ -429,7 +429,7 @@ exports[` 6`] = `
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+      className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
       id="Panel_footer"
     >
       <div

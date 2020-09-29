@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 ggPykn"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Page__PageWrapper-mddda5-0 ggPykn"
     id="Knobs"
     rows={null}
   >
@@ -49,7 +49,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 ggPykn"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Page__PageWrapper-mddda5-0 ggPykn"
   id="Standard"
   rows={null}
 >
@@ -89,7 +89,7 @@ exports[` 3`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 rwydM"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Page__PageWrapper-mddda5-0 rwydM"
     id="Configured"
     rows={null}
   >
@@ -130,7 +130,7 @@ exports[` 4`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Page__PageWrapper-mddda5-0 gAmbKA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Page__PageWrapper-mddda5-0 gAmbKA"
     id="Template Overlay"
     rows={null}
   >
@@ -146,7 +146,7 @@ exports[` 4`] = `
         onSubmit={[Function]}
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 iEjJyI Search__SearchInput-sey9om-1 Yqkxx"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 jIlEOG Search__SearchInput-sey9om-1 Yqkxx"
           height={null}
           id={null}
           overflow={null}
@@ -163,7 +163,7 @@ exports[` 4`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
               id={null}
               rows={null}
             >
@@ -190,7 +190,7 @@ exports[` 4`] = `
             </section>
           </button>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 egAHCz TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM Search__SearchTextInput-sey9om-2 hNcSxt"
             id="Search_E3-search-bar_container"
             rows={null}
           >
@@ -234,7 +234,7 @@ exports[` 4`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
@@ -289,7 +289,7 @@ exports[` 4`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
@@ -344,7 +344,7 @@ exports[` 4`] = `
         type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 dfzghc Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
           id={null}
           rows="max-content 1fr"
         >
@@ -389,7 +389,7 @@ exports[` 4`] = `
       tabIndex="0"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
         id="standard"
         rows={null}
       >
@@ -405,7 +405,7 @@ exports[` 4`] = `
           Color Palette
         </label>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
           id={null}
           rows={null}
         >
