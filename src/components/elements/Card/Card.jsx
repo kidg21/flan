@@ -82,7 +82,7 @@ const StyledCardWrapper = styled(CardWrapper)``;
 
 const CardGridWrapper = styled(Grid)`
   grid-template-columns: ${(props) => {
-    return props.columns || "repeat(auto-fill, minmax(20rem, 1fr))";
+    return props.columns ? `repeat(${props.columns}, minmax(0, 1fr))` : "repeat(auto-fill, minmax(20rem, 1fr))";
   }};
   padding: ${(props) => {
     return props.padding;

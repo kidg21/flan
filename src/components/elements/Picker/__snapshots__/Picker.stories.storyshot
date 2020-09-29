@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
     id="toggleSelect"
     rows={null}
   >
@@ -25,7 +25,7 @@ exports[` 1`] = `
       Standard Swatches
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVaBUs"
       id={null}
       rows={null}
     >
@@ -57,7 +57,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
   id="standard"
   rows={null}
 >
@@ -73,7 +73,7 @@ exports[` 2`] = `
     Color Picker
   </label>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 bgGNik"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 NRgbL"
     id={null}
     rows={null}
   >
@@ -153,12 +153,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
   id={null}
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
     id="standard"
     rows={null}
   >
@@ -174,7 +174,7 @@ exports[` 3`] = `
       Color Picker
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 bgGNik"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 NRgbL"
       id={null}
       rows={null}
     >
@@ -251,7 +251,7 @@ exports[` 3`] = `
     </section>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
     id="standard"
     rows={null}
   >
@@ -267,7 +267,7 @@ exports[` 3`] = `
       Color Picker
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 bgGNik"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 NRgbL"
       id={null}
       rows={null}
     >

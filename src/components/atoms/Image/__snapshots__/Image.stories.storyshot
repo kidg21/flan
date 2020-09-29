@@ -3,76 +3,83 @@
 exports[` 1`] = `
 <img
   alt="This is alt text for this image"
-  className="Image__ImageWrapper-sc-18abvff-0 gTKWKU"
+  className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+  height={null}
   onClick={null}
   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
   title="This is alt text for this image"
-  width={null}
+  width="10rem"
 />
 `;
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 eVaBUs"
   id={null}
   rows={null}
 >
   <img
     alt="This is alt text for this image"
-    className="Image__ImageWrapper-sc-18abvff-0 BOjGD"
+    className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+    height={null}
     onClick={null}
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
     title="This is alt text for this image"
-    width="125"
+    width="10rem"
   />
   <img
     alt="This is alt text for this image"
-    className="Image__ImageWrapper-sc-18abvff-0 bjdguP"
+    className="Image__ImageWrapper-sc-18abvff-0 wbKFJ"
+    height={null}
     onClick={null}
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
     title="This is alt text for this image"
-    width="75"
+    width="8rem"
   />
   <img
     alt="This is alt text for this image"
-    className="Image__ImageWrapper-sc-18abvff-0 gcimyE"
+    className="Image__ImageWrapper-sc-18abvff-0 ixKnRv"
+    height={null}
     onClick={null}
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
     title="This is alt text for this image"
-    width="50"
+    width="6rem"
   />
   <img
     alt="This is alt text for this image"
-    className="Image__ImageWrapper-sc-18abvff-0 gBYPnO"
+    className="Image__ImageWrapper-sc-18abvff-0 htWIbp"
+    height={null}
     onClick={null}
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
     title="This is alt text for this image"
-    width="25"
+    width="4rem"
   />
 </section>
 `;
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 eVaBUs"
   id={null}
   rows={null}
 >
   <img
     alt="This is alt text for this image"
-    className="Image__ImageWrapper-sc-18abvff-0 gTKWKU"
+    className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+    height={null}
     onClick={null}
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
     title="This is alt text for this image"
-    width={null}
+    width="10rem"
   />
   <img
     alt="This is alt text for this image"
-    className="Image__ImageWrapper-sc-18abvff-0 guUfdE"
+    className="Image__ImageWrapper-sc-18abvff-0 kSWhOs"
+    height={null}
     onClick={null}
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
     title="This is alt text for this image"
-    width={null}
+    width="10rem"
   />
 </section>
 `;
