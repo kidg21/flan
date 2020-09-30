@@ -92,11 +92,13 @@ function Radio({
   disabled,
   error,
   id,
+  inputTextColor,
   label,
   name,
   onBlur,
   onChange,
   onFocus,
+  size,
   value,
 }) {
   let fillColor;
@@ -104,7 +106,7 @@ function Radio({
   let gridAreas;
   let gridColumns;
   let gridGap;
-  let inputTextColor;
+  let _inputTextColor = inputTextColor;
   let outlineColor;
   let tabIndex;
   if (!label) {
@@ -115,13 +117,13 @@ function Radio({
   if (isDisabled) {
     fillColor = "neutral40";
     fillColorChecked = "neutral40";
-    inputTextColor = "disabled";
+    _inputTextColor = "disabled";
     outlineColor = "neutral80";
     tabIndex = "-1";
   } else if (error) {
     fillColor = "alert60";
     fillColorChecked = "alert60";
-    inputTextColor = "alert";
+    _inputTextColor = "alert";
     outlineColor = "alert60";
   }
   switch (align) {
@@ -139,7 +141,7 @@ function Radio({
       disabled={isDisabled}
       gridColumns={gridColumns}
       gridGap={gridGap}
-      inputTextColor={inputTextColor}
+      inputTextColor={_inputTextColor}
     >
       <RadioInput
         checked={checked}
@@ -154,7 +156,7 @@ function Radio({
         tabIndex={tabIndex}
         value={value}
       />
-      {label ? <Label htmlFor={id} text={label} /> : null}
+      {label ? <Label htmlFor={id} size={size} text={label} /> : null}
     </RadioContainer>
   );
 }
@@ -171,13 +173,14 @@ function RadioGroup({
   isRequired,
   label,
   onChange,
+  inputTextColor,
 }) {
-  let inputTextColor;
+  let _inputTextColor = inputTextColor;
   let errorText;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (!isDisabled) {
     if (error) {
-      inputTextColor = "alert";
+      _inputTextColor = "alert";
       if (typeof error === "string") errorText = error;
     }
   }
@@ -186,7 +189,7 @@ function RadioGroup({
     <RadioWrapper
       disabled={isDisabled}
       columns="1"
-      inputTextColor={inputTextColor}
+      inputTextColor={_inputTextColor}
       id={id}
     >
       {label ? (
@@ -221,7 +224,9 @@ Radio.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   id: PropTypes.string,
+  inputTextColor: PropTypes.string,
   label: PropTypes.string,
+  size: PropTypes.string,
   /** The name property sets or returns the value of the name attribute of a radio button.
    * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
   name: PropTypes.string,
@@ -239,11 +244,13 @@ Radio.defaultProps = {
   disabled: false,
   error: false,
   id: null,
+  inputTextColor: null,
   label: null,
   name: null,
   onBlur: null,
   onChange: null,
   onFocus: null,
+  size: "sm",
   value: undefined,
 };
 
@@ -266,6 +273,7 @@ RadioGroup.propTypes = {
   error: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
+  inputTextColor: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
@@ -280,6 +288,7 @@ RadioGroup.defaultProps = {
   error: null,
   helpText: null,
   id: null,
+  inputTextColor: null,
   isRequired: false,
   label: null,
   onChange: null,
