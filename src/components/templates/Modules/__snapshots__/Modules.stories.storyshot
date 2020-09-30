@@ -132,7 +132,8 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                      color={null}
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -149,7 +150,8 @@ exports[` 1`] = `
                       onClick={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                        className="Typography__StyledLabel-sc-19auepv-0 bpbLDl"
+                        color={null}
                         cursor="default"
                         fontSize="0.875rem"
                         fontWeight={400}
@@ -178,7 +180,8 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                      color={null}
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -195,7 +198,8 @@ exports[` 1`] = `
                       onClick={null}
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                        className="Typography__StyledLabel-sc-19auepv-0 bpbLDl"
+                        color={null}
                         cursor="default"
                         fontSize="0.875rem"
                         fontWeight={400}
@@ -290,7 +294,8 @@ exports[` 1`] = `
                             title="View/Edit"
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                              className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -377,7 +382,8 @@ exports[` 1`] = `
                             title="View/Edit"
                           >
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                              className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -482,7 +488,8 @@ exports[` 1`] = `
                           className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -531,7 +538,8 @@ exports[` 1`] = `
                           className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -580,7 +588,8 @@ exports[` 1`] = `
                           className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -636,7 +645,8 @@ exports[` 1`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                          className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                          color={null}
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -675,7 +685,8 @@ exports[` 1`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -702,7 +713,8 @@ exports[` 1`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -728,7 +740,8 @@ exports[` 1`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -754,7 +767,8 @@ exports[` 1`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -792,7 +806,8 @@ exports[` 1`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -818,7 +833,8 @@ exports[` 1`] = `
                               type="checkbox"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
@@ -840,7 +856,8 @@ exports[` 1`] = `
                           className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
                         >
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                            className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -981,7 +998,8 @@ exports[` 1`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                          className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                          color={null}
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -1021,12 +1039,13 @@ exports[` 1`] = `
                               value="1"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                              className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio-1"
-                              letterSpacing=".5px"
+                              letterSpacing="1px"
                               onClick={null}
                             >
                               Label 1
@@ -1049,12 +1068,13 @@ exports[` 1`] = `
                               value="2"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                              className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio-2"
-                              letterSpacing=".5px"
+                              letterSpacing="1px"
                               onClick={null}
                             >
                               Label 2 (disabled)
@@ -1076,12 +1096,13 @@ exports[` 1`] = `
                               value="3"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                              className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio-3"
-                              letterSpacing=".5px"
+                              letterSpacing="1px"
                               onClick={null}
                             >
                               Label 3
@@ -1103,12 +1124,13 @@ exports[` 1`] = `
                               value="4"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                              className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio-4"
-                              letterSpacing=".5px"
+                              letterSpacing="1px"
                               onClick={null}
                             >
                               Label 4
@@ -1142,12 +1164,13 @@ exports[` 1`] = `
                               value="5"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                              className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio_long"
-                              letterSpacing=".5px"
+                              letterSpacing="1px"
                               onClick={null}
                             >
                               My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.
@@ -1169,12 +1192,13 @@ exports[` 1`] = `
                               value="6"
                             />
                             <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                              className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                              color={null}
                               cursor="pointer"
                               fontSize="0.875rem"
                               fontWeight={400}
                               htmlFor="radio_long2"
-                              letterSpacing=".5px"
+                              letterSpacing="1px"
                               onClick={null}
                             >
                               Enough with these long labels already...put it on your blog, Shakespeare.
@@ -1225,7 +1249,8 @@ exports[` 1`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                          className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                          color={null}
                           cursor="pointer"
                           fontSize="1rem"
                           fontWeight={400}
@@ -1253,7 +1278,8 @@ exports[` 1`] = `
                         rows={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                          className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                          color={null}
                           cursor="pointer"
                           fontSize="1rem"
                           fontWeight={400}
@@ -1346,7 +1372,8 @@ exports[` 2`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -1386,7 +1413,8 @@ exports[` 2`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -1447,7 +1475,8 @@ exports[` 2`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -1486,7 +1515,8 @@ exports[` 2`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -1525,7 +1555,8 @@ exports[` 2`] = `
                 className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -1650,7 +1681,8 @@ exports[` 2`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -1689,7 +1721,8 @@ exports[` 2`] = `
                 className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -1812,7 +1845,8 @@ exports[` 2`] = `
                 className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -1956,7 +1990,8 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1984,7 +2019,8 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -2075,7 +2111,8 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -2152,7 +2189,8 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -2217,7 +2255,8 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -2260,7 +2299,8 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -2288,7 +2328,8 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -2367,7 +2408,8 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -2395,7 +2437,8 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -2423,7 +2466,8 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -2465,7 +2509,8 @@ exports[` 4`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -2505,7 +2550,8 @@ exports[` 4`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -2566,7 +2612,8 @@ exports[` 4`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -2605,7 +2652,8 @@ exports[` 4`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -2644,7 +2692,8 @@ exports[` 4`] = `
                 className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -2769,7 +2818,8 @@ exports[` 4`] = `
                 className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -2808,7 +2858,8 @@ exports[` 4`] = `
                 className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -2931,7 +2982,8 @@ exports[` 4`] = `
                 className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -3075,7 +3127,8 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -3103,7 +3156,8 @@ exports[` 4`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -3182,7 +3236,8 @@ exports[` 5`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -3210,7 +3265,8 @@ exports[` 5`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -3238,7 +3294,8 @@ exports[` 5`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -3295,7 +3352,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3335,7 +3393,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3374,7 +3433,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3413,7 +3473,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3462,7 +3523,8 @@ exports[` 5`] = `
                     className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                      className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3587,7 +3649,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3647,7 +3710,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3684,7 +3748,8 @@ exports[` 5`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                    className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -3844,7 +3909,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3883,7 +3949,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3924,7 +3991,8 @@ exports[` 5`] = `
                     className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3986,7 +4054,8 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4014,7 +4083,8 @@ exports[` 5`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4093,7 +4163,8 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -4121,7 +4192,8 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -4149,7 +4221,8 @@ exports[` 6`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+            color={null}
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -4219,7 +4292,8 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4259,7 +4333,8 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4287,7 +4362,8 @@ exports[` 6`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -4461,7 +4537,8 @@ exports[` 7`] = `
                   />
                 </svg>
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -4518,7 +4595,8 @@ exports[` 7`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                    color={null}
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -4757,7 +4835,8 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4783,7 +4862,8 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4828,7 +4908,8 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4854,7 +4935,8 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4880,7 +4962,8 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4906,7 +4989,8 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4932,7 +5016,8 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -4958,7 +5043,8 @@ exports[` 8`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                    color={null}
                     cursor="pointer"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -5008,7 +5094,8 @@ exports[` 8`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                  color={null}
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -5036,7 +5123,8 @@ exports[` 8`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                  color={null}
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -5289,7 +5377,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                color={null}
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -5317,7 +5406,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                color={null}
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -5367,7 +5457,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5393,7 +5484,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5438,7 +5530,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5464,7 +5557,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5490,7 +5584,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5516,7 +5611,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5542,7 +5638,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5568,7 +5665,8 @@ exports[` 9`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5618,7 +5716,8 @@ exports[` 9`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -5646,7 +5745,8 @@ exports[` 9`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -5856,7 +5956,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                color={null}
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -5884,7 +5985,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                color={null}
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -5934,7 +6036,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5960,7 +6063,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -5986,7 +6090,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6012,7 +6117,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6038,7 +6144,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6064,7 +6171,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6109,7 +6217,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6135,7 +6244,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6161,7 +6271,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6187,7 +6298,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6213,7 +6325,8 @@ exports[` 10`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -6263,7 +6376,8 @@ exports[` 10`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -6291,7 +6405,8 @@ exports[` 10`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+              color={null}
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}

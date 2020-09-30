@@ -79,7 +79,8 @@ exports[` 1`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -127,7 +128,8 @@ exports[` 1`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -191,7 +193,8 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -230,7 +233,8 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -257,7 +261,8 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -283,7 +288,8 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -309,7 +315,8 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -347,7 +354,8 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -373,7 +381,8 @@ exports[` 1`] = `
                   type="checkbox"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
@@ -395,7 +404,8 @@ exports[` 1`] = `
               className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -545,7 +555,8 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+              className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -585,12 +596,13 @@ exports[` 1`] = `
                   value="1"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio-1"
-                  letterSpacing=".5px"
+                  letterSpacing="1px"
                   onClick={null}
                 >
                   Label 1
@@ -613,12 +625,13 @@ exports[` 1`] = `
                   value="2"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio-2"
-                  letterSpacing=".5px"
+                  letterSpacing="1px"
                   onClick={null}
                 >
                   Label 2 (disabled)
@@ -640,12 +653,13 @@ exports[` 1`] = `
                   value="3"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio-3"
-                  letterSpacing=".5px"
+                  letterSpacing="1px"
                   onClick={null}
                 >
                   Label 3
@@ -667,12 +681,13 @@ exports[` 1`] = `
                   value="4"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio-4"
-                  letterSpacing=".5px"
+                  letterSpacing="1px"
                   onClick={null}
                 >
                   Label 4
@@ -706,12 +721,13 @@ exports[` 1`] = `
                   value="5"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio_long"
-                  letterSpacing=".5px"
+                  letterSpacing="1px"
                   onClick={null}
                 >
                   My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.
@@ -733,12 +749,13 @@ exports[` 1`] = `
                   value="6"
                 />
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                  className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                  color={null}
                   cursor="pointer"
                   fontSize="0.875rem"
                   fontWeight={400}
                   htmlFor="radio_long2"
-                  letterSpacing=".5px"
+                  letterSpacing="1px"
                   onClick={null}
                 >
                   Enough with these long labels already...put it on your blog, Shakespeare.

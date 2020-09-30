@@ -427,7 +427,8 @@ exports[` 2`] = `
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bpbLDl"
+                    color={null}
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -476,7 +477,8 @@ exports[` 2`] = `
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bpbLDl"
+                    color={null}
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -525,7 +527,8 @@ exports[` 2`] = `
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bpbLDl"
+                    color={null}
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -574,7 +577,8 @@ exports[` 2`] = `
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bpbLDl"
+                    color={null}
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}

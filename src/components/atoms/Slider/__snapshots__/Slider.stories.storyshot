@@ -217,7 +217,8 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 llZdFW Slider__SliderLabel-sc-1hp9era-1 bgmaOM"
+            className="Typography__StyledLabel-sc-19auepv-0 khJgan Slider__SliderLabel-sc-1hp9era-1 bgmaOM"
+            color={null}
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={600}
@@ -247,7 +248,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+                className="Typography__StyledLabel-sc-19auepv-0 khJgan"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -262,7 +264,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+                className="Typography__StyledLabel-sc-19auepv-0 khJgan"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -319,7 +322,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+                className="Typography__StyledLabel-sc-19auepv-0 khJgan"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -334,7 +338,8 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+                className="Typography__StyledLabel-sc-19auepv-0 khJgan"
+                color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
