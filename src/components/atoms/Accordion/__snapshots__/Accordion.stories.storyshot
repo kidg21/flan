@@ -113,7 +113,8 @@ exports[` 2`] = `
             type="checkbox"
           />
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+            className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+            color={null}
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}

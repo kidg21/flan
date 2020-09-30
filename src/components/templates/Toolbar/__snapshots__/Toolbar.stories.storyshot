@@ -77,7 +77,8 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                    color={null}
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -125,7 +126,8 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                    color={null}
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -177,7 +179,8 @@ exports[` 1`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                      color={null}
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -227,12 +230,13 @@ exports[` 1`] = `
                             value="1"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="radio-1"
-                            letterSpacing=".5px"
+                            letterSpacing="1px"
                             onClick={null}
                           >
                             Roads
@@ -254,12 +258,13 @@ exports[` 1`] = `
                             value="2"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="radio-2"
-                            letterSpacing=".5px"
+                            letterSpacing="1px"
                             onClick={null}
                           >
                             Aerial
@@ -281,12 +286,13 @@ exports[` 1`] = `
                             value="3"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                            className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
                             htmlFor="radio-3"
-                            letterSpacing=".5px"
+                            letterSpacing="1px"
                             onClick={null}
                           >
                             Aerial with Labels
@@ -337,7 +343,8 @@ exports[` 1`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                      color={null}
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
@@ -386,7 +393,8 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -412,7 +420,8 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -438,7 +447,8 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -464,7 +474,8 @@ exports[` 1`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -516,7 +527,8 @@ exports[` 1`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                    color={null}
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -614,7 +626,8 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                    color={null}
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -662,7 +675,8 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                    color={null}
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -710,7 +724,8 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                    color={null}
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -758,7 +773,8 @@ exports[` 2`] = `
                     />
                   </svg>
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                    color={null}
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -810,7 +826,8 @@ exports[` 2`] = `
                       />
                     </svg>
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                      className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
+                      color={null}
                       cursor="pointer"
                       fontSize="1rem"
                       fontWeight={400}
