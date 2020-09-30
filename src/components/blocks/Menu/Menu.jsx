@@ -31,6 +31,9 @@ const ListWrapper = styled(List)`
   left: ${(props) => {
     return props.left || "";
   }};
+  title: ${(props) => {
+    return props.title || "";
+  }};
   transform: ${(props) => {
     return props.transform || "";
   }};
@@ -83,6 +86,7 @@ const MenuList = ({
   id,
   _isNested, // internal prop for styling nested menus
   onClose,
+  title,
   width,
 }) => {
   const [activeItem, setActiveItem] = useState();
@@ -178,7 +182,14 @@ const MenuList = ({
   const positionStyle = _isNested ? listPositionStyle[validDirection.toLowerCase()] : {};
 
   return (
-    <ListWrapper id={id} isInteractive isNested={_isNested} width={width} {...positionStyle}>
+    <ListWrapper
+      id={id}
+      isInteractive
+      isNested={_isNested}
+      width={width}
+      {...positionStyle}
+      title={title}
+    >
       <StyledCardWrapper id={`cardwrapper-${id}`} padding="1x" shadow="2x">
         {listItems}
       </StyledCardWrapper>
@@ -204,6 +215,7 @@ MenuList.defaultProps = {
   id: "",
   _isNested: false,
   onClose: null,
+  title: "",
   width: undefined,
 };
 
@@ -213,6 +225,7 @@ MenuList.propTypes = {
   id: PropTypes.string,
   _isNested: PropTypes.bool,
   onClose: PropTypes.func,
+  title: PropTypes.string,
   width: PropTypes.string,
 };
 
@@ -227,6 +240,7 @@ const Menu = ({
   closeOnClickAway,
   usePortal,
   position,
+  title,
   visible,
   width,
   zIndex,
@@ -248,6 +262,7 @@ const Menu = ({
         data={data}
         direction={position.toLowerCase().includes("left") ? "left" : "right"}
         onClose={onClose}
+        title={title}
         width={width}
       />
     </Popper>
@@ -263,6 +278,7 @@ Menu.defaultProps = {
   closeOnClickAway: true,
   usePortal: false,
   position: "bottomRight",
+  title: "",
   visible: false,
   width: undefined,
   zIndex: null,
@@ -287,6 +303,7 @@ Menu.propTypes = {
     "topRight",
     "",
   ]),
+  title: PropTypes.string,
   visible: PropTypes.bool,
   width: PropTypes.string,
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
