@@ -98,6 +98,7 @@ function Radio({
   onBlur,
   onChange,
   onFocus,
+  size,
   value,
 }) {
   let fillColor;
@@ -155,7 +156,7 @@ function Radio({
         tabIndex={tabIndex}
         value={value}
       />
-      {label ? <Label htmlFor={id} size="sm" text={label} /> : null}
+      {label ? <Label htmlFor={id} size={size} text={label} /> : null}
     </RadioContainer>
   );
 }
@@ -225,6 +226,7 @@ Radio.propTypes = {
   id: PropTypes.string,
   inputTextColor: PropTypes.string,
   label: PropTypes.string,
+  size: PropTypes.string,
   /** The name property sets or returns the value of the name attribute of a radio button.
    * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
   name: PropTypes.string,
@@ -248,6 +250,7 @@ Radio.defaultProps = {
   onBlur: null,
   onChange: null,
   onFocus: null,
+  size: "sm",
   value: undefined,
 };
 
