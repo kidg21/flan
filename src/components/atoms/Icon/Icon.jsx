@@ -77,6 +77,8 @@ const iconHash = {
   book: "book",
   bookmark_solid: "bookmark",
   bookmark: ["far", "bookmark"],
+  briefcase: ["far", "briefcase"],
+  bullseye: ["far", "bullseye-arrow"],
   calendar: ["far", "calendar-alt"],
   calendar_check: "calendar-check",
   call: "phone",
