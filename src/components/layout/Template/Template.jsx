@@ -212,7 +212,7 @@ const templateHash = {
   },
   C_05: {
     setTemplate: [
-      "\"A A . B\"",
+      "\"A . . B\"",
       "\". . . B\"",
       "\"C C . B\"",
     ].join("\n"),
