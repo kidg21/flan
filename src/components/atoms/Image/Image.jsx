@@ -26,6 +26,7 @@ const ImageWrapper = styled.img`
 function Image({
   alt, className, height, isRound, onClick, src, width,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   return (
     <ImageWrapper
       alt={alt}
@@ -36,7 +37,7 @@ function Image({
       src={src || Placeholder}
       title={alt}
       width={width}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     />
   );
 }

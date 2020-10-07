@@ -307,6 +307,7 @@ function Label({
   isUppercase,
   visible,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
@@ -331,7 +332,7 @@ function Label({
       letterSpacing={letterSpacing}
       visible={visible}
       onClick={onClick}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {text || children}
     </StyledLabel>
@@ -368,6 +369,7 @@ Label.defaultProps = {
 function Link({
   children, className, disabled, href, onClick, size, target, text, weight,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   const selectedSize = linkSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
@@ -384,7 +386,7 @@ function Link({
       letterSpacing={letterSpacing}
       onClick={onClick}
       target={target}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {text || children}
     </LinkText>
