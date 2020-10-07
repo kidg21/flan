@@ -1,14 +1,18 @@
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import mime from "mime";
 import Image from "atoms/Image";
 
 const MediaContainer = styled.section`
   width: 100%;
   height: 100%;
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
 `;
 
 const ImageWrapper = styled(Image)`
@@ -98,6 +102,7 @@ function Media({
       onClick={onClick}
       id={id}
       mediaDesc={mediaDesc}
+      mouseEvents={useContext(PointerEventsContext)}
     >
       {mediaSection}
     </MediaContainer>

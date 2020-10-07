@@ -1,12 +1,16 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import Tag from "atoms/Tag";
 
 const BadgeContainer = styled.div`
   position: absolute;
   display: flex;
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
   bottom: ${(props) => {
     return props.badgeBottom || "";
   }};
@@ -59,6 +63,7 @@ function Badge({
       badgeLeft={badgeLeft}
       id={id}
       setTransform={setTransform}
+      mouseEvents={useContext(PointerEventsContext)}
     >
       <StyledBadge hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} iconSize={iconSize} size={size} onClick={onClick} />
     </BadgeContainer>

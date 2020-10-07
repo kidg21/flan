@@ -1,8 +1,9 @@
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 
@@ -32,6 +33,9 @@ const TagContainer = styled.span`
   }};
   transition: all 0.25s ease;
   cursor: ${(props) => { return props.onClick ? "pointer" : "inherit"; }}
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
 `;
 
 const TagIconContainer = styled.div`
@@ -204,6 +208,7 @@ function Tag({
       id={id}
       label={label}
       onClick={onClick}
+      mouseEvents={useContext(PointerEventsContext)}
     >
       {inner}
     </TagContainer>

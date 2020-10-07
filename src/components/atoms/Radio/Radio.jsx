@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 
@@ -29,11 +29,13 @@ const RadioContainer = styled.div`
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
+  pointer-events: ${(props) => {
+    return props.disabled || props.readonly ? "none" : props.mouseEvents;
+  }};
   line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
   }
 `;
@@ -140,6 +142,7 @@ function Radio({
       gridColumns={gridColumns}
       gridGap={gridGap}
       inputTextColor={inputTextColor}
+      mouseEvents={useContext(PointerEventsContext)}
     >
       <RadioInput
         checked={checked}

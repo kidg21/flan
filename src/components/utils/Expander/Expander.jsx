@@ -2,10 +2,13 @@
 import React, { Fragment, useState, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { DisableTransitionContext } from "States";
+import { DisableTransitionContext, PointerEventsContext } from "States";
 
 const HeaderWrapper = styled.div`
   cursor: pointer;
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
 `;
 
 const ChildrenWrapper = styled.div`
@@ -25,7 +28,7 @@ const ChildrenWrapper = styled.div`
     return props.open ? "100%" : "0";
   }};
   pointer-events: ${(props) => {
-    return props.open ? "auto" : "none";
+    return props.open ? props.mouseEvents : "none";
   }};
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
@@ -36,15 +39,17 @@ const AccordionFunction = ({
   id, header, children, open, onClick, className,
 }) => {
   const disableTransition = useContext(DisableTransitionContext);
+  const pointerEvents = useContext(PointerEventsContext);
   return (
     <Fragment>
-      <HeaderWrapper id={id} onClick={onClick}>
+      <HeaderWrapper id={id} onClick={onClick} mouseEvents={pointerEvents}>
         {header}
       </HeaderWrapper>
       <ChildrenWrapper
         disableTransition={disableTransition}
         open={open}
         className={className}
+        mouseEvents={pointerEvents}
       >
         {children}
       </ChildrenWrapper>

@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { PointerEventsContext } from "States";
 import Placeholder from "images/placeholders/placeholder-photo.png";
 
 const ImageWrapper = styled.img`
@@ -16,6 +17,9 @@ const ImageWrapper = styled.img`
   }};
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
+  }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
   }};
 `;
 
@@ -32,6 +36,7 @@ function Image({
       src={src || Placeholder}
       title={alt}
       width={width}
+      mouseEvents={useContext(PointerEventsContext)}
     />
   );
 }

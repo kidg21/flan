@@ -56,11 +56,13 @@ const ImageContainer = styled.a`
   grid-gap: 0.75rem;
   justify-items: center;
   cursor: pointer;
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : props.mouseEvents;
+  }};
    ${(props) => {
     return props.disabled
       && css`
       cursor: ${() => { return props.disabled ? "not-allowed" : "pointer"; }};
-      pointer-events: none;
       user-select: none;
       opacity: 0.5;
      `;

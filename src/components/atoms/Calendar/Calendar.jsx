@@ -1,8 +1,9 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { PointerEventsContext } from "States";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import { useId } from "utils/hooks";
@@ -11,6 +12,9 @@ const CalendarContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }}
 `;
 
 function Calendar({
@@ -91,6 +95,7 @@ function Calendar({
       gap="xs"
       id={uId}
       isRequired={isRequired}
+      mouseEvents={useContext(PointerEventsContext)}
     >
       {inputContainer}
     </CalendarContainer>

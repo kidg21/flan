@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Lighten, Darken } from "Variables";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Badge from "atoms/Badge";
 
@@ -23,7 +23,7 @@ const LinkedIcon = styled.a`
     return "";
   }};
   pointer-events: ${(props) => {
-    return props.disabled ? "none" : "";
+    return props.disabled ? "none" : props.mouseEvents;
   }};
   user-select: ${(props) => {
     return props.disabled ? "none" : "";
@@ -314,7 +314,12 @@ function Icon({
 
   if (onClick || href) {
     content = (
-      <LinkedIcon onClick={onClick} href={href} disabled={disabled}>
+      <LinkedIcon
+        onClick={onClick}
+        href={href}
+        disabled={disabled}
+        mouseEvents={useContext(PointerEventsContext)}
+      >
         {content}
       </LinkedIcon>
     );

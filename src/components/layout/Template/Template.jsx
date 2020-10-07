@@ -3,6 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import Grid from "layout/Grid";
 
 const Region = styled.section`
@@ -40,12 +41,6 @@ const Region = styled.section`
   }};
   outline: none;
   transition: all 0.15s ease-in-out;
-  ${(props) => {
-    // when it is overlay, we want the region (parent) to have no pointer-events
-    // and the children to restore thier events
-    // allows for transparent space inbetween to work
-    return !props.isOverlay ? "pointer-events: initial;" : ">* { pointer-events: auto; };";
-  }}
 `;
 
 const TemplateWrapper = styled(Grid)`
@@ -83,7 +78,7 @@ const TemplateWrapper = styled(Grid)`
     return props.zIndex || "0";
   }};
   pointer-events: ${(props) => {
-    return props.pointerEvents || "";
+    return props.mouseEvents || "";
   }};
 `;
 
@@ -321,7 +316,7 @@ function Template({
       classname={classname}
       gap={gap}
       id={id}
-      pointerEvents={pointerEvents}
+      mouseEvents={pointerEvents}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
       setHeight={setHeight}
@@ -349,7 +344,9 @@ function Template({
               tabIndex="0"
               visible={typeof A.visible === "boolean" ? A.visible : true}
             >
-              {A.content}
+              <PointerEventsContext.Provider value={isOverlay ? "auto" : ""}>
+                {A.content}
+              </PointerEventsContext.Provider>
             </Region>
           ) : null}
           {B ? (
@@ -367,7 +364,9 @@ function Template({
               tabIndex="0"
               visible={typeof B.visible === "boolean" ? B.visible : true}
             >
-              {B.content}
+              <PointerEventsContext.Provider value={isOverlay ? "auto" : ""}>
+                {B.content}
+              </PointerEventsContext.Provider>
             </Region>
           ) : null}
           {C ? (
@@ -385,7 +384,9 @@ function Template({
               tabIndex="0"
               visible={typeof C.visible === "boolean" ? C.visible : true}
             >
-              {C.content}
+              <PointerEventsContext.Provider value={isOverlay ? "auto" : ""}>
+                {C.content}
+              </PointerEventsContext.Provider>
             </Region>
           ) : null}
           {D ? (
@@ -403,7 +404,9 @@ function Template({
               tabIndex="0"
               visible={typeof D.visible === "boolean" ? D.visible : true}
             >
-              {D.content}
+              <PointerEventsContext.Provider value={isOverlay ? "auto" : ""}>
+                {D.content}
+              </PointerEventsContext.Provider>
             </Region>
           ) : null}
           {E ? (
@@ -421,7 +424,9 @@ function Template({
               tabIndex="0"
               visible={typeof E.visible === "boolean" ? E.visible : true}
             >
-              {E.content}
+              <PointerEventsContext.Provider value={isOverlay ? "auto" : ""}>
+                {E.content}
+              </PointerEventsContext.Provider>
             </Region>
           ) : null}
         </React.Fragment>

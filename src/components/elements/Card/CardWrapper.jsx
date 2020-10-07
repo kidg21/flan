@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import { useId } from "utils/hooks";
 import { PlaceholderText } from "helpers/Skeleton";
 
@@ -28,6 +29,9 @@ const StyledCardWrapper = styled.div`
   }};
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
+  }};
+  pointer-events: ${(props) => {
+    return props.onClick ? props.mouseEvents : "";
   }};
   a {
   color: ${(props) => {
@@ -97,6 +101,7 @@ const CardWrapper = ({
       media={media}
       shadow={shadow}
       placeholder={placeholder}
+      mouseEvents={useContext(PointerEventsContext)}
     >
       {children}
     </StyledCardWrapper>

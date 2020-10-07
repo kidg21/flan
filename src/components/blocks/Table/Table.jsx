@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { Component } from "react";
+import React, { Component, useContext } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import {
@@ -10,6 +10,7 @@ import {
   CellMeasurerCache,
   InfiniteLoader,
 } from "react-virtualized";
+import { PointerEventsContext } from "States";
 
 export const MultiGridWrapper = styled.div`
   width: 100%;
@@ -18,6 +19,9 @@ export const MultiGridWrapper = styled.div`
     return props.theme.background.default;
   }};
   border: 1px solid ${(props) => { return props.theme.palette.neutral60; }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
   overflow: hidden;
   .ReactVirtualized__Grid {
     ::-webkit-scrollbar {
@@ -377,7 +381,7 @@ class Table extends Component {
       columnWidthToUse = columnWidth;
     }
     return (
-      <MultiGridWrapper>
+      <MultiGridWrapper mouseEvents={useContext(PointerEventsContext)}>
         {/* providing non-zero defaultWidth and defaultHeight props so grid will render when unit testing.
             In the browser they are immediately overwritten once the component mounts */}
         <AutoSizer defaultWidth={200} defaultHeight={100}>
