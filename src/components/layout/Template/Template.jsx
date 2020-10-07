@@ -1,8 +1,10 @@
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import Grid from "layout/Grid";
 
 const Region = styled.section`
@@ -40,12 +42,6 @@ const Region = styled.section`
   }};
   outline: none;
   transition: all 0.15s ease-in-out;
-  ${(props) => {
-    // when it is overlay, we want the region (parent) to have no pointer-events
-    // and the children to restore thier events
-    // allows for transparent space inbetween to work
-    return !props.isOverlay ? "pointer-events: initial;" : ">* { pointer-events: auto; };";
-  }}
 `;
 
 const TemplateWrapper = styled(Grid)`
@@ -83,7 +79,7 @@ const TemplateWrapper = styled(Grid)`
     return props.zIndex || "0";
   }};
   pointer-events: ${(props) => {
-    return props.pointerEvents || "";
+    return props.mouseEvents || "";
   }};
 `;
 
@@ -270,7 +266,7 @@ const templateHash = {
 };
 
 function Template({
-  A, B, C, D, E, children, classname, gap, hasCards, hasShadows, id, isOverlay, rows, template,
+  children, classname, gap, hasCards, hasShadows, id, isOverlay, rows, template, ...templateRegions
 }) {
   let backgroundColor;
   let pointerEvents;
@@ -321,7 +317,7 @@ function Template({
       classname={classname}
       gap={gap}
       id={id}
-      pointerEvents={pointerEvents}
+      mouseEvents={pointerEvents}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
       setHeight={setHeight}
@@ -332,100 +328,32 @@ function Template({
       setTemplate={setTemplate}
       zIndex={zIndex}
     >
-      {A || B || C || D || E ? (
-        <React.Fragment>
-          {A ? (
-            <Region
-              gridArea={template ? "A" : ""}
-              hasBorder={A.hasBorder}
-              id={A.id || "A"}
-              isOverlay={isOverlay}
-              margin={A.margin}
-              opacity={A.opacity}
-              overflow={A.overflow}
-              padding={A.padding}
-              placeholder="A"
-              regionShadow={A.padding ? null : regionShadow}
-              tabIndex="0"
-              visible={typeof A.visible === "boolean" ? A.visible : true}
-            >
-              {A.content}
-            </Region>
-          ) : null}
-          {B ? (
-            <Region
-              gridArea={template ? "B" : ""}
-              hasBorder={B.hasBorder}
-              id={B.id || "B"}
-              isOverlay={isOverlay}
-              margin={B.margin}
-              opacity={B.opacity}
-              overflow={B.overflow}
-              padding={B.padding}
-              placeholder="B"
-              regionShadow={B.padding ? null : regionShadow}
-              tabIndex="0"
-              visible={typeof B.visible === "boolean" ? B.visible : true}
-            >
-              {B.content}
-            </Region>
-          ) : null}
-          {C ? (
-            <Region
-              gridArea={template ? "C" : ""}
-              hasBorder={C.hasBorder}
-              id={C.id || "C"}
-              isOverlay={isOverlay}
-              margin={C.margin}
-              opacity={C.opacity}
-              overflow={C.overflow}
-              padding={C.padding}
-              placeholder="C"
-              regionShadow={C.padding ? null : regionShadow}
-              tabIndex="0"
-              visible={typeof C.visible === "boolean" ? C.visible : true}
-            >
-              {C.content}
-            </Region>
-          ) : null}
-          {D ? (
-            <Region
-              gridArea={template ? "D" : ""}
-              hasBorder={D.hasBorder}
-              id={D.id || "D"}
-              isOverlay={isOverlay}
-              margin={D.margin}
-              opacity={D.opacity}
-              overflow={D.overflow}
-              padding={D.padding}
-              placeholder="D"
-              regionShadow={D.padding ? null : regionShadow}
-              tabIndex="0"
-              visible={typeof D.visible === "boolean" ? D.visible : true}
-            >
-              {D.content}
-            </Region>
-          ) : null}
-          {E ? (
-            <Region
-              gridArea={template ? "E" : null}
-              hasBorder={E.hasBorder}
-              id={E.id || "E"}
-              isOverlay={isOverlay}
-              margin={E.margin}
-              opacity={E.opacity}
-              overflow={E.overflow}
-              padding={E.padding}
-              placeholder="E"
-              regionShadow={E.padding ? null : regionShadow}
-              tabIndex="0"
-              visible={typeof E.visible === "boolean" ? E.visible : true}
-            >
-              {E.content}
-            </Region>
-          ) : null}
-        </React.Fragment>
-      ) : children}
+      {
+        Object.keys(templateRegions).length > 0
+          ? Object.keys(templateRegions).map((regionId, index) => {
+            return templateRegions[regionId] && typeof templateRegions[regionId] === "object" ? (
+              <Region
+                gridArea={template ? regionId : ""}
+                hasBorder={templateRegions[regionId].hasBorder}
+                id={templateRegions[regionId].id || regionId}
+                isOverlay={isOverlay}
+                margin={templateRegions[regionId].margin}
+                opacity={templateRegions[regionId].opacity}
+                overflow={templateRegions[regionId].overflow}
+                padding={templateRegions[regionId].padding}
+                placeholder={regionId}
+                regionShadow={templateRegions[regionId].padding ? null : regionShadow}
+                tabIndex={index}
+                visible={typeof templateRegions[regionId].visible === "boolean" ? templateRegions[regionId].visible : true}
+              >
+                <PointerEventsContext.Provider value={isOverlay ? "auto" : ""}>
+                  {templateRegions[regionId].content}
+                </PointerEventsContext.Provider>
+              </Region>
+            ) : null;
+          })
+          : children
+      }
     </TemplateWrapper>
   );
 }

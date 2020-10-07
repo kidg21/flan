@@ -4,7 +4,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import { useId } from "utils/hooks";
@@ -57,6 +57,9 @@ const Input = styled.input`
   padding: 0.125rem 0.5rem;
   resize: ${(props) => {
     return props.inputResize || "";
+  }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
   }};
   ::placeholder {
     font-size: 0.9rem;
@@ -143,6 +146,9 @@ function TextInput({
   }
 
   const uId = useId(id);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -175,7 +181,7 @@ function TextInput({
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
   let errorText = "";
   if (isDisabled) {
     inputBorderColor = "neutral40";
@@ -202,7 +208,6 @@ function TextInput({
     min = "1019-01-01";
   }
 
-
   return (
     <TextInputContainer
       className={className}
@@ -212,8 +217,7 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <LabelWrapper
-          inputTextColor={inputTextColor}>
+        <LabelWrapper inputTextColor={inputTextColor}>
           <Label isRequired={isRequired} text={label} visible={labelVisible} />
         </LabelWrapper>
       ) : null}
@@ -247,6 +251,7 @@ function TextInput({
         rows={rows} // textarea attribute
         type={type} // input attribute
         value={value}
+        mouseEvents={pointerEvents}
       />
       {autocompleteDataList}
       {helpText ? <Text size="xs" text={helpText} /> : null}

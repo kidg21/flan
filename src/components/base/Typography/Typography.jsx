@@ -1,9 +1,10 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 // import { Skeleton } from "helpers/Skeleton";
 import { Lighten, Darken } from "Variables";
+import { PointerEventsContext } from "States";
 
 const StyledLabel = styled.label`
   color: inherit;
@@ -19,6 +20,9 @@ const StyledLabel = styled.label`
   cursor: ${(props) => { return props.cursor; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
   &:after {
     display: ${(props) => {
     return props.isRequired ? "" : "none";
@@ -71,12 +75,14 @@ const LinkText = styled.a`
   letter-spacing: ${(props) => { return props.letterSpacing; }};
   color: ${(props) => { return props.theme.text.link; }};
   cursor: pointer;
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : props.mouseEvents;
+  }};
   &[disabled] {
     color: ${(props) => {
     return props.theme.text.disabled;
   }};
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
     border-left: none;
   }
@@ -301,6 +307,7 @@ function Label({
   isUppercase,
   visible,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
@@ -325,6 +332,7 @@ function Label({
       letterSpacing={letterSpacing}
       visible={visible}
       onClick={onClick}
+      mouseEvents={pointerEvents}
     >
       {text || children}
     </StyledLabel>
@@ -361,6 +369,7 @@ Label.defaultProps = {
 function Link({
   children, className, disabled, href, onClick, size, target, text, weight,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   const selectedSize = linkSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
@@ -377,6 +386,7 @@ function Link({
       letterSpacing={letterSpacing}
       onClick={onClick}
       target={target}
+      mouseEvents={pointerEvents}
     >
       {text || children}
     </LinkText>

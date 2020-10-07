@@ -16,7 +16,7 @@ exports[` 1`] = `
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+        className="Image__ImageWrapper-sc-18abvff-0 gKzvpk"
         height={null}
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
@@ -68,7 +68,7 @@ exports[` 1`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -81,7 +81,7 @@ exports[` 1`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="login-email"
@@ -107,7 +107,7 @@ exports[` 1`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -120,7 +120,7 @@ exports[` 1`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="login-password"
@@ -148,7 +148,7 @@ exports[` 1`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+            className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -163,7 +163,7 @@ exports[` 1`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -184,7 +184,7 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 kcJpTc"
             >
               <a
-                className="Typography__LinkText-sc-19auepv-1 ibwmgx"
+                className="Typography__LinkText-sc-19auepv-1 dMiiOk"
                 disabled={false}
                 fontSize="1rem"
                 fontWeight={400}
@@ -206,7 +206,7 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 kcJpTc"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 esKlPI"
+                className="Button__StyledButton-sc-1v7sls2-0 bvFeUx"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -221,7 +221,7 @@ exports[` 1`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -258,7 +258,7 @@ exports[` 2`] = `
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+        className="Image__ImageWrapper-sc-18abvff-0 gKzvpk"
         height={null}
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
@@ -310,7 +310,7 @@ exports[` 2`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -323,7 +323,7 @@ exports[` 2`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="registration-email"
@@ -349,7 +349,7 @@ exports[` 2`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -362,7 +362,7 @@ exports[` 2`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="registration-password"
@@ -388,7 +388,7 @@ exports[` 2`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -401,7 +401,7 @@ exports[` 2`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="registration-confirm-password"
@@ -429,7 +429,7 @@ exports[` 2`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+            className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -444,7 +444,7 @@ exports[` 2`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -479,7 +479,7 @@ exports[` 3`] = `
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+        className="Image__ImageWrapper-sc-18abvff-0 gKzvpk"
         height={null}
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
@@ -531,7 +531,7 @@ exports[` 3`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -544,7 +544,7 @@ exports[` 3`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="reset-email"
@@ -572,7 +572,7 @@ exports[` 3`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+            className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -587,7 +587,7 @@ exports[` 3`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -608,7 +608,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 kcJpTc"
             >
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 esKlPI"
+                className="Button__StyledButton-sc-1v7sls2-0 bvFeUx"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -623,7 +623,7 @@ exports[` 3`] = `
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                    className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                     cursor="pointer"
                     fontSize="1rem"
                     fontWeight={400}
@@ -660,7 +660,7 @@ exports[` 4`] = `
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+        className="Image__ImageWrapper-sc-18abvff-0 gKzvpk"
         height={null}
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
@@ -713,7 +713,7 @@ exports[` 4`] = `
             If you don't see an email in the next few minutes please select the link to send again.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+            className="Typography__LinkText-sc-19auepv-1 eKyPXN"
             disabled={false}
             fontSize="1rem"
             fontWeight={500}
@@ -747,7 +747,7 @@ exports[` 5`] = `
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+        className="Image__ImageWrapper-sc-18abvff-0 gKzvpk"
         height={null}
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
@@ -799,7 +799,7 @@ exports[` 5`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -812,7 +812,7 @@ exports[` 5`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="new-email"
@@ -838,7 +838,7 @@ exports[` 5`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -851,7 +851,7 @@ exports[` 5`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="new-password"
@@ -877,7 +877,7 @@ exports[` 5`] = `
               className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -890,7 +890,7 @@ exports[` 5`] = `
             </section>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
               cols=""
               disabled={false}
               id="new-confirm"
@@ -918,7 +918,7 @@ exports[` 5`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+            className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -933,7 +933,7 @@ exports[` 5`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}
@@ -968,7 +968,7 @@ exports[` 6`] = `
     >
       <img
         alt="Lightbox Logo"
-        className="Image__ImageWrapper-sc-18abvff-0 CRyKg"
+        className="Image__ImageWrapper-sc-18abvff-0 gKzvpk"
         height={null}
         onClick={null}
         src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
@@ -1031,7 +1031,7 @@ exports[` 6`] = `
           rows={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+            className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1046,7 +1046,7 @@ exports[` 6`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                 cursor="pointer"
                 fontSize="1rem"
                 fontWeight={400}

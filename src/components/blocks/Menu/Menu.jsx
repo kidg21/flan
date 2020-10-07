@@ -2,10 +2,11 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable security/detect-object-injection */
 import React, {
-  useState, useMemo, useRef, useCallback,
+  useContext, useState, useMemo, useRef, useCallback,
 } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import Popper from "layout/Popper";
 import Button from "atoms/Button";
 import Divider from "atoms/Divider";
@@ -292,7 +293,11 @@ Menu.propTypes = {
   zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
-const FragmentWrapper = styled.div``;
+const FragmentWrapper = styled.div`
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
+`;
 
 const StatefulMenu = ({
   children,
@@ -302,6 +307,7 @@ const StatefulMenu = ({
   ...otherProps
 }) => {
   const [visible, setVisible] = useState(initVisible);
+  const pointerEvents = useContext(PointerEventsContext);
   const anchor = React.Children.toArray(children);
   const toggleVisible = useCallback(() => {
     setVisible((show) => { return !show; });
@@ -318,7 +324,14 @@ const StatefulMenu = ({
       // wraps click in div around both children
       // otherwise, Fragment eats onClick prop
       // for the most part assumes a single child!
-      anchorElement = (<FragmentWrapper onClick={toggleVisible}>{children}</FragmentWrapper>);
+      anchorElement = (
+        <FragmentWrapper
+          onClick={toggleVisible}
+          mouseEvents={pointerEvents}
+        >
+          {children}
+        </FragmentWrapper>
+      );
     } else {
       // need to clone to preserve ref on anchor element
       anchorElement = React.cloneElement(anchor[0], {

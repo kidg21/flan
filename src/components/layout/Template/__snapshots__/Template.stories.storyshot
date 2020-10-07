@@ -14,34 +14,34 @@ exports[` 1`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      className="Template__Region-sc-1i4nzbu-0 kEgvIT"
       id="A"
       placeholder="A"
-      tabIndex="0"
+      tabIndex={0}
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      className="Template__Region-sc-1i4nzbu-0 kEgvIT"
       id="B"
       placeholder="B"
-      tabIndex="0"
+      tabIndex={1}
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      className="Template__Region-sc-1i4nzbu-0 kEgvIT"
       id="C"
       placeholder="C"
-      tabIndex="0"
+      tabIndex={2}
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      className="Template__Region-sc-1i4nzbu-0 kEgvIT"
       id="D"
       placeholder="D"
-      tabIndex="0"
+      tabIndex={3}
     />
     <section
-      className="Template__Region-sc-1i4nzbu-0 gmVIkZ"
+      className="Template__Region-sc-1i4nzbu-0 kEgvIT"
       id="E"
       placeholder="E"
-      tabIndex="0"
+      tabIndex={4}
     />
   </section>
 </div>
@@ -54,10 +54,10 @@ exports[` 2`] = `
   rows={null}
 >
   <section
-    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
+    className="Template__Region-sc-1i4nzbu-0 dIgRtj"
     id="A"
     placeholder="A"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       style={
@@ -80,10 +80,10 @@ exports[` 2`] = `
     </div>
   </section>
   <section
-    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
+    className="Template__Region-sc-1i4nzbu-0 dIgRtj"
     id="B"
     placeholder="B"
-    tabIndex="0"
+    tabIndex={1}
   >
     <div
       style={
@@ -106,10 +106,10 @@ exports[` 2`] = `
     </div>
   </section>
   <section
-    className="Template__Region-sc-1i4nzbu-0 dWJSEt"
+    className="Template__Region-sc-1i4nzbu-0 dIgRtj"
     id="C"
     placeholder="C"
-    tabIndex="0"
+    tabIndex={2}
   >
     <div
       style={
@@ -148,10 +148,10 @@ exports[` 3`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dBfOAc"
+      className="Template__Region-sc-1i4nzbu-0 hNSmKK"
       id="A"
       placeholder="A"
-      tabIndex="0"
+      tabIndex={0}
     >
       <div
         style={
@@ -174,10 +174,10 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jRfqpD"
+      className="Template__Region-sc-1i4nzbu-0 kqKgAV"
       id="B"
       placeholder="B"
-      tabIndex="0"
+      tabIndex={1}
     >
       <div
         style={
@@ -200,10 +200,10 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 fCvwzu"
+      className="Template__Region-sc-1i4nzbu-0 cZCSLY"
       id="C"
       placeholder="C"
-      tabIndex="0"
+      tabIndex={2}
     >
       <div
         style={
@@ -243,10 +243,10 @@ exports[` 4`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 cKxKnd"
+      className="Template__Region-sc-1i4nzbu-0 bpnOSX"
       id="A"
       placeholder="A"
-      tabIndex="0"
+      tabIndex={1}
     >
       <form
         className="Search__SearchContainer-sey9om-0 iyfwN"
@@ -261,7 +261,7 @@ exports[` 4`] = `
           width={null}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
+            className="Button__StyledButton-sc-1v7sls2-0 iueyDZ Search__SearchButton-sey9om-3 gwhUGs"
             disabled={false}
             htmlFor={null}
             id="Search_E3-search-button"
@@ -304,7 +304,7 @@ exports[` 4`] = `
           >
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+              className="TextInput__Input-sc-1fep8p8-3 jIlvxw"
               cols=""
               disabled={false}
               id="Search_E3-search-bar"
@@ -326,13 +326,13 @@ exports[` 4`] = `
       </form>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 fmYhxO"
+      className="Template__Region-sc-1i4nzbu-0 idYQDE"
       id="B"
       placeholder="B"
-      tabIndex="0"
+      tabIndex={2}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
+        className="Button__StyledButton-sc-1v7sls2-0 irpsnt"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -367,7 +367,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 crQDzK"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -381,13 +381,13 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 dUBBAT"
+      className="Template__Region-sc-1i4nzbu-0 jxaRTp"
       id="C"
       placeholder="C"
-      tabIndex="0"
+      tabIndex={3}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
+        className="Button__StyledButton-sc-1v7sls2-0 irpsnt"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -422,7 +422,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 crQDzK"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -436,13 +436,13 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 MVbLU"
+      className="Template__Region-sc-1i4nzbu-0 tkhfW"
       id="D"
       placeholder="D"
-      tabIndex="0"
+      tabIndex={4}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 dAvpTD"
+        className="Button__StyledButton-sc-1v7sls2-0 irpsnt"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -477,7 +477,7 @@ exports[` 4`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+            className="Typography__StyledLabel-sc-19auepv-0 crQDzK"
             cursor="pointer"
             fontSize="1rem"
             fontWeight={400}
@@ -491,10 +491,10 @@ exports[` 4`] = `
       </button>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 kJUfnV"
+      className="Template__Region-sc-1i4nzbu-0 bMmivH"
       id="E"
       placeholder="E"
-      tabIndex="0"
+      tabIndex={5}
     >
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Picker__InputContainer-sc-1xwpkqn-0 VCXxY"
@@ -502,7 +502,7 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+          className="Typography__StyledLabel-sc-19auepv-0 kxgmAa"
           cursor="pointer"
           fontSize="0.875rem"
           fontWeight={400}

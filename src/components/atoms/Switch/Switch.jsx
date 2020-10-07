@@ -2,7 +2,7 @@
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import { Label } from "base/Typography";
 
 const SwitchContainer = styled.div`
@@ -23,11 +23,13 @@ const SwitchContainer = styled.div`
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
+  pointer-events: ${(props) => {
+    return props.disabled || props.readonly ? "none" : props.mouseEvents;
+  }};
   line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
   }
 `;
@@ -82,8 +84,9 @@ const Circle = styled.div`
 function Switch({
   align, checked, disabled, error, id, label, onChange,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   let inputTextColor;
   let fillColor;
   let borderColor;
@@ -128,6 +131,7 @@ function Switch({
       inputTextColor={inputTextColor}
       label={label}
       onClick={onClick}
+      mouseEvents={pointerEvents}
     >
       <StyledSwitch
         borderColor={borderColor}

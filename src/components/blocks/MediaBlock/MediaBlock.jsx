@@ -1,8 +1,9 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { PointerEventsContext } from "States";
 import Media from "atoms/Media";
 import Icon from "atoms/Icon";
 import Text, { Title } from "base/Typography";
@@ -21,6 +22,9 @@ const Block = styled(Grid)`
   }};
   padding: ${(props) => {
     return props.blockPadding || "";
+  }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
   }};
 `;
 
@@ -126,6 +130,8 @@ function MediaBlock({
   let justify;
   let mediaSection;
 
+  const pointerEvents = useContext(PointerEventsContext);
+
   let mediaSize;
   const _mediaSize = 2;
   switch (size) {
@@ -217,6 +223,7 @@ function MediaBlock({
       mediaSize={mediaSize}
       mediaSquare={mediaSquare}
       onClick={onClick}
+      mouseEvents={pointerEvents}
     >
       <Body
         bodyPadding={bodyPadding}

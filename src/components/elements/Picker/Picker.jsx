@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Icon from "atoms/Icon";
@@ -56,11 +56,13 @@ const ImageContainer = styled.a`
   grid-gap: 0.75rem;
   justify-items: center;
   cursor: pointer;
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : props.mouseEvents;
+  }};
    ${(props) => {
     return props.disabled
       && css`
       cursor: ${() => { return props.disabled ? "not-allowed" : "pointer"; }};
-      pointer-events: none;
       user-select: none;
       opacity: 0.5;
      `;
@@ -148,11 +150,14 @@ ColorSwatch.defaultProps = {
 function ImageSwatch({
   alt, disabled, isSelected, label, onClick, src, width,
 }) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   return (
     <ImageContainer
       disabled={isDisabled}
+      mouseEvents={pointerEvents}
       onClick={onClick}
     >
       <ImageWrapper

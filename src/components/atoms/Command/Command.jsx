@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 
@@ -36,7 +36,7 @@ const CommandContainer = styled.a`
     return props.isDisabled ? "not-allowed" : "pointer";
   }};
   pointer-events: ${(props) => {
-    return props.isDisabled ? "none" : "";
+    return props.isDisabled ? "none" : props.mouseEvents;
   }};
   &:hover {
     color: ${(props) => {
@@ -161,7 +161,9 @@ function Command({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {
@@ -188,6 +190,7 @@ function Command({
       label={label}
       onClick={onClick}
       title={cmd.label}
+      mouseEvents={pointerEvents}
     >
       {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
       <CommandName text={cmd.label} hidden={!labelVisible} />

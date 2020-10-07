@@ -14,7 +14,7 @@ exports[` 1`] = `
     width={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
+      className="Button__StyledButton-sc-1v7sls2-0 fARwQq Search__SearchButton-sey9om-3 gwhUGs"
       disabled={false}
       htmlFor={null}
       id="Search_Standard-search-button"
@@ -57,7 +57,7 @@ exports[` 1`] = `
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+        className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
         cols=""
         disabled={false}
         id="Search_Standard-search-bar"
@@ -100,7 +100,7 @@ exports[` 2`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
+        className="Button__StyledButton-sc-1v7sls2-0 fARwQq Search__SearchButton-sey9om-3 gwhUGs"
         disabled={false}
         htmlFor={null}
         id="Suggestions-search-button"
@@ -143,7 +143,7 @@ exports[` 2`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
           cols=""
           disabled={false}
           id="Suggestions-search-bar"
@@ -177,7 +177,7 @@ exports[` 2`] = `
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -214,7 +214,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -251,7 +251,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -315,7 +315,7 @@ exports[` 3`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
+        className="Button__StyledButton-sc-1v7sls2-0 fARwQq Search__SearchButton-sey9om-3 gwhUGs"
         disabled={false}
         htmlFor={null}
         id="Suggestions_More-search-button"
@@ -358,7 +358,7 @@ exports[` 3`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
           cols=""
           disabled={false}
           id="Suggestions_More-search-bar"
@@ -392,7 +392,7 @@ exports[` 3`] = `
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -429,7 +429,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -466,7 +466,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -503,7 +503,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -540,7 +540,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -577,7 +577,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -614,7 +614,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -651,7 +651,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -688,7 +688,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -725,7 +725,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -762,7 +762,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -800,13 +800,13 @@ exports[` 3`] = `
                 className="Bar__Slot-icfo76-1 jyMGGC"
               >
                 <span
-                  className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
+                  className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
                   id={null}
                   label="14"
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -848,7 +848,7 @@ exports[` 4`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
+        className="Button__StyledButton-sc-1v7sls2-0 fARwQq Search__SearchButton-sey9om-3 gwhUGs"
         disabled={false}
         htmlFor={null}
         id="Search_Offline-search-button"
@@ -891,7 +891,7 @@ exports[` 4`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
           cols=""
           disabled={false}
           id="Search_Offline-search-bar"
@@ -996,7 +996,7 @@ exports[` 5`] = `
       width={null}
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hQAiX Search__SearchButton-sey9om-3 gwhUGs"
+        className="Button__StyledButton-sc-1v7sls2-0 fARwQq Search__SearchButton-sey9om-3 gwhUGs"
         disabled={false}
         htmlFor={null}
         id="Search_BadConnection-search-button"
@@ -1039,7 +1039,7 @@ exports[` 5`] = `
       >
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
           cols=""
           disabled={false}
           id="Search_BadConnection-search-bar"
