@@ -10,7 +10,6 @@ Array [
     id="Modal_Standard"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
-    pointerEvents="auto"
   >
     <div
       action="close"
@@ -23,7 +22,7 @@ Array [
       id="Modal_Standard-animation"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
         href={null}
         id="storyshots_54"
         media=""
@@ -90,7 +89,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -105,7 +104,7 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+        className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -130,7 +129,6 @@ Array [
     id="Modal_Knobs"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
-    pointerEvents="auto"
   >
     <div
       action="close"
@@ -144,7 +142,7 @@ Array [
       onClick={null}
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 hTChzH Card__StyledCardWrapper-sc-1g3s676-3"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 kuOAvg Card__StyledCardWrapper-sc-1g3s676-3"
         href={null}
         id="storyshots_55"
         media=""
@@ -180,7 +178,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -195,7 +193,7 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+        className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -220,7 +218,6 @@ Array [
     id="Modal_Dialog"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
-    pointerEvents="auto"
   >
     <div
       action="close"
@@ -233,7 +230,7 @@ Array [
       id="Modal_Dialog-animation"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 kusUPT Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
         href={null}
         id="storyshots_56"
         media=""
@@ -290,7 +287,7 @@ Array [
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 crOShH DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+              className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
               disabled={false}
               htmlFor={null}
               id="Cancel"
@@ -305,7 +302,7 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -318,7 +315,7 @@ Array [
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hDSxZe DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+              className="Button__StyledButton-sc-1v7sls2-0 kPqHPv DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
               disabled={false}
               htmlFor={null}
               id="Confirm"
@@ -333,7 +330,7 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -351,7 +348,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -366,7 +363,7 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+        className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -391,7 +388,6 @@ Array [
     id="Modal_Text"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
-    pointerEvents="auto"
   >
     <div
       action="close"
@@ -405,7 +401,7 @@ Array [
       onClick={null}
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 hTChzH Card__StyledCardWrapper-sc-1g3s676-3"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 kuOAvg Card__StyledCardWrapper-sc-1g3s676-3"
         href={null}
         id="storyshots_57"
         media=""
@@ -441,7 +437,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -456,7 +452,7 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+        className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -481,7 +477,6 @@ Array [
     id="Modal_Image"
     onAnimationEnd={[Function]}
     onAnimationStart={[Function]}
-    pointerEvents="auto"
   >
     <div
       action="close"
@@ -495,7 +490,7 @@ Array [
     />
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -510,7 +505,7 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+        className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}

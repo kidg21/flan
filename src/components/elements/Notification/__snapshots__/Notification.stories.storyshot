@@ -15,10 +15,9 @@ exports[` 1`] = `
     id={null}
     onAnimationEnd={null}
     onAnimationStart={null}
-    onClick={null}
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 hTChzH Card__StyledCardWrapper-sc-1g3s676-3 Notification__ContentWrapper-sc-1wz6254-0"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 kuOAvg Card__StyledCardWrapper-sc-1g3s676-3 Notification__ContentWrapper-sc-1wz6254-0"
       href={null}
       id="storyshots_253"
       media=""
@@ -26,7 +25,7 @@ exports[` 1`] = `
       placeholder="{ Card }"
     >
       <div
-        className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+        className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
         href={null}
         id="storyshots_254"
         media=""
@@ -93,7 +92,7 @@ exports[` 1`] = `
     </div>
   </div>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -108,7 +107,7 @@ exports[` 1`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+        className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
         cursor="pointer"
         fontSize="1rem"
         fontWeight={400}
@@ -125,7 +124,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
   href={null}
   id="storyshots_255"
   media=""
@@ -141,7 +140,7 @@ exports[` 2`] = `
       className="Bar__Slot-icfo76-1 gdiuzv"
     >
       <div
-        className="Avatar__TagContainer-sc-1vuf9om-2 hbUPJX"
+        className="Avatar__TagContainer-sc-1vuf9om-2 IeMQU"
         id={null}
         onClick={null}
       >
@@ -221,7 +220,7 @@ exports[` 3`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
     href={null}
     id="storyshots_256"
     media=""
@@ -237,7 +236,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 gdiuzv"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 endJKL"
+          className="Avatar__TagContainer-sc-1vuf9om-2 ilFRmU"
           id={null}
           onClick={null}
         >
@@ -309,7 +308,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
     href={null}
     id="storyshots_257"
     media=""
@@ -325,7 +324,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 gdiuzv"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 hbUPJX"
+          className="Avatar__TagContainer-sc-1vuf9om-2 IeMQU"
           id={null}
           onClick={null}
         >
@@ -397,7 +396,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
     href={null}
     id="storyshots_258"
     media=""
@@ -413,7 +412,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 gdiuzv"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 eSPFbP"
+          className="Avatar__TagContainer-sc-1vuf9om-2 dbtCjs"
           id={null}
           onClick={null}
         >
@@ -485,7 +484,7 @@ exports[` 3`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
     href={null}
     id="storyshots_259"
     media=""
@@ -501,7 +500,7 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 gdiuzv"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 laCJqS"
+          className="Avatar__TagContainer-sc-1vuf9om-2 hwaGHJ"
           id={null}
           onClick={null}
         >
@@ -582,7 +581,7 @@ exports[` 4`] = `
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
     href={null}
     id="storyshots_260"
     media=""
@@ -598,7 +597,7 @@ exports[` 4`] = `
         className="Bar__Slot-icfo76-1 gdiuzv"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 endJKL"
+          className="Avatar__TagContainer-sc-1vuf9om-2 ilFRmU"
           id={null}
           onClick={null}
         >
@@ -651,7 +650,7 @@ exports[` 4`] = `
             Upgrade to premium to take advantage of this feature.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+            className="Typography__LinkText-sc-19auepv-1 eKyPXN"
             disabled={false}
             fontSize="1rem"
             fontWeight={500}
@@ -691,7 +690,7 @@ exports[` 4`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 jTvPpF Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
     href={null}
     id="storyshots_261"
     media=""
@@ -707,7 +706,7 @@ exports[` 4`] = `
         className="Bar__Slot-icfo76-1 gdiuzv"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 laCJqS"
+          className="Avatar__TagContainer-sc-1vuf9om-2 hwaGHJ"
           id={null}
           onClick={null}
         >
@@ -760,7 +759,7 @@ exports[` 4`] = `
             Update payment information in order to complete transaction.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+            className="Typography__LinkText-sc-19auepv-1 eKyPXN"
             disabled={false}
             fontSize="1rem"
             fontWeight={500}

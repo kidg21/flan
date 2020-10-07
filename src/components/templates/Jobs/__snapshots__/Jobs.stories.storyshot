@@ -37,7 +37,7 @@ exports[` 1`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gAgcms"
+              className="Button__StyledButton-sc-1v7sls2-0 kAfSTh"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -75,7 +75,7 @@ exports[` 1`] = `
             </button>
             <img
               alt="Lightbox Logo"
-              className="Image__ImageWrapper-sc-18abvff-0 gdOhd"
+              className="Image__ImageWrapper-sc-18abvff-0 bYJxiV"
               height={null}
               onClick={[Function]}
               src=""
@@ -93,7 +93,7 @@ exports[` 1`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -108,7 +108,7 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -121,7 +121,7 @@ exports[` 1`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 deIksf"
+              className="Button__StyledButton-sc-1v7sls2-0 hupfeU"
               disabled={true}
               htmlFor={null}
               id={null}
@@ -136,7 +136,7 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -149,7 +149,7 @@ exports[` 1`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -164,7 +164,7 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -177,7 +177,7 @@ exports[` 1`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -192,7 +192,7 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -224,7 +224,7 @@ exports[` 1`] = `
                 id="menu-popper-Help Menu"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 WvdJL"
+                  className="Button__StyledButton-sc-1v7sls2-0 gA-Dofu"
                   disabled={false}
                   htmlFor={null}
                   id="help"
@@ -266,7 +266,7 @@ exports[` 1`] = `
               className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
             >
               <div
-                className="Avatar__TagContainer-sc-1vuf9om-2 jgqvSx"
+                className="Avatar__TagContainer-sc-1vuf9om-2 eUdZBq"
                 id="profile"
                 onClick={[Function]}
               >
@@ -317,7 +317,7 @@ exports[` 1`] = `
             </p>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -345,7 +345,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 YTDNR"
+            className="List__ListItemWrapper-sc-43f2zq-0 iDNRuQ"
             disabled={false}
             href={null}
             id={null}
@@ -373,7 +373,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -422,10 +422,10 @@ exports[` 1`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 eTnfoY"
+              className="Template__Region-sc-1i4nzbu-0 bDTHYS"
               id="A"
               placeholder="A"
-              tabIndex="0"
+              tabIndex={0}
             >
               <ul
                 className="List__ListWrapper-sc-43f2zq-6 czyrHe"
@@ -445,7 +445,7 @@ exports[` 1`] = `
                   </p>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 YTDNR"
+                  className="List__ListItemWrapper-sc-43f2zq-0 iDNRuQ"
                   disabled={false}
                   href={null}
                   id={null}
@@ -473,7 +473,7 @@ exports[` 1`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+                  className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
                   disabled={false}
                   href={null}
                   id={null}
@@ -502,13 +502,13 @@ exports[` 1`] = `
                       className="Bar__Slot-icfo76-1 jyMGGC"
                     >
                       <span
-                        className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
+                        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
                         id={null}
                         label="28"
                         onClick={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                          className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                           cursor="default"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -523,7 +523,7 @@ exports[` 1`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+                  className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
                   disabled={false}
                   href={null}
                   id={null}
@@ -552,13 +552,13 @@ exports[` 1`] = `
                       className="Bar__Slot-icfo76-1 jyMGGC"
                     >
                       <span
-                        className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
+                        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
                         id={null}
                         label="5"
                         onClick={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                          className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                           cursor="default"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -573,7 +573,7 @@ exports[` 1`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+                  className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
                   disabled={false}
                   href={null}
                   id={null}
@@ -603,10 +603,10 @@ exports[` 1`] = `
               </ul>
             </section>
             <section
-              className="Template__Region-sc-1i4nzbu-0 hJeQFT"
+              className="Template__Region-sc-1i4nzbu-0 hWbePt"
               id="B"
               placeholder="B"
-              tabIndex="0"
+              tabIndex={1}
             >
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 kWnNza"
@@ -614,10 +614,10 @@ exports[` 1`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
+                  className="Template__Region-sc-1i4nzbu-0 bDTHYS"
                   id="A"
                   placeholder="A"
-                  tabIndex="0"
+                  tabIndex={0}
                 >
                   <div
                     className="Panel__PanelWrapper-sc-48epke-0 jNagE"
@@ -650,7 +650,7 @@ exports[` 1`] = `
                           className="Bar__Slot-icfo76-1 gFmZhG"
                         >
                           <button
-                            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                            className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
                             disabled={false}
                             htmlFor={null}
                             id={null}
@@ -685,7 +685,7 @@ exports[` 1`] = `
                                 />
                               </svg>
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                                 cursor="pointer"
                                 fontSize="1rem"
                                 fontWeight={400}
@@ -719,7 +719,7 @@ exports[` 1`] = `
                           >
                             <input
                               autoComplete="off"
-                              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
                               cols=""
                               disabled={null}
                               id="storyshots_93"
@@ -747,7 +747,7 @@ exports[` 1`] = `
                           className="Bar__Slot-icfo76-1 bxLAtn"
                         >
                           <button
-                            className="Button__StyledButton-sc-1v7sls2-0 esKlPI"
+                            className="Button__StyledButton-sc-1v7sls2-0 bvFeUx"
                             disabled={false}
                             htmlFor={null}
                             id={null}
@@ -782,7 +782,7 @@ exports[` 1`] = `
                                 />
                               </svg>
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                                 cursor="pointer"
                                 fontSize="1rem"
                                 fontWeight={400}
@@ -797,7 +797,7 @@ exports[` 1`] = `
                         </div>
                       </div>
                       <div
-                        className="Table__MultiGridWrapper-gz0dbt-0 dBfyXQ"
+                        className="Table__MultiGridWrapper-gz0dbt-0 vjUUH"
                       >
                         <div
                           style={
@@ -964,7 +964,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1009,7 +1009,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1054,7 +1054,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1099,7 +1099,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1144,7 +1144,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1189,7 +1189,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1234,7 +1234,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1279,7 +1279,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1324,7 +1324,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1369,7 +1369,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1414,7 +1414,7 @@ exports[` 1`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -1499,7 +1499,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gAgcms"
+              className="Button__StyledButton-sc-1v7sls2-0 kAfSTh"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1537,7 +1537,7 @@ exports[` 2`] = `
             </button>
             <img
               alt="Lightbox Logo"
-              className="Image__ImageWrapper-sc-18abvff-0 gdOhd"
+              className="Image__ImageWrapper-sc-18abvff-0 bYJxiV"
               height={null}
               onClick={[Function]}
               src=""
@@ -1555,7 +1555,7 @@ exports[` 2`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1570,7 +1570,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -1583,7 +1583,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 deIksf"
+              className="Button__StyledButton-sc-1v7sls2-0 hupfeU"
               disabled={true}
               htmlFor={null}
               id={null}
@@ -1598,7 +1598,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -1611,7 +1611,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1626,7 +1626,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -1639,7 +1639,7 @@ exports[` 2`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -1654,7 +1654,7 @@ exports[` 2`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -1686,7 +1686,7 @@ exports[` 2`] = `
                 id="menu-popper-Help Menu"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 WvdJL"
+                  className="Button__StyledButton-sc-1v7sls2-0 gA-Dofu"
                   disabled={false}
                   htmlFor={null}
                   id="help"
@@ -1728,7 +1728,7 @@ exports[` 2`] = `
               className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
             >
               <div
-                className="Avatar__TagContainer-sc-1vuf9om-2 jgqvSx"
+                className="Avatar__TagContainer-sc-1vuf9om-2 eUdZBq"
                 id="profile"
                 onClick={[Function]}
               >
@@ -1779,7 +1779,7 @@ exports[` 2`] = `
             </p>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1807,7 +1807,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1835,7 +1835,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 YTDNR"
+            className="List__ListItemWrapper-sc-43f2zq-0 iDNRuQ"
             disabled={false}
             href={null}
             id={null}
@@ -1884,10 +1884,10 @@ exports[` 2`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 eTnfoY"
+              className="Template__Region-sc-1i4nzbu-0 bDTHYS"
               id="A"
               placeholder="A"
-              tabIndex="0"
+              tabIndex={0}
             >
               <ul
                 className="List__ListWrapper-sc-43f2zq-6 czyrHe"
@@ -1907,7 +1907,7 @@ exports[` 2`] = `
                   </p>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 YTDNR"
+                  className="List__ListItemWrapper-sc-43f2zq-0 iDNRuQ"
                   disabled={false}
                   href={null}
                   id={null}
@@ -1935,7 +1935,7 @@ exports[` 2`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+                  className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
                   disabled={false}
                   href={null}
                   id={null}
@@ -1964,13 +1964,13 @@ exports[` 2`] = `
                       className="Bar__Slot-icfo76-1 jyMGGC"
                     >
                       <span
-                        className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
+                        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
                         id={null}
                         label="4"
                         onClick={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                          className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                           cursor="default"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -1985,7 +1985,7 @@ exports[` 2`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+                  className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
                   disabled={false}
                   href={null}
                   id={null}
@@ -2014,13 +2014,13 @@ exports[` 2`] = `
                       className="Bar__Slot-icfo76-1 jyMGGC"
                     >
                       <span
-                        className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
+                        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
                         id={null}
                         label="28"
                         onClick={null}
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                          className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                           cursor="default"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -2035,7 +2035,7 @@ exports[` 2`] = `
                   </div>
                 </li>
                 <li
-                  className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+                  className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
                   disabled={false}
                   href={null}
                   id={null}
@@ -2065,10 +2065,10 @@ exports[` 2`] = `
               </ul>
             </section>
             <section
-              className="Template__Region-sc-1i4nzbu-0 hJeQFT"
+              className="Template__Region-sc-1i4nzbu-0 hWbePt"
               id="B"
               placeholder="B"
-              tabIndex="0"
+              tabIndex={1}
             >
               <section
                 className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 kWnNza"
@@ -2076,10 +2076,10 @@ exports[` 2`] = `
                 rows={null}
               >
                 <section
-                  className="Template__Region-sc-1i4nzbu-0 eTnfoY"
+                  className="Template__Region-sc-1i4nzbu-0 bDTHYS"
                   id="A"
                   placeholder="A"
-                  tabIndex="0"
+                  tabIndex={0}
                 >
                   <div
                     className="Panel__PanelWrapper-sc-48epke-0 jNagE"
@@ -2112,7 +2112,7 @@ exports[` 2`] = `
                           className="Bar__Slot-icfo76-1 gFmZhG"
                         >
                           <button
-                            className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                            className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
                             disabled={false}
                             htmlFor={null}
                             id={null}
@@ -2147,7 +2147,7 @@ exports[` 2`] = `
                                 />
                               </svg>
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                                 cursor="pointer"
                                 fontSize="1rem"
                                 fontWeight={400}
@@ -2181,7 +2181,7 @@ exports[` 2`] = `
                           >
                             <input
                               autoComplete="off"
-                              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
                               cols=""
                               disabled={null}
                               id="storyshots_94"
@@ -2209,7 +2209,7 @@ exports[` 2`] = `
                           className="Bar__Slot-icfo76-1 bxLAtn"
                         >
                           <button
-                            className="Button__StyledButton-sc-1v7sls2-0 esKlPI"
+                            className="Button__StyledButton-sc-1v7sls2-0 bvFeUx"
                             disabled={false}
                             htmlFor={null}
                             id={null}
@@ -2244,7 +2244,7 @@ exports[` 2`] = `
                                 />
                               </svg>
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                                 cursor="pointer"
                                 fontSize="1rem"
                                 fontWeight={400}
@@ -2259,7 +2259,7 @@ exports[` 2`] = `
                         </div>
                       </div>
                       <div
-                        className="Table__MultiGridWrapper-gz0dbt-0 dBfyXQ"
+                        className="Table__MultiGridWrapper-gz0dbt-0 vjUUH"
                       >
                         <div
                           style={
@@ -2426,7 +2426,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2471,7 +2471,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2516,7 +2516,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2561,7 +2561,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2606,7 +2606,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2651,7 +2651,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2696,7 +2696,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2741,7 +2741,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2786,7 +2786,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2831,7 +2831,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2876,7 +2876,7 @@ exports[` 2`] = `
                                     }
                                   >
                                     <a
-                                      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                                      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                                       disabled={false}
                                       fontSize="1rem"
                                       fontWeight={500}
@@ -2961,7 +2961,7 @@ exports[` 3`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 gAgcms"
+              className="Button__StyledButton-sc-1v7sls2-0 kAfSTh"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -2999,7 +2999,7 @@ exports[` 3`] = `
             </button>
             <img
               alt="Lightbox Logo"
-              className="Image__ImageWrapper-sc-18abvff-0 gdOhd"
+              className="Image__ImageWrapper-sc-18abvff-0 bYJxiV"
               height={null}
               onClick={[Function]}
               src=""
@@ -3017,7 +3017,7 @@ exports[` 3`] = `
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3032,7 +3032,7 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -3045,7 +3045,7 @@ exports[` 3`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 deIksf"
+              className="Button__StyledButton-sc-1v7sls2-0 hupfeU"
               disabled={true}
               htmlFor={null}
               id={null}
@@ -3060,7 +3060,7 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -3073,7 +3073,7 @@ exports[` 3`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3088,7 +3088,7 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -3101,7 +3101,7 @@ exports[` 3`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -3116,7 +3116,7 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -3148,7 +3148,7 @@ exports[` 3`] = `
                 id="menu-popper-Help Menu"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 WvdJL"
+                  className="Button__StyledButton-sc-1v7sls2-0 gA-Dofu"
                   disabled={false}
                   htmlFor={null}
                   id="help"
@@ -3190,7 +3190,7 @@ exports[` 3`] = `
               className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
             >
               <div
-                className="Avatar__TagContainer-sc-1vuf9om-2 jgqvSx"
+                className="Avatar__TagContainer-sc-1vuf9om-2 eUdZBq"
                 id="profile"
                 onClick={[Function]}
               >
@@ -3241,7 +3241,7 @@ exports[` 3`] = `
             </p>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 YTDNR"
+            className="List__ListItemWrapper-sc-43f2zq-0 iDNRuQ"
             disabled={false}
             href={null}
             id={null}
@@ -3269,7 +3269,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3297,7 +3297,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3325,7 +3325,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3374,10 +3374,10 @@ exports[` 3`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 eTnfoY"
+              className="Template__Region-sc-1i4nzbu-0 bDTHYS"
               id="A"
               placeholder="A"
-              tabIndex="0"
+              tabIndex={0}
             >
               <div
                 className="Panel__PanelWrapper-sc-48epke-0 jNagE"
@@ -3410,7 +3410,7 @@ exports[` 3`] = `
                       className="Bar__Slot-icfo76-1 gFmZhG"
                     >
                       <button
-                        className="Button__StyledButton-sc-1v7sls2-0 crOShH"
+                        className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
                         disabled={false}
                         htmlFor={null}
                         id={null}
@@ -3445,7 +3445,7 @@ exports[` 3`] = `
                             />
                           </svg>
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                            className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                             cursor="pointer"
                             fontSize="1rem"
                             fontWeight={400}
@@ -3491,7 +3491,7 @@ exports[` 3`] = `
                           >
                             <input
                               autoComplete="off"
-                              className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+                              className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
                               cols=""
                               disabled={null}
                               id="storyshots_95"
@@ -3519,7 +3519,7 @@ exports[` 3`] = `
                           className="Bar__Slot-icfo76-1 bxLAtn"
                         >
                           <button
-                            className="Button__StyledButton-sc-1v7sls2-0 esKlPI"
+                            className="Button__StyledButton-sc-1v7sls2-0 bvFeUx"
                             disabled={false}
                             htmlFor={null}
                             id={null}
@@ -3554,7 +3554,7 @@ exports[` 3`] = `
                                 />
                               </svg>
                               <label
-                                className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                                className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                                 cursor="pointer"
                                 fontSize="1rem"
                                 fontWeight={400}

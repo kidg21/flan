@@ -31,7 +31,7 @@ exports[` 1`] = `
   >
     <input
       autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+      className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
       cols=""
       disabled={false}
       id="file-textinput-FileImport_Standard"
@@ -87,7 +87,7 @@ exports[` 2`] = `
     >
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-3 bwrDKw"
+        className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
         cols=""
         disabled={false}
         id="file-textinput-FileImport_Types"

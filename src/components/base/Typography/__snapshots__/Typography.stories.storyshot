@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+    className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -18,7 +18,7 @@ exports[` 1`] = `
     Label
   </label>
   <a
-    className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+    className="Typography__LinkText-sc-19auepv-1 eKyPXN"
     disabled={false}
     fontSize="1rem"
     fontWeight={500}
@@ -140,7 +140,7 @@ exports[` 2`] = `
     Text XS
   </p>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 efZpLl"
+    className="Typography__StyledLabel-sc-19auepv-0 loyOmM"
     cursor="pointer"
     fontSize="0.75em"
     fontWeight={400}
@@ -151,7 +151,7 @@ exports[` 2`] = `
     Label XS
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+    className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -162,7 +162,7 @@ exports[` 2`] = `
     Label SM
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+    className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -173,7 +173,7 @@ exports[` 2`] = `
     Label Regular
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+    className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
     cursor="pointer"
     fontSize="1rem"
     fontWeight={400}
@@ -184,7 +184,7 @@ exports[` 2`] = `
     Label LG
   </label>
   <a
-    className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+    className="Typography__LinkText-sc-19auepv-1 eKyPXN"
     disabled={false}
     fontSize="1rem"
     fontWeight={500}
@@ -196,7 +196,7 @@ exports[` 2`] = `
     Normal Link
   </a>
   <a
-    className="Typography__LinkText-sc-19auepv-1 HZgIk"
+    className="Typography__LinkText-sc-19auepv-1 bKGRqh"
     disabled={false}
     fontSize="1rem"
     fontWeight={500}
@@ -208,7 +208,7 @@ exports[` 2`] = `
     Large Link
   </a>
   <a
-    className="Typography__LinkText-sc-19auepv-1 jahNJB"
+    className="Typography__LinkText-sc-19auepv-1 eTDPTo"
     disabled={false}
     fontSize="1.25rem"
     fontWeight={500}
@@ -220,7 +220,7 @@ exports[` 2`] = `
     XLarge Link
   </a>
   <a
-    className="Typography__LinkText-sc-19auepv-1 fXcUcz"
+    className="Typography__LinkText-sc-19auepv-1 boYKgm"
     disabled={false}
     fontSize="1.45rem"
     fontWeight={500}
@@ -288,7 +288,7 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 crETFn"
+      className="Typography__StyledLabel-sc-19auepv-0 kvLxlu"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={300}
@@ -299,7 +299,7 @@ exports[` 3`] = `
       Light Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -310,7 +310,7 @@ exports[` 3`] = `
       Regular Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 kZpRnB"
+      className="Typography__StyledLabel-sc-19auepv-0 dxyppk"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={500}
@@ -321,7 +321,7 @@ exports[` 3`] = `
       MediumLabel
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+      className="Typography__StyledLabel-sc-19auepv-0 brbuID"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={600}
@@ -338,7 +338,7 @@ exports[` 3`] = `
     rows={null}
   >
     <a
-      className="Typography__LinkText-sc-19auepv-1 jeBwfK"
+      className="Typography__LinkText-sc-19auepv-1 gKSfvz"
       disabled={false}
       fontSize="1rem"
       fontWeight={300}
@@ -350,7 +350,7 @@ exports[` 3`] = `
       Light Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
       disabled={false}
       fontSize="1rem"
       fontWeight={500}
@@ -362,7 +362,7 @@ exports[` 3`] = `
       Regular Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
       disabled={false}
       fontSize="1rem"
       fontWeight={500}
@@ -374,7 +374,7 @@ exports[` 3`] = `
       Medium Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 kyCQZr"
+      className="Typography__LinkText-sc-19auepv-1 erjCdm"
       disabled={false}
       fontSize="1rem"
       fontWeight={600}

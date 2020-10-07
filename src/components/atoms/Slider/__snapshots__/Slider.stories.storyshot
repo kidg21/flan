@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <input
-    className="Slider__SliderPiece-sc-1hp9era-0 bpZkmh"
+    className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
     disabled={false}
     id="default"
     max={20}
@@ -56,7 +56,7 @@ exports[` 2`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 bpZkmh"
+            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
             disabled={false}
             id={null}
             max={20}
@@ -92,7 +92,7 @@ exports[` 2`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 fqDxcu"
+            className="Slider__SliderPiece-sc-1hp9era-0 insplD"
             disabled={false}
             id={null}
             max={20}
@@ -128,7 +128,7 @@ exports[` 2`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 bpZkmh"
+            className="Slider__SliderPiece-sc-1hp9era-0 hqyUiy"
             disabled={true}
             id={null}
             max={20}
@@ -181,7 +181,7 @@ exports[` 3`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 bpZkmh"
+            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
             disabled={false}
             id={null}
             max={20}
@@ -217,7 +217,7 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 llZdFW Slider__SliderLabel-sc-1hp9era-1 bgmaOM"
+            className="Typography__StyledLabel-sc-19auepv-0 brbuID Slider__SliderLabel-sc-1hp9era-1 bgmaOM"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={600}
@@ -228,7 +228,7 @@ exports[` 3`] = `
             1
           </label>
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 bpZkmh"
+            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
             disabled={false}
             id={null}
             max={20}
@@ -247,7 +247,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+                className="Typography__StyledLabel-sc-19auepv-0 brbuID"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -262,7 +262,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+                className="Typography__StyledLabel-sc-19auepv-0 brbuID"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -300,7 +300,7 @@ exports[` 3`] = `
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 bpZkmh"
+            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
             disabled={false}
             id={null}
             max={20}
@@ -319,7 +319,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 bxLAtn"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+                className="Typography__StyledLabel-sc-19auepv-0 brbuID"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}
@@ -334,7 +334,7 @@ exports[` 3`] = `
               className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 llZdFW"
+                className="Typography__StyledLabel-sc-19auepv-0 brbuID"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={600}

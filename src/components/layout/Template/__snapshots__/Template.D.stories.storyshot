@@ -14,10 +14,10 @@ exports[` 1`] = `
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dBfOAc"
+      className="Template__Region-sc-1i4nzbu-0 hNSmKK"
       id="A"
       placeholder="A"
-      tabIndex="0"
+      tabIndex={0}
     >
       <div
         style={
@@ -40,10 +40,10 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jRfqpD"
+      className="Template__Region-sc-1i4nzbu-0 kqKgAV"
       id="B"
       placeholder="B"
-      tabIndex="0"
+      tabIndex={1}
     >
       <div
         style={
@@ -66,10 +66,10 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 fCvwzu"
+      className="Template__Region-sc-1i4nzbu-0 cZCSLY"
       id="C"
       placeholder="C"
-      tabIndex="0"
+      tabIndex={2}
     >
       <div
         style={
@@ -92,10 +92,10 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 bxOOVJ"
+      className="Template__Region-sc-1i4nzbu-0 ftPxMP"
       id="D"
       placeholder="D"
-      tabIndex="0"
+      tabIndex={3}
     >
       <div
         style={

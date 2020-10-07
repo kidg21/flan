@@ -7,7 +7,7 @@ exports[` 1`] = `
   rows={null}
 >
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id="Image"
     onClick={null}
   >
@@ -32,7 +32,7 @@ exports[` 2`] = `
   rows={null}
 >
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id="Audio"
     onClick={null}
   >
@@ -58,7 +58,7 @@ exports[` 3`] = `
   rows={null}
 >
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id="Video"
     onClick={null}
   >
@@ -76,7 +76,7 @@ exports[` 3`] = `
     </video>
   </section>
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id={null}
     onClick={null}
   >
@@ -92,7 +92,7 @@ exports[` 3`] = `
     />
   </section>
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id={null}
     onClick={null}
   >
@@ -120,7 +120,7 @@ exports[` 4`] = `
   }
 >
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id="Web Site"
     onClick={null}
   >

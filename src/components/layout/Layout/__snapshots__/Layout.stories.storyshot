@@ -51,7 +51,7 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -63,7 +63,7 @@ exports[` 1`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -91,7 +91,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -119,7 +119,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -147,7 +147,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -185,7 +185,7 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -197,7 +197,7 @@ exports[` 1`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -225,7 +225,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -253,7 +253,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -281,7 +281,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -319,7 +319,7 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -331,7 +331,7 @@ exports[` 1`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -359,7 +359,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -387,7 +387,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -415,7 +415,7 @@ exports[` 1`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -490,7 +490,7 @@ exports[` 1`] = `
                 rows={null}
               >
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
                   id="MockCard_1"
                   media=""
@@ -498,7 +498,7 @@ exports[` 1`] = `
                   placeholder="{ Card }"
                 />
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
                   id="MockCard_2"
                   media=""
@@ -506,7 +506,7 @@ exports[` 1`] = `
                   placeholder="{ Card }"
                 />
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
                   id="MockCard_3"
                   media=""
@@ -514,7 +514,7 @@ exports[` 1`] = `
                   placeholder="{ Card }"
                 />
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
                   id="MockCard_4"
                   media=""
@@ -522,7 +522,7 @@ exports[` 1`] = `
                   placeholder="{ Card }"
                 />
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
                   id="MockCard_5"
                   media=""
@@ -530,7 +530,7 @@ exports[` 1`] = `
                   placeholder="{ Card }"
                 />
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
                   id="MockCard_6"
                   media=""
@@ -538,7 +538,7 @@ exports[` 1`] = `
                   placeholder="{ Card }"
                 />
                 <div
-                  className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                  className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                   href={null}
                   id="MockCard_7"
                   media=""
@@ -571,415 +571,7 @@ exports[` 1`] = `
               className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
               id={null}
               rows={null}
-            >
-              <section
-                className="Field__Section-sc-11od8ug-6 bwzJQN"
-              >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
-                  id={null}
-                  rows={null}
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                      fontSize="0.875rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.25px"
-                    >
-                      Property Information
-                    </p>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Parcel No.
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          808-221-12
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Land User
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        Commercial Shopping Center
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Building Area
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        25,344 SF
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Lot Area
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          171,143 SF (3.93 Acres)
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Building/Lot
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        0.15
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        No. of Units
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Year Built
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        1978
-                      </p>
-                    </section>
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                      fontSize="0.875rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.25px"
-                    >
-                      Owner Information
-                    </p>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Owners
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          SCF-Los Alisos LLC
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Owner Address
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        2 Park Plz Ste 700 Irvine, CA 92614
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Adjacent Lots
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          2 (4.48 Total Acres)
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Last Sale
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          10/2/15 for $11,500,000
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Total Assd Value
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        $10,045,870
-                      </p>
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </section>
+            />
           </section>
         </div>
       </div>
@@ -1047,7 +639,7 @@ exports[` 2`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1102,7 +694,7 @@ exports[` 2`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1151,7 +743,7 @@ exports[` 2`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1163,7 +755,7 @@ exports[` 2`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1191,7 +783,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1219,7 +811,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1247,7 +839,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1285,7 +877,7 @@ exports[` 2`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1297,7 +889,7 @@ exports[` 2`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1325,7 +917,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1353,7 +945,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1381,7 +973,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1419,7 +1011,7 @@ exports[` 2`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1431,7 +1023,7 @@ exports[` 2`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1459,7 +1051,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1487,7 +1079,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1515,7 +1107,7 @@ exports[` 2`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -1575,7 +1167,7 @@ exports[` 2`] = `
           width={null}
         >
           <div
-            className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+            className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
             href={null}
             id="storyshots_265"
             media=""
@@ -1603,7 +1195,7 @@ exports[` 2`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -1618,7 +1210,7 @@ exports[` 2`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -1633,7 +1225,7 @@ exports[` 2`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -1755,7 +1347,7 @@ exports[` 2`] = `
             </section>
           </div>
           <div
-            className="Table__MultiGridWrapper-gz0dbt-0 dBfyXQ"
+            className="Table__MultiGridWrapper-gz0dbt-0 vjUUH"
           >
             <div
               style={
@@ -1838,7 +1430,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -1852,7 +1444,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1947,7 +1539,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -1961,7 +1553,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1987,7 +1579,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2015,7 +1607,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2029,7 +1621,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2055,7 +1647,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2083,7 +1675,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2097,7 +1689,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2123,7 +1715,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2151,7 +1743,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2165,7 +1757,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2191,7 +1783,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2219,7 +1811,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2233,7 +1825,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2259,7 +1851,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2287,7 +1879,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2301,7 +1893,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2327,7 +1919,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2355,7 +1947,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2369,7 +1961,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2395,7 +1987,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2423,7 +2015,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2437,7 +2029,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2463,7 +2055,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2491,7 +2083,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2505,7 +2097,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2531,7 +2123,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2559,7 +2151,7 @@ exports[` 2`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -2573,7 +2165,7 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2599,7 +2191,7 @@ exports[` 2`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -2640,415 +2232,7 @@ exports[` 2`] = `
               className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
               id={null}
               rows={null}
-            >
-              <section
-                className="Field__Section-sc-11od8ug-6 bwzJQN"
-              >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
-                  id={null}
-                  rows={null}
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                      fontSize="0.875rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.25px"
-                    >
-                      Property Information
-                    </p>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Parcel No.
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          808-221-12
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Land User
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        Commercial Shopping Center
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Building Area
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        25,344 SF
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Lot Area
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          171,143 SF (3.93 Acres)
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Building/Lot
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        0.15
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        No. of Units
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Year Built
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        1978
-                      </p>
-                    </section>
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                      fontSize="0.875rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.25px"
-                    >
-                      Owner Information
-                    </p>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Owners
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          SCF-Los Alisos LLC
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Owner Address
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        2 Park Plz Ste 700 Irvine, CA 92614
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Adjacent Lots
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          2 (4.48 Total Acres)
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Last Sale
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          10/2/15 for $11,500,000
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Total Assd Value
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        $10,045,870
-                      </p>
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </section>
+            />
           </section>
         </div>
       </div>
@@ -3108,7 +2292,7 @@ exports[` 2`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -3190,7 +2374,7 @@ exports[` 3`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -3245,7 +2429,7 @@ exports[` 3`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -3294,7 +2478,7 @@ exports[` 3`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -3306,7 +2490,7 @@ exports[` 3`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3334,7 +2518,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3362,7 +2546,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3390,7 +2574,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3428,7 +2612,7 @@ exports[` 3`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -3440,7 +2624,7 @@ exports[` 3`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3468,7 +2652,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3496,7 +2680,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3524,7 +2708,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3562,7 +2746,7 @@ exports[` 3`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -3574,7 +2758,7 @@ exports[` 3`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3602,7 +2786,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3630,7 +2814,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3658,7 +2842,7 @@ exports[` 3`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -3718,7 +2902,7 @@ exports[` 3`] = `
           width={null}
         >
           <div
-            className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+            className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
             href={null}
             id="storyshots_267"
             media=""
@@ -3746,7 +2930,7 @@ exports[` 3`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ"
+                      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3761,7 +2945,7 @@ exports[` 3`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3776,7 +2960,7 @@ exports[` 3`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+                      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3898,7 +3082,7 @@ exports[` 3`] = `
             </section>
           </div>
           <div
-            className="Table__MultiGridWrapper-gz0dbt-0 dBfyXQ"
+            className="Table__MultiGridWrapper-gz0dbt-0 vjUUH"
           >
             <div
               style={
@@ -3981,7 +3165,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -3995,7 +3179,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4090,7 +3274,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4104,7 +3288,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4130,7 +3314,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4158,7 +3342,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4172,7 +3356,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4198,7 +3382,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4226,7 +3410,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4240,7 +3424,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4266,7 +3450,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4294,7 +3478,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4308,7 +3492,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4334,7 +3518,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4362,7 +3546,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4376,7 +3560,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4402,7 +3586,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4430,7 +3614,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4444,7 +3628,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4470,7 +3654,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4498,7 +3682,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4512,7 +3696,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4538,7 +3722,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4566,7 +3750,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4580,7 +3764,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4606,7 +3790,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4634,7 +3818,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4648,7 +3832,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4674,7 +3858,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4702,7 +3886,7 @@ exports[` 3`] = `
                         }
                       >
                         <div
-                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
                           disabled={false}
                         >
                           <input
@@ -4716,7 +3900,7 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4742,7 +3926,7 @@ exports[` 3`] = `
                         }
                       >
                         <a
-                          className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+                          className="Typography__LinkText-sc-19auepv-1 eKyPXN"
                           disabled={false}
                           fontSize="1rem"
                           fontWeight={500}
@@ -4783,415 +3967,7 @@ exports[` 3`] = `
               className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
               id={null}
               rows={null}
-            >
-              <section
-                className="Field__Section-sc-11od8ug-6 bwzJQN"
-              >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
-                  id={null}
-                  rows={null}
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                      fontSize="0.875rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.25px"
-                    >
-                      Property Information
-                    </p>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Parcel No.
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          808-221-12
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Land User
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        Commercial Shopping Center
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Building Area
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        25,344 SF
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Lot Area
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          171,143 SF (3.93 Acres)
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Building/Lot
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        0.15
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        No. of Units
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Year Built
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        1978
-                      </p>
-                    </section>
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                      fontSize="0.875rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.25px"
-                    >
-                      Owner Information
-                    </p>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Owners
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          SCF-Los Alisos LLC
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Owner Address
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        2 Park Plz Ste 700 Irvine, CA 92614
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Adjacent Lots
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          2 (4.48 Total Acres)
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Last Sale
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          10/2/15 for $11,500,000
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Total Assd Value
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        $10,045,870
-                      </p>
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </section>
+            />
           </section>
         </div>
       </div>
@@ -5251,7 +4027,7 @@ exports[` 3`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -5333,7 +4109,7 @@ exports[` 4`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -5376,7 +4152,7 @@ exports[` 4`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -5425,7 +4201,7 @@ exports[` 4`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -5437,7 +4213,7 @@ exports[` 4`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5465,7 +4241,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5493,7 +4269,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5521,7 +4297,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5559,7 +4335,7 @@ exports[` 4`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -5571,7 +4347,7 @@ exports[` 4`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5599,7 +4375,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5627,7 +4403,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5655,7 +4431,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5693,7 +4469,7 @@ exports[` 4`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -5705,7 +4481,7 @@ exports[` 4`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5733,7 +4509,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5761,7 +4537,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5789,7 +4565,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -5838,10 +4614,10 @@ exports[` 4`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 eTnfoY"
+              className="Template__Region-sc-1i4nzbu-0 bDTHYS"
               id="A"
               placeholder="A"
-              tabIndex="0"
+              tabIndex={0}
             >
               <div
                 style={
@@ -5853,10 +4629,10 @@ exports[` 4`] = `
               />
             </section>
             <section
-              className="Template__Region-sc-1i4nzbu-0 hJeQFT"
+              className="Template__Region-sc-1i4nzbu-0 hWbePt"
               id="B"
               placeholder="B"
-              tabIndex="0"
+              tabIndex={1}
             >
               <div
                 className="Panel__PanelWrapper-sc-48epke-0 jNagE"
@@ -5874,7 +4650,7 @@ exports[` 4`] = `
                     rows={null}
                   >
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_1"
                       media=""
@@ -5882,7 +4658,7 @@ exports[` 4`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_2"
                       media=""
@@ -5890,7 +4666,7 @@ exports[` 4`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_3"
                       media=""
@@ -5898,7 +4674,7 @@ exports[` 4`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_4"
                       media=""
@@ -5906,7 +4682,7 @@ exports[` 4`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_5"
                       media=""
@@ -5914,7 +4690,7 @@ exports[` 4`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_6"
                       media=""
@@ -5922,7 +4698,7 @@ exports[` 4`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_7"
                       media=""
@@ -5957,415 +4733,7 @@ exports[` 4`] = `
               className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
               id={null}
               rows={null}
-            >
-              <section
-                className="Field__Section-sc-11od8ug-6 bwzJQN"
-              >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
-                  id={null}
-                  rows={null}
-                >
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                      fontSize="0.875rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.25px"
-                    >
-                      Property Information
-                    </p>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Parcel No.
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          808-221-12
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Land User
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        Commercial Shopping Center
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Building Area
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        25,344 SF
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Lot Area
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          171,143 SF (3.93 Acres)
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Building/Lot
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        0.15
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        No. of Units
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Year Built
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        1978
-                      </p>
-                    </section>
-                  </section>
-                  <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                    id={null}
-                    rows={null}
-                  >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                      fontSize="0.875rem"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0.25px"
-                    >
-                      Owner Information
-                    </p>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Owners
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          SCF-Los Alisos LLC
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Owner Address
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        2 Park Plz Ste 700 Irvine, CA 92614
-                      </p>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Adjacent Lots
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          2 (4.48 Total Acres)
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Last Sale
-                      </label>
-                      <a
-                        className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                        disabled={false}
-                        fontSize="1rem"
-                        fontWeight={500}
-                        href={null}
-                        letterSpacing="0px"
-                        onClick={[Function]}
-                        target={null}
-                      >
-                        <p
-                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                          fontSize="1rem"
-                          fontWeight={400}
-                          id={null}
-                          letterSpacing="0.5px"
-                        >
-                          10/2/15 for $11,500,000
-                        </p>
-                      </a>
-                    </section>
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                        cursor="pointer"
-                        fontSize="0.875rem"
-                        fontWeight={400}
-                        htmlFor={null}
-                        letterSpacing=".5px"
-                        onClick={null}
-                      >
-                        Total Assd Value
-                      </label>
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                        fontSize="1rem"
-                        fontWeight={400}
-                        id={null}
-                        letterSpacing="0.5px"
-                      >
-                        $10,045,870
-                      </p>
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </section>
+            />
           </section>
         </div>
       </div>
@@ -6433,7 +4801,7 @@ exports[` 5`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -6476,7 +4844,7 @@ exports[` 5`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -6525,7 +4893,7 @@ exports[` 5`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -6537,7 +4905,7 @@ exports[` 5`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6565,7 +4933,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6593,7 +4961,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6621,7 +4989,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6659,7 +5027,7 @@ exports[` 5`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -6671,7 +5039,7 @@ exports[` 5`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6699,7 +5067,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6727,7 +5095,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6755,7 +5123,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6793,7 +5161,7 @@ exports[` 5`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 hnkqpy List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -6805,7 +5173,7 @@ exports[` 5`] = `
             </label>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6833,7 +5201,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6861,7 +5229,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6889,7 +5257,7 @@ exports[` 5`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+            className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
             disabled={false}
             href={null}
             id={null}
@@ -6938,10 +5306,10 @@ exports[` 5`] = `
             rows={null}
           >
             <section
-              className="Template__Region-sc-1i4nzbu-0 eTnfoY"
+              className="Template__Region-sc-1i4nzbu-0 bDTHYS"
               id="A"
               placeholder="A"
-              tabIndex="0"
+              tabIndex={0}
             >
               <div
                 style={
@@ -6953,10 +5321,10 @@ exports[` 5`] = `
               />
             </section>
             <section
-              className="Template__Region-sc-1i4nzbu-0 hJeQFT"
+              className="Template__Region-sc-1i4nzbu-0 hWbePt"
               id="B"
               placeholder="B"
-              tabIndex="0"
+              tabIndex={1}
             >
               <div
                 className="Panel__PanelWrapper-sc-48epke-0 jNagE"
@@ -6974,7 +5342,7 @@ exports[` 5`] = `
                     rows={null}
                   >
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_1"
                       media=""
@@ -6982,7 +5350,7 @@ exports[` 5`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_2"
                       media=""
@@ -6990,7 +5358,7 @@ exports[` 5`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_3"
                       media=""
@@ -6998,7 +5366,7 @@ exports[` 5`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_4"
                       media=""
@@ -7006,7 +5374,7 @@ exports[` 5`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_5"
                       media=""
@@ -7014,7 +5382,7 @@ exports[` 5`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_6"
                       media=""
@@ -7022,7 +5390,7 @@ exports[` 5`] = `
                       placeholder="{ Card }"
                     />
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
                       href={null}
                       id="MockCard_7"
                       media=""
@@ -7046,415 +5414,7 @@ exports[` 5`] = `
                     className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
                     id={null}
                     rows={null}
-                  >
-                    <section
-                      className="Field__Section-sc-11od8ug-6 bwzJQN"
-                    >
-                      <section
-                        className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
-                        id={null}
-                        rows={null}
-                      >
-                        <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                          id={null}
-                          rows={null}
-                        >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                            fontSize="0.875rem"
-                            fontWeight={600}
-                            id={null}
-                            letterSpacing="0.25px"
-                          >
-                            Property Information
-                          </p>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Parcel No.
-                            </label>
-                            <a
-                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                              disabled={false}
-                              fontSize="1rem"
-                              fontWeight={500}
-                              href={null}
-                              letterSpacing="0px"
-                              onClick={[Function]}
-                              target={null}
-                            >
-                              <p
-                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                                fontSize="1rem"
-                                fontWeight={400}
-                                id={null}
-                                letterSpacing="0.5px"
-                              >
-                                808-221-12
-                              </p>
-                            </a>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Land User
-                            </label>
-                            <p
-                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                              fontSize="1rem"
-                              fontWeight={400}
-                              id={null}
-                              letterSpacing="0.5px"
-                            >
-                              Commercial Shopping Center
-                            </p>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Building Area
-                            </label>
-                            <p
-                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                              fontSize="1rem"
-                              fontWeight={400}
-                              id={null}
-                              letterSpacing="0.5px"
-                            >
-                              25,344 SF
-                            </p>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Lot Area
-                            </label>
-                            <a
-                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                              disabled={false}
-                              fontSize="1rem"
-                              fontWeight={500}
-                              href={null}
-                              letterSpacing="0px"
-                              onClick={[Function]}
-                              target={null}
-                            >
-                              <p
-                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                                fontSize="1rem"
-                                fontWeight={400}
-                                id={null}
-                                letterSpacing="0.5px"
-                              >
-                                171,143 SF (3.93 Acres)
-                              </p>
-                            </a>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Building/Lot
-                            </label>
-                            <p
-                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                              fontSize="1rem"
-                              fontWeight={400}
-                              id={null}
-                              letterSpacing="0.5px"
-                            >
-                              0.15
-                            </p>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              No. of Units
-                            </label>
-                            <p
-                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                              fontSize="1rem"
-                              fontWeight={400}
-                              id={null}
-                              letterSpacing="0.5px"
-                            >
-                              
-                            </p>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Year Built
-                            </label>
-                            <p
-                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                              fontSize="1rem"
-                              fontWeight={400}
-                              id={null}
-                              letterSpacing="0.5px"
-                            >
-                              1978
-                            </p>
-                          </section>
-                        </section>
-                        <section
-                          className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
-                          id={null}
-                          rows={null}
-                        >
-                          <p
-                            className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
-                            fontSize="0.875rem"
-                            fontWeight={600}
-                            id={null}
-                            letterSpacing="0.25px"
-                          >
-                            Owner Information
-                          </p>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Owners
-                            </label>
-                            <a
-                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                              disabled={false}
-                              fontSize="1rem"
-                              fontWeight={500}
-                              href={null}
-                              letterSpacing="0px"
-                              onClick={[Function]}
-                              target={null}
-                            >
-                              <p
-                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                                fontSize="1rem"
-                                fontWeight={400}
-                                id={null}
-                                letterSpacing="0.5px"
-                              >
-                                SCF-Los Alisos LLC
-                              </p>
-                            </a>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Owner Address
-                            </label>
-                            <p
-                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                              fontSize="1rem"
-                              fontWeight={400}
-                              id={null}
-                              letterSpacing="0.5px"
-                            >
-                              2 Park Plz Ste 700 Irvine, CA 92614
-                            </p>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Adjacent Lots
-                            </label>
-                            <a
-                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                              disabled={false}
-                              fontSize="1rem"
-                              fontWeight={500}
-                              href={null}
-                              letterSpacing="0px"
-                              onClick={[Function]}
-                              target={null}
-                            >
-                              <p
-                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                                fontSize="1rem"
-                                fontWeight={400}
-                                id={null}
-                                letterSpacing="0.5px"
-                              >
-                                2 (4.48 Total Acres)
-                              </p>
-                            </a>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Last Sale
-                            </label>
-                            <a
-                              className="Typography__LinkText-sc-19auepv-1 bAJIRY Field__LinkedField-sc-11od8ug-4 XXMJo"
-                              disabled={false}
-                              fontSize="1rem"
-                              fontWeight={500}
-                              href={null}
-                              letterSpacing="0px"
-                              onClick={[Function]}
-                              target={null}
-                            >
-                              <p
-                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                                fontSize="1rem"
-                                fontWeight={400}
-                                id={null}
-                                letterSpacing="0.5px"
-                              >
-                                10/2/15 for $11,500,000
-                              </p>
-                            </a>
-                          </section>
-                          <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
-                            id={null}
-                            rows={null}
-                          >
-                            <label
-                              className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Field__FieldLabel-sc-11od8ug-2 bbVsuV"
-                              cursor="pointer"
-                              fontSize="0.875rem"
-                              fontWeight={400}
-                              htmlFor={null}
-                              letterSpacing=".5px"
-                              onClick={null}
-                            >
-                              Total Assd Value
-                            </label>
-                            <p
-                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
-                              fontSize="1rem"
-                              fontWeight={400}
-                              id={null}
-                              letterSpacing="0.5px"
-                            >
-                              $10,045,870
-                            </p>
-                          </section>
-                        </section>
-                      </section>
-                    </section>
-                  </section>
+                  />
                 </section>
               </div>
             </section>
