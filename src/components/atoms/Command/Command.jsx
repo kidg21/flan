@@ -161,7 +161,9 @@ function Command({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {
@@ -188,7 +190,7 @@ function Command({
       label={label}
       onClick={onClick}
       title={cmd.label}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
       <CommandName text={cmd.label} hidden={!labelVisible} />

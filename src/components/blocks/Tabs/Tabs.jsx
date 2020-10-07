@@ -43,7 +43,8 @@ const TabsWrapper = styled.section`
 function TabItem({
   alignCenter, count, disabled, htmlFor, icon, id, isFolder, isSelected, label, float, onClick,
 }) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   // context from tab component
   const tabsContext = useContext(TabsContext);
   const _alignCenter = typeof alignCenter === "boolean" ? alignCenter : tabsContext.alignCenter;
@@ -77,7 +78,8 @@ function TabItem({
 function Tabs({
   alignCenter, children, data, disabled, id, truncateItems, isVertical, isFolder,
 }) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   let setColumns;
   let setWidth;
 

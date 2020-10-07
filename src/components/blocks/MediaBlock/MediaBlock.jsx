@@ -130,6 +130,8 @@ function MediaBlock({
   let justify;
   let mediaSection;
 
+  const pointerEvents = useContext(PointerEventsContext);
+
   let mediaSize;
   const _mediaSize = 2;
   switch (size) {
@@ -221,7 +223,7 @@ function MediaBlock({
       mediaSize={mediaSize}
       mediaSquare={mediaSquare}
       onClick={onClick}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       <Body
         bodyPadding={bodyPadding}

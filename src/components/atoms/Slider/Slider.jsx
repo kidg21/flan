@@ -88,7 +88,6 @@ const SliderLabel = styled(Label)`
   width: max-content;
 `;
 
-
 function Slider({
   value: inputValue, onChange, disabled, error, id, max, min, step, withLabel, withRange,
 }) {
@@ -97,7 +96,7 @@ function Slider({
   if (!setValue) {
     [value, setValue] = useState(inputValue || min);
   }
-
+  const pointerEvents = useContext(PointerEventsContext);
   const leftValue = (`${((100 / max) * (value - min)) + ((2 * value) / max)}%`);
 
   return (
@@ -114,7 +113,7 @@ function Slider({
         }}
         disabled={disabled}
         error={error}
-        mouseEvents={useContext(PointerEventsContext)}
+        mouseEvents={pointerEvents}
       />
 
       {withLabel || withRange ?

@@ -61,6 +61,7 @@ const CardWrapper = ({
   shadow,
 }) => {
   const uId = useId(id);
+  const pointerEvents = useContext(PointerEventsContext);
   let cardColor;
   let cardBackground;
   if (isInverse) {
@@ -101,7 +102,7 @@ const CardWrapper = ({
       media={media}
       shadow={shadow}
       placeholder={placeholder}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {children}
     </StyledCardWrapper>

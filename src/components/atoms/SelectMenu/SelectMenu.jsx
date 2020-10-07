@@ -217,7 +217,9 @@ function SelectMenu({
   warning,
 }) {
   const [portalTarget, setPortalTarget] = useState(null);
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   let textColor;
   let errorText = "";
   let messageColor;
@@ -331,7 +333,7 @@ function SelectMenu({
       gap="xs"
       isRequired={isRequired}
       textColor={textColor}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {label ? <LabelWrapper textColor={textColor}><Label size="sm" isRequired={isRequired} text={label} /></LabelWrapper> : null}
       {select}

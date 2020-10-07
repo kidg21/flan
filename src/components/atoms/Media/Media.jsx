@@ -49,6 +49,7 @@ function Media({
   mediaDesc,
   onClick,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   const mimeType = mime.getType(media);
   let mediaSection;
   if (mimeType) {
@@ -102,7 +103,7 @@ function Media({
       onClick={onClick}
       id={id}
       mediaDesc={mediaDesc}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {mediaSection}
     </MediaContainer>

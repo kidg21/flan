@@ -146,6 +146,9 @@ function TextInput({
   }
 
   const uId = useId(id);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -178,7 +181,7 @@ function TextInput({
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
   let errorText = "";
   if (isDisabled) {
     inputBorderColor = "neutral40";
@@ -248,7 +251,7 @@ function TextInput({
         rows={rows} // textarea attribute
         type={type} // input attribute
         value={value}
-        mouseEvents={useContext(PointerEventsContext)}
+        mouseEvents={pointerEvents}
       />
       {autocompleteDataList}
       {helpText ? <Text size="xs" text={helpText} /> : null}

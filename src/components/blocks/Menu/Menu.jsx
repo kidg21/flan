@@ -307,6 +307,7 @@ const StatefulMenu = ({
   ...otherProps
 }) => {
   const [visible, setVisible] = useState(initVisible);
+  const pointerEvents = useContext(PointerEventsContext);
   const anchor = React.Children.toArray(children);
   const toggleVisible = useCallback(() => {
     setVisible((show) => { return !show; });
@@ -323,7 +324,14 @@ const StatefulMenu = ({
       // wraps click in div around both children
       // otherwise, Fragment eats onClick prop
       // for the most part assumes a single child!
-      anchorElement = (<FragmentWrapper onClick={toggleVisible} mouseEvents={useContext(PointerEventsContext)}>{children}</FragmentWrapper>);
+      anchorElement = (
+        <FragmentWrapper
+          onClick={toggleVisible}
+          mouseEvents={pointerEvents}
+        >
+          {children}
+        </FragmentWrapper>
+      );
     } else {
       // need to clone to preserve ref on anchor element
       anchorElement = React.cloneElement(anchor[0], {

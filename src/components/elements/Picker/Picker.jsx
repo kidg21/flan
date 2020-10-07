@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Icon from "atoms/Icon";
@@ -150,11 +150,14 @@ ColorSwatch.defaultProps = {
 function ImageSwatch({
   alt, disabled, isSelected, label, onClick, src, width,
 }) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   return (
     <ImageContainer
       disabled={isDisabled}
+      mouseEvents={pointerEvents}
       onClick={onClick}
     >
       <ImageWrapper

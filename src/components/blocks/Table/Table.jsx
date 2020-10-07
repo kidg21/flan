@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { Component, useContext } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import {
@@ -381,7 +381,7 @@ class Table extends Component {
       columnWidthToUse = columnWidth;
     }
     return (
-      <MultiGridWrapper mouseEvents={useContext(PointerEventsContext)}>
+      <MultiGridWrapper mouseEvents={this.context}>
         {/* providing non-zero defaultWidth and defaultHeight props so grid will render when unit testing.
             In the browser they are immediately overwritten once the component mounts */}
         <AutoSizer defaultWidth={200} defaultHeight={100}>
@@ -494,4 +494,5 @@ Table.defaultProps = {
   sortDirection: true,
 };
 
+Table.contextType = PointerEventsContext;
 export default Table;

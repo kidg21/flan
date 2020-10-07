@@ -49,7 +49,8 @@ function DataRange({
   select,
 }) {
   let inputTextColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }

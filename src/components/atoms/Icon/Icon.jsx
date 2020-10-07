@@ -247,7 +247,9 @@ function Icon({
   const fontSize = selectedSize ? selectedSize.font : "inherit";
   let content;
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) color = "disabled";
   else if (!color && (onClick || href)) color = "link";
 
@@ -318,18 +320,14 @@ function Icon({
         onClick={onClick}
         href={href}
         disabled={disabled}
-        mouseEvents={useContext(PointerEventsContext)}
+        mouseEvents={pointerEvents}
       >
         {content}
       </LinkedIcon>
     );
   }
 
-  return (
-    <React.Fragment>
-      {content}
-    </React.Fragment>
-  );
+  return content;
 }
 
 Icon.propTypes = {

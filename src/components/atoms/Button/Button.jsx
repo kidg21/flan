@@ -305,7 +305,9 @@ function Button({
     gridGap = "0";
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   if (isDisabled) {
     fontColor = "disabled";
@@ -361,7 +363,7 @@ function Button({
       onClick={onClick}
       tabIndex={disabled ? "-1" : "1"}
       type={type}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {content}
     </StyledButton>

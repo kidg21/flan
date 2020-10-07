@@ -84,7 +84,9 @@ const Circle = styled.div`
 function Switch({
   align, checked, disabled, error, id, label, onChange,
 }) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   let inputTextColor;
   let fillColor;
   let borderColor;
@@ -129,7 +131,7 @@ function Switch({
       inputTextColor={inputTextColor}
       label={label}
       onClick={onClick}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       <StyledSwitch
         borderColor={borderColor}

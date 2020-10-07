@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
@@ -110,6 +111,7 @@ function Tag({
   let iconType;
   let labelType;
 
+  const pointerEvents = useContext(PointerEventsContext);
   if (icon && label) {
     iconType = <Icon icon={icon} size="xs" variant={hasBackground ? "inverse" : variant} />;
     labelType = <Label text={label} size={size} cursor={onClick ? "pointer" : "inherit"} />;
@@ -208,7 +210,7 @@ function Tag({
       id={id}
       label={label}
       onClick={onClick}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {inner}
     </TagContainer>

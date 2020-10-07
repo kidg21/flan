@@ -149,7 +149,9 @@ function Checkbox({
   let outlineColor;
   let tabIndex;
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) {
     borderColor = "neutral80";
     fillColor = "neutral40";
@@ -188,7 +190,7 @@ function Checkbox({
       gridColumns={gridColumns}
       gridGap={gridGap}
       inputTextColor={inputTextColor}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       <CheckboxInput
         borderColor={borderColor}
@@ -238,7 +240,8 @@ function CheckboxGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";

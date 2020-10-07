@@ -113,7 +113,9 @@ function Radio({
     gridColumns = "1fr";
     gridGap = "0";
   }
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) {
     fillColor = "neutral40";
     fillColorChecked = "neutral40";
@@ -142,7 +144,7 @@ function Radio({
       gridColumns={gridColumns}
       gridGap={gridGap}
       inputTextColor={inputTextColor}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       <RadioInput
         checked={checked}
@@ -177,7 +179,8 @@ function RadioGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";

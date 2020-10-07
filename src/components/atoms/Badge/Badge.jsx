@@ -31,6 +31,8 @@ const StyledBadge = styled(Tag)`
 function Badge({
   hasBackground, icon, iconSize, id, label, onClick, position, size, variant,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
+
   let badgeLeft;
   let badgeBottom;
   let setTransform;
@@ -63,7 +65,7 @@ function Badge({
       badgeLeft={badgeLeft}
       id={id}
       setTransform={setTransform}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       <StyledBadge hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} iconSize={iconSize} size={size} onClick={onClick} />
     </BadgeContainer>

@@ -82,6 +82,7 @@ function Avatar({
   let labelType;
   let iconType;
 
+  const pointerEvents = useContext(PointerEventsContext);
   const selectedSize = size && sizeHash[size.toLowerCase()];
   const avatarSize = selectedSize ? selectedSize.avatar : "2.2rem";
   const fontSize = selectedSize ? selectedSize.font : "0.876rem";
@@ -123,7 +124,7 @@ function Avatar({
       onClick={onClick}
       textColor={textColor}
       title={title}
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       {iconType || labelType}
     </TagContainer>

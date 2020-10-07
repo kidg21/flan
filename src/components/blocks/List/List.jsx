@@ -295,6 +295,8 @@ function ListItem({
   };
 
   const isInteractive = useContext(InteractiveContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const padding = useContext(PaddingContext);
 
   return (
     <ListItemWrapper
@@ -310,11 +312,11 @@ function ListItem({
       tabIndex={disabled ? "-1" : tabIndex}
       className={className}
       onClick={typeof onClickItem === "function" ? handleOnClickItem : null} // to target whole list item
-      mouseEvents={useContext(PointerEventsContext)}
+      mouseEvents={pointerEvents}
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
-          padding={useContext(PaddingContext)}
+          padding={padding}
           center={{
             content: centerContent,
             align: textAlign,
