@@ -237,9 +237,12 @@ Text.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   id: PropTypes.string,
-  size: PropTypes.oneOf(["xs", "sm", "lg", ""]),
+  size: PropTypes.oneOf(Object.keys(textSizeHash).concat("")),
   text: PropTypes.node,
-  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
+  weight: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.oneOf(Object.keys(weightHash).concat("")),
+  ]),
 };
 Text.defaultProps = {
   children: null,
@@ -247,7 +250,7 @@ Text.defaultProps = {
   id: null,
   size: "",
   text: null,
-  weight: null,
+  weight: "",
 };
 
 function Title({
@@ -282,7 +285,7 @@ function Title({
 Title.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  size: PropTypes.oneOf(["lg", "xl", "2xl", "3xl", "4xl", ""]),
+  size: PropTypes.oneOf(Object.keys(titleSizeHash).concat("")),
   isUppercase: PropTypes.bool,
   text: PropTypes.string,
 };
@@ -347,10 +350,13 @@ Label.propTypes = {
   isUppercase: PropTypes.bool,
   isRequired: PropTypes.bool,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["xs", "sm", "lg", "xl", ""]),
+  size: PropTypes.oneOf(Object.keys(labelSizeHash).concat("")),
   text: PropTypes.node,
   visible: PropTypes.bool,
-  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
+  weight: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.oneOf(Object.keys(weightHash).concat("")),
+  ]),
 };
 Label.defaultProps = {
   children: null,
@@ -363,7 +369,7 @@ Label.defaultProps = {
   size: "",
   text: null,
   visible: true,
-  weight: null,
+  weight: "",
 };
 
 function Link({
@@ -399,10 +405,13 @@ Link.propTypes = {
   disabled: PropTypes.bool,
   href: PropTypes.string,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["xs", "sm", "lg", "xl", "2xl", ""]),
+  size: PropTypes.oneOf(Object.keys(linkSizeHash).concat("")),
   target: PropTypes.string,
   text: PropTypes.string,
-  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
+  weight: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.oneOf(Object.keys(weightHash).concat("")),
+  ]),
 };
 Link.defaultProps = {
   children: null,
@@ -413,7 +422,7 @@ Link.defaultProps = {
   size: "",
   target: null,
   text: null,
-  weight: null,
+  weight: "",
 };
 
 export {

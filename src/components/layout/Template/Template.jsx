@@ -333,6 +333,7 @@ function Template({
           ? Object.keys(templateRegions).map((regionId, index) => {
             return templateRegions[regionId] && typeof templateRegions[regionId] === "object" ? (
               <Region
+                key={regionId}
                 gridArea={template ? regionId : ""}
                 hasBorder={templateRegions[regionId].hasBorder}
                 id={templateRegions[regionId].id || regionId}
