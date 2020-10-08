@@ -147,9 +147,8 @@ const MenuList = ({
 
         const isPre = !item.iconAlign || item.iconAlign.toLowerCase() === "left";
         return (
-          <React.Fragment>
+          <React.Fragment key={itemId}>
             <ListItem
-              key={itemId}
               id={`item-${itemId}`}
               description={item.label}
               onClickItem={onClick}

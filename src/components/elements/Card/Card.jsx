@@ -372,7 +372,9 @@ function Card({
           left={{
             content: (
               <Grid columns="1">
-                {commands.slice(0, 2).map((command) => { return <Command {...command} />; })}
+                {commands.slice(0, 2).map((command, index) => {
+                  return <Command key={command.id || `command_${index}`} {...command} />;
+                })}
               </Grid>
             ),
             width: "90%",
@@ -393,7 +395,9 @@ function Card({
           left={{
             content: (
               <Grid columns="1">
-                {commands.map((command) => { return <Command {...command} />; })}
+                {commands.map((command, index) => {
+                  return <Command key={command.id || `command_${index}`} {...command} />;
+                })}
               </Grid>
             ),
           }}
@@ -541,22 +545,7 @@ CardGrid.propTypes = {
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
    */
-  columns: PropTypes.oneOf([
-    "default (auto)",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "[grid-template-columns]",
-  ]),
+  columns: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   /** Sets the 'gutter' between grid items
    *
@@ -583,7 +572,7 @@ CardGrid.propTypes = {
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
    */
-  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
+  rows: PropTypes.string,
 };
 CardGrid.defaultProps = {
   children: null,

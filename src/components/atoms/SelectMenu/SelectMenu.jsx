@@ -370,7 +370,7 @@ const selectMenuPropTypes = {
   options: PropTypes.arrayOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.shape({
-      label: PropTypes.string,
+      label: PropTypes.node,
       value: PropTypes.any,
     }),
   ])),

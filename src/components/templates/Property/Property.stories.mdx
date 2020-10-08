@@ -123,6 +123,7 @@ import Mapbox from "layout/Map"
       /** Configure Table's Action Menu */
       const actionsTable = [
         <Menu
+          key="tableCommandsMenu"
           data={[
             { id: "Open", label: "Open" },
             { id: "Save", label: "Save" },
@@ -132,8 +133,8 @@ import Mapbox from "layout/Map"
         >
           <Icon icon="options" />
         </Menu>,
-        <Icon icon="up" rotation={toggleIcon} onClick={toggleBottomMax} />,
-        <Icon icon="close" onClick={closeBottom} />,
+        <Icon key="tableToggleIcon" icon="up" rotation={toggleIcon} onClick={toggleBottomMax} />,
+        <Icon key="tableCloseIcon" icon="close" onClick={closeBottom} />,
       ];
       return (
         <Layout
