@@ -241,7 +241,7 @@ Text.propTypes = {
   text: PropTypes.node,
   weight: PropTypes.oneOfType([
     PropTypes.number,
-    PropTypes.oneOf(Object.keys(weightHash).concat("")),
+    PropTypes.oneOf(Object.keys(weightHash).concat(Object.values(weightHash), "")),
   ]),
 };
 Text.defaultProps = {
@@ -355,7 +355,7 @@ Label.propTypes = {
   visible: PropTypes.bool,
   weight: PropTypes.oneOfType([
     PropTypes.number,
-    PropTypes.oneOf(Object.keys(weightHash).concat("")),
+    PropTypes.oneOf(Object.keys(weightHash).concat(Object.values(weightHash), "")),
   ]),
 };
 Label.defaultProps = {
@@ -410,7 +410,7 @@ Link.propTypes = {
   text: PropTypes.string,
   weight: PropTypes.oneOfType([
     PropTypes.number,
-    PropTypes.oneOf(Object.keys(weightHash).concat("")),
+    PropTypes.oneOf(Object.keys(weightHash).concat(Object.values(weightHash), "")),
   ]),
 };
 Link.defaultProps = {
