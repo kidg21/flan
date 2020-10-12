@@ -37,6 +37,9 @@ const Swatch = styled.button`
     return props.hasBorder ? `1px solid rgba(0,0,0,0.3)` : `0px solid ${props.theme.palette.inverse}`;
   }};
   cursor: pointer;
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
   border-radius: ${(props) => {
     return props.borderRadius;
   }};
@@ -104,6 +107,8 @@ const IconSelected = styled(Icon)`
 function ColorSwatch({
   color, hasBorder, isSelected, onClick, square,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
+
   let borderRadius;
   const width = "1.5rem";
   const height = "1.5rem";
@@ -119,6 +124,7 @@ function ColorSwatch({
       borderRadius={borderRadius}
       color={color}
       height={height}
+      mouseEvents={pointerEvents}
       onClick={onClick}
       width={width}
     >
