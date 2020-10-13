@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext, PointerEventsContext } from "States";
@@ -108,6 +108,7 @@ function TextInput({
   disabled,
   error,
   transparent,
+  hasFocus,
   helpText,
   id,
   isRequired,
@@ -146,9 +147,14 @@ function TextInput({
   }
 
   const uId = useId(id);
+  const htmlInput = useRef(null);
   const isAncestorDisabled = useContext(DisabledContext);
   const pointerEvents = useContext(PointerEventsContext);
   const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
+
+  useEffect(() => {
+    if (hasFocus && !isDisabled && !readonly && htmlInput.current) htmlInput.current.focus();
+  }, [isDisabled, hasFocus, readonly]);
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -248,6 +254,7 @@ function TextInput({
         placeholder={placeholder} // input attribute
         placeholderColor={placeholderColor}
         readonly={readonly}
+        ref={htmlInput}
         rows={rows} // textarea attribute
         type={type} // input attribute
         value={value}
@@ -272,6 +279,8 @@ TextInput.propTypes = {
   /** A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form */
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  /** Should this input have focus when rendered? */
+  hasFocus: PropTypes.bool,
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
@@ -317,6 +326,7 @@ TextInput.defaultProps = {
   columns: "",
   disabled: null,
   error: "",
+  hasFocus: false,
   helpText: null,
   id: null,
   isRequired: false,
