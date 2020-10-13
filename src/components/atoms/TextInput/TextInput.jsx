@@ -224,7 +224,7 @@ function TextInput({
       <Input
         inputTextColor={inputTextColor}
         as={as}
-        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
+        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "chrome-off"}
         cols={columns} // textarea attribute
         disabled={isDisabled} // input attribute
         id={uId} // input attribute
