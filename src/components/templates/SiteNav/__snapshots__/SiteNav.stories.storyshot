@@ -31,7 +31,8 @@ exports[` 1`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+            color={null}
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
@@ -413,7 +414,8 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -441,7 +443,8 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -541,7 +544,8 @@ exports[` 1`] = `
                         title="View Details"
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          color={null}
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -639,7 +643,8 @@ exports[` 1`] = `
                         title="View Details"
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          color={null}
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -737,7 +742,8 @@ exports[` 1`] = `
                         title="View Details"
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          color={null}
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -835,7 +841,8 @@ exports[` 1`] = `
                         title="View Details"
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          color={null}
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -890,7 +897,8 @@ exports[` 2`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+            color={null}
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}

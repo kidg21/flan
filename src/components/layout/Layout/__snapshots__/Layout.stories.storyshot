@@ -51,7 +51,8 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -185,7 +186,8 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -319,7 +321,8 @@ exports[` 1`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -639,7 +642,8 @@ exports[` 2`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -694,7 +698,8 @@ exports[` 2`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -743,7 +748,8 @@ exports[` 2`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -877,7 +883,8 @@ exports[` 2`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1011,7 +1018,8 @@ exports[` 2`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -1195,7 +1203,8 @@ exports[` 2`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
+                      className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -1210,7 +1219,8 @@ exports[` 2`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
+                      className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -1225,7 +1235,8 @@ exports[` 2`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
+                      className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -1444,7 +1455,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1553,7 +1565,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1621,7 +1634,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1689,7 +1703,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1757,7 +1772,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1825,7 +1841,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1893,7 +1910,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -1961,7 +1979,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2029,7 +2048,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2097,7 +2117,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2165,7 +2186,8 @@ exports[` 2`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -2292,7 +2314,8 @@ exports[` 2`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -2374,7 +2397,8 @@ exports[` 3`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -2429,7 +2453,8 @@ exports[` 3`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -2478,7 +2503,8 @@ exports[` 3`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -2612,7 +2638,8 @@ exports[` 3`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -2746,7 +2773,8 @@ exports[` 3`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -2930,7 +2958,8 @@ exports[` 3`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
+                      className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -2945,7 +2974,8 @@ exports[` 3`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
+                      className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -2960,7 +2990,8 @@ exports[` 3`] = `
                     className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
                   >
                     <label
-                      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
+                      className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+                      color={null}
                       cursor="pointer"
                       fontSize="0.875rem"
                       fontWeight={400}
@@ -3179,7 +3210,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3288,7 +3320,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3356,7 +3389,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3424,7 +3458,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3492,7 +3527,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3560,7 +3596,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3628,7 +3665,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3696,7 +3734,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3764,7 +3803,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3832,7 +3872,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -3900,7 +3941,8 @@ exports[` 3`] = `
                             type="checkbox"
                           />
                           <label
-                            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                            color={null}
                             cursor="pointer"
                             fontSize="0.875rem"
                             fontWeight={400}
@@ -4027,7 +4069,8 @@ exports[` 3`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -4109,7 +4152,8 @@ exports[` 4`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -4152,7 +4196,8 @@ exports[` 4`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -4201,7 +4246,8 @@ exports[` 4`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -4335,7 +4381,8 @@ exports[` 4`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -4469,7 +4516,8 @@ exports[` 4`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -4801,7 +4849,8 @@ exports[` 5`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -4844,7 +4893,8 @@ exports[` 5`] = `
               />
             </svg>
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -4893,7 +4943,8 @@ exports[` 5`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -5027,7 +5078,8 @@ exports[` 5`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
@@ -5161,7 +5213,8 @@ exports[` 5`] = `
             className="List__SectionWrapper-sc-43f2zq-5 ipGxvf"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jOsHCn List__Section-sc-43f2zq-3 cDsmpd"
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK List__Section-sc-43f2zq-3 cDsmpd"
+              color={null}
               cursor="pointer"
               fontSize="0.875rem"
               fontWeight={400}
