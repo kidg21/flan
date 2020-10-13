@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 
@@ -29,11 +29,13 @@ const RadioContainer = styled.div`
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
+  pointer-events: ${(props) => {
+    return props.disabled || props.readonly ? "none" : props.mouseEvents;
+  }};
   line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
   }
 `;
@@ -111,7 +113,9 @@ function Radio({
     gridColumns = "1fr";
     gridGap = "0";
   }
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) {
     fillColor = "neutral40";
     fillColorChecked = "neutral40";
@@ -140,6 +144,7 @@ function Radio({
       gridColumns={gridColumns}
       gridGap={gridGap}
       inputTextColor={inputTextColor}
+      mouseEvents={pointerEvents}
     >
       <RadioInput
         checked={checked}
@@ -174,7 +179,8 @@ function RadioGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";

@@ -1,51 +1,60 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { PointerEventsContext } from "States";
 import Placeholder from "images/placeholders/placeholder-photo.png";
 
 const ImageWrapper = styled.img`
   width: ${(props) => {
-    return props.width || "inherit";
+    return props.width || "100%";
   }};
-  max-width: fit-content;
-  height: auto;
-  max-height: fit-content;
+  height: ${(props) => {
+    return props.height || "auto";
+}};
   border-radius: ${(props) => {
     return props.isRound ? "100%" : "";
   }};
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
 `;
 
 function Image({
-  alt, isRound, className, onClick, src, width,
+  alt, className, height, isRound, onClick, src, width,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   return (
     <ImageWrapper
       alt={alt}
+      height={height}
       isRound={isRound}
       className={className}
       onClick={onClick}
       src={src || Placeholder}
       title={alt}
       width={width}
+      mouseEvents={pointerEvents}
     />
   );
 }
 
 Image.propTypes = {
   alt: PropTypes.string.isRequired,
-  isRound: PropTypes.bool,
   className: PropTypes.string,
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  isRound: PropTypes.bool,
   onClick: PropTypes.func,
   src: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {
-  isRound: false,
   className: null,
+  height: null,
+  isRound: false,
   onClick: null,
   src: "",
   width: null,

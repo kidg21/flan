@@ -170,12 +170,11 @@ function Notification({
       animation={animation}
       id={id}
       justifyContent={justifyContent}
-      onClick={onClick}
       onAnimationStart={onAnimationStart}
       onAnimationEnd={onAnimationEnd}
       visible={visible}
     >
-      <ContentWrapper shadow="2x">{children}</ContentWrapper>
+      <ContentWrapper shadow="2x" onClick={onClick}>{children}</ContentWrapper>
     </NotificationContainer>
   );
 }

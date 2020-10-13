@@ -109,7 +109,7 @@ const ModalContainer = styled.div`
   flex-direction: column;
   padding: 0.5rem;
   background-blend-mode: multiply;
-  pointer-events: ${(props) => { return props.pointerEvents || ""; }};
+  pointer-events: ${(props) => { return props.mouseEvents || ""; }};
   overflow: hidden;
   ${ContentWrapper}, ${Image} {
     animation-name: ${(props) => {
@@ -203,8 +203,8 @@ function Modal({
   useEffect(() => {
     if (!animationDuration) {
       setState({ visible });
-    } else if (state.visible !== visible) {
-      // init animation
+    } else if (state.visible !== visible && !state.modalAnimationInProgess) {
+      // init animation, if animation is already in progress, wait until next cycle to change
       setState((oldState) => {
         return {
           ...oldState,
@@ -212,7 +212,7 @@ function Modal({
         };
       });
     }
-  }, [state.visible, visible]);
+  }, [state.visible, visible, state.modalAnimationInProgess]);
 
   // use to be notified when content is fully visible or fully hidden
   const endAnimation = useCallback((e) => {
@@ -224,13 +224,13 @@ function Modal({
       setState((oldState) => {
         return {
           ...oldState,
-          visible: visible,
+          visible: !oldState.visible,
           modalAnimationInProgess: false,
         };
       });
       if (onAnimationEnd) onAnimationEnd(e);
     }
-  }, [onAnimationEnd, visible]);
+  }, [onAnimationEnd]);
 
   const startAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
@@ -301,7 +301,7 @@ function Modal({
           id={uId}
           hasBackdrop={hasBackdrop}
           justifyContent={justifyContent}
-          pointerEvents={pointerEvents}
+          mouseEvents={pointerEvents}
           visible={state.visible}
           onAnimationStart={startAnimation}
           onAnimationEnd={endAnimation}

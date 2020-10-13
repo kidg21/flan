@@ -42,7 +42,7 @@ const PageWrapper = styled(Grid)`
     return props.zIndex || "0";
   }};
   pointer-events: ${(props) => {
-    return props.pointerEvents || "";
+    return props.mouseEvents || "";
   }};
   /* Prototype Content - displays when empty */
   &:empty {
@@ -313,7 +313,7 @@ function Page({
       backgroundColor={backgroundColor}
       classname={classname}
       id={id}
-      pointerEvents={pointerEvents}
+      mouseEvents={pointerEvents}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
       setHeight={setHeight}

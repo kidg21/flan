@@ -1,17 +1,20 @@
 /* eslint-disable linebreak-style */
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import { Label } from "base/Typography";
 import { Lighten, Darken } from "Variables";
-
+import { PointerEventsContext } from "States";
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
   height: 1.5em;
   outline: none;
   transition: opacity 0.2s;
+  pointer-events: ${(props) => {
+    return props.disabled || props.readonly ? "none" : props.mouseEvents;
+  }};
   &::-webkit-slider-runnable-track {
     height: 1px;
     background: ${(props) => {
@@ -65,7 +68,6 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
     &::-webkit-slider-thumb {
       border-color: ${(props) => {
@@ -86,7 +88,6 @@ const SliderLabel = styled(Label)`
   width: max-content;
 `;
 
-
 function Slider({
   value: inputValue, onChange, disabled, error, id, max, min, step, withLabel, withRange,
 }) {
@@ -95,7 +96,7 @@ function Slider({
   if (!setValue) {
     [value, setValue] = useState(inputValue || min);
   }
-
+  const pointerEvents = useContext(PointerEventsContext);
   const leftValue = (`${((100 / max) * (value - min)) + ((2 * value) / max)}%`);
 
   return (
@@ -112,6 +113,7 @@ function Slider({
         }}
         disabled={disabled}
         error={error}
+        mouseEvents={pointerEvents}
       />
 
       {withLabel || withRange ?

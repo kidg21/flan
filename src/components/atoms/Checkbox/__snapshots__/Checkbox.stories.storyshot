@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+  className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
   disabled={false}
 >
   <input
@@ -16,7 +16,7 @@ exports[` 1`] = `
     type="checkbox"
   />
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+    className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -31,12 +31,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk"
   id={null}
   rows={null}
 >
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
     disabled={false}
   >
     <input
@@ -50,7 +50,7 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -62,7 +62,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
     disabled={false}
   >
     <input
@@ -76,7 +76,7 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -88,7 +88,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 guWKmb"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 hsVFN"
     disabled={false}
   >
     <input
@@ -102,7 +102,7 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -114,7 +114,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 kiOvaF"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 errMIV"
     disabled={true}
   >
     <input
@@ -129,7 +129,7 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -145,12 +145,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk"
   id={null}
   rows={null}
 >
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
     disabled={false}
   >
     <input
@@ -164,7 +164,7 @@ exports[` 3`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -176,7 +176,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 dneceW"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 hpEHSs"
     disabled={false}
   >
     <input
@@ -190,7 +190,7 @@ exports[` 3`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -206,7 +206,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <div
-  className="Checkbox__CheckboxContainer-sc-1gwp7am-1 iaeOuZ"
+  className="Checkbox__CheckboxContainer-sc-1gwp7am-1 estFbT"
   disabled={false}
 >
   <input
@@ -220,7 +220,7 @@ exports[` 4`] = `
     type="checkbox"
   />
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
+    className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 cvAHmB"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -242,7 +242,7 @@ exports[` 5`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gRdpNW Form__Inputs-v2wrel-4 kZxse"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
     id={null}
     rows={null}
   >
@@ -259,22 +259,22 @@ exports[` 5`] = `
         Checkbox Group (2 Columns)
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Form__Inputs-v2wrel-4 cxSivB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq Checkbox__CheckboxWrapper-sc-1gwp7am-0 ifIlkW"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Checkbox__CheckboxWrapper-sc-1gwp7am-0 ifIlkW"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 djycdd Checkbox__InputGroup-sc-1gwp7am-4 fVKTUm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS Checkbox__InputGroup-sc-1gwp7am-4 fVKTUm"
             id={null}
             rows={null}
           >
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
               disabled={false}
             >
               <input
@@ -288,7 +288,7 @@ exports[` 5`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -300,7 +300,7 @@ exports[` 5`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
               disabled={false}
             >
               <input
@@ -314,7 +314,7 @@ exports[` 5`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -326,7 +326,7 @@ exports[` 5`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
               disabled={false}
             >
               <input
@@ -340,7 +340,7 @@ exports[` 5`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -352,7 +352,7 @@ exports[` 5`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
               disabled={false}
             >
               <input
@@ -366,7 +366,7 @@ exports[` 5`] = `
                 type="checkbox"
               />
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}

@@ -2,14 +2,14 @@
 
 exports[` 1`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 hKyaRZ Layout__Header-sc-19tlhp4-1 eYGDjK"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 cdAbBX Layout__Header-sc-19tlhp4-1 eYGDjK"
     height={null}
     id="Header"
     overflow={null}
@@ -31,7 +31,7 @@ exports[` 1`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
@@ -91,7 +91,7 @@ exports[` 1`] = `
             />
           </svg>
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 htTgGu"
+            className="Avatar__TagContainer-sc-1vuf9om-2 dbEHpJ"
             id={null}
             onClick={null}
           >
@@ -110,14 +110,14 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__Body-sc-19tlhp4-3 gQQaiT"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__Body-sc-19tlhp4-3 gQQaiT"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jGlLHq Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kDGGig Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
       height={null}
       id="Left"
       overflow={null}
@@ -128,7 +128,7 @@ exports[` 1`] = `
         id={null}
       >
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -156,7 +156,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -184,7 +184,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -212,7 +212,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -240,7 +240,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -268,7 +268,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -296,7 +296,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -326,14 +326,14 @@ exports[` 1`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jCxyBd Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 feRzdb Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
       height="21rem"
       id={null}
       overflow={null}
       width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 buvzUw Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gdFvxq Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
         height={null}
         id="Main"
         overflow={null}
@@ -346,12 +346,12 @@ exports[` 1`] = `
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+            className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
             id={null}
           >
             <div
               className="Bar__BarLayout-icfo76-2 cvBNlB"
-              id="storyshots_135"
+              id="storyshots_140"
               onClick={null}
             >
               <div
@@ -369,14 +369,14 @@ exports[` 1`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
+            className="Panel__SectionWrapper-sc-48epke-1 kPZqiJ"
             id={null}
           />
         </div>
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 dfipOd Layout__RegionRight-sc-19tlhp4-8 cHYBbv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 gqEMmr Layout__RegionRight-sc-19tlhp4-8 cHYBbv"
       height={null}
       id="Right"
       overflow={null}
@@ -389,7 +389,7 @@ exports[` 1`] = `
         width="100%"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+          className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
           id={null}
         >
           <section
@@ -398,7 +398,7 @@ exports[` 1`] = `
             id={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hQAiX Tabs__TabButton-sc-1aqycph-0 dPjtNy"
+              className="Button__StyledButton-sc-1v7sls2-0 fARwQq Tabs__TabButton-sc-1aqycph-0 dPjtNy"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -408,12 +408,12 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -426,7 +426,7 @@ exports[` 1`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
+              className="Button__StyledButton-sc-1v7sls2-0 dkctfP Tabs__TabButton-sc-1aqycph-0 dJaGUU"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -436,12 +436,12 @@ exports[` 1`] = `
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 egoClY"
+                  className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
                   cursor="pointer"
                   fontSize="1rem"
                   fontWeight={400}
@@ -455,25 +455,25 @@ exports[` 1`] = `
             </button>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 btkYQP Card__CardGridWrapper-sc-1g3s676-4 jvwIBf"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fDVdwk Card__CardGridWrapper-sc-1g3s676-4 Udjyn"
             id={null}
             rows={null}
           >
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 ieurqj Card__StyledCardWrapper-sc-1g3s676-3"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 ksOelA Card__StyledCardWrapper-sc-1g3s676-3"
               href={null}
-              id="storyshots_136"
+              id="storyshots_141"
               media=""
               onClick={[Function]}
               placeholder="{ Card }"
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                id="storyshots_136-Body"
+                id="storyshots_141-Body"
                 onClick={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ixEEAI"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
                   id={null}
                   rows={null}
                 >
@@ -517,7 +517,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-                id="storyshots_136-Footer"
+                id="storyshots_141-Footer"
                 onClick={null}
               >
                 <div
@@ -529,7 +529,7 @@ exports[` 1`] = `
                     className="Bar__Slot-icfo76-1 bxLAtn"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
                       id={null}
                       rows={null}
                     >
@@ -541,7 +541,7 @@ exports[` 1`] = `
                         title="View Details"
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -558,20 +558,20 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 ieurqj Card__StyledCardWrapper-sc-1g3s676-3"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 ksOelA Card__StyledCardWrapper-sc-1g3s676-3"
               href={null}
-              id="storyshots_137"
+              id="storyshots_142"
               media=""
               onClick={[Function]}
               placeholder="{ Card }"
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                id="storyshots_137-Body"
+                id="storyshots_142-Body"
                 onClick={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ixEEAI"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
                   id={null}
                   rows={null}
                 >
@@ -615,7 +615,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-                id="storyshots_137-Footer"
+                id="storyshots_142-Footer"
                 onClick={null}
               >
                 <div
@@ -627,7 +627,7 @@ exports[` 1`] = `
                     className="Bar__Slot-icfo76-1 bxLAtn"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
                       id={null}
                       rows={null}
                     >
@@ -639,7 +639,7 @@ exports[` 1`] = `
                         title="View Details"
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -656,20 +656,20 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 ieurqj Card__StyledCardWrapper-sc-1g3s676-3"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 ksOelA Card__StyledCardWrapper-sc-1g3s676-3"
               href={null}
-              id="storyshots_138"
+              id="storyshots_143"
               media=""
               onClick={[Function]}
               placeholder="{ Card }"
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                id="storyshots_138-Body"
+                id="storyshots_143-Body"
                 onClick={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ixEEAI"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
                   id={null}
                   rows={null}
                 >
@@ -713,7 +713,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-                id="storyshots_138-Footer"
+                id="storyshots_143-Footer"
                 onClick={null}
               >
                 <div
@@ -725,7 +725,7 @@ exports[` 1`] = `
                     className="Bar__Slot-icfo76-1 bxLAtn"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
                       id={null}
                       rows={null}
                     >
@@ -737,7 +737,7 @@ exports[` 1`] = `
                         title="View Details"
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -754,20 +754,20 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="CardWrapper__StyledCardWrapper-meln7c-0 ieurqj Card__StyledCardWrapper-sc-1g3s676-3"
+              className="CardWrapper__StyledCardWrapper-meln7c-0 ksOelA Card__StyledCardWrapper-sc-1g3s676-3"
               href={null}
-              id="storyshots_139"
+              id="storyshots_144"
               media=""
               onClick={[Function]}
               placeholder="{ Card }"
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-                id="storyshots_139-Body"
+                id="storyshots_144-Body"
                 onClick={null}
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 ixEEAI"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
                   id={null}
                   rows={null}
                 >
@@ -811,7 +811,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-                id="storyshots_139-Footer"
+                id="storyshots_144-Footer"
                 onClick={null}
               >
                 <div
@@ -823,7 +823,7 @@ exports[` 1`] = `
                     className="Bar__Slot-icfo76-1 bxLAtn"
                   >
                     <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
                       id={null}
                       rows={null}
                     >
@@ -835,7 +835,7 @@ exports[` 1`] = `
                         title="View Details"
                       >
                         <label
-                          className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+                          className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                           cursor="pointer"
                           fontSize="0.875rem"
                           fontWeight={400}
@@ -861,14 +861,14 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 hKyaRZ Layout__Header-sc-19tlhp4-1 eYGDjK"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 cdAbBX Layout__Header-sc-19tlhp4-1 eYGDjK"
     height={null}
     id="Header"
     overflow={null}
@@ -890,7 +890,7 @@ exports[` 2`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 cefDHQ Command__CommandName-sc-13akgtp-1 jSWtwn"
+            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
@@ -950,7 +950,7 @@ exports[` 2`] = `
             />
           </svg>
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 htTgGu"
+            className="Avatar__TagContainer-sc-1vuf9om-2 dbEHpJ"
             id={null}
             onClick={null}
           >
@@ -969,14 +969,14 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jGNWTQ Layout__Body-sc-19tlhp4-3 gQQaiT"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__Body-sc-19tlhp4-3 gQQaiT"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jGlLHq Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 kDGGig Layout__RegionLeft-sc-19tlhp4-4 dlgORO"
       height={null}
       id="Left"
       overflow={null}
@@ -987,7 +987,7 @@ exports[` 2`] = `
         id={null}
       >
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -1015,7 +1015,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -1043,7 +1043,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -1071,7 +1071,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -1099,7 +1099,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -1127,7 +1127,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -1155,7 +1155,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-0 kXvLIt"
+          className="List__ListItemWrapper-sc-43f2zq-0 eAhLXI"
           disabled={false}
           href={null}
           id={null}
@@ -1185,14 +1185,14 @@ exports[` 2`] = `
       </ul>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jCxyBd Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 feRzdb Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
       height="21rem"
       id={null}
       overflow={null}
       width="calc(calc(100% - 10rem) - 24rem)"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 buvzUw Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 gdFvxq Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
         height={null}
         id="Main"
         overflow={null}
@@ -1205,12 +1205,12 @@ exports[` 2`] = `
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+            className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
             id={null}
           >
             <div
               className="Bar__BarLayout-icfo76-2 cvBNlB"
-              id="storyshots_140"
+              id="storyshots_145"
               onClick={null}
             >
               <div
@@ -1228,14 +1228,14 @@ exports[` 2`] = `
             </div>
           </section>
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 hUqufS"
+            className="Panel__SectionWrapper-sc-48epke-1 kPZqiJ"
             id={null}
           />
         </div>
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 dfipOd Layout__RegionRight-sc-19tlhp4-8 cHYBbv"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 gqEMmr Layout__RegionRight-sc-19tlhp4-8 cHYBbv"
       height={null}
       id="Right"
       overflow={null}
@@ -1248,12 +1248,12 @@ exports[` 2`] = `
         width="100%"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+          className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
           id={null}
         >
           <div
             className="Bar__BarLayout-icfo76-2 cvBNlB"
-            id="storyshots_141"
+            id="storyshots_146"
             onClick={null}
           >
             <div
@@ -1297,20 +1297,20 @@ exports[` 2`] = `
             >
               <div
                 className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-                id="menu-popper-storyshots_141-Menu"
+                id="menu-popper-storyshots_146-Menu"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+                  className="Button__StyledButton-sc-1v7sls2-0 dxEqTQ"
                   disabled={false}
                   htmlFor={null}
-                  id="menu-icon-storyshots_141-Menu"
-                  name="menu-icon-storyshots_141-Menu"
+                  id="menu-icon-storyshots_146-Menu"
+                  name="menu-icon-storyshots_146-Menu"
                   onClick={[Function]}
                   tabIndex="1"
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
                     id={null}
                     rows={null}
                   >
@@ -1341,16 +1341,16 @@ exports[` 2`] = `
           </div>
         </section>
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+          className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
           id={null}
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 kNIpkt"
-            id="storyshots_142"
+            id="storyshots_147"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 kKkcpt"
-              id="storyshots_142-table"
+              id="storyshots_147-table"
             >
               <tbody
                 className="Legend__Body-sc-70hm4b-5"

@@ -2,18 +2,18 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 eVaBUs"
   id={null}
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
+    className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
     id={null}
     label="Tag"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+      className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -62,13 +62,13 @@ Array [
       className="Bar__Slot-icfo76-1 bKkRmK"
     >
       <span
-        className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
+        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
         id={null}
         label="Brief Label"
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+          className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -114,13 +114,13 @@ Array [
       className="Bar__Slot-icfo76-1 bKkRmK"
     >
       <span
-        className="Tag__TagContainer-sc-128kb3h-0 cRkgMm"
+        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
         onClick={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+          className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
           cursor="default"
           fontSize="0.875rem"
           fontWeight={400}
@@ -138,18 +138,18 @@ Array [
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 jWbAEb"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 eVaBUs"
   id={null}
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 esQupT"
+    className="Tag__TagContainer-sc-128kb3h-0 dfyPSx"
     id={null}
     label="Info"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+      className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -161,13 +161,13 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 jDCRZf"
+    className="Tag__TagContainer-sc-128kb3h-0 fZyEaF"
     id={null}
     label="Warning"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+      className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -179,13 +179,13 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 buneWb"
+    className="Tag__TagContainer-sc-128kb3h-0 bNyfPl"
     id={null}
     label="Success"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+      className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -197,13 +197,13 @@ exports[` 3`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 gfvkAy"
+    className="Tag__TagContainer-sc-128kb3h-0 hhtcJs"
     id={null}
     label="Alert"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+      className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
       cursor="default"
       fontSize="0.875rem"
       fontWeight={400}
@@ -219,7 +219,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <span
-  className="Tag__TagContainer-sc-128kb3h-0 eGaUcZ"
+  className="Tag__TagContainer-sc-128kb3h-0 czDPNz"
   id={null}
   label={null}
   onClick={null}
@@ -249,18 +249,18 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
   id={null}
   rows={null}
 >
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 kOZCBz"
+    className="Tag__TagContainer-sc-128kb3h-0 bSocAt"
     id={null}
     label="Icon on Left"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
+      className="Typography__StyledLabel-sc-19auepv-0 hSukAX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -297,13 +297,13 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 bZmZoP"
+    className="Tag__TagContainer-sc-128kb3h-0 ZzgiF"
     id={null}
     label="Icon on Left"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
+      className="Typography__StyledLabel-sc-19auepv-0 hSukAX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -340,13 +340,13 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 bZmZoP"
+    className="Tag__TagContainer-sc-128kb3h-0 ZzgiF"
     id={null}
     label="Icon on Left"
     onClick={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
+      className="Typography__StyledLabel-sc-19auepv-0 hSukAX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -383,7 +383,7 @@ exports[` 5`] = `
     </div>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 gvscuL"
+    className="Tag__TagContainer-sc-128kb3h-0 jOYDAJ"
     id={null}
     label="Icon on Right"
     onClick={null}
@@ -414,7 +414,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
+      className="Typography__StyledLabel-sc-19auepv-0 hSukAX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -426,7 +426,7 @@ exports[` 5`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 bZmZoP"
+    className="Tag__TagContainer-sc-128kb3h-0 ZzgiF"
     id={null}
     label="Icon on Right"
     onClick={null}
@@ -457,7 +457,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
+      className="Typography__StyledLabel-sc-19auepv-0 hSukAX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}
@@ -469,7 +469,7 @@ exports[` 5`] = `
     </label>
   </span>
   <span
-    className="Tag__TagContainer-sc-128kb3h-0 bZmZoP"
+    className="Tag__TagContainer-sc-128kb3h-0 ZzgiF"
     id={null}
     label="Icon on Right"
     onClick={null}
@@ -500,7 +500,7 @@ exports[` 5`] = `
       </svg>
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fVdPia"
+      className="Typography__StyledLabel-sc-19auepv-0 hSukAX"
       cursor="inherit"
       fontSize="0.875rem"
       fontWeight={400}

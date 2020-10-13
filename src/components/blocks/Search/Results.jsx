@@ -15,28 +15,26 @@ function ResultContainer({ id, maxRecords, results }) {
   }, [maxRecords, results, results.length]);
 
   return (
-    <React.Fragment>
-      <List
-        id={id}
-        isInteractive
-      >
-        {results.slice(0, visibleRecords).map((item, index) => {
-          const { onClick, ...itemParams } = item;
-          return <ListItem key={item.id || index} onClickItem={onClick} {...itemParams} />;
-        })}
-        {results.length > visibleRecords ? (
-          <ListItem
-            title="View All"
-            description={`Showing ${visibleRecords} of ${results.length} Results`}
-            post={{
-              type: "label",
-              label: results.length.toString(),
-            }}
-            onClickItem={viewAll}
-          />
-        ) : null}
-      </List>
-    </React.Fragment>
+    <List
+      id={id}
+      isInteractive
+    >
+      {results.slice(0, visibleRecords).map((item, index) => {
+        const { onClick, ...itemParams } = item;
+        return <ListItem key={item.id || index} onClickItem={onClick} {...itemParams} />;
+      })}
+      {results.length > visibleRecords ? (
+        <ListItem
+          title="View All"
+          description={`Showing ${visibleRecords} of ${results.length} Results`}
+          post={{
+            type: "label",
+            label: results.length.toString(),
+          }}
+          onClickItem={viewAll}
+        />
+      ) : null}
+    </List>
   );
 }
 

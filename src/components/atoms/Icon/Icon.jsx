@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Lighten, Darken } from "Variables";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Badge from "atoms/Badge";
 
@@ -23,7 +23,7 @@ const LinkedIcon = styled.a`
     return "";
   }};
   pointer-events: ${(props) => {
-    return props.disabled ? "none" : "";
+    return props.disabled ? "none" : props.mouseEvents;
   }};
   user-select: ${(props) => {
     return props.disabled ? "none" : "";
@@ -77,6 +77,8 @@ const iconHash = {
   book: "book",
   bookmark_solid: "bookmark",
   bookmark: ["far", "bookmark"],
+  briefcase: ["far", "briefcase"],
+  bullseye: ["far", "bullseye-arrow"],
   calendar: ["far", "calendar-alt"],
   calendar_check: "calendar-check",
   call: "phone",
@@ -245,7 +247,9 @@ function Icon({
   const fontSize = selectedSize ? selectedSize.font : "inherit";
   let content;
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) color = "disabled";
   else if (!color && (onClick || href)) color = "link";
 
@@ -312,17 +316,18 @@ function Icon({
 
   if (onClick || href) {
     content = (
-      <LinkedIcon onClick={onClick} href={href} disabled={disabled}>
+      <LinkedIcon
+        onClick={onClick}
+        href={href}
+        disabled={disabled}
+        mouseEvents={pointerEvents}
+      >
         {content}
       </LinkedIcon>
     );
   }
 
-  return (
-    <React.Fragment>
-      {content}
-    </React.Fragment>
-  );
+  return content;
 }
 
 Icon.propTypes = {

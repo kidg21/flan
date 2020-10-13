@@ -14,7 +14,7 @@ import Text, { Label } from "base/Typography";
 import Select from "react-select";
 import Creatable from "react-select/creatable";
 import { Skeleton } from "helpers/Skeleton";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import { withOnChangeState } from "utils/hocs";
 
 const MessageContainer = styled.section`
@@ -178,6 +178,9 @@ const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text[props.textColor] || "inherit";
   }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
   width: 100%;
   &:empty {
     &:before {
@@ -214,7 +217,9 @@ function SelectMenu({
   warning,
 }) {
   const [portalTarget, setPortalTarget] = useState(null);
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   let textColor;
   let errorText = "";
   let messageColor;
@@ -328,6 +333,7 @@ function SelectMenu({
       gap="xs"
       isRequired={isRequired}
       textColor={textColor}
+      mouseEvents={pointerEvents}
     >
       {label ? <LabelWrapper textColor={textColor}><Label size="sm" isRequired={isRequired} text={label} /></LabelWrapper> : null}
       {select}
@@ -364,7 +370,7 @@ const selectMenuPropTypes = {
   options: PropTypes.arrayOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.shape({
-      label: PropTypes.string,
+      label: PropTypes.node,
       value: PropTypes.any,
     }),
   ])),

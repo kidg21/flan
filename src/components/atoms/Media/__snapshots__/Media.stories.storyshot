@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
   id={null}
   rows={null}
 >
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id="Image"
     onClick={null}
   >
@@ -27,12 +27,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
   id={null}
   rows={null}
 >
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id="Audio"
     onClick={null}
   >
@@ -53,12 +53,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
   id={null}
   rows={null}
 >
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id="Video"
     onClick={null}
   >
@@ -76,7 +76,7 @@ exports[` 3`] = `
     </video>
   </section>
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id={null}
     onClick={null}
   >
@@ -92,7 +92,7 @@ exports[` 3`] = `
     />
   </section>
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id={null}
     onClick={null}
   >
@@ -120,7 +120,7 @@ exports[` 4`] = `
   }
 >
   <section
-    className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY"
+    className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj"
     id="Web Site"
     onClick={null}
   >

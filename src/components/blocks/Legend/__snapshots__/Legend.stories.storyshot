@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+  className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
   href={null}
   id="Legend_Standard_Card"
   media=""
@@ -156,12 +156,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 djycdd"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
     id="Legend_Icon_Card"
     media=""
@@ -388,7 +388,7 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
     id="Legend_Tag_Card"
     media=""
@@ -421,13 +421,13 @@ exports[` 2`] = `
                 letterSpacing="0.5px"
               >
                 <span
-                  className="Tag__TagContainer-sc-128kb3h-0 esQupT"
+                  className="Tag__TagContainer-sc-128kb3h-0 dfyPSx"
                   id={null}
                   label="Info"
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -470,13 +470,13 @@ exports[` 2`] = `
                 letterSpacing="0.5px"
               >
                 <span
-                  className="Tag__TagContainer-sc-128kb3h-0 jDCRZf"
+                  className="Tag__TagContainer-sc-128kb3h-0 fZyEaF"
                   id={null}
                   label="Warning"
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -519,13 +519,13 @@ exports[` 2`] = `
                 letterSpacing="0.5px"
               >
                 <span
-                  className="Tag__TagContainer-sc-128kb3h-0 buneWb"
+                  className="Tag__TagContainer-sc-128kb3h-0 bNyfPl"
                   id={null}
                   label="Success"
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}
@@ -568,13 +568,13 @@ exports[` 2`] = `
                 letterSpacing="0.5px"
               >
                 <span
-                  className="Tag__TagContainer-sc-128kb3h-0 gfvkAy"
+                  className="Tag__TagContainer-sc-128kb3h-0 hhtcJs"
                   id={null}
                   label="Alert"
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 eFlcFs"
+                    className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}

@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Switch__SwitchContainer-sc-1bvlvzt-0 klHrXA"
+  className="Switch__SwitchContainer-sc-1bvlvzt-0 kSKtah"
   disabled={false}
   id={null}
   label="Switch"
@@ -21,7 +21,7 @@ exports[` 1`] = `
     />
   </div>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+    className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -36,12 +36,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
   id={null}
   rows={null}
 >
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 klHrXA"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 kSKtah"
     disabled={false}
     id={null}
     label="Selected"
@@ -60,7 +60,7 @@ exports[` 2`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -72,7 +72,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 klHrXA"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 kSKtah"
     disabled={false}
     id={null}
     label="Unselected"
@@ -91,7 +91,7 @@ exports[` 2`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -103,7 +103,7 @@ exports[` 2`] = `
     </label>
   </div>
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 kkHuBv"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 jrBOsk"
     disabled={true}
     id={null}
     label="Disabled"
@@ -122,7 +122,7 @@ exports[` 2`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -138,12 +138,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 CwASo"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
   id={null}
   rows={null}
 >
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 klHrXA"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 kSKtah"
     disabled={false}
     id={null}
     label="Left Aligned"
@@ -162,7 +162,7 @@ exports[` 3`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -174,7 +174,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Switch__SwitchContainer-sc-1bvlvzt-0 ileWAw"
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 iShXDd"
     disabled={false}
     id={null}
     label="Right Aligned"
@@ -193,7 +193,7 @@ exports[` 3`] = `
       />
     </div>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 hnkqpy"
+      className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}

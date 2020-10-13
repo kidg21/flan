@@ -8,7 +8,7 @@ exports[` 1`] = `
   width="100%"
 >
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 eJlaSW Panel__PanelSection-sc-48epke-2 bqSVBJ"
+    className="Panel__SectionWrapper-sc-48epke-1 fViFwR Panel__PanelSection-sc-48epke-2 bqSVBJ"
     id={null}
   >
     <div
@@ -36,7 +36,7 @@ exports[` 1`] = `
           id="menu-popper-Details_Header-Menu"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 Wvrbd"
+            className="Button__StyledButton-sc-1v7sls2-0 dxEqTQ"
             disabled={false}
             htmlFor={null}
             id="menu-icon-Details_Header-Menu"
@@ -46,7 +46,7 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ljDbLq Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
               id={null}
               rows={null}
             >
@@ -77,303 +77,14 @@ exports[` 1`] = `
     </div>
   </section>
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 eJlaSW"
+    className="Panel__SectionWrapper-sc-48epke-1 fViFwR"
     id={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
       id={null}
       rows={null}
-    >
-      <section
-        className="Tabs__TabsWrapper-sc-1aqycph-1 cKKFgK"
-        disabled={false}
-        id={null}
-      >
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 hQAiX Tabs__TabButton-sc-1aqycph-0 dPjtNy"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-              onClick={null}
-            >
-              RFP Details
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-              onClick={null}
-            >
-              Property Details
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-              onClick={null}
-            >
-              Scope of Work
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-              onClick={null}
-            >
-              Business Intelligence
-            </label>
-          </section>
-        </button>
-        <button
-          className="Button__StyledButton-sc-1v7sls2-0 jCHlgS Tabs__TabButton-sc-1aqycph-0 dJaGUU"
-          disabled={false}
-          htmlFor={null}
-          id={null}
-          name={null}
-          onClick={null}
-          tabIndex="1"
-          type="button"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
-            id={null}
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 egoClY"
-              cursor="pointer"
-              fontSize="1rem"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing=".5px"
-              onClick={null}
-            >
-              Files
-            </label>
-          </section>
-        </button>
-      </section>
-      <div
-        className="Legend__Wrapper-sc-70hm4b-1 kNIpkt"
-        id="Details_Legend"
-      >
-        <table
-          className="Legend__TableContainer-sc-70hm4b-2 kKkcpt"
-          id="Details_Legend-table"
-        >
-          <tbody
-            className="Legend__Body-sc-70hm4b-5"
-          >
-            <tr
-              className="Legend__Row-sc-70hm4b-4 iYaNuw"
-            >
-              <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Requested by
-                </p>
-              </td>
-              <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Steve Davidson, Banking Bank USA
-                </p>
-              </td>
-            </tr>
-            <tr
-              className="Legend__Row-sc-70hm4b-4 iYaNuw"
-            >
-              <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Report Requested
-                </p>
-              </td>
-              <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Evaluation Report, Narrative
-                </p>
-              </td>
-            </tr>
-            <tr
-              className="Legend__Row-sc-70hm4b-4 iYaNuw"
-            >
-              <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Response Due by
-                </p>
-              </td>
-              <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Nov 02, 2019
-                </p>
-              </td>
-            </tr>
-            <tr
-              className="Legend__Row-sc-70hm4b-4 iYaNuw"
-            >
-              <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Report Requested by
-                </p>
-              </td>
-              <td
-                className="Legend__Cell-sc-70hm4b-3 foPzbB"
-                fontSize={null}
-              >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
-                  fontSize="1rem"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0.5px"
-                >
-                  Nov 10,2019
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    />
   </section>
 </div>
 `;

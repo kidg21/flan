@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Icon from "atoms/Icon";
@@ -37,6 +37,9 @@ const Swatch = styled.button`
     return props.hasBorder ? `1px solid rgba(0,0,0,0.3)` : `0px solid ${props.theme.palette.inverse}`;
   }};
   cursor: pointer;
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
   border-radius: ${(props) => {
     return props.borderRadius;
   }};
@@ -56,11 +59,13 @@ const ImageContainer = styled.a`
   grid-gap: 0.75rem;
   justify-items: center;
   cursor: pointer;
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : props.mouseEvents;
+  }};
    ${(props) => {
     return props.disabled
       && css`
       cursor: ${() => { return props.disabled ? "not-allowed" : "pointer"; }};
-      pointer-events: none;
       user-select: none;
       opacity: 0.5;
      `;
@@ -102,6 +107,8 @@ const IconSelected = styled(Icon)`
 function ColorSwatch({
   color, hasBorder, isSelected, onClick, square,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
+
   let borderRadius;
   const width = "1.5rem";
   const height = "1.5rem";
@@ -117,6 +124,7 @@ function ColorSwatch({
       borderRadius={borderRadius}
       color={color}
       height={height}
+      mouseEvents={pointerEvents}
       onClick={onClick}
       width={width}
     >
@@ -148,11 +156,14 @@ ColorSwatch.defaultProps = {
 function ImageSwatch({
   alt, disabled, isSelected, label, onClick, src, width,
 }) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   return (
     <ImageContainer
       disabled={isDisabled}
+      mouseEvents={pointerEvents}
       onClick={onClick}
     >
       <ImageWrapper

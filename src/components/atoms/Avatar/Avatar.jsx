@@ -1,9 +1,10 @@
 /* eslint-disable complexity */
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
 import Text from "base/Typography";
@@ -25,6 +26,9 @@ const TagContainer = styled.div`
   vertical-align: center;
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
+  }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
   }};
   display: flex;
   width: ${(props) => {
@@ -78,6 +82,7 @@ function Avatar({
   let labelType;
   let iconType;
 
+  const pointerEvents = useContext(PointerEventsContext);
   const selectedSize = size && sizeHash[size.toLowerCase()];
   const avatarSize = selectedSize ? selectedSize.avatar : "2.2rem";
   const fontSize = selectedSize ? selectedSize.font : "0.876rem";
@@ -119,6 +124,7 @@ function Avatar({
       onClick={onClick}
       textColor={textColor}
       title={title}
+      mouseEvents={pointerEvents}
     >
       {iconType || labelType}
     </TagContainer>
