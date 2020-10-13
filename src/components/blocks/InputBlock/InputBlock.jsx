@@ -111,7 +111,8 @@ function InputBlock({
     ? { handleSelectChange: _handleSelectChange, handleTextChange: _handleTextChange }
     : { handleTextChange: null, handleSelectChange: null };
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   let inputTextColor;
   let messageColor;
   let errorText;

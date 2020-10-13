@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { Lighten } from "Variables";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import { Label } from "base/Typography";
@@ -56,6 +56,9 @@ const StyledButton = styled.button`
   border-bottom-color: ${(props) => {
     return props.theme.palette[props.underlineColor];
   }};
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : props.mouseEvents;
+  }};
   transition: all 0.25s ease;
   & > * {
     margin: 0;
@@ -83,7 +86,6 @@ const StyledButton = styled.button`
   }
   &[disabled] {
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
   }
 `;
@@ -303,7 +305,9 @@ function Button({
     gridGap = "0";
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   if (isDisabled) {
     fontColor = "disabled";
@@ -359,6 +363,7 @@ function Button({
       onClick={onClick}
       tabIndex={disabled ? "-1" : "1"}
       type={type}
+      mouseEvents={pointerEvents}
     >
       {content}
     </StyledButton>

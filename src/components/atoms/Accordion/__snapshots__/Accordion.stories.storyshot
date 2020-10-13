@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+    className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
     id={null}
     onClick={[Function]}
   >
@@ -86,7 +86,7 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+    className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
     id={null}
     onClick={[Function]}
   >
@@ -99,7 +99,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 gyntuO"
       >
         <div
-          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMvqCW"
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
           disabled={false}
         >
           <input
@@ -113,8 +113,7 @@ exports[` 2`] = `
             type="checkbox"
           />
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 elQIDR Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
-            color={null}
+            className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
             cursor="pointer"
             fontSize="0.875rem"
             fontWeight={400}
@@ -176,7 +175,7 @@ exports[` 2`] = `
 exports[` 3`] = `
 Array [
   <div
-    className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+    className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
     id={null}
     onClick={[Function]}
   >
@@ -256,7 +255,7 @@ Array [
 exports[` 4`] = `
 Array [
   <div
-    className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+    className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
     id={null}
     onClick={[Function]}
   >

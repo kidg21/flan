@@ -9,15 +9,15 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 jyhKXb"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 jyhKXb"
     id="Template B_01"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dBfOAc"
+      className="Template__Region-sc-1i4nzbu-0 hNSmKK"
       id="A"
       placeholder="A"
-      tabIndex="0"
+      tabIndex={0}
     >
       <div
         style={
@@ -40,10 +40,10 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jRfqpD"
+      className="Template__Region-sc-1i4nzbu-0 kqKgAV"
       id="B"
       placeholder="B"
-      tabIndex="0"
+      tabIndex={1}
     >
       <div
         style={
@@ -78,15 +78,15 @@ exports[` 2`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fJxAWP Template__TemplateWrapper-sc-1i4nzbu-1 gVApDH"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 gVApDH"
     id="Template B_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 dBfOAc"
+      className="Template__Region-sc-1i4nzbu-0 hNSmKK"
       id="A"
       placeholder="A"
-      tabIndex="0"
+      tabIndex={0}
     >
       <div
         style={
@@ -109,10 +109,10 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 jRfqpD"
+      className="Template__Region-sc-1i4nzbu-0 kqKgAV"
       id="B"
       placeholder="B"
-      tabIndex="0"
+      tabIndex={1}
     >
       <div
         style={

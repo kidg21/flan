@@ -2,13 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gaWHeZ"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fhPcTS"
   id={null}
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
-    color={null}
+    className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -19,7 +18,7 @@ exports[` 1`] = `
     Label
   </label>
   <a
-    className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+    className="Typography__LinkText-sc-19auepv-1 eKyPXN"
     disabled={false}
     fontSize="1rem"
     fontWeight={500}
@@ -52,7 +51,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gVYiTU"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 frcKSb"
   id={null}
   rows={null}
 >
@@ -141,8 +140,7 @@ exports[` 2`] = `
     Text XS
   </p>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 EhtQM"
-    color={null}
+    className="Typography__StyledLabel-sc-19auepv-0 loyOmM"
     cursor="pointer"
     fontSize="0.75em"
     fontWeight={400}
@@ -153,8 +151,7 @@ exports[` 2`] = `
     Label XS
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 daeNqv"
-    color={null}
+    className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -165,8 +162,7 @@ exports[` 2`] = `
     Label SM
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
-    color={null}
+    className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -177,8 +173,7 @@ exports[` 2`] = `
     Label Regular
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
-    color={null}
+    className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
     cursor="pointer"
     fontSize="1rem"
     fontWeight={400}
@@ -189,7 +184,7 @@ exports[` 2`] = `
     Label LG
   </label>
   <a
-    className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+    className="Typography__LinkText-sc-19auepv-1 eKyPXN"
     disabled={false}
     fontSize="1rem"
     fontWeight={500}
@@ -201,7 +196,7 @@ exports[` 2`] = `
     Normal Link
   </a>
   <a
-    className="Typography__LinkText-sc-19auepv-1 HZgIk"
+    className="Typography__LinkText-sc-19auepv-1 bKGRqh"
     disabled={false}
     fontSize="1rem"
     fontWeight={500}
@@ -213,7 +208,7 @@ exports[` 2`] = `
     Large Link
   </a>
   <a
-    className="Typography__LinkText-sc-19auepv-1 jahNJB"
+    className="Typography__LinkText-sc-19auepv-1 eTDPTo"
     disabled={false}
     fontSize="1.25rem"
     fontWeight={500}
@@ -225,7 +220,7 @@ exports[` 2`] = `
     XLarge Link
   </a>
   <a
-    className="Typography__LinkText-sc-19auepv-1 fXcUcz"
+    className="Typography__LinkText-sc-19auepv-1 boYKgm"
     disabled={false}
     fontSize="1.45rem"
     fontWeight={500}
@@ -241,12 +236,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 dYyaCO"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gKukhV"
   id={null}
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
     id={null}
     rows={null}
   >
@@ -288,13 +283,12 @@ exports[` 3`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
     id={null}
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dvrSkG"
-      color={null}
+      className="Typography__StyledLabel-sc-19auepv-0 kvLxlu"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={300}
@@ -305,8 +299,7 @@ exports[` 3`] = `
       Light Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 elQIDR"
-      color={null}
+      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -317,8 +310,7 @@ exports[` 3`] = `
       Regular Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 fMenbQ"
-      color={null}
+      className="Typography__StyledLabel-sc-19auepv-0 dxyppk"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={500}
@@ -329,8 +321,7 @@ exports[` 3`] = `
       MediumLabel
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 khJgan"
-      color={null}
+      className="Typography__StyledLabel-sc-19auepv-0 brbuID"
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={600}
@@ -342,12 +333,12 @@ exports[` 3`] = `
     </label>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
     id={null}
     rows={null}
   >
     <a
-      className="Typography__LinkText-sc-19auepv-1 jeBwfK"
+      className="Typography__LinkText-sc-19auepv-1 gKSfvz"
       disabled={false}
       fontSize="1rem"
       fontWeight={300}
@@ -359,7 +350,7 @@ exports[` 3`] = `
       Light Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
       disabled={false}
       fontSize="1rem"
       fontWeight={500}
@@ -371,7 +362,7 @@ exports[` 3`] = `
       Regular Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 bAJIRY"
+      className="Typography__LinkText-sc-19auepv-1 eKyPXN"
       disabled={false}
       fontSize="1rem"
       fontWeight={500}
@@ -383,7 +374,7 @@ exports[` 3`] = `
       Medium Link
     </a>
     <a
-      className="Typography__LinkText-sc-19auepv-1 kyCQZr"
+      className="Typography__LinkText-sc-19auepv-1 erjCdm"
       disabled={false}
       fontSize="1rem"
       fontWeight={600}

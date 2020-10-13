@@ -33,7 +33,7 @@ import Banner from "blocks/Banner";
 import Accordion from "atoms/Accordion";
 import Expander from "utils/Expander";
 import MediaBlock from "blocks/MediaBlock";
-import LightBoxLogo from "images/LightBoxLogo.png";
+import LightBoxLogo from "images/branding/lightbox/LightBoxLogo_color.png";
 import StaticMap from "images/maps/map-ortho.png";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import Popper from "layout/Popper";

@@ -2,27 +2,28 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hWqXXp Card__CardGridWrapper-sc-1g3s676-4 dqEhpN"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gjBQvm Card__CardGridWrapper-sc-1g3s676-4 bHYDEx"
   id={null}
   rows={null}
 >
   <div />
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_205"
+    id="storyshots_231"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
-      id="storyshots_205-Media"
+      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      id="storyshots_231-Media"
       onClick={null}
     >
       <img
         alt="Media Description"
-        className="Image__ImageWrapper-sc-18abvff-0 dSRvuV Media__ImageWrapper-sc-1ofqnpx-1 hHYwDy"
+        className="Image__ImageWrapper-sc-18abvff-0 eMprWz Media__ImageWrapper-sc-1ofqnpx-1 hHYwDy"
+        height={null}
         onClick={null}
         src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
         title="Media Description"
@@ -31,7 +32,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_205-Header"
+      id="storyshots_231-Header"
       onClick={null}
     >
       <div
@@ -43,7 +44,7 @@ exports[` 1`] = `
           className="Bar__Slot-icfo76-1 gdiuzv"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 cwoBjW"
+            className="Avatar__TagContainer-sc-1vuf9om-2 iaJVNJ"
             id={null}
             onClick={null}
           >
@@ -94,7 +95,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_205-Body"
+      id="storyshots_231-Body"
       onClick={null}
     >
       <p
@@ -109,7 +110,7 @@ exports[` 1`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_205-Footer"
+      id="storyshots_231-Footer"
       onClick={null}
     >
       <div
@@ -121,7 +122,7 @@ exports[` 1`] = `
           className="Bar__Slot-icfo76-1 gygcbv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -133,8 +134,7 @@ exports[` 1`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -153,8 +153,7 @@ exports[` 1`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -172,7 +171,7 @@ exports[` 1`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-            id="menu-popper-storyshots_205-Menu"
+            id="menu-popper-storyshots_231-Menu"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -212,29 +211,29 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 hOvZsk"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iTVMYj Card__CardGridWrapper-sc-1g3s676-4 qDxAM"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_206"
+    id="storyshots_232"
     media=""
     onClick={null}
     placeholder="{ Card }"
   />
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_207"
+    id="storyshots_233"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_207-Header"
+      id="storyshots_233-Header"
       onClick={null}
     >
       <div
@@ -267,16 +266,16 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_208"
+    id="storyshots_234"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_208-Header"
+      id="storyshots_234-Header"
       onClick={null}
     >
       <div
@@ -309,7 +308,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_208-Body"
+      id="storyshots_234-Body"
       onClick={null}
     >
       <p
@@ -324,16 +323,16 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_209"
+    id="storyshots_235"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_209-Header"
+      id="storyshots_235-Header"
       onClick={null}
     >
       <div
@@ -345,7 +344,7 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 gdiuzv"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 cwoBjW"
+            className="Avatar__TagContainer-sc-1vuf9om-2 iaJVNJ"
             id={null}
             onClick={null}
           >
@@ -376,7 +375,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_209-Body"
+      id="storyshots_235-Body"
       onClick={null}
     >
       <p
@@ -391,16 +390,16 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_210"
+    id="storyshots_236"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_210-Header"
+      id="storyshots_236-Header"
       onClick={null}
     >
       <div
@@ -412,7 +411,7 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 gdiuzv"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 cwoBjW"
+            className="Avatar__TagContainer-sc-1vuf9om-2 iaJVNJ"
             id={null}
             onClick={null}
           >
@@ -454,7 +453,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_210-Body"
+      id="storyshots_236-Body"
       onClick={null}
     >
       <p
@@ -469,7 +468,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_210-Footer"
+      id="storyshots_236-Footer"
       onClick={null}
     >
       <div
@@ -481,7 +480,7 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 bxLAtn"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -493,8 +492,7 @@ exports[` 2`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -511,16 +509,16 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_211"
+    id="storyshots_237"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_211-Header"
+      id="storyshots_237-Header"
       onClick={null}
     >
       <div
@@ -553,7 +551,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_211-Body"
+      id="storyshots_237-Body"
       onClick={null}
     >
       <p
@@ -568,7 +566,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_211-Footer"
+      id="storyshots_237-Footer"
       onClick={null}
     >
       <div
@@ -580,7 +578,7 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 gygcbv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -592,8 +590,7 @@ exports[` 2`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -612,8 +609,7 @@ exports[` 2`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -637,16 +633,16 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_212"
+    id="storyshots_238"
     media=""
     onClick={null}
     placeholder="{ Card }"
   >
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_212-Header"
+      id="storyshots_238-Header"
       onClick={null}
     >
       <div
@@ -679,7 +675,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_212-Body"
+      id="storyshots_238-Body"
       onClick={null}
     >
       <p
@@ -694,7 +690,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_212-Footer"
+      id="storyshots_238-Footer"
       onClick={null}
     >
       <div
@@ -706,7 +702,7 @@ exports[` 2`] = `
           className="Bar__Slot-icfo76-1 gygcbv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -718,8 +714,7 @@ exports[` 2`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -738,8 +733,7 @@ exports[` 2`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -757,7 +751,7 @@ exports[` 2`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-            id="menu-popper-storyshots_212-Menu"
+            id="menu-popper-storyshots_238-Menu"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -796,26 +790,27 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 cPZloQ Card__CardGridWrapper-sc-1g3s676-4 hOvZsk"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iTVMYj Card__CardGridWrapper-sc-1g3s676-4 qDxAM"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_213"
+    id="storyshots_239"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
-      id="storyshots_213-Media"
+      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      id="storyshots_239-Media"
       onClick={null}
     >
       <img
         alt="Media Description"
-        className="Image__ImageWrapper-sc-18abvff-0 dSRvuV Media__ImageWrapper-sc-1ofqnpx-1 hHYwDy"
+        className="Image__ImageWrapper-sc-18abvff-0 eMprWz Media__ImageWrapper-sc-1ofqnpx-1 hHYwDy"
+        height={null}
         onClick={null}
         src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
         title="Media Description"
@@ -824,11 +819,11 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_213-Header"
+      id="storyshots_239-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
         id={null}
         onClick={[Function]}
       >
@@ -889,7 +884,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 lgAcba"
+          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -899,13 +894,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
-              color={null}
+              className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -921,7 +915,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_213-Body"
+      id="storyshots_239-Body"
       onClick={null}
     >
       <p
@@ -936,7 +930,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_213-Footer"
+      id="storyshots_239-Footer"
       onClick={null}
     >
       <div
@@ -948,7 +942,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 gygcbv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -960,8 +954,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -980,8 +973,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -999,7 +991,7 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-            id="menu-popper-storyshots_213-Menu"
+            id="menu-popper-storyshots_239-Menu"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -1034,16 +1026,16 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_214"
+    id="storyshots_240"
     media="https://player.vimeo.com/video/798022"
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
-      id="storyshots_214-Media"
+      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      id="storyshots_240-Media"
       onClick={null}
     >
       <iframe
@@ -1059,11 +1051,11 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_214-Header"
+      id="storyshots_240-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
         id={null}
         onClick={[Function]}
       >
@@ -1124,7 +1116,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 lgAcba"
+          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1134,13 +1126,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
-              color={null}
+              className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1156,7 +1147,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_214-Body"
+      id="storyshots_240-Body"
       onClick={null}
     >
       <p
@@ -1171,7 +1162,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_214-Footer"
+      id="storyshots_240-Footer"
       onClick={null}
     >
       <div
@@ -1183,7 +1174,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 gygcbv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -1195,8 +1186,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1215,8 +1205,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1234,7 +1223,7 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-            id="menu-popper-storyshots_214-Menu"
+            id="menu-popper-storyshots_240-Menu"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -1269,16 +1258,16 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_215"
+    id="storyshots_241"
     media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
-      id="storyshots_215-Media"
+      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      id="storyshots_241-Media"
       onClick={null}
     >
       <video
@@ -1296,11 +1285,11 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_215-Header"
+      id="storyshots_241-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
         id={null}
         onClick={[Function]}
       >
@@ -1361,7 +1350,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 lgAcba"
+          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1371,13 +1360,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
-              color={null}
+              className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1393,7 +1381,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_215-Body"
+      id="storyshots_241-Body"
       onClick={null}
     >
       <p
@@ -1408,7 +1396,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_215-Footer"
+      id="storyshots_241-Footer"
       onClick={null}
     >
       <div
@@ -1420,7 +1408,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 gygcbv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -1432,8 +1420,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1452,8 +1439,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1471,7 +1457,7 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-            id="menu-popper-storyshots_215-Menu"
+            id="menu-popper-storyshots_241-Menu"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -1506,16 +1492,16 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_216"
+    id="storyshots_242"
     media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
-      id="storyshots_216-Media"
+      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      id="storyshots_242-Media"
       onClick={null}
     >
       <iframe
@@ -1531,11 +1517,11 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_216-Header"
+      id="storyshots_242-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
         id={null}
         onClick={[Function]}
       >
@@ -1596,7 +1582,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 lgAcba"
+          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1606,13 +1592,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
-              color={null}
+              className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1628,7 +1613,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_216-Body"
+      id="storyshots_242-Body"
       onClick={null}
     >
       <p
@@ -1643,7 +1628,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_216-Footer"
+      id="storyshots_242-Footer"
       onClick={null}
     >
       <div
@@ -1655,7 +1640,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 gygcbv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -1667,8 +1652,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1687,8 +1671,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1706,7 +1689,7 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-            id="menu-popper-storyshots_216-Menu"
+            id="menu-popper-storyshots_242-Menu"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
@@ -1741,16 +1724,16 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 tzukA Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
     href={null}
-    id="storyshots_217"
+    id="storyshots_243"
     media="https://www.w3schools.com/html/horse.mp3"
     onClick={null}
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 dcEWNY Card__CardMedia-sc-1g3s676-2 fMjWdf"
-      id="storyshots_217-Media"
+      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      id="storyshots_243-Media"
       onClick={null}
     >
       <audio
@@ -1767,11 +1750,11 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_217-Header"
+      id="storyshots_243-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 dXWsjs"
+        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
         id={null}
         onClick={[Function]}
       >
@@ -1832,7 +1815,7 @@ exports[` 3`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 lgAcba"
+          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1842,13 +1825,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 depbCu Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 bGgxRd"
-              color={null}
+              className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
               cursor="pointer"
               fontSize="1rem"
               fontWeight={400}
@@ -1864,7 +1846,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
-      id="storyshots_217-Body"
+      id="storyshots_243-Body"
       onClick={null}
     >
       <p
@@ -1879,7 +1861,7 @@ exports[` 3`] = `
     </section>
     <section
       className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
-      id="storyshots_217-Footer"
+      id="storyshots_243-Footer"
       onClick={null}
     >
       <div
@@ -1891,7 +1873,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 gygcbv"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 gKPNdq"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
             id={null}
             rows={null}
           >
@@ -1903,8 +1885,7 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1923,8 +1904,7 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 elQIDR Command__CommandName-sc-13akgtp-1 jSWtwn"
-                color={null}
+                className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ Command__CommandName-sc-13akgtp-1 jSWtwn"
                 cursor="pointer"
                 fontSize="0.875rem"
                 fontWeight={400}
@@ -1942,7 +1922,7 @@ exports[` 3`] = `
         >
           <div
             className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
-            id="menu-popper-storyshots_217-Menu"
+            id="menu-popper-storyshots_243-Menu"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"

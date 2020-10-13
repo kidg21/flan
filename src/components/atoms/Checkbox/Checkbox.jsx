@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { DisabledContext } from "States";
+import { DisabledContext, PointerEventsContext } from "States";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 
@@ -31,11 +31,13 @@ const CheckboxContainer = styled.div`
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
+  pointer-events: ${(props) => {
+    return props.disabled || props.readonly ? "none" : props.mouseEvents;
+  }};
   line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
   }
 `;
@@ -147,7 +149,9 @@ function Checkbox({
   let outlineColor;
   let tabIndex;
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) {
     borderColor = "neutral80";
     fillColor = "neutral40";
@@ -186,6 +190,7 @@ function Checkbox({
       gridColumns={gridColumns}
       gridGap={gridGap}
       inputTextColor={inputTextColor}
+      mouseEvents={pointerEvents}
     >
       <CheckboxInput
         borderColor={borderColor}
@@ -235,7 +240,8 @@ function CheckboxGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
@@ -281,6 +287,7 @@ function CheckboxGroup({
 
 Checkbox.propTypes = {
   align: PropTypes.oneOf(["left", "right"]),
+  bold: PropTypes.bool,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
@@ -295,6 +302,7 @@ Checkbox.propTypes = {
 
 Checkbox.defaultProps = {
   align: "left",
+  bold: false,
   checked: null,
   disabled: false,
   error: null,
@@ -309,7 +317,6 @@ Checkbox.defaultProps = {
 
 CheckboxGroup.propTypes = {
   align: PropTypes.oneOf(["left", "right"]),
-  bold: PropTypes.bool,
   children: PropTypes.node,
   columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
   data: PropTypes.arrayOf(PropTypes.shape({
@@ -332,7 +339,6 @@ CheckboxGroup.propTypes = {
 
 CheckboxGroup.defaultProps = {
   align: "left",
-  bold: false,
   children: null,
   columns: null,
   data: [],

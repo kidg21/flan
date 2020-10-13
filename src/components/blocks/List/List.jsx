@@ -12,7 +12,12 @@ import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
 import Divider from "atoms/Divider";
 import Text, { Label } from "base/Typography";
-import { InteractiveContext, DisabledContext, PaddingContext } from "States";
+import {
+  InteractiveContext,
+  DisabledContext,
+  PaddingContext,
+  PointerEventsContext,
+} from "States";
 
 const ListItemWrapper = styled.li`
   position: relative;
@@ -26,6 +31,9 @@ const ListItemWrapper = styled.li`
   margin-bottom: 1px;
   cursor: ${(props) => {
     return props.isInteractive && !props.isSelected ? "pointer" : "default";
+  }};
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : props.mouseEvents;
   }};
   &:focus,
   &:hover {
@@ -44,7 +52,6 @@ const ListItemWrapper = styled.li`
     return props.theme.text.disabled;
   }};
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
     border-left: none;
   }
@@ -288,6 +295,8 @@ function ListItem({
   };
 
   const isInteractive = useContext(InteractiveContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const padding = useContext(PaddingContext);
 
   return (
     <ListItemWrapper
@@ -303,10 +312,11 @@ function ListItem({
       tabIndex={disabled ? "-1" : tabIndex}
       className={className}
       onClick={typeof onClickItem === "function" ? handleOnClickItem : null} // to target whole list item
+      mouseEvents={pointerEvents}
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
-          padding={useContext(PaddingContext)}
+          padding={padding}
           center={{
             content: centerContent,
             align: textAlign,

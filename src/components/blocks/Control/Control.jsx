@@ -31,7 +31,8 @@ const ControlWrapper = styled.section`
 function ControlItem({
   disabled, icon, id, isSelected, label, onClick,
 }) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   return (
     <Fragment>
@@ -50,7 +51,8 @@ function ControlItem({
 function Control({
   children, data, disabled, id,
 }) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
 
   return (
     <DisabledContext.Provider value={isDisabled}>
