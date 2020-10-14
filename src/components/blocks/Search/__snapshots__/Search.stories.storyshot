@@ -806,7 +806,8 @@ exports[` 3`] = `
                   onClick={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 bqRbcF"
+                    className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+                    color={null}
                     cursor="default"
                     fontSize="0.875rem"
                     fontWeight={400}

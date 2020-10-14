@@ -7,7 +7,8 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
+    className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+    color={null}
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -140,7 +141,8 @@ exports[` 2`] = `
     Text XS
   </p>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 loyOmM"
+    className="Typography__StyledLabel-sc-19auepv-0 jXcMBB"
+    color={null}
     cursor="pointer"
     fontSize="0.75em"
     fontWeight={400}
@@ -151,7 +153,8 @@ exports[` 2`] = `
     Label XS
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 jOsHCn"
+    className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+    color={null}
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -162,7 +165,8 @@ exports[` 2`] = `
     Label SM
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
+    className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+    color={null}
     cursor="pointer"
     fontSize="0.875rem"
     fontWeight={400}
@@ -173,7 +177,8 @@ exports[` 2`] = `
     Label Regular
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 eZAqDJ"
+    className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+    color={null}
     cursor="pointer"
     fontSize="1rem"
     fontWeight={400}
@@ -288,7 +293,8 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 kvLxlu"
+      className="Typography__StyledLabel-sc-19auepv-0 lkkBlv"
+      color={null}
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={300}
@@ -299,7 +305,8 @@ exports[` 3`] = `
       Light Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gPLKjZ"
+      className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+      color={null}
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={400}
@@ -310,7 +317,8 @@ exports[` 3`] = `
       Regular Label
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 dxyppk"
+      className="Typography__StyledLabel-sc-19auepv-0 iWHxMF"
+      color={null}
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={500}
@@ -321,7 +329,8 @@ exports[` 3`] = `
       MediumLabel
     </label>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 brbuID"
+      className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+      color={null}
       cursor="pointer"
       fontSize="0.875rem"
       fontWeight={600}
