@@ -339,7 +339,7 @@ function Template({
       zIndex={zIndex}
     >
       {
-        Object.keys(templateRegions).length > 0
+        children || (Object.keys(templateRegions).length > 0
           ? Object.keys(templateRegions).map((regionId, index) => {
             return templateRegions[regionId] && typeof templateRegions[regionId] === "object" ? (
               <Region
@@ -363,7 +363,7 @@ function Template({
               </Region>
             ) : null;
           })
-          : children
+          : null)
       }
     </TemplateWrapper>
   );
