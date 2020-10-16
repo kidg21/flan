@@ -167,6 +167,7 @@ const PanelSection = styled(PanelBody)`
 function Panel({
   children, classname, footer, header, height, id, maxHeight, maxWidth, offcanvas, padding, width,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   let isOffCanvas;
   switch (offcanvas) {
     case "top":
@@ -185,7 +186,6 @@ function Panel({
       isOffCanvas = "translate3d(0, 0, 0)";
       break;
   }
-  const pointerEvents = useContext(PointerEventsContext);
   return (
     <PanelWrapper
       classname={classname}
