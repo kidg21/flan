@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 esmRJs"
   id={null}
   rows={null}
 >
   <input
-    className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+    className="Slider__SliderPiece-sc-1hp9era-0 eNxtpj"
     disabled={false}
     id="default"
     max={20}
@@ -23,21 +23,21 @@ exports[` 1`] = `
 exports[` 2`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  className="Form__FormWrapper-v2wrel-1 jozDvZ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fAaisW Form__Inputs-v2wrel-4 dVjwCB"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-0 AFwsX"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
         fontSize="0.875rem"
         fontWeight={400}
         id={null}
@@ -46,17 +46,17 @@ exports[` 2`] = `
         Standard
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Form__Inputs-v2wrel-4 cINxbe"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 esmRJs"
           id={null}
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+            className="Slider__SliderPiece-sc-1hp9era-0 eNxtpj"
             disabled={false}
             id={null}
             max={20}
@@ -70,10 +70,10 @@ exports[` 2`] = `
       </section>
     </section>
     <section
-      className="Form__Section-v2wrel-0 AFwsX"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
         fontSize="0.875rem"
         fontWeight={400}
         id={null}
@@ -82,17 +82,17 @@ exports[` 2`] = `
         Error
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Form__Inputs-v2wrel-4 cINxbe"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 esmRJs"
           id={null}
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 insplD"
+            className="Slider__SliderPiece-sc-1hp9era-0 aQnvQ"
             disabled={false}
             id={null}
             max={20}
@@ -106,10 +106,10 @@ exports[` 2`] = `
       </section>
     </section>
     <section
-      className="Form__Section-v2wrel-0 AFwsX"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
         fontSize="0.875rem"
         fontWeight={400}
         id={null}
@@ -118,17 +118,17 @@ exports[` 2`] = `
         Disabled
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Form__Inputs-v2wrel-4 cINxbe"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 esmRJs"
           id={null}
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 hqyUiy"
+            className="Slider__SliderPiece-sc-1hp9era-0 fLDaTR"
             disabled={true}
             id={null}
             max={20}
@@ -148,21 +148,21 @@ exports[` 2`] = `
 exports[` 3`] = `
 <form
   action={null}
-  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  className="Form__FormWrapper-v2wrel-1 jozDvZ"
   id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fAaisW Form__Inputs-v2wrel-4 dVjwCB"
     id={null}
     rows={null}
   >
     <section
-      className="Form__Section-v2wrel-0 AFwsX"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
         fontSize="0.875rem"
         fontWeight={400}
         id={null}
@@ -171,17 +171,17 @@ exports[` 3`] = `
         Standard
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Form__Inputs-v2wrel-4 cINxbe"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 esmRJs"
           id={null}
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+            className="Slider__SliderPiece-sc-1hp9era-0 eNxtpj"
             disabled={false}
             id={null}
             max={20}
@@ -195,10 +195,10 @@ exports[` 3`] = `
       </section>
     </section>
     <section
-      className="Form__Section-v2wrel-0 AFwsX"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
         fontSize="0.875rem"
         fontWeight={400}
         id={null}
@@ -207,17 +207,17 @@ exports[` 3`] = `
         With Label
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Form__Inputs-v2wrel-4 cINxbe"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 esmRJs"
           id={null}
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 kTRPPG Slider__SliderLabel-sc-1hp9era-1 bgmaOM"
+            className="Typography__StyledLabel-sc-19auepv-0 jezJqJ Slider__SliderLabel-sc-1hp9era-1 bMyAub"
             color={null}
             cursor="pointer"
             fontSize="0.875rem"
@@ -229,7 +229,7 @@ exports[` 3`] = `
             1
           </label>
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+            className="Slider__SliderPiece-sc-1hp9era-0 eNxtpj"
             disabled={false}
             id={null}
             max={20}
@@ -240,15 +240,15 @@ exports[` 3`] = `
             value={1}
           />
           <div
-            className="Bar__BarLayout-icfo76-2 gFQRVY"
+            className="Bar__BarLayout-icfo76-2 wJZwX"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 bxLAtn"
+              className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+                className="Typography__StyledLabel-sc-19auepv-0 jezJqJ"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -261,10 +261,10 @@ exports[` 3`] = `
               </label>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 gFmZhG"
+              className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+                className="Typography__StyledLabel-sc-19auepv-0 jezJqJ"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -281,10 +281,10 @@ exports[` 3`] = `
       </section>
     </section>
     <section
-      className="Form__Section-v2wrel-0 AFwsX"
+      className="Form__Section-v2wrel-0 XxWIM"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        className="Typography__Paragraph-sc-19auepv-3 ggZUaJ Form__TitleSection-v2wrel-3 gHAabJ"
         fontSize="0.875rem"
         fontWeight={400}
         id={null}
@@ -293,17 +293,17 @@ exports[` 3`] = `
         With Range
       </p>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Form__Inputs-v2wrel-4 cINxbe"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 esmRJs"
           id={null}
           rows={null}
         >
           <input
-            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+            className="Slider__SliderPiece-sc-1hp9era-0 eNxtpj"
             disabled={false}
             id={null}
             max={20}
@@ -314,15 +314,15 @@ exports[` 3`] = `
             value={15}
           />
           <div
-            className="Bar__BarLayout-icfo76-2 gFQRVY"
+            className="Bar__BarLayout-icfo76-2 wJZwX"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-icfo76-1 bxLAtn"
+              className="Bar__Slot-icfo76-1 fNcQEg"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+                className="Typography__StyledLabel-sc-19auepv-0 jezJqJ"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -335,10 +335,10 @@ exports[` 3`] = `
               </label>
             </div>
             <div
-              className="Bar__Slot-icfo76-1 gFmZhG"
+              className="Bar__Slot-icfo76-1 kZQbjh"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+                className="Typography__StyledLabel-sc-19auepv-0 jezJqJ"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"

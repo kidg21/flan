@@ -2,21 +2,21 @@
 
 exports[` 1`] = `
 <div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__WrapperOuter-sc-19tlhp4-0 eDOuZP"
+  className="Flex__FlexWrapper-sc-7b3s7m-0 iykUHx Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
   height={null}
   id={null}
   overflow={null}
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 cdAbBX Layout__Header-sc-19tlhp4-1 eYGDjK"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 kCxxMI Layout__Header-sc-19tlhp4-1 jTFBEx"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+      className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
       href={null}
       id="storyshots_96"
       media=""
@@ -24,29 +24,29 @@ exports[` 1`] = `
       placeholder="{ Card }"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 lmfbDU"
+        className="Bar__BarLayout-icfo76-2 gAMTyf"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 hrKMOC"
+          className="Bar__Slot-icfo76-1 fiTHpV"
         >
           <div
-            className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+            className="Flex__FlexWrapper-sc-7b3s7m-0 cVVNGb Inline__InlineWrapper-sc-1lksbyc-0 gxACih"
             height={null}
             id={null}
             overflow={null}
             width={null}
           >
             <div
-              className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
+              className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
             >
               <div
-                className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
                 id="menu-popper-Help Menu"
               >
                 <button
-                  className="Button__StyledButton-sc-1v7sls2-0 gA-Dofu"
+                  className="Button__StyledButton-sc-1v7sls2-0 jLdZsx"
                   disabled={false}
                   htmlFor={null}
                   id="help"
@@ -56,13 +56,13 @@ exports[` 1`] = `
                   type="button"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 gdKPCq Button__LabelWrapper-sc-1v7sls2-1 jPrDKg"
                     id={null}
                     rows={null}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 hAvZIL"
+                      className="svg-inline--fa fa-question-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
                       color={null}
                       data-icon="question-circle"
                       data-prefix="far"
@@ -85,15 +85,15 @@ exports[` 1`] = `
               </div>
             </div>
             <div
-              className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
+              className="Inline__InlineItem-sc-1lksbyc-1 dhZQSK"
             >
               <div
-                className="Avatar__TagContainer-sc-1vuf9om-2 fGuTmN"
+                className="Avatar__TagContainer-sc-1vuf9om-2 cFscci"
                 id="profile"
                 onClick={null}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 jnQhZg Avatar__AvatarText-sc-1vuf9om-0 jWGGAK"
+                  className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 buvBot"
                   fontSize="1rem"
                   fontWeight={500}
                   id={null}
@@ -107,30 +107,69 @@ exports[` 1`] = `
         </div>
       </div>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 bzbCw"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 kJsTSH"
         id={null}
         onClick={null}
       />
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 bzbCw"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 kJsTSH"
         id={null}
         onClick={null}
       >
         <div
-          className="Flex__FlexWrapper-sc-7b3s7m-0 USBdy"
+          className="Flex__FlexWrapper-sc-7b3s7m-0 gPaneZ"
           height={null}
           id={null}
           overflow={null}
           width={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 cbhuTd Template__TemplateWrapper-sc-1i4nzbu-1 fnVTJj"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hxFwgy Template__TemplateWrapper-sc-1i4nzbu-1 cuIRBw"
             id={null}
             rows={null}
-          />
+          >
+            <div
+              className="Flex__FlexWrapper-sc-7b3s7m-0 eXgtci"
+              height={null}
+              id={null}
+              overflow={null}
+              width={null}
+            >
+              <img
+                alt="Lightbox Logo"
+                className="Image__ImageWrapper-sc-18abvff-0 hosaYy"
+                height={null}
+                onClick={null}
+                src=""
+                title="Lightbox Logo"
+                width="22%"
+              />
+            </div>
+            <div
+              className="Flex__FlexWrapper-sc-7b3s7m-0 eXgtci"
+              height={null}
+              id={null}
+              overflow={null}
+              width={null}
+            >
+              <h1
+                style={
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Roboto, Arial, sans-serif",
+                    "fontSize": "5vw",
+                    "fontWeight": "300",
+                    "letterSpacing": "1px",
+                  }
+                }
+              >
+                Welcome to Valuation Studio
+              </h1>
+            </div>
+          </section>
           <img
             alt="Background"
-            className="Image__ImageWrapper-sc-18abvff-0 eMprWz"
+            className="Image__ImageWrapper-sc-18abvff-0 jiWTvQ"
             height={null}
             onClick={null}
             src=""
@@ -142,34 +181,34 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 gDhOta Layout__Body-sc-19tlhp4-3 gQQaiT"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 iykUHx Layout__Body-sc-19tlhp4-3 iPUXIc"
     height={null}
     id={null}
     overflow={null}
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 dtSLtL Layout__WrapperMain-sc-19tlhp4-5 cLAtVt"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jQUZNQ Layout__WrapperMain-sc-19tlhp4-5 jBholC"
       height="21rem"
       id={null}
       overflow={null}
       width="100%"
     >
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 gdFvxq Layout__RegionCenter-sc-19tlhp4-6 kdxumc"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eEkhcd Layout__RegionCenter-sc-19tlhp4-6 csPwZP"
         height={null}
         id={null}
         overflow={null}
         width={null}
       >
         <div
-          className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+          className="Panel__PanelWrapper-sc-48epke-0 jKXqGk"
           height="100%"
           id={null}
           width="100%"
         >
           <section
-            className="Panel__SectionWrapper-sc-48epke-1 kPZqiJ"
+            className="Panel__SectionWrapper-sc-48epke-1 fBkPgS"
             id={null}
           >
             <div
@@ -183,26 +222,26 @@ exports[` 1`] = `
               }
             >
               <div
-                className="Flex__FlexWrapper-sc-7b3s7m-0 OOKBw"
+                className="Flex__FlexWrapper-sc-7b3s7m-0 glBHXH"
                 height={null}
                 id={null}
                 overflow="auto"
                 width={null}
               >
                 <div
-                  className="Flex__FlexWrapper-sc-7b3s7m-0 ckZUfJ"
+                  className="Flex__FlexWrapper-sc-7b3s7m-0 iGGtwO"
                   height={null}
                   id={null}
                   overflow={null}
                   width="60%"
                 >
                   <section
-                    className="Grid__GridWrapper-sc-1ntp7gx-0 cSbtkh Card__CardGridWrapper-sc-1g3s676-4 cDnzwq"
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 iUgGVC Card__CardGridWrapper-sc-1g3s676-4 gosHUh"
                     id={null}
                     rows="14vw"
                   >
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 ksOelA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 eibDAP Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                       href={null}
                       id="storyshots_97"
                       media=""
@@ -210,27 +249,62 @@ exports[` 1`] = `
                       placeholder="{ Card }"
                     >
                       <section
-                        className="Card__CardSectionWrapper-sc-1g3s676-1 bzbCw"
+                        className="Card__CardSectionWrapper-sc-1g3s676-1 kJsTSH"
                         id={null}
                         onClick={null}
                       >
                         <div
-                          className="Flex__FlexWrapper-sc-7b3s7m-0 USBdy"
+                          className="Flex__FlexWrapper-sc-7b3s7m-0 gPaneZ"
                           height={null}
                           id={null}
                           overflow={null}
                           width={null}
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 cmRFHz Template__TemplateWrapper-sc-1i4nzbu-1 eQpLlp"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fQTTGA Template__TemplateWrapper-sc-1i4nzbu-1 fSHRYu"
                             id={null}
                             rows={null}
-                          />
+                          >
+                            <div
+                              className="Flex__FlexWrapper-sc-7b3s7m-0 eXgtci"
+                              height={null}
+                              id={null}
+                              overflow={null}
+                              width={null}
+                            >
+                              <img
+                                alt="Jobs"
+                                className="Image__ImageWrapper-sc-18abvff-0 eMdVfr"
+                                height="4vw"
+                                onClick={null}
+                                src=""
+                                title="Jobs"
+                                width="4vw"
+                              />
+                            </div>
+                            <div
+                              className="Flex__FlexWrapper-sc-7b3s7m-0 goTLkY"
+                              height="100%"
+                              id={null}
+                              overflow={null}
+                              width={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 iOVbHb"
+                                fontSize="1rem"
+                                fontWeight={500}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                JOBS
+                              </p>
+                            </div>
+                          </section>
                         </div>
                       </section>
                     </div>
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 ksOelA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 eibDAP Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                       href={null}
                       id="storyshots_98"
                       media=""
@@ -238,27 +312,62 @@ exports[` 1`] = `
                       placeholder="{ Card }"
                     >
                       <section
-                        className="Card__CardSectionWrapper-sc-1g3s676-1 bzbCw"
+                        className="Card__CardSectionWrapper-sc-1g3s676-1 kJsTSH"
                         id={null}
                         onClick={null}
                       >
                         <div
-                          className="Flex__FlexWrapper-sc-7b3s7m-0 USBdy"
+                          className="Flex__FlexWrapper-sc-7b3s7m-0 gPaneZ"
                           height={null}
                           id={null}
                           overflow={null}
                           width={null}
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 cmRFHz Template__TemplateWrapper-sc-1i4nzbu-1 eQpLlp"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fQTTGA Template__TemplateWrapper-sc-1i4nzbu-1 fSHRYu"
                             id={null}
                             rows={null}
-                          />
+                          >
+                            <div
+                              className="Flex__FlexWrapper-sc-7b3s7m-0 eXgtci"
+                              height={null}
+                              id={null}
+                              overflow={null}
+                              width={null}
+                            >
+                              <img
+                                alt="Research"
+                                className="Image__ImageWrapper-sc-18abvff-0 eMdVfr"
+                                height="4vw"
+                                onClick={null}
+                                src=""
+                                title="Research"
+                                width="4vw"
+                              />
+                            </div>
+                            <div
+                              className="Flex__FlexWrapper-sc-7b3s7m-0 goTLkY"
+                              height="100%"
+                              id={null}
+                              overflow={null}
+                              width={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 iOVbHb"
+                                fontSize="1rem"
+                                fontWeight={500}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                RESEARCH
+                              </p>
+                            </div>
+                          </section>
                         </div>
                       </section>
                     </div>
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 ksOelA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 eibDAP Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                       href={null}
                       id="storyshots_99"
                       media=""
@@ -266,27 +375,62 @@ exports[` 1`] = `
                       placeholder="{ Card }"
                     >
                       <section
-                        className="Card__CardSectionWrapper-sc-1g3s676-1 bzbCw"
+                        className="Card__CardSectionWrapper-sc-1g3s676-1 kJsTSH"
                         id={null}
                         onClick={null}
                       >
                         <div
-                          className="Flex__FlexWrapper-sc-7b3s7m-0 USBdy"
+                          className="Flex__FlexWrapper-sc-7b3s7m-0 gPaneZ"
                           height={null}
                           id={null}
                           overflow={null}
                           width={null}
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 cmRFHz Template__TemplateWrapper-sc-1i4nzbu-1 eQpLlp"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fQTTGA Template__TemplateWrapper-sc-1i4nzbu-1 fSHRYu"
                             id={null}
                             rows={null}
-                          />
+                          >
+                            <div
+                              className="Flex__FlexWrapper-sc-7b3s7m-0 eXgtci"
+                              height={null}
+                              id={null}
+                              overflow={null}
+                              width={null}
+                            >
+                              <img
+                                alt="Report Writer"
+                                className="Image__ImageWrapper-sc-18abvff-0 eMdVfr"
+                                height="4vw"
+                                onClick={null}
+                                src=""
+                                title="Report Writer"
+                                width="4vw"
+                              />
+                            </div>
+                            <div
+                              className="Flex__FlexWrapper-sc-7b3s7m-0 goTLkY"
+                              height="100%"
+                              id={null}
+                              overflow={null}
+                              width={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 iOVbHb"
+                                fontSize="1rem"
+                                fontWeight={500}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                REPORT WRITER
+                              </p>
+                            </div>
+                          </section>
                         </div>
                       </section>
                     </div>
                     <div
-                      className="CardWrapper__StyledCardWrapper-meln7c-0 ksOelA Card__StyledCardWrapper-sc-1g3s676-3"
+                      className="CardWrapper__StyledCardWrapper-meln7c-0 eibDAP Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
                       href={null}
                       id="storyshots_100"
                       media=""
@@ -294,22 +438,57 @@ exports[` 1`] = `
                       placeholder="{ Card }"
                     >
                       <section
-                        className="Card__CardSectionWrapper-sc-1g3s676-1 bzbCw"
+                        className="Card__CardSectionWrapper-sc-1g3s676-1 kJsTSH"
                         id={null}
                         onClick={null}
                       >
                         <div
-                          className="Flex__FlexWrapper-sc-7b3s7m-0 USBdy"
+                          className="Flex__FlexWrapper-sc-7b3s7m-0 gPaneZ"
                           height={null}
                           id={null}
                           overflow={null}
                           width={null}
                         >
                           <section
-                            className="Grid__GridWrapper-sc-1ntp7gx-0 cmRFHz Template__TemplateWrapper-sc-1i4nzbu-1 eQpLlp"
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 fQTTGA Template__TemplateWrapper-sc-1i4nzbu-1 fSHRYu"
                             id={null}
                             rows={null}
-                          />
+                          >
+                            <div
+                              className="Flex__FlexWrapper-sc-7b3s7m-0 eXgtci"
+                              height={null}
+                              id={null}
+                              overflow={null}
+                              width={null}
+                            >
+                              <img
+                                alt="Insights"
+                                className="Image__ImageWrapper-sc-18abvff-0 eMdVfr"
+                                height="4vw"
+                                onClick={null}
+                                src=""
+                                title="Insights"
+                                width="4vw"
+                              />
+                            </div>
+                            <div
+                              className="Flex__FlexWrapper-sc-7b3s7m-0 goTLkY"
+                              height="100%"
+                              id={null}
+                              overflow={null}
+                              width={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 iOVbHb"
+                                fontSize="1rem"
+                                fontWeight={500}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                INSIGHTS
+                              </p>
+                            </div>
+                          </section>
                         </div>
                       </section>
                     </div>

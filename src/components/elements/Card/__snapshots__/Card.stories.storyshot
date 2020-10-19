@@ -2,13 +2,13 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gjBQvm Card__CardGridWrapper-sc-1g3s676-4 bHYDEx"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 eLmowp Card__CardGridWrapper-sc-1g3s676-4 hjHDMa"
   id={null}
   rows={null}
 >
   <div />
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_231"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -16,13 +16,13 @@ exports[` 1`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      className="Media__MediaContainer-sc-1ofqnpx-0 cqgdno Card__CardMedia-sc-1g3s676-2 drqiTs"
       id="storyshots_231-Media"
       onClick={null}
     >
       <img
         alt="Media Description"
-        className="Image__ImageWrapper-sc-18abvff-0 eMprWz Media__ImageWrapper-sc-1ofqnpx-1 hHYwDy"
+        className="Image__ImageWrapper-sc-18abvff-0 jiWTvQ Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
         height={null}
         onClick={null}
         src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -31,26 +31,26 @@ exports[` 1`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_231-Header"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 AXrfk"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gdiuzv"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 iaJVNJ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hflNm"
             id={null}
             onClick={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
+              className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
               color={null}
               data-icon="bookmark"
               data-prefix="fas"
@@ -71,10 +71,10 @@ exports[` 1`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 bKkRmK"
+          className="Bar__Slot-icfo76-1 yvaBx"
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
             fontSize="1.15rem"
             fontWeight="500"
             letterSpacing="0.4px"
@@ -82,7 +82,7 @@ exports[` 1`] = `
             Card Title
           </h5>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -94,12 +94,12 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_231-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -109,32 +109,32 @@ exports[` 1`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_231-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gygcbv"
+          className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -147,14 +147,14 @@ exports[` 1`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command Two"
               label="Command Two"
               onClick={null}
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -169,21 +169,21 @@ exports[` 1`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 jaYrwu"
+          className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
             id="menu-popper-storyshots_231-Menu"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
                 color="link"
                 data-icon="ellipsis-v"
                 data-prefix="far"
@@ -213,12 +213,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 iTVMYj Card__CardGridWrapper-sc-1g3s676-4 qDxAM"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dosTFQ Card__CardGridWrapper-sc-1g3s676-4 dJZbYX"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_232"
     media=""
@@ -226,7 +226,7 @@ exports[` 2`] = `
     placeholder="{ Card }"
   />
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_233"
     media=""
@@ -234,20 +234,20 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_233-Header"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 AXrfk"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 kSFTkF"
+          className="Bar__Slot-icfo76-1 RjiBe"
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
             fontSize="1.15rem"
             fontWeight="500"
             letterSpacing="0.4px"
@@ -255,7 +255,7 @@ exports[` 2`] = `
             Card Title
           </h5>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -268,7 +268,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_234"
     media=""
@@ -276,20 +276,20 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_234-Header"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 AXrfk"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 kSFTkF"
+          className="Bar__Slot-icfo76-1 RjiBe"
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
             fontSize="1.15rem"
             fontWeight="500"
             letterSpacing="0.4px"
@@ -297,7 +297,7 @@ exports[` 2`] = `
             Card Title
           </h5>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -309,12 +309,12 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_234-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -325,7 +325,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_235"
     media=""
@@ -333,25 +333,25 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_235-Header"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 AXrfk"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gdiuzv"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 iaJVNJ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hflNm"
             id={null}
             onClick={null}
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 jnQhZg Avatar__AvatarText-sc-1vuf9om-0 jWGGAK"
+              className="Typography__Paragraph-sc-19auepv-3 iOVbHb Avatar__AvatarText-sc-1vuf9om-0 buvBot"
               fontSize="1rem"
               fontWeight={500}
               id={null}
@@ -362,10 +362,10 @@ exports[` 2`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 bKkRmK"
+          className="Bar__Slot-icfo76-1 yvaBx"
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
             fontSize="1.15rem"
             fontWeight="500"
             letterSpacing="0.4px"
@@ -376,12 +376,12 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_235-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -392,7 +392,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_236"
     media=""
@@ -400,26 +400,26 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_236-Header"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 AXrfk"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gdiuzv"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 iaJVNJ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 hflNm"
             id={null}
             onClick={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-star fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
+              className="svg-inline--fa fa-star fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
               color={null}
               data-icon="star"
               data-prefix="far"
@@ -440,10 +440,10 @@ exports[` 2`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 bKkRmK"
+          className="Bar__Slot-icfo76-1 yvaBx"
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
             fontSize="1.15rem"
             fontWeight="500"
             letterSpacing="0.4px"
@@ -454,12 +454,12 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_236-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -469,32 +469,32 @@ exports[` 2`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_236-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 bxLAtn"
+          className="Bar__Slot-icfo76-1 fNcQEg"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -512,7 +512,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_237"
     media=""
@@ -520,20 +520,20 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_237-Header"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 AXrfk"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 kSFTkF"
+          className="Bar__Slot-icfo76-1 RjiBe"
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
             fontSize="1.15rem"
             fontWeight="500"
             letterSpacing="0.4px"
@@ -541,7 +541,7 @@ exports[` 2`] = `
             Card Title
           </h5>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -553,12 +553,12 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_237-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -568,32 +568,32 @@ exports[` 2`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_237-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gygcbv"
+          className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -606,14 +606,14 @@ exports[` 2`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command Two"
               label="Command Two"
               onClick={null}
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -628,7 +628,7 @@ exports[` 2`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 jaYrwu"
+          className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <span>
              
@@ -638,7 +638,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_238"
     media=""
@@ -646,20 +646,20 @@ exports[` 2`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_238-Header"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 AXrfk"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 kSFTkF"
+          className="Bar__Slot-icfo76-1 RjiBe"
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            className="Typography__TitleText-sc-19auepv-2 dTLbTf"
             fontSize="1.15rem"
             fontWeight="500"
             letterSpacing="0.4px"
@@ -667,7 +667,7 @@ exports[` 2`] = `
             Card Title
           </h5>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            className="Typography__Paragraph-sc-19auepv-3 dBAreK"
             fontSize="1rem"
             fontWeight={400}
             id={null}
@@ -679,12 +679,12 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_238-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -694,32 +694,32 @@ exports[` 2`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_238-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gygcbv"
+          className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -732,14 +732,14 @@ exports[` 2`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command Two"
               label="Command Two"
               onClick={null}
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -754,21 +754,21 @@ exports[` 2`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 jaYrwu"
+          className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
             id="menu-popper-storyshots_238-Menu"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
                 color="link"
                 data-icon="ellipsis-v"
                 data-prefix="far"
@@ -797,12 +797,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 iTVMYj Card__CardGridWrapper-sc-1g3s676-4 qDxAM"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dosTFQ Card__CardGridWrapper-sc-1g3s676-4 dJZbYX"
   id={null}
   rows={null}
 >
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_239"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -810,13 +810,13 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      className="Media__MediaContainer-sc-1ofqnpx-0 cqgdno Card__CardMedia-sc-1g3s676-2 drqiTs"
       id="storyshots_239-Media"
       onClick={null}
     >
       <img
         alt="Media Description"
-        className="Image__ImageWrapper-sc-18abvff-0 eMprWz Media__ImageWrapper-sc-1ofqnpx-1 hHYwDy"
+        className="Image__ImageWrapper-sc-18abvff-0 jiWTvQ Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
         height={null}
         onClick={null}
         src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -825,25 +825,25 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_239-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
+        className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
         id={null}
         onClick={[Function]}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 AXrfk"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 jNHudO"
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
               fontSize="1.35rem"
               fontWeight="400"
               letterSpacing="0px"
@@ -851,7 +851,7 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
               fontSize="0.875rem"
               fontWeight={400}
               id={null}
@@ -861,11 +861,11 @@ exports[` 3`] = `
             </p>
           </div>
           <div
-            className="Bar__Slot-icfo76-1 jyMGGC"
+            className="Bar__Slot-icfo76-1 cxljst"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="plus"
               data-prefix="far"
@@ -887,11 +887,11 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
+        className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
+          className="Button__StyledButton-sc-1v7sls2-0 ezbbVo"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -901,12 +901,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hecLiq Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              className="Typography__StyledLabel-sc-19auepv-0 huQwzD"
               color={null}
               cursor="pointer"
               fontSize="1rem"
@@ -922,12 +922,12 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_239-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -937,32 +937,32 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_239-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gygcbv"
+          className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -975,14 +975,14 @@ exports[` 3`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command Two"
               label="Command Two"
               onClick={null}
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -997,21 +997,21 @@ exports[` 3`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 jaYrwu"
+          className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
             id="menu-popper-storyshots_239-Menu"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
                 color="link"
                 data-icon="ellipsis-v"
                 data-prefix="far"
@@ -1036,7 +1036,7 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_240"
     media="https://player.vimeo.com/video/798022"
@@ -1044,14 +1044,14 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      className="Media__MediaContainer-sc-1ofqnpx-0 cqgdno Card__CardMedia-sc-1g3s676-2 drqiTs"
       id="storyshots_240-Media"
       onClick={null}
     >
       <iframe
         allow="fullscreen"
         allowFullScreen={true}
-        className="Media__Frame-sc-1ofqnpx-4 lgRYNA"
+        className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
         frameBorder="0"
         height="100vh"
         src="https://player.vimeo.com/video/798022"
@@ -1060,25 +1060,25 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_240-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
+        className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
         id={null}
         onClick={[Function]}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 AXrfk"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 jNHudO"
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
               fontSize="1.35rem"
               fontWeight="400"
               letterSpacing="0px"
@@ -1086,7 +1086,7 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
               fontSize="0.875rem"
               fontWeight={400}
               id={null}
@@ -1096,11 +1096,11 @@ exports[` 3`] = `
             </p>
           </div>
           <div
-            className="Bar__Slot-icfo76-1 jyMGGC"
+            className="Bar__Slot-icfo76-1 cxljst"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="plus"
               data-prefix="far"
@@ -1122,11 +1122,11 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
+        className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
+          className="Button__StyledButton-sc-1v7sls2-0 ezbbVo"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1136,12 +1136,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hecLiq Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              className="Typography__StyledLabel-sc-19auepv-0 huQwzD"
               color={null}
               cursor="pointer"
               fontSize="1rem"
@@ -1157,12 +1157,12 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_240-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -1172,32 +1172,32 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_240-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gygcbv"
+          className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -1210,14 +1210,14 @@ exports[` 3`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command Two"
               label="Command Two"
               onClick={null}
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -1232,21 +1232,21 @@ exports[` 3`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 jaYrwu"
+          className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
             id="menu-popper-storyshots_240-Menu"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
                 color="link"
                 data-icon="ellipsis-v"
                 data-prefix="far"
@@ -1271,7 +1271,7 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_241"
     media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
@@ -1279,12 +1279,12 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      className="Media__MediaContainer-sc-1ofqnpx-0 cqgdno Card__CardMedia-sc-1g3s676-2 drqiTs"
       id="storyshots_241-Media"
       onClick={null}
     >
       <video
-        className="Media__Video-sc-1ofqnpx-3 btOoa"
+        className="Media__Video-sc-1ofqnpx-3 imikFd"
         controls={true}
         title="video/mp4"
         width="100%"
@@ -1297,25 +1297,25 @@ exports[` 3`] = `
       </video>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_241-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
+        className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
         id={null}
         onClick={[Function]}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 AXrfk"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 jNHudO"
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
               fontSize="1.35rem"
               fontWeight="400"
               letterSpacing="0px"
@@ -1323,7 +1323,7 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
               fontSize="0.875rem"
               fontWeight={400}
               id={null}
@@ -1333,11 +1333,11 @@ exports[` 3`] = `
             </p>
           </div>
           <div
-            className="Bar__Slot-icfo76-1 jyMGGC"
+            className="Bar__Slot-icfo76-1 cxljst"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="plus"
               data-prefix="far"
@@ -1359,11 +1359,11 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
+        className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
+          className="Button__StyledButton-sc-1v7sls2-0 ezbbVo"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1373,12 +1373,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hecLiq Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              className="Typography__StyledLabel-sc-19auepv-0 huQwzD"
               color={null}
               cursor="pointer"
               fontSize="1rem"
@@ -1394,12 +1394,12 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_241-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -1409,32 +1409,32 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_241-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gygcbv"
+          className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -1447,14 +1447,14 @@ exports[` 3`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command Two"
               label="Command Two"
               onClick={null}
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -1469,21 +1469,21 @@ exports[` 3`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 jaYrwu"
+          className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
             id="menu-popper-storyshots_241-Menu"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
                 color="link"
                 data-icon="ellipsis-v"
                 data-prefix="far"
@@ -1508,7 +1508,7 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_242"
     media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
@@ -1516,14 +1516,14 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      className="Media__MediaContainer-sc-1ofqnpx-0 cqgdno Card__CardMedia-sc-1g3s676-2 drqiTs"
       id="storyshots_242-Media"
       onClick={null}
     >
       <iframe
         allow="fullscreen"
         allowFullScreen={true}
-        className="Media__Frame-sc-1ofqnpx-4 lgRYNA"
+        className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
         frameBorder="0"
         height="100vh"
         src="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
@@ -1532,25 +1532,25 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_242-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
+        className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
         id={null}
         onClick={[Function]}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 AXrfk"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 jNHudO"
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
               fontSize="1.35rem"
               fontWeight="400"
               letterSpacing="0px"
@@ -1558,7 +1558,7 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
               fontSize="0.875rem"
               fontWeight={400}
               id={null}
@@ -1568,11 +1568,11 @@ exports[` 3`] = `
             </p>
           </div>
           <div
-            className="Bar__Slot-icfo76-1 jyMGGC"
+            className="Bar__Slot-icfo76-1 cxljst"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="plus"
               data-prefix="far"
@@ -1594,11 +1594,11 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
+        className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
+          className="Button__StyledButton-sc-1v7sls2-0 ezbbVo"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1608,12 +1608,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hecLiq Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              className="Typography__StyledLabel-sc-19auepv-0 huQwzD"
               color={null}
               cursor="pointer"
               fontSize="1rem"
@@ -1629,12 +1629,12 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_242-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -1644,32 +1644,32 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_242-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gygcbv"
+          className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -1682,14 +1682,14 @@ exports[` 3`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command Two"
               label="Command Two"
               onClick={null}
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -1704,21 +1704,21 @@ exports[` 3`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 jaYrwu"
+          className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
             id="menu-popper-storyshots_242-Menu"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
                 color="link"
                 data-icon="ellipsis-v"
                 data-prefix="far"
@@ -1743,7 +1743,7 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+    className="CardWrapper__StyledCardWrapper-meln7c-0 fBbJgY Card__StyledCardWrapper-sc-1g3s676-3 kkMfvg"
     href={null}
     id="storyshots_243"
     media="https://www.w3schools.com/html/horse.mp3"
@@ -1751,12 +1751,12 @@ exports[` 3`] = `
     placeholder="{ Card }"
   >
     <section
-      className="Media__MediaContainer-sc-1ofqnpx-0 sdhRj Card__CardMedia-sc-1g3s676-2 fMjWdf"
+      className="Media__MediaContainer-sc-1ofqnpx-0 cqgdno Card__CardMedia-sc-1g3s676-2 drqiTs"
       id="storyshots_243-Media"
       onClick={null}
     >
       <audio
-        className="Media__Audio-sc-1ofqnpx-2 iXnEbQ"
+        className="Media__Audio-sc-1ofqnpx-2 hTgoaP"
         controls={true}
         title="audio/mpeg"
       >
@@ -1768,25 +1768,25 @@ exports[` 3`] = `
       </audio>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_243-Header"
       onClick={null}
     >
       <div
-        className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
+        className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
         id={null}
         onClick={[Function]}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 AXrfk"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-icfo76-1 jNHudO"
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <h4
-              className="Typography__TitleText-sc-19auepv-2 ibOjqh"
+              className="Typography__TitleText-sc-19auepv-2 dDJKKW"
               fontSize="1.35rem"
               fontWeight="400"
               letterSpacing="0px"
@@ -1794,7 +1794,7 @@ exports[` 3`] = `
               Card Title
             </h4>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 GBuDq"
+              className="Typography__Paragraph-sc-19auepv-3 ggZUaJ"
               fontSize="0.875rem"
               fontWeight={400}
               id={null}
@@ -1804,11 +1804,11 @@ exports[` 3`] = `
             </p>
           </div>
           <div
-            className="Bar__Slot-icfo76-1 jyMGGC"
+            className="Bar__Slot-icfo76-1 cxljst"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="plus"
               data-prefix="far"
@@ -1830,11 +1830,11 @@ exports[` 3`] = `
         </div>
       </div>
       <div
-        className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
+        className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 doLGbj"
+          className="Button__StyledButton-sc-1v7sls2-0 ezbbVo"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -1844,12 +1844,12 @@ exports[` 3`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hecLiq Button__LabelWrapper-sc-1v7sls2-1 fcbZyx"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              className="Typography__StyledLabel-sc-19auepv-0 huQwzD"
               color={null}
               cursor="pointer"
               fontSize="1rem"
@@ -1865,12 +1865,12 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 kujsBG"
       id="storyshots_243-Body"
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -1880,32 +1880,32 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 bkKJRs"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 jyvlMb"
       id="storyshots_243-Footer"
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 cigYlK"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-icfo76-1 gygcbv"
+          className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dZWZkq"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command One"
               label="Command One"
               onClick={null}
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -1918,14 +1918,14 @@ exports[` 3`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 buLtyT"
+              className="Command__CommandContainer-sc-13akgtp-0 jvrwTM"
               id="Command Two"
               label="Command Two"
               onClick={null}
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 hpauXs Command__CommandName-sc-13akgtp-1 jSWtwn"
+                className="Typography__StyledLabel-sc-19auepv-0 btVuKb Command__CommandName-sc-13akgtp-1 kkzjvU"
                 color={null}
                 cursor="pointer"
                 fontSize="0.875rem"
@@ -1940,21 +1940,21 @@ exports[` 3`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-icfo76-1 jaYrwu"
+          className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <div
-            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+            className="Popper__NonPortalWrapper-sc-1t9125t-1 ifvjkR"
             id="menu-popper-storyshots_243-Menu"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 ewfvaI"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
                 color="link"
                 data-icon="ellipsis-v"
                 data-prefix="far"
