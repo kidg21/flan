@@ -9,12 +9,12 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Template__TemplateWrapper-sc-1i4nzbu-1 fhtQXU"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 jyhKXb"
     id="Template B_01"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 iQLSJN"
+      className="Template__Region-sc-1i4nzbu-0 hNSmKK"
       id="A"
       placeholder="A"
       tabIndex={0}
@@ -30,7 +30,7 @@ exports[` 1`] = `
         }
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -40,7 +40,7 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gnTYTC"
+      className="Template__Region-sc-1i4nzbu-0 kqKgAV"
       id="B"
       placeholder="B"
       tabIndex={1}
@@ -56,7 +56,7 @@ exports[` 1`] = `
         }
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -78,12 +78,12 @@ exports[` 2`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Template__TemplateWrapper-sc-1i4nzbu-1 euWBgA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 gVApDH"
     id="Template B_02"
     rows={null}
   >
     <section
-      className="Template__Region-sc-1i4nzbu-0 iQLSJN"
+      className="Template__Region-sc-1i4nzbu-0 hNSmKK"
       id="A"
       placeholder="A"
       tabIndex={0}
@@ -99,7 +99,7 @@ exports[` 2`] = `
         }
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -109,7 +109,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Template__Region-sc-1i4nzbu-0 gnTYTC"
+      className="Template__Region-sc-1i4nzbu-0 kqKgAV"
       id="B"
       placeholder="B"
       tabIndex={1}
@@ -125,7 +125,7 @@ exports[` 2`] = `
         }
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"

@@ -9,20 +9,20 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
+    className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
     id={null}
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 eUVQsH"
+      className="Bar__BarLayout-icfo76-2 AXrfk"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 hFYmXR"
+        className="Bar__Slot-icfo76-1 gyntuO"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -31,11 +31,11 @@ exports[` 1`] = `
         </h6>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 cxljst"
+        className="Bar__Slot-icfo76-1 jyMGGC"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
           color={null}
           data-icon="plus"
           data-prefix="far"
@@ -57,14 +57,14 @@ exports[` 1`] = `
     </div>
   </div>
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
+    className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
     open={false}
   >
     <section
-      className="Accordion__ContentWrapper-sc-1ejc22p-0 iEyfE"
+      className="Accordion__ContentWrapper-sc-1ejc22p-0 bwHXev"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -86,25 +86,25 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
+    className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
     id={null}
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 eUVQsH"
+      className="Bar__BarLayout-icfo76-2 AXrfk"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 hFYmXR"
+        className="Bar__Slot-icfo76-1 gyntuO"
       >
         <div
-          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 hnLPhP"
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gQkXyI"
           disabled={false}
         >
           <input
             checked={null}
-            className="Checkbox__CheckboxInput-sc-1gwp7am-3 eYGJEk"
+            className="Checkbox__CheckboxInput-sc-1gwp7am-3 dPwrsT"
             id="checkbox-id"
             onBlur={null}
             onChange={null}
@@ -113,7 +113,7 @@ exports[` 2`] = `
             type="checkbox"
           />
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 btVuKb Checkbox__CheckboxLabel-sc-1gwp7am-2 fhpWKY"
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs Checkbox__CheckboxLabel-sc-1gwp7am-2 fxdFaL"
             color={null}
             cursor="pointer"
             fontSize="0.875rem"
@@ -127,11 +127,11 @@ exports[` 2`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 cxljst"
+        className="Bar__Slot-icfo76-1 jyMGGC"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
           color={null}
           data-icon="plus"
           data-prefix="far"
@@ -153,14 +153,14 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
+    className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
     open={false}
   >
     <section
-      className="Accordion__ContentWrapper-sc-1ejc22p-0 iEyfE"
+      className="Accordion__ContentWrapper-sc-1ejc22p-0 bwHXev"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -176,20 +176,20 @@ exports[` 2`] = `
 exports[` 3`] = `
 Array [
   <div
-    className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
+    className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
     id={null}
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 eUVQsH"
+      className="Bar__BarLayout-icfo76-2 AXrfk"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 hFYmXR"
+        className="Bar__Slot-icfo76-1 gyntuO"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -197,7 +197,7 @@ Array [
           Accordion Title
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
           fontSize="1rem"
           fontWeight={400}
           id={null}
@@ -207,11 +207,11 @@ Array [
         </p>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 cxljst"
+        className="Bar__Slot-icfo76-1 jyMGGC"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
           color={null}
           data-icon="plus"
           data-prefix="far"
@@ -233,14 +233,14 @@ Array [
     </div>
   </div>,
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
+    className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
     open={false}
   >
     <section
-      className="Accordion__ContentWrapper-sc-1ejc22p-0 iEyfE"
+      className="Accordion__ContentWrapper-sc-1ejc22p-0 bwHXev"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
         fontSize="1rem"
         fontWeight={400}
         id={null}
@@ -256,20 +256,20 @@ Array [
 exports[` 4`] = `
 Array [
   <div
-    className="Expander__HeaderWrapper-sc-147204-0 fsCcEc"
+    className="Expander__HeaderWrapper-sc-147204-0 bfewTj"
     id={null}
     onClick={[Function]}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 eUVQsH"
+      className="Bar__BarLayout-icfo76-2 AXrfk"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-icfo76-1 hFYmXR"
+        className="Bar__Slot-icfo76-1 gyntuO"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 iYDwFP"
+          className="Typography__TitleText-sc-19auepv-2 hytcMk"
           fontSize="1.2rem"
           fontWeight="400"
           letterSpacing="1px"
@@ -277,7 +277,7 @@ Array [
           Accordion Title
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+          className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
           fontSize="1rem"
           fontWeight={400}
           id={null}
@@ -287,11 +287,11 @@ Array [
         </p>
       </div>
       <div
-        className="Bar__Slot-icfo76-1 cxljst"
+        className="Bar__Slot-icfo76-1 jyMGGC"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+          className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gJgpSZ"
           color={null}
           data-icon="plus"
           data-prefix="far"
@@ -313,14 +313,14 @@ Array [
     </div>
   </div>,
   <div
-    className="Expander__ChildrenWrapper-sc-147204-1 iNvPew"
+    className="Expander__ChildrenWrapper-sc-147204-1 gAbDPD"
     open={false}
   >
     <section
-      className="Accordion__ContentWrapper-sc-1ejc22p-0 iEyfE"
+      className="Accordion__ContentWrapper-sc-1ejc22p-0 bwHXev"
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 dBAreK"
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
         fontSize="1rem"
         fontWeight={400}
         id={null}

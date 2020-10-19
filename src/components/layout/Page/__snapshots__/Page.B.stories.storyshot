@@ -9,12 +9,12 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Page__PageWrapper-mddda5-0 zEyTi"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Page__PageWrapper-mddda5-0 cwujdV"
     id="Template B_01"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 jCgDZG"
+      className="Page__Region-mddda5-2 cEkvql"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -22,7 +22,7 @@ exports[` 1`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 kybLIu"
+      className="Page__Region-mddda5-2 bJEJdp"
       id="B"
       placeholder="B"
       tabIndex="0"
@@ -42,12 +42,12 @@ exports[` 2`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 izXJfP Page__PageWrapper-mddda5-0 caJTKj"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Page__PageWrapper-mddda5-0 bWeUgg"
     id="Template B_02"
     rows={null}
   >
     <section
-      className="Page__Region-mddda5-2 jCgDZG"
+      className="Page__Region-mddda5-2 cEkvql"
       id="A"
       placeholder="A"
       tabIndex="0"
@@ -55,7 +55,7 @@ exports[` 2`] = `
       
     </section>
     <section
-      className="Page__Region-mddda5-2 kybLIu"
+      className="Page__Region-mddda5-2 bJEJdp"
       id="B"
       placeholder="B"
       tabIndex="0"
