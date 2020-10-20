@@ -478,7 +478,7 @@ exports[` 1`] = `
           width={null}
         >
           <div
-            className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+            className="Panel__PanelWrapper-sc-48epke-0 jqJhov"
             height="100%"
             id={null}
             width="100%"
@@ -561,7 +561,7 @@ exports[` 1`] = `
         width="24rem"
       >
         <div
-          className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+          className="Panel__PanelWrapper-sc-48epke-0 jqJhov"
           height="100%"
           id={null}
           width="100%"
@@ -574,7 +574,427 @@ exports[` 1`] = `
               className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
               id={null}
               rows={null}
-            />
+            >
+              <section
+                className="Field__Section-sc-11od8ug-6 bwzJQN"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
+                  id={null}
+                  rows={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                      fontSize="0.875rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.25px"
+                    >
+                      Property Information
+                    </p>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Parcel No.
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          808-221-12
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Land User
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Commercial Shopping Center
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Building Area
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        25,344 SF
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Lot Area
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          171,143 SF (3.93 Acres)
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Building/Lot
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        0.15
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        No. of Units
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Year Built
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        1978
+                      </p>
+                    </section>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                      fontSize="0.875rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.25px"
+                    >
+                      Owner Information
+                    </p>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Owners
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          SCF-Los Alisos LLC
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Owner Address
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        2 Park Plz Ste 700 Irvine, CA 92614
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Adjacent Lots
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          2 (4.48 Total Acres)
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Last Sale
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          10/2/15 for $11,500,000
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Total Assd Value
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        $10,045,870
+                      </p>
+                    </section>
+                  </section>
+                </section>
+              </section>
+            </section>
           </section>
         </div>
       </div>
@@ -2241,7 +2661,7 @@ exports[` 2`] = `
         width="24rem"
       >
         <div
-          className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+          className="Panel__PanelWrapper-sc-48epke-0 jqJhov"
           height="100%"
           id={null}
           width="100%"
@@ -2254,7 +2674,427 @@ exports[` 2`] = `
               className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
               id={null}
               rows={null}
-            />
+            >
+              <section
+                className="Field__Section-sc-11od8ug-6 bwzJQN"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
+                  id={null}
+                  rows={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                      fontSize="0.875rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.25px"
+                    >
+                      Property Information
+                    </p>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Parcel No.
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          808-221-12
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Land User
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Commercial Shopping Center
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Building Area
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        25,344 SF
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Lot Area
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          171,143 SF (3.93 Acres)
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Building/Lot
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        0.15
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        No. of Units
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Year Built
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        1978
+                      </p>
+                    </section>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                      fontSize="0.875rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.25px"
+                    >
+                      Owner Information
+                    </p>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Owners
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          SCF-Los Alisos LLC
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Owner Address
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        2 Park Plz Ste 700 Irvine, CA 92614
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Adjacent Lots
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          2 (4.48 Total Acres)
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Last Sale
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          10/2/15 for $11,500,000
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Total Assd Value
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        $10,045,870
+                      </p>
+                    </section>
+                  </section>
+                </section>
+              </section>
+            </section>
           </section>
         </div>
       </div>
@@ -3996,7 +4836,7 @@ exports[` 3`] = `
         width="24rem"
       >
         <div
-          className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+          className="Panel__PanelWrapper-sc-48epke-0 jqJhov"
           height="100%"
           id={null}
           width="100%"
@@ -4009,7 +4849,427 @@ exports[` 3`] = `
               className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
               id={null}
               rows={null}
-            />
+            >
+              <section
+                className="Field__Section-sc-11od8ug-6 bwzJQN"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
+                  id={null}
+                  rows={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                      fontSize="0.875rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.25px"
+                    >
+                      Property Information
+                    </p>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Parcel No.
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          808-221-12
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Land User
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Commercial Shopping Center
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Building Area
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        25,344 SF
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Lot Area
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          171,143 SF (3.93 Acres)
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Building/Lot
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        0.15
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        No. of Units
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Year Built
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        1978
+                      </p>
+                    </section>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                      fontSize="0.875rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.25px"
+                    >
+                      Owner Information
+                    </p>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Owners
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          SCF-Los Alisos LLC
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Owner Address
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        2 Park Plz Ste 700 Irvine, CA 92614
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Adjacent Lots
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          2 (4.48 Total Acres)
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Last Sale
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          10/2/15 for $11,500,000
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Total Assd Value
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        $10,045,870
+                      </p>
+                    </section>
+                  </section>
+                </section>
+              </section>
+            </section>
           </section>
         </div>
       </div>
@@ -4683,7 +5943,7 @@ exports[` 4`] = `
               tabIndex={1}
             >
               <div
-                className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+                className="Panel__PanelWrapper-sc-48epke-0 jqJhov"
                 height="100%"
                 id={null}
                 width="100%"
@@ -4768,7 +6028,7 @@ exports[` 4`] = `
         width="24rem"
       >
         <div
-          className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+          className="Panel__PanelWrapper-sc-48epke-0 jqJhov"
           height="100%"
           id={null}
           width="100%"
@@ -4781,7 +6041,427 @@ exports[` 4`] = `
               className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
               id={null}
               rows={null}
-            />
+            >
+              <section
+                className="Field__Section-sc-11od8ug-6 bwzJQN"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
+                  id={null}
+                  rows={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                      fontSize="0.875rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.25px"
+                    >
+                      Property Information
+                    </p>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Parcel No.
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          808-221-12
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Land User
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        Commercial Shopping Center
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Building Area
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        25,344 SF
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Lot Area
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          171,143 SF (3.93 Acres)
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Building/Lot
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        0.15
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        No. of Units
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Year Built
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        1978
+                      </p>
+                    </section>
+                  </section>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                      fontSize="0.875rem"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0.25px"
+                    >
+                      Owner Information
+                    </p>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Owners
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          SCF-Los Alisos LLC
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Owner Address
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        2 Park Plz Ste 700 Irvine, CA 92614
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Adjacent Lots
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          2 (4.48 Total Acres)
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Last Sale
+                      </label>
+                      <a
+                        className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                        disabled={false}
+                        fontSize="1rem"
+                        fontWeight={500}
+                        href={null}
+                        letterSpacing="0px"
+                        onClick={[Function]}
+                        target={null}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                          fontSize="1rem"
+                          fontWeight={400}
+                          id={null}
+                          letterSpacing="0.5px"
+                        >
+                          10/2/15 for $11,500,000
+                        </p>
+                      </a>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                        color={null}
+                        cursor="pointer"
+                        fontSize="0.875rem"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Total Assd Value
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                        fontSize="1rem"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0.5px"
+                      >
+                        $10,045,870
+                      </p>
+                    </section>
+                  </section>
+                </section>
+              </section>
+            </section>
           </section>
         </div>
       </div>
@@ -5380,7 +7060,7 @@ exports[` 5`] = `
               tabIndex={1}
             >
               <div
-                className="Panel__PanelWrapper-sc-48epke-0 jNagE"
+                className="Panel__PanelWrapper-sc-48epke-0 jqJhov"
                 height="100%"
                 id={null}
                 width="100%"
@@ -5454,7 +7134,7 @@ exports[` 5`] = `
                 </section>
               </div>
               <div
-                className="Panel__PanelWrapper-sc-48epke-0 dRaVCY"
+                className="Panel__PanelWrapper-sc-48epke-0 fTNPBT"
                 height="100%"
                 id={null}
                 width="100%"
@@ -5467,7 +7147,427 @@ exports[` 5`] = `
                     className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Template__TemplateWrapper-sc-1i4nzbu-1 cXDVRa"
                     id={null}
                     rows={null}
-                  />
+                  >
+                    <section
+                      className="Field__Section-sc-11od8ug-6 bwzJQN"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 bLuXxN"
+                        id={null}
+                        rows={null}
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                          id={null}
+                          rows={null}
+                        >
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                            fontSize="0.875rem"
+                            fontWeight={600}
+                            id={null}
+                            letterSpacing="0.25px"
+                          >
+                            Property Information
+                          </p>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Parcel No.
+                            </label>
+                            <a
+                              className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                              disabled={false}
+                              fontSize="1rem"
+                              fontWeight={500}
+                              href={null}
+                              letterSpacing="0px"
+                              onClick={[Function]}
+                              target={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                808-221-12
+                              </p>
+                            </a>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Land User
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              Commercial Shopping Center
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Building Area
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              25,344 SF
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Lot Area
+                            </label>
+                            <a
+                              className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                              disabled={false}
+                              fontSize="1rem"
+                              fontWeight={500}
+                              href={null}
+                              letterSpacing="0px"
+                              onClick={[Function]}
+                              target={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                171,143 SF (3.93 Acres)
+                              </p>
+                            </a>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Building/Lot
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              0.15
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              No. of Units
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Year Built
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              1978
+                            </p>
+                          </section>
+                        </section>
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+                          id={null}
+                          rows={null}
+                        >
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 gUDKkU Field__GroupTitle-sc-11od8ug-1 fHeAih"
+                            fontSize="0.875rem"
+                            fontWeight={600}
+                            id={null}
+                            letterSpacing="0.25px"
+                          >
+                            Owner Information
+                          </p>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Owners
+                            </label>
+                            <a
+                              className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                              disabled={false}
+                              fontSize="1rem"
+                              fontWeight={500}
+                              href={null}
+                              letterSpacing="0px"
+                              onClick={[Function]}
+                              target={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                SCF-Los Alisos LLC
+                              </p>
+                            </a>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Owner Address
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              2 Park Plz Ste 700 Irvine, CA 92614
+                            </p>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Adjacent Lots
+                            </label>
+                            <a
+                              className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                              disabled={false}
+                              fontSize="1rem"
+                              fontWeight={500}
+                              href={null}
+                              letterSpacing="0px"
+                              onClick={[Function]}
+                              target={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                2 (4.48 Total Acres)
+                              </p>
+                            </a>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Last Sale
+                            </label>
+                            <a
+                              className="Typography__LinkText-sc-19auepv-1 eKyPXN Field__LinkedField-sc-11od8ug-4 XXMJo"
+                              disabled={false}
+                              fontSize="1rem"
+                              fontWeight={500}
+                              href={null}
+                              letterSpacing="0px"
+                              onClick={[Function]}
+                              target={null}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                                fontSize="1rem"
+                                fontWeight={400}
+                                id={null}
+                                letterSpacing="0.5px"
+                              >
+                                10/2/15 for $11,500,000
+                              </p>
+                            </a>
+                          </section>
+                          <section
+                            className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+                            id={null}
+                            rows={null}
+                          >
+                            <label
+                              className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+                              color={null}
+                              cursor="pointer"
+                              fontSize="0.875rem"
+                              fontWeight={400}
+                              htmlFor={null}
+                              letterSpacing=".5px"
+                              onClick={null}
+                            >
+                              Total Assd Value
+                            </label>
+                            <p
+                              className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+                              fontSize="1rem"
+                              fontWeight={400}
+                              id={null}
+                              letterSpacing="0.5px"
+                            >
+                              $10,045,870
+                            </p>
+                          </section>
+                        </section>
+                      </section>
+                    </section>
+                  </section>
                 </section>
               </div>
             </section>
