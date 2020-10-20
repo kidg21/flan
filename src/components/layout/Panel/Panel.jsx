@@ -1,13 +1,17 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Skeleton";
+import { PointerEventsContext } from "States";
 
 const PanelWrapper = styled.div`
   position: absolute;
   background: ${(props) => {
     return props.theme.background.default;
+  }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents || "";
   }};
   display: flex;
   flex-direction: column;
@@ -163,6 +167,7 @@ const PanelSection = styled(PanelBody)`
 function Panel({
   children, classname, footer, header, height, id, maxHeight, maxWidth, offcanvas, padding, width,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   let isOffCanvas;
   switch (offcanvas) {
     case "top":
@@ -190,6 +195,7 @@ function Panel({
       maxWidth={maxWidth}
       isOffCanvas={isOffCanvas}
       width={width}
+      mouseEvents={pointerEvents}
     >
       {header ? <PanelSection id={id ? `${id}_header` : null}>{header}</PanelSection> : null}
       <PanelBody padding={padding} id={id ? `${id}_body` : null}>{children}</PanelBody>

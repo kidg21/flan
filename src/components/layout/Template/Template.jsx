@@ -339,31 +339,33 @@ function Template({
       zIndex={zIndex}
     >
       {
-        Object.keys(templateRegions).length > 0
-          ? Object.keys(templateRegions).map((regionId, index) => {
-            return templateRegions[regionId] && typeof templateRegions[regionId] === "object" ? (
-              <Region
-                key={regionId}
-                gridArea={template ? regionId : ""}
-                hasBorder={templateRegions[regionId].hasBorder}
-                id={templateRegions[regionId].id || regionId}
-                isOverlay={isOverlay}
-                margin={templateRegions[regionId].margin}
-                opacity={templateRegions[regionId].opacity}
-                overflow={templateRegions[regionId].overflow}
-                padding={templateRegions[regionId].padding}
-                placeholder={regionId}
-                regionShadow={templateRegions[regionId].padding ? null : regionShadow}
-                tabIndex={index}
-                visible={typeof templateRegions[regionId].visible === "boolean" ? templateRegions[regionId].visible : true}
-              >
-                <PointerEventsContext.Provider value={isOverlay ? "auto" : ""}>
-                  {templateRegions[regionId].content}
-                </PointerEventsContext.Provider>
-              </Region>
-            ) : null;
-          })
-          : children
+        <PointerEventsContext.Provider value={isOverlay ? "auto" : ""}>
+          {
+            children || (Object.keys(templateRegions).length > 0
+              ? Object.keys(templateRegions).map((regionId, index) => {
+                return templateRegions[regionId] && typeof templateRegions[regionId] === "object" ? (
+                  <Region
+                    key={regionId}
+                    gridArea={template ? regionId : ""}
+                    hasBorder={templateRegions[regionId].hasBorder}
+                    id={templateRegions[regionId].id || regionId}
+                    isOverlay={isOverlay}
+                    margin={templateRegions[regionId].margin}
+                    opacity={templateRegions[regionId].opacity}
+                    overflow={templateRegions[regionId].overflow}
+                    padding={templateRegions[regionId].padding}
+                    placeholder={regionId}
+                    regionShadow={templateRegions[regionId].padding ? null : regionShadow}
+                    tabIndex={index}
+                    visible={typeof templateRegions[regionId].visible === "boolean" ? templateRegions[regionId].visible : true}
+                  >
+                    {templateRegions[regionId].content}
+                  </Region>
+                ) : null;
+              })
+              : null)
+          }
+        </PointerEventsContext.Provider>
       }
     </TemplateWrapper>
   );
