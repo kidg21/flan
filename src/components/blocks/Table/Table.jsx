@@ -11,6 +11,7 @@ import {
   InfiniteLoader,
 } from "react-virtualized";
 import { PointerEventsContext } from "States";
+import Text, { Label } from "base/Typography";
 
 export const MultiGridWrapper = styled.div`
   width: 100%;
@@ -65,65 +66,32 @@ export const MultiGridWrapper = styled.div`
   }
 `;
 
-export const CellWrapper = styled.div`
+// Generic background color, padding and border line for each cell
+const FormattedCell = styled.div`
   display: flex;
   align-items: center;
   padding: 0.5em 1em;
-  color: ${(props) => {
-    return props.theme.text.primary;
-  }};
-  font-family: ${(props) => {
-    return props.theme.typography.secondary;
-  }};
-  font-weight: 400;
   border-bottom: ${(props) => {
     return `1px solid ${props.theme.palette.neutral40}`;
   }};
   background-color: ${(props) => {
-    return props.theme.background.default;
+    return props.theme.palette[props.backgroundColor]
+      ? props.theme.palette[props.backgroundColor] : props.theme.background.default;
   }};
-  /* Table Headers */
-  ${(props) => {
-    return props.isHeader
-      && css`
-      font-family: ${() => { return props.theme.typography.primary; }};
-      background-color: ${() => { return props.headerDark ? props.theme.palette.brand1 : ""; }};
-      color: ${() => { return props.headerDark ? props.theme.text.inverse : props.theme.text.secondary; }};
-      font-size: 0.875rem;
-      font-weight: ${() => { return props.headerDark ? "400" : "600"; }};
-      letter-spacing: 1px;
-    `;
-  }}
   /* Highlighed Rows */
   ${(props) => {
     return props.isHighlighted
       && css`
-      background-color: ${() => { return props.theme.palette.neutral20; }};
+      background-color: ${() => { return props.theme.palette[props.highlightedColor] ? props.theme.palette[props.highlightedColor] : props.theme.palette.neutral20; }};
     `;
   }}
   /* Selected Rows */
   ${(props) => {
     return props.isSelected
       && css`
-      background-color: ${() => { return props.theme.background.light; }};
+      background-color: ${() => { return props.theme.palette[props.selectedColor] ? props.theme.palette[props.selectedColor] : props.theme.background.light; }};
     `;
   }}
-  /* TODO: Get Active Sort /  Ascending/Descending sort order working */
-  /* Hovering over a sortable column displays the sort icon */
-  /* &:hover {
-    &:after {
-      ${(props) => {
-    return props.isSortable
-      && css`
-        content: "↑";
-        position: absolute;
-        right: 10%;
-        transform: ${() => { return props.isDescending ? "rotate(-180deg)" : ""; }};
-        transition: all 0.25s ease;
-      `;
-  }}
-    }
-  } */
 `;
 
 function _containedInRowCol(cellRowCol, row, col) {
@@ -174,12 +142,14 @@ class Table extends Component {
     this._cellRenderer = this._cellRenderer.bind(this);
     this._infiniteLoaderChildren = this._infiniteLoaderChildren.bind(this);
     this._onSectionRendered = this._onSectionRendered.bind(this);
+    this._setRefGrid = this._setRefGrid.bind(this);
+    this.remeasureCells = this.remeasureCells.bind(this);
   }
 
   componentDidUpdate(prevProps) {
-    const currRows = this.props.rows;
+    const { rows: currRows, listId: currListId } = this.props;
     const prevRows = prevProps.rows;
-    if (this.props.listId !== prevProps.listId) {
+    if (currListId !== prevProps.listId) {
       // need to force update of entire MultiGrid when active list changes
       // otherwise rows don't update due to possible cachcing issues
       this._loadMissingRowsInView(currRows);
@@ -187,6 +157,26 @@ class Table extends Component {
     } else if (prevRows.length !== currRows.length) {
       this._loadMissingRowsInView(currRows);
     }
+  }
+
+  // helper function to get the ref of grid
+  _setRefGrid(ref) {
+    this._grid = ref;
+    this._registerInfiniteLoaderChild(ref);
+  }
+
+  // helper function to remeasure the table cells
+  remeasureCells(e) {
+    if (e) {
+      // target specific cells
+      if (this.cache) this.cache.clear(e.rowIndex, e.columnIndex);
+      this._grid.recomputeGridSize(e);
+    } else {
+      // remeasure whole grid
+      if (this.cache) this.cache.clearAll();
+      this._grid.recomputeGridSize();
+    }
+    this._grid.forceUpdate();
   }
 
   _loadMissingRowsInView(currRows) {
@@ -224,10 +214,20 @@ class Table extends Component {
       onCellMouseOver,
       onHeaderMouseOver,
       onHeaderMouseOut,
+      columnTemplates,
+      HeaderTemplate,
     } = this.props;
     const row = rows[rowIndex - 1];
     const cellProps = {};
     let cellData = "";
+
+    // formats cell when using custom templates: padding, line separation, & background color
+    // we pass in cellProps (mouse clicks, background color), these can be overwritten
+    // user will wrap FormattedCell in their custom template
+    const _FormattedCell = (props) => {
+      // props: backgroundColor, highlightedColor, selectedColor
+      return <FormattedCell style={style} {...cellProps} {...props} />;
+    };
 
     if (rowIndex === 0) {
       // data column header
@@ -256,7 +256,7 @@ class Table extends Component {
           });
         }
       };
-      cellProps.isHeader = true;
+      cellProps.backgroundColor = headerDark ? "brand1" : "";
       cellData = headers[columnIndex].label || "";
       if (headers[columnIndex].sortable) {
         cellProps.isSortable = true;
@@ -265,9 +265,30 @@ class Table extends Component {
       //   const arrow = sortDirection ? "up" : "down";
       //   cellData = (<React.Fragment>{cellData}<Icon icon={arrow} /></React.Fragment>);
       // }
+      if (HeaderTemplate) {
+        cellData = (
+          <HeaderTemplate
+            data={cellData}
+            columnIndex={columnIndex}
+            rowIndex={rowIndex}
+            FormattedCell={_FormattedCell}
+            remeasureCells={this.remeasureCells}
+          />
+        );
+      } else {
+        // default header text style, used Label for color & cursor props
+        cellData = (
+          <FormattedCell style={style} {...cellProps}>
+            <Label weight="bold" size="sm" color={headerDark ? "inverse" : "secondary"} cursor={onHeaderClick ? "pointer" : "default"}>
+              {cellData}
+            </Label>
+          </FormattedCell>
+        );
+      }
     } else if (row) {
       // regular cell from a row that's ready to render
-      cellData = row[headers[columnIndex].id];
+      const headerId = headers[columnIndex].id;
+      cellData = row[headerId];
       if (selectedCell) {
         cellProps.isSelected = _containedInRowCol(
           selectedCell,
@@ -310,6 +331,29 @@ class Table extends Component {
           });
         }
       };
+      if (columnTemplates && columnTemplates[headerId]) {
+        const CellTemplate = columnTemplates[headerId];
+        cellData = (
+          <CellTemplate
+            data={cellData}
+            columnIndex={columnIndex}
+            rowIndex={rowIndex}
+            isHighlighted={cellProps.isHighlighted}
+            isSelected={cellProps.isSelected}
+            FormattedCell={_FormattedCell}
+            remeasureCells={this.remeasureCells}
+          />
+        );
+      } else {
+        // default cell text style
+        cellData = (
+          <FormattedCell style={style} {...cellProps}>
+            <Text>
+              {cellData}
+            </Text>
+          </FormattedCell>
+        );
+      }
     }
 
     if (this.cache) {
@@ -321,17 +365,11 @@ class Table extends Component {
           parent={parent}
           rowIndex={rowIndex}
         >
-          <CellWrapper style={style} headerDark={headerDark} {...cellProps}>
-            {cellData}
-          </CellWrapper>
+          {cellData}
         </CellMeasurer>
       );
     }
-    return (
-      <CellWrapper style={style} headerDark={headerDark} {...cellProps}>
-        {cellData}
-      </CellWrapper>
-    );
+    return cellData;
   }
 
   _onSectionRendered({ rowStartIndex, rowStopIndex }, onRowsRendered) {
@@ -366,6 +404,7 @@ class Table extends Component {
 
     let rowHeightToUse;
     let columnWidthToUse;
+    this._registerInfiniteLoaderChild = registerChild;
 
     // no CellMeasurer used, either both values provided or neither provided and will be defaulted
     if (!this.cache) {
@@ -409,7 +448,8 @@ class Table extends Component {
                 onSectionRendered={(params) => {
                   this._onSectionRendered(params, onRowsRendered);
                 }} // have to pass onRowsRendered through
-                ref={registerChild}
+                ref={this._setRefGrid}
+                deferredMeasurementCache={this.cache}
               />
             );
           }}
@@ -441,6 +481,7 @@ class Table extends Component {
 
 Table.propTypes = {
   columnWidth: PropTypes.number,
+  columnTemplates: PropTypes.objectOf(PropTypes.func),
   focusedRow: PropTypes.number,
   highlightedCell: PropTypes.shape({
     columnIndex: PropTypes.number,
@@ -448,6 +489,7 @@ Table.propTypes = {
   }),
   headers: PropTypes.arrayOf(PropTypes.shape).isRequired,
   headerDark: PropTypes.bool,
+  HeaderTemplate: PropTypes.func,
   listId: PropTypes.string.isRequired,
   loadRows: PropTypes.func,
   minColWidth: PropTypes.number,
@@ -473,9 +515,11 @@ Table.propTypes = {
 
 Table.defaultProps = {
   columnWidth: null,
+  columnTemplates: null,
   focusedRow: null,
   highlightedCell: null,
   headerDark: false,
+  HeaderTemplate: null,
   loadRows: null,
   minColWidth: 120,
   minRowHeight: 20,
