@@ -739,7 +739,7 @@ storiesOf("Data Display|Table", module)
             return (
               <FormattedCell backgroundColor="success40">
                 <Label color="selected" size="xl" weight="bold">
-                  {cellData}
+                  {cellData.label}
                 </Label>
               </FormattedCell>
             );
