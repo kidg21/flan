@@ -12,6 +12,8 @@ import {
 } from "react-virtualized";
 import { PointerEventsContext } from "States";
 import Text, { Label } from "base/Typography";
+import Inline from "layout/Inline";
+import Icon from "atoms/Icon";
 
 export const MultiGridWrapper = styled.div`
   width: 100%;
@@ -67,9 +69,11 @@ export const MultiGridWrapper = styled.div`
 `;
 
 // Generic background color, padding and border line for each cell
-const FormattedCell = styled.div`
+const FormattedCellWrapper = styled.div`
   display: flex;
   align-items: center;
+  height: 100%;
+  width: 100%;
   padding: 0.5em 1em;
   border-bottom: ${(props) => {
     return `1px solid ${props.theme.palette.neutral40}`;
@@ -144,6 +148,8 @@ class Table extends Component {
     this._onSectionRendered = this._onSectionRendered.bind(this);
     this._setRefGrid = this._setRefGrid.bind(this);
     this.remeasureCells = this.remeasureCells.bind(this);
+    this._getHeaderCell = this._getHeaderCell.bind(this);
+    this._getCell = this._getCell.bind(this);
   }
 
   componentDidUpdate(prevProps) {
@@ -199,23 +205,182 @@ class Table extends Component {
     return this.props.loadRows({ startIndex });
   }
 
+  _getHeaderCell(cellProps, {
+    columnIndex,
+    FormattedCell,
+    row,
+    rowIndex,
+  }) {
+    const {
+      onHeaderClick,
+      onHeaderMouseOver,
+      onHeaderMouseOut,
+      headers,
+      HeaderTemplate,
+      sortColumnId,
+      sortDirection,
+      headerDark,
+    } = this.props;
+    cellProps.onClick = (e) => {
+      if (onHeaderClick) {
+        onHeaderClick(e, {
+          rowIndex, columnIndex, row,
+        });
+      }
+    };
+    cellProps.onMouseOver = (e) => {
+      if (onHeaderMouseOver) {
+        onHeaderMouseOver(e, {
+          rowIndex: rowIndex - 1,
+          columnIndex: columnIndex,
+          row: row,
+        });
+      }
+    };
+    cellProps.onMouseOut = (e) => {
+      if (onHeaderMouseOut) {
+        onHeaderMouseOut(e, {
+          rowIndex: rowIndex - 1,
+          columnIndex: columnIndex,
+          row: row,
+        });
+      }
+    };
+    cellProps.backgroundColor = headerDark ? "brand1" : "";
+    let cell = headers[columnIndex].label || "";
+    if (headers[columnIndex].sortable) {
+      cellProps.isSortable = true;
+    }
+
+    if (HeaderTemplate) {
+      cell = (
+        <HeaderTemplate
+          data={headers[columnIndex]}
+          columnIndex={columnIndex}
+          rowIndex={rowIndex}
+          FormattedCell={FormattedCell}
+          remeasureCells={this.remeasureCells}
+          sortColumnId={sortColumnId}
+          sortDirection={sortDirection}
+        />
+      );
+    } else {
+      let labelToUse = (
+        <Label weight="bold" size="lg" color={headerDark ? "inverse" : "secondary"} cursor={onHeaderClick ? "pointer" : "default"}>
+          {cell || ""}
+        </Label>
+      );
+      if (sortColumnId === headers[columnIndex].id) {
+        labelToUse = (
+          <Inline spacingX="0.5rem">
+            {labelToUse}
+            <Icon icon={sortDirection ? "up" : "down"} variant={headerDark ? "inverse" : "secondary"} />
+          </Inline>
+        );
+      }
+      // default header text style, used Label for color & cursor props
+      cell = (
+        <FormattedCell>
+          {typeof cell === "string" || typeof cell === "number" ? labelToUse : cell}
+        </FormattedCell>
+      );
+    }
+    return cell;
+  }
+
+  _getCell(cellProps, {
+    columnIndex,
+    FormattedCell,
+    row,
+    rowIndex,
+  }) {
+    const {
+      headers,
+      selectedCell,
+      highlightedCell,
+      onCellClick,
+      onCellMouseOut,
+      onCellMouseOver,
+      columnTemplates,
+    } = this.props;
+
+    const headerId = headers[columnIndex].id;
+    let cell = row[headerId] || "";
+    if (selectedCell) {
+      cellProps.isSelected = _containedInRowCol(
+        selectedCell,
+        rowIndex,
+        columnIndex,
+      );
+    }
+    if (!cellProps.isSelected && highlightedCell) {
+      cellProps.isHighlighted = _containedInRowCol(
+        highlightedCell,
+        rowIndex,
+        columnIndex,
+      );
+    }
+    cellProps.onClick = (e) => {
+      if (onCellClick) {
+        onCellClick(e, {
+          rowIndex: rowIndex - 1,
+          columnIndex: columnIndex,
+          row: row,
+          iconContent: "up",
+        });
+      }
+    };
+    cellProps.onMouseOver = (e) => {
+      if (onCellMouseOver) {
+        onCellMouseOver(e, {
+          rowIndex: rowIndex - 1,
+          columnIndex: columnIndex,
+          row: row,
+        });
+      }
+    };
+    cellProps.onMouseOut = (e) => {
+      if (onCellMouseOut) {
+        onCellMouseOut(e, {
+          rowIndex: rowIndex - 1,
+          columnIndex: columnIndex,
+          row: row,
+        });
+      }
+    };
+    if (columnTemplates && columnTemplates[headerId]) {
+      const CellTemplate = columnTemplates[headerId];
+      cell = (
+        <CellTemplate
+          data={row[headerId]}
+          columnIndex={columnIndex}
+          rowIndex={rowIndex}
+          isHighlighted={cellProps.isHighlighted}
+          isSelected={cellProps.isSelected}
+          FormattedCell={FormattedCell}
+          remeasureCells={this.remeasureCells}
+        />
+      );
+    } else {
+      // default cell text style
+      cell = (
+        <FormattedCell>
+          {typeof cell === "string" || typeof cell === "number" ? (
+            <Text>
+              {cell}
+            </Text>
+          ) : cell}
+        </FormattedCell>
+      );
+    }
+    return cell;
+  }
+
   _cellRenderer({
     columnIndex, rowIndex, key, parent, style,
   }) {
     const {
       rows,
-      headerDark,
-      headers,
-      selectedCell,
-      highlightedCell,
-      onHeaderClick,
-      onCellClick,
-      onCellMouseOut,
-      onCellMouseOver,
-      onHeaderMouseOver,
-      onHeaderMouseOut,
-      columnTemplates,
-      HeaderTemplate,
     } = this.props;
     const row = rows[rowIndex - 1];
     const cellProps = {};
@@ -224,137 +389,37 @@ class Table extends Component {
     // formats cell when using custom templates: padding, line separation, & background color
     // we pass in cellProps (mouse clicks, background color), these can be overwritten
     // user will wrap FormattedCell in their custom template
-    const _FormattedCell = (props) => {
+    const FormattedCell = React.forwardRef((props, ref) => {
       // props: backgroundColor, highlightedColor, selectedColor
-      return <FormattedCell style={style} {...cellProps} {...props} />;
-    };
+      // cellProps are mutated, so renders all the proper props
+      return <FormattedCellWrapper ref={ref} {...cellProps} {...props} />;
+    });
 
     if (rowIndex === 0) {
       // data column header
-      cellProps.onClick = (e) => {
-        if (onHeaderClick) {
-          onHeaderClick(e, {
-            rowIndex, columnIndex, row,
-          });
-        }
-      };
-      cellProps.onMouseOver = (e) => {
-        if (onHeaderMouseOver) {
-          onHeaderMouseOver(e, {
-            rowIndex: rowIndex - 1,
-            columnIndex: columnIndex,
-            row: row,
-          });
-        }
-      };
-      cellProps.onMouseOut = (e) => {
-        if (onHeaderMouseOut) {
-          onHeaderMouseOut(e, {
-            rowIndex: rowIndex - 1,
-            columnIndex: columnIndex,
-            row: row,
-          });
-        }
-      };
-      cellProps.backgroundColor = headerDark ? "brand1" : "";
-      cellData = headers[columnIndex].label || "";
-      if (headers[columnIndex].sortable) {
-        cellProps.isSortable = true;
-      }
-      // if (headers[columnIndex].id === sortColumnId) {
-      //   const arrow = sortDirection ? "up" : "down";
-      //   cellData = (<React.Fragment>{cellData}<Icon icon={arrow} /></React.Fragment>);
-      // }
-      if (HeaderTemplate) {
-        cellData = (
-          <HeaderTemplate
-            data={cellData}
-            columnIndex={columnIndex}
-            rowIndex={rowIndex}
-            FormattedCell={_FormattedCell}
-            remeasureCells={this.remeasureCells}
-          />
-        );
-      } else {
-        // default header text style, used Label for color & cursor props
-        cellData = (
-          <FormattedCell style={style} {...cellProps}>
-            <Label weight="bold" size="sm" color={headerDark ? "inverse" : "secondary"} cursor={onHeaderClick ? "pointer" : "default"}>
-              {cellData}
-            </Label>
-          </FormattedCell>
-        );
-      }
+      cellData = this._getHeaderCell(cellProps, {
+        row,
+        rowIndex,
+        columnIndex,
+        FormattedCell,
+      });
     } else if (row) {
       // regular cell from a row that's ready to render
-      const headerId = headers[columnIndex].id;
-      cellData = row[headerId];
-      if (selectedCell) {
-        cellProps.isSelected = _containedInRowCol(
-          selectedCell,
-          rowIndex,
-          columnIndex,
-        );
-      }
-      if (!cellProps.isSelected && highlightedCell) {
-        cellProps.isHighlighted = _containedInRowCol(
-          highlightedCell,
-          rowIndex,
-          columnIndex,
-        );
-      }
-      cellProps.onClick = (e) => {
-        if (onCellClick) {
-          onCellClick(e, {
-            rowIndex: rowIndex - 1,
-            columnIndex: columnIndex,
-            row: row,
-            iconContent: "up",
-          });
-        }
-      };
-      cellProps.onMouseOver = (e) => {
-        if (onCellMouseOver) {
-          onCellMouseOver(e, {
-            rowIndex: rowIndex - 1,
-            columnIndex: columnIndex,
-            row: row,
-          });
-        }
-      };
-      cellProps.onMouseOut = (e) => {
-        if (onCellMouseOut) {
-          onCellMouseOut(e, {
-            rowIndex: rowIndex - 1,
-            columnIndex: columnIndex,
-            row: row,
-          });
-        }
-      };
-      if (columnTemplates && columnTemplates[headerId]) {
-        const CellTemplate = columnTemplates[headerId];
-        cellData = (
-          <CellTemplate
-            data={cellData}
-            columnIndex={columnIndex}
-            rowIndex={rowIndex}
-            isHighlighted={cellProps.isHighlighted}
-            isSelected={cellProps.isSelected}
-            FormattedCell={_FormattedCell}
-            remeasureCells={this.remeasureCells}
-          />
-        );
-      } else {
-        // default cell text style
-        cellData = (
-          <FormattedCell style={style} {...cellProps}>
-            <Text>
-              {cellData}
-            </Text>
-          </FormattedCell>
-        );
-      }
+      cellData = this._getCell(cellProps, {
+        row,
+        rowIndex,
+        columnIndex,
+        FormattedCell,
+      });
     }
+
+    // position cell, style needs to be on the direct child,
+    // otherwise react-virtualized warning: "Rendered cell should include syle property for positioning"
+    cellData = (
+      <div style={style}>
+        {cellData}
+      </div>
+    );
 
     if (this.cache) {
       return (
@@ -449,7 +514,6 @@ class Table extends Component {
                   this._onSectionRendered(params, onRowsRendered);
                 }} // have to pass onRowsRendered through
                 ref={this._setRefGrid}
-                deferredMeasurementCache={this.cache}
               />
             );
           }}
