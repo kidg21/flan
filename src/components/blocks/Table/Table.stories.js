@@ -13,6 +13,7 @@ import SelectMenu from "atoms/SelectMenu";
 import Table from "blocks/Table";
 import { Label } from "base/Typography";
 
+// Only columns specified here will be displayed
 const headers = [
   { id: "options", label: "Actions" },
   { id: "ACREAGE", label: "Acreage", sortable: true },
@@ -408,13 +409,6 @@ const options = [
   { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
   { value: "cookie dough", label: "Cookie Dough" },
 ];
-
-export {
-  headers,
-  data,
-  menu,
-  options,
-};
 
 storiesOf("Data Display|Table", module)
   .addDecorator(Container)
