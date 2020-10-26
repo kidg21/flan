@@ -43,11 +43,12 @@ export const GridWrapper = styled.div`
     return props.horizontalScroll ? `${props.horizontalScroll} !important` : "";
   }};
     ::-webkit-scrollbar {
-      height: 0.75em;
+      width: 0.65em;
+      height: 0.65em;
     }
     ::-webkit-scrollbar-track {
-      background-color: ${(props) => {
-    return props.theme.palette.inverse;
+      box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
   }};
     }
     ::-webkit-scrollbar-thumb {
@@ -62,6 +63,17 @@ export const GridWrapper = styled.div`
   }};
     outline: none;
     }
+    ::-webkit-scrollbar-track:horizontal {
+      box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  }
+    ::-webkit-scrollbar-thumb:horizontal{
+      background-color: ${(props) => {
+    return props.theme.palette.neutral80;
+  }};
+    border-radius: 20px;
+  }
     :focus {
       outline: none;
     }
@@ -114,8 +126,8 @@ export const CellWrapper = styled.div`
 `;
 
 const paddingHash = {
-  hidden: "0.5em 1.5em 0.5em 0.5em",
-  visible: "0.5em 1.5em 0.5em 0.5em",
+  hidden: "0.5em 1em 0.5em 0.5em",
+  visible: "0.5em 1em 0.5em 0.5em",
 };
 
 class CardList extends PureComponent {
