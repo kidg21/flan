@@ -39,12 +39,16 @@ export const GridWrapper = styled.div`
   height: 100%;
   overflow: hidden;
   .ReactVirtualized__Grid {
+    overflow-x: ${(props) => {
+    return props.horizontalScroll ? `${props.horizontalScroll} !important` : "";
+  }};
     ::-webkit-scrollbar {
-      height: 0.75em;
+      width: 0.65em;
+      height: 0.65em;
     }
     ::-webkit-scrollbar-track {
-      background-color: ${(props) => {
-    return props.theme.palette.inverse;
+      box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
   }};
     }
     ::-webkit-scrollbar-thumb {
@@ -59,6 +63,17 @@ export const GridWrapper = styled.div`
   }};
     outline: none;
     }
+    ::-webkit-scrollbar-track:horizontal {
+      box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  }
+    ::-webkit-scrollbar-thumb:horizontal{
+      background-color: ${(props) => {
+    return props.theme.palette.neutral80;
+  }};
+    border-radius: 20px;
+  }
     :focus {
       outline: none;
     }
@@ -70,7 +85,9 @@ export const GridWrapper = styled.div`
 
 export const CellWrapper = styled.div`
   align-items: center;
-  padding: 0.5em 0.5em;
+  padding: ${(props) => {
+    return props.cellPadding;
+  }};
   color: ${(props) => {
     if (props.isSelected && !props.isHeader) return props.theme.text.inverse;
     return props.theme.text.primary;
@@ -107,6 +124,11 @@ export const CellWrapper = styled.div`
   }};
   }
 `;
+
+const paddingHash = {
+  hidden: "0.5em 1em 0.5em 0.5em",
+  visible: "0.5em 1em 0.5em 0.5em",
+};
 
 class CardList extends PureComponent {
   constructor(props) {
@@ -254,10 +276,12 @@ class CardList extends PureComponent {
       onCellMouseOut,
       onCellMouseOver,
       removeRecord,
+      overflowX,
     } = this.props;
     const cellProps = {
       isSelected: false,
       isHighlighted: false,
+      cellPadding: (overflowX && paddingHash[overflowX]) || "0.5em 0.5em",
     };
     const index = this._getCellIndex(rowIndex, columnIndex); // calculate index
     if (index >= data.length) {
@@ -403,6 +427,7 @@ class CardList extends PureComponent {
     const {
       data, rowHeight, minRowHeight, selectedCell, highlightedCell,
       scrollToAlignment, scrollTop, focusedRow, onScroll, minimumBatchSize,
+      overflowX,
     } = this.props;
 
     let scrollToRow = focusedRow;
@@ -450,7 +475,7 @@ class CardList extends PureComponent {
           return (
             // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
             <DisableTransitionContext.Provider value>
-              <GridWrapper>
+              <GridWrapper horizontalScroll={overflowX}>
                 <AutoSizer
                   onResize={this._onResize}
                   defaultHeight={100}
@@ -530,6 +555,7 @@ CardList.defaultProps = {
   scrollToAlignment: "start",
   scrollTop: null,
   onScroll: null,
+  overflowX: null,
   focusedRow: null,
   loadRows: null,
   listId: null,
@@ -564,6 +590,7 @@ CardList.propTypes = {
   scrollToAlignment: PropTypes.string,
   scrollTop: PropTypes.number,
   onScroll: PropTypes.func,
+  overflowX: PropTypes.oneOf(["auto", "hidden", "scroll", "visible"]),
   focusedRow: PropTypes.number,
   loadRows: PropTypes.func,
   minimumBatchSize: PropTypes.number,
