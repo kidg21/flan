@@ -739,10 +739,10 @@ storiesOf("Data Display|Table", module)
           backgroundColor={({ rowIndex }) => {
             return rowIndex % 2 ? "neutral40" : "";
           }}
-          HeaderTemplate={({ data: cellData }) => {
+          headerTemplate={({ data: cellData }) => {
             return (
               <Label color="selected" size="xl" weight="bold">
-                {cellData.label}
+                {cellData}
               </Label>
             );
           }}

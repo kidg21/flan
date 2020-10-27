@@ -215,7 +215,7 @@ class Table extends Component {
       onHeaderMouseOver,
       onHeaderMouseOut,
       headers,
-      HeaderTemplate,
+      headerTemplate: HeaderTemplate,
       sortColumnId,
       sortDirection,
       headerDark,
@@ -224,10 +224,7 @@ class Table extends Component {
     const cellProps = {};
 
     // background color
-    cellProps.backgroundColor = headerDark ? "brand1" : "";
-    if (headerColor) {
-      cellProps.backgroundColor = headerColor;
-    }
+    cellProps.backgroundColor = headerDark ? "brand1" : headerColor;
 
     // mouse events
     cellProps.onClick = (e) => {
@@ -267,12 +264,11 @@ class Table extends Component {
     if (HeaderTemplate) {
       cell = (
         <HeaderTemplate
-          data={header}
+          headerId={header.id}
+          data={cell}
           columnIndex={columnIndex}
           rowIndex={rowIndex}
           remeasureCells={this.remeasureCells}
-          sortColumnId={sortColumnId}
-          sortDirection={_sortDirection}
         />
       );
     } else {
@@ -338,7 +334,7 @@ class Table extends Component {
     cellProps.selectedColor = selectedColor || "";
     // can pass in a function to return background color
     cellProps.backgroundColor = typeof backgroundColor === "function" ? backgroundColor({
-      data: row[headerId],
+      data: cell,
       columnIndex: columnIndex,
       rowIndex: rowIndex,
       isHighlighted: cellProps.isHighlighted,
@@ -380,7 +376,8 @@ class Table extends Component {
       const CellTemplate = columnTemplates[headerId];
       cell = (
         <CellTemplate
-          data={row[headerId]}
+          headerId={headerId}
+          data={cell}
           columnIndex={columnIndex}
           rowIndex={rowIndex}
           isHighlighted={cellProps.isHighlighted}
@@ -557,7 +554,7 @@ Table.propTypes = {
   headerColor: PropTypes.string,
   headerDark: PropTypes.bool,
   headers: PropTypes.arrayOf(PropTypes.shape).isRequired,
-  HeaderTemplate: PropTypes.func,
+  headerTemplate: PropTypes.func,
   highlightedCell: PropTypes.shape({
     columnIndex: PropTypes.number,
     rowIndex: PropTypes.number,
@@ -594,7 +591,7 @@ Table.defaultProps = {
   focusedRow: null,
   headerColor: null,
   headerDark: false,
-  HeaderTemplate: null,
+  headerTemplate: null,
   highlightedCell: null,
   highlightedColor: null,
   loadRows: null,
