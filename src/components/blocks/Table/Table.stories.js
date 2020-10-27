@@ -735,23 +735,25 @@ storiesOf("Data Display|Table", module)
           rows={data}
           listId="template"
           columnWidth={180}
-          HeaderTemplate={({ data: cellData, FormattedCell }) => {
+          headerColor="success40"
+          backgroundColor={({ rowIndex }) => {
+            return rowIndex % 2 ? "neutral40" : "";
+          }}
+          highlightedColor="warning20"
+          selectedColor="alert40"
+          HeaderTemplate={({ data: cellData }) => {
             return (
-              <FormattedCell backgroundColor="success40">
-                <Label color="selected" size="xl" weight="bold">
-                  {cellData.label}
-                </Label>
-              </FormattedCell>
+              <Label color="selected" size="xl" weight="bold">
+                {cellData.label}
+              </Label>
             );
           }}
           columnTemplates={{
-            ACREAGE: ({ data: cellData, FormattedCell }) => {
+            ACREAGE: ({ data: cellData }) => {
               return (
-                <FormattedCell>
-                  <Label color={cellData > 1 ? "warning" : "success"} size="sm">
-                    {`${cellData} acre.`}
-                  </Label>
-                </FormattedCell>
+                <Label color={cellData > 1 ? "warning" : "success"} size="sm">
+                  {`${cellData} acre.`}
+                </Label>
               );
             },
           }}
