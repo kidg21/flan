@@ -11,6 +11,7 @@ import Button from "atoms/Button";
 import Command from "atoms/Command";
 import SelectMenu from "atoms/SelectMenu";
 import Table from "blocks/Table";
+import { Label } from "base/Typography";
 
 // Only columns specified here will be displayed
 const headers = [
@@ -722,6 +723,39 @@ storiesOf("Data Display|Table", module)
             </CardGrid>
           </Flex>
         </Panel>
+      );
+    });
+  })
+
+  .add("Template", () => {
+    return React.createElement(() => {
+      return (
+        <Table
+          headers={headers.slice(1)}
+          rows={data}
+          listId="template"
+          columnWidth={180}
+          headerColor="success40"
+          backgroundColor={({ rowIndex }) => {
+            return rowIndex % 2 ? "neutral40" : "";
+          }}
+          headerTemplate={({ data: cellData }) => {
+            return (
+              <Label color="selected" size="xl" weight="bold">
+                {cellData}
+              </Label>
+            );
+          }}
+          columnTemplates={{
+            ACREAGE: ({ data: cellData }) => {
+              return (
+                <Label color={cellData > 1 ? "warning" : "success"} size="sm">
+                  {`${cellData} acre.`}
+                </Label>
+              );
+            },
+          }}
+        />
       );
     });
   });
