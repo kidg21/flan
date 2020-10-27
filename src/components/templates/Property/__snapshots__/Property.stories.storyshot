@@ -3796,7 +3796,7 @@ exports[` 2`] = `
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 gqOtxk"
+                      className="Table__FormattedCell-gz0dbt-1 bAYfjZ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3839,7 +3839,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 gqOtxk"
+                      className="Table__FormattedCell-gz0dbt-1 bAYfjZ"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3853,7 +3853,18 @@ exports[` 2`] = `
                         }
                       }
                     >
-                      Name
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gicVqz"
+                        color="inverse"
+                        cursor="pointer"
+                        fontSize="1rem"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing=".5px"
+                        onClick={null}
+                      >
+                        Name
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -3906,7 +3917,7 @@ exports[` 2`] = `
                     }
                   >
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3947,7 +3958,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -3975,7 +3986,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4016,7 +4027,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4044,7 +4055,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4085,7 +4096,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4113,7 +4124,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4154,7 +4165,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4182,7 +4193,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4223,7 +4234,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4251,7 +4262,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4292,7 +4303,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4320,7 +4331,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4361,7 +4372,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4389,7 +4400,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4430,7 +4441,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4458,7 +4469,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4499,7 +4510,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4527,7 +4538,7 @@ exports[` 2`] = `
                       </a>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
@@ -4568,7 +4579,7 @@ exports[` 2`] = `
                       </div>
                     </div>
                     <div
-                      className="Table__CellWrapper-gz0dbt-1 enXjBY"
+                      className="Table__FormattedCell-gz0dbt-1 kWfgel"
                       onClick={[Function]}
                       onMouseOut={[Function]}
                       onMouseOver={[Function]}
