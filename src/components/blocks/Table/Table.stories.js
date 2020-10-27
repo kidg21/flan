@@ -739,8 +739,6 @@ storiesOf("Data Display|Table", module)
           backgroundColor={({ rowIndex }) => {
             return rowIndex % 2 ? "neutral40" : "";
           }}
-          highlightedColor="warning20"
-          selectedColor="alert40"
           HeaderTemplate={({ data: cellData }) => {
             return (
               <Label color="selected" size="xl" weight="bold">
