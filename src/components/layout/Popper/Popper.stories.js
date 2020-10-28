@@ -320,6 +320,149 @@ export const LeftRightPortalPositions = () => {
 LeftRightPortalPositions.story = {
   decorators: [CenterDisplayGrid],
 };
+export const CenterPortalPositions = () => {
+  const [visiblePoppers, setVisiblePoppers] = useState({
+    leftCenter: true,
+    topCenter: true,
+    bottomCenter: true,
+    rightCenter: true,
+  });
+  return (
+    <Grid columns="2">
+      <Popper
+        id="popper-portal-position-leftCenter"
+        usePortal
+        anchor={(
+          <Button
+            id="popper-button-leftCenter"
+            label="Left Center"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, leftCenter: !poppers.leftCenter };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.leftCenter}
+        position="leftCenter"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, leftCenter: false };
+          });
+        }}
+        closeOnClickAway={false}
+      >
+        <PBoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </PBoxMock>
+      </Popper>
+      <Popper
+        id="popper-portal-position-topCenter"
+        usePortal
+        anchor={(
+          <Button
+            id="popper-button-topCenter"
+            label="Top Center"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, topCenter: !poppers.topCenter };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.topCenter}
+        position="topCenter"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, topCenter: false };
+          });
+        }}
+        closeOnClickAway={false}
+      >
+        <PBoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </PBoxMock>
+      </Popper>
+      <Popper
+        id="popper-portal-position-bottomCenter"
+        usePortal
+        anchor={(
+          <Button
+            id="popper-button-bottomCenter"
+            label="Bottom Center"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, bottomCenter: !poppers.bottomCenter };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.bottomCenter}
+        position="bottomCenter"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, bottomCenter: false };
+          });
+        }}
+        closeOnClickAway={false}
+      >
+        <PBoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </PBoxMock>
+      </Popper>
+      <Popper
+        id="popper-portal-position-rightCenter"
+        usePortal
+        anchor={(
+          <Button
+            id="popper-button-rightCenter"
+            label="Right Center"
+            isSolid
+            onClick={() => {
+              setVisiblePoppers((poppers) => {
+                return { ...poppers, rightCenter: !poppers.rightCenter };
+              });
+            }}
+          />
+        )}
+        visible={visiblePoppers.rightCenter}
+        position="rightCenter"
+        onClose={() => {
+          setVisiblePoppers((poppers) => {
+            return { ...poppers, rightCenter: false };
+          });
+        }}
+        closeOnClickAway={false}
+      >
+        <PBoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </PBoxMock>
+      </Popper>
+    </Grid>
+  );
+};
+CenterPortalPositions.story = {
+  decorators: [CenterDisplayGrid],
+};
 
 export const FlexPositions = () => {
   const [visiblePoppers, setVisiblePoppers] = useState({

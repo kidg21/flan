@@ -17,6 +17,19 @@ import { formatPixelValue } from "utils/format";
 
 const popperZIndex = 500;
 
+const Location = styled.div`
+  display: flex;
+  position: ${(props) => {
+    return props.position || "absolute";
+  }};
+  top: ${(props) => {
+    return formatPixelValue(props.top);
+  }};
+  left: ${(props) => {
+    return formatPixelValue(props.left);
+  }}
+`;
+
 const AnchorWrapper = styled.div`
   display: flex;
   flex: auto;
@@ -119,6 +132,26 @@ const PortalPopper = ({
     const resultStyle = {};
     // portal, position is based on anchorRef's position/measurements
     switch (position.toLowerCase()) {
+      case "leftcenter":
+        resultStyle.top = anchorBounds.top + (anchorBounds.height / 2);
+        resultStyle.left = anchorBounds.left;
+        resultStyle.transform = "translate(-100%, -50%)";
+        break;
+      case "rightcenter":
+        resultStyle.top = anchorBounds.top + (anchorBounds.height / 2);
+        resultStyle.left = anchorBounds.right;
+        resultStyle.transform = "translate(0%, -50%)";
+        break;
+      case "bottomcenter":
+        resultStyle.top = anchorBounds.bottom;
+        resultStyle.left = anchorBounds.left + (anchorBounds.width / 2);
+        resultStyle.transform = "translate(-50%)";
+        break;
+      case "topcenter":
+        resultStyle.top = anchorBounds.top;
+        resultStyle.left = anchorBounds.left + (anchorBounds.width / 2);
+        resultStyle.transform = "translate(-50%, -100%)";
+        break;
       case "leftdown":
         resultStyle.top = anchorBounds.top;
         resultStyle.left = anchorBounds.left;
@@ -224,6 +257,25 @@ const absolutePositionStyle = {
   bottomright: {
     top: "100%",
   },
+  leftcenter: {
+    top: "50%",
+    transform: "translate(-100%, -50%)",
+  },
+  topcenter: {
+    top: "0",
+    left: "50%",
+    transform: "translate(-50%, -100%)",
+  },
+  bottomcenter: {
+    top: "100%",
+    left: "50%",
+    transform: "translate(-50%)",
+  },
+  rightcenter: {
+    top: "50%",
+    left: "100%",
+    transform: "translate(0%, -50%)",
+  },
 };
 
 const NonPortalPopper = ({
@@ -260,6 +312,7 @@ const NonPortalPopper = ({
 const Popper = (props) => {
   const {
     id,
+    location,
     usePortal,
     closeOnScroll,
     visible,
@@ -289,9 +342,14 @@ const Popper = (props) => {
     };
   }, [_closeOnScroll, visible, onClose]);
 
-  return usePortal
+  const popper = usePortal
     ? <PortalPopper {...props} id={uId} zIndex={_zIndex} />
     : <NonPortalPopper {...props} id={uId} zIndex={_zIndex} />;
+
+  if (location) {
+    return <Location {...location}>{popper}</Location>;
+  }
+  return popper;
 };
 
 Popper.defaultProps = {
@@ -303,6 +361,7 @@ Popper.defaultProps = {
   id: "",
   isFlex: false,
   isTracking: true,
+  location: null,
   onClose: null,
   position: "bottomRight",
   trackingInterval: 500,
@@ -332,10 +391,14 @@ Popper.propTypes = {
   isFlex: PropTypes.bool,
   /** track location of anchor element to update popper location when using portal */
   isTracking: PropTypes.bool,
+  /** location of popper { top, left } */
+  location: PropTypes.shape({
+    position: PropTypes.string,
+    top: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    left: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  }),
   /** onClose callback when popper closes */
   onClose: PropTypes.func,
-  /** places popper content in a portal */
-  usePortal: PropTypes.bool,
   /** open position relative to anchor element */
   position: PropTypes.oneOf([
     "bottomLeft",
@@ -350,6 +413,8 @@ Popper.propTypes = {
   ]),
   /** interval time in ms for portal popper to track location */
   trackingInterval: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  /** places popper content in a portal */
+  usePortal: PropTypes.bool,
   /** open/close state of popper */
   visible: PropTypes.bool,
   /** to specify static zIndex of pop-out wrapper, defaults to 500 */

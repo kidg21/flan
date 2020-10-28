@@ -8,6 +8,7 @@ import Card from "elements/Card";
 import Button, { ButtonGroup } from "atoms/Button";
 import Grid from "layout/Grid";
 import List, { ListItem } from "blocks/List";
+import Icon from "atoms/Icon";
 
 <Meta title="Utilities/Popper" component={Popper} />
 
@@ -226,6 +227,93 @@ to position `Popper` properly so it doesn't get cut off. Supported positions inc
   </Story>
 </Preview>
 
+<Preview>
+  <Story name="Center Positions" decorators={[CenterDecorator, Container, Padding, CenterDisplayGrid]}>
+    <Grid columns="2">
+      <Popper
+        id="popper-position-leftCenter"
+        anchor={(
+          <Button
+            id="popper-button-leftCenter"
+            label="Left Center"
+            isSolid
+          />
+        )}
+        visible
+        position="leftCenter"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-topCenter"
+        anchor={(
+          <Button
+            id="popper-button-topCenter"
+            label="Top Center"
+            isSolid
+          />
+        )}
+        visible
+        position="topCenter"
+     >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-bottomCenter"
+        anchor={(
+          <Button
+            id="popper-button-bottomCenter"
+            label="Bottom Center"
+            isSolid
+          />
+        )}
+        visible
+        position="bottomCenter"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-rightCenter"
+        anchor={(
+          <Button
+            id="popper-button-rightCenter"
+            label="Right Center"
+            isSolid
+          />
+        )}
+        visible
+        position="rightCenter"
+      >
+       <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+    </Grid>
+  </Story>
+</Preview>
+
 ### Anchor
 
 The anchor element refers to the component the popper will open around. Use the
@@ -286,6 +374,54 @@ The anchor element refers to the component the popper will open around. Use the
     </Popper>
   </Story>
 </Preview>
+
+### Location
+
+Set the `location` prop when you want to position the popper at a specific pixel location. For example, we want to place a tooltip
+at the screen location where the mouse was clicked.
+
+<Preview>
+  <Story name="Location" decorators={[Container, Padding]}>
+    <div style={{ position: "relative" }}>
+      <Popper
+        id="popper-location-original"
+        visible
+        location={{ top: "0", left: "0" }}
+        anchor={
+          <Icon icon="home" />
+        }
+      >
+        <BoxMock>
+          <Card
+            title="Original Location"
+            description="top - 0px, left - 0px"
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-location-updated"
+        visible
+        location={{ top: "100", left: "100" }}
+        anchor={
+          <Icon icon="location" variant="success" />
+        }
+      >
+        <BoxMock>
+          <Card
+            title="Updated Location"
+            description="top - 100px, left - 100px"
+          />
+        </BoxMock>
+      </Popper>
+    </div>
+  </Story>
+</Preview>
+
+| Property Key | Type     | Description |
+|-----------|----------|-------------|
+| position  | string   | css style position, i.e. "absolute" (default) or "fixed"
+| top       | string or number | vertical pixel value position for top edge
+| left      | string or number | horizontal pixel value position for left edge
 
 ### Portal
 
