@@ -73,6 +73,39 @@ const flipX = "translateX(-100%)";
 const flipY = "translateY(-100%)";
 const flipXY = "translate(-100%, -100%)";
 
+/**
+ * Helper function to append the offset translation
+ * If string offset, pass in as is. If number offset, append 'px'.
+ * return formats:
+ *  `${transform for position} ${transform for offset}`
+ *  `${transform for position}`
+ *  `${transform for offset}`
+ * @param {string} position popper position (i.e. "topLeft")
+ * @param {string} baseTransform first translation to place popper in correct position
+ * @param {string | number} offset gap value between anchor and content
+ */
+const appendOffsetTransform = (position, baseTransform = "", offset) => {
+  let transform = baseTransform;
+  // if offset is zero, "", not defined, no extra offset translation
+  if (offset) {
+    let _offset = offset;
+    if (typeof _offset === "number") {
+      // assume they want to pass in pixel value
+      _offset = `${_offset.toString()}px`;
+    }
+    if (position.startsWith("left")) {
+      transform = `${baseTransform} translateX(-${_offset})`;
+    } else if (position.startsWith("right")) {
+      transform = `${baseTransform} translateX(${_offset})`;
+    } else if (position.startsWith("top")) {
+      transform = `${baseTransform} translateY(-${_offset})`;
+    } else if (position.startsWith("bottom")) {
+      transform = `${baseTransform} translateY(${_offset})`;
+    }
+  }
+  return transform;
+};
+
 const PortalPopper = ({
   anchor,
   anchorRef,
@@ -80,6 +113,7 @@ const PortalPopper = ({
   closeOnClickAway,
   id,
   isFlex,
+  offset,
   onClose,
   position,
   visible,
@@ -192,8 +226,10 @@ const PortalPopper = ({
         resultStyle.left = anchorBounds.left;
         break;
     }
+    // {translate for position} {translate for offset}
+    resultStyle.transform = appendOffsetTransform(position, resultStyle.transform, offset);
     return resultStyle;
-  }, [anchorBounds, position]);
+  }, [anchorBounds, position, offset]);
 
   const anchorElement = anchorRef ? anchor : (
     <AnchorWrapper ref={_anchorRef} isFlex={isFlex}>
@@ -286,6 +322,7 @@ const NonPortalPopper = ({
   isFlex,
   position,
   visible,
+  offset,
   onClose,
   zIndex,
 }) => {
@@ -293,6 +330,7 @@ const NonPortalPopper = ({
   useOnClickOutside(onClose, (visible && closeOnClickAway), popperRef);
   const validPosition = absolutePositionStyle.hasOwnProperty(position.toLowerCase()) ? position : "bottomRight";
   const positionStyle = absolutePositionStyle[validPosition.toLowerCase()];
+
   return (
     <NonPortalWrapper id={id} isFlex={isFlex} ref={popperRef}>
       {anchor}
@@ -301,6 +339,11 @@ const NonPortalPopper = ({
           id={`popper-wrapper${id}`}
           zIndex={zIndex}
           {...positionStyle}
+          transform={appendOffsetTransform(
+            validPosition.toLowerCase(),
+            positionStyle.transform,
+            offset,
+          )}
         >
           {children}
         </PopperWrapper>
@@ -362,6 +405,7 @@ Popper.defaultProps = {
   isFlex: false,
   isTracking: true,
   location: null,
+  offset: null,
   onClose: null,
   position: "bottomRight",
   trackingInterval: 500,
@@ -397,6 +441,8 @@ Popper.propTypes = {
     top: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     left: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   }),
+  /** gap between anchor and content (i.e. "5px", 5, "2rem") */
+  offset: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** onClose callback when popper closes */
   onClose: PropTypes.func,
   /** open position relative to anchor element */

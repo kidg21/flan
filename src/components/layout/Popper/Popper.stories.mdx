@@ -375,6 +375,99 @@ The anchor element refers to the component the popper will open around. Use the
   </Story>
 </Preview>
 
+### Offset
+
+Use the `offset` to specify the gap value between the anchor element and the content.
+
+<Preview>
+  <Story name="Offset" decorators={[Container, Padding]}>
+    <ButtonGroup columns={4}>
+      <Popper
+        id="popper-normal"
+        anchor={(
+          <Button
+            id="button-normal"
+            label="No Offset"
+          />
+        )}
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Normal Popper"
+            description="Offset prop is not passed in."
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-offset-pixel-string"
+        anchor={(
+          <Button
+            id="button-offset-pixel-string"
+            label="Pixel Offset"
+            isSolid
+          />
+        )}
+        offset="20px"
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="'20px' Offset Popper"
+            description="Passed in string value of '20px' to Popper."
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-offset-number"
+        anchor={(
+          <Button
+            id="button-offset-number"
+            label="Number Offset"
+            isSolid
+          />
+        )}
+        visible
+        offset={20}
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="'20' Offset Popper"
+            description="Passed in number value of '20' to Popper. Assumes pixel value."
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-offset-rem"
+        anchor={(
+          <Button
+            id="button-offset-rem"
+            label="Rem Popper"
+            isSolid
+          />
+        )}
+        offset="3rem"
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="'3rem' Offset Popper"
+            description="Passed in string value of '3rem' to Popper. Allows for any string value supported by css translate property."
+          />
+        </BoxMock>
+      </Popper>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
 ### Location
 
 Set the `location` prop when you want to position the popper at a specific pixel location. For example, we want to place a tooltip
