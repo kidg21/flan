@@ -260,6 +260,8 @@ function ListItem({
   isSelected,
   onClick,
   onClickItem,
+  onMouseLeave,
+  onMouseEnter,
   post,
   pre,
   tabIndex,
@@ -312,6 +314,8 @@ function ListItem({
       tabIndex={disabled ? "-1" : tabIndex}
       className={className}
       onClick={typeof onClickItem === "function" ? handleOnClickItem : null} // to target whole list item
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       mouseEvents={pointerEvents}
     >
       <DisabledContext.Provider value={disabled}>
@@ -344,6 +348,8 @@ ListItem.propTypes = {
   isSelected: PropTypes.bool,
   onClick: PropTypes.func,
   onClickItem: PropTypes.func,
+  onMouseEnter: PropTypes.func,
+  onMouseLeave: PropTypes.func,
   textAlign: PropTypes.oneOf(["left", "right", "center"]),
   title: PropTypes.node,
   post: PropTypes.oneOfType([
@@ -391,6 +397,8 @@ ListItem.defaultProps = {
   isSelected: false,
   onClick: null,
   onClickItem: null,
+  onMouseEnter: null,
+  onMouseLeave: null,
   textAlign: "left",
   title: null,
   post: null,

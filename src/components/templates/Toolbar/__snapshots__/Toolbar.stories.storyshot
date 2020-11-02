@@ -140,7 +140,7 @@ exports[` 1`] = `
                 </section>
               </button>
               <div
-                className="Popper__NonPortalWrapper-sc-1t9125t-1 iuayoB"
+                className="Popper__NonPortalWrapper-sc-1t9125t-2 bTsOaq"
                 id="storyshots_149"
               >
                 <button
@@ -193,8 +193,9 @@ exports[` 1`] = `
                   </section>
                 </button>
                 <div
-                  className="Popper__PopperWrapper-sc-1t9125t-2 guKrzI"
+                  className="Popper__PopperWrapper-sc-1t9125t-3 iclneh"
                   id="popper-wrapperstoryshots_149"
+                  transform=""
                 >
                   <div
                     className="CardWrapper__StyledCardWrapper-meln7c-0 heNEej Card__StyledCardWrapper-sc-1g3s676-3"
@@ -304,7 +305,7 @@ exports[` 1`] = `
                 </div>
               </div>
               <div
-                className="Popper__NonPortalWrapper-sc-1t9125t-1 iuayoB"
+                className="Popper__NonPortalWrapper-sc-1t9125t-2 bTsOaq"
                 id="storyshots_151"
               >
                 <button
@@ -357,8 +358,9 @@ exports[` 1`] = `
                   </section>
                 </button>
                 <div
-                  className="Popper__PopperWrapper-sc-1t9125t-2 egzBEF"
+                  className="Popper__PopperWrapper-sc-1t9125t-3 bAjehA"
                   id="popper-wrapperstoryshots_151"
+                  transform=""
                 >
                   <div
                     className="CardWrapper__StyledCardWrapper-meln7c-0 heNEej Card__StyledCardWrapper-sc-1g3s676-3"
@@ -787,7 +789,7 @@ exports[` 2`] = `
                 </section>
               </button>
               <div
-                className="Popper__NonPortalWrapper-sc-1t9125t-1 iuayoB"
+                className="Popper__NonPortalWrapper-sc-1t9125t-2 bTsOaq"
                 id="popper-standard"
               >
                 <button
@@ -840,12 +842,15 @@ exports[` 2`] = `
                   </section>
                 </button>
                 <div
-                  className="Popper__PopperWrapper-sc-1t9125t-2 guKrzI"
+                  className="Popper__PopperWrapper-sc-1t9125t-3 iclneh"
                   id="popper-wrapperpopper-standard"
+                  transform=""
                 >
                   <div
                     className="Container__Wrapper-sc-1i4fzzd-0 cZDKiU"
                     height="20rem"
+                    onMouseEnter={null}
+                    onMouseLeave={null}
                     width={null}
                   >
                     <div

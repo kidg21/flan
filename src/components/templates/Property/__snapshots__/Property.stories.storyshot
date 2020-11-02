@@ -224,7 +224,7 @@ exports[` 1`] = `
               className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
             >
               <div
-                className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                className="Popper__NonPortalWrapper-sc-1t9125t-2 fPfpTJ"
                 id="menu-popper-Help Menu"
               >
                 <button
@@ -342,6 +342,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -370,6 +372,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -398,6 +402,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -426,6 +432,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -477,6 +485,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -505,6 +515,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -533,6 +545,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -561,6 +575,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -612,6 +628,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -640,6 +658,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -668,6 +688,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -696,6 +718,8 @@ exports[` 1`] = `
             href={null}
             id={null}
             onClick={null}
+            onMouseEnter={null}
+            onMouseLeave={null}
             tabIndex="0"
           >
             <div
@@ -1871,7 +1895,7 @@ exports[` 2`] = `
             className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
           >
             <div
-              className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+              className="Popper__NonPortalWrapper-sc-1t9125t-2 fPfpTJ"
               id="menu-popper-Help Menu"
             >
               <button
@@ -1973,6 +1997,8 @@ exports[` 2`] = `
           href={null}
           id="Projects"
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -2001,6 +2027,8 @@ exports[` 2`] = `
           href={null}
           id="Properties"
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -2029,6 +2057,8 @@ exports[` 2`] = `
           href={null}
           id="History"
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -2057,6 +2087,8 @@ exports[` 2`] = `
           href={null}
           id="Data"
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -2140,7 +2172,7 @@ exports[` 2`] = `
                     className="Bar__Slot-icfo76-1 jyMGGC"
                   >
                     <div
-                      className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                      className="Popper__NonPortalWrapper-sc-1t9125t-2 fPfpTJ"
                       id="menu-popper-storyshots_132"
                     >
                       <a
@@ -2436,7 +2468,7 @@ exports[` 2`] = `
                           className="Inline__InlineItem-sc-1lksbyc-1 fioCid"
                         >
                           <div
-                            className="Popper__AnchorWrapper-sc-1t9125t-0 kTYJIk"
+                            className="Popper__AnchorWrapper-sc-1t9125t-1 dShRmd"
                           >
                             <button
                               className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
@@ -2961,7 +2993,7 @@ exports[` 2`] = `
                       </section>
                     </button>
                     <div
-                      className="Popper__AnchorWrapper-sc-1t9125t-0 kTYJIk"
+                      className="Popper__AnchorWrapper-sc-1t9125t-1 dShRmd"
                     >
                       <button
                         className="Button__StyledButton-sc-1v7sls2-0 eEtvvx"
@@ -3629,7 +3661,7 @@ exports[` 2`] = `
                   className="Inline__InlineItem-sc-1lksbyc-1 ewhFne"
                 >
                   <div
-                    className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                    className="Popper__NonPortalWrapper-sc-1t9125t-2 fPfpTJ"
                     id="menu-popper-storyshots_139"
                   >
                     <a

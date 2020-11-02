@@ -113,6 +113,8 @@ const Container = React.forwardRef(({
   maxHeight,
   maxWidth,
   onClick,
+  onMouseEnter,
+  onMouseLeave,
   padding,
   visible,
   width,
@@ -126,6 +128,8 @@ const Container = React.forwardRef(({
       setPadding={setPadding}
       visible={visible}
       width={width}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       <BoxContainer
         borderRadius={borderRadius}
@@ -155,6 +159,8 @@ Container.propTypes = {
   maxHeight: PropTypes.string,
   maxWidth: PropTypes.string,
   onClick: PropTypes.func,
+  onMouseEnter: PropTypes.func,
+  onMouseLeave: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   visible: PropTypes.bool,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -171,6 +177,8 @@ Container.defaultProps = {
   maxHeight: null,
   maxWidth: null,
   onClick: undefined,
+  onMouseEnter: null,
+  onMouseLeave: null,
   padding: "0",
   visible: true,
   width: null,

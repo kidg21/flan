@@ -599,6 +599,8 @@ exports[` 3`] = `
       <div
         className="Container__Wrapper-sc-1i4fzzd-0 bQxVfG"
         height={null}
+        onMouseEnter={null}
+        onMouseLeave={null}
         width="30rem"
       >
         <div
@@ -616,6 +618,8 @@ exports[` 3`] = `
               href={null}
               id={null}
               onClick={null}
+              onMouseEnter={null}
+              onMouseLeave={null}
               tabIndex="0"
             >
               <div
@@ -677,6 +681,8 @@ exports[` 3`] = `
               href={null}
               id={null}
               onClick={null}
+              onMouseEnter={null}
+              onMouseLeave={null}
               tabIndex="0"
             >
               <div
@@ -738,6 +744,8 @@ exports[` 3`] = `
               href={null}
               id={null}
               onClick={null}
+              onMouseEnter={null}
+              onMouseLeave={null}
               tabIndex="0"
             >
               <div
@@ -799,6 +807,8 @@ exports[` 3`] = `
               href={null}
               id={null}
               onClick={null}
+              onMouseEnter={null}
+              onMouseLeave={null}
               tabIndex="0"
             >
               <div
@@ -860,6 +870,8 @@ exports[` 3`] = `
               href={null}
               id={null}
               onClick={null}
+              onMouseEnter={null}
+              onMouseLeave={null}
               tabIndex="0"
             >
               <div
@@ -921,6 +933,8 @@ exports[` 3`] = `
               href={null}
               id={null}
               onClick={null}
+              onMouseEnter={null}
+              onMouseLeave={null}
               tabIndex="0"
             >
               <div
@@ -982,6 +996,8 @@ exports[` 3`] = `
               href={null}
               id={null}
               onClick={null}
+              onMouseEnter={null}
+              onMouseLeave={null}
               tabIndex="0"
             >
               <div
@@ -1043,6 +1059,8 @@ exports[` 3`] = `
               href={null}
               id={null}
               onClick={null}
+              onMouseEnter={null}
+              onMouseLeave={null}
               tabIndex="0"
             >
               <div
