@@ -447,12 +447,16 @@ Popper.propTypes = {
   onClose: PropTypes.func,
   /** open position relative to anchor element */
   position: PropTypes.oneOf([
+    "bottomCenter",
     "bottomLeft",
     "bottomRight",
+    "leftCenter",
     "leftDown",
     "leftUp",
+    "rightCenter",
     "rightDown",
     "rightUp",
+    "topCenter",
     "topLeft",
     "topRight",
     "",

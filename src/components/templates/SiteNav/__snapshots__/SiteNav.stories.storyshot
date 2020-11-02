@@ -134,6 +134,8 @@ exports[` 1`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -162,6 +164,8 @@ exports[` 1`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -190,6 +194,8 @@ exports[` 1`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -218,6 +224,8 @@ exports[` 1`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -246,6 +254,8 @@ exports[` 1`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -274,6 +284,8 @@ exports[` 1`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -302,6 +314,8 @@ exports[` 1`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -1000,6 +1014,8 @@ exports[` 2`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -1028,6 +1044,8 @@ exports[` 2`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -1056,6 +1074,8 @@ exports[` 2`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -1084,6 +1104,8 @@ exports[` 2`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -1112,6 +1134,8 @@ exports[` 2`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -1140,6 +1164,8 @@ exports[` 2`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -1168,6 +1194,8 @@ exports[` 2`] = `
           href={null}
           id={null}
           onClick={null}
+          onMouseEnter={null}
+          onMouseLeave={null}
           tabIndex="0"
         >
           <div
@@ -1304,7 +1332,7 @@ exports[` 2`] = `
               className="Bar__Slot-icfo76-1 gFmZhG"
             >
               <div
-                className="Popper__NonPortalWrapper-sc-1t9125t-1 ifnCnq"
+                className="Popper__NonPortalWrapper-sc-1t9125t-2 fPfpTJ"
                 id="menu-popper-storyshots_146-Menu"
               >
                 <button
