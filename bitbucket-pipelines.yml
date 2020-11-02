@@ -2,8 +2,8 @@
 # Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
 # Only use spaces to indent your .yml configuration.
 # -----
-# Use Node 8.x.
-image: node:carbon
+# Use Node 12.14.0
+image: node:12.14.0
 
 clone:
   # Don't clone history when pulling from Git; just get the latest version of the file.
