@@ -2,8 +2,8 @@
 # Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
 # Only use spaces to indent your .yml configuration.
 # -----
-# Use Node 8.x.
-image: node:carbon
+# Use Node 12.14.0
+image: node:12.14.0
 
 clone:
   # Don't clone history when pulling from Git; just get the latest version of the file.
@@ -68,8 +68,6 @@ pipelines:
             # once SB merges in a fix we can remove this line as it will no longer be doing anything (all it does is replace /esm/ with /cjs/ in
             # the syntaxhighlighter.js file that is causing issues).
             # - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
-            # Compare Storyshots
-            - npm run test-storyshots
             # Run tests and push coverage to Codacy
             - set -o pipefail
             # Next line fails immediately if any command fails
@@ -111,8 +109,6 @@ pipelines:
             # once SB merges in a fix we can remove this line as it will no longer be doing anything (all it does is replace /esm/ with /cjs/ in
             # the syntaxhighlighter.js file that is causing issues).
             # - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
-            # Compare Storyshots
-            - npm run test-storyshots
             # Run tests and push coverage to Codacy
             - set -o pipefail
             # Next line fails immediately if any command fails
@@ -156,8 +152,6 @@ pipelines:
             # once SB merges in a fix we can remove this line as it will no longer be doing anything (all it does is replace /esm/ with /cjs/ in
             # the syntaxhighlighter.js file that is causing issues).
             # - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
-            # Compare Storyshots
-            - npm run test-storyshots
             # Run tests and push coverage to Codacy
             - set -o pipefail
             # Next line fails immediately if any command fails
