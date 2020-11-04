@@ -1,43 +1,50 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
+import { useId } from "utils/hooks";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar";
-import { Piece } from "layout/Card";
-import Title from "base/Typography";
+import Bar from "layout/Bar";
+import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
+// TODO: (if necessary) Create a generic 'header' component as a base for current multiple Panel Header configurations
 function NavigationPanelHeader({
   id, title, onClick, menuData,
 }) {
+  const uId = useId(id);
   return (
-    <Piece id={id}>
-      <Bar
-        contentAlign="center"
-        padding="3x"
-        left={<Icon icon="left" size="lg" type="standard" onClick={onClick} />}
-        center={<Title text={title} size="large" />}
-        right={<Menu data={menuData} position="bottomLeft" type="edit" />}
-      />
-    </Piece>
+    <Bar
+      id={uId}
+      padding="2x"
+      contentAlign="center"
+      left={{
+        content: <Icon icon="left" onClick={onClick} />,
+        width: "min-content",
+      }}
+      center={{
+        content: <Title size="lg" text={title}  />,
+        align: "left",
+      }}
+      right={<Menu id={`${uId}-Menu`} data={menuData} position="bottomLeft" />}
+    />
   );
 }
 
 NavigationPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.any.isRequired,
+  menuData: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+  })),
   onClick: PropTypes.func,
-  menuData: PropTypes.node,
+  title: PropTypes.node.isRequired,
 };
 
 NavigationPanelHeader.defaultProps = {
   id: null,
-  onClick: null,
   menuData: null,
+  onClick: null,
 };
 
 export default NavigationPanelHeader;

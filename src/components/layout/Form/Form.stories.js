@@ -1,13 +1,8 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import Panel, { PanelSection } from "layout/Panel";
-import Form, { Section } from "layout/Form";
+import { FullScreen } from "helpers/Display";
+import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
@@ -96,58 +91,57 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-storiesOf("Layout|Form", module).add("Form Layout", () => {
-  return (
-    <Panel>
-      <PanelSection body>
-        <Form
-          title="Form Header"
-          subtitle="This is the subtitle"
-          description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
-        >
-          <Section title="Group 1">
-            <TextInput
-              label="First Name"
-              placeholder="John"
-              helpText="The one that your parents gave you"
-            />
-            <TextInput
-              label="Last Name"
-              placeholder="Williams"
-              helpText="The one that comes after.."
-              disabled
-            />
-          </Section>
-          <Section title="Group 2">
-            <CheckboxGroup
-              id="Section Name"
-              label="Checkbox Group Label"
-              data={shortBoxes}
-              helpText="Hang in there, buddy, I'm here to help!"
-              columns="2"
-            />
-            <CheckboxGroup data={longBoxes} columns="1" />
-            <SelectMenu
-              multiSelect
-              label="Multi-Select"
-              placeholder="Choose One Or More..."
-              helpText="Help text for the SelectMenu component"
-              options={options}
-              disabled
-            />
-          </Section>
-          <Section title="Group 3">
-            <RadioGroup
-              id="Section Name"
-              label="Radio Group Label"
-              data={shortRadios}
-              helpText="Hang in there, buddy, I'm here to help!"
-              columns="2"
-            />
-            <RadioGroup data={longRadios} columns="1" />
-          </Section>
-        </Form>
-      </PanelSection>
-    </Panel>
-  );
-});
+storiesOf("Layout|Form", module)
+  .addDecorator(FullScreen)
+  .add("Form Layout", () => {
+    return (
+      <Form
+        id="Form"
+        title="Form Header"
+        subtitle="This is the subtitle"
+        description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
+      >
+        <FormSection title="Group 1">
+          <TextInput
+            id="firstName"
+            label="First Name"
+            placeholder="John"
+            helpText="The one that your parents gave you"
+          />
+          <TextInput
+            id="lastName"
+            label="Last Name"
+            placeholder="Williams"
+            helpText="The one that comes after.."
+          />
+        </FormSection>
+        <FormSection title="Group 2">
+          <CheckboxGroup
+            id="Section Name"
+            label="Checkbox Group Label"
+            data={shortBoxes}
+            helpText="Hang in there, buddy, I'm here to help!"
+            columns="2"
+          />
+          <CheckboxGroup data={longBoxes} columns="1" />
+          <SelectMenu
+            multiSelect
+            label="Multi-Select"
+            placeholder="Choose One Or More..."
+            helpText="Help text for the SelectMenu component"
+            options={options}
+          />
+        </FormSection>
+        <FormSection title="Group 3">
+          <RadioGroup
+            id="Section Name"
+            label="Radio Group Label"
+            data={shortRadios}
+            helpText="Hang in there, buddy, I'm here to help!"
+            columns="2"
+          />
+          <RadioGroup data={longRadios} columns="1" />
+        </FormSection>
+      </Form>
+    );
+  });

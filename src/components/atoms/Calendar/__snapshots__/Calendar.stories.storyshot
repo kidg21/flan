@@ -1,0 +1,1298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  id={null}
+  method={null}
+  onSubmit={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="date"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        id="date_date_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Date Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+          cols=""
+          disabled={false}
+          id="date_date"
+          list={null}
+          max="2999-12-31"
+          min="1019-01-01"
+          name="date_date"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="date"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="time"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        id="time_time_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Time Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+          cols=""
+          disabled={false}
+          id="time_time"
+          list={null}
+          name="time_time"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="time"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="datetime"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+          id="datetime_date_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+            cols=""
+            disabled={false}
+            id="datetime_date"
+            list={null}
+            max="2999-12-31"
+            min="1019-01-01"
+            name="datetime_date"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="date"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+          id="datetime_time_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+            cols=""
+            disabled={false}
+            id="datetime_time"
+            list={null}
+            name="datetime_time"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="time"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+      </section>
+    </section>
+  </section>
+</form>
+`;
+
+exports[` 2`] = `
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  id={null}
+  method={null}
+  onSubmit={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="dateDefault"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        id="dateDefault_date_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Date Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+          cols=""
+          disabled={false}
+          id="dateDefault_date"
+          list={null}
+          max="2999-12-31"
+          min="1019-01-01"
+          name="dateDefault_date"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="date"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="dateRequired"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        id="dateRequired_date_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Date Input Label (required)
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+          cols=""
+          disabled={false}
+          id="dateRequired_date"
+          list={null}
+          max="2999-12-31"
+          min="1019-01-01"
+          name="dateRequired_date"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="date"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="dateDisabled"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ"
+        id="dateDisabled_date_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 gvtvFM"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Date Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 bOPpQf"
+          cols=""
+          disabled={true}
+          id="dateDisabled_date"
+          list={null}
+          max="2999-12-31"
+          min="1019-01-01"
+          name="dateDisabled_date"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="date"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="dateError"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
+        id="dateError_date_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 fuhXsK"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Date Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 joxTLe"
+          cols=""
+          disabled={false}
+          id="dateError_date"
+          list={null}
+          max="2999-12-31"
+          min="1019-01-01"
+          name="dateError_date"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="date"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="dateError"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        id="dateError_date_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Date Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+          cols=""
+          disabled={false}
+          id="dateError_date"
+          list={null}
+          max="2999-12-31"
+          min="1019-01-01"
+          name="dateError_date"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="date"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+        <section
+          className="TextInput__MessageContainer-sc-1fep8p8-1 hnFtxk"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            This is a warning
+          </p>
+        </section>
+      </section>
+    </section>
+  </section>
+</form>
+`;
+
+exports[` 3`] = `
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  id={null}
+  method={null}
+  onSubmit={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="timeDefault"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        id="timeDefault_time_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Time Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+          cols=""
+          disabled={false}
+          id="timeDefault_time"
+          list={null}
+          name="timeDefault_time"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="time"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="timeRequired"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+        id="timeRequired_time_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Time Input Label (required)
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+          cols=""
+          disabled={false}
+          id="timeRequired_time"
+          list={null}
+          name="timeRequired_time"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="time"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="timeDisabled"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ"
+        id="timeDisabled_time_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 gvtvFM"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Time Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 bOPpQf"
+          cols=""
+          disabled={true}
+          id="timeDisabled_time"
+          list={null}
+          name="timeDisabled_time"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="time"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="timeError"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
+        id="timeError_time_container"
+        rows={null}
+      >
+        <section
+          className="TextInput__LabelWrapper-sc-1fep8p8-2 fuhXsK"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Time Input Label
+          </label>
+        </section>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-3 joxTLe"
+          cols=""
+          disabled={false}
+          id="timeError_time"
+          list={null}
+          name="timeError_time"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          onKeyUp={null}
+          pattern={null}
+          placeholder={null}
+          rows=""
+          type="time"
+        />
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+          fontSize="0.75rem"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.4px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+        <section
+          className="TextInput__MessageContainer-sc-1fep8p8-1 hnFtxk"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Don't sweat it...we can fix this!
+          </p>
+        </section>
+      </section>
+    </section>
+  </section>
+</form>
+`;
+
+exports[` 4`] = `
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  id={null}
+  method={null}
+  onSubmit={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="datetimeDefault"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+          id="datetimeDefault_date_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+            cols=""
+            disabled={false}
+            id="datetimeDefault_date"
+            list={null}
+            max="2999-12-31"
+            min="1019-01-01"
+            name="datetimeDefault_date"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="date"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+          id="datetimeDefault_time_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+            cols=""
+            disabled={false}
+            id="datetimeDefault_time"
+            list={null}
+            name="datetimeDefault_time"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="time"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="dateTimeRequired"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+          id="dateTimeRequired_date_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label (required)
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+            cols=""
+            disabled={false}
+            id="dateTimeRequired_date"
+            list={null}
+            max="2999-12-31"
+            min="1019-01-01"
+            name="dateTimeRequired_date"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="date"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 cXvfWM"
+          id="dateTimeRequired_time_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 jCmujy"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label (required)
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 eFFcpr"
+            cols=""
+            disabled={false}
+            id="dateTimeRequired_time"
+            list={null}
+            name="dateTimeRequired_time"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="time"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="datetimeDisabled"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ"
+          id="datetimeDisabled_date_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 gvtvFM"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 bOPpQf"
+            cols=""
+            disabled={true}
+            id="datetimeDisabled_date"
+            list={null}
+            max="2999-12-31"
+            min="1019-01-01"
+            name="datetimeDisabled_date"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="date"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 fHxLCQ"
+          id="datetimeDisabled_time_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 gvtvFM"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 bOPpQf"
+            cols=""
+            disabled={true}
+            id="datetimeDisabled_time"
+            list={null}
+            name="datetimeDisabled_time"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="time"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs Calendar__CalendarContainer-sbbnzq-0 haZcvl"
+      id="dateTimeError"
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
+          id="dateTimeError_date_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 fuhXsK"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 joxTLe"
+            cols=""
+            disabled={false}
+            id="dateTimeError_date"
+            list={null}
+            max="2999-12-31"
+            min="1019-01-01"
+            name="dateTimeError_date"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="date"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+          <section
+            className="TextInput__MessageContainer-sc-1fep8p8-1 hnFtxk"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+              fontSize="0.75rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.4px"
+            >
+              Don't sweat it...we can fix this!
+            </p>
+          </section>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs TextInput__TextInputContainer-sc-1fep8p8-0 hDCKnW"
+          id="dateTimeError_time_container"
+          rows={null}
+        >
+          <section
+            className="TextInput__LabelWrapper-sc-1fep8p8-2 fuhXsK"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hpauXs"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Date-Time Input Label
+            </label>
+          </section>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-3 joxTLe"
+            cols=""
+            disabled={false}
+            id="dateTimeError_time"
+            list={null}
+            name="dateTimeError_time"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            onKeyUp={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            type="time"
+          />
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+          <section
+            className="TextInput__MessageContainer-sc-1fep8p8-1 hnFtxk"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+              fontSize="0.75rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.4px"
+            >
+              Don't sweat it...we can fix this!
+            </p>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</form>
+`;

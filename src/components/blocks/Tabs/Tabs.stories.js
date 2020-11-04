@@ -1,460 +1,262 @@
-/* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
-import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
-import Tabs, { Tab } from "blocks/Tabs";
-import Grid from "layout/Grid";
-import TabsNotes from "./Tabs.md";
+// /* eslint-disable linebreak-style */
+// /* eslint-disable react/jsx-filename-extension */
+// import React, { useState } from "react";
+// import { storiesOf } from "@storybook/react";
+// import { Padding } from "helpers/Display";
+// import Tabs, { TabItem } from "blocks/Tabs";
 
-storiesOf("Blocks|Tabs", module)
-  .addParameters({
-    info: {
-      text: "Tabs info goes here...",
-    },
-    notes: {
-      markdown: TabsNotes,
-    },
-  })
-  .addDecorator(Padding)
-  .add(
-    "Documentation",
-    withInfo()(() => {
-      return (
-        <Tabs>
-          <Tab tabLabel="Tab" />
-          <Tab tabLabel="Tab" />
-          <Tab tabLabel="Tab" />
-        </Tabs>
-      );
-    }),
-  );
+// const tabNames = [
+//   {
+//     id: "segment_1",
+//     label: "Option 1",
+//   },
+//   {
+//     id: "segment_2",
+//     label: "Option 2",
+//     disabled: true,
+//   },
+//   {
+//     id: "segment_3",
+//     label: "Option 3",
+//   },
+//   {
+//     id: "segment_4",
+//     label: "Option 4",
+//     isSelected: true,
+//   },
+// ];
 
-storiesOf("Blocks|Tabs", module)
-  .addDecorator(Padding)
-  .addDecorator(withKnobs)
-  .add("Knobs", () => {
-    return (
-      <Tabs
-        columns={options(
-          "columns / row",
-          {
-            "single row ( default )": "default",
-            "row wrap (responsive)": "wrap",
-            "1 column / row": "1",
-            "2 columns / row": "2",
-            "3 columns / row": "3",
-            "4 columns / row": "4",
-            "5 columns / row": "5",
-          },
-          "default",
-          { display: "radio" },
-          "Tab Group",
-        )}
-        align={options(
-          "align",
-          {
-            "top ( default )": "default",
-            "left ( 1 column / vertical )": "left",
-            "bottom": "bottom",
-            "right ( 1 column / vertical )": "right",
-          },
-          "default",
-          { display: "radio" },
-          "Tab Group",
-        )}
-      >
-        <Tab
-          icon={select(
-            "icon 1",
-            {
-              "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
-            },
-            null,
-            "Tab 1",
-          )}
-          tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
-          disabled={boolean("Disable 1", false, "Tab 1")}
-        />
-        <Tab
-          icon={select(
-            "icon 2",
-            {
-              "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
-            },
-            null,
-            "Tab 2",
-          )}
-          tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
-          disabled={boolean("Disable 2", false, "Tab 2")}
-        />
-        <Tab
-          icon={select(
-            "icon 3",
-            {
-              "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
-            },
-            null,
-            "Tab 3",
-          )}
-          tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
-          disabled={boolean("Disable 3", false, "Tab 3")}
-        />
-        <Tab
-          icon={select(
-            "icon 4",
-            {
-              "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
-            },
-            null,
-            "Tab 4",
-          )}
-          tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
-          disabled={boolean("Disable 4", false, "Tab 4")}
-        />
-        <Tab
-          icon={select(
-            "icon 5",
-            {
-              "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
-            },
-            null,
-            "Tab 5",
-          )}
-          tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
-          disabled={boolean("Disable 5", false, "Tab 5")}
-        />
-      </Tabs>
-    );
-  });
+// storiesOf("Blocks|Tabs", module)
+//   .addDecorator(Padding)
+//   .add(
+//     "Documentation",
+//     () => {
+//       return (
+//         <Tabs>
+//           <TabItem label="Tab" isSelected />
+//           <TabItem label="Tab" />
+//           <TabItem label="Tab" />
+//         </Tabs>
+//       );
+//     },
+//   );
 
-storiesOf("Blocks|Tabs", module)
-  .addDecorator(Padding)
-  .add("Single-Row (default)", () => {
-    return (
-      <Tabs >
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("Row-Wrap (responsive)", () => {
-    return (
-      <Tabs columns="wrap">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("1 Column per Row", () => {
-    return (
-      <Tabs columns="1">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("2 Columns per Row", () => {
-    return (
-      <Tabs columns="2">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("3 Columns per Row", () => {
-    return (
-      <Tabs columns="3">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("4 Columns per Row", () => {
-    return (
-      <Tabs columns="4">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("5 Columns per Row", () => {
-    return (
-      <Tabs columns="5">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("Vertical Column - Left", () => {
-    return (
-      <Tabs align="left">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("Single-Row, Bottom-Aligned", () => {
-    return (
-      <Tabs align="bottom">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("Vertical Column - Right", () => {
-    return (
-      <Tabs align="right">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("Icon Tabs", () => {
-    return (
-      <Tabs>
-        <Tab tabLabel="Tab" icon="user" />
-        <Tab tabLabel="Tab" icon="user" />
-        <Tab tabLabel="Tab" icon="user" />
-      </Tabs>
-    );
-  });
+// storiesOf("Blocks|Tabs", module)
+//   .addDecorator(Padding)
+//   .addDecorator(withKnobs)
+//   .add("Knobs", () => {
+//     return (
+//       <Tabs
+//         disabled={boolean("disable", false, "Tabs")}
+//       >
+//         <TabItem
+//           icon={select(
+//             "icon 1",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Tab 1",
+//           )}
+//           label={text("Tab 1", "Tab 1", "Tab 1")}
+//           disabled={boolean("Disable 1", false, "Tab 1")}
+//           onClick={() => {
+//             alert("Tab 1 clicked!");
+//           }}
+//         />
+//         <TabItem
+//           icon={select(
+//             "icon 2",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Tab 2",
+//           )}
+//           label={text("Tab 2", "Tab 2", "Tab 2")}
+//           disabled={boolean("Disable 2", false, "Tab 2")}
+//           onClick={() => {
+//             alert("Tab 2 clicked!");
+//           }}
+//         />
+//         <TabItem
+//           icon={select(
+//             "icon 3",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Tab 3",
+//           )}
+//           label={text("Tab 3", "Tab 3", "Tab 3")}
+//           disabled={boolean("Disable 3", false, "Tab 3")}
+//           onClick={() => {
+//             alert("Tab 3 clicked!");
+//           }}
+//         />
+//         <TabItem
+//           icon={select(
+//             "icon 4",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Tab 4",
+//           )}
+//           label={text("Tab 4", "Tab 4", "Tab 4")}
+//           disabled={boolean("Disable 4", false, "Tab 4")}
+//           onClick={() => {
+//             alert("Tab 4 clicked!");
+//           }}
+//         />
+//         <TabItem
+//           icon={select(
+//             "icon 5",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Tab 5",
+//           )}
+//           label={text("Tab 5", "Tab 5", "Tab 5")}
+//           disabled={boolean("Disable 5", false, "Tab 5")}
+//           onClick={() => {
+//             alert("Tab 5 clicked!");
+//           }}
+//         />
+//       </Tabs>
+//     );
+//   });
 
-storiesOf("Blocks|Tabs", module)
-  .addDecorator(Padding)
-  .add("Single-Select", () => {
-    return React.createElement(() => {
-      const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-      return (
-        <Tabs columns=""  >
-          <Tab
-            tabLabel="Tab 1"
-            isSelected={activeSingleTab === "tab1"}
-            onClick={() => {
-              setActiveSingleTab("tab1");
-            }}
-          />
-          <Tab
-            tabLabel="Tab 2"
-            isSelected={activeSingleTab === "tab2"}
-            onClick={() => {
-              setActiveSingleTab("tab2");
-            }}
-          />
-          <Tab
-            tabLabel="Tab 3"
-            isSelected={activeSingleTab === "tab3"}
-            onClick={() => {
-              setActiveSingleTab("tab3");
-            }}
-          />
-        </Tabs>
-      );
-    });
-  })
-  .add("Toggle-Select", () => {
-    return React.createElement(() => {
-      const [activeToggleTab, setActiveToggleTab] = useState("");
-      return (
-        <Tabs columns="" >
-          <Tab
-            tabLabel="Tab 1"
-            isSelected={activeToggleTab === "tab1"}
-            onClick={() => {
-              if (activeToggleTab === "tab1") {
-                setActiveToggleTab("");
-              } else {
-                setActiveToggleTab("tab1");
-              }
-              return false;
-            }}
-          />
-          <Tab
-            tabLabel="Tab 2"
-            isSelected={activeToggleTab === "tab2"}
-            onClick={() => {
-              if (activeToggleTab === "tab2") {
-                setActiveToggleTab("");
-              } else {
-                setActiveToggleTab("tab2");
-              }
-              return false;
-            }}
-          />
-          <Tab
-            tabLabel="Tab 3"
-            isSelected={activeToggleTab === "tab3"}
-            onClick={() => {
-              if (activeToggleTab === "tab3") {
-                setActiveToggleTab("");
-              } else {
-                setActiveToggleTab("tab3");
-              }
-              return false;
-            }}
-          />
-        </Tabs>
-      );
-    });
-  })
-  .add("Multi-Select", () => {
-    return React.createElement(() => {
-      const [activeMultiTab, setActiveMultiTab] = useState(false);
-      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
-      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
-      return (
-        <Tabs columns="" >
-          <Tab
-            tabLabel="Tab 1"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
-          />
-          <Tab
-            tabLabel="Tab 2"
-            isSelected={activeMultiTab2}
-            onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
-            }}
-          />
-          <Tab
-            tabLabel="Tab 3"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-        </Tabs>
-      );
-    });
-  })
-  .add("Inline", () => {
-    return React.createElement(() => {
-      const [activeMultiTab, setActiveMultiTab] = useState(true);
-      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
-      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
-      return (
-        <Grid columns="1">
-        <Tabs columns="" >
-          <Tab
-          type="inline"
-            tabLabel="Tab 1"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
-          />
-          <Tab
-          type="inline"
-            tabLabel="Tab 2"
-            isSelected={activeMultiTab2}
-            onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
-            }}
-          />
-          <Tab
-          type="inline"
-            tabLabel="Tab 3"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-        </Tabs>
-      </Grid>
-      );
-    });
-  })
-  .add("Inactive", () => {
-    return React.createElement(() => {
-      const [activeMultiTab, setActiveMultiTab] = useState(true);
-      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
-      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
-      return (
-        <Grid columns="1">
-        <Tabs columns="" >
-          <Tab
-          type="inactive"
-            tabLabel="Tab 1"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
-          />
-          <Tab
-          type="inactive"
-            tabLabel="Tab 2"
-            isSelected={activeMultiTab2}
-            onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
-            }}
-          />
-          <Tab
-          type="inactive"
-            tabLabel="Tab 3"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-        </Tabs>
-      </Grid>
-      );
-    });
-  });
+// storiesOf("Blocks|Tabs", module)
+//   .addDecorator(Padding)
+//   .add("Single-Row (default)", () => {
+//     return (
+//       <Tabs>
+//         <TabItem label="Tab" />
+//         <TabItem label="Tab" />
+//         <TabItem label="Tab" />
+//       </Tabs>
+//     );
+//   })
+//   .add("Vertical Column", () => {
+//     return (
+//       <Tabs isVertical>
+//         <TabItem label="Tab" />
+//         <TabItem label="Tab" isSelected />
+//         <TabItem label="Tab" />
+//       </Tabs>
+//     );
+//   })
+//   .add("Icon Tabs", () => {
+//     return (
+//       <Tabs>
+//         <TabItem label="Tab" icon="user" />
+//         <TabItem label="Tab" icon="user" />
+//         <TabItem label="Tab" icon="user" />
+//       </Tabs>
+//     );
+//   })
+//   .add("Icon Only Tabs", () => {
+//     return (
+//       <Tabs>
+//         <TabItem icon="user" />
+//         <TabItem icon="settings" />
+//         <TabItem icon="report" />
+//       </Tabs>
+//     );
+//   })
+//   .add("Count Tabs", () => {
+//     return (
+//       <Tabs>
+//         <TabItem label="Tab" count="1" />
+//         <TabItem label="Tab" count="87" />
+//         <TabItem label="Tab" count="2" />
+//       </Tabs>
+//     );
+//   })
+//   .add(
+//     "Passed via Array",
+//     () => {
+//       return (
+//         <Tabs data={tabNames} />
+//       );
+//     },
+//   )
+//   .add("Disabled (TabItem Group)", () => {
+//     return (
+//       <Tabs disabled>
+//         <TabItem label="Tab" />
+//         <TabItem label="Tab" />
+//         <TabItem label="Tab" />
+//       </Tabs>
+//     );
+//   })
+//   .add(
+//     "Disabled (Individual Tab)",
+//     () => {
+//       return (
+//         <Tabs>
+//           <TabItem label="Tab" />
+//           <TabItem label="Tab" disabled />
+//           <TabItem label="Tab" />
+//         </Tabs>
+//       );
+//     },
+//   );
 
+// storiesOf("Blocks|Tabs", module)
+//   .addDecorator(Padding)
+//   .add("Interactive", () => {
+//     return React.createElement(() => {
+//       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+//       const tabButtons = [
+//         {
+//           id: "Tab 1",
+//           label: "Tab 1",
+//           isSelected: activeSingleTab === "tab1",
+//           onClick: () => { setActiveSingleTab("tab1"); },
+//         },
+//         {
+//           id: "Tab 2",
+//           label: "Tab 2",
+//           isSelected: activeSingleTab === "tab2",
+//           onClick: () => { setActiveSingleTab("tab2"); },
+//         },
+//         {
+//           id: "Tab 3",
+//           label: "Tab 3",
+//           isSelected: activeSingleTab === "tab3",
+//           onClick: () => { setActiveSingleTab("tab3"); },
+//         },
+//       ];
+//       return (
+//         <Tabs data={tabButtons} />
+//       );
+//     });
+//   });

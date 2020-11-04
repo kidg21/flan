@@ -1,15 +1,16 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { PointerEventsContext } from "States";
 import Tag from "atoms/Tag";
 
 const BadgeContainer = styled.div`
   position: absolute;
   display: flex;
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
   bottom: ${(props) => {
     return props.badgeBottom || "";
   }};
@@ -21,9 +22,17 @@ const BadgeContainer = styled.div`
   }};
 `;
 
+const StyledBadge = styled(Tag)`
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMax;
+  }};
+`;
+
 function Badge({
-  id, label, icon, type, position, style,
+  hasBackground, icon, iconSize, id, label, onClick, position, size, variant,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
+
   let badgeLeft;
   let badgeBottom;
   let setTransform;
@@ -52,38 +61,45 @@ function Badge({
   }
   return (
     <BadgeContainer
+      badgeBottom={badgeBottom}
+      badgeLeft={badgeLeft}
       id={id}
       setTransform={setTransform}
-      badgeLeft={badgeLeft}
-      badgeBottom={badgeBottom}
-      style={style}
+      mouseEvents={pointerEvents}
     >
-      <Tag label={label} type={type} icon={icon} />
+      <StyledBadge hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} iconSize={iconSize} size={size} onClick={onClick} />
     </BadgeContainer>
   );
 }
 
 Badge.propTypes = {
+  hasBackground: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  iconSize: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
+  onClick: PropTypes.func,
+  /** Default position is top-right */
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
     "bottomRight",
     "bottomLeft",
   ]),
-  style: PropTypes.string,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  size: PropTypes.string,
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert", "action"]),
 };
 
 Badge.defaultProps = {
+  hasBackground: true,
   icon: null,
+  iconSize: undefined,
   id: null,
   label: null,
+  onClick: null,
   position: null,
-  style: null,
-  type: null,
+  size: undefined,
+  variant: null,
 };
 
-export { Badge as default };
+export default Badge;

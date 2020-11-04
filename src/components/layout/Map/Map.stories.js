@@ -1,5 +1,5 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import Mapbox from "./Map";
+// import React from "react";
+// 
+// import Mapbox from "./Map";
 
-storiesOf("Layout|Map", module).add("Map", () => <Mapbox />);
+// storiesOf("Layout|Map", module).add("Map", () => <Mapbox />);

@@ -1,360 +1,356 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import { css } from "styled-components";
+
+export const fonts = {
+  headline: "Roboto, Arial, sans-serif",
+  body: "Roboto, Arial, sans-serif",
+};
 
 // Codes for color palette
 export const colors = {
-  // legacy values
-  anchor: "hsl(204, 61%, 43%)",
-  anchor_tint: "hsl(204, 61%, 83%)",
-  anchor_light: "#66b1e3",
-  anchor_dark: "hsl(204, 61%, 53%)",
-  success: "hsl(90, 46%, 46%)",
-  success_tint: "hsl(90, 46%, 90%)",
-  success_light: "hsl(90, 46%, 59%)",
-  success_dark: "hsl(90, 46%, 42%)",
-  warning: "hsl(34, 88%, 52%)",
-  warning_tint: "hsl(34, 88%, 80%)",
-  warning_light: "hsl(34, 88%, 62%)",
-  warning_dark: "hsl(34, 88%, 46%)",
-  alert: "hsl(1, 55%, 50%)",
-  alert_tint: "hsl(1, 55%, 90%)",
-  alert_light: "hsl(1, 55%, 60%)",
-  alert_dark: "hsl(1, 55%, 44%)",
-  generalIndustry: "hsl(194, 59%, 35%)",
-  government: "hsl(166, 100%, 28%)",
-  insurance: "hsl(89, 39%, 50%)",
-  homeBuilding: "hsl(43, 65%, 49%)",
-  realEstate: "hsl(12, 61%, 50%)",
 
-  // new values (standard)
-  black: "hsl(34, 5%, 12%)",
+  blue20: "hsl(200, 59%, 95%)",
+  blue40: "hsl(204, 69%, 65%)",
+  blue60: "hsl(207, 85%, 56%)",
+  blue80: "hsl(201, 61%, 43%)",
+  blue100: "hsl(200, 100%, 25%)",
+  blueDark: "hsl(215, 22%, 26%)",
 
-  blue: "hsl(201, 61%, 43%)",
-  blueBright: "hsl(207, 85%, 56%)",
-  blueDark: "hsl(200, 100%, 25%)",
-  blueLight: "hsl(204, 69%, 65%)",
-  blueTint: "hsl(200, 59%, 95%)",
+  purple20: "hsl(255, 59%, 96%)",
+  purple40: "hsl(261, 46%, 73%)",
+  purple60: "hsl(264, 100%, 46%)",
+  purple80: "hsl(258, 100%, 30%)",
+  purple100: "hsl(255, 91%, 22%)",
 
-  glassDark: "hsla(34, 5%, 28%, 0.85)",
-  glassLight: "hsl(34, 5%, 95%, 0.85)",
+  green20: "hsl(76, 59%, 96%)",
+  green40: "hsl(89, 50%, 49%)",
+  green60: "hsl(135, 79%, 37%)",
+  green80: "hsl(123, 46%, 34%)",
+  green100: "hsl(87, 91%, 22%)",
 
-  green: "hsl(89, 46%, 42%)",
-  greenBright: "hsl(135, 79%, 37%)",
-  greenDark: "hsl(87, 91%, 22%)",
-  greenLight: "hsl(89, 50%, 49%)",
-  greenTint: "hsl(76, 59%, 96%)",
+  orange20: "hsl(30, 96%, 97%)",
+  orange40: "hsl(30, 89%, 70%)",
+  orange60: "hsl(30, 100%, 50%)",
+  orange80: "hsl(30, 82%, 48%)",
+  orange100: "hsl(28, 100%, 33%)",
 
-  grey20: "hsl(34, 5%, 88%)",
-  grey40: "hsl(34, 5%, 72%)",
-  grey60: "hsl(34, 5%, 58%)",
-  grey80: "hsl(34, 5%, 36%)",
-  greyDark: "hsl(34, 5%, 28%)",
-  greyLight: "hsl(34, 5%, 96%)",
+  navy20: "hsl(213, 63%, 96%)",
+  navy40: "hsl(212, 82%, 87%)",
+  navy60: "hsl(213, 48%, 44%)",
+  navy80: "hsl(216, 26%, 32%)",
+  navy100: "hsl(215, 44%, 16%)",
 
-  grey0: "hsl(240, 24%, 96%)",
-  grey1: "hsl(240, 11%, 91%)",
-  grey2: "hsl(240, 6%, 83%)",
-  grey3: "hsl(240, 5%, 79%)",
-  grey4: "hsl(240, 3%, 69%)",
-  grey5: "hsl(240, 2%, 57%)",
-  grey6: "hsl(240, 1%, 39%)",
-  grey7: "hsl(240, 1%, 29%)",
-  grey8: "hsl(240, 2%, 23%)",
-  grey9: "hsl(240, 2%, 18%)",
-  grey10: "hsl(240, 3%, 11%)",
+  red20: "hsl(3, 96%, 97%)",
+  red40: "hsl(3, 83%, 76%)",
+  red60: "hsl(3, 76%, 56%)",
+  red80: "hsl(3, 61%, 44%)",
+  red100: "hsl(359, 100%, 25%)",
 
+  white20: "hsl(200, 19%, 95%)", // /bluetint
+  white40: "hsl(201, 59%, 98%)", // lightblue
+  white60: "hsl(0, 100%, 100%)", // white
 
-  orange: "hsl(30, 82%, 48%)",
-  orangeBright: "hsl(30, 100%, 50%)",
-  orangeDark: "hsl(30, 92%, 24%)",
-  orangeLight: "hsl(30, 89%, 70%)",
-  orangeTint: "hsl(30, 96%, 97%)",
+  shade1: "hsla(34, 5%, 12%, 0.05)",
+  shade2: "hsla(34, 5%, 12%, 0.1)",
+  shade3: "hsla(34, 5%, 12%, 0.15)",
+  shade4: "hsla(34, 5%, 12%, 0.2)",
+  shade5: "hsla(34, 5%, 12%, 0.25)",
+  shade6: "hsla(34, 5%, 12%, 0.3)",
+  shade7: "hsla(34, 5%, 12%, 0.35)",
+  shade8: "hsla(34, 5%, 12%, 0.4)",
+  shade9: "hsla(34, 5%, 12%, 0.45)",
+  shade10: "hsla(34, 5%, 12%, 0.5)",
 
-  red: "hsl(3, 61%, 44%)",
-  redBright: "hsl(3, 76%, 56%)",
-  redDark: "hsl(3, 92%, 24%)",
-  redLight: "hsl(3, 83%, 76%)",
-  redTint: "hsl(3, 96%, 97%)",
+  grey10: "hsl(240, 24%, 96%)",
+  grey20: "hsl(240, 11%, 91%)",
+  grey30: "hsl(240, 6%, 83%)",
+  grey40: "hsl(240, 3%, 69%)",
+  grey50: "hsl(240, 5%, 52%)",
+  grey60: "hsl(240, 1%, 39%)",
+  grey70: "hsl(240, 1%, 29%)",
+  grey80: "hsl(240, 2%, 23%)",
+  grey90: "hsl(240, 2%, 18%)",
+  grey100: "hsl(34, 5%, 12%)", // blackish
+  black: "hsl(0,0%,0%)",
 
-  white: "hsl(0, 100%, 100%)",
+  navy: "hsl(207,100%,19.6%)",
+  sky: "hsl(197,100%,43.7%)",
+  gold: "hsl(38.7,68.3%,50.6%)",
+  grey: "hsl(270, 5%, 92.2%)",
+  seafoam: "hsl(180, 33.3%, 88.8%)",
+  whirlpool: "hsl(197, 12.9%, 55.9%)",
+  aqua: "hsl(196, 51.5%, 59.6%)",
+  teal: "hsl(179, 93.4%, 35.9%)",
+  royal: "hsl(207, 88.5%, 30.6%)",
+  orange: "hsl(26, 89.3%, 56.1%)",
+  yellow: "hsl(45, 100%, 50%)",
+};
+
+export const interaction = {
+  hover: "hsla(240, 2%, 57%, 0.25)",
+  selectedLight: "hsla(204, 69%, 65%, 0.6)",
+  selectedDark: "hsl(215, 44%, 16%)",
+};
+
+// need to have hex key to work with old draw tools
+export const drawPalette = {
+  "#E4423A": colors.red60,
+  "#FF8000": colors.orange60,
+  "#FFBF00": colors.yellow,
+  "#14A939": colors.green60,
+  "#2F98EE": colors.blue60,
+  "#5E00EB": colors.purple60,
+  "#FFFFFF": colors.white60,
+  "#8F8F94": colors.grey50,
+  "#201F1D": colors.grey100,
+};
+
+export const shadows = {
+  shadow0: `drop-shadow(${colors.shade6} 0 0 1px)`,
+  shadow1: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade6} 0.1rem 0.1rem 0.15rem)
+  `,
+  shadow2: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade5} 0.2rem 0.2rem 0.25rem)
+  `,
+  shadow3: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade4} 0.3rem 0.3rem 0.35rem)
+  `,
+  shadow4: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade3} 0.4rem 0.4rem 0.45rem)
+  `,
+  shadow5: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade2} 0.5rem 0.5rem 0.55rem)
+  `,
+  outlineShadow: `
+    ${colors.shade3} 0 0 1px 1px
+    `,
+  dropShadow: `
+    ${colors.shade3} 0 0 1px 1px,
+    ${colors.shade4} 0.15rem 0.15rem 0.25rem
+    `,
+  dropShadow2: `
+    ${colors.shade3} 0 0 1px 1px,
+    ${colors.shade3} 0.35rem 0.35rem 0.5rem
+    `,
+  outerShadow: `
+    ${colors.shade2} 0 0 0.25rem 0,
+    ${colors.shade1} 0 0 0.25rem 0.25rem
+    `,
+  innerShadow: `
+    ${colors.shade4} 0 1px 0 0 inset,
+    ${colors.shade8} 0 0.35rem 0.5rem -0.35rem inset,
+    ${colors.shade4} 0 -1px 0 0 inset,
+    ${colors.shade8} 0 -0.35rem 0.5rem -0.35rem inset
+    `,
+};
+
+export const borders = {
+  radiusMin: "0.5rem",
+  radiusMed: "0.25rem",
+  radiusMax: "5rem",
 };
 
 export const DMPTheme = {
+  typography: {
+    primary: fonts.body,
+    secondary: fonts.body,
+  },
   background: {
-    active: colors.greenTint,
-    alert_active: colors.redTint,
-    app: colors.greyLight,
-    default: colors.white,
-    disabled: colors.greyLight,
-    info_active: colors.blueTint,
-    inverse: colors.black,
-    selected: colors.greenLight,
-    success_active: colors.greenTint,
-    warning_active: colors.orangeTint,
+    alert: colors.red80,
+    active: colors.green40,
+    alt: colors.blueDark,
+    app: colors.white40,
+    default: colors.white60,
+    disabled: colors.grey10,
+    hover: interaction.hover,
+    light: colors.blue20,
+    info: colors.purple100,
+    inverse: colors.grey100,
+    modal: colors.shade10,
+    selectedLight: interaction.selectedLight,
+    selected: colors.blue40,
+    selectedDark: interaction.selectedDark,
+    success: colors.green100,
+    warning: colors.orange80,
+    neutral: colors.grey20,
   },
-  border: colors.grey40,
-  divider: colors.grey20,
   text: {
-    active: colors.greenDark,
-    alert: colors.redBright,
-    dark: colors.black,
-    disabled: colors.grey60,
-    info: colors.blueBright,
-    inverse: colors.white,
-    light: colors.white,
-    link: colors.blue,
-    primary: colors.greyDark,
+    alert: colors.red80,
+    disabled: colors.grey40,
+    inverse: colors.white40,
+    inverseHover: colors.grey20,
+    link: colors.blue80,
+    primary: colors.grey80,
     secondary: colors.grey60,
-    selected: colors.greyLight,
-    success: colors.greenBright,
-    warning: colors.orangeBright,
+    light: colors.grey50,
+    dark: colors.black,
+    selected: colors.blue80,
+    success: colors.green80,
+    warning: colors.orange60,
   },
+  borders: {
+    radiusMin: borders.radiusMin,
+    radiusMed: borders.radiusMed,
+    radiusMax: borders.radiusMax,
+  },
+  shadows: shadows,
+  swatches: drawPalette,
   palette: {
-    alert: colors.red,
-    alertBright: colors.redBright,
-    alertDark: colors.redDark,
-    alertLight: colors.redLight,
-    alertTint: colors.redTint,
-    background: colors.white,
-    black: colors.black,
-    disabled: colors.greyLight,
-    foreground: colors.black,
-    grey: colors.grey5,
-    grey2: colors.grey4,
-    grey3: colors.grey3,
-    grey4: colors.grey2,
-    grey5: colors.grey1,
-    grey6: colors.grey0,
-    info: colors.blue,
-    infoBright: colors.blueBright,
-    infoDark: colors.blueDark,
-    infoLight: colors.blueLight,
-    infoTint: colors.blueTint,
-    inverse: colors.white,
-    link: colors.blue,
-    primary: colors.blue,
-    primaryDark: colors.blueDark,
-    primaryLight: colors.blueLight,
-    primaryTint: colors.blueTint,
-    secondary: colors.green,
-    secondaryDark: colors.greenDark,
-    secondaryLight: colors.greenLight,
-    secondaryTint: colors.greenTint,
-    success: colors.green,
-    successBright: colors.greenBright,
-    successDark: colors.greenDark,
-    successLight: colors.greenLight,
-    successTint: colors.greenTint,
-    warning: colors.orange,
-    warningBright: colors.orangeBright,
-    warningDark: colors.orangeDark,
-    warningLight: colors.orangeLight,
-    warningTint: colors.orangeTint,
-    white: colors.white,
-  },
-  accents: {
-    black: colors.black,
-    white: colors.white,
-  },
-  shadows: {
-    cardShadow:
-      "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-    dropShadow:
-      "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
-    panelSectionShadow:
-      "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
-    lightBorderShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-    lightBorderInner:
-      "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
-    border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
-    border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
-    checkedShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
-    radioShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+    research: colors.yellow,
+    jobs: colors.teal,
+    bi: colors.aqua,
+    broker: colors.royal,
+    brand1: colors.whirlpool,
+    brand2: colors.orange,
+    brand3: colors.grey,
+    brand4: colors.seafoam,
+    action20: colors.navy20,
+    action40: colors.navy40,
+    action60: colors.navy60,
+    action80: colors.navy80,
+    action100: colors.navy100,
+    alert20: colors.red20,
+    alert40: colors.red40,
+    alert60: colors.red60,
+    alert80: colors.red80,
+    alert100: colors.red100,
+    disabled: colors.grey40,
+    info20: colors.purple20,
+    info40: colors.purple40,
+    info60: colors.purple60,
+    info80: colors.purple80,
+    info100: colors.purple100,
+    inverse: colors.white60, // inverse is the same as background.default
+    link: colors.blue80,
+    neutral20: colors.grey10,
+    neutral40: colors.grey20,
+    neutral60: colors.grey30,
+    neutral80: colors.grey40,
+    neutral100: colors.grey50,
+    neutral120: colors.grey60,
+    neutral140: colors.grey70,
+    neutral160: colors.grey80,
+    neutral180: colors.grey90,
+    neutral200: colors.grey100,
+    selected: colors.navy80,
+    success20: colors.green20,
+    success40: colors.green40,
+    success60: colors.green60,
+    success80: colors.green80,
+    success100: colors.green100,
+    warning20: colors.orange20,
+    warning40: colors.orange40,
+    warning60: colors.orange60,
+    warning80: colors.orange80,
+    warning100: colors.orange100,
   },
 };
 
 export const darkTheme = {
+  typography: {
+    primary: fonts.body,
+    secondary: fonts.data,
+  },
   background: {
-    active: colors.green,
-    alert_active: colors.redDark,
-    app: colors.greyDark,
-    dark: colors.black,
-    default: colors.black,
-    disabled: colors.grey80,
-    info_active: colors.blueDark,
-    inverse: colors.white,
-    light: colors.white,
-    selected: colors.greenLight,
-    success_active: colors.greenDark,
-    warning_active: colors.orangeDark,
+    active: colors.green80,
+    alert: colors.red60,
+    alt: colors.white40,
+    app: colors.grey100,
+    default: colors.grey100,
+    disabled: colors.grey60,
+    hover: interaction.hover,
+    info: colors.blue60,
+    inverse: colors.white60,
+    modal: colors.shade10,
+    selectedLight: interaction.selectedLight,
+    selected: colors.blue80,
+    selectedDark: interaction.selecteDark,
+    success: colors.green60,
+    warning: colors.orange60,
+    neutral: colors.grey60,
   },
-  border: colors.grey20,
-  divider: colors.greyDark,
   text: {
-    active: colors.greenTint,
-    // alert: "#7d0000",
-    alert: colors.redTint,
-    disabled: colors.grey40,
-    // info: "#66b1e3",
-    info: colors.blueTint,
-    inverse: colors.black,
-    // link: "#66b1e3",
-    link: colors.blue,
-    primary: colors.greyLight,
-    secondary: colors.grey60,
-    selected: colors.greyLight,
-    // success: "rgb(36, 138, 61)",
-    success: colors.greenTint,
-    // warning: "rgb(178, 80, 0)",
-    warning: colors.orangeTint,
+    alert: colors.red20,
+    disabled: colors.grey20,
+    inverse: colors.grey100,
+    inverseHover: colors.grey80,
+    link: colors.blue80,
+    primary: colors.grey50,
+    secondary: colors.grey10,
+    selected: colors.blue80,
+    success: colors.green20,
+    warning: colors.orange20,
   },
+  borders: {
+    radiusMin: borders.radiusMin,
+    radiusMed: borders.radiusMed,
+    radiusMax: borders.radiusMax,
+  },
+  shadows: shadows,
+  swatches: drawPalette,
   palette: {
-    // alert: "#FF453A",
-    // alertDark: "#7d0000",
-    // alertLight: "#ffafab",
-    // alertTint: "#c98383",
-    alert: colors.redBright,
-    alertBright: colors.redBright,
-    alertDark: colors.redLight,
-    alertLight: colors.redLight,
-    alertTint: colors.redLight,
-    background: colors.black,
-    black: colors.black,
-    disabled: colors.greyDark,
-    foreground: colors.white,
-    grey: colors.grey10,
-    grey2: colors.grey9,
-    grey3: colors.grey8,
-    grey4: colors.grey7,
-    grey5: colors.grey6,
-    grey6: colors.grey5,
-    // info: "#0a84ff",
-    info: colors.blue,
-    infoBright: colors.blueBright,
-    infoDark: colors.blueDark,
-    infoLight: colors.blueLight,
-    infoTint: colors.blueTint,
-    inverse: colors.black,
-    link: colors.blue,
-    primary: colors.blue,
-    primaryDark: colors.blueDark,
-    primaryLight: colors.blueLight,
-    primaryTint: colors.blueTint,
-    // primary: "#5FD1E2",
-    // primaryDark: "#005681",
-    // primaryLight: "#66b1e3",
-    // primaryTint: "#9fc7dc",
-    secondary: colors.green,
-    secondaryDark: colors.greenDark,
-    secondaryLight: colors.greenLight,
-    secondaryTint: colors.greenTint,
-    // secondary: "#CDE575",
-    // secondaryDark: "#3d6c05",
-    // secondaryLight: "#9dcc67",
-    // secondaryTint: "#cadf90",
-    // success: "#30D158",
-    // successDark: "#2d4e1f",
-    // successLight: "#c1f9a5",
-    success: colors.green,
-    successBright: colors.greenBright,
-    successDark: colors.greenDark,
-    successLight: colors.greenLight,
-    successTint: colors.greenTint,
-    // warning: "#f5c000",
-    warning: colors.orange,
-    warningBright: colors.orangeBright,
-    warningDark: colors.orangeDark,
-    warningLight: colors.orangeLight,
-    warningTint: colors.orangeTint,
-    white: colors.white,
-  },
-  accents: {
-    black: colors.black,
-    white: colors.white,
-  },
-  shadows: {
-    cardShadow:
-      "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-    dropShadow:
-      "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
-    panelSectionShadow:
-      "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
-    lightBorderShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-    lightBorderInner:
-      "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
-    border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
-    border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
-    checkedShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
-    radioShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+    action20: colors.blue100,
+    action40: colors.blue80,
+    action60: colors.blue60,
+    action80: colors.blue40,
+    action100: colors.blue20,
+    alert20: colors.red100,
+    alert40: colors.red80,
+    alert60: colors.red60,
+    alert80: colors.red40,
+    alert100: colors.red20,
+    disabled: colors.grey60,
+    info20: colors.blue100,
+    info40: colors.blue80,
+    info60: colors.blue60,
+    info80: colors.blue40,
+    info100: colors.blue20,
+    inverse: colors.grey100,
+    link: colors.blue80,
+    neutral20: colors.grey100,
+    neutral40: colors.grey90,
+    neutral60: colors.grey80,
+    neutral80: colors.grey60,
+    neutral100: colors.grey50,
+    selected: colors.blue80,
+    success20: colors.green100,
+    success40: colors.green80,
+    success60: colors.green60,
+    success80: colors.green40,
+    success100: colors.green20,
+    warning20: colors.orange100,
+    warning40: colors.orange80,
+    warning60: colors.orange60,
+    warning80: colors.orange40,
+    warning100: colors.orange20,
   },
 };
 
+export const textColors = Object.keys(DMPTheme.text);
+export const backgroundColors = Object.keys(DMPTheme.background);
+export const paletteColors = Object.keys(DMPTheme.palette);
+
 export const Darken = css`
-  filter: brightness(0.98) saturate(1.25) contrast(1);
+  filter: brightness(0.90) saturate(1.25) contrast(1.1);
 `;
 
 export const Lighten = css`
-  filter: brightness(115%);
+  filter: brightness(115%) saturate(80%) ;
 `;
-
-// Typefaces
-export const fonts = {
-  headline: "Muli, Arial, sans-serif",
-  body: "Muli, Arial, sans-serif",
-  data: "Muli, Arial, sans-serif",
-  numbers: "Lato, sans-serif",
-};
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "12px",
-  // paragraph: '1rem',
-  // h1: '2.75rem',
-  // h2: '2.3125rem',
-  // h3: '1.6875rem',
-  // h4: '1.4375rem',
-  // h5: '1.125rem',
-  // h6: '1rem',
-  // xs: '12px',
-  // sm: '14px',
-  // lg: '18px',
-  // xl: '20px',
-  // xxl: '24px',
-  // xxxl: '30px',
-  // xxxxl: '36px'
-};
-
-// Sizes for typography scale
-export const shadows = {
-  cardShadow:
-    "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-  dropShadow:
-    "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
-  panelSectionShadow:
-    "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
-  lightBorderShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-  lightBorderInner:
-    "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
-  border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
-  border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
-  checkedShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
-  radioShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+  base: "14px",
 };
 
 // Media Queries
-const viewport = {
+export const viewport = {
   small: "640px",
   medium: "641px",
   large: "1025px",
@@ -362,9 +358,9 @@ const viewport = {
   xxlarge: "1921px",
 };
 export const screen = {
-  small: `only screen and (max-width: ${viewport.small})`,
-  medium: `only screen and (min-width: ${viewport.medium})`,
-  // medium: `only screen and (min-width: ${
+  small: `only screen and(max-width: ${viewport.small})`,
+  medium: `only screen and(min-width: ${viewport.medium})`,
+  // medium: `only screen and(min - width: ${
   //   viewport.medium
   // }) and (orientation: portrait)`,
   // medium_l: `only screen and (min-width: ${

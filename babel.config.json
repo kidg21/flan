@@ -1,0 +1,40 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-runtime"]
+    }
+  },
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      { "ssr": true, "displayName": true, "preprocess": false }
+    ],
+    ["markdown"],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "Variables": "lb-react-core/src/components/base/Variables/Variables.jsx",
+          "States": "lb-react-core/src/components/base/States/States",
+          "GlobalStyles": "lb-react-core/src/components/base/GlobalStyles/GlobalStyles.jsx",
+          "css": "lb-react-core/src/css",
+          "fonts": "lb-react-core/src/fonts",
+          "icons": "lb-react-core/src/icons",
+          "images": "lb-react-core/src/images",
+          "hooks": "lb-react-core/src/hooks",
+          "helpers": "lb-react-core/src/components/_helpers",
+          "attributes": "lb-react-core/src/attributes",
+          "atoms": "lb-react-core/src/components/atoms",
+          "base": "lb-react-core/src/components/base",
+          "blocks": "lb-react-core/src/components/blocks",
+          "elements": "lb-react-core/src/components/elements",
+          "layout": "lb-react-core/src/components/layout",
+          "templates": "lb-react-core/src/components/templates",
+          "utils": "lb-react-core/src/components/utils",
+          "work": "lb-react-core/src/components/work"
+        }
+      }
+    ]
+  ]
+}

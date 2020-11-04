@@ -1,16 +1,10 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Container from "atoms/Container";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Command from "atoms/Command";
@@ -51,17 +45,23 @@ function UserEntry({
 
   return (<Bar
     disabled={!isEnabled}
-    left={<Switch checked={isEnabled} onChange={toggleEnabled} />}
-    leftWidth={toggleWidth}
-    center={<Command onClick={onCommandClick} label={user.name} />}
-    centerAlign="left"
-    right={<SelectMenu
-      options={roles}
-      selectOptions={user.roles}
-      onChangeState={onChangeRoles}
-      multiSelect
-    />}
-    rightWidth={selectWidth}
+    left={{
+      content: <Switch checked={isEnabled} onChange={toggleEnabled} />,
+      width: toggleWidth,
+    }}
+    center={{
+      content: <Command onClick={onCommandClick} label={user.name} />,
+      align: "left",
+    }}
+    right={{
+      content: <SelectMenu
+        options={roles}
+        selectOptions={user.roles}
+        onChangeState={onChangeRoles}
+        multiSelect
+      />,
+      width: selectWidth,
+    }}
   />);
 }
 
@@ -158,55 +158,51 @@ const UserRoles = React.forwardRef(({
   if (childElements && !(childElements instanceof Array)) childElements = [childElements];
 
   return (
-    <Panel style={style}>
-      <PanelSection header>
-        <MainPanelHeader title={title} menuData={commands} />
-      </PanelSection>
-      <PanelSection body style={panelStyle}>
-        {right ? <Bar right={right} /> : null}
-        <Bar
-          left={<TextInput type="search" placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
-          leftWidth={searchWidth}
-          center={
-            <SelectMenu
-              options={userTypes}
-              selectOptions={[null]}
-              onChangeState={filterUserTypes}
-              isClearable={false}
-            />
-          }
-          right={
-            <SelectMenu
-              options={rolesFilter}
-              selectOptions={[null]}
-              onChangeState={filterUserRoles}
-              isClearable={false}
-            />
-          }
-        />
-        <Container height={listHeight} ref={ref}>
-          {activeUsers.filter((user) => {
-            const userRoles = (user.roles && !(user.roles instanceof Array)) ?
-              [user.roles] : user.roles || [];
-            return (typeof filterState.enabled !== "boolean" || user.enabled === filterState.enabled)
-              && (!filterState.name || user.name.toLowerCase().includes(filterState.name))
-              && (!filterState.role || userRoles.includes(filterState.role));
-          }).map((user) => {
-            return (<UserEntry
-              key={user.name}
-              user={user}
-              roles={roles}
-              onClick={onClickUser}
-              onChange={onUserChange}
-            />);
-          })}
-        </Container>
-      </PanelSection>
+    <Panel
+      style={panelStyle}
+      header={<MainPanelHeader title={title} menuData={commands} />}
+    >
+      {right ? <Bar right={right} /> : null}
+      <Bar
+        left={<TextInput placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
+        leftWidth={searchWidth}
+        center={
+          <SelectMenu
+            options={userTypes}
+            selectOptions={[null]}
+            onChangeState={filterUserTypes}
+            isClearable={false}
+          />
+        }
+        right={
+          <SelectMenu
+            options={rolesFilter}
+            selectOptions={[null]}
+            onChangeState={filterUserRoles}
+            isClearable={false}
+          />
+        }
+      />
+      <Container height={listHeight} ref={ref}>
+        {activeUsers.filter((user) => {
+          const userRoles = (user.roles && !(user.roles instanceof Array)) ?
+            [user.roles] : user.roles || [];
+          return (typeof filterState.enabled !== "boolean" || user.enabled === filterState.enabled)
+            && (!filterState.name || user.name.toLowerCase().includes(filterState.name))
+            && (!filterState.role || userRoles.includes(filterState.role));
+        }).map((user) => {
+          return (<UserEntry
+            key={user.name}
+            user={user}
+            roles={roles}
+            onClick={onClickUser}
+            onChange={onUserChange}
+          />);
+        })}
+      </Container>
       {childElements ? childElements.map((child) => {
         return (
-          <PanelSection>
-            {child}
-          </PanelSection>
+          { child }
         );
       }) : null}
     </Panel>
@@ -214,8 +210,8 @@ const UserRoles = React.forwardRef(({
 });
 
 UserRoles.propTypes = {
-  style: PropTypes.object,
-  panelStyle: PropTypes.object,
+  style: PropTypes.string,
+  panelStyle: PropTypes.string,
   users: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     enabled: PropTypes.bool,
@@ -233,8 +229,8 @@ UserRoles.propTypes = {
   ])),
   commands: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
-    onClickLink: PropTypes.func,
+    label: PropTypes.string,
+    onClick: PropTypes.func,
   })),
   right: PropTypes.node,
   children: PropTypes.node,

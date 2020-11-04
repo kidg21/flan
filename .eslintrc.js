@@ -60,6 +60,11 @@ const restrictedGlobals = [
 ];
 
 module.exports = {
+  settings: {
+    react: {
+      version: "16.8",
+    },
+  },
   rules: {
     //15 is an arbitrary number, and complexity is only a heuristic.  Any function with 15+ should be reviewed
     //to make sure it's not unnecessarily complex or trying to do to much.  Please note that this is only a
@@ -108,8 +113,10 @@ module.exports = {
         jpg: "always",
         gif: "always",
         png: "always",
+        svg: "always",
         md: "always",
-        data: "always"
+        data: "always",
+        jsx: "always",
       }
     ],
 
@@ -202,6 +209,9 @@ module.exports = {
     // This rule will break Codacy Linting if it attempts to evaluate
     "react/no-typos": 0,
 
+    // Do not allow Fragment shorthand, as it breaks linting for the rest of the file
+    "react/jsx-fragments": ["error", "element"],
+
     // Not every method that COULD be a static SHOULD be.
     "class-methods-use-this": "warn"
     // "valid-jsdoc": 1
@@ -230,8 +240,24 @@ module.exports = {
     openIndexedDB: true,
     Handlebars: true,
     XLSX: true,
-    Cypress: true,
-    cy: true,
-    expect: true
+    Mapbox: true,
+    storiesOf: true,
+    withInfo: true,
+    withKnobs: true,
+    withA11y: true,
+    text: true,
+    boolean: true,
+    object: true,
+    select: true,
+    options: true,
+    specs: true,
+    action: true,
+    describe: true,
+    it: true,
+    before: true,
+    beforeEach: true,
+    after: true,
+    afterEach: true,
+    markdown: true
   }
 };

@@ -1,54 +1,62 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { PointerEventsContext } from "States";
 import Placeholder from "images/placeholders/placeholder-photo.png";
 
 const ImageWrapper = styled.img`
   width: ${(props) => {
-    return props.width || "inherit";
+    return props.width || "100%";
   }};
-  height: auto;
+  height: ${(props) => {
+    return props.height || "auto";
+}};
   border-radius: ${(props) => {
-    return props.circle ? "100%" : "";
+    return props.isRound ? "100%" : "";
   }};
-  box-shadow: ${(props) => {
-    return props.border ? `0 0 0 2px ${props.theme.border}` : "";
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
+  }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
   }};
 `;
 
 function Image({
-  alt, border, circle, className, src, width,
+  alt, className, height, isRound, onClick, src, width,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
   return (
     <ImageWrapper
       alt={alt}
-      border={border}
-      circle={circle}
+      height={height}
+      isRound={isRound}
       className={className}
+      onClick={onClick}
       src={src || Placeholder}
       title={alt}
       width={width}
+      mouseEvents={pointerEvents}
     />
   );
 }
 
 Image.propTypes = {
   alt: PropTypes.string.isRequired,
-  border: PropTypes.boolean,
-  circle: PropTypes.boolean,
   className: PropTypes.string,
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  isRound: PropTypes.bool,
+  onClick: PropTypes.func,
   src: PropTypes.string,
-  width: PropTypes.number,
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {
-  border: false,
-  circle: false,
   className: null,
-  src: null,
+  height: null,
+  isRound: false,
+  onClick: null,
+  src: "",
   width: null,
 };
 

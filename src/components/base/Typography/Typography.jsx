@@ -1,442 +1,434 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
-/* eslint-disable complexity */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// import { Skeleton } from "helpers";
-import { fonts } from "Variables";
+// import { Skeleton } from "helpers/Skeleton";
+import { Lighten, Darken } from "Variables";
+import { PointerEventsContext } from "States";
 
-const StyledText = styled.h4`
-  grid-column: 1 / -1;
-  margin: ${(props) => {
-    return props.margin || "0px 0px 0.25em";
+const StyledLabel = styled.label`
+  color: ${(props) => { return props.theme.text[props.color] ? props.theme.text[props.color] : "inherit"; }};
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
+  line-height: ${(props) => { return props.lineHeight; }};
+  user-select: none;
+  text-transform: ${(props) => { return props.textTransform; }};
+  font-size: ${(props) => { return props.fontSize; }};
+  cursor: ${(props) => { return props.cursor; }};
+  font-weight: ${(props) => { return props.fontWeight; }};
+  letter-spacing: ${(props) => { return props.letterSpacing; }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
   }};
-  font-family: ${(props) => {
-    return props.fontFamily || "inherit";
+  &:after {
+    display: ${(props) => {
+    return props.isRequired ? "" : "none";
   }};
-  color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary;
+    content: "*";
+    color: ${(props) => {
+    return props.theme.palette.alert80;
   }};
-  font-weight: ${(props) => {
-    return props.textWeight || "600";
-  }};
-  text-align: ${(props) => {
-    return props.textAlign || "";
-  }};
-  letter-spacing: ${(props) => {
-    return props.letterSpacing || "0px";
-  }};
-  font-style: ${(props) => {
-    return props.textStyle || "";
-  }};
-  text-decoration: ${(props) => {
-    return props.textDecoration || "";
-  }};
-  user-select: ${(props) => {
-    return props.select || "";
-  }};
-  width: ${(props) => {
-    return props.textWidth || "";
-  }};
-  a {
-    margin: initial;
-    /** TODO: Add a 'separator' prop */
-    /* &:before,
-    &:after {
-      content: ${(props) => {
-    return props.separator || "|";
-  }};
-    } */
+    font-size: ${(props) => { return props.fontSize; }};
+    line-height: ${(props) => { return props.lineHeight; }};
+    vertical-align: middle;
+    padding-left: 0.25em;
   }
-}
+  ${(props) => {
+    if (!props.visible) {
+      return `
+        position: absolute;
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+
+        &.focusable {
+            &:active, &:focus {
+                position: static;
+                overflow: visible;
+                height: auto;
+                width: auto;
+                margin: 0;
+                clip: auto;
+            }
+        }
+      `;
+    }
+  }}
 `;
 
-const LinkedText = styled(StyledText)`
-  color: ${(props) => {
-    return props.theme.text.link;
+const LinkText = styled.a`
+  line-height: inherit;
+  font-size: ${(props) => { return props.fontSize; }};
+  font-weight: ${(props) => { return props.fontWeight; }};
+  font-family: ${(props) => { return props.theme.typography.primary; }};
+  text-decoration: underline;
+  margin: -.25em;
+  padding: .25em;
+  letter-spacing: ${(props) => { return props.letterSpacing; }};
+  color: ${(props) => { return props.theme.text.link; }};
+  cursor: pointer;
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : props.mouseEvents;
   }};
-  /* width: max-content; */
+  &[disabled] {
+    color: ${(props) => {
+    return props.theme.text.disabled;
+  }};
+    cursor: not-allowed;
+    user-select: none;
+    border-left: none;
+  }
+  &:hover,
+  &:focus {
+    ${Darken};
+  }
+  &:active {
+    ${Lighten};
+  }
 `;
 
-const StyledNumber = styled(StyledText)`
-  font-family: ${fonts.numbers};
+const TitleText = styled.h6`
+  font-size: ${(props) => { return props.fontSize; }};
+  font-weight: ${(props) => { return props.fontWeight; }};
   color: inherit;
-  letter-spacing: 1px;
-}
+  text-transform: ${(props) => { return props.textTransform; }};
+  line-height: normal;
+  font-family: ${(props) => { return props.theme.typography.secondary; }};
+  letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 
-const StyledCode = styled.code`
-  background-color: ${(props) => {
-    return props.theme.palette.grey5;
-  }};
-  border: 1px solid ${(props) => {
-    return props.theme.palette.grey2;
-  }};
-  border-radius: 0.25rem;
-  padding: 0.5rem 0.5rem 0.25rem;
-  user-select: all;
-}
+const Paragraph = styled.p`
+  font-size: ${(props) => { return props.fontSize; }};
+  font-weight: ${(props) => { return props.fontWeight; }};
+  color: inherit;
+  line-height: normal;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
+  letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
+
+const textSizeHash = {
+  xs: {
+    fontSize: "0.75rem",
+    letterSpacing: "0.4px",
+  },
+  sm: {
+    fontSize: "0.875rem",
+    letterSpacing: "0.25px",
+  },
+  lg: {
+    fontSize: "1.1rem",
+    letterSpacing: "0.8px",
+  },
+};
+
+const titleSizeHash = {
+  "lg": {
+    fontSize: "1.15rem",
+    letterSpacing: "0.4px",
+    fontWeight: "500",
+    as: "h5",
+  },
+  "xl": {
+    fontSize: "1.35rem",
+    letterSpacing: "0px",
+    fontWeight: "400",
+    as: "h4",
+  },
+  "2xl": {
+    fontSize: "1.5rem",
+    letterSpacing: "0.25px",
+    fontWeight: "400",
+    as: "h3",
+  },
+  "3xl": {
+    fontSize: "2rem",
+    letterSpacing: "0px",
+    fontWeight: "400",
+    as: "h2",
+  },
+  "4xl": {
+    fontSize: "2.5rem",
+    letterSpacing: "-1.5px",
+    fontWeight: "300",
+    as: "h1",
+  },
+};
+
+const labelSizeHash = {
+  xs: {
+    fontSize: "0.75em",
+    letterSpacing: "0.4px",
+  },
+  sm: {
+    fontSize: "0.875rem",
+    letterSpacing: "1px",
+  },
+  lg: {
+    fontSize: "1rem",
+    letterSpacing: ".5px",
+  },
+  xl: {
+    fontSize: "1.2rem",
+    letterSpacing: ".25px",
+  },
+};
+
+const linkSizeHash = {
+  "xs": {
+    fontSize: "0.75em",
+    letterSpacing: "0px",
+  },
+  "sm": {
+    fontSize: "0.875rem",
+    letterSpacing: "0px",
+  },
+  "lg": {
+    fontSize: "1rem",
+    letterSpacing: "0.2px",
+  },
+  "xl": {
+    fontSize: "1.25rem",
+    letterSpacing: "0px",
+  },
+  "2xl": {
+    fontSize: "1.45rem",
+    letterSpacing: "0px",
+  },
+};
+
+const weightHash = {
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 600,
+};
 
 function Text({
-  align,
-  children,
-  className,
-  count,
-  font,
-  href,
-  id,
-  link,
-  onClick,
-  select,
-  size,
-  spacing,
-  styling,
-  target,
-  text,
-  title,
-  type,
-  weight,
-  margin,
+  children, className, id, size, text, weight,
 }) {
-  let as;
-  let fontFamily;
-  let textColor;
-  let textWeight;
-  let letterSpacing;
-  let textAlign;
-  let textStyle;
-  let textDecoration;
-  let textWidth;
-  switch (font && font.toLowerCase()) {
-    case "numbers":
-      fontFamily = fonts.numbers;
-      break;
-    case "data":
-      fontFamily = fonts.data;
-      break;
-    default:
-      break;
-  }
-  switch (type && type.toLowerCase()) {
-    case "info":
-      textColor = "info";
-      break;
-    case "success":
-      textColor = "success";
-      break;
-    case "warning":
-      textColor = "warning";
-      break;
-    case "alert":
-      textColor = "alert";
-      break;
-    case "secondary":
-      textColor = "secondary";
-      break;
-    default:
-      // textColor = "primary";
-      break;
-  }
-  switch (size && size.toLowerCase()) {
-    case "xs":
-      as = "label";
-      break;
-    case "sm":
-      as = "h5";
-      break;
-    case "m":
-      as = "h4";
-      break;
-    case "lg":
-      as = "h3";
-      break;
-    case "2x":
-      as = "h2";
-      break;
-    case "3x":
-      as = "h1";
-      break;
-    default:
-      as = "h4";
-      break;
-  }
-  switch (align && align.toLowerCase()) {
-    case "center":
-      textAlign = "center";
-      break;
-    case "right":
-      textAlign = "right";
-      break;
-    default:
-      break;
-  }
-  switch (styling && styling.toLowerCase()) {
-    case "underline":
-      textDecoration = "underline";
-      break;
-    case "italic":
-      textStyle = "italic";
-      break;
-    default:
-      break;
-  }
-  switch (weight && weight.toLowerCase()) {
-    case "light":
-      textWeight = "300";
-      break;
-    case "normal":
-      textWeight = "500";
-      break;
-    case "semibold":
-      textWeight = "600";
-      break;
-    case "bold":
-      textWeight = "700";
-      break;
-    default:
-      textWeight = "500";
-      break;
-  }
-  const numSpacing = spacing ? parseInt(spacing, 10) : 0;
-  if (numSpacing && !isNaN(numSpacing)) {
-    letterSpacing = `${0.1 * (numSpacing - 1)}em`;
-  }
-  if (link) {
-    as = "a";
-    textColor = "link";
-    textWeight = "800";
-    textWidth = "max-content";
-  }
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+  const selectedSize = textSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0.5px" };
+  const { fontSize, letterSpacing } = selectedSize;
+
   return (
-    <StyledText
-      as={as}
-      margin={margin}
+    <Paragraph
       className={className}
-      fontFamily={fontFamily}
-      href={href}
-      onClick={onClick}
-      target={target}
-      title={title}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
       id={id}
       letterSpacing={letterSpacing}
-      select={select}
-      textAlign={textAlign}
-      textColor={textColor}
-      textDecoration={textDecoration}
-      textStyle={textStyle}
-      textWeight={textWeight}
-      textWidth={textWidth}
     >
       {text || children}
-      {count ? (
-        <LinkedText as="a">
-          <StyledNumber as="span">{count}</StyledNumber>
-        </LinkedText>
-      ) : null}
-    </StyledText>
+    </Paragraph>
   );
 }
+
 Text.propTypes = {
-  align: PropTypes.oneOf(["center", "right"]),
   children: PropTypes.node,
   className: PropTypes.string,
-  count: PropTypes.node,
-  font: PropTypes.string,
-  href: PropTypes.string,
   id: PropTypes.string,
-  link: PropTypes.bool,
-  onClick: PropTypes.string,
-  size: PropTypes.string,
-  target: PropTypes.string,
-  text: PropTypes.string,
-  title: PropTypes.string,
-  type: PropTypes.string,
-  weight: PropTypes.string,
-  select: PropTypes.string,
-  spacing: PropTypes.string,
-  styling: PropTypes.oneOf(["underline", "italic"]),
+  size: PropTypes.oneOf(Object.keys(textSizeHash).concat("")),
+  text: PropTypes.node,
+  weight: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.oneOf(Object.keys(weightHash).concat(Object.values(weightHash), "")),
+  ]),
 };
 Text.defaultProps = {
-  align: null,
   children: null,
   className: null,
-  count: null,
-  font: null,
-  href: null,
   id: null,
-  link: false,
-  onClick: null,
-  select: null,
-  size: null,
-  spacing: null,
-  styling: null,
-  target: null,
+  size: "",
   text: null,
-  title: null,
-  type: null,
-  weight: null,
-};
-
-function Headline({ text, children, ...textProps }) {
-  return (
-    <Text separator="pipe" size="2x" weight="bold" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Headline.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-Headline.defaultProps = {
-  text: null,
-  children: null,
+  weight: "",
 };
 
 function Title({
-  text, size, children, number, ...textProps
+  children, className, size, text, isUppercase,
 }) {
+  const selectedSize = titleSizeHash[size && size.toLowerCase()] || {
+    fontSize: "1.2rem", as: "h6", fontWeight: "400", letterSpacing: "1px",
+  };
+  const {
+    fontSize, as, letterSpacing, fontWeight,
+  } = selectedSize;
+
+  let textTransform;
+  if (isUppercase) {
+    textTransform = "uppercase";
+  }
+
   return (
-    <Text size={size} count={number} weight="semibold" {...textProps}>
+    <TitleText
+      as={as}
+      className={className}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      textTransform={textTransform}
+      letterSpacing={letterSpacing}
+    >
       {text || children}
-    </Text>
+    </TitleText>
   );
 }
+
 Title.propTypes = {
-  number: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
-  text: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
+  size: PropTypes.oneOf(Object.keys(titleSizeHash).concat("")),
+  isUppercase: PropTypes.bool,
+  text: PropTypes.string,
 };
 Title.defaultProps = {
-  number: null,
-  text: null,
   children: null,
+  className: null,
+  size: "",
+  isUppercase: false,
+  text: null,
 };
 
-function SubTitle({ text, children, ...textProps }) {
-  return (
-    <Text spacing="1" type="secondary" margin="0px 0px 0.15em" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-SubTitle.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-SubTitle.defaultProps = {
-  text: null,
-  children: null,
-};
-
-function Body({
-  text, weight, children, ...textProps
+function Label({
+  children,
+  className,
+  color,
+  cursor,
+  htmlFor,
+  isRequired,
+  onClick,
+  weight,
+  size,
+  text,
+  isUppercase,
+  visible,
 }) {
-  return (
-    <Text size="sm" weight="normal" margin="0px 0px 0.15em" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Body.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-Body.defaultProps = {
-  text: null,
-  children: null,
-};
+  const pointerEvents = useContext(PointerEventsContext);
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
-function Description({ text, children, ...textProps }) {
+  const selectedSize = labelSizeHash[size && size.toLowerCase()] || { fontSize: "0.875rem", letterSpacing: ".5px" };
+  const { fontSize, letterSpacing } = selectedSize;
+
+  let textTransform;
+
+  if (isUppercase) {
+    textTransform = "uppercase";
+  }
+
   return (
-    <Text size="xs" spacing="1" {...textProps}>
+    <StyledLabel
+      className={className}
+      color={color}
+      cursor={cursor}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      textTransform={textTransform}
+      htmlFor={htmlFor}
+      isRequired={isRequired}
+      letterSpacing={letterSpacing}
+      visible={visible}
+      onClick={onClick}
+      mouseEvents={pointerEvents}
+    >
       {text || children}
-    </Text>
+    </StyledLabel>
   );
 }
-Description.propTypes = {
-  text: PropTypes.string,
+
+Label.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
+  color: PropTypes.string,
+  cursor: PropTypes.string,
+  htmlFor: PropTypes.string,
+  isUppercase: PropTypes.bool,
+  isRequired: PropTypes.bool,
+  onClick: PropTypes.func,
+  size: PropTypes.oneOf(Object.keys(labelSizeHash).concat("")),
+  text: PropTypes.node,
+  visible: PropTypes.bool,
+  weight: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.oneOf(Object.keys(weightHash).concat(Object.values(weightHash), "")),
+  ]),
 };
-Description.defaultProps = {
-  text: null,
+Label.defaultProps = {
   children: null,
+  className: null,
+  color: null,
+  cursor: "pointer",
+  isUppercase: false,
+  htmlFor: null,
+  isRequired: false,
+  onClick: null,
+  size: "",
+  text: null,
+  visible: true,
+  weight: "",
 };
 
 function Link({
-  text, children, title, onClick, href, target, ...textProps
+  children, className, disabled, href, onClick, size, target, text, weight,
 }) {
+  const pointerEvents = useContext(PointerEventsContext);
+  const selectedSize = linkSizeHash[size && size.toLowerCase()] || { fontSize: "1rem", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 500;
+
   return (
-    <Text
+    <LinkText
+      className={className}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
       href={href}
-      link
+      disabled={disabled}
+      letterSpacing={letterSpacing}
       onClick={onClick}
-      spacing="2"
       target={target}
-      title={title}
-      weight="bold"
-      {...textProps}
+      mouseEvents={pointerEvents}
     >
       {text || children}
-    </Text>
+    </LinkText>
   );
 }
+
 Link.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
   href: PropTypes.string,
-  onClick: PropTypes.function,
-  /** _blank, _parent, _self, _top, framename */
+  onClick: PropTypes.func,
+  size: PropTypes.oneOf(Object.keys(linkSizeHash).concat("")),
   target: PropTypes.string,
+  text: PropTypes.string,
+  weight: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.oneOf(Object.keys(weightHash).concat(Object.values(weightHash), "")),
+  ]),
 };
 Link.defaultProps = {
   children: null,
-  onClick: null,
+  className: null,
+  disabled: false,
   href: null,
+  onClick: null,
+  size: "",
   target: null,
-};
-
-function Number({ text, children, ...textProps }) {
-  return (
-    <Text font="numbers" weight="normal" spacing="2" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Number.propTypes = {
-  text: PropTypes.number.isRequired,
-  children: PropTypes.node,
-};
-Number.defaultProps = {
-  children: null,
-};
-
-function Code({ text, children }) {
-  return <StyledCode>{text || children}</StyledCode>;
-}
-Code.propTypes = {
-  children: PropTypes.node,
-  text: PropTypes.string,
-};
-Code.defaultProps = {
-  children: null,
   text: null,
+  weight: "",
 };
 
 export {
-  Title as default,
-  Headline,
-  SubTitle,
-  Description,
-  Body,
-  Link,
-  Number,
-  Code,
+  Text as default, Title, Label, Link,
 };

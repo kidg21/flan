@@ -1,40 +1,16 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  radios,
-  select,
-  number,
-  button,
-  array,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
-import Card from "layout/Card";
+import Card from "elements/Card";
 import Grid from "layout/Grid";
-import GriddNotes from "./Grid.md";
 
-storiesOf("Layout|Grid/", module)
-  .addParameters({
-    info: {
-      text: "Grid info goes here.",
-    },
-    notes: {
-      markdown: GriddNotes,
-    },
-  })
+
+storiesOf("Utilities|Grid/", module)
+
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Grid>
           <Card />
@@ -43,7 +19,7 @@ storiesOf("Layout|Grid/", module)
           <Card />
         </Grid>
       );
-    }),
+    },
   )
   .add("Knobs", () => {
     return (
@@ -73,13 +49,15 @@ storiesOf("Layout|Grid/", module)
         gap={options(
           "grid gap",
           {
-            "no gap": "none",
-            "tiny": "tiny",
-            "small": "small",
-            "normal (default)": "",
-            "large": "large",
-            "xlarge": "xlarge",
-            "xxlarge": "xxlarge",
+            "0": "0",
+            "xs": "xs",
+            "sm": "sm",
+            "default": "",
+            "lg": "lg",
+            "xl": "xl",
+            "2xl": "2xl",
+            "3xl": "3xl",
+            "4xl": "4xl",
           },
           "",
           { display: "select" },
@@ -121,7 +99,7 @@ storiesOf("Layout|Grid/", module)
   })
   .add("Custom Grid", () => {
     return (
-      <Grid gap="xxlarge" columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr">
+      <Grid columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr" gap="xl">
         <Card />
         <Card />
         <Card />

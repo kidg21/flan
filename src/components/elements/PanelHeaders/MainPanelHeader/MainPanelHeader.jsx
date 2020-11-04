@@ -1,45 +1,42 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
-import Bar from "blocks/Bar";
-import { Piece } from "layout/Card";
-import Title from "base/Typography";
+import { useId } from "utils/hooks";
+import Bar from "layout/Bar";
+import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
+// TODO: (if necessary) Create a generic 'header' component as a base for current multiple Panel Header configurations
 function MainPanelHeader({
-  id, title, style, menuData,
+  id, menuData, menuWidth, title,
 }) {
+  const uId = useId(id);
   return (
-    <Piece id={id} style={style}>
-      <Bar
-        contentAlign="center"
-        padding="3x"
-        left={<Title text={title} size="large" />}
-        right={menuData ? <Menu data={menuData} position="bottomLeft" type="edit" /> : null}
-      />
-    </Piece>
+    <Bar
+      id={uId}
+      padding="2x"
+      left={<Title size="lg" text={title} />}
+      contentAlign="center"
+      right={menuData ? <Menu id={`${uId}-Menu`} data={menuData} position="bottomLeft" width={menuWidth} /> : null}
+    />
   );
 }
 
 MainPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.node.isRequired,
-  style: PropTypes.object,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
-    onClickLink: PropTypes.func,
+    label: PropTypes.string,
+    onClick: PropTypes.func,
   })),
+  menuWidth: PropTypes.string,
+  title: PropTypes.node.isRequired,
 };
 
 MainPanelHeader.defaultProps = {
   id: null,
   menuData: null,
-  style: null,
+  menuWidth: undefined,
 };
 
 export default MainPanelHeader;

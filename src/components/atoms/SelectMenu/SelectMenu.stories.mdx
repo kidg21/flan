@@ -1,0 +1,257 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import Form, { FormSection } from "layout/Form";
+import SelectMenu from "atoms/SelectMenu";
+import Icon from "atoms/Icon";
+
+<Meta title="Data Entry|Dropdown Menu" component={SelectMenu} />
+
+# Dropdown Menu
+
+#### Dropdown Menu is a type of input that is used in forms, where a user is submitting data and chooses one option from a list.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <SelectMenu
+      label="Select Label"
+      placeholder="Select"
+      helpText="Help text for the Select Menu component"
+      options={[
+        { value: "chocolate", label: "Chocolate" },
+        { value: "strawberry", label: "Strawberry" },
+        { value: "vanilla", label: "Vanilla" },
+        { value: "pistachio", label: "Pistachio" },
+        { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+        { value: "cookie dough", label: "Cookie Dough" }
+      ]}
+    />
+  </Story>
+</Preview>
+
+# Usage
+
+Use Select Menu component to select value from options.
+
+Select Menu should be used in conjunction with the Form from Layout. Select Menu allows for a condensed way to show options.
+
+<!-- # Guidelines -->
+
+# Examples
+
+### States
+
+<!-- We can drop it in a `Preview` to get a code snippet: -->
+
+<Preview>
+  <Story name="States">
+    <Grid columns="1">
+      <SelectMenu
+        label="Standard"
+        placeholder="Select"
+        options={[
+          { value: "chocolate", label: "Chocolate" },
+          { value: "strawberry", label: "Strawberry" },
+          { value: "vanilla", label: "Vanilla" },
+          { value: "pistachio", label: "Pistachio" },
+          { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+          { value: "cookie dough", label: "Cookie Dough" }
+        ]}
+      />
+      <SelectMenu
+        label="Error"
+        placeholder="Select"
+        error="Error explaining why it is wrong"
+        options={[
+          { value: "chocolate", label: "Chocolate" },
+          { value: "strawberry", label: "Strawberry" },
+          { value: "vanilla", label: "Vanilla" },
+          { value: "pistachio", label: "Pistachio" },
+          { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+          { value: "cookie dough", label: "Cookie Dough" }
+        ]}
+      />
+      <SelectMenu
+        label="Disabled"
+        placeholder="Select"
+        disabled
+        options={[
+          { value: "chocolate", label: "Chocolate" },
+          { value: "strawberry", label: "Strawberry" },
+          { value: "vanilla", label: "Vanilla" },
+          { value: "pistachio", label: "Pistachio" },
+          { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+          { value: "cookie dough", label: "Cookie Dough" }
+        ]}
+      />
+    </Grid>
+  </Story>
+</Preview>
+
+### Required
+
+<Preview>
+  <Story name="Required">
+    <Form>
+      <FormSection>
+        <SelectMenu
+          label="Single-Select ( Required )"
+          placeholder="You Must Choose..."
+          helpText="Help text for the Select Menu component"
+          isRequired
+          isClearable={false}
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select ( Required w/ Clearable )"
+          helpText="Help text for the Select Menu component"
+          isRequired
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+      </FormSection>
+    </Form>
+  </Story>
+</Preview>
+
+### Types
+
+<Preview>
+  <Story name="Types">
+    <Form>
+      <FormSection>
+        <SelectMenu
+          label="Single-Select ( Standard )"
+          placeholder="Choose..."
+          helpText="Help text for the Select Menu component"
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select ( Required )"
+          placeholder="You Must Choose..."
+          helpText="Help text for the Select Menu component"
+          isRequired
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select ( Disabled )"
+          placeholder="You Can't Choose..."
+          helpText="Help text for the Select Menu component"
+          disabled
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select ( Error )"
+          placeholder="You Chose Poorly..."
+          helpText="Help text for the Select Menu component"
+          error
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select ( Error )"
+          placeholder="You Chose Poorly..."
+          helpText="Help text for the Select Menu component"
+          error="Error: Invalid Selection!"
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select"
+          placeholder="You Chose Poorly..."
+          helpText="Help text for the Select Menu component"
+          warning="This is warning Text"
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select ( Loading )"
+          placeholder="Give Me A Minute..."
+          helpText="Help text for the Select Menu component"
+          isLoading
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          multiSelect
+          label="Multi-Select"
+          placeholder="Choose One Or More..."
+          helpText="Help text for the Select Menu component"
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+      </FormSection>
+    </Form>
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={SelectMenu} />

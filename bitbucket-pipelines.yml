@@ -1,22 +1,159 @@
-# This is a sample build configuration for Docker.
-# Check our guides at https://confluence.atlassian.com/x/O1toN for more examples.
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
 # Only use spaces to indent your .yml configuration.
 # -----
-# You can specify a custom docker image from Docker Hub as your build environment.
-image: atlassian/default-image:2
+# Use Node 12.14.0
+image: node:12.14.0
+
+clone:
+  # Don't clone history when pulling from Git; just get the latest version of the file.
+  depth: 1
 
 pipelines:
-  default:
-    - step:
-        services:
-          - docker
-        script: # Modify the commands below to build your repository.
-          # Set $DOCKER_HUB_USERNAME and $DOCKER_HUB_PASSWORD as environment variables in repository settings
-          - export IMAGE_NAME=your-Dockerhub-account/your-docker-image-name:$BITBUCKET_COMMIT
-
-          # build the Docker image (this will use the Dockerfile in the root of the repo)
-          - docker build -t $IMAGE_NAME .
-          # authenticate with the Docker Hub registry
-          - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD
-          # push the new Docker image to the Docker registry
-          - docker push $IMAGE_NAME
+  branches:
+    # All commits to master will run Code Coverage
+    master:
+      - step:
+          name: Codacy Coverage
+          caches:
+            # Cache node_modules folders
+            - node
+          script:
+            # Copy SSH key so that we can pull additional submodules
+            - mkdir -p /root/.ssh
+            - cp id_rsa /root/.ssh/id_rsa
+            - chmod 700 /root/.ssh/id_rsa
+            - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
+            # Remove cached modules
+            - rm -rf node_modules/ss-development
+            # Install dependencies
+            - npm install --no-package-lock
+            # fix for react-syntax-highligher importing esm instead of cjs - discussion here: https://github.com/storybookjs/storybook/pull/9292
+            # once SB merges in a fix we can remove this line as it will no longer be doing anything (all it does is replace /esm/ with /cjs/ in
+            # the syntaxhighlighter.js file that is causing issues).
+            # - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
+            # Run tests and push coverage to Codacy
+            - set -o pipefail
+            # Next line fails immediately if any command fails
+            - npm run test-coverage | npm run push-coverage
+            - set +o pipefail
+      - step:
+          name: Tag Package Version
+          script:
+            # Get version number from package.json
+            - declare -x VERSION=$(node -p -e "require('./package.json').version")
+            # Create/Push tag to commit
+            # if tag already exists, it does not retag
+            - set +e # disables exiting if error occurs
+            - git tag $VERSION
+            - git push origin $VERSION $BITBUCKET_BRANCH
+            - set -e
+    develop:
+      - step:
+          name: Codacy Coverage
+          caches:
+            # Cache node_modules folders
+            - node
+          script:
+            # Copy SSH key so that we can pull additional submodules
+            - mkdir -p /root/.ssh
+            - cp id_rsa /root/.ssh/id_rsa
+            - chmod 700 /root/.ssh/id_rsa
+            - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
+            # Remove cached modules
+            - rm -rf node_modules/ss-development
+            # Install dependencies
+            - npm install --no-package-lock
+            # fix for react-syntax-highligher importing esm instead of cjs - discussion here: https://github.com/storybookjs/storybook/pull/9292
+            # once SB merges in a fix we can remove this line as it will no longer be doing anything (all it does is replace /esm/ with /cjs/ in
+            # the syntaxhighlighter.js file that is causing issues).
+            # - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
+            # Run tests and push coverage to Codacy
+            - set -o pipefail
+            # Next line fails immediately if any command fails
+            - npm run test-coverage | npm run push-coverage
+            - set +o pipefail
+            # Build code
+            - npm run build
+          artifacts:
+            - Bundles/**
+      - step:
+          name: Push Bundle File
+          script:
+            # Get version number from package.json
+            - declare -x VERSION=$(node -p -e "require('./package.json').version")
+             # Generate build metadata
+            - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
+            # Push bundled file and commit info
+            - git add changes.txt
+            - git add Bundles/lbreactcore.js
+            - git commit -m "[skip ci] Updating changes.txt & latest bundle in lb-react-core repo"
+            - git push origin $BITBUCKET_BRANCH
+    "release/**":
+      - step:
+          name: Codacy Coverage
+          caches:
+            # Cache node_modules folders
+            - node
+          script:
+            # Copy SSH key so that we can pull additional submodules
+            - mkdir -p /root/.ssh
+            - cp id_rsa /root/.ssh/id_rsa
+            - chmod 700 /root/.ssh/id_rsa
+            - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
+            # Remove cached modules
+            - rm -rf node_modules/ss-development
+            # Install dependencies
+            - npm install --no-package-lock
+            # fix for react-syntax-highligher importing esm instead of cjs - discussion here: https://github.com/storybookjs/storybook/pull/9292
+            # once SB merges in a fix we can remove this line as it will no longer be doing anything (all it does is replace /esm/ with /cjs/ in
+            # the syntaxhighlighter.js file that is causing issues).
+            # - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
+            # Run tests and push coverage to Codacy
+            - set -o pipefail
+            # Next line fails immediately if any command fails
+            - npm run test-coverage | npm run push-coverage
+            - set +o pipefail
+            # Build code
+            - npm run build
+          artifacts:
+            - Bundles/**
+      - step:
+          name: Push Bundle File
+          script:
+            # Get version number from package.json
+            - declare -x VERSION=$(node -p -e "require('./package.json').version")
+             # Generate build metadata
+            - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
+            # Push bundled file and commit info
+            - git add changes.txt
+            - git add Bundles/lbreactcore.js
+            - git commit -m "[skip ci] Updating changes.txt & latest bundle in lb-react-core repo"
+            - git push origin $BITBUCKET_BRANCH
+  tags:
+    # Tagging a branch "test" will also cause it to generate Code Coverage (this is only really useful for ensuring the build instructions work)
+    test:
+      - step:
+          name: Codacy Coverage
+          caches:
+            # Cache node_modules folders
+            - node
+          script:
+           # Copy SSH key so that we can pull additional submodules
+            - mkdir -p /root/.ssh
+            - cp id_rsa /root/.ssh/id_rsa
+            - chmod 700 /root/.ssh/id_rsa
+            - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
+            # Remove cached modules
+            - rm -rf node_modules/ss-development
+            # Install dependencies
+            - npm install --no-package-lock
+            # fix for react-syntax-highligher importing esm instead of cjs - discussion here: https://github.com/storybookjs/storybook/pull/9292
+            # once SB merges in a fix we can remove this line as it will no longer be doing anything (all it does is replace /esm/ with /cjs/ in
+            # the syntaxhighlighter.js file that is causing issues).
+            # - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
+            # Run tests and push coverage to Codacy
+            - set -o pipefail
+            # Next line fails immediately if any command fails
+            - npm run test-coverage | npm run push-coverage
+            - set +o pipefail

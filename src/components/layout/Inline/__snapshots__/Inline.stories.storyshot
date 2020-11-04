@@ -1,0 +1,676 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+  height={null}
+  id="Standard"
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 1"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 1
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 222222"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 222222
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 33333333333"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 33333333333
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 GOsbp"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 444444444444444444"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 444444444444444444
+      </label>
+    </span>
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "width": "15em",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+    height={null}
+    id="Spacing Content"
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+    >
+      <span
+        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+        id={null}
+        label="Tag 1"
+        onClick={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+          color={null}
+          cursor="default"
+          fontSize="0.875rem"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing=".5px"
+          onClick={null}
+        >
+          Tag 1
+        </label>
+      </span>
+    </div>
+    <div
+      className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+    >
+      <span
+        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+        id={null}
+        label="Tag 222222"
+        onClick={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+          color={null}
+          cursor="default"
+          fontSize="0.875rem"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing=".5px"
+          onClick={null}
+        >
+          Tag 222222
+        </label>
+      </span>
+    </div>
+    <div
+      className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+    >
+      <span
+        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+        id={null}
+        label="Tag 33333333333"
+        onClick={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+          color={null}
+          cursor="default"
+          fontSize="0.875rem"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing=".5px"
+          onClick={null}
+        >
+          Tag 33333333333
+        </label>
+      </span>
+    </div>
+    <div
+      className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+    >
+      <span
+        className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+        id={null}
+        label="Tag 444444444444444444"
+        onClick={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+          color={null}
+          cursor="default"
+          fontSize="0.875rem"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing=".5px"
+          onClick={null}
+        >
+          Tag 444444444444444444
+        </label>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 eBhsuN Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+  height={null}
+  id="Center Justify"
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 1"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 1
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 222222"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 222222
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 33333333333"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 33333333333
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 444444444444444444"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 444444444444444444
+      </label>
+    </span>
+  </div>
+</div>
+`;
+
+exports[` 4`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 jphcdn Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+  height={null}
+  id="Right Justify"
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 1"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 1
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 222222"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 222222
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 33333333333"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 33333333333
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 444444444444444444"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 444444444444444444
+      </label>
+    </span>
+  </div>
+</div>
+`;
+
+exports[` 5`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 glxALI Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+  height={null}
+  id="Center (Default) Align"
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 1"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 1
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <div
+      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+      href={null}
+      id="storyshots_262"
+      media=""
+      onClick={null}
+      placeholder="{ Card }"
+    >
+      <section
+        className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+        id={null}
+        onClick={null}
+      >
+        <div
+          style={
+            Object {
+              "width": "10em",
+            }
+          }
+        >
+          Different size in content
+        </div>
+      </section>
+    </div>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 33333333333"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 33333333333
+      </label>
+    </span>
+  </div>
+</div>
+`;
+
+exports[` 6`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 cMNIgK Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+  height={null}
+  id="Top Align"
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 1"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 1
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <div
+      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+      href={null}
+      id="storyshots_263"
+      media=""
+      onClick={null}
+      placeholder="{ Card }"
+    >
+      <section
+        className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+        id={null}
+        onClick={null}
+      >
+        <div
+          style={
+            Object {
+              "width": "10em",
+            }
+          }
+        >
+          Different size in content
+        </div>
+      </section>
+    </div>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 33333333333"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 33333333333
+      </label>
+    </span>
+  </div>
+</div>
+`;
+
+exports[` 7`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 hDTsQR Inline__InlineWrapper-sc-1lksbyc-0 bKYArC"
+  height={null}
+  id="Bottom Align"
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 1"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 1
+      </label>
+    </span>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <div
+      className="CardWrapper__StyledCardWrapper-meln7c-0 XGpoL Card__StyledCardWrapper-sc-1g3s676-3"
+      href={null}
+      id="storyshots_264"
+      media=""
+      onClick={null}
+      placeholder="{ Card }"
+    >
+      <section
+        className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+        id={null}
+        onClick={null}
+      >
+        <div
+          style={
+            Object {
+              "width": "10em",
+            }
+          }
+        >
+          Different size in content
+        </div>
+      </section>
+    </div>
+  </div>
+  <div
+    className="Inline__InlineItem-sc-1lksbyc-1 kkbsWX"
+  >
+    <span
+      className="Tag__TagContainer-sc-128kb3h-0 iYglZE"
+      id={null}
+      label="Tag 33333333333"
+      onClick={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+        color={null}
+        cursor="default"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Tag 33333333333
+      </label>
+    </span>
+  </div>
+</div>
+`;

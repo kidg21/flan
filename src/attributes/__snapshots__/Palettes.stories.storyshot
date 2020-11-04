@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 efbryl"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 dzVejm"
+    color="navy"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 fwDVkS"
+    color="sky"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 fLQiAa"
+    color="gold"
+  />
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 efbryl"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 gvKWRh"
+    color="grey"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 fqnJDY"
+    color="seafoam"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 dxyYZS"
+    color="whirlpool"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 hYicKr"
+    color="aqua"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 hKFUCA"
+    color="teal"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 cmfIrn"
+    color="royal"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 cWOTxu"
+    color="orange"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 gqscer"
+    color="yellow"
+  />
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 efbryl"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Colors__ThemeColorBlockColor-x3fy5-0 krveTS"
+    color="action40"
+  />
+  <div
+    className="Colors__ThemeColorBlockColor-x3fy5-0 gwsMay"
+    color="action60"
+  />
+  <div
+    className="Colors__ThemeColorBlockColor-x3fy5-0 hEVTG"
+    color="action80"
+  />
+  <div
+    className="Colors__ThemeColorBlockColor-x3fy5-0 lkatMn"
+    color="action100"
+  />
+</section>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 efbryl"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Colors__ThemeColorBlockColor-x3fy5-0 dncFhn"
+    color="info80"
+  />
+  <div
+    className="Colors__ThemeColorBlockColor-x3fy5-0 eIPxmX"
+    color="success80"
+  />
+  <div
+    className="Colors__ThemeColorBlockColor-x3fy5-0 dNdiHn"
+    color="warning80"
+  />
+  <div
+    className="Colors__ThemeColorBlockColor-x3fy5-0 dYrkyq"
+    color="alert80"
+  />
+</section>
+`;
+
+exports[` 5`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 efbryl"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 kxuzjh"
+    color="grey10"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 bxxwUY"
+    color="grey20"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 jckNYN"
+    color="grey30"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 hNRaU"
+    color="grey40"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 bBSNPS"
+    color="grey50"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 efJeIr"
+    color="grey60"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 bgQuze"
+    color="grey70"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 eScCOr"
+    color="grey80"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 dXYuYX"
+    color="grey90"
+  />
+  <div
+    className="Colors__ColorBlockColor-x3fy5-1 iRPdkT"
+    color="grey100"
+  />
+</section>
+`;

@@ -1,39 +1,26 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
-import Card from "layout/Card";
-import Bar from "blocks/Bar";
+import Card from "elements/Card";
+import Bar from "layout/Bar";
+import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
-import Title, { Description, Link } from "base/Typography";
+import Text, { Link } from "base/Typography";
 
 const StyledBanner = styled(Card)`
-  border: 2px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey4;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
-  border-radius: 5px;
-`;
-
-const StatusBadge = styled.div`
   color: ${(props) => {
-    return props.theme.palette[props.badgeColor] || props.theme.palette.grey;
+    return props.theme.text.primary;
   }};
-`;
-
-const Message = styled(Grid)`
-  align-self: center;
-  padding-right: 1.5em;
 `;
 
 const Close = styled(Icon)`
-  position: absolute;
-  right: 0.75em;
+  color: inherit;
   cursor: pointer;
   opacity: 0.5;
   &:hover {
@@ -57,44 +44,40 @@ function Banner({
   onClick,
   onClose,
   title,
-  type,
+  variant,
 }) {
   let bannerType;
-  const badgeColor = type;
-  if (icon) {
-    bannerType = (
-      <StatusBadge badgeColor={badgeColor}>
-        <Icon icon={icon} size="2x" fixedWidth />
-      </StatusBadge>
-    );
-  } else if (type) {
-    bannerType = (
-      <StatusBadge badgeColor={badgeColor}>
-        <Icon icon={iconHash[type]} size="2x" fixedWidth />
-      </StatusBadge>
-    );
+  const iconValue = icon || iconHash[variant && variant.toLowerCase()];
+  if (iconValue) {
+    bannerType = {
+      content: <Avatar variant={variant} icon={iconValue} fixedWidth />,
+      width: "max-content",
+    };
   }
+
   return (
-    <StyledBanner borderColor={type} id={id} padding="4x">
+    <StyledBanner borderColor={variant} id={id} padding="4x">
       <Bar
-        contentAlign={description || link ? "" : "center"}
-        padding="none"
+        contentAlign={description || link ? null : "center"}
+        padding="0"
         left={bannerType}
-        leftWidth="3em"
-        centerAlign="left"
-        center={
-          <Message columns="1" gap="tiny">
-            <Title text={title} />
-            {description ? <Description text={description} /> : null}
-            {link ? (
-              <Link href={href} onClick={onClick}>
-                {link}
-              </Link>
-            ) : null}
-          </Message>
-        }
+        center={{
+          content: (
+            <Grid columns="1" gap="xs">
+              <Text text={title} />
+              {description ? <Text size="sm" text={description} /> : null}
+              {link ? (
+                <Link href={href} onClick={onClick} text={link} />
+              ) : null}
+            </Grid>
+          ),
+          align: "left",
+        }}
+        right={{
+          content: (<Close icon="close" onClick={onClose} />),
+          width: "max-content",
+        }}
       />
-      <Close icon="close" size="lg" onClick={onClose} />
     </StyledBanner>
   );
 }
@@ -102,13 +85,13 @@ function Banner({
 Banner.propTypes = {
   description: PropTypes.string,
   href: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  icon: PropTypes.string,
   id: PropTypes.string,
   link: PropTypes.string,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   title: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 
 Banner.defaultProps = {
@@ -119,7 +102,7 @@ Banner.defaultProps = {
   link: null,
   onClick: null,
   onClose: null,
-  type: null,
+  variant: null,
 };
 
-export { Banner as default };
+export default Banner;

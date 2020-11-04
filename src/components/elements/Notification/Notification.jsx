@@ -1,18 +1,13 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/no-children-prop */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { screen } from "Variables";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
+import { screen } from "Variables";
+import { PlaceholderText } from "helpers/Skeleton";
+import Card from "elements/Card";
 
-const fadeIn = keyframes`
+/** TODO: Move keyframe animations into their own variable/component files */
+/* const fadeIn = keyframes`
   from {
     opacity: 0;
   }
@@ -50,7 +45,7 @@ const scaleDown = keyframes`
   to {
     transform: scale3D(.6, .6, .6);
   }
-`;
+`; */
 
 const moveUp = keyframes`
   from {
@@ -76,7 +71,7 @@ const moveDown = keyframes`
   }
 `;
 
-const ContentWrapper = styled.span`
+const ContentWrapper = styled(Card)`
   /* Needed for passing properties to children (animation, etc.) */
 `;
 
@@ -102,7 +97,7 @@ const NotificationContainer = styled.div`
   overflow: hidden;
   pointer-events: none;
   ${ContentWrapper} {
-    animation-name: ${(props) => { return (props.position ? moveDown : moveUp); }};
+    animation-name: ${(props) => { return (props.animation === "show" ? moveDown : moveUp); }};
     animation-duration: 0.6s;
     transform-origin: top;
     pointer-events: initial;
@@ -127,17 +122,16 @@ const NotificationContainer = styled.div`
 `;
 
 function Notification({
-  id,
   align,
-  visible,
-  onClick,
-  position,
-  scale,
-  opacity,
-  ariaLabelledby,
-  ariaDescribedby,
+  ariaDescribedBy,
+  ariaLabelledBy,
+  animation,
   children,
-  style,
+  id,
+  onClick,
+  onAnimationStart,
+  onAnimationEnd,
+  visible,
 }) {
   let justifyContent;
   let alignItems;
@@ -169,21 +163,18 @@ function Notification({
   }
   return (
     <NotificationContainer
-      id={id}
       align={align}
-      visible={visible}
-      position={position}
-      scale={scale}
-      opacity={opacity}
-      aria-labelledby={ariaLabelledby}
-      aria-describedby={ariaDescribedby}
-      onClick={onClick}
-      justifyContent={justifyContent}
       alignItems={alignItems}
-      children={children}
-      style={style}
+      aria-describedby={ariaDescribedBy}
+      aria-labelledby={ariaLabelledBy}
+      animation={animation}
+      id={id}
+      justifyContent={justifyContent}
+      onAnimationStart={onAnimationStart}
+      onAnimationEnd={onAnimationEnd}
+      visible={visible}
     >
-      <ContentWrapper>{children}</ContentWrapper>
+      <ContentWrapper shadow="2x" onClick={onClick}>{children}</ContentWrapper>
     </NotificationContainer>
   );
 }
@@ -191,8 +182,7 @@ function Notification({
 export default Notification;
 
 Notification.propTypes = {
-  "id": PropTypes.string,
-  "align": PropTypes.oneOf([
+  align: PropTypes.oneOf([
     "topLeft",
     "topCenter",
     "topRight",
@@ -200,12 +190,26 @@ Notification.propTypes = {
     "bottomCenter",
     "bottomRight",
   ]),
-  "visible": PropTypes.bool,
-  "position": PropTypes.oneOf(["moveUp", "moveDown"]),
-  "scale": PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  "opacity": PropTypes.oneOf(["fadeIn", "fadeOut"]),
-  "onClick": PropTypes.func,
-  "aria-labelledby": PropTypes.string,
-  "aria-describedby": PropTypes.string,
-  "style": PropTypes.string,
+  ariaDescribedBy: PropTypes.string,
+  ariaLabelledBy: PropTypes.string,
+  animation: PropTypes.oneOf(["show", "hide"]),
+  children: PropTypes.node,
+  id: PropTypes.string,
+  onAnimationStart: PropTypes.func,
+  onAnimationEnd: PropTypes.func,
+  onClick: PropTypes.func,
+  visible: PropTypes.bool,
+};
+
+Notification.defaultProps = {
+  align: null,
+  ariaDescribedBy: null,
+  ariaLabelledBy: null,
+  animation: "hide",
+  children: null,
+  id: null,
+  onAnimationStart: null,
+  onAnimationEnd: null,
+  onClick: null,
+  visible: false,
 };

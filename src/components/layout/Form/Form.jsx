@@ -1,17 +1,16 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/default-props-match-prop-types */
-/* eslint-disable radix */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
-import Title, { SubTitle, Description } from "base/Typography";
+import { PlaceholderText } from "helpers/Skeleton";
+import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
+
+const Section = styled.section`
+  display: grid;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+`;
 
 const FormWrapper = styled.form`
   color: ${(props) => {
@@ -22,40 +21,28 @@ const FormWrapper = styled.form`
   }};
   height: 100%;
   padding: 1rem 1rem 1.5rem;
+  ${Section}:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
-const FormHeader = styled(Grid)`
-  margin-bottom: 1.5rem;
-`;
-
-const FormSection = styled.section`
-  display: grid;
-  grid-gap: 1.25rem;
+const Header = styled(Grid)`
   margin-bottom: 1rem;
 `;
 
-const SectionTitle = styled(Title)`
-  margin-bottom: 0rem;
+const TitleSection = styled(Text)`
+color: ${(props) => {
+  return props.theme.text.secondary;
+}};
+text-transform: uppercase;
+grid-column: 1/-1;
+letter-spacing: 2px;
 `;
 
-function Section({ children, title }) {
-  return (
-    <FormSection>
-      {title ? <SectionTitle weight="bold" text={title} /> : null}
-      {children}
-    </FormSection>
-  );
-}
-Section.propTypes = {
-  children: PropTypes.node,
-  title: PropTypes.string,
-};
-Section.defaultProps = {
-  children: null,
-  title: null,
-};
-
-const FormInputs = styled(Grid)`
+const Inputs = styled(Grid)`
+grid-column-gap: ${(props) => {
+  return props.gap || "";
+}};
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(1, minmax(0, 1fr))";
   }};
@@ -68,47 +55,105 @@ const FormInputs = styled(Grid)`
   }
 `;
 
+function FormSection({ children, title, gap, columns }) {
+  let setColumns;
+  const _columns = parseInt(columns, 10);
+  if (_columns > 0 && columns < 4) {
+    setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
+  } else {
+    setColumns = columns;
+  }
+
+  const baseGap = 0.5;
+  let setGap;
+  switch (gap) {
+    case "sm":
+      setGap = `${baseGap * 2}rem`;
+      break;
+    default:
+      setGap = `${baseGap * 4}rem`;
+      break;
+    case "lg":
+      setGap = `${baseGap * 6}rem`;
+      break;
+    case "xl":
+      setGap = `${baseGap * 8}rem`;
+      break;
+  }
+
+  return (
+    <Section>
+      {title ? <TitleSection size="sm" text={title} /> : null}
+      <Inputs gap={setGap} setColumns={setColumns}>
+        {children}
+      </Inputs>
+    </Section>
+  );
+}
+FormSection.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+  columns: PropTypes.oneOf(["1", "2", "3"]),
+  gap: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([
+      "sm",
+      "lg",
+      "xl",
+    ]),
+  ]),
+};
+FormSection.defaultProps = {
+  children: null,
+  title: null,
+  columns: "1",
+  gap: null,
+};
+
 function Form({
   action,
   children,
   columns,
   description,
+  id,
   method,
   novalidate,
+  onSubmit,
   subtitle,
   title,
-  onSubmit,
 }) {
   // 1-3 colums with custom override
   let setColumns;
-  const _columns = parseInt(columns);
+  const _columns = parseInt(columns, 10);
   if (_columns > 0 && columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   } else {
     setColumns = columns;
   }
   return (
-    <FormWrapper action={action} method={method} novalidate={novalidate} onSubmit={onSubmit}>
+    <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
-        <FormHeader gap="tiny">
-          {title ? <Title text={title} /> : null}
-          {subtitle ? <SubTitle text={subtitle} /> : null}
-          {description ? <Description text={description} /> : null}
-        </FormHeader>
+        <Header columns="1">
+          {title ? <Title size="lg" text={title} /> : null}
+          {subtitle ? <Text text={subtitle} /> : null}
+          {description ? <Text size="sm" text={description} /> : null}
+        </Header>
       ) : null}
-      <FormInputs setColumns={setColumns} gap="large">
+      <Inputs gap="xs" setColumns={setColumns}>
         {children}
-      </FormInputs>
+      </Inputs>
     </FormWrapper>
   );
 }
 Form.propTypes = {
   action: PropTypes.node,
   children: PropTypes.node,
-  // columns: PropTypes.oneOf(["1 (default)", "2", "3"]),
+  columns: PropTypes.oneOf(["1", "2", "3", 1, 2, 3]),
   description: PropTypes.string,
+  id: PropTypes.string,
   method: PropTypes.string,
   novalidate: PropTypes.bool,
+  onSubmit: PropTypes.func,
   subtitle: PropTypes.string,
   title: PropTypes.string,
 };
@@ -117,10 +162,12 @@ Form.defaultProps = {
   children: null,
   columns: "1",
   description: null,
+  id: null,
   method: null,
   novalidate: false,
+  onSubmit: null,
   subtitle: null,
   title: null,
 };
 
-export { Form as default, Section };
+export { Form as default, FormSection };

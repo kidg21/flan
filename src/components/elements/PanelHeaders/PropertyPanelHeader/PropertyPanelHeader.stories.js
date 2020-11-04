@@ -1,33 +1,27 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 
 const data = [
-  { id: "a", name: "Save" },
-  { id: "b", name: "Filter" },
-  { id: "c", name: "Something" },
-  { id: "d", name: "Filter" },
-  { id: "e", name: "Layer" },
+  { id: "a", label: "Save" },
+  { id: "b", label: "Filter" },
+  { id: "c", label: "Something" },
+  { id: "d", label: "Filter" },
+  { id: "e", label: "Layer" },
 ];
 
-storiesOf("Elements|Panel Headers/", module)
+storiesOf("Templates|Headers/", module)
   .addDecorator(Padding)
-  .addDecorator(withInfo)
   .add("Property", () => {
     return (
       <PropertyPanelHeader
+        id="Property_Header"
         title="5201 California Ave, Irvine, CA 92614"
         menuData={data}
-        APN="374-543-4227"
-        onClick={() => {}}
+        onClick={() => { }}
       />
     );
   });
+

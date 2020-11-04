@@ -1,178 +1,499 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
-import Bar from "blocks/Bar";
-import Title, { Description } from "base/Typography";
-import { InteractiveContext, DisabledContext } from "States";
-
-const ListWrapper = styled.ul`
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  font-weight: 600;
-  tabindex: 0;
-  ${(props) => {
-    if (props.maxHeight) {
-      return `max-height: ${props.maxHeight}; overflow-y: auto;`
-    }
-  }}
-`;
+import Bar from "layout/Bar";
+import Tag from "atoms/Tag";
+import Avatar from "atoms/Avatar";
+import Radio from "atoms/Radio";
+import Icon from "atoms/Icon";
+import Checkbox from "atoms/Checkbox";
+import Switch from "atoms/Switch";
+import Divider from "atoms/Divider";
+import Text, { Label } from "base/Typography";
+import {
+  InteractiveContext,
+  DisabledContext,
+  PaddingContext,
+  PointerEventsContext,
+} from "States";
 
 const ListItemWrapper = styled.li`
   position: relative;
-  color: ${props => {
-    return props.theme.text[props.itemColor];
+  color: ${(props) => {
+    return props.theme.text[props.selectedColor] || "inherit";
   }};
-  background-color: ${props => {
-    return (
-      props.theme.background[props.itemBGColor] ||
-      props.theme.palette.background
-    );
+  background-color: ${(props) => {
+    return props.theme.background[props.selectedBackground] || "inherit";
   }};
-  border-bottom: 1px solid
-    ${props => {
-    return props.theme.divider;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1px;
+  cursor: ${(props) => {
+    return props.isInteractive && !props.isSelected ? "pointer" : "default";
   }};
-  cursor: ${props => {
-    return props.interactive ? "pointer" : "";
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : props.mouseEvents;
   }};
   &:focus,
   &:hover {
-    ${props => {
-    return props.interactive ? Darken : "";
+    ${(props) => {
+    return props.isInteractive && !props.isSelected ? Darken : "";
   }};
-    outline: none;
+  }
+  outline: none;
+  * {
+    color: ${(props) => {
+    return props.theme.text[props.selectedContent] || "";
+  }};
   }
   &[disabled] {
-    cursor: not-allowed;
-    pointer-events: none;
-    user-select: none;
-    color: ${props => {
+    color: ${(props) => {
     return props.theme.text.disabled;
   }};
-    background-color: ${props => {
-    return props.theme.background.disabled;
-  }};
+    cursor: not-allowed;
+    user-select: none;
     border-left: none;
-  }
-  &:before {
-    display: ${props => {
-    return props.active ? "block" : "none";
-  }};
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    border-style: solid;
-    border-width: 2px;
   }
   &:last-child {
     border-bottom: none;
   }
 `;
 
-function List({ children, id, interactive, title, maxHeight }) {
+const ListTitleWrapper = styled.li`
+  color: inherit;
+  padding: 1rem 1rem;
+`;
+
+const ListTitle = styled(Text)`
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.876rem;
+  font-weight: 400;
+`;
+
+const Section = styled(Label)`
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: initial;
+`;
+
+const SectionDivider = styled(Divider)`
+  margin: 0;
+  border-color: inherit;
+  opacity: 0.3;
+`;
+
+const SectionWrapper = styled.li`
+  color: inherit;
+   padding: ${(props) => {
+    return props.sectionPadding || "";
+  }};
+  &:last-of-type {
+    ${SectionDivider} {
+      display: none;
+    }
+  }
+  li:last-of-type {
+    margin-bottom: 5rem;
+  }
+`;
+
+const ListWrapper = styled.ul`
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  list-style: none;
+  color: ${(props) => {
+    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.secondary;
+  }};
+  background-color: ${(props) => {
+    return props.theme.background[props.listBackground] || props.theme.background.default;
+  }};
+  height: inherit;
+  overflow: auto;
+  ${ListItemWrapper}:not(:last-of-type) {
+    border-bottom: ${(props) => {
+    return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
+  }};
+  }
+  /** TODO: Will add back once Menu's nesting structure is fixed */
+  /* ${ListItemWrapper}:last-of-type {
+    margin-bottom: 0.5rem;
+  } */
+`;
+
+function ListSection({
+  children,
+  hasDivider,
+  title,
+}) {
   return (
-    <InteractiveContext.Provider value={interactive}>
-      {title ? <Bar left={<Title text={title} weight="bold" />} /> : null}
-      <ListWrapper id={id} maxHeight={maxHeight}>{children}</ListWrapper>
-    </InteractiveContext.Provider>
+    <React.Fragment>
+      {title ? (
+        <SectionWrapper sectionPadding="0.75rem 1rem">
+          <Section text={title} weight="regular" size="sm" />
+        </SectionWrapper>
+      ) : (<SectionWrapper sectionPadding="0.25rem 1rem" />)}
+      {children}
+      {hasDivider ? (
+        <SectionWrapper sectionPadding="0.5rem 0.75rem 0.5rem">
+          <SectionDivider />
+        </SectionWrapper>
+      ) : null}
+    </React.Fragment>
   );
 }
 
+ListSection.propTypes = {
+  children: PropTypes.node,
+  hasDivider: PropTypes.bool,
+  title: PropTypes.string,
+};
+ListSection.defaultProps = {
+  children: null,
+  hasDivider: false,
+  title: null,
+};
+
+function getRightContent(post, disabled, onClick) {
+  let rightContent = null;
+  if (post) {
+    if (post.type && typeof post.type === "string") {
+      const postType = post.type.toLowerCase();
+      if (postType === "checkbox") {
+        rightContent = {
+          content: <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
+          width: "max-content",
+          onClick: post.onClick || onClick,
+        };
+      } else if (postType === "toggle") {
+        rightContent = {
+          content: <Switch label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
+          width: "max-content",
+          onClick: post.onClick || onClick,
+        };
+      } else if (postType === "label" && post.label) {
+        rightContent = {
+          content: <Tag label={post.label} />,
+          width: "max-content",
+          onClick: post.onClick || onClick,
+        };
+      } else if (postType === "icon" && post.icon) {
+        rightContent = {
+          content: (
+            <Icon
+              icon={post.icon}
+              size={post.size}
+              variant={post.variant}
+              onClick={post.onClick || onClick}
+              fixedWidth
+            />
+          ),
+          width: "max-content",
+        };
+      }
+    } else {
+      rightContent = post.content
+        ? { ...post, width: "max-content" }
+        : { content: post, width: "max-content" };
+    }
+  }
+  return rightContent;
+}
+
+function getLeftContent(pre, disabled, onClick) {
+  let leftContent = null;
+  if (pre) {
+    if (pre.type && typeof pre.type === "string") {
+      const preType = pre.type.toLowerCase();
+      if (preType === "checkbox") {
+        leftContent = {
+          content: <Checkbox id={pre.label} label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
+          width: "max-content",
+          onClick: pre.onClick || onClick,
+        };
+      } else if (preType === "radio") {
+        leftContent = {
+          content: <Radio label={pre.label} align="left" disabled={disabled} checked={pre.checked} onChange={pre.onClick} />,
+          width: "max-content",
+          onClick: pre.onClick || onClick,
+        };
+      } else if (preType === "label" && pre.label) {
+        leftContent = {
+          content: <Avatar label={pre.label} disabled={disabled} />,
+          width: "max-content",
+          onClick: pre.onClick || onClick,
+        };
+      } else if (preType === "icon" && pre.icon) {
+        leftContent = {
+          content: (
+            <Icon
+              icon={pre.icon}
+              size={pre.size}
+              variant={pre.variant}
+              onClick={pre.onClick}
+              fixedWidth
+            />
+          ),
+          width: "max-content",
+          onClick: pre.onClick || onClick,
+        };
+      }
+    } else {
+      leftContent = pre.content
+        ? { ...pre, width: "max-content" }
+        : { content: pre, width: "max-content" };
+    }
+  }
+  return leftContent;
+}
+
 function ListItem({
-  active,
+  as,
   children,
+  className,
   description,
   disabled,
+  href,
   id,
-  interactive,
-  label,
+  isSelected,
   onClick,
-  type
+  onClickItem,
+  onMouseLeave,
+  onMouseEnter,
+  post,
+  pre,
+  tabIndex,
+  textAlign,
+  title,
 }) {
-  let itemBGColor;
-  let itemColor = type;
-  if (active) {
-    if (itemColor) itemBGColor = `${itemColor}_active`;
-    else {
-      itemColor = "active";
-      itemBGColor = itemColor;
-    }
-    active = !disabled;
+  let selectedColor;
+  let selectedBackground;
+  let selectedContent;
+  if (isSelected) {
+    selectedColor = "inverse";
+    selectedBackground = "selectedDark";
+    selectedContent = "inverse";
   }
+
+  const leftContent = getLeftContent(pre, disabled, onClick);
+  const centerContent = (
+    <React.Fragment>
+      <Text text={title || null} disabled={disabled} />
+      {description ? (<Text size="sm" text={description || null} disabled={disabled} />
+      ) : null}
+    </React.Fragment>
+  );
+
+  const rightContent = getRightContent(post, disabled, onClick);
+
+  const handleOnClick = () => {
+    onClick(title || description);
+  };
+
+  const handleOnClickItem = () => {
+    onClickItem(title || description);
+  };
+
+  const isInteractive = useContext(InteractiveContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const padding = useContext(PaddingContext);
+
   return (
     <ListItemWrapper
-      active={active}
+      as={as}
       disabled={disabled}
+      href={href}
       id={id}
-      interactive={
-        typeof interactive === "boolean"
-          ? interactive
-          : useContext(InteractiveContext)
-      }
-      itemBGColor={itemBGColor}
-      itemColor={itemColor}
-      onClick={onClick}
-      tabIndex={disabled ? "-1" : "1"}
+      isInteractive={isInteractive}
+      isSelected={isSelected}
+      selectedColor={selectedColor}
+      selectedContent={selectedContent}
+      selectedBackground={selectedBackground}
+      tabIndex={disabled ? "-1" : tabIndex}
+      className={className}
+      onClick={typeof onClickItem === "function" ? handleOnClickItem : null} // to target whole list item
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      mouseEvents={pointerEvents}
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
+          padding={padding}
+          center={{
+            content: centerContent,
+            align: textAlign,
+            onClick: typeof onClick === "function" ? handleOnClick : null,
+          }}
           contentAlign="center"
-          centerAlign="left"
-          center={
-            <>
-              {<Title text={label} />}
-              {description ? <Description text={description} /> : null}
-            </>
-          }
-          right={children}
-          rightWidth={(children && children.props.width) || ""}
+          disabled={disabled}
+          left={leftContent}
+          right={rightContent}
         />
+        {children}
       </DisabledContext.Provider>
     </ListItemWrapper>
   );
 }
 
+ListItem.propTypes = {
+  as: PropTypes.string,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  description: PropTypes.string,
+  disabled: PropTypes.bool,
+  href: PropTypes.node,
+  id: PropTypes.string,
+  isSelected: PropTypes.bool,
+  onClick: PropTypes.func,
+  onClickItem: PropTypes.func,
+  onMouseEnter: PropTypes.func,
+  onMouseLeave: PropTypes.func,
+  textAlign: PropTypes.oneOf(["left", "right", "center"]),
+  title: PropTypes.node,
+  post: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      checked: PropTypes.bool,
+      icon: PropTypes.string,
+      onClick: PropTypes.func,
+      size: PropTypes.string,
+      variant: PropTypes.string,
+    }),
+    PropTypes.shape({
+      content: PropTypes.node,
+      onClick: PropTypes.func,
+    }),
+    PropTypes.node,
+  ]),
+  pre: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      checked: PropTypes.bool,
+      icon: PropTypes.string,
+      onClick: PropTypes.func,
+      size: PropTypes.string,
+      variant: PropTypes.string,
+    }),
+    PropTypes.shape({
+      content: PropTypes.node,
+      onClick: PropTypes.func,
+    }),
+    PropTypes.node,
+  ]),
+  tabIndex: PropTypes.string,
+};
+ListItem.defaultProps = {
+  as: null,
+  children: null,
+  className: null,
+  description: null,
+  disabled: false,
+  href: null,
+  id: null,
+  isSelected: false,
+  onClick: null,
+  onClickItem: null,
+  onMouseEnter: null,
+  onMouseLeave: null,
+  textAlign: "left",
+  title: null,
+  post: null,
+  pre: null,
+  tabIndex: "0",
+};
+
+function List({
+  children,
+  className,
+  data,
+  id,
+  isDivided,
+  isInteractive,
+  isInverse,
+  isLight,
+  padding,
+  title,
+}) {
+  let listBackground;
+  let listColor;
+  let listDivider = "neutral40";
+  if (isInverse) {
+    listBackground = "alt";
+    listColor = "inverse";
+    listDivider = "neutral100";
+  }
+  if (isLight) {
+    listBackground = "app";
+    listColor = "neutral40";
+    listDivider = "neutral100";
+  }
+  return (
+    <InteractiveContext.Provider value={isInteractive}>
+      <ListWrapper
+        className={className}
+        id={id}
+        isDivided={isDivided}
+        listBackground={listBackground}
+        listColor={listColor}
+        listDivider={listDivider}
+      >
+        {title ? (
+          <ListTitleWrapper>
+            <ListTitle text={title} />
+          </ListTitleWrapper>
+        ) : null}
+        <PaddingContext.Provider value={padding}>
+          {children
+            || data.map((item, index) => {
+              const itemKey = item.id || item.title || index;
+              return (
+                <ListItem
+                  description={item.description}
+                  disabled={item.disabled}
+                  id={item.id}
+                  isSelected={item.isSelected}
+                  key={itemKey}
+                  onClick={item.onClick}
+                  onClickItem={item.onClickItem}
+                  post={item.post}
+                  pre={item.pre}
+                  title={item.title}
+                />
+              );
+            })}
+        </PaddingContext.Provider>
+      </ListWrapper>
+    </InteractiveContext.Provider>
+  );
+}
+
 List.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
+  data: PropTypes.arrayOf(PropTypes.shape(ListItem.propTypes)),
   id: PropTypes.string,
-  interactive: PropTypes.bool,
-  title: PropTypes.string
+  isDivided: PropTypes.bool,
+  isInteractive: PropTypes.bool,
+  isLight: PropTypes.bool,
+  isInverse: PropTypes.bool,
+  padding: PropTypes.string,
+  title: PropTypes.string,
 };
 List.defaultProps = {
   children: null,
+  className: null,
+  data: [],
   id: null,
-  interactive: false,
-  title: null
+  isDivided: false,
+  isLight: false,
+  isInteractive: false,
+  isInverse: false,
+  padding: "0",
+  title: null,
 };
 
-ListItem.propTypes = {
-  active: PropTypes.bool,
-  children: PropTypes.node,
-  description: PropTypes.string,
-  disabled: PropTypes.bool,
-  id: PropTypes.string,
-  interactive: PropTypes.bool,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"])
-};
-ListItem.defaultProps = {
-  active: false,
-  children: null,
-  description: null,
-  disabled: false,
-  id: null,
-  interactive: null,
-  onClick: null,
-  type: null
-};
-
-export { List as default, ListItem };
+export { List as default, ListSection, ListItem };

@@ -1,0 +1,83 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import Switch from "atoms/Switch";
+import Icon from "atoms/Icon";
+
+<Meta title="Data Entry|Selection Controls/Switch" component={Switch} />
+
+# Switch
+
+#### A Switch is a control that is used to quickly toggle between two possible states
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Switch label="Switch" />
+  </Story>
+</Preview>
+
+# Usage
+
+Switches are only used for these binary actions that occur immediately after the user “flips” the switch. They are commonly used for “on/off” toggles.
+Use if you need to represent the switching between two states or on-off state.
+
+The difference between Switch and Checkbox is that Switch will trigger a state change directly when you toggle it, while Checkbox is generally used for state marking, which should work in conjunction with submit operation.
+
+Switches should be used instead of radio buttons if only one item can be selected from a list.
+
+Use switches to:
+
+- Toggle a single option on or off, on mobile and tablet
+- Immediately activate or deactivate something
+
+
+# Guidelines
+
+- **Opposing Options:**
+  Typically Switchs would be used where the options are very different from each other so no user would ever consider selecting more than one option. If a user selects Option A, Option B should not be desirable to them.
+- **Clear:**
+  A Switch’s action and state should be clear.
+- **Be Brief**
+  Switch labels should be short and to the point. They should be one or two words. A label should never be a sentence.
+
+# Anatomy
+
+Switchs consist of a circular input and a label. It is important that the label also has an htmlFor tag in order to link the Switch and be another way to select.
+
+<!-- ## Behavior -->
+
+# Examples
+
+### States
+
+<!-- We can drop it in a `Preview` to get a code snippet: -->
+
+<Preview>
+  <Story name="States">
+    <Grid columns="3">
+      <Switch label="Selected" checked />
+      <Switch label="Unselected" />
+      <Switch label="Disabled" disabled />
+    </Grid>
+  </Story>
+</Preview>
+
+### Alignment
+
+A Switch may appear to the left or right of it's corresponding label. A Switch may not appear above or below the label.
+
+<Preview>
+  <Story name="Alignment">
+    <Grid columns="3">
+      <Switch label="Left Aligned" />
+      <Switch label="Right Aligned" align="right" />
+    </Grid>
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={Switch} />

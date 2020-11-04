@@ -1,0 +1,125 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import Form, { FormSection } from "layout/Form";
+import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
+import Icon from "atoms/Icon";
+
+<Meta title="Data Entry|Selection Controls/Checkbox" component={Checkbox} />
+
+# Checkbox
+
+#### Checkbox is a selection control
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Checkbox id="Checkbox" label="Checkbox" />
+  </Story>
+</Preview>
+
+# Usage
+
+Checkboxs are used to select from multiple options. Checkboxes are for making selections from a list. They let users select more than one item and allow for easy selection or deselection of all items with a parent checkbox.
+
+Use checkboxes to:
+
+- Select one or multiple items from a list
+- Present a list containing sub-selections
+- Turn an option on or off in desktop environment
+
+If a list consists of multiple options, avoid using switches. Use checkboxes instead because they take up less space.
+
+# Guidelines
+
+- **Multi Select:**
+  Using checkboxes to select multiple items in a list.
+- **Identify State:**
+  Using a checkbox to turn an option on or off
+- **Not required**
+  Checkboxes are typically considered optional selection, while radio is perceived as being a requirement.
+
+# Anatomy
+
+Checkboxs consist of a square input and a label. It is important that the label also has an htmlFor tag in order to link the Checkbox and be another way to select.
+
+A Checkbox may appear to the left or right of it's corresponding label. A Checkbox may not appear above or below the label.
+
+# Examples
+
+### States
+
+<Preview>
+  <Story name="States">
+    <Grid>
+      <Checkbox id="Checked" label="Checked" checked onChange={() => {}} />
+      <Checkbox id="Unchecked" label="Unchecked" />
+      <Checkbox id="Error" label="Error" error />
+      <Checkbox id="Disabled" label="Disabled" disabled />
+    </Grid>
+  </Story>
+</Preview>
+
+### Alignment
+
+<Preview>
+  <Story name="Alignment">
+    <Grid>
+      <Checkbox id="Left Aligned" label="Left Aligned" />
+      <Checkbox id="Right Aligned" label="Right Aligned" align="right" />
+    </Grid>
+  </Story>
+</Preview>
+
+### Invisible Labels
+
+In some cases, the presentation may call for a Checkbox where only the input should show in a standard browser viewing experience. Set the 'labelVisible' property to 'false' in this case. Using a Checkbox with 'labelVisible' property of 'false' will include a Label in a manner visible to assistive technologies.
+
+<Preview>
+  <Story name="Invisible Labels">
+    <Checkbox id="Checkbox" label="Checkbox" labelVisible={false} />
+  </Story>
+</Preview>
+
+### Group
+
+<Preview>
+  <Story name="Checkbox Group">
+    <Form>
+      <FormSection title="Checkbox Group (2 Columns)">
+        <CheckboxGroup columns="2">
+          <Checkbox
+            id="Checkbox-1"
+            name="Checkbox-group"
+            value="1"
+            label="Checkbox 1"
+          />
+          <Checkbox
+            id="Checkbox-2"
+            name="Checkbox-group"
+            value="2"
+            label="Checkbox 2"
+          />
+          <Checkbox
+            id="Checkbox-3"
+            name="Checkbox-group"
+            value="3"
+            label="Checkbox 3"
+          />
+          <Checkbox
+            id="Checkbox-4"
+            name="Checkbox-group"
+            value="4"
+            label="Checkbox 4"
+          />
+        </CheckboxGroup>
+      </FormSection>
+    </Form>
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={Checkbox} />

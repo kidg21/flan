@@ -1,19 +1,12 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Container from "atoms/Container";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
-import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Button from "atoms/Button";
 import Icon from "atoms/Icon";
 import Title from "base/Typography";
@@ -43,13 +36,15 @@ function FolderEntry({
   return (<Bar
     padding={padding}
     left={<Title>{folder.folder} <Icon icon="delete" onClick={onDeletePermission} /></Title>}
-    right={<SelectMenu
-      options={permissions}
-      selectOptions={folder.permissions}
-      isClearable={false}
-      onChangeState={onChangePermissions}
-    />}
-    rightWidth={selectWidth}
+    right={{
+      content: <SelectMenu
+        options={permissions}
+        selectOptions={folder.permissions}
+        isClearable={false}
+        onChangeState={onChangePermissions}
+      />,
+      width: selectWidth,
+    }}
   />);
 }
 
@@ -107,7 +102,7 @@ function RoleEntry({
   }
 
   return (
-    <InformationCardBar open={role.open} onClick={onChangeVisible} title={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
+    <Bar open={role.open} onClick={onChangeVisible} left={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
       {role.folders.map((folder) => {
         return (<FolderEntry
           key={folder.folder}
@@ -119,7 +114,7 @@ function RoleEntry({
       })}
       {editRole
         ? <Bar right={<Button label={editRole.label} onClick={addRolePermission} />} /> : null}
-    </InformationCardBar>
+    </Bar>
   );
 }
 
@@ -131,6 +126,7 @@ RoleEntry.propTypes = {
       folder: PropTypes.string,
       permissions: PropTypes.arrayOf(PropTypes.string),
     })),
+    open: PropTypes.bool,
   }).isRequired,
   onChange: PropTypes.func.isRequired,
   editRole: PropTypes.shape({
@@ -194,35 +190,31 @@ const RolePermissions = React.forwardRef(({
   if (childElements && !(childElements instanceof Array)) childElements = [childElements];
 
   return (
-    <Panel style={style}>
-      <PanelSection header>
-        <MainPanelHeader title={title} menuData={commands} />
-      </PanelSection>
-      <PanelSection body style={panelStyle}>
-        <Bar
-          left={<TextInput type="search" placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}
-          right={right}
-        />
-        <Container height={listHeight} ref={ref} >
-          {activeRoles.filter((role) => {
-            return filter ? role.name.toLowerCase().includes(filter) : true;
-          }).map((role) => {
-            return (<RoleEntry
-              key={role.role}
-              role={role}
-              onChange={onRoleChange}
-              editRole={editRole}
-              folderPadding={folderPadding}
-              selectWidth={selectWidth}
-            />);
-          })}
-        </Container>
-      </PanelSection>
+    <Panel
+      style={panelStyle}
+      header={<MainPanelHeader title={title} menuData={commands} />}
+    >
+      <Bar
+        left={<TextInput type="search" placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}
+        right={right}
+      />
+      <Container height={listHeight} ref={ref} >
+        {activeRoles.filter((role) => {
+          return filter ? role.name.toLowerCase().includes(filter) : true;
+        }).map((role) => {
+          return (<RoleEntry
+            key={role.role}
+            role={role}
+            onChange={onRoleChange}
+            editRole={editRole}
+            folderPadding={folderPadding}
+            selectWidth={selectWidth}
+          />);
+        })}
+      </Container>
       {childElements ? childElements.map((child) => {
         return (
-          <PanelSection>
-            {child}
-          </PanelSection>
+          { child }
         );
       }) : null}
     </Panel>
@@ -230,8 +222,8 @@ const RolePermissions = React.forwardRef(({
 });
 
 RolePermissions.propTypes = {
-  style: PropTypes.object,
-  panelStyle: PropTypes.object,
+  style: PropTypes.string,
+  panelStyle: PropTypes.string,
   roles: PropTypes.arrayOf(PropTypes.shape({
     role: PropTypes.string,
     name: PropTypes.string,
@@ -242,8 +234,8 @@ RolePermissions.propTypes = {
   })),
   commands: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
-    onClickLink: PropTypes.func,
+    label: PropTypes.string,
+    onClick: PropTypes.func,
   })),
   listHeight: PropTypes.oneOfType([
     PropTypes.string,

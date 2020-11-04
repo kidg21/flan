@@ -1,106 +1,122 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import Button from "atoms/Button";
-import ButtonNotes from "./Button.md";
 
-storiesOf("Atoms|Button", module)
-  .addParameters({
-    info: {
-      text:
-        "A control that executes your custom code in response to user interactions.  When you tap a button, or select a button that has focus, the button performs any actions attached to it. You communicate the purpose of a button using a text label, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app. You can add buttons to your interface programmatically or using Interface Builder. -- 'developer.apple.com'",
-    },
-    notes: {
-      markdown: ButtonNotes,
-    },
-  })
-  .addDecorator(Padding)
-  .addDecorator(withKnobs)
-  .add(
-    "Documentation",
-    withInfo()(() => {
-      return <Button label="Standard Button" />;
-    }),
-  )
-  .add("Skeleton", () => {
-    return <Button />;
-  })
-  .add("Knobs", () => {
-    return (
-      <Button
-        icon={select(
-          "icon",
-          {
-            "no icon": null,
-            "user": "user",
-            "down": "down",
-            "bookmark": "bookmark_solid",
-            "plus": "plus",
-            "print": "print",
-          },
-          null,
-          "Button",
-        )}
-        label={text("button label", "Button Label", "Button")}
-        color={options(
-          "color",
-          {
-            "primary (default)": "primary",
-            "secondary": "secondary",
-            "success": "success",
-            "info": "info",
-            "warning": "warning",
-            "alert": "alert",
-          },
-          "default",
-          { display: "radio" },
-          "Button",
-        )}
-        size={options(
-          "size",
-          {
-            "small": "small",
-            "medium ( default )": "default",
-            "large": "large",
-          },
-          "default",
-          { display: "radio" },
-          "Button",
-        )}
-        fullWidth={boolean("full width", false, "Button")}
-        fill={boolean("fill", false, "Button")}
-        noBorder={boolean("noBorder", false, "Button")}
-        disabled={boolean("disabled", false, "Button")}
-      />
-    );
-  })
-  .add("The Button Family", () => {
-    return (
-      <Grid>
-        <Button label="Standard Primary" />
-        <Button label="Solid Primary" type="solid" />
-        <Button label="Standard Secondary" color="secondary" />
-        <Button label="Solid Secondary" type="solid" color="secondary" />
-        <Button label="Solid Info Button" type="solid" />
-        {/* <Button icon="filter" label="Fitlers" color="primary" /> */}
+// Knob Values
+const knobGroups = ["Button"];
+const buttonLabel = "Button Label";
+const buttonVariants = {
+  default: null,
+  neutral: "neutral",
+  action: "action",
+  info: "info",
+  success: "success",
+  warning: "warning",
+  alert: "alert",
+};
+const buttonIcons = ["", "user", "down", "bookmark", "plus", "print"];
 
-        {/* <Button label="Small Button" size="small" />
-        <Button label="Large Button" size="large" /> */}
-        <Button label="Disabled Button" disabled />
-        {/* <Button label="Icon Button" icon="user" type="solid" /> */}
-      </Grid>
-    );
-  });
+export default {
+  title: "Atoms/Button/Tests",
+  component: Button,
+  parameters: {
+    docs: { page: null },
+  },
+  includeStories: ["Knobs", "Actions"],
+  decorators: [Padding, withKnobs],
+};
+
+export const Knobs = () => {
+  const label = text("label", buttonLabel, knobGroups[0]);
+  const variant = select("variant", buttonVariants, buttonVariants.default, knobGroups[0]);
+  const icon = select("icon", buttonIcons, buttonIcons[0], knobGroups[0]);
+  const count = text("count", "", knobGroups[0]);
+  return (
+    <Button
+      label={label}
+      variant={variant}
+      icon={icon}
+      count={count}
+      isSolid={boolean("solid", false, knobGroups[0])}
+      isRound={boolean("round", false, knobGroups[0])}
+      hasUnderline={boolean("underlined", false, knobGroups[0])}
+      isPlain={boolean("plain", false, knobGroups[0])}
+      fullWidth={boolean("full width", false, knobGroups[0])}
+      disabled={boolean("disabled", false, knobGroups[0])}
+      alignCenter={boolean("centered", false, knobGroups[0])}
+    />
+  );
+};
+Knobs.story = {
+  parameters: {
+    parameters: {
+      viewMode: "story",
+    },
+  },
+};
+
+export const Actions = () => {
+  return <Button label="Click Me!" onClick={action("onClick")} />;
+};
+Actions.story = {
+  parameters: {
+    viewMode: "story",
+  },
+};
+
+// export const Specs = () => {
+//   const story = (
+//     <Grid columns="2">
+//       <Button label="Standard Primary" />
+//       <Button label="Solid Primary" isSolid />
+//       <Button label="Standard Secondary" color="secondary" />
+//       <Button label="Solid Secondary" isSolid color="secondary" />
+//       <Button label="Underline Primary" hasUnderline />
+//       <Button
+//         label="Underline Secondary"
+//         hasUnderline
+//         color="secondary"
+//       />
+//       <Button label="Disabled Button" color="secondary" disabled />
+//       <Button label="Disabled Underline" hasUnderline disabled />
+//     </Grid>
+//   );
+
+//   specs(() => {
+//     let output = null;
+//     return describe("Specs", () => {
+//       before(() => {
+//         output = mount(<ThemeProvider theme={DMPTheme}>{story}</ThemeProvider>);
+//       });
+
+//       after(() => {
+//         output.unmount();
+//       });
+
+//       it("Is wrapped by a Two-Column Grid", () => {
+//         const grid = output.find("Grid");
+//         expect(grid.prop("columns")).to.equal("repeat(2, minmax(0, 1fr))");
+//       });
+
+//       it("Can render multiple Buttons", () => {
+//         const buttons = output.find("button");
+//         expect(buttons).to.have.lengthOf(8);
+//       });
+
+//       it("Accepts a \"label\" prop", () => {
+//         const button = output.find("button").first();
+//         const label = button.children();
+//         expect(label.text()).to.equal("Standard Primary");
+//       });
+//     });
+//   });
+
+//   return story;
+// };
+// Specs.story = {
+//   parameters: {
+//     viewMode: "story",
+//   },
+// };

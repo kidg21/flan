@@ -1,0 +1,359 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+  id={null}
+  rows={null}
+>
+  <input
+    className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+    disabled={false}
+    id="default"
+    max={20}
+    min={1}
+    onChange={[Function]}
+    step={1}
+    type="range"
+    value={8}
+  />
+</section>
+`;
+
+exports[` 2`] = `
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  id={null}
+  method={null}
+  onSubmit={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Form__Section-v2wrel-0 AFwsX"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
+      >
+        Standard
+      </p>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          id={null}
+          rows={null}
+        >
+          <input
+            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+            disabled={false}
+            id={null}
+            max={20}
+            min={1}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={1}
+          />
+        </section>
+      </section>
+    </section>
+    <section
+      className="Form__Section-v2wrel-0 AFwsX"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
+      >
+        Error
+      </p>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          id={null}
+          rows={null}
+        >
+          <input
+            className="Slider__SliderPiece-sc-1hp9era-0 insplD"
+            disabled={false}
+            id={null}
+            max={20}
+            min={1}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={1}
+          />
+        </section>
+      </section>
+    </section>
+    <section
+      className="Form__Section-v2wrel-0 AFwsX"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
+      >
+        Disabled
+      </p>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          id={null}
+          rows={null}
+        >
+          <input
+            className="Slider__SliderPiece-sc-1hp9era-0 hqyUiy"
+            disabled={true}
+            id={null}
+            max={20}
+            min={1}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={1}
+          />
+        </section>
+      </section>
+    </section>
+  </section>
+</form>
+`;
+
+exports[` 3`] = `
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  id={null}
+  method={null}
+  onSubmit={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Form__Section-v2wrel-0 AFwsX"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
+      >
+        Standard
+      </p>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          id={null}
+          rows={null}
+        >
+          <input
+            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+            disabled={false}
+            id={null}
+            max={20}
+            min={1}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={10}
+          />
+        </section>
+      </section>
+    </section>
+    <section
+      className="Form__Section-v2wrel-0 AFwsX"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
+      >
+        With Label
+      </p>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 kTRPPG Slider__SliderLabel-sc-1hp9era-1 bgmaOM"
+            color={null}
+            cursor="pointer"
+            fontSize="0.875rem"
+            fontWeight={600}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            1
+          </label>
+          <input
+            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+            disabled={false}
+            id={null}
+            max={20}
+            min={1}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={1}
+          />
+          <div
+            className="Bar__BarLayout-icfo76-2 gFQRVY"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 bxLAtn"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+                color={null}
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing=".5px"
+                onClick={null}
+              >
+                1
+              </label>
+            </div>
+            <div
+              className="Bar__Slot-icfo76-1 gFmZhG"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+                color={null}
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing=".5px"
+                onClick={null}
+              >
+                20
+              </label>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section
+      className="Form__Section-v2wrel-0 AFwsX"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 GBuDq Form__TitleSection-v2wrel-3 oehYi"
+        fontSize="0.875rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.25px"
+      >
+        With Range
+      </p>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gpZLwH"
+          id={null}
+          rows={null}
+        >
+          <input
+            className="Slider__SliderPiece-sc-1hp9era-0 dKRmas"
+            disabled={false}
+            id={null}
+            max={20}
+            min={1}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={15}
+          />
+          <div
+            className="Bar__BarLayout-icfo76-2 gFQRVY"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 bxLAtn"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+                color={null}
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing=".5px"
+                onClick={null}
+              >
+                1
+              </label>
+            </div>
+            <div
+              className="Bar__Slot-icfo76-1 gFmZhG"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 kTRPPG"
+                color={null}
+                cursor="pointer"
+                fontSize="0.875rem"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing=".5px"
+                onClick={null}
+              >
+                20
+              </label>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </section>
+</form>
+`;

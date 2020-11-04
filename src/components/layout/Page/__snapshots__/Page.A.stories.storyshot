@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Page__PageWrapper-mddda5-0 dxgXBO"
+    id="Template A_01"
+    rows={null}
+  >
+    <section
+      className="Page__Region-mddda5-2 cEkvql"
+      id="A"
+      placeholder="A"
+      tabIndex="0"
+    >
+      
+    </section>
+  </section>
+</div>
+`;

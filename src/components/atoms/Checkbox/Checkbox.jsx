@@ -1,11 +1,9 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { DisabledContext } from "States";
-import Label from "atoms/Label";
+import { DisabledContext, PointerEventsContext } from "States";
+import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
@@ -20,20 +18,56 @@ const CheckboxWrapper = styled(Grid)`
 
 const CheckboxContainer = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 0.75rem;
   grid-template-areas: ${(props) => {
-    return props.alignInput || "";
+    return props.gridAreas || "";
   }};
+  grid-template-columns: ${(props) => {
+    return props.gridColumns || "auto 1fr";
+  }};
+  grid-gap: ${(props) => {
+    return props.gridGap || "0.75rem";
+  }};
+  justify-content: flex-start;
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
+  pointer-events: ${(props) => {
+    return props.disabled || props.readonly ? "none" : props.mouseEvents;
+  }};
+  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
   }
+`;
+
+const CheckboxLabel = styled(Label)`
+  grid-area: label;
+  ${(props) => {
+    return props.hidden
+      && css`
+        position: absolute;
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        &.focusable {
+          &:active, &:focus {
+            position: static;
+            overflow: visible;
+            height: auto;
+            width: auto;
+            margin: 0;
+            clip: auto;
+          }
+        }
+    `;
+  }}
 `;
 
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
@@ -45,7 +79,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
   width: 1rem;
   height: 1rem;
@@ -56,22 +90,29 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   &:checked {
     background-color: ${(props) => {
     return (
-      props.theme.palette[props.fillColorChecked] ||
-      props.theme.background.selected
+      props.theme.palette[props.fillColorChecked]
+      || props.theme.palette.selected
     );
   }};
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.borderColor] ||
-      props.theme.background.selected
+      props.theme.palette[props.borderColor] || props.theme.palette.selected
     );
   }};
+  &:after {
+    content: '✔';
+    position: relative;
+    display: block;
+    padding-left: 2px;
+    padding-top: 1px;
+    font-size: 10px;
+    color: white;
+  }
   }
   &:focus {
     outline-color: ${(props) => {
     return (
-      props.theme.palette[props.outlineColor] ||
-      props.theme.palette.secondaryLight
+      props.theme.palette[props.outlineColor] || props.theme.palette.selected
     );
   }};
   }
@@ -84,54 +125,72 @@ const InputGroup = styled(Grid)`
 `;
 
 function Checkbox({
-  align, checked, error, disabled, id, label, onChange, isRequired, onFocus, onBlur, warning,
+  align,
+  bold,
+  checked,
+  disabled,
+  error,
+  id,
+  label,
+  labelVisible,
+  onBlur,
+  onChange,
+  onFocus,
+  stopPropagation,
 }) {
-  let inputTextColor;
-  let fillColor;
   let borderColor;
-  let outlineColor;
-  let fillColorChecked;
   let borderColorChecked;
-  let alignInput;
+  let fillColor;
+  let fillColorChecked;
+  let gridAreas;
+  let gridColumns;
+  let gridGap;
+  let inputTextColor;
+  let outlineColor;
   let tabIndex;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
+  const pointerEvents = useContext(PointerEventsContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) {
-    borderColor = "grey4";
-    fillColor = "grey5";
-    fillColorChecked = "grey5";
+    borderColor = "neutral80";
+    fillColor = "neutral40";
+    fillColorChecked = "neutral40";
     inputTextColor = "disabled";
     tabIndex = "-1";
   } else if (error) {
-    borderColor = "alert";
-    borderColorChecked = "alert";
-    fillColor = "alertLight";
-    fillColorChecked = "alertLight";
+    borderColor = "alert80";
+    borderColorChecked = "alert80";
+    fillColor = "alert60";
+    fillColorChecked = "alert60";
     inputTextColor = "alert";
-    outlineColor = "alertLight";
-  } else if (warning) {
-    borderColor = "warning";
-    borderColorChecked = "warning";
-    fillColor = "warningLight";
-    fillColorChecked = "warningLight";
-    inputTextColor = "warning";
-    outlineColor = "warningLight";
+    outlineColor = "alert60";
   }
 
   switch (align) {
     case "right":
-      alignInput = "'label input'";
+      gridAreas = "'label input'";
       break;
+    case "left":
     default:
-      alignInput = "'input label'";
+      gridAreas = "'input label'";
       break;
   }
+
+  if (!labelVisible || !label) {
+    gridAreas = "";
+    gridColumns = "auto";
+    gridGap = "0";
+  }
+
   return (
     <CheckboxContainer
-      alignInput={alignInput}
+      gridAreas={gridAreas}
       disabled={isDisabled}
-      error={error}
+      gridColumns={gridColumns}
+      gridGap={gridGap}
       inputTextColor={inputTextColor}
+      mouseEvents={pointerEvents}
     >
       <CheckboxInput
         borderColor={borderColor}
@@ -140,13 +199,28 @@ function Checkbox({
         fillColor={fillColor}
         fillColorChecked={fillColorChecked}
         id={id}
+        onBlur={onBlur}
         onChange={onChange}
+        onClick={(e) => {
+          if (stopPropagation) {
+            e.stopPropagation();
+          }
+        }}
+        onFocus={onFocus}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
-        onBlur={onBlur}
-        onFocus={onFocus}
       />
-      <Label htmlFor={id} isRequired={isRequired} text={label} />
+      <CheckboxLabel
+        htmlFor={id}
+        text={label}
+        hidden={!labelVisible}
+        onClick={(e) => {
+          if (stopPropagation) {
+            e.stopPropagation();
+          }
+        }}
+        weight={bold ? "bold" : ""}
+      />
     </CheckboxContainer>
   );
 }
@@ -160,109 +234,114 @@ function CheckboxGroup({
   error,
   helpText,
   id,
-  label,
   isRequired,
+  label,
   onChange,
-  warning,
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
-      errorText = error;
-    } else if (warning) {
-      inputTextColor = "warning";
-      errorText = warning;
+      if (typeof error === "string") errorText = error;
     }
   }
 
   return (
     <CheckboxWrapper
-      align={align}
-      disabled={isDisabled}
       columns="1"
-      gap="small"
-      inputTextColor={inputTextColor}
+      disabled={isDisabled}
       id={id}
+      inputTextColor={inputTextColor}
     >
-      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {label ? (
+        <Label size="sm" isRequired={isRequired} text={label} />
+      ) : null}
+      {helpText ? <Text size="xs" text={helpText} /> : null}
       <InputGroup columns={columns}>
-        {children ||
-          data.map((item) => {
+        {children
+          || data.map((item) => {
             return (
               <Checkbox
                 align={align}
+                checked={item.checked}
                 disabled={item.disabled || isDisabled}
                 error={!!error}
-                warning={!!warning}
                 id={item.id}
+                isRequired={item.isRequired}
                 key={item.id}
                 label={item.label}
-                onChange={item.onChange || onChange}
-                isRequired={item.isRequired}
                 onBlur={item.onBlur}
+                onChange={item.onChange || onChange}
                 onFocus={item.onFocus}
-                checked={item.checked}
               />
             );
           })}
       </InputGroup>
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text size="xs" text={errorText} /> : null}
     </CheckboxWrapper>
   );
 }
 
 Checkbox.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
+  bold: PropTypes.bool,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  warning: PropTypes.bool,
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  onChange: PropTypes.func,
+  label: PropTypes.node,
+  labelVisible: PropTypes.bool,
   onBlur: PropTypes.func,
+  onChange: PropTypes.func,
   onFocus: PropTypes.func,
-  isRequired: PropTypes.bool,
+  stopPropagation: PropTypes.bool,
 };
 
 Checkbox.defaultProps = {
-  align: null,
+  align: "left",
+  bold: false,
   checked: null,
   disabled: false,
   error: null,
-  warning: false,
   id: null,
-  onChange: null,
+  label: null,
+  labelVisible: true,
   onBlur: null,
+  onChange: null,
   onFocus: null,
-  isRequired: false,
+  stopPropagation: false,
 };
 
 CheckboxGroup.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
   children: PropTypes.node,
-  columns: PropTypes.oneOf(["auto (default)", "1", "2", "3", "4", "5", "6"]),
-  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
+  data: PropTypes.arrayOf(PropTypes.shape({
+    checked: PropTypes.bool,
+    disabled: PropTypes.bool,
+    id: PropTypes.string,
+    label: PropTypes.string,
+    onBlur: PropTypes.func,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+  })),
   disabled: PropTypes.bool,
-  error: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
-  warning: PropTypes.string,
 };
 
 CheckboxGroup.defaultProps = {
-  align: null,
+  align: "left",
   children: null,
   columns: null,
-  data: null,
+  data: [],
   disabled: false,
   error: null,
   helpText: null,
@@ -270,7 +349,6 @@ CheckboxGroup.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
-  warning: "",
 };
 
 export { Checkbox as default, CheckboxGroup };

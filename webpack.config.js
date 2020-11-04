@@ -62,7 +62,7 @@ const build = {
         ),
       },
       {
-        test: /\.(ttf|eot|svg|jpg|html$)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|eot|svg|html$)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [
           {
             loader: "file-loader",
@@ -74,7 +74,7 @@ const build = {
         ],
       },
       {
-        test: /\.(png|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(png|gif|jpg|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader",
       },
     ],

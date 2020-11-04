@@ -1,0 +1,164 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { FullScreen, ContainerSmall, Container, ContainerLarge } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import Text from "base/Typography";
+import Card, { CardSection, CardGrid } from "elements/Card";
+import Search from "blocks/Search";
+import * as stories from 'blocks/Search/Search.stories.js';
+
+<Meta title="Data Entry|Search" component={Search}/>
+
+# Search
+
+#### An Search allows users to toggle the display of sections of content
+
+### Standard
+
+<Preview withToolbar>
+  <Story name="Standard">
+     <Search
+      id="Search_Standard"
+      placeholder="Search Location"
+    />
+  </Story>
+</Preview>
+
+<!-- Need to rewrite to pass tests
+"Invalid hook call. Hooks can only be called inside of the body of a function component."
+Likely rewrite here rather than import from 'stories.js'
+-->
+<!-- ### Interaction
+Click on the 'Search' icon to show Results
+<Preview withToolbar>
+<Story
+  name="Interaction"
+  decorators={[Container]}
+>
+  {stories.Interaction()}
+</Story>
+</Preview> -->
+
+# Usage
+
+The Search component is a set of expandable panels for showing and hiding content from the user to make the UI less crowded. The component works well on both mobile and desktop environment and it supports keyboard and screen readers too. The component supports Lumo and Material themes.
+
+# Examples
+
+### Suggestions
+
+<Preview>
+  <Story
+    name="Suggestions"
+    decorators={[Container]}
+  >
+    <Search
+      id="Suggestions"
+      placeholder="Search Location"
+      results={[
+        {
+          title: "White House",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Orange House",
+          description: "1224 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Red House",
+          description: "123 Malibu Drive, CA 92660",
+        },
+      ]}
+    />
+  </Story>
+</Preview>
+
+<Preview>
+  <Story
+    name="Suggestions ( max )"
+    decorators={[Container]}
+  >
+    <Search
+      id="Suggestions_More"
+      placeholder="Search Location"
+      results={[
+        {
+          title: "White House",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Orange House",
+          description: "1224 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Red House",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Green House",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Black House",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Blue House",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Address",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "APN",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Owner",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Address",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Address",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "APN",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Owner",
+          description: "123 Malibu Drive, CA 92660",
+        },
+        {
+          title: "Address",
+          description: "123 Malibu Drive, CA 92660",
+        }
+      ]}
+    />
+  </Story>
+</Preview>
+
+### Errors
+
+<Preview>
+  <Story name="Offline" decorators={[ContainerSmall]}>
+    <Search id="Search_Offline" placeholder="Search Location" error="offline" />
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Connection" decorators={[ContainerSmall]}>
+    <Search id="Search_BadConnection" placeholder="Search Location" error="connection" />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Search} />

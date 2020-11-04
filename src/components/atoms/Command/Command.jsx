@@ -1,14 +1,11 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable security/detect-object-injection */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
-import { DisabledContext } from "States";
+import styled, { css } from "styled-components";
+import { DisabledContext, PointerEventsContext } from "States";
 import Icon from "atoms/Icon";
-import Title from "base/Typography";
+import { Label } from "base/Typography";
 
 const CommandContainer = styled.a`
   display: ${(props) => {
@@ -26,30 +23,34 @@ const CommandContainer = styled.a`
   justify-items: ${(props) => {
     return props.justifyIcon || "";
   }};
-  align-items: center;
-  width: max-content;
   font-size: ${(props) => {
     return props.commandSize || "";
   }};
+  line-height: inherit;
   color: ${(props) => {
     return props.theme.text[props.commandColor] || props.theme.text.link;
   }};
+  max-width: max-content;
   user-select: none;
   cursor: ${(props) => {
-    return props.isDisabled ? "not-allowed" : "";
+    return props.isDisabled ? "not-allowed" : "pointer";
   }};
   pointer-events: ${(props) => {
-    return props.isDisabled ? "none" : "";
+    return props.isDisabled ? "none" : props.mouseEvents;
   }};
-  transition: all 0.3s ease;
+  &:hover {
+    color: ${(props) => {
+    return props.theme.palette.action100;
+  }};
+  }
 `;
 
-const CommandName = styled(Title)`
+const CommandName = styled(Label)`
   grid-area: name;
+  font-weight: 500;
   font-size: inherit;
   color: inherit;
-  line-height: inherit;
-  font-weight: 700;
+  text-transform: capitalize;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -57,11 +58,37 @@ const CommandName = styled(Title)`
   &:focus {
     border: 1px solid
       ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action80;
   }};
     outline: none;
   }
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
+
+  ${(props) => {
+    return props.hidden
+      && css`
+        position: absolute;
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        &.focusable {
+          &:active, &:focus {
+            position: static;
+            overflow: visible;
+            height: auto;
+            width: auto;
+            margin: 0;
+            clip: auto;
+          }
+        }
+    `;
+  }}
 `;
 
 const CommandIcon = styled(Icon)`
@@ -112,9 +139,9 @@ const commandHash = {
 };
 
 function Command({
-  align, command, disabled, icon, id, label, onClick, size,
+  align, command, disabled, icon, id, label, onClick, size, labelVisible,
 }) {
-  command = commandHash[command] || { icon, label };
+  const cmd = commandHash[command] || { icon, label };
   let alignCommand = "";
   let alignIcon = "";
   let justifyIcon = "flex-start";
@@ -134,17 +161,20 @@ function Command({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {
-    case "small":
-      commandSize = ".8em";
+    case "sm":
+      commandSize = ".875rem";
       break;
-    case "large":
+    case "lg":
       commandSize = "1.2em";
       break;
     default:
+      commandSize = "1em";
       break;
   }
   return (
@@ -153,16 +183,17 @@ function Command({
       alignIcon={alignIcon}
       commandColor={commandColor}
       commandSize={commandSize}
-      icon={command.icon}
+      icon={cmd.icon}
       id={id}
       isDisabled={isDisabled}
       justifyIcon={justifyIcon}
       label={label}
       onClick={onClick}
-      title={command.label} // HTML attribute (display on :hover)
+      title={cmd.label}
+      mouseEvents={pointerEvents}
     >
-      {command.icon ? <CommandIcon icon={command.icon} /> : null}
-      <CommandName>{command.label}</CommandName>
+      {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
+      <CommandName text={cmd.label} hidden={!labelVisible} />
     </CommandContainer>
   );
 }
@@ -174,8 +205,9 @@ Command.propTypes = {
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
+  labelVisible: PropTypes.bool,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["small", "large"]),
+  size: PropTypes.oneOf(["sm", "lg"]),
 };
 
 Command.defaultProps = {
@@ -185,8 +217,9 @@ Command.defaultProps = {
   icon: null,
   id: null,
   label: "Command",
+  labelVisible: true,
   onClick: null,
   size: null,
 };
 
-export { Command as default };
+export default Command;

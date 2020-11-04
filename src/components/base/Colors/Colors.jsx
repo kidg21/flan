@@ -1,37 +1,16 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
-import Bar from "blocks/Bar";
-import { Lighten, Darken } from "Variables";
-import Title, { Headline, SubTitle } from "base/Typography";
-import { PanelSection } from "layout/Panel";
-import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import { colors, Lighten, Darken } from "Variables";
+import Title from "base/Typography";
 
-const ThemeWrapper = styled.div`
-  color: ${(props) => {
-    return props.theme.text[props.color] || props.theme.text.primary;
-  }};
-  background-color: ${(props) => {
-    return props.theme.background.default;
-  }};
-`;
-
-const ColorBlockColor = styled.div`
+const ThemeColorBlockColor = styled.div`
   width: 5em;
   border-radius: 100px;
   height: 5em;
   margin: 5px;
-  filter: ${(props) => {
-    return props.filterShade || "";
-  }};
-  border: 1px solid
-    ${(props) => {
-    return props.theme.text.disabled;
-  }};
 
   background-color: ${(props) => {
     return props.theme.palette[props.color] || "";
@@ -46,57 +25,48 @@ const ColorBlockColor = styled.div`
   }
 `;
 
-function Colors({ id, color }) {
+
+const ColorBlockColor = styled.div`
+  width: 5em;
+  border-radius: 100px;
+  height: 5em;
+  margin: 5px;
+
+  background-color: ${(props) => {
+    return colors[props.color];
+  }};
+
+  &:hover {
+    ${Darken}
+  }
+
+  &:active {
+    ${Lighten}
+  }
+`;
+
+function ThemeColors({ color }) {
   return (
-    <Bar
-      contentAlign="center"
-      left={<ColorBlockColor color={color} />}
-      leftWidth="min-content"
-      center={<Title text={color} />}
-      centerAlign="left"
-    />
+    <ThemeColorBlockColor color={color} />
   );
 }
+ThemeColors.propTypes = {
+  color: PropTypes.string,
+};
+ThemeColors.defaultProps = {
+  color: null,
+};
 
-function ColorPalette() {
+function Colors({ color }) {
   return (
-    <ThemeWrapper>
-      <PanelSection body>
-        <Grid>
-
-          <Headline text="Color Palette" />
-          <SubTitle text="Color Palette is controled by themeing. Colors vary depending on theme selected." />
-
-          <Colors color="primary" />
-          <Colors color="primaryDark" />
-          <Colors color="primaryLight" />
-          <Colors color="primaryTint" />
-
-          <Colors color="secondary" />
-          <Colors color="secondaryDark" />
-          <Colors color="secondaryLight" />
-          <Colors color="secondaryTint" />
-
-          <Colors color="grey" />
-          <Colors color="grey2" />
-          <Colors color="grey3" />
-          <Colors color="grey4" />
-          <Colors color="grey5" />
-          <Colors color="grey6" />
-
-          <Colors color="info" />
-          <Colors color="infoTint" />
-          <Colors color="success" />
-          <Colors color="successTint" />
-          <Colors color="warning" />
-          <Colors color="warningTint" />
-          <Colors color="alert" />
-          <Colors color="alertTint" />
-
-        </Grid>
-      </PanelSection>
-    </ThemeWrapper>
+    <ColorBlockColor color={color} />
   );
 }
+Colors.propTypes = {
+  color: PropTypes.string,
+};
+Colors.defaultProps = {
+  color: null,
+};
 
-export { ColorPalette as default, Colors };
+export { ThemeColors as default, Colors };

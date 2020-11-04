@@ -1,0 +1,615 @@
+import { useState } from "hooks";
+import { Meta, Story, Preview, Props, Source } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { textMock, BoxMock, lessTextMock } from "layout/Popper/Popper.stories.js";
+import { Padding, CenterDecorator, Container, CenterDisplayGrid, DisplayGrid } from "helpers/Display";
+import Popper from "layout/Popper";
+import Card from "elements/Card";
+import Button, { ButtonGroup } from "atoms/Button";
+import Grid from "layout/Grid";
+import List, { ListItem } from "blocks/List";
+import Icon from "atoms/Icon";
+
+<Meta title="Utilities/Popper" component={Popper} />
+
+# Popper
+
+#### Popper displays & positions content over an anchor element.
+
+<Preview withToolbar>
+  <Story name="Standard" decorators={[Container, Padding, CenterDisplayGrid]}>
+    {() => {
+        const [visible, setVisible] = useState(true);
+        return (
+          <Popper
+            id="popper-standard"
+            anchor={(
+              <Button
+                label="Pop"
+                isSolid
+                onClick={() => { setVisible((show) => { return !show; })}}
+              />
+            )}
+            visible={visible}
+            onClose={() => { setVisible(false); }}
+          >
+            <BoxMock>
+              <Card
+                title="Corn"
+                description={textMock}
+              />
+            </BoxMock>
+        </Popper>
+        );
+      }}
+  </Story>
+</Preview>
+
+## Examples
+
+### Positions
+
+`Popper` supports different positions in relation to the anchor element. Make sure
+to position `Popper` properly so it doesn't get cut off. Supported positions include:
+`bottomRight` (default), `topRight`, `bottomLeft`, `topLeft`, `leftUp`, `rightUp`, `leftDown`, `rightDown`.
+
+<Preview>
+  <Story name="Top-Bottom Positions" decorators={[CenterDecorator, Container, Padding]}>
+    <Grid columns="4">
+      <Popper
+        id="popper-position-bottomRight"
+        anchor={(
+          <Button
+            id="popper-button-bottomRight"
+            label="Bottom Right"
+            isSolid
+          />
+        )}
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-topRight"
+        anchor={(
+          <Button
+            id="popper-button-topRight"
+            label="Top Right"
+            isSolid
+          />
+        )}
+        visible
+        position="topRight"
+     >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-bottomLeft"
+        anchor={(
+          <Button
+            id="popper-button-bottomLeft"
+            label="Bottom Left"
+            isSolid
+          />
+        )}
+        visible
+        position="bottomLeft"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-topLeft"
+        anchor={(
+          <Button
+            id="popper-button-topLeft"
+            label="Top Left"
+            isSolid
+          />
+        )}
+        visible
+        position="topLeft"
+      >
+       <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+    </Grid>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Left-Right Positions" decorators={[CenterDecorator, Container, Padding, CenterDisplayGrid]}>
+    <Grid columns="2">
+      <Popper
+        id="popper-position-leftUp"
+        anchor={(
+          <Button
+            id="popper-button-leftUp"
+            label="Left Up"
+            isSolid
+          />
+        )}
+        visible
+        position="leftUp"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-rightUp"
+        anchor={(
+          <Button
+            id="popper-button-rightUp"
+            label="Right Up"
+            isSolid
+          />
+        )}
+        visible
+        position="rightUp"
+     >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-leftDown"
+        anchor={(
+          <Button
+            id="popper-button-leftDown"
+            label="Left Down"
+            isSolid
+          />
+        )}
+        visible
+        position="leftDown"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-rightDown"
+        anchor={(
+          <Button
+            id="popper-button-rightDown"
+            label="Right Down"
+            isSolid
+          />
+        )}
+        visible
+        position="rightDown"
+      >
+       <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+    </Grid>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Center Positions" decorators={[CenterDecorator, Container, Padding, CenterDisplayGrid]}>
+    <Grid columns="2">
+      <Popper
+        id="popper-position-leftCenter"
+        anchor={(
+          <Button
+            id="popper-button-leftCenter"
+            label="Left Center"
+            isSolid
+          />
+        )}
+        visible
+        position="leftCenter"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-topCenter"
+        anchor={(
+          <Button
+            id="popper-button-topCenter"
+            label="Top Center"
+            isSolid
+          />
+        )}
+        visible
+        position="topCenter"
+     >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-bottomCenter"
+        anchor={(
+          <Button
+            id="popper-button-bottomCenter"
+            label="Bottom Center"
+            isSolid
+          />
+        )}
+        visible
+        position="bottomCenter"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-position-rightCenter"
+        anchor={(
+          <Button
+            id="popper-button-rightCenter"
+            label="Right Center"
+            isSolid
+          />
+        )}
+        visible
+        position="rightCenter"
+      >
+       <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={lessTextMock}
+          />
+        </BoxMock>
+      </Popper>
+    </Grid>
+  </Story>
+</Preview>
+
+### Anchor
+
+The anchor element refers to the component the popper will open around. Use the
+`anchor` prop.
+
+<Preview>
+  <Story name="Anchor" decorators={[Container, Padding, CenterDecorator]}>
+    <Popper
+      id="popper-anchor"
+      visible
+      anchor={(
+        <Button
+          id="button-anchor"
+          label="Anchor"
+          icon="star"
+          alignCenter
+          variant="warning"
+        />
+      )}
+    >
+      <BoxMock>
+        <Card
+          title="Corn"
+          description={textMock}
+        />
+      </BoxMock>
+    </Popper>
+  </Story>
+</Preview>
+
+### Children Content
+
+`children` prop is used to determine what content will show in the pop-out.
+
+<Preview>
+  <Story name="Content" decorators={[Container, Padding, CenterDecorator]}>
+    <Popper
+      id="popper-content"
+      visible
+      anchor={(
+        <Button
+          id="button-anchor"
+          label="Anchor"
+        />
+      )}
+    >
+      <BoxMock>
+        <List
+          id="content-list"
+          title="Popcorn Content"
+          isInverse
+        >
+          <ListItem title="Butter" />
+          <ListItem title="Kettle Corn" />
+          <ListItem title="Cheesy Jalapeno" />
+        </List>
+      </BoxMock>
+    </Popper>
+  </Story>
+</Preview>
+
+### Offset
+
+Use the `offset` to specify the gap value between the anchor element and the content.
+
+<Preview>
+  <Story name="Offset" decorators={[Container, Padding]}>
+    <ButtonGroup columns={4}>
+      <Popper
+        id="popper-normal"
+        anchor={(
+          <Button
+            id="button-normal"
+            label="No Offset"
+          />
+        )}
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Normal Popper"
+            description="Offset prop is not passed in."
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-offset-pixel-string"
+        anchor={(
+          <Button
+            id="button-offset-pixel-string"
+            label="Pixel Offset"
+            isSolid
+          />
+        )}
+        offset="20px"
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="'20px' Offset Popper"
+            description="Passed in string value of '20px' to Popper."
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-offset-number"
+        anchor={(
+          <Button
+            id="button-offset-number"
+            label="Number Offset"
+            isSolid
+          />
+        )}
+        visible
+        offset={20}
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="'20' Offset Popper"
+            description="Passed in number value of '20' to Popper. Assumes pixel value."
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-offset-rem"
+        anchor={(
+          <Button
+            id="button-offset-rem"
+            label="Rem Popper"
+            isSolid
+          />
+        )}
+        offset="3rem"
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="'3rem' Offset Popper"
+            description="Passed in string value of '3rem' to Popper. Allows for any string value supported by css translate property."
+          />
+        </BoxMock>
+      </Popper>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Location
+
+Set the `location` prop when you want to position the popper at a specific pixel location. For example, we want to place a tooltip
+at the screen location where the mouse was clicked.
+
+<Preview>
+  <Story name="Location" decorators={[Container, Padding]}>
+    <div style={{ position: "relative" }}>
+      <Popper
+        id="popper-location-original"
+        visible
+        location={{ top: "0", left: "0" }}
+        anchor={
+          <Icon icon="home" />
+        }
+      >
+        <BoxMock>
+          <Card
+            title="Original Location"
+            description="top - 0px, left - 0px"
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-location-updated"
+        visible
+        location={{ top: "100", left: "100" }}
+        anchor={
+          <Icon icon="location" variant="success" />
+        }
+      >
+        <BoxMock>
+          <Card
+            title="Updated Location"
+            description="top - 100px, left - 100px"
+          />
+        </BoxMock>
+      </Popper>
+    </div>
+  </Story>
+</Preview>
+
+| Property Key | Type     | Description |
+|-----------|----------|-------------|
+| position  | string   | css style position, i.e. "absolute" (default) or "fixed"
+| top       | string or number | vertical pixel value position for top edge
+| left      | string or number | horizontal pixel value position for left edge
+
+### Portal
+
+For cases when `Popper` needs to break out of the DOM hierarchy, use the `usePortal` prop. It places
+the `children` content in a `React.Portal`.
+
+> By default, the popper will close on window scroll. We did this to avoid the pop-out position from getting out of sync
+> with its anchor. Additional logic has been added to help track the anchor when a portal popper is open.
+> Check out `isTracking` (defaulted to `true`) & `trackingInterval` (defaulted to `500`ms).
+
+<Preview>
+  <Story name="Portal" decorators={[Padding, DisplayGrid]}>
+    {() => {
+        const [visible, setVisible] = useState(false);
+        return (
+          <Popper
+            id="popper-portal"
+            anchor={(
+              <Button
+                id="button"
+                label="Portal Popper"
+                onClick={() => { setVisible((show) => { return !show; })}}
+                isSolid
+              />
+            )}
+            usePortal
+            visible={visible}
+            onClose={() => { setVisible(false); }}
+          >
+            <BoxMock>
+              <Card
+                id="card"
+                title="Corn"
+                description={textMock}
+              />
+            </BoxMock>
+        </Popper>
+        );
+      }}
+  </Story>
+</Preview>
+
+### Flex
+
+Use `isFlex` prop when the anchor element needs to be a flex component.
+
+<Preview>
+  <Story name="Flex" decorators={[Container, Padding]}>
+    <ButtonGroup columns={4}>
+      <Button id="button-normal" label="Normal Button" />
+      <Popper
+        id="popper-flex"
+        anchor={(
+          <Button
+            id="button-flex"
+            label="Flex Popper"
+            isSolid
+          />
+        )}
+        visible
+        isFlex
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Popper
+        id="popper-not-flex"
+        anchor={(
+          <Button
+            id="button-not-flex"
+            label="Normal Popper"
+          />
+        )}
+        visible
+        position="bottomRight"
+      >
+        <BoxMock>
+          <Card
+            id="card"
+            title="Corn"
+            description={textMock}
+          />
+        </BoxMock>
+      </Popper>
+      <Button id="button-normal-2" label="Normal Button" />
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Popper} />

@@ -1,0 +1,124 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Padding } from "helpers/Display";
+import Button, { ButtonGroup } from "atoms/Button";
+
+<Meta
+  title="Atoms/Button"
+  component={Button}
+/>
+
+# Button
+
+#### Buttons allow users to take actions, and make choices, with a single tap.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Button label="Standard Button" />
+  </Story>
+</Preview>
+
+# Usage
+
+Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
+
+- Dialogs
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+
+# Principles
+
+- **Identifiable:**
+  Buttons should indicate that they can trigger an action.
+- **Findable:**
+  Buttons should be easy to find among other elements, including other buttons.
+- **Clear:**
+  A button’s action and state should be clear.
+
+# Examples
+
+### Style
+
+<Preview>
+  <Story name="Style">
+    <ButtonGroup columns="2">
+      <Button label="Standard" />
+      <Button label="Solid" isSolid />
+      <Button label="Round" isRound />
+      <Button label="Solid Round" isSolid isRound />
+      <Button label="Plain" isPlain />
+      <Button label="Underlined" hasUnderline />
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Types
+
+<Preview>
+  <Story name="Types">
+    <ButtonGroup columns="3">
+      <Button label="Button" type="button" />
+      <Button label="Reset" type="reset" />
+      <Button label="Submit" type="submit" />
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Variants
+
+<Preview>
+  <Story name="Variants">
+    <ButtonGroup columns="2">
+      <Button label="Info" variant="info" />
+      <Button label="Solid Info" variant="info" isSolid />
+      <Button label="Success" variant="success" />
+      <Button label="Solid Success" variant="success" isSolid />
+      <Button label="Warning" variant="warning" />
+      <Button label="Solid Warning" variant="warning" isSolid />
+      <Button label="Alert" variant="alert" />
+      <Button label="Solid Alert" variant="alert" isSolid />
+      <Button label="Neutral" variant="neutral" />
+      <Button label="Solid Neutral" variant="neutral" isSolid/>
+      <Button label="Disabled" disabled />
+      <Button label="Solid Disabled" disabled isSolid/>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Icons
+
+<Preview>
+  <Story name="Icons">
+    <ButtonGroup  columns="3">
+      <Button label="Profile" icon="user" />
+      <Button label="Profile" icon="user" alignCenter />
+      <Button icon="plus" />
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+
+### Counts
+
+<Preview>
+  <Story name="Counts">
+    <ButtonGroup columns="2">
+      <Button label="Count Button"  count="2" />
+      <Button label="Count Button" count="2" icon="user"/>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+## Props
+
+#### Button Props
+
+<Props of={Button} />
+
+#### Button Group Props
+
+<Props of={ButtonGroup} />
+
+<!-- Link a story to a component `ID` here without a code preview -->
+<!-- <Story id="atoms-checkbox--checkbox-states" /> -->

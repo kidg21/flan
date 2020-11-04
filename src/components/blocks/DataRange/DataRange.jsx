@@ -1,24 +1,39 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
-import Bar from "blocks/Bar";
-import Label from "atoms/Label";
+import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
+import { useId } from "utils/hooks";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || "inherit";
   }};
   &:last-child {
     margin-bottom: 1rem;
   }
+`;
+
+const LabelWrapper = styled.section`
+  color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || props.theme.text.light;
+  }};
+`;
+
+const RangeTextInput = styled(TextInput)`
+  display: ${(props) => {
+    return props.setDisplay || "";
+  }};
+`;
+
+const RangeSelectMenu = styled(SelectMenu)`
+  display: ${(props) => {
+    return props.setDisplay || "";
+  }};
 `;
 
 // eslint-disable-next-line complexity
@@ -29,27 +44,13 @@ function DataRange({
   id,
   isRequired,
   label,
-  // labelMax,
-  // maxValue,
-  // optionsMax,
-  // disableRight,
-  // labelMin,
-  // minValue,
-  // onChange,
-  // optionsMin,
-  // disableLeft,
-  // withSelector,
-  // onChangeSelector,
-  // optionsSelect,
-  // optionsSelectedOptions,
-
-  select,
   max,
   min,
+  select,
 }) {
   let inputTextColor;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
@@ -64,90 +65,112 @@ function DataRange({
     if (typeof max.onChange === "function") max.onChange({ min: min.value, max: newMaxValue });
     if (typeof setMaxState === "function") setMaxState(newState);
   }
+
+  const uId = useId(id);
+
+  let selectContent;
+  if (select.options) {
+    selectContent = (
+      <SelectMenu
+        disabled={select.disabled || isDisabled}
+        error={!!error}
+        id={`${uId}_center`}
+        label={select.label}
+        onChangeState={select.onChange}
+        options={select.options}
+        selectOptions={select.selected}
+      />
+    );
+  }
+
   return (
     <RangeContainer
-      id={id}
-      disabled={isDisabled}
-      inputTextColor={inputTextColor}
       columns="1"
-      gap="tiny"
+      disabled={isDisabled}
+      gap="xs"
+      id={uId}
+      inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
+        <LabelWrapper inputTextColor={inputTextColor}>
+          <Label size="sm" isRequired={isRequired} text={label} />
+        </LabelWrapper>
       ) : null}
-      <Bar
-        padding="none"
-        contentAlign="center"
-        left={
-          min.options ? (
-            <SelectMenu
-              label={min.label}
-              options={min.options}
-              onChangeState={onChangeMin}
-              disabled={min.disabled || isDisabled}
-              selectOptions={min.value}
-            />)
-            :
-            (<TextInput
-              label={min.label}
-              onChange={onChangeMin}
-              error={!!error}
-              disabled={min.disabled || isDisabled}
-              value={min.value}
-            />)
-        }
-        center={
-          select ? (
-            <SelectMenu
-              options={select.options}
-              label={select.label}
-              onChangeState={select.onChange}
-              selectOptions={select.selected}
-              disabled={isDisabled}
-            />
-          ) : null
-        }
-        right={
-          max.options ? (
-            <SelectMenu
-              label={max.label}
-              options={max.options}
-              onChangeState={max.onChange}
-              disabled={max.disabled || isDisabled}
-              selectOptions={max.selected}
-            />)
-            :
-            (<TextInput
-              label={max.label}
-              onChange={onChangeMax}
-              error={!!error}
-              disabled={max.disabled || isDisabled}
-              value={max.value}
-            />)
-        }
-      />
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      <Grid align="center" columns="3">
+        {selectContent}
+        {min.options ? (
+          <RangeSelectMenu
+            disabled={min.disabled || isDisabled}
+            error={!!error}
+            id={`${uId}_left`}
+            setDisplay={min.setDisplay}
+            placeholder={min.label}
+            onChangeState={onChangeMin}
+            options={min.options}
+            selectOptions={min.selected}
+          />
+        ) : (
+          <RangeTextInput
+            disabled={min.disabled || isDisabled}
+            error={!!error}
+            setDisplay={min.setDisplay}
+            id={`${uId}_left`}
+            placeholder={min.label}
+            onChange={onChangeMin}
+            value={min.value}
+            type={min.type}
+          />
+        )}
+
+        {max.options ? (
+          <RangeSelectMenu
+            disabled={max.disabled || isDisabled}
+            error={!!error}
+            id={`${uId}_right`}
+            placeholder={max.label}
+            setDisplay={max.setDisplay}
+            onChangeState={max.onChange}
+            options={max.options}
+            selectOptions={max.selected}
+          />
+        ) : (
+          <RangeTextInput
+            disabled={max.disabled || isDisabled}
+            error={!!error}
+            setDisplay={max.setDisplay}
+            id={`${uId}_right`}
+            placeholder={max.label}
+            onChange={onChangeMax}
+            value={max.value}
+            type={max.type}
+          />
+        )}
+      </Grid>
+      {helpText ? <Text size="xs" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Label size="sm" text={error} />
+        <Text size="xs" text={error} />
       ) : null}
     </RangeContainer>
   );
 }
 
 const selectType = PropTypes.shape({
-  options: PropTypes.map,
-  selected: PropTypes.arrayOf(PropTypes.object),
-  onChange: PropTypes.func,
   disabled: PropTypes.bool,
   label: PropTypes.string,
+  onChange: PropTypes.func,
+  setDisplay: PropTypes.node,
+  options: PropTypes.map,
+  selected: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.any), PropTypes.any]),
 });
 
 const textType = PropTypes.shape({
-  value: PropTypes.string,
-  label: PropTypes.string,
-  error: PropTypes.bool,
   disabled: PropTypes.bool,
+  error: PropTypes.bool,
+  label: PropTypes.string,
+  setDisplay: PropTypes.node,
   onChange: PropTypes.func,
+  value: PropTypes.string,
+  type: PropTypes.oneOf([PropTypes.any]),
 });
 
 DataRange.propTypes = {
@@ -157,22 +180,9 @@ DataRange.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
-  // withSelector: PropTypes.bool,
-  // onChangeSelector: PropTypes.func,
-  // optionsSelect: PropTypes.map,
-  // optionsSelectedOptions: PropTypes.shape({}),
-  // labelMax: PropTypes.string.isRequired,
-  // maxValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
-  // optionsMax: PropTypes.map,
-  // disableRight: PropTypes.bool,
-  max: PropTypes.oneOf(textType, selectType),
-  min: PropTypes.oneOf(textType, selectType),
+  max: PropTypes.oneOfType([textType, selectType]),
+  min: PropTypes.oneOfType([textType, selectType]),
   select: selectType,
-  // onChange: PropTypes.func,
-  // optionsMin: PropTypes.map,
-  // minValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
-  // labelMin: PropTypes.string.isRequired,
-  // disableLeft: PropTypes.bool,
 };
 DataRange.defaultProps = {
   disabled: false,
@@ -181,20 +191,9 @@ DataRange.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
-  // onChange: null,
-  // optionsMin: null,
-  // disableLeft: false,
-  // minValue: null,
-  // withSelector: false,
-  // onChangeSelector: null,
-  // optionsSelect: null,
-  // // optionsSelectedOptions: null,
-  // optionsMax: null,
-  // disableRight: false,
-  // maxValue: null,
-  select: null,
   max: {},
   min: {},
+  select: {},
 };
 
 export default DataRange;

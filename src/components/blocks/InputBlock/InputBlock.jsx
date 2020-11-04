@@ -1,24 +1,53 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Label from "atoms/Label";
 import Grid from "layout/Grid";
+import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 
 const TextInputContainer = styled(Grid)`
-  color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
-  }};
+color: ${(props) => {
+  return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
+}};
+  align-items: center;
   width: 100%;
+`;
+
+const PrePost = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${(props) => {
+    return props.theme.palette.neutral20;
+  }};
+  border: ${(props) => {
+    return `1px solid ${props.theme.palette.neutral60}`;
+  }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+  text-transform: lowercase;
+  height: 100%;
+  padding: 0.25rem 1rem;
+  cursor: default;
+  > * {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
+`;
+
+const MessageContainer = styled.section`
+color: ${(props) => {
+    return props.theme.text[props.messageColor] || props.theme.text.secondary;
+  }};
 `;
 
 function InputBlock({
@@ -31,83 +60,96 @@ function InputBlock({
   id,
   isRequired,
   label,
+  onBlur,
   onChange,
+  onFocus,
+  onKeyPress,
   options,
-  prefix,
+  hasPrefix,
   selectOptions,
   text,
   textInputs,
-  onBlur,
-  onFocus,
   warning,
 }) {
-  const [state, setState] = useState({
-    input: textInputs.reduce((inputMap, input) => {
-      inputMap[input.id] = input.value;
-      return inputMap;
-    }, {}),
-    selected: selectOptions,
-  });
-
-  function handleChange(e) {
-    const newState = {
-      ...state,
-      input: { ...state.input, [e.target.id]: e.target.value },
-    };
-    if (onChange) {
-      onChange(state, newState, setState);
-    } else {
-      setState(newState);
-    }
-  }
-
-  function handleSelectChange(prevState, currState, setSelectState) {
-    if (onChange) {
-      const newState = { ...state, selected: currState.selected };
-      onChange(state, newState, (updatedState) => {
-        setSelectState({ selected: updatedState.selected });
-        if (updatedState.input !== newState.input) setState(updatedState);
+  const getValues = () => {
+    let selected = null;
+    if (options instanceof Array) {
+      options.forEach((option) => {
+        if (option.value === selectOptions) {
+          selected = option;
+        }
       });
-    } else {
-      setSelectState(currState);
     }
+    return {
+      input: textInputs.reduce((inputMap, input) => {
+        inputMap[input.id] = input.value;
+        return inputMap;
+      }),
+      selected: selected,
+    };
+  };
+
+  function _handleTextChange(e) {
+    const oldValues = getValues();
+    const newValues = {
+      input: {
+        ...oldValues.input,
+        [e.target.id]: e.target.value,
+      },
+      selected: oldValues.selected,
+    };
+    onChange(oldValues, newValues, () => { });
   }
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  function _handleSelectChange(prevState, currState) {
+    const oldValues = getValues();
+    const newValues = { input: { ...oldValues.input }, selected: currState.selected };
+    onChange(oldValues, newValues, () => { });
+  }
+
+  const { handleTextChange, handleSelectChange } = typeof onChange === "function"
+    ? { handleSelectChange: _handleSelectChange, handleTextChange: _handleTextChange }
+    : { handleTextChange: null, handleSelectChange: null };
+
+  const isAncestorDisabled = useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
   let inputTextColor;
+  let messageColor;
   let errorText;
   if (error && !isDisabled) {
     inputTextColor = "alert";
+    messageColor = "alert";
     errorText = typeof error === "string" ? error : "";
   } else if (warning && !isDisabled) {
-    inputTextColor = "warning";
+    messageColor = "alert";
     errorText = typeof warning === "string" ? warning : "";
   }
   const inputElements = textInputs.map((input) => {
     return (
       <TextInput
+        autocompleteList={input.autocompleteList}
         disabled={isDisabled}
         error={!!error}
-        warning={!!warning}
-        key={input.id}
         id={input.id}
+        key={input.id}
         name={input.name || input.id}
-        onChange={handleChange}
+        onBlur={onBlur}
+        onChange={handleTextChange}
+        onFocus={onFocus}
+        onKeyPress={onKeyPress}
         pattern={input.pattern}
         placeholder={input.placeholder}
         readonly={input.readonly}
         title={input.title}
         type={input.type}
-        value={state.input[input.id]}
-        onBlur={onBlur}
-        onFocus={onFocus}
+        value={input.value}
+        warning={!!warning}
       />
     );
   });
   let inputContainer = inputElements;
   let gridColumns;
-  if (prefix) {
+  if (hasPrefix) {
     gridColumns = `${icon ? "auto" : "minmax(0, 1fr)"} minmax(auto, 3fr)`;
   } else {
     gridColumns = `minmax(auto, 3fr) ${icon ? "auto" : "minmax(0, 1fr)"}`;
@@ -115,53 +157,49 @@ function InputBlock({
   if (inputElements.length > 1) {
     const numInputs = Math.min(inputElements.length, 3);
     inputContainer = (
-      <Grid columns={numInputs} gap="tiny">
+      <Grid columns={numInputs} gap="xs">
         {inputElements.slice(0, numInputs)}
       </Grid>
     );
   } else if (text) {
     inputContainer = (
-      <Grid columns={gridColumns} gap="tiny">
-        {prefix ? <Label text={text} /> : null}
+      <Grid columns={gridColumns} gap="xs">
+        {hasPrefix ? <PrePost><Label size="sm" text={text} /></PrePost> : null}
         {inputElements}
-        {!prefix ? <Label text={text} /> : null}
+        {!hasPrefix ? <PrePost><Label size="sm" text={text} /></PrePost> : null}
       </Grid>
     );
   } else if (options) {
     inputContainer = (
-      <Grid columns={gridColumns} gap="tiny">
-        {prefix ? (
+      <Grid columns={gridColumns} gap="xs">
+        {hasPrefix ? (
           <SelectMenu
             options={options}
             selectOptions={selectOptions}
             isClearable={false}
-            onChange={handleSelectChange}
+            onChangeState={handleSelectChange}
           />
         ) : null}
         {inputElements}
-        {!prefix ? (
+        {!hasPrefix ? (
           <SelectMenu
             options={options}
             selectOptions={selectOptions}
             isClearable={false}
-            onChange={handleSelectChange}
+            onChangeState={handleSelectChange}
           />
         ) : null}
       </Grid>
     );
   } else if (icon) {
     inputContainer = (
-      <Grid columns={gridColumns} gap="tiny">
-        {prefix ? (
-          <Label>
-            <Icon icon={icon} size="lg" />
-          </Label>
+      <Grid columns={gridColumns} gap="xs">
+        {hasPrefix ? (
+          <PrePost><Icon icon={icon} fixedWidth /></PrePost>
         ) : null}
         {inputElements}
-        {!prefix ? (
-          <Label>
-            <Icon icon={icon} size="lg" />
-          </Label>
+        {!hasPrefix ? (
+          <PrePost><Icon icon={icon} fixedWidth /></PrePost>
         ) : null}
       </Grid>
     );
@@ -169,22 +207,21 @@ function InputBlock({
     const buttonElement = (
       <Button
         label={button.label}
-        type={button.type}
-        onClick={button.onClick}
-        color={inputTextColor || button.color}
+        variant={button.variant}
+        onClick={(e) => { if (button.onClick) button.onClick(e, getValues()); }}
         disabled={isDisabled || button.disabled}
       />
     );
     inputContainer = (
-      <Grid columns={gridColumns} gap="tiny">
-        {prefix ? buttonElement : null}
+      <Grid columns={gridColumns} gap="xs">
+        {hasPrefix ? buttonElement : null}
         {inputElements}
-        {!prefix ? buttonElement : null}
+        {!hasPrefix ? buttonElement : null}
       </Grid>
     );
   } else {
     inputContainer = (
-      <Grid columns="1" gap="tiny">
+      <Grid columns="1" gap="xs">
         {inputElements}
       </Grid>
     );
@@ -195,17 +232,20 @@ function InputBlock({
         className={className}
         columns="1"
         disabled={isDisabled}
-        gap="tiny"
+        gap="xs"
+        hasPrefix={hasPrefix}
         id={id}
         inputTextColor={inputTextColor}
         isRequired={isRequired}
-        prefix={prefix}
         text={text}
       >
-        {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
+        {label ? (
+          <Label size="sm" isRequired={isRequired} text={label} />
+        ) : null}
+
         {inputContainer}
-        {helpText ? <Label size="sm" text={helpText} /> : null}
-        {errorText ? <Label size="sm" text={errorText} /> : null}
+        {helpText ? <Text size="xs" text={helpText} /> : null}
+        {errorText ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText} /></MessageContainer> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
@@ -213,28 +253,29 @@ function InputBlock({
 
 InputBlock.propTypes = {
   button: PropTypes.shape({
-    color: PropTypes.string,
     disabled: PropTypes.bool,
     label: PropTypes.string,
     onClick: PropTypes.func,
-    type: PropTypes.string,
+    variant: PropTypes.string,
   }),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  hasPrefix: PropTypes.bool,
   helpText: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  onKeyPress: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.any,
   })),
-  prefix: PropTypes.bool,
-  selectOptions: PropTypes.arrayOf(PropTypes.any),
+  selectOptions: PropTypes.string,
   text: PropTypes.string,
   textInputs: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
@@ -245,28 +286,37 @@ InputBlock.propTypes = {
     value: PropTypes.string,
     readonly: PropTypes.bool,
   })),
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
+  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 InputBlock.defaultProps = {
   button: null,
   className: null,
   disabled: null,
   error: null,
+  hasPrefix: false,
   helpText: null,
   icon: null,
   id: null,
   isRequired: false,
   label: null,
+  onBlur: null,
   onChange: null,
+  onFocus: null,
+  onKeyPress: null,
   options: null,
-  prefix: false,
   selectOptions: null,
   text: null,
-  textInputs: [],
-  onBlur: null,
-  onFocus: null,
+  textInputs: [{
+    id: null,
+    placeholder: null,
+    type: null,
+    pattern: null,
+    title: null,
+    value: null,
+    readonly: false,
+  }],
   warning: false,
 };
 
-export { InputBlock as default };
+
+export default InputBlock;

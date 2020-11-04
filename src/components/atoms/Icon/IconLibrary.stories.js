@@ -1,58 +1,79 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { Padding, IconGrid } from "helpers/Display";
-import Grid from "layout/Grid";
-import Title, { SubTitle } from "base/Typography";
-import { CardList } from "layout/Card";
+import Card, { CardGrid } from "elements/Card";
+import Icon from "atoms/Icon";
+import Bar from "layout/Bar";
+import Text, { Title } from "base/Typography";
 import {
   iconsApp,
   iconsBrand,
   iconsNavigation,
 } from "atoms/Icon/libraryIcon.data";
 
-/** TODO: Break 'App' icon set into subcategories */
-storiesOf("Application|Libraries/Icon Library", module)
-  .addDecorator(Padding)
-  .add("App Icons", () => {
-    return (
-      <Grid columns="1">
-        <Title text="App Icons" size="large" styling="underline" />
-        <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
-        <CardList>
-          <IconGrid data={iconsApp} />
-        </CardList>
-      </Grid>
-    );
-  });
+export default {
+  title: "Work|Docs/Iconography (CSF)",
+  parameters: {},
+  includeStories: [],
+};
 
-storiesOf("Application|Libraries/Icon Library", module)
-  .addDecorator(Padding)
-  .add("Navigation Icons", () => {
+function IconGrid({ data }) {
+  return data.map((item) => {
     return (
-      <Grid columns="1">
-        <Title text="Navigation Icons" size="large" styling="underline" />
-        <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
-        <CardList>
-          <IconGrid data={iconsNavigation} />
-        </CardList>
-      </Grid>
+      <Card
+        key={item.icon}
+        id={item.icon}
+        hover
+      >
+        <Bar
+          contentAlign="center"
+          left={{
+            content: <Icon
+              icon={item.icon}
+              variant={item.variant}
+              size={item.size || "xl"}
+              spin={item.spin}
+              pulse={item.pulse}
+              fixedWidth
+            />,
+            width: "min-content",
+          }}
+          center={{
+            content: (
+              <React.Fragment>
+                <Title text={item.name || item.icon} size="lg" select="all" />
+                <Text text={item.desc} />
+              </React.Fragment>
+            ),
+            align: "left",
+          }}
+        />
+      </Card>
     );
   });
+}
 
-storiesOf("Application|Libraries/Icon Library", module)
-  .addDecorator(Padding)
-  .add("Brand Icons", () => {
-    return (
-      <Grid columns="1">
-        <Title text="Brand Icons" size="large" styling="underline" />
-        <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
-        <CardList>
-          <IconGrid data={iconsBrand} />
-        </CardList>
-      </Grid>
-    );
-  });
+// /** TODO: Break 'App' icon set into subcategories */
+export const Standard = () => {
+  return (
+    <CardGrid columns="3">
+      <IconGrid data={iconsApp} />
+    </CardGrid>
+  );
+};
+
+export const Navigation = () => {
+  return (
+    <CardGrid columns="3">
+      <IconGrid data={iconsNavigation} />
+    </CardGrid>
+  );
+};
+
+export const Brand = () => {
+  return (
+    <CardGrid columns="3">
+      <IconGrid data={iconsBrand} />
+    </CardGrid>
+  );
+};

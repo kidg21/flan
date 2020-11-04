@@ -1,0 +1,528 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+Array [
+  <div
+    action="close"
+    aria-describedby={null}
+    aria-labelledby={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hNgjtc"
+    id="Modal_Standard"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
+  >
+    <div
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 ePgdIE"
+      id="modal-bg-Modal_Standard"
+      onClick={[Function]}
+    />
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 dfCZJd"
+      id="Modal_Standard-animation"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 dgxRnG Card__StyledCardWrapper-sc-1g3s676-3 Banner__StyledBanner-sc-6825al-0 fSmsgA"
+        href={null}
+        id="storyshots_54"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <div
+          className="Bar__BarLayout-icfo76-2 AXrfk"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 jNHudO"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs"
+              id={null}
+              rows={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                This is a Standard notification telling you stuff.
+              </p>
+            </section>
+          </div>
+          <div
+            className="Bar__Slot-icfo76-1 jyMGGC"
+          >
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jDVvnl Banner__Close-sc-6825al-1 juiNFl"
+                color="link"
+                data-icon="times"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 320 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>,
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Default Modal
+      </label>
+    </section>
+  </button>,
+]
+`;
+
+exports[` 2`] = `
+Array [
+  <div
+    action="close"
+    aria-describedby={null}
+    aria-labelledby={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hNgjtc"
+    id="Modal_Knobs"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
+  >
+    <div
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 ePgdIE"
+      id="modal-bg-Modal_Knobs"
+      onClick={[Function]}
+    />
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 dfCZJd"
+      id="Modal_Knobs-animation"
+      onClick={null}
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 kuOAvg Card__StyledCardWrapper-sc-1g3s676-3"
+        href={null}
+        id="storyshots_55"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_55-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 AXrfk"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 kSFTkF"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                This is a very special message just for you...
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </span>
+  </div>,
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Open Modal
+      </label>
+    </section>
+  </button>,
+]
+`;
+
+exports[` 3`] = `
+Array [
+  <div
+    action="close"
+    aria-describedby={null}
+    aria-labelledby={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hNgjtc"
+    id="Modal_Dialog"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
+  >
+    <div
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 ePgdIE"
+      id="modal-bg-Modal_Dialog"
+      onClick={[Function]}
+    />
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 dfCZJd"
+      id="Modal_Dialog-animation"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+        href={null}
+        id="storyshots_56"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_56-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 AXrfk"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 kSFTkF"
+            >
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
+              >
+                Default Dialog
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_56-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+              disabled={false}
+              htmlFor={null}
+              id="Cancel"
+              name="Cancel"
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Nevermind...
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 kPqHPv DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+              disabled={false}
+              htmlFor={null}
+              id="Confirm"
+              name="Confirm"
+              onClick={[Function]}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Let's Do It!
+                </label>
+              </section>
+            </button>
+          </section>
+        </section>
+      </div>
+    </span>
+  </div>,
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Dialog Modal
+      </label>
+    </section>
+  </button>,
+]
+`;
+
+exports[` 4`] = `
+Array [
+  <div
+    action="close"
+    aria-describedby={null}
+    aria-labelledby={null}
+    className="Modal__ModalContainer-sc-15cll21-2 jVLeKV"
+    id="Modal_Text"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
+  >
+    <div
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 ePgdIE"
+      id="modal-bg-Modal_Text"
+      onClick={[Function]}
+    />
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 dfCZJd"
+      id="Modal_Text-animation"
+      onClick={null}
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 kuOAvg Card__StyledCardWrapper-sc-1g3s676-3"
+        href={null}
+        id="storyshots_57"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_57-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 AXrfk"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 kSFTkF"
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+                fontSize="1rem"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0.5px"
+              >
+                This is a very special message just for you...
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </span>
+  </div>,
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Text Modal
+      </label>
+    </section>
+  </button>,
+]
+`;
+
+exports[` 5`] = `
+Array [
+  <div
+    action="close"
+    aria-describedby={null}
+    aria-labelledby={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hNgjtc"
+    id="Modal_Image"
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
+  >
+    <div
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 ePgdIE"
+      id="modal-bg-Modal_Image"
+      onClick={[Function]}
+    />
+    <span
+      className="Modal__ContentWrapper-sc-15cll21-0 dfCZJd"
+      id="Modal_Image-animation"
+    />
+  </div>,
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Image Modal
+      </label>
+    </section>
+  </button>,
+]
+`;

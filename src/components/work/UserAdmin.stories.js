@@ -1,148 +1,146 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-import React from "react";
-import { storiesOf } from "@storybook/react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Padding } from "helpers/Display";
-import Icon from "atoms/Icon";
-import NewRoles from "elements/UserRoles/NewRoles";
-import NewUsers from "elements/UserRoles/NewUsers";
+// /* eslint-disable linebreak-style */
+// /* eslint-disable react/jsx-filename-extension */
+// import React from "react";
 
-const Columns = ["Roles", "Folders", "Action"];
+// import Icon from "atoms/Icon";
+// import NewRoles from "elements/UserRoles/NewRoles";
+// import NewUsers from "elements/UserRoles/NewUsers";
 
-const Roles = [
-  {
-    roles: "Marketing",
-    folders: "BDE811.Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    roles: "Acquisitions",
-    folders: "BDE811.Acquisitions",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    roles: "Builder/Developer",
-    folders: "BDE811.Acquisitions, BDE811.Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    roles: "Admin",
-    folders:
-      "BDE811.Acquisitions, BDE811.Marketing, BDE811.Public, BDE811.Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    roles: "Marketing",
-    folders: "BDE811.Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    roles: "Acquisitions",
-    folders: "BDE811.Acquisitions",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    roles: "Builder/Developer",
-    folders: "BDE811.Acquisitions, BDE811.Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    roles: "Admin",
-    folders:
-      "BDE811.Acquisitions, BDE811.Marketing, BDE811.Public, BDE811.Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-];
+// const Columns = ["Roles", "Folders", "Action"];
 
-const UserColumns = ["Name", "Roles", "Action"];
+// function doNothing() {
+//   // do nothing
+// }
 
-const Users = [
-  {
-    name: "brodarte",
-    roles: "Developer",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "egallagher",
-    roles: "Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "esugimoto",
-    roles: null,
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "mwalker",
-    roles: "Admin",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "pnguyen",
-    roles: ["Developer", "Acquisitions"],
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "brodarte",
-    roles: "Developer",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "egallagher",
-    roles: "Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "esugimoto",
-    roles: null,
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "mwalker",
-    roles: "Admin",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "pnguyen",
-    roles: ["Developer", "Acquisitions"],
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "brodarte",
-    roles: "Developer",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "egallagher",
-    roles: "Marketing",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "esugimoto",
-    roles: null,
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "mwalker",
-    roles: "Admin",
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-  {
-    name: "pnguyen",
-    roles: ["Developer", "Acquisitions"],
-    action: <Icon icon="edit" onClick="interactive" />,
-  },
-];
+// const Roles = [
+//   {
+//     roles: "Marketing",
+//     folders: "BDE811.Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     roles: "Acquisitions",
+//     folders: "BDE811.Acquisitions",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     roles: "Builder/Developer",
+//     folders: "BDE811.Acquisitions, BDE811.Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     roles: "Admin",
+//     folders:
+//       "BDE811.Acquisitions, BDE811.Marketing, BDE811.Public, BDE811.Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     roles: "Marketing",
+//     folders: "BDE811.Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     roles: "Acquisitions",
+//     folders: "BDE811.Acquisitions",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     roles: "Builder/Developer",
+//     folders: "BDE811.Acquisitions, BDE811.Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     roles: "Admin",
+//     folders:
+//       "BDE811.Acquisitions, BDE811.Marketing, BDE811.Public, BDE811.Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+// ];
 
-storiesOf("Templates|UserRoles", module)
-  .add("Edit Roles", () => {
-    return <NewRoles columns={Columns} roles={Roles} />;
-  })
-  .add("Edit Users", () => {
-    return <NewUsers columns={UserColumns} users={Users} />;
-  });
+// const UserColumns = ["Name", "Roles", "Action"];
+
+// const Users = [
+//   {
+//     name: "brodarte",
+//     roles: "Developer",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "egallagher",
+//     roles: "Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "esugimoto",
+//     roles: null,
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "mwalker",
+//     roles: "Admin",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "pnguyen",
+//     roles: ["Developer", "Acquisitions"],
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "brodarte",
+//     roles: "Developer",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "egallagher",
+//     roles: "Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "esugimoto",
+//     roles: null,
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "mwalker",
+//     roles: "Admin",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "pnguyen",
+//     roles: ["Developer", "Acquisitions"],
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "brodarte",
+//     roles: "Developer",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "egallagher",
+//     roles: "Marketing",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "esugimoto",
+//     roles: null,
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "mwalker",
+//     roles: "Admin",
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+//   {
+//     name: "pnguyen",
+//     roles: ["Developer", "Acquisitions"],
+//     action: <Icon icon="edit" onClick={doNothing} />,
+//   },
+// ];
+
+// storiesOf("Templates|UserRoles", module)
+//   .add("Edit Roles", () => {
+//     return <NewRoles id="editRoles" columns={Columns} roles={Roles} />;
+//   })
+//   .add("Edit Users", () => {
+//     return <NewUsers id="editUsers" columns={UserColumns} users={Users} />;
+//   });

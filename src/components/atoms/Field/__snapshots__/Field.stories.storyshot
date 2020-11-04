@@ -1,0 +1,414 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
+  id={null}
+  rows={null}
+>
+  <div />
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 cZnqkz"
+    id="Field"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+      color={null}
+      cursor="pointer"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+      onClick={null}
+    >
+      Field Name
+    </label>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+      fontSize="1rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.5px"
+    >
+      Field Value
+    </p>
+  </section>
+  <div />
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
+  id={null}
+  rows={null}
+>
+  <div />
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 cZnqkz"
+      id="Default"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Default
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 jrZRwP"
+      id="Edge-Aligned"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Edge-Aligned
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 fSQxPQ"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 kpAJjN"
+      id="Vertically-Aligned"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Vertically-Aligned
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+  </section>
+  <div />
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
+  id={null}
+  rows={null}
+>
+  <div />
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 cZnqkz"
+      id="Default"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Field Label
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 dhhdgY"
+      id="2x"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Field Label (2x)
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 gRzETr"
+      id="3x"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Field Label (3x)
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 dYkXUt"
+      id="4x"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Field Label (4x)
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+  </section>
+  <div />
+</section>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
+  id={null}
+  rows={null}
+>
+  <div />
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl Field__FieldGrid-sc-11od8ug-5 dNMcQJ"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 gCIDIC"
+      id="Default"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Small Field
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 cZnqkz"
+      id="2x"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Default Field
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 iKIoUf"
+      id="3x"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Large Field
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 ktHYGP"
+      id="3x"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        XL Field
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Field__FieldItem-sc-11od8ug-0 cHepdU"
+      id="3x"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hpauXs Field__FieldLabel-sc-11od8ug-2 bbVsuV"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        2XL Field
+      </label>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd Field__FieldValue-sc-11od8ug-3 bCa-Dwd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Field Value
+      </p>
+    </section>
+  </section>
+  <div />
+</section>
+`;

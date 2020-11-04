@@ -1,0 +1,105 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Field, { FieldGroup, FieldSection } from "atoms/Field";
+import fieldData from "atoms/Field/Field.data.js";
+
+<Meta title="Atoms/Field/Field Group" component={FieldGroup} />
+
+# Field Group
+
+### A Field Group is...
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <FieldGroup
+      id="Group 1"
+      title="This is a field group"
+    >
+      <Field
+        id="Field 1"
+        label="Field Name"
+        value="Linked Value"
+        onClick={() => { }}
+      />
+      <Field
+        id="Field 2"
+        label="Long Field Name"
+        value="Value Goes Here"
+      />
+      <Field
+        id="Field 3"
+        label="Extra Long Field Name"
+        value="And A Really Extra Long Field Value Can Go Here"
+      />
+    </FieldGroup>
+  </Story>
+</Preview>
+
+# Examples
+
+### Field Group via Array
+
+<Preview withToolbar>
+  <Story name="Field Group via Array">
+    <FieldGroup title="Fields Group via Array" data={fieldData} />
+  </Story>
+</Preview>
+
+### Alignment
+
+<Preview withToolbar>
+  <Story name="Alignment">
+    <FieldSection title="Alignment" columns="3" gap="xl">
+      <FieldGroup title="Default" data={fieldData} />
+      <FieldGroup title="Edge-Aligned" data={fieldData} align="edge" />
+      <FieldGroup title="Vertically-Aligned" data={fieldData} align="vertical" />
+    </FieldSection>
+  </Story>
+</Preview>
+
+### Density
+
+<Preview withToolbar>
+  <Story name="Density">
+    <FieldSection title="Density" columns="2" gap="xl">
+      <FieldGroup title="Default" data={fieldData} />
+      <FieldGroup title="Dense" data={fieldData} isDense />
+    </FieldSection>
+  </Story>
+</Preview>
+
+### Label-to-Value Spacing
+
+<Preview withToolbar>
+  <Story name="Label-to-Value Spacing">
+    <FieldSection title="Label-to-Value Spacing" columns="2" gap="xl">
+      <FieldGroup id="Default" title="Default" data={fieldData}/>
+      <FieldGroup id="2x" title="2x" spacing="2x" data={fieldData} />
+      <FieldGroup id="3x" title="3x" spacing="3x" data={fieldData} />
+      <FieldGroup id="4x" title="4x" spacing="4x" data={fieldData} />
+      <FieldGroup id="Default (edge-aligned)" title="Default (edge-aligned)" align="edge" data={fieldData}/>
+      <FieldGroup id="2x (edge-aligned)" title="2x (edge-aligned)" spacing="2x" align="edge" data={fieldData} />
+      <FieldGroup id="3x (edge-aligned)" title="3x (edge-aligned)" spacing="3x" align="edge" data={fieldData} />
+      <FieldGroup id="4x (edge-aligned)" title="4x (edge-aligned)" spacing="4x" align="edge" data={fieldData} />
+    </FieldSection>
+  </Story>
+</Preview>
+
+### Size
+
+<Preview withToolbar>
+  <Story name="Size">
+    <FieldSection title="Size" columns="2" gap="xl">
+      <FieldGroup id="sm" title="sm" size="sm" align="vertical" data={fieldData} />
+      <FieldGroup id="Default" title="Default" align="vertical" data={fieldData}/>
+      <FieldGroup id="lg" title="lg" size="lg" align="vertical" data={fieldData} />
+      <FieldGroup id="xl" title="xl" size="xl" align="vertical" data={fieldData} />
+      <FieldGroup id="2xl" title="2xl" size="2xl" align="vertical" data={fieldData} />
+    </FieldSection>
+  </Story>
+</Preview>
+
+### Field Group Props
+<Props of={FieldGroup} />

@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
+    id="Property_Header"
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-icfo76-1 gWLVQX"
+    >
+      <a
+        className="Icon__LinkedIcon-sc-1oa9m1v-0 gNnbvr"
+        disabled={null}
+        href={null}
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-directions fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 khZIWl"
+          color="link"
+          data-icon="directions"
+          data-prefix="far"
+          focusable="false"
+          fontSize="1.35em"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M502.61 233.32L278.68 9.39C272.42 3.13 264.21 0 256 0s-16.42 3.13-22.68 9.39L9.39 233.32c-12.52 12.53-12.52 32.83 0 45.36l223.93 223.93c6.26 6.26 14.47 9.39 22.68 9.39s16.42-3.13 22.68-9.39l223.93-223.93c12.52-12.53 12.52-32.83 0-45.36zM256 457.4L54.6 256 256 54.6 457.4 256 256 457.4zM160 248v80c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8v-64h80v53.73c0 4.8 3.93 8.02 8.05 8.02 1.87 0 3.78-.66 5.38-2.14l84.21-77.73c3.43-3.17 3.43-8.59 0-11.76l-84.21-77.73c-1.6-1.47-3.51-2.14-5.38-2.14-4.12 0-8.05 3.22-8.05 8.02V216h-96c-17.67 0-32 14.33-32 32z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 kmFilB"
+    >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+        fontSize="1.15rem"
+        fontWeight="500"
+        letterSpacing="0.4px"
+      >
+        5201 California Ave, Irvine, CA 92614
+      </h5>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 ffuaJa"
+    >
+      <div
+        className="Popper__NonPortalWrapper-sc-1t9125t-2 fPfpTJ"
+        id="menu-popper-Property_Header-Menu"
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 dxEqTQ"
+          disabled={false}
+          htmlFor={null}
+          id="menu-icon-Property_Header-Menu"
+          name="menu-icon-Property_Header-Menu"
+          onClick={[Function]}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+            id={null}
+            rows={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+              color={null}
+              data-icon="ellipsis-v"
+              data-prefix="far"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 128 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </section>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

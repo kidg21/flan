@@ -1,0 +1,139 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import Form, { FormSection } from "layout/Form";
+import Radio, { RadioGroup } from "atoms/Radio";
+import Icon from "atoms/Icon";
+
+<Meta title="Data Entry|Selection Controls/Radio" component={Radio} />
+
+# Radio
+
+#### Radio buttons are used when a list of two or more options are mutually exclusive, meaning the user must select only one option.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Radio id="radio" name="standard" label="Radio" />
+  </Story>
+</Preview>
+
+# Usage
+
+Radios are used to select a single state from multiple options.
+
+The difference between Checkbox and Radio is that a Radio is used when a user is restricted to select only one option. Checkbox is used when a user is permitted to select multiple options.
+
+Radios are typically utilized in the following areas:
+
+- Input Forms
+- Filters
+- Settings
+
+Use radio buttons to:
+
+Select a single option from a list
+Expose all available options
+If available options can be collapsed, consider using a dropdown menu instead, as it uses less space.
+
+# Guidelines
+
+- **Opposing Options:**
+  Typically radios would be used where the options are very different from each other so no user would ever consider selecting more than one option. If a user selects Option A, Option B should not be desirable to them.
+- **Clear:**
+  A Radio’s action and state should be clear.
+- **Be Brief**
+  Radio labels should be short and to the point. They should be one or two words. A label should never be a sentence.
+
+### Do & Don't
+
+<Preview>
+  <Story name="Guidelines">
+    <React.Fragment>
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="check" variant="success" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <Radio id="brief" name="guidelines" label="Brief Label" />,
+          align: "left",
+        }}
+      />
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <Radio id="long" name="guidelines" label="Radio with a long label because you cannot be concise with your words." />,
+          align: "left",
+        }}
+      />
+    </React.Fragment>
+  </Story>
+</Preview>
+
+# Anatomy
+
+Radios consist of a circular input and a label. It is important that the label also has an htmlFor tag in order to link the radio and be another way to select.
+
+<!-- ## Behavior -->
+
+# Examples
+
+### States
+
+<!-- We can drop it in a `Preview` to get a code snippet: -->
+
+<Preview>
+  <Story name="States">
+    <Grid>
+      <Radio id="Selected" name="states" label="Selected" checked onChange={() => {}} />
+      <Radio id="Unselected" name="states" label="Unselected" />
+      <Radio id="Disabled" name="states" label="Disabled" disabled />
+    </Grid>
+  </Story>
+</Preview>
+
+### Alignment
+
+A radio may appear to the left or right of it's corresponding label. A radio may not appear above or below the label.
+
+<Preview>
+  <Story name="Alignment">
+    <Grid>
+      <Radio id="Left Aligned" name="alignment" label="Left Aligned" />
+      <Radio id="Right Aligned" name="alignment" label="Right Aligned" align="right" />
+    </Grid>
+  </Story>
+</Preview>
+
+### Group
+
+Radios may appear in groups. When a radio group is necessary use the RadioGroup wrapper from the Radio directory to control the Radio layout.
+
+<Preview>
+  <Story name="Radio Group">
+    <Form>
+      <FormSection title="Radio Group (2 Columns)">
+        <RadioGroup columns="2">
+          <Radio id="radio-1" name="radio-group" value="1" label="Radio 1" />
+          <Radio id="radio-2" name="radio-group" value="2" label="Radio 2" />
+          <Radio id="radio-3" name="radio-group" value="3" label="Radio 3" />
+          <Radio id="radio-4" name="radio-group" value="4" label="Radio 4" />
+        </RadioGroup>
+      </FormSection>
+    </Form>
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={Radio} />

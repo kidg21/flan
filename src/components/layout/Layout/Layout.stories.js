@@ -1,521 +1,398 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { screen } from "Variables";
-import Tabs, { Tab } from "blocks/Tabs";
-import Card, { CardList } from "layout/Card";
+import { ScreenLarge } from "helpers/Display";
+import { Title } from "base/Typography";
+import Command from "atoms/Command";
+import Bar from "layout/Bar";
+import Template from "layout/Template";
 import Layout from "layout/Layout";
-import Mapbox from "layout/Map";
-import Panel, { PanelSection } from "layout/Panel";
-import Form, { Section } from "layout/Form";
-import TextInput from "atoms/TextInput";
-import { CheckboxGroup } from "atoms/Checkbox";
-import { RadioGroup } from "atoms/Radio";
-import SelectMenu from "atoms/SelectMenu";
-import NavigationCardBar from "elements/CardBars/NavigationCardBar";
-import LayoutNotes from "./Layout.md";
+import {
+  MockDetails,
+  MockCardGrid,
+  MockMenu,
+  MockTable,
+} from "helpers/Mocks";
 
-const shortBoxes = [
-  {
-    id: "box-1",
-    label: "Label 1",
+export default {
+  title: "Layout/Layout/Examples",
+  decorators: [
+    ScreenLarge,
+  ],
+  parameters: {
+    chromatic: { disable: true },
   },
-  {
-    id: "box-2",
-    label: "Label 2 (disabled)",
-    disabled: true,
-  },
-  {
-    id: "box-3",
-    label: "Label 3",
-  },
-  {
-    id: "box-4",
-    label: "Label 4",
-  },
-];
-const longBoxes = [
-  {
-    id: "box_long",
-    label:
-      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-  },
-  {
-    id: "box_long2",
-    label:
-      "Enough with these long labels already...put it on your blog, Shakespeare.",
-  },
-];
-const shortRadios = [
-  {
-    id: "radio-1",
-    name: "radio-group",
-    value: "1",
-    label: "Label 1",
-  },
-  {
-    id: "radio-2",
-    name: "radio-group",
-    value: "2",
-    label: "Label 2 (disabled)",
-  },
-  {
-    id: "radio-3",
-    name: "radio-group",
-    value: "3",
-    label: "Label 3",
-    disabled: true,
-  },
-  {
-    id: "radio-4",
-    name: "radio-group",
-    value: "4",
-    label: "Label 4",
-  },
-];
-const longRadios = [
-  {
-    id: "radio_long",
-    name: "radio-group",
-    value: "5",
-    label:
-      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-    disabled: true,
-  },
-  {
-    id: "radio_long2",
-    name: "radio-group",
-    value: "6",
-    label:
-      "Enough with these long labels already...put it on your blog, Shakespeare.",
-  },
-];
-const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
-  { value: "pistachio", label: "Pistachio" },
-  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" },
-];
+};
 
-storiesOf("Layout |App Layout/", module)
-  .addParameters({
-    info: {
-      text: "Layout info goes here...",
-    },
-    notes: {
-      markdown: LayoutNotes,
-    },
-  })
+export const Standard = () => {
+  return (
+    <Layout
+      left={{
+        content: <MockMenu />,
+        visible: true,
+      }}
+      main={{ content: <Mapbox /> }}
+      right={{
+        content: <MockDetails />,
+        visible: true,
+      }}
+      bottom={{
+        content: <MockCardGrid />,
+        visible: true,
+      }}
+    />
+  );
+};
+Standard.story = {
+  parameters: {
+    viewMode: "story",
+  },
+};
 
-  .add(
-    "Documentation",
-    withInfo()(() => {
-      return <Layout height="25%" />;
-    }),
-  )
-
-  .add("2 Panel - Row", () => {
+export const AllRegionsActive = () => {
+  return React.createElement(() => {
+    const [leftOpen, setLeftOpen] = useState(false);
+    const toggleLeft = () => { setLeftOpen(!leftOpen); };
+    const [rightOpen, setRightOpen] = useState(false);
+    const toggleRight = () => { setRightOpen(!rightOpen); };
+    const [bottomOpen, setBottomOpen] = useState(false);
+    const toggleBottom = () => { setBottomOpen(!bottomOpen); };
     return (
-      <Layout>
-        <Layout width="70%" />
-        <Layout width="30%" right="0" backgroundColor="lightyellow" />
-      </Layout>
-    );
-  })
-
-  .add("2 Panel - Column", () => {
-    return (
-      <Layout>
-        <Layout height="60%" />
-        <Layout height="40%" top="60%" backgroundColor="lightgreen" />
-      </Layout>
-    );
-  })
-
-  .add("3 Panel", () => {
-    return (
-      <Layout>
-        <Layout width="70%" height="60%" />
-        <Layout
-          width="70%"
-          height="40%"
-          top="60%"
-          backgroundColor="lightgreen"
-        />
-        <Layout width="30%" right="0" backgroundColor="lightyellow" />
-      </Layout>
-    );
-  })
-
-  .add("Standard Layout (Containers)", () => {
-    return React.createElement(() => {
-      // Left
-      const [innerState, setInnerState] = useState("leftCover");
-      const [activeLeft, setActiveLeft] = useState(false);
-      function toggleLeft() {
-        if (innerState === "leftUncover") {
-          setInnerState("leftCover");
-          setActiveLeft(false);
-        } else {
-          setInnerState("leftUncover");
-          setActiveLeft(true);
-        }
-        return false;
-      }
-      // Main
-      const [mainState, setMainState] = useState("rightOffscreen");
-      // Right
-      const [rightState, setRightState] = useState("rightOffscreen");
-      const [activeRight, setActiveRight] = useState(false);
-      function toggleRight() {
-        if (rightState === "rightOnscreen" || rightState === "fullScreen") {
-          setRightState("rightOffscreen");
-          setMainState("rightOffscreen");
-          setActiveRight(false);
-        } else {
-          setRightState("rightOnscreen");
-          setMainState("rightOnscreen");
-          setActiveRight(true);
-          setInnerState("leftCover");
-          setActiveLeft(false);
-        }
-        return false;
-      }
-      function toggleRightFullscreen() {
-        if (rightState === "fullScreen") {
-          setRightState("rightOnscreen");
-        } else {
-          setRightState("fullScreen");
-        }
-        return false;
-      }
-      // Middle
-      const [middleState, setMiddleState] = useState("bottomOffscreen");
-      // Bottom
-      const [bottomState, setBottomState] = useState("bottomOffscreen");
-      const [activeBottom, setActiveBottom] = useState(false);
-      function toggleBottom() {
-        if (bottomState === "bottomOnscreen" || bottomState === "fullScreen") {
-          setBottomState("bottomOffscreen");
-          setMiddleState("bottomOffscreen");
-          setActiveBottom(false);
-        } else {
-          setBottomState("bottomOnscreen");
-          setMiddleState("bottomOnscreen");
-          setActiveBottom(true);
-        }
-        return false;
-      }
-      function toggleBottomFullscreen() {
-        if (bottomState === "fullScreen") {
-          setBottomState("bottomOnscreen");
-        } else {
-          setBottomState("fullScreen");
-        }
-        return false;
-      }
-      // Controls
-      const screenSmall = window.matchMedia(screen.small);
-      const screenMedium = window.matchMedia(screen.medium);
-      let controlsAlign;
-      if (screenMedium.matches) {
-        controlsAlign = "right";
-      } else if (screenSmall.matches) {
-        controlsAlign = "bottom";
-      }
-
-      return (
-        <Layout id="outer" type="outerWrapper">
-          <Layout id="inner" type="innerWrapper" state={innerState}>
-            <Layout id="left" type="leftWrapper" />
-            <Layout id="main" type="mainWrapper" state={mainState}>
-              <Layout id="middle" type="middleWrapper" state={middleState} />
-              <Layout id="bottom" type="bottomWrapper" state={bottomState}>
-                <Card>
-                  <Tabs align="bottom">
-                    <Tab
-                      tabLabel="Toggle Bottom Fullscreen"
-                      onClick={toggleBottomFullscreen}
-                    />
-                  </Tabs>
-                </Card>
-              </Layout>
-            </Layout>
-            <Layout id="right" type="rightWrapper" state={rightState}>
-              <Card>
-                <Tabs align="bottom">
-                  <Tab
-                    tabLabel="Toggle Right Fullscreen"
-                    onClick={toggleRightFullscreen}
+      <Layout
+        header={{
+          id: "Header",
+          content: (
+            <Bar
+              contentAlign="center"
+              padding="2x"
+              left={{
+                content: (
+                  <Command
+                    icon="left"
+                    label="Toggle"
+                    onClick={toggleLeft}
                   />
-                </Tabs>
-              </Card>
-            </Layout>
-          </Layout>
-          <Layout id="controls" type="controlsWrapper">
-            <Tabs align={controlsAlign}>
-              <Tab
-                tabLabel="Toggle Left Wrapper"
-                onClick={toggleLeft}
-                isSelected={activeLeft}
-              />
-              <Tab
-                tabLabel="Toggle Right Wrapper"
-                onClick={toggleRight}
-                isSelected={activeRight}
-              />
-              <Tab
-                tabLabel="Toggle Bottom Wrapper"
-                onClick={toggleBottom}
-                isSelected={activeBottom}
-              />
-            </Tabs>
-          </Layout>
-        </Layout>
-      );
-    });
-  })
-
-  .add("Standard Layout (Content)", () => {
-    return React.createElement(() => {
-      // Left
-      const [innerState, setInnerState] = useState("leftCover");
-      const [activeLeft, setActiveLeft] = useState(false);
-      function toggleLeft() {
-        if (innerState === "leftUncover") {
-          setInnerState("leftCover");
-          setActiveLeft(false);
-        } else {
-          setInnerState("leftUncover");
-          setActiveLeft(true);
-        }
-        return false;
-      }
-      // Main
-      const [mainState, setMainState] = useState("rightOffscreen");
-      // Right
-      const [rightState, setRightState] = useState("rightOffscreen");
-      const [activeRight, setActiveRight] = useState(false);
-      function toggleRight() {
-        if (rightState === "rightOnscreen" || rightState === "fullScreen") {
-          setRightState("rightOffscreen");
-          setMainState("rightOffscreen");
-          setActiveRight(false);
-        } else {
-          setRightState("rightOnscreen");
-          setMainState("rightOnscreen");
-          setActiveRight(true);
-          setInnerState("leftCover");
-          setActiveLeft(false);
-        }
-        return false;
-      }
-      function toggleRightFullscreen() {
-        if (rightState === "fullScreen") {
-          setRightState("rightOnscreen");
-        } else {
-          setRightState("fullScreen");
-        }
-        return false;
-      }
-      // Middle
-      const [middleState, setMiddleState] = useState("bottomOffscreen");
-      // Bottom
-      const [bottomState, setBottomState] = useState("bottomOffscreen");
-      const [activeBottom, setActiveBottom] = useState(false);
-      function toggleBottom() {
-        if (bottomState === "bottomOnscreen" || bottomState === "fullScreen") {
-          setBottomState("bottomOffscreen");
-          setMiddleState("bottomOffscreen");
-          setActiveBottom(false);
-        } else {
-          setBottomState("bottomOnscreen");
-          setMiddleState("bottomOnscreen");
-          setActiveBottom(true);
-        }
-        return false;
-      }
-      function toggleBottomFullscreen() {
-        if (bottomState === "fullScreen") {
-          setBottomState("bottomOnscreen");
-        } else {
-          setBottomState("fullScreen");
-        }
-        return false;
-      }
-      // Controls
-      const screenSmall = window.matchMedia(screen.small);
-      const screenMedium = window.matchMedia(screen.medium);
-      let controlsAlign;
-      if (screenMedium.matches) {
-        controlsAlign = "right";
-      } else if (screenSmall.matches) {
-        controlsAlign = "bottom";
-      }
-
-      return (
-        <Layout id="outer" type="outerWrapper">
-          <Layout id="inner" type="innerWrapper" state={innerState}>
-            <Layout id="left" type="leftWrapper">
-              <Panel>
-                <PanelSection body>
-                  <Form
-                    title="Form Header"
-                    subtitle="This is the subtitle"
-                    description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
-                  >
-                    <Section title="Group 1">
-                      <TextInput
-                        label="First Name"
-                        placeholder="John"
-                        helpText="The one that your parents gave you"
-                      />
-                      <TextInput
-                        label="Last Name"
-                        placeholder="Williams"
-                        helpText="The one that comes after.."
-                      />
-                    </Section>
-                    <Section title="Group 2">
-                      <CheckboxGroup
-                        id="Section Name"
-                        label="Checkbox Group Label"
-                        data={shortBoxes}
-                        helpText="Hang in there, buddy, I'm here to help!"
-                        columns="2"
-                      />
-                      <CheckboxGroup data={longBoxes} columns="1" />
-                      <SelectMenu
-                        multiSelect
-                        label="Multi-Select"
-                        placeholder="Choose One Or More..."
-                        helpText="Help text for the SelectMenu component"
-                        options={options}
-                      />
-                    </Section>
-                    <Section title="Group 3">
-                      <RadioGroup
-                        id="Section Name"
-                        label="Radio Group Label"
-                        data={shortRadios}
-                        helpText="Hang in there, buddy, I'm here to help!"
-                        columns="2"
-                      />
-                      <RadioGroup data={longRadios} columns="1" />
-                    </Section>
-                  </Form>
-                </PanelSection>
-              </Panel>
-            </Layout>
-
-            <Layout id="main" type="mainWrapper" state={mainState}>
-              <Layout id="middle" type="middleWrapper" state={middleState}>
-                <Mapbox />
-              </Layout>
-
-              <Layout id="bottom" type="bottomWrapper" state={bottomState}>
-                <Panel>
-                  <PanelSection>
-                    <Card>
-                      <Tabs>
-                        <Tab tabLabel="List" onClick={toggleBottomFullscreen} />
-                      </Tabs>
-                    </Card>
-                  </PanelSection>
-                  <PanelSection body>
-                    <CardList>
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                    </CardList>
-                  </PanelSection>
-                </Panel>
-              </Layout>
-            </Layout>
-
-            <Layout id="right" type="rightWrapper" state={rightState}>
-              <Panel>
-                <PanelSection>
-                  <Card>
-                    <Tabs>
-                      <Tab tabLabel="Filters" onClick={toggleRightFullscreen} />
-                    </Tabs>
-                  </Card>
-                </PanelSection>
-                <PanelSection body>
-                  <NavigationCardBar title="Property Search" />
-                  <NavigationCardBar title="Builder Sites" />
-                  <NavigationCardBar title="Demographics" />
-                  <NavigationCardBar title="Foreclosures" />
-                  <NavigationCardBar title="Points of Interest" />
-                  <NavigationCardBar title="Public Schools" />
-                  <NavigationCardBar title="Qualified Opportunity Zones" />
-                  <NavigationCardBar title="School District Rating" />
-                  <NavigationCardBar title="Traffic" />
-                  <NavigationCardBar title="Transaction" />
-                  <NavigationCardBar title="Zones" />
-                </PanelSection>
-              </Panel>
-            </Layout>
-          </Layout>
-
-          <Layout id="controls" type="controlsWrapper">
-            <Tabs align={controlsAlign}>
-              <Tab
-                icon="location"
-                tabLabel="Property"
-                onClick={toggleLeft}
-                isSelected={activeLeft}
-                // noBorder
-              />
-              <Tab
-                icon="layers"
-                tabLabel="Layers"
-                // onClick={toggleLeft}
-                // isSelected={activeLeft}
-                // noBorder
-              />
-              <Tab
-                icon="filter"
-                tabLabel="Filters"
-                onClick={toggleRight}
-                isSelected={activeRight}
-                // noBorder
-              />
-
-              <Tab
-                icon="drawings"
-                tabLabel="Draw"
-                // onClick={toggleLeft}
-                // isSelected={activeLeft}
-                // noBorder
-              />
-              <Tab
-                icon="list"
-                tabLabel="List"
-                onClick={toggleBottom}
-                isSelected={activeBottom}
-                // noBorder
-              />
-            </Tabs>
-          </Layout>
-        </Layout>
-      );
-    });
+                ),
+              }}
+              center={{
+                content: (
+                  <Title text="Header" />
+                ),
+              }}
+              right={{
+                content: (
+                  <Command
+                    icon="right"
+                    label="Toggle"
+                    align="right"
+                    onClick={toggleRight}
+                  />
+                ),
+              }}
+            />
+          ),
+        }}
+        left={{
+          content: <MockMenu />,
+          visible: leftOpen,
+        }}
+        main={{ content: <Mapbox /> }}
+        right={{
+          content: <MockDetails />,
+          visible: rightOpen,
+        }}
+        bottom={{
+          content: <MockTable />,
+          visible: bottomOpen,
+        }}
+        footer={{
+          id: "Footer",
+          content: (
+            <Bar
+              contentAlign="center"
+              padding="2x"
+              left={{
+                content: (
+                  <Title text="Footer" />
+                ),
+              }}
+              center={{
+                content: (
+                  <Command
+                    icon="down"
+                    label="Toggle"
+                    onClick={toggleBottom}
+                  />
+                ),
+              }}
+              /** Don't do this 'div workaround'.
+              * TODO: We will address alignment issues in Bar
+              */
+              right={{
+                content: <div />,
+              }}
+            />
+          ),
+        }}
+      />
+    );
   });
+};
+AllRegionsActive.story = {
+  parameters: {
+    viewMode: "story",
+  },
+};
+
+export const SingleRegionActiveOnSmallScreens = () => {
+  return React.createElement(() => {
+    const [visibility, setVisibility] = useState({
+      left: false,
+      right: false,
+      bottom: false,
+    });
+    const toggleLeft = () => {
+      setVisibility({ left: !visibility.left, right: false, bottom: false });
+    };
+    const toggleRight = () => {
+      setVisibility({ left: false, right: !visibility.right, bottom: false });
+    };
+    const toggleBottom = () => {
+      setVisibility({ left: false, right: false, bottom: !visibility.bottom });
+    };
+
+    return (
+      <Layout
+        header={{
+          id: "Header",
+          content: (
+            <Bar
+              contentAlign="center"
+              padding="2x"
+              left={{
+                content: (
+                  <Command
+                    icon="left"
+                    label="Toggle"
+                    onClick={toggleLeft}
+                  />
+                ),
+              }}
+              center={{
+                content: (
+                  <Title text="Header" />
+                ),
+              }}
+              right={{
+                content: (
+                  <Command
+                    icon="right"
+                    label="Toggle"
+                    align="right"
+                    onClick={toggleRight}
+                  />
+                ),
+              }}
+            />
+          ),
+        }}
+        left={{
+          content: <MockMenu />,
+          visible: visibility.left,
+        }}
+        main={{ content: <Mapbox /> }}
+        right={{
+          content: <MockDetails />,
+          visible: visibility.right,
+        }}
+        bottom={{
+          content: <MockTable />,
+          visible: visibility.bottom,
+        }}
+        footer={{
+          id: "Footer",
+          content: (
+            <Bar
+              contentAlign="center"
+              padding="2x"
+              left={{
+                content: (
+                  <Title text="Footer" />
+                ),
+              }}
+              center={{
+                content: (
+                  <Command
+                    icon="down"
+                    label="Toggle"
+                    onClick={toggleBottom}
+                  />
+                ),
+              }}
+              /** Don't do this 'div workaround'.
+              * TODO: We will address alignment issues in Bar
+              */
+              right={{
+                content: <div />,
+              }}
+            />
+          ),
+        }}
+      />
+    );
+  });
+};
+SingleRegionActiveOnSmallScreens.story = {
+  parameters: {
+    viewMode: "story",
+  },
+};
+
+export const RightRegionPushes = () => {
+  return React.createElement(() => {
+    const [leftOpen, setLeftOpen] = useState(false);
+    const toggleLeft = () => { setLeftOpen(!leftOpen); };
+    const [rightOpen, setRightOpen] = useState(false);
+    const toggleRight = () => { setRightOpen(!rightOpen); };
+    return (
+      <Layout
+        header={{
+          id: "Header",
+          content: (
+            <Bar
+              contentAlign="center"
+              padding="2x"
+              left={{
+                content: (
+                  <Command
+                    icon="left"
+                    label="Toggle"
+                    onClick={toggleLeft}
+                  />
+                ),
+              }}
+              right={{
+                content: (
+                  <Command
+                    icon="right"
+                    label="Toggle"
+                    align="right"
+                    onClick={toggleRight}
+                  />
+                ),
+              }}
+            />
+          ),
+        }}
+        left={{
+          content: <MockMenu />,
+          visible: leftOpen,
+        }}
+        main={{
+          content: (
+            <Template
+              id="Details"
+              template="B_01"
+              A={{
+                id: "A",
+                content: <Mapbox />,
+              }}
+              B={{
+                id: "B",
+                content: (
+                  <MockCardGrid />
+                ),
+              }}
+            />
+          ),
+        }}
+        right={{
+          content: <MockDetails />,
+          visible: rightOpen,
+        }}
+      />
+    );
+  });
+};
+RightRegionPushes.story = {
+  parameters: {
+    viewMode: "story",
+  },
+};
+
+export const RightRegionCovers = () => {
+  return React.createElement(() => {
+    const [leftOpen, setLeftOpen] = useState(false);
+    const toggleLeft = () => { setLeftOpen(!leftOpen); };
+    const [detailsOpen, setDetailsOpen] = useState("right");
+    const toggleDetails = () => {
+      if (detailsOpen === "right") {
+        setDetailsOpen("");
+      } else if (detailsOpen === "") {
+        setDetailsOpen("right");
+      }
+    };
+    return (
+      <Layout
+        header={{
+          id: "Header",
+          content: (
+            <Bar
+              contentAlign="center"
+              padding="2x"
+              left={{
+                content: (
+                  <Command
+                    icon="left"
+                    label="Toggle"
+                    onClick={toggleLeft}
+                  />
+                ),
+              }}
+              right={{
+                content: (
+                  <Command
+                    icon="right"
+                    label="Toggle"
+                    align="right"
+                    onClick={toggleDetails}
+                  />
+                ),
+              }}
+            />
+          ),
+        }}
+        left={{
+          content: <MockMenu />,
+          visible: leftOpen,
+        }}
+        main={{
+          content: (
+            <Template
+              id="Details"
+              template="B_01"
+              A={{
+                id: "A",
+                content: <Mapbox />,
+              }}
+              B={{
+                id: "B",
+                content: (
+                  <React.Fragment>
+                    <MockCardGrid />
+                    <MockDetails offcanvas={detailsOpen} />
+                  </React.Fragment>
+                ),
+              }}
+            />
+          ),
+        }}
+      />
+    );
+  });
+};
+RightRegionCovers.story = {
+  parameters: {
+    viewMode: "story",
+  },
+};

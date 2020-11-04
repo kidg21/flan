@@ -1,0 +1,1018 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Button Label
+      </label>
+    </section>
+  </button>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Click Me!
+      </label>
+    </section>
+  </button>
+</div>
+`;
+
+exports[` 3`] = `
+<button
+  className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+  disabled={false}
+  htmlFor={null}
+  id={null}
+  name={null}
+  onClick={null}
+  tabIndex="1"
+  type="button"
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+    id={null}
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+      color={null}
+      cursor="pointer"
+      fontSize="1rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing=".5px"
+      onClick={null}
+    >
+      Standard Button
+    </label>
+  </section>
+</button>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS Button__GroupWrapper-sc-1v7sls2-3 YHXln"
+  id={null}
+  rows={null}
+>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Standard
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 bvFeUx"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Solid
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 jwxrrU"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Round
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cDggPL"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Solid Round
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 fARwQq"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Plain
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 dQXsDV"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Underlined
+      </label>
+    </section>
+  </button>
+</section>
+`;
+
+exports[` 5`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL Button__GroupWrapper-sc-1v7sls2-3 YHXln"
+  id={null}
+  rows={null}
+>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Button
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="reset"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Reset
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="submit"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Submit
+      </label>
+    </section>
+  </button>
+</section>
+`;
+
+exports[` 6`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS Button__GroupWrapper-sc-1v7sls2-3 YHXln"
+  id={null}
+  rows={null}
+>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 bbRSFJ"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Info
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 hugOHq"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Solid Info
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 jqFDAe"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Success
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 kPqHPv"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Solid Success
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 fbFNou"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Warning
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 jiFYrX"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Solid Warning
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 gKGtPO"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Alert
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 dcAKh"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Solid Alert
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 fUMupv"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Neutral
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 iunxMh"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Solid Neutral
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 hupfeU"
+    disabled={true}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="-1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Disabled
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 iVTKzr"
+    disabled={true}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="-1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Solid Disabled
+      </label>
+    </section>
+  </button>
+</section>
+`;
+
+exports[` 7`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL Button__GroupWrapper-sc-1v7sls2-3 YHXln"
+  id={null}
+  rows={null}
+>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+        color={null}
+        data-icon="user"
+        data-prefix="far"
+        focusable="false"
+        fontSize="inherit"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Profile
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 iTwmAW"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 khdjfz Button__LabelWrapper-sc-1v7sls2-1 dfvPpn"
+      id={null}
+      rows="max-content 1fr"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+        color={null}
+        data-icon="user"
+        data-prefix="far"
+        focusable="false"
+        fontSize="inherit"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Profile
+      </label>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 haCAaN Button__LabelWrapper-sc-1v7sls2-1 hVlHbn"
+      id={null}
+      rows={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-plus fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+        color={null}
+        data-icon="plus"
+        data-prefix="far"
+        focusable="false"
+        fontSize="inherit"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </section>
+  </button>
+</section>
+`;
+
+exports[` 8`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dFoSmS Button__GroupWrapper-sc-1v7sls2-3 YHXln"
+  id={null}
+  rows={null}
+>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 dafUdR Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Count Button
+      </label>
+      <span
+        className="Tag__TagContainer-sc-128kb3h-0 iYglZE Button__Count-sc-1v7sls2-2 dpLJbM"
+        id={null}
+        label="2"
+        onClick={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+          color={null}
+          cursor="default"
+          fontSize="0.875rem"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing=".5px"
+          onClick={null}
+        >
+          2
+        </label>
+      </span>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+    type="button"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 bGFVEV Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+      id={null}
+      rows={null}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 crFXws"
+        color={null}
+        data-icon="user"
+        data-prefix="far"
+        focusable="false"
+        fontSize="inherit"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+        color={null}
+        cursor="pointer"
+        fontSize="1rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing=".5px"
+        onClick={null}
+      >
+        Count Button
+      </label>
+      <span
+        className="Tag__TagContainer-sc-128kb3h-0 iYglZE Button__Count-sc-1v7sls2-2 dpLJbM"
+        id={null}
+        label="2"
+        onClick={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ibWYXc"
+          color={null}
+          cursor="default"
+          fontSize="0.875rem"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing=".5px"
+          onClick={null}
+        >
+          2
+        </label>
+      </span>
+    </section>
+  </button>
+</section>
+`;

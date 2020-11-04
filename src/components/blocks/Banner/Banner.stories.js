@@ -1,183 +1,164 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { Padding } from "helpers/Display";
-import { CardList } from "layout/Card";
-import { withKnobs, boolean, select, text } from "@storybook/addon-knobs";
-import Banner from "blocks/Banner";
-import BannerNotes from "./Banner.md";
+// /* eslint-disable linebreak-style */
+// /* eslint-disable react/jsx-filename-extension */
+// import React from "react";
+// import { Padding } from "helpers/Display";
+// import { CardGrid } from "elements/Card";
+// import Banner from "blocks/Banner";
 
-storiesOf("Blocks|Banner", module)
-  .addParameters({
-    info: {
-      text: "Banner info goes here...",
-    },
-    notes: {
-      markdown: BannerNotes,
-    },
-  })
-  .addDecorator(Padding)
-  .addDecorator(withKnobs)
-  .add(
-    "Documentation",
-    withInfo()(() => {
-      return <Banner title="This is a Banner." />;
-    }),
-  )
-  .add("Knobs", () => {
-    return (
-      <Banner
-        type={select(
-          "type",
-          {
-            standard: null,
-            info: "info",
-            success: "success",
-            warning: "warning",
-            alert: "alert",
-          },
-          null,
-          "Settings",
-        )}
-        icon={
-          boolean("icon", false, "Options") &&
-          select(
-            "icon select",
-            {
-              user: "user",
-              down: "down",
-              bookmark: "bookmark_solid",
-              plus: "plus",
-              print: "print",
-            },
-            "user",
-            "Settings",
-          )
-        }
-        title={
-          boolean("title", true, "Options") &&
-          text("title text", "This is a Banner", "Settings")
-        }
-        description={
-          boolean("description", false, "Options") &&
-          text(
-            "description text",
-            "A description can go here, if necessary.",
-            "Settings",
-          )
-        }
-        link={
-          boolean("link", false, "Options") &&
-          text("link text", "Link Text", "Settings")
-        }
-      />
-    );
-  })
-  .add("Standard Banners", () => {
-    return (
-      <CardList>
-        <Banner title="This is a Banner." />
-        <Banner
-          title="This is a Banner."
-          description="A description can go here, if necessary."
-        />
-        <Banner
-          title="This is a Banner."
-          description="A description can go here, if necessary."
-          link="Link Text"
-        />
-      </CardList>
-    );
-  })
-  .add("Icon Banner", () => {
-    return (
-      <CardList>
-        <Banner
-          type="media"
-          icon="user"
-          title="This is a Banner."
-          description="A description can go here, if necessary."
-          link="Link Text"
-        />
-      </CardList>
-    );
-  })
-  .add("Info Banner", () => {
-    return (
-      <CardList>
-        <Banner type="info" title="This is an Info Banner." />
-      </CardList>
-    );
-  })
-  .add("Success Banner", () => {
-    return (
-      <CardList>
-        <Banner type="success" title="This is a Success Banner." />
-      </CardList>
-    );
-  })
-  .add("Warning Banner", () => {
-    return (
-      <CardList>
-        <Banner type="warning" title="This is a Warning Banner." />
-      </CardList>
-    );
-  })
-  .add("Alert Banner", () => {
-    return (
-      <CardList>
-        <Banner type="alert" title="This is an Alert Banner." />
-      </CardList>
-    );
-  })
 
-  .add("The Banner Family", () => {
-    return (
-      <CardList>
-        <Banner title="This is a Banner." />
-        <Banner
-          title="This is a Banner."
-          description="A description can go here, if necessary."
-        />
-        <Banner
-          title="This is a Banner."
-          description="A description can go here, if necessary."
-          link="Link Text"
-        />
-        <Banner
-          icon="user"
-          title="This is a Banner."
-          description="A description can go here, if necessary."
-          link="Link Text"
-        />
-        <Banner
-          type="info"
-          title="This is an Info Banner."
-          description="A description can go here, if necessary."
-          link="Link Text"
-        />
-        <Banner
-          type="success"
-          title="This is a Success Banner."
-          description="A description can go here, if necessary."
-          link="Link Text"
-        />
-        <Banner
-          type="warning"
-          title="This is a Warning Banner."
-          description="A description can go here, if necessary."
-          link="Link Text"
-        />
-        <Banner
-          type="alert"
-          title="This is an Alert Banner."
-          description="A description can go here, if necessary."
-          link="Link Text"
-        />
-      </CardList>
-    );
-  });
+// storiesOf("Blocks|Banner", module)
+
+//   .addDecorator(Padding)
+//   .addDecorator(withKnobs)
+//   .add(
+//     "Documentation",
+//     () => {
+//       return <Banner title="This is a Banner." />;
+//     },
+//   )
+//   .add("Knobs", () => {
+//     return (
+//       <Banner
+//         variant={select(
+//           "variant",
+//           {
+//             standard: null,
+//             info: "info",
+//             success: "success",
+//             warning: "warning",
+//             alert: "alert",
+//           },
+//           null,
+//           "Settings",
+//         )}
+//         icon={select(
+//           "icon",
+//           {
+//             user: "user",
+//             down: "down",
+//             bookmark: "bookmark_solid",
+//             plus: "plus",
+//             print: "print",
+//           },
+//           "user",
+//           "Settings",
+//         )
+//         }
+//         title={
+//           boolean("title", true, "Options") &&
+//           text("title text", "This is a Banner", "Settings")
+//         }
+//         description={
+//           text(
+//             "description",
+//             "A description can go here, if necessary.",
+//             "Settings",
+//           )
+//         }
+//         link={text("link", "Link Text", "Settings")}
+//       />
+//     );
+//   })
+//   .add("Standard Banners", () => {
+//     return (
+//       <CardGrid>
+//         <Banner title="This is a Banner." />
+//         <Banner
+//           title="This is a Banner."
+//           description="A description can go here, if necessary."
+//         />
+//         <Banner
+//           title="This is a Banner."
+//           description="A description can go here, if necessary."
+//           link="Link Text"
+//         />
+//       </CardGrid>
+//     );
+//   })
+//   .add("Icon Banner", () => {
+//     return (
+//       <CardGrid>
+//         <Banner
+//           icon="user"
+//           title="This is a Banner."
+//           description="A description can go here, if necessary."
+//           link="Link Text"
+//         />
+//       </CardGrid>
+//     );
+//   })
+//   .add("Info Banner", () => {
+//     return (
+//       <CardGrid>
+//         <Banner variant="info" title="This is an Info Banner." />
+//       </CardGrid>
+//     );
+//   })
+//   .add("Success Banner", () => {
+//     return (
+//       <CardGrid>
+//         <Banner variant="success" title="This is a Success Banner." />
+//       </CardGrid>
+//     );
+//   })
+//   .add("Warning Banner", () => {
+//     return (
+//       <CardGrid>
+//         <Banner variant="warning" title="This is a Warning Banner." />
+//       </CardGrid>
+//     );
+//   })
+//   .add("Alert Banner", () => {
+//     return (
+//       <CardGrid>
+//         <Banner variant="alert" title="This is an Alert Banner." />
+//       </CardGrid>
+//     );
+//   })
+
+//   .add("The Banner Family", () => {
+//     return (
+//       <CardGrid>
+//         <Banner title="This is a Banner." />
+//         <Banner
+//           title="This is a Banner."
+//           description="A description can go here, if necessary."
+//         />
+//         <Banner
+//           title="This is a Banner."
+//           description="A description can go here, if necessary."
+//           link="Link Text"
+//         />
+//         <Banner
+//           icon="user"
+//           title="This is a Banner."
+//           description="A description can go here, if necessary."
+//           link="Link Text"
+//         />
+//         <Banner
+//           variant="info"
+//           title="This is an Info Banner."
+//           description="A description can go here, if necessary."
+//           link="Link Text"
+//         />
+//         <Banner
+//           variant="success"
+//           title="This is a Success Banner."
+//           description="A description can go here, if necessary."
+//           link="Link Text"
+//         />
+//         <Banner
+//           variant="warning"
+//           title="This is a Warning Banner."
+//           description="A description can go here, if necessary."
+//           link="Link Text"
+//         />
+//         <Banner
+//           variant="alert"
+//           title="This is an Alert Banner."
+//           description="A description can go here, if necessary."
+//           link="Link Text"
+//         />
+//       </CardGrid>
+//     );
+//   });

@@ -1,0 +1,1259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+  href={null}
+  id="storyshots_244"
+  media=""
+  onClick={null}
+  placeholder="{ Card }"
+>
+  <section
+    className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+    id="storyshots_244-Header"
+    onClick={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 AXrfk"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 kSFTkF"
+      >
+        <h5
+          className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+          fontSize="1.15rem"
+          fontWeight="500"
+          letterSpacing="0.4px"
+        >
+          RFP Accepted - Job Added
+        </h5>
+      </div>
+    </div>
+  </section>
+  <section
+    className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+    id="storyshots_244-Body"
+    onClick={null}
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+      fontSize="1rem"
+      fontWeight={400}
+      id={null}
+      letterSpacing="0.5px"
+    >
+      Accepting an RFP converts an RFP to a live Job. Your new Job has been created and will appear on the Job board.
+    </p>
+  </section>
+  <section
+    className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+    id={null}
+    onClick={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+      id={null}
+      rows={null}
+    >
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+        disabled={false}
+        htmlFor={null}
+        id="Done"
+        name="Done"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+            color={null}
+            cursor="pointer"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            Done
+          </label>
+        </section>
+      </button>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 bvFeUx DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+        disabled={false}
+        htmlFor={null}
+        id="View Job"
+        name="View Job"
+        onClick={null}
+        tabIndex="1"
+        type="button"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+          id={null}
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+            color={null}
+            cursor="pointer"
+            fontSize="1rem"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing=".5px"
+            onClick={null}
+          >
+            View Job
+          </label>
+        </section>
+      </button>
+    </section>
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-icfo76-1 cyOOXv"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jGFUDO"
+        color="alert80"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="1.35em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 bKkRmK"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+        href={null}
+        id="storyshots_245"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_245-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 AXrfk"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 kSFTkF"
+            >
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
+              >
+                Are you sure?
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_245-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            Are you sure you want to delete all of your user data? You will never be able to get it back.
+          </p>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+              disabled={false}
+              htmlFor={null}
+              id="Negative"
+              name="Negative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  No
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bvFeUx DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+              disabled={false}
+              htmlFor={null}
+              id="Affirmative"
+              name="Affirmative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Yes
+                </label>
+              </section>
+            </button>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-icfo76-1 cyOOXv"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jGFUDO"
+        color="alert80"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="1.35em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 bKkRmK"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+        href={null}
+        id="storyshots_246"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_246-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 AXrfk"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 kSFTkF"
+            >
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
+              >
+                Reset Settings?
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_246-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            This will reset your account to it's default fasctory settings removing all current user preferences.
+          </p>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+              disabled={false}
+              htmlFor={null}
+              id="Negative"
+              name="Negative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Accept
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bvFeUx DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+              disabled={false}
+              htmlFor={null}
+              id="Affirmative"
+              name="Affirmative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Cancel
+                </label>
+              </section>
+            </button>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-icfo76-1 cyOOXv"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 fdqEyn"
+        color="success80"
+        data-icon="check"
+        data-prefix="far"
+        focusable="false"
+        fontSize="1.35em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 bKkRmK"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+        href={null}
+        id="storyshots_247"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_247-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 AXrfk"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 kSFTkF"
+            >
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
+              >
+                Reset Settings?
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_247-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            This will reset your account to it's default fasctory settings removing all current user preferences.
+          </p>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+              disabled={false}
+              htmlFor={null}
+              id="Negative"
+              name="Negative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Cancel
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bvFeUx DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+              disabled={false}
+              htmlFor={null}
+              id="Affirmative"
+              name="Affirmative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Accept
+                </label>
+              </section>
+            </button>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[` 3`] = `
+Array [
+  <div
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-icfo76-1 cyOOXv"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jGFUDO"
+        color="alert80"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="1.35em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 bKkRmK"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+        href={null}
+        id="storyshots_248"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_248-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 AXrfk"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 kSFTkF"
+            >
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
+              >
+                Reset Settings?
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_248-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            This will reset your account to it's default fasctory settings removing all current user preferences.
+          </p>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 gKGtPO DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+              disabled={false}
+              htmlFor={null}
+              id="Negative"
+              name="Negative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  No
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 kPqHPv DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+              disabled={false}
+              htmlFor={null}
+              id="Affirmative"
+              name="Affirmative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Agree
+                </label>
+              </section>
+            </button>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="Bar__BarLayout-icfo76-2 cvBNlB"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-icfo76-1 cyOOXv"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 jGFUDO"
+        color="alert80"
+        data-icon="times"
+        data-prefix="far"
+        focusable="false"
+        fontSize="1.35em"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="Bar__Slot-icfo76-1 bKkRmK"
+    >
+      <div
+        className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+        href={null}
+        id="storyshots_249"
+        media=""
+        onClick={null}
+        placeholder="{ Card }"
+      >
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_249-Header"
+          onClick={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 AXrfk"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 kSFTkF"
+            >
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+                fontSize="1.15rem"
+                fontWeight="500"
+                letterSpacing="0.4px"
+              >
+                Reset Settings?
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id="storyshots_249-Body"
+          onClick={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+            fontSize="1rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.5px"
+          >
+            This will reset your account to it's default fasctory settings removing all current user preferences.
+          </p>
+        </section>
+        <section
+          className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+              disabled={false}
+              htmlFor={null}
+              id="Negative"
+              name="Negative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  No
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 kPqHPv DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+              disabled={false}
+              htmlFor={null}
+              id="Affirmative"
+              name="Affirmative"
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+                  color={null}
+                  cursor="pointer"
+                  fontSize="1rem"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing=".5px"
+                  onClick={null}
+                >
+                  Agree
+                </label>
+              </section>
+            </button>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fDVdwk Card__CardGridWrapper-sc-1g3s676-4 Udjyn"
+  id={null}
+  rows={null}
+>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+    href={null}
+    id="storyshots_250"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id="storyshots_250-Header"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 AXrfk"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 kSFTkF"
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Default Dialog
+          </h5>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id="storyshots_250-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 cA-dDIm DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              color={null}
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Negative
+            </label>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 bvFeUx DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+          disabled={false}
+          htmlFor={null}
+          id="Affirmative"
+          name="Affirmative"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              color={null}
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Affirmative
+            </label>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+    href={null}
+    id="storyshots_251"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id="storyshots_251-Header"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 AXrfk"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 kSFTkF"
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Successful Dialog
+          </h5>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id="storyshots_251-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 jqFDAe DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              color={null}
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Negative
+            </label>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 kPqHPv DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+          disabled={false}
+          htmlFor={null}
+          id="Affirmative"
+          name="Affirmative"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              color={null}
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Affirmative
+            </label>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+  <div
+    className="CardWrapper__StyledCardWrapper-meln7c-0 bpYZeU Card__StyledCardWrapper-sc-1g3s676-3 DialogBox__DialogCard-iv0dnf-1 cYUOEk"
+    href={null}
+    id="storyshots_252"
+    media=""
+    onClick={null}
+    placeholder="{ Card }"
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id="storyshots_252-Header"
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 AXrfk"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 kSFTkF"
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 hsjMgw"
+            fontSize="1.15rem"
+            fontWeight="500"
+            letterSpacing="0.4px"
+          >
+            Error Dialog
+          </h5>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id="storyshots_252-Body"
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIhRyd"
+        fontSize="1rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.5px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 cmWTgJ"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cPpHQL DialogBox__ButtonGrid-iv0dnf-0 fuqjTm"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 gKGtPO DialogBox__PrimaryButton-iv0dnf-2 eawUbF"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              color={null}
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Negative
+            </label>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 dcAKh DialogBox__SecondaryButton-iv0dnf-3 iGioOm"
+          disabled={false}
+          htmlFor={null}
+          id="Affirmative"
+          name="Affirmative"
+          onClick={null}
+          tabIndex="1"
+          type="button"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iuBYft Button__LabelWrapper-sc-1v7sls2-1 jRUqJu"
+            id={null}
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 eATeag"
+              color={null}
+              cursor="pointer"
+              fontSize="1rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing=".5px"
+              onClick={null}
+            >
+              Affirmative
+            </label>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+</section>
+`;

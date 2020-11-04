@@ -1,0 +1,90 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Command from "atoms/Command";
+
+<Meta title="Atoms|Command" component={Command} />
+
+# Command
+
+#### A Command represents a primary action.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Command label="Print" icon="print"  />
+  </Story>
+</Preview>
+
+# Usage
+
+Commands are used primarily launch a workflow or execute a function. Commands may also change what or how data is displayed (i.e., View More, Show All). If the action taken by the user will change or manipulate data, use a **[Button](/?path=/docs/atoms-button--documentation)**.
+
+- A Command can be sourced from our set of **[Standard Commands](/?path=/docs/application-libraries--standard-commands)**.
+- Standard Commands pair a Label and Icon.
+- Can be configured to use any icon from our **[Icon Library](/?path=/docs/application-libraries-icon-library--app-icons)**.
+- Label-only Commands are permitted but it is recommened to use either an inline **[Button](/?path=/docs/atoms-button--documentation)** or a **[Link](/?path=/docs/application-style-guides--typography)**.
+- Command labels should be a single word and no more than two words.
+- Text should be consistent with the title of the intended action of function.
+- Use caution with links that are several words long. It is recommended that links are long enough to be understood by the user, but short enough to prevent text wrapping.
+- Avoid the term “click here,” other links to “here,” or the web address itself. Instead, use a meaningful descriptive label for the label.
+
+# Examples
+
+### State
+
+The standard Command uses an anchor tag and inherits anchor styling. To disable a Command, use the 'disabled' prop.
+
+<Preview>
+  <Story name="State">
+    <Grid columns="3">
+      <Command icon="circle" label="Active" />
+      <Command icon="circle" label="Disabled" disabled />
+    </Grid>
+  </Story>
+</Preview>
+
+### Size
+
+To override the standard size, set the 'size' prop to 'small', or 'large'.
+
+<Preview>
+  <Story name="Size">
+    <Grid columns="3" align="bottom">
+      <Command icon="circle" label="Small" size="sm" />
+      <Command icon="circle" label="Standard" />
+      <Command icon="circle" label="Large" size="lg" />
+    </Grid>
+  </Story>
+</Preview>
+
+### Alignment
+
+The standard Command is left-aligned with its Icon on the left. Set the 'align' prop to 'center' in order to center-align the Command placing its Icon atop the label. Set the 'align' prop to 'right' to right-align the Command with its Icon on the right.
+
+<Preview>
+  <Story name="Alignment">
+    <Grid columns="3">
+      <Command label="Icon-Left" icon="circle" />
+      <Command label="Icon-Top" icon="circle" align="center" />
+      <Command label="Icon-Right" icon="circle" align="right" />
+    </Grid>
+  </Story>
+</Preview>
+
+### Invisible Labels
+
+In some cases, the presentation may call for a Command where only the Icon should show in a standard browser viewing experience. Set the 'labelVisible' property to 'false' in this case. Using a Command is preferable to an Icon because a Command with 'labelVisible' property of 'false' will include a Label in a manner visible to assistive technologies.
+
+<Preview>
+  <Story name="Invisible Labels">
+    <Grid columns="3">
+      <Command label="This is visible to ATs" labelVisible={false} icon="view" />
+    </Grid>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Command} />

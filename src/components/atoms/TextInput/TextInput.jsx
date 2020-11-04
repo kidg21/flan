@@ -1,49 +1,71 @@
+/* eslint-disable security/detect-object-injection */
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { DisabledContext } from "States";
-import Label from "atoms/Label";
+import { DisabledContext, PointerEventsContext } from "States";
+import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
-import { getGuid } from "helpers";
+import { useId } from "utils/hooks";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
   width: 100%;
 `;
 
+const MessageContainer = styled.section`
+color: ${(props) => {
+    return props.theme.text[props.messageColor] || "";
+  }};
+`;
+
+const LabelWrapper = styled.section`
+color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || props.theme.text.light;
+  }};
+`;
 
 const Input = styled.input`
   color: inherit;
-  line-height: normal;
+  color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || props.theme.text.dark;
+  }};
   border: 1px solid;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColor] || props.theme.palette.grey4
+      props.theme.palette[props.inputBorderColor] || props.theme.palette.neutral60
     );
   }};
   background-color: ${(props) => {
     return (
-      props.theme.palette[props.inputFillColor] || props.theme.palette.white
+      props.theme.background[props.inputFillColor] || props.theme.background.default
     );
   }};
   caret-color: ${(props) => {
     return props.theme.palette[props.inputCaretColor] || "";
   }};
   width: 100%;
-  min-height: 3.167rem;
-  padding: 0.5rem 0.75rem;
+  /* min-height: 1.875rem; */
+  min-height: ${(props) => {
+    return props.inputHeight || "1.875rem";
+  }};
+  height: 2.4rem;
+  padding: 0.125rem 0.5rem;
   resize: ${(props) => {
     return props.inputResize || "";
   }};
+  pointer-events: ${(props) => {
+    return props.mouseEvents;
+  }};
   ::placeholder {
-    font-weight: initial;
-    font-size: 1rem;
-    letter-spacing: .5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    /* TODO: placeholder color is being overridden by an !important tag.  Need to find. */
     color: ${(props) => {
     return (
       props.theme.text[props.placeholderColor] || props.theme.text.secondary
@@ -53,56 +75,56 @@ const Input = styled.input`
   &:hover {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.grey3
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.neutral80
     );
   }};
     }
-  }
   &:focus {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.secondary
+      props.theme.palette[props.inputBorderColorHover]
+      || props.theme.palette.selected
     );
   }};
     ::selection {
       color: ${(props) => {
-    return props.theme.text.selected;
+    return props.theme.text.inverse;
   }};
       background-color: ${(props) => {
     return (
-      props.theme.palette[props.inputSelectColor] ||
-      props.theme.background.selected
+      props.theme.palette[props.inputSelectColor]
+      || props.theme.palette.selected
     );
   }};
     }
   }
 `;
-
 function TextInput({
   autocompleteList,
   children,
   className,
+  columns,
   disabled,
   error,
+  transparent,
+  hasFocus,
   helpText,
   id,
   isRequired,
   label,
+  labelVisible,
+  onBlur,
   onChange,
+  onFocus,
+  onKeyPress,
+  onKeyUp,
   pattern,
   placeholder,
   readonly,
-  size,
-  title,
+  rows,
   type,
   value,
-  onBlur,
-  onFocus,
-  name,
-  rows,
-  cols,
   warning,
 }) {
   let as;
@@ -111,23 +133,36 @@ function TextInput({
   let inputBorderColor;
   let inputBorderColorHover;
   let inputCaretColor;
+  let messageColor;
   let inputResize;
   let placeholderColor;
+  let max;
+  let min;
   let inputSelectColor;
+  let inputHeight;
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
-  } else if (type === "search") {
-    // inputBorderColor = "primaryLight";
-    // inputBorderColorHover = "primary";
+    inputHeight = "4.75rem";
   }
+
+  const uId = useId(id);
+  const htmlInput = useRef(null);
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
+
+  useEffect(() => {
+    if (hasFocus && !isDisabled && !readonly && htmlInput.current) htmlInput.current.focus();
+  }, [isDisabled, hasFocus, readonly]);
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
   let autocompleteDataList = null;
   let autoCompleteDataListId = null;
   if (autocompleteList) {
-    autoCompleteDataListId = getGuid();
+    const itemHash = {};
+    autoCompleteDataListId = `${uId}_dataList`;
     const options = autocompleteList.map((item) => {
       let itemValue = item;
       let itemLabel = item;
@@ -135,108 +170,133 @@ function TextInput({
         itemValue = item.value;
         itemLabel = item.label || item.value;
       }
-      return (
-        <option key={getGuid()} value={itemValue}>
-          {itemLabel}
-        </option>
-      );
+
+      const key = `${itemValue && itemValue.toUpperCase()}_${itemLabel && itemLabel.toUpperCase()}`;
+      if (!itemHash[key]) {
+        itemHash[key] = true;
+        return (
+          <option key={key} value={itemValue}>
+            {itemLabel}
+          </option>
+        );
+      }
+
+      return null;
     });
     autocompleteDataList = (
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
-  let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
+  let errorText = "";
   if (isDisabled) {
-    inputBorderColor = "grey5";
+    inputBorderColor = "neutral40";
     inputFillColor = "disabled";
     inputTextColor = "disabled";
+  } else if (transparent) {
+    inputBorderColor = "inverse";
+    inputBorderColorHover = "inverse";
   } else if (error) {
-    inputBorderColor = "alertBright";
-    inputBorderColorHover = "alertLight";
-    inputSelectColor = "alertBright";
+    inputBorderColor = "alert60";
+    messageColor = "alert";
+    inputBorderColorHover = "alert40";
+    inputSelectColor = "alert60";
     inputTextColor = "alert";
-    placeholderColor = "primary";
-    errorText = typeof error === "string" ? error : "";
+    placeholderColor = "secondary";
+    if (typeof error === "string") errorText = error;
   } else if (warning) {
-    inputBorderColor = "warningBright";
-    inputBorderColorHover = "warningLight";
-    inputSelectColor = "warningBright";
-    inputTextColor = "warning";
-    placeholderColor = "primary";
-    errorText = typeof warning === "string" ? warning : "";
+    placeholderColor = "secondary";
+    messageColor = "alert";
+  }
+
+  if (type === "date") {
+    max = "2999-12-31";
+    min = "1019-01-01";
   }
 
   return (
     <TextInputContainer
-      id={id}
-      inputTextColor={inputTextColor}
-      gap="tiny"
-      columns="1"
       className={className}
+      columns="1"
+      gap="xs"
+      id={`${uId}_container`}
+      inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label weight="bold" isRequired={isRequired} text={label} />
+        <LabelWrapper inputTextColor={inputTextColor}>
+          <Label isRequired={isRequired} text={label} visible={labelVisible} />
+        </LabelWrapper>
       ) : null}
       <Input
+        inputTextColor={inputTextColor}
         as={as}
+        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
+        cols={columns} // textarea attribute
         disabled={isDisabled} // input attribute
-        id={id} // input attribute
+        id={uId} // input attribute
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputCaretColor={inputCaretColor}
         inputFillColor={inputFillColor}
+        inputHeight={inputHeight}
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}
-        name={name || id} // input attribute
+        name={uId} // input attribute
+        onBlur={onBlur}
+        max={max}
+        min={min}
         onChange={onChange}
+        onFocus={onFocus}
+        onKeyUp={onKeyUp}
+        onKeyPress={onKeyPress}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
         placeholderColor={placeholderColor}
         readonly={readonly}
-        size={size} // overriding this while developing so it's easier to see
-        title={title} // input attribute
+        ref={htmlInput}
+        rows={rows} // textarea attribute
         type={type} // input attribute
         value={value}
-        onBlur={onBlur}
-        onFocus={onFocus}
-        rows={rows} // textarea attribute
-        cols={cols} // textarea attribute
+        mouseEvents={pointerEvents}
       />
       {autocompleteDataList}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {helpText ? <Text size="xs" text={helpText} /> : null}
       {children}
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="xs" text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }
 
 TextInput.propTypes = {
-  autocompleteList: PropTypes.arrayOf(PropTypes.string || PropTypes.shape({
+  autocompleteList: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.shape({
     value: PropTypes.string,
     label: PropTypes.string,
-  })),
+  })])),
   children: PropTypes.node,
   className: PropTypes.string,
+  columns: PropTypes.string,
   /** A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form */
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  /** Should this input have focus when rendered? */
+  hasFocus: PropTypes.bool,
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  labelVisible: PropTypes.bool,
+  onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  onKeyUp: PropTypes.func,
+  onKeyPress: PropTypes.func,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
   /** The readonly attribute specifies that the input field is read only (cannot be changed) */
   readonly: PropTypes.bool,
-  size: PropTypes.string,
-  /** The title attribute specifies extra information about an element.
-   * The information is most often shown as a tooltip text when the mouse moves over the element.
-   */
-  title: PropTypes.string,
+  rows: PropTypes.string,
+  transparent: PropTypes.bool,
   type: PropTypes.oneOf([
     "color",
     "date",
@@ -256,11 +316,6 @@ TextInput.propTypes = {
   ]),
   /** The value attribute specifies the initial value for an input field */
   value: PropTypes.string,
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
-  name: PropTypes.string,
-  rows: PropTypes.string,
-  cols: PropTypes.string,
   warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
@@ -268,26 +323,28 @@ TextInput.defaultProps = {
   autocompleteList: null,
   children: null,
   className: null,
+  columns: "",
   disabled: null,
-  error: null,
+  error: "",
+  hasFocus: false,
   helpText: null,
   id: null,
-  label: null,
   isRequired: false,
+  label: null,
+  labelVisible: true,
+  onBlur: null,
   onChange: null,
+  onFocus: null,
+  onKeyUp: null,
+  onKeyPress: null,
   pattern: null,
   placeholder: null,
   readonly: false,
-  size: null,
-  title: null,
-  type: "text",
-  value: "",
-  onBlur: null,
-  onFocus: null,
-  name: "",
   rows: "",
-  cols: "",
+  transparent: false,
+  type: "text",
+  value: undefined,
   warning: "",
 };
 
-export { TextInput as default };
+export default TextInput;

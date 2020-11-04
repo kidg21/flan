@@ -1,0 +1,1981 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+  id={null}
+  rows={null}
+>
+  <section
+    className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+      color={null}
+      cursor="pointer"
+      fontSize="0.875rem"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="1px"
+      onClick={null}
+    >
+      Select Label
+    </label>
+  </section>
+  <div
+    className=" css-3p29ga-container"
+    id={null}
+    onKeyDown={[Function]}
+  >
+    <div
+      className=" css-14ku2k9-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className=" css-g1d714-ValueContainer"
+      >
+        <div
+          className=" css-1rmbrkz-placeholder"
+        >
+          Select
+        </div>
+        <div
+          className="css-b8ldur-Input"
+        >
+          <div
+            className=""
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-28-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className=" css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className=" css-rci3ok-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className=" css-1jw44s5-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-6q0nyr-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+    fontSize="0.75rem"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0.4px"
+  >
+    Help text for the Select Menu component
+  </p>
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ggzTnl"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="1px"
+        onClick={null}
+      >
+        Standard
+      </label>
+    </section>
+    <div
+      className=" css-3p29ga-container"
+      id={null}
+      onKeyDown={[Function]}
+    >
+      <div
+        className=" css-14ku2k9-control"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          className=" css-g1d714-ValueContainer"
+        >
+          <div
+            className=" css-1rmbrkz-placeholder"
+          >
+            Select
+          </div>
+          <div
+            className="css-b8ldur-Input"
+          >
+            <div
+              className=""
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <input
+                aria-autocomplete="list"
+                autoCapitalize="none"
+                autoComplete="off"
+                autoCorrect="off"
+                disabled={false}
+                id="react-select-29-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                spellCheck="false"
+                style={
+                  Object {
+                    "background": 0,
+                    "border": 0,
+                    "boxSizing": "content-box",
+                    "color": "inherit",
+                    "fontSize": "inherit",
+                    "label": "input",
+                    "opacity": 1,
+                    "outline": 0,
+                    "padding": 0,
+                    "width": "1px",
+                  }
+                }
+                tabIndex="0"
+                type="text"
+                value=""
+              />
+              <div
+                style={
+                  Object {
+                    "height": 0,
+                    "left": 0,
+                    "overflow": "scroll",
+                    "position": "absolute",
+                    "top": 0,
+                    "visibility": "hidden",
+                    "whiteSpace": "pre",
+                  }
+                }
+              >
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className=" css-1hb7zxy-IndicatorsContainer"
+        >
+          <span
+            className=" css-rci3ok-indicatorSeparator"
+          />
+          <div
+            aria-hidden="true"
+            className=" css-1jw44s5-indicatorContainer"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="css-6q0nyr-Svg"
+              focusable="false"
+              height={20}
+              viewBox="0 0 20 20"
+              width={20}
+            >
+              <path
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 jQViVX"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="SelectMenu__LabelWrapper-sc-12n3hw0-1 cmSmkK"
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="1px"
+        onClick={null}
+      >
+        Error
+      </label>
+    </section>
+    <div
+      className=" css-3p29ga-container"
+      id={null}
+      onKeyDown={[Function]}
+    >
+      <div
+        className=" css-14ku2k9-control"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          className=" css-g1d714-ValueContainer"
+        >
+          <div
+            className=" css-1rmbrkz-placeholder"
+          >
+            Select
+          </div>
+          <div
+            className="css-b8ldur-Input"
+          >
+            <div
+              className=""
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <input
+                aria-autocomplete="list"
+                autoCapitalize="none"
+                autoComplete="off"
+                autoCorrect="off"
+                disabled={false}
+                id="react-select-30-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                spellCheck="false"
+                style={
+                  Object {
+                    "background": 0,
+                    "border": 0,
+                    "boxSizing": "content-box",
+                    "color": "inherit",
+                    "fontSize": "inherit",
+                    "label": "input",
+                    "opacity": 1,
+                    "outline": 0,
+                    "padding": 0,
+                    "width": "1px",
+                  }
+                }
+                tabIndex="0"
+                type="text"
+                value=""
+              />
+              <div
+                style={
+                  Object {
+                    "height": 0,
+                    "left": 0,
+                    "overflow": "scroll",
+                    "position": "absolute",
+                    "top": 0,
+                    "visibility": "hidden",
+                    "whiteSpace": "pre",
+                  }
+                }
+              >
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className=" css-1hb7zxy-IndicatorsContainer"
+        >
+          <span
+            className=" css-rci3ok-indicatorSeparator"
+          />
+          <div
+            aria-hidden="true"
+            className=" css-1jw44s5-indicatorContainer"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="css-6q0nyr-Svg"
+              focusable="false"
+              height={20}
+              viewBox="0 0 20 20"
+              width={20}
+            >
+              <path
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      className="SelectMenu__MessageContainer-sc-12n3hw0-0 ciRjMm"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+        fontSize="0.75rem"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.4px"
+      >
+        Error explaining why it is wrong
+      </p>
+    </section>
+  </section>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 fAnGqJ"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="SelectMenu__LabelWrapper-sc-12n3hw0-1 flSxdM"
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+        color={null}
+        cursor="pointer"
+        fontSize="0.875rem"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="1px"
+        onClick={null}
+      >
+        Disabled
+      </label>
+    </section>
+    <div
+      className=" css-fj9z8l-container"
+      id={null}
+      onKeyDown={[Function]}
+    >
+      <div
+        className=" css-pitv1e-control"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          className=" css-g1d714-ValueContainer"
+        >
+          <div
+            className=" css-1rmbrkz-placeholder"
+          >
+            Select
+          </div>
+          <div
+            className="css-b8ldur-Input"
+          >
+            <div
+              className=""
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <input
+                aria-autocomplete="list"
+                autoCapitalize="none"
+                autoComplete="off"
+                autoCorrect="off"
+                disabled={true}
+                id="react-select-31-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                spellCheck="false"
+                style={
+                  Object {
+                    "background": 0,
+                    "border": 0,
+                    "boxSizing": "content-box",
+                    "color": "inherit",
+                    "fontSize": "inherit",
+                    "label": "input",
+                    "opacity": 1,
+                    "outline": 0,
+                    "padding": 0,
+                    "width": "1px",
+                  }
+                }
+                tabIndex="0"
+                type="text"
+                value=""
+              />
+              <div
+                style={
+                  Object {
+                    "height": 0,
+                    "left": 0,
+                    "overflow": "scroll",
+                    "position": "absolute",
+                    "top": 0,
+                    "visibility": "hidden",
+                    "whiteSpace": "pre",
+                  }
+                }
+              >
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className=" css-1hb7zxy-IndicatorsContainer"
+        >
+          <span
+            className=" css-1qpt39k-indicatorSeparator"
+          />
+          <div
+            aria-hidden="true"
+            className=" css-11055fn-indicatorContainer"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="css-6q0nyr-Svg"
+              focusable="false"
+              height={20}
+              viewBox="0 0 20 20"
+              width={20}
+            >
+              <path
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+`;
+
+exports[` 3`] = `
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  id={null}
+  method={null}
+  onSubmit={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Form__Section-v2wrel-0 AFwsX"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hfbOBQ"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Required )
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  You Must Choose...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-32-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hfbOBQ"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Required w/ Clearable )
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                />
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-33-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+        </section>
+      </section>
+    </section>
+  </section>
+</form>
+`;
+
+exports[` 4`] = `
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-1 dmAkaW"
+  id={null}
+  method={null}
+  onSubmit={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eRHOWV Form__Inputs-v2wrel-4 kZxse"
+    id={null}
+    rows={null}
+  >
+    <section
+      className="Form__Section-v2wrel-0 AFwsX"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 jZGBCk Form__Inputs-v2wrel-4 cxSivB"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Standard )
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  Choose...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-34-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hfbOBQ"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Required )
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  You Must Choose...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-35-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 fAnGqJ"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 flSxdM"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Disabled )
+            </label>
+          </section>
+          <div
+            className=" css-fj9z8l-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-pitv1e-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  You Can't Choose...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={true}
+                      id="react-select-36-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-1qpt39k-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-11055fn-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 jQViVX"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 cmSmkK"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Error )
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  You Chose Poorly...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-37-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 jQViVX"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 cmSmkK"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Error )
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  You Chose Poorly...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-38-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+          <section
+            className="SelectMenu__MessageContainer-sc-12n3hw0-0 ciRjMm"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+              fontSize="0.75rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.4px"
+            >
+              Error: Invalid Selection!
+            </p>
+          </section>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  You Chose Poorly...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-39-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+          <section
+            className="SelectMenu__MessageContainer-sc-12n3hw0-0 ciRjMm"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+              fontSize="0.75rem"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0.4px"
+            >
+              This is warning Text
+            </p>
+          </section>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Single-Select ( Loading )
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  Give Me A Minute...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-40-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <div
+                  aria-hidden="true"
+                  className=" css-at12u2-loadingIndicator"
+                >
+                  <span
+                    className="css-1yvy2vo-LoadingDot"
+                  />
+                  <span
+                    className="css-zoievk-LoadingDot"
+                  />
+                  <span
+                    className="css-x748d8-LoadingDot"
+                  />
+                </div>
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hxVKcs SelectMenu__SelectMenuContainer-sc-12n3hw0-2 iOpcTw"
+          id={null}
+          rows={null}
+        >
+          <section
+            className="SelectMenu__LabelWrapper-sc-12n3hw0-1 iIbjam"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 hDgssK"
+              color={null}
+              cursor="pointer"
+              fontSize="0.875rem"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="1px"
+              onClick={null}
+            >
+              Multi-Select
+            </label>
+          </section>
+          <div
+            className=" css-3p29ga-container"
+            id={null}
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-14ku2k9-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-g1d714-ValueContainer"
+              >
+                <div
+                  className=" css-1rmbrkz-placeholder"
+                >
+                  Choose One Or More...
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-41-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-rci3ok-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1jw44s5-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-6q0nyr-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dAoeoh"
+            fontSize="0.75rem"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.4px"
+          >
+            Help text for the Select Menu component
+          </p>
+        </section>
+      </section>
+    </section>
+  </section>
+</form>
+`;

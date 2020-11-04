@@ -1,15 +1,13 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { DisabledContext } from "States";
-import Label from "atoms/Label";
+import { DisabledContext, PointerEventsContext } from "States";
+import { Label } from "base/Typography";
 
 const SwitchContainer = styled.div`
   display: grid;
+  align-items: center;
   grid-template-columns: ${(props) => {
     return props.label ? "auto 1fr" : "";
   }};
@@ -20,43 +18,39 @@ const SwitchContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.palette[props.checkboxColor] || "inherit";
-  }};
-  background-color: ${(props) => {
-    return (
-      props.theme.palette[props.fillColor] || props.theme.background.default
-    );
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
-  width: max-content;
-  line-height: 1rem;
+  pointer-events: ${(props) => {
+    return props.disabled || props.readonly ? "none" : props.mouseEvents;
+  }};
+  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
-    pointer-events: none;
     user-select: none;
   }
 `;
 
 const StyledSwitch = styled.div`
   grid-area: input;
+  align-self: center;
   width: 2.2rem;
-  height: auto;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
   border-radius: 1rem;
   background-color: ${(props) => {
-    return props.theme.palette[props.fillColor] || props.theme.palette.grey5;
+    return props.theme.palette[props.fillColor] || props.theme.palette.neutral80;
   }};
   cursor: pointer;
   &[disabled],
   &[readonly] {
     background-color: ${(props) => {
-    return props.disabled ? props.theme.palette.grey5 : "";
+    return props.disabled ? props.theme.palette.neutral60 : "";
   }};
   }
 `;
@@ -64,12 +58,12 @@ const StyledSwitch = styled.div`
 const Circle = styled.div`
   background: ${(props) => {
     return props.disabled
-      ? props.theme.palette.grey5
-      : props.theme.palette.white;
+      ? props.theme.palette.neutral40
+      : props.theme.palette.inverse;
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
   width: 1rem;
   height: 1rem;
@@ -90,20 +84,22 @@ const Circle = styled.div`
 function Switch({
   align, checked, disabled, error, id, label, onChange,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  let checkboxColor;
+  const isAncestorDisabled = useContext(DisabledContext);
+  const pointerEvents = useContext(PointerEventsContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : isAncestorDisabled;
+  let inputTextColor;
   let fillColor;
   let borderColor;
   let alignInput;
   if (isDisabled) {
-    checkboxColor = "disabled";
-    borderColor = "grey3";
+    inputTextColor = "disabled";
+    fillColor = "neutral60";
+    borderColor = "neutral60";
   }
   if (error && !isDisabled) {
-    checkboxColor = "alertDark";
-    fillColor = "alert";
-    borderColor = "alertDark";
+    inputTextColor = "alert";
+    fillColor = "alert60";
+    borderColor = "alert80";
   }
   switch (align) {
     case "right":
@@ -123,37 +119,39 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = "secondaryLight";
-    borderColor = "secondary";
+    fillColor = "selected";
+    borderColor = "selected";
   }
   return (
     <SwitchContainer
       alignInput={alignInput}
-      checkboxColor={checkboxColor}
-      error={error}
       disabled={isDisabled}
+      error={error}
       id={id}
+      inputTextColor={inputTextColor}
       label={label}
       onClick={onClick}
+      mouseEvents={pointerEvents}
     >
       <StyledSwitch
+        borderColor={borderColor}
         checked={isChecked}
         disabled={isDisabled}
-        onChange={onChange}
         fillColor={fillColor}
-        borderColor={borderColor}
+        onChange={onChange}
       >
         <Circle
-          checked={isChecked}
           borderColor={borderColor}
+          checked={isChecked}
           disabled={isDisabled}
         />
       </StyledSwitch>
       {label ? (
         <Label
+          disabled={isDisabled}
           htmlFor={id}
           onChange={onChange}
-          disabled={isDisabled}
+          size="sm"
           text={label}
         />
       ) : null}
@@ -180,4 +178,4 @@ Switch.defaultProps = {
   onChange: null,
 };
 
-export { Switch as default };
+export default Switch;

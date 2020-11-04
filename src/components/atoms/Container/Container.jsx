@@ -1,15 +1,14 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
-  display: block;
+  display: ${(props) => {
+    return props.visible ? "block" : "none";
+  }};
   padding: ${(props) => {
-    return props.padding || "";
+    return props.setPadding || "";
   }};
   height: ${(props) => {
     return props.height || "";
@@ -22,61 +21,127 @@ const Wrapper = styled.div`
 const BoxContainer = styled.div`
   overflow-y: auto;
   overflow-x: auto;
-  padding: 0;
+  background-color: ${(props) => {
+    return props.theme.background.default;
+  }};
+  max-height: ${(props) => {
+    return props.maxHeight || "";
+  }};
+  max-width: ${(props) => {
+    return props.maxWidth || "";
+  }};
   height: ${(props) => {
     return props.height || "";
   }};
   width: ${(props) => {
     return props.width || "";
   }};
-  border: 1px solid
-    ${(props) => {
-    return props.theme.palette.grey5;
+  padding: ${(props) => {
+    return props.padding || "";
   }};
-  border-radius: 5px;
-
+  border: ${(props) => {
+    return props.hasBorder ? "1px solid" : "";
+  }};
+  border-color: ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  border-radius: ${(props) => {
+    return props.borderRadius || props.theme.borders.radiusMin;
+  }};
   ::-webkit-scrollbar {
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.75em;
+    height: 0.75em;
   }
-
   ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
-    return props.theme.palette.grey5;
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
   }};
   }
-
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.neutral80;
   }};
-    border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+    outline: none;
   }
-
-}
-
-::-webkit-scrollbar-track:horizontal {
-  -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
-    return props.theme.palette.grey5;
+  ::-webkit-scrollbar-track:horizontal {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
   }};
 }
-
-
-::-webkit-scrollbar-thumb:horizontal{
-  background-color: ${(props) => {
-    return props.theme.palette.primary;
+  ::-webkit-scrollbar-thumb:horizontal{
+    background-color: ${(props) => {
+    return props.theme.palette.neutral80;
   }};
-  border-radius: 20px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: inset 0 0 0 1px ${(props) => {
+    return props.theme.background.default;
+  }};
+  outline: none;
 }
-
 `;
 
+const paddingHash = {
+  "0": "0",
+  "1x": "1rem",
+  "2x": "2rem",
+  "3x": "3rem",
+};
+
+const boxPaddingHash = {
+  "0": "0",
+  "1x": "0.5rem",
+  "2x": "1rem",
+  "3x": "1.5rem",
+};
+
 const Container = React.forwardRef(({
-  id, height, width, padding, children,
+  borderRadius,
+  boxPadding,
+  children,
+  className,
+  hasBorder,
+  height,
+  id,
+  maxHeight,
+  maxWidth,
+  onClick,
+  onMouseEnter,
+  onMouseLeave,
+  padding,
+  visible,
+  width,
 }, ref) => {
+  const setPadding = padding ? paddingHash[padding.toLowerCase()] : "0";
+  const borderPadding = boxPadding ? boxPaddingHash[boxPadding.toLowerCase()] : "0";
   return (
-    <Wrapper padding={padding} height={height} width={width}>
-      <BoxContainer id={id} height={height ? "100%" : ""} ref={ref}>
+    <Wrapper
+      className={className}
+      height={height}
+      setPadding={setPadding}
+      visible={visible}
+      width={width}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <BoxContainer
+        borderRadius={borderRadius}
+        hasBorder={hasBorder}
+        height={height ? "100%" : ""}
+        id={id}
+        maxHeight={maxHeight}
+        maxWidth={maxWidth}
+        onClick={onClick}
+        padding={borderPadding}
+        ref={ref}
+      >
         {children}
       </BoxContainer>
     </Wrapper>
@@ -84,19 +149,39 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
-  id: PropTypes.string,
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  borderRadius: PropTypes.string,
+  boxPadding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   children: PropTypes.node,
-  padding: PropTypes.string,
+  className: PropTypes.string,
+  hasBorder: PropTypes.bool,
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  id: PropTypes.string,
+  maxHeight: PropTypes.string,
+  maxWidth: PropTypes.string,
+  onClick: PropTypes.func,
+  onMouseEnter: PropTypes.func,
+  onMouseLeave: PropTypes.func,
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
+  visible: PropTypes.bool,
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Container.defaultProps = {
-  id: null,
-  height: null,
-  width: null,
+  borderRadius: null,
+  boxPadding: "0",
   children: null,
-  padding: null,
+  className: null,
+  hasBorder: false,
+  height: null,
+  id: null,
+  maxHeight: null,
+  maxWidth: null,
+  onClick: undefined,
+  onMouseEnter: null,
+  onMouseLeave: null,
+  padding: "0",
+  visible: true,
+  width: null,
 };
 
 export default Container;
